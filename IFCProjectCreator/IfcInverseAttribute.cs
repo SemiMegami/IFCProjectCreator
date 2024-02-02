@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace IFCProjectCreator
 {
-    public class IfcInverseAttribute: IfcAttribute
+    public class IFCInverseAttribute: IFCAttribute
     {
         public string RelatedAttributeName { get; set; }
 
-        public IfcInverseAttribute() :base() 
+        public IFCInverseAttribute() :base() 
         {
             RelatedAttributeName = "";
         }

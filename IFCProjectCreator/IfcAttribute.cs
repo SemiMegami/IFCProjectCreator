@@ -7,19 +7,18 @@ using System.Threading.Tasks;
 
 namespace IFCProjectCreator
 {
-    public class IfcAttribute
+    public abstract class IFCAttribute
     {
-        public IfcAttributeType AttributeType { get; set; }
-        public IfcAggregation Aggregation { get; set; }
+        public IFCAttributeType AttributeType { get; set; }
+        public IFCAggregation Aggregation { get; set; }
         public string Name { get; set; }
         public string TypeName { get; set; }
 
 
-        public IfcAttribute()
+        public IFCAttribute()
         {
-            AttributeType = IfcAttributeType.SINGLE;
-            Aggregation = IfcAggregation.NONE;
-
+            AttributeType = IFCAttributeType.SINGLE;
+            Aggregation = IFCAggregation.NONE;
         }
 
         public override string ToString()
@@ -27,28 +26,47 @@ namespace IFCProjectCreator
             string aggregationText = "";
             switch (AttributeType)
             {
-                case IfcAttributeType.SINGLE:
+                case IFCAttributeType.SINGLE:
                     aggregationText = "";
                     break;
-                case IfcAttributeType.LIST:
+                case IFCAttributeType.LIST:
                     aggregationText = AttributeType.ToString() + " ";
                     break;
-                case IfcAttributeType.LISTLIST:
+                case IFCAttributeType.LISTLIST:
                     aggregationText = AttributeType.ToString() + " ";
                     break;
             }
             return Name + " : " + aggregationText + TypeName;
         }
+
+        public abstract List<string> GetCSharpText();
+
+        public string GetCSharpTypeText()
+        {
+            switch (AttributeType)
+            {
+                case IFCAttributeType.SINGLE:
+                    return TypeName;
+                    break;
+                case IFCAttributeType.LIST:
+                    return "List<" + TypeName + ">";
+                    break;
+                case IFCAttributeType.LISTLIST:
+                    return"List<List<" + TypeName + " >>";
+                    break;
+            }
+            return TypeName;
+        }
     }
 
-    public enum IfcAttributeType
+    public enum IFCAttributeType
     {
         SINGLE,
         LIST,
         LISTLIST
     }
 
-    public enum IfcAggregation
+    public enum IFCAggregation
     {
         NONE,
         ARRAY,

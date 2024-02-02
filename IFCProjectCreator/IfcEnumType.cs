@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace IFCProjectCreator
 {
-    public class IfcEnumType : IfcBase
+    public class IFCEnumType : IFCClass
     {
         public List<string> EnumValues { get; set; }
-        public IfcEnumType(IfcDataSet dataSet, string version) : base(dataSet, version)
+        public IFCEnumType(IFCDataSet dataSet, string version) : base(dataSet, version)
         {
             EnumValues = new List<string>();
         }
@@ -22,9 +22,10 @@ namespace IFCProjectCreator
             }
         }
 
-        public override List<string> ToCShapText()
+        public override List<string> GetCSharpTexts()
         {
-            throw new NotImplementedException();
+            List<string> texts = new List<string>();
+            return texts;
         }
     }
 }

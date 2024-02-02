@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IFCProjectCreator
+﻿namespace IFCProjectCreator
 {
-    public class IfcFunction : IfcBase
+    public class IFCFunction : IFCClass
     {
 
 
-        public List<IfcAttribute> Inputs { get; set; }
-        public IfcAttribute Output { get; set; }
-        public IfcFunction(IfcDataSet dataSet, string version) : base(dataSet, version)
+        public List<IFCAttribute> Inputs { get; set; }
+        public IFCAttribute? Output { get; set; }
+        public IFCFunction(IFCDataSet dataSet, string version) : base(dataSet, version)
         {
-            Inputs = new List<IfcAttribute>();
+            Inputs = new List<IFCAttribute>();
         }
         public override void ReadEXP(StreamReader reader, string header)
         {
@@ -91,8 +84,8 @@ namespace IFCProjectCreator
 
             string typeName = typeText.Contains("GENERIC") ? "GENERIC" : typeWords[typeWords.Count - 1];
 
-            IfcAggregation aggregation = IfcAggregation.NONE;
-            IfcAttributeType attributeType = IfcAttributeType.SINGLE;
+            IFCAggregation aggregation = IFCAggregation.NONE;
+            IFCAttributeType attributeType = IFCAttributeType.SINGLE;
             int ofCount = 0;
             for (int i = 0; i < typeWords.Count; i++)
             {
@@ -104,32 +97,32 @@ namespace IFCProjectCreator
             switch (ofCount)
             {
                 case 0:
-                    attributeType = IfcAttributeType.SINGLE;
+                    attributeType = IFCAttributeType.SINGLE;
                     break;
                 case 1:
-                    attributeType = IfcAttributeType.LIST;
+                    attributeType = IFCAttributeType.LIST;
                     break;
                 case 2:
-                    attributeType = IfcAttributeType.LISTLIST;
+                    attributeType = IFCAttributeType.LISTLIST;
                     break;
             }
             if (ofCount > 0)
             {
                 if (inputText.Contains("ARRAY"))
                 {
-                    aggregation = IfcAggregation.ARRAY;
+                    aggregation = IFCAggregation.ARRAY;
                 }
                 if (inputText.Contains("BAG"))
                 {
-                    aggregation = IfcAggregation.BAG;
+                    aggregation = IFCAggregation.BAG;
                 }
                 if (inputText.Contains("LIST"))
                 {
-                    aggregation = IfcAggregation.LIST;
+                    aggregation = IFCAggregation.LIST;
                 }
                 if (inputText.Contains("SET"))
                 {
-                    aggregation = IfcAggregation.SET;
+                    aggregation = IFCAggregation.SET;
                 }
             }
 
@@ -137,7 +130,7 @@ namespace IFCProjectCreator
             {
                 if (names[i].Length > 0)
                 {
-                    IfcAttribute input = new IfcAttribute();
+                    IFCAttribute input = new IFCAttribute();
                     input.Name = names[i].Replace(" ", "");
                     input.TypeName = typeName;
                     input.AttributeType = attributeType;
@@ -148,7 +141,7 @@ namespace IFCProjectCreator
         }
         private void SetOutput(string outputText)
         {
-            Output = new IfcAttribute();
+            Output = new IFCAttribute();
             Output.Name = "Output";
             string[] outputWordArrs = outputText.Split(" ");
             List<string> outputWords = new List<string>();
@@ -172,39 +165,40 @@ namespace IFCProjectCreator
             switch (ofCount)
             {
                 case 0:
-                    Output.AttributeType = IfcAttributeType.SINGLE;
+                    Output.AttributeType = IFCAttributeType.SINGLE;
                     break;
                 case 1:
-                    Output.AttributeType = IfcAttributeType.LIST;
+                    Output.AttributeType = IFCAttributeType.LIST;
                     break;
                 case 2:
-                    Output.AttributeType = IfcAttributeType.LISTLIST;
+                    Output.AttributeType = IFCAttributeType.LISTLIST;
                     break;
             }
             if (ofCount > 0)
             {
                 if (outputText.Contains("ARRAY"))
                 {
-                    Output.Aggregation = IfcAggregation.ARRAY;
+                    Output.Aggregation = IFCAggregation.ARRAY;
                 }
                 if (outputText.Contains("BAG"))
                 {
-                    Output.Aggregation = IfcAggregation.BAG;
+                    Output.Aggregation = IFCAggregation.BAG;
                 }
                 if (outputText.Contains("LIST"))
                 {
-                    Output.Aggregation = IfcAggregation.LIST;
+                    Output.Aggregation = IFCAggregation.LIST;
                 }
                 if (outputText.Contains("SET"))
                 {
-                    Output.Aggregation = IfcAggregation.SET;
+                    Output.Aggregation = IFCAggregation.SET;
                 }
             }
         }
 
-        public override List<string> ToCShapText()
+        public override List<string> GetCSharpTexts()
         {
-            throw new NotImplementedException();
+            List<string> texts = new List<string>();
+            return texts;
         }
     }
 }

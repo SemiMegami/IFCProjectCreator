@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace IFCProjectCreator
 {
-    public class IfcSelectType : IfcBase
+    public class IFCSelectType : IFCClass
     {
-        public List<IfcAttribute> Attributes;
+        public List<IFCAttribute> Attributes;
 
-        public IfcSelectType(IfcDataSet dataSet, string version) : base(dataSet, version)
+        public IFCSelectType(IFCDataSet dataSet, string version) : base(dataSet, version)
         {
-            Attributes = new List<IfcAttribute>();
+            Attributes = new List<IFCAttribute>();
         }
         public override void ReadEXP(StreamReader reader, string header)
         {
@@ -23,9 +23,40 @@ namespace IFCProjectCreator
             }      
         }
 
-        public override List<string> ToCShapText()
+
+
+        public override List<string> GetCSharpTexts()
         {
-            throw new NotImplementedException();
+            List<string> texts = GetCSharpSummaryTexts();
+            texts.Add(GetCSharpHeaderText());
+            
+            // constructor
+            texts.Add("\t{");
+          
+            texts.Add("\t}");
+
+            return texts;
+        }
+
+        protected override string GetCSharpTypeText()
+        {
+            return "interface";
+        }
+
+        /// <summary>
+        /// Get text as class or interface
+        /// </summary>
+        /// <returns></returns>
+        protected override string GetCSharpParentText()
+        {
+            if (ParentName.Length > 0)
+            {
+                return " : " + ParentName;
+            }
+            else
+            {
+                return "";
+            }
         }
     }
 }

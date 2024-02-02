@@ -6,24 +6,27 @@ using System.Threading.Tasks;
 
 namespace IFCProjectCreator
 {
-    public class IfcDataSet
+    public class IFCDataSet
     {
-        public List<IfcBasicType> BasicTypes { get; private set; }
-        public List<IfcBasicTypeList> BasicTypeLists { get; private set; }
-        public List<IfcEnumType> EnumTypes { get; private set; }
-        public List<IfcSelectType> SelectTypes { get; private set; }
-        public List<IfcEntity> Entities { get; private set; }
-        public List<IfcFunction> Functions { get; private set; }
-
+        public List<IFCBasicType> BasicTypes { get; private set; }
+        public List<IFCBasicTypeList> BasicTypeLists { get; private set; }
+        public List<IFCEnumType> EnumTypes { get; private set; }
+        public List<IFCSelectType> SelectTypes { get; private set; }
+        public List<IFCEntity> Entities { get; private set; }
+        public List<IFCFunction> Functions { get; private set; }
         public List<string> Versions { get; private set; }
-        public IfcDataSet()
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public IFCDataSet()
         {
-            BasicTypes = new List<IfcBasicType>();
-            BasicTypeLists = new List<IfcBasicTypeList>();
-            EnumTypes = new List<IfcEnumType> ();
-            SelectTypes = new List<IfcSelectType>();
-            Entities = new List<IfcEntity>();
-            Functions = new List<IfcFunction>();
+            BasicTypes = new List<IFCBasicType>();
+            BasicTypeLists = new List<IFCBasicTypeList>();
+            EnumTypes = new List<IFCEnumType> ();
+            SelectTypes = new List<IFCSelectType>();
+            Entities = new List<IFCEntity>();
+            Functions = new List<IFCFunction>();
             Versions = new List<string> ();
         }
 
@@ -40,47 +43,46 @@ namespace IFCProjectCreator
                 if (reader != null)
                 {
                     Versions.Add(version);
-                    string line = "";
+                    string line;
                     while (!reader.EndOfStream)
                     {
                         line = reader.ReadLine() ?? "";
                         string[] words = line.Split(' ');
-
-                       
+  
                         if (words.Length > 0)
                         {
-                            IfcBase item = null;
+                            IFCClass? item = null;
                             switch (words[0])
                             {
                                 case "TYPE":
                                     if (line.Contains("ENUMERATION OF"))
                                     {
-                                        item = new IfcEnumType(this, version);
-                                        EnumTypes.Add((IfcEnumType)item);
+                                        item = new IFCEnumType(this, version);
+                                        EnumTypes.Add((IFCEnumType)item);
                                     }
                                     else if (line.Contains(" = SELECT"))
                                     {
-                                        item = new IfcSelectType(this, version);
-                                        SelectTypes.Add((IfcSelectType)item);
+                                        item = new IFCSelectType(this, version);
+                                        SelectTypes.Add((IFCSelectType)item);
                                     }
                                     else if (line.Contains("]"))
                                     {
-                                        item = new IfcBasicTypeList(this, version);
-                                        BasicTypeLists.Add((IfcBasicTypeList)item);
+                                        item = new IFCBasicTypeList(this, version);
+                                        BasicTypeLists.Add((IFCBasicTypeList)item);
                                     }
                                     else
                                     {
-                                        item = new IfcBasicType(this, version);
-                                        BasicTypes.Add((IfcBasicType)item);
+                                        item = new IFCBasicType(this, version);
+                                        BasicTypes.Add((IFCBasicType)item);
                                     }
                                     break;
                                 case "ENTITY":
-                                    item = new IfcEntity(this, version);
-                                    Entities.Add((IfcEntity)item);
+                                    item = new IFCEntity(this, version);
+                                    Entities.Add((IFCEntity)item);
                                     break;
                                 case "FUNCTION":
-                                    item = new IfcFunction(this, version);
-                                    Functions.Add((IfcFunction)item);
+                                    item = new IFCFunction(this, version);
+                                    Functions.Add((IFCFunction)item);
                                     break;
                                 default:
                                     break;
@@ -92,40 +94,50 @@ namespace IFCProjectCreator
                 }
             }
             SetParent();
-            
         }
 
+        /// <summary>
+        /// Link parents
+        /// </summary>
         private void SetParent()
         {
-            List<IfcBase> items = GetItems();
+            List<IFCClass> items = GetItems();
 
             foreach(var selectType in SelectTypes)
             {
                 foreach (var subClassName in selectType.SubClassesNames)
                 {
-                    IfcBase subClass = items.First(e => e.Name == subClassName && e.VersionName == selectType.VersionName);
-                    subClass.InterfaceNames.Add(selectType.Name);
-                    subClass.ParentInterfaces.Add(selectType);
-                    selectType.SubClasses.Add(subClass);
+                    IFCClass subClass = items.First(e => e.Name == subClassName && e.VersionName == selectType.VersionName);
+                    if (!subClass.InterfaceNames.Contains(selectType.Name))
+                    {
+                        subClass.InterfaceNames.Add(selectType.Name);
+                        subClass.ParentInterfaces.Add(selectType);
+                        selectType.SubClasses.Add(subClass);
+
+                    }
                 }
             }
             foreach(var entity in Entities)
             {
-                List<IfcEntity> parents = Entities.Where(e => e.Name == entity.ParentName && e.VersionName == entity.VersionName).ToList();
+                List<IFCEntity> parents = Entities.Where(e => e.Name == entity.ParentName && e.VersionName == entity.VersionName).ToList();
                 if(parents.Count > 0)
                 {
-                    IfcEntity parent = parents.First();
+                    IFCEntity parent = parents.First();
                     entity.ParentClass = parent;
-                    parent.SubClassesNames.Add(entity.Name);
-                    parent.SubClasses.Add(entity);
+                    if (!parent.SubClassesNames.Contains(entity.Name))
+                    {
+                        parent.SubClassesNames.Add(entity.Name);
+                        parent.SubClasses.Add(entity);
+                    }
+              
                 }
             }
             foreach (var basicType in BasicTypes)
             {
-                List<IfcBasicType> parents = BasicTypes.Where(e => e.Name == basicType.ParentName && e.VersionName == basicType.VersionName).ToList();
+                List<IFCBasicType> parents = BasicTypes.Where(e => e.Name == basicType.ParentName && e.VersionName == basicType.VersionName).ToList();
                 if (parents.Count > 0)
                 {
-                    IfcBasicType parent = parents.First();
+                    IFCBasicType parent = parents.First();
                     basicType.ParentClass = parent;
                     parent.SubClassesNames.Add(basicType.Name);
                     parent.SubClasses.Add(basicType);
@@ -133,10 +145,13 @@ namespace IFCProjectCreator
             }
         }
     
-
-        public List<IfcBase> GetItems()
+        /// <summary>
+        /// Get all Items
+        /// </summary>
+        /// <returns></returns>
+        public List<IFCClass> GetItems()
         {
-            List<IfcBase> items = new List<IfcBase>();
+            List<IFCClass> items = new List<IFCClass>();
             items.AddRange(BasicTypes);
             items.AddRange(BasicTypeLists);
             items.AddRange(EnumTypes);
@@ -146,7 +161,12 @@ namespace IFCProjectCreator
             return items;
         }
 
-        public List<IfcBase> GetItems(string version) { 
+        /// <summary>
+        /// Get Item for Specific version
+        /// </summary>
+        /// <param name="version"></param>
+        /// <returns></returns>
+        public List<IFCClass> GetItems(string version) { 
             return GetItems().Where(e=> e.VersionName == version).ToList();
         }
     }

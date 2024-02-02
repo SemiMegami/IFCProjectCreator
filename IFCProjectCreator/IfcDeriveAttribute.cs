@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace IFCProjectCreator
 {
-    public class IfcDeriveAttribute : IfcAttribute
+    public class IFCDeriveAttribute : IFCAttribute
     {
         public string DeriveText { get; set; }
 
-        public IfcDeriveAttribute() : base()
+        public IFCDeriveAttribute() : base()
         {
             DeriveText = "";
         }
+        
     }
 }

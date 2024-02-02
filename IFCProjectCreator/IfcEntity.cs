@@ -7,29 +7,31 @@ using System.Threading.Tasks;
 
 namespace IFCProjectCreator
 {
-    public class IfcEntity : IfcBase
+    public class IFCEntity : IFCClass
     {
-        public bool IsAbstract;
-        public List<ParameterAttribute> ParameterClassAttributes;
-        public List<IfcDeriveAttribute> DeriveAttributes;
-        public List<IfcInverseAttribute> InverseAttributes;
-        public IfcEntity ParentClass;
+        public bool IsAbstract { get; set; }
+        public List<IFCParameterAttribute> ParameterClassAttributes { get; set; }
+        public List<IFCDeriveAttribute> DeriveAttributes { get; set; }
+        public List<IFCInverseAttribute> InverseAttributes { get; set; }
+        public List<IFCWhereAttribute> WhereAttributes { get; set; }
+        public IFCEntity? ParentClass { get; set; }
 
 
-        public IfcEntity(IfcDataSet dataSet, string version) : base(dataSet, version)
+        public IFCEntity(IFCDataSet dataSet, string version) : base(dataSet, version)
         {
             IsAbstract = false;
-            ParameterClassAttributes = new List<ParameterAttribute>();
-            DeriveAttributes = new List<IfcDeriveAttribute>();
-            InverseAttributes = new List<IfcInverseAttribute>();
+            ParameterClassAttributes = new List<IFCParameterAttribute>();
+            DeriveAttributes = new List<IFCDeriveAttribute>();
+            InverseAttributes = new List<IFCInverseAttribute>();
+            WhereAttributes = new List<IFCWhereAttribute>();
         }
 
       
-        List<ParameterAttribute> Attributes
+        List<IFCParameterAttribute> Attributes
         {
             get
             {
-                List <ParameterAttribute> attributes = new List <ParameterAttribute> ();
+                List <IFCParameterAttribute> attributes = new List <IFCParameterAttribute> ();
                 if (ParentClass != null)
                 {
                     attributes.AddRange(ParentClass.Attributes);
@@ -73,10 +75,10 @@ namespace IFCProjectCreator
                 {
                     if (AttributeType == "")
                     {
-                        ParameterAttribute ifcAttribute = new ParameterAttribute();
-                        ifcAttribute.IsOptional = line.Contains("OPTIONAL");
-                        SetAttributeType(ifcAttribute, line, nW);
-                        ParameterClassAttributes.Add(ifcAttribute);
+                        IFCParameterAttribute IFCAttribute = new IFCParameterAttribute();
+                        IFCAttribute.IsOptional = line.Contains("OPTIONAL");
+                        SetAttributeType(IFCAttribute, line, nW);
+                        ParameterClassAttributes.Add(IFCAttribute);
                     }
                     else if (AttributeType == "DERIVE")
                     {
@@ -88,10 +90,10 @@ namespace IFCProjectCreator
                                 splitIndex = i;
                             }
                         }
-                        IfcDeriveAttribute ifcAttribute = new IfcDeriveAttribute();
-                        ifcAttribute.DeriveText = line.Split(" := ")[1];
-                        SetAttributeType(ifcAttribute, line, splitIndex);
-                        DeriveAttributes.Add(ifcAttribute);
+                        IFCDeriveAttribute IFCAttribute = new IFCDeriveAttribute();
+                        IFCAttribute.DeriveText = line.Split(" := ")[1];
+                        SetAttributeType(IFCAttribute, line, splitIndex);
+                        DeriveAttributes.Add(IFCAttribute);
                     }
                     else if (AttributeType == "INVERSE")
                     {
@@ -103,23 +105,23 @@ namespace IFCProjectCreator
                                 splitIndex = i;
                             }
                         }
-                        IfcInverseAttribute ifcAttribute = new IfcInverseAttribute();
-                        SetAttributeType(ifcAttribute, line, splitIndex);
-                        ifcAttribute.RelatedAttributeName = words[nW - 1].Replace(";", "");
-                        InverseAttributes.Add(ifcAttribute);
+                        IFCInverseAttribute IFCAttribute = new IFCInverseAttribute();
+                        SetAttributeType(IFCAttribute, line, splitIndex);
+                        IFCAttribute.RelatedAttributeName = words[nW - 1].Replace(";", "");
+                        InverseAttributes.Add(IFCAttribute);
                     }
                 }
             }
         }
 
 
-        private void SetAttributeType(IfcAttribute ifcAttribute, string line, int splitIndex)
+        private void SetAttributeType(IFCAttribute IFCAttribute, string line, int splitIndex)
         {
 
             string[] words = line.Replace("\t", "").Split(" ");
 
-            ifcAttribute.Name = words[0];
-            ifcAttribute.TypeName = words[splitIndex - 1].Replace(";","");
+            IFCAttribute.Name = words[0];
+            IFCAttribute.TypeName = words[splitIndex - 1].Replace(";","");
             int ofCount = 0;
 
             for (int i = 0; i < splitIndex; i++)
@@ -133,40 +135,55 @@ namespace IFCProjectCreator
             switch (ofCount)
             {
                 case 0:
-                    ifcAttribute.AttributeType = IfcAttributeType.SINGLE;
+                    IFCAttribute.AttributeType = IFCAttributeType.SINGLE;
                     break;
                 case 1:
-                    ifcAttribute.AttributeType = IfcAttributeType.LIST;
+                    IFCAttribute.AttributeType = IFCAttributeType.LIST;
                     break;
                 case 2:
-                    ifcAttribute.AttributeType = IfcAttributeType.LISTLIST;
+                    IFCAttribute.AttributeType = IFCAttributeType.LISTLIST;
                     break;
             }
             if (ofCount > 0)
             {
                 if (line.Contains("ARRAY"))
                 {
-                    ifcAttribute.Aggregation = IfcAggregation.ARRAY;
+                    IFCAttribute.Aggregation = IFCAggregation.ARRAY;
                 }
                 if (line.Contains("BAG"))
                 {
-                    ifcAttribute.Aggregation = IfcAggregation.BAG;
+                    IFCAttribute.Aggregation = IFCAggregation.BAG;
                 }
                 if (line.Contains("LIST"))
                 {
-                    ifcAttribute.Aggregation = IfcAggregation.LIST;
+                    IFCAttribute.Aggregation = IFCAggregation.LIST;
                 }
                 if (line.Contains("SET"))
                 {
-                    ifcAttribute.Aggregation = IfcAggregation.SET;
+                    IFCAttribute.Aggregation = IFCAggregation.SET;
                 }
             }
         }
-        public override List<string> ToCShapText()
+        public override List<string> GetCSharpTexts()
         {
-            throw new NotImplementedException();
+            List<string> texts = GetCSharpSummaryTexts();
+            texts.Add(GetCSharpHeaderText());
+           
+            // constructor
+            texts.Add("\t{");
+            foreach(var attribute in ParameterClassAttributes)
+            {
+                texts.AddRange(attribute.GetCSharpText());
+            }
+            texts.Add("\t}");
+
+            return texts;
         }
 
-       
+        protected override string GetCSharpTypeText()
+        {
+            return IsAbstract ? "abstract class" : "class";
+        }
+
     }
 }
