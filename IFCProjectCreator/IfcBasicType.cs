@@ -1,23 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IFCProjectCreator
+﻿namespace IFCProjectCreator
 {
     public class IFCBasicType : IFCClass
     {
-        protected static Dictionary<string, string> CSharpDataTypes = new Dictionary<string, string>()
-        {
-            { "REAL", "double" },
-            { "INTEGER", "int" },
-            { "NUMBER", "double" },
-            { "LOGICAL", "bool" },
-            { "BOOLEAN", "bool" },
-            { "BINARY", "int" },
-            { "STRING", "string" },
-        };
+    
         public IFCBasicType? ParentClass { get; set; }
         public List<IFCWhereAttribute> WhereAttributes { get; set; }
         public IFCBasicType(IFCDataSet dataSet, string version) : base(dataSet, version)
@@ -30,7 +15,7 @@ namespace IFCProjectCreator
             string[] words = header.Split(" ");
             foreach (string word in words)
             {
-                foreach (var key in CSharpDataTypes.Keys)
+                foreach (var key in DataSet.CSharpBasicDataTypes.Keys)
                 {
                     if(word.Contains(key))
                     {
@@ -75,7 +60,7 @@ namespace IFCProjectCreator
         {
             if (ParentClass == null)
             {
-                return CSharpDataTypes[ParentName];
+                return DataSet.CSharpBasicDataTypes[ParentName];
             }
             else
             {

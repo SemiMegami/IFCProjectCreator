@@ -1,14 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.SqlServer.Management.XEvent;
+using System;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IFCProjectCreator
 {
     public class IFCDataSet
     {
+        public readonly Dictionary<string, string> CSharpBasicDataTypes = new Dictionary<string, string>()
+        {
+            { "REAL", "double" },
+            { "INTEGER", "int" },
+            { "NUMBER", "double" },
+            { "LOGICAL", "bool" },
+            { "BOOLEAN", "bool" },
+            { "BINARY", "int" },
+            { "STRING", "string" },
+        };
         public List<IFCBasicType> BasicTypes { get; private set; }
         public List<IFCBasicTypeList> BasicTypeLists { get; private set; }
         public List<IFCEnumType> EnumTypes { get; private set; }
@@ -175,14 +182,21 @@ namespace IFCProjectCreator
         /// Write C# classes file in specificed folder
         /// </summary>
         /// <param name="folderDir"></param>
-        public void WriteCSharp(string folderDir)
+        public void WriteCSharp(string folderDir, string nameSpaceName)
         {
-
+            WtiteCSharpModel(folderDir, nameSpaceName);
+            WtiteCSharpEntity(folderDir, nameSpaceName);
+            WtiteCSharpBasicType(folderDir, nameSpaceName);
             foreach (var version in Versions)
             {
                 using (StreamWriter writer = new StreamWriter(folderDir + version + ".cs"))
                 {
                     var items = GetItems(version);
+
+                    writer.WriteLine("using System;");
+                    writer.WriteLine("using System.Collections.Generic;");
+                    writer.WriteLine("namespace " + nameSpaceName + "." + version + ";");
+                    writer.WriteLine("{");
                     foreach (var item in items)
                     {
                         var texts = item.GetCSharpTexts();
@@ -191,10 +205,63 @@ namespace IFCProjectCreator
                             writer.WriteLine(text);
                         }
                     }
+                    writer.WriteLine("}");
                 }
             }
-
-            
         }
+
+        private void WtiteCSharpModel(string folderDir, string nameSpaceName)
+        {
+            using (StreamWriter writer = new StreamWriter(folderDir + nameSpaceName + "IFCMODEL.cs"))
+            {
+                writer.WriteLine("using System;");
+                writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("namespace " + nameSpaceName + ";");
+                writer.WriteLine("{");
+                writer.Write("\t public class IFCMODEL");
+                writer.WriteLine("\t{");
+                writer.WriteLine("\t}");
+                writer.WriteLine("}");
+            }
+        }
+
+        private void WtiteCSharpEntity(string folderDir, string nameSpaceName)
+        {
+            using (StreamWriter writer = new StreamWriter(folderDir + nameSpaceName + "IFCENTITY.cs"))
+            {
+                writer.WriteLine("using System;");
+                writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("namespace " + nameSpaceName + ";");
+                writer.WriteLine("{");
+                writer.Write("\t public class IFCENTITY");
+                writer.WriteLine("\t{");
+                writer.WriteLine("\t}");
+                writer.WriteLine("}");
+            }
+        }
+
+        private void WtiteCSharpBasicType(string folderDir, string nameSpaceName)
+        {
+            using (StreamWriter writer = new StreamWriter(folderDir + nameSpaceName + "IFCBASIC.cs"))
+            {
+                writer.WriteLine("using System;");
+                writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("namespace " + nameSpaceName + ";");
+                writer.WriteLine("{");
+                foreach (var data in CSharpBasicDataTypes)
+                {
+                    string name = data.Key;
+                    string cSharpText = data.Value;
+                    writer.WriteLine("\tpublic class " + data.Key);
+                    writer.WriteLine("\t{");
+                    writer.WriteLine("\t\tpublic static implicit operator " + name + "(" + cSharpText + " value) { return new " + name + "(" + cSharpText + ");}");
+                    writer.WriteLine("\t\tpublic static implicit operator " + cSharpText + "(" + name + " value) { return value.Value;}");
+
+                    writer.WriteLine("\t}");
+                }
+                writer.WriteLine("}");
+            }
+        }
+
     }
 }

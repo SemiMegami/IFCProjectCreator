@@ -231,6 +231,16 @@ namespace IFCProjectCreator
         {
             return IsAbstract ? "abstract class" : "class";
         }
-
+        protected override string GetCSharpParentText()
+        {
+            if (ParentName.Length > 0)
+            {
+                return " : " + ParentName;
+            }
+            else
+            {
+                return " : " + "IFCENTITY";
+            }
+        }
     }
 }

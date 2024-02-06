@@ -136,11 +136,11 @@ namespace IFCProjectCreator
         {
             if (ParentName.Length > 0)
             {
-                return " : " + ParentName; ;
+                return " : " + ParentName;
             }
             else
             {
-                return "ENTITY";
+                return "";
             }
         }
 

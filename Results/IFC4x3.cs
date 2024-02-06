@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+namespace IFC.IFC4x3;
+{
 	/// <summary>
 	/// TYPE IfcAbsorbedDoseMeasure = REAL;
 	/// <para>TYPE IfcAbsorbedDoseMeasure = REAL;</para>
@@ -1565,6 +1569,6670 @@
 		public static implicit operator string(IfcWellKnownTextLiteral value) { return value.Value;}
 	}
 	/// <summary>
+	/// TYPE IfcActionRequestTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcActionRequestTypeEnum = ENUMERATION OF</para>
+	/// <para>	(EMAIL</para>
+	/// <para>	,FAX</para>
+	/// <para>	,PHONE</para>
+	/// <para>	,POST</para>
+	/// <para>	,VERBAL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcActionRequestTypeEnum
+	{
+		public static string EMAIL { get {return "EMAIL";} }
+		public static string FAX { get {return "FAX";} }
+		public static string PHONE { get {return "PHONE";} }
+		public static string POST { get {return "POST";} }
+		public static string VERBAL { get {return "VERBAL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcActionRequestTypeEnum(string value) { return new IfcActionRequestTypeEnum(string);}
+		public static implicit operator string(IfcActionRequestTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcActionSourceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcActionSourceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BRAKES</para>
+	/// <para>	,BUOYANCY</para>
+	/// <para>	,COMPLETION_G1</para>
+	/// <para>	,CREEP</para>
+	/// <para>	,CURRENT</para>
+	/// <para>	,DEAD_LOAD_G</para>
+	/// <para>	,EARTHQUAKE_E</para>
+	/// <para>	,ERECTION</para>
+	/// <para>	,FIRE</para>
+	/// <para>	,ICE</para>
+	/// <para>	,IMPACT</para>
+	/// <para>	,IMPULSE</para>
+	/// <para>	,LACK_OF_FIT</para>
+	/// <para>	,LIVE_LOAD_Q</para>
+	/// <para>	,PRESTRESSING_P</para>
+	/// <para>	,PROPPING</para>
+	/// <para>	,RAIN</para>
+	/// <para>	,SETTLEMENT_U</para>
+	/// <para>	,SHRINKAGE</para>
+	/// <para>	,SNOW_S</para>
+	/// <para>	,SYSTEM_IMPERFECTION</para>
+	/// <para>	,TEMPERATURE_T</para>
+	/// <para>	,TRANSPORT</para>
+	/// <para>	,WAVE</para>
+	/// <para>	,WIND_W</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcActionSourceTypeEnum
+	{
+		public static string BRAKES { get {return "BRAKES";} }
+		public static string BUOYANCY { get {return "BUOYANCY";} }
+		public static string COMPLETION_G1 { get {return "COMPLETION_G1";} }
+		public static string CREEP { get {return "CREEP";} }
+		public static string CURRENT { get {return "CURRENT";} }
+		public static string DEAD_LOAD_G { get {return "DEAD_LOAD_G";} }
+		public static string EARTHQUAKE_E { get {return "EARTHQUAKE_E";} }
+		public static string ERECTION { get {return "ERECTION";} }
+		public static string FIRE { get {return "FIRE";} }
+		public static string ICE { get {return "ICE";} }
+		public static string IMPACT { get {return "IMPACT";} }
+		public static string IMPULSE { get {return "IMPULSE";} }
+		public static string LACK_OF_FIT { get {return "LACK_OF_FIT";} }
+		public static string LIVE_LOAD_Q { get {return "LIVE_LOAD_Q";} }
+		public static string PRESTRESSING_P { get {return "PRESTRESSING_P";} }
+		public static string PROPPING { get {return "PROPPING";} }
+		public static string RAIN { get {return "RAIN";} }
+		public static string SETTLEMENT_U { get {return "SETTLEMENT_U";} }
+		public static string SHRINKAGE { get {return "SHRINKAGE";} }
+		public static string SNOW_S { get {return "SNOW_S";} }
+		public static string SYSTEM_IMPERFECTION { get {return "SYSTEM_IMPERFECTION";} }
+		public static string TEMPERATURE_T { get {return "TEMPERATURE_T";} }
+		public static string TRANSPORT { get {return "TRANSPORT";} }
+		public static string WAVE { get {return "WAVE";} }
+		public static string WIND_W { get {return "WIND_W";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcActionSourceTypeEnum(string value) { return new IfcActionSourceTypeEnum(string);}
+		public static implicit operator string(IfcActionSourceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcActionTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcActionTypeEnum = ENUMERATION OF</para>
+	/// <para>	(EXTRAORDINARY_A</para>
+	/// <para>	,PERMANENT_G</para>
+	/// <para>	,VARIABLE_Q</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcActionTypeEnum
+	{
+		public static string EXTRAORDINARY_A { get {return "EXTRAORDINARY_A";} }
+		public static string PERMANENT_G { get {return "PERMANENT_G";} }
+		public static string VARIABLE_Q { get {return "VARIABLE_Q";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcActionTypeEnum(string value) { return new IfcActionTypeEnum(string);}
+		public static implicit operator string(IfcActionTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcActuatorTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcActuatorTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ELECTRICACTUATOR</para>
+	/// <para>	,HANDOPERATEDACTUATOR</para>
+	/// <para>	,HYDRAULICACTUATOR</para>
+	/// <para>	,PNEUMATICACTUATOR</para>
+	/// <para>	,THERMOSTATICACTUATOR</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcActuatorTypeEnum
+	{
+		public static string ELECTRICACTUATOR { get {return "ELECTRICACTUATOR";} }
+		public static string HANDOPERATEDACTUATOR { get {return "HANDOPERATEDACTUATOR";} }
+		public static string HYDRAULICACTUATOR { get {return "HYDRAULICACTUATOR";} }
+		public static string PNEUMATICACTUATOR { get {return "PNEUMATICACTUATOR";} }
+		public static string THERMOSTATICACTUATOR { get {return "THERMOSTATICACTUATOR";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcActuatorTypeEnum(string value) { return new IfcActuatorTypeEnum(string);}
+		public static implicit operator string(IfcActuatorTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAddressTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAddressTypeEnum = ENUMERATION OF</para>
+	/// <para>	(DISTRIBUTIONPOINT</para>
+	/// <para>	,HOME</para>
+	/// <para>	,OFFICE</para>
+	/// <para>	,SITE</para>
+	/// <para>	,USERDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAddressTypeEnum
+	{
+		public static string DISTRIBUTIONPOINT { get {return "DISTRIBUTIONPOINT";} }
+		public static string HOME { get {return "HOME";} }
+		public static string OFFICE { get {return "OFFICE";} }
+		public static string SITE { get {return "SITE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static implicit operator IfcAddressTypeEnum(string value) { return new IfcAddressTypeEnum(string);}
+		public static implicit operator string(IfcAddressTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAirTerminalBoxTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAirTerminalBoxTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CONSTANTFLOW</para>
+	/// <para>	,VARIABLEFLOWPRESSUREDEPENDANT</para>
+	/// <para>	,VARIABLEFLOWPRESSUREINDEPENDANT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAirTerminalBoxTypeEnum
+	{
+		public static string CONSTANTFLOW { get {return "CONSTANTFLOW";} }
+		public static string VARIABLEFLOWPRESSUREDEPENDANT { get {return "VARIABLEFLOWPRESSUREDEPENDANT";} }
+		public static string VARIABLEFLOWPRESSUREINDEPENDANT { get {return "VARIABLEFLOWPRESSUREINDEPENDANT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcAirTerminalBoxTypeEnum(string value) { return new IfcAirTerminalBoxTypeEnum(string);}
+		public static implicit operator string(IfcAirTerminalBoxTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAirTerminalTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAirTerminalTypeEnum = ENUMERATION OF</para>
+	/// <para>	(DIFFUSER</para>
+	/// <para>	,GRILLE</para>
+	/// <para>	,LOUVRE</para>
+	/// <para>	,REGISTER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAirTerminalTypeEnum
+	{
+		public static string DIFFUSER { get {return "DIFFUSER";} }
+		public static string GRILLE { get {return "GRILLE";} }
+		public static string LOUVRE { get {return "LOUVRE";} }
+		public static string REGISTER { get {return "REGISTER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcAirTerminalTypeEnum(string value) { return new IfcAirTerminalTypeEnum(string);}
+		public static implicit operator string(IfcAirTerminalTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAirToAirHeatRecoveryTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAirToAirHeatRecoveryTypeEnum = ENUMERATION OF</para>
+	/// <para>	(FIXEDPLATECOUNTERFLOWEXCHANGER</para>
+	/// <para>	,FIXEDPLATECROSSFLOWEXCHANGER</para>
+	/// <para>	,FIXEDPLATEPARALLELFLOWEXCHANGER</para>
+	/// <para>	,HEATPIPE</para>
+	/// <para>	,ROTARYWHEEL</para>
+	/// <para>	,RUNAROUNDCOILLOOP</para>
+	/// <para>	,THERMOSIPHONCOILTYPEHEATEXCHANGERS</para>
+	/// <para>	,THERMOSIPHONSEALEDTUBEHEATEXCHANGERS</para>
+	/// <para>	,TWINTOWERENTHALPYRECOVERYLOOPS</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAirToAirHeatRecoveryTypeEnum
+	{
+		public static string FIXEDPLATECOUNTERFLOWEXCHANGER { get {return "FIXEDPLATECOUNTERFLOWEXCHANGER";} }
+		public static string FIXEDPLATECROSSFLOWEXCHANGER { get {return "FIXEDPLATECROSSFLOWEXCHANGER";} }
+		public static string FIXEDPLATEPARALLELFLOWEXCHANGER { get {return "FIXEDPLATEPARALLELFLOWEXCHANGER";} }
+		public static string HEATPIPE { get {return "HEATPIPE";} }
+		public static string ROTARYWHEEL { get {return "ROTARYWHEEL";} }
+		public static string RUNAROUNDCOILLOOP { get {return "RUNAROUNDCOILLOOP";} }
+		public static string THERMOSIPHONCOILTYPEHEATEXCHANGERS { get {return "THERMOSIPHONCOILTYPEHEATEXCHANGERS";} }
+		public static string THERMOSIPHONSEALEDTUBEHEATEXCHANGERS { get {return "THERMOSIPHONSEALEDTUBEHEATEXCHANGERS";} }
+		public static string TWINTOWERENTHALPYRECOVERYLOOPS { get {return "TWINTOWERENTHALPYRECOVERYLOOPS";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcAirToAirHeatRecoveryTypeEnum(string value) { return new IfcAirToAirHeatRecoveryTypeEnum(string);}
+		public static implicit operator string(IfcAirToAirHeatRecoveryTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAlarmTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAlarmTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BELL</para>
+	/// <para>	,BREAKGLASSBUTTON</para>
+	/// <para>	,LIGHT</para>
+	/// <para>	,MANUALPULLBOX</para>
+	/// <para>	,RAILWAYCROCODILE</para>
+	/// <para>	,RAILWAYDETONATOR</para>
+	/// <para>	,SIREN</para>
+	/// <para>	,WHISTLE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAlarmTypeEnum
+	{
+		public static string BELL { get {return "BELL";} }
+		public static string BREAKGLASSBUTTON { get {return "BREAKGLASSBUTTON";} }
+		public static string LIGHT { get {return "LIGHT";} }
+		public static string MANUALPULLBOX { get {return "MANUALPULLBOX";} }
+		public static string RAILWAYCROCODILE { get {return "RAILWAYCROCODILE";} }
+		public static string RAILWAYDETONATOR { get {return "RAILWAYDETONATOR";} }
+		public static string SIREN { get {return "SIREN";} }
+		public static string WHISTLE { get {return "WHISTLE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcAlarmTypeEnum(string value) { return new IfcAlarmTypeEnum(string);}
+		public static implicit operator string(IfcAlarmTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAlignmentCantSegmentTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAlignmentCantSegmentTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BLOSSCURVE</para>
+	/// <para>	,CONSTANTCANT</para>
+	/// <para>	,COSINECURVE</para>
+	/// <para>	,HELMERTCURVE</para>
+	/// <para>	,LINEARTRANSITION</para>
+	/// <para>	,SINECURVE</para>
+	/// <para>	,VIENNESEBEND);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAlignmentCantSegmentTypeEnum
+	{
+		public static string BLOSSCURVE { get {return "BLOSSCURVE";} }
+		public static string CONSTANTCANT { get {return "CONSTANTCANT";} }
+		public static string COSINECURVE { get {return "COSINECURVE";} }
+		public static string HELMERTCURVE { get {return "HELMERTCURVE";} }
+		public static string LINEARTRANSITION { get {return "LINEARTRANSITION";} }
+		public static string SINECURVE { get {return "SINECURVE";} }
+		public static string VIENNESEBEND { get {return "VIENNESEBEND";} }
+		public static implicit operator IfcAlignmentCantSegmentTypeEnum(string value) { return new IfcAlignmentCantSegmentTypeEnum(string);}
+		public static implicit operator string(IfcAlignmentCantSegmentTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAlignmentHorizontalSegmentTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAlignmentHorizontalSegmentTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BLOSSCURVE</para>
+	/// <para>	,CIRCULARARC</para>
+	/// <para>	,CLOTHOID</para>
+	/// <para>	,COSINECURVE</para>
+	/// <para>	,CUBIC</para>
+	/// <para>	,HELMERTCURVE</para>
+	/// <para>	,LINE</para>
+	/// <para>	,SINECURVE</para>
+	/// <para>	,VIENNESEBEND);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAlignmentHorizontalSegmentTypeEnum
+	{
+		public static string BLOSSCURVE { get {return "BLOSSCURVE";} }
+		public static string CIRCULARARC { get {return "CIRCULARARC";} }
+		public static string CLOTHOID { get {return "CLOTHOID";} }
+		public static string COSINECURVE { get {return "COSINECURVE";} }
+		public static string CUBIC { get {return "CUBIC";} }
+		public static string HELMERTCURVE { get {return "HELMERTCURVE";} }
+		public static string LINE { get {return "LINE";} }
+		public static string SINECURVE { get {return "SINECURVE";} }
+		public static string VIENNESEBEND { get {return "VIENNESEBEND";} }
+		public static implicit operator IfcAlignmentHorizontalSegmentTypeEnum(string value) { return new IfcAlignmentHorizontalSegmentTypeEnum(string);}
+		public static implicit operator string(IfcAlignmentHorizontalSegmentTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAlignmentTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAlignmentTypeEnum = ENUMERATION OF</para>
+	/// <para>	(USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAlignmentTypeEnum
+	{
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcAlignmentTypeEnum(string value) { return new IfcAlignmentTypeEnum(string);}
+		public static implicit operator string(IfcAlignmentTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAlignmentVerticalSegmentTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAlignmentVerticalSegmentTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CIRCULARARC</para>
+	/// <para>	,CLOTHOID</para>
+	/// <para>	,CONSTANTGRADIENT</para>
+	/// <para>	,PARABOLICARC);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAlignmentVerticalSegmentTypeEnum
+	{
+		public static string CIRCULARARC { get {return "CIRCULARARC";} }
+		public static string CLOTHOID { get {return "CLOTHOID";} }
+		public static string CONSTANTGRADIENT { get {return "CONSTANTGRADIENT";} }
+		public static string PARABOLICARC { get {return "PARABOLICARC";} }
+		public static implicit operator IfcAlignmentVerticalSegmentTypeEnum(string value) { return new IfcAlignmentVerticalSegmentTypeEnum(string);}
+		public static implicit operator string(IfcAlignmentVerticalSegmentTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAnalysisModelTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAnalysisModelTypeEnum = ENUMERATION OF</para>
+	/// <para>	(IN_PLANE_LOADING_2D</para>
+	/// <para>	,LOADING_3D</para>
+	/// <para>	,OUT_PLANE_LOADING_2D</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAnalysisModelTypeEnum
+	{
+		public static string IN_PLANE_LOADING_2D { get {return "IN_PLANE_LOADING_2D";} }
+		public static string LOADING_3D { get {return "LOADING_3D";} }
+		public static string OUT_PLANE_LOADING_2D { get {return "OUT_PLANE_LOADING_2D";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcAnalysisModelTypeEnum(string value) { return new IfcAnalysisModelTypeEnum(string);}
+		public static implicit operator string(IfcAnalysisModelTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAnalysisTheoryTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAnalysisTheoryTypeEnum = ENUMERATION OF</para>
+	/// <para>	(FIRST_ORDER_THEORY</para>
+	/// <para>	,FULL_NONLINEAR_THEORY</para>
+	/// <para>	,SECOND_ORDER_THEORY</para>
+	/// <para>	,THIRD_ORDER_THEORY</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAnalysisTheoryTypeEnum
+	{
+		public static string FIRST_ORDER_THEORY { get {return "FIRST_ORDER_THEORY";} }
+		public static string FULL_NONLINEAR_THEORY { get {return "FULL_NONLINEAR_THEORY";} }
+		public static string SECOND_ORDER_THEORY { get {return "SECOND_ORDER_THEORY";} }
+		public static string THIRD_ORDER_THEORY { get {return "THIRD_ORDER_THEORY";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcAnalysisTheoryTypeEnum(string value) { return new IfcAnalysisTheoryTypeEnum(string);}
+		public static implicit operator string(IfcAnalysisTheoryTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAnnotationTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAnnotationTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CONTOURLINE</para>
+	/// <para>	,DIMENSION</para>
+	/// <para>	,ISOBAR</para>
+	/// <para>	,ISOLUX</para>
+	/// <para>	,ISOTHERM</para>
+	/// <para>	,LEADER</para>
+	/// <para>	,SURVEY</para>
+	/// <para>	,SYMBOL</para>
+	/// <para>	,TEXT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAnnotationTypeEnum
+	{
+		public static string CONTOURLINE { get {return "CONTOURLINE";} }
+		public static string DIMENSION { get {return "DIMENSION";} }
+		public static string ISOBAR { get {return "ISOBAR";} }
+		public static string ISOLUX { get {return "ISOLUX";} }
+		public static string ISOTHERM { get {return "ISOTHERM";} }
+		public static string LEADER { get {return "LEADER";} }
+		public static string SURVEY { get {return "SURVEY";} }
+		public static string SYMBOL { get {return "SYMBOL";} }
+		public static string TEXT { get {return "TEXT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcAnnotationTypeEnum(string value) { return new IfcAnnotationTypeEnum(string);}
+		public static implicit operator string(IfcAnnotationTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcArithmeticOperatorEnum = ENUMERATION OF
+	/// <para>TYPE IfcArithmeticOperatorEnum = ENUMERATION OF</para>
+	/// <para>	(ADD</para>
+	/// <para>	,DIVIDE</para>
+	/// <para>	,MODULO</para>
+	/// <para>	,MULTIPLY</para>
+	/// <para>	,SUBTRACT);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcArithmeticOperatorEnum
+	{
+		public static string ADD { get {return "ADD";} }
+		public static string DIVIDE { get {return "DIVIDE";} }
+		public static string MODULO { get {return "MODULO";} }
+		public static string MULTIPLY { get {return "MULTIPLY";} }
+		public static string SUBTRACT { get {return "SUBTRACT";} }
+		public static implicit operator IfcArithmeticOperatorEnum(string value) { return new IfcArithmeticOperatorEnum(string);}
+		public static implicit operator string(IfcArithmeticOperatorEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAssemblyPlaceEnum = ENUMERATION OF
+	/// <para>TYPE IfcAssemblyPlaceEnum = ENUMERATION OF</para>
+	/// <para>	(FACTORY</para>
+	/// <para>	,SITE</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAssemblyPlaceEnum
+	{
+		public static string FACTORY { get {return "FACTORY";} }
+		public static string SITE { get {return "SITE";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcAssemblyPlaceEnum(string value) { return new IfcAssemblyPlaceEnum(string);}
+		public static implicit operator string(IfcAssemblyPlaceEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcAudioVisualApplianceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcAudioVisualApplianceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AMPLIFIER</para>
+	/// <para>	,CAMERA</para>
+	/// <para>	,COMMUNICATIONTERMINAL</para>
+	/// <para>	,DISPLAY</para>
+	/// <para>	,MICROPHONE</para>
+	/// <para>	,PLAYER</para>
+	/// <para>	,PROJECTOR</para>
+	/// <para>	,RECEIVER</para>
+	/// <para>	,RECORDINGEQUIPMENT</para>
+	/// <para>	,SPEAKER</para>
+	/// <para>	,SWITCHER</para>
+	/// <para>	,TELEPHONE</para>
+	/// <para>	,TUNER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcAudioVisualApplianceTypeEnum
+	{
+		public static string AMPLIFIER { get {return "AMPLIFIER";} }
+		public static string CAMERA { get {return "CAMERA";} }
+		public static string COMMUNICATIONTERMINAL { get {return "COMMUNICATIONTERMINAL";} }
+		public static string DISPLAY { get {return "DISPLAY";} }
+		public static string MICROPHONE { get {return "MICROPHONE";} }
+		public static string PLAYER { get {return "PLAYER";} }
+		public static string PROJECTOR { get {return "PROJECTOR";} }
+		public static string RECEIVER { get {return "RECEIVER";} }
+		public static string RECORDINGEQUIPMENT { get {return "RECORDINGEQUIPMENT";} }
+		public static string SPEAKER { get {return "SPEAKER";} }
+		public static string SWITCHER { get {return "SWITCHER";} }
+		public static string TELEPHONE { get {return "TELEPHONE";} }
+		public static string TUNER { get {return "TUNER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcAudioVisualApplianceTypeEnum(string value) { return new IfcAudioVisualApplianceTypeEnum(string);}
+		public static implicit operator string(IfcAudioVisualApplianceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBSplineCurveForm = ENUMERATION OF
+	/// <para>TYPE IfcBSplineCurveForm = ENUMERATION OF</para>
+	/// <para>	(CIRCULAR_ARC</para>
+	/// <para>	,ELLIPTIC_ARC</para>
+	/// <para>	,HYPERBOLIC_ARC</para>
+	/// <para>	,PARABOLIC_ARC</para>
+	/// <para>	,POLYLINE_FORM</para>
+	/// <para>	,UNSPECIFIED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBSplineCurveForm
+	{
+		public static string CIRCULAR_ARC { get {return "CIRCULAR_ARC";} }
+		public static string ELLIPTIC_ARC { get {return "ELLIPTIC_ARC";} }
+		public static string HYPERBOLIC_ARC { get {return "HYPERBOLIC_ARC";} }
+		public static string PARABOLIC_ARC { get {return "PARABOLIC_ARC";} }
+		public static string POLYLINE_FORM { get {return "POLYLINE_FORM";} }
+		public static string UNSPECIFIED { get {return "UNSPECIFIED";} }
+		public static implicit operator IfcBSplineCurveForm(string value) { return new IfcBSplineCurveForm(string);}
+		public static implicit operator string(IfcBSplineCurveForm value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBSplineSurfaceForm = ENUMERATION OF
+	/// <para>TYPE IfcBSplineSurfaceForm = ENUMERATION OF</para>
+	/// <para>	(CONICAL_SURF</para>
+	/// <para>	,CYLINDRICAL_SURF</para>
+	/// <para>	,GENERALISED_CONE</para>
+	/// <para>	,PLANE_SURF</para>
+	/// <para>	,QUADRIC_SURF</para>
+	/// <para>	,RULED_SURF</para>
+	/// <para>	,SPHERICAL_SURF</para>
+	/// <para>	,SURF_OF_LINEAR_EXTRUSION</para>
+	/// <para>	,SURF_OF_REVOLUTION</para>
+	/// <para>	,TOROIDAL_SURF</para>
+	/// <para>	,UNSPECIFIED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBSplineSurfaceForm
+	{
+		public static string CONICAL_SURF { get {return "CONICAL_SURF";} }
+		public static string CYLINDRICAL_SURF { get {return "CYLINDRICAL_SURF";} }
+		public static string GENERALISED_CONE { get {return "GENERALISED_CONE";} }
+		public static string PLANE_SURF { get {return "PLANE_SURF";} }
+		public static string QUADRIC_SURF { get {return "QUADRIC_SURF";} }
+		public static string RULED_SURF { get {return "RULED_SURF";} }
+		public static string SPHERICAL_SURF { get {return "SPHERICAL_SURF";} }
+		public static string SURF_OF_LINEAR_EXTRUSION { get {return "SURF_OF_LINEAR_EXTRUSION";} }
+		public static string SURF_OF_REVOLUTION { get {return "SURF_OF_REVOLUTION";} }
+		public static string TOROIDAL_SURF { get {return "TOROIDAL_SURF";} }
+		public static string UNSPECIFIED { get {return "UNSPECIFIED";} }
+		public static implicit operator IfcBSplineSurfaceForm(string value) { return new IfcBSplineSurfaceForm(string);}
+		public static implicit operator string(IfcBSplineSurfaceForm value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBeamTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcBeamTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BEAM</para>
+	/// <para>	,CORNICE</para>
+	/// <para>	,DIAPHRAGM</para>
+	/// <para>	,EDGEBEAM</para>
+	/// <para>	,GIRDER_SEGMENT</para>
+	/// <para>	,HATSTONE</para>
+	/// <para>	,HOLLOWCORE</para>
+	/// <para>	,JOIST</para>
+	/// <para>	,LINTEL</para>
+	/// <para>	,PIERCAP</para>
+	/// <para>	,SPANDREL</para>
+	/// <para>	,T_BEAM</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBeamTypeEnum
+	{
+		public static string BEAM { get {return "BEAM";} }
+		public static string CORNICE { get {return "CORNICE";} }
+		public static string DIAPHRAGM { get {return "DIAPHRAGM";} }
+		public static string EDGEBEAM { get {return "EDGEBEAM";} }
+		public static string GIRDER_SEGMENT { get {return "GIRDER_SEGMENT";} }
+		public static string HATSTONE { get {return "HATSTONE";} }
+		public static string HOLLOWCORE { get {return "HOLLOWCORE";} }
+		public static string JOIST { get {return "JOIST";} }
+		public static string LINTEL { get {return "LINTEL";} }
+		public static string PIERCAP { get {return "PIERCAP";} }
+		public static string SPANDREL { get {return "SPANDREL";} }
+		public static string T_BEAM { get {return "T_BEAM";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcBeamTypeEnum(string value) { return new IfcBeamTypeEnum(string);}
+		public static implicit operator string(IfcBeamTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBearingTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcBearingTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CYLINDRICAL</para>
+	/// <para>	,DISK</para>
+	/// <para>	,ELASTOMERIC</para>
+	/// <para>	,GUIDE</para>
+	/// <para>	,POT</para>
+	/// <para>	,ROCKER</para>
+	/// <para>	,ROLLER</para>
+	/// <para>	,SPHERICAL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBearingTypeEnum
+	{
+		public static string CYLINDRICAL { get {return "CYLINDRICAL";} }
+		public static string DISK { get {return "DISK";} }
+		public static string ELASTOMERIC { get {return "ELASTOMERIC";} }
+		public static string GUIDE { get {return "GUIDE";} }
+		public static string POT { get {return "POT";} }
+		public static string ROCKER { get {return "ROCKER";} }
+		public static string ROLLER { get {return "ROLLER";} }
+		public static string SPHERICAL { get {return "SPHERICAL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcBearingTypeEnum(string value) { return new IfcBearingTypeEnum(string);}
+		public static implicit operator string(IfcBearingTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBenchmarkEnum = ENUMERATION OF
+	/// <para>TYPE IfcBenchmarkEnum = ENUMERATION OF</para>
+	/// <para>	(EQUALTO</para>
+	/// <para>	,GREATERTHAN</para>
+	/// <para>	,GREATERTHANOREQUALTO</para>
+	/// <para>	,INCLUDEDIN</para>
+	/// <para>	,INCLUDES</para>
+	/// <para>	,LESSTHAN</para>
+	/// <para>	,LESSTHANOREQUALTO</para>
+	/// <para>	,NOTEQUALTO</para>
+	/// <para>	,NOTINCLUDEDIN</para>
+	/// <para>	,NOTINCLUDES);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBenchmarkEnum
+	{
+		public static string EQUALTO { get {return "EQUALTO";} }
+		public static string GREATERTHAN { get {return "GREATERTHAN";} }
+		public static string GREATERTHANOREQUALTO { get {return "GREATERTHANOREQUALTO";} }
+		public static string INCLUDEDIN { get {return "INCLUDEDIN";} }
+		public static string INCLUDES { get {return "INCLUDES";} }
+		public static string LESSTHAN { get {return "LESSTHAN";} }
+		public static string LESSTHANOREQUALTO { get {return "LESSTHANOREQUALTO";} }
+		public static string NOTEQUALTO { get {return "NOTEQUALTO";} }
+		public static string NOTINCLUDEDIN { get {return "NOTINCLUDEDIN";} }
+		public static string NOTINCLUDES { get {return "NOTINCLUDES";} }
+		public static implicit operator IfcBenchmarkEnum(string value) { return new IfcBenchmarkEnum(string);}
+		public static implicit operator string(IfcBenchmarkEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBoilerTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcBoilerTypeEnum = ENUMERATION OF</para>
+	/// <para>	(STEAM</para>
+	/// <para>	,WATER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBoilerTypeEnum
+	{
+		public static string STEAM { get {return "STEAM";} }
+		public static string WATER { get {return "WATER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcBoilerTypeEnum(string value) { return new IfcBoilerTypeEnum(string);}
+		public static implicit operator string(IfcBoilerTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBooleanOperator = ENUMERATION OF
+	/// <para>TYPE IfcBooleanOperator = ENUMERATION OF</para>
+	/// <para>	(DIFFERENCE</para>
+	/// <para>	,INTERSECTION</para>
+	/// <para>	,UNION);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBooleanOperator
+	{
+		public static string DIFFERENCE { get {return "DIFFERENCE";} }
+		public static string INTERSECTION { get {return "INTERSECTION";} }
+		public static string UNION { get {return "UNION";} }
+		public static implicit operator IfcBooleanOperator(string value) { return new IfcBooleanOperator(string);}
+		public static implicit operator string(IfcBooleanOperator value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBridgePartTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcBridgePartTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ABUTMENT</para>
+	/// <para>	,DECK</para>
+	/// <para>	,DECK_SEGMENT</para>
+	/// <para>	,FOUNDATION</para>
+	/// <para>	,PIER</para>
+	/// <para>	,PIER_SEGMENT</para>
+	/// <para>	,PYLON</para>
+	/// <para>	,SUBSTRUCTURE</para>
+	/// <para>	,SUPERSTRUCTURE</para>
+	/// <para>	,SURFACESTRUCTURE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBridgePartTypeEnum
+	{
+		public static string ABUTMENT { get {return "ABUTMENT";} }
+		public static string DECK { get {return "DECK";} }
+		public static string DECK_SEGMENT { get {return "DECK_SEGMENT";} }
+		public static string FOUNDATION { get {return "FOUNDATION";} }
+		public static string PIER { get {return "PIER";} }
+		public static string PIER_SEGMENT { get {return "PIER_SEGMENT";} }
+		public static string PYLON { get {return "PYLON";} }
+		public static string SUBSTRUCTURE { get {return "SUBSTRUCTURE";} }
+		public static string SUPERSTRUCTURE { get {return "SUPERSTRUCTURE";} }
+		public static string SURFACESTRUCTURE { get {return "SURFACESTRUCTURE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcBridgePartTypeEnum(string value) { return new IfcBridgePartTypeEnum(string);}
+		public static implicit operator string(IfcBridgePartTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBridgeTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcBridgeTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ARCHED</para>
+	/// <para>	,CABLE_STAYED</para>
+	/// <para>	,CANTILEVER</para>
+	/// <para>	,CULVERT</para>
+	/// <para>	,FRAMEWORK</para>
+	/// <para>	,GIRDER</para>
+	/// <para>	,SUSPENSION</para>
+	/// <para>	,TRUSS</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBridgeTypeEnum
+	{
+		public static string ARCHED { get {return "ARCHED";} }
+		public static string CABLE_STAYED { get {return "CABLE_STAYED";} }
+		public static string CANTILEVER { get {return "CANTILEVER";} }
+		public static string CULVERT { get {return "CULVERT";} }
+		public static string FRAMEWORK { get {return "FRAMEWORK";} }
+		public static string GIRDER { get {return "GIRDER";} }
+		public static string SUSPENSION { get {return "SUSPENSION";} }
+		public static string TRUSS { get {return "TRUSS";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcBridgeTypeEnum(string value) { return new IfcBridgeTypeEnum(string);}
+		public static implicit operator string(IfcBridgeTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBuildingElementPartTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcBuildingElementPartTypeEnum = ENUMERATION OF</para>
+	/// <para>	(APRON</para>
+	/// <para>	,ARMOURUNIT</para>
+	/// <para>	,INSULATION</para>
+	/// <para>	,PRECASTPANEL</para>
+	/// <para>	,SAFETYCAGE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBuildingElementPartTypeEnum
+	{
+		public static string APRON { get {return "APRON";} }
+		public static string ARMOURUNIT { get {return "ARMOURUNIT";} }
+		public static string INSULATION { get {return "INSULATION";} }
+		public static string PRECASTPANEL { get {return "PRECASTPANEL";} }
+		public static string SAFETYCAGE { get {return "SAFETYCAGE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcBuildingElementPartTypeEnum(string value) { return new IfcBuildingElementPartTypeEnum(string);}
+		public static implicit operator string(IfcBuildingElementPartTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBuildingElementProxyTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcBuildingElementProxyTypeEnum = ENUMERATION OF</para>
+	/// <para>	(COMPLEX</para>
+	/// <para>	,ELEMENT</para>
+	/// <para>	,PARTIAL</para>
+	/// <para>	,PROVISIONFORSPACE</para>
+	/// <para>	,PROVISIONFORVOID</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBuildingElementProxyTypeEnum
+	{
+		public static string COMPLEX { get {return "COMPLEX";} }
+		public static string ELEMENT { get {return "ELEMENT";} }
+		public static string PARTIAL { get {return "PARTIAL";} }
+		public static string PROVISIONFORSPACE { get {return "PROVISIONFORSPACE";} }
+		public static string PROVISIONFORVOID { get {return "PROVISIONFORVOID";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcBuildingElementProxyTypeEnum(string value) { return new IfcBuildingElementProxyTypeEnum(string);}
+		public static implicit operator string(IfcBuildingElementProxyTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBuildingSystemTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcBuildingSystemTypeEnum = ENUMERATION OF</para>
+	/// <para>	(FENESTRATION</para>
+	/// <para>	,FOUNDATION</para>
+	/// <para>	,LOADBEARING</para>
+	/// <para>	,OUTERSHELL</para>
+	/// <para>	,SHADING</para>
+	/// <para>	,TRANSPORT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBuildingSystemTypeEnum
+	{
+		public static string FENESTRATION { get {return "FENESTRATION";} }
+		public static string FOUNDATION { get {return "FOUNDATION";} }
+		public static string LOADBEARING { get {return "LOADBEARING";} }
+		public static string OUTERSHELL { get {return "OUTERSHELL";} }
+		public static string SHADING { get {return "SHADING";} }
+		public static string TRANSPORT { get {return "TRANSPORT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcBuildingSystemTypeEnum(string value) { return new IfcBuildingSystemTypeEnum(string);}
+		public static implicit operator string(IfcBuildingSystemTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBuiltSystemTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcBuiltSystemTypeEnum = ENUMERATION OF</para>
+	/// <para>	(EROSIONPREVENTION</para>
+	/// <para>	,FENESTRATION</para>
+	/// <para>	,FOUNDATION</para>
+	/// <para>	,LOADBEARING</para>
+	/// <para>	,MOORING</para>
+	/// <para>	,OUTERSHELL</para>
+	/// <para>	,PRESTRESSING</para>
+	/// <para>	,RAILWAYLINE</para>
+	/// <para>	,RAILWAYTRACK</para>
+	/// <para>	,REINFORCING</para>
+	/// <para>	,SHADING</para>
+	/// <para>	,TRACKCIRCUIT</para>
+	/// <para>	,TRANSPORT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBuiltSystemTypeEnum
+	{
+		public static string EROSIONPREVENTION { get {return "EROSIONPREVENTION";} }
+		public static string FENESTRATION { get {return "FENESTRATION";} }
+		public static string FOUNDATION { get {return "FOUNDATION";} }
+		public static string LOADBEARING { get {return "LOADBEARING";} }
+		public static string MOORING { get {return "MOORING";} }
+		public static string OUTERSHELL { get {return "OUTERSHELL";} }
+		public static string PRESTRESSING { get {return "PRESTRESSING";} }
+		public static string RAILWAYLINE { get {return "RAILWAYLINE";} }
+		public static string RAILWAYTRACK { get {return "RAILWAYTRACK";} }
+		public static string REINFORCING { get {return "REINFORCING";} }
+		public static string SHADING { get {return "SHADING";} }
+		public static string TRACKCIRCUIT { get {return "TRACKCIRCUIT";} }
+		public static string TRANSPORT { get {return "TRANSPORT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcBuiltSystemTypeEnum(string value) { return new IfcBuiltSystemTypeEnum(string);}
+		public static implicit operator string(IfcBuiltSystemTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcBurnerTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcBurnerTypeEnum = ENUMERATION OF</para>
+	/// <para>	(USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcBurnerTypeEnum
+	{
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcBurnerTypeEnum(string value) { return new IfcBurnerTypeEnum(string);}
+		public static implicit operator string(IfcBurnerTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCableCarrierFittingTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCableCarrierFittingTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BEND</para>
+	/// <para>	,CONNECTOR</para>
+	/// <para>	,CROSS</para>
+	/// <para>	,JUNCTION</para>
+	/// <para>	,REDUCER</para>
+	/// <para>	,TEE</para>
+	/// <para>	,TRANSITION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCableCarrierFittingTypeEnum
+	{
+		public static string BEND { get {return "BEND";} }
+		public static string CONNECTOR { get {return "CONNECTOR";} }
+		public static string CROSS { get {return "CROSS";} }
+		public static string JUNCTION { get {return "JUNCTION";} }
+		public static string REDUCER { get {return "REDUCER";} }
+		public static string TEE { get {return "TEE";} }
+		public static string TRANSITION { get {return "TRANSITION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCableCarrierFittingTypeEnum(string value) { return new IfcCableCarrierFittingTypeEnum(string);}
+		public static implicit operator string(IfcCableCarrierFittingTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCableCarrierSegmentTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCableCarrierSegmentTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CABLEBRACKET</para>
+	/// <para>	,CABLELADDERSEGMENT</para>
+	/// <para>	,CABLETRAYSEGMENT</para>
+	/// <para>	,CABLETRUNKINGSEGMENT</para>
+	/// <para>	,CATENARYWIRE</para>
+	/// <para>	,CONDUITSEGMENT</para>
+	/// <para>	,DROPPER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCableCarrierSegmentTypeEnum
+	{
+		public static string CABLEBRACKET { get {return "CABLEBRACKET";} }
+		public static string CABLELADDERSEGMENT { get {return "CABLELADDERSEGMENT";} }
+		public static string CABLETRAYSEGMENT { get {return "CABLETRAYSEGMENT";} }
+		public static string CABLETRUNKINGSEGMENT { get {return "CABLETRUNKINGSEGMENT";} }
+		public static string CATENARYWIRE { get {return "CATENARYWIRE";} }
+		public static string CONDUITSEGMENT { get {return "CONDUITSEGMENT";} }
+		public static string DROPPER { get {return "DROPPER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCableCarrierSegmentTypeEnum(string value) { return new IfcCableCarrierSegmentTypeEnum(string);}
+		public static implicit operator string(IfcCableCarrierSegmentTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCableFittingTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCableFittingTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CONNECTOR</para>
+	/// <para>	,ENTRY</para>
+	/// <para>	,EXIT</para>
+	/// <para>	,FANOUT</para>
+	/// <para>	,JUNCTION</para>
+	/// <para>	,TRANSITION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCableFittingTypeEnum
+	{
+		public static string CONNECTOR { get {return "CONNECTOR";} }
+		public static string ENTRY { get {return "ENTRY";} }
+		public static string EXIT { get {return "EXIT";} }
+		public static string FANOUT { get {return "FANOUT";} }
+		public static string JUNCTION { get {return "JUNCTION";} }
+		public static string TRANSITION { get {return "TRANSITION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCableFittingTypeEnum(string value) { return new IfcCableFittingTypeEnum(string);}
+		public static implicit operator string(IfcCableFittingTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCableSegmentTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCableSegmentTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BUSBARSEGMENT</para>
+	/// <para>	,CABLESEGMENT</para>
+	/// <para>	,CONDUCTORSEGMENT</para>
+	/// <para>	,CONTACTWIRESEGMENT</para>
+	/// <para>	,CORESEGMENT</para>
+	/// <para>	,FIBERSEGMENT</para>
+	/// <para>	,FIBERTUBE</para>
+	/// <para>	,OPTICALCABLESEGMENT</para>
+	/// <para>	,STITCHWIRE</para>
+	/// <para>	,WIREPAIRSEGMENT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCableSegmentTypeEnum
+	{
+		public static string BUSBARSEGMENT { get {return "BUSBARSEGMENT";} }
+		public static string CABLESEGMENT { get {return "CABLESEGMENT";} }
+		public static string CONDUCTORSEGMENT { get {return "CONDUCTORSEGMENT";} }
+		public static string CONTACTWIRESEGMENT { get {return "CONTACTWIRESEGMENT";} }
+		public static string CORESEGMENT { get {return "CORESEGMENT";} }
+		public static string FIBERSEGMENT { get {return "FIBERSEGMENT";} }
+		public static string FIBERTUBE { get {return "FIBERTUBE";} }
+		public static string OPTICALCABLESEGMENT { get {return "OPTICALCABLESEGMENT";} }
+		public static string STITCHWIRE { get {return "STITCHWIRE";} }
+		public static string WIREPAIRSEGMENT { get {return "WIREPAIRSEGMENT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCableSegmentTypeEnum(string value) { return new IfcCableSegmentTypeEnum(string);}
+		public static implicit operator string(IfcCableSegmentTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCaissonFoundationTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCaissonFoundationTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CAISSON</para>
+	/// <para>	,WELL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCaissonFoundationTypeEnum
+	{
+		public static string CAISSON { get {return "CAISSON";} }
+		public static string WELL { get {return "WELL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCaissonFoundationTypeEnum(string value) { return new IfcCaissonFoundationTypeEnum(string);}
+		public static implicit operator string(IfcCaissonFoundationTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcChangeActionEnum = ENUMERATION OF
+	/// <para>TYPE IfcChangeActionEnum = ENUMERATION OF</para>
+	/// <para>	(ADDED</para>
+	/// <para>	,DELETED</para>
+	/// <para>	,MODIFIED</para>
+	/// <para>	,NOCHANGE</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcChangeActionEnum
+	{
+		public static string ADDED { get {return "ADDED";} }
+		public static string DELETED { get {return "DELETED";} }
+		public static string MODIFIED { get {return "MODIFIED";} }
+		public static string NOCHANGE { get {return "NOCHANGE";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcChangeActionEnum(string value) { return new IfcChangeActionEnum(string);}
+		public static implicit operator string(IfcChangeActionEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcChillerTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcChillerTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AIRCOOLED</para>
+	/// <para>	,HEATRECOVERY</para>
+	/// <para>	,WATERCOOLED</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcChillerTypeEnum
+	{
+		public static string AIRCOOLED { get {return "AIRCOOLED";} }
+		public static string HEATRECOVERY { get {return "HEATRECOVERY";} }
+		public static string WATERCOOLED { get {return "WATERCOOLED";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcChillerTypeEnum(string value) { return new IfcChillerTypeEnum(string);}
+		public static implicit operator string(IfcChillerTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcChimneyTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcChimneyTypeEnum = ENUMERATION OF</para>
+	/// <para>	(USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcChimneyTypeEnum
+	{
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcChimneyTypeEnum(string value) { return new IfcChimneyTypeEnum(string);}
+		public static implicit operator string(IfcChimneyTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCoilTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCoilTypeEnum = ENUMERATION OF</para>
+	/// <para>	(DXCOOLINGCOIL</para>
+	/// <para>	,ELECTRICHEATINGCOIL</para>
+	/// <para>	,GASHEATINGCOIL</para>
+	/// <para>	,HYDRONICCOIL</para>
+	/// <para>	,STEAMHEATINGCOIL</para>
+	/// <para>	,WATERCOOLINGCOIL</para>
+	/// <para>	,WATERHEATINGCOIL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCoilTypeEnum
+	{
+		public static string DXCOOLINGCOIL { get {return "DXCOOLINGCOIL";} }
+		public static string ELECTRICHEATINGCOIL { get {return "ELECTRICHEATINGCOIL";} }
+		public static string GASHEATINGCOIL { get {return "GASHEATINGCOIL";} }
+		public static string HYDRONICCOIL { get {return "HYDRONICCOIL";} }
+		public static string STEAMHEATINGCOIL { get {return "STEAMHEATINGCOIL";} }
+		public static string WATERCOOLINGCOIL { get {return "WATERCOOLINGCOIL";} }
+		public static string WATERHEATINGCOIL { get {return "WATERHEATINGCOIL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCoilTypeEnum(string value) { return new IfcCoilTypeEnum(string);}
+		public static implicit operator string(IfcCoilTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcColumnTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcColumnTypeEnum = ENUMERATION OF</para>
+	/// <para>	(COLUMN</para>
+	/// <para>	,PIERSTEM</para>
+	/// <para>	,PIERSTEM_SEGMENT</para>
+	/// <para>	,PILASTER</para>
+	/// <para>	,STANDCOLUMN</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcColumnTypeEnum
+	{
+		public static string COLUMN { get {return "COLUMN";} }
+		public static string PIERSTEM { get {return "PIERSTEM";} }
+		public static string PIERSTEM_SEGMENT { get {return "PIERSTEM_SEGMENT";} }
+		public static string PILASTER { get {return "PILASTER";} }
+		public static string STANDCOLUMN { get {return "STANDCOLUMN";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcColumnTypeEnum(string value) { return new IfcColumnTypeEnum(string);}
+		public static implicit operator string(IfcColumnTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCommunicationsApplianceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCommunicationsApplianceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ANTENNA</para>
+	/// <para>	,AUTOMATON</para>
+	/// <para>	,COMPUTER</para>
+	/// <para>	,FAX</para>
+	/// <para>	,GATEWAY</para>
+	/// <para>	,INTELLIGENTPERIPHERAL</para>
+	/// <para>	,IPNETWORKEQUIPMENT</para>
+	/// <para>	,LINESIDEELECTRONICUNIT</para>
+	/// <para>	,MODEM</para>
+	/// <para>	,NETWORKAPPLIANCE</para>
+	/// <para>	,NETWORKBRIDGE</para>
+	/// <para>	,NETWORKHUB</para>
+	/// <para>	,OPTICALLINETERMINAL</para>
+	/// <para>	,OPTICALNETWORKUNIT</para>
+	/// <para>	,PRINTER</para>
+	/// <para>	,RADIOBLOCKCENTER</para>
+	/// <para>	,REPEATER</para>
+	/// <para>	,ROUTER</para>
+	/// <para>	,SCANNER</para>
+	/// <para>	,TELECOMMAND</para>
+	/// <para>	,TELEPHONYEXCHANGE</para>
+	/// <para>	,TRANSITIONCOMPONENT</para>
+	/// <para>	,TRANSPONDER</para>
+	/// <para>	,TRANSPORTEQUIPMENT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCommunicationsApplianceTypeEnum
+	{
+		public static string ANTENNA { get {return "ANTENNA";} }
+		public static string AUTOMATON { get {return "AUTOMATON";} }
+		public static string COMPUTER { get {return "COMPUTER";} }
+		public static string FAX { get {return "FAX";} }
+		public static string GATEWAY { get {return "GATEWAY";} }
+		public static string INTELLIGENTPERIPHERAL { get {return "INTELLIGENTPERIPHERAL";} }
+		public static string IPNETWORKEQUIPMENT { get {return "IPNETWORKEQUIPMENT";} }
+		public static string LINESIDEELECTRONICUNIT { get {return "LINESIDEELECTRONICUNIT";} }
+		public static string MODEM { get {return "MODEM";} }
+		public static string NETWORKAPPLIANCE { get {return "NETWORKAPPLIANCE";} }
+		public static string NETWORKBRIDGE { get {return "NETWORKBRIDGE";} }
+		public static string NETWORKHUB { get {return "NETWORKHUB";} }
+		public static string OPTICALLINETERMINAL { get {return "OPTICALLINETERMINAL";} }
+		public static string OPTICALNETWORKUNIT { get {return "OPTICALNETWORKUNIT";} }
+		public static string PRINTER { get {return "PRINTER";} }
+		public static string RADIOBLOCKCENTER { get {return "RADIOBLOCKCENTER";} }
+		public static string REPEATER { get {return "REPEATER";} }
+		public static string ROUTER { get {return "ROUTER";} }
+		public static string SCANNER { get {return "SCANNER";} }
+		public static string TELECOMMAND { get {return "TELECOMMAND";} }
+		public static string TELEPHONYEXCHANGE { get {return "TELEPHONYEXCHANGE";} }
+		public static string TRANSITIONCOMPONENT { get {return "TRANSITIONCOMPONENT";} }
+		public static string TRANSPONDER { get {return "TRANSPONDER";} }
+		public static string TRANSPORTEQUIPMENT { get {return "TRANSPORTEQUIPMENT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCommunicationsApplianceTypeEnum(string value) { return new IfcCommunicationsApplianceTypeEnum(string);}
+		public static implicit operator string(IfcCommunicationsApplianceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcComplexPropertyTemplateTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcComplexPropertyTemplateTypeEnum = ENUMERATION OF</para>
+	/// <para>	(P_COMPLEX</para>
+	/// <para>	,Q_COMPLEX);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcComplexPropertyTemplateTypeEnum
+	{
+		public static string P_COMPLEX { get {return "P_COMPLEX";} }
+		public static string Q_COMPLEX { get {return "Q_COMPLEX";} }
+		public static implicit operator IfcComplexPropertyTemplateTypeEnum(string value) { return new IfcComplexPropertyTemplateTypeEnum(string);}
+		public static implicit operator string(IfcComplexPropertyTemplateTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCompressorTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCompressorTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BOOSTER</para>
+	/// <para>	,DYNAMIC</para>
+	/// <para>	,HERMETIC</para>
+	/// <para>	,OPENTYPE</para>
+	/// <para>	,RECIPROCATING</para>
+	/// <para>	,ROLLINGPISTON</para>
+	/// <para>	,ROTARY</para>
+	/// <para>	,ROTARYVANE</para>
+	/// <para>	,SCROLL</para>
+	/// <para>	,SEMIHERMETIC</para>
+	/// <para>	,SINGLESCREW</para>
+	/// <para>	,SINGLESTAGE</para>
+	/// <para>	,TROCHOIDAL</para>
+	/// <para>	,TWINSCREW</para>
+	/// <para>	,WELDEDSHELLHERMETIC</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCompressorTypeEnum
+	{
+		public static string BOOSTER { get {return "BOOSTER";} }
+		public static string DYNAMIC { get {return "DYNAMIC";} }
+		public static string HERMETIC { get {return "HERMETIC";} }
+		public static string OPENTYPE { get {return "OPENTYPE";} }
+		public static string RECIPROCATING { get {return "RECIPROCATING";} }
+		public static string ROLLINGPISTON { get {return "ROLLINGPISTON";} }
+		public static string ROTARY { get {return "ROTARY";} }
+		public static string ROTARYVANE { get {return "ROTARYVANE";} }
+		public static string SCROLL { get {return "SCROLL";} }
+		public static string SEMIHERMETIC { get {return "SEMIHERMETIC";} }
+		public static string SINGLESCREW { get {return "SINGLESCREW";} }
+		public static string SINGLESTAGE { get {return "SINGLESTAGE";} }
+		public static string TROCHOIDAL { get {return "TROCHOIDAL";} }
+		public static string TWINSCREW { get {return "TWINSCREW";} }
+		public static string WELDEDSHELLHERMETIC { get {return "WELDEDSHELLHERMETIC";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCompressorTypeEnum(string value) { return new IfcCompressorTypeEnum(string);}
+		public static implicit operator string(IfcCompressorTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCondenserTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCondenserTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AIRCOOLED</para>
+	/// <para>	,EVAPORATIVECOOLED</para>
+	/// <para>	,WATERCOOLED</para>
+	/// <para>	,WATERCOOLEDBRAZEDPLATE</para>
+	/// <para>	,WATERCOOLEDSHELLCOIL</para>
+	/// <para>	,WATERCOOLEDSHELLTUBE</para>
+	/// <para>	,WATERCOOLEDTUBEINTUBE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCondenserTypeEnum
+	{
+		public static string AIRCOOLED { get {return "AIRCOOLED";} }
+		public static string EVAPORATIVECOOLED { get {return "EVAPORATIVECOOLED";} }
+		public static string WATERCOOLED { get {return "WATERCOOLED";} }
+		public static string WATERCOOLEDBRAZEDPLATE { get {return "WATERCOOLEDBRAZEDPLATE";} }
+		public static string WATERCOOLEDSHELLCOIL { get {return "WATERCOOLEDSHELLCOIL";} }
+		public static string WATERCOOLEDSHELLTUBE { get {return "WATERCOOLEDSHELLTUBE";} }
+		public static string WATERCOOLEDTUBEINTUBE { get {return "WATERCOOLEDTUBEINTUBE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCondenserTypeEnum(string value) { return new IfcCondenserTypeEnum(string);}
+		public static implicit operator string(IfcCondenserTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcConnectionTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcConnectionTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ATEND</para>
+	/// <para>	,ATPATH</para>
+	/// <para>	,ATSTART</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcConnectionTypeEnum
+	{
+		public static string ATEND { get {return "ATEND";} }
+		public static string ATPATH { get {return "ATPATH";} }
+		public static string ATSTART { get {return "ATSTART";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcConnectionTypeEnum(string value) { return new IfcConnectionTypeEnum(string);}
+		public static implicit operator string(IfcConnectionTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcConstraintEnum = ENUMERATION OF
+	/// <para>TYPE IfcConstraintEnum = ENUMERATION OF</para>
+	/// <para>	(ADVISORY</para>
+	/// <para>	,HARD</para>
+	/// <para>	,SOFT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcConstraintEnum
+	{
+		public static string ADVISORY { get {return "ADVISORY";} }
+		public static string HARD { get {return "HARD";} }
+		public static string SOFT { get {return "SOFT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcConstraintEnum(string value) { return new IfcConstraintEnum(string);}
+		public static implicit operator string(IfcConstraintEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcConstructionEquipmentResourceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcConstructionEquipmentResourceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(DEMOLISHING</para>
+	/// <para>	,EARTHMOVING</para>
+	/// <para>	,ERECTING</para>
+	/// <para>	,HEATING</para>
+	/// <para>	,LIGHTING</para>
+	/// <para>	,PAVING</para>
+	/// <para>	,PUMPING</para>
+	/// <para>	,TRANSPORTING</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcConstructionEquipmentResourceTypeEnum
+	{
+		public static string DEMOLISHING { get {return "DEMOLISHING";} }
+		public static string EARTHMOVING { get {return "EARTHMOVING";} }
+		public static string ERECTING { get {return "ERECTING";} }
+		public static string HEATING { get {return "HEATING";} }
+		public static string LIGHTING { get {return "LIGHTING";} }
+		public static string PAVING { get {return "PAVING";} }
+		public static string PUMPING { get {return "PUMPING";} }
+		public static string TRANSPORTING { get {return "TRANSPORTING";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcConstructionEquipmentResourceTypeEnum(string value) { return new IfcConstructionEquipmentResourceTypeEnum(string);}
+		public static implicit operator string(IfcConstructionEquipmentResourceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcConstructionMaterialResourceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcConstructionMaterialResourceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AGGREGATES</para>
+	/// <para>	,CONCRETE</para>
+	/// <para>	,DRYWALL</para>
+	/// <para>	,FUEL</para>
+	/// <para>	,GYPSUM</para>
+	/// <para>	,MASONRY</para>
+	/// <para>	,METAL</para>
+	/// <para>	,PLASTIC</para>
+	/// <para>	,WOOD</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcConstructionMaterialResourceTypeEnum
+	{
+		public static string AGGREGATES { get {return "AGGREGATES";} }
+		public static string CONCRETE { get {return "CONCRETE";} }
+		public static string DRYWALL { get {return "DRYWALL";} }
+		public static string FUEL { get {return "FUEL";} }
+		public static string GYPSUM { get {return "GYPSUM";} }
+		public static string MASONRY { get {return "MASONRY";} }
+		public static string METAL { get {return "METAL";} }
+		public static string PLASTIC { get {return "PLASTIC";} }
+		public static string WOOD { get {return "WOOD";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcConstructionMaterialResourceTypeEnum(string value) { return new IfcConstructionMaterialResourceTypeEnum(string);}
+		public static implicit operator string(IfcConstructionMaterialResourceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcConstructionProductResourceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcConstructionProductResourceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ASSEMBLY</para>
+	/// <para>	,FORMWORK</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcConstructionProductResourceTypeEnum
+	{
+		public static string ASSEMBLY { get {return "ASSEMBLY";} }
+		public static string FORMWORK { get {return "FORMWORK";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcConstructionProductResourceTypeEnum(string value) { return new IfcConstructionProductResourceTypeEnum(string);}
+		public static implicit operator string(IfcConstructionProductResourceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcControllerTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcControllerTypeEnum = ENUMERATION OF</para>
+	/// <para>	(FLOATING</para>
+	/// <para>	,MULTIPOSITION</para>
+	/// <para>	,PROGRAMMABLE</para>
+	/// <para>	,PROPORTIONAL</para>
+	/// <para>	,TWOPOSITION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcControllerTypeEnum
+	{
+		public static string FLOATING { get {return "FLOATING";} }
+		public static string MULTIPOSITION { get {return "MULTIPOSITION";} }
+		public static string PROGRAMMABLE { get {return "PROGRAMMABLE";} }
+		public static string PROPORTIONAL { get {return "PROPORTIONAL";} }
+		public static string TWOPOSITION { get {return "TWOPOSITION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcControllerTypeEnum(string value) { return new IfcControllerTypeEnum(string);}
+		public static implicit operator string(IfcControllerTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcConveyorSegmentTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcConveyorSegmentTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BELTCONVEYOR</para>
+	/// <para>	,BUCKETCONVEYOR</para>
+	/// <para>	,CHUTECONVEYOR</para>
+	/// <para>	,SCREWCONVEYOR</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcConveyorSegmentTypeEnum
+	{
+		public static string BELTCONVEYOR { get {return "BELTCONVEYOR";} }
+		public static string BUCKETCONVEYOR { get {return "BUCKETCONVEYOR";} }
+		public static string CHUTECONVEYOR { get {return "CHUTECONVEYOR";} }
+		public static string SCREWCONVEYOR { get {return "SCREWCONVEYOR";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcConveyorSegmentTypeEnum(string value) { return new IfcConveyorSegmentTypeEnum(string);}
+		public static implicit operator string(IfcConveyorSegmentTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCooledBeamTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCooledBeamTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ACTIVE</para>
+	/// <para>	,PASSIVE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCooledBeamTypeEnum
+	{
+		public static string ACTIVE { get {return "ACTIVE";} }
+		public static string PASSIVE { get {return "PASSIVE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCooledBeamTypeEnum(string value) { return new IfcCooledBeamTypeEnum(string);}
+		public static implicit operator string(IfcCooledBeamTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCoolingTowerTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCoolingTowerTypeEnum = ENUMERATION OF</para>
+	/// <para>	(MECHANICALFORCEDDRAFT</para>
+	/// <para>	,MECHANICALINDUCEDDRAFT</para>
+	/// <para>	,NATURALDRAFT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCoolingTowerTypeEnum
+	{
+		public static string MECHANICALFORCEDDRAFT { get {return "MECHANICALFORCEDDRAFT";} }
+		public static string MECHANICALINDUCEDDRAFT { get {return "MECHANICALINDUCEDDRAFT";} }
+		public static string NATURALDRAFT { get {return "NATURALDRAFT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCoolingTowerTypeEnum(string value) { return new IfcCoolingTowerTypeEnum(string);}
+		public static implicit operator string(IfcCoolingTowerTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCostItemTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCostItemTypeEnum = ENUMERATION OF</para>
+	/// <para>	(USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCostItemTypeEnum
+	{
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCostItemTypeEnum(string value) { return new IfcCostItemTypeEnum(string);}
+		public static implicit operator string(IfcCostItemTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCostScheduleTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCostScheduleTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BUDGET</para>
+	/// <para>	,COSTPLAN</para>
+	/// <para>	,ESTIMATE</para>
+	/// <para>	,PRICEDBILLOFQUANTITIES</para>
+	/// <para>	,SCHEDULEOFRATES</para>
+	/// <para>	,TENDER</para>
+	/// <para>	,UNPRICEDBILLOFQUANTITIES</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCostScheduleTypeEnum
+	{
+		public static string BUDGET { get {return "BUDGET";} }
+		public static string COSTPLAN { get {return "COSTPLAN";} }
+		public static string ESTIMATE { get {return "ESTIMATE";} }
+		public static string PRICEDBILLOFQUANTITIES { get {return "PRICEDBILLOFQUANTITIES";} }
+		public static string SCHEDULEOFRATES { get {return "SCHEDULEOFRATES";} }
+		public static string TENDER { get {return "TENDER";} }
+		public static string UNPRICEDBILLOFQUANTITIES { get {return "UNPRICEDBILLOFQUANTITIES";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCostScheduleTypeEnum(string value) { return new IfcCostScheduleTypeEnum(string);}
+		public static implicit operator string(IfcCostScheduleTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCourseTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCourseTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ARMOUR</para>
+	/// <para>	,BALLASTBED</para>
+	/// <para>	,CORE</para>
+	/// <para>	,FILTER</para>
+	/// <para>	,PAVEMENT</para>
+	/// <para>	,PROTECTION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCourseTypeEnum
+	{
+		public static string ARMOUR { get {return "ARMOUR";} }
+		public static string BALLASTBED { get {return "BALLASTBED";} }
+		public static string CORE { get {return "CORE";} }
+		public static string FILTER { get {return "FILTER";} }
+		public static string PAVEMENT { get {return "PAVEMENT";} }
+		public static string PROTECTION { get {return "PROTECTION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCourseTypeEnum(string value) { return new IfcCourseTypeEnum(string);}
+		public static implicit operator string(IfcCourseTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCoveringTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCoveringTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CEILING</para>
+	/// <para>	,CLADDING</para>
+	/// <para>	,COPING</para>
+	/// <para>	,FLOORING</para>
+	/// <para>	,INSULATION</para>
+	/// <para>	,MEMBRANE</para>
+	/// <para>	,MOLDING</para>
+	/// <para>	,ROOFING</para>
+	/// <para>	,SKIRTINGBOARD</para>
+	/// <para>	,SLEEVING</para>
+	/// <para>	,TOPPING</para>
+	/// <para>	,WRAPPING</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCoveringTypeEnum
+	{
+		public static string CEILING { get {return "CEILING";} }
+		public static string CLADDING { get {return "CLADDING";} }
+		public static string COPING { get {return "COPING";} }
+		public static string FLOORING { get {return "FLOORING";} }
+		public static string INSULATION { get {return "INSULATION";} }
+		public static string MEMBRANE { get {return "MEMBRANE";} }
+		public static string MOLDING { get {return "MOLDING";} }
+		public static string ROOFING { get {return "ROOFING";} }
+		public static string SKIRTINGBOARD { get {return "SKIRTINGBOARD";} }
+		public static string SLEEVING { get {return "SLEEVING";} }
+		public static string TOPPING { get {return "TOPPING";} }
+		public static string WRAPPING { get {return "WRAPPING";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCoveringTypeEnum(string value) { return new IfcCoveringTypeEnum(string);}
+		public static implicit operator string(IfcCoveringTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCrewResourceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCrewResourceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(OFFICE</para>
+	/// <para>	,SITE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCrewResourceTypeEnum
+	{
+		public static string OFFICE { get {return "OFFICE";} }
+		public static string SITE { get {return "SITE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCrewResourceTypeEnum(string value) { return new IfcCrewResourceTypeEnum(string);}
+		public static implicit operator string(IfcCrewResourceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCurtainWallTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcCurtainWallTypeEnum = ENUMERATION OF</para>
+	/// <para>	(USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCurtainWallTypeEnum
+	{
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCurtainWallTypeEnum(string value) { return new IfcCurtainWallTypeEnum(string);}
+		public static implicit operator string(IfcCurtainWallTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcCurveInterpolationEnum = ENUMERATION OF
+	/// <para>TYPE IfcCurveInterpolationEnum = ENUMERATION OF</para>
+	/// <para>	(LINEAR</para>
+	/// <para>	,LOG_LINEAR</para>
+	/// <para>	,LOG_LOG</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcCurveInterpolationEnum
+	{
+		public static string LINEAR { get {return "LINEAR";} }
+		public static string LOG_LINEAR { get {return "LOG_LINEAR";} }
+		public static string LOG_LOG { get {return "LOG_LOG";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcCurveInterpolationEnum(string value) { return new IfcCurveInterpolationEnum(string);}
+		public static implicit operator string(IfcCurveInterpolationEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDamperTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcDamperTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BACKDRAFTDAMPER</para>
+	/// <para>	,BALANCINGDAMPER</para>
+	/// <para>	,BLASTDAMPER</para>
+	/// <para>	,CONTROLDAMPER</para>
+	/// <para>	,FIREDAMPER</para>
+	/// <para>	,FIRESMOKEDAMPER</para>
+	/// <para>	,FUMEHOODEXHAUST</para>
+	/// <para>	,GRAVITYDAMPER</para>
+	/// <para>	,GRAVITYRELIEFDAMPER</para>
+	/// <para>	,RELIEFDAMPER</para>
+	/// <para>	,SMOKEDAMPER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDamperTypeEnum
+	{
+		public static string BACKDRAFTDAMPER { get {return "BACKDRAFTDAMPER";} }
+		public static string BALANCINGDAMPER { get {return "BALANCINGDAMPER";} }
+		public static string BLASTDAMPER { get {return "BLASTDAMPER";} }
+		public static string CONTROLDAMPER { get {return "CONTROLDAMPER";} }
+		public static string FIREDAMPER { get {return "FIREDAMPER";} }
+		public static string FIRESMOKEDAMPER { get {return "FIRESMOKEDAMPER";} }
+		public static string FUMEHOODEXHAUST { get {return "FUMEHOODEXHAUST";} }
+		public static string GRAVITYDAMPER { get {return "GRAVITYDAMPER";} }
+		public static string GRAVITYRELIEFDAMPER { get {return "GRAVITYRELIEFDAMPER";} }
+		public static string RELIEFDAMPER { get {return "RELIEFDAMPER";} }
+		public static string SMOKEDAMPER { get {return "SMOKEDAMPER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDamperTypeEnum(string value) { return new IfcDamperTypeEnum(string);}
+		public static implicit operator string(IfcDamperTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDataOriginEnum = ENUMERATION OF
+	/// <para>TYPE IfcDataOriginEnum = ENUMERATION OF</para>
+	/// <para>	(MEASURED</para>
+	/// <para>	,PREDICTED</para>
+	/// <para>	,SIMULATED</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDataOriginEnum
+	{
+		public static string MEASURED { get {return "MEASURED";} }
+		public static string PREDICTED { get {return "PREDICTED";} }
+		public static string SIMULATED { get {return "SIMULATED";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDataOriginEnum(string value) { return new IfcDataOriginEnum(string);}
+		public static implicit operator string(IfcDataOriginEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDerivedUnitEnum = ENUMERATION OF
+	/// <para>TYPE IfcDerivedUnitEnum = ENUMERATION OF</para>
+	/// <para>	(ACCELERATIONUNIT</para>
+	/// <para>	,ANGULARVELOCITYUNIT</para>
+	/// <para>	,AREADENSITYUNIT</para>
+	/// <para>	,COMPOUNDPLANEANGLEUNIT</para>
+	/// <para>	,CURVATUREUNIT</para>
+	/// <para>	,DYNAMICVISCOSITYUNIT</para>
+	/// <para>	,HEATFLUXDENSITYUNIT</para>
+	/// <para>	,HEATINGVALUEUNIT</para>
+	/// <para>	,INTEGERCOUNTRATEUNIT</para>
+	/// <para>	,IONCONCENTRATIONUNIT</para>
+	/// <para>	,ISOTHERMALMOISTURECAPACITYUNIT</para>
+	/// <para>	,KINEMATICVISCOSITYUNIT</para>
+	/// <para>	,LINEARFORCEUNIT</para>
+	/// <para>	,LINEARMOMENTUNIT</para>
+	/// <para>	,LINEARSTIFFNESSUNIT</para>
+	/// <para>	,LINEARVELOCITYUNIT</para>
+	/// <para>	,LUMINOUSINTENSITYDISTRIBUTIONUNIT</para>
+	/// <para>	,MASSDENSITYUNIT</para>
+	/// <para>	,MASSFLOWRATEUNIT</para>
+	/// <para>	,MASSPERLENGTHUNIT</para>
+	/// <para>	,MODULUSOFELASTICITYUNIT</para>
+	/// <para>	,MODULUSOFLINEARSUBGRADEREACTIONUNIT</para>
+	/// <para>	,MODULUSOFROTATIONALSUBGRADEREACTIONUNIT</para>
+	/// <para>	,MODULUSOFSUBGRADEREACTIONUNIT</para>
+	/// <para>	,MOISTUREDIFFUSIVITYUNIT</para>
+	/// <para>	,MOLECULARWEIGHTUNIT</para>
+	/// <para>	,MOMENTOFINERTIAUNIT</para>
+	/// <para>	,PHUNIT</para>
+	/// <para>	,PLANARFORCEUNIT</para>
+	/// <para>	,ROTATIONALFREQUENCYUNIT</para>
+	/// <para>	,ROTATIONALMASSUNIT</para>
+	/// <para>	,ROTATIONALSTIFFNESSUNIT</para>
+	/// <para>	,SECTIONAREAINTEGRALUNIT</para>
+	/// <para>	,SECTIONMODULUSUNIT</para>
+	/// <para>	,SHEARMODULUSUNIT</para>
+	/// <para>	,SOUNDPOWERLEVELUNIT</para>
+	/// <para>	,SOUNDPOWERUNIT</para>
+	/// <para>	,SOUNDPRESSURELEVELUNIT</para>
+	/// <para>	,SOUNDPRESSUREUNIT</para>
+	/// <para>	,SPECIFICHEATCAPACITYUNIT</para>
+	/// <para>	,TEMPERATUREGRADIENTUNIT</para>
+	/// <para>	,TEMPERATURERATEOFCHANGEUNIT</para>
+	/// <para>	,THERMALADMITTANCEUNIT</para>
+	/// <para>	,THERMALCONDUCTANCEUNIT</para>
+	/// <para>	,THERMALEXPANSIONCOEFFICIENTUNIT</para>
+	/// <para>	,THERMALRESISTANCEUNIT</para>
+	/// <para>	,THERMALTRANSMITTANCEUNIT</para>
+	/// <para>	,TORQUEUNIT</para>
+	/// <para>	,VAPORPERMEABILITYUNIT</para>
+	/// <para>	,VOLUMETRICFLOWRATEUNIT</para>
+	/// <para>	,WARPINGCONSTANTUNIT</para>
+	/// <para>	,WARPINGMOMENTUNIT</para>
+	/// <para>	,USERDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDerivedUnitEnum
+	{
+		public static string ACCELERATIONUNIT { get {return "ACCELERATIONUNIT";} }
+		public static string ANGULARVELOCITYUNIT { get {return "ANGULARVELOCITYUNIT";} }
+		public static string AREADENSITYUNIT { get {return "AREADENSITYUNIT";} }
+		public static string COMPOUNDPLANEANGLEUNIT { get {return "COMPOUNDPLANEANGLEUNIT";} }
+		public static string CURVATUREUNIT { get {return "CURVATUREUNIT";} }
+		public static string DYNAMICVISCOSITYUNIT { get {return "DYNAMICVISCOSITYUNIT";} }
+		public static string HEATFLUXDENSITYUNIT { get {return "HEATFLUXDENSITYUNIT";} }
+		public static string HEATINGVALUEUNIT { get {return "HEATINGVALUEUNIT";} }
+		public static string INTEGERCOUNTRATEUNIT { get {return "INTEGERCOUNTRATEUNIT";} }
+		public static string IONCONCENTRATIONUNIT { get {return "IONCONCENTRATIONUNIT";} }
+		public static string ISOTHERMALMOISTURECAPACITYUNIT { get {return "ISOTHERMALMOISTURECAPACITYUNIT";} }
+		public static string KINEMATICVISCOSITYUNIT { get {return "KINEMATICVISCOSITYUNIT";} }
+		public static string LINEARFORCEUNIT { get {return "LINEARFORCEUNIT";} }
+		public static string LINEARMOMENTUNIT { get {return "LINEARMOMENTUNIT";} }
+		public static string LINEARSTIFFNESSUNIT { get {return "LINEARSTIFFNESSUNIT";} }
+		public static string LINEARVELOCITYUNIT { get {return "LINEARVELOCITYUNIT";} }
+		public static string LUMINOUSINTENSITYDISTRIBUTIONUNIT { get {return "LUMINOUSINTENSITYDISTRIBUTIONUNIT";} }
+		public static string MASSDENSITYUNIT { get {return "MASSDENSITYUNIT";} }
+		public static string MASSFLOWRATEUNIT { get {return "MASSFLOWRATEUNIT";} }
+		public static string MASSPERLENGTHUNIT { get {return "MASSPERLENGTHUNIT";} }
+		public static string MODULUSOFELASTICITYUNIT { get {return "MODULUSOFELASTICITYUNIT";} }
+		public static string MODULUSOFLINEARSUBGRADEREACTIONUNIT { get {return "MODULUSOFLINEARSUBGRADEREACTIONUNIT";} }
+		public static string MODULUSOFROTATIONALSUBGRADEREACTIONUNIT { get {return "MODULUSOFROTATIONALSUBGRADEREACTIONUNIT";} }
+		public static string MODULUSOFSUBGRADEREACTIONUNIT { get {return "MODULUSOFSUBGRADEREACTIONUNIT";} }
+		public static string MOISTUREDIFFUSIVITYUNIT { get {return "MOISTUREDIFFUSIVITYUNIT";} }
+		public static string MOLECULARWEIGHTUNIT { get {return "MOLECULARWEIGHTUNIT";} }
+		public static string MOMENTOFINERTIAUNIT { get {return "MOMENTOFINERTIAUNIT";} }
+		public static string PHUNIT { get {return "PHUNIT";} }
+		public static string PLANARFORCEUNIT { get {return "PLANARFORCEUNIT";} }
+		public static string ROTATIONALFREQUENCYUNIT { get {return "ROTATIONALFREQUENCYUNIT";} }
+		public static string ROTATIONALMASSUNIT { get {return "ROTATIONALMASSUNIT";} }
+		public static string ROTATIONALSTIFFNESSUNIT { get {return "ROTATIONALSTIFFNESSUNIT";} }
+		public static string SECTIONAREAINTEGRALUNIT { get {return "SECTIONAREAINTEGRALUNIT";} }
+		public static string SECTIONMODULUSUNIT { get {return "SECTIONMODULUSUNIT";} }
+		public static string SHEARMODULUSUNIT { get {return "SHEARMODULUSUNIT";} }
+		public static string SOUNDPOWERLEVELUNIT { get {return "SOUNDPOWERLEVELUNIT";} }
+		public static string SOUNDPOWERUNIT { get {return "SOUNDPOWERUNIT";} }
+		public static string SOUNDPRESSURELEVELUNIT { get {return "SOUNDPRESSURELEVELUNIT";} }
+		public static string SOUNDPRESSUREUNIT { get {return "SOUNDPRESSUREUNIT";} }
+		public static string SPECIFICHEATCAPACITYUNIT { get {return "SPECIFICHEATCAPACITYUNIT";} }
+		public static string TEMPERATUREGRADIENTUNIT { get {return "TEMPERATUREGRADIENTUNIT";} }
+		public static string TEMPERATURERATEOFCHANGEUNIT { get {return "TEMPERATURERATEOFCHANGEUNIT";} }
+		public static string THERMALADMITTANCEUNIT { get {return "THERMALADMITTANCEUNIT";} }
+		public static string THERMALCONDUCTANCEUNIT { get {return "THERMALCONDUCTANCEUNIT";} }
+		public static string THERMALEXPANSIONCOEFFICIENTUNIT { get {return "THERMALEXPANSIONCOEFFICIENTUNIT";} }
+		public static string THERMALRESISTANCEUNIT { get {return "THERMALRESISTANCEUNIT";} }
+		public static string THERMALTRANSMITTANCEUNIT { get {return "THERMALTRANSMITTANCEUNIT";} }
+		public static string TORQUEUNIT { get {return "TORQUEUNIT";} }
+		public static string VAPORPERMEABILITYUNIT { get {return "VAPORPERMEABILITYUNIT";} }
+		public static string VOLUMETRICFLOWRATEUNIT { get {return "VOLUMETRICFLOWRATEUNIT";} }
+		public static string WARPINGCONSTANTUNIT { get {return "WARPINGCONSTANTUNIT";} }
+		public static string WARPINGMOMENTUNIT { get {return "WARPINGMOMENTUNIT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static implicit operator IfcDerivedUnitEnum(string value) { return new IfcDerivedUnitEnum(string);}
+		public static implicit operator string(IfcDerivedUnitEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDirectionSenseEnum = ENUMERATION OF
+	/// <para>TYPE IfcDirectionSenseEnum = ENUMERATION OF</para>
+	/// <para>	(NEGATIVE</para>
+	/// <para>	,POSITIVE);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDirectionSenseEnum
+	{
+		public static string NEGATIVE { get {return "NEGATIVE";} }
+		public static string POSITIVE { get {return "POSITIVE";} }
+		public static implicit operator IfcDirectionSenseEnum(string value) { return new IfcDirectionSenseEnum(string);}
+		public static implicit operator string(IfcDirectionSenseEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDiscreteAccessoryTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcDiscreteAccessoryTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ANCHORPLATE</para>
+	/// <para>	,BIRDPROTECTION</para>
+	/// <para>	,BRACKET</para>
+	/// <para>	,CABLEARRANGER</para>
+	/// <para>	,ELASTIC_CUSHION</para>
+	/// <para>	,EXPANSION_JOINT_DEVICE</para>
+	/// <para>	,FILLER</para>
+	/// <para>	,FLASHING</para>
+	/// <para>	,INSULATOR</para>
+	/// <para>	,LOCK</para>
+	/// <para>	,PANEL_STRENGTHENING</para>
+	/// <para>	,POINTMACHINEMOUNTINGDEVICE</para>
+	/// <para>	,POINT_MACHINE_LOCKING_DEVICE</para>
+	/// <para>	,RAILBRACE</para>
+	/// <para>	,RAILPAD</para>
+	/// <para>	,RAIL_LUBRICATION</para>
+	/// <para>	,RAIL_MECHANICAL_EQUIPMENT</para>
+	/// <para>	,SHOE</para>
+	/// <para>	,SLIDINGCHAIR</para>
+	/// <para>	,SOUNDABSORPTION</para>
+	/// <para>	,TENSIONINGEQUIPMENT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDiscreteAccessoryTypeEnum
+	{
+		public static string ANCHORPLATE { get {return "ANCHORPLATE";} }
+		public static string BIRDPROTECTION { get {return "BIRDPROTECTION";} }
+		public static string BRACKET { get {return "BRACKET";} }
+		public static string CABLEARRANGER { get {return "CABLEARRANGER";} }
+		public static string ELASTIC_CUSHION { get {return "ELASTIC_CUSHION";} }
+		public static string EXPANSION_JOINT_DEVICE { get {return "EXPANSION_JOINT_DEVICE";} }
+		public static string FILLER { get {return "FILLER";} }
+		public static string FLASHING { get {return "FLASHING";} }
+		public static string INSULATOR { get {return "INSULATOR";} }
+		public static string LOCK { get {return "LOCK";} }
+		public static string PANEL_STRENGTHENING { get {return "PANEL_STRENGTHENING";} }
+		public static string POINTMACHINEMOUNTINGDEVICE { get {return "POINTMACHINEMOUNTINGDEVICE";} }
+		public static string POINT_MACHINE_LOCKING_DEVICE { get {return "POINT_MACHINE_LOCKING_DEVICE";} }
+		public static string RAILBRACE { get {return "RAILBRACE";} }
+		public static string RAILPAD { get {return "RAILPAD";} }
+		public static string RAIL_LUBRICATION { get {return "RAIL_LUBRICATION";} }
+		public static string RAIL_MECHANICAL_EQUIPMENT { get {return "RAIL_MECHANICAL_EQUIPMENT";} }
+		public static string SHOE { get {return "SHOE";} }
+		public static string SLIDINGCHAIR { get {return "SLIDINGCHAIR";} }
+		public static string SOUNDABSORPTION { get {return "SOUNDABSORPTION";} }
+		public static string TENSIONINGEQUIPMENT { get {return "TENSIONINGEQUIPMENT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDiscreteAccessoryTypeEnum(string value) { return new IfcDiscreteAccessoryTypeEnum(string);}
+		public static implicit operator string(IfcDiscreteAccessoryTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDistributionBoardTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcDistributionBoardTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CONSUMERUNIT</para>
+	/// <para>	,DISPATCHINGBOARD</para>
+	/// <para>	,DISTRIBUTIONBOARD</para>
+	/// <para>	,DISTRIBUTIONFRAME</para>
+	/// <para>	,MOTORCONTROLCENTRE</para>
+	/// <para>	,SWITCHBOARD</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDistributionBoardTypeEnum
+	{
+		public static string CONSUMERUNIT { get {return "CONSUMERUNIT";} }
+		public static string DISPATCHINGBOARD { get {return "DISPATCHINGBOARD";} }
+		public static string DISTRIBUTIONBOARD { get {return "DISTRIBUTIONBOARD";} }
+		public static string DISTRIBUTIONFRAME { get {return "DISTRIBUTIONFRAME";} }
+		public static string MOTORCONTROLCENTRE { get {return "MOTORCONTROLCENTRE";} }
+		public static string SWITCHBOARD { get {return "SWITCHBOARD";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDistributionBoardTypeEnum(string value) { return new IfcDistributionBoardTypeEnum(string);}
+		public static implicit operator string(IfcDistributionBoardTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDistributionChamberElementTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcDistributionChamberElementTypeEnum = ENUMERATION OF</para>
+	/// <para>	(FORMEDDUCT</para>
+	/// <para>	,INSPECTIONCHAMBER</para>
+	/// <para>	,INSPECTIONPIT</para>
+	/// <para>	,MANHOLE</para>
+	/// <para>	,METERCHAMBER</para>
+	/// <para>	,SUMP</para>
+	/// <para>	,TRENCH</para>
+	/// <para>	,VALVECHAMBER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDistributionChamberElementTypeEnum
+	{
+		public static string FORMEDDUCT { get {return "FORMEDDUCT";} }
+		public static string INSPECTIONCHAMBER { get {return "INSPECTIONCHAMBER";} }
+		public static string INSPECTIONPIT { get {return "INSPECTIONPIT";} }
+		public static string MANHOLE { get {return "MANHOLE";} }
+		public static string METERCHAMBER { get {return "METERCHAMBER";} }
+		public static string SUMP { get {return "SUMP";} }
+		public static string TRENCH { get {return "TRENCH";} }
+		public static string VALVECHAMBER { get {return "VALVECHAMBER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDistributionChamberElementTypeEnum(string value) { return new IfcDistributionChamberElementTypeEnum(string);}
+		public static implicit operator string(IfcDistributionChamberElementTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDistributionPortTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcDistributionPortTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CABLE</para>
+	/// <para>	,CABLECARRIER</para>
+	/// <para>	,DUCT</para>
+	/// <para>	,PIPE</para>
+	/// <para>	,WIRELESS</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDistributionPortTypeEnum
+	{
+		public static string CABLE { get {return "CABLE";} }
+		public static string CABLECARRIER { get {return "CABLECARRIER";} }
+		public static string DUCT { get {return "DUCT";} }
+		public static string PIPE { get {return "PIPE";} }
+		public static string WIRELESS { get {return "WIRELESS";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDistributionPortTypeEnum(string value) { return new IfcDistributionPortTypeEnum(string);}
+		public static implicit operator string(IfcDistributionPortTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDistributionSystemEnum = ENUMERATION OF
+	/// <para>TYPE IfcDistributionSystemEnum = ENUMERATION OF</para>
+	/// <para>	(AIRCONDITIONING</para>
+	/// <para>	,AUDIOVISUAL</para>
+	/// <para>	,CATENARY_SYSTEM</para>
+	/// <para>	,CHEMICAL</para>
+	/// <para>	,CHILLEDWATER</para>
+	/// <para>	,COMMUNICATION</para>
+	/// <para>	,COMPRESSEDAIR</para>
+	/// <para>	,CONDENSERWATER</para>
+	/// <para>	,CONTROL</para>
+	/// <para>	,CONVEYING</para>
+	/// <para>	,DATA</para>
+	/// <para>	,DISPOSAL</para>
+	/// <para>	,DOMESTICCOLDWATER</para>
+	/// <para>	,DOMESTICHOTWATER</para>
+	/// <para>	,DRAINAGE</para>
+	/// <para>	,EARTHING</para>
+	/// <para>	,ELECTRICAL</para>
+	/// <para>	,ELECTROACOUSTIC</para>
+	/// <para>	,EXHAUST</para>
+	/// <para>	,FIREPROTECTION</para>
+	/// <para>	,FIXEDTRANSMISSIONNETWORK</para>
+	/// <para>	,FUEL</para>
+	/// <para>	,GAS</para>
+	/// <para>	,HAZARDOUS</para>
+	/// <para>	,HEATING</para>
+	/// <para>	,LIGHTING</para>
+	/// <para>	,LIGHTNINGPROTECTION</para>
+	/// <para>	,MOBILENETWORK</para>
+	/// <para>	,MONITORINGSYSTEM</para>
+	/// <para>	,MUNICIPALSOLIDWASTE</para>
+	/// <para>	,OIL</para>
+	/// <para>	,OPERATIONAL</para>
+	/// <para>	,OPERATIONALTELEPHONYSYSTEM</para>
+	/// <para>	,OVERHEAD_CONTACTLINE_SYSTEM</para>
+	/// <para>	,POWERGENERATION</para>
+	/// <para>	,RAINWATER</para>
+	/// <para>	,REFRIGERATION</para>
+	/// <para>	,RETURN_CIRCUIT</para>
+	/// <para>	,SECURITY</para>
+	/// <para>	,SEWAGE</para>
+	/// <para>	,SIGNAL</para>
+	/// <para>	,STORMWATER</para>
+	/// <para>	,TELEPHONE</para>
+	/// <para>	,TV</para>
+	/// <para>	,VACUUM</para>
+	/// <para>	,VENT</para>
+	/// <para>	,VENTILATION</para>
+	/// <para>	,WASTEWATER</para>
+	/// <para>	,WATERSUPPLY</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDistributionSystemEnum
+	{
+		public static string AIRCONDITIONING { get {return "AIRCONDITIONING";} }
+		public static string AUDIOVISUAL { get {return "AUDIOVISUAL";} }
+		public static string CATENARY_SYSTEM { get {return "CATENARY_SYSTEM";} }
+		public static string CHEMICAL { get {return "CHEMICAL";} }
+		public static string CHILLEDWATER { get {return "CHILLEDWATER";} }
+		public static string COMMUNICATION { get {return "COMMUNICATION";} }
+		public static string COMPRESSEDAIR { get {return "COMPRESSEDAIR";} }
+		public static string CONDENSERWATER { get {return "CONDENSERWATER";} }
+		public static string CONTROL { get {return "CONTROL";} }
+		public static string CONVEYING { get {return "CONVEYING";} }
+		public static string DATA { get {return "DATA";} }
+		public static string DISPOSAL { get {return "DISPOSAL";} }
+		public static string DOMESTICCOLDWATER { get {return "DOMESTICCOLDWATER";} }
+		public static string DOMESTICHOTWATER { get {return "DOMESTICHOTWATER";} }
+		public static string DRAINAGE { get {return "DRAINAGE";} }
+		public static string EARTHING { get {return "EARTHING";} }
+		public static string ELECTRICAL { get {return "ELECTRICAL";} }
+		public static string ELECTROACOUSTIC { get {return "ELECTROACOUSTIC";} }
+		public static string EXHAUST { get {return "EXHAUST";} }
+		public static string FIREPROTECTION { get {return "FIREPROTECTION";} }
+		public static string FIXEDTRANSMISSIONNETWORK { get {return "FIXEDTRANSMISSIONNETWORK";} }
+		public static string FUEL { get {return "FUEL";} }
+		public static string GAS { get {return "GAS";} }
+		public static string HAZARDOUS { get {return "HAZARDOUS";} }
+		public static string HEATING { get {return "HEATING";} }
+		public static string LIGHTING { get {return "LIGHTING";} }
+		public static string LIGHTNINGPROTECTION { get {return "LIGHTNINGPROTECTION";} }
+		public static string MOBILENETWORK { get {return "MOBILENETWORK";} }
+		public static string MONITORINGSYSTEM { get {return "MONITORINGSYSTEM";} }
+		public static string MUNICIPALSOLIDWASTE { get {return "MUNICIPALSOLIDWASTE";} }
+		public static string OIL { get {return "OIL";} }
+		public static string OPERATIONAL { get {return "OPERATIONAL";} }
+		public static string OPERATIONALTELEPHONYSYSTEM { get {return "OPERATIONALTELEPHONYSYSTEM";} }
+		public static string OVERHEAD_CONTACTLINE_SYSTEM { get {return "OVERHEAD_CONTACTLINE_SYSTEM";} }
+		public static string POWERGENERATION { get {return "POWERGENERATION";} }
+		public static string RAINWATER { get {return "RAINWATER";} }
+		public static string REFRIGERATION { get {return "REFRIGERATION";} }
+		public static string RETURN_CIRCUIT { get {return "RETURN_CIRCUIT";} }
+		public static string SECURITY { get {return "SECURITY";} }
+		public static string SEWAGE { get {return "SEWAGE";} }
+		public static string SIGNAL { get {return "SIGNAL";} }
+		public static string STORMWATER { get {return "STORMWATER";} }
+		public static string TELEPHONE { get {return "TELEPHONE";} }
+		public static string TV { get {return "TV";} }
+		public static string VACUUM { get {return "VACUUM";} }
+		public static string VENT { get {return "VENT";} }
+		public static string VENTILATION { get {return "VENTILATION";} }
+		public static string WASTEWATER { get {return "WASTEWATER";} }
+		public static string WATERSUPPLY { get {return "WATERSUPPLY";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDistributionSystemEnum(string value) { return new IfcDistributionSystemEnum(string);}
+		public static implicit operator string(IfcDistributionSystemEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDocumentConfidentialityEnum = ENUMERATION OF
+	/// <para>TYPE IfcDocumentConfidentialityEnum = ENUMERATION OF</para>
+	/// <para>	(CONFIDENTIAL</para>
+	/// <para>	,PERSONAL</para>
+	/// <para>	,PUBLIC</para>
+	/// <para>	,RESTRICTED</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDocumentConfidentialityEnum
+	{
+		public static string CONFIDENTIAL { get {return "CONFIDENTIAL";} }
+		public static string PERSONAL { get {return "PERSONAL";} }
+		public static string PUBLIC { get {return "PUBLIC";} }
+		public static string RESTRICTED { get {return "RESTRICTED";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDocumentConfidentialityEnum(string value) { return new IfcDocumentConfidentialityEnum(string);}
+		public static implicit operator string(IfcDocumentConfidentialityEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDocumentStatusEnum = ENUMERATION OF
+	/// <para>TYPE IfcDocumentStatusEnum = ENUMERATION OF</para>
+	/// <para>	(DRAFT</para>
+	/// <para>	,FINAL</para>
+	/// <para>	,FINALDRAFT</para>
+	/// <para>	,REVISION</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDocumentStatusEnum
+	{
+		public static string DRAFT { get {return "DRAFT";} }
+		public static string FINAL { get {return "FINAL";} }
+		public static string FINALDRAFT { get {return "FINALDRAFT";} }
+		public static string REVISION { get {return "REVISION";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDocumentStatusEnum(string value) { return new IfcDocumentStatusEnum(string);}
+		public static implicit operator string(IfcDocumentStatusEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDoorPanelOperationEnum = ENUMERATION OF
+	/// <para>TYPE IfcDoorPanelOperationEnum = ENUMERATION OF</para>
+	/// <para>	(DOUBLE_ACTING</para>
+	/// <para>	,FIXEDPANEL</para>
+	/// <para>	,FOLDING</para>
+	/// <para>	,REVOLVING</para>
+	/// <para>	,ROLLINGUP</para>
+	/// <para>	,SLIDING</para>
+	/// <para>	,SWINGING</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDoorPanelOperationEnum
+	{
+		public static string DOUBLE_ACTING { get {return "DOUBLE_ACTING";} }
+		public static string FIXEDPANEL { get {return "FIXEDPANEL";} }
+		public static string FOLDING { get {return "FOLDING";} }
+		public static string REVOLVING { get {return "REVOLVING";} }
+		public static string ROLLINGUP { get {return "ROLLINGUP";} }
+		public static string SLIDING { get {return "SLIDING";} }
+		public static string SWINGING { get {return "SWINGING";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDoorPanelOperationEnum(string value) { return new IfcDoorPanelOperationEnum(string);}
+		public static implicit operator string(IfcDoorPanelOperationEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDoorPanelPositionEnum = ENUMERATION OF
+	/// <para>TYPE IfcDoorPanelPositionEnum = ENUMERATION OF</para>
+	/// <para>	(LEFT</para>
+	/// <para>	,MIDDLE</para>
+	/// <para>	,RIGHT</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDoorPanelPositionEnum
+	{
+		public static string LEFT { get {return "LEFT";} }
+		public static string MIDDLE { get {return "MIDDLE";} }
+		public static string RIGHT { get {return "RIGHT";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDoorPanelPositionEnum(string value) { return new IfcDoorPanelPositionEnum(string);}
+		public static implicit operator string(IfcDoorPanelPositionEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDoorTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcDoorTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BOOM_BARRIER</para>
+	/// <para>	,DOOR</para>
+	/// <para>	,GATE</para>
+	/// <para>	,TRAPDOOR</para>
+	/// <para>	,TURNSTILE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDoorTypeEnum
+	{
+		public static string BOOM_BARRIER { get {return "BOOM_BARRIER";} }
+		public static string DOOR { get {return "DOOR";} }
+		public static string GATE { get {return "GATE";} }
+		public static string TRAPDOOR { get {return "TRAPDOOR";} }
+		public static string TURNSTILE { get {return "TURNSTILE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDoorTypeEnum(string value) { return new IfcDoorTypeEnum(string);}
+		public static implicit operator string(IfcDoorTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDoorTypeOperationEnum = ENUMERATION OF
+	/// <para>TYPE IfcDoorTypeOperationEnum = ENUMERATION OF</para>
+	/// <para>	(DOUBLE_DOOR_DOUBLE_SWING</para>
+	/// <para>	,DOUBLE_DOOR_FOLDING</para>
+	/// <para>	,DOUBLE_DOOR_LIFTING_VERTICAL</para>
+	/// <para>	,DOUBLE_DOOR_SINGLE_SWING</para>
+	/// <para>	,DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT</para>
+	/// <para>	,DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT</para>
+	/// <para>	,DOUBLE_DOOR_SLIDING</para>
+	/// <para>	,DOUBLE_SWING_LEFT</para>
+	/// <para>	,DOUBLE_SWING_RIGHT</para>
+	/// <para>	,FOLDING_TO_LEFT</para>
+	/// <para>	,FOLDING_TO_RIGHT</para>
+	/// <para>	,LIFTING_HORIZONTAL</para>
+	/// <para>	,LIFTING_VERTICAL_LEFT</para>
+	/// <para>	,LIFTING_VERTICAL_RIGHT</para>
+	/// <para>	,REVOLVING</para>
+	/// <para>	,REVOLVING_VERTICAL</para>
+	/// <para>	,ROLLINGUP</para>
+	/// <para>	,SINGLE_SWING_LEFT</para>
+	/// <para>	,SINGLE_SWING_RIGHT</para>
+	/// <para>	,SLIDING_TO_LEFT</para>
+	/// <para>	,SLIDING_TO_RIGHT</para>
+	/// <para>	,SWING_FIXED_LEFT</para>
+	/// <para>	,SWING_FIXED_RIGHT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDoorTypeOperationEnum
+	{
+		public static string DOUBLE_DOOR_DOUBLE_SWING { get {return "DOUBLE_DOOR_DOUBLE_SWING";} }
+		public static string DOUBLE_DOOR_FOLDING { get {return "DOUBLE_DOOR_FOLDING";} }
+		public static string DOUBLE_DOOR_LIFTING_VERTICAL { get {return "DOUBLE_DOOR_LIFTING_VERTICAL";} }
+		public static string DOUBLE_DOOR_SINGLE_SWING { get {return "DOUBLE_DOOR_SINGLE_SWING";} }
+		public static string DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT { get {return "DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT";} }
+		public static string DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT { get {return "DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT";} }
+		public static string DOUBLE_DOOR_SLIDING { get {return "DOUBLE_DOOR_SLIDING";} }
+		public static string DOUBLE_SWING_LEFT { get {return "DOUBLE_SWING_LEFT";} }
+		public static string DOUBLE_SWING_RIGHT { get {return "DOUBLE_SWING_RIGHT";} }
+		public static string FOLDING_TO_LEFT { get {return "FOLDING_TO_LEFT";} }
+		public static string FOLDING_TO_RIGHT { get {return "FOLDING_TO_RIGHT";} }
+		public static string LIFTING_HORIZONTAL { get {return "LIFTING_HORIZONTAL";} }
+		public static string LIFTING_VERTICAL_LEFT { get {return "LIFTING_VERTICAL_LEFT";} }
+		public static string LIFTING_VERTICAL_RIGHT { get {return "LIFTING_VERTICAL_RIGHT";} }
+		public static string REVOLVING { get {return "REVOLVING";} }
+		public static string REVOLVING_VERTICAL { get {return "REVOLVING_VERTICAL";} }
+		public static string ROLLINGUP { get {return "ROLLINGUP";} }
+		public static string SINGLE_SWING_LEFT { get {return "SINGLE_SWING_LEFT";} }
+		public static string SINGLE_SWING_RIGHT { get {return "SINGLE_SWING_RIGHT";} }
+		public static string SLIDING_TO_LEFT { get {return "SLIDING_TO_LEFT";} }
+		public static string SLIDING_TO_RIGHT { get {return "SLIDING_TO_RIGHT";} }
+		public static string SWING_FIXED_LEFT { get {return "SWING_FIXED_LEFT";} }
+		public static string SWING_FIXED_RIGHT { get {return "SWING_FIXED_RIGHT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDoorTypeOperationEnum(string value) { return new IfcDoorTypeOperationEnum(string);}
+		public static implicit operator string(IfcDoorTypeOperationEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDuctFittingTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcDuctFittingTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BEND</para>
+	/// <para>	,CONNECTOR</para>
+	/// <para>	,ENTRY</para>
+	/// <para>	,EXIT</para>
+	/// <para>	,JUNCTION</para>
+	/// <para>	,OBSTRUCTION</para>
+	/// <para>	,TRANSITION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDuctFittingTypeEnum
+	{
+		public static string BEND { get {return "BEND";} }
+		public static string CONNECTOR { get {return "CONNECTOR";} }
+		public static string ENTRY { get {return "ENTRY";} }
+		public static string EXIT { get {return "EXIT";} }
+		public static string JUNCTION { get {return "JUNCTION";} }
+		public static string OBSTRUCTION { get {return "OBSTRUCTION";} }
+		public static string TRANSITION { get {return "TRANSITION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDuctFittingTypeEnum(string value) { return new IfcDuctFittingTypeEnum(string);}
+		public static implicit operator string(IfcDuctFittingTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDuctSegmentTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcDuctSegmentTypeEnum = ENUMERATION OF</para>
+	/// <para>	(FLEXIBLESEGMENT</para>
+	/// <para>	,RIGIDSEGMENT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDuctSegmentTypeEnum
+	{
+		public static string FLEXIBLESEGMENT { get {return "FLEXIBLESEGMENT";} }
+		public static string RIGIDSEGMENT { get {return "RIGIDSEGMENT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDuctSegmentTypeEnum(string value) { return new IfcDuctSegmentTypeEnum(string);}
+		public static implicit operator string(IfcDuctSegmentTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcDuctSilencerTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcDuctSilencerTypeEnum = ENUMERATION OF</para>
+	/// <para>	(FLATOVAL</para>
+	/// <para>	,RECTANGULAR</para>
+	/// <para>	,ROUND</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcDuctSilencerTypeEnum
+	{
+		public static string FLATOVAL { get {return "FLATOVAL";} }
+		public static string RECTANGULAR { get {return "RECTANGULAR";} }
+		public static string ROUND { get {return "ROUND";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcDuctSilencerTypeEnum(string value) { return new IfcDuctSilencerTypeEnum(string);}
+		public static implicit operator string(IfcDuctSilencerTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcEarthworksCutTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcEarthworksCutTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BASE_EXCAVATION</para>
+	/// <para>	,CUT</para>
+	/// <para>	,DREDGING</para>
+	/// <para>	,EXCAVATION</para>
+	/// <para>	,OVEREXCAVATION</para>
+	/// <para>	,PAVEMENTMILLING</para>
+	/// <para>	,STEPEXCAVATION</para>
+	/// <para>	,TOPSOILREMOVAL</para>
+	/// <para>	,TRENCH</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcEarthworksCutTypeEnum
+	{
+		public static string BASE_EXCAVATION { get {return "BASE_EXCAVATION";} }
+		public static string CUT { get {return "CUT";} }
+		public static string DREDGING { get {return "DREDGING";} }
+		public static string EXCAVATION { get {return "EXCAVATION";} }
+		public static string OVEREXCAVATION { get {return "OVEREXCAVATION";} }
+		public static string PAVEMENTMILLING { get {return "PAVEMENTMILLING";} }
+		public static string STEPEXCAVATION { get {return "STEPEXCAVATION";} }
+		public static string TOPSOILREMOVAL { get {return "TOPSOILREMOVAL";} }
+		public static string TRENCH { get {return "TRENCH";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcEarthworksCutTypeEnum(string value) { return new IfcEarthworksCutTypeEnum(string);}
+		public static implicit operator string(IfcEarthworksCutTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcEarthworksFillTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcEarthworksFillTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BACKFILL</para>
+	/// <para>	,COUNTERWEIGHT</para>
+	/// <para>	,EMBANKMENT</para>
+	/// <para>	,SLOPEFILL</para>
+	/// <para>	,SUBGRADE</para>
+	/// <para>	,SUBGRADEBED</para>
+	/// <para>	,TRANSITIONSECTION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcEarthworksFillTypeEnum
+	{
+		public static string BACKFILL { get {return "BACKFILL";} }
+		public static string COUNTERWEIGHT { get {return "COUNTERWEIGHT";} }
+		public static string EMBANKMENT { get {return "EMBANKMENT";} }
+		public static string SLOPEFILL { get {return "SLOPEFILL";} }
+		public static string SUBGRADE { get {return "SUBGRADE";} }
+		public static string SUBGRADEBED { get {return "SUBGRADEBED";} }
+		public static string TRANSITIONSECTION { get {return "TRANSITIONSECTION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcEarthworksFillTypeEnum(string value) { return new IfcEarthworksFillTypeEnum(string);}
+		public static implicit operator string(IfcEarthworksFillTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcElectricApplianceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcElectricApplianceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(DISHWASHER</para>
+	/// <para>	,ELECTRICCOOKER</para>
+	/// <para>	,FREESTANDINGELECTRICHEATER</para>
+	/// <para>	,FREESTANDINGFAN</para>
+	/// <para>	,FREESTANDINGWATERCOOLER</para>
+	/// <para>	,FREESTANDINGWATERHEATER</para>
+	/// <para>	,FREEZER</para>
+	/// <para>	,FRIDGE_FREEZER</para>
+	/// <para>	,HANDDRYER</para>
+	/// <para>	,KITCHENMACHINE</para>
+	/// <para>	,MICROWAVE</para>
+	/// <para>	,PHOTOCOPIER</para>
+	/// <para>	,REFRIGERATOR</para>
+	/// <para>	,TUMBLEDRYER</para>
+	/// <para>	,VENDINGMACHINE</para>
+	/// <para>	,WASHINGMACHINE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcElectricApplianceTypeEnum
+	{
+		public static string DISHWASHER { get {return "DISHWASHER";} }
+		public static string ELECTRICCOOKER { get {return "ELECTRICCOOKER";} }
+		public static string FREESTANDINGELECTRICHEATER { get {return "FREESTANDINGELECTRICHEATER";} }
+		public static string FREESTANDINGFAN { get {return "FREESTANDINGFAN";} }
+		public static string FREESTANDINGWATERCOOLER { get {return "FREESTANDINGWATERCOOLER";} }
+		public static string FREESTANDINGWATERHEATER { get {return "FREESTANDINGWATERHEATER";} }
+		public static string FREEZER { get {return "FREEZER";} }
+		public static string FRIDGE_FREEZER { get {return "FRIDGE_FREEZER";} }
+		public static string HANDDRYER { get {return "HANDDRYER";} }
+		public static string KITCHENMACHINE { get {return "KITCHENMACHINE";} }
+		public static string MICROWAVE { get {return "MICROWAVE";} }
+		public static string PHOTOCOPIER { get {return "PHOTOCOPIER";} }
+		public static string REFRIGERATOR { get {return "REFRIGERATOR";} }
+		public static string TUMBLEDRYER { get {return "TUMBLEDRYER";} }
+		public static string VENDINGMACHINE { get {return "VENDINGMACHINE";} }
+		public static string WASHINGMACHINE { get {return "WASHINGMACHINE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcElectricApplianceTypeEnum(string value) { return new IfcElectricApplianceTypeEnum(string);}
+		public static implicit operator string(IfcElectricApplianceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcElectricDistributionBoardTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcElectricDistributionBoardTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CONSUMERUNIT</para>
+	/// <para>	,DISTRIBUTIONBOARD</para>
+	/// <para>	,MOTORCONTROLCENTRE</para>
+	/// <para>	,SWITCHBOARD</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcElectricDistributionBoardTypeEnum
+	{
+		public static string CONSUMERUNIT { get {return "CONSUMERUNIT";} }
+		public static string DISTRIBUTIONBOARD { get {return "DISTRIBUTIONBOARD";} }
+		public static string MOTORCONTROLCENTRE { get {return "MOTORCONTROLCENTRE";} }
+		public static string SWITCHBOARD { get {return "SWITCHBOARD";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcElectricDistributionBoardTypeEnum(string value) { return new IfcElectricDistributionBoardTypeEnum(string);}
+		public static implicit operator string(IfcElectricDistributionBoardTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcElectricFlowStorageDeviceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcElectricFlowStorageDeviceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BATTERY</para>
+	/// <para>	,CAPACITOR</para>
+	/// <para>	,CAPACITORBANK</para>
+	/// <para>	,COMPENSATOR</para>
+	/// <para>	,HARMONICFILTER</para>
+	/// <para>	,INDUCTOR</para>
+	/// <para>	,INDUCTORBANK</para>
+	/// <para>	,RECHARGER</para>
+	/// <para>	,UPS</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcElectricFlowStorageDeviceTypeEnum
+	{
+		public static string BATTERY { get {return "BATTERY";} }
+		public static string CAPACITOR { get {return "CAPACITOR";} }
+		public static string CAPACITORBANK { get {return "CAPACITORBANK";} }
+		public static string COMPENSATOR { get {return "COMPENSATOR";} }
+		public static string HARMONICFILTER { get {return "HARMONICFILTER";} }
+		public static string INDUCTOR { get {return "INDUCTOR";} }
+		public static string INDUCTORBANK { get {return "INDUCTORBANK";} }
+		public static string RECHARGER { get {return "RECHARGER";} }
+		public static string UPS { get {return "UPS";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcElectricFlowStorageDeviceTypeEnum(string value) { return new IfcElectricFlowStorageDeviceTypeEnum(string);}
+		public static implicit operator string(IfcElectricFlowStorageDeviceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcElectricFlowTreatmentDeviceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcElectricFlowTreatmentDeviceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ELECTRONICFILTER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcElectricFlowTreatmentDeviceTypeEnum
+	{
+		public static string ELECTRONICFILTER { get {return "ELECTRONICFILTER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcElectricFlowTreatmentDeviceTypeEnum(string value) { return new IfcElectricFlowTreatmentDeviceTypeEnum(string);}
+		public static implicit operator string(IfcElectricFlowTreatmentDeviceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcElectricGeneratorTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcElectricGeneratorTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CHP</para>
+	/// <para>	,ENGINEGENERATOR</para>
+	/// <para>	,STANDALONE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcElectricGeneratorTypeEnum
+	{
+		public static string CHP { get {return "CHP";} }
+		public static string ENGINEGENERATOR { get {return "ENGINEGENERATOR";} }
+		public static string STANDALONE { get {return "STANDALONE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcElectricGeneratorTypeEnum(string value) { return new IfcElectricGeneratorTypeEnum(string);}
+		public static implicit operator string(IfcElectricGeneratorTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcElectricMotorTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcElectricMotorTypeEnum = ENUMERATION OF</para>
+	/// <para>	(DC</para>
+	/// <para>	,INDUCTION</para>
+	/// <para>	,POLYPHASE</para>
+	/// <para>	,RELUCTANCESYNCHRONOUS</para>
+	/// <para>	,SYNCHRONOUS</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcElectricMotorTypeEnum
+	{
+		public static string DC { get {return "DC";} }
+		public static string INDUCTION { get {return "INDUCTION";} }
+		public static string POLYPHASE { get {return "POLYPHASE";} }
+		public static string RELUCTANCESYNCHRONOUS { get {return "RELUCTANCESYNCHRONOUS";} }
+		public static string SYNCHRONOUS { get {return "SYNCHRONOUS";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcElectricMotorTypeEnum(string value) { return new IfcElectricMotorTypeEnum(string);}
+		public static implicit operator string(IfcElectricMotorTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcElectricTimeControlTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcElectricTimeControlTypeEnum = ENUMERATION OF</para>
+	/// <para>	(RELAY</para>
+	/// <para>	,TIMECLOCK</para>
+	/// <para>	,TIMEDELAY</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcElectricTimeControlTypeEnum
+	{
+		public static string RELAY { get {return "RELAY";} }
+		public static string TIMECLOCK { get {return "TIMECLOCK";} }
+		public static string TIMEDELAY { get {return "TIMEDELAY";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcElectricTimeControlTypeEnum(string value) { return new IfcElectricTimeControlTypeEnum(string);}
+		public static implicit operator string(IfcElectricTimeControlTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcElementAssemblyTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcElementAssemblyTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ABUTMENT</para>
+	/// <para>	,ACCESSORY_ASSEMBLY</para>
+	/// <para>	,ARCH</para>
+	/// <para>	,BEAM_GRID</para>
+	/// <para>	,BRACED_FRAME</para>
+	/// <para>	,CROSS_BRACING</para>
+	/// <para>	,DECK</para>
+	/// <para>	,DILATATIONPANEL</para>
+	/// <para>	,ENTRANCEWORKS</para>
+	/// <para>	,GIRDER</para>
+	/// <para>	,GRID</para>
+	/// <para>	,MAST</para>
+	/// <para>	,PIER</para>
+	/// <para>	,PYLON</para>
+	/// <para>	,RAIL_MECHANICAL_EQUIPMENT_ASSEMBLY</para>
+	/// <para>	,REINFORCEMENT_UNIT</para>
+	/// <para>	,RIGID_FRAME</para>
+	/// <para>	,SHELTER</para>
+	/// <para>	,SIGNALASSEMBLY</para>
+	/// <para>	,SLAB_FIELD</para>
+	/// <para>	,SUMPBUSTER</para>
+	/// <para>	,SUPPORTINGASSEMBLY</para>
+	/// <para>	,SUSPENSIONASSEMBLY</para>
+	/// <para>	,TRACKPANEL</para>
+	/// <para>	,TRACTION_SWITCHING_ASSEMBLY</para>
+	/// <para>	,TRAFFIC_CALMING_DEVICE</para>
+	/// <para>	,TRUSS</para>
+	/// <para>	,TURNOUTPANEL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcElementAssemblyTypeEnum
+	{
+		public static string ABUTMENT { get {return "ABUTMENT";} }
+		public static string ACCESSORY_ASSEMBLY { get {return "ACCESSORY_ASSEMBLY";} }
+		public static string ARCH { get {return "ARCH";} }
+		public static string BEAM_GRID { get {return "BEAM_GRID";} }
+		public static string BRACED_FRAME { get {return "BRACED_FRAME";} }
+		public static string CROSS_BRACING { get {return "CROSS_BRACING";} }
+		public static string DECK { get {return "DECK";} }
+		public static string DILATATIONPANEL { get {return "DILATATIONPANEL";} }
+		public static string ENTRANCEWORKS { get {return "ENTRANCEWORKS";} }
+		public static string GIRDER { get {return "GIRDER";} }
+		public static string GRID { get {return "GRID";} }
+		public static string MAST { get {return "MAST";} }
+		public static string PIER { get {return "PIER";} }
+		public static string PYLON { get {return "PYLON";} }
+		public static string RAIL_MECHANICAL_EQUIPMENT_ASSEMBLY { get {return "RAIL_MECHANICAL_EQUIPMENT_ASSEMBLY";} }
+		public static string REINFORCEMENT_UNIT { get {return "REINFORCEMENT_UNIT";} }
+		public static string RIGID_FRAME { get {return "RIGID_FRAME";} }
+		public static string SHELTER { get {return "SHELTER";} }
+		public static string SIGNALASSEMBLY { get {return "SIGNALASSEMBLY";} }
+		public static string SLAB_FIELD { get {return "SLAB_FIELD";} }
+		public static string SUMPBUSTER { get {return "SUMPBUSTER";} }
+		public static string SUPPORTINGASSEMBLY { get {return "SUPPORTINGASSEMBLY";} }
+		public static string SUSPENSIONASSEMBLY { get {return "SUSPENSIONASSEMBLY";} }
+		public static string TRACKPANEL { get {return "TRACKPANEL";} }
+		public static string TRACTION_SWITCHING_ASSEMBLY { get {return "TRACTION_SWITCHING_ASSEMBLY";} }
+		public static string TRAFFIC_CALMING_DEVICE { get {return "TRAFFIC_CALMING_DEVICE";} }
+		public static string TRUSS { get {return "TRUSS";} }
+		public static string TURNOUTPANEL { get {return "TURNOUTPANEL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcElementAssemblyTypeEnum(string value) { return new IfcElementAssemblyTypeEnum(string);}
+		public static implicit operator string(IfcElementAssemblyTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcElementCompositionEnum = ENUMERATION OF
+	/// <para>TYPE IfcElementCompositionEnum = ENUMERATION OF</para>
+	/// <para>	(COMPLEX</para>
+	/// <para>	,ELEMENT</para>
+	/// <para>	,PARTIAL);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcElementCompositionEnum
+	{
+		public static string COMPLEX { get {return "COMPLEX";} }
+		public static string ELEMENT { get {return "ELEMENT";} }
+		public static string PARTIAL { get {return "PARTIAL";} }
+		public static implicit operator IfcElementCompositionEnum(string value) { return new IfcElementCompositionEnum(string);}
+		public static implicit operator string(IfcElementCompositionEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcEngineTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcEngineTypeEnum = ENUMERATION OF</para>
+	/// <para>	(EXTERNALCOMBUSTION</para>
+	/// <para>	,INTERNALCOMBUSTION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcEngineTypeEnum
+	{
+		public static string EXTERNALCOMBUSTION { get {return "EXTERNALCOMBUSTION";} }
+		public static string INTERNALCOMBUSTION { get {return "INTERNALCOMBUSTION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcEngineTypeEnum(string value) { return new IfcEngineTypeEnum(string);}
+		public static implicit operator string(IfcEngineTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcEvaporativeCoolerTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcEvaporativeCoolerTypeEnum = ENUMERATION OF</para>
+	/// <para>	(DIRECTEVAPORATIVEAIRWASHER</para>
+	/// <para>	,DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER</para>
+	/// <para>	,DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER</para>
+	/// <para>	,DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER</para>
+	/// <para>	,DIRECTEVAPORATIVESLINGERSPACKAGEDAIRCOOLER</para>
+	/// <para>	,INDIRECTDIRECTCOMBINATION</para>
+	/// <para>	,INDIRECTEVAPORATIVECOOLINGTOWERORCOILCOOLER</para>
+	/// <para>	,INDIRECTEVAPORATIVEPACKAGEAIRCOOLER</para>
+	/// <para>	,INDIRECTEVAPORATIVEWETCOIL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcEvaporativeCoolerTypeEnum
+	{
+		public static string DIRECTEVAPORATIVEAIRWASHER { get {return "DIRECTEVAPORATIVEAIRWASHER";} }
+		public static string DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER { get {return "DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER";} }
+		public static string DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER { get {return "DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER";} }
+		public static string DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER { get {return "DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER";} }
+		public static string DIRECTEVAPORATIVESLINGERSPACKAGEDAIRCOOLER { get {return "DIRECTEVAPORATIVESLINGERSPACKAGEDAIRCOOLER";} }
+		public static string INDIRECTDIRECTCOMBINATION { get {return "INDIRECTDIRECTCOMBINATION";} }
+		public static string INDIRECTEVAPORATIVECOOLINGTOWERORCOILCOOLER { get {return "INDIRECTEVAPORATIVECOOLINGTOWERORCOILCOOLER";} }
+		public static string INDIRECTEVAPORATIVEPACKAGEAIRCOOLER { get {return "INDIRECTEVAPORATIVEPACKAGEAIRCOOLER";} }
+		public static string INDIRECTEVAPORATIVEWETCOIL { get {return "INDIRECTEVAPORATIVEWETCOIL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcEvaporativeCoolerTypeEnum(string value) { return new IfcEvaporativeCoolerTypeEnum(string);}
+		public static implicit operator string(IfcEvaporativeCoolerTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcEvaporatorTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcEvaporatorTypeEnum = ENUMERATION OF</para>
+	/// <para>	(DIRECTEXPANSION</para>
+	/// <para>	,DIRECTEXPANSIONBRAZEDPLATE</para>
+	/// <para>	,DIRECTEXPANSIONSHELLANDTUBE</para>
+	/// <para>	,DIRECTEXPANSIONTUBEINTUBE</para>
+	/// <para>	,FLOODEDSHELLANDTUBE</para>
+	/// <para>	,SHELLANDCOIL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcEvaporatorTypeEnum
+	{
+		public static string DIRECTEXPANSION { get {return "DIRECTEXPANSION";} }
+		public static string DIRECTEXPANSIONBRAZEDPLATE { get {return "DIRECTEXPANSIONBRAZEDPLATE";} }
+		public static string DIRECTEXPANSIONSHELLANDTUBE { get {return "DIRECTEXPANSIONSHELLANDTUBE";} }
+		public static string DIRECTEXPANSIONTUBEINTUBE { get {return "DIRECTEXPANSIONTUBEINTUBE";} }
+		public static string FLOODEDSHELLANDTUBE { get {return "FLOODEDSHELLANDTUBE";} }
+		public static string SHELLANDCOIL { get {return "SHELLANDCOIL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcEvaporatorTypeEnum(string value) { return new IfcEvaporatorTypeEnum(string);}
+		public static implicit operator string(IfcEvaporatorTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcEventTriggerTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcEventTriggerTypeEnum = ENUMERATION OF</para>
+	/// <para>	(EVENTCOMPLEX</para>
+	/// <para>	,EVENTMESSAGE</para>
+	/// <para>	,EVENTRULE</para>
+	/// <para>	,EVENTTIME</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcEventTriggerTypeEnum
+	{
+		public static string EVENTCOMPLEX { get {return "EVENTCOMPLEX";} }
+		public static string EVENTMESSAGE { get {return "EVENTMESSAGE";} }
+		public static string EVENTRULE { get {return "EVENTRULE";} }
+		public static string EVENTTIME { get {return "EVENTTIME";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcEventTriggerTypeEnum(string value) { return new IfcEventTriggerTypeEnum(string);}
+		public static implicit operator string(IfcEventTriggerTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcEventTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcEventTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ENDEVENT</para>
+	/// <para>	,INTERMEDIATEEVENT</para>
+	/// <para>	,STARTEVENT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcEventTypeEnum
+	{
+		public static string ENDEVENT { get {return "ENDEVENT";} }
+		public static string INTERMEDIATEEVENT { get {return "INTERMEDIATEEVENT";} }
+		public static string STARTEVENT { get {return "STARTEVENT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcEventTypeEnum(string value) { return new IfcEventTypeEnum(string);}
+		public static implicit operator string(IfcEventTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcExternalSpatialElementTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcExternalSpatialElementTypeEnum = ENUMERATION OF</para>
+	/// <para>	(EXTERNAL</para>
+	/// <para>	,EXTERNAL_EARTH</para>
+	/// <para>	,EXTERNAL_FIRE</para>
+	/// <para>	,EXTERNAL_WATER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcExternalSpatialElementTypeEnum
+	{
+		public static string EXTERNAL { get {return "EXTERNAL";} }
+		public static string EXTERNAL_EARTH { get {return "EXTERNAL_EARTH";} }
+		public static string EXTERNAL_FIRE { get {return "EXTERNAL_FIRE";} }
+		public static string EXTERNAL_WATER { get {return "EXTERNAL_WATER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcExternalSpatialElementTypeEnum(string value) { return new IfcExternalSpatialElementTypeEnum(string);}
+		public static implicit operator string(IfcExternalSpatialElementTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcFacilityPartCommonTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcFacilityPartCommonTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ABOVEGROUND</para>
+	/// <para>	,BELOWGROUND</para>
+	/// <para>	,JUNCTION</para>
+	/// <para>	,LEVELCROSSING</para>
+	/// <para>	,SEGMENT</para>
+	/// <para>	,SUBSTRUCTURE</para>
+	/// <para>	,SUPERSTRUCTURE</para>
+	/// <para>	,TERMINAL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcFacilityPartCommonTypeEnum
+	{
+		public static string ABOVEGROUND { get {return "ABOVEGROUND";} }
+		public static string BELOWGROUND { get {return "BELOWGROUND";} }
+		public static string JUNCTION { get {return "JUNCTION";} }
+		public static string LEVELCROSSING { get {return "LEVELCROSSING";} }
+		public static string SEGMENT { get {return "SEGMENT";} }
+		public static string SUBSTRUCTURE { get {return "SUBSTRUCTURE";} }
+		public static string SUPERSTRUCTURE { get {return "SUPERSTRUCTURE";} }
+		public static string TERMINAL { get {return "TERMINAL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcFacilityPartCommonTypeEnum(string value) { return new IfcFacilityPartCommonTypeEnum(string);}
+		public static implicit operator string(IfcFacilityPartCommonTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcFacilityUsageEnum = ENUMERATION OF
+	/// <para>TYPE IfcFacilityUsageEnum = ENUMERATION OF</para>
+	/// <para>	(LATERAL</para>
+	/// <para>	,LONGITUDINAL</para>
+	/// <para>	,REGION</para>
+	/// <para>	,VERTICAL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcFacilityUsageEnum
+	{
+		public static string LATERAL { get {return "LATERAL";} }
+		public static string LONGITUDINAL { get {return "LONGITUDINAL";} }
+		public static string REGION { get {return "REGION";} }
+		public static string VERTICAL { get {return "VERTICAL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcFacilityUsageEnum(string value) { return new IfcFacilityUsageEnum(string);}
+		public static implicit operator string(IfcFacilityUsageEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcFanTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcFanTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CENTRIFUGALAIRFOIL</para>
+	/// <para>	,CENTRIFUGALBACKWARDINCLINEDCURVED</para>
+	/// <para>	,CENTRIFUGALFORWARDCURVED</para>
+	/// <para>	,CENTRIFUGALRADIAL</para>
+	/// <para>	,PROPELLORAXIAL</para>
+	/// <para>	,TUBEAXIAL</para>
+	/// <para>	,VANEAXIAL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcFanTypeEnum
+	{
+		public static string CENTRIFUGALAIRFOIL { get {return "CENTRIFUGALAIRFOIL";} }
+		public static string CENTRIFUGALBACKWARDINCLINEDCURVED { get {return "CENTRIFUGALBACKWARDINCLINEDCURVED";} }
+		public static string CENTRIFUGALFORWARDCURVED { get {return "CENTRIFUGALFORWARDCURVED";} }
+		public static string CENTRIFUGALRADIAL { get {return "CENTRIFUGALRADIAL";} }
+		public static string PROPELLORAXIAL { get {return "PROPELLORAXIAL";} }
+		public static string TUBEAXIAL { get {return "TUBEAXIAL";} }
+		public static string VANEAXIAL { get {return "VANEAXIAL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcFanTypeEnum(string value) { return new IfcFanTypeEnum(string);}
+		public static implicit operator string(IfcFanTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcFastenerTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcFastenerTypeEnum = ENUMERATION OF</para>
+	/// <para>	(GLUE</para>
+	/// <para>	,MORTAR</para>
+	/// <para>	,WELD</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcFastenerTypeEnum
+	{
+		public static string GLUE { get {return "GLUE";} }
+		public static string MORTAR { get {return "MORTAR";} }
+		public static string WELD { get {return "WELD";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcFastenerTypeEnum(string value) { return new IfcFastenerTypeEnum(string);}
+		public static implicit operator string(IfcFastenerTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcFilterTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcFilterTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AIRPARTICLEFILTER</para>
+	/// <para>	,COMPRESSEDAIRFILTER</para>
+	/// <para>	,ODORFILTER</para>
+	/// <para>	,OILFILTER</para>
+	/// <para>	,STRAINER</para>
+	/// <para>	,WATERFILTER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcFilterTypeEnum
+	{
+		public static string AIRPARTICLEFILTER { get {return "AIRPARTICLEFILTER";} }
+		public static string COMPRESSEDAIRFILTER { get {return "COMPRESSEDAIRFILTER";} }
+		public static string ODORFILTER { get {return "ODORFILTER";} }
+		public static string OILFILTER { get {return "OILFILTER";} }
+		public static string STRAINER { get {return "STRAINER";} }
+		public static string WATERFILTER { get {return "WATERFILTER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcFilterTypeEnum(string value) { return new IfcFilterTypeEnum(string);}
+		public static implicit operator string(IfcFilterTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcFireSuppressionTerminalTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcFireSuppressionTerminalTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BREECHINGINLET</para>
+	/// <para>	,FIREHYDRANT</para>
+	/// <para>	,FIREMONITOR</para>
+	/// <para>	,HOSEREEL</para>
+	/// <para>	,SPRINKLER</para>
+	/// <para>	,SPRINKLERDEFLECTOR</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcFireSuppressionTerminalTypeEnum
+	{
+		public static string BREECHINGINLET { get {return "BREECHINGINLET";} }
+		public static string FIREHYDRANT { get {return "FIREHYDRANT";} }
+		public static string FIREMONITOR { get {return "FIREMONITOR";} }
+		public static string HOSEREEL { get {return "HOSEREEL";} }
+		public static string SPRINKLER { get {return "SPRINKLER";} }
+		public static string SPRINKLERDEFLECTOR { get {return "SPRINKLERDEFLECTOR";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcFireSuppressionTerminalTypeEnum(string value) { return new IfcFireSuppressionTerminalTypeEnum(string);}
+		public static implicit operator string(IfcFireSuppressionTerminalTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcFlowDirectionEnum = ENUMERATION OF
+	/// <para>TYPE IfcFlowDirectionEnum = ENUMERATION OF</para>
+	/// <para>	(SINK</para>
+	/// <para>	,SOURCE</para>
+	/// <para>	,SOURCEANDSINK</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcFlowDirectionEnum
+	{
+		public static string SINK { get {return "SINK";} }
+		public static string SOURCE { get {return "SOURCE";} }
+		public static string SOURCEANDSINK { get {return "SOURCEANDSINK";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcFlowDirectionEnum(string value) { return new IfcFlowDirectionEnum(string);}
+		public static implicit operator string(IfcFlowDirectionEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcFlowInstrumentTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcFlowInstrumentTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AMMETER</para>
+	/// <para>	,COMBINED</para>
+	/// <para>	,FREQUENCYMETER</para>
+	/// <para>	,PHASEANGLEMETER</para>
+	/// <para>	,POWERFACTORMETER</para>
+	/// <para>	,PRESSUREGAUGE</para>
+	/// <para>	,THERMOMETER</para>
+	/// <para>	,VOLTMETER</para>
+	/// <para>	,VOLTMETER_PEAK</para>
+	/// <para>	,VOLTMETER_RMS</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcFlowInstrumentTypeEnum
+	{
+		public static string AMMETER { get {return "AMMETER";} }
+		public static string COMBINED { get {return "COMBINED";} }
+		public static string FREQUENCYMETER { get {return "FREQUENCYMETER";} }
+		public static string PHASEANGLEMETER { get {return "PHASEANGLEMETER";} }
+		public static string POWERFACTORMETER { get {return "POWERFACTORMETER";} }
+		public static string PRESSUREGAUGE { get {return "PRESSUREGAUGE";} }
+		public static string THERMOMETER { get {return "THERMOMETER";} }
+		public static string VOLTMETER { get {return "VOLTMETER";} }
+		public static string VOLTMETER_PEAK { get {return "VOLTMETER_PEAK";} }
+		public static string VOLTMETER_RMS { get {return "VOLTMETER_RMS";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcFlowInstrumentTypeEnum(string value) { return new IfcFlowInstrumentTypeEnum(string);}
+		public static implicit operator string(IfcFlowInstrumentTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcFlowMeterTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcFlowMeterTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ENERGYMETER</para>
+	/// <para>	,GASMETER</para>
+	/// <para>	,OILMETER</para>
+	/// <para>	,WATERMETER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcFlowMeterTypeEnum
+	{
+		public static string ENERGYMETER { get {return "ENERGYMETER";} }
+		public static string GASMETER { get {return "GASMETER";} }
+		public static string OILMETER { get {return "OILMETER";} }
+		public static string WATERMETER { get {return "WATERMETER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcFlowMeterTypeEnum(string value) { return new IfcFlowMeterTypeEnum(string);}
+		public static implicit operator string(IfcFlowMeterTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcFootingTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcFootingTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CAISSON_FOUNDATION</para>
+	/// <para>	,FOOTING_BEAM</para>
+	/// <para>	,PAD_FOOTING</para>
+	/// <para>	,PILE_CAP</para>
+	/// <para>	,STRIP_FOOTING</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcFootingTypeEnum
+	{
+		public static string CAISSON_FOUNDATION { get {return "CAISSON_FOUNDATION";} }
+		public static string FOOTING_BEAM { get {return "FOOTING_BEAM";} }
+		public static string PAD_FOOTING { get {return "PAD_FOOTING";} }
+		public static string PILE_CAP { get {return "PILE_CAP";} }
+		public static string STRIP_FOOTING { get {return "STRIP_FOOTING";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcFootingTypeEnum(string value) { return new IfcFootingTypeEnum(string);}
+		public static implicit operator string(IfcFootingTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcFurnitureTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcFurnitureTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BED</para>
+	/// <para>	,CHAIR</para>
+	/// <para>	,DESK</para>
+	/// <para>	,FILECABINET</para>
+	/// <para>	,SHELF</para>
+	/// <para>	,SOFA</para>
+	/// <para>	,TABLE</para>
+	/// <para>	,TECHNICALCABINET</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcFurnitureTypeEnum
+	{
+		public static string BED { get {return "BED";} }
+		public static string CHAIR { get {return "CHAIR";} }
+		public static string DESK { get {return "DESK";} }
+		public static string FILECABINET { get {return "FILECABINET";} }
+		public static string SHELF { get {return "SHELF";} }
+		public static string SOFA { get {return "SOFA";} }
+		public static string TABLE { get {return "TABLE";} }
+		public static string TECHNICALCABINET { get {return "TECHNICALCABINET";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcFurnitureTypeEnum(string value) { return new IfcFurnitureTypeEnum(string);}
+		public static implicit operator string(IfcFurnitureTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcGeographicElementTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcGeographicElementTypeEnum = ENUMERATION OF</para>
+	/// <para>	(SOIL_BORING_POINT</para>
+	/// <para>	,TERRAIN</para>
+	/// <para>	,VEGETATION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcGeographicElementTypeEnum
+	{
+		public static string SOIL_BORING_POINT { get {return "SOIL_BORING_POINT";} }
+		public static string TERRAIN { get {return "TERRAIN";} }
+		public static string VEGETATION { get {return "VEGETATION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcGeographicElementTypeEnum(string value) { return new IfcGeographicElementTypeEnum(string);}
+		public static implicit operator string(IfcGeographicElementTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcGeometricProjectionEnum = ENUMERATION OF
+	/// <para>TYPE IfcGeometricProjectionEnum = ENUMERATION OF</para>
+	/// <para>	(ELEVATION_VIEW</para>
+	/// <para>	,GRAPH_VIEW</para>
+	/// <para>	,MODEL_VIEW</para>
+	/// <para>	,PLAN_VIEW</para>
+	/// <para>	,REFLECTED_PLAN_VIEW</para>
+	/// <para>	,SECTION_VIEW</para>
+	/// <para>	,SKETCH_VIEW</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcGeometricProjectionEnum
+	{
+		public static string ELEVATION_VIEW { get {return "ELEVATION_VIEW";} }
+		public static string GRAPH_VIEW { get {return "GRAPH_VIEW";} }
+		public static string MODEL_VIEW { get {return "MODEL_VIEW";} }
+		public static string PLAN_VIEW { get {return "PLAN_VIEW";} }
+		public static string REFLECTED_PLAN_VIEW { get {return "REFLECTED_PLAN_VIEW";} }
+		public static string SECTION_VIEW { get {return "SECTION_VIEW";} }
+		public static string SKETCH_VIEW { get {return "SKETCH_VIEW";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcGeometricProjectionEnum(string value) { return new IfcGeometricProjectionEnum(string);}
+		public static implicit operator string(IfcGeometricProjectionEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcGeotechnicalStratumTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcGeotechnicalStratumTypeEnum = ENUMERATION OF</para>
+	/// <para>	(SOLID</para>
+	/// <para>	,VOID</para>
+	/// <para>	,WATER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcGeotechnicalStratumTypeEnum
+	{
+		public static string SOLID { get {return "SOLID";} }
+		public static string VOID { get {return "VOID";} }
+		public static string WATER { get {return "WATER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcGeotechnicalStratumTypeEnum(string value) { return new IfcGeotechnicalStratumTypeEnum(string);}
+		public static implicit operator string(IfcGeotechnicalStratumTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcGlobalOrLocalEnum = ENUMERATION OF
+	/// <para>TYPE IfcGlobalOrLocalEnum = ENUMERATION OF</para>
+	/// <para>	(GLOBAL_COORDS</para>
+	/// <para>	,LOCAL_COORDS);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcGlobalOrLocalEnum
+	{
+		public static string GLOBAL_COORDS { get {return "GLOBAL_COORDS";} }
+		public static string LOCAL_COORDS { get {return "LOCAL_COORDS";} }
+		public static implicit operator IfcGlobalOrLocalEnum(string value) { return new IfcGlobalOrLocalEnum(string);}
+		public static implicit operator string(IfcGlobalOrLocalEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcGridTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcGridTypeEnum = ENUMERATION OF</para>
+	/// <para>	(IRREGULAR</para>
+	/// <para>	,RADIAL</para>
+	/// <para>	,RECTANGULAR</para>
+	/// <para>	,TRIANGULAR</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcGridTypeEnum
+	{
+		public static string IRREGULAR { get {return "IRREGULAR";} }
+		public static string RADIAL { get {return "RADIAL";} }
+		public static string RECTANGULAR { get {return "RECTANGULAR";} }
+		public static string TRIANGULAR { get {return "TRIANGULAR";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcGridTypeEnum(string value) { return new IfcGridTypeEnum(string);}
+		public static implicit operator string(IfcGridTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcHeatExchangerTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcHeatExchangerTypeEnum = ENUMERATION OF</para>
+	/// <para>	(PLATE</para>
+	/// <para>	,SHELLANDTUBE</para>
+	/// <para>	,TURNOUTHEATING</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcHeatExchangerTypeEnum
+	{
+		public static string PLATE { get {return "PLATE";} }
+		public static string SHELLANDTUBE { get {return "SHELLANDTUBE";} }
+		public static string TURNOUTHEATING { get {return "TURNOUTHEATING";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcHeatExchangerTypeEnum(string value) { return new IfcHeatExchangerTypeEnum(string);}
+		public static implicit operator string(IfcHeatExchangerTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcHumidifierTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcHumidifierTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ADIABATICAIRWASHER</para>
+	/// <para>	,ADIABATICATOMIZING</para>
+	/// <para>	,ADIABATICCOMPRESSEDAIRNOZZLE</para>
+	/// <para>	,ADIABATICPAN</para>
+	/// <para>	,ADIABATICRIGIDMEDIA</para>
+	/// <para>	,ADIABATICULTRASONIC</para>
+	/// <para>	,ADIABATICWETTEDELEMENT</para>
+	/// <para>	,ASSISTEDBUTANE</para>
+	/// <para>	,ASSISTEDELECTRIC</para>
+	/// <para>	,ASSISTEDNATURALGAS</para>
+	/// <para>	,ASSISTEDPROPANE</para>
+	/// <para>	,ASSISTEDSTEAM</para>
+	/// <para>	,STEAMINJECTION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcHumidifierTypeEnum
+	{
+		public static string ADIABATICAIRWASHER { get {return "ADIABATICAIRWASHER";} }
+		public static string ADIABATICATOMIZING { get {return "ADIABATICATOMIZING";} }
+		public static string ADIABATICCOMPRESSEDAIRNOZZLE { get {return "ADIABATICCOMPRESSEDAIRNOZZLE";} }
+		public static string ADIABATICPAN { get {return "ADIABATICPAN";} }
+		public static string ADIABATICRIGIDMEDIA { get {return "ADIABATICRIGIDMEDIA";} }
+		public static string ADIABATICULTRASONIC { get {return "ADIABATICULTRASONIC";} }
+		public static string ADIABATICWETTEDELEMENT { get {return "ADIABATICWETTEDELEMENT";} }
+		public static string ASSISTEDBUTANE { get {return "ASSISTEDBUTANE";} }
+		public static string ASSISTEDELECTRIC { get {return "ASSISTEDELECTRIC";} }
+		public static string ASSISTEDNATURALGAS { get {return "ASSISTEDNATURALGAS";} }
+		public static string ASSISTEDPROPANE { get {return "ASSISTEDPROPANE";} }
+		public static string ASSISTEDSTEAM { get {return "ASSISTEDSTEAM";} }
+		public static string STEAMINJECTION { get {return "STEAMINJECTION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcHumidifierTypeEnum(string value) { return new IfcHumidifierTypeEnum(string);}
+		public static implicit operator string(IfcHumidifierTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcImpactProtectionDeviceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcImpactProtectionDeviceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BUMPER</para>
+	/// <para>	,CRASHCUSHION</para>
+	/// <para>	,DAMPINGSYSTEM</para>
+	/// <para>	,FENDER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcImpactProtectionDeviceTypeEnum
+	{
+		public static string BUMPER { get {return "BUMPER";} }
+		public static string CRASHCUSHION { get {return "CRASHCUSHION";} }
+		public static string DAMPINGSYSTEM { get {return "DAMPINGSYSTEM";} }
+		public static string FENDER { get {return "FENDER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcImpactProtectionDeviceTypeEnum(string value) { return new IfcImpactProtectionDeviceTypeEnum(string);}
+		public static implicit operator string(IfcImpactProtectionDeviceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcInterceptorTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcInterceptorTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CYCLONIC</para>
+	/// <para>	,GREASE</para>
+	/// <para>	,OIL</para>
+	/// <para>	,PETROL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcInterceptorTypeEnum
+	{
+		public static string CYCLONIC { get {return "CYCLONIC";} }
+		public static string GREASE { get {return "GREASE";} }
+		public static string OIL { get {return "OIL";} }
+		public static string PETROL { get {return "PETROL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcInterceptorTypeEnum(string value) { return new IfcInterceptorTypeEnum(string);}
+		public static implicit operator string(IfcInterceptorTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcInternalOrExternalEnum = ENUMERATION OF
+	/// <para>TYPE IfcInternalOrExternalEnum = ENUMERATION OF</para>
+	/// <para>	(EXTERNAL</para>
+	/// <para>	,EXTERNAL_EARTH</para>
+	/// <para>	,EXTERNAL_FIRE</para>
+	/// <para>	,EXTERNAL_WATER</para>
+	/// <para>	,INTERNAL</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcInternalOrExternalEnum
+	{
+		public static string EXTERNAL { get {return "EXTERNAL";} }
+		public static string EXTERNAL_EARTH { get {return "EXTERNAL_EARTH";} }
+		public static string EXTERNAL_FIRE { get {return "EXTERNAL_FIRE";} }
+		public static string EXTERNAL_WATER { get {return "EXTERNAL_WATER";} }
+		public static string INTERNAL { get {return "INTERNAL";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcInternalOrExternalEnum(string value) { return new IfcInternalOrExternalEnum(string);}
+		public static implicit operator string(IfcInternalOrExternalEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcInventoryTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcInventoryTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ASSETINVENTORY</para>
+	/// <para>	,FURNITUREINVENTORY</para>
+	/// <para>	,SPACEINVENTORY</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcInventoryTypeEnum
+	{
+		public static string ASSETINVENTORY { get {return "ASSETINVENTORY";} }
+		public static string FURNITUREINVENTORY { get {return "FURNITUREINVENTORY";} }
+		public static string SPACEINVENTORY { get {return "SPACEINVENTORY";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcInventoryTypeEnum(string value) { return new IfcInventoryTypeEnum(string);}
+		public static implicit operator string(IfcInventoryTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcJunctionBoxTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcJunctionBoxTypeEnum = ENUMERATION OF</para>
+	/// <para>	(DATA</para>
+	/// <para>	,POWER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcJunctionBoxTypeEnum
+	{
+		public static string DATA { get {return "DATA";} }
+		public static string POWER { get {return "POWER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcJunctionBoxTypeEnum(string value) { return new IfcJunctionBoxTypeEnum(string);}
+		public static implicit operator string(IfcJunctionBoxTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcKerbTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcKerbTypeEnum = ENUMERATION OF</para>
+	/// <para>	(USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcKerbTypeEnum
+	{
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcKerbTypeEnum(string value) { return new IfcKerbTypeEnum(string);}
+		public static implicit operator string(IfcKerbTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcKnotType = ENUMERATION OF
+	/// <para>TYPE IfcKnotType = ENUMERATION OF</para>
+	/// <para>	(PIECEWISE_BEZIER_KNOTS</para>
+	/// <para>	,QUASI_UNIFORM_KNOTS</para>
+	/// <para>	,UNIFORM_KNOTS</para>
+	/// <para>	,UNSPECIFIED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcKnotType
+	{
+		public static string PIECEWISE_BEZIER_KNOTS { get {return "PIECEWISE_BEZIER_KNOTS";} }
+		public static string QUASI_UNIFORM_KNOTS { get {return "QUASI_UNIFORM_KNOTS";} }
+		public static string UNIFORM_KNOTS { get {return "UNIFORM_KNOTS";} }
+		public static string UNSPECIFIED { get {return "UNSPECIFIED";} }
+		public static implicit operator IfcKnotType(string value) { return new IfcKnotType(string);}
+		public static implicit operator string(IfcKnotType value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcLaborResourceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcLaborResourceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ADMINISTRATION</para>
+	/// <para>	,CARPENTRY</para>
+	/// <para>	,CLEANING</para>
+	/// <para>	,CONCRETE</para>
+	/// <para>	,DRYWALL</para>
+	/// <para>	,ELECTRIC</para>
+	/// <para>	,FINISHING</para>
+	/// <para>	,FLOORING</para>
+	/// <para>	,GENERAL</para>
+	/// <para>	,HVAC</para>
+	/// <para>	,LANDSCAPING</para>
+	/// <para>	,MASONRY</para>
+	/// <para>	,PAINTING</para>
+	/// <para>	,PAVING</para>
+	/// <para>	,PLUMBING</para>
+	/// <para>	,ROOFING</para>
+	/// <para>	,SITEGRADING</para>
+	/// <para>	,STEELWORK</para>
+	/// <para>	,SURVEYING</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcLaborResourceTypeEnum
+	{
+		public static string ADMINISTRATION { get {return "ADMINISTRATION";} }
+		public static string CARPENTRY { get {return "CARPENTRY";} }
+		public static string CLEANING { get {return "CLEANING";} }
+		public static string CONCRETE { get {return "CONCRETE";} }
+		public static string DRYWALL { get {return "DRYWALL";} }
+		public static string ELECTRIC { get {return "ELECTRIC";} }
+		public static string FINISHING { get {return "FINISHING";} }
+		public static string FLOORING { get {return "FLOORING";} }
+		public static string GENERAL { get {return "GENERAL";} }
+		public static string HVAC { get {return "HVAC";} }
+		public static string LANDSCAPING { get {return "LANDSCAPING";} }
+		public static string MASONRY { get {return "MASONRY";} }
+		public static string PAINTING { get {return "PAINTING";} }
+		public static string PAVING { get {return "PAVING";} }
+		public static string PLUMBING { get {return "PLUMBING";} }
+		public static string ROOFING { get {return "ROOFING";} }
+		public static string SITEGRADING { get {return "SITEGRADING";} }
+		public static string STEELWORK { get {return "STEELWORK";} }
+		public static string SURVEYING { get {return "SURVEYING";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcLaborResourceTypeEnum(string value) { return new IfcLaborResourceTypeEnum(string);}
+		public static implicit operator string(IfcLaborResourceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcLampTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcLampTypeEnum = ENUMERATION OF</para>
+	/// <para>	(COMPACTFLUORESCENT</para>
+	/// <para>	,FLUORESCENT</para>
+	/// <para>	,HALOGEN</para>
+	/// <para>	,HIGHPRESSUREMERCURY</para>
+	/// <para>	,HIGHPRESSURESODIUM</para>
+	/// <para>	,LED</para>
+	/// <para>	,METALHALIDE</para>
+	/// <para>	,OLED</para>
+	/// <para>	,TUNGSTENFILAMENT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcLampTypeEnum
+	{
+		public static string COMPACTFLUORESCENT { get {return "COMPACTFLUORESCENT";} }
+		public static string FLUORESCENT { get {return "FLUORESCENT";} }
+		public static string HALOGEN { get {return "HALOGEN";} }
+		public static string HIGHPRESSUREMERCURY { get {return "HIGHPRESSUREMERCURY";} }
+		public static string HIGHPRESSURESODIUM { get {return "HIGHPRESSURESODIUM";} }
+		public static string LED { get {return "LED";} }
+		public static string METALHALIDE { get {return "METALHALIDE";} }
+		public static string OLED { get {return "OLED";} }
+		public static string TUNGSTENFILAMENT { get {return "TUNGSTENFILAMENT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcLampTypeEnum(string value) { return new IfcLampTypeEnum(string);}
+		public static implicit operator string(IfcLampTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcLayerSetDirectionEnum = ENUMERATION OF
+	/// <para>TYPE IfcLayerSetDirectionEnum = ENUMERATION OF</para>
+	/// <para>	(AXIS1</para>
+	/// <para>	,AXIS2</para>
+	/// <para>	,AXIS3);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcLayerSetDirectionEnum
+	{
+		public static string AXIS1 { get {return "AXIS1";} }
+		public static string AXIS2 { get {return "AXIS2";} }
+		public static string AXIS3 { get {return "AXIS3";} }
+		public static implicit operator IfcLayerSetDirectionEnum(string value) { return new IfcLayerSetDirectionEnum(string);}
+		public static implicit operator string(IfcLayerSetDirectionEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcLightDistributionCurveEnum = ENUMERATION OF
+	/// <para>TYPE IfcLightDistributionCurveEnum = ENUMERATION OF</para>
+	/// <para>	(TYPE_A</para>
+	/// <para>	,TYPE_B</para>
+	/// <para>	,TYPE_C</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcLightDistributionCurveEnum
+	{
+		public static string TYPE_A { get {return "TYPE_A";} }
+		public static string TYPE_B { get {return "TYPE_B";} }
+		public static string TYPE_C { get {return "TYPE_C";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcLightDistributionCurveEnum(string value) { return new IfcLightDistributionCurveEnum(string);}
+		public static implicit operator string(IfcLightDistributionCurveEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcLightEmissionSourceEnum = ENUMERATION OF
+	/// <para>TYPE IfcLightEmissionSourceEnum = ENUMERATION OF</para>
+	/// <para>	(COMPACTFLUORESCENT</para>
+	/// <para>	,FLUORESCENT</para>
+	/// <para>	,HIGHPRESSUREMERCURY</para>
+	/// <para>	,HIGHPRESSURESODIUM</para>
+	/// <para>	,LIGHTEMITTINGDIODE</para>
+	/// <para>	,LOWPRESSURESODIUM</para>
+	/// <para>	,LOWVOLTAGEHALOGEN</para>
+	/// <para>	,MAINVOLTAGEHALOGEN</para>
+	/// <para>	,METALHALIDE</para>
+	/// <para>	,TUNGSTENFILAMENT</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcLightEmissionSourceEnum
+	{
+		public static string COMPACTFLUORESCENT { get {return "COMPACTFLUORESCENT";} }
+		public static string FLUORESCENT { get {return "FLUORESCENT";} }
+		public static string HIGHPRESSUREMERCURY { get {return "HIGHPRESSUREMERCURY";} }
+		public static string HIGHPRESSURESODIUM { get {return "HIGHPRESSURESODIUM";} }
+		public static string LIGHTEMITTINGDIODE { get {return "LIGHTEMITTINGDIODE";} }
+		public static string LOWPRESSURESODIUM { get {return "LOWPRESSURESODIUM";} }
+		public static string LOWVOLTAGEHALOGEN { get {return "LOWVOLTAGEHALOGEN";} }
+		public static string MAINVOLTAGEHALOGEN { get {return "MAINVOLTAGEHALOGEN";} }
+		public static string METALHALIDE { get {return "METALHALIDE";} }
+		public static string TUNGSTENFILAMENT { get {return "TUNGSTENFILAMENT";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcLightEmissionSourceEnum(string value) { return new IfcLightEmissionSourceEnum(string);}
+		public static implicit operator string(IfcLightEmissionSourceEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcLightFixtureTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcLightFixtureTypeEnum = ENUMERATION OF</para>
+	/// <para>	(DIRECTIONSOURCE</para>
+	/// <para>	,POINTSOURCE</para>
+	/// <para>	,SECURITYLIGHTING</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcLightFixtureTypeEnum
+	{
+		public static string DIRECTIONSOURCE { get {return "DIRECTIONSOURCE";} }
+		public static string POINTSOURCE { get {return "POINTSOURCE";} }
+		public static string SECURITYLIGHTING { get {return "SECURITYLIGHTING";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcLightFixtureTypeEnum(string value) { return new IfcLightFixtureTypeEnum(string);}
+		public static implicit operator string(IfcLightFixtureTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcLiquidTerminalTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcLiquidTerminalTypeEnum = ENUMERATION OF</para>
+	/// <para>	(HOSEREEL</para>
+	/// <para>	,LOADINGARM</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcLiquidTerminalTypeEnum
+	{
+		public static string HOSEREEL { get {return "HOSEREEL";} }
+		public static string LOADINGARM { get {return "LOADINGARM";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcLiquidTerminalTypeEnum(string value) { return new IfcLiquidTerminalTypeEnum(string);}
+		public static implicit operator string(IfcLiquidTerminalTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcLoadGroupTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcLoadGroupTypeEnum = ENUMERATION OF</para>
+	/// <para>	(LOAD_CASE</para>
+	/// <para>	,LOAD_COMBINATION</para>
+	/// <para>	,LOAD_GROUP</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcLoadGroupTypeEnum
+	{
+		public static string LOAD_CASE { get {return "LOAD_CASE";} }
+		public static string LOAD_COMBINATION { get {return "LOAD_COMBINATION";} }
+		public static string LOAD_GROUP { get {return "LOAD_GROUP";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcLoadGroupTypeEnum(string value) { return new IfcLoadGroupTypeEnum(string);}
+		public static implicit operator string(IfcLoadGroupTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcLogicalOperatorEnum = ENUMERATION OF
+	/// <para>TYPE IfcLogicalOperatorEnum = ENUMERATION OF</para>
+	/// <para>	(LOGICALAND</para>
+	/// <para>	,LOGICALNOTAND</para>
+	/// <para>	,LOGICALNOTOR</para>
+	/// <para>	,LOGICALOR</para>
+	/// <para>	,LOGICALXOR);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcLogicalOperatorEnum
+	{
+		public static string LOGICALAND { get {return "LOGICALAND";} }
+		public static string LOGICALNOTAND { get {return "LOGICALNOTAND";} }
+		public static string LOGICALNOTOR { get {return "LOGICALNOTOR";} }
+		public static string LOGICALOR { get {return "LOGICALOR";} }
+		public static string LOGICALXOR { get {return "LOGICALXOR";} }
+		public static implicit operator IfcLogicalOperatorEnum(string value) { return new IfcLogicalOperatorEnum(string);}
+		public static implicit operator string(IfcLogicalOperatorEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcMarineFacilityTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcMarineFacilityTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BARRIERBEACH</para>
+	/// <para>	,BREAKWATER</para>
+	/// <para>	,CANAL</para>
+	/// <para>	,DRYDOCK</para>
+	/// <para>	,FLOATINGDOCK</para>
+	/// <para>	,HYDROLIFT</para>
+	/// <para>	,JETTY</para>
+	/// <para>	,LAUNCHRECOVERY</para>
+	/// <para>	,MARINEDEFENCE</para>
+	/// <para>	,NAVIGATIONALCHANNEL</para>
+	/// <para>	,PORT</para>
+	/// <para>	,QUAY</para>
+	/// <para>	,REVETMENT</para>
+	/// <para>	,SHIPLIFT</para>
+	/// <para>	,SHIPLOCK</para>
+	/// <para>	,SHIPYARD</para>
+	/// <para>	,SLIPWAY</para>
+	/// <para>	,WATERWAY</para>
+	/// <para>	,WATERWAYSHIPLIFT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcMarineFacilityTypeEnum
+	{
+		public static string BARRIERBEACH { get {return "BARRIERBEACH";} }
+		public static string BREAKWATER { get {return "BREAKWATER";} }
+		public static string CANAL { get {return "CANAL";} }
+		public static string DRYDOCK { get {return "DRYDOCK";} }
+		public static string FLOATINGDOCK { get {return "FLOATINGDOCK";} }
+		public static string HYDROLIFT { get {return "HYDROLIFT";} }
+		public static string JETTY { get {return "JETTY";} }
+		public static string LAUNCHRECOVERY { get {return "LAUNCHRECOVERY";} }
+		public static string MARINEDEFENCE { get {return "MARINEDEFENCE";} }
+		public static string NAVIGATIONALCHANNEL { get {return "NAVIGATIONALCHANNEL";} }
+		public static string PORT { get {return "PORT";} }
+		public static string QUAY { get {return "QUAY";} }
+		public static string REVETMENT { get {return "REVETMENT";} }
+		public static string SHIPLIFT { get {return "SHIPLIFT";} }
+		public static string SHIPLOCK { get {return "SHIPLOCK";} }
+		public static string SHIPYARD { get {return "SHIPYARD";} }
+		public static string SLIPWAY { get {return "SLIPWAY";} }
+		public static string WATERWAY { get {return "WATERWAY";} }
+		public static string WATERWAYSHIPLIFT { get {return "WATERWAYSHIPLIFT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcMarineFacilityTypeEnum(string value) { return new IfcMarineFacilityTypeEnum(string);}
+		public static implicit operator string(IfcMarineFacilityTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcMarinePartTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcMarinePartTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ABOVEWATERLINE</para>
+	/// <para>	,ANCHORAGE</para>
+	/// <para>	,APPROACHCHANNEL</para>
+	/// <para>	,BELOWWATERLINE</para>
+	/// <para>	,BERTHINGSTRUCTURE</para>
+	/// <para>	,CHAMBER</para>
+	/// <para>	,CILL_LEVEL</para>
+	/// <para>	,COPELEVEL</para>
+	/// <para>	,CORE</para>
+	/// <para>	,CREST</para>
+	/// <para>	,GATEHEAD</para>
+	/// <para>	,GUDINGSTRUCTURE</para>
+	/// <para>	,HIGHWATERLINE</para>
+	/// <para>	,LANDFIELD</para>
+	/// <para>	,LEEWARDSIDE</para>
+	/// <para>	,LOWWATERLINE</para>
+	/// <para>	,MANUFACTURING</para>
+	/// <para>	,NAVIGATIONALAREA</para>
+	/// <para>	,PROTECTION</para>
+	/// <para>	,SHIPTRANSFER</para>
+	/// <para>	,STORAGEAREA</para>
+	/// <para>	,VEHICLESERVICING</para>
+	/// <para>	,WATERFIELD</para>
+	/// <para>	,WEATHERSIDE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcMarinePartTypeEnum
+	{
+		public static string ABOVEWATERLINE { get {return "ABOVEWATERLINE";} }
+		public static string ANCHORAGE { get {return "ANCHORAGE";} }
+		public static string APPROACHCHANNEL { get {return "APPROACHCHANNEL";} }
+		public static string BELOWWATERLINE { get {return "BELOWWATERLINE";} }
+		public static string BERTHINGSTRUCTURE { get {return "BERTHINGSTRUCTURE";} }
+		public static string CHAMBER { get {return "CHAMBER";} }
+		public static string CILL_LEVEL { get {return "CILL_LEVEL";} }
+		public static string COPELEVEL { get {return "COPELEVEL";} }
+		public static string CORE { get {return "CORE";} }
+		public static string CREST { get {return "CREST";} }
+		public static string GATEHEAD { get {return "GATEHEAD";} }
+		public static string GUDINGSTRUCTURE { get {return "GUDINGSTRUCTURE";} }
+		public static string HIGHWATERLINE { get {return "HIGHWATERLINE";} }
+		public static string LANDFIELD { get {return "LANDFIELD";} }
+		public static string LEEWARDSIDE { get {return "LEEWARDSIDE";} }
+		public static string LOWWATERLINE { get {return "LOWWATERLINE";} }
+		public static string MANUFACTURING { get {return "MANUFACTURING";} }
+		public static string NAVIGATIONALAREA { get {return "NAVIGATIONALAREA";} }
+		public static string PROTECTION { get {return "PROTECTION";} }
+		public static string SHIPTRANSFER { get {return "SHIPTRANSFER";} }
+		public static string STORAGEAREA { get {return "STORAGEAREA";} }
+		public static string VEHICLESERVICING { get {return "VEHICLESERVICING";} }
+		public static string WATERFIELD { get {return "WATERFIELD";} }
+		public static string WEATHERSIDE { get {return "WEATHERSIDE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcMarinePartTypeEnum(string value) { return new IfcMarinePartTypeEnum(string);}
+		public static implicit operator string(IfcMarinePartTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcMechanicalFastenerTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcMechanicalFastenerTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ANCHORBOLT</para>
+	/// <para>	,BOLT</para>
+	/// <para>	,CHAIN</para>
+	/// <para>	,COUPLER</para>
+	/// <para>	,DOWEL</para>
+	/// <para>	,NAIL</para>
+	/// <para>	,NAILPLATE</para>
+	/// <para>	,RAILFASTENING</para>
+	/// <para>	,RAILJOINT</para>
+	/// <para>	,RIVET</para>
+	/// <para>	,ROPE</para>
+	/// <para>	,SCREW</para>
+	/// <para>	,SHEARCONNECTOR</para>
+	/// <para>	,STAPLE</para>
+	/// <para>	,STUDSHEARCONNECTOR</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcMechanicalFastenerTypeEnum
+	{
+		public static string ANCHORBOLT { get {return "ANCHORBOLT";} }
+		public static string BOLT { get {return "BOLT";} }
+		public static string CHAIN { get {return "CHAIN";} }
+		public static string COUPLER { get {return "COUPLER";} }
+		public static string DOWEL { get {return "DOWEL";} }
+		public static string NAIL { get {return "NAIL";} }
+		public static string NAILPLATE { get {return "NAILPLATE";} }
+		public static string RAILFASTENING { get {return "RAILFASTENING";} }
+		public static string RAILJOINT { get {return "RAILJOINT";} }
+		public static string RIVET { get {return "RIVET";} }
+		public static string ROPE { get {return "ROPE";} }
+		public static string SCREW { get {return "SCREW";} }
+		public static string SHEARCONNECTOR { get {return "SHEARCONNECTOR";} }
+		public static string STAPLE { get {return "STAPLE";} }
+		public static string STUDSHEARCONNECTOR { get {return "STUDSHEARCONNECTOR";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcMechanicalFastenerTypeEnum(string value) { return new IfcMechanicalFastenerTypeEnum(string);}
+		public static implicit operator string(IfcMechanicalFastenerTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcMedicalDeviceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcMedicalDeviceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AIRSTATION</para>
+	/// <para>	,FEEDAIRUNIT</para>
+	/// <para>	,OXYGENGENERATOR</para>
+	/// <para>	,OXYGENPLANT</para>
+	/// <para>	,VACUUMSTATION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcMedicalDeviceTypeEnum
+	{
+		public static string AIRSTATION { get {return "AIRSTATION";} }
+		public static string FEEDAIRUNIT { get {return "FEEDAIRUNIT";} }
+		public static string OXYGENGENERATOR { get {return "OXYGENGENERATOR";} }
+		public static string OXYGENPLANT { get {return "OXYGENPLANT";} }
+		public static string VACUUMSTATION { get {return "VACUUMSTATION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcMedicalDeviceTypeEnum(string value) { return new IfcMedicalDeviceTypeEnum(string);}
+		public static implicit operator string(IfcMedicalDeviceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcMemberTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcMemberTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ARCH_SEGMENT</para>
+	/// <para>	,BRACE</para>
+	/// <para>	,CHORD</para>
+	/// <para>	,COLLAR</para>
+	/// <para>	,MEMBER</para>
+	/// <para>	,MULLION</para>
+	/// <para>	,PLATE</para>
+	/// <para>	,POST</para>
+	/// <para>	,PURLIN</para>
+	/// <para>	,RAFTER</para>
+	/// <para>	,STAY_CABLE</para>
+	/// <para>	,STIFFENING_RIB</para>
+	/// <para>	,STRINGER</para>
+	/// <para>	,STRUCTURALCABLE</para>
+	/// <para>	,STRUT</para>
+	/// <para>	,STUD</para>
+	/// <para>	,SUSPENDER</para>
+	/// <para>	,SUSPENSION_CABLE</para>
+	/// <para>	,TIEBAR</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcMemberTypeEnum
+	{
+		public static string ARCH_SEGMENT { get {return "ARCH_SEGMENT";} }
+		public static string BRACE { get {return "BRACE";} }
+		public static string CHORD { get {return "CHORD";} }
+		public static string COLLAR { get {return "COLLAR";} }
+		public static string MEMBER { get {return "MEMBER";} }
+		public static string MULLION { get {return "MULLION";} }
+		public static string PLATE { get {return "PLATE";} }
+		public static string POST { get {return "POST";} }
+		public static string PURLIN { get {return "PURLIN";} }
+		public static string RAFTER { get {return "RAFTER";} }
+		public static string STAY_CABLE { get {return "STAY_CABLE";} }
+		public static string STIFFENING_RIB { get {return "STIFFENING_RIB";} }
+		public static string STRINGER { get {return "STRINGER";} }
+		public static string STRUCTURALCABLE { get {return "STRUCTURALCABLE";} }
+		public static string STRUT { get {return "STRUT";} }
+		public static string STUD { get {return "STUD";} }
+		public static string SUSPENDER { get {return "SUSPENDER";} }
+		public static string SUSPENSION_CABLE { get {return "SUSPENSION_CABLE";} }
+		public static string TIEBAR { get {return "TIEBAR";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcMemberTypeEnum(string value) { return new IfcMemberTypeEnum(string);}
+		public static implicit operator string(IfcMemberTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcMobileTelecommunicationsApplianceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcMobileTelecommunicationsApplianceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ACCESSPOINT</para>
+	/// <para>	,BASEBANDUNIT</para>
+	/// <para>	,BASETRANSCEIVERSTATION</para>
+	/// <para>	,E_UTRAN_NODE_B</para>
+	/// <para>	,GATEWAY_GPRS_SUPPORT_NODE</para>
+	/// <para>	,MASTERUNIT</para>
+	/// <para>	,MOBILESWITCHINGCENTER</para>
+	/// <para>	,MSCSERVER</para>
+	/// <para>	,PACKETCONTROLUNIT</para>
+	/// <para>	,REMOTERADIOUNIT</para>
+	/// <para>	,REMOTEUNIT</para>
+	/// <para>	,SERVICE_GPRS_SUPPORT_NODE</para>
+	/// <para>	,SUBSCRIBERSERVER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcMobileTelecommunicationsApplianceTypeEnum
+	{
+		public static string ACCESSPOINT { get {return "ACCESSPOINT";} }
+		public static string BASEBANDUNIT { get {return "BASEBANDUNIT";} }
+		public static string BASETRANSCEIVERSTATION { get {return "BASETRANSCEIVERSTATION";} }
+		public static string E_UTRAN_NODE_B { get {return "E_UTRAN_NODE_B";} }
+		public static string GATEWAY_GPRS_SUPPORT_NODE { get {return "GATEWAY_GPRS_SUPPORT_NODE";} }
+		public static string MASTERUNIT { get {return "MASTERUNIT";} }
+		public static string MOBILESWITCHINGCENTER { get {return "MOBILESWITCHINGCENTER";} }
+		public static string MSCSERVER { get {return "MSCSERVER";} }
+		public static string PACKETCONTROLUNIT { get {return "PACKETCONTROLUNIT";} }
+		public static string REMOTERADIOUNIT { get {return "REMOTERADIOUNIT";} }
+		public static string REMOTEUNIT { get {return "REMOTEUNIT";} }
+		public static string SERVICE_GPRS_SUPPORT_NODE { get {return "SERVICE_GPRS_SUPPORT_NODE";} }
+		public static string SUBSCRIBERSERVER { get {return "SUBSCRIBERSERVER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcMobileTelecommunicationsApplianceTypeEnum(string value) { return new IfcMobileTelecommunicationsApplianceTypeEnum(string);}
+		public static implicit operator string(IfcMobileTelecommunicationsApplianceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcMooringDeviceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcMooringDeviceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BOLLARD</para>
+	/// <para>	,LINETENSIONER</para>
+	/// <para>	,MAGNETICDEVICE</para>
+	/// <para>	,MOORINGHOOKS</para>
+	/// <para>	,VACUUMDEVICE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcMooringDeviceTypeEnum
+	{
+		public static string BOLLARD { get {return "BOLLARD";} }
+		public static string LINETENSIONER { get {return "LINETENSIONER";} }
+		public static string MAGNETICDEVICE { get {return "MAGNETICDEVICE";} }
+		public static string MOORINGHOOKS { get {return "MOORINGHOOKS";} }
+		public static string VACUUMDEVICE { get {return "VACUUMDEVICE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcMooringDeviceTypeEnum(string value) { return new IfcMooringDeviceTypeEnum(string);}
+		public static implicit operator string(IfcMooringDeviceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcMotorConnectionTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcMotorConnectionTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BELTDRIVE</para>
+	/// <para>	,COUPLING</para>
+	/// <para>	,DIRECTDRIVE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcMotorConnectionTypeEnum
+	{
+		public static string BELTDRIVE { get {return "BELTDRIVE";} }
+		public static string COUPLING { get {return "COUPLING";} }
+		public static string DIRECTDRIVE { get {return "DIRECTDRIVE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcMotorConnectionTypeEnum(string value) { return new IfcMotorConnectionTypeEnum(string);}
+		public static implicit operator string(IfcMotorConnectionTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcNavigationElementTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcNavigationElementTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BEACON</para>
+	/// <para>	,BUOY</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcNavigationElementTypeEnum
+	{
+		public static string BEACON { get {return "BEACON";} }
+		public static string BUOY { get {return "BUOY";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcNavigationElementTypeEnum(string value) { return new IfcNavigationElementTypeEnum(string);}
+		public static implicit operator string(IfcNavigationElementTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcObjectiveEnum = ENUMERATION OF
+	/// <para>TYPE IfcObjectiveEnum = ENUMERATION OF</para>
+	/// <para>	(CODECOMPLIANCE</para>
+	/// <para>	,CODEWAIVER</para>
+	/// <para>	,DESIGNINTENT</para>
+	/// <para>	,EXTERNAL</para>
+	/// <para>	,HEALTHANDSAFETY</para>
+	/// <para>	,MERGECONFLICT</para>
+	/// <para>	,MODELVIEW</para>
+	/// <para>	,PARAMETER</para>
+	/// <para>	,REQUIREMENT</para>
+	/// <para>	,SPECIFICATION</para>
+	/// <para>	,TRIGGERCONDITION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcObjectiveEnum
+	{
+		public static string CODECOMPLIANCE { get {return "CODECOMPLIANCE";} }
+		public static string CODEWAIVER { get {return "CODEWAIVER";} }
+		public static string DESIGNINTENT { get {return "DESIGNINTENT";} }
+		public static string EXTERNAL { get {return "EXTERNAL";} }
+		public static string HEALTHANDSAFETY { get {return "HEALTHANDSAFETY";} }
+		public static string MERGECONFLICT { get {return "MERGECONFLICT";} }
+		public static string MODELVIEW { get {return "MODELVIEW";} }
+		public static string PARAMETER { get {return "PARAMETER";} }
+		public static string REQUIREMENT { get {return "REQUIREMENT";} }
+		public static string SPECIFICATION { get {return "SPECIFICATION";} }
+		public static string TRIGGERCONDITION { get {return "TRIGGERCONDITION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcObjectiveEnum(string value) { return new IfcObjectiveEnum(string);}
+		public static implicit operator string(IfcObjectiveEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcOccupantTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcOccupantTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ASSIGNEE</para>
+	/// <para>	,ASSIGNOR</para>
+	/// <para>	,LESSEE</para>
+	/// <para>	,LESSOR</para>
+	/// <para>	,LETTINGAGENT</para>
+	/// <para>	,OWNER</para>
+	/// <para>	,TENANT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcOccupantTypeEnum
+	{
+		public static string ASSIGNEE { get {return "ASSIGNEE";} }
+		public static string ASSIGNOR { get {return "ASSIGNOR";} }
+		public static string LESSEE { get {return "LESSEE";} }
+		public static string LESSOR { get {return "LESSOR";} }
+		public static string LETTINGAGENT { get {return "LETTINGAGENT";} }
+		public static string OWNER { get {return "OWNER";} }
+		public static string TENANT { get {return "TENANT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcOccupantTypeEnum(string value) { return new IfcOccupantTypeEnum(string);}
+		public static implicit operator string(IfcOccupantTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcOpeningElementTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcOpeningElementTypeEnum = ENUMERATION OF</para>
+	/// <para>	(OPENING</para>
+	/// <para>	,RECESS</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcOpeningElementTypeEnum
+	{
+		public static string OPENING { get {return "OPENING";} }
+		public static string RECESS { get {return "RECESS";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcOpeningElementTypeEnum(string value) { return new IfcOpeningElementTypeEnum(string);}
+		public static implicit operator string(IfcOpeningElementTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcOutletTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcOutletTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AUDIOVISUALOUTLET</para>
+	/// <para>	,COMMUNICATIONSOUTLET</para>
+	/// <para>	,DATAOUTLET</para>
+	/// <para>	,POWEROUTLET</para>
+	/// <para>	,TELEPHONEOUTLET</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcOutletTypeEnum
+	{
+		public static string AUDIOVISUALOUTLET { get {return "AUDIOVISUALOUTLET";} }
+		public static string COMMUNICATIONSOUTLET { get {return "COMMUNICATIONSOUTLET";} }
+		public static string DATAOUTLET { get {return "DATAOUTLET";} }
+		public static string POWEROUTLET { get {return "POWEROUTLET";} }
+		public static string TELEPHONEOUTLET { get {return "TELEPHONEOUTLET";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcOutletTypeEnum(string value) { return new IfcOutletTypeEnum(string);}
+		public static implicit operator string(IfcOutletTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPavementTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcPavementTypeEnum = ENUMERATION OF</para>
+	/// <para>	(FLEXIBLE</para>
+	/// <para>	,RIGID</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPavementTypeEnum
+	{
+		public static string FLEXIBLE { get {return "FLEXIBLE";} }
+		public static string RIGID { get {return "RIGID";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcPavementTypeEnum(string value) { return new IfcPavementTypeEnum(string);}
+		public static implicit operator string(IfcPavementTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPerformanceHistoryTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcPerformanceHistoryTypeEnum = ENUMERATION OF</para>
+	/// <para>	(USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPerformanceHistoryTypeEnum
+	{
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcPerformanceHistoryTypeEnum(string value) { return new IfcPerformanceHistoryTypeEnum(string);}
+		public static implicit operator string(IfcPerformanceHistoryTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPermeableCoveringOperationEnum = ENUMERATION OF
+	/// <para>TYPE IfcPermeableCoveringOperationEnum = ENUMERATION OF</para>
+	/// <para>	(GRILL</para>
+	/// <para>	,LOUVER</para>
+	/// <para>	,SCREEN</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPermeableCoveringOperationEnum
+	{
+		public static string GRILL { get {return "GRILL";} }
+		public static string LOUVER { get {return "LOUVER";} }
+		public static string SCREEN { get {return "SCREEN";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcPermeableCoveringOperationEnum(string value) { return new IfcPermeableCoveringOperationEnum(string);}
+		public static implicit operator string(IfcPermeableCoveringOperationEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPermitTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcPermitTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ACCESS</para>
+	/// <para>	,BUILDING</para>
+	/// <para>	,WORK</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPermitTypeEnum
+	{
+		public static string ACCESS { get {return "ACCESS";} }
+		public static string BUILDING { get {return "BUILDING";} }
+		public static string WORK { get {return "WORK";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcPermitTypeEnum(string value) { return new IfcPermitTypeEnum(string);}
+		public static implicit operator string(IfcPermitTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPhysicalOrVirtualEnum = ENUMERATION OF
+	/// <para>TYPE IfcPhysicalOrVirtualEnum = ENUMERATION OF</para>
+	/// <para>	(PHYSICAL</para>
+	/// <para>	,VIRTUAL</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPhysicalOrVirtualEnum
+	{
+		public static string PHYSICAL { get {return "PHYSICAL";} }
+		public static string VIRTUAL { get {return "VIRTUAL";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcPhysicalOrVirtualEnum(string value) { return new IfcPhysicalOrVirtualEnum(string);}
+		public static implicit operator string(IfcPhysicalOrVirtualEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPileConstructionEnum = ENUMERATION OF
+	/// <para>TYPE IfcPileConstructionEnum = ENUMERATION OF</para>
+	/// <para>	(CAST_IN_PLACE</para>
+	/// <para>	,COMPOSITE</para>
+	/// <para>	,PRECAST_CONCRETE</para>
+	/// <para>	,PREFAB_STEEL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPileConstructionEnum
+	{
+		public static string CAST_IN_PLACE { get {return "CAST_IN_PLACE";} }
+		public static string COMPOSITE { get {return "COMPOSITE";} }
+		public static string PRECAST_CONCRETE { get {return "PRECAST_CONCRETE";} }
+		public static string PREFAB_STEEL { get {return "PREFAB_STEEL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcPileConstructionEnum(string value) { return new IfcPileConstructionEnum(string);}
+		public static implicit operator string(IfcPileConstructionEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPileTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcPileTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BORED</para>
+	/// <para>	,COHESION</para>
+	/// <para>	,DRIVEN</para>
+	/// <para>	,FRICTION</para>
+	/// <para>	,JETGROUTING</para>
+	/// <para>	,SUPPORT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPileTypeEnum
+	{
+		public static string BORED { get {return "BORED";} }
+		public static string COHESION { get {return "COHESION";} }
+		public static string DRIVEN { get {return "DRIVEN";} }
+		public static string FRICTION { get {return "FRICTION";} }
+		public static string JETGROUTING { get {return "JETGROUTING";} }
+		public static string SUPPORT { get {return "SUPPORT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcPileTypeEnum(string value) { return new IfcPileTypeEnum(string);}
+		public static implicit operator string(IfcPileTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPipeFittingTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcPipeFittingTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BEND</para>
+	/// <para>	,CONNECTOR</para>
+	/// <para>	,ENTRY</para>
+	/// <para>	,EXIT</para>
+	/// <para>	,JUNCTION</para>
+	/// <para>	,OBSTRUCTION</para>
+	/// <para>	,TRANSITION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPipeFittingTypeEnum
+	{
+		public static string BEND { get {return "BEND";} }
+		public static string CONNECTOR { get {return "CONNECTOR";} }
+		public static string ENTRY { get {return "ENTRY";} }
+		public static string EXIT { get {return "EXIT";} }
+		public static string JUNCTION { get {return "JUNCTION";} }
+		public static string OBSTRUCTION { get {return "OBSTRUCTION";} }
+		public static string TRANSITION { get {return "TRANSITION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcPipeFittingTypeEnum(string value) { return new IfcPipeFittingTypeEnum(string);}
+		public static implicit operator string(IfcPipeFittingTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPipeSegmentTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcPipeSegmentTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CULVERT</para>
+	/// <para>	,FLEXIBLESEGMENT</para>
+	/// <para>	,GUTTER</para>
+	/// <para>	,RIGIDSEGMENT</para>
+	/// <para>	,SPOOL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPipeSegmentTypeEnum
+	{
+		public static string CULVERT { get {return "CULVERT";} }
+		public static string FLEXIBLESEGMENT { get {return "FLEXIBLESEGMENT";} }
+		public static string GUTTER { get {return "GUTTER";} }
+		public static string RIGIDSEGMENT { get {return "RIGIDSEGMENT";} }
+		public static string SPOOL { get {return "SPOOL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcPipeSegmentTypeEnum(string value) { return new IfcPipeSegmentTypeEnum(string);}
+		public static implicit operator string(IfcPipeSegmentTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPlateTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcPlateTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BASE_PLATE</para>
+	/// <para>	,COVER_PLATE</para>
+	/// <para>	,CURTAIN_PANEL</para>
+	/// <para>	,FLANGE_PLATE</para>
+	/// <para>	,GUSSET_PLATE</para>
+	/// <para>	,SHEET</para>
+	/// <para>	,SPLICE_PLATE</para>
+	/// <para>	,STIFFENER_PLATE</para>
+	/// <para>	,WEB_PLATE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPlateTypeEnum
+	{
+		public static string BASE_PLATE { get {return "BASE_PLATE";} }
+		public static string COVER_PLATE { get {return "COVER_PLATE";} }
+		public static string CURTAIN_PANEL { get {return "CURTAIN_PANEL";} }
+		public static string FLANGE_PLATE { get {return "FLANGE_PLATE";} }
+		public static string GUSSET_PLATE { get {return "GUSSET_PLATE";} }
+		public static string SHEET { get {return "SHEET";} }
+		public static string SPLICE_PLATE { get {return "SPLICE_PLATE";} }
+		public static string STIFFENER_PLATE { get {return "STIFFENER_PLATE";} }
+		public static string WEB_PLATE { get {return "WEB_PLATE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcPlateTypeEnum(string value) { return new IfcPlateTypeEnum(string);}
+		public static implicit operator string(IfcPlateTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPreferredSurfaceCurveRepresentation = ENUMERATION OF
+	/// <para>TYPE IfcPreferredSurfaceCurveRepresentation = ENUMERATION OF</para>
+	/// <para>	(CURVE3D</para>
+	/// <para>	,PCURVE_S1</para>
+	/// <para>	,PCURVE_S2);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPreferredSurfaceCurveRepresentation
+	{
+		public static string CURVE3D { get {return "CURVE3D";} }
+		public static string PCURVE_S1 { get {return "PCURVE_S1";} }
+		public static string PCURVE_S2 { get {return "PCURVE_S2";} }
+		public static implicit operator IfcPreferredSurfaceCurveRepresentation(string value) { return new IfcPreferredSurfaceCurveRepresentation(string);}
+		public static implicit operator string(IfcPreferredSurfaceCurveRepresentation value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcProcedureTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcProcedureTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ADVICE_CAUTION</para>
+	/// <para>	,ADVICE_NOTE</para>
+	/// <para>	,ADVICE_WARNING</para>
+	/// <para>	,CALIBRATION</para>
+	/// <para>	,DIAGNOSTIC</para>
+	/// <para>	,SHUTDOWN</para>
+	/// <para>	,STARTUP</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcProcedureTypeEnum
+	{
+		public static string ADVICE_CAUTION { get {return "ADVICE_CAUTION";} }
+		public static string ADVICE_NOTE { get {return "ADVICE_NOTE";} }
+		public static string ADVICE_WARNING { get {return "ADVICE_WARNING";} }
+		public static string CALIBRATION { get {return "CALIBRATION";} }
+		public static string DIAGNOSTIC { get {return "DIAGNOSTIC";} }
+		public static string SHUTDOWN { get {return "SHUTDOWN";} }
+		public static string STARTUP { get {return "STARTUP";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcProcedureTypeEnum(string value) { return new IfcProcedureTypeEnum(string);}
+		public static implicit operator string(IfcProcedureTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcProfileTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcProfileTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AREA</para>
+	/// <para>	,CURVE);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcProfileTypeEnum
+	{
+		public static string AREA { get {return "AREA";} }
+		public static string CURVE { get {return "CURVE";} }
+		public static implicit operator IfcProfileTypeEnum(string value) { return new IfcProfileTypeEnum(string);}
+		public static implicit operator string(IfcProfileTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcProjectOrderTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcProjectOrderTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CHANGEORDER</para>
+	/// <para>	,MAINTENANCEWORKORDER</para>
+	/// <para>	,MOVEORDER</para>
+	/// <para>	,PURCHASEORDER</para>
+	/// <para>	,WORKORDER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcProjectOrderTypeEnum
+	{
+		public static string CHANGEORDER { get {return "CHANGEORDER";} }
+		public static string MAINTENANCEWORKORDER { get {return "MAINTENANCEWORKORDER";} }
+		public static string MOVEORDER { get {return "MOVEORDER";} }
+		public static string PURCHASEORDER { get {return "PURCHASEORDER";} }
+		public static string WORKORDER { get {return "WORKORDER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcProjectOrderTypeEnum(string value) { return new IfcProjectOrderTypeEnum(string);}
+		public static implicit operator string(IfcProjectOrderTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcProjectedOrTrueLengthEnum = ENUMERATION OF
+	/// <para>TYPE IfcProjectedOrTrueLengthEnum = ENUMERATION OF</para>
+	/// <para>	(PROJECTED_LENGTH</para>
+	/// <para>	,TRUE_LENGTH);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcProjectedOrTrueLengthEnum
+	{
+		public static string PROJECTED_LENGTH { get {return "PROJECTED_LENGTH";} }
+		public static string TRUE_LENGTH { get {return "TRUE_LENGTH";} }
+		public static implicit operator IfcProjectedOrTrueLengthEnum(string value) { return new IfcProjectedOrTrueLengthEnum(string);}
+		public static implicit operator string(IfcProjectedOrTrueLengthEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcProjectionElementTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcProjectionElementTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BLISTER</para>
+	/// <para>	,DEVIATOR</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcProjectionElementTypeEnum
+	{
+		public static string BLISTER { get {return "BLISTER";} }
+		public static string DEVIATOR { get {return "DEVIATOR";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcProjectionElementTypeEnum(string value) { return new IfcProjectionElementTypeEnum(string);}
+		public static implicit operator string(IfcProjectionElementTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPropertySetTemplateTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcPropertySetTemplateTypeEnum = ENUMERATION OF</para>
+	/// <para>	(PSET_MATERIALDRIVEN</para>
+	/// <para>	,PSET_OCCURRENCEDRIVEN</para>
+	/// <para>	,PSET_PERFORMANCEDRIVEN</para>
+	/// <para>	,PSET_PROFILEDRIVEN</para>
+	/// <para>	,PSET_TYPEDRIVENONLY</para>
+	/// <para>	,PSET_TYPEDRIVENOVERRIDE</para>
+	/// <para>	,QTO_OCCURRENCEDRIVEN</para>
+	/// <para>	,QTO_TYPEDRIVENONLY</para>
+	/// <para>	,QTO_TYPEDRIVENOVERRIDE</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPropertySetTemplateTypeEnum
+	{
+		public static string PSET_MATERIALDRIVEN { get {return "PSET_MATERIALDRIVEN";} }
+		public static string PSET_OCCURRENCEDRIVEN { get {return "PSET_OCCURRENCEDRIVEN";} }
+		public static string PSET_PERFORMANCEDRIVEN { get {return "PSET_PERFORMANCEDRIVEN";} }
+		public static string PSET_PROFILEDRIVEN { get {return "PSET_PROFILEDRIVEN";} }
+		public static string PSET_TYPEDRIVENONLY { get {return "PSET_TYPEDRIVENONLY";} }
+		public static string PSET_TYPEDRIVENOVERRIDE { get {return "PSET_TYPEDRIVENOVERRIDE";} }
+		public static string QTO_OCCURRENCEDRIVEN { get {return "QTO_OCCURRENCEDRIVEN";} }
+		public static string QTO_TYPEDRIVENONLY { get {return "QTO_TYPEDRIVENONLY";} }
+		public static string QTO_TYPEDRIVENOVERRIDE { get {return "QTO_TYPEDRIVENOVERRIDE";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcPropertySetTemplateTypeEnum(string value) { return new IfcPropertySetTemplateTypeEnum(string);}
+		public static implicit operator string(IfcPropertySetTemplateTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcProtectiveDeviceTrippingUnitTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcProtectiveDeviceTrippingUnitTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ELECTROMAGNETIC</para>
+	/// <para>	,ELECTRONIC</para>
+	/// <para>	,RESIDUALCURRENT</para>
+	/// <para>	,THERMAL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcProtectiveDeviceTrippingUnitTypeEnum
+	{
+		public static string ELECTROMAGNETIC { get {return "ELECTROMAGNETIC";} }
+		public static string ELECTRONIC { get {return "ELECTRONIC";} }
+		public static string RESIDUALCURRENT { get {return "RESIDUALCURRENT";} }
+		public static string THERMAL { get {return "THERMAL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcProtectiveDeviceTrippingUnitTypeEnum(string value) { return new IfcProtectiveDeviceTrippingUnitTypeEnum(string);}
+		public static implicit operator string(IfcProtectiveDeviceTrippingUnitTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcProtectiveDeviceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcProtectiveDeviceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ANTI_ARCING_DEVICE</para>
+	/// <para>	,CIRCUITBREAKER</para>
+	/// <para>	,EARTHINGSWITCH</para>
+	/// <para>	,EARTHLEAKAGECIRCUITBREAKER</para>
+	/// <para>	,FUSEDISCONNECTOR</para>
+	/// <para>	,RESIDUALCURRENTCIRCUITBREAKER</para>
+	/// <para>	,RESIDUALCURRENTSWITCH</para>
+	/// <para>	,SPARKGAP</para>
+	/// <para>	,VARISTOR</para>
+	/// <para>	,VOLTAGELIMITER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcProtectiveDeviceTypeEnum
+	{
+		public static string ANTI_ARCING_DEVICE { get {return "ANTI_ARCING_DEVICE";} }
+		public static string CIRCUITBREAKER { get {return "CIRCUITBREAKER";} }
+		public static string EARTHINGSWITCH { get {return "EARTHINGSWITCH";} }
+		public static string EARTHLEAKAGECIRCUITBREAKER { get {return "EARTHLEAKAGECIRCUITBREAKER";} }
+		public static string FUSEDISCONNECTOR { get {return "FUSEDISCONNECTOR";} }
+		public static string RESIDUALCURRENTCIRCUITBREAKER { get {return "RESIDUALCURRENTCIRCUITBREAKER";} }
+		public static string RESIDUALCURRENTSWITCH { get {return "RESIDUALCURRENTSWITCH";} }
+		public static string SPARKGAP { get {return "SPARKGAP";} }
+		public static string VARISTOR { get {return "VARISTOR";} }
+		public static string VOLTAGELIMITER { get {return "VOLTAGELIMITER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcProtectiveDeviceTypeEnum(string value) { return new IfcProtectiveDeviceTypeEnum(string);}
+		public static implicit operator string(IfcProtectiveDeviceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcPumpTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcPumpTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CIRCULATOR</para>
+	/// <para>	,ENDSUCTION</para>
+	/// <para>	,SPLITCASE</para>
+	/// <para>	,SUBMERSIBLEPUMP</para>
+	/// <para>	,SUMPPUMP</para>
+	/// <para>	,VERTICALINLINE</para>
+	/// <para>	,VERTICALTURBINE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcPumpTypeEnum
+	{
+		public static string CIRCULATOR { get {return "CIRCULATOR";} }
+		public static string ENDSUCTION { get {return "ENDSUCTION";} }
+		public static string SPLITCASE { get {return "SPLITCASE";} }
+		public static string SUBMERSIBLEPUMP { get {return "SUBMERSIBLEPUMP";} }
+		public static string SUMPPUMP { get {return "SUMPPUMP";} }
+		public static string VERTICALINLINE { get {return "VERTICALINLINE";} }
+		public static string VERTICALTURBINE { get {return "VERTICALTURBINE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcPumpTypeEnum(string value) { return new IfcPumpTypeEnum(string);}
+		public static implicit operator string(IfcPumpTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcRailTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcRailTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BLADE</para>
+	/// <para>	,CHECKRAIL</para>
+	/// <para>	,GUARDRAIL</para>
+	/// <para>	,RACKRAIL</para>
+	/// <para>	,RAIL</para>
+	/// <para>	,STOCKRAIL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcRailTypeEnum
+	{
+		public static string BLADE { get {return "BLADE";} }
+		public static string CHECKRAIL { get {return "CHECKRAIL";} }
+		public static string GUARDRAIL { get {return "GUARDRAIL";} }
+		public static string RACKRAIL { get {return "RACKRAIL";} }
+		public static string RAIL { get {return "RAIL";} }
+		public static string STOCKRAIL { get {return "STOCKRAIL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcRailTypeEnum(string value) { return new IfcRailTypeEnum(string);}
+		public static implicit operator string(IfcRailTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcRailingTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcRailingTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BALUSTRADE</para>
+	/// <para>	,FENCE</para>
+	/// <para>	,GUARDRAIL</para>
+	/// <para>	,HANDRAIL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcRailingTypeEnum
+	{
+		public static string BALUSTRADE { get {return "BALUSTRADE";} }
+		public static string FENCE { get {return "FENCE";} }
+		public static string GUARDRAIL { get {return "GUARDRAIL";} }
+		public static string HANDRAIL { get {return "HANDRAIL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcRailingTypeEnum(string value) { return new IfcRailingTypeEnum(string);}
+		public static implicit operator string(IfcRailingTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcRailwayPartTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcRailwayPartTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ABOVETRACK</para>
+	/// <para>	,DILATIONTRACK</para>
+	/// <para>	,LINESIDE</para>
+	/// <para>	,LINESIDEPART</para>
+	/// <para>	,PLAINTRACK</para>
+	/// <para>	,SUBSTRUCTURE</para>
+	/// <para>	,TRACK</para>
+	/// <para>	,TRACKPART</para>
+	/// <para>	,TURNOUTTRACK</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcRailwayPartTypeEnum
+	{
+		public static string ABOVETRACK { get {return "ABOVETRACK";} }
+		public static string DILATIONTRACK { get {return "DILATIONTRACK";} }
+		public static string LINESIDE { get {return "LINESIDE";} }
+		public static string LINESIDEPART { get {return "LINESIDEPART";} }
+		public static string PLAINTRACK { get {return "PLAINTRACK";} }
+		public static string SUBSTRUCTURE { get {return "SUBSTRUCTURE";} }
+		public static string TRACK { get {return "TRACK";} }
+		public static string TRACKPART { get {return "TRACKPART";} }
+		public static string TURNOUTTRACK { get {return "TURNOUTTRACK";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcRailwayPartTypeEnum(string value) { return new IfcRailwayPartTypeEnum(string);}
+		public static implicit operator string(IfcRailwayPartTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcRailwayTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcRailwayTypeEnum = ENUMERATION OF</para>
+	/// <para>	(USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcRailwayTypeEnum
+	{
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcRailwayTypeEnum(string value) { return new IfcRailwayTypeEnum(string);}
+		public static implicit operator string(IfcRailwayTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcRampFlightTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcRampFlightTypeEnum = ENUMERATION OF</para>
+	/// <para>	(SPIRAL</para>
+	/// <para>	,STRAIGHT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcRampFlightTypeEnum
+	{
+		public static string SPIRAL { get {return "SPIRAL";} }
+		public static string STRAIGHT { get {return "STRAIGHT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcRampFlightTypeEnum(string value) { return new IfcRampFlightTypeEnum(string);}
+		public static implicit operator string(IfcRampFlightTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcRampTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcRampTypeEnum = ENUMERATION OF</para>
+	/// <para>	(HALF_TURN_RAMP</para>
+	/// <para>	,QUARTER_TURN_RAMP</para>
+	/// <para>	,SPIRAL_RAMP</para>
+	/// <para>	,STRAIGHT_RUN_RAMP</para>
+	/// <para>	,TWO_QUARTER_TURN_RAMP</para>
+	/// <para>	,TWO_STRAIGHT_RUN_RAMP</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcRampTypeEnum
+	{
+		public static string HALF_TURN_RAMP { get {return "HALF_TURN_RAMP";} }
+		public static string QUARTER_TURN_RAMP { get {return "QUARTER_TURN_RAMP";} }
+		public static string SPIRAL_RAMP { get {return "SPIRAL_RAMP";} }
+		public static string STRAIGHT_RUN_RAMP { get {return "STRAIGHT_RUN_RAMP";} }
+		public static string TWO_QUARTER_TURN_RAMP { get {return "TWO_QUARTER_TURN_RAMP";} }
+		public static string TWO_STRAIGHT_RUN_RAMP { get {return "TWO_STRAIGHT_RUN_RAMP";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcRampTypeEnum(string value) { return new IfcRampTypeEnum(string);}
+		public static implicit operator string(IfcRampTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcRecurrenceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcRecurrenceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BY_DAY_COUNT</para>
+	/// <para>	,BY_WEEKDAY_COUNT</para>
+	/// <para>	,DAILY</para>
+	/// <para>	,MONTHLY_BY_DAY_OF_MONTH</para>
+	/// <para>	,MONTHLY_BY_POSITION</para>
+	/// <para>	,WEEKLY</para>
+	/// <para>	,YEARLY_BY_DAY_OF_MONTH</para>
+	/// <para>	,YEARLY_BY_POSITION);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcRecurrenceTypeEnum
+	{
+		public static string BY_DAY_COUNT { get {return "BY_DAY_COUNT";} }
+		public static string BY_WEEKDAY_COUNT { get {return "BY_WEEKDAY_COUNT";} }
+		public static string DAILY { get {return "DAILY";} }
+		public static string MONTHLY_BY_DAY_OF_MONTH { get {return "MONTHLY_BY_DAY_OF_MONTH";} }
+		public static string MONTHLY_BY_POSITION { get {return "MONTHLY_BY_POSITION";} }
+		public static string WEEKLY { get {return "WEEKLY";} }
+		public static string YEARLY_BY_DAY_OF_MONTH { get {return "YEARLY_BY_DAY_OF_MONTH";} }
+		public static string YEARLY_BY_POSITION { get {return "YEARLY_BY_POSITION";} }
+		public static implicit operator IfcRecurrenceTypeEnum(string value) { return new IfcRecurrenceTypeEnum(string);}
+		public static implicit operator string(IfcRecurrenceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcReferentTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcReferentTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BOUNDARY</para>
+	/// <para>	,INTERSECTION</para>
+	/// <para>	,KILOPOINT</para>
+	/// <para>	,LANDMARK</para>
+	/// <para>	,MILEPOINT</para>
+	/// <para>	,POSITION</para>
+	/// <para>	,REFERENCEMARKER</para>
+	/// <para>	,STATION</para>
+	/// <para>	,SUPERELEVATIONEVENT</para>
+	/// <para>	,WIDTHEVENT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcReferentTypeEnum
+	{
+		public static string BOUNDARY { get {return "BOUNDARY";} }
+		public static string INTERSECTION { get {return "INTERSECTION";} }
+		public static string KILOPOINT { get {return "KILOPOINT";} }
+		public static string LANDMARK { get {return "LANDMARK";} }
+		public static string MILEPOINT { get {return "MILEPOINT";} }
+		public static string POSITION { get {return "POSITION";} }
+		public static string REFERENCEMARKER { get {return "REFERENCEMARKER";} }
+		public static string STATION { get {return "STATION";} }
+		public static string SUPERELEVATIONEVENT { get {return "SUPERELEVATIONEVENT";} }
+		public static string WIDTHEVENT { get {return "WIDTHEVENT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcReferentTypeEnum(string value) { return new IfcReferentTypeEnum(string);}
+		public static implicit operator string(IfcReferentTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcReflectanceMethodEnum = ENUMERATION OF
+	/// <para>TYPE IfcReflectanceMethodEnum = ENUMERATION OF</para>
+	/// <para>	(BLINN</para>
+	/// <para>	,FLAT</para>
+	/// <para>	,GLASS</para>
+	/// <para>	,MATT</para>
+	/// <para>	,METAL</para>
+	/// <para>	,MIRROR</para>
+	/// <para>	,PHONG</para>
+	/// <para>	,PHYSICAL</para>
+	/// <para>	,PLASTIC</para>
+	/// <para>	,STRAUSS</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcReflectanceMethodEnum
+	{
+		public static string BLINN { get {return "BLINN";} }
+		public static string FLAT { get {return "FLAT";} }
+		public static string GLASS { get {return "GLASS";} }
+		public static string MATT { get {return "MATT";} }
+		public static string METAL { get {return "METAL";} }
+		public static string MIRROR { get {return "MIRROR";} }
+		public static string PHONG { get {return "PHONG";} }
+		public static string PHYSICAL { get {return "PHYSICAL";} }
+		public static string PLASTIC { get {return "PLASTIC";} }
+		public static string STRAUSS { get {return "STRAUSS";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcReflectanceMethodEnum(string value) { return new IfcReflectanceMethodEnum(string);}
+		public static implicit operator string(IfcReflectanceMethodEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcReinforcedSoilTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcReinforcedSoilTypeEnum = ENUMERATION OF</para>
+	/// <para>	(DYNAMICALLYCOMPACTED</para>
+	/// <para>	,GROUTED</para>
+	/// <para>	,REPLACED</para>
+	/// <para>	,ROLLERCOMPACTED</para>
+	/// <para>	,SURCHARGEPRELOADED</para>
+	/// <para>	,VERTICALLYDRAINED</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcReinforcedSoilTypeEnum
+	{
+		public static string DYNAMICALLYCOMPACTED { get {return "DYNAMICALLYCOMPACTED";} }
+		public static string GROUTED { get {return "GROUTED";} }
+		public static string REPLACED { get {return "REPLACED";} }
+		public static string ROLLERCOMPACTED { get {return "ROLLERCOMPACTED";} }
+		public static string SURCHARGEPRELOADED { get {return "SURCHARGEPRELOADED";} }
+		public static string VERTICALLYDRAINED { get {return "VERTICALLYDRAINED";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcReinforcedSoilTypeEnum(string value) { return new IfcReinforcedSoilTypeEnum(string);}
+		public static implicit operator string(IfcReinforcedSoilTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcReinforcingBarRoleEnum = ENUMERATION OF
+	/// <para>TYPE IfcReinforcingBarRoleEnum = ENUMERATION OF</para>
+	/// <para>	(ANCHORING</para>
+	/// <para>	,EDGE</para>
+	/// <para>	,LIGATURE</para>
+	/// <para>	,MAIN</para>
+	/// <para>	,PUNCHING</para>
+	/// <para>	,RING</para>
+	/// <para>	,SHEAR</para>
+	/// <para>	,STUD</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcReinforcingBarRoleEnum
+	{
+		public static string ANCHORING { get {return "ANCHORING";} }
+		public static string EDGE { get {return "EDGE";} }
+		public static string LIGATURE { get {return "LIGATURE";} }
+		public static string MAIN { get {return "MAIN";} }
+		public static string PUNCHING { get {return "PUNCHING";} }
+		public static string RING { get {return "RING";} }
+		public static string SHEAR { get {return "SHEAR";} }
+		public static string STUD { get {return "STUD";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcReinforcingBarRoleEnum(string value) { return new IfcReinforcingBarRoleEnum(string);}
+		public static implicit operator string(IfcReinforcingBarRoleEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcReinforcingBarSurfaceEnum = ENUMERATION OF
+	/// <para>TYPE IfcReinforcingBarSurfaceEnum = ENUMERATION OF</para>
+	/// <para>	(PLAIN</para>
+	/// <para>	,TEXTURED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcReinforcingBarSurfaceEnum
+	{
+		public static string PLAIN { get {return "PLAIN";} }
+		public static string TEXTURED { get {return "TEXTURED";} }
+		public static implicit operator IfcReinforcingBarSurfaceEnum(string value) { return new IfcReinforcingBarSurfaceEnum(string);}
+		public static implicit operator string(IfcReinforcingBarSurfaceEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcReinforcingBarTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcReinforcingBarTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ANCHORING</para>
+	/// <para>	,EDGE</para>
+	/// <para>	,LIGATURE</para>
+	/// <para>	,MAIN</para>
+	/// <para>	,PUNCHING</para>
+	/// <para>	,RING</para>
+	/// <para>	,SHEAR</para>
+	/// <para>	,SPACEBAR</para>
+	/// <para>	,STUD</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcReinforcingBarTypeEnum
+	{
+		public static string ANCHORING { get {return "ANCHORING";} }
+		public static string EDGE { get {return "EDGE";} }
+		public static string LIGATURE { get {return "LIGATURE";} }
+		public static string MAIN { get {return "MAIN";} }
+		public static string PUNCHING { get {return "PUNCHING";} }
+		public static string RING { get {return "RING";} }
+		public static string SHEAR { get {return "SHEAR";} }
+		public static string SPACEBAR { get {return "SPACEBAR";} }
+		public static string STUD { get {return "STUD";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcReinforcingBarTypeEnum(string value) { return new IfcReinforcingBarTypeEnum(string);}
+		public static implicit operator string(IfcReinforcingBarTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcReinforcingMeshTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcReinforcingMeshTypeEnum = ENUMERATION OF</para>
+	/// <para>	(USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcReinforcingMeshTypeEnum
+	{
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcReinforcingMeshTypeEnum(string value) { return new IfcReinforcingMeshTypeEnum(string);}
+		public static implicit operator string(IfcReinforcingMeshTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcRoadPartTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcRoadPartTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BICYCLECROSSING</para>
+	/// <para>	,BUS_STOP</para>
+	/// <para>	,CARRIAGEWAY</para>
+	/// <para>	,CENTRALISLAND</para>
+	/// <para>	,CENTRALRESERVE</para>
+	/// <para>	,HARDSHOULDER</para>
+	/// <para>	,INTERSECTION</para>
+	/// <para>	,LAYBY</para>
+	/// <para>	,PARKINGBAY</para>
+	/// <para>	,PASSINGBAY</para>
+	/// <para>	,PEDESTRIAN_CROSSING</para>
+	/// <para>	,RAILWAYCROSSING</para>
+	/// <para>	,REFUGEISLAND</para>
+	/// <para>	,ROADSEGMENT</para>
+	/// <para>	,ROADSIDE</para>
+	/// <para>	,ROADSIDEPART</para>
+	/// <para>	,ROADWAYPLATEAU</para>
+	/// <para>	,ROUNDABOUT</para>
+	/// <para>	,SHOULDER</para>
+	/// <para>	,SIDEWALK</para>
+	/// <para>	,SOFTSHOULDER</para>
+	/// <para>	,TOLLPLAZA</para>
+	/// <para>	,TRAFFICISLAND</para>
+	/// <para>	,TRAFFICLANE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcRoadPartTypeEnum
+	{
+		public static string BICYCLECROSSING { get {return "BICYCLECROSSING";} }
+		public static string BUS_STOP { get {return "BUS_STOP";} }
+		public static string CARRIAGEWAY { get {return "CARRIAGEWAY";} }
+		public static string CENTRALISLAND { get {return "CENTRALISLAND";} }
+		public static string CENTRALRESERVE { get {return "CENTRALRESERVE";} }
+		public static string HARDSHOULDER { get {return "HARDSHOULDER";} }
+		public static string INTERSECTION { get {return "INTERSECTION";} }
+		public static string LAYBY { get {return "LAYBY";} }
+		public static string PARKINGBAY { get {return "PARKINGBAY";} }
+		public static string PASSINGBAY { get {return "PASSINGBAY";} }
+		public static string PEDESTRIAN_CROSSING { get {return "PEDESTRIAN_CROSSING";} }
+		public static string RAILWAYCROSSING { get {return "RAILWAYCROSSING";} }
+		public static string REFUGEISLAND { get {return "REFUGEISLAND";} }
+		public static string ROADSEGMENT { get {return "ROADSEGMENT";} }
+		public static string ROADSIDE { get {return "ROADSIDE";} }
+		public static string ROADSIDEPART { get {return "ROADSIDEPART";} }
+		public static string ROADWAYPLATEAU { get {return "ROADWAYPLATEAU";} }
+		public static string ROUNDABOUT { get {return "ROUNDABOUT";} }
+		public static string SHOULDER { get {return "SHOULDER";} }
+		public static string SIDEWALK { get {return "SIDEWALK";} }
+		public static string SOFTSHOULDER { get {return "SOFTSHOULDER";} }
+		public static string TOLLPLAZA { get {return "TOLLPLAZA";} }
+		public static string TRAFFICISLAND { get {return "TRAFFICISLAND";} }
+		public static string TRAFFICLANE { get {return "TRAFFICLANE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcRoadPartTypeEnum(string value) { return new IfcRoadPartTypeEnum(string);}
+		public static implicit operator string(IfcRoadPartTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcRoadTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcRoadTypeEnum = ENUMERATION OF</para>
+	/// <para>	(USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcRoadTypeEnum
+	{
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcRoadTypeEnum(string value) { return new IfcRoadTypeEnum(string);}
+		public static implicit operator string(IfcRoadTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcRoleEnum = ENUMERATION OF
+	/// <para>TYPE IfcRoleEnum = ENUMERATION OF</para>
+	/// <para>	(ARCHITECT</para>
+	/// <para>	,BUILDINGOPERATOR</para>
+	/// <para>	,BUILDINGOWNER</para>
+	/// <para>	,CIVILENGINEER</para>
+	/// <para>	,CLIENT</para>
+	/// <para>	,COMMISSIONINGENGINEER</para>
+	/// <para>	,CONSTRUCTIONMANAGER</para>
+	/// <para>	,CONSULTANT</para>
+	/// <para>	,CONTRACTOR</para>
+	/// <para>	,COSTENGINEER</para>
+	/// <para>	,ELECTRICALENGINEER</para>
+	/// <para>	,ENGINEER</para>
+	/// <para>	,FACILITIESMANAGER</para>
+	/// <para>	,FIELDCONSTRUCTIONMANAGER</para>
+	/// <para>	,MANUFACTURER</para>
+	/// <para>	,MECHANICALENGINEER</para>
+	/// <para>	,OWNER</para>
+	/// <para>	,PROJECTMANAGER</para>
+	/// <para>	,RESELLER</para>
+	/// <para>	,STRUCTURALENGINEER</para>
+	/// <para>	,SUBCONTRACTOR</para>
+	/// <para>	,SUPPLIER</para>
+	/// <para>	,USERDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcRoleEnum
+	{
+		public static string ARCHITECT { get {return "ARCHITECT";} }
+		public static string BUILDINGOPERATOR { get {return "BUILDINGOPERATOR";} }
+		public static string BUILDINGOWNER { get {return "BUILDINGOWNER";} }
+		public static string CIVILENGINEER { get {return "CIVILENGINEER";} }
+		public static string CLIENT { get {return "CLIENT";} }
+		public static string COMMISSIONINGENGINEER { get {return "COMMISSIONINGENGINEER";} }
+		public static string CONSTRUCTIONMANAGER { get {return "CONSTRUCTIONMANAGER";} }
+		public static string CONSULTANT { get {return "CONSULTANT";} }
+		public static string CONTRACTOR { get {return "CONTRACTOR";} }
+		public static string COSTENGINEER { get {return "COSTENGINEER";} }
+		public static string ELECTRICALENGINEER { get {return "ELECTRICALENGINEER";} }
+		public static string ENGINEER { get {return "ENGINEER";} }
+		public static string FACILITIESMANAGER { get {return "FACILITIESMANAGER";} }
+		public static string FIELDCONSTRUCTIONMANAGER { get {return "FIELDCONSTRUCTIONMANAGER";} }
+		public static string MANUFACTURER { get {return "MANUFACTURER";} }
+		public static string MECHANICALENGINEER { get {return "MECHANICALENGINEER";} }
+		public static string OWNER { get {return "OWNER";} }
+		public static string PROJECTMANAGER { get {return "PROJECTMANAGER";} }
+		public static string RESELLER { get {return "RESELLER";} }
+		public static string STRUCTURALENGINEER { get {return "STRUCTURALENGINEER";} }
+		public static string SUBCONTRACTOR { get {return "SUBCONTRACTOR";} }
+		public static string SUPPLIER { get {return "SUPPLIER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static implicit operator IfcRoleEnum(string value) { return new IfcRoleEnum(string);}
+		public static implicit operator string(IfcRoleEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcRoofTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcRoofTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BARREL_ROOF</para>
+	/// <para>	,BUTTERFLY_ROOF</para>
+	/// <para>	,DOME_ROOF</para>
+	/// <para>	,FLAT_ROOF</para>
+	/// <para>	,FREEFORM</para>
+	/// <para>	,GABLE_ROOF</para>
+	/// <para>	,GAMBREL_ROOF</para>
+	/// <para>	,HIPPED_GABLE_ROOF</para>
+	/// <para>	,HIP_ROOF</para>
+	/// <para>	,MANSARD_ROOF</para>
+	/// <para>	,PAVILION_ROOF</para>
+	/// <para>	,RAINBOW_ROOF</para>
+	/// <para>	,SHED_ROOF</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcRoofTypeEnum
+	{
+		public static string BARREL_ROOF { get {return "BARREL_ROOF";} }
+		public static string BUTTERFLY_ROOF { get {return "BUTTERFLY_ROOF";} }
+		public static string DOME_ROOF { get {return "DOME_ROOF";} }
+		public static string FLAT_ROOF { get {return "FLAT_ROOF";} }
+		public static string FREEFORM { get {return "FREEFORM";} }
+		public static string GABLE_ROOF { get {return "GABLE_ROOF";} }
+		public static string GAMBREL_ROOF { get {return "GAMBREL_ROOF";} }
+		public static string HIPPED_GABLE_ROOF { get {return "HIPPED_GABLE_ROOF";} }
+		public static string HIP_ROOF { get {return "HIP_ROOF";} }
+		public static string MANSARD_ROOF { get {return "MANSARD_ROOF";} }
+		public static string PAVILION_ROOF { get {return "PAVILION_ROOF";} }
+		public static string RAINBOW_ROOF { get {return "RAINBOW_ROOF";} }
+		public static string SHED_ROOF { get {return "SHED_ROOF";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcRoofTypeEnum(string value) { return new IfcRoofTypeEnum(string);}
+		public static implicit operator string(IfcRoofTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSIPrefix = ENUMERATION OF
+	/// <para>TYPE IfcSIPrefix = ENUMERATION OF</para>
+	/// <para>	(ATTO</para>
+	/// <para>	,CENTI</para>
+	/// <para>	,DECA</para>
+	/// <para>	,DECI</para>
+	/// <para>	,EXA</para>
+	/// <para>	,FEMTO</para>
+	/// <para>	,GIGA</para>
+	/// <para>	,HECTO</para>
+	/// <para>	,KILO</para>
+	/// <para>	,MEGA</para>
+	/// <para>	,MICRO</para>
+	/// <para>	,MILLI</para>
+	/// <para>	,NANO</para>
+	/// <para>	,PETA</para>
+	/// <para>	,PICO</para>
+	/// <para>	,TERA);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSIPrefix
+	{
+		public static string ATTO { get {return "ATTO";} }
+		public static string CENTI { get {return "CENTI";} }
+		public static string DECA { get {return "DECA";} }
+		public static string DECI { get {return "DECI";} }
+		public static string EXA { get {return "EXA";} }
+		public static string FEMTO { get {return "FEMTO";} }
+		public static string GIGA { get {return "GIGA";} }
+		public static string HECTO { get {return "HECTO";} }
+		public static string KILO { get {return "KILO";} }
+		public static string MEGA { get {return "MEGA";} }
+		public static string MICRO { get {return "MICRO";} }
+		public static string MILLI { get {return "MILLI";} }
+		public static string NANO { get {return "NANO";} }
+		public static string PETA { get {return "PETA";} }
+		public static string PICO { get {return "PICO";} }
+		public static string TERA { get {return "TERA";} }
+		public static implicit operator IfcSIPrefix(string value) { return new IfcSIPrefix(string);}
+		public static implicit operator string(IfcSIPrefix value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSIUnitName = ENUMERATION OF
+	/// <para>TYPE IfcSIUnitName = ENUMERATION OF</para>
+	/// <para>	(AMPERE</para>
+	/// <para>	,BECQUEREL</para>
+	/// <para>	,CANDELA</para>
+	/// <para>	,COULOMB</para>
+	/// <para>	,CUBIC_METRE</para>
+	/// <para>	,DEGREE_CELSIUS</para>
+	/// <para>	,FARAD</para>
+	/// <para>	,GRAM</para>
+	/// <para>	,GRAY</para>
+	/// <para>	,HENRY</para>
+	/// <para>	,HERTZ</para>
+	/// <para>	,JOULE</para>
+	/// <para>	,KELVIN</para>
+	/// <para>	,LUMEN</para>
+	/// <para>	,LUX</para>
+	/// <para>	,METRE</para>
+	/// <para>	,MOLE</para>
+	/// <para>	,NEWTON</para>
+	/// <para>	,OHM</para>
+	/// <para>	,PASCAL</para>
+	/// <para>	,RADIAN</para>
+	/// <para>	,SECOND</para>
+	/// <para>	,SIEMENS</para>
+	/// <para>	,SIEVERT</para>
+	/// <para>	,SQUARE_METRE</para>
+	/// <para>	,STERADIAN</para>
+	/// <para>	,TESLA</para>
+	/// <para>	,VOLT</para>
+	/// <para>	,WATT</para>
+	/// <para>	,WEBER);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSIUnitName
+	{
+		public static string AMPERE { get {return "AMPERE";} }
+		public static string BECQUEREL { get {return "BECQUEREL";} }
+		public static string CANDELA { get {return "CANDELA";} }
+		public static string COULOMB { get {return "COULOMB";} }
+		public static string CUBIC_METRE { get {return "CUBIC_METRE";} }
+		public static string DEGREE_CELSIUS { get {return "DEGREE_CELSIUS";} }
+		public static string FARAD { get {return "FARAD";} }
+		public static string GRAM { get {return "GRAM";} }
+		public static string GRAY { get {return "GRAY";} }
+		public static string HENRY { get {return "HENRY";} }
+		public static string HERTZ { get {return "HERTZ";} }
+		public static string JOULE { get {return "JOULE";} }
+		public static string KELVIN { get {return "KELVIN";} }
+		public static string LUMEN { get {return "LUMEN";} }
+		public static string LUX { get {return "LUX";} }
+		public static string METRE { get {return "METRE";} }
+		public static string MOLE { get {return "MOLE";} }
+		public static string NEWTON { get {return "NEWTON";} }
+		public static string OHM { get {return "OHM";} }
+		public static string PASCAL { get {return "PASCAL";} }
+		public static string RADIAN { get {return "RADIAN";} }
+		public static string SECOND { get {return "SECOND";} }
+		public static string SIEMENS { get {return "SIEMENS";} }
+		public static string SIEVERT { get {return "SIEVERT";} }
+		public static string SQUARE_METRE { get {return "SQUARE_METRE";} }
+		public static string STERADIAN { get {return "STERADIAN";} }
+		public static string TESLA { get {return "TESLA";} }
+		public static string VOLT { get {return "VOLT";} }
+		public static string WATT { get {return "WATT";} }
+		public static string WEBER { get {return "WEBER";} }
+		public static implicit operator IfcSIUnitName(string value) { return new IfcSIUnitName(string);}
+		public static implicit operator string(IfcSIUnitName value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSanitaryTerminalTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSanitaryTerminalTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BATH</para>
+	/// <para>	,BIDET</para>
+	/// <para>	,CISTERN</para>
+	/// <para>	,SANITARYFOUNTAIN</para>
+	/// <para>	,SHOWER</para>
+	/// <para>	,SINK</para>
+	/// <para>	,TOILETPAN</para>
+	/// <para>	,URINAL</para>
+	/// <para>	,WASHHANDBASIN</para>
+	/// <para>	,WCSEAT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSanitaryTerminalTypeEnum
+	{
+		public static string BATH { get {return "BATH";} }
+		public static string BIDET { get {return "BIDET";} }
+		public static string CISTERN { get {return "CISTERN";} }
+		public static string SANITARYFOUNTAIN { get {return "SANITARYFOUNTAIN";} }
+		public static string SHOWER { get {return "SHOWER";} }
+		public static string SINK { get {return "SINK";} }
+		public static string TOILETPAN { get {return "TOILETPAN";} }
+		public static string URINAL { get {return "URINAL";} }
+		public static string WASHHANDBASIN { get {return "WASHHANDBASIN";} }
+		public static string WCSEAT { get {return "WCSEAT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSanitaryTerminalTypeEnum(string value) { return new IfcSanitaryTerminalTypeEnum(string);}
+		public static implicit operator string(IfcSanitaryTerminalTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSectionTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSectionTypeEnum = ENUMERATION OF</para>
+	/// <para>	(TAPERED</para>
+	/// <para>	,UNIFORM);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSectionTypeEnum
+	{
+		public static string TAPERED { get {return "TAPERED";} }
+		public static string UNIFORM { get {return "UNIFORM";} }
+		public static implicit operator IfcSectionTypeEnum(string value) { return new IfcSectionTypeEnum(string);}
+		public static implicit operator string(IfcSectionTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSensorTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSensorTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CO2SENSOR</para>
+	/// <para>	,CONDUCTANCESENSOR</para>
+	/// <para>	,CONTACTSENSOR</para>
+	/// <para>	,COSENSOR</para>
+	/// <para>	,EARTHQUAKESENSOR</para>
+	/// <para>	,FIRESENSOR</para>
+	/// <para>	,FLOWSENSOR</para>
+	/// <para>	,FOREIGNOBJECTDETECTIONSENSOR</para>
+	/// <para>	,FROSTSENSOR</para>
+	/// <para>	,GASSENSOR</para>
+	/// <para>	,HEATSENSOR</para>
+	/// <para>	,HUMIDITYSENSOR</para>
+	/// <para>	,IDENTIFIERSENSOR</para>
+	/// <para>	,IONCONCENTRATIONSENSOR</para>
+	/// <para>	,LEVELSENSOR</para>
+	/// <para>	,LIGHTSENSOR</para>
+	/// <para>	,MOISTURESENSOR</para>
+	/// <para>	,MOVEMENTSENSOR</para>
+	/// <para>	,OBSTACLESENSOR</para>
+	/// <para>	,PHSENSOR</para>
+	/// <para>	,PRESSURESENSOR</para>
+	/// <para>	,RADIATIONSENSOR</para>
+	/// <para>	,RADIOACTIVITYSENSOR</para>
+	/// <para>	,RAINSENSOR</para>
+	/// <para>	,SMOKESENSOR</para>
+	/// <para>	,SNOWDEPTHSENSOR</para>
+	/// <para>	,SOUNDSENSOR</para>
+	/// <para>	,TEMPERATURESENSOR</para>
+	/// <para>	,TRAINSENSOR</para>
+	/// <para>	,TURNOUTCLOSURESENSOR</para>
+	/// <para>	,WHEELSENSOR</para>
+	/// <para>	,WINDSENSOR</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSensorTypeEnum
+	{
+		public static string CO2SENSOR { get {return "CO2SENSOR";} }
+		public static string CONDUCTANCESENSOR { get {return "CONDUCTANCESENSOR";} }
+		public static string CONTACTSENSOR { get {return "CONTACTSENSOR";} }
+		public static string COSENSOR { get {return "COSENSOR";} }
+		public static string EARTHQUAKESENSOR { get {return "EARTHQUAKESENSOR";} }
+		public static string FIRESENSOR { get {return "FIRESENSOR";} }
+		public static string FLOWSENSOR { get {return "FLOWSENSOR";} }
+		public static string FOREIGNOBJECTDETECTIONSENSOR { get {return "FOREIGNOBJECTDETECTIONSENSOR";} }
+		public static string FROSTSENSOR { get {return "FROSTSENSOR";} }
+		public static string GASSENSOR { get {return "GASSENSOR";} }
+		public static string HEATSENSOR { get {return "HEATSENSOR";} }
+		public static string HUMIDITYSENSOR { get {return "HUMIDITYSENSOR";} }
+		public static string IDENTIFIERSENSOR { get {return "IDENTIFIERSENSOR";} }
+		public static string IONCONCENTRATIONSENSOR { get {return "IONCONCENTRATIONSENSOR";} }
+		public static string LEVELSENSOR { get {return "LEVELSENSOR";} }
+		public static string LIGHTSENSOR { get {return "LIGHTSENSOR";} }
+		public static string MOISTURESENSOR { get {return "MOISTURESENSOR";} }
+		public static string MOVEMENTSENSOR { get {return "MOVEMENTSENSOR";} }
+		public static string OBSTACLESENSOR { get {return "OBSTACLESENSOR";} }
+		public static string PHSENSOR { get {return "PHSENSOR";} }
+		public static string PRESSURESENSOR { get {return "PRESSURESENSOR";} }
+		public static string RADIATIONSENSOR { get {return "RADIATIONSENSOR";} }
+		public static string RADIOACTIVITYSENSOR { get {return "RADIOACTIVITYSENSOR";} }
+		public static string RAINSENSOR { get {return "RAINSENSOR";} }
+		public static string SMOKESENSOR { get {return "SMOKESENSOR";} }
+		public static string SNOWDEPTHSENSOR { get {return "SNOWDEPTHSENSOR";} }
+		public static string SOUNDSENSOR { get {return "SOUNDSENSOR";} }
+		public static string TEMPERATURESENSOR { get {return "TEMPERATURESENSOR";} }
+		public static string TRAINSENSOR { get {return "TRAINSENSOR";} }
+		public static string TURNOUTCLOSURESENSOR { get {return "TURNOUTCLOSURESENSOR";} }
+		public static string WHEELSENSOR { get {return "WHEELSENSOR";} }
+		public static string WINDSENSOR { get {return "WINDSENSOR";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSensorTypeEnum(string value) { return new IfcSensorTypeEnum(string);}
+		public static implicit operator string(IfcSensorTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSequenceEnum = ENUMERATION OF
+	/// <para>TYPE IfcSequenceEnum = ENUMERATION OF</para>
+	/// <para>	(FINISH_FINISH</para>
+	/// <para>	,FINISH_START</para>
+	/// <para>	,START_FINISH</para>
+	/// <para>	,START_START</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSequenceEnum
+	{
+		public static string FINISH_FINISH { get {return "FINISH_FINISH";} }
+		public static string FINISH_START { get {return "FINISH_START";} }
+		public static string START_FINISH { get {return "START_FINISH";} }
+		public static string START_START { get {return "START_START";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSequenceEnum(string value) { return new IfcSequenceEnum(string);}
+		public static implicit operator string(IfcSequenceEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcShadingDeviceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcShadingDeviceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AWNING</para>
+	/// <para>	,JALOUSIE</para>
+	/// <para>	,SHUTTER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcShadingDeviceTypeEnum
+	{
+		public static string AWNING { get {return "AWNING";} }
+		public static string JALOUSIE { get {return "JALOUSIE";} }
+		public static string SHUTTER { get {return "SHUTTER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcShadingDeviceTypeEnum(string value) { return new IfcShadingDeviceTypeEnum(string);}
+		public static implicit operator string(IfcShadingDeviceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSignTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSignTypeEnum = ENUMERATION OF</para>
+	/// <para>	(MARKER</para>
+	/// <para>	,MIRROR</para>
+	/// <para>	,PICTORAL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSignTypeEnum
+	{
+		public static string MARKER { get {return "MARKER";} }
+		public static string MIRROR { get {return "MIRROR";} }
+		public static string PICTORAL { get {return "PICTORAL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSignTypeEnum(string value) { return new IfcSignTypeEnum(string);}
+		public static implicit operator string(IfcSignTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSignalTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSignalTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AUDIO</para>
+	/// <para>	,MIXED</para>
+	/// <para>	,VISUAL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSignalTypeEnum
+	{
+		public static string AUDIO { get {return "AUDIO";} }
+		public static string MIXED { get {return "MIXED";} }
+		public static string VISUAL { get {return "VISUAL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSignalTypeEnum(string value) { return new IfcSignalTypeEnum(string);}
+		public static implicit operator string(IfcSignalTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSimplePropertyTemplateTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSimplePropertyTemplateTypeEnum = ENUMERATION OF</para>
+	/// <para>	(P_BOUNDEDVALUE</para>
+	/// <para>	,P_ENUMERATEDVALUE</para>
+	/// <para>	,P_LISTVALUE</para>
+	/// <para>	,P_REFERENCEVALUE</para>
+	/// <para>	,P_SINGLEVALUE</para>
+	/// <para>	,P_TABLEVALUE</para>
+	/// <para>	,Q_AREA</para>
+	/// <para>	,Q_COUNT</para>
+	/// <para>	,Q_LENGTH</para>
+	/// <para>	,Q_NUMBER</para>
+	/// <para>	,Q_TIME</para>
+	/// <para>	,Q_VOLUME</para>
+	/// <para>	,Q_WEIGHT);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSimplePropertyTemplateTypeEnum
+	{
+		public static string P_BOUNDEDVALUE { get {return "P_BOUNDEDVALUE";} }
+		public static string P_ENUMERATEDVALUE { get {return "P_ENUMERATEDVALUE";} }
+		public static string P_LISTVALUE { get {return "P_LISTVALUE";} }
+		public static string P_REFERENCEVALUE { get {return "P_REFERENCEVALUE";} }
+		public static string P_SINGLEVALUE { get {return "P_SINGLEVALUE";} }
+		public static string P_TABLEVALUE { get {return "P_TABLEVALUE";} }
+		public static string Q_AREA { get {return "Q_AREA";} }
+		public static string Q_COUNT { get {return "Q_COUNT";} }
+		public static string Q_LENGTH { get {return "Q_LENGTH";} }
+		public static string Q_NUMBER { get {return "Q_NUMBER";} }
+		public static string Q_TIME { get {return "Q_TIME";} }
+		public static string Q_VOLUME { get {return "Q_VOLUME";} }
+		public static string Q_WEIGHT { get {return "Q_WEIGHT";} }
+		public static implicit operator IfcSimplePropertyTemplateTypeEnum(string value) { return new IfcSimplePropertyTemplateTypeEnum(string);}
+		public static implicit operator string(IfcSimplePropertyTemplateTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSlabTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSlabTypeEnum = ENUMERATION OF</para>
+	/// <para>	(APPROACH_SLAB</para>
+	/// <para>	,BASESLAB</para>
+	/// <para>	,FLOOR</para>
+	/// <para>	,LANDING</para>
+	/// <para>	,PAVING</para>
+	/// <para>	,ROOF</para>
+	/// <para>	,SIDEWALK</para>
+	/// <para>	,TRACKSLAB</para>
+	/// <para>	,WEARING</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSlabTypeEnum
+	{
+		public static string APPROACH_SLAB { get {return "APPROACH_SLAB";} }
+		public static string BASESLAB { get {return "BASESLAB";} }
+		public static string FLOOR { get {return "FLOOR";} }
+		public static string LANDING { get {return "LANDING";} }
+		public static string PAVING { get {return "PAVING";} }
+		public static string ROOF { get {return "ROOF";} }
+		public static string SIDEWALK { get {return "SIDEWALK";} }
+		public static string TRACKSLAB { get {return "TRACKSLAB";} }
+		public static string WEARING { get {return "WEARING";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSlabTypeEnum(string value) { return new IfcSlabTypeEnum(string);}
+		public static implicit operator string(IfcSlabTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSolarDeviceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSolarDeviceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(SOLARCOLLECTOR</para>
+	/// <para>	,SOLARPANEL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSolarDeviceTypeEnum
+	{
+		public static string SOLARCOLLECTOR { get {return "SOLARCOLLECTOR";} }
+		public static string SOLARPANEL { get {return "SOLARPANEL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSolarDeviceTypeEnum(string value) { return new IfcSolarDeviceTypeEnum(string);}
+		public static implicit operator string(IfcSolarDeviceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSpaceHeaterTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSpaceHeaterTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CONVECTOR</para>
+	/// <para>	,RADIATOR</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSpaceHeaterTypeEnum
+	{
+		public static string CONVECTOR { get {return "CONVECTOR";} }
+		public static string RADIATOR { get {return "RADIATOR";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSpaceHeaterTypeEnum(string value) { return new IfcSpaceHeaterTypeEnum(string);}
+		public static implicit operator string(IfcSpaceHeaterTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSpaceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSpaceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BERTH</para>
+	/// <para>	,EXTERNAL</para>
+	/// <para>	,GFA</para>
+	/// <para>	,INTERNAL</para>
+	/// <para>	,PARKING</para>
+	/// <para>	,SPACE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSpaceTypeEnum
+	{
+		public static string BERTH { get {return "BERTH";} }
+		public static string EXTERNAL { get {return "EXTERNAL";} }
+		public static string GFA { get {return "GFA";} }
+		public static string INTERNAL { get {return "INTERNAL";} }
+		public static string PARKING { get {return "PARKING";} }
+		public static string SPACE { get {return "SPACE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSpaceTypeEnum(string value) { return new IfcSpaceTypeEnum(string);}
+		public static implicit operator string(IfcSpaceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSpatialZoneTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSpatialZoneTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CONSTRUCTION</para>
+	/// <para>	,FIRESAFETY</para>
+	/// <para>	,INTERFERENCE</para>
+	/// <para>	,LIGHTING</para>
+	/// <para>	,OCCUPANCY</para>
+	/// <para>	,RESERVATION</para>
+	/// <para>	,SECURITY</para>
+	/// <para>	,THERMAL</para>
+	/// <para>	,TRANSPORT</para>
+	/// <para>	,VENTILATION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSpatialZoneTypeEnum
+	{
+		public static string CONSTRUCTION { get {return "CONSTRUCTION";} }
+		public static string FIRESAFETY { get {return "FIRESAFETY";} }
+		public static string INTERFERENCE { get {return "INTERFERENCE";} }
+		public static string LIGHTING { get {return "LIGHTING";} }
+		public static string OCCUPANCY { get {return "OCCUPANCY";} }
+		public static string RESERVATION { get {return "RESERVATION";} }
+		public static string SECURITY { get {return "SECURITY";} }
+		public static string THERMAL { get {return "THERMAL";} }
+		public static string TRANSPORT { get {return "TRANSPORT";} }
+		public static string VENTILATION { get {return "VENTILATION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSpatialZoneTypeEnum(string value) { return new IfcSpatialZoneTypeEnum(string);}
+		public static implicit operator string(IfcSpatialZoneTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcStackTerminalTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcStackTerminalTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BIRDCAGE</para>
+	/// <para>	,COWL</para>
+	/// <para>	,RAINWATERHOPPER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcStackTerminalTypeEnum
+	{
+		public static string BIRDCAGE { get {return "BIRDCAGE";} }
+		public static string COWL { get {return "COWL";} }
+		public static string RAINWATERHOPPER { get {return "RAINWATERHOPPER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcStackTerminalTypeEnum(string value) { return new IfcStackTerminalTypeEnum(string);}
+		public static implicit operator string(IfcStackTerminalTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcStairFlightTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcStairFlightTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CURVED</para>
+	/// <para>	,FREEFORM</para>
+	/// <para>	,SPIRAL</para>
+	/// <para>	,STRAIGHT</para>
+	/// <para>	,WINDER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcStairFlightTypeEnum
+	{
+		public static string CURVED { get {return "CURVED";} }
+		public static string FREEFORM { get {return "FREEFORM";} }
+		public static string SPIRAL { get {return "SPIRAL";} }
+		public static string STRAIGHT { get {return "STRAIGHT";} }
+		public static string WINDER { get {return "WINDER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcStairFlightTypeEnum(string value) { return new IfcStairFlightTypeEnum(string);}
+		public static implicit operator string(IfcStairFlightTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcStairTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcStairTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CURVED_RUN_STAIR</para>
+	/// <para>	,DOUBLE_RETURN_STAIR</para>
+	/// <para>	,HALF_TURN_STAIR</para>
+	/// <para>	,HALF_WINDING_STAIR</para>
+	/// <para>	,LADDER</para>
+	/// <para>	,QUARTER_TURN_STAIR</para>
+	/// <para>	,QUARTER_WINDING_STAIR</para>
+	/// <para>	,SPIRAL_STAIR</para>
+	/// <para>	,STRAIGHT_RUN_STAIR</para>
+	/// <para>	,THREE_QUARTER_TURN_STAIR</para>
+	/// <para>	,THREE_QUARTER_WINDING_STAIR</para>
+	/// <para>	,TWO_CURVED_RUN_STAIR</para>
+	/// <para>	,TWO_QUARTER_TURN_STAIR</para>
+	/// <para>	,TWO_QUARTER_WINDING_STAIR</para>
+	/// <para>	,TWO_STRAIGHT_RUN_STAIR</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcStairTypeEnum
+	{
+		public static string CURVED_RUN_STAIR { get {return "CURVED_RUN_STAIR";} }
+		public static string DOUBLE_RETURN_STAIR { get {return "DOUBLE_RETURN_STAIR";} }
+		public static string HALF_TURN_STAIR { get {return "HALF_TURN_STAIR";} }
+		public static string HALF_WINDING_STAIR { get {return "HALF_WINDING_STAIR";} }
+		public static string LADDER { get {return "LADDER";} }
+		public static string QUARTER_TURN_STAIR { get {return "QUARTER_TURN_STAIR";} }
+		public static string QUARTER_WINDING_STAIR { get {return "QUARTER_WINDING_STAIR";} }
+		public static string SPIRAL_STAIR { get {return "SPIRAL_STAIR";} }
+		public static string STRAIGHT_RUN_STAIR { get {return "STRAIGHT_RUN_STAIR";} }
+		public static string THREE_QUARTER_TURN_STAIR { get {return "THREE_QUARTER_TURN_STAIR";} }
+		public static string THREE_QUARTER_WINDING_STAIR { get {return "THREE_QUARTER_WINDING_STAIR";} }
+		public static string TWO_CURVED_RUN_STAIR { get {return "TWO_CURVED_RUN_STAIR";} }
+		public static string TWO_QUARTER_TURN_STAIR { get {return "TWO_QUARTER_TURN_STAIR";} }
+		public static string TWO_QUARTER_WINDING_STAIR { get {return "TWO_QUARTER_WINDING_STAIR";} }
+		public static string TWO_STRAIGHT_RUN_STAIR { get {return "TWO_STRAIGHT_RUN_STAIR";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcStairTypeEnum(string value) { return new IfcStairTypeEnum(string);}
+		public static implicit operator string(IfcStairTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcStateEnum = ENUMERATION OF
+	/// <para>TYPE IfcStateEnum = ENUMERATION OF</para>
+	/// <para>	(LOCKED</para>
+	/// <para>	,READONLY</para>
+	/// <para>	,READONLYLOCKED</para>
+	/// <para>	,READWRITE</para>
+	/// <para>	,READWRITELOCKED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcStateEnum
+	{
+		public static string LOCKED { get {return "LOCKED";} }
+		public static string READONLY { get {return "READONLY";} }
+		public static string READONLYLOCKED { get {return "READONLYLOCKED";} }
+		public static string READWRITE { get {return "READWRITE";} }
+		public static string READWRITELOCKED { get {return "READWRITELOCKED";} }
+		public static implicit operator IfcStateEnum(string value) { return new IfcStateEnum(string);}
+		public static implicit operator string(IfcStateEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcStructuralCurveActivityTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcStructuralCurveActivityTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CONST</para>
+	/// <para>	,DISCRETE</para>
+	/// <para>	,EQUIDISTANT</para>
+	/// <para>	,LINEAR</para>
+	/// <para>	,PARABOLA</para>
+	/// <para>	,POLYGONAL</para>
+	/// <para>	,SINUS</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcStructuralCurveActivityTypeEnum
+	{
+		public static string CONST { get {return "CONST";} }
+		public static string DISCRETE { get {return "DISCRETE";} }
+		public static string EQUIDISTANT { get {return "EQUIDISTANT";} }
+		public static string LINEAR { get {return "LINEAR";} }
+		public static string PARABOLA { get {return "PARABOLA";} }
+		public static string POLYGONAL { get {return "POLYGONAL";} }
+		public static string SINUS { get {return "SINUS";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcStructuralCurveActivityTypeEnum(string value) { return new IfcStructuralCurveActivityTypeEnum(string);}
+		public static implicit operator string(IfcStructuralCurveActivityTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcStructuralCurveMemberTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcStructuralCurveMemberTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CABLE</para>
+	/// <para>	,COMPRESSION_MEMBER</para>
+	/// <para>	,PIN_JOINED_MEMBER</para>
+	/// <para>	,RIGID_JOINED_MEMBER</para>
+	/// <para>	,TENSION_MEMBER</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcStructuralCurveMemberTypeEnum
+	{
+		public static string CABLE { get {return "CABLE";} }
+		public static string COMPRESSION_MEMBER { get {return "COMPRESSION_MEMBER";} }
+		public static string PIN_JOINED_MEMBER { get {return "PIN_JOINED_MEMBER";} }
+		public static string RIGID_JOINED_MEMBER { get {return "RIGID_JOINED_MEMBER";} }
+		public static string TENSION_MEMBER { get {return "TENSION_MEMBER";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcStructuralCurveMemberTypeEnum(string value) { return new IfcStructuralCurveMemberTypeEnum(string);}
+		public static implicit operator string(IfcStructuralCurveMemberTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcStructuralSurfaceActivityTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcStructuralSurfaceActivityTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BILINEAR</para>
+	/// <para>	,CONST</para>
+	/// <para>	,DISCRETE</para>
+	/// <para>	,ISOCONTOUR</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcStructuralSurfaceActivityTypeEnum
+	{
+		public static string BILINEAR { get {return "BILINEAR";} }
+		public static string CONST { get {return "CONST";} }
+		public static string DISCRETE { get {return "DISCRETE";} }
+		public static string ISOCONTOUR { get {return "ISOCONTOUR";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcStructuralSurfaceActivityTypeEnum(string value) { return new IfcStructuralSurfaceActivityTypeEnum(string);}
+		public static implicit operator string(IfcStructuralSurfaceActivityTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcStructuralSurfaceMemberTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcStructuralSurfaceMemberTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BENDING_ELEMENT</para>
+	/// <para>	,MEMBRANE_ELEMENT</para>
+	/// <para>	,SHELL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcStructuralSurfaceMemberTypeEnum
+	{
+		public static string BENDING_ELEMENT { get {return "BENDING_ELEMENT";} }
+		public static string MEMBRANE_ELEMENT { get {return "MEMBRANE_ELEMENT";} }
+		public static string SHELL { get {return "SHELL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcStructuralSurfaceMemberTypeEnum(string value) { return new IfcStructuralSurfaceMemberTypeEnum(string);}
+		public static implicit operator string(IfcStructuralSurfaceMemberTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSubContractResourceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSubContractResourceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(PURCHASE</para>
+	/// <para>	,WORK</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSubContractResourceTypeEnum
+	{
+		public static string PURCHASE { get {return "PURCHASE";} }
+		public static string WORK { get {return "WORK";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSubContractResourceTypeEnum(string value) { return new IfcSubContractResourceTypeEnum(string);}
+		public static implicit operator string(IfcSubContractResourceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSurfaceFeatureTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSurfaceFeatureTypeEnum = ENUMERATION OF</para>
+	/// <para>	(DEFECT</para>
+	/// <para>	,HATCHMARKING</para>
+	/// <para>	,LINEMARKING</para>
+	/// <para>	,MARK</para>
+	/// <para>	,NONSKIDSURFACING</para>
+	/// <para>	,PAVEMENTSURFACEMARKING</para>
+	/// <para>	,RUMBLESTRIP</para>
+	/// <para>	,SYMBOLMARKING</para>
+	/// <para>	,TAG</para>
+	/// <para>	,TRANSVERSERUMBLESTRIP</para>
+	/// <para>	,TREATMENT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSurfaceFeatureTypeEnum
+	{
+		public static string DEFECT { get {return "DEFECT";} }
+		public static string HATCHMARKING { get {return "HATCHMARKING";} }
+		public static string LINEMARKING { get {return "LINEMARKING";} }
+		public static string MARK { get {return "MARK";} }
+		public static string NONSKIDSURFACING { get {return "NONSKIDSURFACING";} }
+		public static string PAVEMENTSURFACEMARKING { get {return "PAVEMENTSURFACEMARKING";} }
+		public static string RUMBLESTRIP { get {return "RUMBLESTRIP";} }
+		public static string SYMBOLMARKING { get {return "SYMBOLMARKING";} }
+		public static string TAG { get {return "TAG";} }
+		public static string TRANSVERSERUMBLESTRIP { get {return "TRANSVERSERUMBLESTRIP";} }
+		public static string TREATMENT { get {return "TREATMENT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSurfaceFeatureTypeEnum(string value) { return new IfcSurfaceFeatureTypeEnum(string);}
+		public static implicit operator string(IfcSurfaceFeatureTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSurfaceSide = ENUMERATION OF
+	/// <para>TYPE IfcSurfaceSide = ENUMERATION OF</para>
+	/// <para>	(BOTH</para>
+	/// <para>	,NEGATIVE</para>
+	/// <para>	,POSITIVE);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSurfaceSide
+	{
+		public static string BOTH { get {return "BOTH";} }
+		public static string NEGATIVE { get {return "NEGATIVE";} }
+		public static string POSITIVE { get {return "POSITIVE";} }
+		public static implicit operator IfcSurfaceSide(string value) { return new IfcSurfaceSide(string);}
+		public static implicit operator string(IfcSurfaceSide value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSwitchingDeviceTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSwitchingDeviceTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CONTACTOR</para>
+	/// <para>	,DIMMERSWITCH</para>
+	/// <para>	,EMERGENCYSTOP</para>
+	/// <para>	,KEYPAD</para>
+	/// <para>	,MOMENTARYSWITCH</para>
+	/// <para>	,RELAY</para>
+	/// <para>	,SELECTORSWITCH</para>
+	/// <para>	,STARTER</para>
+	/// <para>	,START_AND_STOP_EQUIPMENT</para>
+	/// <para>	,SWITCHDISCONNECTOR</para>
+	/// <para>	,TOGGLESWITCH</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSwitchingDeviceTypeEnum
+	{
+		public static string CONTACTOR { get {return "CONTACTOR";} }
+		public static string DIMMERSWITCH { get {return "DIMMERSWITCH";} }
+		public static string EMERGENCYSTOP { get {return "EMERGENCYSTOP";} }
+		public static string KEYPAD { get {return "KEYPAD";} }
+		public static string MOMENTARYSWITCH { get {return "MOMENTARYSWITCH";} }
+		public static string RELAY { get {return "RELAY";} }
+		public static string SELECTORSWITCH { get {return "SELECTORSWITCH";} }
+		public static string STARTER { get {return "STARTER";} }
+		public static string START_AND_STOP_EQUIPMENT { get {return "START_AND_STOP_EQUIPMENT";} }
+		public static string SWITCHDISCONNECTOR { get {return "SWITCHDISCONNECTOR";} }
+		public static string TOGGLESWITCH { get {return "TOGGLESWITCH";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSwitchingDeviceTypeEnum(string value) { return new IfcSwitchingDeviceTypeEnum(string);}
+		public static implicit operator string(IfcSwitchingDeviceTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcSystemFurnitureElementTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcSystemFurnitureElementTypeEnum = ENUMERATION OF</para>
+	/// <para>	(PANEL</para>
+	/// <para>	,SUBRACK</para>
+	/// <para>	,WORKSURFACE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcSystemFurnitureElementTypeEnum
+	{
+		public static string PANEL { get {return "PANEL";} }
+		public static string SUBRACK { get {return "SUBRACK";} }
+		public static string WORKSURFACE { get {return "WORKSURFACE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcSystemFurnitureElementTypeEnum(string value) { return new IfcSystemFurnitureElementTypeEnum(string);}
+		public static implicit operator string(IfcSystemFurnitureElementTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTankTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcTankTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BASIN</para>
+	/// <para>	,BREAKPRESSURE</para>
+	/// <para>	,EXPANSION</para>
+	/// <para>	,FEEDANDEXPANSION</para>
+	/// <para>	,OILRETENTIONTRAY</para>
+	/// <para>	,PRESSUREVESSEL</para>
+	/// <para>	,STORAGE</para>
+	/// <para>	,VESSEL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTankTypeEnum
+	{
+		public static string BASIN { get {return "BASIN";} }
+		public static string BREAKPRESSURE { get {return "BREAKPRESSURE";} }
+		public static string EXPANSION { get {return "EXPANSION";} }
+		public static string FEEDANDEXPANSION { get {return "FEEDANDEXPANSION";} }
+		public static string OILRETENTIONTRAY { get {return "OILRETENTIONTRAY";} }
+		public static string PRESSUREVESSEL { get {return "PRESSUREVESSEL";} }
+		public static string STORAGE { get {return "STORAGE";} }
+		public static string VESSEL { get {return "VESSEL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcTankTypeEnum(string value) { return new IfcTankTypeEnum(string);}
+		public static implicit operator string(IfcTankTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTaskDurationEnum = ENUMERATION OF
+	/// <para>TYPE IfcTaskDurationEnum = ENUMERATION OF</para>
+	/// <para>	(ELAPSEDTIME</para>
+	/// <para>	,WORKTIME</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTaskDurationEnum
+	{
+		public static string ELAPSEDTIME { get {return "ELAPSEDTIME";} }
+		public static string WORKTIME { get {return "WORKTIME";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcTaskDurationEnum(string value) { return new IfcTaskDurationEnum(string);}
+		public static implicit operator string(IfcTaskDurationEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTaskTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcTaskTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ADJUSTMENT</para>
+	/// <para>	,ATTENDANCE</para>
+	/// <para>	,CALIBRATION</para>
+	/// <para>	,CONSTRUCTION</para>
+	/// <para>	,DEMOLITION</para>
+	/// <para>	,DISMANTLE</para>
+	/// <para>	,DISPOSAL</para>
+	/// <para>	,EMERGENCY</para>
+	/// <para>	,INSPECTION</para>
+	/// <para>	,INSTALLATION</para>
+	/// <para>	,LOGISTIC</para>
+	/// <para>	,MAINTENANCE</para>
+	/// <para>	,MOVE</para>
+	/// <para>	,OPERATION</para>
+	/// <para>	,REMOVAL</para>
+	/// <para>	,RENOVATION</para>
+	/// <para>	,SAFETY</para>
+	/// <para>	,SHUTDOWN</para>
+	/// <para>	,STARTUP</para>
+	/// <para>	,TESTING</para>
+	/// <para>	,TROUBLESHOOTING</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTaskTypeEnum
+	{
+		public static string ADJUSTMENT { get {return "ADJUSTMENT";} }
+		public static string ATTENDANCE { get {return "ATTENDANCE";} }
+		public static string CALIBRATION { get {return "CALIBRATION";} }
+		public static string CONSTRUCTION { get {return "CONSTRUCTION";} }
+		public static string DEMOLITION { get {return "DEMOLITION";} }
+		public static string DISMANTLE { get {return "DISMANTLE";} }
+		public static string DISPOSAL { get {return "DISPOSAL";} }
+		public static string EMERGENCY { get {return "EMERGENCY";} }
+		public static string INSPECTION { get {return "INSPECTION";} }
+		public static string INSTALLATION { get {return "INSTALLATION";} }
+		public static string LOGISTIC { get {return "LOGISTIC";} }
+		public static string MAINTENANCE { get {return "MAINTENANCE";} }
+		public static string MOVE { get {return "MOVE";} }
+		public static string OPERATION { get {return "OPERATION";} }
+		public static string REMOVAL { get {return "REMOVAL";} }
+		public static string RENOVATION { get {return "RENOVATION";} }
+		public static string SAFETY { get {return "SAFETY";} }
+		public static string SHUTDOWN { get {return "SHUTDOWN";} }
+		public static string STARTUP { get {return "STARTUP";} }
+		public static string TESTING { get {return "TESTING";} }
+		public static string TROUBLESHOOTING { get {return "TROUBLESHOOTING";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcTaskTypeEnum(string value) { return new IfcTaskTypeEnum(string);}
+		public static implicit operator string(IfcTaskTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTendonAnchorTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcTendonAnchorTypeEnum = ENUMERATION OF</para>
+	/// <para>	(COUPLER</para>
+	/// <para>	,FIXED_END</para>
+	/// <para>	,TENSIONING_END</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTendonAnchorTypeEnum
+	{
+		public static string COUPLER { get {return "COUPLER";} }
+		public static string FIXED_END { get {return "FIXED_END";} }
+		public static string TENSIONING_END { get {return "TENSIONING_END";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcTendonAnchorTypeEnum(string value) { return new IfcTendonAnchorTypeEnum(string);}
+		public static implicit operator string(IfcTendonAnchorTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTendonConduitTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcTendonConduitTypeEnum = ENUMERATION OF</para>
+	/// <para>	(COUPLER</para>
+	/// <para>	,DIABOLO</para>
+	/// <para>	,DUCT</para>
+	/// <para>	,GROUTING_DUCT</para>
+	/// <para>	,TRUMPET</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTendonConduitTypeEnum
+	{
+		public static string COUPLER { get {return "COUPLER";} }
+		public static string DIABOLO { get {return "DIABOLO";} }
+		public static string DUCT { get {return "DUCT";} }
+		public static string GROUTING_DUCT { get {return "GROUTING_DUCT";} }
+		public static string TRUMPET { get {return "TRUMPET";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcTendonConduitTypeEnum(string value) { return new IfcTendonConduitTypeEnum(string);}
+		public static implicit operator string(IfcTendonConduitTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTendonTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcTendonTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BAR</para>
+	/// <para>	,COATED</para>
+	/// <para>	,STRAND</para>
+	/// <para>	,WIRE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTendonTypeEnum
+	{
+		public static string BAR { get {return "BAR";} }
+		public static string COATED { get {return "COATED";} }
+		public static string STRAND { get {return "STRAND";} }
+		public static string WIRE { get {return "WIRE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcTendonTypeEnum(string value) { return new IfcTendonTypeEnum(string);}
+		public static implicit operator string(IfcTendonTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTextPath = ENUMERATION OF
+	/// <para>TYPE IfcTextPath = ENUMERATION OF</para>
+	/// <para>	(DOWN</para>
+	/// <para>	,LEFT</para>
+	/// <para>	,RIGHT</para>
+	/// <para>	,UP);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTextPath
+	{
+		public static string DOWN { get {return "DOWN";} }
+		public static string LEFT { get {return "LEFT";} }
+		public static string RIGHT { get {return "RIGHT";} }
+		public static string UP { get {return "UP";} }
+		public static implicit operator IfcTextPath(string value) { return new IfcTextPath(string);}
+		public static implicit operator string(IfcTextPath value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTimeSeriesDataTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcTimeSeriesDataTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CONTINUOUS</para>
+	/// <para>	,DISCRETE</para>
+	/// <para>	,DISCRETEBINARY</para>
+	/// <para>	,PIECEWISEBINARY</para>
+	/// <para>	,PIECEWISECONSTANT</para>
+	/// <para>	,PIECEWISECONTINUOUS</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTimeSeriesDataTypeEnum
+	{
+		public static string CONTINUOUS { get {return "CONTINUOUS";} }
+		public static string DISCRETE { get {return "DISCRETE";} }
+		public static string DISCRETEBINARY { get {return "DISCRETEBINARY";} }
+		public static string PIECEWISEBINARY { get {return "PIECEWISEBINARY";} }
+		public static string PIECEWISECONSTANT { get {return "PIECEWISECONSTANT";} }
+		public static string PIECEWISECONTINUOUS { get {return "PIECEWISECONTINUOUS";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcTimeSeriesDataTypeEnum(string value) { return new IfcTimeSeriesDataTypeEnum(string);}
+		public static implicit operator string(IfcTimeSeriesDataTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTrackElementTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcTrackElementTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BLOCKINGDEVICE</para>
+	/// <para>	,DERAILER</para>
+	/// <para>	,FROG</para>
+	/// <para>	,HALF_SET_OF_BLADES</para>
+	/// <para>	,SLEEPER</para>
+	/// <para>	,SPEEDREGULATOR</para>
+	/// <para>	,TRACKENDOFALIGNMENT</para>
+	/// <para>	,VEHICLESTOP</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTrackElementTypeEnum
+	{
+		public static string BLOCKINGDEVICE { get {return "BLOCKINGDEVICE";} }
+		public static string DERAILER { get {return "DERAILER";} }
+		public static string FROG { get {return "FROG";} }
+		public static string HALF_SET_OF_BLADES { get {return "HALF_SET_OF_BLADES";} }
+		public static string SLEEPER { get {return "SLEEPER";} }
+		public static string SPEEDREGULATOR { get {return "SPEEDREGULATOR";} }
+		public static string TRACKENDOFALIGNMENT { get {return "TRACKENDOFALIGNMENT";} }
+		public static string VEHICLESTOP { get {return "VEHICLESTOP";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcTrackElementTypeEnum(string value) { return new IfcTrackElementTypeEnum(string);}
+		public static implicit operator string(IfcTrackElementTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTransformerTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcTransformerTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CHOPPER</para>
+	/// <para>	,COMBINED</para>
+	/// <para>	,CURRENT</para>
+	/// <para>	,FREQUENCY</para>
+	/// <para>	,INVERTER</para>
+	/// <para>	,RECTIFIER</para>
+	/// <para>	,VOLTAGE</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTransformerTypeEnum
+	{
+		public static string CHOPPER { get {return "CHOPPER";} }
+		public static string COMBINED { get {return "COMBINED";} }
+		public static string CURRENT { get {return "CURRENT";} }
+		public static string FREQUENCY { get {return "FREQUENCY";} }
+		public static string INVERTER { get {return "INVERTER";} }
+		public static string RECTIFIER { get {return "RECTIFIER";} }
+		public static string VOLTAGE { get {return "VOLTAGE";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcTransformerTypeEnum(string value) { return new IfcTransformerTypeEnum(string);}
+		public static implicit operator string(IfcTransformerTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTransitionCode = ENUMERATION OF
+	/// <para>TYPE IfcTransitionCode = ENUMERATION OF</para>
+	/// <para>	(CONTINUOUS</para>
+	/// <para>	,CONTSAMEGRADIENT</para>
+	/// <para>	,CONTSAMEGRADIENTSAMECURVATURE</para>
+	/// <para>	,DISCONTINUOUS);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTransitionCode
+	{
+		public static string CONTINUOUS { get {return "CONTINUOUS";} }
+		public static string CONTSAMEGRADIENT { get {return "CONTSAMEGRADIENT";} }
+		public static string CONTSAMEGRADIENTSAMECURVATURE { get {return "CONTSAMEGRADIENTSAMECURVATURE";} }
+		public static string DISCONTINUOUS { get {return "DISCONTINUOUS";} }
+		public static implicit operator IfcTransitionCode(string value) { return new IfcTransitionCode(string);}
+		public static implicit operator string(IfcTransitionCode value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTransportElementTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcTransportElementTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CRANEWAY</para>
+	/// <para>	,ELEVATOR</para>
+	/// <para>	,ESCALATOR</para>
+	/// <para>	,HAULINGGEAR</para>
+	/// <para>	,LIFTINGGEAR</para>
+	/// <para>	,MOVINGWALKWAY</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTransportElementTypeEnum
+	{
+		public static string CRANEWAY { get {return "CRANEWAY";} }
+		public static string ELEVATOR { get {return "ELEVATOR";} }
+		public static string ESCALATOR { get {return "ESCALATOR";} }
+		public static string HAULINGGEAR { get {return "HAULINGGEAR";} }
+		public static string LIFTINGGEAR { get {return "LIFTINGGEAR";} }
+		public static string MOVINGWALKWAY { get {return "MOVINGWALKWAY";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcTransportElementTypeEnum(string value) { return new IfcTransportElementTypeEnum(string);}
+		public static implicit operator string(IfcTransportElementTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTrimmingPreference = ENUMERATION OF
+	/// <para>TYPE IfcTrimmingPreference = ENUMERATION OF</para>
+	/// <para>	(CARTESIAN</para>
+	/// <para>	,PARAMETER</para>
+	/// <para>	,UNSPECIFIED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTrimmingPreference
+	{
+		public static string CARTESIAN { get {return "CARTESIAN";} }
+		public static string PARAMETER { get {return "PARAMETER";} }
+		public static string UNSPECIFIED { get {return "UNSPECIFIED";} }
+		public static implicit operator IfcTrimmingPreference(string value) { return new IfcTrimmingPreference(string);}
+		public static implicit operator string(IfcTrimmingPreference value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcTubeBundleTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcTubeBundleTypeEnum = ENUMERATION OF</para>
+	/// <para>	(FINNED</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcTubeBundleTypeEnum
+	{
+		public static string FINNED { get {return "FINNED";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcTubeBundleTypeEnum(string value) { return new IfcTubeBundleTypeEnum(string);}
+		public static implicit operator string(IfcTubeBundleTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcUnitEnum = ENUMERATION OF
+	/// <para>TYPE IfcUnitEnum = ENUMERATION OF</para>
+	/// <para>	(ABSORBEDDOSEUNIT</para>
+	/// <para>	,AMOUNTOFSUBSTANCEUNIT</para>
+	/// <para>	,AREAUNIT</para>
+	/// <para>	,DOSEEQUIVALENTUNIT</para>
+	/// <para>	,ELECTRICCAPACITANCEUNIT</para>
+	/// <para>	,ELECTRICCHARGEUNIT</para>
+	/// <para>	,ELECTRICCONDUCTANCEUNIT</para>
+	/// <para>	,ELECTRICCURRENTUNIT</para>
+	/// <para>	,ELECTRICRESISTANCEUNIT</para>
+	/// <para>	,ELECTRICVOLTAGEUNIT</para>
+	/// <para>	,ENERGYUNIT</para>
+	/// <para>	,FORCEUNIT</para>
+	/// <para>	,FREQUENCYUNIT</para>
+	/// <para>	,ILLUMINANCEUNIT</para>
+	/// <para>	,INDUCTANCEUNIT</para>
+	/// <para>	,LENGTHUNIT</para>
+	/// <para>	,LUMINOUSFLUXUNIT</para>
+	/// <para>	,LUMINOUSINTENSITYUNIT</para>
+	/// <para>	,MAGNETICFLUXDENSITYUNIT</para>
+	/// <para>	,MAGNETICFLUXUNIT</para>
+	/// <para>	,MASSUNIT</para>
+	/// <para>	,PLANEANGLEUNIT</para>
+	/// <para>	,POWERUNIT</para>
+	/// <para>	,PRESSUREUNIT</para>
+	/// <para>	,RADIOACTIVITYUNIT</para>
+	/// <para>	,SOLIDANGLEUNIT</para>
+	/// <para>	,THERMODYNAMICTEMPERATUREUNIT</para>
+	/// <para>	,TIMEUNIT</para>
+	/// <para>	,VOLUMEUNIT</para>
+	/// <para>	,USERDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcUnitEnum
+	{
+		public static string ABSORBEDDOSEUNIT { get {return "ABSORBEDDOSEUNIT";} }
+		public static string AMOUNTOFSUBSTANCEUNIT { get {return "AMOUNTOFSUBSTANCEUNIT";} }
+		public static string AREAUNIT { get {return "AREAUNIT";} }
+		public static string DOSEEQUIVALENTUNIT { get {return "DOSEEQUIVALENTUNIT";} }
+		public static string ELECTRICCAPACITANCEUNIT { get {return "ELECTRICCAPACITANCEUNIT";} }
+		public static string ELECTRICCHARGEUNIT { get {return "ELECTRICCHARGEUNIT";} }
+		public static string ELECTRICCONDUCTANCEUNIT { get {return "ELECTRICCONDUCTANCEUNIT";} }
+		public static string ELECTRICCURRENTUNIT { get {return "ELECTRICCURRENTUNIT";} }
+		public static string ELECTRICRESISTANCEUNIT { get {return "ELECTRICRESISTANCEUNIT";} }
+		public static string ELECTRICVOLTAGEUNIT { get {return "ELECTRICVOLTAGEUNIT";} }
+		public static string ENERGYUNIT { get {return "ENERGYUNIT";} }
+		public static string FORCEUNIT { get {return "FORCEUNIT";} }
+		public static string FREQUENCYUNIT { get {return "FREQUENCYUNIT";} }
+		public static string ILLUMINANCEUNIT { get {return "ILLUMINANCEUNIT";} }
+		public static string INDUCTANCEUNIT { get {return "INDUCTANCEUNIT";} }
+		public static string LENGTHUNIT { get {return "LENGTHUNIT";} }
+		public static string LUMINOUSFLUXUNIT { get {return "LUMINOUSFLUXUNIT";} }
+		public static string LUMINOUSINTENSITYUNIT { get {return "LUMINOUSINTENSITYUNIT";} }
+		public static string MAGNETICFLUXDENSITYUNIT { get {return "MAGNETICFLUXDENSITYUNIT";} }
+		public static string MAGNETICFLUXUNIT { get {return "MAGNETICFLUXUNIT";} }
+		public static string MASSUNIT { get {return "MASSUNIT";} }
+		public static string PLANEANGLEUNIT { get {return "PLANEANGLEUNIT";} }
+		public static string POWERUNIT { get {return "POWERUNIT";} }
+		public static string PRESSUREUNIT { get {return "PRESSUREUNIT";} }
+		public static string RADIOACTIVITYUNIT { get {return "RADIOACTIVITYUNIT";} }
+		public static string SOLIDANGLEUNIT { get {return "SOLIDANGLEUNIT";} }
+		public static string THERMODYNAMICTEMPERATUREUNIT { get {return "THERMODYNAMICTEMPERATUREUNIT";} }
+		public static string TIMEUNIT { get {return "TIMEUNIT";} }
+		public static string VOLUMEUNIT { get {return "VOLUMEUNIT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static implicit operator IfcUnitEnum(string value) { return new IfcUnitEnum(string);}
+		public static implicit operator string(IfcUnitEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcUnitaryControlElementTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcUnitaryControlElementTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ALARMPANEL</para>
+	/// <para>	,BASESTATIONCONTROLLER</para>
+	/// <para>	,COMBINED</para>
+	/// <para>	,CONTROLPANEL</para>
+	/// <para>	,GASDETECTIONPANEL</para>
+	/// <para>	,HUMIDISTAT</para>
+	/// <para>	,INDICATORPANEL</para>
+	/// <para>	,MIMICPANEL</para>
+	/// <para>	,THERMOSTAT</para>
+	/// <para>	,WEATHERSTATION</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcUnitaryControlElementTypeEnum
+	{
+		public static string ALARMPANEL { get {return "ALARMPANEL";} }
+		public static string BASESTATIONCONTROLLER { get {return "BASESTATIONCONTROLLER";} }
+		public static string COMBINED { get {return "COMBINED";} }
+		public static string CONTROLPANEL { get {return "CONTROLPANEL";} }
+		public static string GASDETECTIONPANEL { get {return "GASDETECTIONPANEL";} }
+		public static string HUMIDISTAT { get {return "HUMIDISTAT";} }
+		public static string INDICATORPANEL { get {return "INDICATORPANEL";} }
+		public static string MIMICPANEL { get {return "MIMICPANEL";} }
+		public static string THERMOSTAT { get {return "THERMOSTAT";} }
+		public static string WEATHERSTATION { get {return "WEATHERSTATION";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcUnitaryControlElementTypeEnum(string value) { return new IfcUnitaryControlElementTypeEnum(string);}
+		public static implicit operator string(IfcUnitaryControlElementTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcUnitaryEquipmentTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcUnitaryEquipmentTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AIRCONDITIONINGUNIT</para>
+	/// <para>	,AIRHANDLER</para>
+	/// <para>	,DEHUMIDIFIER</para>
+	/// <para>	,ROOFTOPUNIT</para>
+	/// <para>	,SPLITSYSTEM</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcUnitaryEquipmentTypeEnum
+	{
+		public static string AIRCONDITIONINGUNIT { get {return "AIRCONDITIONINGUNIT";} }
+		public static string AIRHANDLER { get {return "AIRHANDLER";} }
+		public static string DEHUMIDIFIER { get {return "DEHUMIDIFIER";} }
+		public static string ROOFTOPUNIT { get {return "ROOFTOPUNIT";} }
+		public static string SPLITSYSTEM { get {return "SPLITSYSTEM";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcUnitaryEquipmentTypeEnum(string value) { return new IfcUnitaryEquipmentTypeEnum(string);}
+		public static implicit operator string(IfcUnitaryEquipmentTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcValveTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcValveTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AIRRELEASE</para>
+	/// <para>	,ANTIVACUUM</para>
+	/// <para>	,CHANGEOVER</para>
+	/// <para>	,CHECK</para>
+	/// <para>	,COMMISSIONING</para>
+	/// <para>	,DIVERTING</para>
+	/// <para>	,DOUBLECHECK</para>
+	/// <para>	,DOUBLEREGULATING</para>
+	/// <para>	,DRAWOFFCOCK</para>
+	/// <para>	,FAUCET</para>
+	/// <para>	,FLUSHING</para>
+	/// <para>	,GASCOCK</para>
+	/// <para>	,GASTAP</para>
+	/// <para>	,ISOLATING</para>
+	/// <para>	,MIXING</para>
+	/// <para>	,PRESSUREREDUCING</para>
+	/// <para>	,PRESSURERELIEF</para>
+	/// <para>	,REGULATING</para>
+	/// <para>	,SAFETYCUTOFF</para>
+	/// <para>	,STEAMTRAP</para>
+	/// <para>	,STOPCOCK</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcValveTypeEnum
+	{
+		public static string AIRRELEASE { get {return "AIRRELEASE";} }
+		public static string ANTIVACUUM { get {return "ANTIVACUUM";} }
+		public static string CHANGEOVER { get {return "CHANGEOVER";} }
+		public static string CHECK { get {return "CHECK";} }
+		public static string COMMISSIONING { get {return "COMMISSIONING";} }
+		public static string DIVERTING { get {return "DIVERTING";} }
+		public static string DOUBLECHECK { get {return "DOUBLECHECK";} }
+		public static string DOUBLEREGULATING { get {return "DOUBLEREGULATING";} }
+		public static string DRAWOFFCOCK { get {return "DRAWOFFCOCK";} }
+		public static string FAUCET { get {return "FAUCET";} }
+		public static string FLUSHING { get {return "FLUSHING";} }
+		public static string GASCOCK { get {return "GASCOCK";} }
+		public static string GASTAP { get {return "GASTAP";} }
+		public static string ISOLATING { get {return "ISOLATING";} }
+		public static string MIXING { get {return "MIXING";} }
+		public static string PRESSUREREDUCING { get {return "PRESSUREREDUCING";} }
+		public static string PRESSURERELIEF { get {return "PRESSURERELIEF";} }
+		public static string REGULATING { get {return "REGULATING";} }
+		public static string SAFETYCUTOFF { get {return "SAFETYCUTOFF";} }
+		public static string STEAMTRAP { get {return "STEAMTRAP";} }
+		public static string STOPCOCK { get {return "STOPCOCK";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcValveTypeEnum(string value) { return new IfcValveTypeEnum(string);}
+		public static implicit operator string(IfcValveTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcVehicleTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcVehicleTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CARGO</para>
+	/// <para>	,ROLLINGSTOCK</para>
+	/// <para>	,VEHICLE</para>
+	/// <para>	,VEHICLEAIR</para>
+	/// <para>	,VEHICLEMARINE</para>
+	/// <para>	,VEHICLETRACKED</para>
+	/// <para>	,VEHICLEWHEELED</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcVehicleTypeEnum
+	{
+		public static string CARGO { get {return "CARGO";} }
+		public static string ROLLINGSTOCK { get {return "ROLLINGSTOCK";} }
+		public static string VEHICLE { get {return "VEHICLE";} }
+		public static string VEHICLEAIR { get {return "VEHICLEAIR";} }
+		public static string VEHICLEMARINE { get {return "VEHICLEMARINE";} }
+		public static string VEHICLETRACKED { get {return "VEHICLETRACKED";} }
+		public static string VEHICLEWHEELED { get {return "VEHICLEWHEELED";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcVehicleTypeEnum(string value) { return new IfcVehicleTypeEnum(string);}
+		public static implicit operator string(IfcVehicleTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcVibrationDamperTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcVibrationDamperTypeEnum = ENUMERATION OF</para>
+	/// <para>	(AXIAL_YIELD</para>
+	/// <para>	,BENDING_YIELD</para>
+	/// <para>	,FRICTION</para>
+	/// <para>	,RUBBER</para>
+	/// <para>	,SHEAR_YIELD</para>
+	/// <para>	,VISCOUS</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcVibrationDamperTypeEnum
+	{
+		public static string AXIAL_YIELD { get {return "AXIAL_YIELD";} }
+		public static string BENDING_YIELD { get {return "BENDING_YIELD";} }
+		public static string FRICTION { get {return "FRICTION";} }
+		public static string RUBBER { get {return "RUBBER";} }
+		public static string SHEAR_YIELD { get {return "SHEAR_YIELD";} }
+		public static string VISCOUS { get {return "VISCOUS";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcVibrationDamperTypeEnum(string value) { return new IfcVibrationDamperTypeEnum(string);}
+		public static implicit operator string(IfcVibrationDamperTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcVibrationIsolatorTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcVibrationIsolatorTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BASE</para>
+	/// <para>	,COMPRESSION</para>
+	/// <para>	,SPRING</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcVibrationIsolatorTypeEnum
+	{
+		public static string BASE { get {return "BASE";} }
+		public static string COMPRESSION { get {return "COMPRESSION";} }
+		public static string SPRING { get {return "SPRING";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcVibrationIsolatorTypeEnum(string value) { return new IfcVibrationIsolatorTypeEnum(string);}
+		public static implicit operator string(IfcVibrationIsolatorTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcVirtualElementTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcVirtualElementTypeEnum = ENUMERATION OF</para>
+	/// <para>	(BOUNDARY</para>
+	/// <para>	,CLEARANCE</para>
+	/// <para>	,PROVISIONFORVOID</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcVirtualElementTypeEnum
+	{
+		public static string BOUNDARY { get {return "BOUNDARY";} }
+		public static string CLEARANCE { get {return "CLEARANCE";} }
+		public static string PROVISIONFORVOID { get {return "PROVISIONFORVOID";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcVirtualElementTypeEnum(string value) { return new IfcVirtualElementTypeEnum(string);}
+		public static implicit operator string(IfcVirtualElementTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcVoidingFeatureTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcVoidingFeatureTypeEnum = ENUMERATION OF</para>
+	/// <para>	(CHAMFER</para>
+	/// <para>	,CUTOUT</para>
+	/// <para>	,EDGE</para>
+	/// <para>	,HOLE</para>
+	/// <para>	,MITER</para>
+	/// <para>	,NOTCH</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcVoidingFeatureTypeEnum
+	{
+		public static string CHAMFER { get {return "CHAMFER";} }
+		public static string CUTOUT { get {return "CUTOUT";} }
+		public static string EDGE { get {return "EDGE";} }
+		public static string HOLE { get {return "HOLE";} }
+		public static string MITER { get {return "MITER";} }
+		public static string NOTCH { get {return "NOTCH";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcVoidingFeatureTypeEnum(string value) { return new IfcVoidingFeatureTypeEnum(string);}
+		public static implicit operator string(IfcVoidingFeatureTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcWallTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcWallTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ELEMENTEDWALL</para>
+	/// <para>	,MOVABLE</para>
+	/// <para>	,PARAPET</para>
+	/// <para>	,PARTITIONING</para>
+	/// <para>	,PLUMBINGWALL</para>
+	/// <para>	,POLYGONAL</para>
+	/// <para>	,RETAININGWALL</para>
+	/// <para>	,SHEAR</para>
+	/// <para>	,SOLIDWALL</para>
+	/// <para>	,STANDARD</para>
+	/// <para>	,WAVEWALL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcWallTypeEnum
+	{
+		public static string ELEMENTEDWALL { get {return "ELEMENTEDWALL";} }
+		public static string MOVABLE { get {return "MOVABLE";} }
+		public static string PARAPET { get {return "PARAPET";} }
+		public static string PARTITIONING { get {return "PARTITIONING";} }
+		public static string PLUMBINGWALL { get {return "PLUMBINGWALL";} }
+		public static string POLYGONAL { get {return "POLYGONAL";} }
+		public static string RETAININGWALL { get {return "RETAININGWALL";} }
+		public static string SHEAR { get {return "SHEAR";} }
+		public static string SOLIDWALL { get {return "SOLIDWALL";} }
+		public static string STANDARD { get {return "STANDARD";} }
+		public static string WAVEWALL { get {return "WAVEWALL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcWallTypeEnum(string value) { return new IfcWallTypeEnum(string);}
+		public static implicit operator string(IfcWallTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcWasteTerminalTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcWasteTerminalTypeEnum = ENUMERATION OF</para>
+	/// <para>	(FLOORTRAP</para>
+	/// <para>	,FLOORWASTE</para>
+	/// <para>	,GULLYSUMP</para>
+	/// <para>	,GULLYTRAP</para>
+	/// <para>	,ROOFDRAIN</para>
+	/// <para>	,WASTEDISPOSALUNIT</para>
+	/// <para>	,WASTETRAP</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcWasteTerminalTypeEnum
+	{
+		public static string FLOORTRAP { get {return "FLOORTRAP";} }
+		public static string FLOORWASTE { get {return "FLOORWASTE";} }
+		public static string GULLYSUMP { get {return "GULLYSUMP";} }
+		public static string GULLYTRAP { get {return "GULLYTRAP";} }
+		public static string ROOFDRAIN { get {return "ROOFDRAIN";} }
+		public static string WASTEDISPOSALUNIT { get {return "WASTEDISPOSALUNIT";} }
+		public static string WASTETRAP { get {return "WASTETRAP";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcWasteTerminalTypeEnum(string value) { return new IfcWasteTerminalTypeEnum(string);}
+		public static implicit operator string(IfcWasteTerminalTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcWindowPanelOperationEnum = ENUMERATION OF
+	/// <para>TYPE IfcWindowPanelOperationEnum = ENUMERATION OF</para>
+	/// <para>	(BOTTOMHUNG</para>
+	/// <para>	,FIXEDCASEMENT</para>
+	/// <para>	,OTHEROPERATION</para>
+	/// <para>	,PIVOTHORIZONTAL</para>
+	/// <para>	,PIVOTVERTICAL</para>
+	/// <para>	,REMOVABLECASEMENT</para>
+	/// <para>	,SIDEHUNGLEFTHAND</para>
+	/// <para>	,SIDEHUNGRIGHTHAND</para>
+	/// <para>	,SLIDINGHORIZONTAL</para>
+	/// <para>	,SLIDINGVERTICAL</para>
+	/// <para>	,TILTANDTURNLEFTHAND</para>
+	/// <para>	,TILTANDTURNRIGHTHAND</para>
+	/// <para>	,TOPHUNG</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcWindowPanelOperationEnum
+	{
+		public static string BOTTOMHUNG { get {return "BOTTOMHUNG";} }
+		public static string FIXEDCASEMENT { get {return "FIXEDCASEMENT";} }
+		public static string OTHEROPERATION { get {return "OTHEROPERATION";} }
+		public static string PIVOTHORIZONTAL { get {return "PIVOTHORIZONTAL";} }
+		public static string PIVOTVERTICAL { get {return "PIVOTVERTICAL";} }
+		public static string REMOVABLECASEMENT { get {return "REMOVABLECASEMENT";} }
+		public static string SIDEHUNGLEFTHAND { get {return "SIDEHUNGLEFTHAND";} }
+		public static string SIDEHUNGRIGHTHAND { get {return "SIDEHUNGRIGHTHAND";} }
+		public static string SLIDINGHORIZONTAL { get {return "SLIDINGHORIZONTAL";} }
+		public static string SLIDINGVERTICAL { get {return "SLIDINGVERTICAL";} }
+		public static string TILTANDTURNLEFTHAND { get {return "TILTANDTURNLEFTHAND";} }
+		public static string TILTANDTURNRIGHTHAND { get {return "TILTANDTURNRIGHTHAND";} }
+		public static string TOPHUNG { get {return "TOPHUNG";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcWindowPanelOperationEnum(string value) { return new IfcWindowPanelOperationEnum(string);}
+		public static implicit operator string(IfcWindowPanelOperationEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcWindowPanelPositionEnum = ENUMERATION OF
+	/// <para>TYPE IfcWindowPanelPositionEnum = ENUMERATION OF</para>
+	/// <para>	(BOTTOM</para>
+	/// <para>	,LEFT</para>
+	/// <para>	,MIDDLE</para>
+	/// <para>	,RIGHT</para>
+	/// <para>	,TOP</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcWindowPanelPositionEnum
+	{
+		public static string BOTTOM { get {return "BOTTOM";} }
+		public static string LEFT { get {return "LEFT";} }
+		public static string MIDDLE { get {return "MIDDLE";} }
+		public static string RIGHT { get {return "RIGHT";} }
+		public static string TOP { get {return "TOP";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcWindowPanelPositionEnum(string value) { return new IfcWindowPanelPositionEnum(string);}
+		public static implicit operator string(IfcWindowPanelPositionEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcWindowTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcWindowTypeEnum = ENUMERATION OF</para>
+	/// <para>	(LIGHTDOME</para>
+	/// <para>	,SKYLIGHT</para>
+	/// <para>	,WINDOW</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcWindowTypeEnum
+	{
+		public static string LIGHTDOME { get {return "LIGHTDOME";} }
+		public static string SKYLIGHT { get {return "SKYLIGHT";} }
+		public static string WINDOW { get {return "WINDOW";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcWindowTypeEnum(string value) { return new IfcWindowTypeEnum(string);}
+		public static implicit operator string(IfcWindowTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcWindowTypePartitioningEnum = ENUMERATION OF
+	/// <para>TYPE IfcWindowTypePartitioningEnum = ENUMERATION OF</para>
+	/// <para>	(DOUBLE_PANEL_HORIZONTAL</para>
+	/// <para>	,DOUBLE_PANEL_VERTICAL</para>
+	/// <para>	,SINGLE_PANEL</para>
+	/// <para>	,TRIPLE_PANEL_BOTTOM</para>
+	/// <para>	,TRIPLE_PANEL_HORIZONTAL</para>
+	/// <para>	,TRIPLE_PANEL_LEFT</para>
+	/// <para>	,TRIPLE_PANEL_RIGHT</para>
+	/// <para>	,TRIPLE_PANEL_TOP</para>
+	/// <para>	,TRIPLE_PANEL_VERTICAL</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcWindowTypePartitioningEnum
+	{
+		public static string DOUBLE_PANEL_HORIZONTAL { get {return "DOUBLE_PANEL_HORIZONTAL";} }
+		public static string DOUBLE_PANEL_VERTICAL { get {return "DOUBLE_PANEL_VERTICAL";} }
+		public static string SINGLE_PANEL { get {return "SINGLE_PANEL";} }
+		public static string TRIPLE_PANEL_BOTTOM { get {return "TRIPLE_PANEL_BOTTOM";} }
+		public static string TRIPLE_PANEL_HORIZONTAL { get {return "TRIPLE_PANEL_HORIZONTAL";} }
+		public static string TRIPLE_PANEL_LEFT { get {return "TRIPLE_PANEL_LEFT";} }
+		public static string TRIPLE_PANEL_RIGHT { get {return "TRIPLE_PANEL_RIGHT";} }
+		public static string TRIPLE_PANEL_TOP { get {return "TRIPLE_PANEL_TOP";} }
+		public static string TRIPLE_PANEL_VERTICAL { get {return "TRIPLE_PANEL_VERTICAL";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcWindowTypePartitioningEnum(string value) { return new IfcWindowTypePartitioningEnum(string);}
+		public static implicit operator string(IfcWindowTypePartitioningEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcWorkCalendarTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcWorkCalendarTypeEnum = ENUMERATION OF</para>
+	/// <para>	(FIRSTSHIFT</para>
+	/// <para>	,SECONDSHIFT</para>
+	/// <para>	,THIRDSHIFT</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcWorkCalendarTypeEnum
+	{
+		public static string FIRSTSHIFT { get {return "FIRSTSHIFT";} }
+		public static string SECONDSHIFT { get {return "SECONDSHIFT";} }
+		public static string THIRDSHIFT { get {return "THIRDSHIFT";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcWorkCalendarTypeEnum(string value) { return new IfcWorkCalendarTypeEnum(string);}
+		public static implicit operator string(IfcWorkCalendarTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcWorkPlanTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcWorkPlanTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ACTUAL</para>
+	/// <para>	,BASELINE</para>
+	/// <para>	,PLANNED</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcWorkPlanTypeEnum
+	{
+		public static string ACTUAL { get {return "ACTUAL";} }
+		public static string BASELINE { get {return "BASELINE";} }
+		public static string PLANNED { get {return "PLANNED";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcWorkPlanTypeEnum(string value) { return new IfcWorkPlanTypeEnum(string);}
+		public static implicit operator string(IfcWorkPlanTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
+	/// TYPE IfcWorkScheduleTypeEnum = ENUMERATION OF
+	/// <para>TYPE IfcWorkScheduleTypeEnum = ENUMERATION OF</para>
+	/// <para>	(ACTUAL</para>
+	/// <para>	,BASELINE</para>
+	/// <para>	,PLANNED</para>
+	/// <para>	,USERDEFINED</para>
+	/// <para>	,NOTDEFINED);</para>
+	/// <para>END_TYPE;</para>
+	/// <summary>
+	public class IfcWorkScheduleTypeEnum
+	{
+		public static string ACTUAL { get {return "ACTUAL";} }
+		public static string BASELINE { get {return "BASELINE";} }
+		public static string PLANNED { get {return "PLANNED";} }
+		public static string USERDEFINED { get {return "USERDEFINED";} }
+		public static string NOTDEFINED { get {return "NOTDEFINED";} }
+		public static implicit operator IfcWorkScheduleTypeEnum(string value) { return new IfcWorkScheduleTypeEnum(string);}
+		public static implicit operator string(IfcWorkScheduleTypeEnum value) { return value.Value;}
+	}
+	/// <summary>
 	/// TYPE IfcActorSelect = SELECT
 	/// <para>TYPE IfcActorSelect = SELECT</para>
 	/// <para>	(IfcOrganization</para>
@@ -2384,7 +9052,7 @@
 	/// <para>  EXISTS(SELF.UserDefinedRole));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcActorRoleENTITY, IfcResourceObjectSelect
+	public class IfcActorRole : ENTITY, IfcResourceObjectSelect
 	{
 		public IfcRoleEnum Role { get; set; }
 		public IfcLabel? UserDefinedRole { get; set; }
@@ -2465,7 +9133,7 @@
 	/// <para>  EXISTS(SELF.UserDefinedPurpose)));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcAddressENTITY, IfcObjectReferenceSelect
+	public abstract class IfcAddress : ENTITY, IfcObjectReferenceSelect
 	{
 		public IfcAddressTypeEnum? Purpose { get; set; }
 		public IfcText? Description { get; set; }
@@ -2896,7 +9564,7 @@
 	/// <para>	EndTag : OPTIONAL IfcLabel;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcAlignmentParameterSegmentENTITY
+	public abstract class IfcAlignmentParameterSegment : ENTITY
 	{
 		public IfcLabel? StartTag { get; set; }
 		public IfcLabel? EndTag { get; set; }
@@ -3039,7 +9707,7 @@
 	/// <para>	UR2 : ApplicationFullName, Version;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcApplicationENTITY
+	public class IfcApplication : ENTITY
 	{
 		public IfcOrganization ApplicationDeveloper { get; set; }
 		public IfcLabel Version { get; set; }
@@ -3079,7 +9747,7 @@
 	/// <para>	HasExternalReference : SET [0:?] OF IfcExternalReferenceRelationship FOR RelatedResourceObjects;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcAppliedValueENTITY, IfcMetricValueSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
+	public class IfcAppliedValue : ENTITY, IfcMetricValueSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
 		public IfcLabel? Name { get; set; }
 		public IfcText? Description { get; set; }
@@ -3130,7 +9798,7 @@
 	/// <para>	HasIdentifierOrName : EXISTS (Identifier) OR EXISTS (Name);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcApprovalENTITY, IfcResourceObjectSelect
+	public class IfcApproval : ENTITY, IfcResourceObjectSelect
 	{
 		public IfcIdentifier? Identifier { get; set; }
 		public IfcLabel? Name { get; set; }
@@ -3956,7 +10624,7 @@
 	/// <para>	Name : OPTIONAL IfcLabel;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcBoundaryConditionENTITY
+	public abstract class IfcBoundaryCondition : ENTITY
 	{
 		public IfcLabel? Name { get; set; }
 		public IfcBoundaryCondition() : base()
@@ -5890,7 +12558,7 @@
 	/// <para>	,IfcConnectionVolumeGeometry));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcConnectionGeometryENTITY
+	public abstract class IfcConnectionGeometry : ENTITY
 	{
 		public IfcConnectionGeometry() : base()
 		{
@@ -6012,7 +12680,7 @@
 	/// <para>((ConstraintGrade = IfcConstraintEnum.USERDEFINED) AND EXISTS(SELF\IfcConstraint.UserDefinedGrade));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcConstraintENTITY, IfcResourceObjectSelect
+	public abstract class IfcConstraint : ENTITY, IfcResourceObjectSelect
 	{
 		public IfcLabel Name { get; set; }
 		public IfcText? Description { get; set; }
@@ -6554,7 +13222,7 @@
 	/// <para>	TargetCRS : IfcCoordinateReferenceSystem;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcCoordinateOperationENTITY
+	public abstract class IfcCoordinateOperation : ENTITY
 	{
 		public IfcCoordinateReferenceSystemSelect SourceCRS { get; set; }
 		public IfcCoordinateReferenceSystem TargetCRS { get; set; }
@@ -6585,7 +13253,7 @@
 	/// <para>	NameOrWKT : (HIINDEX(WellKnownText) = 1) OR EXISTS(Name);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcCoordinateReferenceSystemENTITY, IfcCoordinateReferenceSystemSelect
+	public abstract class IfcCoordinateReferenceSystem : ENTITY, IfcCoordinateReferenceSystemSelect
 	{
 		public IfcLabel? Name { get; set; }
 		public IfcText? Description { get; set; }
@@ -7319,7 +13987,7 @@
 	/// <para> (EXISTS(SELF.UserDefinedType)));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcDerivedUnitENTITY, IfcUnit
+	public class IfcDerivedUnit : ENTITY, IfcUnit
 	{
 		public List<IfcDerivedUnitElement> Elements { get; set; }
 		public IfcDerivedUnitEnum UnitType { get; set; }
@@ -7345,7 +14013,7 @@
 	/// <para>	Exponent : INTEGER;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcDerivedUnitElementENTITY
+	public class IfcDerivedUnitElement : ENTITY
 	{
 		public IfcNamedUnit Unit { get; set; }
 		public INTEGER Exponent { get; set; }
@@ -7372,7 +14040,7 @@
 	/// <para>	LuminousIntensityExponent : INTEGER;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcDimensionalExponentsENTITY
+	public class IfcDimensionalExponents : ENTITY
 	{
 		public INTEGER LengthExponent { get; set; }
 		public INTEGER MassExponent { get; set; }
@@ -9338,7 +16006,7 @@
 	/// <para>	,IfcLibraryInformation));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcExternalInformationENTITY, IfcResourceObjectSelect
+	public abstract class IfcExternalInformation : ENTITY, IfcResourceObjectSelect
 	{
 		public IfcExternalInformation() : base()
 		{
@@ -9366,7 +16034,7 @@
 	/// <para>	WR1 : EXISTS(Identification) OR EXISTS(Location) OR EXISTS(Name);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcExternalReferenceENTITY, IfcLightDistributionDataSourceSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
+	public abstract class IfcExternalReference : ENTITY, IfcLightDistributionDataSourceSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
 		public IfcURIReference? Location { get; set; }
 		public IfcIdentifier? Identification { get; set; }
@@ -11063,7 +17731,7 @@
 	/// <para>	WR2 : (SIZEOF(PartOfU) = 1) XOR (SIZEOF(PartOfV) = 1) XOR (SIZEOF(PartOfW) = 1);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcGridAxisENTITY
+	public class IfcGridAxis : ENTITY
 	{
 		public IfcLabel? AxisTag { get; set; }
 		public IfcCurve AxisCurve { get; set; }
@@ -11640,7 +18308,7 @@
 	/// <para>	ListValues : LIST [1:?] OF IfcValue;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcIrregularTimeSeriesValueENTITY
+	public class IfcIrregularTimeSeriesValue : ENTITY
 	{
 		public IfcDateTime TimeStamp { get; set; }
 		public List<IfcValue> ListValues { get; set; }
@@ -11968,7 +18636,7 @@
 	/// <para>	LuminousIntensity : LIST [1:?] OF IfcLuminousIntensityDistributionMeasure;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcLightDistributionDataENTITY
+	public class IfcLightDistributionData : ENTITY
 	{
 		public IfcPlaneAngleMeasure MainPlaneAngle { get; set; }
 		public List<IfcPlaneAngleMeasure> SecondaryPlaneAngle { get; set; }
@@ -12039,7 +18707,7 @@
 	/// <para>	DistributionData : LIST [1:?] OF IfcLightDistributionData;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcLightIntensityDistributionENTITY, IfcLightDistributionDataSourceSelect
+	public class IfcLightIntensityDistribution : ENTITY, IfcLightDistributionDataSourceSelect
 	{
 		public IfcLightDistributionCurveEnum LightDistributionCurve { get; set; }
 		public List<IfcLightDistributionData> DistributionData { get; set; }
@@ -12588,7 +19256,7 @@
 	/// <para>	ClassifiedMaterial : IfcMaterial;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcMaterialClassificationRelationshipENTITY
+	public class IfcMaterialClassificationRelationship : ENTITY
 	{
 		public List<IfcClassificationSelect> MaterialClassifications { get; set; }
 		public IfcMaterial ClassifiedMaterial { get; set; }
@@ -12677,7 +19345,7 @@
 	/// <para>	HasProperties : SET [0:?] OF IfcMaterialProperties FOR Material;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcMaterialDefinitionENTITY, IfcMaterialSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
+	public abstract class IfcMaterialDefinition : ENTITY, IfcMaterialSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
 		public IfcMaterialDefinition() : base()
 		{
@@ -12842,7 +19510,7 @@
 	/// <para>	Materials : LIST [1:?] OF IfcMaterial;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcMaterialListENTITY, IfcMaterialSelect
+	public class IfcMaterialList : ENTITY, IfcMaterialSelect
 	{
 		public List<IfcMaterial> Materials { get; set; }
 		public IfcMaterialList() : base()
@@ -13045,7 +19713,7 @@
 	/// <para>	AssociatedTo : SET [1:?] OF IfcRelAssociatesMaterial FOR RelatingMaterial;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcMaterialUsageDefinitionENTITY, IfcMaterialSelect
+	public abstract class IfcMaterialUsageDefinition : ENTITY, IfcMaterialSelect
 	{
 		public IfcMaterialUsageDefinition() : base()
 		{
@@ -13061,7 +19729,7 @@
 	/// <para>	UnitComponent : IfcUnit;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcMeasureWithUnitENTITY, IfcAppliedValueSelect, IfcMetricValueSelect
+	public class IfcMeasureWithUnit : ENTITY, IfcAppliedValueSelect, IfcMetricValueSelect
 	{
 		public IfcValue ValueComponent { get; set; }
 		public IfcUnit UnitComponent { get; set; }
@@ -13337,7 +20005,7 @@
 	/// <para>	Currency : IfcLabel;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcMonetaryUnitENTITY, IfcUnit
+	public class IfcMonetaryUnit : ENTITY, IfcUnit
 	{
 		public IfcLabel Currency { get; set; }
 		public IfcMonetaryUnit() : base()
@@ -13454,7 +20122,7 @@
 	/// <para>	WR1 : IfcCorrectDimensions (SELF.UnitType, SELF.Dimensions);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcNamedUnitENTITY, IfcUnit
+	public abstract class IfcNamedUnit : ENTITY, IfcUnit
 	{
 		public IfcDimensionalExponents Dimensions { get; set; }
 		public IfcUnitEnum UnitType { get; set; }
@@ -13587,7 +20255,7 @@
 	/// <para>	ReferencedByPlacements : SET [0:?] OF IfcObjectPlacement FOR PlacementRelTo;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcObjectPlacementENTITY
+	public abstract class IfcObjectPlacement : ENTITY
 	{
 		public IfcObjectPlacement? PlacementRelTo { get; set; }
 		public IfcObjectPlacement() : base()
@@ -13839,7 +20507,7 @@
 	/// <para>	Engages : SET [0:?] OF IfcPersonAndOrganization FOR TheOrganization;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcOrganizationENTITY, IfcActorSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
+	public class IfcOrganization : ENTITY, IfcActorSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
 		public IfcIdentifier? Identification { get; set; }
 		public IfcLabel Name { get; set; }
@@ -13990,7 +20658,7 @@
 	/// <para>(NOT(EXISTS(LastModifiedDate)) AND EXISTS(ChangeAction) AND ((ChangeAction = IfcChangeActionEnum.NOTDEFINED) OR (ChangeAction = IfcChangeActionEnum.NOCHANGE)));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcOwnerHistoryENTITY
+	public class IfcOwnerHistory : ENTITY
 	{
 		public IfcPersonAndOrganization OwningUser { get; set; }
 		public IfcApplication OwningApplication { get; set; }
@@ -14233,7 +20901,7 @@
 	/// <para>	ValidSetOfNames : NOT EXISTS(MiddleNames) OR EXISTS(FamilyName) OR EXISTS(GivenName);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcPersonENTITY, IfcActorSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
+	public class IfcPerson : ENTITY, IfcActorSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
 		public IfcIdentifier? Identification { get; set; }
 		public IfcLabel? FamilyName { get; set; }
@@ -14266,7 +20934,7 @@
 	/// <para>	Roles : OPTIONAL LIST [1:?] OF IfcActorRole;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcPersonAndOrganizationENTITY, IfcActorSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
+	public class IfcPersonAndOrganization : ENTITY, IfcActorSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
 		public IfcPerson ThePerson { get; set; }
 		public IfcOrganization TheOrganization { get; set; }
@@ -14328,7 +20996,7 @@
 	/// <para>	PartOfComplex : SET [0:1] OF IfcPhysicalComplexQuantity FOR HasQuantities;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcPhysicalQuantityENTITY, IfcResourceObjectSelect
+	public abstract class IfcPhysicalQuantity : ENTITY, IfcResourceObjectSelect
 	{
 		public IfcLabel Name { get; set; }
 		public IfcText? Description { get; set; }
@@ -15131,7 +21799,7 @@
 	/// <para>	,IfcTextureVertexList));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcPresentationItemENTITY
+	public abstract class IfcPresentationItem : ENTITY
 	{
 		public IfcPresentationItem() : base()
 		{
@@ -15158,7 +21826,7 @@
 	/// <para>)) = SIZEOF(AssignedItems);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcPresentationLayerAssignmentENTITY
+	public class IfcPresentationLayerAssignment : ENTITY
 	{
 		public IfcLabel Name { get; set; }
 		public IfcText? Description { get; set; }
@@ -15221,7 +21889,7 @@
 	/// <para>	Name : OPTIONAL IfcLabel;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcPresentationStyleENTITY
+	public abstract class IfcPresentationStyle : ENTITY
 	{
 		public IfcLabel? Name { get; set; }
 		public IfcPresentationStyle() : base()
@@ -15376,7 +22044,7 @@
 	/// <para>	Representations : LIST [1:?] OF IfcRepresentation;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcProductRepresentationENTITY
+	public abstract class IfcProductRepresentation : ENTITY
 	{
 		public IfcLabel? Name { get; set; }
 		public IfcText? Description { get; set; }
@@ -15409,7 +22077,7 @@
 	/// <para>	HasProperties : SET [0:?] OF IfcProfileProperties FOR ProfileDefinition;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcProfileDefENTITY, IfcResourceObjectSelect
+	public class IfcProfileDef : ENTITY, IfcResourceObjectSelect
 	{
 		public IfcProfileTypeEnum ProfileType { get; set; }
 		public IfcLabel? ProfileName { get; set; }
@@ -15598,7 +22266,7 @@
 	/// <para>	HasExternalReferences : SET [0:?] OF IfcExternalReferenceRelationship FOR RelatedResourceObjects;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcPropertyAbstractionENTITY, IfcResourceObjectSelect
+	public abstract class IfcPropertyAbstraction : ENTITY, IfcResourceObjectSelect
 	{
 		public IfcPropertyAbstraction() : base()
 		{
@@ -16716,7 +23384,7 @@
 	/// <para>	TimePeriods : OPTIONAL LIST [1:?] OF IfcTimePeriod;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcRecurrencePatternENTITY
+	public class IfcRecurrencePattern : ENTITY
 	{
 		public IfcRecurrenceTypeEnum RecurrenceType { get; set; }
 		public List<IfcDayInMonthNumber>? DayComponent { get; set; }
@@ -16752,7 +23420,7 @@
 	/// <para>	InnerReference : OPTIONAL IfcReference;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcReferenceENTITY, IfcAppliedValueSelect, IfcMetricValueSelect
+	public class IfcReference : ENTITY, IfcAppliedValueSelect, IfcMetricValueSelect
 	{
 		public IfcIdentifier? TypeIdentifier { get; set; }
 		public IfcIdentifier? AttributeIdentifier { get; set; }
@@ -18417,7 +25085,7 @@
 	/// <para>	OfProductRepresentation : SET [0:?] OF IfcProductRepresentation FOR Representations;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcRepresentationENTITY, IfcLayeredItem
+	public abstract class IfcRepresentation : ENTITY, IfcLayeredItem
 	{
 		public IfcRepresentationContext ContextOfItems { get; set; }
 		public IfcLabel? RepresentationIdentifier { get; set; }
@@ -18447,7 +25115,7 @@
 	/// <para>	RepresentationsInContext : SET [0:?] OF IfcRepresentation FOR ContextOfItems;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcRepresentationContextENTITY
+	public abstract class IfcRepresentationContext : ENTITY
 	{
 		public IfcLabel? ContextIdentifier { get; set; }
 		public IfcLabel? ContextType { get; set; }
@@ -18473,7 +25141,7 @@
 	/// <para>	StyledByItem : SET [0:1] OF IfcStyledItem FOR Item;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcRepresentationItemENTITY, IfcLayeredItem
+	public abstract class IfcRepresentationItem : ENTITY, IfcLayeredItem
 	{
 		public IfcRepresentationItem() : base()
 		{
@@ -18494,7 +25162,7 @@
 	/// <para>	ApplicableMappedRepr : 'IFC4X3_ADD2.IFCSHAPEMODEL' IN TYPEOF(MappedRepresentation);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcRepresentationMapENTITY, IfcProductRepresentationSelect
+	public class IfcRepresentationMap : ENTITY, IfcProductRepresentationSelect
 	{
 		public IfcAxis2Placement MappingOrigin { get; set; }
 		public IfcRepresentation MappedRepresentation { get; set; }
@@ -18597,7 +25265,7 @@
 	/// <para>	Description : OPTIONAL IfcText;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcResourceLevelRelationshipENTITY
+	public abstract class IfcResourceLevelRelationship : ENTITY
 	{
 		public IfcLabel? Name { get; set; }
 		public IfcText? Description { get; set; }
@@ -18901,7 +25569,7 @@
 	/// <para>	UR1 : GlobalId;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcRootENTITY
+	public abstract class IfcRoot : ENTITY
 	{
 		public IfcGloballyUniqueId GlobalId { get; set; }
 		public IfcOwnerHistory? OwnerHistory { get; set; }
@@ -19025,7 +25693,7 @@
 	/// <para>	UserDefinedDataOrigin : OPTIONAL IfcLabel;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcSchedulingTimeENTITY
+	public abstract class IfcSchedulingTime : ENTITY
 	{
 		public IfcLabel? Name { get; set; }
 		public IfcDataOriginEnum? DataOrigin { get; set; }
@@ -19456,7 +26124,7 @@
 	/// <para>	HasExternalReferences : SET [0:?] OF IfcExternalReferenceRelationship FOR RelatedResourceObjects;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcShapeAspectENTITY, IfcResourceObjectSelect
+	public class IfcShapeAspect : ENTITY, IfcResourceObjectSelect
 	{
 		public List<IfcShapeModel> ShapeRepresentations { get; set; }
 		public IfcLabel? Name { get; set; }
@@ -20476,7 +27144,7 @@
 	/// <para>	Name : OPTIONAL IfcLabel;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcStructuralConnectionConditionENTITY
+	public abstract class IfcStructuralConnectionCondition : ENTITY
 	{
 		public IfcLabel? Name { get; set; }
 		public IfcStructuralConnectionCondition() : base()
@@ -20647,7 +27315,7 @@
 	/// <para>	Name : OPTIONAL IfcLabel;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcStructuralLoadENTITY
+	public abstract class IfcStructuralLoad : ENTITY
 	{
 		public IfcLabel? Name { get; set; }
 		public IfcStructuralLoad() : base()
@@ -22038,7 +28706,7 @@
 	/// <para>	WR2 : { 0 <= NumberOfHeadings <= 1 };</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcTableENTITY, IfcMetricValueSelect, IfcObjectReferenceSelect
+	public class IfcTable : ENTITY, IfcMetricValueSelect, IfcObjectReferenceSelect
 	{
 		public IfcLabel? Name { get; set; }
 		public List<IfcTableRow>? Rows { get; set; }
@@ -22063,7 +28731,7 @@
 	/// <para>	ReferencePath : OPTIONAL IfcReference;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcTableColumnENTITY
+	public class IfcTableColumn : ENTITY
 	{
 		public IfcIdentifier? Identifier { get; set; }
 		public IfcLabel? Name { get; set; }
@@ -22089,7 +28757,7 @@
 	/// <para>	IsHeading : OPTIONAL IfcBoolean;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcTableRowENTITY
+	public class IfcTableRow : ENTITY
 	{
 		public List<IfcValue>? RowCells { get; set; }
 		public IfcBoolean? IsHeading { get; set; }
@@ -22780,7 +29448,7 @@
 	/// <para>	ToTexMap : IfcIndexedPolygonalTextureMap FOR TexCoordIndices;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcTextureCoordinateIndicesENTITY
+	public class IfcTextureCoordinateIndices : ENTITY
 	{
 		public List<IfcPositiveInteger> TexCoordIndex { get; set; }
 		public IfcIndexedPolygonalFace TexCoordsOf { get; set; }
@@ -22907,7 +29575,7 @@
 	/// <para>	EndTime : IfcTime;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcTimePeriodENTITY
+	public class IfcTimePeriod : ENTITY
 	{
 		public IfcTime StartTime { get; set; }
 		public IfcTime EndTime { get; set; }
@@ -22940,7 +29608,7 @@
 	/// <para>	HasExternalReference : SET [1:?] OF IfcExternalReferenceRelationship FOR RelatedResourceObjects;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public abstract class IfcTimeSeriesENTITY, IfcMetricValueSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
+	public abstract class IfcTimeSeries : ENTITY, IfcMetricValueSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
 		public IfcLabel Name { get; set; }
 		public IfcText? Description { get; set; }
@@ -22976,7 +29644,7 @@
 	/// <para>	ListValues : LIST [1:?] OF IfcValue;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcTimeSeriesValueENTITY
+	public class IfcTimeSeriesValue : ENTITY
 	{
 		public List<IfcValue> ListValues { get; set; }
 		public IfcTimeSeriesValue() : base()
@@ -23568,7 +30236,7 @@
 	/// <para>	WR01 : IfcCorrectUnitAssignment(Units);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcUnitAssignmentENTITY
+	public class IfcUnitAssignment : ENTITY
 	{
 		public List<IfcUnit> Units { get; set; }
 		public IfcUnitAssignment() : base()
@@ -23967,7 +30635,7 @@
 	/// <para>	OffsetDistances : LIST [2:3] OF IfcLengthMeasure;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcVirtualGridIntersectionENTITY, IfcGridPlacementDirectionSelect
+	public class IfcVirtualGridIntersection : ENTITY, IfcGridPlacementDirectionSelect
 	{
 		public IfcVirtualGridIntersection() : base()
 		{
@@ -24119,7 +30787,7 @@
 	/// <para>	CoordinateReferenceSystem : IfcCoordinateReferenceSystem;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcWellKnownTextENTITY
+	public class IfcWellKnownText : ENTITY
 	{
 		public IfcWellKnownTextLiteral WellKnownText { get; set; }
 		public IfcCoordinateReferenceSystem CoordinateReferenceSystem { get; set; }
@@ -24494,3 +31162,4 @@
 			this.LongName = LongName;
 		}
 	}
+}
