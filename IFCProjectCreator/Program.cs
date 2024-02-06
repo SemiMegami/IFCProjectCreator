@@ -19,23 +19,8 @@ namespace IFCProjectCreator
             dataSet.ReadExp(resourceDir + "IFC4x2.exp", "IFC4x2");
             dataSet.ReadExp(resourceDir + "IFC4X3_ADD2.exp", "IFC4x3");
 
-            var items = dataSet.GetItems("IFC4");
-
-            using (StreamWriter writer = new StreamWriter(resultDir + "test.txt"))
-            {
-                foreach (var item in items)
-                {
-                    var texts = item.GetCSharpTexts();
-                    foreach (var text in texts)
-                    {
-                        writer.WriteLine(text);
-                    }
-                    if (texts.Count > 0)
-                    {
-                        writer.WriteLine("--------------------------------");
-                    }
-                }
-            }
+            dataSet.WriteCSharp(resultDir);
+         
 
         }
     }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace IFCProjectCreator
 {
@@ -26,17 +27,31 @@ namespace IFCProjectCreator
             WhereAttributes = new List<IFCWhereAttribute>();
         }
 
-      
-        List<IFCParameterAttribute> Attributes
+        /// <summary>
+        /// ParameterClassAttributes including from parent
+        /// </summary>
+        List<IFCParameterAttribute> ParameterAttributes
         {
             get
             {
-                List <IFCParameterAttribute> attributes = new List <IFCParameterAttribute> ();
+                List <IFCParameterAttribute> attributes = ParentParameterAttributes;
+                attributes.AddRange(ParameterClassAttributes);
+                return attributes;
+            }
+        }
+
+        /// <summary>
+        /// ParameterClassAttributes from parents
+        /// </summary>
+        List<IFCParameterAttribute> ParentParameterAttributes
+        {
+            get
+            {
+                List<IFCParameterAttribute> attributes = new List<IFCParameterAttribute>();
                 if (ParentClass != null)
                 {
-                    attributes.AddRange(ParentClass.Attributes);
+                    attributes.AddRange(ParentClass.ParameterAttributes);
                 }
-                attributes.AddRange(ParameterClassAttributes);
                 return attributes;
             }
         }
@@ -168,15 +183,47 @@ namespace IFCProjectCreator
         {
             List<string> texts = GetCSharpSummaryTexts();
             texts.Add(GetCSharpHeaderText());
-           
-            // constructor
+                 
             texts.Add("\t{");
             foreach(var attribute in ParameterClassAttributes)
             {
                 texts.AddRange(attribute.GetCSharpText());
             }
-            texts.Add("\t}");
 
+            // constructor with no parameters
+            texts .Add("\t\tpublic " + Name + "() : base()" );
+            texts.Add("\t\t{");
+            foreach (var attribute in ParameterClassAttributes)
+            {
+                if(!attribute.IsOptional)
+                {
+                    texts.Add("\t\t\t" + attribute.Name + " = new " + attribute.GetCSharpTypeText() + "();");
+                }
+            }
+            texts.Add("\t\t}");
+
+            // constructor with parameters
+            var attributes = ParameterAttributes;
+            string constructor = "\t\tpublic " + Name + "(";
+            for(int i = 0; i < attributes.Count; i++)
+            {
+                constructor += attributes[i].GetCSharpTypeText() + " " + attributes[i].Name + (i < attributes.Count - 1 ? ", ":"");
+            }
+            constructor += ") : base (";
+            attributes = ParentParameterAttributes;
+            for (int i = 0; i < attributes.Count; i++)
+            {
+                constructor += attributes[i].Name + (i < attributes.Count - 1 ? ", " : "");
+            }
+            constructor += ")";
+            texts.Add(constructor);
+            texts.Add("\t\t{");
+            foreach (var attribute in ParameterClassAttributes)
+            {
+                texts.Add("\t\t\tthis." + attribute.Name + " = " + attribute.Name + ";");
+            }
+            texts.Add("\t\t}");
+            texts.Add("\t}");
             return texts;
         }
 

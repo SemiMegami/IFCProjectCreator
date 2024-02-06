@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -168,6 +169,32 @@ namespace IFCProjectCreator
         /// <returns></returns>
         public List<IFCClass> GetItems(string version) { 
             return GetItems().Where(e=> e.VersionName == version).ToList();
+        }
+
+        /// <summary>
+        /// Write C# classes file in specificed folder
+        /// </summary>
+        /// <param name="folderDir"></param>
+        public void WriteCSharp(string folderDir)
+        {
+
+            foreach (var version in Versions)
+            {
+                using (StreamWriter writer = new StreamWriter(folderDir + version + ".cs"))
+                {
+                    var items = GetItems(version);
+                    foreach (var item in items)
+                    {
+                        var texts = item.GetCSharpTexts();
+                        foreach (var text in texts)
+                        {
+                            writer.WriteLine(text);
+                        }
+                    }
+                }
+            }
+
+            
         }
     }
 }

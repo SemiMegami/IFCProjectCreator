@@ -21,7 +21,7 @@ namespace IFCProjectCreator
         public override List<string> GetCSharpText()
         {
             List<string> texts = new List<string>();
-            texts.Add("\t\tpublic " + GetCSharpTypeText() + " " + Name + " { get; set; }");
+            texts.Add("\t\tpublic " + GetCSharpTypeText() + (IsOptional ? "?": "") + " " + Name + " { get; set; }");
             return texts;
         }
     }

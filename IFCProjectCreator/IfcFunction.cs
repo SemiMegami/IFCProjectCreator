@@ -130,7 +130,7 @@
             {
                 if (names[i].Length > 0)
                 {
-                    IFCAttribute input = new IFCAttribute();
+                    IFCAttribute input = new IFCParameterAttribute();
                     input.Name = names[i].Replace(" ", "");
                     input.TypeName = typeName;
                     input.AttributeType = attributeType;
@@ -141,7 +141,7 @@
         }
         private void SetOutput(string outputText)
         {
-            Output = new IFCAttribute();
+            Output = new IFCParameterAttribute();
             Output.Name = "Output";
             string[] outputWordArrs = outputText.Split(" ");
             List<string> outputWords = new List<string>();

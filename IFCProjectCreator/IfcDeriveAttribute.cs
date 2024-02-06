@@ -14,6 +14,10 @@ namespace IFCProjectCreator
         {
             DeriveText = "";
         }
-        
+
+        public override List<string> GetCSharpText()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

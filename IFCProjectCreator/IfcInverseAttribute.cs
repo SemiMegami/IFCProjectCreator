@@ -14,5 +14,10 @@ namespace IFCProjectCreator
         {
             RelatedAttributeName = "";
         }
+
+        public override List<string> GetCSharpText()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

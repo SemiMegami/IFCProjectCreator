@@ -10,7 +10,6 @@
 		public static implicit operator IfcAbsorbedDoseMeasure(double value) { return new IfcAbsorbedDoseMeasure(double);}
 		public static implicit operator double(IfcAbsorbedDoseMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcAccelerationMeasure = REAL;
 	/// <para>TYPE IfcAccelerationMeasure = REAL;</para>
@@ -23,7 +22,6 @@
 		public static implicit operator IfcAccelerationMeasure(double value) { return new IfcAccelerationMeasure(double);}
 		public static implicit operator double(IfcAccelerationMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcAmountOfSubstanceMeasure = REAL;
 	/// <para>TYPE IfcAmountOfSubstanceMeasure = REAL;</para>
@@ -36,7 +34,6 @@
 		public static implicit operator IfcAmountOfSubstanceMeasure(double value) { return new IfcAmountOfSubstanceMeasure(double);}
 		public static implicit operator double(IfcAmountOfSubstanceMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcAngularVelocityMeasure = REAL;
 	/// <para>TYPE IfcAngularVelocityMeasure = REAL;</para>
@@ -49,7 +46,6 @@
 		public static implicit operator IfcAngularVelocityMeasure(double value) { return new IfcAngularVelocityMeasure(double);}
 		public static implicit operator double(IfcAngularVelocityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcAreaDensityMeasure = REAL;
 	/// <para>TYPE IfcAreaDensityMeasure = REAL;</para>
@@ -62,7 +58,6 @@
 		public static implicit operator IfcAreaDensityMeasure(double value) { return new IfcAreaDensityMeasure(double);}
 		public static implicit operator double(IfcAreaDensityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcAreaMeasure = REAL;
 	/// <para>TYPE IfcAreaMeasure = REAL;</para>
@@ -75,7 +70,6 @@
 		public static implicit operator IfcAreaMeasure(double value) { return new IfcAreaMeasure(double);}
 		public static implicit operator double(IfcAreaMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcBinary = BINARY;
 	/// <para>TYPE IfcBinary = BINARY;</para>
@@ -88,7 +82,6 @@
 		public static implicit operator IfcBinary(int value) { return new IfcBinary(int);}
 		public static implicit operator int(IfcBinary value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcBoolean = BOOLEAN;
 	/// <para>TYPE IfcBoolean = BOOLEAN;</para>
@@ -101,7 +94,6 @@
 		public static implicit operator IfcBoolean(bool value) { return new IfcBoolean(bool);}
 		public static implicit operator bool(IfcBoolean value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcBoxAlignment = IfcLabel;
 	/// <para>TYPE IfcBoxAlignment = IfcLabel;</para>
@@ -116,7 +108,6 @@
 		public static implicit operator IfcBoxAlignment(string value) { return new IfcBoxAlignment(string);}
 		public static implicit operator string(IfcBoxAlignment value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcCardinalPointReference = INTEGER;
 	/// <para>TYPE IfcCardinalPointReference = INTEGER;</para>
@@ -131,7 +122,6 @@
 		public static implicit operator IfcCardinalPointReference(int value) { return new IfcCardinalPointReference(int);}
 		public static implicit operator int(IfcCardinalPointReference value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcContextDependentMeasure = REAL;
 	/// <para>TYPE IfcContextDependentMeasure = REAL;</para>
@@ -144,7 +134,6 @@
 		public static implicit operator IfcContextDependentMeasure(double value) { return new IfcContextDependentMeasure(double);}
 		public static implicit operator double(IfcContextDependentMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcCountMeasure = NUMBER;
 	/// <para>TYPE IfcCountMeasure = NUMBER;</para>
@@ -157,7 +146,6 @@
 		public static implicit operator IfcCountMeasure(double value) { return new IfcCountMeasure(double);}
 		public static implicit operator double(IfcCountMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcCurvatureMeasure = REAL;
 	/// <para>TYPE IfcCurvatureMeasure = REAL;</para>
@@ -170,7 +158,6 @@
 		public static implicit operator IfcCurvatureMeasure(double value) { return new IfcCurvatureMeasure(double);}
 		public static implicit operator double(IfcCurvatureMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcDate = STRING;
 	/// <para>TYPE IfcDate = STRING;</para>
@@ -183,7 +170,6 @@
 		public static implicit operator IfcDate(string value) { return new IfcDate(string);}
 		public static implicit operator string(IfcDate value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcDateTime = STRING;
 	/// <para>TYPE IfcDateTime = STRING;</para>
@@ -196,7 +182,6 @@
 		public static implicit operator IfcDateTime(string value) { return new IfcDateTime(string);}
 		public static implicit operator string(IfcDateTime value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcDayInMonthNumber = INTEGER;
 	/// <para>TYPE IfcDayInMonthNumber = INTEGER;</para>
@@ -211,7 +196,6 @@
 		public static implicit operator IfcDayInMonthNumber(int value) { return new IfcDayInMonthNumber(int);}
 		public static implicit operator int(IfcDayInMonthNumber value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcDayInWeekNumber = INTEGER;
 	/// <para>TYPE IfcDayInWeekNumber = INTEGER;</para>
@@ -226,7 +210,6 @@
 		public static implicit operator IfcDayInWeekNumber(int value) { return new IfcDayInWeekNumber(int);}
 		public static implicit operator int(IfcDayInWeekNumber value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcDescriptiveMeasure = STRING;
 	/// <para>TYPE IfcDescriptiveMeasure = STRING;</para>
@@ -239,7 +222,6 @@
 		public static implicit operator IfcDescriptiveMeasure(string value) { return new IfcDescriptiveMeasure(string);}
 		public static implicit operator string(IfcDescriptiveMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcDimensionCount = INTEGER;
 	/// <para>TYPE IfcDimensionCount = INTEGER;</para>
@@ -254,7 +236,6 @@
 		public static implicit operator IfcDimensionCount(int value) { return new IfcDimensionCount(int);}
 		public static implicit operator int(IfcDimensionCount value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcDoseEquivalentMeasure = REAL;
 	/// <para>TYPE IfcDoseEquivalentMeasure = REAL;</para>
@@ -267,7 +248,6 @@
 		public static implicit operator IfcDoseEquivalentMeasure(double value) { return new IfcDoseEquivalentMeasure(double);}
 		public static implicit operator double(IfcDoseEquivalentMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcDuration = STRING;
 	/// <para>TYPE IfcDuration = STRING;</para>
@@ -280,7 +260,6 @@
 		public static implicit operator IfcDuration(string value) { return new IfcDuration(string);}
 		public static implicit operator string(IfcDuration value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcDynamicViscosityMeasure = REAL;
 	/// <para>TYPE IfcDynamicViscosityMeasure = REAL;</para>
@@ -293,7 +272,6 @@
 		public static implicit operator IfcDynamicViscosityMeasure(double value) { return new IfcDynamicViscosityMeasure(double);}
 		public static implicit operator double(IfcDynamicViscosityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcElectricCapacitanceMeasure = REAL;
 	/// <para>TYPE IfcElectricCapacitanceMeasure = REAL;</para>
@@ -306,7 +284,6 @@
 		public static implicit operator IfcElectricCapacitanceMeasure(double value) { return new IfcElectricCapacitanceMeasure(double);}
 		public static implicit operator double(IfcElectricCapacitanceMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcElectricChargeMeasure = REAL;
 	/// <para>TYPE IfcElectricChargeMeasure = REAL;</para>
@@ -319,7 +296,6 @@
 		public static implicit operator IfcElectricChargeMeasure(double value) { return new IfcElectricChargeMeasure(double);}
 		public static implicit operator double(IfcElectricChargeMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcElectricConductanceMeasure = REAL;
 	/// <para>TYPE IfcElectricConductanceMeasure = REAL;</para>
@@ -332,7 +308,6 @@
 		public static implicit operator IfcElectricConductanceMeasure(double value) { return new IfcElectricConductanceMeasure(double);}
 		public static implicit operator double(IfcElectricConductanceMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcElectricCurrentMeasure = REAL;
 	/// <para>TYPE IfcElectricCurrentMeasure = REAL;</para>
@@ -345,7 +320,6 @@
 		public static implicit operator IfcElectricCurrentMeasure(double value) { return new IfcElectricCurrentMeasure(double);}
 		public static implicit operator double(IfcElectricCurrentMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcElectricResistanceMeasure = REAL;
 	/// <para>TYPE IfcElectricResistanceMeasure = REAL;</para>
@@ -358,7 +332,6 @@
 		public static implicit operator IfcElectricResistanceMeasure(double value) { return new IfcElectricResistanceMeasure(double);}
 		public static implicit operator double(IfcElectricResistanceMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcElectricVoltageMeasure = REAL;
 	/// <para>TYPE IfcElectricVoltageMeasure = REAL;</para>
@@ -371,7 +344,6 @@
 		public static implicit operator IfcElectricVoltageMeasure(double value) { return new IfcElectricVoltageMeasure(double);}
 		public static implicit operator double(IfcElectricVoltageMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcEnergyMeasure = REAL;
 	/// <para>TYPE IfcEnergyMeasure = REAL;</para>
@@ -384,7 +356,6 @@
 		public static implicit operator IfcEnergyMeasure(double value) { return new IfcEnergyMeasure(double);}
 		public static implicit operator double(IfcEnergyMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcFontStyle = STRING;
 	/// <para>TYPE IfcFontStyle = STRING;</para>
@@ -399,7 +370,6 @@
 		public static implicit operator IfcFontStyle(string value) { return new IfcFontStyle(string);}
 		public static implicit operator string(IfcFontStyle value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcFontVariant = STRING;
 	/// <para>TYPE IfcFontVariant = STRING;</para>
@@ -414,7 +384,6 @@
 		public static implicit operator IfcFontVariant(string value) { return new IfcFontVariant(string);}
 		public static implicit operator string(IfcFontVariant value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcFontWeight = STRING;
 	/// <para>TYPE IfcFontWeight = STRING;</para>
@@ -429,7 +398,6 @@
 		public static implicit operator IfcFontWeight(string value) { return new IfcFontWeight(string);}
 		public static implicit operator string(IfcFontWeight value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcForceMeasure = REAL;
 	/// <para>TYPE IfcForceMeasure = REAL;</para>
@@ -442,7 +410,6 @@
 		public static implicit operator IfcForceMeasure(double value) { return new IfcForceMeasure(double);}
 		public static implicit operator double(IfcForceMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcFrequencyMeasure = REAL;
 	/// <para>TYPE IfcFrequencyMeasure = REAL;</para>
@@ -455,7 +422,6 @@
 		public static implicit operator IfcFrequencyMeasure(double value) { return new IfcFrequencyMeasure(double);}
 		public static implicit operator double(IfcFrequencyMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcGloballyUniqueId = STRING(22) FIXED;
 	/// <para>TYPE IfcGloballyUniqueId = STRING(22) FIXED;</para>
@@ -468,7 +434,6 @@
 		public static implicit operator IfcGloballyUniqueId(string value) { return new IfcGloballyUniqueId(string);}
 		public static implicit operator string(IfcGloballyUniqueId value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcHeatFluxDensityMeasure = REAL;
 	/// <para>TYPE IfcHeatFluxDensityMeasure = REAL;</para>
@@ -481,7 +446,6 @@
 		public static implicit operator IfcHeatFluxDensityMeasure(double value) { return new IfcHeatFluxDensityMeasure(double);}
 		public static implicit operator double(IfcHeatFluxDensityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcHeatingValueMeasure = REAL;
 	/// <para>TYPE IfcHeatingValueMeasure = REAL;</para>
@@ -496,7 +460,6 @@
 		public static implicit operator IfcHeatingValueMeasure(double value) { return new IfcHeatingValueMeasure(double);}
 		public static implicit operator double(IfcHeatingValueMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcIdentifier = STRING(255);
 	/// <para>TYPE IfcIdentifier = STRING(255);</para>
@@ -509,7 +472,6 @@
 		public static implicit operator IfcIdentifier(string value) { return new IfcIdentifier(string);}
 		public static implicit operator string(IfcIdentifier value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcIlluminanceMeasure = REAL;
 	/// <para>TYPE IfcIlluminanceMeasure = REAL;</para>
@@ -522,7 +484,6 @@
 		public static implicit operator IfcIlluminanceMeasure(double value) { return new IfcIlluminanceMeasure(double);}
 		public static implicit operator double(IfcIlluminanceMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcInductanceMeasure = REAL;
 	/// <para>TYPE IfcInductanceMeasure = REAL;</para>
@@ -535,7 +496,6 @@
 		public static implicit operator IfcInductanceMeasure(double value) { return new IfcInductanceMeasure(double);}
 		public static implicit operator double(IfcInductanceMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcInteger = INTEGER;
 	/// <para>TYPE IfcInteger = INTEGER;</para>
@@ -548,7 +508,6 @@
 		public static implicit operator IfcInteger(int value) { return new IfcInteger(int);}
 		public static implicit operator int(IfcInteger value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcIntegerCountRateMeasure = INTEGER;
 	/// <para>TYPE IfcIntegerCountRateMeasure = INTEGER;</para>
@@ -561,7 +520,6 @@
 		public static implicit operator IfcIntegerCountRateMeasure(int value) { return new IfcIntegerCountRateMeasure(int);}
 		public static implicit operator int(IfcIntegerCountRateMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcIonConcentrationMeasure = REAL;
 	/// <para>TYPE IfcIonConcentrationMeasure = REAL;</para>
@@ -574,7 +532,6 @@
 		public static implicit operator IfcIonConcentrationMeasure(double value) { return new IfcIonConcentrationMeasure(double);}
 		public static implicit operator double(IfcIonConcentrationMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcIsothermalMoistureCapacityMeasure = REAL;
 	/// <para>TYPE IfcIsothermalMoistureCapacityMeasure = REAL;</para>
@@ -587,7 +544,6 @@
 		public static implicit operator IfcIsothermalMoistureCapacityMeasure(double value) { return new IfcIsothermalMoistureCapacityMeasure(double);}
 		public static implicit operator double(IfcIsothermalMoistureCapacityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcKinematicViscosityMeasure = REAL;
 	/// <para>TYPE IfcKinematicViscosityMeasure = REAL;</para>
@@ -600,7 +556,6 @@
 		public static implicit operator IfcKinematicViscosityMeasure(double value) { return new IfcKinematicViscosityMeasure(double);}
 		public static implicit operator double(IfcKinematicViscosityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLabel = STRING(255);
 	/// <para>TYPE IfcLabel = STRING(255);</para>
@@ -613,7 +568,6 @@
 		public static implicit operator IfcLabel(string value) { return new IfcLabel(string);}
 		public static implicit operator string(IfcLabel value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLanguageId = IfcIdentifier;
 	/// <para>TYPE IfcLanguageId = IfcIdentifier;</para>
@@ -626,7 +580,6 @@
 		public static implicit operator IfcLanguageId(string value) { return new IfcLanguageId(string);}
 		public static implicit operator string(IfcLanguageId value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLengthMeasure = REAL;
 	/// <para>TYPE IfcLengthMeasure = REAL;</para>
@@ -639,7 +592,6 @@
 		public static implicit operator IfcLengthMeasure(double value) { return new IfcLengthMeasure(double);}
 		public static implicit operator double(IfcLengthMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLinearForceMeasure = REAL;
 	/// <para>TYPE IfcLinearForceMeasure = REAL;</para>
@@ -652,7 +604,6 @@
 		public static implicit operator IfcLinearForceMeasure(double value) { return new IfcLinearForceMeasure(double);}
 		public static implicit operator double(IfcLinearForceMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLinearMomentMeasure = REAL;
 	/// <para>TYPE IfcLinearMomentMeasure = REAL;</para>
@@ -665,7 +616,6 @@
 		public static implicit operator IfcLinearMomentMeasure(double value) { return new IfcLinearMomentMeasure(double);}
 		public static implicit operator double(IfcLinearMomentMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLinearStiffnessMeasure = REAL;
 	/// <para>TYPE IfcLinearStiffnessMeasure = REAL;</para>
@@ -678,7 +628,6 @@
 		public static implicit operator IfcLinearStiffnessMeasure(double value) { return new IfcLinearStiffnessMeasure(double);}
 		public static implicit operator double(IfcLinearStiffnessMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLinearVelocityMeasure = REAL;
 	/// <para>TYPE IfcLinearVelocityMeasure = REAL;</para>
@@ -691,7 +640,6 @@
 		public static implicit operator IfcLinearVelocityMeasure(double value) { return new IfcLinearVelocityMeasure(double);}
 		public static implicit operator double(IfcLinearVelocityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLogical = LOGICAL;
 	/// <para>TYPE IfcLogical = LOGICAL;</para>
@@ -704,7 +652,6 @@
 		public static implicit operator IfcLogical(bool value) { return new IfcLogical(bool);}
 		public static implicit operator bool(IfcLogical value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLuminousFluxMeasure = REAL;
 	/// <para>TYPE IfcLuminousFluxMeasure = REAL;</para>
@@ -717,7 +664,6 @@
 		public static implicit operator IfcLuminousFluxMeasure(double value) { return new IfcLuminousFluxMeasure(double);}
 		public static implicit operator double(IfcLuminousFluxMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLuminousIntensityDistributionMeasure = REAL;
 	/// <para>TYPE IfcLuminousIntensityDistributionMeasure = REAL;</para>
@@ -730,7 +676,6 @@
 		public static implicit operator IfcLuminousIntensityDistributionMeasure(double value) { return new IfcLuminousIntensityDistributionMeasure(double);}
 		public static implicit operator double(IfcLuminousIntensityDistributionMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLuminousIntensityMeasure = REAL;
 	/// <para>TYPE IfcLuminousIntensityMeasure = REAL;</para>
@@ -743,7 +688,6 @@
 		public static implicit operator IfcLuminousIntensityMeasure(double value) { return new IfcLuminousIntensityMeasure(double);}
 		public static implicit operator double(IfcLuminousIntensityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMagneticFluxDensityMeasure = REAL;
 	/// <para>TYPE IfcMagneticFluxDensityMeasure = REAL;</para>
@@ -756,7 +700,6 @@
 		public static implicit operator IfcMagneticFluxDensityMeasure(double value) { return new IfcMagneticFluxDensityMeasure(double);}
 		public static implicit operator double(IfcMagneticFluxDensityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMagneticFluxMeasure = REAL;
 	/// <para>TYPE IfcMagneticFluxMeasure = REAL;</para>
@@ -769,7 +712,6 @@
 		public static implicit operator IfcMagneticFluxMeasure(double value) { return new IfcMagneticFluxMeasure(double);}
 		public static implicit operator double(IfcMagneticFluxMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMassDensityMeasure = REAL;
 	/// <para>TYPE IfcMassDensityMeasure = REAL;</para>
@@ -782,7 +724,6 @@
 		public static implicit operator IfcMassDensityMeasure(double value) { return new IfcMassDensityMeasure(double);}
 		public static implicit operator double(IfcMassDensityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMassFlowRateMeasure = REAL;
 	/// <para>TYPE IfcMassFlowRateMeasure = REAL;</para>
@@ -795,7 +736,6 @@
 		public static implicit operator IfcMassFlowRateMeasure(double value) { return new IfcMassFlowRateMeasure(double);}
 		public static implicit operator double(IfcMassFlowRateMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMassMeasure = REAL;
 	/// <para>TYPE IfcMassMeasure = REAL;</para>
@@ -808,7 +748,6 @@
 		public static implicit operator IfcMassMeasure(double value) { return new IfcMassMeasure(double);}
 		public static implicit operator double(IfcMassMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMassPerLengthMeasure = REAL;
 	/// <para>TYPE IfcMassPerLengthMeasure = REAL;</para>
@@ -821,7 +760,6 @@
 		public static implicit operator IfcMassPerLengthMeasure(double value) { return new IfcMassPerLengthMeasure(double);}
 		public static implicit operator double(IfcMassPerLengthMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcModulusOfElasticityMeasure = REAL;
 	/// <para>TYPE IfcModulusOfElasticityMeasure = REAL;</para>
@@ -834,7 +772,6 @@
 		public static implicit operator IfcModulusOfElasticityMeasure(double value) { return new IfcModulusOfElasticityMeasure(double);}
 		public static implicit operator double(IfcModulusOfElasticityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcModulusOfLinearSubgradeReactionMeasure = REAL;
 	/// <para>TYPE IfcModulusOfLinearSubgradeReactionMeasure = REAL;</para>
@@ -847,7 +784,6 @@
 		public static implicit operator IfcModulusOfLinearSubgradeReactionMeasure(double value) { return new IfcModulusOfLinearSubgradeReactionMeasure(double);}
 		public static implicit operator double(IfcModulusOfLinearSubgradeReactionMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcModulusOfRotationalSubgradeReactionMeasure = REAL;
 	/// <para>TYPE IfcModulusOfRotationalSubgradeReactionMeasure = REAL;</para>
@@ -860,7 +796,6 @@
 		public static implicit operator IfcModulusOfRotationalSubgradeReactionMeasure(double value) { return new IfcModulusOfRotationalSubgradeReactionMeasure(double);}
 		public static implicit operator double(IfcModulusOfRotationalSubgradeReactionMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcModulusOfSubgradeReactionMeasure = REAL;
 	/// <para>TYPE IfcModulusOfSubgradeReactionMeasure = REAL;</para>
@@ -873,7 +808,6 @@
 		public static implicit operator IfcModulusOfSubgradeReactionMeasure(double value) { return new IfcModulusOfSubgradeReactionMeasure(double);}
 		public static implicit operator double(IfcModulusOfSubgradeReactionMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMoistureDiffusivityMeasure = REAL;
 	/// <para>TYPE IfcMoistureDiffusivityMeasure = REAL;</para>
@@ -886,7 +820,6 @@
 		public static implicit operator IfcMoistureDiffusivityMeasure(double value) { return new IfcMoistureDiffusivityMeasure(double);}
 		public static implicit operator double(IfcMoistureDiffusivityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMolecularWeightMeasure = REAL;
 	/// <para>TYPE IfcMolecularWeightMeasure = REAL;</para>
@@ -899,7 +832,6 @@
 		public static implicit operator IfcMolecularWeightMeasure(double value) { return new IfcMolecularWeightMeasure(double);}
 		public static implicit operator double(IfcMolecularWeightMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMomentOfInertiaMeasure = REAL;
 	/// <para>TYPE IfcMomentOfInertiaMeasure = REAL;</para>
@@ -912,7 +844,6 @@
 		public static implicit operator IfcMomentOfInertiaMeasure(double value) { return new IfcMomentOfInertiaMeasure(double);}
 		public static implicit operator double(IfcMomentOfInertiaMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMonetaryMeasure = REAL;
 	/// <para>TYPE IfcMonetaryMeasure = REAL;</para>
@@ -925,7 +856,6 @@
 		public static implicit operator IfcMonetaryMeasure(double value) { return new IfcMonetaryMeasure(double);}
 		public static implicit operator double(IfcMonetaryMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMonthInYearNumber = INTEGER;
 	/// <para>TYPE IfcMonthInYearNumber = INTEGER;</para>
@@ -940,7 +870,6 @@
 		public static implicit operator IfcMonthInYearNumber(int value) { return new IfcMonthInYearNumber(int);}
 		public static implicit operator int(IfcMonthInYearNumber value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcNonNegativeLengthMeasure = IfcLengthMeasure;
 	/// <para>TYPE IfcNonNegativeLengthMeasure = IfcLengthMeasure;</para>
@@ -955,7 +884,6 @@
 		public static implicit operator IfcNonNegativeLengthMeasure(double value) { return new IfcNonNegativeLengthMeasure(double);}
 		public static implicit operator double(IfcNonNegativeLengthMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcNormalisedRatioMeasure = IfcRatioMeasure;
 	/// <para>TYPE IfcNormalisedRatioMeasure = IfcRatioMeasure;</para>
@@ -970,7 +898,6 @@
 		public static implicit operator IfcNormalisedRatioMeasure(double value) { return new IfcNormalisedRatioMeasure(double);}
 		public static implicit operator double(IfcNormalisedRatioMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcNumericMeasure = NUMBER;
 	/// <para>TYPE IfcNumericMeasure = NUMBER;</para>
@@ -983,7 +910,6 @@
 		public static implicit operator IfcNumericMeasure(double value) { return new IfcNumericMeasure(double);}
 		public static implicit operator double(IfcNumericMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPHMeasure = REAL;
 	/// <para>TYPE IfcPHMeasure = REAL;</para>
@@ -998,7 +924,6 @@
 		public static implicit operator IfcPHMeasure(double value) { return new IfcPHMeasure(double);}
 		public static implicit operator double(IfcPHMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcParameterValue = REAL;
 	/// <para>TYPE IfcParameterValue = REAL;</para>
@@ -1011,7 +936,6 @@
 		public static implicit operator IfcParameterValue(double value) { return new IfcParameterValue(double);}
 		public static implicit operator double(IfcParameterValue value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPlanarForceMeasure = REAL;
 	/// <para>TYPE IfcPlanarForceMeasure = REAL;</para>
@@ -1024,7 +948,6 @@
 		public static implicit operator IfcPlanarForceMeasure(double value) { return new IfcPlanarForceMeasure(double);}
 		public static implicit operator double(IfcPlanarForceMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPlaneAngleMeasure = REAL;
 	/// <para>TYPE IfcPlaneAngleMeasure = REAL;</para>
@@ -1037,7 +960,6 @@
 		public static implicit operator IfcPlaneAngleMeasure(double value) { return new IfcPlaneAngleMeasure(double);}
 		public static implicit operator double(IfcPlaneAngleMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPositiveInteger = IfcInteger;
 	/// <para>TYPE IfcPositiveInteger = IfcInteger;</para>
@@ -1052,7 +974,6 @@
 		public static implicit operator IfcPositiveInteger(int value) { return new IfcPositiveInteger(int);}
 		public static implicit operator int(IfcPositiveInteger value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPositiveLengthMeasure = IfcLengthMeasure;
 	/// <para>TYPE IfcPositiveLengthMeasure = IfcLengthMeasure;</para>
@@ -1067,7 +988,6 @@
 		public static implicit operator IfcPositiveLengthMeasure(double value) { return new IfcPositiveLengthMeasure(double);}
 		public static implicit operator double(IfcPositiveLengthMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPositivePlaneAngleMeasure = IfcPlaneAngleMeasure;
 	/// <para>TYPE IfcPositivePlaneAngleMeasure = IfcPlaneAngleMeasure;</para>
@@ -1082,7 +1002,6 @@
 		public static implicit operator IfcPositivePlaneAngleMeasure(double value) { return new IfcPositivePlaneAngleMeasure(double);}
 		public static implicit operator double(IfcPositivePlaneAngleMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPositiveRatioMeasure = IfcRatioMeasure;
 	/// <para>TYPE IfcPositiveRatioMeasure = IfcRatioMeasure;</para>
@@ -1097,7 +1016,6 @@
 		public static implicit operator IfcPositiveRatioMeasure(double value) { return new IfcPositiveRatioMeasure(double);}
 		public static implicit operator double(IfcPositiveRatioMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPowerMeasure = REAL;
 	/// <para>TYPE IfcPowerMeasure = REAL;</para>
@@ -1110,7 +1028,6 @@
 		public static implicit operator IfcPowerMeasure(double value) { return new IfcPowerMeasure(double);}
 		public static implicit operator double(IfcPowerMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPresentableText = STRING;
 	/// <para>TYPE IfcPresentableText = STRING;</para>
@@ -1123,7 +1040,6 @@
 		public static implicit operator IfcPresentableText(string value) { return new IfcPresentableText(string);}
 		public static implicit operator string(IfcPresentableText value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPressureMeasure = REAL;
 	/// <para>TYPE IfcPressureMeasure = REAL;</para>
@@ -1136,7 +1052,6 @@
 		public static implicit operator IfcPressureMeasure(double value) { return new IfcPressureMeasure(double);}
 		public static implicit operator double(IfcPressureMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcRadioActivityMeasure = REAL;
 	/// <para>TYPE IfcRadioActivityMeasure = REAL;</para>
@@ -1149,7 +1064,6 @@
 		public static implicit operator IfcRadioActivityMeasure(double value) { return new IfcRadioActivityMeasure(double);}
 		public static implicit operator double(IfcRadioActivityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcRatioMeasure = REAL;
 	/// <para>TYPE IfcRatioMeasure = REAL;</para>
@@ -1162,7 +1076,6 @@
 		public static implicit operator IfcRatioMeasure(double value) { return new IfcRatioMeasure(double);}
 		public static implicit operator double(IfcRatioMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcReal = REAL;
 	/// <para>TYPE IfcReal = REAL;</para>
@@ -1175,7 +1088,6 @@
 		public static implicit operator IfcReal(double value) { return new IfcReal(double);}
 		public static implicit operator double(IfcReal value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcRotationalFrequencyMeasure = REAL;
 	/// <para>TYPE IfcRotationalFrequencyMeasure = REAL;</para>
@@ -1188,7 +1100,6 @@
 		public static implicit operator IfcRotationalFrequencyMeasure(double value) { return new IfcRotationalFrequencyMeasure(double);}
 		public static implicit operator double(IfcRotationalFrequencyMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcRotationalMassMeasure = REAL;
 	/// <para>TYPE IfcRotationalMassMeasure = REAL;</para>
@@ -1201,7 +1112,6 @@
 		public static implicit operator IfcRotationalMassMeasure(double value) { return new IfcRotationalMassMeasure(double);}
 		public static implicit operator double(IfcRotationalMassMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcRotationalStiffnessMeasure = REAL;
 	/// <para>TYPE IfcRotationalStiffnessMeasure = REAL;</para>
@@ -1214,7 +1124,6 @@
 		public static implicit operator IfcRotationalStiffnessMeasure(double value) { return new IfcRotationalStiffnessMeasure(double);}
 		public static implicit operator double(IfcRotationalStiffnessMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSectionModulusMeasure = REAL;
 	/// <para>TYPE IfcSectionModulusMeasure = REAL;</para>
@@ -1227,7 +1136,6 @@
 		public static implicit operator IfcSectionModulusMeasure(double value) { return new IfcSectionModulusMeasure(double);}
 		public static implicit operator double(IfcSectionModulusMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSectionalAreaIntegralMeasure = REAL;
 	/// <para>TYPE IfcSectionalAreaIntegralMeasure = REAL;</para>
@@ -1240,7 +1148,6 @@
 		public static implicit operator IfcSectionalAreaIntegralMeasure(double value) { return new IfcSectionalAreaIntegralMeasure(double);}
 		public static implicit operator double(IfcSectionalAreaIntegralMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcShearModulusMeasure = REAL;
 	/// <para>TYPE IfcShearModulusMeasure = REAL;</para>
@@ -1253,7 +1160,6 @@
 		public static implicit operator IfcShearModulusMeasure(double value) { return new IfcShearModulusMeasure(double);}
 		public static implicit operator double(IfcShearModulusMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSolidAngleMeasure = REAL;
 	/// <para>TYPE IfcSolidAngleMeasure = REAL;</para>
@@ -1266,7 +1172,6 @@
 		public static implicit operator IfcSolidAngleMeasure(double value) { return new IfcSolidAngleMeasure(double);}
 		public static implicit operator double(IfcSolidAngleMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSoundPowerLevelMeasure = REAL;
 	/// <para>TYPE IfcSoundPowerLevelMeasure = REAL;</para>
@@ -1279,7 +1184,6 @@
 		public static implicit operator IfcSoundPowerLevelMeasure(double value) { return new IfcSoundPowerLevelMeasure(double);}
 		public static implicit operator double(IfcSoundPowerLevelMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSoundPowerMeasure = REAL;
 	/// <para>TYPE IfcSoundPowerMeasure = REAL;</para>
@@ -1292,7 +1196,6 @@
 		public static implicit operator IfcSoundPowerMeasure(double value) { return new IfcSoundPowerMeasure(double);}
 		public static implicit operator double(IfcSoundPowerMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSoundPressureLevelMeasure = REAL;
 	/// <para>TYPE IfcSoundPressureLevelMeasure = REAL;</para>
@@ -1305,7 +1208,6 @@
 		public static implicit operator IfcSoundPressureLevelMeasure(double value) { return new IfcSoundPressureLevelMeasure(double);}
 		public static implicit operator double(IfcSoundPressureLevelMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSoundPressureMeasure = REAL;
 	/// <para>TYPE IfcSoundPressureMeasure = REAL;</para>
@@ -1318,7 +1220,6 @@
 		public static implicit operator IfcSoundPressureMeasure(double value) { return new IfcSoundPressureMeasure(double);}
 		public static implicit operator double(IfcSoundPressureMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSpecificHeatCapacityMeasure = REAL;
 	/// <para>TYPE IfcSpecificHeatCapacityMeasure = REAL;</para>
@@ -1331,7 +1232,6 @@
 		public static implicit operator IfcSpecificHeatCapacityMeasure(double value) { return new IfcSpecificHeatCapacityMeasure(double);}
 		public static implicit operator double(IfcSpecificHeatCapacityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSpecularExponent = REAL;
 	/// <para>TYPE IfcSpecularExponent = REAL;</para>
@@ -1344,7 +1244,6 @@
 		public static implicit operator IfcSpecularExponent(double value) { return new IfcSpecularExponent(double);}
 		public static implicit operator double(IfcSpecularExponent value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSpecularRoughness = REAL;
 	/// <para>TYPE IfcSpecularRoughness = REAL;</para>
@@ -1359,7 +1258,6 @@
 		public static implicit operator IfcSpecularRoughness(double value) { return new IfcSpecularRoughness(double);}
 		public static implicit operator double(IfcSpecularRoughness value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTemperatureGradientMeasure = REAL;
 	/// <para>TYPE IfcTemperatureGradientMeasure = REAL;</para>
@@ -1372,7 +1270,6 @@
 		public static implicit operator IfcTemperatureGradientMeasure(double value) { return new IfcTemperatureGradientMeasure(double);}
 		public static implicit operator double(IfcTemperatureGradientMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTemperatureRateOfChangeMeasure = REAL;
 	/// <para>TYPE IfcTemperatureRateOfChangeMeasure = REAL;</para>
@@ -1385,7 +1282,6 @@
 		public static implicit operator IfcTemperatureRateOfChangeMeasure(double value) { return new IfcTemperatureRateOfChangeMeasure(double);}
 		public static implicit operator double(IfcTemperatureRateOfChangeMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcText = STRING;
 	/// <para>TYPE IfcText = STRING;</para>
@@ -1398,7 +1294,6 @@
 		public static implicit operator IfcText(string value) { return new IfcText(string);}
 		public static implicit operator string(IfcText value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTextAlignment = STRING;
 	/// <para>TYPE IfcTextAlignment = STRING;</para>
@@ -1413,7 +1308,6 @@
 		public static implicit operator IfcTextAlignment(string value) { return new IfcTextAlignment(string);}
 		public static implicit operator string(IfcTextAlignment value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTextDecoration = STRING;
 	/// <para>TYPE IfcTextDecoration = STRING;</para>
@@ -1428,7 +1322,6 @@
 		public static implicit operator IfcTextDecoration(string value) { return new IfcTextDecoration(string);}
 		public static implicit operator string(IfcTextDecoration value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTextFontName = STRING;
 	/// <para>TYPE IfcTextFontName = STRING;</para>
@@ -1441,7 +1334,6 @@
 		public static implicit operator IfcTextFontName(string value) { return new IfcTextFontName(string);}
 		public static implicit operator string(IfcTextFontName value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTextTransformation = STRING;
 	/// <para>TYPE IfcTextTransformation = STRING;</para>
@@ -1456,7 +1348,6 @@
 		public static implicit operator IfcTextTransformation(string value) { return new IfcTextTransformation(string);}
 		public static implicit operator string(IfcTextTransformation value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcThermalAdmittanceMeasure = REAL;
 	/// <para>TYPE IfcThermalAdmittanceMeasure = REAL;</para>
@@ -1469,7 +1360,6 @@
 		public static implicit operator IfcThermalAdmittanceMeasure(double value) { return new IfcThermalAdmittanceMeasure(double);}
 		public static implicit operator double(IfcThermalAdmittanceMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcThermalConductivityMeasure = REAL;
 	/// <para>TYPE IfcThermalConductivityMeasure = REAL;</para>
@@ -1482,7 +1372,6 @@
 		public static implicit operator IfcThermalConductivityMeasure(double value) { return new IfcThermalConductivityMeasure(double);}
 		public static implicit operator double(IfcThermalConductivityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcThermalExpansionCoefficientMeasure = REAL;
 	/// <para>TYPE IfcThermalExpansionCoefficientMeasure = REAL;</para>
@@ -1495,7 +1384,6 @@
 		public static implicit operator IfcThermalExpansionCoefficientMeasure(double value) { return new IfcThermalExpansionCoefficientMeasure(double);}
 		public static implicit operator double(IfcThermalExpansionCoefficientMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcThermalResistanceMeasure = REAL;
 	/// <para>TYPE IfcThermalResistanceMeasure = REAL;</para>
@@ -1508,7 +1396,6 @@
 		public static implicit operator IfcThermalResistanceMeasure(double value) { return new IfcThermalResistanceMeasure(double);}
 		public static implicit operator double(IfcThermalResistanceMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcThermalTransmittanceMeasure = REAL;
 	/// <para>TYPE IfcThermalTransmittanceMeasure = REAL;</para>
@@ -1521,7 +1408,6 @@
 		public static implicit operator IfcThermalTransmittanceMeasure(double value) { return new IfcThermalTransmittanceMeasure(double);}
 		public static implicit operator double(IfcThermalTransmittanceMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcThermodynamicTemperatureMeasure = REAL;
 	/// <para>TYPE IfcThermodynamicTemperatureMeasure = REAL;</para>
@@ -1534,7 +1420,6 @@
 		public static implicit operator IfcThermodynamicTemperatureMeasure(double value) { return new IfcThermodynamicTemperatureMeasure(double);}
 		public static implicit operator double(IfcThermodynamicTemperatureMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTime = STRING;
 	/// <para>TYPE IfcTime = STRING;</para>
@@ -1547,7 +1432,6 @@
 		public static implicit operator IfcTime(string value) { return new IfcTime(string);}
 		public static implicit operator string(IfcTime value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTimeMeasure = REAL;
 	/// <para>TYPE IfcTimeMeasure = REAL;</para>
@@ -1560,7 +1444,6 @@
 		public static implicit operator IfcTimeMeasure(double value) { return new IfcTimeMeasure(double);}
 		public static implicit operator double(IfcTimeMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTimeStamp = INTEGER;
 	/// <para>TYPE IfcTimeStamp = INTEGER;</para>
@@ -1573,7 +1456,6 @@
 		public static implicit operator IfcTimeStamp(int value) { return new IfcTimeStamp(int);}
 		public static implicit operator int(IfcTimeStamp value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTorqueMeasure = REAL;
 	/// <para>TYPE IfcTorqueMeasure = REAL;</para>
@@ -1586,7 +1468,6 @@
 		public static implicit operator IfcTorqueMeasure(double value) { return new IfcTorqueMeasure(double);}
 		public static implicit operator double(IfcTorqueMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcURIReference = STRING;
 	/// <para>TYPE IfcURIReference = STRING;</para>
@@ -1599,7 +1480,6 @@
 		public static implicit operator IfcURIReference(string value) { return new IfcURIReference(string);}
 		public static implicit operator string(IfcURIReference value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcVaporPermeabilityMeasure = REAL;
 	/// <para>TYPE IfcVaporPermeabilityMeasure = REAL;</para>
@@ -1612,7 +1492,6 @@
 		public static implicit operator IfcVaporPermeabilityMeasure(double value) { return new IfcVaporPermeabilityMeasure(double);}
 		public static implicit operator double(IfcVaporPermeabilityMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcVolumeMeasure = REAL;
 	/// <para>TYPE IfcVolumeMeasure = REAL;</para>
@@ -1625,7 +1504,6 @@
 		public static implicit operator IfcVolumeMeasure(double value) { return new IfcVolumeMeasure(double);}
 		public static implicit operator double(IfcVolumeMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcVolumetricFlowRateMeasure = REAL;
 	/// <para>TYPE IfcVolumetricFlowRateMeasure = REAL;</para>
@@ -1638,7 +1516,6 @@
 		public static implicit operator IfcVolumetricFlowRateMeasure(double value) { return new IfcVolumetricFlowRateMeasure(double);}
 		public static implicit operator double(IfcVolumetricFlowRateMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcWarpingConstantMeasure = REAL;
 	/// <para>TYPE IfcWarpingConstantMeasure = REAL;</para>
@@ -1651,7 +1528,6 @@
 		public static implicit operator IfcWarpingConstantMeasure(double value) { return new IfcWarpingConstantMeasure(double);}
 		public static implicit operator double(IfcWarpingConstantMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcWarpingMomentMeasure = REAL;
 	/// <para>TYPE IfcWarpingMomentMeasure = REAL;</para>
@@ -1664,7 +1540,6 @@
 		public static implicit operator IfcWarpingMomentMeasure(double value) { return new IfcWarpingMomentMeasure(double);}
 		public static implicit operator double(IfcWarpingMomentMeasure value) { return value.Value;}
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcActorSelect = SELECT
 	/// <para>TYPE IfcActorSelect = SELECT</para>
@@ -1676,7 +1551,6 @@
 	public interface IfcActorSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcAppliedValueSelect = SELECT
 	/// <para>TYPE IfcAppliedValueSelect = SELECT</para>
@@ -1688,7 +1562,6 @@
 	public interface IfcAppliedValueSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcAxis2Placement = SELECT
 	/// <para>TYPE IfcAxis2Placement = SELECT</para>
@@ -1699,7 +1572,6 @@
 	public interface IfcAxis2Placement
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcBendingParameterSelect = SELECT
 	/// <para>TYPE IfcBendingParameterSelect = SELECT</para>
@@ -1710,7 +1582,6 @@
 	public interface IfcBendingParameterSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcBooleanOperand = SELECT
 	/// <para>TYPE IfcBooleanOperand = SELECT</para>
@@ -1724,7 +1595,6 @@
 	public interface IfcBooleanOperand
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcClassificationReferenceSelect = SELECT
 	/// <para>TYPE IfcClassificationReferenceSelect = SELECT</para>
@@ -1735,7 +1605,6 @@
 	public interface IfcClassificationReferenceSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcClassificationSelect = SELECT
 	/// <para>TYPE IfcClassificationSelect = SELECT</para>
@@ -1746,7 +1615,6 @@
 	public interface IfcClassificationSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcColour = SELECT
 	/// <para>TYPE IfcColour = SELECT</para>
@@ -1757,7 +1625,6 @@
 	public interface IfcColour, IfcFillStyleSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcColourOrFactor = SELECT
 	/// <para>TYPE IfcColourOrFactor = SELECT</para>
@@ -1768,7 +1635,6 @@
 	public interface IfcColourOrFactor
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcCoordinateReferenceSystemSelect = SELECT
 	/// <para>TYPE IfcCoordinateReferenceSystemSelect = SELECT</para>
@@ -1779,7 +1645,6 @@
 	public interface IfcCoordinateReferenceSystemSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcCsgSelect = SELECT
 	/// <para>TYPE IfcCsgSelect = SELECT</para>
@@ -1790,7 +1655,6 @@
 	public interface IfcCsgSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcCurveFontOrScaledCurveFontSelect = SELECT
 	/// <para>TYPE IfcCurveFontOrScaledCurveFontSelect = SELECT</para>
@@ -1801,7 +1665,6 @@
 	public interface IfcCurveFontOrScaledCurveFontSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcCurveOnSurface = SELECT
 	/// <para>TYPE IfcCurveOnSurface = SELECT</para>
@@ -1813,7 +1676,6 @@
 	public interface IfcCurveOnSurface
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcCurveOrEdgeCurve = SELECT
 	/// <para>TYPE IfcCurveOrEdgeCurve = SELECT</para>
@@ -1824,7 +1686,6 @@
 	public interface IfcCurveOrEdgeCurve
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcCurveStyleFontSelect = SELECT
 	/// <para>TYPE IfcCurveStyleFontSelect = SELECT</para>
@@ -1835,7 +1696,6 @@
 	public interface IfcCurveStyleFontSelect, IfcCurveFontOrScaledCurveFontSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcDefinitionSelect = SELECT
 	/// <para>TYPE IfcDefinitionSelect = SELECT</para>
@@ -1846,7 +1706,6 @@
 	public interface IfcDefinitionSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcDerivedMeasureValue = SELECT
 	/// <para>TYPE IfcDerivedMeasureValue = SELECT</para>
@@ -1926,7 +1785,6 @@
 	public interface IfcDerivedMeasureValue, IfcValue
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcDocumentSelect = SELECT
 	/// <para>TYPE IfcDocumentSelect = SELECT</para>
@@ -1937,7 +1795,6 @@
 	public interface IfcDocumentSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcFillStyleSelect = SELECT
 	/// <para>TYPE IfcFillStyleSelect = SELECT</para>
@@ -1950,7 +1807,6 @@
 	public interface IfcFillStyleSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcGeometricSetSelect = SELECT
 	/// <para>TYPE IfcGeometricSetSelect = SELECT</para>
@@ -1962,7 +1818,6 @@
 	public interface IfcGeometricSetSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcGridPlacementDirectionSelect = SELECT
 	/// <para>TYPE IfcGridPlacementDirectionSelect = SELECT</para>
@@ -1973,7 +1828,6 @@
 	public interface IfcGridPlacementDirectionSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcHatchLineDistanceSelect = SELECT
 	/// <para>TYPE IfcHatchLineDistanceSelect = SELECT</para>
@@ -1984,7 +1838,6 @@
 	public interface IfcHatchLineDistanceSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLayeredItem = SELECT
 	/// <para>TYPE IfcLayeredItem = SELECT</para>
@@ -1995,7 +1848,6 @@
 	public interface IfcLayeredItem
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLibrarySelect = SELECT
 	/// <para>TYPE IfcLibrarySelect = SELECT</para>
@@ -2006,7 +1858,6 @@
 	public interface IfcLibrarySelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcLightDistributionDataSourceSelect = SELECT
 	/// <para>TYPE IfcLightDistributionDataSourceSelect = SELECT</para>
@@ -2017,7 +1868,6 @@
 	public interface IfcLightDistributionDataSourceSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMaterialSelect = SELECT
 	/// <para>TYPE IfcMaterialSelect = SELECT</para>
@@ -2029,7 +1879,6 @@
 	public interface IfcMaterialSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMeasureValue = SELECT
 	/// <para>TYPE IfcMeasureValue = SELECT</para>
@@ -2061,7 +1910,6 @@
 	public interface IfcMeasureValue, IfcValue
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcMetricValueSelect = SELECT
 	/// <para>TYPE IfcMetricValueSelect = SELECT</para>
@@ -2076,7 +1924,6 @@
 	public interface IfcMetricValueSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcModulusOfRotationalSubgradeReactionSelect = SELECT
 	/// <para>TYPE IfcModulusOfRotationalSubgradeReactionSelect = SELECT</para>
@@ -2087,7 +1934,6 @@
 	public interface IfcModulusOfRotationalSubgradeReactionSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcModulusOfSubgradeReactionSelect = SELECT
 	/// <para>TYPE IfcModulusOfSubgradeReactionSelect = SELECT</para>
@@ -2098,7 +1944,6 @@
 	public interface IfcModulusOfSubgradeReactionSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcModulusOfTranslationalSubgradeReactionSelect = SELECT
 	/// <para>TYPE IfcModulusOfTranslationalSubgradeReactionSelect = SELECT</para>
@@ -2109,7 +1954,6 @@
 	public interface IfcModulusOfTranslationalSubgradeReactionSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcObjectReferenceSelect = SELECT
 	/// <para>TYPE IfcObjectReferenceSelect = SELECT</para>
@@ -2127,7 +1971,6 @@
 	public interface IfcObjectReferenceSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPointOrVertexPoint = SELECT
 	/// <para>TYPE IfcPointOrVertexPoint = SELECT</para>
@@ -2138,7 +1981,6 @@
 	public interface IfcPointOrVertexPoint
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPresentationStyleSelect = SELECT
 	/// <para>TYPE IfcPresentationStyleSelect = SELECT</para>
@@ -2152,7 +1994,6 @@
 	public interface IfcPresentationStyleSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcProcessSelect = SELECT
 	/// <para>TYPE IfcProcessSelect = SELECT</para>
@@ -2163,7 +2004,6 @@
 	public interface IfcProcessSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcProductRepresentationSelect = SELECT
 	/// <para>TYPE IfcProductRepresentationSelect = SELECT</para>
@@ -2174,7 +2014,6 @@
 	public interface IfcProductRepresentationSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcProductSelect = SELECT
 	/// <para>TYPE IfcProductSelect = SELECT</para>
@@ -2185,7 +2024,6 @@
 	public interface IfcProductSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcPropertySetDefinitionSelect = SELECT
 	/// <para>TYPE IfcPropertySetDefinitionSelect = SELECT</para>
@@ -2196,7 +2034,6 @@
 	public interface IfcPropertySetDefinitionSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcResourceObjectSelect = SELECT
 	/// <para>TYPE IfcResourceObjectSelect = SELECT</para>
@@ -2215,13 +2052,13 @@
 	/// <para>	,IfcPhysicalQuantity</para>
 	/// <para>	,IfcProfileDef</para>
 	/// <para>	,IfcPropertyAbstraction</para>
+	/// <para>	,IfcShapeAspect</para>
 	/// <para>	,IfcTimeSeries);</para>
 	/// <para>END_TYPE;</para>
 	/// <summary>
 	public interface IfcResourceObjectSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcResourceSelect = SELECT
 	/// <para>TYPE IfcResourceSelect = SELECT</para>
@@ -2232,7 +2069,6 @@
 	public interface IfcResourceSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcRotationalStiffnessSelect = SELECT
 	/// <para>TYPE IfcRotationalStiffnessSelect = SELECT</para>
@@ -2243,7 +2079,6 @@
 	public interface IfcRotationalStiffnessSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSegmentIndexSelect = SELECT
 	/// <para>TYPE IfcSegmentIndexSelect = SELECT</para>
@@ -2254,7 +2089,6 @@
 	public interface IfcSegmentIndexSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcShell = SELECT
 	/// <para>TYPE IfcShell = SELECT</para>
@@ -2265,7 +2099,6 @@
 	public interface IfcShell
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSimpleValue = SELECT
 	/// <para>TYPE IfcSimpleValue = SELECT</para>
@@ -2288,7 +2121,6 @@
 	public interface IfcSimpleValue, IfcValue
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSizeSelect = SELECT
 	/// <para>TYPE IfcSizeSelect = SELECT</para>
@@ -2303,7 +2135,6 @@
 	public interface IfcSizeSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSolidOrShell = SELECT
 	/// <para>TYPE IfcSolidOrShell = SELECT</para>
@@ -2314,7 +2145,6 @@
 	public interface IfcSolidOrShell
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSpaceBoundarySelect = SELECT
 	/// <para>TYPE IfcSpaceBoundarySelect = SELECT</para>
@@ -2325,7 +2155,6 @@
 	public interface IfcSpaceBoundarySelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSpecularHighlightSelect = SELECT
 	/// <para>TYPE IfcSpecularHighlightSelect = SELECT</para>
@@ -2336,7 +2165,6 @@
 	public interface IfcSpecularHighlightSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcStructuralActivityAssignmentSelect = SELECT
 	/// <para>TYPE IfcStructuralActivityAssignmentSelect = SELECT</para>
@@ -2347,7 +2175,6 @@
 	public interface IfcStructuralActivityAssignmentSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcStyleAssignmentSelect = SELECT
 	/// <para>TYPE IfcStyleAssignmentSelect = SELECT</para>
@@ -2358,7 +2185,6 @@
 	public interface IfcStyleAssignmentSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSurfaceOrFaceSurface = SELECT
 	/// <para>TYPE IfcSurfaceOrFaceSurface = SELECT</para>
@@ -2370,7 +2196,6 @@
 	public interface IfcSurfaceOrFaceSurface
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcSurfaceStyleElementSelect = SELECT
 	/// <para>TYPE IfcSurfaceStyleElementSelect = SELECT</para>
@@ -2384,7 +2209,6 @@
 	public interface IfcSurfaceStyleElementSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTextFontSelect = SELECT
 	/// <para>TYPE IfcTextFontSelect = SELECT</para>
@@ -2395,7 +2219,6 @@
 	public interface IfcTextFontSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTimeOrRatioSelect = SELECT
 	/// <para>TYPE IfcTimeOrRatioSelect = SELECT</para>
@@ -2406,7 +2229,6 @@
 	public interface IfcTimeOrRatioSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTranslationalStiffnessSelect = SELECT
 	/// <para>TYPE IfcTranslationalStiffnessSelect = SELECT</para>
@@ -2417,7 +2239,6 @@
 	public interface IfcTranslationalStiffnessSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcTrimmingSelect = SELECT
 	/// <para>TYPE IfcTrimmingSelect = SELECT</para>
@@ -2428,7 +2249,6 @@
 	public interface IfcTrimmingSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcUnit = SELECT
 	/// <para>TYPE IfcUnit = SELECT</para>
@@ -2440,7 +2260,6 @@
 	public interface IfcUnit
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcValue = SELECT
 	/// <para>TYPE IfcValue = SELECT</para>
@@ -2452,7 +2271,6 @@
 	public interface IfcValue, IfcAppliedValueSelect, IfcMetricValueSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcVectorOrDirection = SELECT
 	/// <para>TYPE IfcVectorOrDirection = SELECT</para>
@@ -2463,7 +2281,6 @@
 	public interface IfcVectorOrDirection
 	{
 	}
---------------------------------
 	/// <summary>
 	/// TYPE IfcWarpingStiffnessSelect = SELECT
 	/// <para>TYPE IfcWarpingStiffnessSelect = SELECT</para>
@@ -2474,7 +2291,6 @@
 	public interface IfcWarpingStiffnessSelect
 	{
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcActionRequest
 	/// <para>ENTITY IfcActionRequest</para>
@@ -2486,11 +2302,19 @@
 	/// <summary>
 	public class IfcActionRequest : IfcControl
 	{
-		public IfcActionRequestTypeEnum PredefinedType { get; set; }
-		public IfcLabel Status { get; set; }
-		public IfcText LongDescription { get; set; }
+		public IfcActionRequestTypeEnum? PredefinedType { get; set; }
+		public IfcLabel? Status { get; set; }
+		public IfcText? LongDescription { get; set; }
+		public IfcActionRequest() : base()
+		{
+		}
+		public IfcActionRequest(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcActionRequestTypeEnum PredefinedType, IfcLabel Status, IfcText LongDescription) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification)
+		{
+			this.PredefinedType = PredefinedType;
+			this.Status = Status;
+			this.LongDescription = LongDescription;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcActor
 	/// <para>ENTITY IfcActor</para>
@@ -2505,8 +2329,15 @@
 	public class IfcActor : IfcObject
 	{
 		public IfcActorSelect TheActor { get; set; }
+		public IfcActor() : base()
+		{
+			TheActor = new IfcActorSelect();
+		}
+		public IfcActor(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcActorSelect TheActor) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.TheActor = TheActor;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcActorRole;
 	/// <para>ENTITY IfcActorRole;</para>
@@ -2524,10 +2355,19 @@
 	public class IfcActorRoleENTITY, IfcResourceObjectSelect
 	{
 		public IfcRoleEnum Role { get; set; }
-		public IfcLabel UserDefinedRole { get; set; }
-		public IfcText Description { get; set; }
+		public IfcLabel? UserDefinedRole { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcActorRole() : base()
+		{
+			Role = new IfcRoleEnum();
+		}
+		public IfcActorRole(IfcRoleEnum Role, IfcLabel UserDefinedRole, IfcText Description) : base ()
+		{
+			this.Role = Role;
+			this.UserDefinedRole = UserDefinedRole;
+			this.Description = Description;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcActuator
 	/// <para>ENTITY IfcActuator</para>
@@ -2538,14 +2378,20 @@
 	/// <para> (PredefinedType <> IfcActuatorTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcActuatorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>('IFC4.IFCACTUATORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCACTUATORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcActuator : IfcDistributionControlElement
 	{
-		public IfcActuatorTypeEnum PredefinedType { get; set; }
+		public IfcActuatorTypeEnum? PredefinedType { get; set; }
+		public IfcActuator() : base()
+		{
+		}
+		public IfcActuator(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcActuatorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcActuatorType
 	/// <para>ENTITY IfcActuatorType</para>
@@ -2559,8 +2405,15 @@
 	public class IfcActuatorType : IfcDistributionControlElementType
 	{
 		public IfcActuatorTypeEnum PredefinedType { get; set; }
+		public IfcActuatorType() : base()
+		{
+			PredefinedType = new IfcActuatorTypeEnum();
+		}
+		public IfcActuatorType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcActuatorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAddress
 	/// <para>ENTITY IfcAddress</para>
@@ -2582,11 +2435,19 @@
 	/// <summary>
 	public abstract class IfcAddressENTITY, IfcObjectReferenceSelect
 	{
-		public IfcAddressTypeEnum Purpose { get; set; }
-		public IfcText Description { get; set; }
-		public IfcLabel UserDefinedPurpose { get; set; }
+		public IfcAddressTypeEnum? Purpose { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcLabel? UserDefinedPurpose { get; set; }
+		public IfcAddress() : base()
+		{
+		}
+		public IfcAddress(IfcAddressTypeEnum Purpose, IfcText Description, IfcLabel UserDefinedPurpose) : base ()
+		{
+			this.Purpose = Purpose;
+			this.Description = Description;
+			this.UserDefinedPurpose = UserDefinedPurpose;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAdvancedBrep
 	/// <para>ENTITY IfcAdvancedBrep</para>
@@ -2595,14 +2456,19 @@
 	/// <para> SUBTYPE OF (IfcManifoldSolidBrep);</para>
 	/// <para> WHERE</para>
 	/// <para>	HasAdvancedFaces : SIZEOF(QUERY(Afs <* SELF\IfcManifoldSolidBrep.Outer.CfsFaces |</para>
-	/// <para>  (NOT ('IFC4.IFCADVANCEDFACE' IN TYPEOF(Afs)))</para>
+	/// <para>  (NOT ('IFC4X1.IFCADVANCEDFACE' IN TYPEOF(Afs)))</para>
 	/// <para>)) = 0;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcAdvancedBrep : IfcManifoldSolidBrep
 	{
+		public IfcAdvancedBrep() : base()
+		{
+		}
+		public IfcAdvancedBrep(IfcClosedShell Outer) : base (Outer)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAdvancedBrepWithVoids
 	/// <para>ENTITY IfcAdvancedBrepWithVoids</para>
@@ -2611,7 +2477,7 @@
 	/// <para> WHERE</para>
 	/// <para>	VoidsHaveAdvancedFaces : SIZEOF (QUERY (Vsh <* Voids |</para>
 	/// <para>  SIZEOF (QUERY (Afs <* Vsh.CfsFaces |</para>
-	/// <para>  (NOT ('IFC4.IFCADVANCEDFACE' IN TYPEOF(Afs)))</para>
+	/// <para>  (NOT ('IFC4X1.IFCADVANCEDFACE' IN TYPEOF(Afs)))</para>
 	/// <para>  )) = 0</para>
 	/// <para>)) = 0;</para>
 	/// <para>END_ENTITY;</para>
@@ -2619,34 +2485,41 @@
 	public class IfcAdvancedBrepWithVoids : IfcAdvancedBrep
 	{
 		public List<IfcClosedShell> Voids { get; set; }
+		public IfcAdvancedBrepWithVoids() : base()
+		{
+			Voids = new List<IfcClosedShell>();
+		}
+		public IfcAdvancedBrepWithVoids(IfcClosedShell Outer, List<IfcClosedShell> Voids) : base (Outer)
+		{
+			this.Voids = Voids;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAdvancedFace
 	/// <para>ENTITY IfcAdvancedFace</para>
 	/// <para> SUBTYPE OF (IfcFaceSurface);</para>
 	/// <para> WHERE</para>
 	/// <para>	ApplicableSurface : SIZEOF (</para>
-	/// <para>['IFC4.IFCELEMENTARYSURFACE',</para>
-	/// <para> 'IFC4.IFCSWEPTSURFACE',</para>
-	/// <para> 'IFC4.IFCBSPLINESURFACE'] *</para>
+	/// <para>['IFC4X1.IFCELEMENTARYSURFACE',</para>
+	/// <para> 'IFC4X1.IFCSWEPTSURFACE',</para>
+	/// <para> 'IFC4X1.IFCBSPLINESURFACE'] *</para>
 	/// <para>TYPEOF(SELF\IfcFaceSurface.FaceSurface)) = 1;</para>
 	/// <para>	RequiresEdgeCurve : SIZEOF(QUERY (ElpFbnds <* </para>
 	/// <para>  QUERY (Bnds <* SELF\IfcFace.Bounds |</para>
-	/// <para>    'IFC4.IFCEDGELOOP' IN TYPEOF(Bnds.Bound)) |</para>
+	/// <para>    'IFC4X1.IFCEDGELOOP' IN TYPEOF(Bnds.Bound)) |</para>
 	/// <para>     NOT (SIZEOF (QUERY (Oe <* ElpFbnds.Bound\IfcEdgeLoop.EdgeList |</para>
-	/// <para>       NOT('IFC4.IFCEDGECURVE' IN </para>
+	/// <para>       NOT('IFC4X1.IFCEDGECURVE' IN </para>
 	/// <para>       TYPEOF(Oe\IfcOrientedEdge.EdgeElement)</para>
 	/// <para>  ))) = 0</para>
 	/// <para>))) = 0;</para>
 	/// <para>	ApplicableEdgeCurves : SIZEOF(QUERY (ElpFbnds <* </para>
 	/// <para>  QUERY (Bnds <* SELF\IfcFace.Bounds |</para>
-	/// <para>    'IFC4.IFCEDGELOOP' IN TYPEOF(Bnds.Bound)) |</para>
+	/// <para>    'IFC4X1.IFCEDGELOOP' IN TYPEOF(Bnds.Bound)) |</para>
 	/// <para>     NOT (SIZEOF (QUERY (Oe <* ElpFbnds.Bound\IfcEdgeLoop.EdgeList |</para>
-	/// <para>       NOT (SIZEOF (['IFC4.IFCLINE',</para>
-	/// <para>                     'IFC4.IFCCONIC',</para>
-	/// <para>                     'IFC4.IFCPOLYLINE',</para>
-	/// <para>                     'IFC4.IFCBSPLINECURVE'] *</para>
+	/// <para>       NOT (SIZEOF (['IFC4X1.IFCLINE',</para>
+	/// <para>                     'IFC4X1.IFCCONIC',</para>
+	/// <para>                     'IFC4X1.IFCPOLYLINE',</para>
+	/// <para>                     'IFC4X1.IFCBSPLINECURVE'] *</para>
 	/// <para>         TYPEOF(Oe\IfcOrientedEdge.EdgeElement\IfcEdgeCurve.EdgeGeometry)) = 1 )</para>
 	/// <para>  )) = 0</para>
 	/// <para>))) = 0;</para>
@@ -2654,8 +2527,13 @@
 	/// <summary>
 	public class IfcAdvancedFace : IfcFaceSurface
 	{
+		public IfcAdvancedFace() : base()
+		{
+		}
+		public IfcAdvancedFace(List<IfcFaceBound> Bounds, IfcSurface FaceSurface, IfcBoolean SameSense) : base (Bounds, FaceSurface, SameSense)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAirTerminal
 	/// <para>ENTITY IfcAirTerminal</para>
@@ -2666,14 +2544,20 @@
 	/// <para> (PredefinedType <> IfcAirTerminalTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcAirTerminalTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCAIRTERMINALTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCAIRTERMINALTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcAirTerminal : IfcFlowTerminal
 	{
-		public IfcAirTerminalTypeEnum PredefinedType { get; set; }
+		public IfcAirTerminalTypeEnum? PredefinedType { get; set; }
+		public IfcAirTerminal() : base()
+		{
+		}
+		public IfcAirTerminal(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcAirTerminalTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAirTerminalBox
 	/// <para>ENTITY IfcAirTerminalBox</para>
@@ -2684,14 +2568,20 @@
 	/// <para> (PredefinedType <> IfcAirTerminalBoxTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcAirTerminalBoxTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCAIRTERMINALBOXTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCAIRTERMINALBOXTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcAirTerminalBox : IfcFlowController
 	{
-		public IfcAirTerminalBoxTypeEnum PredefinedType { get; set; }
+		public IfcAirTerminalBoxTypeEnum? PredefinedType { get; set; }
+		public IfcAirTerminalBox() : base()
+		{
+		}
+		public IfcAirTerminalBox(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcAirTerminalBoxTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAirTerminalBoxType
 	/// <para>ENTITY IfcAirTerminalBoxType</para>
@@ -2705,8 +2595,15 @@
 	public class IfcAirTerminalBoxType : IfcFlowControllerType
 	{
 		public IfcAirTerminalBoxTypeEnum PredefinedType { get; set; }
+		public IfcAirTerminalBoxType() : base()
+		{
+			PredefinedType = new IfcAirTerminalBoxTypeEnum();
+		}
+		public IfcAirTerminalBoxType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcAirTerminalBoxTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAirTerminalType
 	/// <para>ENTITY IfcAirTerminalType</para>
@@ -2720,8 +2617,15 @@
 	public class IfcAirTerminalType : IfcFlowTerminalType
 	{
 		public IfcAirTerminalTypeEnum PredefinedType { get; set; }
+		public IfcAirTerminalType() : base()
+		{
+			PredefinedType = new IfcAirTerminalTypeEnum();
+		}
+		public IfcAirTerminalType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcAirTerminalTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAirToAirHeatRecovery
 	/// <para>ENTITY IfcAirToAirHeatRecovery</para>
@@ -2732,14 +2636,20 @@
 	/// <para> (PredefinedType <> IfcAirToAirHeatRecoveryTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcAirToAirHeatRecoveryTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCAIRTOAIRHEATRECOVERYTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCAIRTOAIRHEATRECOVERYTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcAirToAirHeatRecovery : IfcEnergyConversionDevice
 	{
-		public IfcAirToAirHeatRecoveryTypeEnum PredefinedType { get; set; }
+		public IfcAirToAirHeatRecoveryTypeEnum? PredefinedType { get; set; }
+		public IfcAirToAirHeatRecovery() : base()
+		{
+		}
+		public IfcAirToAirHeatRecovery(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcAirToAirHeatRecoveryTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAirToAirHeatRecoveryType
 	/// <para>ENTITY IfcAirToAirHeatRecoveryType</para>
@@ -2753,8 +2663,15 @@
 	public class IfcAirToAirHeatRecoveryType : IfcEnergyConversionDeviceType
 	{
 		public IfcAirToAirHeatRecoveryTypeEnum PredefinedType { get; set; }
+		public IfcAirToAirHeatRecoveryType() : base()
+		{
+			PredefinedType = new IfcAirToAirHeatRecoveryTypeEnum();
+		}
+		public IfcAirToAirHeatRecoveryType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcAirToAirHeatRecoveryTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAlarm
 	/// <para>ENTITY IfcAlarm</para>
@@ -2765,14 +2682,20 @@
 	/// <para> (PredefinedType <> IfcAlarmTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcAlarmTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>('IFC4.IFCALARMTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCALARMTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcAlarm : IfcDistributionControlElement
 	{
-		public IfcAlarmTypeEnum PredefinedType { get; set; }
+		public IfcAlarmTypeEnum? PredefinedType { get; set; }
+		public IfcAlarm() : base()
+		{
+		}
+		public IfcAlarm(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcAlarmTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAlarmType
 	/// <para>ENTITY IfcAlarmType</para>
@@ -2786,8 +2709,249 @@
 	public class IfcAlarmType : IfcDistributionControlElementType
 	{
 		public IfcAlarmTypeEnum PredefinedType { get; set; }
+		public IfcAlarmType() : base()
+		{
+			PredefinedType = new IfcAlarmTypeEnum();
+		}
+		public IfcAlarmType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcAlarmTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcAlignment
+	/// <para>ENTITY IfcAlignment</para>
+	/// <para> SUBTYPE OF (IfcLinearPositioningElement);</para>
+	/// <para>	PredefinedType : OPTIONAL IfcAlignmentTypeEnum;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcAlignment : IfcLinearPositioningElement
+	{
+		public IfcAlignmentTypeEnum? PredefinedType { get; set; }
+		public IfcAlignment() : base()
+		{
+		}
+		public IfcAlignment(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcCurve Axis, IfcAlignmentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Axis)
+		{
+			this.PredefinedType = PredefinedType;
+		}
+	}
+	/// <summary>
+	/// ENTITY IfcAlignment2DHorizontal
+	/// <para>ENTITY IfcAlignment2DHorizontal</para>
+	/// <para> SUBTYPE OF (IfcGeometricRepresentationItem);</para>
+	/// <para>	StartDistAlong : OPTIONAL IfcLengthMeasure;</para>
+	/// <para>	Segments : LIST [1:?] OF IfcAlignment2DHorizontalSegment;</para>
+	/// <para> INVERSE</para>
+	/// <para>	ToAlignmentCurve : SET [1:?] OF IfcAlignmentCurve FOR Horizontal;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcAlignment2DHorizontal : IfcGeometricRepresentationItem
+	{
+		public IfcLengthMeasure? StartDistAlong { get; set; }
+		public List<IfcAlignment2DHorizontalSegment> Segments { get; set; }
+		public IfcAlignment2DHorizontal() : base()
+		{
+			Segments = new List<IfcAlignment2DHorizontalSegment>();
+		}
+		public IfcAlignment2DHorizontal(IfcLengthMeasure StartDistAlong, List<IfcAlignment2DHorizontalSegment> Segments) : base ()
+		{
+			this.StartDistAlong = StartDistAlong;
+			this.Segments = Segments;
+		}
+	}
+	/// <summary>
+	/// ENTITY IfcAlignment2DHorizontalSegment
+	/// <para>ENTITY IfcAlignment2DHorizontalSegment</para>
+	/// <para> SUBTYPE OF (IfcAlignment2DSegment);</para>
+	/// <para>	CurveGeometry : IfcCurveSegment2D;</para>
+	/// <para> INVERSE</para>
+	/// <para>	ToHorizontal : SET [1:1] OF IfcAlignment2DHorizontal FOR Segments;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcAlignment2DHorizontalSegment : IfcAlignment2DSegment
+	{
+		public IfcCurveSegment2D CurveGeometry { get; set; }
+		public IfcAlignment2DHorizontalSegment() : base()
+		{
+			CurveGeometry = new IfcCurveSegment2D();
+		}
+		public IfcAlignment2DHorizontalSegment(IfcBoolean TangentialContinuity, IfcLabel StartTag, IfcLabel EndTag, IfcCurveSegment2D CurveGeometry) : base (TangentialContinuity, StartTag, EndTag)
+		{
+			this.CurveGeometry = CurveGeometry;
+		}
+	}
+	/// <summary>
+	/// ENTITY IfcAlignment2DSegment
+	/// <para>ENTITY IfcAlignment2DSegment</para>
+	/// <para> ABSTRACT SUPERTYPE OF (ONEOF</para>
+	/// <para>    (IfcAlignment2DHorizontalSegment</para>
+	/// <para>    ,IfcAlignment2DVerticalSegment))</para>
+	/// <para> SUBTYPE OF (IfcGeometricRepresentationItem);</para>
+	/// <para>	TangentialContinuity : OPTIONAL IfcBoolean;</para>
+	/// <para>	StartTag : OPTIONAL IfcLabel;</para>
+	/// <para>	EndTag : OPTIONAL IfcLabel;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public abstract class IfcAlignment2DSegment : IfcGeometricRepresentationItem
+	{
+		public IfcBoolean? TangentialContinuity { get; set; }
+		public IfcLabel? StartTag { get; set; }
+		public IfcLabel? EndTag { get; set; }
+		public IfcAlignment2DSegment() : base()
+		{
+		}
+		public IfcAlignment2DSegment(IfcBoolean TangentialContinuity, IfcLabel StartTag, IfcLabel EndTag) : base ()
+		{
+			this.TangentialContinuity = TangentialContinuity;
+			this.StartTag = StartTag;
+			this.EndTag = EndTag;
+		}
+	}
+	/// <summary>
+	/// ENTITY IfcAlignment2DVerSegCircularArc
+	/// <para>ENTITY IfcAlignment2DVerSegCircularArc</para>
+	/// <para> SUBTYPE OF (IfcAlignment2DVerticalSegment);</para>
+	/// <para>	Radius : IfcPositiveLengthMeasure;</para>
+	/// <para>	IsConvex : IfcBoolean;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcAlignment2DVerSegCircularArc : IfcAlignment2DVerticalSegment
+	{
+		public IfcPositiveLengthMeasure Radius { get; set; }
+		public IfcBoolean IsConvex { get; set; }
+		public IfcAlignment2DVerSegCircularArc() : base()
+		{
+			Radius = new IfcPositiveLengthMeasure();
+			IsConvex = new IfcBoolean();
+		}
+		public IfcAlignment2DVerSegCircularArc(IfcBoolean TangentialContinuity, IfcLabel StartTag, IfcLabel EndTag, IfcLengthMeasure StartDistAlong, IfcPositiveLengthMeasure HorizontalLength, IfcLengthMeasure StartHeight, IfcRatioMeasure StartGradient, IfcPositiveLengthMeasure Radius, IfcBoolean IsConvex) : base (TangentialContinuity, StartTag, EndTag, StartDistAlong, HorizontalLength, StartHeight, StartGradient)
+		{
+			this.Radius = Radius;
+			this.IsConvex = IsConvex;
+		}
+	}
+	/// <summary>
+	/// ENTITY IfcAlignment2DVerSegLine
+	/// <para>ENTITY IfcAlignment2DVerSegLine</para>
+	/// <para> SUBTYPE OF (IfcAlignment2DVerticalSegment);</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcAlignment2DVerSegLine : IfcAlignment2DVerticalSegment
+	{
+		public IfcAlignment2DVerSegLine() : base()
+		{
+		}
+		public IfcAlignment2DVerSegLine(IfcBoolean TangentialContinuity, IfcLabel StartTag, IfcLabel EndTag, IfcLengthMeasure StartDistAlong, IfcPositiveLengthMeasure HorizontalLength, IfcLengthMeasure StartHeight, IfcRatioMeasure StartGradient) : base (TangentialContinuity, StartTag, EndTag, StartDistAlong, HorizontalLength, StartHeight, StartGradient)
+		{
+		}
+	}
+	/// <summary>
+	/// ENTITY IfcAlignment2DVerSegParabolicArc
+	/// <para>ENTITY IfcAlignment2DVerSegParabolicArc</para>
+	/// <para> SUBTYPE OF (IfcAlignment2DVerticalSegment);</para>
+	/// <para>	ParabolaConstant : IfcPositiveLengthMeasure;</para>
+	/// <para>	IsConvex : IfcBoolean;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcAlignment2DVerSegParabolicArc : IfcAlignment2DVerticalSegment
+	{
+		public IfcPositiveLengthMeasure ParabolaConstant { get; set; }
+		public IfcBoolean IsConvex { get; set; }
+		public IfcAlignment2DVerSegParabolicArc() : base()
+		{
+			ParabolaConstant = new IfcPositiveLengthMeasure();
+			IsConvex = new IfcBoolean();
+		}
+		public IfcAlignment2DVerSegParabolicArc(IfcBoolean TangentialContinuity, IfcLabel StartTag, IfcLabel EndTag, IfcLengthMeasure StartDistAlong, IfcPositiveLengthMeasure HorizontalLength, IfcLengthMeasure StartHeight, IfcRatioMeasure StartGradient, IfcPositiveLengthMeasure ParabolaConstant, IfcBoolean IsConvex) : base (TangentialContinuity, StartTag, EndTag, StartDistAlong, HorizontalLength, StartHeight, StartGradient)
+		{
+			this.ParabolaConstant = ParabolaConstant;
+			this.IsConvex = IsConvex;
+		}
+	}
+	/// <summary>
+	/// ENTITY IfcAlignment2DVertical
+	/// <para>ENTITY IfcAlignment2DVertical</para>
+	/// <para> SUBTYPE OF (IfcGeometricRepresentationItem);</para>
+	/// <para>	Segments : LIST [1:?] OF IfcAlignment2DVerticalSegment;</para>
+	/// <para> INVERSE</para>
+	/// <para>	ToAlignmentCurve : SET [1:1] OF IfcAlignmentCurve FOR Vertical;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcAlignment2DVertical : IfcGeometricRepresentationItem
+	{
+		public List<IfcAlignment2DVerticalSegment> Segments { get; set; }
+		public IfcAlignment2DVertical() : base()
+		{
+			Segments = new List<IfcAlignment2DVerticalSegment>();
+		}
+		public IfcAlignment2DVertical(List<IfcAlignment2DVerticalSegment> Segments) : base ()
+		{
+			this.Segments = Segments;
+		}
+	}
+	/// <summary>
+	/// ENTITY IfcAlignment2DVerticalSegment
+	/// <para>ENTITY IfcAlignment2DVerticalSegment</para>
+	/// <para> ABSTRACT SUPERTYPE OF (ONEOF</para>
+	/// <para>    (IfcAlignment2DVerSegCircularArc</para>
+	/// <para>    ,IfcAlignment2DVerSegLine</para>
+	/// <para>    ,IfcAlignment2DVerSegParabolicArc))</para>
+	/// <para> SUBTYPE OF (IfcAlignment2DSegment);</para>
+	/// <para>	StartDistAlong : IfcLengthMeasure;</para>
+	/// <para>	HorizontalLength : IfcPositiveLengthMeasure;</para>
+	/// <para>	StartHeight : IfcLengthMeasure;</para>
+	/// <para>	StartGradient : IfcRatioMeasure;</para>
+	/// <para> INVERSE</para>
+	/// <para>	ToVertical : SET [1:1] OF IfcAlignment2DVertical FOR Segments;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public abstract class IfcAlignment2DVerticalSegment : IfcAlignment2DSegment
+	{
+		public IfcLengthMeasure StartDistAlong { get; set; }
+		public IfcPositiveLengthMeasure HorizontalLength { get; set; }
+		public IfcLengthMeasure StartHeight { get; set; }
+		public IfcRatioMeasure StartGradient { get; set; }
+		public IfcAlignment2DVerticalSegment() : base()
+		{
+			StartDistAlong = new IfcLengthMeasure();
+			HorizontalLength = new IfcPositiveLengthMeasure();
+			StartHeight = new IfcLengthMeasure();
+			StartGradient = new IfcRatioMeasure();
+		}
+		public IfcAlignment2DVerticalSegment(IfcBoolean TangentialContinuity, IfcLabel StartTag, IfcLabel EndTag, IfcLengthMeasure StartDistAlong, IfcPositiveLengthMeasure HorizontalLength, IfcLengthMeasure StartHeight, IfcRatioMeasure StartGradient) : base (TangentialContinuity, StartTag, EndTag)
+		{
+			this.StartDistAlong = StartDistAlong;
+			this.HorizontalLength = HorizontalLength;
+			this.StartHeight = StartHeight;
+			this.StartGradient = StartGradient;
+		}
+	}
+	/// <summary>
+	/// ENTITY IfcAlignmentCurve
+	/// <para>ENTITY IfcAlignmentCurve</para>
+	/// <para> SUBTYPE OF (IfcBoundedCurve);</para>
+	/// <para>	Horizontal : IfcAlignment2DHorizontal;</para>
+	/// <para>	Vertical : OPTIONAL IfcAlignment2DVertical;</para>
+	/// <para>	Tag : OPTIONAL IfcLabel;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcAlignmentCurve : IfcBoundedCurve
+	{
+		public IfcAlignment2DHorizontal Horizontal { get; set; }
+		public IfcAlignment2DVertical? Vertical { get; set; }
+		public IfcLabel? Tag { get; set; }
+		public IfcAlignmentCurve() : base()
+		{
+			Horizontal = new IfcAlignment2DHorizontal();
+		}
+		public IfcAlignmentCurve(IfcAlignment2DHorizontal Horizontal, IfcAlignment2DVertical Vertical, IfcLabel Tag) : base ()
+		{
+			this.Horizontal = Horizontal;
+			this.Vertical = Vertical;
+			this.Tag = Tag;
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcAnnotation
 	/// <para>ENTITY IfcAnnotation</para>
@@ -2798,8 +2962,13 @@
 	/// <summary>
 	public class IfcAnnotation : IfcProduct
 	{
+		public IfcAnnotation() : base()
+		{
+		}
+		public IfcAnnotation(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAnnotationFillArea
 	/// <para>ENTITY IfcAnnotationFillArea</para>
@@ -2811,9 +2980,17 @@
 	public class IfcAnnotationFillArea : IfcGeometricRepresentationItem
 	{
 		public IfcCurve OuterBoundary { get; set; }
-		public List<IfcCurve> InnerBoundaries { get; set; }
+		public List<IfcCurve>? InnerBoundaries { get; set; }
+		public IfcAnnotationFillArea() : base()
+		{
+			OuterBoundary = new IfcCurve();
+		}
+		public IfcAnnotationFillArea(IfcCurve OuterBoundary, List<IfcCurve> InnerBoundaries) : base ()
+		{
+			this.OuterBoundary = OuterBoundary;
+			this.InnerBoundaries = InnerBoundaries;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcApplication;
 	/// <para>ENTITY IfcApplication;</para>
@@ -2832,8 +3009,21 @@
 		public IfcLabel Version { get; set; }
 		public IfcLabel ApplicationFullName { get; set; }
 		public IfcIdentifier ApplicationIdentifier { get; set; }
+		public IfcApplication() : base()
+		{
+			ApplicationDeveloper = new IfcOrganization();
+			Version = new IfcLabel();
+			ApplicationFullName = new IfcLabel();
+			ApplicationIdentifier = new IfcIdentifier();
+		}
+		public IfcApplication(IfcOrganization ApplicationDeveloper, IfcLabel Version, IfcLabel ApplicationFullName, IfcIdentifier ApplicationIdentifier) : base ()
+		{
+			this.ApplicationDeveloper = ApplicationDeveloper;
+			this.Version = Version;
+			this.ApplicationFullName = ApplicationFullName;
+			this.ApplicationIdentifier = ApplicationIdentifier;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAppliedValue
 	/// <para>ENTITY IfcAppliedValue</para>
@@ -2855,18 +3045,33 @@
 	/// <summary>
 	public class IfcAppliedValueENTITY, IfcMetricValueSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
-		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
-		public IfcAppliedValueSelect AppliedValue { get; set; }
-		public IfcMeasureWithUnit UnitBasis { get; set; }
-		public IfcDate ApplicableDate { get; set; }
-		public IfcDate FixedUntilDate { get; set; }
-		public IfcLabel Category { get; set; }
-		public IfcLabel Condition { get; set; }
-		public IfcArithmeticOperatorEnum ArithmeticOperator { get; set; }
-		public List<IfcAppliedValue> Components { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcAppliedValueSelect? AppliedValue { get; set; }
+		public IfcMeasureWithUnit? UnitBasis { get; set; }
+		public IfcDate? ApplicableDate { get; set; }
+		public IfcDate? FixedUntilDate { get; set; }
+		public IfcLabel? Category { get; set; }
+		public IfcLabel? Condition { get; set; }
+		public IfcArithmeticOperatorEnum? ArithmeticOperator { get; set; }
+		public List<IfcAppliedValue>? Components { get; set; }
+		public IfcAppliedValue() : base()
+		{
+		}
+		public IfcAppliedValue(IfcLabel Name, IfcText Description, IfcAppliedValueSelect AppliedValue, IfcMeasureWithUnit UnitBasis, IfcDate ApplicableDate, IfcDate FixedUntilDate, IfcLabel Category, IfcLabel Condition, IfcArithmeticOperatorEnum ArithmeticOperator, List<IfcAppliedValue> Components) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+			this.AppliedValue = AppliedValue;
+			this.UnitBasis = UnitBasis;
+			this.ApplicableDate = ApplicableDate;
+			this.FixedUntilDate = FixedUntilDate;
+			this.Category = Category;
+			this.Condition = Condition;
+			this.ArithmeticOperator = ArithmeticOperator;
+			this.Components = Components;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcApproval;
 	/// <para>ENTITY IfcApproval;</para>
@@ -2891,17 +3096,31 @@
 	/// <summary>
 	public class IfcApprovalENTITY, IfcResourceObjectSelect
 	{
-		public IfcIdentifier Identifier { get; set; }
-		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
-		public IfcDateTime TimeOfApproval { get; set; }
-		public IfcLabel Status { get; set; }
-		public IfcLabel Level { get; set; }
-		public IfcText Qualifier { get; set; }
-		public IfcActorSelect RequestingApproval { get; set; }
-		public IfcActorSelect GivingApproval { get; set; }
+		public IfcIdentifier? Identifier { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcDateTime? TimeOfApproval { get; set; }
+		public IfcLabel? Status { get; set; }
+		public IfcLabel? Level { get; set; }
+		public IfcText? Qualifier { get; set; }
+		public IfcActorSelect? RequestingApproval { get; set; }
+		public IfcActorSelect? GivingApproval { get; set; }
+		public IfcApproval() : base()
+		{
+		}
+		public IfcApproval(IfcIdentifier Identifier, IfcLabel Name, IfcText Description, IfcDateTime TimeOfApproval, IfcLabel Status, IfcLabel Level, IfcText Qualifier, IfcActorSelect RequestingApproval, IfcActorSelect GivingApproval) : base ()
+		{
+			this.Identifier = Identifier;
+			this.Name = Name;
+			this.Description = Description;
+			this.TimeOfApproval = TimeOfApproval;
+			this.Status = Status;
+			this.Level = Level;
+			this.Qualifier = Qualifier;
+			this.RequestingApproval = RequestingApproval;
+			this.GivingApproval = GivingApproval;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcApprovalRelationship
 	/// <para>ENTITY IfcApprovalRelationship</para>
@@ -2914,8 +3133,17 @@
 	{
 		public IfcApproval RelatingApproval { get; set; }
 		public List<IfcApproval> RelatedApprovals { get; set; }
+		public IfcApprovalRelationship() : base()
+		{
+			RelatingApproval = new IfcApproval();
+			RelatedApprovals = new List<IfcApproval>();
+		}
+		public IfcApprovalRelationship(IfcLabel Name, IfcText Description, IfcApproval RelatingApproval, List<IfcApproval> RelatedApprovals) : base (Name, Description)
+		{
+			this.RelatingApproval = RelatingApproval;
+			this.RelatedApprovals = RelatedApprovals;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcArbitraryClosedProfileDef
 	/// <para>ENTITY IfcArbitraryClosedProfileDef</para>
@@ -2925,15 +3153,22 @@
 	/// <para>	OuterCurve : IfcCurve;</para>
 	/// <para> WHERE</para>
 	/// <para>	WR1 : OuterCurve.Dim = 2;</para>
-	/// <para>	WR2 : NOT('IFC4.IFCLINE' IN TYPEOF(OuterCurve));</para>
-	/// <para>	WR3 : NOT('IFC4.IFCOFFSETCURVE2D' IN TYPEOF(OuterCurve));</para>
+	/// <para>	WR2 : NOT('IFC4X1.IFCLINE' IN TYPEOF(OuterCurve));</para>
+	/// <para>	WR3 : NOT('IFC4X1.IFCOFFSETCURVE2D' IN TYPEOF(OuterCurve));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcArbitraryClosedProfileDef : IfcProfileDef
 	{
 		public IfcCurve OuterCurve { get; set; }
+		public IfcArbitraryClosedProfileDef() : base()
+		{
+			OuterCurve = new IfcCurve();
+		}
+		public IfcArbitraryClosedProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcCurve OuterCurve) : base (ProfileType, ProfileName)
+		{
+			this.OuterCurve = OuterCurve;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcArbitraryOpenProfileDef
 	/// <para>ENTITY IfcArbitraryOpenProfileDef</para>
@@ -2942,7 +3177,7 @@
 	/// <para> SUBTYPE OF (IfcProfileDef);</para>
 	/// <para>	Curve : IfcBoundedCurve;</para>
 	/// <para> WHERE</para>
-	/// <para>	WR11 : ('IFC4.IFCCENTERLINEPROFILEDEF' IN TYPEOF(SELF)) OR </para>
+	/// <para>	WR11 : ('IFC4X1.IFCCENTERLINEPROFILEDEF' IN TYPEOF(SELF)) OR </para>
 	/// <para> (SELF\IfcProfileDef.ProfileType = IfcProfileTypeEnum.CURVE);</para>
 	/// <para>	WR12 : Curve.Dim = 2;</para>
 	/// <para>END_ENTITY;</para>
@@ -2950,8 +3185,15 @@
 	public class IfcArbitraryOpenProfileDef : IfcProfileDef
 	{
 		public IfcBoundedCurve Curve { get; set; }
+		public IfcArbitraryOpenProfileDef() : base()
+		{
+			Curve = new IfcBoundedCurve();
+		}
+		public IfcArbitraryOpenProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcBoundedCurve Curve) : base (ProfileType, ProfileName)
+		{
+			this.Curve = Curve;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcArbitraryProfileDefWithVoids
 	/// <para>ENTITY IfcArbitraryProfileDefWithVoids</para>
@@ -2960,14 +3202,21 @@
 	/// <para> WHERE</para>
 	/// <para>	WR1 : SELF\IfcProfileDef.ProfileType = AREA;</para>
 	/// <para>	WR2 : SIZEOF(QUERY(temp <* InnerCurves | temp.Dim <> 2)) = 0;</para>
-	/// <para>	WR3 : SIZEOF(QUERY(temp <* InnerCurves | 'IFC4.IFCLINE' IN TYPEOF(temp))) = 0;</para>
+	/// <para>	WR3 : SIZEOF(QUERY(temp <* InnerCurves | 'IFC4X1.IFCLINE' IN TYPEOF(temp))) = 0;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcArbitraryProfileDefWithVoids : IfcArbitraryClosedProfileDef
 	{
 		public List<IfcCurve> InnerCurves { get; set; }
+		public IfcArbitraryProfileDefWithVoids() : base()
+		{
+			InnerCurves = new List<IfcCurve>();
+		}
+		public IfcArbitraryProfileDefWithVoids(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcCurve OuterCurve, List<IfcCurve> InnerCurves) : base (ProfileType, ProfileName, OuterCurve)
+		{
+			this.InnerCurves = InnerCurves;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAsset
 	/// <para>ENTITY IfcAsset</para>
@@ -2985,17 +3234,31 @@
 	/// <summary>
 	public class IfcAsset : IfcGroup
 	{
-		public IfcIdentifier Identification { get; set; }
-		public IfcCostValue OriginalValue { get; set; }
-		public IfcCostValue CurrentValue { get; set; }
-		public IfcCostValue TotalReplacementCost { get; set; }
-		public IfcActorSelect Owner { get; set; }
-		public IfcActorSelect User { get; set; }
-		public IfcPerson ResponsiblePerson { get; set; }
-		public IfcDate IncorporationDate { get; set; }
-		public IfcCostValue DepreciatedValue { get; set; }
+		public IfcIdentifier? Identification { get; set; }
+		public IfcCostValue? OriginalValue { get; set; }
+		public IfcCostValue? CurrentValue { get; set; }
+		public IfcCostValue? TotalReplacementCost { get; set; }
+		public IfcActorSelect? Owner { get; set; }
+		public IfcActorSelect? User { get; set; }
+		public IfcPerson? ResponsiblePerson { get; set; }
+		public IfcDate? IncorporationDate { get; set; }
+		public IfcCostValue? DepreciatedValue { get; set; }
+		public IfcAsset() : base()
+		{
+		}
+		public IfcAsset(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcCostValue OriginalValue, IfcCostValue CurrentValue, IfcCostValue TotalReplacementCost, IfcActorSelect Owner, IfcActorSelect User, IfcPerson ResponsiblePerson, IfcDate IncorporationDate, IfcCostValue DepreciatedValue) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.Identification = Identification;
+			this.OriginalValue = OriginalValue;
+			this.CurrentValue = CurrentValue;
+			this.TotalReplacementCost = TotalReplacementCost;
+			this.Owner = Owner;
+			this.User = User;
+			this.ResponsiblePerson = ResponsiblePerson;
+			this.IncorporationDate = IncorporationDate;
+			this.DepreciatedValue = DepreciatedValue;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAsymmetricIShapeProfileDef
 	/// <para>ENTITY IfcAsymmetricIShapeProfileDef</para>
@@ -3027,16 +3290,38 @@
 		public IfcPositiveLengthMeasure OverallDepth { get; set; }
 		public IfcPositiveLengthMeasure WebThickness { get; set; }
 		public IfcPositiveLengthMeasure BottomFlangeThickness { get; set; }
-		public IfcNonNegativeLengthMeasure BottomFlangeFilletRadius { get; set; }
+		public IfcNonNegativeLengthMeasure? BottomFlangeFilletRadius { get; set; }
 		public IfcPositiveLengthMeasure TopFlangeWidth { get; set; }
-		public IfcPositiveLengthMeasure TopFlangeThickness { get; set; }
-		public IfcNonNegativeLengthMeasure TopFlangeFilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure BottomFlangeEdgeRadius { get; set; }
-		public IfcPlaneAngleMeasure BottomFlangeSlope { get; set; }
-		public IfcNonNegativeLengthMeasure TopFlangeEdgeRadius { get; set; }
-		public IfcPlaneAngleMeasure TopFlangeSlope { get; set; }
+		public IfcPositiveLengthMeasure? TopFlangeThickness { get; set; }
+		public IfcNonNegativeLengthMeasure? TopFlangeFilletRadius { get; set; }
+		public IfcNonNegativeLengthMeasure? BottomFlangeEdgeRadius { get; set; }
+		public IfcPlaneAngleMeasure? BottomFlangeSlope { get; set; }
+		public IfcNonNegativeLengthMeasure? TopFlangeEdgeRadius { get; set; }
+		public IfcPlaneAngleMeasure? TopFlangeSlope { get; set; }
+		public IfcAsymmetricIShapeProfileDef() : base()
+		{
+			BottomFlangeWidth = new IfcPositiveLengthMeasure();
+			OverallDepth = new IfcPositiveLengthMeasure();
+			WebThickness = new IfcPositiveLengthMeasure();
+			BottomFlangeThickness = new IfcPositiveLengthMeasure();
+			TopFlangeWidth = new IfcPositiveLengthMeasure();
+		}
+		public IfcAsymmetricIShapeProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure BottomFlangeWidth, IfcPositiveLengthMeasure OverallDepth, IfcPositiveLengthMeasure WebThickness, IfcPositiveLengthMeasure BottomFlangeThickness, IfcNonNegativeLengthMeasure BottomFlangeFilletRadius, IfcPositiveLengthMeasure TopFlangeWidth, IfcPositiveLengthMeasure TopFlangeThickness, IfcNonNegativeLengthMeasure TopFlangeFilletRadius, IfcNonNegativeLengthMeasure BottomFlangeEdgeRadius, IfcPlaneAngleMeasure BottomFlangeSlope, IfcNonNegativeLengthMeasure TopFlangeEdgeRadius, IfcPlaneAngleMeasure TopFlangeSlope) : base (ProfileType, ProfileName, Position)
+		{
+			this.BottomFlangeWidth = BottomFlangeWidth;
+			this.OverallDepth = OverallDepth;
+			this.WebThickness = WebThickness;
+			this.BottomFlangeThickness = BottomFlangeThickness;
+			this.BottomFlangeFilletRadius = BottomFlangeFilletRadius;
+			this.TopFlangeWidth = TopFlangeWidth;
+			this.TopFlangeThickness = TopFlangeThickness;
+			this.TopFlangeFilletRadius = TopFlangeFilletRadius;
+			this.BottomFlangeEdgeRadius = BottomFlangeEdgeRadius;
+			this.BottomFlangeSlope = BottomFlangeSlope;
+			this.TopFlangeEdgeRadius = TopFlangeEdgeRadius;
+			this.TopFlangeSlope = TopFlangeSlope;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAudioVisualAppliance
 	/// <para>ENTITY IfcAudioVisualAppliance</para>
@@ -3047,14 +3332,20 @@
 	/// <para> (PredefinedType <> IfcAudioVisualApplianceTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcAudioVisualApplianceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCAUDIOVISUALAPPLIANCETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCAUDIOVISUALAPPLIANCETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcAudioVisualAppliance : IfcFlowTerminal
 	{
-		public IfcAudioVisualApplianceTypeEnum PredefinedType { get; set; }
+		public IfcAudioVisualApplianceTypeEnum? PredefinedType { get; set; }
+		public IfcAudioVisualAppliance() : base()
+		{
+		}
+		public IfcAudioVisualAppliance(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcAudioVisualApplianceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAudioVisualApplianceType
 	/// <para>ENTITY IfcAudioVisualApplianceType</para>
@@ -3068,8 +3359,15 @@
 	public class IfcAudioVisualApplianceType : IfcFlowTerminalType
 	{
 		public IfcAudioVisualApplianceTypeEnum PredefinedType { get; set; }
+		public IfcAudioVisualApplianceType() : base()
+		{
+			PredefinedType = new IfcAudioVisualApplianceTypeEnum();
+		}
+		public IfcAudioVisualApplianceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcAudioVisualApplianceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAxis1Placement
 	/// <para>ENTITY IfcAxis1Placement</para>
@@ -3084,9 +3382,15 @@
 	/// <summary>
 	public class IfcAxis1Placement : IfcPlacement
 	{
-		public IfcDirection Axis { get; set; }
+		public IfcDirection? Axis { get; set; }
+		public IfcAxis1Placement() : base()
+		{
+		}
+		public IfcAxis1Placement(IfcCartesianPoint Location, IfcDirection Axis) : base (Location)
+		{
+			this.Axis = Axis;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAxis2Placement2D
 	/// <para>ENTITY IfcAxis2Placement2D</para>
@@ -3101,9 +3405,15 @@
 	/// <summary>
 	public class IfcAxis2Placement2D : IfcPlacement, IfcAxis2Placement
 	{
-		public IfcDirection RefDirection { get; set; }
+		public IfcDirection? RefDirection { get; set; }
+		public IfcAxis2Placement2D() : base()
+		{
+		}
+		public IfcAxis2Placement2D(IfcCartesianPoint Location, IfcDirection RefDirection) : base (Location)
+		{
+			this.RefDirection = RefDirection;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcAxis2Placement3D
 	/// <para>ENTITY IfcAxis2Placement3D</para>
@@ -3122,10 +3432,17 @@
 	/// <summary>
 	public class IfcAxis2Placement3D : IfcPlacement, IfcAxis2Placement
 	{
-		public IfcDirection Axis { get; set; }
-		public IfcDirection RefDirection { get; set; }
+		public IfcDirection? Axis { get; set; }
+		public IfcDirection? RefDirection { get; set; }
+		public IfcAxis2Placement3D() : base()
+		{
+		}
+		public IfcAxis2Placement3D(IfcCartesianPoint Location, IfcDirection Axis, IfcDirection RefDirection) : base (Location)
+		{
+			this.Axis = Axis;
+			this.RefDirection = RefDirection;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBSplineCurve
 	/// <para>ENTITY IfcBSplineCurve</para>
@@ -3153,8 +3470,23 @@
 		public IfcBSplineCurveForm CurveForm { get; set; }
 		public IfcLogical ClosedCurve { get; set; }
 		public IfcLogical SelfIntersect { get; set; }
+		public IfcBSplineCurve() : base()
+		{
+			Degree = new IfcInteger();
+			ControlPointsList = new List<IfcCartesianPoint>();
+			CurveForm = new IfcBSplineCurveForm();
+			ClosedCurve = new IfcLogical();
+			SelfIntersect = new IfcLogical();
+		}
+		public IfcBSplineCurve(IfcInteger Degree, List<IfcCartesianPoint> ControlPointsList, IfcBSplineCurveForm CurveForm, IfcLogical ClosedCurve, IfcLogical SelfIntersect) : base ()
+		{
+			this.Degree = Degree;
+			this.ControlPointsList = ControlPointsList;
+			this.CurveForm = CurveForm;
+			this.ClosedCurve = ClosedCurve;
+			this.SelfIntersect = SelfIntersect;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBSplineCurveWithKnots
 	/// <para>ENTITY IfcBSplineCurveWithKnots</para>
@@ -3177,8 +3509,19 @@
 		public List<IfcInteger> KnotMultiplicities { get; set; }
 		public List<IfcParameterValue> Knots { get; set; }
 		public IfcKnotType KnotSpec { get; set; }
+		public IfcBSplineCurveWithKnots() : base()
+		{
+			KnotMultiplicities = new List<IfcInteger>();
+			Knots = new List<IfcParameterValue>();
+			KnotSpec = new IfcKnotType();
+		}
+		public IfcBSplineCurveWithKnots(IfcInteger Degree, List<IfcCartesianPoint> ControlPointsList, IfcBSplineCurveForm CurveForm, IfcLogical ClosedCurve, IfcLogical SelfIntersect, List<IfcInteger> KnotMultiplicities, List<IfcParameterValue> Knots, IfcKnotType KnotSpec) : base (Degree, ControlPointsList, CurveForm, ClosedCurve, SelfIntersect)
+		{
+			this.KnotMultiplicities = KnotMultiplicities;
+			this.Knots = Knots;
+			this.KnotSpec = KnotSpec;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBSplineSurface
 	/// <para>ENTITY IfcBSplineSurface</para>
@@ -3208,8 +3551,27 @@
 		public IfcLogical UClosed { get; set; }
 		public IfcLogical VClosed { get; set; }
 		public IfcLogical SelfIntersect { get; set; }
+		public IfcBSplineSurface() : base()
+		{
+			UDegree = new IfcInteger();
+			VDegree = new IfcInteger();
+			ControlPointsList = new List<List<IfcCartesianPoint >>();
+			SurfaceForm = new IfcBSplineSurfaceForm();
+			UClosed = new IfcLogical();
+			VClosed = new IfcLogical();
+			SelfIntersect = new IfcLogical();
+		}
+		public IfcBSplineSurface(IfcInteger UDegree, IfcInteger VDegree, List<List<IfcCartesianPoint >> ControlPointsList, IfcBSplineSurfaceForm SurfaceForm, IfcLogical UClosed, IfcLogical VClosed, IfcLogical SelfIntersect) : base ()
+		{
+			this.UDegree = UDegree;
+			this.VDegree = VDegree;
+			this.ControlPointsList = ControlPointsList;
+			this.SurfaceForm = SurfaceForm;
+			this.UClosed = UClosed;
+			this.VClosed = VClosed;
+			this.SelfIntersect = SelfIntersect;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBSplineSurfaceWithKnots
 	/// <para>ENTITY IfcBSplineSurfaceWithKnots</para>
@@ -3242,8 +3604,23 @@
 		public List<IfcParameterValue> UKnots { get; set; }
 		public List<IfcParameterValue> VKnots { get; set; }
 		public IfcKnotType KnotSpec { get; set; }
+		public IfcBSplineSurfaceWithKnots() : base()
+		{
+			UMultiplicities = new List<IfcInteger>();
+			VMultiplicities = new List<IfcInteger>();
+			UKnots = new List<IfcParameterValue>();
+			VKnots = new List<IfcParameterValue>();
+			KnotSpec = new IfcKnotType();
+		}
+		public IfcBSplineSurfaceWithKnots(IfcInteger UDegree, IfcInteger VDegree, List<List<IfcCartesianPoint >> ControlPointsList, IfcBSplineSurfaceForm SurfaceForm, IfcLogical UClosed, IfcLogical VClosed, IfcLogical SelfIntersect, List<IfcInteger> UMultiplicities, List<IfcInteger> VMultiplicities, List<IfcParameterValue> UKnots, List<IfcParameterValue> VKnots, IfcKnotType KnotSpec) : base (UDegree, VDegree, ControlPointsList, SurfaceForm, UClosed, VClosed, SelfIntersect)
+		{
+			this.UMultiplicities = UMultiplicities;
+			this.VMultiplicities = VMultiplicities;
+			this.UKnots = UKnots;
+			this.VKnots = VKnots;
+			this.KnotSpec = KnotSpec;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBeam
 	/// <para>ENTITY IfcBeam</para>
@@ -3256,29 +3633,40 @@
 	/// <para> (PredefinedType <> IfcBeamTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcBeamTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCBEAMTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCBEAMTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcBeam : IfcBuildingElement
 	{
-		public IfcBeamTypeEnum PredefinedType { get; set; }
+		public IfcBeamTypeEnum? PredefinedType { get; set; }
+		public IfcBeam() : base()
+		{
+		}
+		public IfcBeam(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcBeamTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBeamStandardCase
 	/// <para>ENTITY IfcBeamStandardCase</para>
 	/// <para> SUBTYPE OF (IfcBeam);</para>
 	/// <para> WHERE</para>
-	/// <para>	HasMaterialProfileSetUsage : SIZEOF (QUERY(temp <* USEDIN(SELF, 'IFC4.IFCRELASSOCIATES.RELATEDOBJECTS') |</para>
-	/// <para>              ('IFC4.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)) AND</para>
-	/// <para>              ('IFC4.IFCMATERIALPROFILESETUSAGE' IN TYPEOF(temp.RelatingMaterial))</para>
+	/// <para>	HasMaterialProfileSetUsage : SIZEOF (QUERY(temp <* USEDIN(SELF, 'IFC4X1.IFCRELASSOCIATES.RELATEDOBJECTS') |</para>
+	/// <para>              ('IFC4X1.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)) AND</para>
+	/// <para>              ('IFC4X1.IFCMATERIALPROFILESETUSAGE' IN TYPEOF(temp.RelatingMaterial))</para>
 	/// <para>              )) = 1;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcBeamStandardCase : IfcBeam
 	{
+		public IfcBeamStandardCase() : base()
+		{
+		}
+		public IfcBeamStandardCase(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcBeamTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, PredefinedType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBeamType
 	/// <para>ENTITY IfcBeamType</para>
@@ -3292,8 +3680,15 @@
 	public class IfcBeamType : IfcBuildingElementType
 	{
 		public IfcBeamTypeEnum PredefinedType { get; set; }
+		public IfcBeamType() : base()
+		{
+			PredefinedType = new IfcBeamTypeEnum();
+		}
+		public IfcBeamType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcBeamTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBlobTexture
 	/// <para>ENTITY IfcBlobTexture</para>
@@ -3309,8 +3704,17 @@
 	{
 		public IfcIdentifier RasterFormat { get; set; }
 		public IfcBinary RasterCode { get; set; }
+		public IfcBlobTexture() : base()
+		{
+			RasterFormat = new IfcIdentifier();
+			RasterCode = new IfcBinary();
+		}
+		public IfcBlobTexture(IfcBoolean RepeatS, IfcBoolean RepeatT, IfcIdentifier Mode, IfcCartesianTransformationOperator2D TextureTransform, List<IfcIdentifier> Parameter, IfcIdentifier RasterFormat, IfcBinary RasterCode) : base (RepeatS, RepeatT, Mode, TextureTransform, Parameter)
+		{
+			this.RasterFormat = RasterFormat;
+			this.RasterCode = RasterCode;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBlock
 	/// <para>ENTITY IfcBlock</para>
@@ -3325,8 +3729,19 @@
 		public IfcPositiveLengthMeasure XLength { get; set; }
 		public IfcPositiveLengthMeasure YLength { get; set; }
 		public IfcPositiveLengthMeasure ZLength { get; set; }
+		public IfcBlock() : base()
+		{
+			XLength = new IfcPositiveLengthMeasure();
+			YLength = new IfcPositiveLengthMeasure();
+			ZLength = new IfcPositiveLengthMeasure();
+		}
+		public IfcBlock(IfcAxis2Placement3D Position, IfcPositiveLengthMeasure XLength, IfcPositiveLengthMeasure YLength, IfcPositiveLengthMeasure ZLength) : base (Position)
+		{
+			this.XLength = XLength;
+			this.YLength = YLength;
+			this.ZLength = ZLength;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBoiler
 	/// <para>ENTITY IfcBoiler</para>
@@ -3337,14 +3752,20 @@
 	/// <para> (PredefinedType <> IfcBoilerTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcBoilerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCBOILERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCBOILERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcBoiler : IfcEnergyConversionDevice
 	{
-		public IfcBoilerTypeEnum PredefinedType { get; set; }
+		public IfcBoilerTypeEnum? PredefinedType { get; set; }
+		public IfcBoiler() : base()
+		{
+		}
+		public IfcBoiler(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcBoilerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBoilerType
 	/// <para>ENTITY IfcBoilerType</para>
@@ -3358,24 +3779,36 @@
 	public class IfcBoilerType : IfcEnergyConversionDeviceType
 	{
 		public IfcBoilerTypeEnum PredefinedType { get; set; }
+		public IfcBoilerType() : base()
+		{
+			PredefinedType = new IfcBoilerTypeEnum();
+		}
+		public IfcBoilerType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcBoilerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBooleanClippingResult
 	/// <para>ENTITY IfcBooleanClippingResult</para>
 	/// <para> SUBTYPE OF (IfcBooleanResult);</para>
 	/// <para> WHERE</para>
-	/// <para>	FirstOperandType : ('IFC4.IFCSWEPTAREASOLID' IN TYPEOF(FirstOperand)) OR </para>
-	/// <para>('IFC4.IFCSWEPTDISCSOLID' IN TYPEOF(FirstOperand)) OR </para>
-	/// <para>('IFC4.IFCBOOLEANCLIPPINGRESULT' IN TYPEOF(FirstOperand));</para>
-	/// <para>	SecondOperandType : ('IFC4.IFCHALFSPACESOLID' IN TYPEOF(SecondOperand));</para>
+	/// <para>	FirstOperandType : ('IFC4X1.IFCSWEPTAREASOLID' IN TYPEOF(FirstOperand)) OR </para>
+	/// <para>('IFC4X1.IFCSWEPTDISCSOLID' IN TYPEOF(FirstOperand)) OR </para>
+	/// <para>('IFC4X1.IFCBOOLEANCLIPPINGRESULT' IN TYPEOF(FirstOperand));</para>
+	/// <para>	SecondOperandType : ('IFC4X1.IFCHALFSPACESOLID' IN TYPEOF(SecondOperand));</para>
 	/// <para>	OperatorType : Operator = DIFFERENCE;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcBooleanClippingResult : IfcBooleanResult
 	{
+		public IfcBooleanClippingResult() : base()
+		{
+		}
+		public IfcBooleanClippingResult(IfcBooleanOperator Operator, IfcBooleanOperand FirstOperand, IfcBooleanOperand SecondOperand) : base (Operator, FirstOperand, SecondOperand)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBooleanResult
 	/// <para>ENTITY IfcBooleanResult</para>
@@ -3389,8 +3822,8 @@
 	/// <para>	Dim : IfcDimensionCount := FirstOperand.Dim;</para>
 	/// <para> WHERE</para>
 	/// <para>	SameDim : FirstOperand.Dim = SecondOperand.Dim;</para>
-	/// <para>	FirstOperandClosed : NOT('IFC4.IFCTESSELLATEDFACESET' IN TYPEOF(FirstOperand)) OR (EXISTS(FirstOperand.Closed) AND FirstOperand.Closed);</para>
-	/// <para>	SecondOperandClosed : NOT('IFC4.IFCTESSELLATEDFACESET' IN TYPEOF(SecondOperand)) OR (EXISTS(SecondOperand.Closed) AND SecondOperand.Closed);</para>
+	/// <para>	FirstOperandClosed : NOT('IFC4X1.IFCTESSELLATEDFACESET' IN TYPEOF(FirstOperand)) OR (EXISTS(FirstOperand.Closed) AND FirstOperand.Closed);</para>
+	/// <para>	SecondOperandClosed : NOT('IFC4X1.IFCTESSELLATEDFACESET' IN TYPEOF(SecondOperand)) OR (EXISTS(SecondOperand.Closed) AND SecondOperand.Closed);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcBooleanResult : IfcGeometricRepresentationItem, IfcBooleanOperand, IfcCsgSelect
@@ -3398,8 +3831,19 @@
 		public IfcBooleanOperator Operator { get; set; }
 		public IfcBooleanOperand FirstOperand { get; set; }
 		public IfcBooleanOperand SecondOperand { get; set; }
+		public IfcBooleanResult() : base()
+		{
+			Operator = new IfcBooleanOperator();
+			FirstOperand = new IfcBooleanOperand();
+			SecondOperand = new IfcBooleanOperand();
+		}
+		public IfcBooleanResult(IfcBooleanOperator Operator, IfcBooleanOperand FirstOperand, IfcBooleanOperand SecondOperand) : base ()
+		{
+			this.Operator = Operator;
+			this.FirstOperand = FirstOperand;
+			this.SecondOperand = SecondOperand;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBoundaryCondition
 	/// <para>ENTITY IfcBoundaryCondition</para>
@@ -3412,9 +3856,15 @@
 	/// <summary>
 	public abstract class IfcBoundaryConditionENTITY
 	{
-		public IfcLabel Name { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcBoundaryCondition() : base()
+		{
+		}
+		public IfcBoundaryCondition(IfcLabel Name) : base ()
+		{
+			this.Name = Name;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBoundaryCurve
 	/// <para>ENTITY IfcBoundaryCurve</para>
@@ -3427,8 +3877,13 @@
 	/// <summary>
 	public class IfcBoundaryCurve : IfcCompositeCurveOnSurface
 	{
+		public IfcBoundaryCurve() : base()
+		{
+		}
+		public IfcBoundaryCurve(List<IfcCompositeCurveSegment> Segments, IfcLogical SelfIntersect) : base (Segments, SelfIntersect)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBoundaryEdgeCondition
 	/// <para>ENTITY IfcBoundaryEdgeCondition</para>
@@ -3443,14 +3898,25 @@
 	/// <summary>
 	public class IfcBoundaryEdgeCondition : IfcBoundaryCondition
 	{
-		public IfcModulusOfTranslationalSubgradeReactionSelect TranslationalStiffnessByLengthX { get; set; }
-		public IfcModulusOfTranslationalSubgradeReactionSelect TranslationalStiffnessByLengthY { get; set; }
-		public IfcModulusOfTranslationalSubgradeReactionSelect TranslationalStiffnessByLengthZ { get; set; }
-		public IfcModulusOfRotationalSubgradeReactionSelect RotationalStiffnessByLengthX { get; set; }
-		public IfcModulusOfRotationalSubgradeReactionSelect RotationalStiffnessByLengthY { get; set; }
-		public IfcModulusOfRotationalSubgradeReactionSelect RotationalStiffnessByLengthZ { get; set; }
+		public IfcModulusOfTranslationalSubgradeReactionSelect? TranslationalStiffnessByLengthX { get; set; }
+		public IfcModulusOfTranslationalSubgradeReactionSelect? TranslationalStiffnessByLengthY { get; set; }
+		public IfcModulusOfTranslationalSubgradeReactionSelect? TranslationalStiffnessByLengthZ { get; set; }
+		public IfcModulusOfRotationalSubgradeReactionSelect? RotationalStiffnessByLengthX { get; set; }
+		public IfcModulusOfRotationalSubgradeReactionSelect? RotationalStiffnessByLengthY { get; set; }
+		public IfcModulusOfRotationalSubgradeReactionSelect? RotationalStiffnessByLengthZ { get; set; }
+		public IfcBoundaryEdgeCondition() : base()
+		{
+		}
+		public IfcBoundaryEdgeCondition(IfcLabel Name, IfcModulusOfTranslationalSubgradeReactionSelect TranslationalStiffnessByLengthX, IfcModulusOfTranslationalSubgradeReactionSelect TranslationalStiffnessByLengthY, IfcModulusOfTranslationalSubgradeReactionSelect TranslationalStiffnessByLengthZ, IfcModulusOfRotationalSubgradeReactionSelect RotationalStiffnessByLengthX, IfcModulusOfRotationalSubgradeReactionSelect RotationalStiffnessByLengthY, IfcModulusOfRotationalSubgradeReactionSelect RotationalStiffnessByLengthZ) : base (Name)
+		{
+			this.TranslationalStiffnessByLengthX = TranslationalStiffnessByLengthX;
+			this.TranslationalStiffnessByLengthY = TranslationalStiffnessByLengthY;
+			this.TranslationalStiffnessByLengthZ = TranslationalStiffnessByLengthZ;
+			this.RotationalStiffnessByLengthX = RotationalStiffnessByLengthX;
+			this.RotationalStiffnessByLengthY = RotationalStiffnessByLengthY;
+			this.RotationalStiffnessByLengthZ = RotationalStiffnessByLengthZ;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBoundaryFaceCondition
 	/// <para>ENTITY IfcBoundaryFaceCondition</para>
@@ -3462,11 +3928,19 @@
 	/// <summary>
 	public class IfcBoundaryFaceCondition : IfcBoundaryCondition
 	{
-		public IfcModulusOfSubgradeReactionSelect TranslationalStiffnessByAreaX { get; set; }
-		public IfcModulusOfSubgradeReactionSelect TranslationalStiffnessByAreaY { get; set; }
-		public IfcModulusOfSubgradeReactionSelect TranslationalStiffnessByAreaZ { get; set; }
+		public IfcModulusOfSubgradeReactionSelect? TranslationalStiffnessByAreaX { get; set; }
+		public IfcModulusOfSubgradeReactionSelect? TranslationalStiffnessByAreaY { get; set; }
+		public IfcModulusOfSubgradeReactionSelect? TranslationalStiffnessByAreaZ { get; set; }
+		public IfcBoundaryFaceCondition() : base()
+		{
+		}
+		public IfcBoundaryFaceCondition(IfcLabel Name, IfcModulusOfSubgradeReactionSelect TranslationalStiffnessByAreaX, IfcModulusOfSubgradeReactionSelect TranslationalStiffnessByAreaY, IfcModulusOfSubgradeReactionSelect TranslationalStiffnessByAreaZ) : base (Name)
+		{
+			this.TranslationalStiffnessByAreaX = TranslationalStiffnessByAreaX;
+			this.TranslationalStiffnessByAreaY = TranslationalStiffnessByAreaY;
+			this.TranslationalStiffnessByAreaZ = TranslationalStiffnessByAreaZ;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBoundaryNodeCondition
 	/// <para>ENTITY IfcBoundaryNodeCondition</para>
@@ -3483,14 +3957,25 @@
 	/// <summary>
 	public class IfcBoundaryNodeCondition : IfcBoundaryCondition
 	{
-		public IfcTranslationalStiffnessSelect TranslationalStiffnessX { get; set; }
-		public IfcTranslationalStiffnessSelect TranslationalStiffnessY { get; set; }
-		public IfcTranslationalStiffnessSelect TranslationalStiffnessZ { get; set; }
-		public IfcRotationalStiffnessSelect RotationalStiffnessX { get; set; }
-		public IfcRotationalStiffnessSelect RotationalStiffnessY { get; set; }
-		public IfcRotationalStiffnessSelect RotationalStiffnessZ { get; set; }
+		public IfcTranslationalStiffnessSelect? TranslationalStiffnessX { get; set; }
+		public IfcTranslationalStiffnessSelect? TranslationalStiffnessY { get; set; }
+		public IfcTranslationalStiffnessSelect? TranslationalStiffnessZ { get; set; }
+		public IfcRotationalStiffnessSelect? RotationalStiffnessX { get; set; }
+		public IfcRotationalStiffnessSelect? RotationalStiffnessY { get; set; }
+		public IfcRotationalStiffnessSelect? RotationalStiffnessZ { get; set; }
+		public IfcBoundaryNodeCondition() : base()
+		{
+		}
+		public IfcBoundaryNodeCondition(IfcLabel Name, IfcTranslationalStiffnessSelect TranslationalStiffnessX, IfcTranslationalStiffnessSelect TranslationalStiffnessY, IfcTranslationalStiffnessSelect TranslationalStiffnessZ, IfcRotationalStiffnessSelect RotationalStiffnessX, IfcRotationalStiffnessSelect RotationalStiffnessY, IfcRotationalStiffnessSelect RotationalStiffnessZ) : base (Name)
+		{
+			this.TranslationalStiffnessX = TranslationalStiffnessX;
+			this.TranslationalStiffnessY = TranslationalStiffnessY;
+			this.TranslationalStiffnessZ = TranslationalStiffnessZ;
+			this.RotationalStiffnessX = RotationalStiffnessX;
+			this.RotationalStiffnessY = RotationalStiffnessY;
+			this.RotationalStiffnessZ = RotationalStiffnessZ;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBoundaryNodeConditionWarping
 	/// <para>ENTITY IfcBoundaryNodeConditionWarping</para>
@@ -3500,15 +3985,23 @@
 	/// <summary>
 	public class IfcBoundaryNodeConditionWarping : IfcBoundaryNodeCondition
 	{
-		public IfcWarpingStiffnessSelect WarpingStiffness { get; set; }
+		public IfcWarpingStiffnessSelect? WarpingStiffness { get; set; }
+		public IfcBoundaryNodeConditionWarping() : base()
+		{
+		}
+		public IfcBoundaryNodeConditionWarping(IfcLabel Name, IfcTranslationalStiffnessSelect TranslationalStiffnessX, IfcTranslationalStiffnessSelect TranslationalStiffnessY, IfcTranslationalStiffnessSelect TranslationalStiffnessZ, IfcRotationalStiffnessSelect RotationalStiffnessX, IfcRotationalStiffnessSelect RotationalStiffnessY, IfcRotationalStiffnessSelect RotationalStiffnessZ, IfcWarpingStiffnessSelect WarpingStiffness) : base (Name, TranslationalStiffnessX, TranslationalStiffnessY, TranslationalStiffnessZ, RotationalStiffnessX, RotationalStiffnessY, RotationalStiffnessZ)
+		{
+			this.WarpingStiffness = WarpingStiffness;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBoundedCurve
 	/// <para>ENTITY IfcBoundedCurve</para>
 	/// <para> ABSTRACT SUPERTYPE OF (ONEOF</para>
-	/// <para>    (IfcBSplineCurve</para>
+	/// <para>    (IfcAlignmentCurve</para>
+	/// <para>    ,IfcBSplineCurve</para>
 	/// <para>    ,IfcCompositeCurve</para>
+	/// <para>    ,IfcCurveSegment2D</para>
 	/// <para>    ,IfcIndexedPolyCurve</para>
 	/// <para>    ,IfcPolyline</para>
 	/// <para>    ,IfcTrimmedCurve))</para>
@@ -3517,8 +4010,13 @@
 	/// <summary>
 	public abstract class IfcBoundedCurve : IfcCurve, IfcCurveOrEdgeCurve
 	{
+		public IfcBoundedCurve() : base()
+		{
+		}
+		public IfcBoundedCurve() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBoundedSurface
 	/// <para>ENTITY IfcBoundedSurface</para>
@@ -3532,8 +4030,13 @@
 	/// <summary>
 	public abstract class IfcBoundedSurface : IfcSurface
 	{
+		public IfcBoundedSurface() : base()
+		{
+		}
+		public IfcBoundedSurface() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBoundingBox
 	/// <para>ENTITY IfcBoundingBox</para>
@@ -3552,22 +4055,42 @@
 		public IfcPositiveLengthMeasure XDim { get; set; }
 		public IfcPositiveLengthMeasure YDim { get; set; }
 		public IfcPositiveLengthMeasure ZDim { get; set; }
+		public IfcBoundingBox() : base()
+		{
+			Corner = new IfcCartesianPoint();
+			XDim = new IfcPositiveLengthMeasure();
+			YDim = new IfcPositiveLengthMeasure();
+			ZDim = new IfcPositiveLengthMeasure();
+		}
+		public IfcBoundingBox(IfcCartesianPoint Corner, IfcPositiveLengthMeasure XDim, IfcPositiveLengthMeasure YDim, IfcPositiveLengthMeasure ZDim) : base ()
+		{
+			this.Corner = Corner;
+			this.XDim = XDim;
+			this.YDim = YDim;
+			this.ZDim = ZDim;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBoxedHalfSpace
 	/// <para>ENTITY IfcBoxedHalfSpace</para>
 	/// <para> SUBTYPE OF (IfcHalfSpaceSolid);</para>
 	/// <para>	Enclosure : IfcBoundingBox;</para>
 	/// <para> WHERE</para>
-	/// <para>	UnboundedSurface : NOT ('IFC4.IFCCURVEBOUNDEDPLANE' IN TYPEOF(SELF\IfcHalfSpaceSolid.BaseSurface));</para>
+	/// <para>	UnboundedSurface : NOT ('IFC4X1.IFCCURVEBOUNDEDPLANE' IN TYPEOF(SELF\IfcHalfSpaceSolid.BaseSurface));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcBoxedHalfSpace : IfcHalfSpaceSolid
 	{
 		public IfcBoundingBox Enclosure { get; set; }
+		public IfcBoxedHalfSpace() : base()
+		{
+			Enclosure = new IfcBoundingBox();
+		}
+		public IfcBoxedHalfSpace(IfcSurface BaseSurface, IfcBoolean AgreementFlag, IfcBoundingBox Enclosure) : base (BaseSurface, AgreementFlag)
+		{
+			this.Enclosure = Enclosure;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBuilding
 	/// <para>ENTITY IfcBuilding</para>
@@ -3579,11 +4102,19 @@
 	/// <summary>
 	public class IfcBuilding : IfcSpatialStructureElement
 	{
-		public IfcLengthMeasure ElevationOfRefHeight { get; set; }
-		public IfcLengthMeasure ElevationOfTerrain { get; set; }
-		public IfcPostalAddress BuildingAddress { get; set; }
+		public IfcLengthMeasure? ElevationOfRefHeight { get; set; }
+		public IfcLengthMeasure? ElevationOfTerrain { get; set; }
+		public IfcPostalAddress? BuildingAddress { get; set; }
+		public IfcBuilding() : base()
+		{
+		}
+		public IfcBuilding(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcLabel LongName, IfcElementCompositionEnum CompositionType, IfcLengthMeasure ElevationOfRefHeight, IfcLengthMeasure ElevationOfTerrain, IfcPostalAddress BuildingAddress) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, LongName, CompositionType)
+		{
+			this.ElevationOfRefHeight = ElevationOfRefHeight;
+			this.ElevationOfTerrain = ElevationOfTerrain;
+			this.BuildingAddress = BuildingAddress;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBuildingElement
 	/// <para>ENTITY IfcBuildingElement</para>
@@ -3612,14 +4143,19 @@
 	/// <para> SUBTYPE OF (IfcElement);</para>
 	/// <para> WHERE</para>
 	/// <para>	MaxOneMaterialAssociation : SIZEOF (QUERY(temp <* SELF\IfcObjectDefinition.HasAssociations |</para>
-	/// <para>  'IFC4.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)</para>
+	/// <para>  'IFC4X1.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)</para>
 	/// <para>  )) <= 1;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public abstract class IfcBuildingElement : IfcElement
 	{
+		public IfcBuildingElement() : base()
+		{
+		}
+		public IfcBuildingElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBuildingElementPart
 	/// <para>ENTITY IfcBuildingElementPart</para>
@@ -3630,14 +4166,20 @@
 	/// <para>(PredefinedType <> IfcBuildingElementPartTypeEnum.USERDEFINED) OR</para>
 	/// <para>((PredefinedType = IfcBuildingElementPartTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>('IFC4.IFCBUILDINGELEMENTPARTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCBUILDINGELEMENTPARTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcBuildingElementPart : IfcElementComponent
 	{
-		public IfcBuildingElementPartTypeEnum PredefinedType { get; set; }
+		public IfcBuildingElementPartTypeEnum? PredefinedType { get; set; }
+		public IfcBuildingElementPart() : base()
+		{
+		}
+		public IfcBuildingElementPart(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcBuildingElementPartTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBuildingElementPartType
 	/// <para>ENTITY IfcBuildingElementPartType</para>
@@ -3651,8 +4193,15 @@
 	public class IfcBuildingElementPartType : IfcElementComponentType
 	{
 		public IfcBuildingElementPartTypeEnum PredefinedType { get; set; }
+		public IfcBuildingElementPartType() : base()
+		{
+			PredefinedType = new IfcBuildingElementPartTypeEnum();
+		}
+		public IfcBuildingElementPartType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcBuildingElementPartTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBuildingElementProxy
 	/// <para>ENTITY IfcBuildingElementProxy</para>
@@ -3664,14 +4213,20 @@
 	/// <para> (PredefinedType <> IfcBuildingElementProxyTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcBuildingElementProxyTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCBUILDINGELEMENTPROXYTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCBUILDINGELEMENTPROXYTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcBuildingElementProxy : IfcBuildingElement
 	{
-		public IfcBuildingElementProxyTypeEnum PredefinedType { get; set; }
+		public IfcBuildingElementProxyTypeEnum? PredefinedType { get; set; }
+		public IfcBuildingElementProxy() : base()
+		{
+		}
+		public IfcBuildingElementProxy(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcBuildingElementProxyTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBuildingElementProxyType
 	/// <para>ENTITY IfcBuildingElementProxyType</para>
@@ -3685,8 +4240,15 @@
 	public class IfcBuildingElementProxyType : IfcBuildingElementType
 	{
 		public IfcBuildingElementProxyTypeEnum PredefinedType { get; set; }
+		public IfcBuildingElementProxyType() : base()
+		{
+			PredefinedType = new IfcBuildingElementProxyTypeEnum();
+		}
+		public IfcBuildingElementProxyType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcBuildingElementProxyTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBuildingElementType
 	/// <para>ENTITY IfcBuildingElementType</para>
@@ -3717,8 +4279,13 @@
 	/// <summary>
 	public abstract class IfcBuildingElementType : IfcElementType
 	{
+		public IfcBuildingElementType() : base()
+		{
+		}
+		public IfcBuildingElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBuildingStorey
 	/// <para>ENTITY IfcBuildingStorey</para>
@@ -3728,9 +4295,15 @@
 	/// <summary>
 	public class IfcBuildingStorey : IfcSpatialStructureElement
 	{
-		public IfcLengthMeasure Elevation { get; set; }
+		public IfcLengthMeasure? Elevation { get; set; }
+		public IfcBuildingStorey() : base()
+		{
+		}
+		public IfcBuildingStorey(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcLabel LongName, IfcElementCompositionEnum CompositionType, IfcLengthMeasure Elevation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, LongName, CompositionType)
+		{
+			this.Elevation = Elevation;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBuildingSystem
 	/// <para>ENTITY IfcBuildingSystem</para>
@@ -3741,10 +4314,17 @@
 	/// <summary>
 	public class IfcBuildingSystem : IfcSystem
 	{
-		public IfcBuildingSystemTypeEnum PredefinedType { get; set; }
-		public IfcLabel LongName { get; set; }
+		public IfcBuildingSystemTypeEnum? PredefinedType { get; set; }
+		public IfcLabel? LongName { get; set; }
+		public IfcBuildingSystem() : base()
+		{
+		}
+		public IfcBuildingSystem(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcBuildingSystemTypeEnum PredefinedType, IfcLabel LongName) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.LongName = LongName;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBurner
 	/// <para>ENTITY IfcBurner</para>
@@ -3755,14 +4335,20 @@
 	/// <para> (PredefinedType <> IfcBurnerTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcBurnerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCBURNERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCBURNERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcBurner : IfcEnergyConversionDevice
 	{
-		public IfcBurnerTypeEnum PredefinedType { get; set; }
+		public IfcBurnerTypeEnum? PredefinedType { get; set; }
+		public IfcBurner() : base()
+		{
+		}
+		public IfcBurner(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcBurnerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcBurnerType
 	/// <para>ENTITY IfcBurnerType</para>
@@ -3776,8 +4362,15 @@
 	public class IfcBurnerType : IfcEnergyConversionDeviceType
 	{
 		public IfcBurnerTypeEnum PredefinedType { get; set; }
+		public IfcBurnerType() : base()
+		{
+			PredefinedType = new IfcBurnerTypeEnum();
+		}
+		public IfcBurnerType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcBurnerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCShapeProfileDef
 	/// <para>ENTITY IfcCShapeProfileDef</para>
@@ -3800,9 +4393,23 @@
 		public IfcPositiveLengthMeasure Width { get; set; }
 		public IfcPositiveLengthMeasure WallThickness { get; set; }
 		public IfcPositiveLengthMeasure Girth { get; set; }
-		public IfcNonNegativeLengthMeasure InternalFilletRadius { get; set; }
+		public IfcNonNegativeLengthMeasure? InternalFilletRadius { get; set; }
+		public IfcCShapeProfileDef() : base()
+		{
+			Depth = new IfcPositiveLengthMeasure();
+			Width = new IfcPositiveLengthMeasure();
+			WallThickness = new IfcPositiveLengthMeasure();
+			Girth = new IfcPositiveLengthMeasure();
+		}
+		public IfcCShapeProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure Depth, IfcPositiveLengthMeasure Width, IfcPositiveLengthMeasure WallThickness, IfcPositiveLengthMeasure Girth, IfcNonNegativeLengthMeasure InternalFilletRadius) : base (ProfileType, ProfileName, Position)
+		{
+			this.Depth = Depth;
+			this.Width = Width;
+			this.WallThickness = WallThickness;
+			this.Girth = Girth;
+			this.InternalFilletRadius = InternalFilletRadius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCableCarrierFitting
 	/// <para>ENTITY IfcCableCarrierFitting</para>
@@ -3813,14 +4420,20 @@
 	/// <para> (PredefinedType <> IfcCableCarrierFittingTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcCableCarrierFittingTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCCABLECARRIERFITTINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCABLECARRIERFITTINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCableCarrierFitting : IfcFlowFitting
 	{
-		public IfcCableCarrierFittingTypeEnum PredefinedType { get; set; }
+		public IfcCableCarrierFittingTypeEnum? PredefinedType { get; set; }
+		public IfcCableCarrierFitting() : base()
+		{
+		}
+		public IfcCableCarrierFitting(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcCableCarrierFittingTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCableCarrierFittingType
 	/// <para>ENTITY IfcCableCarrierFittingType</para>
@@ -3834,8 +4447,15 @@
 	public class IfcCableCarrierFittingType : IfcFlowFittingType
 	{
 		public IfcCableCarrierFittingTypeEnum PredefinedType { get; set; }
+		public IfcCableCarrierFittingType() : base()
+		{
+			PredefinedType = new IfcCableCarrierFittingTypeEnum();
+		}
+		public IfcCableCarrierFittingType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcCableCarrierFittingTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCableCarrierSegment
 	/// <para>ENTITY IfcCableCarrierSegment</para>
@@ -3846,14 +4466,20 @@
 	/// <para> (PredefinedType <> IfcCableCarrierSegmentTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcCableCarrierSegmentTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCCABLECARRIERSEGMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCABLECARRIERSEGMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCableCarrierSegment : IfcFlowSegment
 	{
-		public IfcCableCarrierSegmentTypeEnum PredefinedType { get; set; }
+		public IfcCableCarrierSegmentTypeEnum? PredefinedType { get; set; }
+		public IfcCableCarrierSegment() : base()
+		{
+		}
+		public IfcCableCarrierSegment(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcCableCarrierSegmentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCableCarrierSegmentType
 	/// <para>ENTITY IfcCableCarrierSegmentType</para>
@@ -3867,8 +4493,15 @@
 	public class IfcCableCarrierSegmentType : IfcFlowSegmentType
 	{
 		public IfcCableCarrierSegmentTypeEnum PredefinedType { get; set; }
+		public IfcCableCarrierSegmentType() : base()
+		{
+			PredefinedType = new IfcCableCarrierSegmentTypeEnum();
+		}
+		public IfcCableCarrierSegmentType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcCableCarrierSegmentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCableFitting
 	/// <para>ENTITY IfcCableFitting</para>
@@ -3879,14 +4512,20 @@
 	/// <para> (PredefinedType <> IfcCableFittingTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcCableFittingTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCCABLEFITTINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCABLEFITTINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCableFitting : IfcFlowFitting
 	{
-		public IfcCableFittingTypeEnum PredefinedType { get; set; }
+		public IfcCableFittingTypeEnum? PredefinedType { get; set; }
+		public IfcCableFitting() : base()
+		{
+		}
+		public IfcCableFitting(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcCableFittingTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCableFittingType
 	/// <para>ENTITY IfcCableFittingType</para>
@@ -3900,8 +4539,15 @@
 	public class IfcCableFittingType : IfcFlowFittingType
 	{
 		public IfcCableFittingTypeEnum PredefinedType { get; set; }
+		public IfcCableFittingType() : base()
+		{
+			PredefinedType = new IfcCableFittingTypeEnum();
+		}
+		public IfcCableFittingType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcCableFittingTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCableSegment
 	/// <para>ENTITY IfcCableSegment</para>
@@ -3912,14 +4558,20 @@
 	/// <para> (PredefinedType <> IfcCableSegmentTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcCableSegmentTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCCABLESEGMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCABLESEGMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCableSegment : IfcFlowSegment
 	{
-		public IfcCableSegmentTypeEnum PredefinedType { get; set; }
+		public IfcCableSegmentTypeEnum? PredefinedType { get; set; }
+		public IfcCableSegment() : base()
+		{
+		}
+		public IfcCableSegment(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcCableSegmentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCableSegmentType
 	/// <para>ENTITY IfcCableSegmentType</para>
@@ -3933,8 +4585,15 @@
 	public class IfcCableSegmentType : IfcFlowSegmentType
 	{
 		public IfcCableSegmentTypeEnum PredefinedType { get; set; }
+		public IfcCableSegmentType() : base()
+		{
+			PredefinedType = new IfcCableSegmentTypeEnum();
+		}
+		public IfcCableSegmentType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcCableSegmentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCartesianPoint
 	/// <para>ENTITY IfcCartesianPoint</para>
@@ -3949,8 +4608,15 @@
 	public class IfcCartesianPoint : IfcPoint, IfcTrimmingSelect
 	{
 		public List<IfcLengthMeasure> Coordinates { get; set; }
+		public IfcCartesianPoint() : base()
+		{
+			Coordinates = new List<IfcLengthMeasure>();
+		}
+		public IfcCartesianPoint(List<IfcLengthMeasure> Coordinates) : base ()
+		{
+			this.Coordinates = Coordinates;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCartesianPointList
 	/// <para>ENTITY IfcCartesianPointList</para>
@@ -3964,32 +4630,57 @@
 	/// <summary>
 	public abstract class IfcCartesianPointList : IfcGeometricRepresentationItem
 	{
+		public IfcCartesianPointList() : base()
+		{
+		}
+		public IfcCartesianPointList() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCartesianPointList2D
 	/// <para>ENTITY IfcCartesianPointList2D</para>
 	/// <para> SUBTYPE OF (IfcCartesianPointList);</para>
 	/// <para>	CoordList : LIST [1:?] OF LIST [2:2] OF IfcLengthMeasure;</para>
+	/// <para>	TagList : OPTIONAL LIST [1:?] OF IfcLabel;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCartesianPointList2D : IfcCartesianPointList
 	{
 		public List<List<IfcLengthMeasure >> CoordList { get; set; }
+		public List<IfcLabel>? TagList { get; set; }
+		public IfcCartesianPointList2D() : base()
+		{
+			CoordList = new List<List<IfcLengthMeasure >>();
+		}
+		public IfcCartesianPointList2D(List<List<IfcLengthMeasure >> CoordList, List<IfcLabel> TagList) : base ()
+		{
+			this.CoordList = CoordList;
+			this.TagList = TagList;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCartesianPointList3D
 	/// <para>ENTITY IfcCartesianPointList3D</para>
 	/// <para> SUBTYPE OF (IfcCartesianPointList);</para>
 	/// <para>	CoordList : LIST [1:?] OF LIST [3:3] OF IfcLengthMeasure;</para>
+	/// <para>	TagList : OPTIONAL LIST [1:?] OF IfcLabel;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCartesianPointList3D : IfcCartesianPointList
 	{
 		public List<List<IfcLengthMeasure >> CoordList { get; set; }
+		public List<IfcLabel>? TagList { get; set; }
+		public IfcCartesianPointList3D() : base()
+		{
+			CoordList = new List<List<IfcLengthMeasure >>();
+		}
+		public IfcCartesianPointList3D(List<List<IfcLengthMeasure >> CoordList, List<IfcLabel> TagList) : base ()
+		{
+			this.CoordList = CoordList;
+			this.TagList = TagList;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCartesianTransformationOperator
 	/// <para>ENTITY IfcCartesianTransformationOperator</para>
@@ -4010,12 +4701,22 @@
 	/// <summary>
 	public abstract class IfcCartesianTransformationOperator : IfcGeometricRepresentationItem
 	{
-		public IfcDirection Axis1 { get; set; }
-		public IfcDirection Axis2 { get; set; }
+		public IfcDirection? Axis1 { get; set; }
+		public IfcDirection? Axis2 { get; set; }
 		public IfcCartesianPoint LocalOrigin { get; set; }
-		public IfcReal Scale { get; set; }
+		public IfcReal? Scale { get; set; }
+		public IfcCartesianTransformationOperator() : base()
+		{
+			LocalOrigin = new IfcCartesianPoint();
+		}
+		public IfcCartesianTransformationOperator(IfcDirection Axis1, IfcDirection Axis2, IfcCartesianPoint LocalOrigin, IfcReal Scale) : base ()
+		{
+			this.Axis1 = Axis1;
+			this.Axis2 = Axis2;
+			this.LocalOrigin = LocalOrigin;
+			this.Scale = Scale;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCartesianTransformationOperator2D
 	/// <para>ENTITY IfcCartesianTransformationOperator2D</para>
@@ -4035,8 +4736,13 @@
 	/// <summary>
 	public class IfcCartesianTransformationOperator2D : IfcCartesianTransformationOperator
 	{
+		public IfcCartesianTransformationOperator2D() : base()
+		{
+		}
+		public IfcCartesianTransformationOperator2D(IfcDirection Axis1, IfcDirection Axis2, IfcCartesianPoint LocalOrigin, IfcReal Scale) : base (Axis1, Axis2, LocalOrigin, Scale)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCartesianTransformationOperator2DnonUniform
 	/// <para>ENTITY IfcCartesianTransformationOperator2DnonUniform</para>
@@ -4050,9 +4756,15 @@
 	/// <summary>
 	public class IfcCartesianTransformationOperator2DnonUniform : IfcCartesianTransformationOperator2D
 	{
-		public IfcReal Scale2 { get; set; }
+		public IfcReal? Scale2 { get; set; }
+		public IfcCartesianTransformationOperator2DnonUniform() : base()
+		{
+		}
+		public IfcCartesianTransformationOperator2DnonUniform(IfcDirection Axis1, IfcDirection Axis2, IfcCartesianPoint LocalOrigin, IfcReal Scale, IfcReal Scale2) : base (Axis1, Axis2, LocalOrigin, Scale)
+		{
+			this.Scale2 = Scale2;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCartesianTransformationOperator3D
 	/// <para>ENTITY IfcCartesianTransformationOperator3D</para>
@@ -4074,9 +4786,15 @@
 	/// <summary>
 	public class IfcCartesianTransformationOperator3D : IfcCartesianTransformationOperator
 	{
-		public IfcDirection Axis3 { get; set; }
+		public IfcDirection? Axis3 { get; set; }
+		public IfcCartesianTransformationOperator3D() : base()
+		{
+		}
+		public IfcCartesianTransformationOperator3D(IfcDirection Axis1, IfcDirection Axis2, IfcCartesianPoint LocalOrigin, IfcReal Scale, IfcDirection Axis3) : base (Axis1, Axis2, LocalOrigin, Scale)
+		{
+			this.Axis3 = Axis3;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCartesianTransformationOperator3DnonUniform
 	/// <para>ENTITY IfcCartesianTransformationOperator3DnonUniform</para>
@@ -4093,10 +4811,17 @@
 	/// <summary>
 	public class IfcCartesianTransformationOperator3DnonUniform : IfcCartesianTransformationOperator3D
 	{
-		public IfcReal Scale2 { get; set; }
-		public IfcReal Scale3 { get; set; }
+		public IfcReal? Scale2 { get; set; }
+		public IfcReal? Scale3 { get; set; }
+		public IfcCartesianTransformationOperator3DnonUniform() : base()
+		{
+		}
+		public IfcCartesianTransformationOperator3DnonUniform(IfcDirection Axis1, IfcDirection Axis2, IfcCartesianPoint LocalOrigin, IfcReal Scale, IfcDirection Axis3, IfcReal Scale2, IfcReal Scale3) : base (Axis1, Axis2, LocalOrigin, Scale, Axis3)
+		{
+			this.Scale2 = Scale2;
+			this.Scale3 = Scale3;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCenterLineProfileDef
 	/// <para>ENTITY IfcCenterLineProfileDef</para>
@@ -4107,8 +4832,15 @@
 	public class IfcCenterLineProfileDef : IfcArbitraryOpenProfileDef
 	{
 		public IfcPositiveLengthMeasure Thickness { get; set; }
+		public IfcCenterLineProfileDef() : base()
+		{
+			Thickness = new IfcPositiveLengthMeasure();
+		}
+		public IfcCenterLineProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcBoundedCurve Curve, IfcPositiveLengthMeasure Thickness) : base (ProfileType, ProfileName, Curve)
+		{
+			this.Thickness = Thickness;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcChiller
 	/// <para>ENTITY IfcChiller</para>
@@ -4119,14 +4851,20 @@
 	/// <para> (PredefinedType <> IfcChillerTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcChillerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCCHILLERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCHILLERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcChiller : IfcEnergyConversionDevice
 	{
-		public IfcChillerTypeEnum PredefinedType { get; set; }
+		public IfcChillerTypeEnum? PredefinedType { get; set; }
+		public IfcChiller() : base()
+		{
+		}
+		public IfcChiller(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcChillerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcChillerType
 	/// <para>ENTITY IfcChillerType</para>
@@ -4140,8 +4878,15 @@
 	public class IfcChillerType : IfcEnergyConversionDeviceType
 	{
 		public IfcChillerTypeEnum PredefinedType { get; set; }
+		public IfcChillerType() : base()
+		{
+			PredefinedType = new IfcChillerTypeEnum();
+		}
+		public IfcChillerType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcChillerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcChimney
 	/// <para>ENTITY IfcChimney</para>
@@ -4152,14 +4897,20 @@
 	/// <para> (PredefinedType <> IfcChimneyTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcChimneyTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCCHIMNEYTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCHIMNEYTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcChimney : IfcBuildingElement
 	{
-		public IfcChimneyTypeEnum PredefinedType { get; set; }
+		public IfcChimneyTypeEnum? PredefinedType { get; set; }
+		public IfcChimney() : base()
+		{
+		}
+		public IfcChimney(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcChimneyTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcChimneyType
 	/// <para>ENTITY IfcChimneyType</para>
@@ -4173,8 +4924,15 @@
 	public class IfcChimneyType : IfcBuildingElementType
 	{
 		public IfcChimneyTypeEnum PredefinedType { get; set; }
+		public IfcChimneyType() : base()
+		{
+			PredefinedType = new IfcChimneyTypeEnum();
+		}
+		public IfcChimneyType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcChimneyTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCircle
 	/// <para>ENTITY IfcCircle</para>
@@ -4185,8 +4943,15 @@
 	public class IfcCircle : IfcConic
 	{
 		public IfcPositiveLengthMeasure Radius { get; set; }
+		public IfcCircle() : base()
+		{
+			Radius = new IfcPositiveLengthMeasure();
+		}
+		public IfcCircle(IfcAxis2Placement Position, IfcPositiveLengthMeasure Radius) : base (Position)
+		{
+			this.Radius = Radius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCircleHollowProfileDef
 	/// <para>ENTITY IfcCircleHollowProfileDef</para>
@@ -4199,8 +4964,15 @@
 	public class IfcCircleHollowProfileDef : IfcCircleProfileDef
 	{
 		public IfcPositiveLengthMeasure WallThickness { get; set; }
+		public IfcCircleHollowProfileDef() : base()
+		{
+			WallThickness = new IfcPositiveLengthMeasure();
+		}
+		public IfcCircleHollowProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure Radius, IfcPositiveLengthMeasure WallThickness) : base (ProfileType, ProfileName, Position, Radius)
+		{
+			this.WallThickness = WallThickness;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCircleProfileDef
 	/// <para>ENTITY IfcCircleProfileDef</para>
@@ -4213,8 +4985,38 @@
 	public class IfcCircleProfileDef : IfcParameterizedProfileDef
 	{
 		public IfcPositiveLengthMeasure Radius { get; set; }
+		public IfcCircleProfileDef() : base()
+		{
+			Radius = new IfcPositiveLengthMeasure();
+		}
+		public IfcCircleProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure Radius) : base (ProfileType, ProfileName, Position)
+		{
+			this.Radius = Radius;
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcCircularArcSegment2D
+	/// <para>ENTITY IfcCircularArcSegment2D</para>
+	/// <para> SUBTYPE OF (IfcCurveSegment2D);</para>
+	/// <para>	Radius : IfcPositiveLengthMeasure;</para>
+	/// <para>	IsCCW : IfcBoolean;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcCircularArcSegment2D : IfcCurveSegment2D
+	{
+		public IfcPositiveLengthMeasure Radius { get; set; }
+		public IfcBoolean IsCCW { get; set; }
+		public IfcCircularArcSegment2D() : base()
+		{
+			Radius = new IfcPositiveLengthMeasure();
+			IsCCW = new IfcBoolean();
+		}
+		public IfcCircularArcSegment2D(IfcCartesianPoint StartPoint, IfcPlaneAngleMeasure StartDirection, IfcPositiveLengthMeasure SegmentLength, IfcPositiveLengthMeasure Radius, IfcBoolean IsCCW) : base (StartPoint, StartDirection, SegmentLength)
+		{
+			this.Radius = Radius;
+			this.IsCCW = IsCCW;
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcCivilElement
 	/// <para>ENTITY IfcCivilElement</para>
@@ -4223,8 +5025,13 @@
 	/// <summary>
 	public class IfcCivilElement : IfcElement
 	{
+		public IfcCivilElement() : base()
+		{
+		}
+		public IfcCivilElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCivilElementType
 	/// <para>ENTITY IfcCivilElementType</para>
@@ -4233,8 +5040,13 @@
 	/// <summary>
 	public class IfcCivilElementType : IfcElementType
 	{
+		public IfcCivilElementType() : base()
+		{
+		}
+		public IfcCivilElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcClassification
 	/// <para>ENTITY IfcClassification</para>
@@ -4253,15 +5065,28 @@
 	/// <summary>
 	public class IfcClassification : IfcExternalInformation, IfcClassificationReferenceSelect, IfcClassificationSelect
 	{
-		public IfcLabel Source { get; set; }
-		public IfcLabel Edition { get; set; }
-		public IfcDate EditionDate { get; set; }
+		public IfcLabel? Source { get; set; }
+		public IfcLabel? Edition { get; set; }
+		public IfcDate? EditionDate { get; set; }
 		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
-		public IfcURIReference Location { get; set; }
-		public List<IfcIdentifier> ReferenceTokens { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcURIReference? Location { get; set; }
+		public List<IfcIdentifier>? ReferenceTokens { get; set; }
+		public IfcClassification() : base()
+		{
+			Name = new IfcLabel();
+		}
+		public IfcClassification(IfcLabel Source, IfcLabel Edition, IfcDate EditionDate, IfcLabel Name, IfcText Description, IfcURIReference Location, List<IfcIdentifier> ReferenceTokens) : base ()
+		{
+			this.Source = Source;
+			this.Edition = Edition;
+			this.EditionDate = EditionDate;
+			this.Name = Name;
+			this.Description = Description;
+			this.Location = Location;
+			this.ReferenceTokens = ReferenceTokens;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcClassificationReference
 	/// <para>ENTITY IfcClassificationReference</para>
@@ -4276,11 +5101,19 @@
 	/// <summary>
 	public class IfcClassificationReference : IfcExternalReference, IfcClassificationReferenceSelect, IfcClassificationSelect
 	{
-		public IfcClassificationReferenceSelect ReferencedSource { get; set; }
-		public IfcText Description { get; set; }
-		public IfcIdentifier Sort { get; set; }
+		public IfcClassificationReferenceSelect? ReferencedSource { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcIdentifier? Sort { get; set; }
+		public IfcClassificationReference() : base()
+		{
+		}
+		public IfcClassificationReference(IfcURIReference Location, IfcIdentifier Identification, IfcLabel Name, IfcClassificationReferenceSelect ReferencedSource, IfcText Description, IfcIdentifier Sort) : base (Location, Identification, Name)
+		{
+			this.ReferencedSource = ReferencedSource;
+			this.Description = Description;
+			this.Sort = Sort;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcClosedShell
 	/// <para>ENTITY IfcClosedShell</para>
@@ -4289,8 +5122,13 @@
 	/// <summary>
 	public class IfcClosedShell : IfcConnectedFaceSet, IfcShell, IfcSolidOrShell
 	{
+		public IfcClosedShell() : base()
+		{
+		}
+		public IfcClosedShell(List<IfcFace> CfsFaces) : base (CfsFaces)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCoil
 	/// <para>ENTITY IfcCoil</para>
@@ -4301,14 +5139,20 @@
 	/// <para> (PredefinedType <> IfcCoilTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcCoilTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCCOILTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCOILTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCoil : IfcEnergyConversionDevice
 	{
-		public IfcCoilTypeEnum PredefinedType { get; set; }
+		public IfcCoilTypeEnum? PredefinedType { get; set; }
+		public IfcCoil() : base()
+		{
+		}
+		public IfcCoil(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcCoilTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCoilType
 	/// <para>ENTITY IfcCoilType</para>
@@ -4322,8 +5166,15 @@
 	public class IfcCoilType : IfcEnergyConversionDeviceType
 	{
 		public IfcCoilTypeEnum PredefinedType { get; set; }
+		public IfcCoilType() : base()
+		{
+			PredefinedType = new IfcCoilTypeEnum();
+		}
+		public IfcCoilType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcCoilTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcColourRgb
 	/// <para>ENTITY IfcColourRgb</para>
@@ -4338,8 +5189,19 @@
 		public IfcNormalisedRatioMeasure Red { get; set; }
 		public IfcNormalisedRatioMeasure Green { get; set; }
 		public IfcNormalisedRatioMeasure Blue { get; set; }
+		public IfcColourRgb() : base()
+		{
+			Red = new IfcNormalisedRatioMeasure();
+			Green = new IfcNormalisedRatioMeasure();
+			Blue = new IfcNormalisedRatioMeasure();
+		}
+		public IfcColourRgb(IfcLabel Name, IfcNormalisedRatioMeasure Red, IfcNormalisedRatioMeasure Green, IfcNormalisedRatioMeasure Blue) : base (Name)
+		{
+			this.Red = Red;
+			this.Green = Green;
+			this.Blue = Blue;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcColourRgbList
 	/// <para>ENTITY IfcColourRgbList</para>
@@ -4350,8 +5212,15 @@
 	public class IfcColourRgbList : IfcPresentationItem
 	{
 		public List<List<IfcNormalisedRatioMeasure >> ColourList { get; set; }
+		public IfcColourRgbList() : base()
+		{
+			ColourList = new List<List<IfcNormalisedRatioMeasure >>();
+		}
+		public IfcColourRgbList(List<List<IfcNormalisedRatioMeasure >> ColourList) : base ()
+		{
+			this.ColourList = ColourList;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcColourSpecification
 	/// <para>ENTITY IfcColourSpecification</para>
@@ -4363,9 +5232,15 @@
 	/// <summary>
 	public abstract class IfcColourSpecification : IfcPresentationItem, IfcColour
 	{
-		public IfcLabel Name { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcColourSpecification() : base()
+		{
+		}
+		public IfcColourSpecification(IfcLabel Name) : base ()
+		{
+			this.Name = Name;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcColumn
 	/// <para>ENTITY IfcColumn</para>
@@ -4378,29 +5253,40 @@
 	/// <para> (PredefinedType <> IfcColumnTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcColumnTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCCOLUMNTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCOLUMNTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcColumn : IfcBuildingElement
 	{
-		public IfcColumnTypeEnum PredefinedType { get; set; }
+		public IfcColumnTypeEnum? PredefinedType { get; set; }
+		public IfcColumn() : base()
+		{
+		}
+		public IfcColumn(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcColumnTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcColumnStandardCase
 	/// <para>ENTITY IfcColumnStandardCase</para>
 	/// <para> SUBTYPE OF (IfcColumn);</para>
 	/// <para> WHERE</para>
-	/// <para>	HasMaterialProfileSetUsage : SIZEOF (QUERY(temp <* USEDIN(SELF, 'IFC4.IFCRELASSOCIATES.RELATEDOBJECTS') |</para>
-	/// <para>              ('IFC4.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)) AND</para>
-	/// <para>              ('IFC4.IFCMATERIALPROFILESETUSAGE' IN TYPEOF(temp.RelatingMaterial))</para>
+	/// <para>	HasMaterialProfileSetUsage : SIZEOF (QUERY(temp <* USEDIN(SELF, 'IFC4X1.IFCRELASSOCIATES.RELATEDOBJECTS') |</para>
+	/// <para>              ('IFC4X1.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)) AND</para>
+	/// <para>              ('IFC4X1.IFCMATERIALPROFILESETUSAGE' IN TYPEOF(temp.RelatingMaterial))</para>
 	/// <para>              )) = 1;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcColumnStandardCase : IfcColumn
 	{
+		public IfcColumnStandardCase() : base()
+		{
+		}
+		public IfcColumnStandardCase(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcColumnTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, PredefinedType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcColumnType
 	/// <para>ENTITY IfcColumnType</para>
@@ -4414,8 +5300,15 @@
 	public class IfcColumnType : IfcBuildingElementType
 	{
 		public IfcColumnTypeEnum PredefinedType { get; set; }
+		public IfcColumnType() : base()
+		{
+			PredefinedType = new IfcColumnTypeEnum();
+		}
+		public IfcColumnType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcColumnTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCommunicationsAppliance
 	/// <para>ENTITY IfcCommunicationsAppliance</para>
@@ -4426,14 +5319,20 @@
 	/// <para> (PredefinedType <> IfcCommunicationsApplianceTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcCommunicationsApplianceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCCOMMUNICATIONSAPPLIANCETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCOMMUNICATIONSAPPLIANCETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCommunicationsAppliance : IfcFlowTerminal
 	{
-		public IfcCommunicationsApplianceTypeEnum PredefinedType { get; set; }
+		public IfcCommunicationsApplianceTypeEnum? PredefinedType { get; set; }
+		public IfcCommunicationsAppliance() : base()
+		{
+		}
+		public IfcCommunicationsAppliance(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcCommunicationsApplianceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCommunicationsApplianceType
 	/// <para>ENTITY IfcCommunicationsApplianceType</para>
@@ -4447,8 +5346,15 @@
 	public class IfcCommunicationsApplianceType : IfcFlowTerminalType
 	{
 		public IfcCommunicationsApplianceTypeEnum PredefinedType { get; set; }
+		public IfcCommunicationsApplianceType() : base()
+		{
+			PredefinedType = new IfcCommunicationsApplianceTypeEnum();
+		}
+		public IfcCommunicationsApplianceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcCommunicationsApplianceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcComplexProperty
 	/// <para>ENTITY IfcComplexProperty</para>
@@ -4464,8 +5370,17 @@
 	{
 		public IfcIdentifier UsageName { get; set; }
 		public List<IfcProperty> HasProperties { get; set; }
+		public IfcComplexProperty() : base()
+		{
+			UsageName = new IfcIdentifier();
+			HasProperties = new List<IfcProperty>();
+		}
+		public IfcComplexProperty(IfcIdentifier Name, IfcText Description, IfcIdentifier UsageName, List<IfcProperty> HasProperties) : base (Name, Description)
+		{
+			this.UsageName = UsageName;
+			this.HasProperties = HasProperties;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcComplexPropertyTemplate
 	/// <para>ENTITY IfcComplexPropertyTemplate</para>
@@ -4480,11 +5395,19 @@
 	/// <summary>
 	public class IfcComplexPropertyTemplate : IfcPropertyTemplate
 	{
-		public IfcLabel UsageName { get; set; }
-		public IfcComplexPropertyTemplateTypeEnum TemplateType { get; set; }
-		public List<IfcPropertyTemplate> HasPropertyTemplates { get; set; }
+		public IfcLabel? UsageName { get; set; }
+		public IfcComplexPropertyTemplateTypeEnum? TemplateType { get; set; }
+		public List<IfcPropertyTemplate>? HasPropertyTemplates { get; set; }
+		public IfcComplexPropertyTemplate() : base()
+		{
+		}
+		public IfcComplexPropertyTemplate(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel UsageName, IfcComplexPropertyTemplateTypeEnum TemplateType, List<IfcPropertyTemplate> HasPropertyTemplates) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.UsageName = UsageName;
+			this.TemplateType = TemplateType;
+			this.HasPropertyTemplates = HasPropertyTemplates;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCompositeCurve
 	/// <para>ENTITY IfcCompositeCurve</para>
@@ -4505,8 +5428,17 @@
 	{
 		public List<IfcCompositeCurveSegment> Segments { get; set; }
 		public IfcLogical SelfIntersect { get; set; }
+		public IfcCompositeCurve() : base()
+		{
+			Segments = new List<IfcCompositeCurveSegment>();
+			SelfIntersect = new IfcLogical();
+		}
+		public IfcCompositeCurve(List<IfcCompositeCurveSegment> Segments, IfcLogical SelfIntersect) : base ()
+		{
+			this.Segments = Segments;
+			this.SelfIntersect = SelfIntersect;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCompositeCurveOnSurface
 	/// <para>ENTITY IfcCompositeCurveOnSurface</para>
@@ -4521,8 +5453,13 @@
 	/// <summary>
 	public class IfcCompositeCurveOnSurface : IfcCompositeCurve, IfcCurveOnSurface
 	{
+		public IfcCompositeCurveOnSurface() : base()
+		{
+		}
+		public IfcCompositeCurveOnSurface(List<IfcCompositeCurveSegment> Segments, IfcLogical SelfIntersect) : base (Segments, SelfIntersect)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCompositeCurveSegment
 	/// <para>ENTITY IfcCompositeCurveSegment</para>
@@ -4537,7 +5474,7 @@
 	/// <para> INVERSE</para>
 	/// <para>	UsingCurves : SET [1:?] OF IfcCompositeCurve FOR Segments;</para>
 	/// <para> WHERE</para>
-	/// <para>	ParentIsBoundedCurve : ('IFC4.IFCBOUNDEDCURVE' IN TYPEOF(ParentCurve));</para>
+	/// <para>	ParentIsBoundedCurve : ('IFC4X1.IFCBOUNDEDCURVE' IN TYPEOF(ParentCurve));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCompositeCurveSegment : IfcGeometricRepresentationItem
@@ -4545,8 +5482,19 @@
 		public IfcTransitionCode Transition { get; set; }
 		public IfcBoolean SameSense { get; set; }
 		public IfcCurve ParentCurve { get; set; }
+		public IfcCompositeCurveSegment() : base()
+		{
+			Transition = new IfcTransitionCode();
+			SameSense = new IfcBoolean();
+			ParentCurve = new IfcCurve();
+		}
+		public IfcCompositeCurveSegment(IfcTransitionCode Transition, IfcBoolean SameSense, IfcCurve ParentCurve) : base ()
+		{
+			this.Transition = Transition;
+			this.SameSense = SameSense;
+			this.ParentCurve = ParentCurve;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCompositeProfileDef
 	/// <para>ENTITY IfcCompositeProfileDef</para>
@@ -4555,15 +5503,23 @@
 	/// <para>	Label : OPTIONAL IfcLabel;</para>
 	/// <para> WHERE</para>
 	/// <para>	InvariantProfileType : SIZEOF(QUERY(temp <* Profiles | temp.ProfileType <> Profiles[1].ProfileType)) = 0;</para>
-	/// <para>	NoRecursion : SIZEOF(QUERY(temp <* Profiles | 'IFC4.IFCCOMPOSITEPROFILEDEF' IN TYPEOF(temp))) = 0;</para>
+	/// <para>	NoRecursion : SIZEOF(QUERY(temp <* Profiles | 'IFC4X1.IFCCOMPOSITEPROFILEDEF' IN TYPEOF(temp))) = 0;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCompositeProfileDef : IfcProfileDef
 	{
 		public List<IfcProfileDef> Profiles { get; set; }
-		public IfcLabel Label { get; set; }
+		public IfcLabel? Label { get; set; }
+		public IfcCompositeProfileDef() : base()
+		{
+			Profiles = new List<IfcProfileDef>();
+		}
+		public IfcCompositeProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, List<IfcProfileDef> Profiles, IfcLabel Label) : base (ProfileType, ProfileName)
+		{
+			this.Profiles = Profiles;
+			this.Label = Label;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCompressor
 	/// <para>ENTITY IfcCompressor</para>
@@ -4574,14 +5530,20 @@
 	/// <para> (PredefinedType <> IfcCompressorTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcCompressorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCCOMPRESSORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCOMPRESSORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCompressor : IfcFlowMovingDevice
 	{
-		public IfcCompressorTypeEnum PredefinedType { get; set; }
+		public IfcCompressorTypeEnum? PredefinedType { get; set; }
+		public IfcCompressor() : base()
+		{
+		}
+		public IfcCompressor(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcCompressorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCompressorType
 	/// <para>ENTITY IfcCompressorType</para>
@@ -4595,8 +5557,15 @@
 	public class IfcCompressorType : IfcFlowMovingDeviceType
 	{
 		public IfcCompressorTypeEnum PredefinedType { get; set; }
+		public IfcCompressorType() : base()
+		{
+			PredefinedType = new IfcCompressorTypeEnum();
+		}
+		public IfcCompressorType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcCompressorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCondenser
 	/// <para>ENTITY IfcCondenser</para>
@@ -4607,14 +5576,20 @@
 	/// <para> (PredefinedType <> IfcCondenserTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcCondenserTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCCONDENSERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCONDENSERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCondenser : IfcEnergyConversionDevice
 	{
-		public IfcCondenserTypeEnum PredefinedType { get; set; }
+		public IfcCondenserTypeEnum? PredefinedType { get; set; }
+		public IfcCondenser() : base()
+		{
+		}
+		public IfcCondenser(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcCondenserTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCondenserType
 	/// <para>ENTITY IfcCondenserType</para>
@@ -4628,8 +5603,15 @@
 	public class IfcCondenserType : IfcEnergyConversionDeviceType
 	{
 		public IfcCondenserTypeEnum PredefinedType { get; set; }
+		public IfcCondenserType() : base()
+		{
+			PredefinedType = new IfcCondenserTypeEnum();
+		}
+		public IfcCondenserType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcCondenserTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConic
 	/// <para>ENTITY IfcConic</para>
@@ -4643,8 +5625,15 @@
 	public abstract class IfcConic : IfcCurve
 	{
 		public IfcAxis2Placement Position { get; set; }
+		public IfcConic() : base()
+		{
+			Position = new IfcAxis2Placement();
+		}
+		public IfcConic(IfcAxis2Placement Position) : base ()
+		{
+			this.Position = Position;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConnectedFaceSet
 	/// <para>ENTITY IfcConnectedFaceSet</para>
@@ -4658,8 +5647,15 @@
 	public class IfcConnectedFaceSet : IfcTopologicalRepresentationItem
 	{
 		public List<IfcFace> CfsFaces { get; set; }
+		public IfcConnectedFaceSet() : base()
+		{
+			CfsFaces = new List<IfcFace>();
+		}
+		public IfcConnectedFaceSet(List<IfcFace> CfsFaces) : base ()
+		{
+			this.CfsFaces = CfsFaces;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConnectionCurveGeometry
 	/// <para>ENTITY IfcConnectionCurveGeometry</para>
@@ -4671,9 +5667,17 @@
 	public class IfcConnectionCurveGeometry : IfcConnectionGeometry
 	{
 		public IfcCurveOrEdgeCurve CurveOnRelatingElement { get; set; }
-		public IfcCurveOrEdgeCurve CurveOnRelatedElement { get; set; }
+		public IfcCurveOrEdgeCurve? CurveOnRelatedElement { get; set; }
+		public IfcConnectionCurveGeometry() : base()
+		{
+			CurveOnRelatingElement = new IfcCurveOrEdgeCurve();
+		}
+		public IfcConnectionCurveGeometry(IfcCurveOrEdgeCurve CurveOnRelatingElement, IfcCurveOrEdgeCurve CurveOnRelatedElement) : base ()
+		{
+			this.CurveOnRelatingElement = CurveOnRelatingElement;
+			this.CurveOnRelatedElement = CurveOnRelatedElement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConnectionGeometry
 	/// <para>ENTITY IfcConnectionGeometry</para>
@@ -4686,8 +5690,13 @@
 	/// <summary>
 	public abstract class IfcConnectionGeometryENTITY
 	{
+		public IfcConnectionGeometry() : base()
+		{
+		}
+		public IfcConnectionGeometry() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConnectionPointEccentricity
 	/// <para>ENTITY IfcConnectionPointEccentricity</para>
@@ -4699,11 +5708,19 @@
 	/// <summary>
 	public class IfcConnectionPointEccentricity : IfcConnectionPointGeometry
 	{
-		public IfcLengthMeasure EccentricityInX { get; set; }
-		public IfcLengthMeasure EccentricityInY { get; set; }
-		public IfcLengthMeasure EccentricityInZ { get; set; }
+		public IfcLengthMeasure? EccentricityInX { get; set; }
+		public IfcLengthMeasure? EccentricityInY { get; set; }
+		public IfcLengthMeasure? EccentricityInZ { get; set; }
+		public IfcConnectionPointEccentricity() : base()
+		{
+		}
+		public IfcConnectionPointEccentricity(IfcPointOrVertexPoint PointOnRelatingElement, IfcPointOrVertexPoint PointOnRelatedElement, IfcLengthMeasure EccentricityInX, IfcLengthMeasure EccentricityInY, IfcLengthMeasure EccentricityInZ) : base (PointOnRelatingElement, PointOnRelatedElement)
+		{
+			this.EccentricityInX = EccentricityInX;
+			this.EccentricityInY = EccentricityInY;
+			this.EccentricityInZ = EccentricityInZ;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConnectionPointGeometry
 	/// <para>ENTITY IfcConnectionPointGeometry</para>
@@ -4717,9 +5734,17 @@
 	public class IfcConnectionPointGeometry : IfcConnectionGeometry
 	{
 		public IfcPointOrVertexPoint PointOnRelatingElement { get; set; }
-		public IfcPointOrVertexPoint PointOnRelatedElement { get; set; }
+		public IfcPointOrVertexPoint? PointOnRelatedElement { get; set; }
+		public IfcConnectionPointGeometry() : base()
+		{
+			PointOnRelatingElement = new IfcPointOrVertexPoint();
+		}
+		public IfcConnectionPointGeometry(IfcPointOrVertexPoint PointOnRelatingElement, IfcPointOrVertexPoint PointOnRelatedElement) : base ()
+		{
+			this.PointOnRelatingElement = PointOnRelatingElement;
+			this.PointOnRelatedElement = PointOnRelatedElement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConnectionSurfaceGeometry
 	/// <para>ENTITY IfcConnectionSurfaceGeometry</para>
@@ -4731,9 +5756,17 @@
 	public class IfcConnectionSurfaceGeometry : IfcConnectionGeometry
 	{
 		public IfcSurfaceOrFaceSurface SurfaceOnRelatingElement { get; set; }
-		public IfcSurfaceOrFaceSurface SurfaceOnRelatedElement { get; set; }
+		public IfcSurfaceOrFaceSurface? SurfaceOnRelatedElement { get; set; }
+		public IfcConnectionSurfaceGeometry() : base()
+		{
+			SurfaceOnRelatingElement = new IfcSurfaceOrFaceSurface();
+		}
+		public IfcConnectionSurfaceGeometry(IfcSurfaceOrFaceSurface SurfaceOnRelatingElement, IfcSurfaceOrFaceSurface SurfaceOnRelatedElement) : base ()
+		{
+			this.SurfaceOnRelatingElement = SurfaceOnRelatingElement;
+			this.SurfaceOnRelatedElement = SurfaceOnRelatedElement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConnectionVolumeGeometry
 	/// <para>ENTITY IfcConnectionVolumeGeometry</para>
@@ -4745,9 +5778,17 @@
 	public class IfcConnectionVolumeGeometry : IfcConnectionGeometry
 	{
 		public IfcSolidOrShell VolumeOnRelatingElement { get; set; }
-		public IfcSolidOrShell VolumeOnRelatedElement { get; set; }
+		public IfcSolidOrShell? VolumeOnRelatedElement { get; set; }
+		public IfcConnectionVolumeGeometry() : base()
+		{
+			VolumeOnRelatingElement = new IfcSolidOrShell();
+		}
+		public IfcConnectionVolumeGeometry(IfcSolidOrShell VolumeOnRelatingElement, IfcSolidOrShell VolumeOnRelatedElement) : base ()
+		{
+			this.VolumeOnRelatingElement = VolumeOnRelatingElement;
+			this.VolumeOnRelatedElement = VolumeOnRelatedElement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConstraint
 	/// <para>ENTITY IfcConstraint</para>
@@ -4772,14 +5813,28 @@
 	public abstract class IfcConstraintENTITY, IfcResourceObjectSelect
 	{
 		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
+		public IfcText? Description { get; set; }
 		public IfcConstraintEnum ConstraintGrade { get; set; }
-		public IfcLabel ConstraintSource { get; set; }
-		public IfcActorSelect CreatingActor { get; set; }
-		public IfcDateTime CreationTime { get; set; }
-		public IfcLabel UserDefinedGrade { get; set; }
+		public IfcLabel? ConstraintSource { get; set; }
+		public IfcActorSelect? CreatingActor { get; set; }
+		public IfcDateTime? CreationTime { get; set; }
+		public IfcLabel? UserDefinedGrade { get; set; }
+		public IfcConstraint() : base()
+		{
+			Name = new IfcLabel();
+			ConstraintGrade = new IfcConstraintEnum();
+		}
+		public IfcConstraint(IfcLabel Name, IfcText Description, IfcConstraintEnum ConstraintGrade, IfcLabel ConstraintSource, IfcActorSelect CreatingActor, IfcDateTime CreationTime, IfcLabel UserDefinedGrade) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+			this.ConstraintGrade = ConstraintGrade;
+			this.ConstraintSource = ConstraintSource;
+			this.CreatingActor = CreatingActor;
+			this.CreationTime = CreationTime;
+			this.UserDefinedGrade = UserDefinedGrade;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConstructionEquipmentResource
 	/// <para>ENTITY IfcConstructionEquipmentResource</para>
@@ -4793,9 +5848,15 @@
 	/// <summary>
 	public class IfcConstructionEquipmentResource : IfcConstructionResource
 	{
-		public IfcConstructionEquipmentResourceTypeEnum PredefinedType { get; set; }
+		public IfcConstructionEquipmentResourceTypeEnum? PredefinedType { get; set; }
+		public IfcConstructionEquipmentResource() : base()
+		{
+		}
+		public IfcConstructionEquipmentResource(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcText LongDescription, IfcResourceTime Usage, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity, IfcConstructionEquipmentResourceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification, LongDescription, Usage, BaseCosts, BaseQuantity)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConstructionEquipmentResourceType
 	/// <para>ENTITY IfcConstructionEquipmentResourceType</para>
@@ -4809,8 +5870,15 @@
 	public class IfcConstructionEquipmentResourceType : IfcConstructionResourceType
 	{
 		public IfcConstructionEquipmentResourceTypeEnum PredefinedType { get; set; }
+		public IfcConstructionEquipmentResourceType() : base()
+		{
+			PredefinedType = new IfcConstructionEquipmentResourceTypeEnum();
+		}
+		public IfcConstructionEquipmentResourceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcIdentifier Identification, IfcText LongDescription, IfcLabel ResourceType, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity, IfcConstructionEquipmentResourceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, Identification, LongDescription, ResourceType, BaseCosts, BaseQuantity)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConstructionMaterialResource
 	/// <para>ENTITY IfcConstructionMaterialResource</para>
@@ -4824,9 +5892,15 @@
 	/// <summary>
 	public class IfcConstructionMaterialResource : IfcConstructionResource
 	{
-		public IfcConstructionMaterialResourceTypeEnum PredefinedType { get; set; }
+		public IfcConstructionMaterialResourceTypeEnum? PredefinedType { get; set; }
+		public IfcConstructionMaterialResource() : base()
+		{
+		}
+		public IfcConstructionMaterialResource(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcText LongDescription, IfcResourceTime Usage, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity, IfcConstructionMaterialResourceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification, LongDescription, Usage, BaseCosts, BaseQuantity)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConstructionMaterialResourceType
 	/// <para>ENTITY IfcConstructionMaterialResourceType</para>
@@ -4840,8 +5914,15 @@
 	public class IfcConstructionMaterialResourceType : IfcConstructionResourceType
 	{
 		public IfcConstructionMaterialResourceTypeEnum PredefinedType { get; set; }
+		public IfcConstructionMaterialResourceType() : base()
+		{
+			PredefinedType = new IfcConstructionMaterialResourceTypeEnum();
+		}
+		public IfcConstructionMaterialResourceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcIdentifier Identification, IfcText LongDescription, IfcLabel ResourceType, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity, IfcConstructionMaterialResourceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, Identification, LongDescription, ResourceType, BaseCosts, BaseQuantity)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConstructionProductResource
 	/// <para>ENTITY IfcConstructionProductResource</para>
@@ -4855,9 +5936,15 @@
 	/// <summary>
 	public class IfcConstructionProductResource : IfcConstructionResource
 	{
-		public IfcConstructionProductResourceTypeEnum PredefinedType { get; set; }
+		public IfcConstructionProductResourceTypeEnum? PredefinedType { get; set; }
+		public IfcConstructionProductResource() : base()
+		{
+		}
+		public IfcConstructionProductResource(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcText LongDescription, IfcResourceTime Usage, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity, IfcConstructionProductResourceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification, LongDescription, Usage, BaseCosts, BaseQuantity)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConstructionProductResourceType
 	/// <para>ENTITY IfcConstructionProductResourceType</para>
@@ -4871,8 +5958,15 @@
 	public class IfcConstructionProductResourceType : IfcConstructionResourceType
 	{
 		public IfcConstructionProductResourceTypeEnum PredefinedType { get; set; }
+		public IfcConstructionProductResourceType() : base()
+		{
+			PredefinedType = new IfcConstructionProductResourceTypeEnum();
+		}
+		public IfcConstructionProductResourceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcIdentifier Identification, IfcText LongDescription, IfcLabel ResourceType, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity, IfcConstructionProductResourceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, Identification, LongDescription, ResourceType, BaseCosts, BaseQuantity)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConstructionResource
 	/// <para>ENTITY IfcConstructionResource</para>
@@ -4891,11 +5985,19 @@
 	/// <summary>
 	public abstract class IfcConstructionResource : IfcResource
 	{
-		public IfcResourceTime Usage { get; set; }
-		public List<IfcAppliedValue> BaseCosts { get; set; }
-		public IfcPhysicalQuantity BaseQuantity { get; set; }
+		public IfcResourceTime? Usage { get; set; }
+		public List<IfcAppliedValue>? BaseCosts { get; set; }
+		public IfcPhysicalQuantity? BaseQuantity { get; set; }
+		public IfcConstructionResource() : base()
+		{
+		}
+		public IfcConstructionResource(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcText LongDescription, IfcResourceTime Usage, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification, LongDescription)
+		{
+			this.Usage = Usage;
+			this.BaseCosts = BaseCosts;
+			this.BaseQuantity = BaseQuantity;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConstructionResourceType
 	/// <para>ENTITY IfcConstructionResourceType</para>
@@ -4913,10 +6015,17 @@
 	/// <summary>
 	public abstract class IfcConstructionResourceType : IfcTypeResource
 	{
-		public List<IfcAppliedValue> BaseCosts { get; set; }
-		public IfcPhysicalQuantity BaseQuantity { get; set; }
+		public List<IfcAppliedValue>? BaseCosts { get; set; }
+		public IfcPhysicalQuantity? BaseQuantity { get; set; }
+		public IfcConstructionResourceType() : base()
+		{
+		}
+		public IfcConstructionResourceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcIdentifier Identification, IfcText LongDescription, IfcLabel ResourceType, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, Identification, LongDescription, ResourceType)
+		{
+			this.BaseCosts = BaseCosts;
+			this.BaseQuantity = BaseQuantity;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcContext
 	/// <para>ENTITY IfcContext</para>
@@ -4936,13 +6045,23 @@
 	/// <summary>
 	public abstract class IfcContext : IfcObjectDefinition
 	{
-		public IfcLabel ObjectType { get; set; }
-		public IfcLabel LongName { get; set; }
-		public IfcLabel Phase { get; set; }
-		public List<IfcRepresentationContext> RepresentationContexts { get; set; }
-		public IfcUnitAssignment UnitsInContext { get; set; }
+		public IfcLabel? ObjectType { get; set; }
+		public IfcLabel? LongName { get; set; }
+		public IfcLabel? Phase { get; set; }
+		public List<IfcRepresentationContext>? RepresentationContexts { get; set; }
+		public IfcUnitAssignment? UnitsInContext { get; set; }
+		public IfcContext() : base()
+		{
+		}
+		public IfcContext(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcLabel LongName, IfcLabel Phase, List<IfcRepresentationContext> RepresentationContexts, IfcUnitAssignment UnitsInContext) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.ObjectType = ObjectType;
+			this.LongName = LongName;
+			this.Phase = Phase;
+			this.RepresentationContexts = RepresentationContexts;
+			this.UnitsInContext = UnitsInContext;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcContextDependentUnit
 	/// <para>ENTITY IfcContextDependentUnit</para>
@@ -4955,8 +6074,15 @@
 	public class IfcContextDependentUnit : IfcNamedUnit, IfcResourceObjectSelect
 	{
 		public IfcLabel Name { get; set; }
+		public IfcContextDependentUnit() : base()
+		{
+			Name = new IfcLabel();
+		}
+		public IfcContextDependentUnit(IfcDimensionalExponents Dimensions, IfcUnitEnum UnitType, IfcLabel Name) : base (Dimensions, UnitType)
+		{
+			this.Name = Name;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcControl
 	/// <para>ENTITY IfcControl</para>
@@ -4977,9 +6103,15 @@
 	/// <summary>
 	public abstract class IfcControl : IfcObject
 	{
-		public IfcIdentifier Identification { get; set; }
+		public IfcIdentifier? Identification { get; set; }
+		public IfcControl() : base()
+		{
+		}
+		public IfcControl(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.Identification = Identification;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcController
 	/// <para>ENTITY IfcController</para>
@@ -4990,14 +6122,20 @@
 	/// <para> (PredefinedType <> IfcControllerTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcControllerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>('IFC4.IFCCONTROLLERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCCONTROLLERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcController : IfcDistributionControlElement
 	{
-		public IfcControllerTypeEnum PredefinedType { get; set; }
+		public IfcControllerTypeEnum? PredefinedType { get; set; }
+		public IfcController() : base()
+		{
+		}
+		public IfcController(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcControllerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcControllerType
 	/// <para>ENTITY IfcControllerType</para>
@@ -5011,8 +6149,15 @@
 	public class IfcControllerType : IfcDistributionControlElementType
 	{
 		public IfcControllerTypeEnum PredefinedType { get; set; }
+		public IfcControllerType() : base()
+		{
+			PredefinedType = new IfcControllerTypeEnum();
+		}
+		public IfcControllerType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcControllerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConversionBasedUnit
 	/// <para>ENTITY IfcConversionBasedUnit</para>
@@ -5029,8 +6174,17 @@
 	{
 		public IfcLabel Name { get; set; }
 		public IfcMeasureWithUnit ConversionFactor { get; set; }
+		public IfcConversionBasedUnit() : base()
+		{
+			Name = new IfcLabel();
+			ConversionFactor = new IfcMeasureWithUnit();
+		}
+		public IfcConversionBasedUnit(IfcDimensionalExponents Dimensions, IfcUnitEnum UnitType, IfcLabel Name, IfcMeasureWithUnit ConversionFactor) : base (Dimensions, UnitType)
+		{
+			this.Name = Name;
+			this.ConversionFactor = ConversionFactor;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcConversionBasedUnitWithOffset
 	/// <para>ENTITY IfcConversionBasedUnitWithOffset</para>
@@ -5041,8 +6195,15 @@
 	public class IfcConversionBasedUnitWithOffset : IfcConversionBasedUnit
 	{
 		public IfcReal ConversionOffset { get; set; }
+		public IfcConversionBasedUnitWithOffset() : base()
+		{
+			ConversionOffset = new IfcReal();
+		}
+		public IfcConversionBasedUnitWithOffset(IfcDimensionalExponents Dimensions, IfcUnitEnum UnitType, IfcLabel Name, IfcMeasureWithUnit ConversionFactor, IfcReal ConversionOffset) : base (Dimensions, UnitType, Name, ConversionFactor)
+		{
+			this.ConversionOffset = ConversionOffset;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCooledBeam
 	/// <para>ENTITY IfcCooledBeam</para>
@@ -5053,14 +6214,20 @@
 	/// <para> (PredefinedType <> IfcCooledBeamTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcCooledBeamTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCCOOLEDBEAMTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCOOLEDBEAMTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCooledBeam : IfcEnergyConversionDevice
 	{
-		public IfcCooledBeamTypeEnum PredefinedType { get; set; }
+		public IfcCooledBeamTypeEnum? PredefinedType { get; set; }
+		public IfcCooledBeam() : base()
+		{
+		}
+		public IfcCooledBeam(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcCooledBeamTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCooledBeamType
 	/// <para>ENTITY IfcCooledBeamType</para>
@@ -5074,8 +6241,15 @@
 	public class IfcCooledBeamType : IfcEnergyConversionDeviceType
 	{
 		public IfcCooledBeamTypeEnum PredefinedType { get; set; }
+		public IfcCooledBeamType() : base()
+		{
+			PredefinedType = new IfcCooledBeamTypeEnum();
+		}
+		public IfcCooledBeamType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcCooledBeamTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCoolingTower
 	/// <para>ENTITY IfcCoolingTower</para>
@@ -5086,14 +6260,20 @@
 	/// <para> (PredefinedType <> IfcCoolingTowerTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcCoolingTowerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCCOOLINGTOWERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCOOLINGTOWERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCoolingTower : IfcEnergyConversionDevice
 	{
-		public IfcCoolingTowerTypeEnum PredefinedType { get; set; }
+		public IfcCoolingTowerTypeEnum? PredefinedType { get; set; }
+		public IfcCoolingTower() : base()
+		{
+		}
+		public IfcCoolingTower(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcCoolingTowerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCoolingTowerType
 	/// <para>ENTITY IfcCoolingTowerType</para>
@@ -5107,8 +6287,15 @@
 	public class IfcCoolingTowerType : IfcEnergyConversionDeviceType
 	{
 		public IfcCoolingTowerTypeEnum PredefinedType { get; set; }
+		public IfcCoolingTowerType() : base()
+		{
+			PredefinedType = new IfcCoolingTowerTypeEnum();
+		}
+		public IfcCoolingTowerType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcCoolingTowerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCoordinateOperation
 	/// <para>ENTITY IfcCoordinateOperation</para>
@@ -5122,8 +6309,17 @@
 	{
 		public IfcCoordinateReferenceSystemSelect SourceCRS { get; set; }
 		public IfcCoordinateReferenceSystem TargetCRS { get; set; }
+		public IfcCoordinateOperation() : base()
+		{
+			SourceCRS = new IfcCoordinateReferenceSystemSelect();
+			TargetCRS = new IfcCoordinateReferenceSystem();
+		}
+		public IfcCoordinateOperation(IfcCoordinateReferenceSystemSelect SourceCRS, IfcCoordinateReferenceSystem TargetCRS) : base ()
+		{
+			this.SourceCRS = SourceCRS;
+			this.TargetCRS = TargetCRS;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCoordinateReferenceSystem
 	/// <para>ENTITY IfcCoordinateReferenceSystem</para>
@@ -5140,11 +6336,21 @@
 	public abstract class IfcCoordinateReferenceSystemENTITY, IfcCoordinateReferenceSystemSelect
 	{
 		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
-		public IfcIdentifier GeodeticDatum { get; set; }
-		public IfcIdentifier VerticalDatum { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcIdentifier? GeodeticDatum { get; set; }
+		public IfcIdentifier? VerticalDatum { get; set; }
+		public IfcCoordinateReferenceSystem() : base()
+		{
+			Name = new IfcLabel();
+		}
+		public IfcCoordinateReferenceSystem(IfcLabel Name, IfcText Description, IfcIdentifier GeodeticDatum, IfcIdentifier VerticalDatum) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+			this.GeodeticDatum = GeodeticDatum;
+			this.VerticalDatum = VerticalDatum;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCostItem
 	/// <para>ENTITY IfcCostItem</para>
@@ -5156,11 +6362,19 @@
 	/// <summary>
 	public class IfcCostItem : IfcControl
 	{
-		public IfcCostItemTypeEnum PredefinedType { get; set; }
-		public List<IfcCostValue> CostValues { get; set; }
-		public List<IfcPhysicalQuantity> CostQuantities { get; set; }
+		public IfcCostItemTypeEnum? PredefinedType { get; set; }
+		public List<IfcCostValue>? CostValues { get; set; }
+		public List<IfcPhysicalQuantity>? CostQuantities { get; set; }
+		public IfcCostItem() : base()
+		{
+		}
+		public IfcCostItem(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcCostItemTypeEnum PredefinedType, List<IfcCostValue> CostValues, List<IfcPhysicalQuantity> CostQuantities) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification)
+		{
+			this.PredefinedType = PredefinedType;
+			this.CostValues = CostValues;
+			this.CostQuantities = CostQuantities;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCostSchedule
 	/// <para>ENTITY IfcCostSchedule</para>
@@ -5173,12 +6387,21 @@
 	/// <summary>
 	public class IfcCostSchedule : IfcControl
 	{
-		public IfcCostScheduleTypeEnum PredefinedType { get; set; }
-		public IfcLabel Status { get; set; }
-		public IfcDateTime SubmittedOn { get; set; }
-		public IfcDateTime UpdateDate { get; set; }
+		public IfcCostScheduleTypeEnum? PredefinedType { get; set; }
+		public IfcLabel? Status { get; set; }
+		public IfcDateTime? SubmittedOn { get; set; }
+		public IfcDateTime? UpdateDate { get; set; }
+		public IfcCostSchedule() : base()
+		{
+		}
+		public IfcCostSchedule(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcCostScheduleTypeEnum PredefinedType, IfcLabel Status, IfcDateTime SubmittedOn, IfcDateTime UpdateDate) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification)
+		{
+			this.PredefinedType = PredefinedType;
+			this.Status = Status;
+			this.SubmittedOn = SubmittedOn;
+			this.UpdateDate = UpdateDate;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCostValue
 	/// <para>ENTITY IfcCostValue</para>
@@ -5187,8 +6410,13 @@
 	/// <summary>
 	public class IfcCostValue : IfcAppliedValue
 	{
+		public IfcCostValue() : base()
+		{
+		}
+		public IfcCostValue(IfcLabel Name, IfcText Description, IfcAppliedValueSelect AppliedValue, IfcMeasureWithUnit UnitBasis, IfcDate ApplicableDate, IfcDate FixedUntilDate, IfcLabel Category, IfcLabel Condition, IfcArithmeticOperatorEnum ArithmeticOperator, List<IfcAppliedValue> Components) : base (Name, Description, AppliedValue, UnitBasis, ApplicableDate, FixedUntilDate, Category, Condition, ArithmeticOperator, Components)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCovering
 	/// <para>ENTITY IfcCovering</para>
@@ -5202,14 +6430,20 @@
 	/// <para> (PredefinedType <> IfcCoveringTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcCoveringTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCCOVERINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCOVERINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCovering : IfcBuildingElement
 	{
-		public IfcCoveringTypeEnum PredefinedType { get; set; }
+		public IfcCoveringTypeEnum? PredefinedType { get; set; }
+		public IfcCovering() : base()
+		{
+		}
+		public IfcCovering(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcCoveringTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCoveringType
 	/// <para>ENTITY IfcCoveringType</para>
@@ -5223,8 +6457,15 @@
 	public class IfcCoveringType : IfcBuildingElementType
 	{
 		public IfcCoveringTypeEnum PredefinedType { get; set; }
+		public IfcCoveringType() : base()
+		{
+			PredefinedType = new IfcCoveringTypeEnum();
+		}
+		public IfcCoveringType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcCoveringTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCrewResource
 	/// <para>ENTITY IfcCrewResource</para>
@@ -5238,9 +6479,15 @@
 	/// <summary>
 	public class IfcCrewResource : IfcConstructionResource
 	{
-		public IfcCrewResourceTypeEnum PredefinedType { get; set; }
+		public IfcCrewResourceTypeEnum? PredefinedType { get; set; }
+		public IfcCrewResource() : base()
+		{
+		}
+		public IfcCrewResource(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcText LongDescription, IfcResourceTime Usage, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity, IfcCrewResourceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification, LongDescription, Usage, BaseCosts, BaseQuantity)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCrewResourceType
 	/// <para>ENTITY IfcCrewResourceType</para>
@@ -5254,8 +6501,15 @@
 	public class IfcCrewResourceType : IfcConstructionResourceType
 	{
 		public IfcCrewResourceTypeEnum PredefinedType { get; set; }
+		public IfcCrewResourceType() : base()
+		{
+			PredefinedType = new IfcCrewResourceTypeEnum();
+		}
+		public IfcCrewResourceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcIdentifier Identification, IfcText LongDescription, IfcLabel ResourceType, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity, IfcCrewResourceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, Identification, LongDescription, ResourceType, BaseCosts, BaseQuantity)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCsgPrimitive3D
 	/// <para>ENTITY IfcCsgPrimitive3D</para>
@@ -5274,8 +6528,15 @@
 	public abstract class IfcCsgPrimitive3D : IfcGeometricRepresentationItem, IfcBooleanOperand, IfcCsgSelect
 	{
 		public IfcAxis2Placement3D Position { get; set; }
+		public IfcCsgPrimitive3D() : base()
+		{
+			Position = new IfcAxis2Placement3D();
+		}
+		public IfcCsgPrimitive3D(IfcAxis2Placement3D Position) : base ()
+		{
+			this.Position = Position;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCsgSolid
 	/// <para>ENTITY IfcCsgSolid</para>
@@ -5286,8 +6547,15 @@
 	public class IfcCsgSolid : IfcSolidModel
 	{
 		public IfcCsgSelect TreeRootExpression { get; set; }
+		public IfcCsgSolid() : base()
+		{
+			TreeRootExpression = new IfcCsgSelect();
+		}
+		public IfcCsgSolid(IfcCsgSelect TreeRootExpression) : base ()
+		{
+			this.TreeRootExpression = TreeRootExpression;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCurrencyRelationship
 	/// <para>ENTITY IfcCurrencyRelationship</para>
@@ -5304,10 +6572,23 @@
 		public IfcMonetaryUnit RelatingMonetaryUnit { get; set; }
 		public IfcMonetaryUnit RelatedMonetaryUnit { get; set; }
 		public IfcPositiveRatioMeasure ExchangeRate { get; set; }
-		public IfcDateTime RateDateTime { get; set; }
-		public IfcLibraryInformation RateSource { get; set; }
+		public IfcDateTime? RateDateTime { get; set; }
+		public IfcLibraryInformation? RateSource { get; set; }
+		public IfcCurrencyRelationship() : base()
+		{
+			RelatingMonetaryUnit = new IfcMonetaryUnit();
+			RelatedMonetaryUnit = new IfcMonetaryUnit();
+			ExchangeRate = new IfcPositiveRatioMeasure();
+		}
+		public IfcCurrencyRelationship(IfcLabel Name, IfcText Description, IfcMonetaryUnit RelatingMonetaryUnit, IfcMonetaryUnit RelatedMonetaryUnit, IfcPositiveRatioMeasure ExchangeRate, IfcDateTime RateDateTime, IfcLibraryInformation RateSource) : base (Name, Description)
+		{
+			this.RelatingMonetaryUnit = RelatingMonetaryUnit;
+			this.RelatedMonetaryUnit = RelatedMonetaryUnit;
+			this.ExchangeRate = ExchangeRate;
+			this.RateDateTime = RateDateTime;
+			this.RateSource = RateSource;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCurtainWall
 	/// <para>ENTITY IfcCurtainWall</para>
@@ -5318,14 +6599,20 @@
 	/// <para> (PredefinedType <> IfcCurtainWallTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcCurtainWallTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCCURTAINWALLTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCCURTAINWALLTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCurtainWall : IfcBuildingElement
 	{
-		public IfcCurtainWallTypeEnum PredefinedType { get; set; }
+		public IfcCurtainWallTypeEnum? PredefinedType { get; set; }
+		public IfcCurtainWall() : base()
+		{
+		}
+		public IfcCurtainWall(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcCurtainWallTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCurtainWallType
 	/// <para>ENTITY IfcCurtainWallType</para>
@@ -5339,8 +6626,15 @@
 	public class IfcCurtainWallType : IfcBuildingElementType
 	{
 		public IfcCurtainWallTypeEnum PredefinedType { get; set; }
+		public IfcCurtainWallType() : base()
+		{
+			PredefinedType = new IfcCurtainWallTypeEnum();
+		}
+		public IfcCurtainWallType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcCurtainWallTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCurve
 	/// <para>ENTITY IfcCurve</para>
@@ -5348,8 +6642,7 @@
 	/// <para>    (IfcBoundedCurve</para>
 	/// <para>    ,IfcConic</para>
 	/// <para>    ,IfcLine</para>
-	/// <para>    ,IfcOffsetCurve2D</para>
-	/// <para>    ,IfcOffsetCurve3D</para>
+	/// <para>    ,IfcOffsetCurve</para>
 	/// <para>    ,IfcPcurve</para>
 	/// <para>    ,IfcSurfaceCurve))</para>
 	/// <para> SUBTYPE OF (IfcGeometricRepresentationItem);</para>
@@ -5359,8 +6652,13 @@
 	/// <summary>
 	public abstract class IfcCurve : IfcGeometricRepresentationItem, IfcGeometricSetSelect
 	{
+		public IfcCurve() : base()
+		{
+		}
+		public IfcCurve() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCurveBoundedPlane
 	/// <para>ENTITY IfcCurveBoundedPlane</para>
@@ -5375,8 +6673,19 @@
 		public IfcPlane BasisSurface { get; set; }
 		public IfcCurve OuterBoundary { get; set; }
 		public List<IfcCurve> InnerBoundaries { get; set; }
+		public IfcCurveBoundedPlane() : base()
+		{
+			BasisSurface = new IfcPlane();
+			OuterBoundary = new IfcCurve();
+			InnerBoundaries = new List<IfcCurve>();
+		}
+		public IfcCurveBoundedPlane(IfcPlane BasisSurface, IfcCurve OuterBoundary, List<IfcCurve> InnerBoundaries) : base ()
+		{
+			this.BasisSurface = BasisSurface;
+			this.OuterBoundary = OuterBoundary;
+			this.InnerBoundaries = InnerBoundaries;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCurveBoundedSurface
 	/// <para>ENTITY IfcCurveBoundedSurface</para>
@@ -5391,8 +6700,50 @@
 		public IfcSurface BasisSurface { get; set; }
 		public List<IfcBoundaryCurve> Boundaries { get; set; }
 		public IfcBoolean ImplicitOuter { get; set; }
+		public IfcCurveBoundedSurface() : base()
+		{
+			BasisSurface = new IfcSurface();
+			Boundaries = new List<IfcBoundaryCurve>();
+			ImplicitOuter = new IfcBoolean();
+		}
+		public IfcCurveBoundedSurface(IfcSurface BasisSurface, List<IfcBoundaryCurve> Boundaries, IfcBoolean ImplicitOuter) : base ()
+		{
+			this.BasisSurface = BasisSurface;
+			this.Boundaries = Boundaries;
+			this.ImplicitOuter = ImplicitOuter;
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcCurveSegment2D
+	/// <para>ENTITY IfcCurveSegment2D</para>
+	/// <para> ABSTRACT SUPERTYPE OF (ONEOF</para>
+	/// <para>    (IfcCircularArcSegment2D</para>
+	/// <para>    ,IfcLineSegment2D</para>
+	/// <para>    ,IfcTransitionCurveSegment2D))</para>
+	/// <para> SUBTYPE OF (IfcBoundedCurve);</para>
+	/// <para>	StartPoint : IfcCartesianPoint;</para>
+	/// <para>	StartDirection : IfcPlaneAngleMeasure;</para>
+	/// <para>	SegmentLength : IfcPositiveLengthMeasure;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public abstract class IfcCurveSegment2D : IfcBoundedCurve
+	{
+		public IfcCartesianPoint StartPoint { get; set; }
+		public IfcPlaneAngleMeasure StartDirection { get; set; }
+		public IfcPositiveLengthMeasure SegmentLength { get; set; }
+		public IfcCurveSegment2D() : base()
+		{
+			StartPoint = new IfcCartesianPoint();
+			StartDirection = new IfcPlaneAngleMeasure();
+			SegmentLength = new IfcPositiveLengthMeasure();
+		}
+		public IfcCurveSegment2D(IfcCartesianPoint StartPoint, IfcPlaneAngleMeasure StartDirection, IfcPositiveLengthMeasure SegmentLength) : base ()
+		{
+			this.StartPoint = StartPoint;
+			this.StartDirection = StartDirection;
+			this.SegmentLength = SegmentLength;
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcCurveStyle
 	/// <para>ENTITY IfcCurveStyle</para>
@@ -5403,20 +6754,29 @@
 	/// <para>	ModelOrDraughting : OPTIONAL IfcBoolean;</para>
 	/// <para> WHERE</para>
 	/// <para>	MeasureOfWidth : (NOT(EXISTS(CurveWidth))) OR</para>
-	/// <para>('IFC4.IFCPOSITIVELENGTHMEASURE' IN TYPEOF(CurveWidth)) OR </para>
-	/// <para> (('IFC4.IFCDESCRIPTIVEMEASURE' IN TYPEOF(CurveWidth)) AND</para>
+	/// <para>('IFC4X1.IFCPOSITIVELENGTHMEASURE' IN TYPEOF(CurveWidth)) OR </para>
+	/// <para> (('IFC4X1.IFCDESCRIPTIVEMEASURE' IN TYPEOF(CurveWidth)) AND</para>
 	/// <para> (CurveWidth = 'by layer'));</para>
 	/// <para>	IdentifiableCurveStyle : EXISTS(CurveFont) OR EXISTS(CurveWidth) OR EXISTS(CurveColour);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcCurveStyle : IfcPresentationStyle, IfcPresentationStyleSelect
 	{
-		public IfcCurveFontOrScaledCurveFontSelect CurveFont { get; set; }
-		public IfcSizeSelect CurveWidth { get; set; }
-		public IfcColour CurveColour { get; set; }
-		public IfcBoolean ModelOrDraughting { get; set; }
+		public IfcCurveFontOrScaledCurveFontSelect? CurveFont { get; set; }
+		public IfcSizeSelect? CurveWidth { get; set; }
+		public IfcColour? CurveColour { get; set; }
+		public IfcBoolean? ModelOrDraughting { get; set; }
+		public IfcCurveStyle() : base()
+		{
+		}
+		public IfcCurveStyle(IfcLabel Name, IfcCurveFontOrScaledCurveFontSelect CurveFont, IfcSizeSelect CurveWidth, IfcColour CurveColour, IfcBoolean ModelOrDraughting) : base (Name)
+		{
+			this.CurveFont = CurveFont;
+			this.CurveWidth = CurveWidth;
+			this.CurveColour = CurveColour;
+			this.ModelOrDraughting = ModelOrDraughting;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCurveStyleFont
 	/// <para>ENTITY IfcCurveStyleFont</para>
@@ -5427,10 +6787,18 @@
 	/// <summary>
 	public class IfcCurveStyleFont : IfcPresentationItem, IfcCurveStyleFontSelect
 	{
-		public IfcLabel Name { get; set; }
+		public IfcLabel? Name { get; set; }
 		public List<IfcCurveStyleFontPattern> PatternList { get; set; }
+		public IfcCurveStyleFont() : base()
+		{
+			PatternList = new List<IfcCurveStyleFontPattern>();
+		}
+		public IfcCurveStyleFont(IfcLabel Name, List<IfcCurveStyleFontPattern> PatternList) : base ()
+		{
+			this.Name = Name;
+			this.PatternList = PatternList;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCurveStyleFontAndScaling
 	/// <para>ENTITY IfcCurveStyleFontAndScaling</para>
@@ -5442,11 +6810,21 @@
 	/// <summary>
 	public class IfcCurveStyleFontAndScaling : IfcPresentationItem, IfcCurveFontOrScaledCurveFontSelect
 	{
-		public IfcLabel Name { get; set; }
+		public IfcLabel? Name { get; set; }
 		public IfcCurveStyleFontSelect CurveFont { get; set; }
 		public IfcPositiveRatioMeasure CurveFontScaling { get; set; }
+		public IfcCurveStyleFontAndScaling() : base()
+		{
+			CurveFont = new IfcCurveStyleFontSelect();
+			CurveFontScaling = new IfcPositiveRatioMeasure();
+		}
+		public IfcCurveStyleFontAndScaling(IfcLabel Name, IfcCurveStyleFontSelect CurveFont, IfcPositiveRatioMeasure CurveFontScaling) : base ()
+		{
+			this.Name = Name;
+			this.CurveFont = CurveFont;
+			this.CurveFontScaling = CurveFontScaling;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCurveStyleFontPattern
 	/// <para>ENTITY IfcCurveStyleFontPattern</para>
@@ -5461,8 +6839,17 @@
 	{
 		public IfcLengthMeasure VisibleSegmentLength { get; set; }
 		public IfcPositiveLengthMeasure InvisibleSegmentLength { get; set; }
+		public IfcCurveStyleFontPattern() : base()
+		{
+			VisibleSegmentLength = new IfcLengthMeasure();
+			InvisibleSegmentLength = new IfcPositiveLengthMeasure();
+		}
+		public IfcCurveStyleFontPattern(IfcLengthMeasure VisibleSegmentLength, IfcPositiveLengthMeasure InvisibleSegmentLength) : base ()
+		{
+			this.VisibleSegmentLength = VisibleSegmentLength;
+			this.InvisibleSegmentLength = InvisibleSegmentLength;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcCylindricalSurface
 	/// <para>ENTITY IfcCylindricalSurface</para>
@@ -5473,8 +6860,15 @@
 	public class IfcCylindricalSurface : IfcElementarySurface
 	{
 		public IfcPositiveLengthMeasure Radius { get; set; }
+		public IfcCylindricalSurface() : base()
+		{
+			Radius = new IfcPositiveLengthMeasure();
+		}
+		public IfcCylindricalSurface(IfcAxis2Placement3D Position, IfcPositiveLengthMeasure Radius) : base (Position)
+		{
+			this.Radius = Radius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDamper
 	/// <para>ENTITY IfcDamper</para>
@@ -5485,14 +6879,20 @@
 	/// <para> (PredefinedType <> IfcDamperTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcDamperTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCDAMPERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCDAMPERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcDamper : IfcFlowController
 	{
-		public IfcDamperTypeEnum PredefinedType { get; set; }
+		public IfcDamperTypeEnum? PredefinedType { get; set; }
+		public IfcDamper() : base()
+		{
+		}
+		public IfcDamper(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcDamperTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDamperType
 	/// <para>ENTITY IfcDamperType</para>
@@ -5506,8 +6906,15 @@
 	public class IfcDamperType : IfcFlowControllerType
 	{
 		public IfcDamperTypeEnum PredefinedType { get; set; }
+		public IfcDamperType() : base()
+		{
+			PredefinedType = new IfcDamperTypeEnum();
+		}
+		public IfcDamperType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcDamperTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDerivedProfileDef
 	/// <para>ENTITY IfcDerivedProfileDef</para>
@@ -5525,9 +6932,19 @@
 	{
 		public IfcProfileDef ParentProfile { get; set; }
 		public IfcCartesianTransformationOperator2D Operator { get; set; }
-		public IfcLabel Label { get; set; }
+		public IfcLabel? Label { get; set; }
+		public IfcDerivedProfileDef() : base()
+		{
+			ParentProfile = new IfcProfileDef();
+			Operator = new IfcCartesianTransformationOperator2D();
+		}
+		public IfcDerivedProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcProfileDef ParentProfile, IfcCartesianTransformationOperator2D Operator, IfcLabel Label) : base (ProfileType, ProfileName)
+		{
+			this.ParentProfile = ParentProfile;
+			this.Operator = Operator;
+			this.Label = Label;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDerivedUnit;
 	/// <para>ENTITY IfcDerivedUnit;</para>
@@ -5547,9 +6964,19 @@
 	{
 		public List<IfcDerivedUnitElement> Elements { get; set; }
 		public IfcDerivedUnitEnum UnitType { get; set; }
-		public IfcLabel UserDefinedType { get; set; }
+		public IfcLabel? UserDefinedType { get; set; }
+		public IfcDerivedUnit() : base()
+		{
+			Elements = new List<IfcDerivedUnitElement>();
+			UnitType = new IfcDerivedUnitEnum();
+		}
+		public IfcDerivedUnit(List<IfcDerivedUnitElement> Elements, IfcDerivedUnitEnum UnitType, IfcLabel UserDefinedType) : base ()
+		{
+			this.Elements = Elements;
+			this.UnitType = UnitType;
+			this.UserDefinedType = UserDefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDerivedUnitElement;
 	/// <para>ENTITY IfcDerivedUnitElement;</para>
@@ -5561,8 +6988,17 @@
 	{
 		public IfcNamedUnit Unit { get; set; }
 		public INTEGER Exponent { get; set; }
+		public IfcDerivedUnitElement() : base()
+		{
+			Unit = new IfcNamedUnit();
+			Exponent = new INTEGER();
+		}
+		public IfcDerivedUnitElement(IfcNamedUnit Unit, INTEGER Exponent) : base ()
+		{
+			this.Unit = Unit;
+			this.Exponent = Exponent;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDimensionalExponents;
 	/// <para>ENTITY IfcDimensionalExponents;</para>
@@ -5584,8 +7020,27 @@
 		public INTEGER ThermodynamicTemperatureExponent { get; set; }
 		public INTEGER AmountOfSubstanceExponent { get; set; }
 		public INTEGER LuminousIntensityExponent { get; set; }
+		public IfcDimensionalExponents() : base()
+		{
+			LengthExponent = new INTEGER();
+			MassExponent = new INTEGER();
+			TimeExponent = new INTEGER();
+			ElectricCurrentExponent = new INTEGER();
+			ThermodynamicTemperatureExponent = new INTEGER();
+			AmountOfSubstanceExponent = new INTEGER();
+			LuminousIntensityExponent = new INTEGER();
+		}
+		public IfcDimensionalExponents(INTEGER LengthExponent, INTEGER MassExponent, INTEGER TimeExponent, INTEGER ElectricCurrentExponent, INTEGER ThermodynamicTemperatureExponent, INTEGER AmountOfSubstanceExponent, INTEGER LuminousIntensityExponent) : base ()
+		{
+			this.LengthExponent = LengthExponent;
+			this.MassExponent = MassExponent;
+			this.TimeExponent = TimeExponent;
+			this.ElectricCurrentExponent = ElectricCurrentExponent;
+			this.ThermodynamicTemperatureExponent = ThermodynamicTemperatureExponent;
+			this.AmountOfSubstanceExponent = AmountOfSubstanceExponent;
+			this.LuminousIntensityExponent = LuminousIntensityExponent;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDirection
 	/// <para>ENTITY IfcDirection</para>
@@ -5600,8 +7055,15 @@
 	public class IfcDirection : IfcGeometricRepresentationItem, IfcGridPlacementDirectionSelect, IfcVectorOrDirection
 	{
 		public List<IfcReal> DirectionRatios { get; set; }
+		public IfcDirection() : base()
+		{
+			DirectionRatios = new List<IfcReal>();
+		}
+		public IfcDirection(List<IfcReal> DirectionRatios) : base ()
+		{
+			this.DirectionRatios = DirectionRatios;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDiscreteAccessory
 	/// <para>ENTITY IfcDiscreteAccessory</para>
@@ -5612,14 +7074,20 @@
 	/// <para>(PredefinedType <> IfcDiscreteAccessoryTypeEnum.USERDEFINED) OR</para>
 	/// <para>((PredefinedType = IfcDiscreteAccessoryTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>('IFC4.IFCDISCRETEACCESSORYTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCDISCRETEACCESSORYTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcDiscreteAccessory : IfcElementComponent
 	{
-		public IfcDiscreteAccessoryTypeEnum PredefinedType { get; set; }
+		public IfcDiscreteAccessoryTypeEnum? PredefinedType { get; set; }
+		public IfcDiscreteAccessory() : base()
+		{
+		}
+		public IfcDiscreteAccessory(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcDiscreteAccessoryTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDiscreteAccessoryType
 	/// <para>ENTITY IfcDiscreteAccessoryType</para>
@@ -5633,8 +7101,46 @@
 	public class IfcDiscreteAccessoryType : IfcElementComponentType
 	{
 		public IfcDiscreteAccessoryTypeEnum PredefinedType { get; set; }
+		public IfcDiscreteAccessoryType() : base()
+		{
+			PredefinedType = new IfcDiscreteAccessoryTypeEnum();
+		}
+		public IfcDiscreteAccessoryType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcDiscreteAccessoryTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcDistanceExpression
+	/// <para>ENTITY IfcDistanceExpression</para>
+	/// <para> SUBTYPE OF (IfcGeometricRepresentationItem);</para>
+	/// <para>	DistanceAlong : IfcLengthMeasure;</para>
+	/// <para>	OffsetLateral : OPTIONAL IfcLengthMeasure;</para>
+	/// <para>	OffsetVertical : OPTIONAL IfcLengthMeasure;</para>
+	/// <para>	OffsetLongitudinal : OPTIONAL IfcLengthMeasure;</para>
+	/// <para>	AlongHorizontal : OPTIONAL IfcBoolean;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcDistanceExpression : IfcGeometricRepresentationItem
+	{
+		public IfcLengthMeasure DistanceAlong { get; set; }
+		public IfcLengthMeasure? OffsetLateral { get; set; }
+		public IfcLengthMeasure? OffsetVertical { get; set; }
+		public IfcLengthMeasure? OffsetLongitudinal { get; set; }
+		public IfcBoolean? AlongHorizontal { get; set; }
+		public IfcDistanceExpression() : base()
+		{
+			DistanceAlong = new IfcLengthMeasure();
+		}
+		public IfcDistanceExpression(IfcLengthMeasure DistanceAlong, IfcLengthMeasure OffsetLateral, IfcLengthMeasure OffsetVertical, IfcLengthMeasure OffsetLongitudinal, IfcBoolean AlongHorizontal) : base ()
+		{
+			this.DistanceAlong = DistanceAlong;
+			this.OffsetLateral = OffsetLateral;
+			this.OffsetVertical = OffsetVertical;
+			this.OffsetLongitudinal = OffsetLongitudinal;
+			this.AlongHorizontal = AlongHorizontal;
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcDistributionChamberElement
 	/// <para>ENTITY IfcDistributionChamberElement</para>
@@ -5645,14 +7151,20 @@
 	/// <para> (PredefinedType <> IfcDistributionChamberElementTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcDistributionChamberElementTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>('IFC4.IFCDISTRIBUTIONCHAMBERELEMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCDISTRIBUTIONCHAMBERELEMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcDistributionChamberElement : IfcDistributionFlowElement
 	{
-		public IfcDistributionChamberElementTypeEnum PredefinedType { get; set; }
+		public IfcDistributionChamberElementTypeEnum? PredefinedType { get; set; }
+		public IfcDistributionChamberElement() : base()
+		{
+		}
+		public IfcDistributionChamberElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcDistributionChamberElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDistributionChamberElementType
 	/// <para>ENTITY IfcDistributionChamberElementType</para>
@@ -5666,8 +7178,15 @@
 	public class IfcDistributionChamberElementType : IfcDistributionFlowElementType
 	{
 		public IfcDistributionChamberElementTypeEnum PredefinedType { get; set; }
+		public IfcDistributionChamberElementType() : base()
+		{
+			PredefinedType = new IfcDistributionChamberElementTypeEnum();
+		}
+		public IfcDistributionChamberElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcDistributionChamberElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDistributionCircuit
 	/// <para>ENTITY IfcDistributionCircuit</para>
@@ -5676,8 +7195,13 @@
 	/// <summary>
 	public class IfcDistributionCircuit : IfcDistributionSystem
 	{
+		public IfcDistributionCircuit() : base()
+		{
+		}
+		public IfcDistributionCircuit(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcLabel LongName, IfcDistributionSystemEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, LongName, PredefinedType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDistributionControlElement
 	/// <para>ENTITY IfcDistributionControlElement</para>
@@ -5696,8 +7220,13 @@
 	/// <summary>
 	public class IfcDistributionControlElement : IfcDistributionElement
 	{
+		public IfcDistributionControlElement() : base()
+		{
+		}
+		public IfcDistributionControlElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDistributionControlElementType
 	/// <para>ENTITY IfcDistributionControlElementType</para>
@@ -5714,8 +7243,13 @@
 	/// <summary>
 	public abstract class IfcDistributionControlElementType : IfcDistributionElementType
 	{
+		public IfcDistributionControlElementType() : base()
+		{
+		}
+		public IfcDistributionControlElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDistributionElement
 	/// <para>ENTITY IfcDistributionElement</para>
@@ -5729,8 +7263,13 @@
 	/// <summary>
 	public class IfcDistributionElement : IfcElement
 	{
+		public IfcDistributionElement() : base()
+		{
+		}
+		public IfcDistributionElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDistributionElementType
 	/// <para>ENTITY IfcDistributionElementType</para>
@@ -5742,8 +7281,13 @@
 	/// <summary>
 	public class IfcDistributionElementType : IfcElementType
 	{
+		public IfcDistributionElementType() : base()
+		{
+		}
+		public IfcDistributionElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDistributionFlowElement
 	/// <para>ENTITY IfcDistributionFlowElement</para>
@@ -5764,8 +7308,13 @@
 	/// <summary>
 	public class IfcDistributionFlowElement : IfcDistributionElement
 	{
+		public IfcDistributionFlowElement() : base()
+		{
+		}
+		public IfcDistributionFlowElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDistributionFlowElementType
 	/// <para>ENTITY IfcDistributionFlowElementType</para>
@@ -5784,8 +7333,13 @@
 	/// <summary>
 	public abstract class IfcDistributionFlowElementType : IfcDistributionElementType
 	{
+		public IfcDistributionFlowElementType() : base()
+		{
+		}
+		public IfcDistributionFlowElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDistributionPort
 	/// <para>ENTITY IfcDistributionPort</para>
@@ -5797,11 +7351,19 @@
 	/// <summary>
 	public class IfcDistributionPort : IfcPort
 	{
-		public IfcFlowDirectionEnum FlowDirection { get; set; }
-		public IfcDistributionPortTypeEnum PredefinedType { get; set; }
-		public IfcDistributionSystemEnum SystemType { get; set; }
+		public IfcFlowDirectionEnum? FlowDirection { get; set; }
+		public IfcDistributionPortTypeEnum? PredefinedType { get; set; }
+		public IfcDistributionSystemEnum? SystemType { get; set; }
+		public IfcDistributionPort() : base()
+		{
+		}
+		public IfcDistributionPort(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcFlowDirectionEnum FlowDirection, IfcDistributionPortTypeEnum PredefinedType, IfcDistributionSystemEnum SystemType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+			this.FlowDirection = FlowDirection;
+			this.PredefinedType = PredefinedType;
+			this.SystemType = SystemType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDistributionSystem
 	/// <para>ENTITY IfcDistributionSystem</para>
@@ -5814,10 +7376,17 @@
 	/// <summary>
 	public class IfcDistributionSystem : IfcSystem
 	{
-		public IfcLabel LongName { get; set; }
-		public IfcDistributionSystemEnum PredefinedType { get; set; }
+		public IfcLabel? LongName { get; set; }
+		public IfcDistributionSystemEnum? PredefinedType { get; set; }
+		public IfcDistributionSystem() : base()
+		{
+		}
+		public IfcDistributionSystem(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcLabel LongName, IfcDistributionSystemEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.LongName = LongName;
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDocumentInformation
 	/// <para>ENTITY IfcDocumentInformation</para>
@@ -5850,23 +7419,47 @@
 	{
 		public IfcIdentifier Identification { get; set; }
 		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
-		public IfcURIReference Location { get; set; }
-		public IfcText Purpose { get; set; }
-		public IfcText IntendedUse { get; set; }
-		public IfcText Scope { get; set; }
-		public IfcLabel Revision { get; set; }
-		public IfcActorSelect DocumentOwner { get; set; }
-		public List<IfcActorSelect> Editors { get; set; }
-		public IfcDateTime CreationTime { get; set; }
-		public IfcDateTime LastRevisionTime { get; set; }
-		public IfcIdentifier ElectronicFormat { get; set; }
-		public IfcDate ValidFrom { get; set; }
-		public IfcDate ValidUntil { get; set; }
-		public IfcDocumentConfidentialityEnum Confidentiality { get; set; }
-		public IfcDocumentStatusEnum Status { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcURIReference? Location { get; set; }
+		public IfcText? Purpose { get; set; }
+		public IfcText? IntendedUse { get; set; }
+		public IfcText? Scope { get; set; }
+		public IfcLabel? Revision { get; set; }
+		public IfcActorSelect? DocumentOwner { get; set; }
+		public List<IfcActorSelect>? Editors { get; set; }
+		public IfcDateTime? CreationTime { get; set; }
+		public IfcDateTime? LastRevisionTime { get; set; }
+		public IfcIdentifier? ElectronicFormat { get; set; }
+		public IfcDate? ValidFrom { get; set; }
+		public IfcDate? ValidUntil { get; set; }
+		public IfcDocumentConfidentialityEnum? Confidentiality { get; set; }
+		public IfcDocumentStatusEnum? Status { get; set; }
+		public IfcDocumentInformation() : base()
+		{
+			Identification = new IfcIdentifier();
+			Name = new IfcLabel();
+		}
+		public IfcDocumentInformation(IfcIdentifier Identification, IfcLabel Name, IfcText Description, IfcURIReference Location, IfcText Purpose, IfcText IntendedUse, IfcText Scope, IfcLabel Revision, IfcActorSelect DocumentOwner, List<IfcActorSelect> Editors, IfcDateTime CreationTime, IfcDateTime LastRevisionTime, IfcIdentifier ElectronicFormat, IfcDate ValidFrom, IfcDate ValidUntil, IfcDocumentConfidentialityEnum Confidentiality, IfcDocumentStatusEnum Status) : base ()
+		{
+			this.Identification = Identification;
+			this.Name = Name;
+			this.Description = Description;
+			this.Location = Location;
+			this.Purpose = Purpose;
+			this.IntendedUse = IntendedUse;
+			this.Scope = Scope;
+			this.Revision = Revision;
+			this.DocumentOwner = DocumentOwner;
+			this.Editors = Editors;
+			this.CreationTime = CreationTime;
+			this.LastRevisionTime = LastRevisionTime;
+			this.ElectronicFormat = ElectronicFormat;
+			this.ValidFrom = ValidFrom;
+			this.ValidUntil = ValidUntil;
+			this.Confidentiality = Confidentiality;
+			this.Status = Status;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDocumentInformationRelationship
 	/// <para>ENTITY IfcDocumentInformationRelationship</para>
@@ -5880,9 +7473,19 @@
 	{
 		public IfcDocumentInformation RelatingDocument { get; set; }
 		public List<IfcDocumentInformation> RelatedDocuments { get; set; }
-		public IfcLabel RelationshipType { get; set; }
+		public IfcLabel? RelationshipType { get; set; }
+		public IfcDocumentInformationRelationship() : base()
+		{
+			RelatingDocument = new IfcDocumentInformation();
+			RelatedDocuments = new List<IfcDocumentInformation>();
+		}
+		public IfcDocumentInformationRelationship(IfcLabel Name, IfcText Description, IfcDocumentInformation RelatingDocument, List<IfcDocumentInformation> RelatedDocuments, IfcLabel RelationshipType) : base (Name, Description)
+		{
+			this.RelatingDocument = RelatingDocument;
+			this.RelatedDocuments = RelatedDocuments;
+			this.RelationshipType = RelationshipType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDocumentReference
 	/// <para>ENTITY IfcDocumentReference</para>
@@ -5897,10 +7500,17 @@
 	/// <summary>
 	public class IfcDocumentReference : IfcExternalReference, IfcDocumentSelect
 	{
-		public IfcText Description { get; set; }
-		public IfcDocumentInformation ReferencedDocument { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcDocumentInformation? ReferencedDocument { get; set; }
+		public IfcDocumentReference() : base()
+		{
+		}
+		public IfcDocumentReference(IfcURIReference Location, IfcIdentifier Identification, IfcLabel Name, IfcText Description, IfcDocumentInformation ReferencedDocument) : base (Location, Identification, Name)
+		{
+			this.Description = Description;
+			this.ReferencedDocument = ReferencedDocument;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDoor
 	/// <para>ENTITY IfcDoor</para>
@@ -5914,18 +7524,28 @@
 	/// <para>	UserDefinedOperationType : OPTIONAL IfcLabel;</para>
 	/// <para> WHERE</para>
 	/// <para>	CorrectStyleAssigned : (SIZEOF(IsTypedBy) = 0) </para>
-	/// <para>OR ('IFC4.IFCDOORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>OR ('IFC4X1.IFCDOORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcDoor : IfcBuildingElement
 	{
-		public IfcPositiveLengthMeasure OverallHeight { get; set; }
-		public IfcPositiveLengthMeasure OverallWidth { get; set; }
-		public IfcDoorTypeEnum PredefinedType { get; set; }
-		public IfcDoorTypeOperationEnum OperationType { get; set; }
-		public IfcLabel UserDefinedOperationType { get; set; }
+		public IfcPositiveLengthMeasure? OverallHeight { get; set; }
+		public IfcPositiveLengthMeasure? OverallWidth { get; set; }
+		public IfcDoorTypeEnum? PredefinedType { get; set; }
+		public IfcDoorTypeOperationEnum? OperationType { get; set; }
+		public IfcLabel? UserDefinedOperationType { get; set; }
+		public IfcDoor() : base()
+		{
+		}
+		public IfcDoor(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcPositiveLengthMeasure OverallHeight, IfcPositiveLengthMeasure OverallWidth, IfcDoorTypeEnum PredefinedType, IfcDoorTypeOperationEnum OperationType, IfcLabel UserDefinedOperationType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.OverallHeight = OverallHeight;
+			this.OverallWidth = OverallWidth;
+			this.PredefinedType = PredefinedType;
+			this.OperationType = OperationType;
+			this.UserDefinedOperationType = UserDefinedOperationType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDoorLiningProperties
 	/// <para>ENTITY IfcDoorLiningProperties</para>
@@ -5953,29 +7573,47 @@
 	/// <para>	WR35 : (EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) </para>
 	/// <para>AND </para>
 	/// <para>(</para>
-	/// <para> ('IFC4.IFCDOORTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
+	/// <para> ('IFC4X1.IFCDOORTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
 	/// <para>  OR</para>
-	/// <para> ('IFC4.IFCDOORSTYLE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
+	/// <para> ('IFC4X1.IFCDOORSTYLE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
 	/// <para>);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcDoorLiningProperties : IfcPreDefinedPropertySet
 	{
-		public IfcPositiveLengthMeasure LiningDepth { get; set; }
-		public IfcNonNegativeLengthMeasure LiningThickness { get; set; }
-		public IfcPositiveLengthMeasure ThresholdDepth { get; set; }
-		public IfcNonNegativeLengthMeasure ThresholdThickness { get; set; }
-		public IfcNonNegativeLengthMeasure TransomThickness { get; set; }
-		public IfcLengthMeasure TransomOffset { get; set; }
-		public IfcLengthMeasure LiningOffset { get; set; }
-		public IfcLengthMeasure ThresholdOffset { get; set; }
-		public IfcPositiveLengthMeasure CasingThickness { get; set; }
-		public IfcPositiveLengthMeasure CasingDepth { get; set; }
-		public IfcShapeAspect ShapeAspectStyle { get; set; }
-		public IfcLengthMeasure LiningToPanelOffsetX { get; set; }
-		public IfcLengthMeasure LiningToPanelOffsetY { get; set; }
+		public IfcPositiveLengthMeasure? LiningDepth { get; set; }
+		public IfcNonNegativeLengthMeasure? LiningThickness { get; set; }
+		public IfcPositiveLengthMeasure? ThresholdDepth { get; set; }
+		public IfcNonNegativeLengthMeasure? ThresholdThickness { get; set; }
+		public IfcNonNegativeLengthMeasure? TransomThickness { get; set; }
+		public IfcLengthMeasure? TransomOffset { get; set; }
+		public IfcLengthMeasure? LiningOffset { get; set; }
+		public IfcLengthMeasure? ThresholdOffset { get; set; }
+		public IfcPositiveLengthMeasure? CasingThickness { get; set; }
+		public IfcPositiveLengthMeasure? CasingDepth { get; set; }
+		public IfcShapeAspect? ShapeAspectStyle { get; set; }
+		public IfcLengthMeasure? LiningToPanelOffsetX { get; set; }
+		public IfcLengthMeasure? LiningToPanelOffsetY { get; set; }
+		public IfcDoorLiningProperties() : base()
+		{
+		}
+		public IfcDoorLiningProperties(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcPositiveLengthMeasure LiningDepth, IfcNonNegativeLengthMeasure LiningThickness, IfcPositiveLengthMeasure ThresholdDepth, IfcNonNegativeLengthMeasure ThresholdThickness, IfcNonNegativeLengthMeasure TransomThickness, IfcLengthMeasure TransomOffset, IfcLengthMeasure LiningOffset, IfcLengthMeasure ThresholdOffset, IfcPositiveLengthMeasure CasingThickness, IfcPositiveLengthMeasure CasingDepth, IfcShapeAspect ShapeAspectStyle, IfcLengthMeasure LiningToPanelOffsetX, IfcLengthMeasure LiningToPanelOffsetY) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.LiningDepth = LiningDepth;
+			this.LiningThickness = LiningThickness;
+			this.ThresholdDepth = ThresholdDepth;
+			this.ThresholdThickness = ThresholdThickness;
+			this.TransomThickness = TransomThickness;
+			this.TransomOffset = TransomOffset;
+			this.LiningOffset = LiningOffset;
+			this.ThresholdOffset = ThresholdOffset;
+			this.CasingThickness = CasingThickness;
+			this.CasingDepth = CasingDepth;
+			this.ShapeAspectStyle = ShapeAspectStyle;
+			this.LiningToPanelOffsetX = LiningToPanelOffsetX;
+			this.LiningToPanelOffsetY = LiningToPanelOffsetY;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDoorPanelProperties
 	/// <para>ENTITY IfcDoorPanelProperties</para>
@@ -5989,21 +7627,33 @@
 	/// <para>	ApplicableToType : (EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) </para>
 	/// <para>AND </para>
 	/// <para>(</para>
-	/// <para> ('IFC4.IFCDOORTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
+	/// <para> ('IFC4X1.IFCDOORTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
 	/// <para>  OR</para>
-	/// <para> ('IFC4.IFCDOORSTYLE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
+	/// <para> ('IFC4X1.IFCDOORSTYLE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
 	/// <para>);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcDoorPanelProperties : IfcPreDefinedPropertySet
 	{
-		public IfcPositiveLengthMeasure PanelDepth { get; set; }
+		public IfcPositiveLengthMeasure? PanelDepth { get; set; }
 		public IfcDoorPanelOperationEnum PanelOperation { get; set; }
-		public IfcNormalisedRatioMeasure PanelWidth { get; set; }
+		public IfcNormalisedRatioMeasure? PanelWidth { get; set; }
 		public IfcDoorPanelPositionEnum PanelPosition { get; set; }
-		public IfcShapeAspect ShapeAspectStyle { get; set; }
+		public IfcShapeAspect? ShapeAspectStyle { get; set; }
+		public IfcDoorPanelProperties() : base()
+		{
+			PanelOperation = new IfcDoorPanelOperationEnum();
+			PanelPosition = new IfcDoorPanelPositionEnum();
+		}
+		public IfcDoorPanelProperties(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcPositiveLengthMeasure PanelDepth, IfcDoorPanelOperationEnum PanelOperation, IfcNormalisedRatioMeasure PanelWidth, IfcDoorPanelPositionEnum PanelPosition, IfcShapeAspect ShapeAspectStyle) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.PanelDepth = PanelDepth;
+			this.PanelOperation = PanelOperation;
+			this.PanelWidth = PanelWidth;
+			this.PanelPosition = PanelPosition;
+			this.ShapeAspectStyle = ShapeAspectStyle;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDoorStandardCase
 	/// <para>ENTITY IfcDoorStandardCase</para>
@@ -6012,8 +7662,13 @@
 	/// <summary>
 	public class IfcDoorStandardCase : IfcDoor
 	{
+		public IfcDoorStandardCase() : base()
+		{
+		}
+		public IfcDoorStandardCase(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcPositiveLengthMeasure OverallHeight, IfcPositiveLengthMeasure OverallWidth, IfcDoorTypeEnum PredefinedType, IfcDoorTypeOperationEnum OperationType, IfcLabel UserDefinedOperationType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, OverallHeight, OverallWidth, PredefinedType, OperationType, UserDefinedOperationType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDoorStyle
 	/// <para>ENTITY IfcDoorStyle</para>
@@ -6030,8 +7685,21 @@
 		public IfcDoorStyleConstructionEnum ConstructionType { get; set; }
 		public IfcBoolean ParameterTakesPrecedence { get; set; }
 		public IfcBoolean Sizeable { get; set; }
+		public IfcDoorStyle() : base()
+		{
+			OperationType = new IfcDoorStyleOperationEnum();
+			ConstructionType = new IfcDoorStyleConstructionEnum();
+			ParameterTakesPrecedence = new IfcBoolean();
+			Sizeable = new IfcBoolean();
+		}
+		public IfcDoorStyle(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcDoorStyleOperationEnum OperationType, IfcDoorStyleConstructionEnum ConstructionType, IfcBoolean ParameterTakesPrecedence, IfcBoolean Sizeable) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets)
+		{
+			this.OperationType = OperationType;
+			this.ConstructionType = ConstructionType;
+			this.ParameterTakesPrecedence = ParameterTakesPrecedence;
+			this.Sizeable = Sizeable;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDoorType
 	/// <para>ENTITY IfcDoorType</para>
@@ -6049,10 +7717,21 @@
 	{
 		public IfcDoorTypeEnum PredefinedType { get; set; }
 		public IfcDoorTypeOperationEnum OperationType { get; set; }
-		public IfcBoolean ParameterTakesPrecedence { get; set; }
-		public IfcLabel UserDefinedOperationType { get; set; }
+		public IfcBoolean? ParameterTakesPrecedence { get; set; }
+		public IfcLabel? UserDefinedOperationType { get; set; }
+		public IfcDoorType() : base()
+		{
+			PredefinedType = new IfcDoorTypeEnum();
+			OperationType = new IfcDoorTypeOperationEnum();
+		}
+		public IfcDoorType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcDoorTypeEnum PredefinedType, IfcDoorTypeOperationEnum OperationType, IfcBoolean ParameterTakesPrecedence, IfcLabel UserDefinedOperationType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.OperationType = OperationType;
+			this.ParameterTakesPrecedence = ParameterTakesPrecedence;
+			this.UserDefinedOperationType = UserDefinedOperationType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDraughtingPreDefinedColour
 	/// <para>ENTITY IfcDraughtingPreDefinedColour</para>
@@ -6064,8 +7743,13 @@
 	/// <summary>
 	public class IfcDraughtingPreDefinedColour : IfcPreDefinedColour
 	{
+		public IfcDraughtingPreDefinedColour() : base()
+		{
+		}
+		public IfcDraughtingPreDefinedColour(IfcLabel Name) : base (Name)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDraughtingPreDefinedCurveFont
 	/// <para>ENTITY IfcDraughtingPreDefinedCurveFont</para>
@@ -6082,8 +7766,13 @@
 	/// <summary>
 	public class IfcDraughtingPreDefinedCurveFont : IfcPreDefinedCurveFont
 	{
+		public IfcDraughtingPreDefinedCurveFont() : base()
+		{
+		}
+		public IfcDraughtingPreDefinedCurveFont(IfcLabel Name) : base (Name)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDuctFitting
 	/// <para>ENTITY IfcDuctFitting</para>
@@ -6094,14 +7783,20 @@
 	/// <para> (PredefinedType <> IfcDuctFittingTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcDuctFittingTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCDUCTFITTINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCDUCTFITTINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcDuctFitting : IfcFlowFitting
 	{
-		public IfcDuctFittingTypeEnum PredefinedType { get; set; }
+		public IfcDuctFittingTypeEnum? PredefinedType { get; set; }
+		public IfcDuctFitting() : base()
+		{
+		}
+		public IfcDuctFitting(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcDuctFittingTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDuctFittingType
 	/// <para>ENTITY IfcDuctFittingType</para>
@@ -6115,8 +7810,15 @@
 	public class IfcDuctFittingType : IfcFlowFittingType
 	{
 		public IfcDuctFittingTypeEnum PredefinedType { get; set; }
+		public IfcDuctFittingType() : base()
+		{
+			PredefinedType = new IfcDuctFittingTypeEnum();
+		}
+		public IfcDuctFittingType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcDuctFittingTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDuctSegment
 	/// <para>ENTITY IfcDuctSegment</para>
@@ -6127,14 +7829,20 @@
 	/// <para> (PredefinedType <> IfcDuctSegmentTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcDuctSegmentTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCDUCTSEGMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCDUCTSEGMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcDuctSegment : IfcFlowSegment
 	{
-		public IfcDuctSegmentTypeEnum PredefinedType { get; set; }
+		public IfcDuctSegmentTypeEnum? PredefinedType { get; set; }
+		public IfcDuctSegment() : base()
+		{
+		}
+		public IfcDuctSegment(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcDuctSegmentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDuctSegmentType
 	/// <para>ENTITY IfcDuctSegmentType</para>
@@ -6148,8 +7856,15 @@
 	public class IfcDuctSegmentType : IfcFlowSegmentType
 	{
 		public IfcDuctSegmentTypeEnum PredefinedType { get; set; }
+		public IfcDuctSegmentType() : base()
+		{
+			PredefinedType = new IfcDuctSegmentTypeEnum();
+		}
+		public IfcDuctSegmentType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcDuctSegmentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDuctSilencer
 	/// <para>ENTITY IfcDuctSilencer</para>
@@ -6160,14 +7875,20 @@
 	/// <para> (PredefinedType <> IfcDuctSilencerTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcDuctSilencerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCDUCTSILENCERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCDUCTSILENCERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcDuctSilencer : IfcFlowTreatmentDevice
 	{
-		public IfcDuctSilencerTypeEnum PredefinedType { get; set; }
+		public IfcDuctSilencerTypeEnum? PredefinedType { get; set; }
+		public IfcDuctSilencer() : base()
+		{
+		}
+		public IfcDuctSilencer(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcDuctSilencerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcDuctSilencerType
 	/// <para>ENTITY IfcDuctSilencerType</para>
@@ -6181,8 +7902,15 @@
 	public class IfcDuctSilencerType : IfcFlowTreatmentDeviceType
 	{
 		public IfcDuctSilencerTypeEnum PredefinedType { get; set; }
+		public IfcDuctSilencerType() : base()
+		{
+			PredefinedType = new IfcDuctSilencerTypeEnum();
+		}
+		public IfcDuctSilencerType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcDuctSilencerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEdge
 	/// <para>ENTITY IfcEdge</para>
@@ -6199,8 +7927,17 @@
 	{
 		public IfcVertex EdgeStart { get; set; }
 		public IfcVertex EdgeEnd { get; set; }
+		public IfcEdge() : base()
+		{
+			EdgeStart = new IfcVertex();
+			EdgeEnd = new IfcVertex();
+		}
+		public IfcEdge(IfcVertex EdgeStart, IfcVertex EdgeEnd) : base ()
+		{
+			this.EdgeStart = EdgeStart;
+			this.EdgeEnd = EdgeEnd;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEdgeCurve
 	/// <para>ENTITY IfcEdgeCurve</para>
@@ -6213,8 +7950,17 @@
 	{
 		public IfcCurve EdgeGeometry { get; set; }
 		public IfcBoolean SameSense { get; set; }
+		public IfcEdgeCurve() : base()
+		{
+			EdgeGeometry = new IfcCurve();
+			SameSense = new IfcBoolean();
+		}
+		public IfcEdgeCurve(IfcVertex EdgeStart, IfcVertex EdgeEnd, IfcCurve EdgeGeometry, IfcBoolean SameSense) : base (EdgeStart, EdgeEnd)
+		{
+			this.EdgeGeometry = EdgeGeometry;
+			this.SameSense = SameSense;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEdgeLoop
 	/// <para>ENTITY IfcEdgeLoop</para>
@@ -6230,8 +7976,15 @@
 	public class IfcEdgeLoop : IfcLoop
 	{
 		public List<IfcOrientedEdge> EdgeList { get; set; }
+		public IfcEdgeLoop() : base()
+		{
+			EdgeList = new List<IfcOrientedEdge>();
+		}
+		public IfcEdgeLoop(List<IfcOrientedEdge> EdgeList) : base ()
+		{
+			this.EdgeList = EdgeList;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElectricAppliance
 	/// <para>ENTITY IfcElectricAppliance</para>
@@ -6242,14 +7995,20 @@
 	/// <para> (PredefinedType <> IfcElectricApplianceTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcElectricApplianceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCELECTRICAPPLIANCETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCELECTRICAPPLIANCETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcElectricAppliance : IfcFlowTerminal
 	{
-		public IfcElectricApplianceTypeEnum PredefinedType { get; set; }
+		public IfcElectricApplianceTypeEnum? PredefinedType { get; set; }
+		public IfcElectricAppliance() : base()
+		{
+		}
+		public IfcElectricAppliance(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcElectricApplianceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElectricApplianceType
 	/// <para>ENTITY IfcElectricApplianceType</para>
@@ -6263,8 +8022,15 @@
 	public class IfcElectricApplianceType : IfcFlowTerminalType
 	{
 		public IfcElectricApplianceTypeEnum PredefinedType { get; set; }
+		public IfcElectricApplianceType() : base()
+		{
+			PredefinedType = new IfcElectricApplianceTypeEnum();
+		}
+		public IfcElectricApplianceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcElectricApplianceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElectricDistributionBoard
 	/// <para>ENTITY IfcElectricDistributionBoard</para>
@@ -6275,14 +8041,20 @@
 	/// <para> (PredefinedType <> IfcElectricDistributionBoardTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcElectricDistributionBoardTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCELECTRICDISTRIBUTIONBOARDTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCELECTRICDISTRIBUTIONBOARDTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcElectricDistributionBoard : IfcFlowController
 	{
-		public IfcElectricDistributionBoardTypeEnum PredefinedType { get; set; }
+		public IfcElectricDistributionBoardTypeEnum? PredefinedType { get; set; }
+		public IfcElectricDistributionBoard() : base()
+		{
+		}
+		public IfcElectricDistributionBoard(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcElectricDistributionBoardTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElectricDistributionBoardType
 	/// <para>ENTITY IfcElectricDistributionBoardType</para>
@@ -6296,8 +8068,15 @@
 	public class IfcElectricDistributionBoardType : IfcFlowControllerType
 	{
 		public IfcElectricDistributionBoardTypeEnum PredefinedType { get; set; }
+		public IfcElectricDistributionBoardType() : base()
+		{
+			PredefinedType = new IfcElectricDistributionBoardTypeEnum();
+		}
+		public IfcElectricDistributionBoardType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcElectricDistributionBoardTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElectricFlowStorageDevice
 	/// <para>ENTITY IfcElectricFlowStorageDevice</para>
@@ -6308,14 +8087,20 @@
 	/// <para> (PredefinedType <> IfcElectricFlowStorageDeviceTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcElectricFlowStorageDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCELECTRICFLOWSTORAGEDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCELECTRICFLOWSTORAGEDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcElectricFlowStorageDevice : IfcFlowStorageDevice
 	{
-		public IfcElectricFlowStorageDeviceTypeEnum PredefinedType { get; set; }
+		public IfcElectricFlowStorageDeviceTypeEnum? PredefinedType { get; set; }
+		public IfcElectricFlowStorageDevice() : base()
+		{
+		}
+		public IfcElectricFlowStorageDevice(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcElectricFlowStorageDeviceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElectricFlowStorageDeviceType
 	/// <para>ENTITY IfcElectricFlowStorageDeviceType</para>
@@ -6329,8 +8114,15 @@
 	public class IfcElectricFlowStorageDeviceType : IfcFlowStorageDeviceType
 	{
 		public IfcElectricFlowStorageDeviceTypeEnum PredefinedType { get; set; }
+		public IfcElectricFlowStorageDeviceType() : base()
+		{
+			PredefinedType = new IfcElectricFlowStorageDeviceTypeEnum();
+		}
+		public IfcElectricFlowStorageDeviceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcElectricFlowStorageDeviceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElectricGenerator
 	/// <para>ENTITY IfcElectricGenerator</para>
@@ -6341,14 +8133,20 @@
 	/// <para> (PredefinedType <> IfcElectricGeneratorTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcElectricGeneratorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCELECTRICGENERATORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCELECTRICGENERATORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcElectricGenerator : IfcEnergyConversionDevice
 	{
-		public IfcElectricGeneratorTypeEnum PredefinedType { get; set; }
+		public IfcElectricGeneratorTypeEnum? PredefinedType { get; set; }
+		public IfcElectricGenerator() : base()
+		{
+		}
+		public IfcElectricGenerator(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcElectricGeneratorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElectricGeneratorType
 	/// <para>ENTITY IfcElectricGeneratorType</para>
@@ -6362,8 +8160,15 @@
 	public class IfcElectricGeneratorType : IfcEnergyConversionDeviceType
 	{
 		public IfcElectricGeneratorTypeEnum PredefinedType { get; set; }
+		public IfcElectricGeneratorType() : base()
+		{
+			PredefinedType = new IfcElectricGeneratorTypeEnum();
+		}
+		public IfcElectricGeneratorType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcElectricGeneratorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElectricMotor
 	/// <para>ENTITY IfcElectricMotor</para>
@@ -6374,14 +8179,20 @@
 	/// <para> (PredefinedType <> IfcElectricMotorTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcElectricMotorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCELECTRICMOTORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCELECTRICMOTORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcElectricMotor : IfcEnergyConversionDevice
 	{
-		public IfcElectricMotorTypeEnum PredefinedType { get; set; }
+		public IfcElectricMotorTypeEnum? PredefinedType { get; set; }
+		public IfcElectricMotor() : base()
+		{
+		}
+		public IfcElectricMotor(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcElectricMotorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElectricMotorType
 	/// <para>ENTITY IfcElectricMotorType</para>
@@ -6395,8 +8206,15 @@
 	public class IfcElectricMotorType : IfcEnergyConversionDeviceType
 	{
 		public IfcElectricMotorTypeEnum PredefinedType { get; set; }
+		public IfcElectricMotorType() : base()
+		{
+			PredefinedType = new IfcElectricMotorTypeEnum();
+		}
+		public IfcElectricMotorType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcElectricMotorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElectricTimeControl
 	/// <para>ENTITY IfcElectricTimeControl</para>
@@ -6407,14 +8225,20 @@
 	/// <para> (PredefinedType <> IfcElectricTimeControlTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcElectricTimeControlTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCELECTRICTIMECONTROLTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCELECTRICTIMECONTROLTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcElectricTimeControl : IfcFlowController
 	{
-		public IfcElectricTimeControlTypeEnum PredefinedType { get; set; }
+		public IfcElectricTimeControlTypeEnum? PredefinedType { get; set; }
+		public IfcElectricTimeControl() : base()
+		{
+		}
+		public IfcElectricTimeControl(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcElectricTimeControlTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElectricTimeControlType
 	/// <para>ENTITY IfcElectricTimeControlType</para>
@@ -6428,8 +8252,15 @@
 	public class IfcElectricTimeControlType : IfcFlowControllerType
 	{
 		public IfcElectricTimeControlTypeEnum PredefinedType { get; set; }
+		public IfcElectricTimeControlType() : base()
+		{
+			PredefinedType = new IfcElectricTimeControlTypeEnum();
+		}
+		public IfcElectricTimeControlType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcElectricTimeControlTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElement
 	/// <para>ENTITY IfcElement</para>
@@ -6463,9 +8294,15 @@
 	/// <summary>
 	public abstract class IfcElement : IfcProduct, IfcStructuralActivityAssignmentSelect
 	{
-		public IfcIdentifier Tag { get; set; }
+		public IfcIdentifier? Tag { get; set; }
+		public IfcElement() : base()
+		{
+		}
+		public IfcElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+			this.Tag = Tag;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElementAssembly
 	/// <para>ENTITY IfcElementAssembly</para>
@@ -6477,15 +8314,22 @@
 	/// <para> (PredefinedType <> IfcElementAssemblyTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcElementAssemblyTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCELEMENTASSEMBLYTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCELEMENTASSEMBLYTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcElementAssembly : IfcElement
 	{
-		public IfcAssemblyPlaceEnum AssemblyPlace { get; set; }
-		public IfcElementAssemblyTypeEnum PredefinedType { get; set; }
+		public IfcAssemblyPlaceEnum? AssemblyPlace { get; set; }
+		public IfcElementAssemblyTypeEnum? PredefinedType { get; set; }
+		public IfcElementAssembly() : base()
+		{
+		}
+		public IfcElementAssembly(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcAssemblyPlaceEnum AssemblyPlace, IfcElementAssemblyTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.AssemblyPlace = AssemblyPlace;
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElementAssemblyType
 	/// <para>ENTITY IfcElementAssemblyType</para>
@@ -6499,8 +8343,15 @@
 	public class IfcElementAssemblyType : IfcElementType
 	{
 		public IfcElementAssemblyTypeEnum PredefinedType { get; set; }
+		public IfcElementAssemblyType() : base()
+		{
+			PredefinedType = new IfcElementAssemblyTypeEnum();
+		}
+		public IfcElementAssemblyType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcElementAssemblyTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElementComponent
 	/// <para>ENTITY IfcElementComponent</para>
@@ -6516,8 +8367,13 @@
 	/// <summary>
 	public abstract class IfcElementComponent : IfcElement
 	{
+		public IfcElementComponent() : base()
+		{
+		}
+		public IfcElementComponent(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElementComponentType
 	/// <para>ENTITY IfcElementComponentType</para>
@@ -6533,8 +8389,13 @@
 	/// <summary>
 	public abstract class IfcElementComponentType : IfcElementType
 	{
+		public IfcElementComponentType() : base()
+		{
+		}
+		public IfcElementComponentType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElementQuantity
 	/// <para>ENTITY IfcElementQuantity</para>
@@ -6547,10 +8408,18 @@
 	/// <summary>
 	public class IfcElementQuantity : IfcQuantitySet
 	{
-		public IfcLabel MethodOfMeasurement { get; set; }
+		public IfcLabel? MethodOfMeasurement { get; set; }
 		public List<IfcPhysicalQuantity> Quantities { get; set; }
+		public IfcElementQuantity() : base()
+		{
+			Quantities = new List<IfcPhysicalQuantity>();
+		}
+		public IfcElementQuantity(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel MethodOfMeasurement, List<IfcPhysicalQuantity> Quantities) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.MethodOfMeasurement = MethodOfMeasurement;
+			this.Quantities = Quantities;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElementType
 	/// <para>ENTITY IfcElementType</para>
@@ -6569,9 +8438,15 @@
 	/// <summary>
 	public abstract class IfcElementType : IfcTypeProduct
 	{
-		public IfcLabel ElementType { get; set; }
+		public IfcLabel? ElementType { get; set; }
+		public IfcElementType() : base()
+		{
+		}
+		public IfcElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets)
+		{
+			this.ElementType = ElementType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcElementarySurface
 	/// <para>ENTITY IfcElementarySurface</para>
@@ -6587,8 +8462,15 @@
 	public abstract class IfcElementarySurface : IfcSurface
 	{
 		public IfcAxis2Placement3D Position { get; set; }
+		public IfcElementarySurface() : base()
+		{
+			Position = new IfcAxis2Placement3D();
+		}
+		public IfcElementarySurface(IfcAxis2Placement3D Position) : base ()
+		{
+			this.Position = Position;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEllipse
 	/// <para>ENTITY IfcEllipse</para>
@@ -6601,8 +8483,17 @@
 	{
 		public IfcPositiveLengthMeasure SemiAxis1 { get; set; }
 		public IfcPositiveLengthMeasure SemiAxis2 { get; set; }
+		public IfcEllipse() : base()
+		{
+			SemiAxis1 = new IfcPositiveLengthMeasure();
+			SemiAxis2 = new IfcPositiveLengthMeasure();
+		}
+		public IfcEllipse(IfcAxis2Placement Position, IfcPositiveLengthMeasure SemiAxis1, IfcPositiveLengthMeasure SemiAxis2) : base (Position)
+		{
+			this.SemiAxis1 = SemiAxis1;
+			this.SemiAxis2 = SemiAxis2;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEllipseProfileDef
 	/// <para>ENTITY IfcEllipseProfileDef</para>
@@ -6615,8 +8506,17 @@
 	{
 		public IfcPositiveLengthMeasure SemiAxis1 { get; set; }
 		public IfcPositiveLengthMeasure SemiAxis2 { get; set; }
+		public IfcEllipseProfileDef() : base()
+		{
+			SemiAxis1 = new IfcPositiveLengthMeasure();
+			SemiAxis2 = new IfcPositiveLengthMeasure();
+		}
+		public IfcEllipseProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure SemiAxis1, IfcPositiveLengthMeasure SemiAxis2) : base (ProfileType, ProfileName, Position)
+		{
+			this.SemiAxis1 = SemiAxis1;
+			this.SemiAxis2 = SemiAxis2;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEnergyConversionDevice
 	/// <para>ENTITY IfcEnergyConversionDevice</para>
@@ -6646,8 +8546,13 @@
 	/// <summary>
 	public class IfcEnergyConversionDevice : IfcDistributionFlowElement
 	{
+		public IfcEnergyConversionDevice() : base()
+		{
+		}
+		public IfcEnergyConversionDevice(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEnergyConversionDeviceType
 	/// <para>ENTITY IfcEnergyConversionDeviceType</para>
@@ -6677,8 +8582,13 @@
 	/// <summary>
 	public abstract class IfcEnergyConversionDeviceType : IfcDistributionFlowElementType
 	{
+		public IfcEnergyConversionDeviceType() : base()
+		{
+		}
+		public IfcEnergyConversionDeviceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEngine
 	/// <para>ENTITY IfcEngine</para>
@@ -6689,14 +8599,20 @@
 	/// <para> (PredefinedType <> IfcEngineTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcEngineTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>('IFC4.IFCENGINETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCENGINETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcEngine : IfcEnergyConversionDevice
 	{
-		public IfcEngineTypeEnum PredefinedType { get; set; }
+		public IfcEngineTypeEnum? PredefinedType { get; set; }
+		public IfcEngine() : base()
+		{
+		}
+		public IfcEngine(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcEngineTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEngineType
 	/// <para>ENTITY IfcEngineType</para>
@@ -6710,8 +8626,15 @@
 	public class IfcEngineType : IfcEnergyConversionDeviceType
 	{
 		public IfcEngineTypeEnum PredefinedType { get; set; }
+		public IfcEngineType() : base()
+		{
+			PredefinedType = new IfcEngineTypeEnum();
+		}
+		public IfcEngineType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcEngineTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEvaporativeCooler
 	/// <para>ENTITY IfcEvaporativeCooler</para>
@@ -6722,14 +8645,20 @@
 	/// <para> (PredefinedType <> IfcEvaporativeCoolerTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcEvaporativeCoolerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCEVAPORATIVECOOLERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCEVAPORATIVECOOLERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcEvaporativeCooler : IfcEnergyConversionDevice
 	{
-		public IfcEvaporativeCoolerTypeEnum PredefinedType { get; set; }
+		public IfcEvaporativeCoolerTypeEnum? PredefinedType { get; set; }
+		public IfcEvaporativeCooler() : base()
+		{
+		}
+		public IfcEvaporativeCooler(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcEvaporativeCoolerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEvaporativeCoolerType
 	/// <para>ENTITY IfcEvaporativeCoolerType</para>
@@ -6743,8 +8672,15 @@
 	public class IfcEvaporativeCoolerType : IfcEnergyConversionDeviceType
 	{
 		public IfcEvaporativeCoolerTypeEnum PredefinedType { get; set; }
+		public IfcEvaporativeCoolerType() : base()
+		{
+			PredefinedType = new IfcEvaporativeCoolerTypeEnum();
+		}
+		public IfcEvaporativeCoolerType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcEvaporativeCoolerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEvaporator
 	/// <para>ENTITY IfcEvaporator</para>
@@ -6755,14 +8691,20 @@
 	/// <para> (PredefinedType <> IfcEvaporatorTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcEvaporatorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCEVAPORATORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCEVAPORATORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcEvaporator : IfcEnergyConversionDevice
 	{
-		public IfcEvaporatorTypeEnum PredefinedType { get; set; }
+		public IfcEvaporatorTypeEnum? PredefinedType { get; set; }
+		public IfcEvaporator() : base()
+		{
+		}
+		public IfcEvaporator(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcEvaporatorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEvaporatorType
 	/// <para>ENTITY IfcEvaporatorType</para>
@@ -6776,8 +8718,15 @@
 	public class IfcEvaporatorType : IfcEnergyConversionDeviceType
 	{
 		public IfcEvaporatorTypeEnum PredefinedType { get; set; }
+		public IfcEvaporatorType() : base()
+		{
+			PredefinedType = new IfcEvaporatorTypeEnum();
+		}
+		public IfcEvaporatorType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcEvaporatorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEvent
 	/// <para>ENTITY IfcEvent</para>
@@ -6793,12 +8742,21 @@
 	/// <summary>
 	public class IfcEvent : IfcProcess
 	{
-		public IfcEventTypeEnum PredefinedType { get; set; }
-		public IfcEventTriggerTypeEnum EventTriggerType { get; set; }
-		public IfcLabel UserDefinedEventTriggerType { get; set; }
-		public IfcEventTime EventOccurenceTime { get; set; }
+		public IfcEventTypeEnum? PredefinedType { get; set; }
+		public IfcEventTriggerTypeEnum? EventTriggerType { get; set; }
+		public IfcLabel? UserDefinedEventTriggerType { get; set; }
+		public IfcEventTime? EventOccurenceTime { get; set; }
+		public IfcEvent() : base()
+		{
+		}
+		public IfcEvent(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcText LongDescription, IfcEventTypeEnum PredefinedType, IfcEventTriggerTypeEnum EventTriggerType, IfcLabel UserDefinedEventTriggerType, IfcEventTime EventOccurenceTime) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification, LongDescription)
+		{
+			this.PredefinedType = PredefinedType;
+			this.EventTriggerType = EventTriggerType;
+			this.UserDefinedEventTriggerType = UserDefinedEventTriggerType;
+			this.EventOccurenceTime = EventOccurenceTime;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEventTime
 	/// <para>ENTITY IfcEventTime</para>
@@ -6811,12 +8769,21 @@
 	/// <summary>
 	public class IfcEventTime : IfcSchedulingTime
 	{
-		public IfcDateTime ActualDate { get; set; }
-		public IfcDateTime EarlyDate { get; set; }
-		public IfcDateTime LateDate { get; set; }
-		public IfcDateTime ScheduleDate { get; set; }
+		public IfcDateTime? ActualDate { get; set; }
+		public IfcDateTime? EarlyDate { get; set; }
+		public IfcDateTime? LateDate { get; set; }
+		public IfcDateTime? ScheduleDate { get; set; }
+		public IfcEventTime() : base()
+		{
+		}
+		public IfcEventTime(IfcLabel Name, IfcDataOriginEnum DataOrigin, IfcLabel UserDefinedDataOrigin, IfcDateTime ActualDate, IfcDateTime EarlyDate, IfcDateTime LateDate, IfcDateTime ScheduleDate) : base (Name, DataOrigin, UserDefinedDataOrigin)
+		{
+			this.ActualDate = ActualDate;
+			this.EarlyDate = EarlyDate;
+			this.LateDate = LateDate;
+			this.ScheduleDate = ScheduleDate;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcEventType
 	/// <para>ENTITY IfcEventType</para>
@@ -6833,9 +8800,19 @@
 	{
 		public IfcEventTypeEnum PredefinedType { get; set; }
 		public IfcEventTriggerTypeEnum EventTriggerType { get; set; }
-		public IfcLabel UserDefinedEventTriggerType { get; set; }
+		public IfcLabel? UserDefinedEventTriggerType { get; set; }
+		public IfcEventType() : base()
+		{
+			PredefinedType = new IfcEventTypeEnum();
+			EventTriggerType = new IfcEventTriggerTypeEnum();
+		}
+		public IfcEventType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcIdentifier Identification, IfcText LongDescription, IfcLabel ProcessType, IfcEventTypeEnum PredefinedType, IfcEventTriggerTypeEnum EventTriggerType, IfcLabel UserDefinedEventTriggerType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, Identification, LongDescription, ProcessType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.EventTriggerType = EventTriggerType;
+			this.UserDefinedEventTriggerType = UserDefinedEventTriggerType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcExtendedProperties
 	/// <para>ENTITY IfcExtendedProperties</para>
@@ -6850,11 +8827,20 @@
 	/// <summary>
 	public abstract class IfcExtendedProperties : IfcPropertyAbstraction
 	{
-		public IfcIdentifier Name { get; set; }
-		public IfcText Description { get; set; }
+		public IfcIdentifier? Name { get; set; }
+		public IfcText? Description { get; set; }
 		public List<IfcProperty> Properties { get; set; }
+		public IfcExtendedProperties() : base()
+		{
+			Properties = new List<IfcProperty>();
+		}
+		public IfcExtendedProperties(IfcIdentifier Name, IfcText Description, List<IfcProperty> Properties) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+			this.Properties = Properties;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcExternalInformation
 	/// <para>ENTITY IfcExternalInformation</para>
@@ -6866,8 +8852,13 @@
 	/// <summary>
 	public abstract class IfcExternalInformationENTITY, IfcResourceObjectSelect
 	{
+		public IfcExternalInformation() : base()
+		{
+		}
+		public IfcExternalInformation() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcExternalReference
 	/// <para>ENTITY IfcExternalReference</para>
@@ -6889,11 +8880,19 @@
 	/// <summary>
 	public abstract class IfcExternalReferenceENTITY, IfcLightDistributionDataSourceSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
-		public IfcURIReference Location { get; set; }
-		public IfcIdentifier Identification { get; set; }
-		public IfcLabel Name { get; set; }
+		public IfcURIReference? Location { get; set; }
+		public IfcIdentifier? Identification { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcExternalReference() : base()
+		{
+		}
+		public IfcExternalReference(IfcURIReference Location, IfcIdentifier Identification, IfcLabel Name) : base ()
+		{
+			this.Location = Location;
+			this.Identification = Identification;
+			this.Name = Name;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcExternalReferenceRelationship
 	/// <para>ENTITY IfcExternalReferenceRelationship</para>
@@ -6906,8 +8905,17 @@
 	{
 		public IfcExternalReference RelatingReference { get; set; }
 		public List<IfcResourceObjectSelect> RelatedResourceObjects { get; set; }
+		public IfcExternalReferenceRelationship() : base()
+		{
+			RelatingReference = new IfcExternalReference();
+			RelatedResourceObjects = new List<IfcResourceObjectSelect>();
+		}
+		public IfcExternalReferenceRelationship(IfcLabel Name, IfcText Description, IfcExternalReference RelatingReference, List<IfcResourceObjectSelect> RelatedResourceObjects) : base (Name, Description)
+		{
+			this.RelatingReference = RelatingReference;
+			this.RelatedResourceObjects = RelatedResourceObjects;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcExternalSpatialElement
 	/// <para>ENTITY IfcExternalSpatialElement</para>
@@ -6919,9 +8927,15 @@
 	/// <summary>
 	public class IfcExternalSpatialElement : IfcExternalSpatialStructureElement, IfcSpaceBoundarySelect
 	{
-		public IfcExternalSpatialElementTypeEnum PredefinedType { get; set; }
+		public IfcExternalSpatialElementTypeEnum? PredefinedType { get; set; }
+		public IfcExternalSpatialElement() : base()
+		{
+		}
+		public IfcExternalSpatialElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcLabel LongName, IfcExternalSpatialElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, LongName)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcExternalSpatialStructureElement
 	/// <para>ENTITY IfcExternalSpatialStructureElement</para>
@@ -6932,8 +8946,13 @@
 	/// <summary>
 	public abstract class IfcExternalSpatialStructureElement : IfcSpatialElement
 	{
+		public IfcExternalSpatialStructureElement() : base()
+		{
+		}
+		public IfcExternalSpatialStructureElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcLabel LongName) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, LongName)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcExternallyDefinedHatchStyle
 	/// <para>ENTITY IfcExternallyDefinedHatchStyle</para>
@@ -6942,8 +8961,13 @@
 	/// <summary>
 	public class IfcExternallyDefinedHatchStyle : IfcExternalReference, IfcFillStyleSelect
 	{
+		public IfcExternallyDefinedHatchStyle() : base()
+		{
+		}
+		public IfcExternallyDefinedHatchStyle(IfcURIReference Location, IfcIdentifier Identification, IfcLabel Name) : base (Location, Identification, Name)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcExternallyDefinedSurfaceStyle
 	/// <para>ENTITY IfcExternallyDefinedSurfaceStyle</para>
@@ -6952,8 +8976,13 @@
 	/// <summary>
 	public class IfcExternallyDefinedSurfaceStyle : IfcExternalReference, IfcSurfaceStyleElementSelect
 	{
+		public IfcExternallyDefinedSurfaceStyle() : base()
+		{
+		}
+		public IfcExternallyDefinedSurfaceStyle(IfcURIReference Location, IfcIdentifier Identification, IfcLabel Name) : base (Location, Identification, Name)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcExternallyDefinedTextFont
 	/// <para>ENTITY IfcExternallyDefinedTextFont</para>
@@ -6962,8 +8991,13 @@
 	/// <summary>
 	public class IfcExternallyDefinedTextFont : IfcExternalReference, IfcTextFontSelect
 	{
+		public IfcExternallyDefinedTextFont() : base()
+		{
+		}
+		public IfcExternallyDefinedTextFont(IfcURIReference Location, IfcIdentifier Identification, IfcLabel Name) : base (Location, Identification, Name)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcExtrudedAreaSolid
 	/// <para>ENTITY IfcExtrudedAreaSolid</para>
@@ -6980,8 +9014,17 @@
 	{
 		public IfcDirection ExtrudedDirection { get; set; }
 		public IfcPositiveLengthMeasure Depth { get; set; }
+		public IfcExtrudedAreaSolid() : base()
+		{
+			ExtrudedDirection = new IfcDirection();
+			Depth = new IfcPositiveLengthMeasure();
+		}
+		public IfcExtrudedAreaSolid(IfcProfileDef SweptArea, IfcAxis2Placement3D Position, IfcDirection ExtrudedDirection, IfcPositiveLengthMeasure Depth) : base (SweptArea, Position)
+		{
+			this.ExtrudedDirection = ExtrudedDirection;
+			this.Depth = Depth;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcExtrudedAreaSolidTapered
 	/// <para>ENTITY IfcExtrudedAreaSolidTapered</para>
@@ -6994,8 +9037,15 @@
 	public class IfcExtrudedAreaSolidTapered : IfcExtrudedAreaSolid
 	{
 		public IfcProfileDef EndSweptArea { get; set; }
+		public IfcExtrudedAreaSolidTapered() : base()
+		{
+			EndSweptArea = new IfcProfileDef();
+		}
+		public IfcExtrudedAreaSolidTapered(IfcProfileDef SweptArea, IfcAxis2Placement3D Position, IfcDirection ExtrudedDirection, IfcPositiveLengthMeasure Depth, IfcProfileDef EndSweptArea) : base (SweptArea, Position, ExtrudedDirection, Depth)
+		{
+			this.EndSweptArea = EndSweptArea;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFace
 	/// <para>ENTITY IfcFace</para>
@@ -7006,14 +9056,21 @@
 	/// <para> INVERSE</para>
 	/// <para>	HasTextureMaps : SET [0:?] OF IfcTextureMap FOR MappedTo;</para>
 	/// <para> WHERE</para>
-	/// <para>	HasOuterBound : SIZEOF(QUERY(temp <* Bounds | 'IFC4.IFCFACEOUTERBOUND' IN TYPEOF(temp))) <= 1;</para>
+	/// <para>	HasOuterBound : SIZEOF(QUERY(temp <* Bounds | 'IFC4X1.IFCFACEOUTERBOUND' IN TYPEOF(temp))) <= 1;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcFace : IfcTopologicalRepresentationItem
 	{
 		public List<IfcFaceBound> Bounds { get; set; }
+		public IfcFace() : base()
+		{
+			Bounds = new List<IfcFaceBound>();
+		}
+		public IfcFace(List<IfcFaceBound> Bounds) : base ()
+		{
+			this.Bounds = Bounds;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFaceBasedSurfaceModel
 	/// <para>ENTITY IfcFaceBasedSurfaceModel</para>
@@ -7026,8 +9083,15 @@
 	public class IfcFaceBasedSurfaceModel : IfcGeometricRepresentationItem, IfcSurfaceOrFaceSurface
 	{
 		public List<IfcConnectedFaceSet> FbsmFaces { get; set; }
+		public IfcFaceBasedSurfaceModel() : base()
+		{
+			FbsmFaces = new List<IfcConnectedFaceSet>();
+		}
+		public IfcFaceBasedSurfaceModel(List<IfcConnectedFaceSet> FbsmFaces) : base ()
+		{
+			this.FbsmFaces = FbsmFaces;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFaceBound
 	/// <para>ENTITY IfcFaceBound</para>
@@ -7042,8 +9106,17 @@
 	{
 		public IfcLoop Bound { get; set; }
 		public IfcBoolean Orientation { get; set; }
+		public IfcFaceBound() : base()
+		{
+			Bound = new IfcLoop();
+			Orientation = new IfcBoolean();
+		}
+		public IfcFaceBound(IfcLoop Bound, IfcBoolean Orientation) : base ()
+		{
+			this.Bound = Bound;
+			this.Orientation = Orientation;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFaceOuterBound
 	/// <para>ENTITY IfcFaceOuterBound</para>
@@ -7052,8 +9125,13 @@
 	/// <summary>
 	public class IfcFaceOuterBound : IfcFaceBound
 	{
+		public IfcFaceOuterBound() : base()
+		{
+		}
+		public IfcFaceOuterBound(IfcLoop Bound, IfcBoolean Orientation) : base (Bound, Orientation)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFaceSurface
 	/// <para>ENTITY IfcFaceSurface</para>
@@ -7068,8 +9146,17 @@
 	{
 		public IfcSurface FaceSurface { get; set; }
 		public IfcBoolean SameSense { get; set; }
+		public IfcFaceSurface() : base()
+		{
+			FaceSurface = new IfcSurface();
+			SameSense = new IfcBoolean();
+		}
+		public IfcFaceSurface(List<IfcFaceBound> Bounds, IfcSurface FaceSurface, IfcBoolean SameSense) : base (Bounds)
+		{
+			this.FaceSurface = FaceSurface;
+			this.SameSense = SameSense;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFacetedBrep
 	/// <para>ENTITY IfcFacetedBrep</para>
@@ -7080,8 +9167,13 @@
 	/// <summary>
 	public class IfcFacetedBrep : IfcManifoldSolidBrep
 	{
+		public IfcFacetedBrep() : base()
+		{
+		}
+		public IfcFacetedBrep(IfcClosedShell Outer) : base (Outer)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFacetedBrepWithVoids
 	/// <para>ENTITY IfcFacetedBrepWithVoids</para>
@@ -7092,8 +9184,15 @@
 	public class IfcFacetedBrepWithVoids : IfcFacetedBrep
 	{
 		public List<IfcClosedShell> Voids { get; set; }
+		public IfcFacetedBrepWithVoids() : base()
+		{
+			Voids = new List<IfcClosedShell>();
+		}
+		public IfcFacetedBrepWithVoids(IfcClosedShell Outer, List<IfcClosedShell> Voids) : base (Outer)
+		{
+			this.Voids = Voids;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFailureConnectionCondition
 	/// <para>ENTITY IfcFailureConnectionCondition</para>
@@ -7108,14 +9207,25 @@
 	/// <summary>
 	public class IfcFailureConnectionCondition : IfcStructuralConnectionCondition
 	{
-		public IfcForceMeasure TensionFailureX { get; set; }
-		public IfcForceMeasure TensionFailureY { get; set; }
-		public IfcForceMeasure TensionFailureZ { get; set; }
-		public IfcForceMeasure CompressionFailureX { get; set; }
-		public IfcForceMeasure CompressionFailureY { get; set; }
-		public IfcForceMeasure CompressionFailureZ { get; set; }
+		public IfcForceMeasure? TensionFailureX { get; set; }
+		public IfcForceMeasure? TensionFailureY { get; set; }
+		public IfcForceMeasure? TensionFailureZ { get; set; }
+		public IfcForceMeasure? CompressionFailureX { get; set; }
+		public IfcForceMeasure? CompressionFailureY { get; set; }
+		public IfcForceMeasure? CompressionFailureZ { get; set; }
+		public IfcFailureConnectionCondition() : base()
+		{
+		}
+		public IfcFailureConnectionCondition(IfcLabel Name, IfcForceMeasure TensionFailureX, IfcForceMeasure TensionFailureY, IfcForceMeasure TensionFailureZ, IfcForceMeasure CompressionFailureX, IfcForceMeasure CompressionFailureY, IfcForceMeasure CompressionFailureZ) : base (Name)
+		{
+			this.TensionFailureX = TensionFailureX;
+			this.TensionFailureY = TensionFailureY;
+			this.TensionFailureZ = TensionFailureZ;
+			this.CompressionFailureX = CompressionFailureX;
+			this.CompressionFailureY = CompressionFailureY;
+			this.CompressionFailureZ = CompressionFailureZ;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFan
 	/// <para>ENTITY IfcFan</para>
@@ -7126,14 +9236,20 @@
 	/// <para> (PredefinedType <> IfcFanTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcFanTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCFANTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCFANTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcFan : IfcFlowMovingDevice
 	{
-		public IfcFanTypeEnum PredefinedType { get; set; }
+		public IfcFanTypeEnum? PredefinedType { get; set; }
+		public IfcFan() : base()
+		{
+		}
+		public IfcFan(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcFanTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFanType
 	/// <para>ENTITY IfcFanType</para>
@@ -7147,8 +9263,15 @@
 	public class IfcFanType : IfcFlowMovingDeviceType
 	{
 		public IfcFanTypeEnum PredefinedType { get; set; }
+		public IfcFanType() : base()
+		{
+			PredefinedType = new IfcFanTypeEnum();
+		}
+		public IfcFanType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcFanTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFastener
 	/// <para>ENTITY IfcFastener</para>
@@ -7159,14 +9282,20 @@
 	/// <para>(PredefinedType <> IfcFastenerTypeEnum.USERDEFINED) OR</para>
 	/// <para>((PredefinedType = IfcFastenerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>('IFC4.IFCFASTENERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCFASTENERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcFastener : IfcElementComponent
 	{
-		public IfcFastenerTypeEnum PredefinedType { get; set; }
+		public IfcFastenerTypeEnum? PredefinedType { get; set; }
+		public IfcFastener() : base()
+		{
+		}
+		public IfcFastener(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcFastenerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFastenerType
 	/// <para>ENTITY IfcFastenerType</para>
@@ -7180,8 +9309,15 @@
 	public class IfcFastenerType : IfcElementComponentType
 	{
 		public IfcFastenerTypeEnum PredefinedType { get; set; }
+		public IfcFastenerType() : base()
+		{
+			PredefinedType = new IfcFastenerTypeEnum();
+		}
+		public IfcFastenerType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcFastenerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFeatureElement
 	/// <para>ENTITY IfcFeatureElement</para>
@@ -7194,8 +9330,13 @@
 	/// <summary>
 	public abstract class IfcFeatureElement : IfcElement
 	{
+		public IfcFeatureElement() : base()
+		{
+		}
+		public IfcFeatureElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFeatureElementAddition
 	/// <para>ENTITY IfcFeatureElementAddition</para>
@@ -7208,8 +9349,13 @@
 	/// <summary>
 	public abstract class IfcFeatureElementAddition : IfcFeatureElement
 	{
+		public IfcFeatureElementAddition() : base()
+		{
+		}
+		public IfcFeatureElementAddition(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFeatureElementSubtraction
 	/// <para>ENTITY IfcFeatureElementSubtraction</para>
@@ -7226,8 +9372,13 @@
 	/// <summary>
 	public abstract class IfcFeatureElementSubtraction : IfcFeatureElement
 	{
+		public IfcFeatureElementSubtraction() : base()
+		{
+		}
+		public IfcFeatureElementSubtraction(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFillAreaStyle
 	/// <para>ENTITY IfcFillAreaStyle</para>
@@ -7236,11 +9387,11 @@
 	/// <para>	ModelorDraughting : OPTIONAL IfcBoolean;</para>
 	/// <para> WHERE</para>
 	/// <para>	MaxOneColour : SIZEOF(QUERY(Style <* SELF.FillStyles |</para>
-	/// <para>  'IFC4.IFCCOLOUR' IN</para>
+	/// <para>  'IFC4X1.IFCCOLOUR' IN</para>
 	/// <para>   TYPEOF(Style)</para>
 	/// <para>  )) <= 1;</para>
 	/// <para>	MaxOneExtHatchStyle : SIZEOF(QUERY(Style <* SELF.FillStyles |</para>
-	/// <para>  'IFC4.IFCEXTERNALLYDEFINEDHATCHSTYLE' IN</para>
+	/// <para>  'IFC4X1.IFCEXTERNALLYDEFINEDHATCHSTYLE' IN</para>
 	/// <para>   TYPEOF(Style)</para>
 	/// <para>  )) <= 1;</para>
 	/// <para>	ConsistentHatchStyleDef : IfcCorrectFillAreaStyle(SELF.FillStyles);</para>
@@ -7249,9 +9400,17 @@
 	public class IfcFillAreaStyle : IfcPresentationStyle, IfcPresentationStyleSelect
 	{
 		public List<IfcFillStyleSelect> FillStyles { get; set; }
-		public IfcBoolean ModelorDraughting { get; set; }
+		public IfcBoolean? ModelorDraughting { get; set; }
+		public IfcFillAreaStyle() : base()
+		{
+			FillStyles = new List<IfcFillStyleSelect>();
+		}
+		public IfcFillAreaStyle(IfcLabel Name, List<IfcFillStyleSelect> FillStyles, IfcBoolean ModelorDraughting) : base (Name)
+		{
+			this.FillStyles = FillStyles;
+			this.ModelorDraughting = ModelorDraughting;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFillAreaStyleHatching
 	/// <para>ENTITY IfcFillAreaStyleHatching</para>
@@ -7270,11 +9429,24 @@
 	{
 		public IfcCurveStyle HatchLineAppearance { get; set; }
 		public IfcHatchLineDistanceSelect StartOfNextHatchLine { get; set; }
-		public IfcCartesianPoint PointOfReferenceHatchLine { get; set; }
-		public IfcCartesianPoint PatternStart { get; set; }
+		public IfcCartesianPoint? PointOfReferenceHatchLine { get; set; }
+		public IfcCartesianPoint? PatternStart { get; set; }
 		public IfcPlaneAngleMeasure HatchLineAngle { get; set; }
+		public IfcFillAreaStyleHatching() : base()
+		{
+			HatchLineAppearance = new IfcCurveStyle();
+			StartOfNextHatchLine = new IfcHatchLineDistanceSelect();
+			HatchLineAngle = new IfcPlaneAngleMeasure();
+		}
+		public IfcFillAreaStyleHatching(IfcCurveStyle HatchLineAppearance, IfcHatchLineDistanceSelect StartOfNextHatchLine, IfcCartesianPoint PointOfReferenceHatchLine, IfcCartesianPoint PatternStart, IfcPlaneAngleMeasure HatchLineAngle) : base ()
+		{
+			this.HatchLineAppearance = HatchLineAppearance;
+			this.StartOfNextHatchLine = StartOfNextHatchLine;
+			this.PointOfReferenceHatchLine = PointOfReferenceHatchLine;
+			this.PatternStart = PatternStart;
+			this.HatchLineAngle = HatchLineAngle;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFillAreaStyleTiles
 	/// <para>ENTITY IfcFillAreaStyleTiles</para>
@@ -7289,8 +9461,19 @@
 		public List<IfcVector> TilingPattern { get; set; }
 		public List<IfcStyledItem> Tiles { get; set; }
 		public IfcPositiveRatioMeasure TilingScale { get; set; }
+		public IfcFillAreaStyleTiles() : base()
+		{
+			TilingPattern = new List<IfcVector>();
+			Tiles = new List<IfcStyledItem>();
+			TilingScale = new IfcPositiveRatioMeasure();
+		}
+		public IfcFillAreaStyleTiles(List<IfcVector> TilingPattern, List<IfcStyledItem> Tiles, IfcPositiveRatioMeasure TilingScale) : base ()
+		{
+			this.TilingPattern = TilingPattern;
+			this.Tiles = Tiles;
+			this.TilingScale = TilingScale;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFilter
 	/// <para>ENTITY IfcFilter</para>
@@ -7301,14 +9484,20 @@
 	/// <para> (PredefinedType <> IfcFilterTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcFilterTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCFILTERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCFILTERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcFilter : IfcFlowTreatmentDevice
 	{
-		public IfcFilterTypeEnum PredefinedType { get; set; }
+		public IfcFilterTypeEnum? PredefinedType { get; set; }
+		public IfcFilter() : base()
+		{
+		}
+		public IfcFilter(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcFilterTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFilterType
 	/// <para>ENTITY IfcFilterType</para>
@@ -7322,8 +9511,15 @@
 	public class IfcFilterType : IfcFlowTreatmentDeviceType
 	{
 		public IfcFilterTypeEnum PredefinedType { get; set; }
+		public IfcFilterType() : base()
+		{
+			PredefinedType = new IfcFilterTypeEnum();
+		}
+		public IfcFilterType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcFilterTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFireSuppressionTerminal
 	/// <para>ENTITY IfcFireSuppressionTerminal</para>
@@ -7334,14 +9530,20 @@
 	/// <para> (PredefinedType <> IfcFireSuppressionTerminalTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcFireSuppressionTerminalTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCFIRESUPPRESSIONTERMINALTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCFIRESUPPRESSIONTERMINALTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcFireSuppressionTerminal : IfcFlowTerminal
 	{
-		public IfcFireSuppressionTerminalTypeEnum PredefinedType { get; set; }
+		public IfcFireSuppressionTerminalTypeEnum? PredefinedType { get; set; }
+		public IfcFireSuppressionTerminal() : base()
+		{
+		}
+		public IfcFireSuppressionTerminal(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcFireSuppressionTerminalTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFireSuppressionTerminalType
 	/// <para>ENTITY IfcFireSuppressionTerminalType</para>
@@ -7355,8 +9557,15 @@
 	public class IfcFireSuppressionTerminalType : IfcFlowTerminalType
 	{
 		public IfcFireSuppressionTerminalTypeEnum PredefinedType { get; set; }
+		public IfcFireSuppressionTerminalType() : base()
+		{
+			PredefinedType = new IfcFireSuppressionTerminalTypeEnum();
+		}
+		public IfcFireSuppressionTerminalType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcFireSuppressionTerminalTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFixedReferenceSweptAreaSolid
 	/// <para>ENTITY IfcFixedReferenceSweptAreaSolid</para>
@@ -7367,17 +9576,28 @@
 	/// <para>	FixedReference : IfcDirection;</para>
 	/// <para> WHERE</para>
 	/// <para>	DirectrixBounded : (EXISTS(StartParam) AND EXISTS(EndParam)) OR </para>
-	/// <para>(SIZEOF(['IFC4.IFCCONIC', 'IFC4.IFCBOUNDEDCURVE'] * TYPEOF(Directrix)) = 1);</para>
+	/// <para>(SIZEOF(['IFC4X1.IFCCONIC', 'IFC4X1.IFCBOUNDEDCURVE'] * TYPEOF(Directrix)) = 1);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcFixedReferenceSweptAreaSolid : IfcSweptAreaSolid
 	{
 		public IfcCurve Directrix { get; set; }
-		public IfcParameterValue StartParam { get; set; }
-		public IfcParameterValue EndParam { get; set; }
+		public IfcParameterValue? StartParam { get; set; }
+		public IfcParameterValue? EndParam { get; set; }
 		public IfcDirection FixedReference { get; set; }
+		public IfcFixedReferenceSweptAreaSolid() : base()
+		{
+			Directrix = new IfcCurve();
+			FixedReference = new IfcDirection();
+		}
+		public IfcFixedReferenceSweptAreaSolid(IfcProfileDef SweptArea, IfcAxis2Placement3D Position, IfcCurve Directrix, IfcParameterValue StartParam, IfcParameterValue EndParam, IfcDirection FixedReference) : base (SweptArea, Position)
+		{
+			this.Directrix = Directrix;
+			this.StartParam = StartParam;
+			this.EndParam = EndParam;
+			this.FixedReference = FixedReference;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowController
 	/// <para>ENTITY IfcFlowController</para>
@@ -7395,8 +9615,13 @@
 	/// <summary>
 	public class IfcFlowController : IfcDistributionFlowElement
 	{
+		public IfcFlowController() : base()
+		{
+		}
+		public IfcFlowController(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowControllerType
 	/// <para>ENTITY IfcFlowControllerType</para>
@@ -7414,8 +9639,13 @@
 	/// <summary>
 	public abstract class IfcFlowControllerType : IfcDistributionFlowElementType
 	{
+		public IfcFlowControllerType() : base()
+		{
+		}
+		public IfcFlowControllerType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowFitting
 	/// <para>ENTITY IfcFlowFitting</para>
@@ -7430,8 +9660,13 @@
 	/// <summary>
 	public class IfcFlowFitting : IfcDistributionFlowElement
 	{
+		public IfcFlowFitting() : base()
+		{
+		}
+		public IfcFlowFitting(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowFittingType
 	/// <para>ENTITY IfcFlowFittingType</para>
@@ -7446,8 +9681,13 @@
 	/// <summary>
 	public abstract class IfcFlowFittingType : IfcDistributionFlowElementType
 	{
+		public IfcFlowFittingType() : base()
+		{
+		}
+		public IfcFlowFittingType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowInstrument
 	/// <para>ENTITY IfcFlowInstrument</para>
@@ -7458,14 +9698,20 @@
 	/// <para> (PredefinedType <> IfcFlowInstrumentTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcFlowInstrumentTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>('IFC4.IFCFLOWINSTRUMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCFLOWINSTRUMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcFlowInstrument : IfcDistributionControlElement
 	{
-		public IfcFlowInstrumentTypeEnum PredefinedType { get; set; }
+		public IfcFlowInstrumentTypeEnum? PredefinedType { get; set; }
+		public IfcFlowInstrument() : base()
+		{
+		}
+		public IfcFlowInstrument(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcFlowInstrumentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowInstrumentType
 	/// <para>ENTITY IfcFlowInstrumentType</para>
@@ -7479,8 +9725,15 @@
 	public class IfcFlowInstrumentType : IfcDistributionControlElementType
 	{
 		public IfcFlowInstrumentTypeEnum PredefinedType { get; set; }
+		public IfcFlowInstrumentType() : base()
+		{
+			PredefinedType = new IfcFlowInstrumentTypeEnum();
+		}
+		public IfcFlowInstrumentType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcFlowInstrumentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowMeter
 	/// <para>ENTITY IfcFlowMeter</para>
@@ -7491,14 +9744,20 @@
 	/// <para> (PredefinedType <> IfcFlowMeterTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcFlowMeterTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCFLOWMETERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCFLOWMETERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcFlowMeter : IfcFlowController
 	{
-		public IfcFlowMeterTypeEnum PredefinedType { get; set; }
+		public IfcFlowMeterTypeEnum? PredefinedType { get; set; }
+		public IfcFlowMeter() : base()
+		{
+		}
+		public IfcFlowMeter(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcFlowMeterTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowMeterType
 	/// <para>ENTITY IfcFlowMeterType</para>
@@ -7512,8 +9771,15 @@
 	public class IfcFlowMeterType : IfcFlowControllerType
 	{
 		public IfcFlowMeterTypeEnum PredefinedType { get; set; }
+		public IfcFlowMeterType() : base()
+		{
+			PredefinedType = new IfcFlowMeterTypeEnum();
+		}
+		public IfcFlowMeterType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcFlowMeterTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowMovingDevice
 	/// <para>ENTITY IfcFlowMovingDevice</para>
@@ -7526,8 +9792,13 @@
 	/// <summary>
 	public class IfcFlowMovingDevice : IfcDistributionFlowElement
 	{
+		public IfcFlowMovingDevice() : base()
+		{
+		}
+		public IfcFlowMovingDevice(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowMovingDeviceType
 	/// <para>ENTITY IfcFlowMovingDeviceType</para>
@@ -7540,8 +9811,13 @@
 	/// <summary>
 	public abstract class IfcFlowMovingDeviceType : IfcDistributionFlowElementType
 	{
+		public IfcFlowMovingDeviceType() : base()
+		{
+		}
+		public IfcFlowMovingDeviceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowSegment
 	/// <para>ENTITY IfcFlowSegment</para>
@@ -7555,8 +9831,13 @@
 	/// <summary>
 	public class IfcFlowSegment : IfcDistributionFlowElement
 	{
+		public IfcFlowSegment() : base()
+		{
+		}
+		public IfcFlowSegment(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowSegmentType
 	/// <para>ENTITY IfcFlowSegmentType</para>
@@ -7570,8 +9851,13 @@
 	/// <summary>
 	public abstract class IfcFlowSegmentType : IfcDistributionFlowElementType
 	{
+		public IfcFlowSegmentType() : base()
+		{
+		}
+		public IfcFlowSegmentType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowStorageDevice
 	/// <para>ENTITY IfcFlowStorageDevice</para>
@@ -7583,8 +9869,13 @@
 	/// <summary>
 	public class IfcFlowStorageDevice : IfcDistributionFlowElement
 	{
+		public IfcFlowStorageDevice() : base()
+		{
+		}
+		public IfcFlowStorageDevice(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowStorageDeviceType
 	/// <para>ENTITY IfcFlowStorageDeviceType</para>
@@ -7596,8 +9887,13 @@
 	/// <summary>
 	public abstract class IfcFlowStorageDeviceType : IfcDistributionFlowElementType
 	{
+		public IfcFlowStorageDeviceType() : base()
+		{
+		}
+		public IfcFlowStorageDeviceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowTerminal
 	/// <para>ENTITY IfcFlowTerminal</para>
@@ -7620,8 +9916,13 @@
 	/// <summary>
 	public class IfcFlowTerminal : IfcDistributionFlowElement
 	{
+		public IfcFlowTerminal() : base()
+		{
+		}
+		public IfcFlowTerminal(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowTerminalType
 	/// <para>ENTITY IfcFlowTerminalType</para>
@@ -7644,8 +9945,13 @@
 	/// <summary>
 	public abstract class IfcFlowTerminalType : IfcDistributionFlowElementType
 	{
+		public IfcFlowTerminalType() : base()
+		{
+		}
+		public IfcFlowTerminalType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowTreatmentDevice
 	/// <para>ENTITY IfcFlowTreatmentDevice</para>
@@ -7658,8 +9964,13 @@
 	/// <summary>
 	public class IfcFlowTreatmentDevice : IfcDistributionFlowElement
 	{
+		public IfcFlowTreatmentDevice() : base()
+		{
+		}
+		public IfcFlowTreatmentDevice(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFlowTreatmentDeviceType
 	/// <para>ENTITY IfcFlowTreatmentDeviceType</para>
@@ -7672,8 +9983,13 @@
 	/// <summary>
 	public abstract class IfcFlowTreatmentDeviceType : IfcDistributionFlowElementType
 	{
+		public IfcFlowTreatmentDeviceType() : base()
+		{
+		}
+		public IfcFlowTreatmentDeviceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFooting
 	/// <para>ENTITY IfcFooting</para>
@@ -7684,14 +10000,20 @@
 	/// <para>(PredefinedType <> IfcFootingTypeEnum.USERDEFINED) OR</para>
 	/// <para>((PredefinedType = IfcFootingTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>('IFC4.IFCFOOTINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCFOOTINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcFooting : IfcBuildingElement
 	{
-		public IfcFootingTypeEnum PredefinedType { get; set; }
+		public IfcFootingTypeEnum? PredefinedType { get; set; }
+		public IfcFooting() : base()
+		{
+		}
+		public IfcFooting(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcFootingTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFootingType
 	/// <para>ENTITY IfcFootingType</para>
@@ -7705,8 +10027,15 @@
 	public class IfcFootingType : IfcBuildingElementType
 	{
 		public IfcFootingTypeEnum PredefinedType { get; set; }
+		public IfcFootingType() : base()
+		{
+			PredefinedType = new IfcFootingTypeEnum();
+		}
+		public IfcFootingType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcFootingTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFurnishingElement
 	/// <para>ENTITY IfcFurnishingElement</para>
@@ -7718,8 +10047,13 @@
 	/// <summary>
 	public class IfcFurnishingElement : IfcElement
 	{
+		public IfcFurnishingElement() : base()
+		{
+		}
+		public IfcFurnishingElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFurnishingElementType
 	/// <para>ENTITY IfcFurnishingElementType</para>
@@ -7731,8 +10065,13 @@
 	/// <summary>
 	public class IfcFurnishingElementType : IfcElementType
 	{
+		public IfcFurnishingElementType() : base()
+		{
+		}
+		public IfcFurnishingElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFurniture
 	/// <para>ENTITY IfcFurniture</para>
@@ -7743,14 +10082,20 @@
 	/// <para> (PredefinedType <> IfcFurnitureTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcFurnitureTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>   ('IFC4.IFCFURNITURETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>   ('IFC4X1.IFCFURNITURETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcFurniture : IfcFurnishingElement
 	{
-		public IfcFurnitureTypeEnum PredefinedType { get; set; }
+		public IfcFurnitureTypeEnum? PredefinedType { get; set; }
+		public IfcFurniture() : base()
+		{
+		}
+		public IfcFurniture(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcFurnitureTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcFurnitureType
 	/// <para>ENTITY IfcFurnitureType</para>
@@ -7765,9 +10110,17 @@
 	public class IfcFurnitureType : IfcFurnishingElementType
 	{
 		public IfcAssemblyPlaceEnum AssemblyPlace { get; set; }
-		public IfcFurnitureTypeEnum PredefinedType { get; set; }
+		public IfcFurnitureTypeEnum? PredefinedType { get; set; }
+		public IfcFurnitureType() : base()
+		{
+			AssemblyPlace = new IfcAssemblyPlaceEnum();
+		}
+		public IfcFurnitureType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcAssemblyPlaceEnum AssemblyPlace, IfcFurnitureTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.AssemblyPlace = AssemblyPlace;
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcGeographicElement
 	/// <para>ENTITY IfcGeographicElement</para>
@@ -7778,14 +10131,20 @@
 	/// <para> (PredefinedType <> IfcGeographicElementTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcGeographicElementTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCGEOGRAPHICELEMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCGEOGRAPHICELEMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcGeographicElement : IfcElement
 	{
-		public IfcGeographicElementTypeEnum PredefinedType { get; set; }
+		public IfcGeographicElementTypeEnum? PredefinedType { get; set; }
+		public IfcGeographicElement() : base()
+		{
+		}
+		public IfcGeographicElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcGeographicElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcGeographicElementType
 	/// <para>ENTITY IfcGeographicElementType</para>
@@ -7799,21 +10158,33 @@
 	public class IfcGeographicElementType : IfcElementType
 	{
 		public IfcGeographicElementTypeEnum PredefinedType { get; set; }
+		public IfcGeographicElementType() : base()
+		{
+			PredefinedType = new IfcGeographicElementTypeEnum();
+		}
+		public IfcGeographicElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcGeographicElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcGeometricCurveSet
 	/// <para>ENTITY IfcGeometricCurveSet</para>
 	/// <para> SUBTYPE OF (IfcGeometricSet);</para>
 	/// <para> WHERE</para>
 	/// <para>	NoSurfaces : SIZEOF(QUERY(Temp <* SELF\IfcGeometricSet.Elements |</para>
-	/// <para>'IFC4.IFCSURFACE' IN TYPEOF(Temp))) = 0;</para>
+	/// <para>'IFC4X1.IFCSURFACE' IN TYPEOF(Temp))) = 0;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcGeometricCurveSet : IfcGeometricSet
 	{
+		public IfcGeometricCurveSet() : base()
+		{
+		}
+		public IfcGeometricCurveSet(List<IfcGeometricSetSelect> Elements) : base (Elements)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcGeometricRepresentationContext
 	/// <para>ENTITY IfcGeometricRepresentationContext</para>
@@ -7834,16 +10205,30 @@
 	public class IfcGeometricRepresentationContext : IfcRepresentationContext, IfcCoordinateReferenceSystemSelect
 	{
 		public IfcDimensionCount CoordinateSpaceDimension { get; set; }
-		public IfcReal Precision { get; set; }
+		public IfcReal? Precision { get; set; }
 		public IfcAxis2Placement WorldCoordinateSystem { get; set; }
-		public IfcDirection TrueNorth { get; set; }
+		public IfcDirection? TrueNorth { get; set; }
+		public IfcGeometricRepresentationContext() : base()
+		{
+			CoordinateSpaceDimension = new IfcDimensionCount();
+			WorldCoordinateSystem = new IfcAxis2Placement();
+		}
+		public IfcGeometricRepresentationContext(IfcLabel ContextIdentifier, IfcLabel ContextType, IfcDimensionCount CoordinateSpaceDimension, IfcReal Precision, IfcAxis2Placement WorldCoordinateSystem, IfcDirection TrueNorth) : base (ContextIdentifier, ContextType)
+		{
+			this.CoordinateSpaceDimension = CoordinateSpaceDimension;
+			this.Precision = Precision;
+			this.WorldCoordinateSystem = WorldCoordinateSystem;
+			this.TrueNorth = TrueNorth;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcGeometricRepresentationItem
 	/// <para>ENTITY IfcGeometricRepresentationItem</para>
 	/// <para> ABSTRACT SUPERTYPE OF (ONEOF</para>
-	/// <para>    (IfcAnnotationFillArea</para>
+	/// <para>    (IfcAlignment2DHorizontal</para>
+	/// <para>    ,IfcAlignment2DSegment</para>
+	/// <para>    ,IfcAlignment2DVertical</para>
+	/// <para>    ,IfcAnnotationFillArea</para>
 	/// <para>    ,IfcBooleanResult</para>
 	/// <para>    ,IfcBoundingBox</para>
 	/// <para>    ,IfcCartesianPointList</para>
@@ -7852,12 +10237,14 @@
 	/// <para>    ,IfcCsgPrimitive3D</para>
 	/// <para>    ,IfcCurve</para>
 	/// <para>    ,IfcDirection</para>
+	/// <para>    ,IfcDistanceExpression</para>
 	/// <para>    ,IfcFaceBasedSurfaceModel</para>
 	/// <para>    ,IfcFillAreaStyleHatching</para>
 	/// <para>    ,IfcFillAreaStyleTiles</para>
 	/// <para>    ,IfcGeometricSet</para>
 	/// <para>    ,IfcHalfSpaceSolid</para>
 	/// <para>    ,IfcLightSource</para>
+	/// <para>    ,IfcOrientationExpression</para>
 	/// <para>    ,IfcPlacement</para>
 	/// <para>    ,IfcPlanarExtent</para>
 	/// <para>    ,IfcPoint</para>
@@ -7873,8 +10260,13 @@
 	/// <summary>
 	public abstract class IfcGeometricRepresentationItem : IfcRepresentationItem
 	{
+		public IfcGeometricRepresentationItem() : base()
+		{
+		}
+		public IfcGeometricRepresentationItem() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcGeometricRepresentationSubContext
 	/// <para>ENTITY IfcGeometricRepresentationSubContext</para>
@@ -7889,7 +10281,7 @@
 	/// <para>	SELF\IfcGeometricRepresentationContext.TrueNorth : IfcDirection := NVL(ParentContext.TrueNorth, IfcConvertDirectionInto2D(SELF\IfcGeometricRepresentationContext.WorldCoordinateSystem.P[2]));</para>
 	/// <para>	SELF\IfcGeometricRepresentationContext.Precision : IfcReal := NVL(ParentContext.Precision,1.E-5);</para>
 	/// <para> WHERE</para>
-	/// <para>	ParentNoSub : NOT('IFC4.IFCGEOMETRICREPRESENTATIONSUBCONTEXT' IN TYPEOF(ParentContext));</para>
+	/// <para>	ParentNoSub : NOT('IFC4X1.IFCGEOMETRICREPRESENTATIONSUBCONTEXT' IN TYPEOF(ParentContext));</para>
 	/// <para>	UserTargetProvided : (TargetView <> IfcGeometricProjectionEnum.USERDEFINED) OR </para>
 	/// <para>((TargetView =  IfcGeometricProjectionEnum.USERDEFINED) AND EXISTS(UserDefinedTargetView));</para>
 	/// <para>	NoCoordOperation : SIZEOF(SELF\IfcGeometricRepresentationContext.HasCoordinateOperation) = 0;</para>
@@ -7898,11 +10290,22 @@
 	public class IfcGeometricRepresentationSubContext : IfcGeometricRepresentationContext
 	{
 		public IfcGeometricRepresentationContext ParentContext { get; set; }
-		public IfcPositiveRatioMeasure TargetScale { get; set; }
+		public IfcPositiveRatioMeasure? TargetScale { get; set; }
 		public IfcGeometricProjectionEnum TargetView { get; set; }
-		public IfcLabel UserDefinedTargetView { get; set; }
+		public IfcLabel? UserDefinedTargetView { get; set; }
+		public IfcGeometricRepresentationSubContext() : base()
+		{
+			ParentContext = new IfcGeometricRepresentationContext();
+			TargetView = new IfcGeometricProjectionEnum();
+		}
+		public IfcGeometricRepresentationSubContext(IfcLabel ContextIdentifier, IfcLabel ContextType, IfcDimensionCount CoordinateSpaceDimension, IfcReal Precision, IfcAxis2Placement WorldCoordinateSystem, IfcDirection TrueNorth, IfcGeometricRepresentationContext ParentContext, IfcPositiveRatioMeasure TargetScale, IfcGeometricProjectionEnum TargetView, IfcLabel UserDefinedTargetView) : base (ContextIdentifier, ContextType, CoordinateSpaceDimension, Precision, WorldCoordinateSystem, TrueNorth)
+		{
+			this.ParentContext = ParentContext;
+			this.TargetScale = TargetScale;
+			this.TargetView = TargetView;
+			this.UserDefinedTargetView = UserDefinedTargetView;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcGeometricSet
 	/// <para>ENTITY IfcGeometricSet</para>
@@ -7921,26 +10324,34 @@
 	public class IfcGeometricSet : IfcGeometricRepresentationItem
 	{
 		public List<IfcGeometricSetSelect> Elements { get; set; }
+		public IfcGeometricSet() : base()
+		{
+			Elements = new List<IfcGeometricSetSelect>();
+		}
+		public IfcGeometricSet(List<IfcGeometricSetSelect> Elements) : base ()
+		{
+			this.Elements = Elements;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcGrid
 	/// <para>ENTITY IfcGrid</para>
-	/// <para> SUBTYPE OF (IfcProduct);</para>
+	/// <para> SUBTYPE OF (IfcPositioningElement);</para>
 	/// <para>	UAxes : LIST [1:?] OF UNIQUE IfcGridAxis;</para>
 	/// <para>	VAxes : LIST [1:?] OF UNIQUE IfcGridAxis;</para>
 	/// <para>	WAxes : OPTIONAL LIST [1:?] OF UNIQUE IfcGridAxis;</para>
 	/// <para>	PredefinedType : OPTIONAL IfcGridTypeEnum;</para>
-	/// <para> INVERSE</para>
-	/// <para>	ContainedInStructure : SET [0:1] OF IfcRelContainedInSpatialStructure FOR RelatedElements;</para>
-	/// <para> WHERE</para>
-	/// <para>	HasPlacement : EXISTS(SELF\IfcProduct.ObjectPlacement);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcGrid : IfcProduct
+	public class IfcGrid : IfcPositioningElement
 	{
+		public IfcGrid() : base()
+		{
+		}
+		public IfcGrid(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcGridAxis;
 	/// <para>ENTITY IfcGridAxis;</para>
@@ -7959,11 +10370,21 @@
 	/// <summary>
 	public class IfcGridAxisENTITY
 	{
-		public IfcLabel AxisTag { get; set; }
+		public IfcLabel? AxisTag { get; set; }
 		public IfcCurve AxisCurve { get; set; }
 		public IfcBoolean SameSense { get; set; }
+		public IfcGridAxis() : base()
+		{
+			AxisCurve = new IfcCurve();
+			SameSense = new IfcBoolean();
+		}
+		public IfcGridAxis(IfcLabel AxisTag, IfcCurve AxisCurve, IfcBoolean SameSense) : base ()
+		{
+			this.AxisTag = AxisTag;
+			this.AxisCurve = AxisCurve;
+			this.SameSense = SameSense;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcGridPlacement
 	/// <para>ENTITY IfcGridPlacement</para>
@@ -7975,9 +10396,17 @@
 	public class IfcGridPlacement : IfcObjectPlacement
 	{
 		public IfcVirtualGridIntersection PlacementLocation { get; set; }
-		public IfcGridPlacementDirectionSelect PlacementRefDirection { get; set; }
+		public IfcGridPlacementDirectionSelect? PlacementRefDirection { get; set; }
+		public IfcGridPlacement() : base()
+		{
+			PlacementLocation = new IfcVirtualGridIntersection();
+		}
+		public IfcGridPlacement(IfcVirtualGridIntersection PlacementLocation, IfcGridPlacementDirectionSelect PlacementRefDirection) : base ()
+		{
+			this.PlacementLocation = PlacementLocation;
+			this.PlacementRefDirection = PlacementRefDirection;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcGroup
 	/// <para>ENTITY IfcGroup</para>
@@ -7994,8 +10423,13 @@
 	/// <summary>
 	public class IfcGroup : IfcObject
 	{
+		public IfcGroup() : base()
+		{
+		}
+		public IfcGroup(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcHalfSpaceSolid
 	/// <para>ENTITY IfcHalfSpaceSolid</para>
@@ -8013,8 +10447,17 @@
 	{
 		public IfcSurface BaseSurface { get; set; }
 		public IfcBoolean AgreementFlag { get; set; }
+		public IfcHalfSpaceSolid() : base()
+		{
+			BaseSurface = new IfcSurface();
+			AgreementFlag = new IfcBoolean();
+		}
+		public IfcHalfSpaceSolid(IfcSurface BaseSurface, IfcBoolean AgreementFlag) : base ()
+		{
+			this.BaseSurface = BaseSurface;
+			this.AgreementFlag = AgreementFlag;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcHeatExchanger
 	/// <para>ENTITY IfcHeatExchanger</para>
@@ -8025,14 +10468,20 @@
 	/// <para> (PredefinedType <> IfcHeatExchangerTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcHeatExchangerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCHEATEXCHANGERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCHEATEXCHANGERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcHeatExchanger : IfcEnergyConversionDevice
 	{
-		public IfcHeatExchangerTypeEnum PredefinedType { get; set; }
+		public IfcHeatExchangerTypeEnum? PredefinedType { get; set; }
+		public IfcHeatExchanger() : base()
+		{
+		}
+		public IfcHeatExchanger(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcHeatExchangerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcHeatExchangerType
 	/// <para>ENTITY IfcHeatExchangerType</para>
@@ -8046,8 +10495,15 @@
 	public class IfcHeatExchangerType : IfcEnergyConversionDeviceType
 	{
 		public IfcHeatExchangerTypeEnum PredefinedType { get; set; }
+		public IfcHeatExchangerType() : base()
+		{
+			PredefinedType = new IfcHeatExchangerTypeEnum();
+		}
+		public IfcHeatExchangerType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcHeatExchangerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcHumidifier
 	/// <para>ENTITY IfcHumidifier</para>
@@ -8058,14 +10514,20 @@
 	/// <para> (PredefinedType <> IfcHumidifierTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcHumidifierTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCHUMIDIFIERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCHUMIDIFIERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcHumidifier : IfcEnergyConversionDevice
 	{
-		public IfcHumidifierTypeEnum PredefinedType { get; set; }
+		public IfcHumidifierTypeEnum? PredefinedType { get; set; }
+		public IfcHumidifier() : base()
+		{
+		}
+		public IfcHumidifier(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcHumidifierTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcHumidifierType
 	/// <para>ENTITY IfcHumidifierType</para>
@@ -8079,8 +10541,15 @@
 	public class IfcHumidifierType : IfcEnergyConversionDeviceType
 	{
 		public IfcHumidifierTypeEnum PredefinedType { get; set; }
+		public IfcHumidifierType() : base()
+		{
+			PredefinedType = new IfcHumidifierTypeEnum();
+		}
+		public IfcHumidifierType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcHumidifierTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcIShapeProfileDef
 	/// <para>ENTITY IfcIShapeProfileDef</para>
@@ -8106,11 +10575,27 @@
 		public IfcPositiveLengthMeasure OverallDepth { get; set; }
 		public IfcPositiveLengthMeasure WebThickness { get; set; }
 		public IfcPositiveLengthMeasure FlangeThickness { get; set; }
-		public IfcNonNegativeLengthMeasure FilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure FlangeEdgeRadius { get; set; }
-		public IfcPlaneAngleMeasure FlangeSlope { get; set; }
+		public IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
+		public IfcNonNegativeLengthMeasure? FlangeEdgeRadius { get; set; }
+		public IfcPlaneAngleMeasure? FlangeSlope { get; set; }
+		public IfcIShapeProfileDef() : base()
+		{
+			OverallWidth = new IfcPositiveLengthMeasure();
+			OverallDepth = new IfcPositiveLengthMeasure();
+			WebThickness = new IfcPositiveLengthMeasure();
+			FlangeThickness = new IfcPositiveLengthMeasure();
+		}
+		public IfcIShapeProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure OverallWidth, IfcPositiveLengthMeasure OverallDepth, IfcPositiveLengthMeasure WebThickness, IfcPositiveLengthMeasure FlangeThickness, IfcNonNegativeLengthMeasure FilletRadius, IfcNonNegativeLengthMeasure FlangeEdgeRadius, IfcPlaneAngleMeasure FlangeSlope) : base (ProfileType, ProfileName, Position)
+		{
+			this.OverallWidth = OverallWidth;
+			this.OverallDepth = OverallDepth;
+			this.WebThickness = WebThickness;
+			this.FlangeThickness = FlangeThickness;
+			this.FilletRadius = FilletRadius;
+			this.FlangeEdgeRadius = FlangeEdgeRadius;
+			this.FlangeSlope = FlangeSlope;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcImageTexture
 	/// <para>ENTITY IfcImageTexture</para>
@@ -8121,8 +10606,15 @@
 	public class IfcImageTexture : IfcSurfaceTexture
 	{
 		public IfcURIReference URLReference { get; set; }
+		public IfcImageTexture() : base()
+		{
+			URLReference = new IfcURIReference();
+		}
+		public IfcImageTexture(IfcBoolean RepeatS, IfcBoolean RepeatT, IfcIdentifier Mode, IfcCartesianTransformationOperator2D TextureTransform, List<IfcIdentifier> Parameter, IfcURIReference URLReference) : base (RepeatS, RepeatT, Mode, TextureTransform, Parameter)
+		{
+			this.URLReference = URLReference;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcIndexedColourMap
 	/// <para>ENTITY IfcIndexedColourMap</para>
@@ -8136,11 +10628,23 @@
 	public class IfcIndexedColourMap : IfcPresentationItem
 	{
 		public IfcTessellatedFaceSet MappedTo { get; set; }
-		public IfcNormalisedRatioMeasure Opacity { get; set; }
+		public IfcNormalisedRatioMeasure? Opacity { get; set; }
 		public IfcColourRgbList Colours { get; set; }
 		public List<IfcPositiveInteger> ColourIndex { get; set; }
+		public IfcIndexedColourMap() : base()
+		{
+			MappedTo = new IfcTessellatedFaceSet();
+			Colours = new IfcColourRgbList();
+			ColourIndex = new List<IfcPositiveInteger>();
+		}
+		public IfcIndexedColourMap(IfcTessellatedFaceSet MappedTo, IfcNormalisedRatioMeasure Opacity, IfcColourRgbList Colours, List<IfcPositiveInteger> ColourIndex) : base ()
+		{
+			this.MappedTo = MappedTo;
+			this.Opacity = Opacity;
+			this.Colours = Colours;
+			this.ColourIndex = ColourIndex;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcIndexedPolyCurve
 	/// <para>ENTITY IfcIndexedPolyCurve</para>
@@ -8155,10 +10659,19 @@
 	public class IfcIndexedPolyCurve : IfcBoundedCurve
 	{
 		public IfcCartesianPointList Points { get; set; }
-		public List<IfcSegmentIndexSelect> Segments { get; set; }
-		public IfcBoolean SelfIntersect { get; set; }
+		public List<IfcSegmentIndexSelect>? Segments { get; set; }
+		public IfcBoolean? SelfIntersect { get; set; }
+		public IfcIndexedPolyCurve() : base()
+		{
+			Points = new IfcCartesianPointList();
+		}
+		public IfcIndexedPolyCurve(IfcCartesianPointList Points, List<IfcSegmentIndexSelect> Segments, IfcBoolean SelfIntersect) : base ()
+		{
+			this.Points = Points;
+			this.Segments = Segments;
+			this.SelfIntersect = SelfIntersect;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcIndexedPolygonalFace
 	/// <para>ENTITY IfcIndexedPolygonalFace</para>
@@ -8173,8 +10686,15 @@
 	public class IfcIndexedPolygonalFace : IfcTessellatedItem
 	{
 		public List<IfcPositiveInteger> CoordIndex { get; set; }
+		public IfcIndexedPolygonalFace() : base()
+		{
+			CoordIndex = new List<IfcPositiveInteger>();
+		}
+		public IfcIndexedPolygonalFace(List<IfcPositiveInteger> CoordIndex) : base ()
+		{
+			this.CoordIndex = CoordIndex;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcIndexedPolygonalFaceWithVoids
 	/// <para>ENTITY IfcIndexedPolygonalFaceWithVoids</para>
@@ -8184,8 +10704,13 @@
 	/// <summary>
 	public class IfcIndexedPolygonalFaceWithVoids : IfcIndexedPolygonalFace
 	{
+		public IfcIndexedPolygonalFaceWithVoids() : base()
+		{
+		}
+		public IfcIndexedPolygonalFaceWithVoids(List<IfcPositiveInteger> CoordIndex) : base (CoordIndex)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcIndexedTextureMap
 	/// <para>ENTITY IfcIndexedTextureMap</para>
@@ -8200,8 +10725,17 @@
 	{
 		public IfcTessellatedFaceSet MappedTo { get; set; }
 		public IfcTextureVertexList TexCoords { get; set; }
+		public IfcIndexedTextureMap() : base()
+		{
+			MappedTo = new IfcTessellatedFaceSet();
+			TexCoords = new IfcTextureVertexList();
+		}
+		public IfcIndexedTextureMap(List<IfcSurfaceTexture> Maps, IfcTessellatedFaceSet MappedTo, IfcTextureVertexList TexCoords) : base (Maps)
+		{
+			this.MappedTo = MappedTo;
+			this.TexCoords = TexCoords;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcIndexedTriangleTextureMap
 	/// <para>ENTITY IfcIndexedTriangleTextureMap</para>
@@ -8211,9 +10745,15 @@
 	/// <summary>
 	public class IfcIndexedTriangleTextureMap : IfcIndexedTextureMap
 	{
-		public List<List<IfcPositiveInteger >> TexCoordIndex { get; set; }
+		public List<List<IfcPositiveInteger >>? TexCoordIndex { get; set; }
+		public IfcIndexedTriangleTextureMap() : base()
+		{
+		}
+		public IfcIndexedTriangleTextureMap(List<IfcSurfaceTexture> Maps, IfcTessellatedFaceSet MappedTo, IfcTextureVertexList TexCoords, List<List<IfcPositiveInteger >> TexCoordIndex) : base (Maps, MappedTo, TexCoords)
+		{
+			this.TexCoordIndex = TexCoordIndex;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcInterceptor
 	/// <para>ENTITY IfcInterceptor</para>
@@ -8224,14 +10764,20 @@
 	/// <para> (PredefinedType <> IfcInterceptorTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcInterceptorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCINTERCEPTORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCINTERCEPTORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcInterceptor : IfcFlowTreatmentDevice
 	{
-		public IfcInterceptorTypeEnum PredefinedType { get; set; }
+		public IfcInterceptorTypeEnum? PredefinedType { get; set; }
+		public IfcInterceptor() : base()
+		{
+		}
+		public IfcInterceptor(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcInterceptorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcInterceptorType
 	/// <para>ENTITY IfcInterceptorType</para>
@@ -8245,8 +10791,15 @@
 	public class IfcInterceptorType : IfcFlowTreatmentDeviceType
 	{
 		public IfcInterceptorTypeEnum PredefinedType { get; set; }
+		public IfcInterceptorType() : base()
+		{
+			PredefinedType = new IfcInterceptorTypeEnum();
+		}
+		public IfcInterceptorType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcInterceptorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcIntersectionCurve
 	/// <para>ENTITY IfcIntersectionCurve</para>
@@ -8258,8 +10811,13 @@
 	/// <summary>
 	public class IfcIntersectionCurve : IfcSurfaceCurve
 	{
+		public IfcIntersectionCurve() : base()
+		{
+		}
+		public IfcIntersectionCurve(IfcCurve Curve3D, List<IfcPcurve> AssociatedGeometry, IfcPreferredSurfaceCurveRepresentation MasterRepresentation) : base (Curve3D, AssociatedGeometry, MasterRepresentation)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcInventory
 	/// <para>ENTITY IfcInventory</para>
@@ -8274,14 +10832,25 @@
 	/// <summary>
 	public class IfcInventory : IfcGroup
 	{
-		public IfcInventoryTypeEnum PredefinedType { get; set; }
-		public IfcActorSelect Jurisdiction { get; set; }
-		public List<IfcPerson> ResponsiblePersons { get; set; }
-		public IfcDate LastUpdateDate { get; set; }
-		public IfcCostValue CurrentValue { get; set; }
-		public IfcCostValue OriginalValue { get; set; }
+		public IfcInventoryTypeEnum? PredefinedType { get; set; }
+		public IfcActorSelect? Jurisdiction { get; set; }
+		public List<IfcPerson>? ResponsiblePersons { get; set; }
+		public IfcDate? LastUpdateDate { get; set; }
+		public IfcCostValue? CurrentValue { get; set; }
+		public IfcCostValue? OriginalValue { get; set; }
+		public IfcInventory() : base()
+		{
+		}
+		public IfcInventory(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcInventoryTypeEnum PredefinedType, IfcActorSelect Jurisdiction, List<IfcPerson> ResponsiblePersons, IfcDate LastUpdateDate, IfcCostValue CurrentValue, IfcCostValue OriginalValue) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.Jurisdiction = Jurisdiction;
+			this.ResponsiblePersons = ResponsiblePersons;
+			this.LastUpdateDate = LastUpdateDate;
+			this.CurrentValue = CurrentValue;
+			this.OriginalValue = OriginalValue;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcIrregularTimeSeries
 	/// <para>ENTITY IfcIrregularTimeSeries</para>
@@ -8292,8 +10861,15 @@
 	public class IfcIrregularTimeSeries : IfcTimeSeries
 	{
 		public List<IfcIrregularTimeSeriesValue> Values { get; set; }
+		public IfcIrregularTimeSeries() : base()
+		{
+			Values = new List<IfcIrregularTimeSeriesValue>();
+		}
+		public IfcIrregularTimeSeries(IfcLabel Name, IfcText Description, IfcDateTime StartTime, IfcDateTime EndTime, IfcTimeSeriesDataTypeEnum TimeSeriesDataType, IfcDataOriginEnum DataOrigin, IfcLabel UserDefinedDataOrigin, IfcUnit Unit, List<IfcIrregularTimeSeriesValue> Values) : base (Name, Description, StartTime, EndTime, TimeSeriesDataType, DataOrigin, UserDefinedDataOrigin, Unit)
+		{
+			this.Values = Values;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcIrregularTimeSeriesValue;
 	/// <para>ENTITY IfcIrregularTimeSeriesValue;</para>
@@ -8305,8 +10881,17 @@
 	{
 		public IfcDateTime TimeStamp { get; set; }
 		public List<IfcValue> ListValues { get; set; }
+		public IfcIrregularTimeSeriesValue() : base()
+		{
+			TimeStamp = new IfcDateTime();
+			ListValues = new List<IfcValue>();
+		}
+		public IfcIrregularTimeSeriesValue(IfcDateTime TimeStamp, List<IfcValue> ListValues) : base ()
+		{
+			this.TimeStamp = TimeStamp;
+			this.ListValues = ListValues;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcJunctionBox
 	/// <para>ENTITY IfcJunctionBox</para>
@@ -8317,14 +10902,20 @@
 	/// <para> (PredefinedType <> IfcJunctionBoxTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcJunctionBoxTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCJUNCTIONBOXTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCJUNCTIONBOXTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcJunctionBox : IfcFlowFitting
 	{
-		public IfcJunctionBoxTypeEnum PredefinedType { get; set; }
+		public IfcJunctionBoxTypeEnum? PredefinedType { get; set; }
+		public IfcJunctionBox() : base()
+		{
+		}
+		public IfcJunctionBox(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcJunctionBoxTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcJunctionBoxType
 	/// <para>ENTITY IfcJunctionBoxType</para>
@@ -8338,8 +10929,15 @@
 	public class IfcJunctionBoxType : IfcFlowFittingType
 	{
 		public IfcJunctionBoxTypeEnum PredefinedType { get; set; }
+		public IfcJunctionBoxType() : base()
+		{
+			PredefinedType = new IfcJunctionBoxTypeEnum();
+		}
+		public IfcJunctionBoxType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcJunctionBoxTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLShapeProfileDef
 	/// <para>ENTITY IfcLShapeProfileDef</para>
@@ -8357,13 +10955,26 @@
 	public class IfcLShapeProfileDef : IfcParameterizedProfileDef
 	{
 		public IfcPositiveLengthMeasure Depth { get; set; }
-		public IfcPositiveLengthMeasure Width { get; set; }
+		public IfcPositiveLengthMeasure? Width { get; set; }
 		public IfcPositiveLengthMeasure Thickness { get; set; }
-		public IfcNonNegativeLengthMeasure FilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure EdgeRadius { get; set; }
-		public IfcPlaneAngleMeasure LegSlope { get; set; }
+		public IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
+		public IfcNonNegativeLengthMeasure? EdgeRadius { get; set; }
+		public IfcPlaneAngleMeasure? LegSlope { get; set; }
+		public IfcLShapeProfileDef() : base()
+		{
+			Depth = new IfcPositiveLengthMeasure();
+			Thickness = new IfcPositiveLengthMeasure();
+		}
+		public IfcLShapeProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure Depth, IfcPositiveLengthMeasure Width, IfcPositiveLengthMeasure Thickness, IfcNonNegativeLengthMeasure FilletRadius, IfcNonNegativeLengthMeasure EdgeRadius, IfcPlaneAngleMeasure LegSlope) : base (ProfileType, ProfileName, Position)
+		{
+			this.Depth = Depth;
+			this.Width = Width;
+			this.Thickness = Thickness;
+			this.FilletRadius = FilletRadius;
+			this.EdgeRadius = EdgeRadius;
+			this.LegSlope = LegSlope;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLaborResource
 	/// <para>ENTITY IfcLaborResource</para>
@@ -8377,9 +10988,15 @@
 	/// <summary>
 	public class IfcLaborResource : IfcConstructionResource
 	{
-		public IfcLaborResourceTypeEnum PredefinedType { get; set; }
+		public IfcLaborResourceTypeEnum? PredefinedType { get; set; }
+		public IfcLaborResource() : base()
+		{
+		}
+		public IfcLaborResource(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcText LongDescription, IfcResourceTime Usage, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity, IfcLaborResourceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification, LongDescription, Usage, BaseCosts, BaseQuantity)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLaborResourceType
 	/// <para>ENTITY IfcLaborResourceType</para>
@@ -8393,8 +11010,15 @@
 	public class IfcLaborResourceType : IfcConstructionResourceType
 	{
 		public IfcLaborResourceTypeEnum PredefinedType { get; set; }
+		public IfcLaborResourceType() : base()
+		{
+			PredefinedType = new IfcLaborResourceTypeEnum();
+		}
+		public IfcLaborResourceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcIdentifier Identification, IfcText LongDescription, IfcLabel ResourceType, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity, IfcLaborResourceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, Identification, LongDescription, ResourceType, BaseCosts, BaseQuantity)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLagTime
 	/// <para>ENTITY IfcLagTime</para>
@@ -8407,8 +11031,17 @@
 	{
 		public IfcTimeOrRatioSelect LagValue { get; set; }
 		public IfcTaskDurationEnum DurationType { get; set; }
+		public IfcLagTime() : base()
+		{
+			LagValue = new IfcTimeOrRatioSelect();
+			DurationType = new IfcTaskDurationEnum();
+		}
+		public IfcLagTime(IfcLabel Name, IfcDataOriginEnum DataOrigin, IfcLabel UserDefinedDataOrigin, IfcTimeOrRatioSelect LagValue, IfcTaskDurationEnum DurationType) : base (Name, DataOrigin, UserDefinedDataOrigin)
+		{
+			this.LagValue = LagValue;
+			this.DurationType = DurationType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLamp
 	/// <para>ENTITY IfcLamp</para>
@@ -8419,14 +11052,20 @@
 	/// <para> (PredefinedType <> IfcLampTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcLampTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCLAMPTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCLAMPTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcLamp : IfcFlowTerminal
 	{
-		public IfcLampTypeEnum PredefinedType { get; set; }
+		public IfcLampTypeEnum? PredefinedType { get; set; }
+		public IfcLamp() : base()
+		{
+		}
+		public IfcLamp(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcLampTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLampType
 	/// <para>ENTITY IfcLampType</para>
@@ -8440,8 +11079,15 @@
 	public class IfcLampType : IfcFlowTerminalType
 	{
 		public IfcLampTypeEnum PredefinedType { get; set; }
+		public IfcLampType() : base()
+		{
+			PredefinedType = new IfcLampTypeEnum();
+		}
+		public IfcLampType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcLampTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLibraryInformation
 	/// <para>ENTITY IfcLibraryInformation</para>
@@ -8460,13 +11106,25 @@
 	public class IfcLibraryInformation : IfcExternalInformation, IfcLibrarySelect
 	{
 		public IfcLabel Name { get; set; }
-		public IfcLabel Version { get; set; }
-		public IfcActorSelect Publisher { get; set; }
-		public IfcDateTime VersionDate { get; set; }
-		public IfcURIReference Location { get; set; }
-		public IfcText Description { get; set; }
+		public IfcLabel? Version { get; set; }
+		public IfcActorSelect? Publisher { get; set; }
+		public IfcDateTime? VersionDate { get; set; }
+		public IfcURIReference? Location { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcLibraryInformation() : base()
+		{
+			Name = new IfcLabel();
+		}
+		public IfcLibraryInformation(IfcLabel Name, IfcLabel Version, IfcActorSelect Publisher, IfcDateTime VersionDate, IfcURIReference Location, IfcText Description) : base ()
+		{
+			this.Name = Name;
+			this.Version = Version;
+			this.Publisher = Publisher;
+			this.VersionDate = VersionDate;
+			this.Location = Location;
+			this.Description = Description;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLibraryReference
 	/// <para>ENTITY IfcLibraryReference</para>
@@ -8480,11 +11138,19 @@
 	/// <summary>
 	public class IfcLibraryReference : IfcExternalReference, IfcLibrarySelect
 	{
-		public IfcText Description { get; set; }
-		public IfcLanguageId Language { get; set; }
-		public IfcLibraryInformation ReferencedLibrary { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcLanguageId? Language { get; set; }
+		public IfcLibraryInformation? ReferencedLibrary { get; set; }
+		public IfcLibraryReference() : base()
+		{
+		}
+		public IfcLibraryReference(IfcURIReference Location, IfcIdentifier Identification, IfcLabel Name, IfcText Description, IfcLanguageId Language, IfcLibraryInformation ReferencedLibrary) : base (Location, Identification, Name)
+		{
+			this.Description = Description;
+			this.Language = Language;
+			this.ReferencedLibrary = ReferencedLibrary;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLightDistributionData;
 	/// <para>ENTITY IfcLightDistributionData;</para>
@@ -8498,8 +11164,19 @@
 		public IfcPlaneAngleMeasure MainPlaneAngle { get; set; }
 		public List<IfcPlaneAngleMeasure> SecondaryPlaneAngle { get; set; }
 		public List<IfcLuminousIntensityDistributionMeasure> LuminousIntensity { get; set; }
+		public IfcLightDistributionData() : base()
+		{
+			MainPlaneAngle = new IfcPlaneAngleMeasure();
+			SecondaryPlaneAngle = new List<IfcPlaneAngleMeasure>();
+			LuminousIntensity = new List<IfcLuminousIntensityDistributionMeasure>();
+		}
+		public IfcLightDistributionData(IfcPlaneAngleMeasure MainPlaneAngle, List<IfcPlaneAngleMeasure> SecondaryPlaneAngle, List<IfcLuminousIntensityDistributionMeasure> LuminousIntensity) : base ()
+		{
+			this.MainPlaneAngle = MainPlaneAngle;
+			this.SecondaryPlaneAngle = SecondaryPlaneAngle;
+			this.LuminousIntensity = LuminousIntensity;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLightFixture
 	/// <para>ENTITY IfcLightFixture</para>
@@ -8510,14 +11187,20 @@
 	/// <para> (PredefinedType <> IfcLightFixtureTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcLightFixtureTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCLIGHTFIXTURETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCLIGHTFIXTURETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcLightFixture : IfcFlowTerminal
 	{
-		public IfcLightFixtureTypeEnum PredefinedType { get; set; }
+		public IfcLightFixtureTypeEnum? PredefinedType { get; set; }
+		public IfcLightFixture() : base()
+		{
+		}
+		public IfcLightFixture(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcLightFixtureTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLightFixtureType
 	/// <para>ENTITY IfcLightFixtureType</para>
@@ -8531,8 +11214,15 @@
 	public class IfcLightFixtureType : IfcFlowTerminalType
 	{
 		public IfcLightFixtureTypeEnum PredefinedType { get; set; }
+		public IfcLightFixtureType() : base()
+		{
+			PredefinedType = new IfcLightFixtureTypeEnum();
+		}
+		public IfcLightFixtureType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcLightFixtureTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLightIntensityDistribution;
 	/// <para>ENTITY IfcLightIntensityDistribution;</para>
@@ -8544,8 +11234,17 @@
 	{
 		public IfcLightDistributionCurveEnum LightDistributionCurve { get; set; }
 		public List<IfcLightDistributionData> DistributionData { get; set; }
+		public IfcLightIntensityDistribution() : base()
+		{
+			LightDistributionCurve = new IfcLightDistributionCurveEnum();
+			DistributionData = new List<IfcLightDistributionData>();
+		}
+		public IfcLightIntensityDistribution(IfcLightDistributionCurveEnum LightDistributionCurve, List<IfcLightDistributionData> DistributionData) : base ()
+		{
+			this.LightDistributionCurve = LightDistributionCurve;
+			this.DistributionData = DistributionData;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLightSource
 	/// <para>ENTITY IfcLightSource</para>
@@ -8563,12 +11262,22 @@
 	/// <summary>
 	public abstract class IfcLightSource : IfcGeometricRepresentationItem
 	{
-		public IfcLabel Name { get; set; }
+		public IfcLabel? Name { get; set; }
 		public IfcColourRgb LightColour { get; set; }
-		public IfcNormalisedRatioMeasure AmbientIntensity { get; set; }
-		public IfcNormalisedRatioMeasure Intensity { get; set; }
+		public IfcNormalisedRatioMeasure? AmbientIntensity { get; set; }
+		public IfcNormalisedRatioMeasure? Intensity { get; set; }
+		public IfcLightSource() : base()
+		{
+			LightColour = new IfcColourRgb();
+		}
+		public IfcLightSource(IfcLabel Name, IfcColourRgb LightColour, IfcNormalisedRatioMeasure AmbientIntensity, IfcNormalisedRatioMeasure Intensity) : base ()
+		{
+			this.Name = Name;
+			this.LightColour = LightColour;
+			this.AmbientIntensity = AmbientIntensity;
+			this.Intensity = Intensity;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLightSourceAmbient
 	/// <para>ENTITY IfcLightSourceAmbient</para>
@@ -8577,8 +11286,13 @@
 	/// <summary>
 	public class IfcLightSourceAmbient : IfcLightSource
 	{
+		public IfcLightSourceAmbient() : base()
+		{
+		}
+		public IfcLightSourceAmbient(IfcLabel Name, IfcColourRgb LightColour, IfcNormalisedRatioMeasure AmbientIntensity, IfcNormalisedRatioMeasure Intensity) : base (Name, LightColour, AmbientIntensity, Intensity)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLightSourceDirectional
 	/// <para>ENTITY IfcLightSourceDirectional</para>
@@ -8589,8 +11303,15 @@
 	public class IfcLightSourceDirectional : IfcLightSource
 	{
 		public IfcDirection Orientation { get; set; }
+		public IfcLightSourceDirectional() : base()
+		{
+			Orientation = new IfcDirection();
+		}
+		public IfcLightSourceDirectional(IfcLabel Name, IfcColourRgb LightColour, IfcNormalisedRatioMeasure AmbientIntensity, IfcNormalisedRatioMeasure Intensity, IfcDirection Orientation) : base (Name, LightColour, AmbientIntensity, Intensity)
+		{
+			this.Orientation = Orientation;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLightSourceGoniometric
 	/// <para>ENTITY IfcLightSourceGoniometric</para>
@@ -8606,13 +11327,29 @@
 	public class IfcLightSourceGoniometric : IfcLightSource
 	{
 		public IfcAxis2Placement3D Position { get; set; }
-		public IfcColourRgb ColourAppearance { get; set; }
+		public IfcColourRgb? ColourAppearance { get; set; }
 		public IfcThermodynamicTemperatureMeasure ColourTemperature { get; set; }
 		public IfcLuminousFluxMeasure LuminousFlux { get; set; }
 		public IfcLightEmissionSourceEnum LightEmissionSource { get; set; }
 		public IfcLightDistributionDataSourceSelect LightDistributionDataSource { get; set; }
+		public IfcLightSourceGoniometric() : base()
+		{
+			Position = new IfcAxis2Placement3D();
+			ColourTemperature = new IfcThermodynamicTemperatureMeasure();
+			LuminousFlux = new IfcLuminousFluxMeasure();
+			LightEmissionSource = new IfcLightEmissionSourceEnum();
+			LightDistributionDataSource = new IfcLightDistributionDataSourceSelect();
+		}
+		public IfcLightSourceGoniometric(IfcLabel Name, IfcColourRgb LightColour, IfcNormalisedRatioMeasure AmbientIntensity, IfcNormalisedRatioMeasure Intensity, IfcAxis2Placement3D Position, IfcColourRgb ColourAppearance, IfcThermodynamicTemperatureMeasure ColourTemperature, IfcLuminousFluxMeasure LuminousFlux, IfcLightEmissionSourceEnum LightEmissionSource, IfcLightDistributionDataSourceSelect LightDistributionDataSource) : base (Name, LightColour, AmbientIntensity, Intensity)
+		{
+			this.Position = Position;
+			this.ColourAppearance = ColourAppearance;
+			this.ColourTemperature = ColourTemperature;
+			this.LuminousFlux = LuminousFlux;
+			this.LightEmissionSource = LightEmissionSource;
+			this.LightDistributionDataSource = LightDistributionDataSource;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLightSourcePositional
 	/// <para>ENTITY IfcLightSourcePositional</para>
@@ -8633,8 +11370,23 @@
 		public IfcReal ConstantAttenuation { get; set; }
 		public IfcReal DistanceAttenuation { get; set; }
 		public IfcReal QuadricAttenuation { get; set; }
+		public IfcLightSourcePositional() : base()
+		{
+			Position = new IfcCartesianPoint();
+			Radius = new IfcPositiveLengthMeasure();
+			ConstantAttenuation = new IfcReal();
+			DistanceAttenuation = new IfcReal();
+			QuadricAttenuation = new IfcReal();
+		}
+		public IfcLightSourcePositional(IfcLabel Name, IfcColourRgb LightColour, IfcNormalisedRatioMeasure AmbientIntensity, IfcNormalisedRatioMeasure Intensity, IfcCartesianPoint Position, IfcPositiveLengthMeasure Radius, IfcReal ConstantAttenuation, IfcReal DistanceAttenuation, IfcReal QuadricAttenuation) : base (Name, LightColour, AmbientIntensity, Intensity)
+		{
+			this.Position = Position;
+			this.Radius = Radius;
+			this.ConstantAttenuation = ConstantAttenuation;
+			this.DistanceAttenuation = DistanceAttenuation;
+			this.QuadricAttenuation = QuadricAttenuation;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLightSourceSpot
 	/// <para>ENTITY IfcLightSourceSpot</para>
@@ -8648,11 +11400,23 @@
 	public class IfcLightSourceSpot : IfcLightSourcePositional
 	{
 		public IfcDirection Orientation { get; set; }
-		public IfcReal ConcentrationExponent { get; set; }
+		public IfcReal? ConcentrationExponent { get; set; }
 		public IfcPositivePlaneAngleMeasure SpreadAngle { get; set; }
 		public IfcPositivePlaneAngleMeasure BeamWidthAngle { get; set; }
+		public IfcLightSourceSpot() : base()
+		{
+			Orientation = new IfcDirection();
+			SpreadAngle = new IfcPositivePlaneAngleMeasure();
+			BeamWidthAngle = new IfcPositivePlaneAngleMeasure();
+		}
+		public IfcLightSourceSpot(IfcLabel Name, IfcColourRgb LightColour, IfcNormalisedRatioMeasure AmbientIntensity, IfcNormalisedRatioMeasure Intensity, IfcCartesianPoint Position, IfcPositiveLengthMeasure Radius, IfcReal ConstantAttenuation, IfcReal DistanceAttenuation, IfcReal QuadricAttenuation, IfcDirection Orientation, IfcReal ConcentrationExponent, IfcPositivePlaneAngleMeasure SpreadAngle, IfcPositivePlaneAngleMeasure BeamWidthAngle) : base (Name, LightColour, AmbientIntensity, Intensity, Position, Radius, ConstantAttenuation, DistanceAttenuation, QuadricAttenuation)
+		{
+			this.Orientation = Orientation;
+			this.ConcentrationExponent = ConcentrationExponent;
+			this.SpreadAngle = SpreadAngle;
+			this.BeamWidthAngle = BeamWidthAngle;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLine
 	/// <para>ENTITY IfcLine</para>
@@ -8667,8 +11431,82 @@
 	{
 		public IfcCartesianPoint Pnt { get; set; }
 		public IfcVector Dir { get; set; }
+		public IfcLine() : base()
+		{
+			Pnt = new IfcCartesianPoint();
+			Dir = new IfcVector();
+		}
+		public IfcLine(IfcCartesianPoint Pnt, IfcVector Dir) : base ()
+		{
+			this.Pnt = Pnt;
+			this.Dir = Dir;
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcLineSegment2D
+	/// <para>ENTITY IfcLineSegment2D</para>
+	/// <para> SUBTYPE OF (IfcCurveSegment2D);</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcLineSegment2D : IfcCurveSegment2D
+	{
+		public IfcLineSegment2D() : base()
+		{
+		}
+		public IfcLineSegment2D(IfcCartesianPoint StartPoint, IfcPlaneAngleMeasure StartDirection, IfcPositiveLengthMeasure SegmentLength) : base (StartPoint, StartDirection, SegmentLength)
+		{
+		}
+	}
+	/// <summary>
+	/// ENTITY IfcLinearPlacement
+	/// <para>ENTITY IfcLinearPlacement</para>
+	/// <para> SUBTYPE OF (IfcObjectPlacement);</para>
+	/// <para>	PlacementRelTo : IfcCurve;</para>
+	/// <para>	Distance : IfcDistanceExpression;</para>
+	/// <para>	Orientation : OPTIONAL IfcOrientationExpression;</para>
+	/// <para>	CartesianPosition : OPTIONAL IfcAxis2Placement3D;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcLinearPlacement : IfcObjectPlacement
+	{
+		public IfcCurve PlacementRelTo { get; set; }
+		public IfcDistanceExpression Distance { get; set; }
+		public IfcOrientationExpression? Orientation { get; set; }
+		public IfcAxis2Placement3D? CartesianPosition { get; set; }
+		public IfcLinearPlacement() : base()
+		{
+			PlacementRelTo = new IfcCurve();
+			Distance = new IfcDistanceExpression();
+		}
+		public IfcLinearPlacement(IfcCurve PlacementRelTo, IfcDistanceExpression Distance, IfcOrientationExpression Orientation, IfcAxis2Placement3D CartesianPosition) : base ()
+		{
+			this.PlacementRelTo = PlacementRelTo;
+			this.Distance = Distance;
+			this.Orientation = Orientation;
+			this.CartesianPosition = CartesianPosition;
+		}
+	}
+	/// <summary>
+	/// ENTITY IfcLinearPositioningElement
+	/// <para>ENTITY IfcLinearPositioningElement</para>
+	/// <para> ABSTRACT SUPERTYPE OF (ONEOF</para>
+	/// <para>    (IfcAlignment))</para>
+	/// <para> SUBTYPE OF (IfcPositioningElement);</para>
+	/// <para>	Axis : IfcCurve;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public abstract class IfcLinearPositioningElement : IfcPositioningElement
+	{
+		public IfcCurve Axis { get; set; }
+		public IfcLinearPositioningElement() : base()
+		{
+			Axis = new IfcCurve();
+		}
+		public IfcLinearPositioningElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcCurve Axis) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+			this.Axis = Axis;
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcLocalPlacement
 	/// <para>ENTITY IfcLocalPlacement</para>
@@ -8681,10 +11519,18 @@
 	/// <summary>
 	public class IfcLocalPlacement : IfcObjectPlacement
 	{
-		public IfcObjectPlacement PlacementRelTo { get; set; }
+		public IfcObjectPlacement? PlacementRelTo { get; set; }
 		public IfcAxis2Placement RelativePlacement { get; set; }
+		public IfcLocalPlacement() : base()
+		{
+			RelativePlacement = new IfcAxis2Placement();
+		}
+		public IfcLocalPlacement(IfcObjectPlacement PlacementRelTo, IfcAxis2Placement RelativePlacement) : base ()
+		{
+			this.PlacementRelTo = PlacementRelTo;
+			this.RelativePlacement = RelativePlacement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcLoop
 	/// <para>ENTITY IfcLoop</para>
@@ -8697,8 +11543,13 @@
 	/// <summary>
 	public class IfcLoop : IfcTopologicalRepresentationItem
 	{
+		public IfcLoop() : base()
+		{
+		}
+		public IfcLoop() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcManifoldSolidBrep
 	/// <para>ENTITY IfcManifoldSolidBrep</para>
@@ -8712,8 +11563,15 @@
 	public abstract class IfcManifoldSolidBrep : IfcSolidModel
 	{
 		public IfcClosedShell Outer { get; set; }
+		public IfcManifoldSolidBrep() : base()
+		{
+			Outer = new IfcClosedShell();
+		}
+		public IfcManifoldSolidBrep(IfcClosedShell Outer) : base ()
+		{
+			this.Outer = Outer;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMapConversion
 	/// <para>ENTITY IfcMapConversion</para>
@@ -8731,11 +11589,25 @@
 		public IfcLengthMeasure Eastings { get; set; }
 		public IfcLengthMeasure Northings { get; set; }
 		public IfcLengthMeasure OrthogonalHeight { get; set; }
-		public IfcReal XAxisAbscissa { get; set; }
-		public IfcReal XAxisOrdinate { get; set; }
-		public IfcReal Scale { get; set; }
+		public IfcReal? XAxisAbscissa { get; set; }
+		public IfcReal? XAxisOrdinate { get; set; }
+		public IfcReal? Scale { get; set; }
+		public IfcMapConversion() : base()
+		{
+			Eastings = new IfcLengthMeasure();
+			Northings = new IfcLengthMeasure();
+			OrthogonalHeight = new IfcLengthMeasure();
+		}
+		public IfcMapConversion(IfcCoordinateReferenceSystemSelect SourceCRS, IfcCoordinateReferenceSystem TargetCRS, IfcLengthMeasure Eastings, IfcLengthMeasure Northings, IfcLengthMeasure OrthogonalHeight, IfcReal XAxisAbscissa, IfcReal XAxisOrdinate, IfcReal Scale) : base (SourceCRS, TargetCRS)
+		{
+			this.Eastings = Eastings;
+			this.Northings = Northings;
+			this.OrthogonalHeight = OrthogonalHeight;
+			this.XAxisAbscissa = XAxisAbscissa;
+			this.XAxisOrdinate = XAxisOrdinate;
+			this.Scale = Scale;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMappedItem
 	/// <para>ENTITY IfcMappedItem</para>
@@ -8748,8 +11620,17 @@
 	{
 		public IfcRepresentationMap MappingSource { get; set; }
 		public IfcCartesianTransformationOperator MappingTarget { get; set; }
+		public IfcMappedItem() : base()
+		{
+			MappingSource = new IfcRepresentationMap();
+			MappingTarget = new IfcCartesianTransformationOperator();
+		}
+		public IfcMappedItem(IfcRepresentationMap MappingSource, IfcCartesianTransformationOperator MappingTarget) : base ()
+		{
+			this.MappingSource = MappingSource;
+			this.MappingTarget = MappingTarget;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterial
 	/// <para>ENTITY IfcMaterial</para>
@@ -8766,10 +11647,19 @@
 	public class IfcMaterial : IfcMaterialDefinition
 	{
 		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
-		public IfcLabel Category { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcLabel? Category { get; set; }
+		public IfcMaterial() : base()
+		{
+			Name = new IfcLabel();
+		}
+		public IfcMaterial(IfcLabel Name, IfcText Description, IfcLabel Category) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+			this.Category = Category;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialClassificationRelationship;
 	/// <para>ENTITY IfcMaterialClassificationRelationship;</para>
@@ -8781,8 +11671,17 @@
 	{
 		public List<IfcClassificationSelect> MaterialClassifications { get; set; }
 		public IfcMaterial ClassifiedMaterial { get; set; }
+		public IfcMaterialClassificationRelationship() : base()
+		{
+			MaterialClassifications = new List<IfcClassificationSelect>();
+			ClassifiedMaterial = new IfcMaterial();
+		}
+		public IfcMaterialClassificationRelationship(List<IfcClassificationSelect> MaterialClassifications, IfcMaterial ClassifiedMaterial) : base ()
+		{
+			this.MaterialClassifications = MaterialClassifications;
+			this.ClassifiedMaterial = ClassifiedMaterial;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialConstituent
 	/// <para>ENTITY IfcMaterialConstituent</para>
@@ -8798,13 +11697,24 @@
 	/// <summary>
 	public class IfcMaterialConstituent : IfcMaterialDefinition
 	{
-		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcText? Description { get; set; }
 		public IfcMaterial Material { get; set; }
-		public IfcNormalisedRatioMeasure Fraction { get; set; }
-		public IfcLabel Category { get; set; }
+		public IfcNormalisedRatioMeasure? Fraction { get; set; }
+		public IfcLabel? Category { get; set; }
+		public IfcMaterialConstituent() : base()
+		{
+			Material = new IfcMaterial();
+		}
+		public IfcMaterialConstituent(IfcLabel Name, IfcText Description, IfcMaterial Material, IfcNormalisedRatioMeasure Fraction, IfcLabel Category) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+			this.Material = Material;
+			this.Fraction = Fraction;
+			this.Category = Category;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialConstituentSet
 	/// <para>ENTITY IfcMaterialConstituentSet</para>
@@ -8816,11 +11726,19 @@
 	/// <summary>
 	public class IfcMaterialConstituentSet : IfcMaterialDefinition
 	{
-		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
-		public List<IfcMaterialConstituent> MaterialConstituents { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcText? Description { get; set; }
+		public List<IfcMaterialConstituent>? MaterialConstituents { get; set; }
+		public IfcMaterialConstituentSet() : base()
+		{
+		}
+		public IfcMaterialConstituentSet(IfcLabel Name, IfcText Description, List<IfcMaterialConstituent> MaterialConstituents) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+			this.MaterialConstituents = MaterialConstituents;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialDefinition
 	/// <para>ENTITY IfcMaterialDefinition</para>
@@ -8840,8 +11758,13 @@
 	/// <summary>
 	public abstract class IfcMaterialDefinitionENTITY, IfcMaterialSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
+		public IfcMaterialDefinition() : base()
+		{
+		}
+		public IfcMaterialDefinition() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialDefinitionRepresentation
 	/// <para>ENTITY IfcMaterialDefinitionRepresentation</para>
@@ -8849,15 +11772,22 @@
 	/// <para>	RepresentedMaterial : IfcMaterial;</para>
 	/// <para> WHERE</para>
 	/// <para>	OnlyStyledRepresentations : SIZEOF(QUERY(temp <* Representations | </para>
-	/// <para>  (NOT('IFC4.IFCSTYLEDREPRESENTATION' IN TYPEOF(temp)))</para>
+	/// <para>  (NOT('IFC4X1.IFCSTYLEDREPRESENTATION' IN TYPEOF(temp)))</para>
 	/// <para>)) = 0;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcMaterialDefinitionRepresentation : IfcProductRepresentation
 	{
 		public IfcMaterial RepresentedMaterial { get; set; }
+		public IfcMaterialDefinitionRepresentation() : base()
+		{
+			RepresentedMaterial = new IfcMaterial();
+		}
+		public IfcMaterialDefinitionRepresentation(IfcLabel Name, IfcText Description, List<IfcRepresentation> Representations, IfcMaterial RepresentedMaterial) : base (Name, Description, Representations)
+		{
+			this.RepresentedMaterial = RepresentedMaterial;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialLayer
 	/// <para>ENTITY IfcMaterialLayer</para>
@@ -8879,15 +11809,28 @@
 	/// <summary>
 	public class IfcMaterialLayer : IfcMaterialDefinition
 	{
-		public IfcMaterial Material { get; set; }
+		public IfcMaterial? Material { get; set; }
 		public IfcNonNegativeLengthMeasure LayerThickness { get; set; }
-		public IfcLogical IsVentilated { get; set; }
-		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
-		public IfcLabel Category { get; set; }
-		public IfcInteger Priority { get; set; }
+		public IfcLogical? IsVentilated { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcLabel? Category { get; set; }
+		public IfcInteger? Priority { get; set; }
+		public IfcMaterialLayer() : base()
+		{
+			LayerThickness = new IfcNonNegativeLengthMeasure();
+		}
+		public IfcMaterialLayer(IfcMaterial Material, IfcNonNegativeLengthMeasure LayerThickness, IfcLogical IsVentilated, IfcLabel Name, IfcText Description, IfcLabel Category, IfcInteger Priority) : base ()
+		{
+			this.Material = Material;
+			this.LayerThickness = LayerThickness;
+			this.IsVentilated = IsVentilated;
+			this.Name = Name;
+			this.Description = Description;
+			this.Category = Category;
+			this.Priority = Priority;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialLayerSet
 	/// <para>ENTITY IfcMaterialLayerSet</para>
@@ -8902,10 +11845,19 @@
 	public class IfcMaterialLayerSet : IfcMaterialDefinition
 	{
 		public List<IfcMaterialLayer> MaterialLayers { get; set; }
-		public IfcLabel LayerSetName { get; set; }
-		public IfcText Description { get; set; }
+		public IfcLabel? LayerSetName { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcMaterialLayerSet() : base()
+		{
+			MaterialLayers = new List<IfcMaterialLayer>();
+		}
+		public IfcMaterialLayerSet(List<IfcMaterialLayer> MaterialLayers, IfcLabel LayerSetName, IfcText Description) : base ()
+		{
+			this.MaterialLayers = MaterialLayers;
+			this.LayerSetName = LayerSetName;
+			this.Description = Description;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialLayerSetUsage
 	/// <para>ENTITY IfcMaterialLayerSetUsage</para>
@@ -8923,9 +11875,23 @@
 		public IfcLayerSetDirectionEnum LayerSetDirection { get; set; }
 		public IfcDirectionSenseEnum DirectionSense { get; set; }
 		public IfcLengthMeasure OffsetFromReferenceLine { get; set; }
-		public IfcPositiveLengthMeasure ReferenceExtent { get; set; }
+		public IfcPositiveLengthMeasure? ReferenceExtent { get; set; }
+		public IfcMaterialLayerSetUsage() : base()
+		{
+			ForLayerSet = new IfcMaterialLayerSet();
+			LayerSetDirection = new IfcLayerSetDirectionEnum();
+			DirectionSense = new IfcDirectionSenseEnum();
+			OffsetFromReferenceLine = new IfcLengthMeasure();
+		}
+		public IfcMaterialLayerSetUsage(IfcMaterialLayerSet ForLayerSet, IfcLayerSetDirectionEnum LayerSetDirection, IfcDirectionSenseEnum DirectionSense, IfcLengthMeasure OffsetFromReferenceLine, IfcPositiveLengthMeasure ReferenceExtent) : base ()
+		{
+			this.ForLayerSet = ForLayerSet;
+			this.LayerSetDirection = LayerSetDirection;
+			this.DirectionSense = DirectionSense;
+			this.OffsetFromReferenceLine = OffsetFromReferenceLine;
+			this.ReferenceExtent = ReferenceExtent;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialLayerWithOffsets
 	/// <para>ENTITY IfcMaterialLayerWithOffsets</para>
@@ -8938,8 +11904,17 @@
 	{
 		public IfcLayerSetDirectionEnum OffsetDirection { get; set; }
 		public List<IfcLengthMeasure> OffsetValues { get; set; }
+		public IfcMaterialLayerWithOffsets() : base()
+		{
+			OffsetDirection = new IfcLayerSetDirectionEnum();
+			OffsetValues = new List<IfcLengthMeasure>();
+		}
+		public IfcMaterialLayerWithOffsets(IfcMaterial Material, IfcNonNegativeLengthMeasure LayerThickness, IfcLogical IsVentilated, IfcLabel Name, IfcText Description, IfcLabel Category, IfcInteger Priority, IfcLayerSetDirectionEnum OffsetDirection, List<IfcLengthMeasure> OffsetValues) : base (Material, LayerThickness, IsVentilated, Name, Description, Category, Priority)
+		{
+			this.OffsetDirection = OffsetDirection;
+			this.OffsetValues = OffsetValues;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialList;
 	/// <para>ENTITY IfcMaterialList;</para>
@@ -8949,8 +11924,15 @@
 	public class IfcMaterialListENTITY, IfcMaterialSelect
 	{
 		public List<IfcMaterial> Materials { get; set; }
+		public IfcMaterialList() : base()
+		{
+			Materials = new List<IfcMaterial>();
+		}
+		public IfcMaterialList(List<IfcMaterial> Materials) : base ()
+		{
+			this.Materials = Materials;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialProfile
 	/// <para>ENTITY IfcMaterialProfile</para>
@@ -8971,14 +11953,26 @@
 	/// <summary>
 	public class IfcMaterialProfile : IfcMaterialDefinition
 	{
-		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
-		public IfcMaterial Material { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcMaterial? Material { get; set; }
 		public IfcProfileDef Profile { get; set; }
-		public IfcInteger Priority { get; set; }
-		public IfcLabel Category { get; set; }
+		public IfcInteger? Priority { get; set; }
+		public IfcLabel? Category { get; set; }
+		public IfcMaterialProfile() : base()
+		{
+			Profile = new IfcProfileDef();
+		}
+		public IfcMaterialProfile(IfcLabel Name, IfcText Description, IfcMaterial Material, IfcProfileDef Profile, IfcInteger Priority, IfcLabel Category) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+			this.Material = Material;
+			this.Profile = Profile;
+			this.Priority = Priority;
+			this.Category = Category;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialProfileSet
 	/// <para>ENTITY IfcMaterialProfileSet</para>
@@ -8991,12 +11985,22 @@
 	/// <summary>
 	public class IfcMaterialProfileSet : IfcMaterialDefinition
 	{
-		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcText? Description { get; set; }
 		public List<IfcMaterialProfile> MaterialProfiles { get; set; }
-		public IfcCompositeProfileDef CompositeProfile { get; set; }
+		public IfcCompositeProfileDef? CompositeProfile { get; set; }
+		public IfcMaterialProfileSet() : base()
+		{
+			MaterialProfiles = new List<IfcMaterialProfile>();
+		}
+		public IfcMaterialProfileSet(IfcLabel Name, IfcText Description, List<IfcMaterialProfile> MaterialProfiles, IfcCompositeProfileDef CompositeProfile) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+			this.MaterialProfiles = MaterialProfiles;
+			this.CompositeProfile = CompositeProfile;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialProfileSetUsage
 	/// <para>ENTITY IfcMaterialProfileSetUsage</para>
@@ -9011,10 +12015,19 @@
 	public class IfcMaterialProfileSetUsage : IfcMaterialUsageDefinition
 	{
 		public IfcMaterialProfileSet ForProfileSet { get; set; }
-		public IfcCardinalPointReference CardinalPoint { get; set; }
-		public IfcPositiveLengthMeasure ReferenceExtent { get; set; }
+		public IfcCardinalPointReference? CardinalPoint { get; set; }
+		public IfcPositiveLengthMeasure? ReferenceExtent { get; set; }
+		public IfcMaterialProfileSetUsage() : base()
+		{
+			ForProfileSet = new IfcMaterialProfileSet();
+		}
+		public IfcMaterialProfileSetUsage(IfcMaterialProfileSet ForProfileSet, IfcCardinalPointReference CardinalPoint, IfcPositiveLengthMeasure ReferenceExtent) : base ()
+		{
+			this.ForProfileSet = ForProfileSet;
+			this.CardinalPoint = CardinalPoint;
+			this.ReferenceExtent = ReferenceExtent;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialProfileSetUsageTapering
 	/// <para>ENTITY IfcMaterialProfileSetUsageTapering</para>
@@ -9026,9 +12039,17 @@
 	public class IfcMaterialProfileSetUsageTapering : IfcMaterialProfileSetUsage
 	{
 		public IfcMaterialProfileSet ForProfileEndSet { get; set; }
-		public IfcCardinalPointReference CardinalEndPoint { get; set; }
+		public IfcCardinalPointReference? CardinalEndPoint { get; set; }
+		public IfcMaterialProfileSetUsageTapering() : base()
+		{
+			ForProfileEndSet = new IfcMaterialProfileSet();
+		}
+		public IfcMaterialProfileSetUsageTapering(IfcMaterialProfileSet ForProfileSet, IfcCardinalPointReference CardinalPoint, IfcPositiveLengthMeasure ReferenceExtent, IfcMaterialProfileSet ForProfileEndSet, IfcCardinalPointReference CardinalEndPoint) : base (ForProfileSet, CardinalPoint, ReferenceExtent)
+		{
+			this.ForProfileEndSet = ForProfileEndSet;
+			this.CardinalEndPoint = CardinalEndPoint;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialProfileWithOffsets
 	/// <para>ENTITY IfcMaterialProfileWithOffsets</para>
@@ -9039,8 +12060,15 @@
 	public class IfcMaterialProfileWithOffsets : IfcMaterialProfile
 	{
 		public List<IfcLengthMeasure> OffsetValues { get; set; }
+		public IfcMaterialProfileWithOffsets() : base()
+		{
+			OffsetValues = new List<IfcLengthMeasure>();
+		}
+		public IfcMaterialProfileWithOffsets(IfcLabel Name, IfcText Description, IfcMaterial Material, IfcProfileDef Profile, IfcInteger Priority, IfcLabel Category, List<IfcLengthMeasure> OffsetValues) : base (Name, Description, Material, Profile, Priority, Category)
+		{
+			this.OffsetValues = OffsetValues;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialProperties
 	/// <para>ENTITY IfcMaterialProperties</para>
@@ -9051,8 +12079,15 @@
 	public class IfcMaterialProperties : IfcExtendedProperties
 	{
 		public IfcMaterialDefinition Material { get; set; }
+		public IfcMaterialProperties() : base()
+		{
+			Material = new IfcMaterialDefinition();
+		}
+		public IfcMaterialProperties(IfcIdentifier Name, IfcText Description, List<IfcProperty> Properties, IfcMaterialDefinition Material) : base (Name, Description, Properties)
+		{
+			this.Material = Material;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialRelationship
 	/// <para>ENTITY IfcMaterialRelationship</para>
@@ -9066,9 +12101,19 @@
 	{
 		public IfcMaterial RelatingMaterial { get; set; }
 		public List<IfcMaterial> RelatedMaterials { get; set; }
-		public IfcLabel Expression { get; set; }
+		public IfcLabel? Expression { get; set; }
+		public IfcMaterialRelationship() : base()
+		{
+			RelatingMaterial = new IfcMaterial();
+			RelatedMaterials = new List<IfcMaterial>();
+		}
+		public IfcMaterialRelationship(IfcLabel Name, IfcText Description, IfcMaterial RelatingMaterial, List<IfcMaterial> RelatedMaterials, IfcLabel Expression) : base (Name, Description)
+		{
+			this.RelatingMaterial = RelatingMaterial;
+			this.RelatedMaterials = RelatedMaterials;
+			this.Expression = Expression;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMaterialUsageDefinition
 	/// <para>ENTITY IfcMaterialUsageDefinition</para>
@@ -9081,8 +12126,13 @@
 	/// <summary>
 	public abstract class IfcMaterialUsageDefinitionENTITY, IfcMaterialSelect
 	{
+		public IfcMaterialUsageDefinition() : base()
+		{
+		}
+		public IfcMaterialUsageDefinition() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMeasureWithUnit;
 	/// <para>ENTITY IfcMeasureWithUnit;</para>
@@ -9094,8 +12144,17 @@
 	{
 		public IfcValue ValueComponent { get; set; }
 		public IfcUnit UnitComponent { get; set; }
+		public IfcMeasureWithUnit() : base()
+		{
+			ValueComponent = new IfcValue();
+			UnitComponent = new IfcUnit();
+		}
+		public IfcMeasureWithUnit(IfcValue ValueComponent, IfcUnit UnitComponent) : base ()
+		{
+			this.ValueComponent = ValueComponent;
+			this.UnitComponent = UnitComponent;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMechanicalFastener
 	/// <para>ENTITY IfcMechanicalFastener</para>
@@ -9108,16 +12167,24 @@
 	/// <para>(PredefinedType <> IfcMechanicalFastenerTypeEnum.USERDEFINED) OR</para>
 	/// <para>((PredefinedType = IfcMechanicalFastenerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>('IFC4.IFCMECHANICALFASTENERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCMECHANICALFASTENERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcMechanicalFastener : IfcElementComponent
 	{
-		public IfcPositiveLengthMeasure NominalDiameter { get; set; }
-		public IfcPositiveLengthMeasure NominalLength { get; set; }
-		public IfcMechanicalFastenerTypeEnum PredefinedType { get; set; }
+		public IfcPositiveLengthMeasure? NominalDiameter { get; set; }
+		public IfcPositiveLengthMeasure? NominalLength { get; set; }
+		public IfcMechanicalFastenerTypeEnum? PredefinedType { get; set; }
+		public IfcMechanicalFastener() : base()
+		{
+		}
+		public IfcMechanicalFastener(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcPositiveLengthMeasure NominalDiameter, IfcPositiveLengthMeasure NominalLength, IfcMechanicalFastenerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.NominalDiameter = NominalDiameter;
+			this.NominalLength = NominalLength;
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMechanicalFastenerType
 	/// <para>ENTITY IfcMechanicalFastenerType</para>
@@ -9133,10 +12200,19 @@
 	public class IfcMechanicalFastenerType : IfcElementComponentType
 	{
 		public IfcMechanicalFastenerTypeEnum PredefinedType { get; set; }
-		public IfcPositiveLengthMeasure NominalDiameter { get; set; }
-		public IfcPositiveLengthMeasure NominalLength { get; set; }
+		public IfcPositiveLengthMeasure? NominalDiameter { get; set; }
+		public IfcPositiveLengthMeasure? NominalLength { get; set; }
+		public IfcMechanicalFastenerType() : base()
+		{
+			PredefinedType = new IfcMechanicalFastenerTypeEnum();
+		}
+		public IfcMechanicalFastenerType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcMechanicalFastenerTypeEnum PredefinedType, IfcPositiveLengthMeasure NominalDiameter, IfcPositiveLengthMeasure NominalLength) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.NominalDiameter = NominalDiameter;
+			this.NominalLength = NominalLength;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMedicalDevice
 	/// <para>ENTITY IfcMedicalDevice</para>
@@ -9147,14 +12223,20 @@
 	/// <para> (PredefinedType <> IfcMedicalDeviceTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcMedicalDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCMEDICALDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCMEDICALDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcMedicalDevice : IfcFlowTerminal
 	{
-		public IfcMedicalDeviceTypeEnum PredefinedType { get; set; }
+		public IfcMedicalDeviceTypeEnum? PredefinedType { get; set; }
+		public IfcMedicalDevice() : base()
+		{
+		}
+		public IfcMedicalDevice(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcMedicalDeviceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMedicalDeviceType
 	/// <para>ENTITY IfcMedicalDeviceType</para>
@@ -9168,8 +12250,15 @@
 	public class IfcMedicalDeviceType : IfcFlowTerminalType
 	{
 		public IfcMedicalDeviceTypeEnum PredefinedType { get; set; }
+		public IfcMedicalDeviceType() : base()
+		{
+			PredefinedType = new IfcMedicalDeviceTypeEnum();
+		}
+		public IfcMedicalDeviceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcMedicalDeviceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMember
 	/// <para>ENTITY IfcMember</para>
@@ -9182,29 +12271,40 @@
 	/// <para> (PredefinedType <> IfcMemberTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcMemberTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCMEMBERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCMEMBERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcMember : IfcBuildingElement
 	{
-		public IfcMemberTypeEnum PredefinedType { get; set; }
+		public IfcMemberTypeEnum? PredefinedType { get; set; }
+		public IfcMember() : base()
+		{
+		}
+		public IfcMember(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcMemberTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMemberStandardCase
 	/// <para>ENTITY IfcMemberStandardCase</para>
 	/// <para> SUBTYPE OF (IfcMember);</para>
 	/// <para> WHERE</para>
-	/// <para>	HasMaterialProfileSetUsage : SIZEOF (QUERY(temp <* USEDIN(SELF, 'IFC4.IFCRELASSOCIATES.RELATEDOBJECTS') |</para>
-	/// <para>              ('IFC4.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)) AND</para>
-	/// <para>              ('IFC4.IFCMATERIALPROFILESETUSAGE' IN TYPEOF(temp.RelatingMaterial))</para>
+	/// <para>	HasMaterialProfileSetUsage : SIZEOF (QUERY(temp <* USEDIN(SELF, 'IFC4X1.IFCRELASSOCIATES.RELATEDOBJECTS') |</para>
+	/// <para>              ('IFC4X1.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)) AND</para>
+	/// <para>              ('IFC4X1.IFCMATERIALPROFILESETUSAGE' IN TYPEOF(temp.RelatingMaterial))</para>
 	/// <para>              )) = 1;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcMemberStandardCase : IfcMember
 	{
+		public IfcMemberStandardCase() : base()
+		{
+		}
+		public IfcMemberStandardCase(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcMemberTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, PredefinedType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMemberType
 	/// <para>ENTITY IfcMemberType</para>
@@ -9218,8 +12318,15 @@
 	public class IfcMemberType : IfcBuildingElementType
 	{
 		public IfcMemberTypeEnum PredefinedType { get; set; }
+		public IfcMemberType() : base()
+		{
+			PredefinedType = new IfcMemberTypeEnum();
+		}
+		public IfcMemberType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcMemberTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMetric
 	/// <para>ENTITY IfcMetric</para>
@@ -9233,11 +12340,21 @@
 	public class IfcMetric : IfcConstraint
 	{
 		public IfcBenchmarkEnum Benchmark { get; set; }
-		public IfcLabel ValueSource { get; set; }
-		public IfcMetricValueSelect DataValue { get; set; }
-		public IfcReference ReferencePath { get; set; }
+		public IfcLabel? ValueSource { get; set; }
+		public IfcMetricValueSelect? DataValue { get; set; }
+		public IfcReference? ReferencePath { get; set; }
+		public IfcMetric() : base()
+		{
+			Benchmark = new IfcBenchmarkEnum();
+		}
+		public IfcMetric(IfcLabel Name, IfcText Description, IfcConstraintEnum ConstraintGrade, IfcLabel ConstraintSource, IfcActorSelect CreatingActor, IfcDateTime CreationTime, IfcLabel UserDefinedGrade, IfcBenchmarkEnum Benchmark, IfcLabel ValueSource, IfcMetricValueSelect DataValue, IfcReference ReferencePath) : base (Name, Description, ConstraintGrade, ConstraintSource, CreatingActor, CreationTime, UserDefinedGrade)
+		{
+			this.Benchmark = Benchmark;
+			this.ValueSource = ValueSource;
+			this.DataValue = DataValue;
+			this.ReferencePath = ReferencePath;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMirroredProfileDef
 	/// <para>ENTITY IfcMirroredProfileDef</para>
@@ -9262,8 +12379,13 @@
 	/// <summary>
 	public class IfcMirroredProfileDef : IfcDerivedProfileDef
 	{
+		public IfcMirroredProfileDef() : base()
+		{
+		}
+		public IfcMirroredProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcProfileDef ParentProfile, IfcCartesianTransformationOperator2D Operator, IfcLabel Label) : base (ProfileType, ProfileName, ParentProfile, Operator, Label)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMonetaryUnit;
 	/// <para>ENTITY IfcMonetaryUnit;</para>
@@ -9273,8 +12395,15 @@
 	public class IfcMonetaryUnitENTITY, IfcUnit
 	{
 		public IfcLabel Currency { get; set; }
+		public IfcMonetaryUnit() : base()
+		{
+			Currency = new IfcLabel();
+		}
+		public IfcMonetaryUnit(IfcLabel Currency) : base ()
+		{
+			this.Currency = Currency;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMotorConnection
 	/// <para>ENTITY IfcMotorConnection</para>
@@ -9285,14 +12414,20 @@
 	/// <para> (PredefinedType <> IfcMotorConnectionTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcMotorConnectionTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCMOTORCONNECTIONTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCMOTORCONNECTIONTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcMotorConnection : IfcEnergyConversionDevice
 	{
-		public IfcMotorConnectionTypeEnum PredefinedType { get; set; }
+		public IfcMotorConnectionTypeEnum? PredefinedType { get; set; }
+		public IfcMotorConnection() : base()
+		{
+		}
+		public IfcMotorConnection(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcMotorConnectionTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcMotorConnectionType
 	/// <para>ENTITY IfcMotorConnectionType</para>
@@ -9306,8 +12441,15 @@
 	public class IfcMotorConnectionType : IfcEnergyConversionDeviceType
 	{
 		public IfcMotorConnectionTypeEnum PredefinedType { get; set; }
+		public IfcMotorConnectionType() : base()
+		{
+			PredefinedType = new IfcMotorConnectionTypeEnum();
+		}
+		public IfcMotorConnectionType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcMotorConnectionTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcNamedUnit
 	/// <para>ENTITY IfcNamedUnit</para>
@@ -9325,8 +12467,17 @@
 	{
 		public IfcDimensionalExponents Dimensions { get; set; }
 		public IfcUnitEnum UnitType { get; set; }
+		public IfcNamedUnit() : base()
+		{
+			Dimensions = new IfcDimensionalExponents();
+			UnitType = new IfcUnitEnum();
+		}
+		public IfcNamedUnit(IfcDimensionalExponents Dimensions, IfcUnitEnum UnitType) : base ()
+		{
+			this.Dimensions = Dimensions;
+			this.UnitType = UnitType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcObject
 	/// <para>ENTITY IfcObject</para>
@@ -9350,9 +12501,15 @@
 	/// <summary>
 	public abstract class IfcObject : IfcObjectDefinition
 	{
-		public IfcLabel ObjectType { get; set; }
+		public IfcLabel? ObjectType { get; set; }
+		public IfcObject() : base()
+		{
+		}
+		public IfcObject(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.ObjectType = ObjectType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcObjectDefinition
 	/// <para>ENTITY IfcObjectDefinition</para>
@@ -9373,13 +12530,19 @@
 	/// <summary>
 	public abstract class IfcObjectDefinition : IfcRoot, IfcDefinitionSelect
 	{
+		public IfcObjectDefinition() : base()
+		{
+		}
+		public IfcObjectDefinition(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcObjectPlacement
 	/// <para>ENTITY IfcObjectPlacement</para>
 	/// <para> ABSTRACT SUPERTYPE OF (ONEOF</para>
 	/// <para>    (IfcGridPlacement</para>
+	/// <para>    ,IfcLinearPlacement</para>
 	/// <para>    ,IfcLocalPlacement));</para>
 	/// <para> INVERSE</para>
 	/// <para>	PlacesObject : SET [0:?] OF IfcProduct FOR ObjectPlacement;</para>
@@ -9388,8 +12551,13 @@
 	/// <summary>
 	public abstract class IfcObjectPlacementENTITY
 	{
+		public IfcObjectPlacement() : base()
+		{
+		}
+		public IfcObjectPlacement() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcObjective
 	/// <para>ENTITY IfcObjective</para>
@@ -9405,12 +12573,22 @@
 	/// <summary>
 	public class IfcObjective : IfcConstraint
 	{
-		public List<IfcConstraint> BenchmarkValues { get; set; }
-		public IfcLogicalOperatorEnum LogicalAggregator { get; set; }
+		public List<IfcConstraint>? BenchmarkValues { get; set; }
+		public IfcLogicalOperatorEnum? LogicalAggregator { get; set; }
 		public IfcObjectiveEnum ObjectiveQualifier { get; set; }
-		public IfcLabel UserDefinedQualifier { get; set; }
+		public IfcLabel? UserDefinedQualifier { get; set; }
+		public IfcObjective() : base()
+		{
+			ObjectiveQualifier = new IfcObjectiveEnum();
+		}
+		public IfcObjective(IfcLabel Name, IfcText Description, IfcConstraintEnum ConstraintGrade, IfcLabel ConstraintSource, IfcActorSelect CreatingActor, IfcDateTime CreationTime, IfcLabel UserDefinedGrade, List<IfcConstraint> BenchmarkValues, IfcLogicalOperatorEnum LogicalAggregator, IfcObjectiveEnum ObjectiveQualifier, IfcLabel UserDefinedQualifier) : base (Name, Description, ConstraintGrade, ConstraintSource, CreatingActor, CreationTime, UserDefinedGrade)
+		{
+			this.BenchmarkValues = BenchmarkValues;
+			this.LogicalAggregator = LogicalAggregator;
+			this.ObjectiveQualifier = ObjectiveQualifier;
+			this.UserDefinedQualifier = UserDefinedQualifier;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcOccupant
 	/// <para>ENTITY IfcOccupant</para>
@@ -9423,32 +12601,67 @@
 	/// <summary>
 	public class IfcOccupant : IfcActor
 	{
-		public IfcOccupantTypeEnum PredefinedType { get; set; }
+		public IfcOccupantTypeEnum? PredefinedType { get; set; }
+		public IfcOccupant() : base()
+		{
+		}
+		public IfcOccupant(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcActorSelect TheActor, IfcOccupantTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, TheActor)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcOffsetCurve
+	/// <para>ENTITY IfcOffsetCurve</para>
+	/// <para> ABSTRACT SUPERTYPE OF (ONEOF</para>
+	/// <para>    (IfcOffsetCurve2D</para>
+	/// <para>    ,IfcOffsetCurve3D</para>
+	/// <para>    ,IfcOffsetCurveByDistances))</para>
+	/// <para> SUBTYPE OF (IfcCurve);</para>
+	/// <para>	BasisCurve : IfcCurve;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public abstract class IfcOffsetCurve : IfcCurve
+	{
+		public IfcCurve BasisCurve { get; set; }
+		public IfcOffsetCurve() : base()
+		{
+			BasisCurve = new IfcCurve();
+		}
+		public IfcOffsetCurve(IfcCurve BasisCurve) : base ()
+		{
+			this.BasisCurve = BasisCurve;
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcOffsetCurve2D
 	/// <para>ENTITY IfcOffsetCurve2D</para>
-	/// <para> SUBTYPE OF (IfcCurve);</para>
-	/// <para>	BasisCurve : IfcCurve;</para>
+	/// <para> SUBTYPE OF (IfcOffsetCurve);</para>
 	/// <para>	Distance : IfcLengthMeasure;</para>
 	/// <para>	SelfIntersect : IfcLogical;</para>
 	/// <para> WHERE</para>
 	/// <para>	DimIs2D : BasisCurve.Dim = 2;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcOffsetCurve2D : IfcCurve
+	public class IfcOffsetCurve2D : IfcOffsetCurve
 	{
-		public IfcCurve BasisCurve { get; set; }
 		public IfcLengthMeasure Distance { get; set; }
 		public IfcLogical SelfIntersect { get; set; }
+		public IfcOffsetCurve2D() : base()
+		{
+			Distance = new IfcLengthMeasure();
+			SelfIntersect = new IfcLogical();
+		}
+		public IfcOffsetCurve2D(IfcCurve BasisCurve, IfcLengthMeasure Distance, IfcLogical SelfIntersect) : base (BasisCurve)
+		{
+			this.Distance = Distance;
+			this.SelfIntersect = SelfIntersect;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcOffsetCurve3D
 	/// <para>ENTITY IfcOffsetCurve3D</para>
-	/// <para> SUBTYPE OF (IfcCurve);</para>
-	/// <para>	BasisCurve : IfcCurve;</para>
+	/// <para> SUBTYPE OF (IfcOffsetCurve);</para>
 	/// <para>	Distance : IfcLengthMeasure;</para>
 	/// <para>	SelfIntersect : IfcLogical;</para>
 	/// <para>	RefDirection : IfcDirection;</para>
@@ -9456,14 +12669,46 @@
 	/// <para>	DimIs2D : BasisCurve.Dim = 3;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcOffsetCurve3D : IfcCurve
+	public class IfcOffsetCurve3D : IfcOffsetCurve
 	{
-		public IfcCurve BasisCurve { get; set; }
 		public IfcLengthMeasure Distance { get; set; }
 		public IfcLogical SelfIntersect { get; set; }
 		public IfcDirection RefDirection { get; set; }
+		public IfcOffsetCurve3D() : base()
+		{
+			Distance = new IfcLengthMeasure();
+			SelfIntersect = new IfcLogical();
+			RefDirection = new IfcDirection();
+		}
+		public IfcOffsetCurve3D(IfcCurve BasisCurve, IfcLengthMeasure Distance, IfcLogical SelfIntersect, IfcDirection RefDirection) : base (BasisCurve)
+		{
+			this.Distance = Distance;
+			this.SelfIntersect = SelfIntersect;
+			this.RefDirection = RefDirection;
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcOffsetCurveByDistances
+	/// <para>ENTITY IfcOffsetCurveByDistances</para>
+	/// <para> SUBTYPE OF (IfcOffsetCurve);</para>
+	/// <para>	OffsetValues : LIST [1:?] OF IfcDistanceExpression;</para>
+	/// <para>	Tag : OPTIONAL IfcLabel;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcOffsetCurveByDistances : IfcOffsetCurve
+	{
+		public List<IfcDistanceExpression> OffsetValues { get; set; }
+		public IfcLabel? Tag { get; set; }
+		public IfcOffsetCurveByDistances() : base()
+		{
+			OffsetValues = new List<IfcDistanceExpression>();
+		}
+		public IfcOffsetCurveByDistances(IfcCurve BasisCurve, List<IfcDistanceExpression> OffsetValues, IfcLabel Tag) : base (BasisCurve)
+		{
+			this.OffsetValues = OffsetValues;
+			this.Tag = Tag;
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcOpenShell
 	/// <para>ENTITY IfcOpenShell</para>
@@ -9472,8 +12717,13 @@
 	/// <summary>
 	public class IfcOpenShell : IfcConnectedFaceSet, IfcShell
 	{
+		public IfcOpenShell() : base()
+		{
+		}
+		public IfcOpenShell(List<IfcFace> CfsFaces) : base (CfsFaces)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcOpeningElement
 	/// <para>ENTITY IfcOpeningElement</para>
@@ -9487,9 +12737,15 @@
 	/// <summary>
 	public class IfcOpeningElement : IfcFeatureElementSubtraction
 	{
-		public IfcOpeningElementTypeEnum PredefinedType { get; set; }
+		public IfcOpeningElementTypeEnum? PredefinedType { get; set; }
+		public IfcOpeningElement() : base()
+		{
+		}
+		public IfcOpeningElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcOpeningElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcOpeningStandardCase
 	/// <para>ENTITY IfcOpeningStandardCase</para>
@@ -9498,8 +12754,13 @@
 	/// <summary>
 	public class IfcOpeningStandardCase : IfcOpeningElement
 	{
+		public IfcOpeningStandardCase() : base()
+		{
+		}
+		public IfcOpeningStandardCase(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcOpeningElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, PredefinedType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcOrganization;
 	/// <para>ENTITY IfcOrganization;</para>
@@ -9516,13 +12777,24 @@
 	/// <summary>
 	public class IfcOrganizationENTITY, IfcActorSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
-		public IfcIdentifier Identification { get; set; }
+		public IfcIdentifier? Identification { get; set; }
 		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
-		public List<IfcActorRole> Roles { get; set; }
-		public List<IfcAddress> Addresses { get; set; }
+		public IfcText? Description { get; set; }
+		public List<IfcActorRole>? Roles { get; set; }
+		public List<IfcAddress>? Addresses { get; set; }
+		public IfcOrganization() : base()
+		{
+			Name = new IfcLabel();
+		}
+		public IfcOrganization(IfcIdentifier Identification, IfcLabel Name, IfcText Description, List<IfcActorRole> Roles, List<IfcAddress> Addresses) : base ()
+		{
+			this.Identification = Identification;
+			this.Name = Name;
+			this.Description = Description;
+			this.Roles = Roles;
+			this.Addresses = Addresses;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcOrganizationRelationship
 	/// <para>ENTITY IfcOrganizationRelationship</para>
@@ -9535,8 +12807,40 @@
 	{
 		public IfcOrganization RelatingOrganization { get; set; }
 		public List<IfcOrganization> RelatedOrganizations { get; set; }
+		public IfcOrganizationRelationship() : base()
+		{
+			RelatingOrganization = new IfcOrganization();
+			RelatedOrganizations = new List<IfcOrganization>();
+		}
+		public IfcOrganizationRelationship(IfcLabel Name, IfcText Description, IfcOrganization RelatingOrganization, List<IfcOrganization> RelatedOrganizations) : base (Name, Description)
+		{
+			this.RelatingOrganization = RelatingOrganization;
+			this.RelatedOrganizations = RelatedOrganizations;
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcOrientationExpression
+	/// <para>ENTITY IfcOrientationExpression</para>
+	/// <para> SUBTYPE OF (IfcGeometricRepresentationItem);</para>
+	/// <para>	LateralAxisDirection : IfcDirection;</para>
+	/// <para>	VerticalAxisDirection : IfcDirection;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcOrientationExpression : IfcGeometricRepresentationItem
+	{
+		public IfcDirection LateralAxisDirection { get; set; }
+		public IfcDirection VerticalAxisDirection { get; set; }
+		public IfcOrientationExpression() : base()
+		{
+			LateralAxisDirection = new IfcDirection();
+			VerticalAxisDirection = new IfcDirection();
+		}
+		public IfcOrientationExpression(IfcDirection LateralAxisDirection, IfcDirection VerticalAxisDirection) : base ()
+		{
+			this.LateralAxisDirection = LateralAxisDirection;
+			this.VerticalAxisDirection = VerticalAxisDirection;
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcOrientedEdge
 	/// <para>ENTITY IfcOrientedEdge</para>
@@ -9549,15 +12853,24 @@
 	/// <para>	SELF\IfcEdge.EdgeEnd : IfcVertex := IfcBooleanChoose </para>
 	/// <para>(Orientation, EdgeElement.EdgeEnd, EdgeElement.EdgeStart);</para>
 	/// <para> WHERE</para>
-	/// <para>	EdgeElementNotOriented : NOT('IFC4.IFCORIENTEDEDGE' IN TYPEOF(EdgeElement));</para>
+	/// <para>	EdgeElementNotOriented : NOT('IFC4X1.IFCORIENTEDEDGE' IN TYPEOF(EdgeElement));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcOrientedEdge : IfcEdge
 	{
 		public IfcEdge EdgeElement { get; set; }
 		public IfcBoolean Orientation { get; set; }
+		public IfcOrientedEdge() : base()
+		{
+			EdgeElement = new IfcEdge();
+			Orientation = new IfcBoolean();
+		}
+		public IfcOrientedEdge(IfcVertex EdgeStart, IfcVertex EdgeEnd, IfcEdge EdgeElement, IfcBoolean Orientation) : base (EdgeStart, EdgeEnd)
+		{
+			this.EdgeElement = EdgeElement;
+			this.Orientation = Orientation;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcOuterBoundaryCurve
 	/// <para>ENTITY IfcOuterBoundaryCurve</para>
@@ -9566,8 +12879,13 @@
 	/// <summary>
 	public class IfcOuterBoundaryCurve : IfcBoundaryCurve
 	{
+		public IfcOuterBoundaryCurve() : base()
+		{
+		}
+		public IfcOuterBoundaryCurve(List<IfcCompositeCurveSegment> Segments, IfcLogical SelfIntersect) : base (Segments, SelfIntersect)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcOutlet
 	/// <para>ENTITY IfcOutlet</para>
@@ -9578,14 +12896,20 @@
 	/// <para> (PredefinedType <> IfcOutletTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcOutletTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCOUTLETTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCOUTLETTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcOutlet : IfcFlowTerminal
 	{
-		public IfcOutletTypeEnum PredefinedType { get; set; }
+		public IfcOutletTypeEnum? PredefinedType { get; set; }
+		public IfcOutlet() : base()
+		{
+		}
+		public IfcOutlet(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcOutletTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcOutletType
 	/// <para>ENTITY IfcOutletType</para>
@@ -9599,8 +12923,15 @@
 	public class IfcOutletType : IfcFlowTerminalType
 	{
 		public IfcOutletTypeEnum PredefinedType { get; set; }
+		public IfcOutletType() : base()
+		{
+			PredefinedType = new IfcOutletTypeEnum();
+		}
+		public IfcOutletType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcOutletTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcOwnerHistory;
 	/// <para>ENTITY IfcOwnerHistory;</para>
@@ -9622,14 +12953,30 @@
 	{
 		public IfcPersonAndOrganization OwningUser { get; set; }
 		public IfcApplication OwningApplication { get; set; }
-		public IfcStateEnum State { get; set; }
-		public IfcChangeActionEnum ChangeAction { get; set; }
-		public IfcTimeStamp LastModifiedDate { get; set; }
-		public IfcPersonAndOrganization LastModifyingUser { get; set; }
-		public IfcApplication LastModifyingApplication { get; set; }
+		public IfcStateEnum? State { get; set; }
+		public IfcChangeActionEnum? ChangeAction { get; set; }
+		public IfcTimeStamp? LastModifiedDate { get; set; }
+		public IfcPersonAndOrganization? LastModifyingUser { get; set; }
+		public IfcApplication? LastModifyingApplication { get; set; }
 		public IfcTimeStamp CreationDate { get; set; }
+		public IfcOwnerHistory() : base()
+		{
+			OwningUser = new IfcPersonAndOrganization();
+			OwningApplication = new IfcApplication();
+			CreationDate = new IfcTimeStamp();
+		}
+		public IfcOwnerHistory(IfcPersonAndOrganization OwningUser, IfcApplication OwningApplication, IfcStateEnum State, IfcChangeActionEnum ChangeAction, IfcTimeStamp LastModifiedDate, IfcPersonAndOrganization LastModifyingUser, IfcApplication LastModifyingApplication, IfcTimeStamp CreationDate) : base ()
+		{
+			this.OwningUser = OwningUser;
+			this.OwningApplication = OwningApplication;
+			this.State = State;
+			this.ChangeAction = ChangeAction;
+			this.LastModifiedDate = LastModifiedDate;
+			this.LastModifyingUser = LastModifyingUser;
+			this.LastModifyingApplication = LastModifyingApplication;
+			this.CreationDate = CreationDate;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcParameterizedProfileDef
 	/// <para>ENTITY IfcParameterizedProfileDef</para>
@@ -9651,9 +12998,15 @@
 	/// <summary>
 	public abstract class IfcParameterizedProfileDef : IfcProfileDef
 	{
-		public IfcAxis2Placement2D Position { get; set; }
+		public IfcAxis2Placement2D? Position { get; set; }
+		public IfcParameterizedProfileDef() : base()
+		{
+		}
+		public IfcParameterizedProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position) : base (ProfileType, ProfileName)
+		{
+			this.Position = Position;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPath
 	/// <para>ENTITY IfcPath</para>
@@ -9665,8 +13018,13 @@
 	/// <summary>
 	public class IfcPath : IfcTopologicalRepresentationItem
 	{
+		public IfcPath() : base()
+		{
+		}
+		public IfcPath() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPcurve
 	/// <para>ENTITY IfcPcurve</para>
@@ -9681,8 +13039,17 @@
 	{
 		public IfcSurface BasisSurface { get; set; }
 		public IfcCurve ReferenceCurve { get; set; }
+		public IfcPcurve() : base()
+		{
+			BasisSurface = new IfcSurface();
+			ReferenceCurve = new IfcCurve();
+		}
+		public IfcPcurve(IfcSurface BasisSurface, IfcCurve ReferenceCurve) : base ()
+		{
+			this.BasisSurface = BasisSurface;
+			this.ReferenceCurve = ReferenceCurve;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPerformanceHistory
 	/// <para>ENTITY IfcPerformanceHistory</para>
@@ -9694,9 +13061,17 @@
 	public class IfcPerformanceHistory : IfcControl
 	{
 		public IfcLabel LifeCyclePhase { get; set; }
-		public IfcPerformanceHistoryTypeEnum PredefinedType { get; set; }
+		public IfcPerformanceHistoryTypeEnum? PredefinedType { get; set; }
+		public IfcPerformanceHistory() : base()
+		{
+			LifeCyclePhase = new IfcLabel();
+		}
+		public IfcPerformanceHistory(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcLabel LifeCyclePhase, IfcPerformanceHistoryTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification)
+		{
+			this.LifeCyclePhase = LifeCyclePhase;
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPermeableCoveringProperties
 	/// <para>ENTITY IfcPermeableCoveringProperties</para>
@@ -9712,11 +13087,23 @@
 	{
 		public IfcPermeableCoveringOperationEnum OperationType { get; set; }
 		public IfcWindowPanelPositionEnum PanelPosition { get; set; }
-		public IfcPositiveLengthMeasure FrameDepth { get; set; }
-		public IfcPositiveLengthMeasure FrameThickness { get; set; }
-		public IfcShapeAspect ShapeAspectStyle { get; set; }
+		public IfcPositiveLengthMeasure? FrameDepth { get; set; }
+		public IfcPositiveLengthMeasure? FrameThickness { get; set; }
+		public IfcShapeAspect? ShapeAspectStyle { get; set; }
+		public IfcPermeableCoveringProperties() : base()
+		{
+			OperationType = new IfcPermeableCoveringOperationEnum();
+			PanelPosition = new IfcWindowPanelPositionEnum();
+		}
+		public IfcPermeableCoveringProperties(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcPermeableCoveringOperationEnum OperationType, IfcWindowPanelPositionEnum PanelPosition, IfcPositiveLengthMeasure FrameDepth, IfcPositiveLengthMeasure FrameThickness, IfcShapeAspect ShapeAspectStyle) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.OperationType = OperationType;
+			this.PanelPosition = PanelPosition;
+			this.FrameDepth = FrameDepth;
+			this.FrameThickness = FrameThickness;
+			this.ShapeAspectStyle = ShapeAspectStyle;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPermit
 	/// <para>ENTITY IfcPermit</para>
@@ -9728,11 +13115,19 @@
 	/// <summary>
 	public class IfcPermit : IfcControl
 	{
-		public IfcPermitTypeEnum PredefinedType { get; set; }
-		public IfcLabel Status { get; set; }
-		public IfcText LongDescription { get; set; }
+		public IfcPermitTypeEnum? PredefinedType { get; set; }
+		public IfcLabel? Status { get; set; }
+		public IfcText? LongDescription { get; set; }
+		public IfcPermit() : base()
+		{
+		}
+		public IfcPermit(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcPermitTypeEnum PredefinedType, IfcLabel Status, IfcText LongDescription) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification)
+		{
+			this.PredefinedType = PredefinedType;
+			this.Status = Status;
+			this.LongDescription = LongDescription;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPerson;
 	/// <para>ENTITY IfcPerson;</para>
@@ -9753,16 +13148,29 @@
 	/// <summary>
 	public class IfcPersonENTITY, IfcActorSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
-		public IfcIdentifier Identification { get; set; }
-		public IfcLabel FamilyName { get; set; }
-		public IfcLabel GivenName { get; set; }
-		public List<IfcLabel> MiddleNames { get; set; }
-		public List<IfcLabel> PrefixTitles { get; set; }
-		public List<IfcLabel> SuffixTitles { get; set; }
-		public List<IfcActorRole> Roles { get; set; }
-		public List<IfcAddress> Addresses { get; set; }
+		public IfcIdentifier? Identification { get; set; }
+		public IfcLabel? FamilyName { get; set; }
+		public IfcLabel? GivenName { get; set; }
+		public List<IfcLabel>? MiddleNames { get; set; }
+		public List<IfcLabel>? PrefixTitles { get; set; }
+		public List<IfcLabel>? SuffixTitles { get; set; }
+		public List<IfcActorRole>? Roles { get; set; }
+		public List<IfcAddress>? Addresses { get; set; }
+		public IfcPerson() : base()
+		{
+		}
+		public IfcPerson(IfcIdentifier Identification, IfcLabel FamilyName, IfcLabel GivenName, List<IfcLabel> MiddleNames, List<IfcLabel> PrefixTitles, List<IfcLabel> SuffixTitles, List<IfcActorRole> Roles, List<IfcAddress> Addresses) : base ()
+		{
+			this.Identification = Identification;
+			this.FamilyName = FamilyName;
+			this.GivenName = GivenName;
+			this.MiddleNames = MiddleNames;
+			this.PrefixTitles = PrefixTitles;
+			this.SuffixTitles = SuffixTitles;
+			this.Roles = Roles;
+			this.Addresses = Addresses;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPersonAndOrganization;
 	/// <para>ENTITY IfcPersonAndOrganization;</para>
@@ -9775,9 +13183,19 @@
 	{
 		public IfcPerson ThePerson { get; set; }
 		public IfcOrganization TheOrganization { get; set; }
-		public List<IfcActorRole> Roles { get; set; }
+		public List<IfcActorRole>? Roles { get; set; }
+		public IfcPersonAndOrganization() : base()
+		{
+			ThePerson = new IfcPerson();
+			TheOrganization = new IfcOrganization();
+		}
+		public IfcPersonAndOrganization(IfcPerson ThePerson, IfcOrganization TheOrganization, List<IfcActorRole> Roles) : base ()
+		{
+			this.ThePerson = ThePerson;
+			this.TheOrganization = TheOrganization;
+			this.Roles = Roles;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPhysicalComplexQuantity
 	/// <para>ENTITY IfcPhysicalComplexQuantity</para>
@@ -9795,10 +13213,21 @@
 	{
 		public List<IfcPhysicalQuantity> HasQuantities { get; set; }
 		public IfcLabel Discrimination { get; set; }
-		public IfcLabel Quality { get; set; }
-		public IfcLabel Usage { get; set; }
+		public IfcLabel? Quality { get; set; }
+		public IfcLabel? Usage { get; set; }
+		public IfcPhysicalComplexQuantity() : base()
+		{
+			HasQuantities = new List<IfcPhysicalQuantity>();
+			Discrimination = new IfcLabel();
+		}
+		public IfcPhysicalComplexQuantity(IfcLabel Name, IfcText Description, List<IfcPhysicalQuantity> HasQuantities, IfcLabel Discrimination, IfcLabel Quality, IfcLabel Usage) : base (Name, Description)
+		{
+			this.HasQuantities = HasQuantities;
+			this.Discrimination = Discrimination;
+			this.Quality = Quality;
+			this.Usage = Usage;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPhysicalQuantity
 	/// <para>ENTITY IfcPhysicalQuantity</para>
@@ -9815,9 +13244,17 @@
 	public abstract class IfcPhysicalQuantityENTITY, IfcResourceObjectSelect
 	{
 		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcPhysicalQuantity() : base()
+		{
+			Name = new IfcLabel();
+		}
+		public IfcPhysicalQuantity(IfcLabel Name, IfcText Description) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPhysicalSimpleQuantity
 	/// <para>ENTITY IfcPhysicalSimpleQuantity</para>
@@ -9834,9 +13271,15 @@
 	/// <summary>
 	public abstract class IfcPhysicalSimpleQuantity : IfcPhysicalQuantity
 	{
-		public IfcNamedUnit Unit { get; set; }
+		public IfcNamedUnit? Unit { get; set; }
+		public IfcPhysicalSimpleQuantity() : base()
+		{
+		}
+		public IfcPhysicalSimpleQuantity(IfcLabel Name, IfcText Description, IfcNamedUnit Unit) : base (Name, Description)
+		{
+			this.Unit = Unit;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPile
 	/// <para>ENTITY IfcPile</para>
@@ -9848,15 +13291,22 @@
 	/// <para>(PredefinedType <> IfcPileTypeEnum.USERDEFINED) OR</para>
 	/// <para>((PredefinedType = IfcPileTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>('IFC4.IFCPILETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCPILETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcPile : IfcBuildingElement
 	{
-		public IfcPileTypeEnum PredefinedType { get; set; }
-		public IfcPileConstructionEnum ConstructionType { get; set; }
+		public IfcPileTypeEnum? PredefinedType { get; set; }
+		public IfcPileConstructionEnum? ConstructionType { get; set; }
+		public IfcPile() : base()
+		{
+		}
+		public IfcPile(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcPileTypeEnum PredefinedType, IfcPileConstructionEnum ConstructionType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+			this.ConstructionType = ConstructionType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPileType
 	/// <para>ENTITY IfcPileType</para>
@@ -9870,8 +13320,15 @@
 	public class IfcPileType : IfcBuildingElementType
 	{
 		public IfcPileTypeEnum PredefinedType { get; set; }
+		public IfcPileType() : base()
+		{
+			PredefinedType = new IfcPileTypeEnum();
+		}
+		public IfcPileType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcPileTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPipeFitting
 	/// <para>ENTITY IfcPipeFitting</para>
@@ -9882,14 +13339,20 @@
 	/// <para> (PredefinedType <> IfcPipeFittingTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcPipeFittingTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCPIPEFITTINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCPIPEFITTINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcPipeFitting : IfcFlowFitting
 	{
-		public IfcPipeFittingTypeEnum PredefinedType { get; set; }
+		public IfcPipeFittingTypeEnum? PredefinedType { get; set; }
+		public IfcPipeFitting() : base()
+		{
+		}
+		public IfcPipeFitting(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcPipeFittingTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPipeFittingType
 	/// <para>ENTITY IfcPipeFittingType</para>
@@ -9903,8 +13366,15 @@
 	public class IfcPipeFittingType : IfcFlowFittingType
 	{
 		public IfcPipeFittingTypeEnum PredefinedType { get; set; }
+		public IfcPipeFittingType() : base()
+		{
+			PredefinedType = new IfcPipeFittingTypeEnum();
+		}
+		public IfcPipeFittingType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcPipeFittingTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPipeSegment
 	/// <para>ENTITY IfcPipeSegment</para>
@@ -9915,14 +13385,20 @@
 	/// <para> (PredefinedType <> IfcPipeSegmentTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcPipeSegmentTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCPIPESEGMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCPIPESEGMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcPipeSegment : IfcFlowSegment
 	{
-		public IfcPipeSegmentTypeEnum PredefinedType { get; set; }
+		public IfcPipeSegmentTypeEnum? PredefinedType { get; set; }
+		public IfcPipeSegment() : base()
+		{
+		}
+		public IfcPipeSegment(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcPipeSegmentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPipeSegmentType
 	/// <para>ENTITY IfcPipeSegmentType</para>
@@ -9936,8 +13412,15 @@
 	public class IfcPipeSegmentType : IfcFlowSegmentType
 	{
 		public IfcPipeSegmentTypeEnum PredefinedType { get; set; }
+		public IfcPipeSegmentType() : base()
+		{
+			PredefinedType = new IfcPipeSegmentTypeEnum();
+		}
+		public IfcPipeSegmentType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcPipeSegmentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPixelTexture
 	/// <para>ENTITY IfcPixelTexture</para>
@@ -9963,8 +13446,21 @@
 		public IfcInteger Height { get; set; }
 		public IfcInteger ColourComponents { get; set; }
 		public List<IfcBinary> Pixel { get; set; }
+		public IfcPixelTexture() : base()
+		{
+			Width = new IfcInteger();
+			Height = new IfcInteger();
+			ColourComponents = new IfcInteger();
+			Pixel = new List<IfcBinary>();
+		}
+		public IfcPixelTexture(IfcBoolean RepeatS, IfcBoolean RepeatT, IfcIdentifier Mode, IfcCartesianTransformationOperator2D TextureTransform, List<IfcIdentifier> Parameter, IfcInteger Width, IfcInteger Height, IfcInteger ColourComponents, List<IfcBinary> Pixel) : base (RepeatS, RepeatT, Mode, TextureTransform, Parameter)
+		{
+			this.Width = Width;
+			this.Height = Height;
+			this.ColourComponents = ColourComponents;
+			this.Pixel = Pixel;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPlacement
 	/// <para>ENTITY IfcPlacement</para>
@@ -9981,8 +13477,15 @@
 	public abstract class IfcPlacement : IfcGeometricRepresentationItem
 	{
 		public IfcCartesianPoint Location { get; set; }
+		public IfcPlacement() : base()
+		{
+			Location = new IfcCartesianPoint();
+		}
+		public IfcPlacement(IfcCartesianPoint Location) : base ()
+		{
+			this.Location = Location;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPlanarBox
 	/// <para>ENTITY IfcPlanarBox</para>
@@ -9993,8 +13496,15 @@
 	public class IfcPlanarBox : IfcPlanarExtent
 	{
 		public IfcAxis2Placement Placement { get; set; }
+		public IfcPlanarBox() : base()
+		{
+			Placement = new IfcAxis2Placement();
+		}
+		public IfcPlanarBox(IfcLengthMeasure SizeInX, IfcLengthMeasure SizeInY, IfcAxis2Placement Placement) : base (SizeInX, SizeInY)
+		{
+			this.Placement = Placement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPlanarExtent
 	/// <para>ENTITY IfcPlanarExtent</para>
@@ -10009,8 +13519,17 @@
 	{
 		public IfcLengthMeasure SizeInX { get; set; }
 		public IfcLengthMeasure SizeInY { get; set; }
+		public IfcPlanarExtent() : base()
+		{
+			SizeInX = new IfcLengthMeasure();
+			SizeInY = new IfcLengthMeasure();
+		}
+		public IfcPlanarExtent(IfcLengthMeasure SizeInX, IfcLengthMeasure SizeInY) : base ()
+		{
+			this.SizeInX = SizeInX;
+			this.SizeInY = SizeInY;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPlane
 	/// <para>ENTITY IfcPlane</para>
@@ -10019,8 +13538,13 @@
 	/// <summary>
 	public class IfcPlane : IfcElementarySurface
 	{
+		public IfcPlane() : base()
+		{
+		}
+		public IfcPlane(IfcAxis2Placement3D Position) : base (Position)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPlate
 	/// <para>ENTITY IfcPlate</para>
@@ -10033,29 +13557,40 @@
 	/// <para> (PredefinedType <> IfcPlateTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcPlateTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCPLATETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCPLATETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcPlate : IfcBuildingElement
 	{
-		public IfcPlateTypeEnum PredefinedType { get; set; }
+		public IfcPlateTypeEnum? PredefinedType { get; set; }
+		public IfcPlate() : base()
+		{
+		}
+		public IfcPlate(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcPlateTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPlateStandardCase
 	/// <para>ENTITY IfcPlateStandardCase</para>
 	/// <para> SUBTYPE OF (IfcPlate);</para>
 	/// <para> WHERE</para>
-	/// <para>	HasMaterialLayerSetUsage : SIZEOF (QUERY(temp <* USEDIN(SELF, 'IFC4.IFCRELASSOCIATES.RELATEDOBJECTS') |</para>
-	/// <para>              ('IFC4.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)) AND</para>
-	/// <para>              ('IFC4.IFCMATERIALLAYERSETUSAGE' IN TYPEOF(temp.RelatingMaterial))</para>
+	/// <para>	HasMaterialLayerSetUsage : SIZEOF (QUERY(temp <* USEDIN(SELF, 'IFC4X1.IFCRELASSOCIATES.RELATEDOBJECTS') |</para>
+	/// <para>              ('IFC4X1.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)) AND</para>
+	/// <para>              ('IFC4X1.IFCMATERIALLAYERSETUSAGE' IN TYPEOF(temp.RelatingMaterial))</para>
 	/// <para>              )) = 1;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcPlateStandardCase : IfcPlate
 	{
+		public IfcPlateStandardCase() : base()
+		{
+		}
+		public IfcPlateStandardCase(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcPlateTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, PredefinedType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPlateType
 	/// <para>ENTITY IfcPlateType</para>
@@ -10069,8 +13604,15 @@
 	public class IfcPlateType : IfcBuildingElementType
 	{
 		public IfcPlateTypeEnum PredefinedType { get; set; }
+		public IfcPlateType() : base()
+		{
+			PredefinedType = new IfcPlateTypeEnum();
+		}
+		public IfcPlateType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcPlateTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPoint
 	/// <para>ENTITY IfcPoint</para>
@@ -10083,8 +13625,13 @@
 	/// <summary>
 	public abstract class IfcPoint : IfcGeometricRepresentationItem, IfcGeometricSetSelect, IfcPointOrVertexPoint
 	{
+		public IfcPoint() : base()
+		{
+		}
+		public IfcPoint() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPointOnCurve
 	/// <para>ENTITY IfcPointOnCurve</para>
@@ -10099,8 +13646,17 @@
 	{
 		public IfcCurve BasisCurve { get; set; }
 		public IfcParameterValue PointParameter { get; set; }
+		public IfcPointOnCurve() : base()
+		{
+			BasisCurve = new IfcCurve();
+			PointParameter = new IfcParameterValue();
+		}
+		public IfcPointOnCurve(IfcCurve BasisCurve, IfcParameterValue PointParameter) : base ()
+		{
+			this.BasisCurve = BasisCurve;
+			this.PointParameter = PointParameter;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPointOnSurface
 	/// <para>ENTITY IfcPointOnSurface</para>
@@ -10117,8 +13673,19 @@
 		public IfcSurface BasisSurface { get; set; }
 		public IfcParameterValue PointParameterU { get; set; }
 		public IfcParameterValue PointParameterV { get; set; }
+		public IfcPointOnSurface() : base()
+		{
+			BasisSurface = new IfcSurface();
+			PointParameterU = new IfcParameterValue();
+			PointParameterV = new IfcParameterValue();
+		}
+		public IfcPointOnSurface(IfcSurface BasisSurface, IfcParameterValue PointParameterU, IfcParameterValue PointParameterV) : base ()
+		{
+			this.BasisSurface = BasisSurface;
+			this.PointParameterU = PointParameterU;
+			this.PointParameterV = PointParameterV;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPolyLoop
 	/// <para>ENTITY IfcPolyLoop</para>
@@ -10130,8 +13697,13 @@
 	/// <summary>
 	public class IfcPolyLoop : IfcLoop
 	{
+		public IfcPolyLoop() : base()
+		{
+		}
+		public IfcPolyLoop() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPolygonalBoundedHalfSpace
 	/// <para>ENTITY IfcPolygonalBoundedHalfSpace</para>
@@ -10141,8 +13713,8 @@
 	/// <para> WHERE</para>
 	/// <para>	BoundaryDim : PolygonalBoundary.Dim = 2;</para>
 	/// <para>	BoundaryType : SIZEOF(TYPEOF(PolygonalBoundary) * [</para>
-	/// <para>  'IFC4.IFCPOLYLINE', </para>
-	/// <para>  'IFC4.IFCCOMPOSITECURVE']</para>
+	/// <para>  'IFC4X1.IFCPOLYLINE', </para>
+	/// <para>  'IFC4X1.IFCCOMPOSITECURVE']</para>
 	/// <para>) = 1;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
@@ -10150,8 +13722,17 @@
 	{
 		public IfcAxis2Placement3D Position { get; set; }
 		public IfcBoundedCurve PolygonalBoundary { get; set; }
+		public IfcPolygonalBoundedHalfSpace() : base()
+		{
+			Position = new IfcAxis2Placement3D();
+			PolygonalBoundary = new IfcBoundedCurve();
+		}
+		public IfcPolygonalBoundedHalfSpace(IfcSurface BaseSurface, IfcBoolean AgreementFlag, IfcAxis2Placement3D Position, IfcBoundedCurve PolygonalBoundary) : base (BaseSurface, AgreementFlag)
+		{
+			this.Position = Position;
+			this.PolygonalBoundary = PolygonalBoundary;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPolygonalFaceSet
 	/// <para>ENTITY IfcPolygonalFaceSet</para>
@@ -10163,11 +13744,20 @@
 	/// <summary>
 	public class IfcPolygonalFaceSet : IfcTessellatedFaceSet
 	{
-		public IfcBoolean Closed { get; set; }
+		public IfcBoolean? Closed { get; set; }
 		public List<IfcIndexedPolygonalFace> Faces { get; set; }
-		public List<IfcPositiveInteger> PnIndex { get; set; }
+		public List<IfcPositiveInteger>? PnIndex { get; set; }
+		public IfcPolygonalFaceSet() : base()
+		{
+			Faces = new List<IfcIndexedPolygonalFace>();
+		}
+		public IfcPolygonalFaceSet(IfcCartesianPointList3D Coordinates, IfcBoolean Closed, List<IfcIndexedPolygonalFace> Faces, List<IfcPositiveInteger> PnIndex) : base (Coordinates)
+		{
+			this.Closed = Closed;
+			this.Faces = Faces;
+			this.PnIndex = PnIndex;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPolyline
 	/// <para>ENTITY IfcPolyline</para>
@@ -10180,8 +13770,15 @@
 	public class IfcPolyline : IfcBoundedCurve
 	{
 		public List<IfcCartesianPoint> Points { get; set; }
+		public IfcPolyline() : base()
+		{
+			Points = new List<IfcCartesianPoint>();
+		}
+		public IfcPolyline(List<IfcCartesianPoint> Points) : base ()
+		{
+			this.Points = Points;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPort
 	/// <para>ENTITY IfcPort</para>
@@ -10196,8 +13793,36 @@
 	/// <summary>
 	public abstract class IfcPort : IfcProduct
 	{
+		public IfcPort() : base()
+		{
+		}
+		public IfcPort(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcPositioningElement
+	/// <para>ENTITY IfcPositioningElement</para>
+	/// <para> ABSTRACT SUPERTYPE OF (ONEOF</para>
+	/// <para>    (IfcGrid</para>
+	/// <para>    ,IfcLinearPositioningElement</para>
+	/// <para>    ,IfcReferent))</para>
+	/// <para> SUBTYPE OF (IfcProduct);</para>
+	/// <para> INVERSE</para>
+	/// <para>	ContainedInStructure : SET [0:1] OF IfcRelContainedInSpatialStructure FOR RelatedElements;</para>
+	/// <para> WHERE</para>
+	/// <para>	HasPlacement : EXISTS(SELF\IfcProduct.ObjectPlacement);</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public abstract class IfcPositioningElement : IfcProduct
+	{
+		public IfcPositioningElement() : base()
+		{
+		}
+		public IfcPositioningElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcPostalAddress
 	/// <para>ENTITY IfcPostalAddress</para>
@@ -10221,15 +13846,27 @@
 	/// <summary>
 	public class IfcPostalAddress : IfcAddress
 	{
-		public IfcLabel InternalLocation { get; set; }
-		public List<IfcLabel> AddressLines { get; set; }
-		public IfcLabel PostalBox { get; set; }
-		public IfcLabel Town { get; set; }
-		public IfcLabel Region { get; set; }
-		public IfcLabel PostalCode { get; set; }
-		public IfcLabel Country { get; set; }
+		public IfcLabel? InternalLocation { get; set; }
+		public List<IfcLabel>? AddressLines { get; set; }
+		public IfcLabel? PostalBox { get; set; }
+		public IfcLabel? Town { get; set; }
+		public IfcLabel? Region { get; set; }
+		public IfcLabel? PostalCode { get; set; }
+		public IfcLabel? Country { get; set; }
+		public IfcPostalAddress() : base()
+		{
+		}
+		public IfcPostalAddress(IfcAddressTypeEnum Purpose, IfcText Description, IfcLabel UserDefinedPurpose, IfcLabel InternalLocation, List<IfcLabel> AddressLines, IfcLabel PostalBox, IfcLabel Town, IfcLabel Region, IfcLabel PostalCode, IfcLabel Country) : base (Purpose, Description, UserDefinedPurpose)
+		{
+			this.InternalLocation = InternalLocation;
+			this.AddressLines = AddressLines;
+			this.PostalBox = PostalBox;
+			this.Town = Town;
+			this.Region = Region;
+			this.PostalCode = PostalCode;
+			this.Country = Country;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPreDefinedColour
 	/// <para>ENTITY IfcPreDefinedColour</para>
@@ -10240,8 +13877,13 @@
 	/// <summary>
 	public abstract class IfcPreDefinedColour : IfcPreDefinedItem, IfcColour
 	{
+		public IfcPreDefinedColour() : base()
+		{
+		}
+		public IfcPreDefinedColour(IfcLabel Name) : base (Name)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPreDefinedCurveFont
 	/// <para>ENTITY IfcPreDefinedCurveFont</para>
@@ -10252,8 +13894,13 @@
 	/// <summary>
 	public abstract class IfcPreDefinedCurveFont : IfcPreDefinedItem, IfcCurveStyleFontSelect
 	{
+		public IfcPreDefinedCurveFont() : base()
+		{
+		}
+		public IfcPreDefinedCurveFont(IfcLabel Name) : base (Name)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPreDefinedItem
 	/// <para>ENTITY IfcPreDefinedItem</para>
@@ -10268,8 +13915,15 @@
 	public abstract class IfcPreDefinedItem : IfcPresentationItem
 	{
 		public IfcLabel Name { get; set; }
+		public IfcPreDefinedItem() : base()
+		{
+			Name = new IfcLabel();
+		}
+		public IfcPreDefinedItem(IfcLabel Name) : base ()
+		{
+			this.Name = Name;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPreDefinedProperties
 	/// <para>ENTITY IfcPreDefinedProperties</para>
@@ -10282,8 +13936,13 @@
 	/// <summary>
 	public abstract class IfcPreDefinedProperties : IfcPropertyAbstraction
 	{
+		public IfcPreDefinedProperties() : base()
+		{
+		}
+		public IfcPreDefinedProperties() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPreDefinedPropertySet
 	/// <para>ENTITY IfcPreDefinedPropertySet</para>
@@ -10299,8 +13958,13 @@
 	/// <summary>
 	public abstract class IfcPreDefinedPropertySet : IfcPropertySetDefinition
 	{
+		public IfcPreDefinedPropertySet() : base()
+		{
+		}
+		public IfcPreDefinedPropertySet(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPreDefinedTextFont
 	/// <para>ENTITY IfcPreDefinedTextFont</para>
@@ -10311,8 +13975,13 @@
 	/// <summary>
 	public abstract class IfcPreDefinedTextFont : IfcPreDefinedItem, IfcTextFontSelect
 	{
+		public IfcPreDefinedTextFont() : base()
+		{
+		}
+		public IfcPreDefinedTextFont(IfcLabel Name) : base (Name)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPresentationItem
 	/// <para>ENTITY IfcPresentationItem</para>
@@ -10338,8 +14007,13 @@
 	/// <summary>
 	public abstract class IfcPresentationItemENTITY
 	{
+		public IfcPresentationItem() : base()
+		{
+		}
+		public IfcPresentationItem() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPresentationLayerAssignment
 	/// <para>ENTITY IfcPresentationLayerAssignment</para>
@@ -10352,20 +14026,31 @@
 	/// <para> WHERE</para>
 	/// <para>	ApplicableItems : SIZEOF(QUERY(temp <* AssignedItems | (</para>
 	/// <para>  SIZEOF(TYPEOF(temp) * [</para>
-	/// <para>    'IFC4.IFCSHAPEREPRESENTATION',</para>
-	/// <para>    'IFC4.IFCGEOMETRICREPRESENTATIONITEM',</para>
-	/// <para>    'IFC4.IFCMAPPEDITEM']) = 1)</para>
+	/// <para>    'IFC4X1.IFCSHAPEREPRESENTATION',</para>
+	/// <para>    'IFC4X1.IFCGEOMETRICREPRESENTATIONITEM',</para>
+	/// <para>    'IFC4X1.IFCMAPPEDITEM']) = 1)</para>
 	/// <para>)) = SIZEOF(AssignedItems);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcPresentationLayerAssignmentENTITY
 	{
 		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
+		public IfcText? Description { get; set; }
 		public List<IfcLayeredItem> AssignedItems { get; set; }
-		public IfcIdentifier Identifier { get; set; }
+		public IfcIdentifier? Identifier { get; set; }
+		public IfcPresentationLayerAssignment() : base()
+		{
+			Name = new IfcLabel();
+			AssignedItems = new List<IfcLayeredItem>();
+		}
+		public IfcPresentationLayerAssignment(IfcLabel Name, IfcText Description, List<IfcLayeredItem> AssignedItems, IfcIdentifier Identifier) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+			this.AssignedItems = AssignedItems;
+			this.Identifier = Identifier;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPresentationLayerWithStyle
 	/// <para>ENTITY IfcPresentationLayerWithStyle</para>
@@ -10375,11 +14060,7 @@
 	/// <para>	LayerBlocked : IfcLogical;</para>
 	/// <para>	LayerStyles : SET [0:?] OF IfcPresentationStyle;</para>
 	/// <para> WHERE</para>
-	/// <para>	ApplicableOnlyToItems : SIZEOF(QUERY(temp <* AssignedItems | (</para>
-	/// <para>  SIZEOF(TYPEOF(temp) * [</para>
-	/// <para>    'IFC4.IFCGEOMETRICREPRESENTATIONITEM',</para>
-	/// <para>    'IFC4.IFCMAPPEDITEM']) = 1)</para>
-	/// <para>)) = SIZEOF(AssignedItems);</para>
+	/// <para>	ApplicableOnlyToItems : SIZEOF(QUERY(temp <* AssignedItems | (SIZEOF(TYPEOF(temp) * ['IFC4X1.IfcGeometricRepresentationItem','IFC4X1.IfcMappedItem']) >= 1))) = SIZEOF(AssignedItems);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcPresentationLayerWithStyle : IfcPresentationLayerAssignment
@@ -10388,8 +14069,21 @@
 		public IfcLogical LayerFrozen { get; set; }
 		public IfcLogical LayerBlocked { get; set; }
 		public List<IfcPresentationStyle> LayerStyles { get; set; }
+		public IfcPresentationLayerWithStyle() : base()
+		{
+			LayerOn = new IfcLogical();
+			LayerFrozen = new IfcLogical();
+			LayerBlocked = new IfcLogical();
+			LayerStyles = new List<IfcPresentationStyle>();
+		}
+		public IfcPresentationLayerWithStyle(IfcLabel Name, IfcText Description, List<IfcLayeredItem> AssignedItems, IfcIdentifier Identifier, IfcLogical LayerOn, IfcLogical LayerFrozen, IfcLogical LayerBlocked, List<IfcPresentationStyle> LayerStyles) : base (Name, Description, AssignedItems, Identifier)
+		{
+			this.LayerOn = LayerOn;
+			this.LayerFrozen = LayerFrozen;
+			this.LayerBlocked = LayerBlocked;
+			this.LayerStyles = LayerStyles;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPresentationStyle
 	/// <para>ENTITY IfcPresentationStyle</para>
@@ -10403,9 +14097,15 @@
 	/// <summary>
 	public abstract class IfcPresentationStyleENTITY, IfcStyleAssignmentSelect
 	{
-		public IfcLabel Name { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcPresentationStyle() : base()
+		{
+		}
+		public IfcPresentationStyle(IfcLabel Name) : base ()
+		{
+			this.Name = Name;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPresentationStyleAssignment;
 	/// <para>ENTITY IfcPresentationStyleAssignment;</para>
@@ -10415,8 +14115,15 @@
 	public class IfcPresentationStyleAssignmentENTITY, IfcStyleAssignmentSelect
 	{
 		public List<IfcPresentationStyleSelect> Styles { get; set; }
+		public IfcPresentationStyleAssignment() : base()
+		{
+			Styles = new List<IfcPresentationStyleSelect>();
+		}
+		public IfcPresentationStyleAssignment(List<IfcPresentationStyleSelect> Styles) : base ()
+		{
+			this.Styles = Styles;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProcedure
 	/// <para>ENTITY IfcProcedure</para>
@@ -10430,9 +14137,15 @@
 	/// <summary>
 	public class IfcProcedure : IfcProcess
 	{
-		public IfcProcedureTypeEnum PredefinedType { get; set; }
+		public IfcProcedureTypeEnum? PredefinedType { get; set; }
+		public IfcProcedure() : base()
+		{
+		}
+		public IfcProcedure(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcText LongDescription, IfcProcedureTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification, LongDescription)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProcedureType
 	/// <para>ENTITY IfcProcedureType</para>
@@ -10445,8 +14158,15 @@
 	public class IfcProcedureType : IfcTypeProcess
 	{
 		public IfcProcedureTypeEnum PredefinedType { get; set; }
+		public IfcProcedureType() : base()
+		{
+			PredefinedType = new IfcProcedureTypeEnum();
+		}
+		public IfcProcedureType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcIdentifier Identification, IfcText LongDescription, IfcLabel ProcessType, IfcProcedureTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, Identification, LongDescription, ProcessType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProcess
 	/// <para>ENTITY IfcProcess</para>
@@ -10465,18 +14185,25 @@
 	/// <summary>
 	public abstract class IfcProcess : IfcObject, IfcProcessSelect
 	{
-		public IfcIdentifier Identification { get; set; }
-		public IfcText LongDescription { get; set; }
+		public IfcIdentifier? Identification { get; set; }
+		public IfcText? LongDescription { get; set; }
+		public IfcProcess() : base()
+		{
+		}
+		public IfcProcess(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcText LongDescription) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.Identification = Identification;
+			this.LongDescription = LongDescription;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProduct
 	/// <para>ENTITY IfcProduct</para>
 	/// <para> ABSTRACT SUPERTYPE OF (ONEOF</para>
 	/// <para>    (IfcAnnotation</para>
 	/// <para>    ,IfcElement</para>
-	/// <para>    ,IfcGrid</para>
 	/// <para>    ,IfcPort</para>
+	/// <para>    ,IfcPositioningElement</para>
 	/// <para>    ,IfcProxy</para>
 	/// <para>    ,IfcSpatialElement</para>
 	/// <para>    ,IfcStructuralActivity</para>
@@ -10489,16 +14216,23 @@
 	/// <para> WHERE</para>
 	/// <para>	PlacementForShapeRepresentation : (EXISTS(Representation) AND EXISTS(ObjectPlacement))</para>
 	/// <para>            OR (EXISTS(Representation) AND </para>
-	/// <para>			   (SIZEOF(QUERY(temp <* Representation.Representations | 'IFC4.IFCSHAPEREPRESENTATION' IN TYPEOF(temp))) = 0))</para>
+	/// <para>			   (SIZEOF(QUERY(temp <* Representation.Representations | 'IFC4X1.IFCSHAPEREPRESENTATION' IN TYPEOF(temp))) = 0))</para>
 	/// <para>            OR (NOT(EXISTS(Representation)));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public abstract class IfcProduct : IfcObject, IfcProductSelect
 	{
-		public IfcObjectPlacement ObjectPlacement { get; set; }
-		public IfcProductRepresentation Representation { get; set; }
+		public IfcObjectPlacement? ObjectPlacement { get; set; }
+		public IfcProductRepresentation? Representation { get; set; }
+		public IfcProduct() : base()
+		{
+		}
+		public IfcProduct(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.ObjectPlacement = ObjectPlacement;
+			this.Representation = Representation;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProductDefinitionShape
 	/// <para>ENTITY IfcProductDefinitionShape</para>
@@ -10508,14 +14242,19 @@
 	/// <para>	HasShapeAspects : SET [0:?] OF IfcShapeAspect FOR PartOfProductDefinitionShape;</para>
 	/// <para> WHERE</para>
 	/// <para>	OnlyShapeModel : SIZEOF(QUERY(temp <* Representations | </para>
-	/// <para>  (NOT('IFC4.IFCSHAPEMODEL' IN TYPEOF(temp)))</para>
+	/// <para>  (NOT('IFC4X1.IFCSHAPEMODEL' IN TYPEOF(temp)))</para>
 	/// <para>)) = 0;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcProductDefinitionShape : IfcProductRepresentation, IfcProductRepresentationSelect
 	{
+		public IfcProductDefinitionShape() : base()
+		{
+		}
+		public IfcProductDefinitionShape(IfcLabel Name, IfcText Description, List<IfcRepresentation> Representations) : base (Name, Description, Representations)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProductRepresentation
 	/// <para>ENTITY IfcProductRepresentation</para>
@@ -10529,11 +14268,20 @@
 	/// <summary>
 	public abstract class IfcProductRepresentationENTITY
 	{
-		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcText? Description { get; set; }
 		public List<IfcRepresentation> Representations { get; set; }
+		public IfcProductRepresentation() : base()
+		{
+			Representations = new List<IfcRepresentation>();
+		}
+		public IfcProductRepresentation(IfcLabel Name, IfcText Description, List<IfcRepresentation> Representations) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+			this.Representations = Representations;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProfileDef
 	/// <para>ENTITY IfcProfileDef</para>
@@ -10553,9 +14301,17 @@
 	public class IfcProfileDefENTITY, IfcResourceObjectSelect
 	{
 		public IfcProfileTypeEnum ProfileType { get; set; }
-		public IfcLabel ProfileName { get; set; }
+		public IfcLabel? ProfileName { get; set; }
+		public IfcProfileDef() : base()
+		{
+			ProfileType = new IfcProfileTypeEnum();
+		}
+		public IfcProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName) : base ()
+		{
+			this.ProfileType = ProfileType;
+			this.ProfileName = ProfileName;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProfileProperties
 	/// <para>ENTITY IfcProfileProperties</para>
@@ -10566,8 +14322,15 @@
 	public class IfcProfileProperties : IfcExtendedProperties
 	{
 		public IfcProfileDef ProfileDefinition { get; set; }
+		public IfcProfileProperties() : base()
+		{
+			ProfileDefinition = new IfcProfileDef();
+		}
+		public IfcProfileProperties(IfcIdentifier Name, IfcText Description, List<IfcProperty> Properties, IfcProfileDef ProfileDefinition) : base (Name, Description, Properties)
+		{
+			this.ProfileDefinition = ProfileDefinition;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProject
 	/// <para>ENTITY IfcProject</para>
@@ -10576,15 +14339,20 @@
 	/// <para>	HasName : EXISTS(SELF\IfcRoot.Name);</para>
 	/// <para>	CorrectContext : NOT(EXISTS(SELF\IfcContext.RepresentationContexts)) OR</para>
 	/// <para>(SIZEOF(QUERY(Temp <* SELF\IfcContext.RepresentationContexts |</para>
-	/// <para> 'IFC4.IFCGEOMETRICREPRESENTATIONSUBCONTEXT' IN TYPEOF(Temp)</para>
+	/// <para> 'IFC4X1.IFCGEOMETRICREPRESENTATIONSUBCONTEXT' IN TYPEOF(Temp)</para>
 	/// <para>  )) = 0);</para>
 	/// <para>	NoDecomposition : SIZEOF(SELF\IfcObjectDefinition.Decomposes) = 0;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcProject : IfcContext
 	{
+		public IfcProject() : base()
+		{
+		}
+		public IfcProject(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcLabel LongName, IfcLabel Phase, List<IfcRepresentationContext> RepresentationContexts, IfcUnitAssignment UnitsInContext) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, LongName, Phase, RepresentationContexts, UnitsInContext)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProjectLibrary
 	/// <para>ENTITY IfcProjectLibrary</para>
@@ -10593,8 +14361,13 @@
 	/// <summary>
 	public class IfcProjectLibrary : IfcContext
 	{
+		public IfcProjectLibrary() : base()
+		{
+		}
+		public IfcProjectLibrary(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcLabel LongName, IfcLabel Phase, List<IfcRepresentationContext> RepresentationContexts, IfcUnitAssignment UnitsInContext) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, LongName, Phase, RepresentationContexts, UnitsInContext)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProjectOrder
 	/// <para>ENTITY IfcProjectOrder</para>
@@ -10606,11 +14379,19 @@
 	/// <summary>
 	public class IfcProjectOrder : IfcControl
 	{
-		public IfcProjectOrderTypeEnum PredefinedType { get; set; }
-		public IfcLabel Status { get; set; }
-		public IfcText LongDescription { get; set; }
+		public IfcProjectOrderTypeEnum? PredefinedType { get; set; }
+		public IfcLabel? Status { get; set; }
+		public IfcText? LongDescription { get; set; }
+		public IfcProjectOrder() : base()
+		{
+		}
+		public IfcProjectOrder(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcProjectOrderTypeEnum PredefinedType, IfcLabel Status, IfcText LongDescription) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification)
+		{
+			this.PredefinedType = PredefinedType;
+			this.Status = Status;
+			this.LongDescription = LongDescription;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProjectedCRS
 	/// <para>ENTITY IfcProjectedCRS</para>
@@ -10624,11 +14405,19 @@
 	/// <summary>
 	public class IfcProjectedCRS : IfcCoordinateReferenceSystem
 	{
-		public IfcIdentifier MapProjection { get; set; }
-		public IfcIdentifier MapZone { get; set; }
-		public IfcNamedUnit MapUnit { get; set; }
+		public IfcIdentifier? MapProjection { get; set; }
+		public IfcIdentifier? MapZone { get; set; }
+		public IfcNamedUnit? MapUnit { get; set; }
+		public IfcProjectedCRS() : base()
+		{
+		}
+		public IfcProjectedCRS(IfcLabel Name, IfcText Description, IfcIdentifier GeodeticDatum, IfcIdentifier VerticalDatum, IfcIdentifier MapProjection, IfcIdentifier MapZone, IfcNamedUnit MapUnit) : base (Name, Description, GeodeticDatum, VerticalDatum)
+		{
+			this.MapProjection = MapProjection;
+			this.MapZone = MapZone;
+			this.MapUnit = MapUnit;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProjectionElement
 	/// <para>ENTITY IfcProjectionElement</para>
@@ -10638,9 +14427,15 @@
 	/// <summary>
 	public class IfcProjectionElement : IfcFeatureElementAddition
 	{
-		public IfcProjectionElementTypeEnum PredefinedType { get; set; }
+		public IfcProjectionElementTypeEnum? PredefinedType { get; set; }
+		public IfcProjectionElement() : base()
+		{
+		}
+		public IfcProjectionElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcProjectionElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProperty
 	/// <para>ENTITY IfcProperty</para>
@@ -10662,9 +14457,17 @@
 	public abstract class IfcProperty : IfcPropertyAbstraction
 	{
 		public IfcIdentifier Name { get; set; }
-		public IfcText Description { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcProperty() : base()
+		{
+			Name = new IfcIdentifier();
+		}
+		public IfcProperty(IfcIdentifier Name, IfcText Description) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertyAbstraction
 	/// <para>ENTITY IfcPropertyAbstraction</para>
@@ -10679,8 +14482,13 @@
 	/// <summary>
 	public abstract class IfcPropertyAbstractionENTITY, IfcResourceObjectSelect
 	{
+		public IfcPropertyAbstraction() : base()
+		{
+		}
+		public IfcPropertyAbstraction() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertyBoundedValue
 	/// <para>ENTITY IfcPropertyBoundedValue</para>
@@ -10700,12 +14508,21 @@
 	/// <summary>
 	public class IfcPropertyBoundedValue : IfcSimpleProperty
 	{
-		public IfcValue UpperBoundValue { get; set; }
-		public IfcValue LowerBoundValue { get; set; }
-		public IfcUnit Unit { get; set; }
-		public IfcValue SetPointValue { get; set; }
+		public IfcValue? UpperBoundValue { get; set; }
+		public IfcValue? LowerBoundValue { get; set; }
+		public IfcUnit? Unit { get; set; }
+		public IfcValue? SetPointValue { get; set; }
+		public IfcPropertyBoundedValue() : base()
+		{
+		}
+		public IfcPropertyBoundedValue(IfcIdentifier Name, IfcText Description, IfcValue UpperBoundValue, IfcValue LowerBoundValue, IfcUnit Unit, IfcValue SetPointValue) : base (Name, Description)
+		{
+			this.UpperBoundValue = UpperBoundValue;
+			this.LowerBoundValue = LowerBoundValue;
+			this.Unit = Unit;
+			this.SetPointValue = SetPointValue;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertyDefinition
 	/// <para>ENTITY IfcPropertyDefinition</para>
@@ -10720,8 +14537,13 @@
 	/// <summary>
 	public abstract class IfcPropertyDefinition : IfcRoot, IfcDefinitionSelect
 	{
+		public IfcPropertyDefinition() : base()
+		{
+		}
+		public IfcPropertyDefinition(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertyDependencyRelationship
 	/// <para>ENTITY IfcPropertyDependencyRelationship</para>
@@ -10737,9 +14559,19 @@
 	{
 		public IfcProperty DependingProperty { get; set; }
 		public IfcProperty DependantProperty { get; set; }
-		public IfcText Expression { get; set; }
+		public IfcText? Expression { get; set; }
+		public IfcPropertyDependencyRelationship() : base()
+		{
+			DependingProperty = new IfcProperty();
+			DependantProperty = new IfcProperty();
+		}
+		public IfcPropertyDependencyRelationship(IfcLabel Name, IfcText Description, IfcProperty DependingProperty, IfcProperty DependantProperty, IfcText Expression) : base (Name, Description)
+		{
+			this.DependingProperty = DependingProperty;
+			this.DependantProperty = DependantProperty;
+			this.Expression = Expression;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertyEnumeratedValue
 	/// <para>ENTITY IfcPropertyEnumeratedValue</para>
@@ -10756,10 +14588,17 @@
 	/// <summary>
 	public class IfcPropertyEnumeratedValue : IfcSimpleProperty
 	{
-		public List<IfcValue> EnumerationValues { get; set; }
-		public IfcPropertyEnumeration EnumerationReference { get; set; }
+		public List<IfcValue>? EnumerationValues { get; set; }
+		public IfcPropertyEnumeration? EnumerationReference { get; set; }
+		public IfcPropertyEnumeratedValue() : base()
+		{
+		}
+		public IfcPropertyEnumeratedValue(IfcIdentifier Name, IfcText Description, List<IfcValue> EnumerationValues, IfcPropertyEnumeration EnumerationReference) : base (Name, Description)
+		{
+			this.EnumerationValues = EnumerationValues;
+			this.EnumerationReference = EnumerationReference;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertyEnumeration
 	/// <para>ENTITY IfcPropertyEnumeration</para>
@@ -10778,8 +14617,15 @@
 	public class IfcPropertyEnumeration : IfcPropertyAbstraction
 	{
 		public IfcLabel Name { get; set; }
+		public IfcPropertyEnumeration() : base()
+		{
+			Name = new IfcLabel();
+		}
+		public IfcPropertyEnumeration(IfcLabel Name) : base ()
+		{
+			this.Name = Name;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertyListValue
 	/// <para>ENTITY IfcPropertyListValue</para>
@@ -10794,10 +14640,17 @@
 	/// <summary>
 	public class IfcPropertyListValue : IfcSimpleProperty
 	{
-		public List<IfcValue> ListValues { get; set; }
-		public IfcUnit Unit { get; set; }
+		public List<IfcValue>? ListValues { get; set; }
+		public IfcUnit? Unit { get; set; }
+		public IfcPropertyListValue() : base()
+		{
+		}
+		public IfcPropertyListValue(IfcIdentifier Name, IfcText Description, List<IfcValue> ListValues, IfcUnit Unit) : base (Name, Description)
+		{
+			this.ListValues = ListValues;
+			this.Unit = Unit;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertyReferenceValue
 	/// <para>ENTITY IfcPropertyReferenceValue</para>
@@ -10808,10 +14661,17 @@
 	/// <summary>
 	public class IfcPropertyReferenceValue : IfcSimpleProperty
 	{
-		public IfcText UsageName { get; set; }
-		public IfcObjectReferenceSelect PropertyReference { get; set; }
+		public IfcText? UsageName { get; set; }
+		public IfcObjectReferenceSelect? PropertyReference { get; set; }
+		public IfcPropertyReferenceValue() : base()
+		{
+		}
+		public IfcPropertyReferenceValue(IfcIdentifier Name, IfcText Description, IfcText UsageName, IfcObjectReferenceSelect PropertyReference) : base (Name, Description)
+		{
+			this.UsageName = UsageName;
+			this.PropertyReference = PropertyReference;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertySet
 	/// <para>ENTITY IfcPropertySet</para>
@@ -10825,8 +14685,15 @@
 	public class IfcPropertySet : IfcPropertySetDefinition
 	{
 		public List<IfcProperty> HasProperties { get; set; }
+		public IfcPropertySet() : base()
+		{
+			HasProperties = new List<IfcProperty>();
+		}
+		public IfcPropertySet(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcProperty> HasProperties) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.HasProperties = HasProperties;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertySetDefinition
 	/// <para>ENTITY IfcPropertySetDefinition</para>
@@ -10843,8 +14710,13 @@
 	/// <summary>
 	public abstract class IfcPropertySetDefinition : IfcPropertyDefinition, IfcPropertySetDefinitionSelect
 	{
+		public IfcPropertySetDefinition() : base()
+		{
+		}
+		public IfcPropertySetDefinition(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertySetTemplate
 	/// <para>ENTITY IfcPropertySetTemplate</para>
@@ -10861,11 +14733,20 @@
 	/// <summary>
 	public class IfcPropertySetTemplate : IfcPropertyTemplateDefinition
 	{
-		public IfcPropertySetTemplateTypeEnum TemplateType { get; set; }
-		public IfcIdentifier ApplicableEntity { get; set; }
+		public IfcPropertySetTemplateTypeEnum? TemplateType { get; set; }
+		public IfcIdentifier? ApplicableEntity { get; set; }
 		public List<IfcPropertyTemplate> HasPropertyTemplates { get; set; }
+		public IfcPropertySetTemplate() : base()
+		{
+			HasPropertyTemplates = new List<IfcPropertyTemplate>();
+		}
+		public IfcPropertySetTemplate(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcPropertySetTemplateTypeEnum TemplateType, IfcIdentifier ApplicableEntity, List<IfcPropertyTemplate> HasPropertyTemplates) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.TemplateType = TemplateType;
+			this.ApplicableEntity = ApplicableEntity;
+			this.HasPropertyTemplates = HasPropertyTemplates;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertySingleValue
 	/// <para>ENTITY IfcPropertySingleValue</para>
@@ -10876,10 +14757,17 @@
 	/// <summary>
 	public class IfcPropertySingleValue : IfcSimpleProperty
 	{
-		public IfcValue NominalValue { get; set; }
-		public IfcUnit Unit { get; set; }
+		public IfcValue? NominalValue { get; set; }
+		public IfcUnit? Unit { get; set; }
+		public IfcPropertySingleValue() : base()
+		{
+		}
+		public IfcPropertySingleValue(IfcIdentifier Name, IfcText Description, IfcValue NominalValue, IfcUnit Unit) : base (Name, Description)
+		{
+			this.NominalValue = NominalValue;
+			this.Unit = Unit;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertyTableValue
 	/// <para>ENTITY IfcPropertyTableValue</para>
@@ -10903,8 +14791,13 @@
 	/// <summary>
 	public class IfcPropertyTableValue : IfcSimpleProperty
 	{
+		public IfcPropertyTableValue() : base()
+		{
+		}
+		public IfcPropertyTableValue(IfcIdentifier Name, IfcText Description) : base (Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertyTemplate
 	/// <para>ENTITY IfcPropertyTemplate</para>
@@ -10919,8 +14812,13 @@
 	/// <summary>
 	public abstract class IfcPropertyTemplate : IfcPropertyTemplateDefinition
 	{
+		public IfcPropertyTemplate() : base()
+		{
+		}
+		public IfcPropertyTemplate(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPropertyTemplateDefinition
 	/// <para>ENTITY IfcPropertyTemplateDefinition</para>
@@ -10932,8 +14830,13 @@
 	/// <summary>
 	public abstract class IfcPropertyTemplateDefinition : IfcPropertyDefinition
 	{
+		public IfcPropertyTemplateDefinition() : base()
+		{
+		}
+		public IfcPropertyTemplateDefinition(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProtectiveDevice
 	/// <para>ENTITY IfcProtectiveDevice</para>
@@ -10944,14 +14847,20 @@
 	/// <para> (PredefinedType <> IfcProtectiveDeviceTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcProtectiveDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCPROTECTIVEDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCPROTECTIVEDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcProtectiveDevice : IfcFlowController
 	{
-		public IfcProtectiveDeviceTypeEnum PredefinedType { get; set; }
+		public IfcProtectiveDeviceTypeEnum? PredefinedType { get; set; }
+		public IfcProtectiveDevice() : base()
+		{
+		}
+		public IfcProtectiveDevice(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcProtectiveDeviceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProtectiveDeviceTrippingUnit
 	/// <para>ENTITY IfcProtectiveDeviceTrippingUnit</para>
@@ -10962,14 +14871,20 @@
 	/// <para> (PredefinedType <> IfcProtectiveDeviceTrippingUnitTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcProtectiveDeviceTrippingUnitTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCPROTECTIVEDEVICETRIPPINGUNITTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCPROTECTIVEDEVICETRIPPINGUNITTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcProtectiveDeviceTrippingUnit : IfcDistributionControlElement
 	{
-		public IfcProtectiveDeviceTrippingUnitTypeEnum PredefinedType { get; set; }
+		public IfcProtectiveDeviceTrippingUnitTypeEnum? PredefinedType { get; set; }
+		public IfcProtectiveDeviceTrippingUnit() : base()
+		{
+		}
+		public IfcProtectiveDeviceTrippingUnit(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcProtectiveDeviceTrippingUnitTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProtectiveDeviceTrippingUnitType
 	/// <para>ENTITY IfcProtectiveDeviceTrippingUnitType</para>
@@ -10983,8 +14898,15 @@
 	public class IfcProtectiveDeviceTrippingUnitType : IfcDistributionControlElementType
 	{
 		public IfcProtectiveDeviceTrippingUnitTypeEnum PredefinedType { get; set; }
+		public IfcProtectiveDeviceTrippingUnitType() : base()
+		{
+			PredefinedType = new IfcProtectiveDeviceTrippingUnitTypeEnum();
+		}
+		public IfcProtectiveDeviceTrippingUnitType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcProtectiveDeviceTrippingUnitTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProtectiveDeviceType
 	/// <para>ENTITY IfcProtectiveDeviceType</para>
@@ -10998,8 +14920,15 @@
 	public class IfcProtectiveDeviceType : IfcFlowControllerType
 	{
 		public IfcProtectiveDeviceTypeEnum PredefinedType { get; set; }
+		public IfcProtectiveDeviceType() : base()
+		{
+			PredefinedType = new IfcProtectiveDeviceTypeEnum();
+		}
+		public IfcProtectiveDeviceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcProtectiveDeviceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcProxy
 	/// <para>ENTITY IfcProxy</para>
@@ -11013,9 +14942,17 @@
 	public class IfcProxy : IfcProduct
 	{
 		public IfcObjectTypeEnum ProxyType { get; set; }
-		public IfcLabel Tag { get; set; }
+		public IfcLabel? Tag { get; set; }
+		public IfcProxy() : base()
+		{
+			ProxyType = new IfcObjectTypeEnum();
+		}
+		public IfcProxy(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcObjectTypeEnum ProxyType, IfcLabel Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+			this.ProxyType = ProxyType;
+			this.Tag = Tag;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPump
 	/// <para>ENTITY IfcPump</para>
@@ -11026,14 +14963,20 @@
 	/// <para> (PredefinedType <> IfcPumpTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcPumpTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCPUMPTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCPUMPTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcPump : IfcFlowMovingDevice
 	{
-		public IfcPumpTypeEnum PredefinedType { get; set; }
+		public IfcPumpTypeEnum? PredefinedType { get; set; }
+		public IfcPump() : base()
+		{
+		}
+		public IfcPump(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcPumpTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcPumpType
 	/// <para>ENTITY IfcPumpType</para>
@@ -11047,8 +14990,15 @@
 	public class IfcPumpType : IfcFlowMovingDeviceType
 	{
 		public IfcPumpTypeEnum PredefinedType { get; set; }
+		public IfcPumpType() : base()
+		{
+			PredefinedType = new IfcPumpTypeEnum();
+		}
+		public IfcPumpType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcPumpTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcQuantityArea
 	/// <para>ENTITY IfcQuantityArea</para>
@@ -11064,9 +15014,17 @@
 	public class IfcQuantityArea : IfcPhysicalSimpleQuantity
 	{
 		public IfcAreaMeasure AreaValue { get; set; }
-		public IfcLabel Formula { get; set; }
+		public IfcLabel? Formula { get; set; }
+		public IfcQuantityArea() : base()
+		{
+			AreaValue = new IfcAreaMeasure();
+		}
+		public IfcQuantityArea(IfcLabel Name, IfcText Description, IfcNamedUnit Unit, IfcAreaMeasure AreaValue, IfcLabel Formula) : base (Name, Description, Unit)
+		{
+			this.AreaValue = AreaValue;
+			this.Formula = Formula;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcQuantityCount
 	/// <para>ENTITY IfcQuantityCount</para>
@@ -11080,9 +15038,17 @@
 	public class IfcQuantityCount : IfcPhysicalSimpleQuantity
 	{
 		public IfcCountMeasure CountValue { get; set; }
-		public IfcLabel Formula { get; set; }
+		public IfcLabel? Formula { get; set; }
+		public IfcQuantityCount() : base()
+		{
+			CountValue = new IfcCountMeasure();
+		}
+		public IfcQuantityCount(IfcLabel Name, IfcText Description, IfcNamedUnit Unit, IfcCountMeasure CountValue, IfcLabel Formula) : base (Name, Description, Unit)
+		{
+			this.CountValue = CountValue;
+			this.Formula = Formula;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcQuantityLength
 	/// <para>ENTITY IfcQuantityLength</para>
@@ -11098,9 +15064,17 @@
 	public class IfcQuantityLength : IfcPhysicalSimpleQuantity
 	{
 		public IfcLengthMeasure LengthValue { get; set; }
-		public IfcLabel Formula { get; set; }
+		public IfcLabel? Formula { get; set; }
+		public IfcQuantityLength() : base()
+		{
+			LengthValue = new IfcLengthMeasure();
+		}
+		public IfcQuantityLength(IfcLabel Name, IfcText Description, IfcNamedUnit Unit, IfcLengthMeasure LengthValue, IfcLabel Formula) : base (Name, Description, Unit)
+		{
+			this.LengthValue = LengthValue;
+			this.Formula = Formula;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcQuantitySet
 	/// <para>ENTITY IfcQuantitySet</para>
@@ -11111,8 +15085,13 @@
 	/// <summary>
 	public abstract class IfcQuantitySet : IfcPropertySetDefinition
 	{
+		public IfcQuantitySet() : base()
+		{
+		}
+		public IfcQuantitySet(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcQuantityTime
 	/// <para>ENTITY IfcQuantityTime</para>
@@ -11128,9 +15107,17 @@
 	public class IfcQuantityTime : IfcPhysicalSimpleQuantity
 	{
 		public IfcTimeMeasure TimeValue { get; set; }
-		public IfcLabel Formula { get; set; }
+		public IfcLabel? Formula { get; set; }
+		public IfcQuantityTime() : base()
+		{
+			TimeValue = new IfcTimeMeasure();
+		}
+		public IfcQuantityTime(IfcLabel Name, IfcText Description, IfcNamedUnit Unit, IfcTimeMeasure TimeValue, IfcLabel Formula) : base (Name, Description, Unit)
+		{
+			this.TimeValue = TimeValue;
+			this.Formula = Formula;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcQuantityVolume
 	/// <para>ENTITY IfcQuantityVolume</para>
@@ -11146,9 +15133,17 @@
 	public class IfcQuantityVolume : IfcPhysicalSimpleQuantity
 	{
 		public IfcVolumeMeasure VolumeValue { get; set; }
-		public IfcLabel Formula { get; set; }
+		public IfcLabel? Formula { get; set; }
+		public IfcQuantityVolume() : base()
+		{
+			VolumeValue = new IfcVolumeMeasure();
+		}
+		public IfcQuantityVolume(IfcLabel Name, IfcText Description, IfcNamedUnit Unit, IfcVolumeMeasure VolumeValue, IfcLabel Formula) : base (Name, Description, Unit)
+		{
+			this.VolumeValue = VolumeValue;
+			this.Formula = Formula;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcQuantityWeight
 	/// <para>ENTITY IfcQuantityWeight</para>
@@ -11164,9 +15159,17 @@
 	public class IfcQuantityWeight : IfcPhysicalSimpleQuantity
 	{
 		public IfcMassMeasure WeightValue { get; set; }
-		public IfcLabel Formula { get; set; }
+		public IfcLabel? Formula { get; set; }
+		public IfcQuantityWeight() : base()
+		{
+			WeightValue = new IfcMassMeasure();
+		}
+		public IfcQuantityWeight(IfcLabel Name, IfcText Description, IfcNamedUnit Unit, IfcMassMeasure WeightValue, IfcLabel Formula) : base (Name, Description, Unit)
+		{
+			this.WeightValue = WeightValue;
+			this.Formula = Formula;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRailing
 	/// <para>ENTITY IfcRailing</para>
@@ -11177,14 +15180,20 @@
 	/// <para> (PredefinedType <> IfcRailingTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcRailingTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCRAILINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCRAILINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcRailing : IfcBuildingElement
 	{
-		public IfcRailingTypeEnum PredefinedType { get; set; }
+		public IfcRailingTypeEnum? PredefinedType { get; set; }
+		public IfcRailing() : base()
+		{
+		}
+		public IfcRailing(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcRailingTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRailingType
 	/// <para>ENTITY IfcRailingType</para>
@@ -11198,8 +15207,15 @@
 	public class IfcRailingType : IfcBuildingElementType
 	{
 		public IfcRailingTypeEnum PredefinedType { get; set; }
+		public IfcRailingType() : base()
+		{
+			PredefinedType = new IfcRailingTypeEnum();
+		}
+		public IfcRailingType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcRailingTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRamp
 	/// <para>ENTITY IfcRamp</para>
@@ -11210,14 +15226,20 @@
 	/// <para> (PredefinedType <> IfcRampTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcRampTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCRAMPTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCRAMPTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcRamp : IfcBuildingElement
 	{
-		public IfcRampTypeEnum PredefinedType { get; set; }
+		public IfcRampTypeEnum? PredefinedType { get; set; }
+		public IfcRamp() : base()
+		{
+		}
+		public IfcRamp(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcRampTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRampFlight
 	/// <para>ENTITY IfcRampFlight</para>
@@ -11228,14 +15250,20 @@
 	/// <para> (PredefinedType <> IfcRampFlightTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcRampFlightTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCRAMPFLIGHTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCRAMPFLIGHTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcRampFlight : IfcBuildingElement
 	{
-		public IfcRampFlightTypeEnum PredefinedType { get; set; }
+		public IfcRampFlightTypeEnum? PredefinedType { get; set; }
+		public IfcRampFlight() : base()
+		{
+		}
+		public IfcRampFlight(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcRampFlightTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRampFlightType
 	/// <para>ENTITY IfcRampFlightType</para>
@@ -11249,8 +15277,15 @@
 	public class IfcRampFlightType : IfcBuildingElementType
 	{
 		public IfcRampFlightTypeEnum PredefinedType { get; set; }
+		public IfcRampFlightType() : base()
+		{
+			PredefinedType = new IfcRampFlightTypeEnum();
+		}
+		public IfcRampFlightType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcRampFlightTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRampType
 	/// <para>ENTITY IfcRampType</para>
@@ -11264,8 +15299,15 @@
 	public class IfcRampType : IfcBuildingElementType
 	{
 		public IfcRampTypeEnum PredefinedType { get; set; }
+		public IfcRampType() : base()
+		{
+			PredefinedType = new IfcRampTypeEnum();
+		}
+		public IfcRampType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcRampTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRationalBSplineCurveWithKnots
 	/// <para>ENTITY IfcRationalBSplineCurveWithKnots</para>
@@ -11281,8 +15323,15 @@
 	public class IfcRationalBSplineCurveWithKnots : IfcBSplineCurveWithKnots
 	{
 		public List<IfcReal> WeightsData { get; set; }
+		public IfcRationalBSplineCurveWithKnots() : base()
+		{
+			WeightsData = new List<IfcReal>();
+		}
+		public IfcRationalBSplineCurveWithKnots(IfcInteger Degree, List<IfcCartesianPoint> ControlPointsList, IfcBSplineCurveForm CurveForm, IfcLogical ClosedCurve, IfcLogical SelfIntersect, List<IfcInteger> KnotMultiplicities, List<IfcParameterValue> Knots, IfcKnotType KnotSpec, List<IfcReal> WeightsData) : base (Degree, ControlPointsList, CurveForm, ClosedCurve, SelfIntersect, KnotMultiplicities, Knots, KnotSpec)
+		{
+			this.WeightsData = WeightsData;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRationalBSplineSurfaceWithKnots
 	/// <para>ENTITY IfcRationalBSplineSurfaceWithKnots</para>
@@ -11300,8 +15349,15 @@
 	public class IfcRationalBSplineSurfaceWithKnots : IfcBSplineSurfaceWithKnots
 	{
 		public List<List<IfcReal >> WeightsData { get; set; }
+		public IfcRationalBSplineSurfaceWithKnots() : base()
+		{
+			WeightsData = new List<List<IfcReal >>();
+		}
+		public IfcRationalBSplineSurfaceWithKnots(IfcInteger UDegree, IfcInteger VDegree, List<List<IfcCartesianPoint >> ControlPointsList, IfcBSplineSurfaceForm SurfaceForm, IfcLogical UClosed, IfcLogical VClosed, IfcLogical SelfIntersect, List<IfcInteger> UMultiplicities, List<IfcInteger> VMultiplicities, List<IfcParameterValue> UKnots, List<IfcParameterValue> VKnots, IfcKnotType KnotSpec, List<List<IfcReal >> WeightsData) : base (UDegree, VDegree, ControlPointsList, SurfaceForm, UClosed, VClosed, SelfIntersect, UMultiplicities, VMultiplicities, UKnots, VKnots, KnotSpec)
+		{
+			this.WeightsData = WeightsData;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRectangleHollowProfileDef
 	/// <para>ENTITY IfcRectangleHollowProfileDef</para>
@@ -11323,10 +15379,19 @@
 	public class IfcRectangleHollowProfileDef : IfcRectangleProfileDef
 	{
 		public IfcPositiveLengthMeasure WallThickness { get; set; }
-		public IfcNonNegativeLengthMeasure InnerFilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure OuterFilletRadius { get; set; }
+		public IfcNonNegativeLengthMeasure? InnerFilletRadius { get; set; }
+		public IfcNonNegativeLengthMeasure? OuterFilletRadius { get; set; }
+		public IfcRectangleHollowProfileDef() : base()
+		{
+			WallThickness = new IfcPositiveLengthMeasure();
+		}
+		public IfcRectangleHollowProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure XDim, IfcPositiveLengthMeasure YDim, IfcPositiveLengthMeasure WallThickness, IfcNonNegativeLengthMeasure InnerFilletRadius, IfcNonNegativeLengthMeasure OuterFilletRadius) : base (ProfileType, ProfileName, Position, XDim, YDim)
+		{
+			this.WallThickness = WallThickness;
+			this.InnerFilletRadius = InnerFilletRadius;
+			this.OuterFilletRadius = OuterFilletRadius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRectangleProfileDef
 	/// <para>ENTITY IfcRectangleProfileDef</para>
@@ -11342,8 +15407,17 @@
 	{
 		public IfcPositiveLengthMeasure XDim { get; set; }
 		public IfcPositiveLengthMeasure YDim { get; set; }
+		public IfcRectangleProfileDef() : base()
+		{
+			XDim = new IfcPositiveLengthMeasure();
+			YDim = new IfcPositiveLengthMeasure();
+		}
+		public IfcRectangleProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure XDim, IfcPositiveLengthMeasure YDim) : base (ProfileType, ProfileName, Position)
+		{
+			this.XDim = XDim;
+			this.YDim = YDim;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRectangularPyramid
 	/// <para>ENTITY IfcRectangularPyramid</para>
@@ -11358,8 +15432,19 @@
 		public IfcPositiveLengthMeasure XLength { get; set; }
 		public IfcPositiveLengthMeasure YLength { get; set; }
 		public IfcPositiveLengthMeasure Height { get; set; }
+		public IfcRectangularPyramid() : base()
+		{
+			XLength = new IfcPositiveLengthMeasure();
+			YLength = new IfcPositiveLengthMeasure();
+			Height = new IfcPositiveLengthMeasure();
+		}
+		public IfcRectangularPyramid(IfcAxis2Placement3D Position, IfcPositiveLengthMeasure XLength, IfcPositiveLengthMeasure YLength, IfcPositiveLengthMeasure Height) : base (Position)
+		{
+			this.XLength = XLength;
+			this.YLength = YLength;
+			this.Height = Height;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRectangularTrimmedSurface
 	/// <para>ENTITY IfcRectangularTrimmedSurface</para>
@@ -11374,9 +15459,9 @@
 	/// <para> WHERE</para>
 	/// <para>	U1AndU2Different : U1 <> U2;</para>
 	/// <para>	V1AndV2Different : V1 <> V2;</para>
-	/// <para>	UsenseCompatible : (('IFC4.IFCELEMENTARYSURFACE' IN TYPEOF(BasisSurface)) AND</para>
-	/// <para>         (NOT ('IFC4.IFCPLANE' IN TYPEOF(BasisSurface)))) OR</para>
-	/// <para>         ('IFC4.IFCSURFACEOFREVOLUTION' IN TYPEOF(BasisSurface)) OR</para>
+	/// <para>	UsenseCompatible : (('IFC4X1.IFCELEMENTARYSURFACE' IN TYPEOF(BasisSurface)) AND</para>
+	/// <para>         (NOT ('IFC4X1.IFCPLANE' IN TYPEOF(BasisSurface)))) OR</para>
+	/// <para>         ('IFC4X1.IFCSURFACEOFREVOLUTION' IN TYPEOF(BasisSurface)) OR</para>
 	/// <para>         (Usense = (U2 > U1));</para>
 	/// <para>	VsenseCompatible : Vsense = (V2 > V1);</para>
 	/// <para>END_ENTITY;</para>
@@ -11390,8 +15475,27 @@
 		public IfcParameterValue V2 { get; set; }
 		public IfcBoolean Usense { get; set; }
 		public IfcBoolean Vsense { get; set; }
+		public IfcRectangularTrimmedSurface() : base()
+		{
+			BasisSurface = new IfcSurface();
+			U1 = new IfcParameterValue();
+			V1 = new IfcParameterValue();
+			U2 = new IfcParameterValue();
+			V2 = new IfcParameterValue();
+			Usense = new IfcBoolean();
+			Vsense = new IfcBoolean();
+		}
+		public IfcRectangularTrimmedSurface(IfcSurface BasisSurface, IfcParameterValue U1, IfcParameterValue V1, IfcParameterValue U2, IfcParameterValue V2, IfcBoolean Usense, IfcBoolean Vsense) : base ()
+		{
+			this.BasisSurface = BasisSurface;
+			this.U1 = U1;
+			this.V1 = V1;
+			this.U2 = U2;
+			this.V2 = V2;
+			this.Usense = Usense;
+			this.Vsense = Vsense;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRecurrencePattern;
 	/// <para>ENTITY IfcRecurrencePattern;</para>
@@ -11408,15 +15512,29 @@
 	public class IfcRecurrencePatternENTITY
 	{
 		public IfcRecurrenceTypeEnum RecurrenceType { get; set; }
-		public List<IfcDayInMonthNumber> DayComponent { get; set; }
-		public List<IfcDayInWeekNumber> WeekdayComponent { get; set; }
-		public List<IfcMonthInYearNumber> MonthComponent { get; set; }
-		public IfcInteger Position { get; set; }
-		public IfcInteger Interval { get; set; }
-		public IfcInteger Occurrences { get; set; }
-		public List<IfcTimePeriod> TimePeriods { get; set; }
+		public List<IfcDayInMonthNumber>? DayComponent { get; set; }
+		public List<IfcDayInWeekNumber>? WeekdayComponent { get; set; }
+		public List<IfcMonthInYearNumber>? MonthComponent { get; set; }
+		public IfcInteger? Position { get; set; }
+		public IfcInteger? Interval { get; set; }
+		public IfcInteger? Occurrences { get; set; }
+		public List<IfcTimePeriod>? TimePeriods { get; set; }
+		public IfcRecurrencePattern() : base()
+		{
+			RecurrenceType = new IfcRecurrenceTypeEnum();
+		}
+		public IfcRecurrencePattern(IfcRecurrenceTypeEnum RecurrenceType, List<IfcDayInMonthNumber> DayComponent, List<IfcDayInWeekNumber> WeekdayComponent, List<IfcMonthInYearNumber> MonthComponent, IfcInteger Position, IfcInteger Interval, IfcInteger Occurrences, List<IfcTimePeriod> TimePeriods) : base ()
+		{
+			this.RecurrenceType = RecurrenceType;
+			this.DayComponent = DayComponent;
+			this.WeekdayComponent = WeekdayComponent;
+			this.MonthComponent = MonthComponent;
+			this.Position = Position;
+			this.Interval = Interval;
+			this.Occurrences = Occurrences;
+			this.TimePeriods = TimePeriods;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcReference;
 	/// <para>ENTITY IfcReference;</para>
@@ -11429,13 +15547,44 @@
 	/// <summary>
 	public class IfcReferenceENTITY, IfcAppliedValueSelect, IfcMetricValueSelect
 	{
-		public IfcIdentifier TypeIdentifier { get; set; }
-		public IfcIdentifier AttributeIdentifier { get; set; }
-		public IfcLabel InstanceName { get; set; }
-		public List<IfcInteger> ListPositions { get; set; }
-		public IfcReference InnerReference { get; set; }
+		public IfcIdentifier? TypeIdentifier { get; set; }
+		public IfcIdentifier? AttributeIdentifier { get; set; }
+		public IfcLabel? InstanceName { get; set; }
+		public List<IfcInteger>? ListPositions { get; set; }
+		public IfcReference? InnerReference { get; set; }
+		public IfcReference() : base()
+		{
+		}
+		public IfcReference(IfcIdentifier TypeIdentifier, IfcIdentifier AttributeIdentifier, IfcLabel InstanceName, List<IfcInteger> ListPositions, IfcReference InnerReference) : base ()
+		{
+			this.TypeIdentifier = TypeIdentifier;
+			this.AttributeIdentifier = AttributeIdentifier;
+			this.InstanceName = InstanceName;
+			this.ListPositions = ListPositions;
+			this.InnerReference = InnerReference;
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcReferent
+	/// <para>ENTITY IfcReferent</para>
+	/// <para> SUBTYPE OF (IfcPositioningElement);</para>
+	/// <para>	PredefinedType : OPTIONAL IfcReferentTypeEnum;</para>
+	/// <para>	RestartDistance : OPTIONAL IfcLengthMeasure;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcReferent : IfcPositioningElement
+	{
+		public IfcReferentTypeEnum? PredefinedType { get; set; }
+		public IfcLengthMeasure? RestartDistance { get; set; }
+		public IfcReferent() : base()
+		{
+		}
+		public IfcReferent(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcReferentTypeEnum PredefinedType, IfcLengthMeasure RestartDistance) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+			this.PredefinedType = PredefinedType;
+			this.RestartDistance = RestartDistance;
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcRegularTimeSeries
 	/// <para>ENTITY IfcRegularTimeSeries</para>
@@ -11448,8 +15597,17 @@
 	{
 		public IfcTimeMeasure TimeStep { get; set; }
 		public List<IfcTimeSeriesValue> Values { get; set; }
+		public IfcRegularTimeSeries() : base()
+		{
+			TimeStep = new IfcTimeMeasure();
+			Values = new List<IfcTimeSeriesValue>();
+		}
+		public IfcRegularTimeSeries(IfcLabel Name, IfcText Description, IfcDateTime StartTime, IfcDateTime EndTime, IfcTimeSeriesDataTypeEnum TimeSeriesDataType, IfcDataOriginEnum DataOrigin, IfcLabel UserDefinedDataOrigin, IfcUnit Unit, IfcTimeMeasure TimeStep, List<IfcTimeSeriesValue> Values) : base (Name, Description, StartTime, EndTime, TimeSeriesDataType, DataOrigin, UserDefinedDataOrigin, Unit)
+		{
+			this.TimeStep = TimeStep;
+			this.Values = Values;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcReinforcementBarProperties
 	/// <para>ENTITY IfcReinforcementBarProperties</para>
@@ -11466,12 +15624,25 @@
 	{
 		public IfcAreaMeasure TotalCrossSectionArea { get; set; }
 		public IfcLabel SteelGrade { get; set; }
-		public IfcReinforcingBarSurfaceEnum BarSurface { get; set; }
-		public IfcLengthMeasure EffectiveDepth { get; set; }
-		public IfcPositiveLengthMeasure NominalBarDiameter { get; set; }
-		public IfcCountMeasure BarCount { get; set; }
+		public IfcReinforcingBarSurfaceEnum? BarSurface { get; set; }
+		public IfcLengthMeasure? EffectiveDepth { get; set; }
+		public IfcPositiveLengthMeasure? NominalBarDiameter { get; set; }
+		public IfcCountMeasure? BarCount { get; set; }
+		public IfcReinforcementBarProperties() : base()
+		{
+			TotalCrossSectionArea = new IfcAreaMeasure();
+			SteelGrade = new IfcLabel();
+		}
+		public IfcReinforcementBarProperties(IfcAreaMeasure TotalCrossSectionArea, IfcLabel SteelGrade, IfcReinforcingBarSurfaceEnum BarSurface, IfcLengthMeasure EffectiveDepth, IfcPositiveLengthMeasure NominalBarDiameter, IfcCountMeasure BarCount) : base ()
+		{
+			this.TotalCrossSectionArea = TotalCrossSectionArea;
+			this.SteelGrade = SteelGrade;
+			this.BarSurface = BarSurface;
+			this.EffectiveDepth = EffectiveDepth;
+			this.NominalBarDiameter = NominalBarDiameter;
+			this.BarCount = BarCount;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcReinforcementDefinitionProperties
 	/// <para>ENTITY IfcReinforcementDefinitionProperties</para>
@@ -11482,10 +15653,18 @@
 	/// <summary>
 	public class IfcReinforcementDefinitionProperties : IfcPreDefinedPropertySet
 	{
-		public IfcLabel DefinitionType { get; set; }
+		public IfcLabel? DefinitionType { get; set; }
 		public List<IfcSectionReinforcementProperties> ReinforcementSectionDefinitions { get; set; }
+		public IfcReinforcementDefinitionProperties() : base()
+		{
+			ReinforcementSectionDefinitions = new List<IfcSectionReinforcementProperties>();
+		}
+		public IfcReinforcementDefinitionProperties(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel DefinitionType, List<IfcSectionReinforcementProperties> ReinforcementSectionDefinitions) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.DefinitionType = DefinitionType;
+			this.ReinforcementSectionDefinitions = ReinforcementSectionDefinitions;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcReinforcingBar
 	/// <para>ENTITY IfcReinforcingBar</para>
@@ -11500,18 +15679,28 @@
 	/// <para>(PredefinedType <> IfcReinforcingBarTypeEnum.USERDEFINED) OR</para>
 	/// <para>((PredefinedType = IfcReinforcingBarTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>('IFC4.IFCREINFORCINGBARTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCREINFORCINGBARTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcReinforcingBar : IfcReinforcingElement
 	{
-		public IfcPositiveLengthMeasure NominalDiameter { get; set; }
-		public IfcAreaMeasure CrossSectionArea { get; set; }
-		public IfcPositiveLengthMeasure BarLength { get; set; }
-		public IfcReinforcingBarTypeEnum PredefinedType { get; set; }
-		public IfcReinforcingBarSurfaceEnum BarSurface { get; set; }
+		public IfcPositiveLengthMeasure? NominalDiameter { get; set; }
+		public IfcAreaMeasure? CrossSectionArea { get; set; }
+		public IfcPositiveLengthMeasure? BarLength { get; set; }
+		public IfcReinforcingBarTypeEnum? PredefinedType { get; set; }
+		public IfcReinforcingBarSurfaceEnum? BarSurface { get; set; }
+		public IfcReinforcingBar() : base()
+		{
+		}
+		public IfcReinforcingBar(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcLabel SteelGrade, IfcPositiveLengthMeasure NominalDiameter, IfcAreaMeasure CrossSectionArea, IfcPositiveLengthMeasure BarLength, IfcReinforcingBarTypeEnum PredefinedType, IfcReinforcingBarSurfaceEnum BarSurface) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, SteelGrade)
+		{
+			this.NominalDiameter = NominalDiameter;
+			this.CrossSectionArea = CrossSectionArea;
+			this.BarLength = BarLength;
+			this.PredefinedType = PredefinedType;
+			this.BarSurface = BarSurface;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcReinforcingBarType
 	/// <para>ENTITY IfcReinforcingBarType</para>
@@ -11532,14 +15721,27 @@
 	public class IfcReinforcingBarType : IfcReinforcingElementType
 	{
 		public IfcReinforcingBarTypeEnum PredefinedType { get; set; }
-		public IfcPositiveLengthMeasure NominalDiameter { get; set; }
-		public IfcAreaMeasure CrossSectionArea { get; set; }
-		public IfcPositiveLengthMeasure BarLength { get; set; }
-		public IfcReinforcingBarSurfaceEnum BarSurface { get; set; }
-		public IfcLabel BendingShapeCode { get; set; }
-		public List<IfcBendingParameterSelect> BendingParameters { get; set; }
+		public IfcPositiveLengthMeasure? NominalDiameter { get; set; }
+		public IfcAreaMeasure? CrossSectionArea { get; set; }
+		public IfcPositiveLengthMeasure? BarLength { get; set; }
+		public IfcReinforcingBarSurfaceEnum? BarSurface { get; set; }
+		public IfcLabel? BendingShapeCode { get; set; }
+		public List<IfcBendingParameterSelect>? BendingParameters { get; set; }
+		public IfcReinforcingBarType() : base()
+		{
+			PredefinedType = new IfcReinforcingBarTypeEnum();
+		}
+		public IfcReinforcingBarType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcReinforcingBarTypeEnum PredefinedType, IfcPositiveLengthMeasure NominalDiameter, IfcAreaMeasure CrossSectionArea, IfcPositiveLengthMeasure BarLength, IfcReinforcingBarSurfaceEnum BarSurface, IfcLabel BendingShapeCode, List<IfcBendingParameterSelect> BendingParameters) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.NominalDiameter = NominalDiameter;
+			this.CrossSectionArea = CrossSectionArea;
+			this.BarLength = BarLength;
+			this.BarSurface = BarSurface;
+			this.BendingShapeCode = BendingShapeCode;
+			this.BendingParameters = BendingParameters;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcReinforcingElement
 	/// <para>ENTITY IfcReinforcingElement</para>
@@ -11554,9 +15756,15 @@
 	/// <summary>
 	public abstract class IfcReinforcingElement : IfcElementComponent
 	{
-		public IfcLabel SteelGrade { get; set; }
+		public IfcLabel? SteelGrade { get; set; }
+		public IfcReinforcingElement() : base()
+		{
+		}
+		public IfcReinforcingElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcLabel SteelGrade) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.SteelGrade = SteelGrade;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcReinforcingElementType
 	/// <para>ENTITY IfcReinforcingElementType</para>
@@ -11570,8 +15778,13 @@
 	/// <summary>
 	public abstract class IfcReinforcingElementType : IfcElementComponentType
 	{
+		public IfcReinforcingElementType() : base()
+		{
+		}
+		public IfcReinforcingElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcReinforcingMesh
 	/// <para>ENTITY IfcReinforcingMesh</para>
@@ -11590,22 +15803,36 @@
 	/// <para>(PredefinedType <> IfcReinforcingMeshTypeEnum.USERDEFINED) OR</para>
 	/// <para>((PredefinedType = IfcReinforcingMeshTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>('IFC4.IFCREINFORCINGMESHTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCREINFORCINGMESHTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcReinforcingMesh : IfcReinforcingElement
 	{
-		public IfcPositiveLengthMeasure MeshLength { get; set; }
-		public IfcPositiveLengthMeasure MeshWidth { get; set; }
-		public IfcPositiveLengthMeasure LongitudinalBarNominalDiameter { get; set; }
-		public IfcPositiveLengthMeasure TransverseBarNominalDiameter { get; set; }
-		public IfcAreaMeasure LongitudinalBarCrossSectionArea { get; set; }
-		public IfcAreaMeasure TransverseBarCrossSectionArea { get; set; }
-		public IfcPositiveLengthMeasure LongitudinalBarSpacing { get; set; }
-		public IfcPositiveLengthMeasure TransverseBarSpacing { get; set; }
-		public IfcReinforcingMeshTypeEnum PredefinedType { get; set; }
+		public IfcPositiveLengthMeasure? MeshLength { get; set; }
+		public IfcPositiveLengthMeasure? MeshWidth { get; set; }
+		public IfcPositiveLengthMeasure? LongitudinalBarNominalDiameter { get; set; }
+		public IfcPositiveLengthMeasure? TransverseBarNominalDiameter { get; set; }
+		public IfcAreaMeasure? LongitudinalBarCrossSectionArea { get; set; }
+		public IfcAreaMeasure? TransverseBarCrossSectionArea { get; set; }
+		public IfcPositiveLengthMeasure? LongitudinalBarSpacing { get; set; }
+		public IfcPositiveLengthMeasure? TransverseBarSpacing { get; set; }
+		public IfcReinforcingMeshTypeEnum? PredefinedType { get; set; }
+		public IfcReinforcingMesh() : base()
+		{
+		}
+		public IfcReinforcingMesh(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcLabel SteelGrade, IfcPositiveLengthMeasure MeshLength, IfcPositiveLengthMeasure MeshWidth, IfcPositiveLengthMeasure LongitudinalBarNominalDiameter, IfcPositiveLengthMeasure TransverseBarNominalDiameter, IfcAreaMeasure LongitudinalBarCrossSectionArea, IfcAreaMeasure TransverseBarCrossSectionArea, IfcPositiveLengthMeasure LongitudinalBarSpacing, IfcPositiveLengthMeasure TransverseBarSpacing, IfcReinforcingMeshTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, SteelGrade)
+		{
+			this.MeshLength = MeshLength;
+			this.MeshWidth = MeshWidth;
+			this.LongitudinalBarNominalDiameter = LongitudinalBarNominalDiameter;
+			this.TransverseBarNominalDiameter = TransverseBarNominalDiameter;
+			this.LongitudinalBarCrossSectionArea = LongitudinalBarCrossSectionArea;
+			this.TransverseBarCrossSectionArea = TransverseBarCrossSectionArea;
+			this.LongitudinalBarSpacing = LongitudinalBarSpacing;
+			this.TransverseBarSpacing = TransverseBarSpacing;
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcReinforcingMeshType
 	/// <para>ENTITY IfcReinforcingMeshType</para>
@@ -11630,18 +15857,35 @@
 	public class IfcReinforcingMeshType : IfcReinforcingElementType
 	{
 		public IfcReinforcingMeshTypeEnum PredefinedType { get; set; }
-		public IfcPositiveLengthMeasure MeshLength { get; set; }
-		public IfcPositiveLengthMeasure MeshWidth { get; set; }
-		public IfcPositiveLengthMeasure LongitudinalBarNominalDiameter { get; set; }
-		public IfcPositiveLengthMeasure TransverseBarNominalDiameter { get; set; }
-		public IfcAreaMeasure LongitudinalBarCrossSectionArea { get; set; }
-		public IfcAreaMeasure TransverseBarCrossSectionArea { get; set; }
-		public IfcPositiveLengthMeasure LongitudinalBarSpacing { get; set; }
-		public IfcPositiveLengthMeasure TransverseBarSpacing { get; set; }
-		public IfcLabel BendingShapeCode { get; set; }
-		public List<IfcBendingParameterSelect> BendingParameters { get; set; }
+		public IfcPositiveLengthMeasure? MeshLength { get; set; }
+		public IfcPositiveLengthMeasure? MeshWidth { get; set; }
+		public IfcPositiveLengthMeasure? LongitudinalBarNominalDiameter { get; set; }
+		public IfcPositiveLengthMeasure? TransverseBarNominalDiameter { get; set; }
+		public IfcAreaMeasure? LongitudinalBarCrossSectionArea { get; set; }
+		public IfcAreaMeasure? TransverseBarCrossSectionArea { get; set; }
+		public IfcPositiveLengthMeasure? LongitudinalBarSpacing { get; set; }
+		public IfcPositiveLengthMeasure? TransverseBarSpacing { get; set; }
+		public IfcLabel? BendingShapeCode { get; set; }
+		public List<IfcBendingParameterSelect>? BendingParameters { get; set; }
+		public IfcReinforcingMeshType() : base()
+		{
+			PredefinedType = new IfcReinforcingMeshTypeEnum();
+		}
+		public IfcReinforcingMeshType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcReinforcingMeshTypeEnum PredefinedType, IfcPositiveLengthMeasure MeshLength, IfcPositiveLengthMeasure MeshWidth, IfcPositiveLengthMeasure LongitudinalBarNominalDiameter, IfcPositiveLengthMeasure TransverseBarNominalDiameter, IfcAreaMeasure LongitudinalBarCrossSectionArea, IfcAreaMeasure TransverseBarCrossSectionArea, IfcPositiveLengthMeasure LongitudinalBarSpacing, IfcPositiveLengthMeasure TransverseBarSpacing, IfcLabel BendingShapeCode, List<IfcBendingParameterSelect> BendingParameters) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.MeshLength = MeshLength;
+			this.MeshWidth = MeshWidth;
+			this.LongitudinalBarNominalDiameter = LongitudinalBarNominalDiameter;
+			this.TransverseBarNominalDiameter = TransverseBarNominalDiameter;
+			this.LongitudinalBarCrossSectionArea = LongitudinalBarCrossSectionArea;
+			this.TransverseBarCrossSectionArea = TransverseBarCrossSectionArea;
+			this.LongitudinalBarSpacing = LongitudinalBarSpacing;
+			this.TransverseBarSpacing = TransverseBarSpacing;
+			this.BendingShapeCode = BendingShapeCode;
+			this.BendingParameters = BendingParameters;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAggregates
 	/// <para>ENTITY IfcRelAggregates</para>
@@ -11656,8 +15900,17 @@
 	{
 		public IfcObjectDefinition RelatingObject { get; set; }
 		public List<IfcObjectDefinition> RelatedObjects { get; set; }
+		public IfcRelAggregates() : base()
+		{
+			RelatingObject = new IfcObjectDefinition();
+			RelatedObjects = new List<IfcObjectDefinition>();
+		}
+		public IfcRelAggregates(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcObjectDefinition RelatingObject, List<IfcObjectDefinition> RelatedObjects) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingObject = RelatingObject;
+			this.RelatedObjects = RelatedObjects;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssigns
 	/// <para>ENTITY IfcRelAssigns</para>
@@ -11678,9 +15931,17 @@
 	public abstract class IfcRelAssigns : IfcRelationship
 	{
 		public List<IfcObjectDefinition> RelatedObjects { get; set; }
-		public IfcObjectTypeEnum RelatedObjectsType { get; set; }
+		public IfcObjectTypeEnum? RelatedObjectsType { get; set; }
+		public IfcRelAssigns() : base()
+		{
+			RelatedObjects = new List<IfcObjectDefinition>();
+		}
+		public IfcRelAssigns(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcObjectDefinition> RelatedObjects, IfcObjectTypeEnum RelatedObjectsType) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatedObjects = RelatedObjects;
+			this.RelatedObjectsType = RelatedObjectsType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssignsToActor
 	/// <para>ENTITY IfcRelAssignsToActor</para>
@@ -11694,9 +15955,17 @@
 	public class IfcRelAssignsToActor : IfcRelAssigns
 	{
 		public IfcActor RelatingActor { get; set; }
-		public IfcActorRole ActingRole { get; set; }
+		public IfcActorRole? ActingRole { get; set; }
+		public IfcRelAssignsToActor() : base()
+		{
+			RelatingActor = new IfcActor();
+		}
+		public IfcRelAssignsToActor(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcObjectDefinition> RelatedObjects, IfcObjectTypeEnum RelatedObjectsType, IfcActor RelatingActor, IfcActorRole ActingRole) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects, RelatedObjectsType)
+		{
+			this.RelatingActor = RelatingActor;
+			this.ActingRole = ActingRole;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssignsToControl
 	/// <para>ENTITY IfcRelAssignsToControl</para>
@@ -11709,8 +15978,15 @@
 	public class IfcRelAssignsToControl : IfcRelAssigns
 	{
 		public IfcControl RelatingControl { get; set; }
+		public IfcRelAssignsToControl() : base()
+		{
+			RelatingControl = new IfcControl();
+		}
+		public IfcRelAssignsToControl(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcObjectDefinition> RelatedObjects, IfcObjectTypeEnum RelatedObjectsType, IfcControl RelatingControl) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects, RelatedObjectsType)
+		{
+			this.RelatingControl = RelatingControl;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssignsToGroup
 	/// <para>ENTITY IfcRelAssignsToGroup</para>
@@ -11725,8 +16001,15 @@
 	public class IfcRelAssignsToGroup : IfcRelAssigns
 	{
 		public IfcGroup RelatingGroup { get; set; }
+		public IfcRelAssignsToGroup() : base()
+		{
+			RelatingGroup = new IfcGroup();
+		}
+		public IfcRelAssignsToGroup(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcObjectDefinition> RelatedObjects, IfcObjectTypeEnum RelatedObjectsType, IfcGroup RelatingGroup) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects, RelatedObjectsType)
+		{
+			this.RelatingGroup = RelatingGroup;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssignsToGroupByFactor
 	/// <para>ENTITY IfcRelAssignsToGroupByFactor</para>
@@ -11737,8 +16020,15 @@
 	public class IfcRelAssignsToGroupByFactor : IfcRelAssignsToGroup
 	{
 		public IfcRatioMeasure Factor { get; set; }
+		public IfcRelAssignsToGroupByFactor() : base()
+		{
+			Factor = new IfcRatioMeasure();
+		}
+		public IfcRelAssignsToGroupByFactor(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcObjectDefinition> RelatedObjects, IfcObjectTypeEnum RelatedObjectsType, IfcGroup RelatingGroup, IfcRatioMeasure Factor) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects, RelatedObjectsType, RelatingGroup)
+		{
+			this.Factor = Factor;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssignsToProcess
 	/// <para>ENTITY IfcRelAssignsToProcess</para>
@@ -11752,9 +16042,17 @@
 	public class IfcRelAssignsToProcess : IfcRelAssigns
 	{
 		public IfcProcessSelect RelatingProcess { get; set; }
-		public IfcMeasureWithUnit QuantityInProcess { get; set; }
+		public IfcMeasureWithUnit? QuantityInProcess { get; set; }
+		public IfcRelAssignsToProcess() : base()
+		{
+			RelatingProcess = new IfcProcessSelect();
+		}
+		public IfcRelAssignsToProcess(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcObjectDefinition> RelatedObjects, IfcObjectTypeEnum RelatedObjectsType, IfcProcessSelect RelatingProcess, IfcMeasureWithUnit QuantityInProcess) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects, RelatedObjectsType)
+		{
+			this.RelatingProcess = RelatingProcess;
+			this.QuantityInProcess = QuantityInProcess;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssignsToProduct
 	/// <para>ENTITY IfcRelAssignsToProduct</para>
@@ -11767,8 +16065,15 @@
 	public class IfcRelAssignsToProduct : IfcRelAssigns
 	{
 		public IfcProductSelect RelatingProduct { get; set; }
+		public IfcRelAssignsToProduct() : base()
+		{
+			RelatingProduct = new IfcProductSelect();
+		}
+		public IfcRelAssignsToProduct(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcObjectDefinition> RelatedObjects, IfcObjectTypeEnum RelatedObjectsType, IfcProductSelect RelatingProduct) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects, RelatedObjectsType)
+		{
+			this.RelatingProduct = RelatingProduct;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssignsToResource
 	/// <para>ENTITY IfcRelAssignsToResource</para>
@@ -11781,8 +16086,15 @@
 	public class IfcRelAssignsToResource : IfcRelAssigns
 	{
 		public IfcResourceSelect RelatingResource { get; set; }
+		public IfcRelAssignsToResource() : base()
+		{
+			RelatingResource = new IfcResourceSelect();
+		}
+		public IfcRelAssignsToResource(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcObjectDefinition> RelatedObjects, IfcObjectTypeEnum RelatedObjectsType, IfcResourceSelect RelatingResource) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects, RelatedObjectsType)
+		{
+			this.RelatingResource = RelatingResource;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssociates
 	/// <para>ENTITY IfcRelAssociates</para>
@@ -11800,8 +16112,15 @@
 	public abstract class IfcRelAssociates : IfcRelationship
 	{
 		public List<IfcDefinitionSelect> RelatedObjects { get; set; }
+		public IfcRelAssociates() : base()
+		{
+			RelatedObjects = new List<IfcDefinitionSelect>();
+		}
+		public IfcRelAssociates(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcDefinitionSelect> RelatedObjects) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatedObjects = RelatedObjects;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssociatesApproval
 	/// <para>ENTITY IfcRelAssociatesApproval</para>
@@ -11812,8 +16131,15 @@
 	public class IfcRelAssociatesApproval : IfcRelAssociates
 	{
 		public IfcApproval RelatingApproval { get; set; }
+		public IfcRelAssociatesApproval() : base()
+		{
+			RelatingApproval = new IfcApproval();
+		}
+		public IfcRelAssociatesApproval(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcDefinitionSelect> RelatedObjects, IfcApproval RelatingApproval) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects)
+		{
+			this.RelatingApproval = RelatingApproval;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssociatesClassification
 	/// <para>ENTITY IfcRelAssociatesClassification</para>
@@ -11824,8 +16150,15 @@
 	public class IfcRelAssociatesClassification : IfcRelAssociates
 	{
 		public IfcClassificationSelect RelatingClassification { get; set; }
+		public IfcRelAssociatesClassification() : base()
+		{
+			RelatingClassification = new IfcClassificationSelect();
+		}
+		public IfcRelAssociatesClassification(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcDefinitionSelect> RelatedObjects, IfcClassificationSelect RelatingClassification) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects)
+		{
+			this.RelatingClassification = RelatingClassification;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssociatesConstraint
 	/// <para>ENTITY IfcRelAssociatesConstraint</para>
@@ -11836,10 +16169,18 @@
 	/// <summary>
 	public class IfcRelAssociatesConstraint : IfcRelAssociates
 	{
-		public IfcLabel Intent { get; set; }
+		public IfcLabel? Intent { get; set; }
 		public IfcConstraint RelatingConstraint { get; set; }
+		public IfcRelAssociatesConstraint() : base()
+		{
+			RelatingConstraint = new IfcConstraint();
+		}
+		public IfcRelAssociatesConstraint(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcDefinitionSelect> RelatedObjects, IfcLabel Intent, IfcConstraint RelatingConstraint) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects)
+		{
+			this.Intent = Intent;
+			this.RelatingConstraint = RelatingConstraint;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssociatesDocument
 	/// <para>ENTITY IfcRelAssociatesDocument</para>
@@ -11850,8 +16191,15 @@
 	public class IfcRelAssociatesDocument : IfcRelAssociates
 	{
 		public IfcDocumentSelect RelatingDocument { get; set; }
+		public IfcRelAssociatesDocument() : base()
+		{
+			RelatingDocument = new IfcDocumentSelect();
+		}
+		public IfcRelAssociatesDocument(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcDefinitionSelect> RelatedObjects, IfcDocumentSelect RelatingDocument) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects)
+		{
+			this.RelatingDocument = RelatingDocument;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssociatesLibrary
 	/// <para>ENTITY IfcRelAssociatesLibrary</para>
@@ -11862,8 +16210,15 @@
 	public class IfcRelAssociatesLibrary : IfcRelAssociates
 	{
 		public IfcLibrarySelect RelatingLibrary { get; set; }
+		public IfcRelAssociatesLibrary() : base()
+		{
+			RelatingLibrary = new IfcLibrarySelect();
+		}
+		public IfcRelAssociatesLibrary(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcDefinitionSelect> RelatedObjects, IfcLibrarySelect RelatingLibrary) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects)
+		{
+			this.RelatingLibrary = RelatingLibrary;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelAssociatesMaterial
 	/// <para>ENTITY IfcRelAssociatesMaterial</para>
@@ -11871,25 +16226,32 @@
 	/// <para>	RelatingMaterial : IfcMaterialSelect;</para>
 	/// <para> WHERE</para>
 	/// <para>	NoVoidElement : SIZEOF(QUERY(temp <* SELF\IfcRelAssociates.RelatedObjects | </para>
-	/// <para>  ('IFC4.IFCFEATUREELEMENTSUBTRACTION' IN TYPEOF(temp)) OR </para>
-	/// <para>  ('IFC4.IFCVIRTUALELEMENT' IN TYPEOF(temp)) </para>
+	/// <para>  ('IFC4X1.IFCFEATUREELEMENTSUBTRACTION' IN TYPEOF(temp)) OR </para>
+	/// <para>  ('IFC4X1.IFCVIRTUALELEMENT' IN TYPEOF(temp)) </para>
 	/// <para>)) = 0;</para>
 	/// <para>	AllowedElements : SIZEOF(QUERY(temp <* SELF\IfcRelAssociates.RelatedObjects | (</para>
 	/// <para>  SIZEOF(TYPEOF(temp) * [   </para>
-	/// <para>    'IFC4.IFCELEMENT', </para>
-	/// <para>    'IFC4.IFCELEMENTTYPE',</para>
-	/// <para>    'IFC4.IFCWINDOWSTYLE',</para>
-	/// <para>    'IFC4.IFCDOORSTYLE',</para>
-	/// <para>    'IFC4.IFCSTRUCTURALMEMBER',</para>
-	/// <para>    'IFC4.IFCPORT']) = 0) </para>
+	/// <para>    'IFC4X1.IFCELEMENT', </para>
+	/// <para>    'IFC4X1.IFCELEMENTTYPE',</para>
+	/// <para>    'IFC4X1.IFCWINDOWSTYLE',</para>
+	/// <para>    'IFC4X1.IFCDOORSTYLE',</para>
+	/// <para>    'IFC4X1.IFCSTRUCTURALMEMBER',</para>
+	/// <para>    'IFC4X1.IFCPORT']) = 0) </para>
 	/// <para>)) = 0;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcRelAssociatesMaterial : IfcRelAssociates
 	{
 		public IfcMaterialSelect RelatingMaterial { get; set; }
+		public IfcRelAssociatesMaterial() : base()
+		{
+			RelatingMaterial = new IfcMaterialSelect();
+		}
+		public IfcRelAssociatesMaterial(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcDefinitionSelect> RelatedObjects, IfcMaterialSelect RelatingMaterial) : base (GlobalId, OwnerHistory, Name, Description, RelatedObjects)
+		{
+			this.RelatingMaterial = RelatingMaterial;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelConnects
 	/// <para>ENTITY IfcRelConnects</para>
@@ -11914,8 +16276,13 @@
 	/// <summary>
 	public abstract class IfcRelConnects : IfcRelationship
 	{
+		public IfcRelConnects() : base()
+		{
+		}
+		public IfcRelConnects(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelConnectsElements
 	/// <para>ENTITY IfcRelConnectsElements</para>
@@ -11932,11 +16299,21 @@
 	/// <summary>
 	public class IfcRelConnectsElements : IfcRelConnects
 	{
-		public IfcConnectionGeometry ConnectionGeometry { get; set; }
+		public IfcConnectionGeometry? ConnectionGeometry { get; set; }
 		public IfcElement RelatingElement { get; set; }
 		public IfcElement RelatedElement { get; set; }
+		public IfcRelConnectsElements() : base()
+		{
+			RelatingElement = new IfcElement();
+			RelatedElement = new IfcElement();
+		}
+		public IfcRelConnectsElements(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcConnectionGeometry ConnectionGeometry, IfcElement RelatingElement, IfcElement RelatedElement) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.ConnectionGeometry = ConnectionGeometry;
+			this.RelatingElement = RelatingElement;
+			this.RelatedElement = RelatedElement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelConnectsPathElements
 	/// <para>ENTITY IfcRelConnectsPathElements</para>
@@ -11964,8 +16341,21 @@
 		public List<IfcInteger> RelatedPriorities { get; set; }
 		public IfcConnectionTypeEnum RelatedConnectionType { get; set; }
 		public IfcConnectionTypeEnum RelatingConnectionType { get; set; }
+		public IfcRelConnectsPathElements() : base()
+		{
+			RelatingPriorities = new List<IfcInteger>();
+			RelatedPriorities = new List<IfcInteger>();
+			RelatedConnectionType = new IfcConnectionTypeEnum();
+			RelatingConnectionType = new IfcConnectionTypeEnum();
+		}
+		public IfcRelConnectsPathElements(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcConnectionGeometry ConnectionGeometry, IfcElement RelatingElement, IfcElement RelatedElement, List<IfcInteger> RelatingPriorities, List<IfcInteger> RelatedPriorities, IfcConnectionTypeEnum RelatedConnectionType, IfcConnectionTypeEnum RelatingConnectionType) : base (GlobalId, OwnerHistory, Name, Description, ConnectionGeometry, RelatingElement, RelatedElement)
+		{
+			this.RelatingPriorities = RelatingPriorities;
+			this.RelatedPriorities = RelatedPriorities;
+			this.RelatedConnectionType = RelatedConnectionType;
+			this.RelatingConnectionType = RelatingConnectionType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelConnectsPortToElement
 	/// <para>ENTITY IfcRelConnectsPortToElement</para>
@@ -11978,8 +16368,17 @@
 	{
 		public IfcPort RelatingPort { get; set; }
 		public IfcDistributionElement RelatedElement { get; set; }
+		public IfcRelConnectsPortToElement() : base()
+		{
+			RelatingPort = new IfcPort();
+			RelatedElement = new IfcDistributionElement();
+		}
+		public IfcRelConnectsPortToElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcPort RelatingPort, IfcDistributionElement RelatedElement) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingPort = RelatingPort;
+			this.RelatedElement = RelatedElement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelConnectsPorts
 	/// <para>ENTITY IfcRelConnectsPorts</para>
@@ -11995,9 +16394,19 @@
 	{
 		public IfcPort RelatingPort { get; set; }
 		public IfcPort RelatedPort { get; set; }
-		public IfcElement RealizingElement { get; set; }
+		public IfcElement? RealizingElement { get; set; }
+		public IfcRelConnectsPorts() : base()
+		{
+			RelatingPort = new IfcPort();
+			RelatedPort = new IfcPort();
+		}
+		public IfcRelConnectsPorts(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcPort RelatingPort, IfcPort RelatedPort, IfcElement RealizingElement) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingPort = RelatingPort;
+			this.RelatedPort = RelatedPort;
+			this.RealizingElement = RealizingElement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelConnectsStructuralActivity
 	/// <para>ENTITY IfcRelConnectsStructuralActivity</para>
@@ -12010,8 +16419,17 @@
 	{
 		public IfcStructuralActivityAssignmentSelect RelatingElement { get; set; }
 		public IfcStructuralActivity RelatedStructuralActivity { get; set; }
+		public IfcRelConnectsStructuralActivity() : base()
+		{
+			RelatingElement = new IfcStructuralActivityAssignmentSelect();
+			RelatedStructuralActivity = new IfcStructuralActivity();
+		}
+		public IfcRelConnectsStructuralActivity(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcStructuralActivityAssignmentSelect RelatingElement, IfcStructuralActivity RelatedStructuralActivity) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingElement = RelatingElement;
+			this.RelatedStructuralActivity = RelatedStructuralActivity;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelConnectsStructuralMember
 	/// <para>ENTITY IfcRelConnectsStructuralMember</para>
@@ -12030,12 +16448,25 @@
 	{
 		public IfcStructuralMember RelatingStructuralMember { get; set; }
 		public IfcStructuralConnection RelatedStructuralConnection { get; set; }
-		public IfcBoundaryCondition AppliedCondition { get; set; }
-		public IfcStructuralConnectionCondition AdditionalConditions { get; set; }
-		public IfcLengthMeasure SupportedLength { get; set; }
-		public IfcAxis2Placement3D ConditionCoordinateSystem { get; set; }
+		public IfcBoundaryCondition? AppliedCondition { get; set; }
+		public IfcStructuralConnectionCondition? AdditionalConditions { get; set; }
+		public IfcLengthMeasure? SupportedLength { get; set; }
+		public IfcAxis2Placement3D? ConditionCoordinateSystem { get; set; }
+		public IfcRelConnectsStructuralMember() : base()
+		{
+			RelatingStructuralMember = new IfcStructuralMember();
+			RelatedStructuralConnection = new IfcStructuralConnection();
+		}
+		public IfcRelConnectsStructuralMember(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcStructuralMember RelatingStructuralMember, IfcStructuralConnection RelatedStructuralConnection, IfcBoundaryCondition AppliedCondition, IfcStructuralConnectionCondition AdditionalConditions, IfcLengthMeasure SupportedLength, IfcAxis2Placement3D ConditionCoordinateSystem) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingStructuralMember = RelatingStructuralMember;
+			this.RelatedStructuralConnection = RelatedStructuralConnection;
+			this.AppliedCondition = AppliedCondition;
+			this.AdditionalConditions = AdditionalConditions;
+			this.SupportedLength = SupportedLength;
+			this.ConditionCoordinateSystem = ConditionCoordinateSystem;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelConnectsWithEccentricity
 	/// <para>ENTITY IfcRelConnectsWithEccentricity</para>
@@ -12046,8 +16477,15 @@
 	public class IfcRelConnectsWithEccentricity : IfcRelConnectsStructuralMember
 	{
 		public IfcConnectionGeometry ConnectionConstraint { get; set; }
+		public IfcRelConnectsWithEccentricity() : base()
+		{
+			ConnectionConstraint = new IfcConnectionGeometry();
+		}
+		public IfcRelConnectsWithEccentricity(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcStructuralMember RelatingStructuralMember, IfcStructuralConnection RelatedStructuralConnection, IfcBoundaryCondition AppliedCondition, IfcStructuralConnectionCondition AdditionalConditions, IfcLengthMeasure SupportedLength, IfcAxis2Placement3D ConditionCoordinateSystem, IfcConnectionGeometry ConnectionConstraint) : base (GlobalId, OwnerHistory, Name, Description, RelatingStructuralMember, RelatedStructuralConnection, AppliedCondition, AdditionalConditions, SupportedLength, ConditionCoordinateSystem)
+		{
+			this.ConnectionConstraint = ConnectionConstraint;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelConnectsWithRealizingElements
 	/// <para>ENTITY IfcRelConnectsWithRealizingElements</para>
@@ -12059,9 +16497,17 @@
 	public class IfcRelConnectsWithRealizingElements : IfcRelConnectsElements
 	{
 		public List<IfcElement> RealizingElements { get; set; }
-		public IfcLabel ConnectionType { get; set; }
+		public IfcLabel? ConnectionType { get; set; }
+		public IfcRelConnectsWithRealizingElements() : base()
+		{
+			RealizingElements = new List<IfcElement>();
+		}
+		public IfcRelConnectsWithRealizingElements(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcConnectionGeometry ConnectionGeometry, IfcElement RelatingElement, IfcElement RelatedElement, List<IfcElement> RealizingElements, IfcLabel ConnectionType) : base (GlobalId, OwnerHistory, Name, Description, ConnectionGeometry, RelatingElement, RelatedElement)
+		{
+			this.RealizingElements = RealizingElements;
+			this.ConnectionType = ConnectionType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelContainedInSpatialStructure
 	/// <para>ENTITY IfcRelContainedInSpatialStructure</para>
@@ -12069,15 +16515,24 @@
 	/// <para>	RelatedElements : SET [1:?] OF IfcProduct;</para>
 	/// <para>	RelatingStructure : IfcSpatialElement;</para>
 	/// <para> WHERE</para>
-	/// <para>	WR31 : SIZEOF(QUERY(temp <* RelatedElements | 'IFC4.IFCSPATIALSTRUCTUREELEMENT' IN TYPEOF(temp))) = 0;</para>
+	/// <para>	WR31 : SIZEOF(QUERY(temp <* RelatedElements | 'IFC4X1.IFCSPATIALSTRUCTUREELEMENT' IN TYPEOF(temp))) = 0;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcRelContainedInSpatialStructure : IfcRelConnects
 	{
 		public List<IfcProduct> RelatedElements { get; set; }
 		public IfcSpatialElement RelatingStructure { get; set; }
+		public IfcRelContainedInSpatialStructure() : base()
+		{
+			RelatedElements = new List<IfcProduct>();
+			RelatingStructure = new IfcSpatialElement();
+		}
+		public IfcRelContainedInSpatialStructure(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcProduct> RelatedElements, IfcSpatialElement RelatingStructure) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatedElements = RelatedElements;
+			this.RelatingStructure = RelatingStructure;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelCoversBldgElements
 	/// <para>ENTITY IfcRelCoversBldgElements</para>
@@ -12090,8 +16545,17 @@
 	{
 		public IfcElement RelatingBuildingElement { get; set; }
 		public List<IfcCovering> RelatedCoverings { get; set; }
+		public IfcRelCoversBldgElements() : base()
+		{
+			RelatingBuildingElement = new IfcElement();
+			RelatedCoverings = new List<IfcCovering>();
+		}
+		public IfcRelCoversBldgElements(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcElement RelatingBuildingElement, List<IfcCovering> RelatedCoverings) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingBuildingElement = RelatingBuildingElement;
+			this.RelatedCoverings = RelatedCoverings;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelCoversSpaces
 	/// <para>ENTITY IfcRelCoversSpaces</para>
@@ -12104,8 +16568,17 @@
 	{
 		public IfcSpace RelatingSpace { get; set; }
 		public List<IfcCovering> RelatedCoverings { get; set; }
+		public IfcRelCoversSpaces() : base()
+		{
+			RelatingSpace = new IfcSpace();
+			RelatedCoverings = new List<IfcCovering>();
+		}
+		public IfcRelCoversSpaces(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcSpace RelatingSpace, List<IfcCovering> RelatedCoverings) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingSpace = RelatingSpace;
+			this.RelatedCoverings = RelatedCoverings;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelDeclares
 	/// <para>ENTITY IfcRelDeclares</para>
@@ -12120,8 +16593,17 @@
 	{
 		public IfcContext RelatingContext { get; set; }
 		public List<IfcDefinitionSelect> RelatedDefinitions { get; set; }
+		public IfcRelDeclares() : base()
+		{
+			RelatingContext = new IfcContext();
+			RelatedDefinitions = new List<IfcDefinitionSelect>();
+		}
+		public IfcRelDeclares(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcContext RelatingContext, List<IfcDefinitionSelect> RelatedDefinitions) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingContext = RelatingContext;
+			this.RelatedDefinitions = RelatedDefinitions;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelDecomposes
 	/// <para>ENTITY IfcRelDecomposes</para>
@@ -12135,8 +16617,13 @@
 	/// <summary>
 	public abstract class IfcRelDecomposes : IfcRelationship
 	{
+		public IfcRelDecomposes() : base()
+		{
+		}
+		public IfcRelDecomposes(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelDefines
 	/// <para>ENTITY IfcRelDefines</para>
@@ -12150,8 +16637,13 @@
 	/// <summary>
 	public abstract class IfcRelDefines : IfcRelationship
 	{
+		public IfcRelDefines() : base()
+		{
+		}
+		public IfcRelDefines(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelDefinesByObject
 	/// <para>ENTITY IfcRelDefinesByObject</para>
@@ -12164,8 +16656,17 @@
 	{
 		public List<IfcObject> RelatedObjects { get; set; }
 		public IfcObject RelatingObject { get; set; }
+		public IfcRelDefinesByObject() : base()
+		{
+			RelatedObjects = new List<IfcObject>();
+			RelatingObject = new IfcObject();
+		}
+		public IfcRelDefinesByObject(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcObject> RelatedObjects, IfcObject RelatingObject) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatedObjects = RelatedObjects;
+			this.RelatingObject = RelatingObject;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelDefinesByProperties
 	/// <para>ENTITY IfcRelDefinesByProperties</para>
@@ -12173,15 +16674,24 @@
 	/// <para>	RelatedObjects : SET [1:?] OF IfcObjectDefinition;</para>
 	/// <para>	RelatingPropertyDefinition : IfcPropertySetDefinitionSelect;</para>
 	/// <para> WHERE</para>
-	/// <para>	NoRelatedTypeObject : SIZEOF(QUERY(Types <* SELF\IfcRelDefinesByProperties.RelatedObjects |  'IFC4.IFCTYPEOBJECT' IN TYPEOF(Types))) = 0;</para>
+	/// <para>	NoRelatedTypeObject : SIZEOF(QUERY(Types <* SELF\IfcRelDefinesByProperties.RelatedObjects |  'IFC4X1.IFCTYPEOBJECT' IN TYPEOF(Types))) = 0;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcRelDefinesByProperties : IfcRelDefines
 	{
 		public List<IfcObjectDefinition> RelatedObjects { get; set; }
 		public IfcPropertySetDefinitionSelect RelatingPropertyDefinition { get; set; }
+		public IfcRelDefinesByProperties() : base()
+		{
+			RelatedObjects = new List<IfcObjectDefinition>();
+			RelatingPropertyDefinition = new IfcPropertySetDefinitionSelect();
+		}
+		public IfcRelDefinesByProperties(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcObjectDefinition> RelatedObjects, IfcPropertySetDefinitionSelect RelatingPropertyDefinition) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatedObjects = RelatedObjects;
+			this.RelatingPropertyDefinition = RelatingPropertyDefinition;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelDefinesByTemplate
 	/// <para>ENTITY IfcRelDefinesByTemplate</para>
@@ -12194,8 +16704,17 @@
 	{
 		public List<IfcPropertySetDefinition> RelatedPropertySets { get; set; }
 		public IfcPropertySetTemplate RelatingTemplate { get; set; }
+		public IfcRelDefinesByTemplate() : base()
+		{
+			RelatedPropertySets = new List<IfcPropertySetDefinition>();
+			RelatingTemplate = new IfcPropertySetTemplate();
+		}
+		public IfcRelDefinesByTemplate(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcPropertySetDefinition> RelatedPropertySets, IfcPropertySetTemplate RelatingTemplate) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatedPropertySets = RelatedPropertySets;
+			this.RelatingTemplate = RelatingTemplate;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelDefinesByType
 	/// <para>ENTITY IfcRelDefinesByType</para>
@@ -12208,8 +16727,17 @@
 	{
 		public List<IfcObject> RelatedObjects { get; set; }
 		public IfcTypeObject RelatingType { get; set; }
+		public IfcRelDefinesByType() : base()
+		{
+			RelatedObjects = new List<IfcObject>();
+			RelatingType = new IfcTypeObject();
+		}
+		public IfcRelDefinesByType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcObject> RelatedObjects, IfcTypeObject RelatingType) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatedObjects = RelatedObjects;
+			this.RelatingType = RelatingType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelFillsElement
 	/// <para>ENTITY IfcRelFillsElement</para>
@@ -12222,8 +16750,17 @@
 	{
 		public IfcOpeningElement RelatingOpeningElement { get; set; }
 		public IfcElement RelatedBuildingElement { get; set; }
+		public IfcRelFillsElement() : base()
+		{
+			RelatingOpeningElement = new IfcOpeningElement();
+			RelatedBuildingElement = new IfcElement();
+		}
+		public IfcRelFillsElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcOpeningElement RelatingOpeningElement, IfcElement RelatedBuildingElement) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingOpeningElement = RelatingOpeningElement;
+			this.RelatedBuildingElement = RelatedBuildingElement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelFlowControlElements
 	/// <para>ENTITY IfcRelFlowControlElements</para>
@@ -12236,8 +16773,17 @@
 	{
 		public List<IfcDistributionControlElement> RelatedControlElements { get; set; }
 		public IfcDistributionFlowElement RelatingFlowElement { get; set; }
+		public IfcRelFlowControlElements() : base()
+		{
+			RelatedControlElements = new List<IfcDistributionControlElement>();
+			RelatingFlowElement = new IfcDistributionFlowElement();
+		}
+		public IfcRelFlowControlElements(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcDistributionControlElement> RelatedControlElements, IfcDistributionFlowElement RelatingFlowElement) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatedControlElements = RelatedControlElements;
+			this.RelatingFlowElement = RelatingFlowElement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelInterferesElements
 	/// <para>ENTITY IfcRelInterferesElements</para>
@@ -12255,11 +16801,24 @@
 	{
 		public IfcElement RelatingElement { get; set; }
 		public IfcElement RelatedElement { get; set; }
-		public IfcConnectionGeometry InterferenceGeometry { get; set; }
-		public IfcIdentifier InterferenceType { get; set; }
+		public IfcConnectionGeometry? InterferenceGeometry { get; set; }
+		public IfcIdentifier? InterferenceType { get; set; }
 		public LOGICAL ImpliedOrder { get; set; }
+		public IfcRelInterferesElements() : base()
+		{
+			RelatingElement = new IfcElement();
+			RelatedElement = new IfcElement();
+			ImpliedOrder = new LOGICAL();
+		}
+		public IfcRelInterferesElements(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcElement RelatingElement, IfcElement RelatedElement, IfcConnectionGeometry InterferenceGeometry, IfcIdentifier InterferenceType, LOGICAL ImpliedOrder) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingElement = RelatingElement;
+			this.RelatedElement = RelatedElement;
+			this.InterferenceGeometry = InterferenceGeometry;
+			this.InterferenceType = InterferenceType;
+			this.ImpliedOrder = ImpliedOrder;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelNests
 	/// <para>ENTITY IfcRelNests</para>
@@ -12274,8 +16833,17 @@
 	{
 		public IfcObjectDefinition RelatingObject { get; set; }
 		public List<IfcObjectDefinition> RelatedObjects { get; set; }
+		public IfcRelNests() : base()
+		{
+			RelatingObject = new IfcObjectDefinition();
+			RelatedObjects = new List<IfcObjectDefinition>();
+		}
+		public IfcRelNests(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcObjectDefinition RelatingObject, List<IfcObjectDefinition> RelatedObjects) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingObject = RelatingObject;
+			this.RelatedObjects = RelatedObjects;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelProjectsElement
 	/// <para>ENTITY IfcRelProjectsElement</para>
@@ -12288,8 +16856,17 @@
 	{
 		public IfcElement RelatingElement { get; set; }
 		public IfcFeatureElementAddition RelatedFeatureElement { get; set; }
+		public IfcRelProjectsElement() : base()
+		{
+			RelatingElement = new IfcElement();
+			RelatedFeatureElement = new IfcFeatureElementAddition();
+		}
+		public IfcRelProjectsElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcElement RelatingElement, IfcFeatureElementAddition RelatedFeatureElement) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingElement = RelatingElement;
+			this.RelatedFeatureElement = RelatedFeatureElement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelReferencedInSpatialStructure
 	/// <para>ENTITY IfcRelReferencedInSpatialStructure</para>
@@ -12297,7 +16874,7 @@
 	/// <para>	RelatedElements : SET [1:?] OF IfcProduct;</para>
 	/// <para>	RelatingStructure : IfcSpatialElement;</para>
 	/// <para> WHERE</para>
-	/// <para>	AllowedRelatedElements : SIZEOF(QUERY(temp <* RelatedElements | ('IFC4.IFCSPATIALSTRUCTUREELEMENT' IN TYPEOF(temp)) AND (NOT ('IFC4.IFCSPACE' IN TYPEOF(temp)))</para>
+	/// <para>	AllowedRelatedElements : SIZEOF(QUERY(temp <* RelatedElements | ('IFC4X1.IFCSPATIALSTRUCTUREELEMENT' IN TYPEOF(temp)) AND (NOT ('IFC4X1.IFCSPACE' IN TYPEOF(temp)))</para>
 	/// <para>)) = 0;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
@@ -12305,8 +16882,17 @@
 	{
 		public List<IfcProduct> RelatedElements { get; set; }
 		public IfcSpatialElement RelatingStructure { get; set; }
+		public IfcRelReferencedInSpatialStructure() : base()
+		{
+			RelatedElements = new List<IfcProduct>();
+			RelatingStructure = new IfcSpatialElement();
+		}
+		public IfcRelReferencedInSpatialStructure(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, List<IfcProduct> RelatedElements, IfcSpatialElement RelatingStructure) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatedElements = RelatedElements;
+			this.RelatingStructure = RelatingStructure;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelSequence
 	/// <para>ENTITY IfcRelSequence</para>
@@ -12325,11 +16911,23 @@
 	{
 		public IfcProcess RelatingProcess { get; set; }
 		public IfcProcess RelatedProcess { get; set; }
-		public IfcLagTime TimeLag { get; set; }
-		public IfcSequenceEnum SequenceType { get; set; }
-		public IfcLabel UserDefinedSequenceType { get; set; }
+		public IfcLagTime? TimeLag { get; set; }
+		public IfcSequenceEnum? SequenceType { get; set; }
+		public IfcLabel? UserDefinedSequenceType { get; set; }
+		public IfcRelSequence() : base()
+		{
+			RelatingProcess = new IfcProcess();
+			RelatedProcess = new IfcProcess();
+		}
+		public IfcRelSequence(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcProcess RelatingProcess, IfcProcess RelatedProcess, IfcLagTime TimeLag, IfcSequenceEnum SequenceType, IfcLabel UserDefinedSequenceType) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingProcess = RelatingProcess;
+			this.RelatedProcess = RelatedProcess;
+			this.TimeLag = TimeLag;
+			this.SequenceType = SequenceType;
+			this.UserDefinedSequenceType = UserDefinedSequenceType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelServicesBuildings
 	/// <para>ENTITY IfcRelServicesBuildings</para>
@@ -12342,8 +16940,17 @@
 	{
 		public IfcSystem RelatingSystem { get; set; }
 		public List<IfcSpatialElement> RelatedBuildings { get; set; }
+		public IfcRelServicesBuildings() : base()
+		{
+			RelatingSystem = new IfcSystem();
+			RelatedBuildings = new List<IfcSpatialElement>();
+		}
+		public IfcRelServicesBuildings(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcSystem RelatingSystem, List<IfcSpatialElement> RelatedBuildings) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingSystem = RelatingSystem;
+			this.RelatedBuildings = RelatedBuildings;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelSpaceBoundary
 	/// <para>ENTITY IfcRelSpaceBoundary</para>
@@ -12357,11 +16964,11 @@
 	/// <para>	InternalOrExternalBoundary : IfcInternalOrExternalEnum;</para>
 	/// <para> WHERE</para>
 	/// <para>	CorrectPhysOrVirt : ((PhysicalOrVirtualBoundary = IfcPhysicalOrVirtualEnum.Physical) </para>
-	/// <para>  AND (NOT('IFC4.IFCVIRTUALELEMENT' IN TYPEOF(RelatedBuildingElement)))) </para>
+	/// <para>  AND (NOT('IFC4X1.IFCVIRTUALELEMENT' IN TYPEOF(RelatedBuildingElement)))) </para>
 	/// <para>OR </para>
 	/// <para>((PhysicalOrVirtualBoundary = IfcPhysicalOrVirtualEnum.Virtual) </para>
-	/// <para>  AND (('IFC4.IFCVIRTUALELEMENT' IN TYPEOF(RelatedBuildingElement)) </para>
-	/// <para>  OR   ('IFC4.IFCOPENINGELEMENT' IN TYPEOF(RelatedBuildingElement)))) </para>
+	/// <para>  AND (('IFC4X1.IFCVIRTUALELEMENT' IN TYPEOF(RelatedBuildingElement)) </para>
+	/// <para>  OR   ('IFC4X1.IFCOPENINGELEMENT' IN TYPEOF(RelatedBuildingElement)))) </para>
 	/// <para>OR </para>
 	/// <para>(PhysicalOrVirtualBoundary = IfcPhysicalOrVirtualEnum.NotDefined);</para>
 	/// <para>END_ENTITY;</para>
@@ -12370,11 +16977,25 @@
 	{
 		public IfcSpaceBoundarySelect RelatingSpace { get; set; }
 		public IfcElement RelatedBuildingElement { get; set; }
-		public IfcConnectionGeometry ConnectionGeometry { get; set; }
+		public IfcConnectionGeometry? ConnectionGeometry { get; set; }
 		public IfcPhysicalOrVirtualEnum PhysicalOrVirtualBoundary { get; set; }
 		public IfcInternalOrExternalEnum InternalOrExternalBoundary { get; set; }
+		public IfcRelSpaceBoundary() : base()
+		{
+			RelatingSpace = new IfcSpaceBoundarySelect();
+			RelatedBuildingElement = new IfcElement();
+			PhysicalOrVirtualBoundary = new IfcPhysicalOrVirtualEnum();
+			InternalOrExternalBoundary = new IfcInternalOrExternalEnum();
+		}
+		public IfcRelSpaceBoundary(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcSpaceBoundarySelect RelatingSpace, IfcElement RelatedBuildingElement, IfcConnectionGeometry ConnectionGeometry, IfcPhysicalOrVirtualEnum PhysicalOrVirtualBoundary, IfcInternalOrExternalEnum InternalOrExternalBoundary) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingSpace = RelatingSpace;
+			this.RelatedBuildingElement = RelatedBuildingElement;
+			this.ConnectionGeometry = ConnectionGeometry;
+			this.PhysicalOrVirtualBoundary = PhysicalOrVirtualBoundary;
+			this.InternalOrExternalBoundary = InternalOrExternalBoundary;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelSpaceBoundary1stLevel
 	/// <para>ENTITY IfcRelSpaceBoundary1stLevel</para>
@@ -12388,9 +17009,15 @@
 	/// <summary>
 	public class IfcRelSpaceBoundary1stLevel : IfcRelSpaceBoundary
 	{
-		public IfcRelSpaceBoundary1stLevel ParentBoundary { get; set; }
+		public IfcRelSpaceBoundary1stLevel? ParentBoundary { get; set; }
+		public IfcRelSpaceBoundary1stLevel() : base()
+		{
+		}
+		public IfcRelSpaceBoundary1stLevel(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcSpaceBoundarySelect RelatingSpace, IfcElement RelatedBuildingElement, IfcConnectionGeometry ConnectionGeometry, IfcPhysicalOrVirtualEnum PhysicalOrVirtualBoundary, IfcInternalOrExternalEnum InternalOrExternalBoundary, IfcRelSpaceBoundary1stLevel ParentBoundary) : base (GlobalId, OwnerHistory, Name, Description, RelatingSpace, RelatedBuildingElement, ConnectionGeometry, PhysicalOrVirtualBoundary, InternalOrExternalBoundary)
+		{
+			this.ParentBoundary = ParentBoundary;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelSpaceBoundary2ndLevel
 	/// <para>ENTITY IfcRelSpaceBoundary2ndLevel</para>
@@ -12402,9 +17029,15 @@
 	/// <summary>
 	public class IfcRelSpaceBoundary2ndLevel : IfcRelSpaceBoundary1stLevel
 	{
-		public IfcRelSpaceBoundary2ndLevel CorrespondingBoundary { get; set; }
+		public IfcRelSpaceBoundary2ndLevel? CorrespondingBoundary { get; set; }
+		public IfcRelSpaceBoundary2ndLevel() : base()
+		{
+		}
+		public IfcRelSpaceBoundary2ndLevel(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcSpaceBoundarySelect RelatingSpace, IfcElement RelatedBuildingElement, IfcConnectionGeometry ConnectionGeometry, IfcPhysicalOrVirtualEnum PhysicalOrVirtualBoundary, IfcInternalOrExternalEnum InternalOrExternalBoundary, IfcRelSpaceBoundary1stLevel ParentBoundary, IfcRelSpaceBoundary2ndLevel CorrespondingBoundary) : base (GlobalId, OwnerHistory, Name, Description, RelatingSpace, RelatedBuildingElement, ConnectionGeometry, PhysicalOrVirtualBoundary, InternalOrExternalBoundary, ParentBoundary)
+		{
+			this.CorrespondingBoundary = CorrespondingBoundary;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelVoidsElement
 	/// <para>ENTITY IfcRelVoidsElement</para>
@@ -12417,8 +17050,17 @@
 	{
 		public IfcElement RelatingBuildingElement { get; set; }
 		public IfcFeatureElementSubtraction RelatedOpeningElement { get; set; }
+		public IfcRelVoidsElement() : base()
+		{
+			RelatingBuildingElement = new IfcElement();
+			RelatedOpeningElement = new IfcFeatureElementSubtraction();
+		}
+		public IfcRelVoidsElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcElement RelatingBuildingElement, IfcFeatureElementSubtraction RelatedOpeningElement) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.RelatingBuildingElement = RelatingBuildingElement;
+			this.RelatedOpeningElement = RelatedOpeningElement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRelationship
 	/// <para>ENTITY IfcRelationship</para>
@@ -12434,8 +17076,13 @@
 	/// <summary>
 	public abstract class IfcRelationship : IfcRoot
 	{
+		public IfcRelationship() : base()
+		{
+		}
+		public IfcRelationship(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcReparametrisedCompositeCurveSegment
 	/// <para>ENTITY IfcReparametrisedCompositeCurveSegment</para>
@@ -12448,8 +17095,15 @@
 	public class IfcReparametrisedCompositeCurveSegment : IfcCompositeCurveSegment
 	{
 		public IfcParameterValue ParamLength { get; set; }
+		public IfcReparametrisedCompositeCurveSegment() : base()
+		{
+			ParamLength = new IfcParameterValue();
+		}
+		public IfcReparametrisedCompositeCurveSegment(IfcTransitionCode Transition, IfcBoolean SameSense, IfcCurve ParentCurve, IfcParameterValue ParamLength) : base (Transition, SameSense, ParentCurve)
+		{
+			this.ParamLength = ParamLength;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRepresentation
 	/// <para>ENTITY IfcRepresentation</para>
@@ -12469,11 +17123,22 @@
 	public abstract class IfcRepresentationENTITY, IfcLayeredItem
 	{
 		public IfcRepresentationContext ContextOfItems { get; set; }
-		public IfcLabel RepresentationIdentifier { get; set; }
-		public IfcLabel RepresentationType { get; set; }
+		public IfcLabel? RepresentationIdentifier { get; set; }
+		public IfcLabel? RepresentationType { get; set; }
 		public List<IfcRepresentationItem> Items { get; set; }
+		public IfcRepresentation() : base()
+		{
+			ContextOfItems = new IfcRepresentationContext();
+			Items = new List<IfcRepresentationItem>();
+		}
+		public IfcRepresentation(IfcRepresentationContext ContextOfItems, IfcLabel RepresentationIdentifier, IfcLabel RepresentationType, List<IfcRepresentationItem> Items) : base ()
+		{
+			this.ContextOfItems = ContextOfItems;
+			this.RepresentationIdentifier = RepresentationIdentifier;
+			this.RepresentationType = RepresentationType;
+			this.Items = Items;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRepresentationContext
 	/// <para>ENTITY IfcRepresentationContext</para>
@@ -12487,10 +17152,17 @@
 	/// <summary>
 	public abstract class IfcRepresentationContextENTITY
 	{
-		public IfcLabel ContextIdentifier { get; set; }
-		public IfcLabel ContextType { get; set; }
+		public IfcLabel? ContextIdentifier { get; set; }
+		public IfcLabel? ContextType { get; set; }
+		public IfcRepresentationContext() : base()
+		{
+		}
+		public IfcRepresentationContext(IfcLabel ContextIdentifier, IfcLabel ContextType) : base ()
+		{
+			this.ContextIdentifier = ContextIdentifier;
+			this.ContextType = ContextType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRepresentationItem
 	/// <para>ENTITY IfcRepresentationItem</para>
@@ -12506,8 +17178,13 @@
 	/// <summary>
 	public abstract class IfcRepresentationItemENTITY, IfcLayeredItem
 	{
+		public IfcRepresentationItem() : base()
+		{
+		}
+		public IfcRepresentationItem() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRepresentationMap;
 	/// <para>ENTITY IfcRepresentationMap;</para>
@@ -12517,15 +17194,24 @@
 	/// <para>	HasShapeAspects : SET [0:?] OF IfcShapeAspect FOR PartOfProductDefinitionShape;</para>
 	/// <para>	MapUsage : SET [0:?] OF IfcMappedItem FOR MappingSource;</para>
 	/// <para> WHERE</para>
-	/// <para>	ApplicableMappedRepr : 'IFC4.IFCSHAPEMODEL' IN TYPEOF(MappedRepresentation);</para>
+	/// <para>	ApplicableMappedRepr : 'IFC4X1.IFCSHAPEMODEL' IN TYPEOF(MappedRepresentation);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcRepresentationMapENTITY, IfcProductRepresentationSelect
 	{
 		public IfcAxis2Placement MappingOrigin { get; set; }
 		public IfcRepresentation MappedRepresentation { get; set; }
+		public IfcRepresentationMap() : base()
+		{
+			MappingOrigin = new IfcAxis2Placement();
+			MappedRepresentation = new IfcRepresentation();
+		}
+		public IfcRepresentationMap(IfcAxis2Placement MappingOrigin, IfcRepresentation MappedRepresentation) : base ()
+		{
+			this.MappingOrigin = MappingOrigin;
+			this.MappedRepresentation = MappedRepresentation;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcResource
 	/// <para>ENTITY IfcResource</para>
@@ -12540,10 +17226,17 @@
 	/// <summary>
 	public abstract class IfcResource : IfcObject, IfcResourceSelect
 	{
-		public IfcIdentifier Identification { get; set; }
-		public IfcText LongDescription { get; set; }
+		public IfcIdentifier? Identification { get; set; }
+		public IfcText? LongDescription { get; set; }
+		public IfcResource() : base()
+		{
+		}
+		public IfcResource(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcText LongDescription) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.Identification = Identification;
+			this.LongDescription = LongDescription;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcResourceApprovalRelationship
 	/// <para>ENTITY IfcResourceApprovalRelationship</para>
@@ -12556,8 +17249,17 @@
 	{
 		public List<IfcResourceObjectSelect> RelatedResourceObjects { get; set; }
 		public IfcApproval RelatingApproval { get; set; }
+		public IfcResourceApprovalRelationship() : base()
+		{
+			RelatedResourceObjects = new List<IfcResourceObjectSelect>();
+			RelatingApproval = new IfcApproval();
+		}
+		public IfcResourceApprovalRelationship(IfcLabel Name, IfcText Description, List<IfcResourceObjectSelect> RelatedResourceObjects, IfcApproval RelatingApproval) : base (Name, Description)
+		{
+			this.RelatedResourceObjects = RelatedResourceObjects;
+			this.RelatingApproval = RelatingApproval;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcResourceConstraintRelationship
 	/// <para>ENTITY IfcResourceConstraintRelationship</para>
@@ -12570,8 +17272,17 @@
 	{
 		public IfcConstraint RelatingConstraint { get; set; }
 		public List<IfcResourceObjectSelect> RelatedResourceObjects { get; set; }
+		public IfcResourceConstraintRelationship() : base()
+		{
+			RelatingConstraint = new IfcConstraint();
+			RelatedResourceObjects = new List<IfcResourceObjectSelect>();
+		}
+		public IfcResourceConstraintRelationship(IfcLabel Name, IfcText Description, IfcConstraint RelatingConstraint, List<IfcResourceObjectSelect> RelatedResourceObjects) : base (Name, Description)
+		{
+			this.RelatingConstraint = RelatingConstraint;
+			this.RelatedResourceObjects = RelatedResourceObjects;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcResourceLevelRelationship
 	/// <para>ENTITY IfcResourceLevelRelationship</para>
@@ -12591,10 +17302,17 @@
 	/// <summary>
 	public abstract class IfcResourceLevelRelationshipENTITY
 	{
-		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcResourceLevelRelationship() : base()
+		{
+		}
+		public IfcResourceLevelRelationship(IfcLabel Name, IfcText Description) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcResourceTime
 	/// <para>ENTITY IfcResourceTime</para>
@@ -12618,23 +17336,43 @@
 	/// <summary>
 	public class IfcResourceTime : IfcSchedulingTime
 	{
-		public IfcDuration ScheduleWork { get; set; }
-		public IfcPositiveRatioMeasure ScheduleUsage { get; set; }
-		public IfcDateTime ScheduleStart { get; set; }
-		public IfcDateTime ScheduleFinish { get; set; }
-		public IfcLabel ScheduleContour { get; set; }
-		public IfcDuration LevelingDelay { get; set; }
-		public IfcBoolean IsOverAllocated { get; set; }
-		public IfcDateTime StatusTime { get; set; }
-		public IfcDuration ActualWork { get; set; }
-		public IfcPositiveRatioMeasure ActualUsage { get; set; }
-		public IfcDateTime ActualStart { get; set; }
-		public IfcDateTime ActualFinish { get; set; }
-		public IfcDuration RemainingWork { get; set; }
-		public IfcPositiveRatioMeasure RemainingUsage { get; set; }
-		public IfcPositiveRatioMeasure Completion { get; set; }
+		public IfcDuration? ScheduleWork { get; set; }
+		public IfcPositiveRatioMeasure? ScheduleUsage { get; set; }
+		public IfcDateTime? ScheduleStart { get; set; }
+		public IfcDateTime? ScheduleFinish { get; set; }
+		public IfcLabel? ScheduleContour { get; set; }
+		public IfcDuration? LevelingDelay { get; set; }
+		public IfcBoolean? IsOverAllocated { get; set; }
+		public IfcDateTime? StatusTime { get; set; }
+		public IfcDuration? ActualWork { get; set; }
+		public IfcPositiveRatioMeasure? ActualUsage { get; set; }
+		public IfcDateTime? ActualStart { get; set; }
+		public IfcDateTime? ActualFinish { get; set; }
+		public IfcDuration? RemainingWork { get; set; }
+		public IfcPositiveRatioMeasure? RemainingUsage { get; set; }
+		public IfcPositiveRatioMeasure? Completion { get; set; }
+		public IfcResourceTime() : base()
+		{
+		}
+		public IfcResourceTime(IfcLabel Name, IfcDataOriginEnum DataOrigin, IfcLabel UserDefinedDataOrigin, IfcDuration ScheduleWork, IfcPositiveRatioMeasure ScheduleUsage, IfcDateTime ScheduleStart, IfcDateTime ScheduleFinish, IfcLabel ScheduleContour, IfcDuration LevelingDelay, IfcBoolean IsOverAllocated, IfcDateTime StatusTime, IfcDuration ActualWork, IfcPositiveRatioMeasure ActualUsage, IfcDateTime ActualStart, IfcDateTime ActualFinish, IfcDuration RemainingWork, IfcPositiveRatioMeasure RemainingUsage, IfcPositiveRatioMeasure Completion) : base (Name, DataOrigin, UserDefinedDataOrigin)
+		{
+			this.ScheduleWork = ScheduleWork;
+			this.ScheduleUsage = ScheduleUsage;
+			this.ScheduleStart = ScheduleStart;
+			this.ScheduleFinish = ScheduleFinish;
+			this.ScheduleContour = ScheduleContour;
+			this.LevelingDelay = LevelingDelay;
+			this.IsOverAllocated = IsOverAllocated;
+			this.StatusTime = StatusTime;
+			this.ActualWork = ActualWork;
+			this.ActualUsage = ActualUsage;
+			this.ActualStart = ActualStart;
+			this.ActualFinish = ActualFinish;
+			this.RemainingWork = RemainingWork;
+			this.RemainingUsage = RemainingUsage;
+			this.Completion = Completion;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRevolvedAreaSolid
 	/// <para>ENTITY IfcRevolvedAreaSolid</para>
@@ -12655,8 +17393,17 @@
 	{
 		public IfcAxis1Placement Axis { get; set; }
 		public IfcPlaneAngleMeasure Angle { get; set; }
+		public IfcRevolvedAreaSolid() : base()
+		{
+			Axis = new IfcAxis1Placement();
+			Angle = new IfcPlaneAngleMeasure();
+		}
+		public IfcRevolvedAreaSolid(IfcProfileDef SweptArea, IfcAxis2Placement3D Position, IfcAxis1Placement Axis, IfcPlaneAngleMeasure Angle) : base (SweptArea, Position)
+		{
+			this.Axis = Axis;
+			this.Angle = Angle;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRevolvedAreaSolidTapered
 	/// <para>ENTITY IfcRevolvedAreaSolidTapered</para>
@@ -12669,8 +17416,15 @@
 	public class IfcRevolvedAreaSolidTapered : IfcRevolvedAreaSolid
 	{
 		public IfcProfileDef EndSweptArea { get; set; }
+		public IfcRevolvedAreaSolidTapered() : base()
+		{
+			EndSweptArea = new IfcProfileDef();
+		}
+		public IfcRevolvedAreaSolidTapered(IfcProfileDef SweptArea, IfcAxis2Placement3D Position, IfcAxis1Placement Axis, IfcPlaneAngleMeasure Angle, IfcProfileDef EndSweptArea) : base (SweptArea, Position, Axis, Angle)
+		{
+			this.EndSweptArea = EndSweptArea;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRightCircularCone
 	/// <para>ENTITY IfcRightCircularCone</para>
@@ -12683,8 +17437,17 @@
 	{
 		public IfcPositiveLengthMeasure Height { get; set; }
 		public IfcPositiveLengthMeasure BottomRadius { get; set; }
+		public IfcRightCircularCone() : base()
+		{
+			Height = new IfcPositiveLengthMeasure();
+			BottomRadius = new IfcPositiveLengthMeasure();
+		}
+		public IfcRightCircularCone(IfcAxis2Placement3D Position, IfcPositiveLengthMeasure Height, IfcPositiveLengthMeasure BottomRadius) : base (Position)
+		{
+			this.Height = Height;
+			this.BottomRadius = BottomRadius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRightCircularCylinder
 	/// <para>ENTITY IfcRightCircularCylinder</para>
@@ -12697,8 +17460,17 @@
 	{
 		public IfcPositiveLengthMeasure Height { get; set; }
 		public IfcPositiveLengthMeasure Radius { get; set; }
+		public IfcRightCircularCylinder() : base()
+		{
+			Height = new IfcPositiveLengthMeasure();
+			Radius = new IfcPositiveLengthMeasure();
+		}
+		public IfcRightCircularCylinder(IfcAxis2Placement3D Position, IfcPositiveLengthMeasure Height, IfcPositiveLengthMeasure Radius) : base (Position)
+		{
+			this.Height = Height;
+			this.Radius = Radius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRoof
 	/// <para>ENTITY IfcRoof</para>
@@ -12709,14 +17481,20 @@
 	/// <para> (PredefinedType <> IfcRoofTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcRoofTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCROOFTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCROOFTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcRoof : IfcBuildingElement
 	{
-		public IfcRoofTypeEnum PredefinedType { get; set; }
+		public IfcRoofTypeEnum? PredefinedType { get; set; }
+		public IfcRoof() : base()
+		{
+		}
+		public IfcRoof(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcRoofTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRoofType
 	/// <para>ENTITY IfcRoofType</para>
@@ -12730,8 +17508,15 @@
 	public class IfcRoofType : IfcBuildingElementType
 	{
 		public IfcRoofTypeEnum PredefinedType { get; set; }
+		public IfcRoofType() : base()
+		{
+			PredefinedType = new IfcRoofTypeEnum();
+		}
+		public IfcRoofType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcRoofTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRoot
 	/// <para>ENTITY IfcRoot</para>
@@ -12750,11 +17535,21 @@
 	public abstract class IfcRootENTITY
 	{
 		public IfcGloballyUniqueId GlobalId { get; set; }
-		public IfcOwnerHistory OwnerHistory { get; set; }
-		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
+		public IfcOwnerHistory? OwnerHistory { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcRoot() : base()
+		{
+			GlobalId = new IfcGloballyUniqueId();
+		}
+		public IfcRoot(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description) : base ()
+		{
+			this.GlobalId = GlobalId;
+			this.OwnerHistory = OwnerHistory;
+			this.Name = Name;
+			this.Description = Description;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcRoundedRectangleProfileDef
 	/// <para>ENTITY IfcRoundedRectangleProfileDef</para>
@@ -12768,8 +17563,15 @@
 	public class IfcRoundedRectangleProfileDef : IfcRectangleProfileDef
 	{
 		public IfcPositiveLengthMeasure RoundingRadius { get; set; }
+		public IfcRoundedRectangleProfileDef() : base()
+		{
+			RoundingRadius = new IfcPositiveLengthMeasure();
+		}
+		public IfcRoundedRectangleProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure XDim, IfcPositiveLengthMeasure YDim, IfcPositiveLengthMeasure RoundingRadius) : base (ProfileType, ProfileName, Position, XDim, YDim)
+		{
+			this.RoundingRadius = RoundingRadius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSIUnit
 	/// <para>ENTITY IfcSIUnit</para>
@@ -12782,10 +17584,18 @@
 	/// <summary>
 	public class IfcSIUnit : IfcNamedUnit
 	{
-		public IfcSIPrefix Prefix { get; set; }
+		public IfcSIPrefix? Prefix { get; set; }
 		public IfcSIUnitName Name { get; set; }
+		public IfcSIUnit() : base()
+		{
+			Name = new IfcSIUnitName();
+		}
+		public IfcSIUnit(IfcDimensionalExponents Dimensions, IfcUnitEnum UnitType, IfcSIPrefix Prefix, IfcSIUnitName Name) : base (Dimensions, UnitType)
+		{
+			this.Prefix = Prefix;
+			this.Name = Name;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSanitaryTerminal
 	/// <para>ENTITY IfcSanitaryTerminal</para>
@@ -12796,14 +17606,20 @@
 	/// <para> (PredefinedType <> IfcSanitaryTerminalTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcSanitaryTerminalTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCSANITARYTERMINALTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCSANITARYTERMINALTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSanitaryTerminal : IfcFlowTerminal
 	{
-		public IfcSanitaryTerminalTypeEnum PredefinedType { get; set; }
+		public IfcSanitaryTerminalTypeEnum? PredefinedType { get; set; }
+		public IfcSanitaryTerminal() : base()
+		{
+		}
+		public IfcSanitaryTerminal(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcSanitaryTerminalTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSanitaryTerminalType
 	/// <para>ENTITY IfcSanitaryTerminalType</para>
@@ -12817,8 +17633,15 @@
 	public class IfcSanitaryTerminalType : IfcFlowTerminalType
 	{
 		public IfcSanitaryTerminalTypeEnum PredefinedType { get; set; }
+		public IfcSanitaryTerminalType() : base()
+		{
+			PredefinedType = new IfcSanitaryTerminalTypeEnum();
+		}
+		public IfcSanitaryTerminalType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcSanitaryTerminalTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSchedulingTime
 	/// <para>ENTITY IfcSchedulingTime</para>
@@ -12835,11 +17658,19 @@
 	/// <summary>
 	public abstract class IfcSchedulingTimeENTITY
 	{
-		public IfcLabel Name { get; set; }
-		public IfcDataOriginEnum DataOrigin { get; set; }
-		public IfcLabel UserDefinedDataOrigin { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcDataOriginEnum? DataOrigin { get; set; }
+		public IfcLabel? UserDefinedDataOrigin { get; set; }
+		public IfcSchedulingTime() : base()
+		{
+		}
+		public IfcSchedulingTime(IfcLabel Name, IfcDataOriginEnum DataOrigin, IfcLabel UserDefinedDataOrigin) : base ()
+		{
+			this.Name = Name;
+			this.DataOrigin = DataOrigin;
+			this.UserDefinedDataOrigin = UserDefinedDataOrigin;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSeamCurve
 	/// <para>ENTITY IfcSeamCurve</para>
@@ -12851,8 +17682,13 @@
 	/// <summary>
 	public class IfcSeamCurve : IfcSurfaceCurve
 	{
+		public IfcSeamCurve() : base()
+		{
+		}
+		public IfcSeamCurve(IfcCurve Curve3D, List<IfcPcurve> AssociatedGeometry, IfcPreferredSurfaceCurveRepresentation MasterRepresentation) : base (Curve3D, AssociatedGeometry, MasterRepresentation)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSectionProperties
 	/// <para>ENTITY IfcSectionProperties</para>
@@ -12866,9 +17702,19 @@
 	{
 		public IfcSectionTypeEnum SectionType { get; set; }
 		public IfcProfileDef StartProfile { get; set; }
-		public IfcProfileDef EndProfile { get; set; }
+		public IfcProfileDef? EndProfile { get; set; }
+		public IfcSectionProperties() : base()
+		{
+			SectionType = new IfcSectionTypeEnum();
+			StartProfile = new IfcProfileDef();
+		}
+		public IfcSectionProperties(IfcSectionTypeEnum SectionType, IfcProfileDef StartProfile, IfcProfileDef EndProfile) : base ()
+		{
+			this.SectionType = SectionType;
+			this.StartProfile = StartProfile;
+			this.EndProfile = EndProfile;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSectionReinforcementProperties
 	/// <para>ENTITY IfcSectionReinforcementProperties</para>
@@ -12885,12 +17731,83 @@
 	{
 		public IfcLengthMeasure LongitudinalStartPosition { get; set; }
 		public IfcLengthMeasure LongitudinalEndPosition { get; set; }
-		public IfcLengthMeasure TransversePosition { get; set; }
+		public IfcLengthMeasure? TransversePosition { get; set; }
 		public IfcReinforcingBarRoleEnum ReinforcementRole { get; set; }
 		public IfcSectionProperties SectionDefinition { get; set; }
 		public List<IfcReinforcementBarProperties> CrossSectionReinforcementDefinitions { get; set; }
+		public IfcSectionReinforcementProperties() : base()
+		{
+			LongitudinalStartPosition = new IfcLengthMeasure();
+			LongitudinalEndPosition = new IfcLengthMeasure();
+			ReinforcementRole = new IfcReinforcingBarRoleEnum();
+			SectionDefinition = new IfcSectionProperties();
+			CrossSectionReinforcementDefinitions = new List<IfcReinforcementBarProperties>();
+		}
+		public IfcSectionReinforcementProperties(IfcLengthMeasure LongitudinalStartPosition, IfcLengthMeasure LongitudinalEndPosition, IfcLengthMeasure TransversePosition, IfcReinforcingBarRoleEnum ReinforcementRole, IfcSectionProperties SectionDefinition, List<IfcReinforcementBarProperties> CrossSectionReinforcementDefinitions) : base ()
+		{
+			this.LongitudinalStartPosition = LongitudinalStartPosition;
+			this.LongitudinalEndPosition = LongitudinalEndPosition;
+			this.TransversePosition = TransversePosition;
+			this.ReinforcementRole = ReinforcementRole;
+			this.SectionDefinition = SectionDefinition;
+			this.CrossSectionReinforcementDefinitions = CrossSectionReinforcementDefinitions;
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcSectionedSolid
+	/// <para>ENTITY IfcSectionedSolid</para>
+	/// <para> ABSTRACT SUPERTYPE OF (ONEOF</para>
+	/// <para>    (IfcSectionedSolidHorizontal))</para>
+	/// <para> SUBTYPE OF (IfcSolidModel);</para>
+	/// <para>	Directrix : IfcCurve;</para>
+	/// <para>	CrossSections : LIST [2:?] OF IfcProfileDef;</para>
+	/// <para> WHERE</para>
+	/// <para>	DirectrixIs3D : Directrix.Dim = 3;</para>
+	/// <para>	ConsistentProfileTypes : SIZEOF(QUERY(temp <* CrossSections | CrossSections[1].ProfileType <> temp.ProfileType)) = 0;</para>
+	/// <para>	SectionsSameType : SIZEOF(QUERY(temp <* CrossSections | TYPEOF(CrossSections[1]) :<>: TYPEOF(temp))) = 0;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public abstract class IfcSectionedSolid : IfcSolidModel
+	{
+		public IfcCurve Directrix { get; set; }
+		public List<IfcProfileDef> CrossSections { get; set; }
+		public IfcSectionedSolid() : base()
+		{
+			Directrix = new IfcCurve();
+			CrossSections = new List<IfcProfileDef>();
+		}
+		public IfcSectionedSolid(IfcCurve Directrix, List<IfcProfileDef> CrossSections) : base ()
+		{
+			this.Directrix = Directrix;
+			this.CrossSections = CrossSections;
+		}
+	}
+	/// <summary>
+	/// ENTITY IfcSectionedSolidHorizontal
+	/// <para>ENTITY IfcSectionedSolidHorizontal</para>
+	/// <para> SUBTYPE OF (IfcSectionedSolid);</para>
+	/// <para>	CrossSectionPositions : LIST [2:?] OF IfcDistanceExpression;</para>
+	/// <para>	FixedAxisVertical : IfcBoolean;</para>
+	/// <para> WHERE</para>
+	/// <para>	CorrespondingSectionPositions : SIZEOF(CrossSections) = SIZEOF(CrossSectionPositions);</para>
+	/// <para>	NoLongitudinalOffsets : SIZEOF(QUERY(temp <* CrossSectionPositions | EXISTS(temp.OffsetLongitudinal))) = 0;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcSectionedSolidHorizontal : IfcSectionedSolid
+	{
+		public List<IfcDistanceExpression> CrossSectionPositions { get; set; }
+		public IfcBoolean FixedAxisVertical { get; set; }
+		public IfcSectionedSolidHorizontal() : base()
+		{
+			CrossSectionPositions = new List<IfcDistanceExpression>();
+			FixedAxisVertical = new IfcBoolean();
+		}
+		public IfcSectionedSolidHorizontal(IfcCurve Directrix, List<IfcProfileDef> CrossSections, List<IfcDistanceExpression> CrossSectionPositions, IfcBoolean FixedAxisVertical) : base (Directrix, CrossSections)
+		{
+			this.CrossSectionPositions = CrossSectionPositions;
+			this.FixedAxisVertical = FixedAxisVertical;
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcSectionedSpine
 	/// <para>ENTITY IfcSectionedSpine</para>
@@ -12911,8 +17828,19 @@
 		public IfcCompositeCurve SpineCurve { get; set; }
 		public List<IfcProfileDef> CrossSections { get; set; }
 		public List<IfcAxis2Placement3D> CrossSectionPositions { get; set; }
+		public IfcSectionedSpine() : base()
+		{
+			SpineCurve = new IfcCompositeCurve();
+			CrossSections = new List<IfcProfileDef>();
+			CrossSectionPositions = new List<IfcAxis2Placement3D>();
+		}
+		public IfcSectionedSpine(IfcCompositeCurve SpineCurve, List<IfcProfileDef> CrossSections, List<IfcAxis2Placement3D> CrossSectionPositions) : base ()
+		{
+			this.SpineCurve = SpineCurve;
+			this.CrossSections = CrossSections;
+			this.CrossSectionPositions = CrossSectionPositions;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSensor
 	/// <para>ENTITY IfcSensor</para>
@@ -12923,14 +17851,20 @@
 	/// <para> (PredefinedType <> IfcSensorTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcSensorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>('IFC4.IFCSENSORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCSENSORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSensor : IfcDistributionControlElement
 	{
-		public IfcSensorTypeEnum PredefinedType { get; set; }
+		public IfcSensorTypeEnum? PredefinedType { get; set; }
+		public IfcSensor() : base()
+		{
+		}
+		public IfcSensor(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcSensorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSensorType
 	/// <para>ENTITY IfcSensorType</para>
@@ -12944,8 +17878,15 @@
 	public class IfcSensorType : IfcDistributionControlElementType
 	{
 		public IfcSensorTypeEnum PredefinedType { get; set; }
+		public IfcSensorType() : base()
+		{
+			PredefinedType = new IfcSensorTypeEnum();
+		}
+		public IfcSensorType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcSensorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcShadingDevice
 	/// <para>ENTITY IfcShadingDevice</para>
@@ -12956,14 +17897,20 @@
 	/// <para> (PredefinedType <> IfcShadingDeviceTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcShadingDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCSHADINGDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCSHADINGDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcShadingDevice : IfcBuildingElement
 	{
-		public IfcShadingDeviceTypeEnum PredefinedType { get; set; }
+		public IfcShadingDeviceTypeEnum? PredefinedType { get; set; }
+		public IfcShadingDevice() : base()
+		{
+		}
+		public IfcShadingDevice(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcShadingDeviceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcShadingDeviceType
 	/// <para>ENTITY IfcShadingDeviceType</para>
@@ -12977,8 +17924,15 @@
 	public class IfcShadingDeviceType : IfcBuildingElementType
 	{
 		public IfcShadingDeviceTypeEnum PredefinedType { get; set; }
+		public IfcShadingDeviceType() : base()
+		{
+			PredefinedType = new IfcShadingDeviceTypeEnum();
+		}
+		public IfcShadingDeviceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcShadingDeviceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcShapeAspect;
 	/// <para>ENTITY IfcShapeAspect;</para>
@@ -12987,17 +17941,31 @@
 	/// <para>	Description : OPTIONAL IfcText;</para>
 	/// <para>	ProductDefinitional : IfcLogical;</para>
 	/// <para>	PartOfProductDefinitionShape : OPTIONAL IfcProductRepresentationSelect;</para>
+	/// <para> INVERSE</para>
+	/// <para>	HasExternalReferences : SET [0:?] OF IfcExternalReferenceRelationship FOR RelatedResourceObjects;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
-	public class IfcShapeAspectENTITY
+	public class IfcShapeAspectENTITY, IfcResourceObjectSelect
 	{
 		public List<IfcShapeModel> ShapeRepresentations { get; set; }
-		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcText? Description { get; set; }
 		public IfcLogical ProductDefinitional { get; set; }
-		public IfcProductRepresentationSelect PartOfProductDefinitionShape { get; set; }
+		public IfcProductRepresentationSelect? PartOfProductDefinitionShape { get; set; }
+		public IfcShapeAspect() : base()
+		{
+			ShapeRepresentations = new List<IfcShapeModel>();
+			ProductDefinitional = new IfcLogical();
+		}
+		public IfcShapeAspect(List<IfcShapeModel> ShapeRepresentations, IfcLabel Name, IfcText Description, IfcLogical ProductDefinitional, IfcProductRepresentationSelect PartOfProductDefinitionShape) : base ()
+		{
+			this.ShapeRepresentations = ShapeRepresentations;
+			this.Name = Name;
+			this.Description = Description;
+			this.ProductDefinitional = ProductDefinitional;
+			this.PartOfProductDefinitionShape = PartOfProductDefinitionShape;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcShapeModel
 	/// <para>ENTITY IfcShapeModel</para>
@@ -13015,21 +17983,26 @@
 	/// <summary>
 	public abstract class IfcShapeModel : IfcRepresentation
 	{
+		public IfcShapeModel() : base()
+		{
+		}
+		public IfcShapeModel(IfcRepresentationContext ContextOfItems, IfcLabel RepresentationIdentifier, IfcLabel RepresentationType, List<IfcRepresentationItem> Items) : base (ContextOfItems, RepresentationIdentifier, RepresentationType, Items)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcShapeRepresentation
 	/// <para>ENTITY IfcShapeRepresentation</para>
 	/// <para> SUBTYPE OF (IfcShapeModel);</para>
 	/// <para> WHERE</para>
-	/// <para>	CorrectContext : 'IFC4.IFCGEOMETRICREPRESENTATIONCONTEXT' </para>
+	/// <para>	CorrectContext : 'IFC4X1.IFCGEOMETRICREPRESENTATIONCONTEXT' </para>
 	/// <para>IN TYPEOF(SELF\IfcRepresentation.ContextOfItems);</para>
 	/// <para>	NoTopologicalItem : SIZEOF(QUERY(temp <* Items | </para>
-	/// <para>  ('IFC4.IFCTOPOLOGICALREPRESENTATIONITEM' IN TYPEOF(temp))</para>
+	/// <para>  ('IFC4X1.IFCTOPOLOGICALREPRESENTATIONITEM' IN TYPEOF(temp))</para>
 	/// <para>    AND (NOT(SIZEOF(</para>
-	/// <para>      ['IFC4.IFCVERTEXPOINT',</para>
-	/// <para>       'IFC4.IFCEDGECURVE',</para>
-	/// <para>       'IFC4.IFCFACESURFACE'] * TYPEOF(temp)) = 1))</para>
+	/// <para>      ['IFC4X1.IFCVERTEXPOINT',</para>
+	/// <para>       'IFC4X1.IFCEDGECURVE',</para>
+	/// <para>       'IFC4X1.IFCFACESURFACE'] * TYPEOF(temp)) = 1))</para>
 	/// <para>)) = 0;</para>
 	/// <para>	HasRepresentationType : EXISTS(SELF\IfcRepresentation.RepresentationType);</para>
 	/// <para>	HasRepresentationIdentifier : EXISTS(SELF\IfcRepresentation.RepresentationIdentifier);</para>
@@ -13038,8 +18011,13 @@
 	/// <summary>
 	public class IfcShapeRepresentation : IfcShapeModel
 	{
+		public IfcShapeRepresentation() : base()
+		{
+		}
+		public IfcShapeRepresentation(IfcRepresentationContext ContextOfItems, IfcLabel RepresentationIdentifier, IfcLabel RepresentationType, List<IfcRepresentationItem> Items) : base (ContextOfItems, RepresentationIdentifier, RepresentationType, Items)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcShellBasedSurfaceModel
 	/// <para>ENTITY IfcShellBasedSurfaceModel</para>
@@ -13052,8 +18030,15 @@
 	public class IfcShellBasedSurfaceModel : IfcGeometricRepresentationItem
 	{
 		public List<IfcShell> SbsmBoundary { get; set; }
+		public IfcShellBasedSurfaceModel() : base()
+		{
+			SbsmBoundary = new List<IfcShell>();
+		}
+		public IfcShellBasedSurfaceModel(List<IfcShell> SbsmBoundary) : base ()
+		{
+			this.SbsmBoundary = SbsmBoundary;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSimpleProperty
 	/// <para>ENTITY IfcSimpleProperty</para>
@@ -13069,8 +18054,13 @@
 	/// <summary>
 	public abstract class IfcSimpleProperty : IfcProperty
 	{
+		public IfcSimpleProperty() : base()
+		{
+		}
+		public IfcSimpleProperty(IfcIdentifier Name, IfcText Description) : base (Name, Description)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSimplePropertyTemplate
 	/// <para>ENTITY IfcSimplePropertyTemplate</para>
@@ -13087,16 +18077,29 @@
 	/// <summary>
 	public class IfcSimplePropertyTemplate : IfcPropertyTemplate
 	{
-		public IfcSimplePropertyTemplateTypeEnum TemplateType { get; set; }
-		public IfcLabel PrimaryMeasureType { get; set; }
-		public IfcLabel SecondaryMeasureType { get; set; }
-		public IfcPropertyEnumeration Enumerators { get; set; }
-		public IfcUnit PrimaryUnit { get; set; }
-		public IfcUnit SecondaryUnit { get; set; }
-		public IfcLabel Expression { get; set; }
-		public IfcStateEnum AccessState { get; set; }
+		public IfcSimplePropertyTemplateTypeEnum? TemplateType { get; set; }
+		public IfcLabel? PrimaryMeasureType { get; set; }
+		public IfcLabel? SecondaryMeasureType { get; set; }
+		public IfcPropertyEnumeration? Enumerators { get; set; }
+		public IfcUnit? PrimaryUnit { get; set; }
+		public IfcUnit? SecondaryUnit { get; set; }
+		public IfcLabel? Expression { get; set; }
+		public IfcStateEnum? AccessState { get; set; }
+		public IfcSimplePropertyTemplate() : base()
+		{
+		}
+		public IfcSimplePropertyTemplate(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcSimplePropertyTemplateTypeEnum TemplateType, IfcLabel PrimaryMeasureType, IfcLabel SecondaryMeasureType, IfcPropertyEnumeration Enumerators, IfcUnit PrimaryUnit, IfcUnit SecondaryUnit, IfcLabel Expression, IfcStateEnum AccessState) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.TemplateType = TemplateType;
+			this.PrimaryMeasureType = PrimaryMeasureType;
+			this.SecondaryMeasureType = SecondaryMeasureType;
+			this.Enumerators = Enumerators;
+			this.PrimaryUnit = PrimaryUnit;
+			this.SecondaryUnit = SecondaryUnit;
+			this.Expression = Expression;
+			this.AccessState = AccessState;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSite
 	/// <para>ENTITY IfcSite</para>
@@ -13110,13 +18113,23 @@
 	/// <summary>
 	public class IfcSite : IfcSpatialStructureElement
 	{
-		public IfcCompoundPlaneAngleMeasure RefLatitude { get; set; }
-		public IfcCompoundPlaneAngleMeasure RefLongitude { get; set; }
-		public IfcLengthMeasure RefElevation { get; set; }
-		public IfcLabel LandTitleNumber { get; set; }
-		public IfcPostalAddress SiteAddress { get; set; }
+		public IfcCompoundPlaneAngleMeasure? RefLatitude { get; set; }
+		public IfcCompoundPlaneAngleMeasure? RefLongitude { get; set; }
+		public IfcLengthMeasure? RefElevation { get; set; }
+		public IfcLabel? LandTitleNumber { get; set; }
+		public IfcPostalAddress? SiteAddress { get; set; }
+		public IfcSite() : base()
+		{
+		}
+		public IfcSite(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcLabel LongName, IfcElementCompositionEnum CompositionType, IfcCompoundPlaneAngleMeasure RefLatitude, IfcCompoundPlaneAngleMeasure RefLongitude, IfcLengthMeasure RefElevation, IfcLabel LandTitleNumber, IfcPostalAddress SiteAddress) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, LongName, CompositionType)
+		{
+			this.RefLatitude = RefLatitude;
+			this.RefLongitude = RefLongitude;
+			this.RefElevation = RefElevation;
+			this.LandTitleNumber = LandTitleNumber;
+			this.SiteAddress = SiteAddress;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSlab
 	/// <para>ENTITY IfcSlab</para>
@@ -13130,14 +18143,20 @@
 	/// <para> (PredefinedType <> IfcSlabTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcSlabTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCSLABTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCSLABTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSlab : IfcBuildingElement
 	{
-		public IfcSlabTypeEnum PredefinedType { get; set; }
+		public IfcSlabTypeEnum? PredefinedType { get; set; }
+		public IfcSlab() : base()
+		{
+		}
+		public IfcSlab(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcSlabTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSlabElementedCase
 	/// <para>ENTITY IfcSlabElementedCase</para>
@@ -13148,23 +18167,33 @@
 	/// <summary>
 	public class IfcSlabElementedCase : IfcSlab
 	{
+		public IfcSlabElementedCase() : base()
+		{
+		}
+		public IfcSlabElementedCase(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcSlabTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, PredefinedType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSlabStandardCase
 	/// <para>ENTITY IfcSlabStandardCase</para>
 	/// <para> SUBTYPE OF (IfcSlab);</para>
 	/// <para> WHERE</para>
-	/// <para>	HasMaterialLayerSetusage : SIZEOF (QUERY(temp <* USEDIN(SELF, 'IFC4.IFCRELASSOCIATES.RELATEDOBJECTS') |</para>
-	/// <para>              ('IFC4.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)) AND</para>
-	/// <para>              ('IFC4.IFCMATERIALLAYERSETUSAGE' IN TYPEOF(temp.RelatingMaterial))</para>
+	/// <para>	HasMaterialLayerSetusage : SIZEOF (QUERY(temp <* USEDIN(SELF, 'IFC4X1.IFCRELASSOCIATES.RELATEDOBJECTS') |</para>
+	/// <para>              ('IFC4X1.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)) AND</para>
+	/// <para>              ('IFC4X1.IFCMATERIALLAYERSETUSAGE' IN TYPEOF(temp.RelatingMaterial))</para>
 	/// <para>              )) = 1;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSlabStandardCase : IfcSlab
 	{
+		public IfcSlabStandardCase() : base()
+		{
+		}
+		public IfcSlabStandardCase(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcSlabTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, PredefinedType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSlabType
 	/// <para>ENTITY IfcSlabType</para>
@@ -13178,8 +18207,15 @@
 	public class IfcSlabType : IfcBuildingElementType
 	{
 		public IfcSlabTypeEnum PredefinedType { get; set; }
+		public IfcSlabType() : base()
+		{
+			PredefinedType = new IfcSlabTypeEnum();
+		}
+		public IfcSlabType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcSlabTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSlippageConnectionCondition
 	/// <para>ENTITY IfcSlippageConnectionCondition</para>
@@ -13191,11 +18227,19 @@
 	/// <summary>
 	public class IfcSlippageConnectionCondition : IfcStructuralConnectionCondition
 	{
-		public IfcLengthMeasure SlippageX { get; set; }
-		public IfcLengthMeasure SlippageY { get; set; }
-		public IfcLengthMeasure SlippageZ { get; set; }
+		public IfcLengthMeasure? SlippageX { get; set; }
+		public IfcLengthMeasure? SlippageY { get; set; }
+		public IfcLengthMeasure? SlippageZ { get; set; }
+		public IfcSlippageConnectionCondition() : base()
+		{
+		}
+		public IfcSlippageConnectionCondition(IfcLabel Name, IfcLengthMeasure SlippageX, IfcLengthMeasure SlippageY, IfcLengthMeasure SlippageZ) : base (Name)
+		{
+			this.SlippageX = SlippageX;
+			this.SlippageY = SlippageY;
+			this.SlippageZ = SlippageZ;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSolarDevice
 	/// <para>ENTITY IfcSolarDevice</para>
@@ -13206,14 +18250,20 @@
 	/// <para> (PredefinedType <> IfcSolarDeviceTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcSolarDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCSOLARDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCSOLARDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSolarDevice : IfcEnergyConversionDevice
 	{
-		public IfcSolarDeviceTypeEnum PredefinedType { get; set; }
+		public IfcSolarDeviceTypeEnum? PredefinedType { get; set; }
+		public IfcSolarDevice() : base()
+		{
+		}
+		public IfcSolarDevice(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcSolarDeviceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSolarDeviceType
 	/// <para>ENTITY IfcSolarDeviceType</para>
@@ -13227,14 +18277,22 @@
 	public class IfcSolarDeviceType : IfcEnergyConversionDeviceType
 	{
 		public IfcSolarDeviceTypeEnum PredefinedType { get; set; }
+		public IfcSolarDeviceType() : base()
+		{
+			PredefinedType = new IfcSolarDeviceTypeEnum();
+		}
+		public IfcSolarDeviceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcSolarDeviceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSolidModel
 	/// <para>ENTITY IfcSolidModel</para>
 	/// <para> ABSTRACT SUPERTYPE OF (ONEOF</para>
 	/// <para>    (IfcCsgSolid</para>
 	/// <para>    ,IfcManifoldSolidBrep</para>
+	/// <para>    ,IfcSectionedSolid</para>
 	/// <para>    ,IfcSweptAreaSolid</para>
 	/// <para>    ,IfcSweptDiskSolid))</para>
 	/// <para> SUBTYPE OF (IfcGeometricRepresentationItem);</para>
@@ -13244,8 +18302,13 @@
 	/// <summary>
 	public abstract class IfcSolidModel : IfcGeometricRepresentationItem, IfcBooleanOperand, IfcSolidOrShell
 	{
+		public IfcSolidModel() : base()
+		{
+		}
+		public IfcSolidModel() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSpace
 	/// <para>ENTITY IfcSpace</para>
@@ -13260,15 +18323,22 @@
 	/// <para> (PredefinedType <> IfcSpaceTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcSpaceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCSPACETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCSPACETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSpace : IfcSpatialStructureElement, IfcSpaceBoundarySelect
 	{
-		public IfcSpaceTypeEnum PredefinedType { get; set; }
-		public IfcLengthMeasure ElevationWithFlooring { get; set; }
+		public IfcSpaceTypeEnum? PredefinedType { get; set; }
+		public IfcLengthMeasure? ElevationWithFlooring { get; set; }
+		public IfcSpace() : base()
+		{
+		}
+		public IfcSpace(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcLabel LongName, IfcElementCompositionEnum CompositionType, IfcSpaceTypeEnum PredefinedType, IfcLengthMeasure ElevationWithFlooring) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, LongName, CompositionType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.ElevationWithFlooring = ElevationWithFlooring;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSpaceHeater
 	/// <para>ENTITY IfcSpaceHeater</para>
@@ -13279,14 +18349,20 @@
 	/// <para> (PredefinedType <> IfcSpaceHeaterTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcSpaceHeaterTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCSPACEHEATERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCSPACEHEATERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSpaceHeater : IfcFlowTerminal
 	{
-		public IfcSpaceHeaterTypeEnum PredefinedType { get; set; }
+		public IfcSpaceHeaterTypeEnum? PredefinedType { get; set; }
+		public IfcSpaceHeater() : base()
+		{
+		}
+		public IfcSpaceHeater(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcSpaceHeaterTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSpaceHeaterType
 	/// <para>ENTITY IfcSpaceHeaterType</para>
@@ -13300,8 +18376,15 @@
 	public class IfcSpaceHeaterType : IfcFlowTerminalType
 	{
 		public IfcSpaceHeaterTypeEnum PredefinedType { get; set; }
+		public IfcSpaceHeaterType() : base()
+		{
+			PredefinedType = new IfcSpaceHeaterTypeEnum();
+		}
+		public IfcSpaceHeaterType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcSpaceHeaterTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSpaceType
 	/// <para>ENTITY IfcSpaceType</para>
@@ -13316,9 +18399,17 @@
 	public class IfcSpaceType : IfcSpatialStructureElementType
 	{
 		public IfcSpaceTypeEnum PredefinedType { get; set; }
-		public IfcLabel LongName { get; set; }
+		public IfcLabel? LongName { get; set; }
+		public IfcSpaceType() : base()
+		{
+			PredefinedType = new IfcSpaceTypeEnum();
+		}
+		public IfcSpaceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcSpaceTypeEnum PredefinedType, IfcLabel LongName) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.LongName = LongName;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSpatialElement
 	/// <para>ENTITY IfcSpatialElement</para>
@@ -13336,9 +18427,15 @@
 	/// <summary>
 	public abstract class IfcSpatialElement : IfcProduct
 	{
-		public IfcLabel LongName { get; set; }
+		public IfcLabel? LongName { get; set; }
+		public IfcSpatialElement() : base()
+		{
+		}
+		public IfcSpatialElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcLabel LongName) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+			this.LongName = LongName;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSpatialElementType
 	/// <para>ENTITY IfcSpatialElementType</para>
@@ -13351,9 +18448,15 @@
 	/// <summary>
 	public abstract class IfcSpatialElementType : IfcTypeProduct
 	{
-		public IfcLabel ElementType { get; set; }
+		public IfcLabel? ElementType { get; set; }
+		public IfcSpatialElementType() : base()
+		{
+		}
+		public IfcSpatialElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets)
+		{
+			this.ElementType = ElementType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSpatialStructureElement
 	/// <para>ENTITY IfcSpatialStructureElement</para>
@@ -13367,18 +18470,24 @@
 	/// <para> WHERE</para>
 	/// <para>	WR41 : (HIINDEX(SELF\IfcObjectDefinition.Decomposes) = 1) </para>
 	/// <para>AND</para>
-	/// <para>('IFC4.IFCRELAGGREGATES' IN TYPEOF(SELF\IfcObjectDefinition.Decomposes[1])) </para>
+	/// <para>('IFC4X1.IFCRELAGGREGATES' IN TYPEOF(SELF\IfcObjectDefinition.Decomposes[1])) </para>
 	/// <para>AND</para>
-	/// <para>(('IFC4.IFCPROJECT' IN TYPEOF (SELF\IfcObjectDefinition.Decomposes[1].RelatingObject)) OR</para>
-	/// <para> ('IFC4.IFCSPATIALSTRUCTUREELEMENT' IN TYPEOF (SELF\IfcObjectDefinition.Decomposes[1].RelatingObject))</para>
+	/// <para>(('IFC4X1.IFCPROJECT' IN TYPEOF (SELF\IfcObjectDefinition.Decomposes[1].RelatingObject)) OR</para>
+	/// <para> ('IFC4X1.IFCSPATIALSTRUCTUREELEMENT' IN TYPEOF (SELF\IfcObjectDefinition.Decomposes[1].RelatingObject))</para>
 	/// <para>);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public abstract class IfcSpatialStructureElement : IfcSpatialElement
 	{
-		public IfcElementCompositionEnum CompositionType { get; set; }
+		public IfcElementCompositionEnum? CompositionType { get; set; }
+		public IfcSpatialStructureElement() : base()
+		{
+		}
+		public IfcSpatialStructureElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcLabel LongName, IfcElementCompositionEnum CompositionType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, LongName)
+		{
+			this.CompositionType = CompositionType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSpatialStructureElementType
 	/// <para>ENTITY IfcSpatialStructureElementType</para>
@@ -13389,8 +18498,13 @@
 	/// <summary>
 	public abstract class IfcSpatialStructureElementType : IfcSpatialElementType
 	{
+		public IfcSpatialStructureElementType() : base()
+		{
+		}
+		public IfcSpatialStructureElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSpatialZone
 	/// <para>ENTITY IfcSpatialZone</para>
@@ -13401,14 +18515,20 @@
 	/// <para> (PredefinedType <> IfcSpatialZoneTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcSpatialZoneTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCSPATIALZONETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCSPATIALZONETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSpatialZone : IfcSpatialElement
 	{
-		public IfcSpatialZoneTypeEnum PredefinedType { get; set; }
+		public IfcSpatialZoneTypeEnum? PredefinedType { get; set; }
+		public IfcSpatialZone() : base()
+		{
+		}
+		public IfcSpatialZone(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcLabel LongName, IfcSpatialZoneTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, LongName)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSpatialZoneType
 	/// <para>ENTITY IfcSpatialZoneType</para>
@@ -13423,9 +18543,17 @@
 	public class IfcSpatialZoneType : IfcSpatialElementType
 	{
 		public IfcSpatialZoneTypeEnum PredefinedType { get; set; }
-		public IfcLabel LongName { get; set; }
+		public IfcLabel? LongName { get; set; }
+		public IfcSpatialZoneType() : base()
+		{
+			PredefinedType = new IfcSpatialZoneTypeEnum();
+		}
+		public IfcSpatialZoneType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcSpatialZoneTypeEnum PredefinedType, IfcLabel LongName) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.LongName = LongName;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSphere
 	/// <para>ENTITY IfcSphere</para>
@@ -13436,8 +18564,15 @@
 	public class IfcSphere : IfcCsgPrimitive3D
 	{
 		public IfcPositiveLengthMeasure Radius { get; set; }
+		public IfcSphere() : base()
+		{
+			Radius = new IfcPositiveLengthMeasure();
+		}
+		public IfcSphere(IfcAxis2Placement3D Position, IfcPositiveLengthMeasure Radius) : base (Position)
+		{
+			this.Radius = Radius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSphericalSurface
 	/// <para>ENTITY IfcSphericalSurface</para>
@@ -13448,8 +18583,15 @@
 	public class IfcSphericalSurface : IfcElementarySurface
 	{
 		public IfcPositiveLengthMeasure Radius { get; set; }
+		public IfcSphericalSurface() : base()
+		{
+			Radius = new IfcPositiveLengthMeasure();
+		}
+		public IfcSphericalSurface(IfcAxis2Placement3D Position, IfcPositiveLengthMeasure Radius) : base (Position)
+		{
+			this.Radius = Radius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStackTerminal
 	/// <para>ENTITY IfcStackTerminal</para>
@@ -13460,14 +18602,20 @@
 	/// <para> (PredefinedType <> IfcStackTerminalTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcStackTerminalTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCSTACKTERMINALTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCSTACKTERMINALTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcStackTerminal : IfcFlowTerminal
 	{
-		public IfcStackTerminalTypeEnum PredefinedType { get; set; }
+		public IfcStackTerminalTypeEnum? PredefinedType { get; set; }
+		public IfcStackTerminal() : base()
+		{
+		}
+		public IfcStackTerminal(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcStackTerminalTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStackTerminalType
 	/// <para>ENTITY IfcStackTerminalType</para>
@@ -13481,8 +18629,15 @@
 	public class IfcStackTerminalType : IfcFlowTerminalType
 	{
 		public IfcStackTerminalTypeEnum PredefinedType { get; set; }
+		public IfcStackTerminalType() : base()
+		{
+			PredefinedType = new IfcStackTerminalTypeEnum();
+		}
+		public IfcStackTerminalType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcStackTerminalTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStair
 	/// <para>ENTITY IfcStair</para>
@@ -13493,14 +18648,20 @@
 	/// <para> (PredefinedType <> IfcStairTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcStairTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCSTAIRTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCSTAIRTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcStair : IfcBuildingElement
 	{
-		public IfcStairTypeEnum PredefinedType { get; set; }
+		public IfcStairTypeEnum? PredefinedType { get; set; }
+		public IfcStair() : base()
+		{
+		}
+		public IfcStair(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcStairTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStairFlight
 	/// <para>ENTITY IfcStairFlight</para>
@@ -13515,18 +18676,28 @@
 	/// <para> (PredefinedType <> IfcStairFlightTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcStairFlightTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCSTAIRFLIGHTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCSTAIRFLIGHTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcStairFlight : IfcBuildingElement
 	{
-		public IfcInteger NumberOfRisers { get; set; }
-		public IfcInteger NumberOfTreads { get; set; }
-		public IfcPositiveLengthMeasure RiserHeight { get; set; }
-		public IfcPositiveLengthMeasure TreadLength { get; set; }
-		public IfcStairFlightTypeEnum PredefinedType { get; set; }
+		public IfcInteger? NumberOfRisers { get; set; }
+		public IfcInteger? NumberOfTreads { get; set; }
+		public IfcPositiveLengthMeasure? RiserHeight { get; set; }
+		public IfcPositiveLengthMeasure? TreadLength { get; set; }
+		public IfcStairFlightTypeEnum? PredefinedType { get; set; }
+		public IfcStairFlight() : base()
+		{
+		}
+		public IfcStairFlight(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcInteger NumberOfRisers, IfcInteger NumberOfTreads, IfcPositiveLengthMeasure RiserHeight, IfcPositiveLengthMeasure TreadLength, IfcStairFlightTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.NumberOfRisers = NumberOfRisers;
+			this.NumberOfTreads = NumberOfTreads;
+			this.RiserHeight = RiserHeight;
+			this.TreadLength = TreadLength;
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStairFlightType
 	/// <para>ENTITY IfcStairFlightType</para>
@@ -13540,8 +18711,15 @@
 	public class IfcStairFlightType : IfcBuildingElementType
 	{
 		public IfcStairFlightTypeEnum PredefinedType { get; set; }
+		public IfcStairFlightType() : base()
+		{
+			PredefinedType = new IfcStairFlightTypeEnum();
+		}
+		public IfcStairFlightType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcStairFlightTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStairType
 	/// <para>ENTITY IfcStairType</para>
@@ -13555,8 +18733,15 @@
 	public class IfcStairType : IfcBuildingElementType
 	{
 		public IfcStairTypeEnum PredefinedType { get; set; }
+		public IfcStairType() : base()
+		{
+			PredefinedType = new IfcStairTypeEnum();
+		}
+		public IfcStairType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcStairTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralAction
 	/// <para>ENTITY IfcStructuralAction</para>
@@ -13570,9 +18755,15 @@
 	/// <summary>
 	public abstract class IfcStructuralAction : IfcStructuralActivity
 	{
-		public IfcBoolean DestabilizingLoad { get; set; }
+		public IfcBoolean? DestabilizingLoad { get; set; }
+		public IfcStructuralAction() : base()
+		{
+		}
+		public IfcStructuralAction(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralLoad AppliedLoad, IfcGlobalOrLocalEnum GlobalOrLocal, IfcBoolean DestabilizingLoad) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal)
+		{
+			this.DestabilizingLoad = DestabilizingLoad;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralActivity
 	/// <para>ENTITY IfcStructuralActivity</para>
@@ -13590,8 +18781,17 @@
 	{
 		public IfcStructuralLoad AppliedLoad { get; set; }
 		public IfcGlobalOrLocalEnum GlobalOrLocal { get; set; }
+		public IfcStructuralActivity() : base()
+		{
+			AppliedLoad = new IfcStructuralLoad();
+			GlobalOrLocal = new IfcGlobalOrLocalEnum();
+		}
+		public IfcStructuralActivity(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralLoad AppliedLoad, IfcGlobalOrLocalEnum GlobalOrLocal) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+			this.AppliedLoad = AppliedLoad;
+			this.GlobalOrLocal = GlobalOrLocal;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralAnalysisModel
 	/// <para>ENTITY IfcStructuralAnalysisModel</para>
@@ -13608,12 +18808,23 @@
 	public class IfcStructuralAnalysisModel : IfcSystem
 	{
 		public IfcAnalysisModelTypeEnum PredefinedType { get; set; }
-		public IfcAxis2Placement3D OrientationOf2DPlane { get; set; }
-		public List<IfcStructuralLoadGroup> LoadedBy { get; set; }
-		public List<IfcStructuralResultGroup> HasResults { get; set; }
-		public IfcObjectPlacement SharedPlacement { get; set; }
+		public IfcAxis2Placement3D? OrientationOf2DPlane { get; set; }
+		public List<IfcStructuralLoadGroup>? LoadedBy { get; set; }
+		public List<IfcStructuralResultGroup>? HasResults { get; set; }
+		public IfcObjectPlacement? SharedPlacement { get; set; }
+		public IfcStructuralAnalysisModel() : base()
+		{
+			PredefinedType = new IfcAnalysisModelTypeEnum();
+		}
+		public IfcStructuralAnalysisModel(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcAnalysisModelTypeEnum PredefinedType, IfcAxis2Placement3D OrientationOf2DPlane, List<IfcStructuralLoadGroup> LoadedBy, List<IfcStructuralResultGroup> HasResults, IfcObjectPlacement SharedPlacement) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.OrientationOf2DPlane = OrientationOf2DPlane;
+			this.LoadedBy = LoadedBy;
+			this.HasResults = HasResults;
+			this.SharedPlacement = SharedPlacement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralConnection
 	/// <para>ENTITY IfcStructuralConnection</para>
@@ -13629,9 +18840,15 @@
 	/// <summary>
 	public abstract class IfcStructuralConnection : IfcStructuralItem
 	{
-		public IfcBoundaryCondition AppliedCondition { get; set; }
+		public IfcBoundaryCondition? AppliedCondition { get; set; }
+		public IfcStructuralConnection() : base()
+		{
+		}
+		public IfcStructuralConnection(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcBoundaryCondition AppliedCondition) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+			this.AppliedCondition = AppliedCondition;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralConnectionCondition
 	/// <para>ENTITY IfcStructuralConnectionCondition</para>
@@ -13643,9 +18860,15 @@
 	/// <summary>
 	public abstract class IfcStructuralConnectionConditionENTITY
 	{
-		public IfcLabel Name { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcStructuralConnectionCondition() : base()
+		{
+		}
+		public IfcStructuralConnectionCondition(IfcLabel Name) : base ()
+		{
+			this.Name = Name;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralCurveAction
 	/// <para>ENTITY IfcStructuralCurveAction</para>
@@ -13664,10 +18887,18 @@
 	/// <summary>
 	public class IfcStructuralCurveAction : IfcStructuralAction
 	{
-		public IfcProjectedOrTrueLengthEnum ProjectedOrTrue { get; set; }
+		public IfcProjectedOrTrueLengthEnum? ProjectedOrTrue { get; set; }
 		public IfcStructuralCurveActivityTypeEnum PredefinedType { get; set; }
+		public IfcStructuralCurveAction() : base()
+		{
+			PredefinedType = new IfcStructuralCurveActivityTypeEnum();
+		}
+		public IfcStructuralCurveAction(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralLoad AppliedLoad, IfcGlobalOrLocalEnum GlobalOrLocal, IfcBoolean DestabilizingLoad, IfcProjectedOrTrueLengthEnum ProjectedOrTrue, IfcStructuralCurveActivityTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal, DestabilizingLoad)
+		{
+			this.ProjectedOrTrue = ProjectedOrTrue;
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralCurveConnection
 	/// <para>ENTITY IfcStructuralCurveConnection</para>
@@ -13678,8 +18909,15 @@
 	public class IfcStructuralCurveConnection : IfcStructuralConnection
 	{
 		public IfcDirection Axis { get; set; }
+		public IfcStructuralCurveConnection() : base()
+		{
+			Axis = new IfcDirection();
+		}
+		public IfcStructuralCurveConnection(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcBoundaryCondition AppliedCondition, IfcDirection Axis) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedCondition)
+		{
+			this.Axis = Axis;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralCurveMember
 	/// <para>ENTITY IfcStructuralCurveMember</para>
@@ -13696,8 +18934,17 @@
 	{
 		public IfcStructuralCurveMemberTypeEnum PredefinedType { get; set; }
 		public IfcDirection Axis { get; set; }
+		public IfcStructuralCurveMember() : base()
+		{
+			PredefinedType = new IfcStructuralCurveMemberTypeEnum();
+			Axis = new IfcDirection();
+		}
+		public IfcStructuralCurveMember(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralCurveMemberTypeEnum PredefinedType, IfcDirection Axis) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+			this.PredefinedType = PredefinedType;
+			this.Axis = Axis;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralCurveMemberVarying
 	/// <para>ENTITY IfcStructuralCurveMemberVarying</para>
@@ -13706,8 +18953,13 @@
 	/// <summary>
 	public class IfcStructuralCurveMemberVarying : IfcStructuralCurveMember
 	{
+		public IfcStructuralCurveMemberVarying() : base()
+		{
+		}
+		public IfcStructuralCurveMemberVarying(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralCurveMemberTypeEnum PredefinedType, IfcDirection Axis) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, PredefinedType, Axis)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralCurveReaction
 	/// <para>ENTITY IfcStructuralCurveReaction</para>
@@ -13721,8 +18973,15 @@
 	public class IfcStructuralCurveReaction : IfcStructuralReaction
 	{
 		public IfcStructuralCurveActivityTypeEnum PredefinedType { get; set; }
+		public IfcStructuralCurveReaction() : base()
+		{
+			PredefinedType = new IfcStructuralCurveActivityTypeEnum();
+		}
+		public IfcStructuralCurveReaction(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralLoad AppliedLoad, IfcGlobalOrLocalEnum GlobalOrLocal, IfcStructuralCurveActivityTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralItem
 	/// <para>ENTITY IfcStructuralItem</para>
@@ -13736,21 +18995,31 @@
 	/// <summary>
 	public abstract class IfcStructuralItem : IfcProduct, IfcStructuralActivityAssignmentSelect
 	{
+		public IfcStructuralItem() : base()
+		{
+		}
+		public IfcStructuralItem(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLinearAction
 	/// <para>ENTITY IfcStructuralLinearAction</para>
 	/// <para> SUBTYPE OF (IfcStructuralCurveAction);</para>
 	/// <para> WHERE</para>
-	/// <para>	SuitableLoadType : SIZEOF(['IFC4.IFCSTRUCTURALLOADLINEARFORCE', 'IFC4.IFCSTRUCTURALLOADTEMPERATURE'] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1;</para>
+	/// <para>	SuitableLoadType : SIZEOF(['IFC4X1.IFCSTRUCTURALLOADLINEARFORCE', 'IFC4X1.IFCSTRUCTURALLOADTEMPERATURE'] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1;</para>
 	/// <para>	ConstPredefinedType : SELF\IfcStructuralCurveAction.PredefinedType = IfcStructuralCurveActivityTypeEnum.CONST;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcStructuralLinearAction : IfcStructuralCurveAction
 	{
+		public IfcStructuralLinearAction() : base()
+		{
+		}
+		public IfcStructuralLinearAction(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralLoad AppliedLoad, IfcGlobalOrLocalEnum GlobalOrLocal, IfcBoolean DestabilizingLoad, IfcProjectedOrTrueLengthEnum ProjectedOrTrue, IfcStructuralCurveActivityTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal, DestabilizingLoad, ProjectedOrTrue, PredefinedType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoad
 	/// <para>ENTITY IfcStructuralLoad</para>
@@ -13762,9 +19031,15 @@
 	/// <summary>
 	public abstract class IfcStructuralLoadENTITY
 	{
-		public IfcLabel Name { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcStructuralLoad() : base()
+		{
+		}
+		public IfcStructuralLoad(IfcLabel Name) : base ()
+		{
+			this.Name = Name;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoadCase
 	/// <para>ENTITY IfcStructuralLoadCase</para>
@@ -13776,9 +19051,15 @@
 	/// <summary>
 	public class IfcStructuralLoadCase : IfcStructuralLoadGroup
 	{
-		public List<IfcRatioMeasure> SelfWeightCoefficients { get; set; }
+		public List<IfcRatioMeasure>? SelfWeightCoefficients { get; set; }
+		public IfcStructuralLoadCase() : base()
+		{
+		}
+		public IfcStructuralLoadCase(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcLoadGroupTypeEnum PredefinedType, IfcActionTypeEnum ActionType, IfcActionSourceTypeEnum ActionSource, IfcRatioMeasure Coefficient, IfcLabel Purpose, List<IfcRatioMeasure> SelfWeightCoefficients) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, PredefinedType, ActionType, ActionSource, Coefficient, Purpose)
+		{
+			this.SelfWeightCoefficients = SelfWeightCoefficients;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoadConfiguration
 	/// <para>ENTITY IfcStructuralLoadConfiguration</para>
@@ -13792,8 +19073,15 @@
 	public class IfcStructuralLoadConfiguration : IfcStructuralLoad
 	{
 		public List<IfcStructuralLoadOrResult> Values { get; set; }
+		public IfcStructuralLoadConfiguration() : base()
+		{
+			Values = new List<IfcStructuralLoadOrResult>();
+		}
+		public IfcStructuralLoadConfiguration(IfcLabel Name, List<IfcStructuralLoadOrResult> Values) : base (Name)
+		{
+			this.Values = Values;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoadGroup
 	/// <para>ENTITY IfcStructuralLoadGroup</para>
@@ -13821,10 +19109,23 @@
 		public IfcLoadGroupTypeEnum PredefinedType { get; set; }
 		public IfcActionTypeEnum ActionType { get; set; }
 		public IfcActionSourceTypeEnum ActionSource { get; set; }
-		public IfcRatioMeasure Coefficient { get; set; }
-		public IfcLabel Purpose { get; set; }
+		public IfcRatioMeasure? Coefficient { get; set; }
+		public IfcLabel? Purpose { get; set; }
+		public IfcStructuralLoadGroup() : base()
+		{
+			PredefinedType = new IfcLoadGroupTypeEnum();
+			ActionType = new IfcActionTypeEnum();
+			ActionSource = new IfcActionSourceTypeEnum();
+		}
+		public IfcStructuralLoadGroup(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcLoadGroupTypeEnum PredefinedType, IfcActionTypeEnum ActionType, IfcActionSourceTypeEnum ActionSource, IfcRatioMeasure Coefficient, IfcLabel Purpose) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.ActionType = ActionType;
+			this.ActionSource = ActionSource;
+			this.Coefficient = Coefficient;
+			this.Purpose = Purpose;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoadLinearForce
 	/// <para>ENTITY IfcStructuralLoadLinearForce</para>
@@ -13839,14 +19140,25 @@
 	/// <summary>
 	public class IfcStructuralLoadLinearForce : IfcStructuralLoadStatic
 	{
-		public IfcLinearForceMeasure LinearForceX { get; set; }
-		public IfcLinearForceMeasure LinearForceY { get; set; }
-		public IfcLinearForceMeasure LinearForceZ { get; set; }
-		public IfcLinearMomentMeasure LinearMomentX { get; set; }
-		public IfcLinearMomentMeasure LinearMomentY { get; set; }
-		public IfcLinearMomentMeasure LinearMomentZ { get; set; }
+		public IfcLinearForceMeasure? LinearForceX { get; set; }
+		public IfcLinearForceMeasure? LinearForceY { get; set; }
+		public IfcLinearForceMeasure? LinearForceZ { get; set; }
+		public IfcLinearMomentMeasure? LinearMomentX { get; set; }
+		public IfcLinearMomentMeasure? LinearMomentY { get; set; }
+		public IfcLinearMomentMeasure? LinearMomentZ { get; set; }
+		public IfcStructuralLoadLinearForce() : base()
+		{
+		}
+		public IfcStructuralLoadLinearForce(IfcLabel Name, IfcLinearForceMeasure LinearForceX, IfcLinearForceMeasure LinearForceY, IfcLinearForceMeasure LinearForceZ, IfcLinearMomentMeasure LinearMomentX, IfcLinearMomentMeasure LinearMomentY, IfcLinearMomentMeasure LinearMomentZ) : base (Name)
+		{
+			this.LinearForceX = LinearForceX;
+			this.LinearForceY = LinearForceY;
+			this.LinearForceZ = LinearForceZ;
+			this.LinearMomentX = LinearMomentX;
+			this.LinearMomentY = LinearMomentY;
+			this.LinearMomentZ = LinearMomentZ;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoadOrResult
 	/// <para>ENTITY IfcStructuralLoadOrResult</para>
@@ -13858,8 +19170,13 @@
 	/// <summary>
 	public abstract class IfcStructuralLoadOrResult : IfcStructuralLoad
 	{
+		public IfcStructuralLoadOrResult() : base()
+		{
+		}
+		public IfcStructuralLoadOrResult(IfcLabel Name) : base (Name)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoadPlanarForce
 	/// <para>ENTITY IfcStructuralLoadPlanarForce</para>
@@ -13871,11 +19188,19 @@
 	/// <summary>
 	public class IfcStructuralLoadPlanarForce : IfcStructuralLoadStatic
 	{
-		public IfcPlanarForceMeasure PlanarForceX { get; set; }
-		public IfcPlanarForceMeasure PlanarForceY { get; set; }
-		public IfcPlanarForceMeasure PlanarForceZ { get; set; }
+		public IfcPlanarForceMeasure? PlanarForceX { get; set; }
+		public IfcPlanarForceMeasure? PlanarForceY { get; set; }
+		public IfcPlanarForceMeasure? PlanarForceZ { get; set; }
+		public IfcStructuralLoadPlanarForce() : base()
+		{
+		}
+		public IfcStructuralLoadPlanarForce(IfcLabel Name, IfcPlanarForceMeasure PlanarForceX, IfcPlanarForceMeasure PlanarForceY, IfcPlanarForceMeasure PlanarForceZ) : base (Name)
+		{
+			this.PlanarForceX = PlanarForceX;
+			this.PlanarForceY = PlanarForceY;
+			this.PlanarForceZ = PlanarForceZ;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoadSingleDisplacement
 	/// <para>ENTITY IfcStructuralLoadSingleDisplacement</para>
@@ -13892,14 +19217,25 @@
 	/// <summary>
 	public class IfcStructuralLoadSingleDisplacement : IfcStructuralLoadStatic
 	{
-		public IfcLengthMeasure DisplacementX { get; set; }
-		public IfcLengthMeasure DisplacementY { get; set; }
-		public IfcLengthMeasure DisplacementZ { get; set; }
-		public IfcPlaneAngleMeasure RotationalDisplacementRX { get; set; }
-		public IfcPlaneAngleMeasure RotationalDisplacementRY { get; set; }
-		public IfcPlaneAngleMeasure RotationalDisplacementRZ { get; set; }
+		public IfcLengthMeasure? DisplacementX { get; set; }
+		public IfcLengthMeasure? DisplacementY { get; set; }
+		public IfcLengthMeasure? DisplacementZ { get; set; }
+		public IfcPlaneAngleMeasure? RotationalDisplacementRX { get; set; }
+		public IfcPlaneAngleMeasure? RotationalDisplacementRY { get; set; }
+		public IfcPlaneAngleMeasure? RotationalDisplacementRZ { get; set; }
+		public IfcStructuralLoadSingleDisplacement() : base()
+		{
+		}
+		public IfcStructuralLoadSingleDisplacement(IfcLabel Name, IfcLengthMeasure DisplacementX, IfcLengthMeasure DisplacementY, IfcLengthMeasure DisplacementZ, IfcPlaneAngleMeasure RotationalDisplacementRX, IfcPlaneAngleMeasure RotationalDisplacementRY, IfcPlaneAngleMeasure RotationalDisplacementRZ) : base (Name)
+		{
+			this.DisplacementX = DisplacementX;
+			this.DisplacementY = DisplacementY;
+			this.DisplacementZ = DisplacementZ;
+			this.RotationalDisplacementRX = RotationalDisplacementRX;
+			this.RotationalDisplacementRY = RotationalDisplacementRY;
+			this.RotationalDisplacementRZ = RotationalDisplacementRZ;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoadSingleDisplacementDistortion
 	/// <para>ENTITY IfcStructuralLoadSingleDisplacementDistortion</para>
@@ -13909,9 +19245,15 @@
 	/// <summary>
 	public class IfcStructuralLoadSingleDisplacementDistortion : IfcStructuralLoadSingleDisplacement
 	{
-		public IfcCurvatureMeasure Distortion { get; set; }
+		public IfcCurvatureMeasure? Distortion { get; set; }
+		public IfcStructuralLoadSingleDisplacementDistortion() : base()
+		{
+		}
+		public IfcStructuralLoadSingleDisplacementDistortion(IfcLabel Name, IfcLengthMeasure DisplacementX, IfcLengthMeasure DisplacementY, IfcLengthMeasure DisplacementZ, IfcPlaneAngleMeasure RotationalDisplacementRX, IfcPlaneAngleMeasure RotationalDisplacementRY, IfcPlaneAngleMeasure RotationalDisplacementRZ, IfcCurvatureMeasure Distortion) : base (Name, DisplacementX, DisplacementY, DisplacementZ, RotationalDisplacementRX, RotationalDisplacementRY, RotationalDisplacementRZ)
+		{
+			this.Distortion = Distortion;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoadSingleForce
 	/// <para>ENTITY IfcStructuralLoadSingleForce</para>
@@ -13928,14 +19270,25 @@
 	/// <summary>
 	public class IfcStructuralLoadSingleForce : IfcStructuralLoadStatic
 	{
-		public IfcForceMeasure ForceX { get; set; }
-		public IfcForceMeasure ForceY { get; set; }
-		public IfcForceMeasure ForceZ { get; set; }
-		public IfcTorqueMeasure MomentX { get; set; }
-		public IfcTorqueMeasure MomentY { get; set; }
-		public IfcTorqueMeasure MomentZ { get; set; }
+		public IfcForceMeasure? ForceX { get; set; }
+		public IfcForceMeasure? ForceY { get; set; }
+		public IfcForceMeasure? ForceZ { get; set; }
+		public IfcTorqueMeasure? MomentX { get; set; }
+		public IfcTorqueMeasure? MomentY { get; set; }
+		public IfcTorqueMeasure? MomentZ { get; set; }
+		public IfcStructuralLoadSingleForce() : base()
+		{
+		}
+		public IfcStructuralLoadSingleForce(IfcLabel Name, IfcForceMeasure ForceX, IfcForceMeasure ForceY, IfcForceMeasure ForceZ, IfcTorqueMeasure MomentX, IfcTorqueMeasure MomentY, IfcTorqueMeasure MomentZ) : base (Name)
+		{
+			this.ForceX = ForceX;
+			this.ForceY = ForceY;
+			this.ForceZ = ForceZ;
+			this.MomentX = MomentX;
+			this.MomentY = MomentY;
+			this.MomentZ = MomentZ;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoadSingleForceWarping
 	/// <para>ENTITY IfcStructuralLoadSingleForceWarping</para>
@@ -13945,9 +19298,15 @@
 	/// <summary>
 	public class IfcStructuralLoadSingleForceWarping : IfcStructuralLoadSingleForce
 	{
-		public IfcWarpingMomentMeasure WarpingMoment { get; set; }
+		public IfcWarpingMomentMeasure? WarpingMoment { get; set; }
+		public IfcStructuralLoadSingleForceWarping() : base()
+		{
+		}
+		public IfcStructuralLoadSingleForceWarping(IfcLabel Name, IfcForceMeasure ForceX, IfcForceMeasure ForceY, IfcForceMeasure ForceZ, IfcTorqueMeasure MomentX, IfcTorqueMeasure MomentY, IfcTorqueMeasure MomentZ, IfcWarpingMomentMeasure WarpingMoment) : base (Name, ForceX, ForceY, ForceZ, MomentX, MomentY, MomentZ)
+		{
+			this.WarpingMoment = WarpingMoment;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoadStatic
 	/// <para>ENTITY IfcStructuralLoadStatic</para>
@@ -13962,8 +19321,13 @@
 	/// <summary>
 	public abstract class IfcStructuralLoadStatic : IfcStructuralLoadOrResult
 	{
+		public IfcStructuralLoadStatic() : base()
+		{
+		}
+		public IfcStructuralLoadStatic(IfcLabel Name) : base (Name)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralLoadTemperature
 	/// <para>ENTITY IfcStructuralLoadTemperature</para>
@@ -13975,11 +19339,19 @@
 	/// <summary>
 	public class IfcStructuralLoadTemperature : IfcStructuralLoadStatic
 	{
-		public IfcThermodynamicTemperatureMeasure DeltaTConstant { get; set; }
-		public IfcThermodynamicTemperatureMeasure DeltaTY { get; set; }
-		public IfcThermodynamicTemperatureMeasure DeltaTZ { get; set; }
+		public IfcThermodynamicTemperatureMeasure? DeltaTConstant { get; set; }
+		public IfcThermodynamicTemperatureMeasure? DeltaTY { get; set; }
+		public IfcThermodynamicTemperatureMeasure? DeltaTZ { get; set; }
+		public IfcStructuralLoadTemperature() : base()
+		{
+		}
+		public IfcStructuralLoadTemperature(IfcLabel Name, IfcThermodynamicTemperatureMeasure DeltaTConstant, IfcThermodynamicTemperatureMeasure DeltaTY, IfcThermodynamicTemperatureMeasure DeltaTZ) : base (Name)
+		{
+			this.DeltaTConstant = DeltaTConstant;
+			this.DeltaTY = DeltaTY;
+			this.DeltaTZ = DeltaTZ;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralMember
 	/// <para>ENTITY IfcStructuralMember</para>
@@ -13993,33 +19365,48 @@
 	/// <summary>
 	public abstract class IfcStructuralMember : IfcStructuralItem
 	{
+		public IfcStructuralMember() : base()
+		{
+		}
+		public IfcStructuralMember(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralPlanarAction
 	/// <para>ENTITY IfcStructuralPlanarAction</para>
 	/// <para> SUBTYPE OF (IfcStructuralSurfaceAction);</para>
 	/// <para> WHERE</para>
-	/// <para>	SuitableLoadType : SIZEOF(['IFC4.IFCSTRUCTURALLOADPLANARFORCE', 'IFC4.IFCSTRUCTURALLOADTEMPERATURE'] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1;</para>
+	/// <para>	SuitableLoadType : SIZEOF(['IFC4X1.IFCSTRUCTURALLOADPLANARFORCE', 'IFC4X1.IFCSTRUCTURALLOADTEMPERATURE'] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1;</para>
 	/// <para>	ConstPredefinedType : SELF\IfcStructuralSurfaceAction.PredefinedType = IfcStructuralSurfaceActivityTypeEnum.CONST;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcStructuralPlanarAction : IfcStructuralSurfaceAction
 	{
+		public IfcStructuralPlanarAction() : base()
+		{
+		}
+		public IfcStructuralPlanarAction(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralLoad AppliedLoad, IfcGlobalOrLocalEnum GlobalOrLocal, IfcBoolean DestabilizingLoad, IfcProjectedOrTrueLengthEnum ProjectedOrTrue, IfcStructuralSurfaceActivityTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal, DestabilizingLoad, ProjectedOrTrue, PredefinedType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralPointAction
 	/// <para>ENTITY IfcStructuralPointAction</para>
 	/// <para> SUBTYPE OF (IfcStructuralAction);</para>
 	/// <para> WHERE</para>
-	/// <para>	SuitableLoadType : SIZEOF(['IFC4.IFCSTRUCTURALLOADSINGLEFORCE', 'IFC4.IFCSTRUCTURALLOADSINGLEDISPLACEMENT'] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1;</para>
+	/// <para>	SuitableLoadType : SIZEOF(['IFC4X1.IFCSTRUCTURALLOADSINGLEFORCE', 'IFC4X1.IFCSTRUCTURALLOADSINGLEDISPLACEMENT'] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcStructuralPointAction : IfcStructuralAction
 	{
+		public IfcStructuralPointAction() : base()
+		{
+		}
+		public IfcStructuralPointAction(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralLoad AppliedLoad, IfcGlobalOrLocalEnum GlobalOrLocal, IfcBoolean DestabilizingLoad) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal, DestabilizingLoad)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralPointConnection
 	/// <para>ENTITY IfcStructuralPointConnection</para>
@@ -14029,21 +19416,32 @@
 	/// <summary>
 	public class IfcStructuralPointConnection : IfcStructuralConnection
 	{
-		public IfcAxis2Placement3D ConditionCoordinateSystem { get; set; }
+		public IfcAxis2Placement3D? ConditionCoordinateSystem { get; set; }
+		public IfcStructuralPointConnection() : base()
+		{
+		}
+		public IfcStructuralPointConnection(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcBoundaryCondition AppliedCondition, IfcAxis2Placement3D ConditionCoordinateSystem) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedCondition)
+		{
+			this.ConditionCoordinateSystem = ConditionCoordinateSystem;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralPointReaction
 	/// <para>ENTITY IfcStructuralPointReaction</para>
 	/// <para> SUBTYPE OF (IfcStructuralReaction);</para>
 	/// <para> WHERE</para>
-	/// <para>	SuitableLoadType : SIZEOF(['IFC4.IFCSTRUCTURALLOADSINGLEFORCE', 'IFC4.IFCSTRUCTURALLOADSINGLEDISPLACEMENT'] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1;</para>
+	/// <para>	SuitableLoadType : SIZEOF(['IFC4X1.IFCSTRUCTURALLOADSINGLEFORCE', 'IFC4X1.IFCSTRUCTURALLOADSINGLEDISPLACEMENT'] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcStructuralPointReaction : IfcStructuralReaction
 	{
+		public IfcStructuralPointReaction() : base()
+		{
+		}
+		public IfcStructuralPointReaction(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralLoad AppliedLoad, IfcGlobalOrLocalEnum GlobalOrLocal) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralReaction
 	/// <para>ENTITY IfcStructuralReaction</para>
@@ -14056,8 +19454,13 @@
 	/// <summary>
 	public abstract class IfcStructuralReaction : IfcStructuralActivity
 	{
+		public IfcStructuralReaction() : base()
+		{
+		}
+		public IfcStructuralReaction(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralLoad AppliedLoad, IfcGlobalOrLocalEnum GlobalOrLocal) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralResultGroup
 	/// <para>ENTITY IfcStructuralResultGroup</para>
@@ -14074,10 +19477,20 @@
 	public class IfcStructuralResultGroup : IfcGroup
 	{
 		public IfcAnalysisTheoryTypeEnum TheoryType { get; set; }
-		public IfcStructuralLoadGroup ResultForLoadGroup { get; set; }
+		public IfcStructuralLoadGroup? ResultForLoadGroup { get; set; }
 		public IfcBoolean IsLinear { get; set; }
+		public IfcStructuralResultGroup() : base()
+		{
+			TheoryType = new IfcAnalysisTheoryTypeEnum();
+			IsLinear = new IfcBoolean();
+		}
+		public IfcStructuralResultGroup(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcAnalysisTheoryTypeEnum TheoryType, IfcStructuralLoadGroup ResultForLoadGroup, IfcBoolean IsLinear) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.TheoryType = TheoryType;
+			this.ResultForLoadGroup = ResultForLoadGroup;
+			this.IsLinear = IsLinear;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralSurfaceAction
 	/// <para>ENTITY IfcStructuralSurfaceAction</para>
@@ -14095,10 +19508,18 @@
 	/// <summary>
 	public class IfcStructuralSurfaceAction : IfcStructuralAction
 	{
-		public IfcProjectedOrTrueLengthEnum ProjectedOrTrue { get; set; }
+		public IfcProjectedOrTrueLengthEnum? ProjectedOrTrue { get; set; }
 		public IfcStructuralSurfaceActivityTypeEnum PredefinedType { get; set; }
+		public IfcStructuralSurfaceAction() : base()
+		{
+			PredefinedType = new IfcStructuralSurfaceActivityTypeEnum();
+		}
+		public IfcStructuralSurfaceAction(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralLoad AppliedLoad, IfcGlobalOrLocalEnum GlobalOrLocal, IfcBoolean DestabilizingLoad, IfcProjectedOrTrueLengthEnum ProjectedOrTrue, IfcStructuralSurfaceActivityTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal, DestabilizingLoad)
+		{
+			this.ProjectedOrTrue = ProjectedOrTrue;
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralSurfaceConnection
 	/// <para>ENTITY IfcStructuralSurfaceConnection</para>
@@ -14107,8 +19528,13 @@
 	/// <summary>
 	public class IfcStructuralSurfaceConnection : IfcStructuralConnection
 	{
+		public IfcStructuralSurfaceConnection() : base()
+		{
+		}
+		public IfcStructuralSurfaceConnection(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcBoundaryCondition AppliedCondition) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedCondition)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralSurfaceMember
 	/// <para>ENTITY IfcStructuralSurfaceMember</para>
@@ -14124,9 +19550,17 @@
 	public class IfcStructuralSurfaceMember : IfcStructuralMember
 	{
 		public IfcStructuralSurfaceMemberTypeEnum PredefinedType { get; set; }
-		public IfcPositiveLengthMeasure Thickness { get; set; }
+		public IfcPositiveLengthMeasure? Thickness { get; set; }
+		public IfcStructuralSurfaceMember() : base()
+		{
+			PredefinedType = new IfcStructuralSurfaceMemberTypeEnum();
+		}
+		public IfcStructuralSurfaceMember(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralSurfaceMemberTypeEnum PredefinedType, IfcPositiveLengthMeasure Thickness) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
+		{
+			this.PredefinedType = PredefinedType;
+			this.Thickness = Thickness;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralSurfaceMemberVarying
 	/// <para>ENTITY IfcStructuralSurfaceMemberVarying</para>
@@ -14135,8 +19569,13 @@
 	/// <summary>
 	public class IfcStructuralSurfaceMemberVarying : IfcStructuralSurfaceMember
 	{
+		public IfcStructuralSurfaceMemberVarying() : base()
+		{
+		}
+		public IfcStructuralSurfaceMemberVarying(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralSurfaceMemberTypeEnum PredefinedType, IfcPositiveLengthMeasure Thickness) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, PredefinedType, Thickness)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStructuralSurfaceReaction
 	/// <para>ENTITY IfcStructuralSurfaceReaction</para>
@@ -14149,8 +19588,15 @@
 	public class IfcStructuralSurfaceReaction : IfcStructuralReaction
 	{
 		public IfcStructuralSurfaceActivityTypeEnum PredefinedType { get; set; }
+		public IfcStructuralSurfaceReaction() : base()
+		{
+			PredefinedType = new IfcStructuralSurfaceActivityTypeEnum();
+		}
+		public IfcStructuralSurfaceReaction(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcStructuralLoad AppliedLoad, IfcGlobalOrLocalEnum GlobalOrLocal, IfcStructuralSurfaceActivityTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStyleModel
 	/// <para>ENTITY IfcStyleModel</para>
@@ -14161,8 +19607,13 @@
 	/// <summary>
 	public abstract class IfcStyleModel : IfcRepresentation
 	{
+		public IfcStyleModel() : base()
+		{
+		}
+		public IfcStyleModel(IfcRepresentationContext ContextOfItems, IfcLabel RepresentationIdentifier, IfcLabel RepresentationType, List<IfcRepresentationItem> Items) : base (ContextOfItems, RepresentationIdentifier, RepresentationType, Items)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStyledItem
 	/// <para>ENTITY IfcStyledItem</para>
@@ -14171,30 +19622,44 @@
 	/// <para>	Styles : SET [1:?] OF IfcStyleAssignmentSelect;</para>
 	/// <para>	Name : OPTIONAL IfcLabel;</para>
 	/// <para> WHERE</para>
-	/// <para>	ApplicableItem : NOT('IFC4.IFCSTYLEDITEM' IN TYPEOF(Item));</para>
+	/// <para>	ApplicableItem : NOT('IFC4X1.IFCSTYLEDITEM' IN TYPEOF(Item));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcStyledItem : IfcRepresentationItem
 	{
-		public IfcRepresentationItem Item { get; set; }
+		public IfcRepresentationItem? Item { get; set; }
 		public List<IfcStyleAssignmentSelect> Styles { get; set; }
-		public IfcLabel Name { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcStyledItem() : base()
+		{
+			Styles = new List<IfcStyleAssignmentSelect>();
+		}
+		public IfcStyledItem(IfcRepresentationItem Item, List<IfcStyleAssignmentSelect> Styles, IfcLabel Name) : base ()
+		{
+			this.Item = Item;
+			this.Styles = Styles;
+			this.Name = Name;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcStyledRepresentation
 	/// <para>ENTITY IfcStyledRepresentation</para>
 	/// <para> SUBTYPE OF (IfcStyleModel);</para>
 	/// <para> WHERE</para>
 	/// <para>	OnlyStyledItems : SIZEOF(QUERY(temp <* SELF\IfcRepresentation.Items | </para>
-	/// <para>  (NOT('IFC4.IFCSTYLEDITEM' IN TYPEOF(temp)))</para>
+	/// <para>  (NOT('IFC4X1.IFCSTYLEDITEM' IN TYPEOF(temp)))</para>
 	/// <para>)) = 0;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcStyledRepresentation : IfcStyleModel
 	{
+		public IfcStyledRepresentation() : base()
+		{
+		}
+		public IfcStyledRepresentation(IfcRepresentationContext ContextOfItems, IfcLabel RepresentationIdentifier, IfcLabel RepresentationType, List<IfcRepresentationItem> Items) : base (ContextOfItems, RepresentationIdentifier, RepresentationType, Items)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSubContractResource
 	/// <para>ENTITY IfcSubContractResource</para>
@@ -14208,9 +19673,15 @@
 	/// <summary>
 	public class IfcSubContractResource : IfcConstructionResource
 	{
-		public IfcSubContractResourceTypeEnum PredefinedType { get; set; }
+		public IfcSubContractResourceTypeEnum? PredefinedType { get; set; }
+		public IfcSubContractResource() : base()
+		{
+		}
+		public IfcSubContractResource(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcText LongDescription, IfcResourceTime Usage, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity, IfcSubContractResourceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification, LongDescription, Usage, BaseCosts, BaseQuantity)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSubContractResourceType
 	/// <para>ENTITY IfcSubContractResourceType</para>
@@ -14224,8 +19695,15 @@
 	public class IfcSubContractResourceType : IfcConstructionResourceType
 	{
 		public IfcSubContractResourceTypeEnum PredefinedType { get; set; }
+		public IfcSubContractResourceType() : base()
+		{
+			PredefinedType = new IfcSubContractResourceTypeEnum();
+		}
+		public IfcSubContractResourceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcIdentifier Identification, IfcText LongDescription, IfcLabel ResourceType, List<IfcAppliedValue> BaseCosts, IfcPhysicalQuantity BaseQuantity, IfcSubContractResourceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, Identification, LongDescription, ResourceType, BaseCosts, BaseQuantity)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSubedge
 	/// <para>ENTITY IfcSubedge</para>
@@ -14236,8 +19714,15 @@
 	public class IfcSubedge : IfcEdge
 	{
 		public IfcEdge ParentEdge { get; set; }
+		public IfcSubedge() : base()
+		{
+			ParentEdge = new IfcEdge();
+		}
+		public IfcSubedge(IfcVertex EdgeStart, IfcVertex EdgeEnd, IfcEdge ParentEdge) : base (EdgeStart, EdgeEnd)
+		{
+			this.ParentEdge = ParentEdge;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurface
 	/// <para>ENTITY IfcSurface</para>
@@ -14252,8 +19737,13 @@
 	/// <summary>
 	public abstract class IfcSurface : IfcGeometricRepresentationItem, IfcGeometricSetSelect, IfcSurfaceOrFaceSurface
 	{
+		public IfcSurface() : base()
+		{
+		}
+		public IfcSurface() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceCurve
 	/// <para>ENTITY IfcSurfaceCurve</para>
@@ -14268,7 +19758,7 @@
 	/// <para>	BasisSurface : SET [1:2] OF IfcSurface := IfcGetBasisSurface(SELF);</para>
 	/// <para> WHERE</para>
 	/// <para>	CurveIs3D : Curve3D.Dim = 3;</para>
-	/// <para>	CurveIsNotPcurve : NOT ('IFC4.IFCPCURVE' IN TYPEOF(Curve3D));</para>
+	/// <para>	CurveIsNotPcurve : NOT ('IFC4X1.IFCPCURVE' IN TYPEOF(Curve3D));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSurfaceCurve : IfcCurve, IfcCurveOnSurface
@@ -14276,8 +19766,19 @@
 		public IfcCurve Curve3D { get; set; }
 		public List<IfcPcurve> AssociatedGeometry { get; set; }
 		public IfcPreferredSurfaceCurveRepresentation MasterRepresentation { get; set; }
+		public IfcSurfaceCurve() : base()
+		{
+			Curve3D = new IfcCurve();
+			AssociatedGeometry = new List<IfcPcurve>();
+			MasterRepresentation = new IfcPreferredSurfaceCurveRepresentation();
+		}
+		public IfcSurfaceCurve(IfcCurve Curve3D, List<IfcPcurve> AssociatedGeometry, IfcPreferredSurfaceCurveRepresentation MasterRepresentation) : base ()
+		{
+			this.Curve3D = Curve3D;
+			this.AssociatedGeometry = AssociatedGeometry;
+			this.MasterRepresentation = MasterRepresentation;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceCurveSweptAreaSolid
 	/// <para>ENTITY IfcSurfaceCurveSweptAreaSolid</para>
@@ -14288,17 +19789,28 @@
 	/// <para>	ReferenceSurface : IfcSurface;</para>
 	/// <para> WHERE</para>
 	/// <para>	DirectrixBounded : (EXISTS(StartParam) AND EXISTS(EndParam)) OR </para>
-	/// <para>(SIZEOF(['IFC4.IFCCONIC', 'IFC4.IFCBOUNDEDCURVE'] * TYPEOF(Directrix)) = 1);</para>
+	/// <para>(SIZEOF(['IFC4X1.IFCCONIC', 'IFC4X1.IFCBOUNDEDCURVE'] * TYPEOF(Directrix)) = 1);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSurfaceCurveSweptAreaSolid : IfcSweptAreaSolid
 	{
 		public IfcCurve Directrix { get; set; }
-		public IfcParameterValue StartParam { get; set; }
-		public IfcParameterValue EndParam { get; set; }
+		public IfcParameterValue? StartParam { get; set; }
+		public IfcParameterValue? EndParam { get; set; }
 		public IfcSurface ReferenceSurface { get; set; }
+		public IfcSurfaceCurveSweptAreaSolid() : base()
+		{
+			Directrix = new IfcCurve();
+			ReferenceSurface = new IfcSurface();
+		}
+		public IfcSurfaceCurveSweptAreaSolid(IfcProfileDef SweptArea, IfcAxis2Placement3D Position, IfcCurve Directrix, IfcParameterValue StartParam, IfcParameterValue EndParam, IfcSurface ReferenceSurface) : base (SweptArea, Position)
+		{
+			this.Directrix = Directrix;
+			this.StartParam = StartParam;
+			this.EndParam = EndParam;
+			this.ReferenceSurface = ReferenceSurface;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceFeature
 	/// <para>ENTITY IfcSurfaceFeature</para>
@@ -14310,9 +19822,15 @@
 	/// <summary>
 	public class IfcSurfaceFeature : IfcFeatureElement
 	{
-		public IfcSurfaceFeatureTypeEnum PredefinedType { get; set; }
+		public IfcSurfaceFeatureTypeEnum? PredefinedType { get; set; }
+		public IfcSurfaceFeature() : base()
+		{
+		}
+		public IfcSurfaceFeature(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcSurfaceFeatureTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceOfLinearExtrusion
 	/// <para>ENTITY IfcSurfaceOfLinearExtrusion</para>
@@ -14329,8 +19847,17 @@
 	{
 		public IfcDirection ExtrudedDirection { get; set; }
 		public IfcLengthMeasure Depth { get; set; }
+		public IfcSurfaceOfLinearExtrusion() : base()
+		{
+			ExtrudedDirection = new IfcDirection();
+			Depth = new IfcLengthMeasure();
+		}
+		public IfcSurfaceOfLinearExtrusion(IfcProfileDef SweptCurve, IfcAxis2Placement3D Position, IfcDirection ExtrudedDirection, IfcLengthMeasure Depth) : base (SweptCurve, Position)
+		{
+			this.ExtrudedDirection = ExtrudedDirection;
+			this.Depth = Depth;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceOfRevolution
 	/// <para>ENTITY IfcSurfaceOfRevolution</para>
@@ -14344,8 +19871,15 @@
 	public class IfcSurfaceOfRevolution : IfcSweptSurface
 	{
 		public IfcAxis1Placement AxisPosition { get; set; }
+		public IfcSurfaceOfRevolution() : base()
+		{
+			AxisPosition = new IfcAxis1Placement();
+		}
+		public IfcSurfaceOfRevolution(IfcProfileDef SweptCurve, IfcAxis2Placement3D Position, IfcAxis1Placement AxisPosition) : base (SweptCurve, Position)
+		{
+			this.AxisPosition = AxisPosition;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceReinforcementArea
 	/// <para>ENTITY IfcSurfaceReinforcementArea</para>
@@ -14370,11 +19904,19 @@
 	/// <summary>
 	public class IfcSurfaceReinforcementArea : IfcStructuralLoadOrResult
 	{
-		public List<IfcLengthMeasure> SurfaceReinforcement1 { get; set; }
-		public List<IfcLengthMeasure> SurfaceReinforcement2 { get; set; }
-		public IfcRatioMeasure ShearReinforcement { get; set; }
+		public List<IfcLengthMeasure>? SurfaceReinforcement1 { get; set; }
+		public List<IfcLengthMeasure>? SurfaceReinforcement2 { get; set; }
+		public IfcRatioMeasure? ShearReinforcement { get; set; }
+		public IfcSurfaceReinforcementArea() : base()
+		{
+		}
+		public IfcSurfaceReinforcementArea(IfcLabel Name, List<IfcLengthMeasure> SurfaceReinforcement1, List<IfcLengthMeasure> SurfaceReinforcement2, IfcRatioMeasure ShearReinforcement) : base (Name)
+		{
+			this.SurfaceReinforcement1 = SurfaceReinforcement1;
+			this.SurfaceReinforcement2 = SurfaceReinforcement2;
+			this.ShearReinforcement = ShearReinforcement;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceStyle
 	/// <para>ENTITY IfcSurfaceStyle</para>
@@ -14383,23 +19925,23 @@
 	/// <para>	Styles : SET [1:5] OF IfcSurfaceStyleElementSelect;</para>
 	/// <para> WHERE</para>
 	/// <para>	MaxOneShading : SIZEOF(QUERY(Style <* SELF.Styles |</para>
-	/// <para>  'IFC4.IFCSURFACESTYLESHADING' IN</para>
+	/// <para>  'IFC4X1.IFCSURFACESTYLESHADING' IN</para>
 	/// <para>   TYPEOF(Style)</para>
 	/// <para>  )) <= 1;</para>
 	/// <para>	MaxOneLighting : SIZEOF(QUERY(Style <* SELF.Styles |</para>
-	/// <para>  'IFC4.IFCSURFACESTYLELIGHTING' IN</para>
+	/// <para>  'IFC4X1.IFCSURFACESTYLELIGHTING' IN</para>
 	/// <para>   TYPEOF(Style)</para>
 	/// <para>  )) <= 1;</para>
 	/// <para>	MaxOneRefraction : SIZEOF(QUERY(Style <* SELF.Styles |</para>
-	/// <para>  'IFC4.IFCSURFACESTYLEREFRACTION' IN</para>
+	/// <para>  'IFC4X1.IFCSURFACESTYLEREFRACTION' IN</para>
 	/// <para>   TYPEOF(Style)</para>
 	/// <para>  )) <= 1;</para>
 	/// <para>	MaxOneTextures : SIZEOF(QUERY(Style <* SELF.Styles |</para>
-	/// <para>  'IFC4.IFCSURFACESTYLEWITHTEXTURES' IN</para>
+	/// <para>  'IFC4X1.IFCSURFACESTYLEWITHTEXTURES' IN</para>
 	/// <para>   TYPEOF(Style)</para>
 	/// <para>  )) <= 1;</para>
 	/// <para>	MaxOneExtDefined : SIZEOF(QUERY(Style <* SELF.Styles |</para>
-	/// <para>  'IFC4.IFCEXTERNALLYDEFINEDSURFACESTYLE' IN</para>
+	/// <para>  'IFC4X1.IFCEXTERNALLYDEFINEDSURFACESTYLE' IN</para>
 	/// <para>   TYPEOF(Style)</para>
 	/// <para>  )) <= 1;</para>
 	/// <para>END_ENTITY;</para>
@@ -14408,8 +19950,17 @@
 	{
 		public IfcSurfaceSide Side { get; set; }
 		public List<IfcSurfaceStyleElementSelect> Styles { get; set; }
+		public IfcSurfaceStyle() : base()
+		{
+			Side = new IfcSurfaceSide();
+			Styles = new List<IfcSurfaceStyleElementSelect>();
+		}
+		public IfcSurfaceStyle(IfcLabel Name, IfcSurfaceSide Side, List<IfcSurfaceStyleElementSelect> Styles) : base (Name)
+		{
+			this.Side = Side;
+			this.Styles = Styles;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceStyleLighting
 	/// <para>ENTITY IfcSurfaceStyleLighting</para>
@@ -14426,8 +19977,21 @@
 		public IfcColourRgb DiffuseReflectionColour { get; set; }
 		public IfcColourRgb TransmissionColour { get; set; }
 		public IfcColourRgb ReflectanceColour { get; set; }
+		public IfcSurfaceStyleLighting() : base()
+		{
+			DiffuseTransmissionColour = new IfcColourRgb();
+			DiffuseReflectionColour = new IfcColourRgb();
+			TransmissionColour = new IfcColourRgb();
+			ReflectanceColour = new IfcColourRgb();
+		}
+		public IfcSurfaceStyleLighting(IfcColourRgb DiffuseTransmissionColour, IfcColourRgb DiffuseReflectionColour, IfcColourRgb TransmissionColour, IfcColourRgb ReflectanceColour) : base ()
+		{
+			this.DiffuseTransmissionColour = DiffuseTransmissionColour;
+			this.DiffuseReflectionColour = DiffuseReflectionColour;
+			this.TransmissionColour = TransmissionColour;
+			this.ReflectanceColour = ReflectanceColour;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceStyleRefraction
 	/// <para>ENTITY IfcSurfaceStyleRefraction</para>
@@ -14438,10 +20002,17 @@
 	/// <summary>
 	public class IfcSurfaceStyleRefraction : IfcPresentationItem, IfcSurfaceStyleElementSelect
 	{
-		public IfcReal RefractionIndex { get; set; }
-		public IfcReal DispersionFactor { get; set; }
+		public IfcReal? RefractionIndex { get; set; }
+		public IfcReal? DispersionFactor { get; set; }
+		public IfcSurfaceStyleRefraction() : base()
+		{
+		}
+		public IfcSurfaceStyleRefraction(IfcReal RefractionIndex, IfcReal DispersionFactor) : base ()
+		{
+			this.RefractionIndex = RefractionIndex;
+			this.DispersionFactor = DispersionFactor;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceStyleRendering
 	/// <para>ENTITY IfcSurfaceStyleRendering</para>
@@ -14457,15 +20028,28 @@
 	/// <summary>
 	public class IfcSurfaceStyleRendering : IfcSurfaceStyleShading
 	{
-		public IfcColourOrFactor DiffuseColour { get; set; }
-		public IfcColourOrFactor TransmissionColour { get; set; }
-		public IfcColourOrFactor DiffuseTransmissionColour { get; set; }
-		public IfcColourOrFactor ReflectionColour { get; set; }
-		public IfcColourOrFactor SpecularColour { get; set; }
-		public IfcSpecularHighlightSelect SpecularHighlight { get; set; }
+		public IfcColourOrFactor? DiffuseColour { get; set; }
+		public IfcColourOrFactor? TransmissionColour { get; set; }
+		public IfcColourOrFactor? DiffuseTransmissionColour { get; set; }
+		public IfcColourOrFactor? ReflectionColour { get; set; }
+		public IfcColourOrFactor? SpecularColour { get; set; }
+		public IfcSpecularHighlightSelect? SpecularHighlight { get; set; }
 		public IfcReflectanceMethodEnum ReflectanceMethod { get; set; }
+		public IfcSurfaceStyleRendering() : base()
+		{
+			ReflectanceMethod = new IfcReflectanceMethodEnum();
+		}
+		public IfcSurfaceStyleRendering(IfcColourRgb SurfaceColour, IfcNormalisedRatioMeasure Transparency, IfcColourOrFactor DiffuseColour, IfcColourOrFactor TransmissionColour, IfcColourOrFactor DiffuseTransmissionColour, IfcColourOrFactor ReflectionColour, IfcColourOrFactor SpecularColour, IfcSpecularHighlightSelect SpecularHighlight, IfcReflectanceMethodEnum ReflectanceMethod) : base (SurfaceColour, Transparency)
+		{
+			this.DiffuseColour = DiffuseColour;
+			this.TransmissionColour = TransmissionColour;
+			this.DiffuseTransmissionColour = DiffuseTransmissionColour;
+			this.ReflectionColour = ReflectionColour;
+			this.SpecularColour = SpecularColour;
+			this.SpecularHighlight = SpecularHighlight;
+			this.ReflectanceMethod = ReflectanceMethod;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceStyleShading
 	/// <para>ENTITY IfcSurfaceStyleShading</para>
@@ -14479,9 +20063,17 @@
 	public class IfcSurfaceStyleShading : IfcPresentationItem, IfcSurfaceStyleElementSelect
 	{
 		public IfcColourRgb SurfaceColour { get; set; }
-		public IfcNormalisedRatioMeasure Transparency { get; set; }
+		public IfcNormalisedRatioMeasure? Transparency { get; set; }
+		public IfcSurfaceStyleShading() : base()
+		{
+			SurfaceColour = new IfcColourRgb();
+		}
+		public IfcSurfaceStyleShading(IfcColourRgb SurfaceColour, IfcNormalisedRatioMeasure Transparency) : base ()
+		{
+			this.SurfaceColour = SurfaceColour;
+			this.Transparency = Transparency;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceStyleWithTextures
 	/// <para>ENTITY IfcSurfaceStyleWithTextures</para>
@@ -14492,8 +20084,15 @@
 	public class IfcSurfaceStyleWithTextures : IfcPresentationItem, IfcSurfaceStyleElementSelect
 	{
 		public List<IfcSurfaceTexture> Textures { get; set; }
+		public IfcSurfaceStyleWithTextures() : base()
+		{
+			Textures = new List<IfcSurfaceTexture>();
+		}
+		public IfcSurfaceStyleWithTextures(List<IfcSurfaceTexture> Textures) : base ()
+		{
+			this.Textures = Textures;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSurfaceTexture
 	/// <para>ENTITY IfcSurfaceTexture</para>
@@ -14516,11 +20115,23 @@
 	{
 		public IfcBoolean RepeatS { get; set; }
 		public IfcBoolean RepeatT { get; set; }
-		public IfcIdentifier Mode { get; set; }
-		public IfcCartesianTransformationOperator2D TextureTransform { get; set; }
-		public List<IfcIdentifier> Parameter { get; set; }
+		public IfcIdentifier? Mode { get; set; }
+		public IfcCartesianTransformationOperator2D? TextureTransform { get; set; }
+		public List<IfcIdentifier>? Parameter { get; set; }
+		public IfcSurfaceTexture() : base()
+		{
+			RepeatS = new IfcBoolean();
+			RepeatT = new IfcBoolean();
+		}
+		public IfcSurfaceTexture(IfcBoolean RepeatS, IfcBoolean RepeatT, IfcIdentifier Mode, IfcCartesianTransformationOperator2D TextureTransform, List<IfcIdentifier> Parameter) : base ()
+		{
+			this.RepeatS = RepeatS;
+			this.RepeatT = RepeatT;
+			this.Mode = Mode;
+			this.TextureTransform = TextureTransform;
+			this.Parameter = Parameter;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSweptAreaSolid
 	/// <para>ENTITY IfcSweptAreaSolid</para>
@@ -14539,9 +20150,17 @@
 	public abstract class IfcSweptAreaSolid : IfcSolidModel
 	{
 		public IfcProfileDef SweptArea { get; set; }
-		public IfcAxis2Placement3D Position { get; set; }
+		public IfcAxis2Placement3D? Position { get; set; }
+		public IfcSweptAreaSolid() : base()
+		{
+			SweptArea = new IfcProfileDef();
+		}
+		public IfcSweptAreaSolid(IfcProfileDef SweptArea, IfcAxis2Placement3D Position) : base ()
+		{
+			this.SweptArea = SweptArea;
+			this.Position = Position;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSweptDiskSolid
 	/// <para>ENTITY IfcSweptDiskSolid</para>
@@ -14557,18 +20176,30 @@
 	/// <para>	DirectrixDim : Directrix.Dim = 3;</para>
 	/// <para>	InnerRadiusSize : (NOT EXISTS(InnerRadius)) OR (Radius > InnerRadius);</para>
 	/// <para>	DirectrixBounded : (EXISTS(StartParam) AND EXISTS(EndParam)) OR </para>
-	/// <para>(SIZEOF(['IFC4.IFCCONIC', 'IFC4.IFCBOUNDEDCURVE'] * TYPEOF(Directrix)) = 1);</para>
+	/// <para>(SIZEOF(['IFC4X1.IFCCONIC', 'IFC4X1.IFCBOUNDEDCURVE'] * TYPEOF(Directrix)) = 1);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSweptDiskSolid : IfcSolidModel
 	{
 		public IfcCurve Directrix { get; set; }
 		public IfcPositiveLengthMeasure Radius { get; set; }
-		public IfcPositiveLengthMeasure InnerRadius { get; set; }
-		public IfcParameterValue StartParam { get; set; }
-		public IfcParameterValue EndParam { get; set; }
+		public IfcPositiveLengthMeasure? InnerRadius { get; set; }
+		public IfcParameterValue? StartParam { get; set; }
+		public IfcParameterValue? EndParam { get; set; }
+		public IfcSweptDiskSolid() : base()
+		{
+			Directrix = new IfcCurve();
+			Radius = new IfcPositiveLengthMeasure();
+		}
+		public IfcSweptDiskSolid(IfcCurve Directrix, IfcPositiveLengthMeasure Radius, IfcPositiveLengthMeasure InnerRadius, IfcParameterValue StartParam, IfcParameterValue EndParam) : base ()
+		{
+			this.Directrix = Directrix;
+			this.Radius = Radius;
+			this.InnerRadius = InnerRadius;
+			this.StartParam = StartParam;
+			this.EndParam = EndParam;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSweptDiskSolidPolygonal
 	/// <para>ENTITY IfcSweptDiskSolidPolygonal</para>
@@ -14576,15 +20207,21 @@
 	/// <para>	FilletRadius : OPTIONAL IfcPositiveLengthMeasure;</para>
 	/// <para> WHERE</para>
 	/// <para>	CorrectRadii : NOT(EXISTS(FilletRadius)) OR (FilletRadius >= SELF\IfcSweptDiskSolid.Radius);</para>
-	/// <para>	DirectrixIsPolyline : ('IFC4.IFCPOLYLINE' IN TYPEOF(SELF\IfcSweptDiskSolid.Directrix)) OR</para>
-	/// <para>(('IFC4.IFCINDEXEDPOLYCURVE' IN TYPEOF(SELF\IfcSweptDiskSolid.Directrix)) AND NOT(EXISTS(SELF\IfcSweptDiskSolid.Directrix.Segments)));</para>
+	/// <para>	DirectrixIsPolyline : ('IFC4X1.IFCPOLYLINE' IN TYPEOF(SELF\IfcSweptDiskSolid.Directrix)) OR</para>
+	/// <para>(('IFC4X1.IFCINDEXEDPOLYCURVE' IN TYPEOF(SELF\IfcSweptDiskSolid.Directrix)) AND NOT(EXISTS(SELF\IfcSweptDiskSolid.Directrix.Segments)));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSweptDiskSolidPolygonal : IfcSweptDiskSolid
 	{
-		public IfcPositiveLengthMeasure FilletRadius { get; set; }
+		public IfcPositiveLengthMeasure? FilletRadius { get; set; }
+		public IfcSweptDiskSolidPolygonal() : base()
+		{
+		}
+		public IfcSweptDiskSolidPolygonal(IfcCurve Directrix, IfcPositiveLengthMeasure Radius, IfcPositiveLengthMeasure InnerRadius, IfcParameterValue StartParam, IfcParameterValue EndParam, IfcPositiveLengthMeasure FilletRadius) : base (Directrix, Radius, InnerRadius, StartParam, EndParam)
+		{
+			this.FilletRadius = FilletRadius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSweptSurface
 	/// <para>ENTITY IfcSweptSurface</para>
@@ -14601,9 +20238,17 @@
 	public abstract class IfcSweptSurface : IfcSurface
 	{
 		public IfcProfileDef SweptCurve { get; set; }
-		public IfcAxis2Placement3D Position { get; set; }
+		public IfcAxis2Placement3D? Position { get; set; }
+		public IfcSweptSurface() : base()
+		{
+			SweptCurve = new IfcProfileDef();
+		}
+		public IfcSweptSurface(IfcProfileDef SweptCurve, IfcAxis2Placement3D Position) : base ()
+		{
+			this.SweptCurve = SweptCurve;
+			this.Position = Position;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSwitchingDevice
 	/// <para>ENTITY IfcSwitchingDevice</para>
@@ -14614,14 +20259,20 @@
 	/// <para> (PredefinedType <> IfcSwitchingDeviceTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcSwitchingDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCSWITCHINGDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCSWITCHINGDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSwitchingDevice : IfcFlowController
 	{
-		public IfcSwitchingDeviceTypeEnum PredefinedType { get; set; }
+		public IfcSwitchingDeviceTypeEnum? PredefinedType { get; set; }
+		public IfcSwitchingDevice() : base()
+		{
+		}
+		public IfcSwitchingDevice(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcSwitchingDeviceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSwitchingDeviceType
 	/// <para>ENTITY IfcSwitchingDeviceType</para>
@@ -14635,8 +20286,15 @@
 	public class IfcSwitchingDeviceType : IfcFlowControllerType
 	{
 		public IfcSwitchingDeviceTypeEnum PredefinedType { get; set; }
+		public IfcSwitchingDeviceType() : base()
+		{
+			PredefinedType = new IfcSwitchingDeviceTypeEnum();
+		}
+		public IfcSwitchingDeviceType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcSwitchingDeviceTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSystem
 	/// <para>ENTITY IfcSystem</para>
@@ -14652,8 +20310,13 @@
 	/// <summary>
 	public class IfcSystem : IfcGroup
 	{
+		public IfcSystem() : base()
+		{
+		}
+		public IfcSystem(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSystemFurnitureElement
 	/// <para>ENTITY IfcSystemFurnitureElement</para>
@@ -14664,14 +20327,20 @@
 	/// <para> (PredefinedType <> IfcSystemFurnitureElementTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcSystemFurnitureElementTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>   ('IFC4.IFCSYSTEMFURNITUREELEMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>   ('IFC4X1.IFCSYSTEMFURNITUREELEMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcSystemFurnitureElement : IfcFurnishingElement
 	{
-		public IfcSystemFurnitureElementTypeEnum PredefinedType { get; set; }
+		public IfcSystemFurnitureElementTypeEnum? PredefinedType { get; set; }
+		public IfcSystemFurnitureElement() : base()
+		{
+		}
+		public IfcSystemFurnitureElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcSystemFurnitureElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcSystemFurnitureElementType
 	/// <para>ENTITY IfcSystemFurnitureElementType</para>
@@ -14684,9 +20353,15 @@
 	/// <summary>
 	public class IfcSystemFurnitureElementType : IfcFurnishingElementType
 	{
-		public IfcSystemFurnitureElementTypeEnum PredefinedType { get; set; }
+		public IfcSystemFurnitureElementTypeEnum? PredefinedType { get; set; }
+		public IfcSystemFurnitureElementType() : base()
+		{
+		}
+		public IfcSystemFurnitureElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcSystemFurnitureElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTShapeProfileDef
 	/// <para>ENTITY IfcTShapeProfileDef</para>
@@ -14711,13 +20386,31 @@
 		public IfcPositiveLengthMeasure FlangeWidth { get; set; }
 		public IfcPositiveLengthMeasure WebThickness { get; set; }
 		public IfcPositiveLengthMeasure FlangeThickness { get; set; }
-		public IfcNonNegativeLengthMeasure FilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure FlangeEdgeRadius { get; set; }
-		public IfcNonNegativeLengthMeasure WebEdgeRadius { get; set; }
-		public IfcPlaneAngleMeasure WebSlope { get; set; }
-		public IfcPlaneAngleMeasure FlangeSlope { get; set; }
+		public IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
+		public IfcNonNegativeLengthMeasure? FlangeEdgeRadius { get; set; }
+		public IfcNonNegativeLengthMeasure? WebEdgeRadius { get; set; }
+		public IfcPlaneAngleMeasure? WebSlope { get; set; }
+		public IfcPlaneAngleMeasure? FlangeSlope { get; set; }
+		public IfcTShapeProfileDef() : base()
+		{
+			Depth = new IfcPositiveLengthMeasure();
+			FlangeWidth = new IfcPositiveLengthMeasure();
+			WebThickness = new IfcPositiveLengthMeasure();
+			FlangeThickness = new IfcPositiveLengthMeasure();
+		}
+		public IfcTShapeProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure Depth, IfcPositiveLengthMeasure FlangeWidth, IfcPositiveLengthMeasure WebThickness, IfcPositiveLengthMeasure FlangeThickness, IfcNonNegativeLengthMeasure FilletRadius, IfcNonNegativeLengthMeasure FlangeEdgeRadius, IfcNonNegativeLengthMeasure WebEdgeRadius, IfcPlaneAngleMeasure WebSlope, IfcPlaneAngleMeasure FlangeSlope) : base (ProfileType, ProfileName, Position)
+		{
+			this.Depth = Depth;
+			this.FlangeWidth = FlangeWidth;
+			this.WebThickness = WebThickness;
+			this.FlangeThickness = FlangeThickness;
+			this.FilletRadius = FilletRadius;
+			this.FlangeEdgeRadius = FlangeEdgeRadius;
+			this.WebEdgeRadius = WebEdgeRadius;
+			this.WebSlope = WebSlope;
+			this.FlangeSlope = FlangeSlope;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTable;
 	/// <para>ENTITY IfcTable;</para>
@@ -14735,11 +20428,19 @@
 	/// <summary>
 	public class IfcTableENTITY, IfcMetricValueSelect, IfcObjectReferenceSelect
 	{
-		public IfcLabel Name { get; set; }
-		public List<IfcTableRow> Rows { get; set; }
-		public List<IfcTableColumn> Columns { get; set; }
+		public IfcLabel? Name { get; set; }
+		public List<IfcTableRow>? Rows { get; set; }
+		public List<IfcTableColumn>? Columns { get; set; }
+		public IfcTable() : base()
+		{
+		}
+		public IfcTable(IfcLabel Name, List<IfcTableRow> Rows, List<IfcTableColumn> Columns) : base ()
+		{
+			this.Name = Name;
+			this.Rows = Rows;
+			this.Columns = Columns;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTableColumn;
 	/// <para>ENTITY IfcTableColumn;</para>
@@ -14752,13 +20453,23 @@
 	/// <summary>
 	public class IfcTableColumnENTITY
 	{
-		public IfcIdentifier Identifier { get; set; }
-		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
-		public IfcUnit Unit { get; set; }
-		public IfcReference ReferencePath { get; set; }
+		public IfcIdentifier? Identifier { get; set; }
+		public IfcLabel? Name { get; set; }
+		public IfcText? Description { get; set; }
+		public IfcUnit? Unit { get; set; }
+		public IfcReference? ReferencePath { get; set; }
+		public IfcTableColumn() : base()
+		{
+		}
+		public IfcTableColumn(IfcIdentifier Identifier, IfcLabel Name, IfcText Description, IfcUnit Unit, IfcReference ReferencePath) : base ()
+		{
+			this.Identifier = Identifier;
+			this.Name = Name;
+			this.Description = Description;
+			this.Unit = Unit;
+			this.ReferencePath = ReferencePath;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTableRow;
 	/// <para>ENTITY IfcTableRow;</para>
@@ -14768,10 +20479,17 @@
 	/// <summary>
 	public class IfcTableRowENTITY
 	{
-		public List<IfcValue> RowCells { get; set; }
-		public IfcBoolean IsHeading { get; set; }
+		public List<IfcValue>? RowCells { get; set; }
+		public IfcBoolean? IsHeading { get; set; }
+		public IfcTableRow() : base()
+		{
+		}
+		public IfcTableRow(List<IfcValue> RowCells, IfcBoolean IsHeading) : base ()
+		{
+			this.RowCells = RowCells;
+			this.IsHeading = IsHeading;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTank
 	/// <para>ENTITY IfcTank</para>
@@ -14782,14 +20500,20 @@
 	/// <para> (PredefinedType <> IfcTankTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcTankTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCTANKTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCTANKTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcTank : IfcFlowStorageDevice
 	{
-		public IfcTankTypeEnum PredefinedType { get; set; }
+		public IfcTankTypeEnum? PredefinedType { get; set; }
+		public IfcTank() : base()
+		{
+		}
+		public IfcTank(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcTankTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTankType
 	/// <para>ENTITY IfcTankType</para>
@@ -14803,8 +20527,15 @@
 	public class IfcTankType : IfcFlowStorageDeviceType
 	{
 		public IfcTankTypeEnum PredefinedType { get; set; }
+		public IfcTankType() : base()
+		{
+			PredefinedType = new IfcTankTypeEnum();
+		}
+		public IfcTankType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcTankTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTask
 	/// <para>ENTITY IfcTask</para>
@@ -14822,14 +20553,26 @@
 	/// <summary>
 	public class IfcTask : IfcProcess
 	{
-		public IfcLabel Status { get; set; }
-		public IfcLabel WorkMethod { get; set; }
+		public IfcLabel? Status { get; set; }
+		public IfcLabel? WorkMethod { get; set; }
 		public IfcBoolean IsMilestone { get; set; }
-		public IfcInteger Priority { get; set; }
-		public IfcTaskTime TaskTime { get; set; }
-		public IfcTaskTypeEnum PredefinedType { get; set; }
+		public IfcInteger? Priority { get; set; }
+		public IfcTaskTime? TaskTime { get; set; }
+		public IfcTaskTypeEnum? PredefinedType { get; set; }
+		public IfcTask() : base()
+		{
+			IsMilestone = new IfcBoolean();
+		}
+		public IfcTask(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcText LongDescription, IfcLabel Status, IfcLabel WorkMethod, IfcBoolean IsMilestone, IfcInteger Priority, IfcTaskTime TaskTime, IfcTaskTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification, LongDescription)
+		{
+			this.Status = Status;
+			this.WorkMethod = WorkMethod;
+			this.IsMilestone = IsMilestone;
+			this.Priority = Priority;
+			this.TaskTime = TaskTime;
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTaskTime
 	/// <para>ENTITY IfcTaskTime</para>
@@ -14857,25 +20600,47 @@
 	/// <summary>
 	public class IfcTaskTime : IfcSchedulingTime
 	{
-		public IfcTaskDurationEnum DurationType { get; set; }
-		public IfcDuration ScheduleDuration { get; set; }
-		public IfcDateTime ScheduleStart { get; set; }
-		public IfcDateTime ScheduleFinish { get; set; }
-		public IfcDateTime EarlyStart { get; set; }
-		public IfcDateTime EarlyFinish { get; set; }
-		public IfcDateTime LateStart { get; set; }
-		public IfcDateTime LateFinish { get; set; }
-		public IfcDuration FreeFloat { get; set; }
-		public IfcDuration TotalFloat { get; set; }
-		public IfcBoolean IsCritical { get; set; }
-		public IfcDateTime StatusTime { get; set; }
-		public IfcDuration ActualDuration { get; set; }
-		public IfcDateTime ActualStart { get; set; }
-		public IfcDateTime ActualFinish { get; set; }
-		public IfcDuration RemainingTime { get; set; }
-		public IfcPositiveRatioMeasure Completion { get; set; }
+		public IfcTaskDurationEnum? DurationType { get; set; }
+		public IfcDuration? ScheduleDuration { get; set; }
+		public IfcDateTime? ScheduleStart { get; set; }
+		public IfcDateTime? ScheduleFinish { get; set; }
+		public IfcDateTime? EarlyStart { get; set; }
+		public IfcDateTime? EarlyFinish { get; set; }
+		public IfcDateTime? LateStart { get; set; }
+		public IfcDateTime? LateFinish { get; set; }
+		public IfcDuration? FreeFloat { get; set; }
+		public IfcDuration? TotalFloat { get; set; }
+		public IfcBoolean? IsCritical { get; set; }
+		public IfcDateTime? StatusTime { get; set; }
+		public IfcDuration? ActualDuration { get; set; }
+		public IfcDateTime? ActualStart { get; set; }
+		public IfcDateTime? ActualFinish { get; set; }
+		public IfcDuration? RemainingTime { get; set; }
+		public IfcPositiveRatioMeasure? Completion { get; set; }
+		public IfcTaskTime() : base()
+		{
+		}
+		public IfcTaskTime(IfcLabel Name, IfcDataOriginEnum DataOrigin, IfcLabel UserDefinedDataOrigin, IfcTaskDurationEnum DurationType, IfcDuration ScheduleDuration, IfcDateTime ScheduleStart, IfcDateTime ScheduleFinish, IfcDateTime EarlyStart, IfcDateTime EarlyFinish, IfcDateTime LateStart, IfcDateTime LateFinish, IfcDuration FreeFloat, IfcDuration TotalFloat, IfcBoolean IsCritical, IfcDateTime StatusTime, IfcDuration ActualDuration, IfcDateTime ActualStart, IfcDateTime ActualFinish, IfcDuration RemainingTime, IfcPositiveRatioMeasure Completion) : base (Name, DataOrigin, UserDefinedDataOrigin)
+		{
+			this.DurationType = DurationType;
+			this.ScheduleDuration = ScheduleDuration;
+			this.ScheduleStart = ScheduleStart;
+			this.ScheduleFinish = ScheduleFinish;
+			this.EarlyStart = EarlyStart;
+			this.EarlyFinish = EarlyFinish;
+			this.LateStart = LateStart;
+			this.LateFinish = LateFinish;
+			this.FreeFloat = FreeFloat;
+			this.TotalFloat = TotalFloat;
+			this.IsCritical = IsCritical;
+			this.StatusTime = StatusTime;
+			this.ActualDuration = ActualDuration;
+			this.ActualStart = ActualStart;
+			this.ActualFinish = ActualFinish;
+			this.RemainingTime = RemainingTime;
+			this.Completion = Completion;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTaskTimeRecurring
 	/// <para>ENTITY IfcTaskTimeRecurring</para>
@@ -14886,8 +20651,15 @@
 	public class IfcTaskTimeRecurring : IfcTaskTime
 	{
 		public IfcRecurrencePattern Recurrence { get; set; }
+		public IfcTaskTimeRecurring() : base()
+		{
+			Recurrence = new IfcRecurrencePattern();
+		}
+		public IfcTaskTimeRecurring(IfcLabel Name, IfcDataOriginEnum DataOrigin, IfcLabel UserDefinedDataOrigin, IfcTaskDurationEnum DurationType, IfcDuration ScheduleDuration, IfcDateTime ScheduleStart, IfcDateTime ScheduleFinish, IfcDateTime EarlyStart, IfcDateTime EarlyFinish, IfcDateTime LateStart, IfcDateTime LateFinish, IfcDuration FreeFloat, IfcDuration TotalFloat, IfcBoolean IsCritical, IfcDateTime StatusTime, IfcDuration ActualDuration, IfcDateTime ActualStart, IfcDateTime ActualFinish, IfcDuration RemainingTime, IfcPositiveRatioMeasure Completion, IfcRecurrencePattern Recurrence) : base (Name, DataOrigin, UserDefinedDataOrigin, DurationType, ScheduleDuration, ScheduleStart, ScheduleFinish, EarlyStart, EarlyFinish, LateStart, LateFinish, FreeFloat, TotalFloat, IsCritical, StatusTime, ActualDuration, ActualStart, ActualFinish, RemainingTime, Completion)
+		{
+			this.Recurrence = Recurrence;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTaskType
 	/// <para>ENTITY IfcTaskType</para>
@@ -14901,9 +20673,17 @@
 	public class IfcTaskType : IfcTypeProcess
 	{
 		public IfcTaskTypeEnum PredefinedType { get; set; }
-		public IfcLabel WorkMethod { get; set; }
+		public IfcLabel? WorkMethod { get; set; }
+		public IfcTaskType() : base()
+		{
+			PredefinedType = new IfcTaskTypeEnum();
+		}
+		public IfcTaskType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcIdentifier Identification, IfcText LongDescription, IfcLabel ProcessType, IfcTaskTypeEnum PredefinedType, IfcLabel WorkMethod) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, Identification, LongDescription, ProcessType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.WorkMethod = WorkMethod;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTelecomAddress
 	/// <para>ENTITY IfcTelecomAddress</para>
@@ -14925,14 +20705,25 @@
 	/// <summary>
 	public class IfcTelecomAddress : IfcAddress
 	{
-		public List<IfcLabel> TelephoneNumbers { get; set; }
-		public List<IfcLabel> FacsimileNumbers { get; set; }
-		public IfcLabel PagerNumber { get; set; }
-		public List<IfcLabel> ElectronicMailAddresses { get; set; }
-		public IfcURIReference WWWHomePageURL { get; set; }
-		public List<IfcURIReference> MessagingIDs { get; set; }
+		public List<IfcLabel>? TelephoneNumbers { get; set; }
+		public List<IfcLabel>? FacsimileNumbers { get; set; }
+		public IfcLabel? PagerNumber { get; set; }
+		public List<IfcLabel>? ElectronicMailAddresses { get; set; }
+		public IfcURIReference? WWWHomePageURL { get; set; }
+		public List<IfcURIReference>? MessagingIDs { get; set; }
+		public IfcTelecomAddress() : base()
+		{
+		}
+		public IfcTelecomAddress(IfcAddressTypeEnum Purpose, IfcText Description, IfcLabel UserDefinedPurpose, List<IfcLabel> TelephoneNumbers, List<IfcLabel> FacsimileNumbers, IfcLabel PagerNumber, List<IfcLabel> ElectronicMailAddresses, IfcURIReference WWWHomePageURL, List<IfcURIReference> MessagingIDs) : base (Purpose, Description, UserDefinedPurpose)
+		{
+			this.TelephoneNumbers = TelephoneNumbers;
+			this.FacsimileNumbers = FacsimileNumbers;
+			this.PagerNumber = PagerNumber;
+			this.ElectronicMailAddresses = ElectronicMailAddresses;
+			this.WWWHomePageURL = WWWHomePageURL;
+			this.MessagingIDs = MessagingIDs;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTendon
 	/// <para>ENTITY IfcTendon</para>
@@ -14950,21 +20741,34 @@
 	/// <para>(PredefinedType <> IfcTendonTypeEnum.USERDEFINED) OR</para>
 	/// <para>((PredefinedType = IfcTendonTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>('IFC4.IFCTENDONTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCTENDONTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcTendon : IfcReinforcingElement
 	{
-		public IfcTendonTypeEnum PredefinedType { get; set; }
-		public IfcPositiveLengthMeasure NominalDiameter { get; set; }
-		public IfcAreaMeasure CrossSectionArea { get; set; }
-		public IfcForceMeasure TensionForce { get; set; }
-		public IfcPressureMeasure PreStress { get; set; }
-		public IfcNormalisedRatioMeasure FrictionCoefficient { get; set; }
-		public IfcPositiveLengthMeasure AnchorageSlip { get; set; }
-		public IfcPositiveLengthMeasure MinCurvatureRadius { get; set; }
+		public IfcTendonTypeEnum? PredefinedType { get; set; }
+		public IfcPositiveLengthMeasure? NominalDiameter { get; set; }
+		public IfcAreaMeasure? CrossSectionArea { get; set; }
+		public IfcForceMeasure? TensionForce { get; set; }
+		public IfcPressureMeasure? PreStress { get; set; }
+		public IfcNormalisedRatioMeasure? FrictionCoefficient { get; set; }
+		public IfcPositiveLengthMeasure? AnchorageSlip { get; set; }
+		public IfcPositiveLengthMeasure? MinCurvatureRadius { get; set; }
+		public IfcTendon() : base()
+		{
+		}
+		public IfcTendon(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcLabel SteelGrade, IfcTendonTypeEnum PredefinedType, IfcPositiveLengthMeasure NominalDiameter, IfcAreaMeasure CrossSectionArea, IfcForceMeasure TensionForce, IfcPressureMeasure PreStress, IfcNormalisedRatioMeasure FrictionCoefficient, IfcPositiveLengthMeasure AnchorageSlip, IfcPositiveLengthMeasure MinCurvatureRadius) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, SteelGrade)
+		{
+			this.PredefinedType = PredefinedType;
+			this.NominalDiameter = NominalDiameter;
+			this.CrossSectionArea = CrossSectionArea;
+			this.TensionForce = TensionForce;
+			this.PreStress = PreStress;
+			this.FrictionCoefficient = FrictionCoefficient;
+			this.AnchorageSlip = AnchorageSlip;
+			this.MinCurvatureRadius = MinCurvatureRadius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTendonAnchor
 	/// <para>ENTITY IfcTendonAnchor</para>
@@ -14975,14 +20779,20 @@
 	/// <para>(PredefinedType <> IfcTendonAnchorTypeEnum.USERDEFINED) OR</para>
 	/// <para>((PredefinedType = IfcTendonAnchorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>('IFC4.IFCTENDONANCHORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCTENDONANCHORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcTendonAnchor : IfcReinforcingElement
 	{
-		public IfcTendonAnchorTypeEnum PredefinedType { get; set; }
+		public IfcTendonAnchorTypeEnum? PredefinedType { get; set; }
+		public IfcTendonAnchor() : base()
+		{
+		}
+		public IfcTendonAnchor(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcLabel SteelGrade, IfcTendonAnchorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, SteelGrade)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTendonAnchorType
 	/// <para>ENTITY IfcTendonAnchorType</para>
@@ -14996,8 +20806,15 @@
 	public class IfcTendonAnchorType : IfcReinforcingElementType
 	{
 		public IfcTendonAnchorTypeEnum PredefinedType { get; set; }
+		public IfcTendonAnchorType() : base()
+		{
+			PredefinedType = new IfcTendonAnchorTypeEnum();
+		}
+		public IfcTendonAnchorType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcTendonAnchorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTendonType
 	/// <para>ENTITY IfcTendonType</para>
@@ -15014,11 +20831,21 @@
 	public class IfcTendonType : IfcReinforcingElementType
 	{
 		public IfcTendonTypeEnum PredefinedType { get; set; }
-		public IfcPositiveLengthMeasure NominalDiameter { get; set; }
-		public IfcAreaMeasure CrossSectionArea { get; set; }
-		public IfcPositiveLengthMeasure SheathDiameter { get; set; }
+		public IfcPositiveLengthMeasure? NominalDiameter { get; set; }
+		public IfcAreaMeasure? CrossSectionArea { get; set; }
+		public IfcPositiveLengthMeasure? SheathDiameter { get; set; }
+		public IfcTendonType() : base()
+		{
+			PredefinedType = new IfcTendonTypeEnum();
+		}
+		public IfcTendonType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcTendonTypeEnum PredefinedType, IfcPositiveLengthMeasure NominalDiameter, IfcAreaMeasure CrossSectionArea, IfcPositiveLengthMeasure SheathDiameter) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.NominalDiameter = NominalDiameter;
+			this.CrossSectionArea = CrossSectionArea;
+			this.SheathDiameter = SheathDiameter;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTessellatedFaceSet
 	/// <para>ENTITY IfcTessellatedFaceSet</para>
@@ -15037,8 +20864,15 @@
 	public abstract class IfcTessellatedFaceSet : IfcTessellatedItem, IfcBooleanOperand
 	{
 		public IfcCartesianPointList3D Coordinates { get; set; }
+		public IfcTessellatedFaceSet() : base()
+		{
+			Coordinates = new IfcCartesianPointList3D();
+		}
+		public IfcTessellatedFaceSet(IfcCartesianPointList3D Coordinates) : base ()
+		{
+			this.Coordinates = Coordinates;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTessellatedItem
 	/// <para>ENTITY IfcTessellatedItem</para>
@@ -15050,8 +20884,13 @@
 	/// <summary>
 	public abstract class IfcTessellatedItem : IfcGeometricRepresentationItem
 	{
+		public IfcTessellatedItem() : base()
+		{
+		}
+		public IfcTessellatedItem() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTextLiteral
 	/// <para>ENTITY IfcTextLiteral</para>
@@ -15068,8 +20907,19 @@
 		public IfcPresentableText Literal { get; set; }
 		public IfcAxis2Placement Placement { get; set; }
 		public IfcTextPath Path { get; set; }
+		public IfcTextLiteral() : base()
+		{
+			Literal = new IfcPresentableText();
+			Placement = new IfcAxis2Placement();
+			Path = new IfcTextPath();
+		}
+		public IfcTextLiteral(IfcPresentableText Literal, IfcAxis2Placement Placement, IfcTextPath Path) : base ()
+		{
+			this.Literal = Literal;
+			this.Placement = Placement;
+			this.Path = Path;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTextLiteralWithExtent
 	/// <para>ENTITY IfcTextLiteralWithExtent</para>
@@ -15077,15 +20927,24 @@
 	/// <para>	Extent : IfcPlanarExtent;</para>
 	/// <para>	BoxAlignment : IfcBoxAlignment;</para>
 	/// <para> WHERE</para>
-	/// <para>	WR31 : NOT('IFC4.IFCPLANARBOX' IN TYPEOF(Extent));</para>
+	/// <para>	WR31 : NOT('IFC4X1.IFCPLANARBOX' IN TYPEOF(Extent));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcTextLiteralWithExtent : IfcTextLiteral
 	{
 		public IfcPlanarExtent Extent { get; set; }
 		public IfcBoxAlignment BoxAlignment { get; set; }
+		public IfcTextLiteralWithExtent() : base()
+		{
+			Extent = new IfcPlanarExtent();
+			BoxAlignment = new IfcBoxAlignment();
+		}
+		public IfcTextLiteralWithExtent(IfcPresentableText Literal, IfcAxis2Placement Placement, IfcTextPath Path, IfcPlanarExtent Extent, IfcBoxAlignment BoxAlignment) : base (Literal, Placement, Path)
+		{
+			this.Extent = Extent;
+			this.BoxAlignment = BoxAlignment;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTextStyle
 	/// <para>ENTITY IfcTextStyle</para>
@@ -15098,12 +20957,22 @@
 	/// <summary>
 	public class IfcTextStyle : IfcPresentationStyle, IfcPresentationStyleSelect
 	{
-		public IfcTextStyleForDefinedFont TextCharacterAppearance { get; set; }
-		public IfcTextStyleTextModel TextStyle { get; set; }
+		public IfcTextStyleForDefinedFont? TextCharacterAppearance { get; set; }
+		public IfcTextStyleTextModel? TextStyle { get; set; }
 		public IfcTextFontSelect TextFontStyle { get; set; }
-		public IfcBoolean ModelOrDraughting { get; set; }
+		public IfcBoolean? ModelOrDraughting { get; set; }
+		public IfcTextStyle() : base()
+		{
+			TextFontStyle = new IfcTextFontSelect();
+		}
+		public IfcTextStyle(IfcLabel Name, IfcTextStyleForDefinedFont TextCharacterAppearance, IfcTextStyleTextModel TextStyle, IfcTextFontSelect TextFontStyle, IfcBoolean ModelOrDraughting) : base (Name)
+		{
+			this.TextCharacterAppearance = TextCharacterAppearance;
+			this.TextStyle = TextStyle;
+			this.TextFontStyle = TextFontStyle;
+			this.ModelOrDraughting = ModelOrDraughting;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTextStyleFontModel
 	/// <para>ENTITY IfcTextStyleFontModel</para>
@@ -15114,19 +20983,31 @@
 	/// <para>	FontWeight : OPTIONAL IfcFontWeight;</para>
 	/// <para>	FontSize : IfcSizeSelect;</para>
 	/// <para> WHERE</para>
-	/// <para>	MeasureOfFontSize : ('IFC4.IFCLENGTHMEASURE' IN TYPEOF(SELF.FontSize)) AND</para>
+	/// <para>	MeasureOfFontSize : ('IFC4X1.IFCLENGTHMEASURE' IN TYPEOF(SELF.FontSize)) AND</para>
 	/// <para>(SELF.FontSize > 0.);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcTextStyleFontModel : IfcPreDefinedTextFont
 	{
 		public List<IfcTextFontName> FontFamily { get; set; }
-		public IfcFontStyle FontStyle { get; set; }
-		public IfcFontVariant FontVariant { get; set; }
-		public IfcFontWeight FontWeight { get; set; }
+		public IfcFontStyle? FontStyle { get; set; }
+		public IfcFontVariant? FontVariant { get; set; }
+		public IfcFontWeight? FontWeight { get; set; }
 		public IfcSizeSelect FontSize { get; set; }
+		public IfcTextStyleFontModel() : base()
+		{
+			FontFamily = new List<IfcTextFontName>();
+			FontSize = new IfcSizeSelect();
+		}
+		public IfcTextStyleFontModel(IfcLabel Name, List<IfcTextFontName> FontFamily, IfcFontStyle FontStyle, IfcFontVariant FontVariant, IfcFontWeight FontWeight, IfcSizeSelect FontSize) : base (Name)
+		{
+			this.FontFamily = FontFamily;
+			this.FontStyle = FontStyle;
+			this.FontVariant = FontVariant;
+			this.FontWeight = FontWeight;
+			this.FontSize = FontSize;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTextStyleForDefinedFont
 	/// <para>ENTITY IfcTextStyleForDefinedFont</para>
@@ -15138,9 +21019,17 @@
 	public class IfcTextStyleForDefinedFont : IfcPresentationItem
 	{
 		public IfcColour Colour { get; set; }
-		public IfcColour BackgroundColour { get; set; }
+		public IfcColour? BackgroundColour { get; set; }
+		public IfcTextStyleForDefinedFont() : base()
+		{
+			Colour = new IfcColour();
+		}
+		public IfcTextStyleForDefinedFont(IfcColour Colour, IfcColour BackgroundColour) : base ()
+		{
+			this.Colour = Colour;
+			this.BackgroundColour = BackgroundColour;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTextStyleTextModel
 	/// <para>ENTITY IfcTextStyleTextModel</para>
@@ -15156,15 +21045,27 @@
 	/// <summary>
 	public class IfcTextStyleTextModel : IfcPresentationItem
 	{
-		public IfcSizeSelect TextIndent { get; set; }
-		public IfcTextAlignment TextAlign { get; set; }
-		public IfcTextDecoration TextDecoration { get; set; }
-		public IfcSizeSelect LetterSpacing { get; set; }
-		public IfcSizeSelect WordSpacing { get; set; }
-		public IfcTextTransformation TextTransform { get; set; }
-		public IfcSizeSelect LineHeight { get; set; }
+		public IfcSizeSelect? TextIndent { get; set; }
+		public IfcTextAlignment? TextAlign { get; set; }
+		public IfcTextDecoration? TextDecoration { get; set; }
+		public IfcSizeSelect? LetterSpacing { get; set; }
+		public IfcSizeSelect? WordSpacing { get; set; }
+		public IfcTextTransformation? TextTransform { get; set; }
+		public IfcSizeSelect? LineHeight { get; set; }
+		public IfcTextStyleTextModel() : base()
+		{
+		}
+		public IfcTextStyleTextModel(IfcSizeSelect TextIndent, IfcTextAlignment TextAlign, IfcTextDecoration TextDecoration, IfcSizeSelect LetterSpacing, IfcSizeSelect WordSpacing, IfcTextTransformation TextTransform, IfcSizeSelect LineHeight) : base ()
+		{
+			this.TextIndent = TextIndent;
+			this.TextAlign = TextAlign;
+			this.TextDecoration = TextDecoration;
+			this.LetterSpacing = LetterSpacing;
+			this.WordSpacing = WordSpacing;
+			this.TextTransform = TextTransform;
+			this.LineHeight = LineHeight;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTextureCoordinate
 	/// <para>ENTITY IfcTextureCoordinate</para>
@@ -15179,8 +21080,15 @@
 	public abstract class IfcTextureCoordinate : IfcPresentationItem
 	{
 		public List<IfcSurfaceTexture> Maps { get; set; }
+		public IfcTextureCoordinate() : base()
+		{
+			Maps = new List<IfcSurfaceTexture>();
+		}
+		public IfcTextureCoordinate(List<IfcSurfaceTexture> Maps) : base ()
+		{
+			this.Maps = Maps;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTextureCoordinateGenerator
 	/// <para>ENTITY IfcTextureCoordinateGenerator</para>
@@ -15192,9 +21100,17 @@
 	public class IfcTextureCoordinateGenerator : IfcTextureCoordinate
 	{
 		public IfcLabel Mode { get; set; }
-		public List<IfcReal> Parameter { get; set; }
+		public List<IfcReal>? Parameter { get; set; }
+		public IfcTextureCoordinateGenerator() : base()
+		{
+			Mode = new IfcLabel();
+		}
+		public IfcTextureCoordinateGenerator(List<IfcSurfaceTexture> Maps, IfcLabel Mode, List<IfcReal> Parameter) : base (Maps)
+		{
+			this.Mode = Mode;
+			this.Parameter = Parameter;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTextureMap
 	/// <para>ENTITY IfcTextureMap</para>
@@ -15207,8 +21123,17 @@
 	{
 		public List<IfcTextureVertex> Vertices { get; set; }
 		public IfcFace MappedTo { get; set; }
+		public IfcTextureMap() : base()
+		{
+			Vertices = new List<IfcTextureVertex>();
+			MappedTo = new IfcFace();
+		}
+		public IfcTextureMap(List<IfcSurfaceTexture> Maps, List<IfcTextureVertex> Vertices, IfcFace MappedTo) : base (Maps)
+		{
+			this.Vertices = Vertices;
+			this.MappedTo = MappedTo;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTextureVertex
 	/// <para>ENTITY IfcTextureVertex</para>
@@ -15219,8 +21144,15 @@
 	public class IfcTextureVertex : IfcPresentationItem
 	{
 		public List<IfcParameterValue> Coordinates { get; set; }
+		public IfcTextureVertex() : base()
+		{
+			Coordinates = new List<IfcParameterValue>();
+		}
+		public IfcTextureVertex(List<IfcParameterValue> Coordinates) : base ()
+		{
+			this.Coordinates = Coordinates;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTextureVertexList
 	/// <para>ENTITY IfcTextureVertexList</para>
@@ -15231,8 +21163,15 @@
 	public class IfcTextureVertexList : IfcPresentationItem
 	{
 		public List<List<IfcParameterValue >> TexCoordsList { get; set; }
+		public IfcTextureVertexList() : base()
+		{
+			TexCoordsList = new List<List<IfcParameterValue >>();
+		}
+		public IfcTextureVertexList(List<List<IfcParameterValue >> TexCoordsList) : base ()
+		{
+			this.TexCoordsList = TexCoordsList;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTimePeriod;
 	/// <para>ENTITY IfcTimePeriod;</para>
@@ -15244,8 +21183,17 @@
 	{
 		public IfcTime StartTime { get; set; }
 		public IfcTime EndTime { get; set; }
+		public IfcTimePeriod() : base()
+		{
+			StartTime = new IfcTime();
+			EndTime = new IfcTime();
+		}
+		public IfcTimePeriod(IfcTime StartTime, IfcTime EndTime) : base ()
+		{
+			this.StartTime = StartTime;
+			this.EndTime = EndTime;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTimeSeries
 	/// <para>ENTITY IfcTimeSeries</para>
@@ -15267,15 +21215,33 @@
 	public abstract class IfcTimeSeriesENTITY, IfcMetricValueSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
 		public IfcLabel Name { get; set; }
-		public IfcText Description { get; set; }
+		public IfcText? Description { get; set; }
 		public IfcDateTime StartTime { get; set; }
 		public IfcDateTime EndTime { get; set; }
 		public IfcTimeSeriesDataTypeEnum TimeSeriesDataType { get; set; }
 		public IfcDataOriginEnum DataOrigin { get; set; }
-		public IfcLabel UserDefinedDataOrigin { get; set; }
-		public IfcUnit Unit { get; set; }
+		public IfcLabel? UserDefinedDataOrigin { get; set; }
+		public IfcUnit? Unit { get; set; }
+		public IfcTimeSeries() : base()
+		{
+			Name = new IfcLabel();
+			StartTime = new IfcDateTime();
+			EndTime = new IfcDateTime();
+			TimeSeriesDataType = new IfcTimeSeriesDataTypeEnum();
+			DataOrigin = new IfcDataOriginEnum();
+		}
+		public IfcTimeSeries(IfcLabel Name, IfcText Description, IfcDateTime StartTime, IfcDateTime EndTime, IfcTimeSeriesDataTypeEnum TimeSeriesDataType, IfcDataOriginEnum DataOrigin, IfcLabel UserDefinedDataOrigin, IfcUnit Unit) : base ()
+		{
+			this.Name = Name;
+			this.Description = Description;
+			this.StartTime = StartTime;
+			this.EndTime = EndTime;
+			this.TimeSeriesDataType = TimeSeriesDataType;
+			this.DataOrigin = DataOrigin;
+			this.UserDefinedDataOrigin = UserDefinedDataOrigin;
+			this.Unit = Unit;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTimeSeriesValue;
 	/// <para>ENTITY IfcTimeSeriesValue;</para>
@@ -15285,8 +21251,15 @@
 	public class IfcTimeSeriesValueENTITY
 	{
 		public List<IfcValue> ListValues { get; set; }
+		public IfcTimeSeriesValue() : base()
+		{
+			ListValues = new List<IfcValue>();
+		}
+		public IfcTimeSeriesValue(List<IfcValue> ListValues) : base ()
+		{
+			this.ListValues = ListValues;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTopologicalRepresentationItem
 	/// <para>ENTITY IfcTopologicalRepresentationItem</para>
@@ -15303,15 +21276,20 @@
 	/// <summary>
 	public abstract class IfcTopologicalRepresentationItem : IfcRepresentationItem
 	{
+		public IfcTopologicalRepresentationItem() : base()
+		{
+		}
+		public IfcTopologicalRepresentationItem() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTopologyRepresentation
 	/// <para>ENTITY IfcTopologyRepresentation</para>
 	/// <para> SUBTYPE OF (IfcShapeModel);</para>
 	/// <para> WHERE</para>
 	/// <para>	WR21 : SIZEOF(QUERY(temp <* SELF\IfcRepresentation.Items | </para>
-	/// <para>  NOT('IFC4.IFCTOPOLOGICALREPRESENTATIONITEM' IN TYPEOF(temp))</para>
+	/// <para>  NOT('IFC4X1.IFCTOPOLOGICALREPRESENTATIONITEM' IN TYPEOF(temp))</para>
 	/// <para>)) = 0;</para>
 	/// <para>	WR22 : EXISTS(SELF\IfcRepresentation.RepresentationType);</para>
 	/// <para>	WR23 : IfcTopologyRepresentationTypes(SELF\IfcRepresentation.RepresentationType, SELF\IfcRepresentation.Items);</para>
@@ -15319,8 +21297,13 @@
 	/// <summary>
 	public class IfcTopologyRepresentation : IfcShapeModel
 	{
+		public IfcTopologyRepresentation() : base()
+		{
+		}
+		public IfcTopologyRepresentation(IfcRepresentationContext ContextOfItems, IfcLabel RepresentationIdentifier, IfcLabel RepresentationType, List<IfcRepresentationItem> Items) : base (ContextOfItems, RepresentationIdentifier, RepresentationType, Items)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcToroidalSurface
 	/// <para>ENTITY IfcToroidalSurface</para>
@@ -15335,8 +21318,17 @@
 	{
 		public IfcPositiveLengthMeasure MajorRadius { get; set; }
 		public IfcPositiveLengthMeasure MinorRadius { get; set; }
+		public IfcToroidalSurface() : base()
+		{
+			MajorRadius = new IfcPositiveLengthMeasure();
+			MinorRadius = new IfcPositiveLengthMeasure();
+		}
+		public IfcToroidalSurface(IfcAxis2Placement3D Position, IfcPositiveLengthMeasure MajorRadius, IfcPositiveLengthMeasure MinorRadius) : base (Position)
+		{
+			this.MajorRadius = MajorRadius;
+			this.MinorRadius = MinorRadius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTransformer
 	/// <para>ENTITY IfcTransformer</para>
@@ -15347,14 +21339,20 @@
 	/// <para> (PredefinedType <> IfcTransformerTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcTransformerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCTRANFORMERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCTRANFORMERTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcTransformer : IfcEnergyConversionDevice
 	{
-		public IfcTransformerTypeEnum PredefinedType { get; set; }
+		public IfcTransformerTypeEnum? PredefinedType { get; set; }
+		public IfcTransformer() : base()
+		{
+		}
+		public IfcTransformer(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcTransformerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTransformerType
 	/// <para>ENTITY IfcTransformerType</para>
@@ -15368,8 +21366,48 @@
 	public class IfcTransformerType : IfcEnergyConversionDeviceType
 	{
 		public IfcTransformerTypeEnum PredefinedType { get; set; }
+		public IfcTransformerType() : base()
+		{
+			PredefinedType = new IfcTransformerTypeEnum();
+		}
+		public IfcTransformerType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcTransformerTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcTransitionCurveSegment2D
+	/// <para>ENTITY IfcTransitionCurveSegment2D</para>
+	/// <para> SUBTYPE OF (IfcCurveSegment2D);</para>
+	/// <para>	StartRadius : OPTIONAL IfcPositiveLengthMeasure;</para>
+	/// <para>	EndRadius : OPTIONAL IfcPositiveLengthMeasure;</para>
+	/// <para>	IsStartRadiusCCW : IfcBoolean;</para>
+	/// <para>	IsEndRadiusCCW : IfcBoolean;</para>
+	/// <para>	TransitionCurveType : IfcTransitionCurveType;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcTransitionCurveSegment2D : IfcCurveSegment2D
+	{
+		public IfcPositiveLengthMeasure? StartRadius { get; set; }
+		public IfcPositiveLengthMeasure? EndRadius { get; set; }
+		public IfcBoolean IsStartRadiusCCW { get; set; }
+		public IfcBoolean IsEndRadiusCCW { get; set; }
+		public IfcTransitionCurveType TransitionCurveType { get; set; }
+		public IfcTransitionCurveSegment2D() : base()
+		{
+			IsStartRadiusCCW = new IfcBoolean();
+			IsEndRadiusCCW = new IfcBoolean();
+			TransitionCurveType = new IfcTransitionCurveType();
+		}
+		public IfcTransitionCurveSegment2D(IfcCartesianPoint StartPoint, IfcPlaneAngleMeasure StartDirection, IfcPositiveLengthMeasure SegmentLength, IfcPositiveLengthMeasure StartRadius, IfcPositiveLengthMeasure EndRadius, IfcBoolean IsStartRadiusCCW, IfcBoolean IsEndRadiusCCW, IfcTransitionCurveType TransitionCurveType) : base (StartPoint, StartDirection, SegmentLength)
+		{
+			this.StartRadius = StartRadius;
+			this.EndRadius = EndRadius;
+			this.IsStartRadiusCCW = IsStartRadiusCCW;
+			this.IsEndRadiusCCW = IsEndRadiusCCW;
+			this.TransitionCurveType = TransitionCurveType;
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcTransportElement
 	/// <para>ENTITY IfcTransportElement</para>
@@ -15380,14 +21418,20 @@
 	/// <para> (PredefinedType <> IfcTransportElementTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcTransportElementTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCTRANSPORTELEMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCTRANSPORTELEMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcTransportElement : IfcElement
 	{
-		public IfcTransportElementTypeEnum PredefinedType { get; set; }
+		public IfcTransportElementTypeEnum? PredefinedType { get; set; }
+		public IfcTransportElement() : base()
+		{
+		}
+		public IfcTransportElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcTransportElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTransportElementType
 	/// <para>ENTITY IfcTransportElementType</para>
@@ -15401,8 +21445,15 @@
 	public class IfcTransportElementType : IfcElementType
 	{
 		public IfcTransportElementTypeEnum PredefinedType { get; set; }
+		public IfcTransportElementType() : base()
+		{
+			PredefinedType = new IfcTransportElementTypeEnum();
+		}
+		public IfcTransportElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcTransportElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTrapeziumProfileDef
 	/// <para>ENTITY IfcTrapeziumProfileDef</para>
@@ -15419,11 +21470,26 @@
 		public IfcPositiveLengthMeasure TopXDim { get; set; }
 		public IfcPositiveLengthMeasure YDim { get; set; }
 		public IfcLengthMeasure TopXOffset { get; set; }
+		public IfcTrapeziumProfileDef() : base()
+		{
+			BottomXDim = new IfcPositiveLengthMeasure();
+			TopXDim = new IfcPositiveLengthMeasure();
+			YDim = new IfcPositiveLengthMeasure();
+			TopXOffset = new IfcLengthMeasure();
+		}
+		public IfcTrapeziumProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure BottomXDim, IfcPositiveLengthMeasure TopXDim, IfcPositiveLengthMeasure YDim, IfcLengthMeasure TopXOffset) : base (ProfileType, ProfileName, Position)
+		{
+			this.BottomXDim = BottomXDim;
+			this.TopXDim = TopXDim;
+			this.YDim = YDim;
+			this.TopXOffset = TopXOffset;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTriangulatedFaceSet
 	/// <para>ENTITY IfcTriangulatedFaceSet</para>
+	/// <para> SUPERTYPE OF (ONEOF</para>
+	/// <para>    (IfcTriangulatedIrregularNetwork))</para>
 	/// <para> SUBTYPE OF (IfcTessellatedFaceSet);</para>
 	/// <para>	Normals : OPTIONAL LIST [1:?] OF LIST [3:3] OF IfcParameterValue;</para>
 	/// <para>	Closed : OPTIONAL IfcBoolean;</para>
@@ -15435,12 +21501,43 @@
 	/// <summary>
 	public class IfcTriangulatedFaceSet : IfcTessellatedFaceSet
 	{
-		public List<List<IfcParameterValue >> Normals { get; set; }
-		public IfcBoolean Closed { get; set; }
+		public List<List<IfcParameterValue >>? Normals { get; set; }
+		public IfcBoolean? Closed { get; set; }
 		public List<List<IfcPositiveInteger >> CoordIndex { get; set; }
-		public List<IfcPositiveInteger> PnIndex { get; set; }
+		public List<IfcPositiveInteger>? PnIndex { get; set; }
+		public IfcTriangulatedFaceSet() : base()
+		{
+			CoordIndex = new List<List<IfcPositiveInteger >>();
+		}
+		public IfcTriangulatedFaceSet(IfcCartesianPointList3D Coordinates, List<List<IfcParameterValue >> Normals, IfcBoolean Closed, List<List<IfcPositiveInteger >> CoordIndex, List<IfcPositiveInteger> PnIndex) : base (Coordinates)
+		{
+			this.Normals = Normals;
+			this.Closed = Closed;
+			this.CoordIndex = CoordIndex;
+			this.PnIndex = PnIndex;
+		}
 	}
---------------------------------
+	/// <summary>
+	/// ENTITY IfcTriangulatedIrregularNetwork
+	/// <para>ENTITY IfcTriangulatedIrregularNetwork</para>
+	/// <para> SUBTYPE OF (IfcTriangulatedFaceSet);</para>
+	/// <para>	Flags : LIST [1:?] OF IfcInteger;</para>
+	/// <para> WHERE</para>
+	/// <para>	NotClosed : SELF\IfcTriangulatedFaceSet.Closed = FALSE;</para>
+	/// <para>END_ENTITY;</para>
+	/// <summary>
+	public class IfcTriangulatedIrregularNetwork : IfcTriangulatedFaceSet
+	{
+		public List<IfcInteger> Flags { get; set; }
+		public IfcTriangulatedIrregularNetwork() : base()
+		{
+			Flags = new List<IfcInteger>();
+		}
+		public IfcTriangulatedIrregularNetwork(IfcCartesianPointList3D Coordinates, List<List<IfcParameterValue >> Normals, IfcBoolean Closed, List<List<IfcPositiveInteger >> CoordIndex, List<IfcPositiveInteger> PnIndex, List<IfcInteger> Flags) : base (Coordinates, Normals, Closed, CoordIndex, PnIndex)
+		{
+			this.Flags = Flags;
+		}
+	}
 	/// <summary>
 	/// ENTITY IfcTrimmedCurve
 	/// <para>ENTITY IfcTrimmedCurve</para>
@@ -15453,7 +21550,7 @@
 	/// <para> WHERE</para>
 	/// <para>	Trim1ValuesConsistent : (HIINDEX(Trim1) = 1) OR (TYPEOF(Trim1[1]) <> TYPEOF(Trim1[2]));</para>
 	/// <para>	Trim2ValuesConsistent : (HIINDEX(Trim2) = 1) OR (TYPEOF(Trim2[1]) <> TYPEOF(Trim2[2]));</para>
-	/// <para>	NoTrimOfBoundedCurves : NOT('IFC4.IFCBOUNDEDCURVE' IN TYPEOF(BasisCurve));</para>
+	/// <para>	NoTrimOfBoundedCurves : NOT('IFC4X1.IFCBOUNDEDCURVE' IN TYPEOF(BasisCurve));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcTrimmedCurve : IfcBoundedCurve
@@ -15463,8 +21560,23 @@
 		public List<IfcTrimmingSelect> Trim2 { get; set; }
 		public IfcBoolean SenseAgreement { get; set; }
 		public IfcTrimmingPreference MasterRepresentation { get; set; }
+		public IfcTrimmedCurve() : base()
+		{
+			BasisCurve = new IfcCurve();
+			Trim1 = new List<IfcTrimmingSelect>();
+			Trim2 = new List<IfcTrimmingSelect>();
+			SenseAgreement = new IfcBoolean();
+			MasterRepresentation = new IfcTrimmingPreference();
+		}
+		public IfcTrimmedCurve(IfcCurve BasisCurve, List<IfcTrimmingSelect> Trim1, List<IfcTrimmingSelect> Trim2, IfcBoolean SenseAgreement, IfcTrimmingPreference MasterRepresentation) : base ()
+		{
+			this.BasisCurve = BasisCurve;
+			this.Trim1 = Trim1;
+			this.Trim2 = Trim2;
+			this.SenseAgreement = SenseAgreement;
+			this.MasterRepresentation = MasterRepresentation;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTubeBundle
 	/// <para>ENTITY IfcTubeBundle</para>
@@ -15475,14 +21587,20 @@
 	/// <para> (PredefinedType <> IfcTubeBundleTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcTubeBundleTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCTUBEBUNDLETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCTUBEBUNDLETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcTubeBundle : IfcEnergyConversionDevice
 	{
-		public IfcTubeBundleTypeEnum PredefinedType { get; set; }
+		public IfcTubeBundleTypeEnum? PredefinedType { get; set; }
+		public IfcTubeBundle() : base()
+		{
+		}
+		public IfcTubeBundle(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcTubeBundleTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTubeBundleType
 	/// <para>ENTITY IfcTubeBundleType</para>
@@ -15496,8 +21614,15 @@
 	public class IfcTubeBundleType : IfcEnergyConversionDeviceType
 	{
 		public IfcTubeBundleTypeEnum PredefinedType { get; set; }
+		public IfcTubeBundleType() : base()
+		{
+			PredefinedType = new IfcTubeBundleTypeEnum();
+		}
+		public IfcTubeBundleType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcTubeBundleTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTypeObject
 	/// <para>ENTITY IfcTypeObject</para>
@@ -15517,10 +21642,17 @@
 	/// <summary>
 	public class IfcTypeObject : IfcObjectDefinition
 	{
-		public IfcIdentifier ApplicableOccurrence { get; set; }
-		public List<IfcPropertySetDefinition> HasPropertySets { get; set; }
+		public IfcIdentifier? ApplicableOccurrence { get; set; }
+		public List<IfcPropertySetDefinition>? HasPropertySets { get; set; }
+		public IfcTypeObject() : base()
+		{
+		}
+		public IfcTypeObject(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.ApplicableOccurrence = ApplicableOccurrence;
+			this.HasPropertySets = HasPropertySets;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTypeProcess
 	/// <para>ENTITY IfcTypeProcess</para>
@@ -15538,11 +21670,19 @@
 	/// <summary>
 	public abstract class IfcTypeProcess : IfcTypeObject, IfcProcessSelect
 	{
-		public IfcIdentifier Identification { get; set; }
-		public IfcText LongDescription { get; set; }
-		public IfcLabel ProcessType { get; set; }
+		public IfcIdentifier? Identification { get; set; }
+		public IfcText? LongDescription { get; set; }
+		public IfcLabel? ProcessType { get; set; }
+		public IfcTypeProcess() : base()
+		{
+		}
+		public IfcTypeProcess(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcIdentifier Identification, IfcText LongDescription, IfcLabel ProcessType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets)
+		{
+			this.Identification = Identification;
+			this.LongDescription = LongDescription;
+			this.ProcessType = ProcessType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTypeProduct
 	/// <para>ENTITY IfcTypeProduct</para>
@@ -15559,14 +21699,19 @@
 	/// <para> WHERE</para>
 	/// <para>	ApplicableOccurrence : NOT(EXISTS(SELF\IfcTypeObject.Types[1])) OR</para>
 	/// <para>(SIZEOF(QUERY(temp <* SELF\IfcTypeObject.Types[1].RelatedObjects |</para>
-	/// <para>  NOT('IFC4.IFCPRODUCT' IN TYPEOF(temp)))</para>
+	/// <para>  NOT('IFC4X1.IFCPRODUCT' IN TYPEOF(temp)))</para>
 	/// <para>) = 0);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcTypeProduct : IfcTypeObject, IfcProductSelect
 	{
+		public IfcTypeProduct() : base()
+		{
+		}
+		public IfcTypeProduct(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcTypeResource
 	/// <para>ENTITY IfcTypeResource</para>
@@ -15582,11 +21727,19 @@
 	/// <summary>
 	public abstract class IfcTypeResource : IfcTypeObject, IfcResourceSelect
 	{
-		public IfcIdentifier Identification { get; set; }
-		public IfcText LongDescription { get; set; }
-		public IfcLabel ResourceType { get; set; }
+		public IfcIdentifier? Identification { get; set; }
+		public IfcText? LongDescription { get; set; }
+		public IfcLabel? ResourceType { get; set; }
+		public IfcTypeResource() : base()
+		{
+		}
+		public IfcTypeResource(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcIdentifier Identification, IfcText LongDescription, IfcLabel ResourceType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets)
+		{
+			this.Identification = Identification;
+			this.LongDescription = LongDescription;
+			this.ResourceType = ResourceType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcUShapeProfileDef
 	/// <para>ENTITY IfcUShapeProfileDef</para>
@@ -15609,11 +21762,27 @@
 		public IfcPositiveLengthMeasure FlangeWidth { get; set; }
 		public IfcPositiveLengthMeasure WebThickness { get; set; }
 		public IfcPositiveLengthMeasure FlangeThickness { get; set; }
-		public IfcNonNegativeLengthMeasure FilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure EdgeRadius { get; set; }
-		public IfcPlaneAngleMeasure FlangeSlope { get; set; }
+		public IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
+		public IfcNonNegativeLengthMeasure? EdgeRadius { get; set; }
+		public IfcPlaneAngleMeasure? FlangeSlope { get; set; }
+		public IfcUShapeProfileDef() : base()
+		{
+			Depth = new IfcPositiveLengthMeasure();
+			FlangeWidth = new IfcPositiveLengthMeasure();
+			WebThickness = new IfcPositiveLengthMeasure();
+			FlangeThickness = new IfcPositiveLengthMeasure();
+		}
+		public IfcUShapeProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure Depth, IfcPositiveLengthMeasure FlangeWidth, IfcPositiveLengthMeasure WebThickness, IfcPositiveLengthMeasure FlangeThickness, IfcNonNegativeLengthMeasure FilletRadius, IfcNonNegativeLengthMeasure EdgeRadius, IfcPlaneAngleMeasure FlangeSlope) : base (ProfileType, ProfileName, Position)
+		{
+			this.Depth = Depth;
+			this.FlangeWidth = FlangeWidth;
+			this.WebThickness = WebThickness;
+			this.FlangeThickness = FlangeThickness;
+			this.FilletRadius = FilletRadius;
+			this.EdgeRadius = EdgeRadius;
+			this.FlangeSlope = FlangeSlope;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcUnitAssignment;
 	/// <para>ENTITY IfcUnitAssignment;</para>
@@ -15625,8 +21794,15 @@
 	public class IfcUnitAssignmentENTITY
 	{
 		public List<IfcUnit> Units { get; set; }
+		public IfcUnitAssignment() : base()
+		{
+			Units = new List<IfcUnit>();
+		}
+		public IfcUnitAssignment(List<IfcUnit> Units) : base ()
+		{
+			this.Units = Units;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcUnitaryControlElement
 	/// <para>ENTITY IfcUnitaryControlElement</para>
@@ -15637,14 +21813,20 @@
 	/// <para> (PredefinedType <> IfcUnitaryControlElementTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcUnitaryControlElementTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>('IFC4.IFCUNITARYCONTROLELEMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>('IFC4X1.IFCUNITARYCONTROLELEMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcUnitaryControlElement : IfcDistributionControlElement
 	{
-		public IfcUnitaryControlElementTypeEnum PredefinedType { get; set; }
+		public IfcUnitaryControlElementTypeEnum? PredefinedType { get; set; }
+		public IfcUnitaryControlElement() : base()
+		{
+		}
+		public IfcUnitaryControlElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcUnitaryControlElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcUnitaryControlElementType
 	/// <para>ENTITY IfcUnitaryControlElementType</para>
@@ -15658,8 +21840,15 @@
 	public class IfcUnitaryControlElementType : IfcDistributionControlElementType
 	{
 		public IfcUnitaryControlElementTypeEnum PredefinedType { get; set; }
+		public IfcUnitaryControlElementType() : base()
+		{
+			PredefinedType = new IfcUnitaryControlElementTypeEnum();
+		}
+		public IfcUnitaryControlElementType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcUnitaryControlElementTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcUnitaryEquipment
 	/// <para>ENTITY IfcUnitaryEquipment</para>
@@ -15670,14 +21859,20 @@
 	/// <para> (PredefinedType <> IfcUnitaryEquipmentTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcUnitaryEquipmentTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCUNITARYEQUIPMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCUNITARYEQUIPMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcUnitaryEquipment : IfcEnergyConversionDevice
 	{
-		public IfcUnitaryEquipmentTypeEnum PredefinedType { get; set; }
+		public IfcUnitaryEquipmentTypeEnum? PredefinedType { get; set; }
+		public IfcUnitaryEquipment() : base()
+		{
+		}
+		public IfcUnitaryEquipment(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcUnitaryEquipmentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcUnitaryEquipmentType
 	/// <para>ENTITY IfcUnitaryEquipmentType</para>
@@ -15691,8 +21886,15 @@
 	public class IfcUnitaryEquipmentType : IfcEnergyConversionDeviceType
 	{
 		public IfcUnitaryEquipmentTypeEnum PredefinedType { get; set; }
+		public IfcUnitaryEquipmentType() : base()
+		{
+			PredefinedType = new IfcUnitaryEquipmentTypeEnum();
+		}
+		public IfcUnitaryEquipmentType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcUnitaryEquipmentTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcValve
 	/// <para>ENTITY IfcValve</para>
@@ -15703,14 +21905,20 @@
 	/// <para> (PredefinedType <> IfcValveTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcValveTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCVALVETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCVALVETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcValve : IfcFlowController
 	{
-		public IfcValveTypeEnum PredefinedType { get; set; }
+		public IfcValveTypeEnum? PredefinedType { get; set; }
+		public IfcValve() : base()
+		{
+		}
+		public IfcValve(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcValveTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcValveType
 	/// <para>ENTITY IfcValveType</para>
@@ -15724,8 +21932,15 @@
 	public class IfcValveType : IfcFlowControllerType
 	{
 		public IfcValveTypeEnum PredefinedType { get; set; }
+		public IfcValveType() : base()
+		{
+			PredefinedType = new IfcValveTypeEnum();
+		}
+		public IfcValveType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcValveTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcVector
 	/// <para>ENTITY IfcVector</para>
@@ -15742,8 +21957,17 @@
 	{
 		public IfcDirection Orientation { get; set; }
 		public IfcLengthMeasure Magnitude { get; set; }
+		public IfcVector() : base()
+		{
+			Orientation = new IfcDirection();
+			Magnitude = new IfcLengthMeasure();
+		}
+		public IfcVector(IfcDirection Orientation, IfcLengthMeasure Magnitude) : base ()
+		{
+			this.Orientation = Orientation;
+			this.Magnitude = Magnitude;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcVertex
 	/// <para>ENTITY IfcVertex</para>
@@ -15754,8 +21978,13 @@
 	/// <summary>
 	public class IfcVertex : IfcTopologicalRepresentationItem
 	{
+		public IfcVertex() : base()
+		{
+		}
+		public IfcVertex() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcVertexLoop
 	/// <para>ENTITY IfcVertexLoop</para>
@@ -15766,8 +21995,15 @@
 	public class IfcVertexLoop : IfcLoop
 	{
 		public IfcVertex LoopVertex { get; set; }
+		public IfcVertexLoop() : base()
+		{
+			LoopVertex = new IfcVertex();
+		}
+		public IfcVertexLoop(IfcVertex LoopVertex) : base ()
+		{
+			this.LoopVertex = LoopVertex;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcVertexPoint
 	/// <para>ENTITY IfcVertexPoint</para>
@@ -15778,8 +22014,15 @@
 	public class IfcVertexPoint : IfcVertex, IfcPointOrVertexPoint
 	{
 		public IfcPoint VertexGeometry { get; set; }
+		public IfcVertexPoint() : base()
+		{
+			VertexGeometry = new IfcPoint();
+		}
+		public IfcVertexPoint(IfcPoint VertexGeometry) : base ()
+		{
+			this.VertexGeometry = VertexGeometry;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcVibrationIsolator
 	/// <para>ENTITY IfcVibrationIsolator</para>
@@ -15790,14 +22033,20 @@
 	/// <para> (PredefinedType <> IfcVibrationIsolatorTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCVIBRATIONISOLATORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCVIBRATIONISOLATORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcVibrationIsolator : IfcElementComponent
 	{
-		public IfcVibrationIsolatorTypeEnum PredefinedType { get; set; }
+		public IfcVibrationIsolatorTypeEnum? PredefinedType { get; set; }
+		public IfcVibrationIsolator() : base()
+		{
+		}
+		public IfcVibrationIsolator(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcVibrationIsolatorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcVibrationIsolatorType
 	/// <para>ENTITY IfcVibrationIsolatorType</para>
@@ -15811,8 +22060,15 @@
 	public class IfcVibrationIsolatorType : IfcElementComponentType
 	{
 		public IfcVibrationIsolatorTypeEnum PredefinedType { get; set; }
+		public IfcVibrationIsolatorType() : base()
+		{
+			PredefinedType = new IfcVibrationIsolatorTypeEnum();
+		}
+		public IfcVibrationIsolatorType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcVibrationIsolatorTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcVirtualElement
 	/// <para>ENTITY IfcVirtualElement</para>
@@ -15821,8 +22077,13 @@
 	/// <summary>
 	public class IfcVirtualElement : IfcElement
 	{
+		public IfcVirtualElement() : base()
+		{
+		}
+		public IfcVirtualElement(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcVirtualGridIntersection;
 	/// <para>ENTITY IfcVirtualGridIntersection;</para>
@@ -15832,8 +22093,13 @@
 	/// <summary>
 	public class IfcVirtualGridIntersectionENTITY, IfcGridPlacementDirectionSelect
 	{
+		public IfcVirtualGridIntersection() : base()
+		{
+		}
+		public IfcVirtualGridIntersection() : base ()
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcVoidingFeature
 	/// <para>ENTITY IfcVoidingFeature</para>
@@ -15845,9 +22111,15 @@
 	/// <summary>
 	public class IfcVoidingFeature : IfcFeatureElementSubtraction
 	{
-		public IfcVoidingFeatureTypeEnum PredefinedType { get; set; }
+		public IfcVoidingFeatureTypeEnum? PredefinedType { get; set; }
+		public IfcVoidingFeature() : base()
+		{
+		}
+		public IfcVoidingFeature(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcVoidingFeatureTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWall
 	/// <para>ENTITY IfcWall</para>
@@ -15861,14 +22133,20 @@
 	/// <para> (PredefinedType <> IfcWallTypeEnum.USERDEFINED) OR</para>
 	/// <para> ((PredefinedType = IfcWallTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR</para>
-	/// <para>  ('IFC4.IFCWALLTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCWALLTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcWall : IfcBuildingElement
 	{
-		public IfcWallTypeEnum PredefinedType { get; set; }
+		public IfcWallTypeEnum? PredefinedType { get; set; }
+		public IfcWall() : base()
+		{
+		}
+		public IfcWall(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcWallTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWallElementedCase
 	/// <para>ENTITY IfcWallElementedCase</para>
@@ -15879,23 +22157,33 @@
 	/// <summary>
 	public class IfcWallElementedCase : IfcWall
 	{
+		public IfcWallElementedCase() : base()
+		{
+		}
+		public IfcWallElementedCase(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcWallTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, PredefinedType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWallStandardCase
 	/// <para>ENTITY IfcWallStandardCase</para>
 	/// <para> SUBTYPE OF (IfcWall);</para>
 	/// <para> WHERE</para>
-	/// <para>	HasMaterialLayerSetUsage : SIZEOF (QUERY(temp <* USEDIN(SELF, 'IFC4.IFCRELASSOCIATES.RELATEDOBJECTS') |</para>
-	/// <para>              ('IFC4.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)) AND</para>
-	/// <para>              ('IFC4.IFCMATERIALLAYERSETUSAGE' IN TYPEOF(temp.RelatingMaterial))</para>
+	/// <para>	HasMaterialLayerSetUsage : SIZEOF (QUERY(temp <* USEDIN(SELF, 'IFC4X1.IFCRELASSOCIATES.RELATEDOBJECTS') |</para>
+	/// <para>              ('IFC4X1.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)) AND</para>
+	/// <para>              ('IFC4X1.IFCMATERIALLAYERSETUSAGE' IN TYPEOF(temp.RelatingMaterial))</para>
 	/// <para>              )) = 1;</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcWallStandardCase : IfcWall
 	{
+		public IfcWallStandardCase() : base()
+		{
+		}
+		public IfcWallStandardCase(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcWallTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, PredefinedType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWallType
 	/// <para>ENTITY IfcWallType</para>
@@ -15909,8 +22197,15 @@
 	public class IfcWallType : IfcBuildingElementType
 	{
 		public IfcWallTypeEnum PredefinedType { get; set; }
+		public IfcWallType() : base()
+		{
+			PredefinedType = new IfcWallTypeEnum();
+		}
+		public IfcWallType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcWallTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWasteTerminal
 	/// <para>ENTITY IfcWasteTerminal</para>
@@ -15921,14 +22216,20 @@
 	/// <para> (PredefinedType <> IfcWasteTerminalTypeEnum.USERDEFINED) OR </para>
 	/// <para> ((PredefinedType = IfcWasteTerminalTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</para>
 	/// <para>	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR </para>
-	/// <para>  ('IFC4.IFCWASTETERMINALTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>  ('IFC4X1.IFCWASTETERMINALTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcWasteTerminal : IfcFlowTerminal
 	{
-		public IfcWasteTerminalTypeEnum PredefinedType { get; set; }
+		public IfcWasteTerminalTypeEnum? PredefinedType { get; set; }
+		public IfcWasteTerminal() : base()
+		{
+		}
+		public IfcWasteTerminal(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcWasteTerminalTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWasteTerminalType
 	/// <para>ENTITY IfcWasteTerminalType</para>
@@ -15942,8 +22243,15 @@
 	public class IfcWasteTerminalType : IfcFlowTerminalType
 	{
 		public IfcWasteTerminalTypeEnum PredefinedType { get; set; }
+		public IfcWasteTerminalType() : base()
+		{
+			PredefinedType = new IfcWasteTerminalTypeEnum();
+		}
+		public IfcWasteTerminalType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcWasteTerminalTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWindow
 	/// <para>ENTITY IfcWindow</para>
@@ -15957,18 +22265,28 @@
 	/// <para>	UserDefinedPartitioningType : OPTIONAL IfcLabel;</para>
 	/// <para> WHERE</para>
 	/// <para>	CorrectStyleAssigned : (SIZEOF(IsTypedBy) = 0) </para>
-	/// <para>OR ('IFC4.IFCWINDOWTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
+	/// <para>OR ('IFC4X1.IFCWINDOWTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcWindow : IfcBuildingElement
 	{
-		public IfcPositiveLengthMeasure OverallHeight { get; set; }
-		public IfcPositiveLengthMeasure OverallWidth { get; set; }
-		public IfcWindowTypeEnum PredefinedType { get; set; }
-		public IfcWindowTypePartitioningEnum PartitioningType { get; set; }
-		public IfcLabel UserDefinedPartitioningType { get; set; }
+		public IfcPositiveLengthMeasure? OverallHeight { get; set; }
+		public IfcPositiveLengthMeasure? OverallWidth { get; set; }
+		public IfcWindowTypeEnum? PredefinedType { get; set; }
+		public IfcWindowTypePartitioningEnum? PartitioningType { get; set; }
+		public IfcLabel? UserDefinedPartitioningType { get; set; }
+		public IfcWindow() : base()
+		{
+		}
+		public IfcWindow(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcPositiveLengthMeasure OverallHeight, IfcPositiveLengthMeasure OverallWidth, IfcWindowTypeEnum PredefinedType, IfcWindowTypePartitioningEnum PartitioningType, IfcLabel UserDefinedPartitioningType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
+		{
+			this.OverallHeight = OverallHeight;
+			this.OverallWidth = OverallWidth;
+			this.PredefinedType = PredefinedType;
+			this.PartitioningType = PartitioningType;
+			this.UserDefinedPartitioningType = UserDefinedPartitioningType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWindowLiningProperties
 	/// <para>ENTITY IfcWindowLiningProperties</para>
@@ -15992,28 +22310,45 @@
 	/// <para>	WR34 : (EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) </para>
 	/// <para>AND </para>
 	/// <para>(</para>
-	/// <para> ('IFC4.IFCWINDOWTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
+	/// <para> ('IFC4X1.IFCWINDOWTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
 	/// <para>  OR</para>
-	/// <para> ('IFC4.IFCWINDOWSTYLE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
+	/// <para> ('IFC4X1.IFCWINDOWSTYLE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
 	/// <para>);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcWindowLiningProperties : IfcPreDefinedPropertySet
 	{
-		public IfcPositiveLengthMeasure LiningDepth { get; set; }
-		public IfcNonNegativeLengthMeasure LiningThickness { get; set; }
-		public IfcNonNegativeLengthMeasure TransomThickness { get; set; }
-		public IfcNonNegativeLengthMeasure MullionThickness { get; set; }
-		public IfcNormalisedRatioMeasure FirstTransomOffset { get; set; }
-		public IfcNormalisedRatioMeasure SecondTransomOffset { get; set; }
-		public IfcNormalisedRatioMeasure FirstMullionOffset { get; set; }
-		public IfcNormalisedRatioMeasure SecondMullionOffset { get; set; }
-		public IfcShapeAspect ShapeAspectStyle { get; set; }
-		public IfcLengthMeasure LiningOffset { get; set; }
-		public IfcLengthMeasure LiningToPanelOffsetX { get; set; }
-		public IfcLengthMeasure LiningToPanelOffsetY { get; set; }
+		public IfcPositiveLengthMeasure? LiningDepth { get; set; }
+		public IfcNonNegativeLengthMeasure? LiningThickness { get; set; }
+		public IfcNonNegativeLengthMeasure? TransomThickness { get; set; }
+		public IfcNonNegativeLengthMeasure? MullionThickness { get; set; }
+		public IfcNormalisedRatioMeasure? FirstTransomOffset { get; set; }
+		public IfcNormalisedRatioMeasure? SecondTransomOffset { get; set; }
+		public IfcNormalisedRatioMeasure? FirstMullionOffset { get; set; }
+		public IfcNormalisedRatioMeasure? SecondMullionOffset { get; set; }
+		public IfcShapeAspect? ShapeAspectStyle { get; set; }
+		public IfcLengthMeasure? LiningOffset { get; set; }
+		public IfcLengthMeasure? LiningToPanelOffsetX { get; set; }
+		public IfcLengthMeasure? LiningToPanelOffsetY { get; set; }
+		public IfcWindowLiningProperties() : base()
+		{
+		}
+		public IfcWindowLiningProperties(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcPositiveLengthMeasure LiningDepth, IfcNonNegativeLengthMeasure LiningThickness, IfcNonNegativeLengthMeasure TransomThickness, IfcNonNegativeLengthMeasure MullionThickness, IfcNormalisedRatioMeasure FirstTransomOffset, IfcNormalisedRatioMeasure SecondTransomOffset, IfcNormalisedRatioMeasure FirstMullionOffset, IfcNormalisedRatioMeasure SecondMullionOffset, IfcShapeAspect ShapeAspectStyle, IfcLengthMeasure LiningOffset, IfcLengthMeasure LiningToPanelOffsetX, IfcLengthMeasure LiningToPanelOffsetY) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.LiningDepth = LiningDepth;
+			this.LiningThickness = LiningThickness;
+			this.TransomThickness = TransomThickness;
+			this.MullionThickness = MullionThickness;
+			this.FirstTransomOffset = FirstTransomOffset;
+			this.SecondTransomOffset = SecondTransomOffset;
+			this.FirstMullionOffset = FirstMullionOffset;
+			this.SecondMullionOffset = SecondMullionOffset;
+			this.ShapeAspectStyle = ShapeAspectStyle;
+			this.LiningOffset = LiningOffset;
+			this.LiningToPanelOffsetX = LiningToPanelOffsetX;
+			this.LiningToPanelOffsetY = LiningToPanelOffsetY;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWindowPanelProperties
 	/// <para>ENTITY IfcWindowPanelProperties</para>
@@ -16027,9 +22362,9 @@
 	/// <para>	ApplicableToType : (EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) </para>
 	/// <para>AND </para>
 	/// <para>(</para>
-	/// <para> ('IFC4.IFCWINDOWTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
+	/// <para> ('IFC4X1.IFCWINDOWTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
 	/// <para>  OR</para>
-	/// <para> ('IFC4.IFCWINDOWSTYLE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
+	/// <para> ('IFC4X1.IFCWINDOWSTYLE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</para>
 	/// <para>);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
@@ -16037,11 +22372,23 @@
 	{
 		public IfcWindowPanelOperationEnum OperationType { get; set; }
 		public IfcWindowPanelPositionEnum PanelPosition { get; set; }
-		public IfcPositiveLengthMeasure FrameDepth { get; set; }
-		public IfcPositiveLengthMeasure FrameThickness { get; set; }
-		public IfcShapeAspect ShapeAspectStyle { get; set; }
+		public IfcPositiveLengthMeasure? FrameDepth { get; set; }
+		public IfcPositiveLengthMeasure? FrameThickness { get; set; }
+		public IfcShapeAspect? ShapeAspectStyle { get; set; }
+		public IfcWindowPanelProperties() : base()
+		{
+			OperationType = new IfcWindowPanelOperationEnum();
+			PanelPosition = new IfcWindowPanelPositionEnum();
+		}
+		public IfcWindowPanelProperties(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcWindowPanelOperationEnum OperationType, IfcWindowPanelPositionEnum PanelPosition, IfcPositiveLengthMeasure FrameDepth, IfcPositiveLengthMeasure FrameThickness, IfcShapeAspect ShapeAspectStyle) : base (GlobalId, OwnerHistory, Name, Description)
+		{
+			this.OperationType = OperationType;
+			this.PanelPosition = PanelPosition;
+			this.FrameDepth = FrameDepth;
+			this.FrameThickness = FrameThickness;
+			this.ShapeAspectStyle = ShapeAspectStyle;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWindowStandardCase
 	/// <para>ENTITY IfcWindowStandardCase</para>
@@ -16050,8 +22397,13 @@
 	/// <summary>
 	public class IfcWindowStandardCase : IfcWindow
 	{
+		public IfcWindowStandardCase() : base()
+		{
+		}
+		public IfcWindowStandardCase(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcObjectPlacement ObjectPlacement, IfcProductRepresentation Representation, IfcIdentifier Tag, IfcPositiveLengthMeasure OverallHeight, IfcPositiveLengthMeasure OverallWidth, IfcWindowTypeEnum PredefinedType, IfcWindowTypePartitioningEnum PartitioningType, IfcLabel UserDefinedPartitioningType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, OverallHeight, OverallWidth, PredefinedType, PartitioningType, UserDefinedPartitioningType)
+		{
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWindowStyle
 	/// <para>ENTITY IfcWindowStyle</para>
@@ -16068,8 +22420,21 @@
 		public IfcWindowStyleOperationEnum OperationType { get; set; }
 		public IfcBoolean ParameterTakesPrecedence { get; set; }
 		public IfcBoolean Sizeable { get; set; }
+		public IfcWindowStyle() : base()
+		{
+			ConstructionType = new IfcWindowStyleConstructionEnum();
+			OperationType = new IfcWindowStyleOperationEnum();
+			ParameterTakesPrecedence = new IfcBoolean();
+			Sizeable = new IfcBoolean();
+		}
+		public IfcWindowStyle(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcWindowStyleConstructionEnum ConstructionType, IfcWindowStyleOperationEnum OperationType, IfcBoolean ParameterTakesPrecedence, IfcBoolean Sizeable) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets)
+		{
+			this.ConstructionType = ConstructionType;
+			this.OperationType = OperationType;
+			this.ParameterTakesPrecedence = ParameterTakesPrecedence;
+			this.Sizeable = Sizeable;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWindowType
 	/// <para>ENTITY IfcWindowType</para>
@@ -16087,10 +22452,21 @@
 	{
 		public IfcWindowTypeEnum PredefinedType { get; set; }
 		public IfcWindowTypePartitioningEnum PartitioningType { get; set; }
-		public IfcBoolean ParameterTakesPrecedence { get; set; }
-		public IfcLabel UserDefinedPartitioningType { get; set; }
+		public IfcBoolean? ParameterTakesPrecedence { get; set; }
+		public IfcLabel? UserDefinedPartitioningType { get; set; }
+		public IfcWindowType() : base()
+		{
+			PredefinedType = new IfcWindowTypeEnum();
+			PartitioningType = new IfcWindowTypePartitioningEnum();
+		}
+		public IfcWindowType(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcIdentifier ApplicableOccurrence, List<IfcPropertySetDefinition> HasPropertySets, IfcLabel ElementType, IfcWindowTypeEnum PredefinedType, IfcWindowTypePartitioningEnum PartitioningType, IfcBoolean ParameterTakesPrecedence, IfcLabel UserDefinedPartitioningType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, ElementType)
+		{
+			this.PredefinedType = PredefinedType;
+			this.PartitioningType = PartitioningType;
+			this.ParameterTakesPrecedence = ParameterTakesPrecedence;
+			this.UserDefinedPartitioningType = UserDefinedPartitioningType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWorkCalendar
 	/// <para>ENTITY IfcWorkCalendar</para>
@@ -16105,11 +22481,19 @@
 	/// <summary>
 	public class IfcWorkCalendar : IfcControl
 	{
-		public List<IfcWorkTime> WorkingTimes { get; set; }
-		public List<IfcWorkTime> ExceptionTimes { get; set; }
-		public IfcWorkCalendarTypeEnum PredefinedType { get; set; }
+		public List<IfcWorkTime>? WorkingTimes { get; set; }
+		public List<IfcWorkTime>? ExceptionTimes { get; set; }
+		public IfcWorkCalendarTypeEnum? PredefinedType { get; set; }
+		public IfcWorkCalendar() : base()
+		{
+		}
+		public IfcWorkCalendar(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, List<IfcWorkTime> WorkingTimes, List<IfcWorkTime> ExceptionTimes, IfcWorkCalendarTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification)
+		{
+			this.WorkingTimes = WorkingTimes;
+			this.ExceptionTimes = ExceptionTimes;
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWorkControl
 	/// <para>ENTITY IfcWorkControl</para>
@@ -16129,14 +22513,28 @@
 	public abstract class IfcWorkControl : IfcControl
 	{
 		public IfcDateTime CreationDate { get; set; }
-		public List<IfcPerson> Creators { get; set; }
-		public IfcLabel Purpose { get; set; }
-		public IfcDuration Duration { get; set; }
-		public IfcDuration TotalFloat { get; set; }
+		public List<IfcPerson>? Creators { get; set; }
+		public IfcLabel? Purpose { get; set; }
+		public IfcDuration? Duration { get; set; }
+		public IfcDuration? TotalFloat { get; set; }
 		public IfcDateTime StartTime { get; set; }
-		public IfcDateTime FinishTime { get; set; }
+		public IfcDateTime? FinishTime { get; set; }
+		public IfcWorkControl() : base()
+		{
+			CreationDate = new IfcDateTime();
+			StartTime = new IfcDateTime();
+		}
+		public IfcWorkControl(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcDateTime CreationDate, List<IfcPerson> Creators, IfcLabel Purpose, IfcDuration Duration, IfcDuration TotalFloat, IfcDateTime StartTime, IfcDateTime FinishTime) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification)
+		{
+			this.CreationDate = CreationDate;
+			this.Creators = Creators;
+			this.Purpose = Purpose;
+			this.Duration = Duration;
+			this.TotalFloat = TotalFloat;
+			this.StartTime = StartTime;
+			this.FinishTime = FinishTime;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWorkPlan
 	/// <para>ENTITY IfcWorkPlan</para>
@@ -16149,9 +22547,15 @@
 	/// <summary>
 	public class IfcWorkPlan : IfcWorkControl
 	{
-		public IfcWorkPlanTypeEnum PredefinedType { get; set; }
+		public IfcWorkPlanTypeEnum? PredefinedType { get; set; }
+		public IfcWorkPlan() : base()
+		{
+		}
+		public IfcWorkPlan(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcDateTime CreationDate, List<IfcPerson> Creators, IfcLabel Purpose, IfcDuration Duration, IfcDuration TotalFloat, IfcDateTime StartTime, IfcDateTime FinishTime, IfcWorkPlanTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification, CreationDate, Creators, Purpose, Duration, TotalFloat, StartTime, FinishTime)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWorkSchedule
 	/// <para>ENTITY IfcWorkSchedule</para>
@@ -16164,9 +22568,15 @@
 	/// <summary>
 	public class IfcWorkSchedule : IfcWorkControl
 	{
-		public IfcWorkScheduleTypeEnum PredefinedType { get; set; }
+		public IfcWorkScheduleTypeEnum? PredefinedType { get; set; }
+		public IfcWorkSchedule() : base()
+		{
+		}
+		public IfcWorkSchedule(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcIdentifier Identification, IfcDateTime CreationDate, List<IfcPerson> Creators, IfcLabel Purpose, IfcDuration Duration, IfcDuration TotalFloat, IfcDateTime StartTime, IfcDateTime FinishTime, IfcWorkScheduleTypeEnum PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, Identification, CreationDate, Creators, Purpose, Duration, TotalFloat, StartTime, FinishTime)
+		{
+			this.PredefinedType = PredefinedType;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcWorkTime
 	/// <para>ENTITY IfcWorkTime</para>
@@ -16178,11 +22588,19 @@
 	/// <summary>
 	public class IfcWorkTime : IfcSchedulingTime
 	{
-		public IfcRecurrencePattern RecurrencePattern { get; set; }
-		public IfcDate Start { get; set; }
-		public IfcDate Finish { get; set; }
+		public IfcRecurrencePattern? RecurrencePattern { get; set; }
+		public IfcDate? Start { get; set; }
+		public IfcDate? Finish { get; set; }
+		public IfcWorkTime() : base()
+		{
+		}
+		public IfcWorkTime(IfcLabel Name, IfcDataOriginEnum DataOrigin, IfcLabel UserDefinedDataOrigin, IfcRecurrencePattern RecurrencePattern, IfcDate Start, IfcDate Finish) : base (Name, DataOrigin, UserDefinedDataOrigin)
+		{
+			this.RecurrencePattern = RecurrencePattern;
+			this.Start = Start;
+			this.Finish = Finish;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcZShapeProfileDef
 	/// <para>ENTITY IfcZShapeProfileDef</para>
@@ -16203,10 +22621,25 @@
 		public IfcPositiveLengthMeasure FlangeWidth { get; set; }
 		public IfcPositiveLengthMeasure WebThickness { get; set; }
 		public IfcPositiveLengthMeasure FlangeThickness { get; set; }
-		public IfcNonNegativeLengthMeasure FilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure EdgeRadius { get; set; }
+		public IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
+		public IfcNonNegativeLengthMeasure? EdgeRadius { get; set; }
+		public IfcZShapeProfileDef() : base()
+		{
+			Depth = new IfcPositiveLengthMeasure();
+			FlangeWidth = new IfcPositiveLengthMeasure();
+			WebThickness = new IfcPositiveLengthMeasure();
+			FlangeThickness = new IfcPositiveLengthMeasure();
+		}
+		public IfcZShapeProfileDef(IfcProfileTypeEnum ProfileType, IfcLabel ProfileName, IfcAxis2Placement2D Position, IfcPositiveLengthMeasure Depth, IfcPositiveLengthMeasure FlangeWidth, IfcPositiveLengthMeasure WebThickness, IfcPositiveLengthMeasure FlangeThickness, IfcNonNegativeLengthMeasure FilletRadius, IfcNonNegativeLengthMeasure EdgeRadius) : base (ProfileType, ProfileName, Position)
+		{
+			this.Depth = Depth;
+			this.FlangeWidth = FlangeWidth;
+			this.WebThickness = WebThickness;
+			this.FlangeThickness = FlangeThickness;
+			this.FilletRadius = FilletRadius;
+			this.EdgeRadius = EdgeRadius;
+		}
 	}
---------------------------------
 	/// <summary>
 	/// ENTITY IfcZone
 	/// <para>ENTITY IfcZone</para>
@@ -16215,14 +22648,20 @@
 	/// <para> WHERE</para>
 	/// <para>	WR1 : (SIZEOF(SELF\IfcGroup.IsGroupedBy) = 0) OR</para>
 	/// <para>	(SIZEOF (QUERY (temp <* SELF\IfcGroup.IsGroupedBy[1].RelatedObjects |  </para>
-	/// <para>		NOT(('IFC4.IFCZONE' IN TYPEOF(temp)) OR </para>
-	/// <para>		('IFC4.IFCSPACE' IN TYPEOF(temp)) OR</para>
-	/// <para>		('IFC4.IFCSPATIALZONE' IN TYPEOF(temp))</para>
+	/// <para>		NOT(('IFC4X1.IFCZONE' IN TYPEOF(temp)) OR </para>
+	/// <para>		('IFC4X1.IFCSPACE' IN TYPEOF(temp)) OR</para>
+	/// <para>		('IFC4X1.IFCSPATIALZONE' IN TYPEOF(temp))</para>
 	/// <para>	))) = 0);</para>
 	/// <para>END_ENTITY;</para>
 	/// <summary>
 	public class IfcZone : IfcSystem
 	{
-		public IfcLabel LongName { get; set; }
+		public IfcLabel? LongName { get; set; }
+		public IfcZone() : base()
+		{
+		}
+		public IfcZone(IfcGloballyUniqueId GlobalId, IfcOwnerHistory OwnerHistory, IfcLabel Name, IfcText Description, IfcLabel ObjectType, IfcLabel LongName) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
+		{
+			this.LongName = LongName;
+		}
 	}
---------------------------------
