@@ -41,12 +41,10 @@
 
             // constructor
             texts.Add("\t{");
-            texts.Add("\t\t" + Name + "() { }");
-            texts.Add("\t\t" + Name + "(" + cSharpText + " value) { Value = value; }");
+            texts.Add("\t\tpublic " + Name + "() : base () { }");
+            texts.Add("\t\tpublic " + Name + "(" + cSharpText + " value) : base (value) { }");
             // implicit operator
-            texts.Add("\t\tpublic static implicit operator " + Name + "(" + cSharpText + " value) { return new " + Name +"(" + cSharpText +");}");
-            texts.Add("\t\tpublic static implicit operator " + cSharpText + "(" + Name + " value) { return value.Value;}");
-
+            texts.AddRange(DataSet.GetImplicitText(Name, cSharpText));
             texts.Add("\t}");
 
             return texts;

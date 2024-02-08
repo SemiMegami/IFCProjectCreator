@@ -17,6 +17,8 @@ namespace IFCProjectCreator
 
         public IFCAttribute()
         {
+            Name = "";
+            TypeName = "";
             AttributeType = IFCAttributeType.SINGLE;
             Aggregation = IFCAggregation.NONE;
         }
@@ -47,13 +49,10 @@ namespace IFCProjectCreator
             {
                 case IFCAttributeType.SINGLE:
                     return TypeName;
-                    break;
                 case IFCAttributeType.LIST:
                     return "List<" + TypeName + ">";
-                    break;
                 case IFCAttributeType.LISTLIST:
                     return"List<List<" + TypeName + " >>";
-                    break;
             }
             return TypeName;
         }

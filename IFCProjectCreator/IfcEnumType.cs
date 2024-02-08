@@ -23,13 +23,23 @@
             texts.Add("\t{");
             foreach (string enumValue in EnumValues)
             {
-                texts.Add("\t\tpublic static string " + enumValue + " { get {return \"" + enumValue +"\";} }"  );
+                texts.Add("\t\tpublic static string " + enumValue + " { get {return \"." + enumValue +".\";} }"  );
             }
-            // implicit operator
-            string cSharpText = "string";
-            texts.Add("\t\tpublic static implicit operator " + Name + "(" + cSharpText + " value) { return new " + Name + "(" + cSharpText + ");}");
-            texts.Add("\t\tpublic static implicit operator " + cSharpText + "(" + Name + " value) { return value.Value;}");
+            texts.Add("\t\tpublic string Value;");
+            if(EnumValues.Count > 0)
+            {
+                texts.Add("\t\tpublic " + Name + "() { Value = \"." + EnumValues[0] + ".\";}");
+                
+            }
+            else
+            {
+                texts.Add("\t\tpublic " + Name + "() { Value = \"\";}");
+            }
+            
+            texts.Add("\t\tpublic " + Name + "(" + "string" + " value) { Value = value; }");
 
+            // implicit operator
+            texts.AddRange(DataSet.GetImplicitText(Name, "string"));
 
             texts.Add("\t}");
             return texts;

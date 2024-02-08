@@ -30,7 +30,7 @@ namespace IFCProjectCreator
         /// <summary>
         /// ParameterClassAttributes including from parent
         /// </summary>
-        List<IFCParameterAttribute> ParameterAttributes
+        public List<IFCParameterAttribute> ParameterAttributes
         {
             get
             {
@@ -43,7 +43,7 @@ namespace IFCProjectCreator
         /// <summary>
         /// ParameterClassAttributes from parents
         /// </summary>
-        List<IFCParameterAttribute> ParentParameterAttributes
+        public List<IFCParameterAttribute> ParentParameterAttributes
         {
             get
             {
@@ -55,6 +55,26 @@ namespace IFCProjectCreator
                 return attributes;
             }
         }
+
+        /// <summary>
+        /// ParameterClassAttributes including from parent
+        /// </summary>
+        public List<IFCEntity> ParentClasses
+        {
+            get
+            {
+                if (ParentClass == null)
+                {
+                    return new List<IFCEntity>();
+                }
+                List<IFCEntity> classes = ParentClass.ParentClasses;
+                classes.Add(ParentClass);
+                return classes;
+            }
+        }
+      
+
+
 
         public override void ReadEXP(StreamReader reader, string header)
         {
@@ -71,21 +91,17 @@ namespace IFCProjectCreator
                   
                     ParentName = words[nW - 1].Replace(";", "").Replace("(", "").Replace(")", "");
                 }
-
                 // Set Abstract
                 if (line.Contains("ABSTRACT"))
                 {
                     IsAbstract = true;
                 }
-
                 // Set reading mode
                 if (line.Contains("INVERSE") || line.Contains("DERIVE") || line.Contains("WHERE") || line.Contains("UNIQUE"))
                 {
                     AttributeType = line.Replace(" ", "");
                 }
-
                 // Read Attributes
-
                 if (line.Contains(':'))
                 {
                     if (AttributeType == "")
@@ -106,7 +122,15 @@ namespace IFCProjectCreator
                             }
                         }
                         IFCDeriveAttribute IFCAttribute = new IFCDeriveAttribute();
-                        IFCAttribute.DeriveText = line.Split(" := ")[1];
+                        string[] strings = line.Split(" := ");
+                        if(strings.Length > 1)
+                        {
+                            IFCAttribute.DeriveText = line.Split(" := ")[1];
+                        }
+                        else
+                        {
+                            IFCAttribute.DeriveText = reader.ReadLine()?? "";
+                        }
                         SetAttributeType(IFCAttribute, line, splitIndex);
                         DeriveAttributes.Add(IFCAttribute);
                     }
@@ -135,10 +159,22 @@ namespace IFCProjectCreator
 
             string[] words = line.Replace("\t", "").Split(" ");
 
+            // coorect attribute name
             IFCAttribute.Name = words[0];
-            IFCAttribute.TypeName = words[splitIndex - 1].Replace(";","");
-            int ofCount = 0;
+            if (IFCAttribute.Name.Contains("."))
+            {
+                string[] splitedName = IFCAttribute.Name.Split(".");
+                IFCAttribute.Name = splitedName[splitedName.Length - 1];
+            }
 
+            // correct attibute type name
+            IFCAttribute.TypeName = words[splitIndex - 1].Replace(";","");
+            if( IFCAttribute.TypeName == "BINARY(32)")
+            {
+                IFCAttribute.TypeName = "INTEGER";
+            }
+
+            int ofCount = 0;
             for (int i = 0; i < splitIndex; i++)
             {
                 if (words[i] == "OF")
@@ -185,7 +221,16 @@ namespace IFCProjectCreator
             texts.Add(GetCSharpHeaderText());
                  
             texts.Add("\t{");
+
             foreach(var attribute in ParameterClassAttributes)
+            {
+                texts.AddRange(attribute.GetCSharpText());
+            }
+            foreach (var attribute in DeriveAttributes)
+            {
+                texts.AddRange(attribute.GetCSharpText());
+            }
+            foreach (var attribute in InverseAttributes)
             {
                 texts.AddRange(attribute.GetCSharpText());
             }
@@ -193,36 +238,32 @@ namespace IFCProjectCreator
             // constructor with no parameters
             texts .Add("\t\tpublic " + Name + "() : base()" );
             texts.Add("\t\t{");
-            foreach (var attribute in ParameterClassAttributes)
-            {
-                if(!attribute.IsOptional)
-                {
-                    texts.Add("\t\t\t" + attribute.Name + " = new " + attribute.GetCSharpTypeText() + "();");
-                }
-            }
             texts.Add("\t\t}");
 
             // constructor with parameters
             var attributes = ParameterAttributes;
-            string constructor = "\t\tpublic " + Name + "(";
-            for(int i = 0; i < attributes.Count; i++)
+            if(attributes.Count > 0)
             {
-                constructor += attributes[i].GetCSharpTypeText() + " " + attributes[i].Name + (i < attributes.Count - 1 ? ", ":"");
+                string constructor = "\t\tpublic " + Name + "(";
+                for (int i = 0; i < attributes.Count; i++)
+                {
+                    constructor += attributes[i].GetCSharpTypeText() + " " + attributes[i].Name + (i < attributes.Count - 1 ? ", " : "");
+                }
+                constructor += ") : base (";
+                attributes = ParentParameterAttributes;
+                for (int i = 0; i < attributes.Count; i++)
+                {
+                    constructor += attributes[i].Name + (i < attributes.Count - 1 ? ", " : "");
+                }
+                constructor += ")";
+                texts.Add(constructor);
+                texts.Add("\t\t{");
+                foreach (var attribute in ParameterClassAttributes)
+                {
+                    texts.Add("\t\t\tthis." + attribute.Name + " = " + attribute.Name + ";");
+                }
+                texts.Add("\t\t}");
             }
-            constructor += ") : base (";
-            attributes = ParentParameterAttributes;
-            for (int i = 0; i < attributes.Count; i++)
-            {
-                constructor += attributes[i].Name + (i < attributes.Count - 1 ? ", " : "");
-            }
-            constructor += ")";
-            texts.Add(constructor);
-            texts.Add("\t\t{");
-            foreach (var attribute in ParameterClassAttributes)
-            {
-                texts.Add("\t\t\tthis." + attribute.Name + " = " + attribute.Name + ";");
-            }
-            texts.Add("\t\t}");
             texts.Add("\t}");
             return texts;
         }
@@ -239,7 +280,7 @@ namespace IFCProjectCreator
             }
             else
             {
-                return " : " + "IFCENTITY";
+                return " : " + "Entity";
             }
         }
     }

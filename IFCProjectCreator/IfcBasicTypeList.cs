@@ -14,7 +14,11 @@ namespace IFCProjectCreator
 
         public override List<string> GetCSharpTexts()
         {
-            List<string> texts = new List<string>();
+            List<string> texts = GetCSharpSummaryTexts();
+            texts.Add("\tpublic class " + Name + " : List < " + ParentName + ">");
+            texts.Add("\t{");
+            texts.Add("\t}");
+
             return texts;
         }
 

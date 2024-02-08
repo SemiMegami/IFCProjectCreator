@@ -10,7 +10,7 @@ namespace IFCProjectCreator
         static void Main(string[] args)
         {
             string resourceDir = "../../../../Resources/";
-            string resultDir = "../../../../Results/";
+            string resultDir = "../../../../GeneratedIFCLibrary/";
 
             IFCDataSet dataSet = new IFCDataSet();
             dataSet.ReadExp(resourceDir + "IFC2X3_TC1.exp", "IFC2x3");

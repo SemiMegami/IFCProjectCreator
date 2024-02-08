@@ -69,6 +69,7 @@ namespace IFCProjectCreator
                     line = reader != null ? reader.ReadLine() : "";
                     if (line != null)
                     {
+                        line = line.Trim();
                         EXPLines.Add(line);
                     }
                 }
@@ -111,10 +112,19 @@ namespace IFCProjectCreator
         /// <returns></returns>
         protected virtual string GetCSharpHeaderText()
         {
-            string text = "\tpublic " + GetCSharpTypeText() + " " + Name + GetCSharpParentText();
-            foreach (var itf in InterfaceNames)
+            string parentText = GetCSharpParentText();
+            string text = "\tpublic " + GetCSharpTypeText() + " " + Name + parentText;
+
+            for(int i = 0; i < InterfaceNames.Count; i++)
             {
-                text += ", " + itf;
+                if(i== 0 && parentText.Length == 0)
+                {
+                    text += ": " + InterfaceNames[i];
+                }
+                else
+                {
+                    text += ", " + InterfaceNames[i];
+                }
             }
             return text;
         }
