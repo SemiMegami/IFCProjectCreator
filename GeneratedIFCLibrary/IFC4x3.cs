@@ -9018,6 +9018,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcActorSelect
 	{
+		public List<IfcActorRole>? Roles { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcAppliedValueSelect = SELECT
@@ -9039,6 +9040,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcAxis2Placement
 	{
+		public List<IfcPresentationLayerAssignment>? LayerAssignment { get;  }
+		public List<IfcStyledItem>? StyledByItem { get;  }
+		public IfcPoint? Location { get;  }
+		public IfcDimensionCount? Dim { get;  }
+		public IfcDirection? RefDirection { get;  }
+		public List<IfcDirection>? P { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcBendingParameterSelect = SELECT
@@ -9062,6 +9069,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcBooleanOperand
 	{
+		public List<IfcPresentationLayerAssignment>? LayerAssignment { get;  }
+		public List<IfcStyledItem>? StyledByItem { get;  }
+		public IfcDimensionCount? Dim { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcClassificationReferenceSelect = SELECT
@@ -9072,6 +9082,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcClassificationReferenceSelect
 	{
+		public IfcLabel? Name { get;  }
+		public IfcText? Description { get;  }
+		public List<IfcClassificationReference>? HasReferences { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcClassificationSelect = SELECT
@@ -9082,6 +9095,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcClassificationSelect
 	{
+		public IfcLabel? Name { get;  }
+		public IfcText? Description { get;  }
+		public List<IfcClassificationReference>? HasReferences { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcColour = SELECT
@@ -9092,6 +9108,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcColour: IfcFillStyleSelect
 	{
+		public IfcLabel? Name { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcColourOrFactor = SELECT
@@ -9112,6 +9129,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcCoordinateReferenceSystemSelect
 	{
+		public List<IfcCoordinateOperation>? HasCoordinateOperation { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcCsgSelect = SELECT
@@ -9122,6 +9140,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcCsgSelect
 	{
+		public List<IfcPresentationLayerAssignment>? LayerAssignment { get;  }
+		public List<IfcStyledItem>? StyledByItem { get;  }
+		public IfcDimensionCount? Dim { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcCurveFontOrScaledCurveFontSelect = SELECT
@@ -9132,6 +9153,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcCurveFontOrScaledCurveFontSelect
 	{
+		public IfcLabel? Name { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcCurveMeasureSelect = SELECT
@@ -9153,6 +9175,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcCurveOnSurface
 	{
+		public List<IfcPresentationLayerAssignment>? LayerAssignment { get;  }
+		public List<IfcStyledItem>? StyledByItem { get;  }
+		public IfcDimensionCount? Dim { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcCurveOrEdgeCurve = SELECT
@@ -9163,6 +9188,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcCurveOrEdgeCurve
 	{
+		public List<IfcPresentationLayerAssignment>? LayerAssignment { get;  }
+		public List<IfcStyledItem>? StyledByItem { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcCurveStyleFontSelect = SELECT
@@ -9183,6 +9210,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcDefinitionSelect
 	{
+		public IfcGloballyUniqueId? GlobalId { get;  }
+		public IfcOwnerHistory? OwnerHistory { get;  }
+		public IfcLabel? Name { get;  }
+		public IfcText? Description { get;  }
+		public List<IfcRelDeclares>? HasContext { get;  }
+		public List<IfcRelAssociates>? HasAssociations { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcDerivedMeasureValue = SELECT
@@ -9272,6 +9305,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcDocumentSelect
 	{
+		public IfcIdentifier? Identification { get;  }
+		public IfcLabel? Name { get;  }
+		public IfcText? Description { get;  }
+		public IfcURIReference? Location { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcFillStyleSelect = SELECT
@@ -9295,6 +9332,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcGeometricSetSelect
 	{
+		public List<IfcPresentationLayerAssignment>? LayerAssignment { get;  }
+		public List<IfcStyledItem>? StyledByItem { get;  }
+		public IfcDimensionCount? Dim { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcGridPlacementDirectionSelect = SELECT
@@ -9325,6 +9365,29 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcInterferenceSelect
 	{
+		public IfcGloballyUniqueId? GlobalId { get;  }
+		public IfcOwnerHistory? OwnerHistory { get;  }
+		public IfcLabel? Name { get;  }
+		public IfcText? Description { get;  }
+		public List<IfcRelAssigns>? HasAssignments { get;  }
+		public List<IfcRelNests>? Nests { get;  }
+		public List<IfcRelNests>? IsNestedBy { get;  }
+		public List<IfcRelDeclares>? HasContext { get;  }
+		public List<IfcRelAggregates>? IsDecomposedBy { get;  }
+		public List<IfcRelAggregates>? Decomposes { get;  }
+		public List<IfcRelAssociates>? HasAssociations { get;  }
+		public IfcLabel? ObjectType { get;  }
+		public List<IfcRelDefinesByObject>? IsDeclaredBy { get;  }
+		public List<IfcRelDefinesByObject>? Declares { get;  }
+		public List<IfcRelDefinesByType>? IsTypedBy { get;  }
+		public List<IfcRelDefinesByProperties>? IsDefinedBy { get;  }
+		public IfcObjectPlacement? ObjectPlacement { get;  }
+		public IfcProductRepresentation? Representation { get;  }
+		public List<IfcRelAssignsToProduct>? ReferencedBy { get;  }
+		public List<IfcRelPositions>? PositionedRelativeTo { get;  }
+		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures { get;  }
+		public List<IfcRelInterferesElements>? IsInterferedByElements { get;  }
+		public List<IfcRelInterferesElements>? InterferesElements { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcLayeredItem = SELECT
@@ -9345,6 +9408,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcLibrarySelect
 	{
+		public IfcLabel? Name { get;  }
+		public IfcURIReference? Location { get;  }
+		public IfcText? Description { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcLightDistributionDataSourceSelect = SELECT
@@ -9468,6 +9534,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcPointOrVertexPoint
 	{
+		public List<IfcPresentationLayerAssignment>? LayerAssignment { get;  }
+		public List<IfcStyledItem>? StyledByItem { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcProcessSelect = SELECT
@@ -9478,6 +9546,20 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcProcessSelect
 	{
+		public IfcGloballyUniqueId? GlobalId { get;  }
+		public IfcOwnerHistory? OwnerHistory { get;  }
+		public IfcLabel? Name { get;  }
+		public IfcText? Description { get;  }
+		public List<IfcRelAssigns>? HasAssignments { get;  }
+		public List<IfcRelNests>? Nests { get;  }
+		public List<IfcRelNests>? IsNestedBy { get;  }
+		public List<IfcRelDeclares>? HasContext { get;  }
+		public List<IfcRelAggregates>? IsDecomposedBy { get;  }
+		public List<IfcRelAggregates>? Decomposes { get;  }
+		public List<IfcRelAssociates>? HasAssociations { get;  }
+		public IfcIdentifier? Identification { get;  }
+		public IfcText? LongDescription { get;  }
+		public List<IfcRelAssignsToProcess>? OperatesOn { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcProductRepresentationSelect = SELECT
@@ -9488,6 +9570,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcProductRepresentationSelect
 	{
+		public List<IfcShapeAspect>? HasShapeAspects { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcProductSelect = SELECT
@@ -9498,6 +9581,18 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcProductSelect
 	{
+		public IfcGloballyUniqueId? GlobalId { get;  }
+		public IfcOwnerHistory? OwnerHistory { get;  }
+		public IfcLabel? Name { get;  }
+		public IfcText? Description { get;  }
+		public List<IfcRelAssigns>? HasAssignments { get;  }
+		public List<IfcRelNests>? Nests { get;  }
+		public List<IfcRelNests>? IsNestedBy { get;  }
+		public List<IfcRelDeclares>? HasContext { get;  }
+		public List<IfcRelAggregates>? IsDecomposedBy { get;  }
+		public List<IfcRelAggregates>? Decomposes { get;  }
+		public List<IfcRelAssociates>? HasAssociations { get;  }
+		public List<IfcRelAssignsToProduct>? ReferencedBy { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcPropertySetDefinitionSelect = SELECT
@@ -9543,6 +9638,22 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcResourceSelect
 	{
+		public IfcGloballyUniqueId? GlobalId { get;  }
+		public IfcOwnerHistory? OwnerHistory { get;  }
+		public IfcLabel? Name { get;  }
+		public IfcText? Description { get;  }
+		public List<IfcRelAssigns>? HasAssignments { get;  }
+		public List<IfcRelNests>? Nests { get;  }
+		public List<IfcRelNests>? IsNestedBy { get;  }
+		public List<IfcRelDeclares>? HasContext { get;  }
+		public List<IfcRelAggregates>? IsDecomposedBy { get;  }
+		public List<IfcRelAggregates>? Decomposes { get;  }
+		public List<IfcRelAssociates>? HasAssociations { get;  }
+		public IfcIdentifier? Identification { get;  }
+		public IfcText? LongDescription { get;  }
+		public List<IfcRelAssignsToResource>? ResourceOf { get;  }
+		public List<IfcAppliedValue>? BaseCosts { get;  }
+		public IfcPhysicalQuantity? BaseQuantity { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcRotationalStiffnessSelect = SELECT
@@ -9573,6 +9684,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcShell
 	{
+		public List<IfcPresentationLayerAssignment>? LayerAssignment { get;  }
+		public List<IfcStyledItem>? StyledByItem { get;  }
+		public List<IfcFace>? CfsFaces { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcSimpleValue = SELECT
@@ -9620,6 +9734,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcSolidOrShell
 	{
+		public List<IfcPresentationLayerAssignment>? LayerAssignment { get;  }
+		public List<IfcStyledItem>? StyledByItem { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcSpaceBoundarySelect = SELECT
@@ -9630,6 +9746,34 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcSpaceBoundarySelect
 	{
+		public IfcGloballyUniqueId? GlobalId { get;  }
+		public IfcOwnerHistory? OwnerHistory { get;  }
+		public IfcLabel? Name { get;  }
+		public IfcText? Description { get;  }
+		public List<IfcRelAssigns>? HasAssignments { get;  }
+		public List<IfcRelNests>? Nests { get;  }
+		public List<IfcRelNests>? IsNestedBy { get;  }
+		public List<IfcRelDeclares>? HasContext { get;  }
+		public List<IfcRelAggregates>? IsDecomposedBy { get;  }
+		public List<IfcRelAggregates>? Decomposes { get;  }
+		public List<IfcRelAssociates>? HasAssociations { get;  }
+		public IfcLabel? ObjectType { get;  }
+		public List<IfcRelDefinesByObject>? IsDeclaredBy { get;  }
+		public List<IfcRelDefinesByObject>? Declares { get;  }
+		public List<IfcRelDefinesByType>? IsTypedBy { get;  }
+		public List<IfcRelDefinesByProperties>? IsDefinedBy { get;  }
+		public IfcObjectPlacement? ObjectPlacement { get;  }
+		public IfcProductRepresentation? Representation { get;  }
+		public List<IfcRelAssignsToProduct>? ReferencedBy { get;  }
+		public List<IfcRelPositions>? PositionedRelativeTo { get;  }
+		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures { get;  }
+		public IfcLabel? LongName { get;  }
+		public List<IfcRelContainedInSpatialStructure>? ContainsElements { get;  }
+		public List<IfcRelServicesBuildings>? ServicedBySystems { get;  }
+		public List<IfcRelReferencedInSpatialStructure>? ReferencesElements { get;  }
+		public List<IfcRelInterferesElements>? IsInterferedByElements { get;  }
+		public List<IfcRelInterferesElements>? InterferesElements { get;  }
+		public List<IfcRelSpaceBoundary>? BoundedBy { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcSpatialReferenceSelect = SELECT
@@ -9640,6 +9784,23 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcSpatialReferenceSelect
 	{
+		public IfcGloballyUniqueId? GlobalId { get;  }
+		public IfcOwnerHistory? OwnerHistory { get;  }
+		public IfcLabel? Name { get;  }
+		public IfcText? Description { get;  }
+		public List<IfcRelAssigns>? HasAssignments { get;  }
+		public List<IfcRelNests>? Nests { get;  }
+		public List<IfcRelNests>? IsNestedBy { get;  }
+		public List<IfcRelDeclares>? HasContext { get;  }
+		public List<IfcRelAggregates>? IsDecomposedBy { get;  }
+		public List<IfcRelAggregates>? Decomposes { get;  }
+		public List<IfcRelAssociates>? HasAssociations { get;  }
+		public IfcLabel? ObjectType { get;  }
+		public List<IfcRelDefinesByObject>? IsDeclaredBy { get;  }
+		public List<IfcRelDefinesByObject>? Declares { get;  }
+		public List<IfcRelDefinesByType>? IsTypedBy { get;  }
+		public List<IfcRelDefinesByProperties>? IsDefinedBy { get;  }
+		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcSpecularHighlightSelect = SELECT
@@ -9660,6 +9821,27 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcStructuralActivityAssignmentSelect
 	{
+		public IfcGloballyUniqueId? GlobalId { get;  }
+		public IfcOwnerHistory? OwnerHistory { get;  }
+		public IfcLabel? Name { get;  }
+		public IfcText? Description { get;  }
+		public List<IfcRelAssigns>? HasAssignments { get;  }
+		public List<IfcRelNests>? Nests { get;  }
+		public List<IfcRelNests>? IsNestedBy { get;  }
+		public List<IfcRelDeclares>? HasContext { get;  }
+		public List<IfcRelAggregates>? IsDecomposedBy { get;  }
+		public List<IfcRelAggregates>? Decomposes { get;  }
+		public List<IfcRelAssociates>? HasAssociations { get;  }
+		public IfcLabel? ObjectType { get;  }
+		public List<IfcRelDefinesByObject>? IsDeclaredBy { get;  }
+		public List<IfcRelDefinesByObject>? Declares { get;  }
+		public List<IfcRelDefinesByType>? IsTypedBy { get;  }
+		public List<IfcRelDefinesByProperties>? IsDefinedBy { get;  }
+		public IfcObjectPlacement? ObjectPlacement { get;  }
+		public IfcProductRepresentation? Representation { get;  }
+		public List<IfcRelAssignsToProduct>? ReferencedBy { get;  }
+		public List<IfcRelPositions>? PositionedRelativeTo { get;  }
+		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcSurfaceOrFaceSurface = SELECT
@@ -9671,6 +9853,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcSurfaceOrFaceSurface
 	{
+		public List<IfcPresentationLayerAssignment>? LayerAssignment { get;  }
+		public List<IfcStyledItem>? StyledByItem { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcSurfaceStyleElementSelect = SELECT
@@ -9694,6 +9878,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcTextFontSelect
 	{
+		public IfcLabel? Name { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcTimeOrRatioSelect = SELECT
@@ -9756,6 +9941,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcVectorOrDirection
 	{
+		public List<IfcPresentationLayerAssignment>? LayerAssignment { get;  }
+		public List<IfcStyledItem>? StyledByItem { get;  }
+		public IfcDimensionCount? Dim { get;  }
 	}
 	/// <summary>
 	/// TYPE IfcWarpingStiffnessSelect = SELECT
@@ -9778,9 +9966,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcActionRequest : IfcControl
 	{
-		public IfcActionRequestTypeEnum? PredefinedType { get; set; }
-		public IfcLabel? Status { get; set; }
-		public IfcText? LongDescription { get; set; }
+		public virtual IfcActionRequestTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLabel? Status { get; set; }
+		public virtual IfcText? LongDescription { get; set; }
 		public IfcActionRequest() : base()
 		{
 		}
@@ -9804,8 +9992,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcActor : IfcObject
 	{
-		public IfcActorSelect? TheActor { get; set; }
+		public virtual IfcActorSelect? TheActor { get; set; }
 		//TODO INVERSE
+		public List<IfcRelAssignsToActor>? IsActingUpon => Model?.GetItems<IfcRelAssignsToActor>().Where(x => x.RelatingActor != null && x.RelatingActor == this).ToList();
 		public IfcActor() : base()
 		{
 		}
@@ -9830,10 +10019,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcActorRole : Entity, IfcResourceObjectSelect
 	{
-		public IfcRoleEnum? Role { get; set; }
-		public IfcLabel? UserDefinedRole { get; set; }
-		public IfcText? Description { get; set; }
+		public virtual IfcRoleEnum? Role { get; set; }
+		public virtual IfcLabel? UserDefinedRole { get; set; }
+		public virtual IfcText? Description { get; set; }
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? HasExternalReference => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		public IfcActorRole() : base()
 		{
 		}
@@ -9859,7 +10049,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcActuator : IfcDistributionControlElement
 	{
-		public IfcActuatorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcActuatorTypeEnum? PredefinedType { get; set; }
 		public IfcActuator() : base()
 		{
 		}
@@ -9880,7 +10070,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcActuatorType : IfcDistributionControlElementType
 	{
-		public IfcActuatorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcActuatorTypeEnum? PredefinedType { get; set; }
 		public IfcActuatorType() : base()
 		{
 		}
@@ -9910,11 +10100,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcAddress : Entity, IfcObjectReferenceSelect
 	{
-		public IfcAddressTypeEnum? Purpose { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcLabel? UserDefinedPurpose { get; set; }
+		public virtual IfcAddressTypeEnum? Purpose { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcLabel? UserDefinedPurpose { get; set; }
 		//TODO INVERSE
+		public List<IfcPerson>? OfPerson => Model?.GetItems<IfcPerson>().Where(x => x.Addresses != null && x.Addresses.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcOrganization>? OfOrganization => Model?.GetItems<IfcOrganization>().Where(x => x.Addresses != null && x.Addresses.Contains(this)).ToList();
 		public IfcAddress() : base()
 		{
 		}
@@ -9961,7 +10153,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAdvancedBrepWithVoids : IfcAdvancedBrep
 	{
-		public List<IfcClosedShell>? Voids { get; set; }
+		public virtual List<IfcClosedShell>? Voids { get; set; }
 		public IfcAdvancedBrepWithVoids() : base()
 		{
 		}
@@ -10025,7 +10217,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAirTerminal : IfcFlowTerminal
 	{
-		public IfcAirTerminalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAirTerminalTypeEnum? PredefinedType { get; set; }
 		public IfcAirTerminal() : base()
 		{
 		}
@@ -10049,7 +10241,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAirTerminalBox : IfcFlowController
 	{
-		public IfcAirTerminalBoxTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAirTerminalBoxTypeEnum? PredefinedType { get; set; }
 		public IfcAirTerminalBox() : base()
 		{
 		}
@@ -10070,7 +10262,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAirTerminalBoxType : IfcFlowControllerType
 	{
-		public IfcAirTerminalBoxTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAirTerminalBoxTypeEnum? PredefinedType { get; set; }
 		public IfcAirTerminalBoxType() : base()
 		{
 		}
@@ -10091,7 +10283,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAirTerminalType : IfcFlowTerminalType
 	{
-		public IfcAirTerminalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAirTerminalTypeEnum? PredefinedType { get; set; }
 		public IfcAirTerminalType() : base()
 		{
 		}
@@ -10115,7 +10307,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAirToAirHeatRecovery : IfcEnergyConversionDevice
 	{
-		public IfcAirToAirHeatRecoveryTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAirToAirHeatRecoveryTypeEnum? PredefinedType { get; set; }
 		public IfcAirToAirHeatRecovery() : base()
 		{
 		}
@@ -10136,7 +10328,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAirToAirHeatRecoveryType : IfcEnergyConversionDeviceType
 	{
-		public IfcAirToAirHeatRecoveryTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAirToAirHeatRecoveryTypeEnum? PredefinedType { get; set; }
 		public IfcAirToAirHeatRecoveryType() : base()
 		{
 		}
@@ -10160,7 +10352,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAlarm : IfcDistributionControlElement
 	{
-		public IfcAlarmTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAlarmTypeEnum? PredefinedType { get; set; }
 		public IfcAlarm() : base()
 		{
 		}
@@ -10181,7 +10373,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAlarmType : IfcDistributionControlElementType
 	{
-		public IfcAlarmTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAlarmTypeEnum? PredefinedType { get; set; }
 		public IfcAlarmType() : base()
 		{
 		}
@@ -10199,7 +10391,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAlignment : IfcLinearPositioningElement
 	{
-		public IfcAlignmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAlignmentTypeEnum? PredefinedType { get; set; }
 		public IfcAlignment() : base()
 		{
 		}
@@ -10217,7 +10409,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAlignmentCant : IfcLinearElement
 	{
-		public IfcPositiveLengthMeasure? RailHeadDistance { get; set; }
+		public virtual IfcPositiveLengthMeasure? RailHeadDistance { get; set; }
 		public IfcAlignmentCant() : base()
 		{
 		}
@@ -10241,13 +10433,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAlignmentCantSegment : IfcAlignmentParameterSegment
 	{
-		public IfcLengthMeasure? StartDistAlong { get; set; }
-		public IfcNonNegativeLengthMeasure? HorizontalLength { get; set; }
-		public IfcLengthMeasure? StartCantLeft { get; set; }
-		public IfcLengthMeasure? EndCantLeft { get; set; }
-		public IfcLengthMeasure? StartCantRight { get; set; }
-		public IfcLengthMeasure? EndCantRight { get; set; }
-		public IfcAlignmentCantSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLengthMeasure? StartDistAlong { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? HorizontalLength { get; set; }
+		public virtual IfcLengthMeasure? StartCantLeft { get; set; }
+		public virtual IfcLengthMeasure? EndCantLeft { get; set; }
+		public virtual IfcLengthMeasure? StartCantRight { get; set; }
+		public virtual IfcLengthMeasure? EndCantRight { get; set; }
+		public virtual IfcAlignmentCantSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcAlignmentCantSegment() : base()
 		{
 		}
@@ -10292,13 +10484,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAlignmentHorizontalSegment : IfcAlignmentParameterSegment
 	{
-		public IfcCartesianPoint? StartPoint { get; set; }
-		public IfcPlaneAngleMeasure? StartDirection { get; set; }
-		public IfcLengthMeasure? StartRadiusOfCurvature { get; set; }
-		public IfcLengthMeasure? EndRadiusOfCurvature { get; set; }
-		public IfcNonNegativeLengthMeasure? SegmentLength { get; set; }
-		public IfcPositiveLengthMeasure? GravityCenterLineHeight { get; set; }
-		public IfcAlignmentHorizontalSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCartesianPoint? StartPoint { get; set; }
+		public virtual IfcPlaneAngleMeasure? StartDirection { get; set; }
+		public virtual IfcLengthMeasure? StartRadiusOfCurvature { get; set; }
+		public virtual IfcLengthMeasure? EndRadiusOfCurvature { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? SegmentLength { get; set; }
+		public virtual IfcPositiveLengthMeasure? GravityCenterLineHeight { get; set; }
+		public virtual IfcAlignmentHorizontalSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcAlignmentHorizontalSegment() : base()
 		{
 		}
@@ -10326,8 +10518,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcAlignmentParameterSegment : Entity
 	{
-		public IfcLabel? StartTag { get; set; }
-		public IfcLabel? EndTag { get; set; }
+		public virtual IfcLabel? StartTag { get; set; }
+		public virtual IfcLabel? EndTag { get; set; }
 		public IfcAlignmentParameterSegment() : base()
 		{
 		}
@@ -10346,7 +10538,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAlignmentSegment : IfcLinearElement
 	{
-		public IfcAlignmentParameterSegment? DesignParameters { get; set; }
+		public virtual IfcAlignmentParameterSegment? DesignParameters { get; set; }
 		public IfcAlignmentSegment() : base()
 		{
 		}
@@ -10385,13 +10577,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAlignmentVerticalSegment : IfcAlignmentParameterSegment
 	{
-		public IfcLengthMeasure? StartDistAlong { get; set; }
-		public IfcNonNegativeLengthMeasure? HorizontalLength { get; set; }
-		public IfcLengthMeasure? StartHeight { get; set; }
-		public IfcRatioMeasure? StartGradient { get; set; }
-		public IfcRatioMeasure? EndGradient { get; set; }
-		public IfcLengthMeasure? RadiusOfCurvature { get; set; }
-		public IfcAlignmentVerticalSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLengthMeasure? StartDistAlong { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? HorizontalLength { get; set; }
+		public virtual IfcLengthMeasure? StartHeight { get; set; }
+		public virtual IfcRatioMeasure? StartGradient { get; set; }
+		public virtual IfcRatioMeasure? EndGradient { get; set; }
+		public virtual IfcLengthMeasure? RadiusOfCurvature { get; set; }
+		public virtual IfcAlignmentVerticalSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcAlignmentVerticalSegment() : base()
 		{
 		}
@@ -10417,8 +10609,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAnnotation : IfcProduct
 	{
-		public IfcAnnotationTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAnnotationTypeEnum? PredefinedType { get; set; }
 		//TODO INVERSE
+		public List<IfcRelContainedInSpatialStructure>? ContainedInStructure => Model?.GetItems<IfcRelContainedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();
 		public IfcAnnotation() : base()
 		{
 		}
@@ -10437,8 +10630,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAnnotationFillArea : IfcGeometricRepresentationItem
 	{
-		public IfcCurve? OuterBoundary { get; set; }
-		public List<IfcCurve>? InnerBoundaries { get; set; }
+		public virtual IfcCurve? OuterBoundary { get; set; }
+		public virtual List<IfcCurve>? InnerBoundaries { get; set; }
 		public IfcAnnotationFillArea() : base()
 		{
 		}
@@ -10462,10 +10655,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcApplication : Entity
 	{
-		public IfcOrganization? ApplicationDeveloper { get; set; }
-		public IfcLabel? Version { get; set; }
-		public IfcLabel? ApplicationFullName { get; set; }
-		public IfcIdentifier? ApplicationIdentifier { get; set; }
+		public virtual IfcOrganization? ApplicationDeveloper { get; set; }
+		public virtual IfcLabel? Version { get; set; }
+		public virtual IfcLabel? ApplicationFullName { get; set; }
+		public virtual IfcIdentifier? ApplicationIdentifier { get; set; }
 		public IfcApplication() : base()
 		{
 		}
@@ -10498,17 +10691,18 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAppliedValue : Entity, IfcMetricValueSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcAppliedValueSelect? AppliedValue { get; set; }
-		public IfcMeasureWithUnit? UnitBasis { get; set; }
-		public IfcDate? ApplicableDate { get; set; }
-		public IfcDate? FixedUntilDate { get; set; }
-		public IfcLabel? Category { get; set; }
-		public IfcLabel? Condition { get; set; }
-		public IfcArithmeticOperatorEnum? ArithmeticOperator { get; set; }
-		public List<IfcAppliedValue>? Components { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcAppliedValueSelect? AppliedValue { get; set; }
+		public virtual IfcMeasureWithUnit? UnitBasis { get; set; }
+		public virtual IfcDate? ApplicableDate { get; set; }
+		public virtual IfcDate? FixedUntilDate { get; set; }
+		public virtual IfcLabel? Category { get; set; }
+		public virtual IfcLabel? Condition { get; set; }
+		public virtual IfcArithmeticOperatorEnum? ArithmeticOperator { get; set; }
+		public virtual List<IfcAppliedValue>? Components { get; set; }
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? HasExternalReference => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		public IfcAppliedValue() : base()
 		{
 		}
@@ -10550,20 +10744,25 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcApproval : Entity, IfcResourceObjectSelect
 	{
-		public IfcIdentifier? Identifier { get; set; }
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcDateTime? TimeOfApproval { get; set; }
-		public IfcLabel? Status { get; set; }
-		public IfcLabel? Level { get; set; }
-		public IfcText? Qualifier { get; set; }
-		public IfcActorSelect? RequestingApproval { get; set; }
-		public IfcActorSelect? GivingApproval { get; set; }
+		public virtual IfcIdentifier? Identifier { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcDateTime? TimeOfApproval { get; set; }
+		public virtual IfcLabel? Status { get; set; }
+		public virtual IfcLabel? Level { get; set; }
+		public virtual IfcText? Qualifier { get; set; }
+		public virtual IfcActorSelect? RequestingApproval { get; set; }
+		public virtual IfcActorSelect? GivingApproval { get; set; }
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? HasExternalReferences => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelAssociatesApproval>? ApprovedObjects => Model?.GetItems<IfcRelAssociatesApproval>().Where(x => x.RelatingApproval != null && x.RelatingApproval == this).ToList();
 		//TODO INVERSE
+		public List<IfcResourceApprovalRelationship>? ApprovedResources => Model?.GetItems<IfcResourceApprovalRelationship>().Where(x => x.RelatingApproval != null && x.RelatingApproval == this).ToList();
 		//TODO INVERSE
+		public List<IfcApprovalRelationship>? IsRelatedWith => Model?.GetItems<IfcApprovalRelationship>().Where(x => x.RelatedApprovals != null && x.RelatedApprovals.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcApprovalRelationship>? Relates => Model?.GetItems<IfcApprovalRelationship>().Where(x => x.RelatingApproval != null && x.RelatingApproval == this).ToList();
 		public IfcApproval() : base()
 		{
 		}
@@ -10590,8 +10789,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcApprovalRelationship : IfcResourceLevelRelationship
 	{
-		public IfcApproval? RelatingApproval { get; set; }
-		public List<IfcApproval>? RelatedApprovals { get; set; }
+		public virtual IfcApproval? RelatingApproval { get; set; }
+		public virtual List<IfcApproval>? RelatedApprovals { get; set; }
 		public IfcApprovalRelationship() : base()
 		{
 		}
@@ -10616,7 +10815,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcArbitraryClosedProfileDef : IfcProfileDef
 	{
-		public IfcCurve? OuterCurve { get; set; }
+		public virtual IfcCurve? OuterCurve { get; set; }
 		public IfcArbitraryClosedProfileDef() : base()
 		{
 		}
@@ -10640,7 +10839,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcArbitraryOpenProfileDef : IfcProfileDef
 	{
-		public IfcBoundedCurve? Curve { get; set; }
+		public virtual IfcBoundedCurve? Curve { get; set; }
 		public IfcArbitraryOpenProfileDef() : base()
 		{
 		}
@@ -10662,7 +10861,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcArbitraryProfileDefWithVoids : IfcArbitraryClosedProfileDef
 	{
-		public List<IfcCurve>? InnerCurves { get; set; }
+		public virtual List<IfcCurve>? InnerCurves { get; set; }
 		public IfcArbitraryProfileDefWithVoids() : base()
 		{
 		}
@@ -10688,15 +10887,15 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAsset : IfcGroup
 	{
-		public IfcIdentifier? Identification { get; set; }
-		public IfcCostValue? OriginalValue { get; set; }
-		public IfcCostValue? CurrentValue { get; set; }
-		public IfcCostValue? TotalReplacementCost { get; set; }
-		public IfcActorSelect? Owner { get; set; }
-		public IfcActorSelect? User { get; set; }
-		public IfcPerson? ResponsiblePerson { get; set; }
-		public IfcDate? IncorporationDate { get; set; }
-		public IfcCostValue? DepreciatedValue { get; set; }
+		public virtual IfcIdentifier? Identification { get; set; }
+		public virtual IfcCostValue? OriginalValue { get; set; }
+		public virtual IfcCostValue? CurrentValue { get; set; }
+		public virtual IfcCostValue? TotalReplacementCost { get; set; }
+		public virtual IfcActorSelect? Owner { get; set; }
+		public virtual IfcActorSelect? User { get; set; }
+		public virtual IfcPerson? ResponsiblePerson { get; set; }
+		public virtual IfcDate? IncorporationDate { get; set; }
+		public virtual IfcCostValue? DepreciatedValue { get; set; }
 		public IfcAsset() : base()
 		{
 		}
@@ -10740,18 +10939,18 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAsymmetricIShapeProfileDef : IfcParameterizedProfileDef
 	{
-		public IfcPositiveLengthMeasure? BottomFlangeWidth { get; set; }
-		public IfcPositiveLengthMeasure? OverallDepth { get; set; }
-		public IfcPositiveLengthMeasure? WebThickness { get; set; }
-		public IfcPositiveLengthMeasure? BottomFlangeThickness { get; set; }
-		public IfcNonNegativeLengthMeasure? BottomFlangeFilletRadius { get; set; }
-		public IfcPositiveLengthMeasure? TopFlangeWidth { get; set; }
-		public IfcPositiveLengthMeasure? TopFlangeThickness { get; set; }
-		public IfcNonNegativeLengthMeasure? TopFlangeFilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure? BottomFlangeEdgeRadius { get; set; }
-		public IfcPlaneAngleMeasure? BottomFlangeSlope { get; set; }
-		public IfcNonNegativeLengthMeasure? TopFlangeEdgeRadius { get; set; }
-		public IfcPlaneAngleMeasure? TopFlangeSlope { get; set; }
+		public virtual IfcPositiveLengthMeasure? BottomFlangeWidth { get; set; }
+		public virtual IfcPositiveLengthMeasure? OverallDepth { get; set; }
+		public virtual IfcPositiveLengthMeasure? WebThickness { get; set; }
+		public virtual IfcPositiveLengthMeasure? BottomFlangeThickness { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? BottomFlangeFilletRadius { get; set; }
+		public virtual IfcPositiveLengthMeasure? TopFlangeWidth { get; set; }
+		public virtual IfcPositiveLengthMeasure? TopFlangeThickness { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? TopFlangeFilletRadius { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? BottomFlangeEdgeRadius { get; set; }
+		public virtual IfcPlaneAngleMeasure? BottomFlangeSlope { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? TopFlangeEdgeRadius { get; set; }
+		public virtual IfcPlaneAngleMeasure? TopFlangeSlope { get; set; }
 		public IfcAsymmetricIShapeProfileDef() : base()
 		{
 		}
@@ -10786,7 +10985,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAudioVisualAppliance : IfcFlowTerminal
 	{
-		public IfcAudioVisualApplianceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAudioVisualApplianceTypeEnum? PredefinedType { get; set; }
 		public IfcAudioVisualAppliance() : base()
 		{
 		}
@@ -10807,7 +11006,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAudioVisualApplianceType : IfcFlowTerminalType
 	{
-		public IfcAudioVisualApplianceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAudioVisualApplianceTypeEnum? PredefinedType { get; set; }
 		public IfcAudioVisualApplianceType() : base()
 		{
 		}
@@ -10831,7 +11030,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAxis1Placement : IfcPlacement
 	{
-		public IfcDirection? Axis { get; set; }
+		public virtual IfcDirection? Axis { get; set; }
 		//TODO DERIVE
 		public virtual IfcDirection? Z {get {return null;}}
 		public IfcAxis1Placement() : base()
@@ -10857,7 +11056,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAxis2Placement2D : IfcPlacement, IfcAxis2Placement
 	{
-		public IfcDirection? RefDirection { get; set; }
+		public virtual IfcDirection? RefDirection { get; set; }
 		//TODO DERIVE
 		public virtual List<IfcDirection>? P {get {return null;}}
 		public IfcAxis2Placement2D() : base()
@@ -10887,8 +11086,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAxis2Placement3D : IfcPlacement, IfcAxis2Placement
 	{
-		public IfcDirection? Axis { get; set; }
-		public IfcDirection? RefDirection { get; set; }
+		public virtual IfcDirection? Axis { get; set; }
+		public virtual IfcDirection? RefDirection { get; set; }
 		//TODO DERIVE
 		public virtual List<IfcDirection>? P {get {return null;}}
 		public IfcAxis2Placement3D() : base()
@@ -10913,8 +11112,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcAxis2PlacementLinear : IfcPlacement
 	{
-		public IfcDirection? Axis { get; set; }
-		public IfcDirection? RefDirection { get; set; }
+		public virtual IfcDirection? Axis { get; set; }
+		public virtual IfcDirection? RefDirection { get; set; }
 		public IfcAxis2PlacementLinear() : base()
 		{
 		}
@@ -10946,11 +11145,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcBSplineCurve : IfcBoundedCurve
 	{
-		public IfcInteger? Degree { get; set; }
-		public List<IfcCartesianPoint>? ControlPointsList { get; set; }
-		public IfcBSplineCurveForm? CurveForm { get; set; }
-		public IfcLogical? ClosedCurve { get; set; }
-		public IfcLogical? SelfIntersect { get; set; }
+		public virtual IfcInteger? Degree { get; set; }
+		public virtual List<IfcCartesianPoint>? ControlPointsList { get; set; }
+		public virtual IfcBSplineCurveForm? CurveForm { get; set; }
+		public virtual IfcLogical? ClosedCurve { get; set; }
+		public virtual IfcLogical? SelfIntersect { get; set; }
 		//TODO DERIVE
 		public virtual IfcInteger? UpperIndexOnControlPoints {get {return null;}}
 		//TODO DERIVE
@@ -10986,9 +11185,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBSplineCurveWithKnots : IfcBSplineCurve
 	{
-		public List<IfcInteger>? KnotMultiplicities { get; set; }
-		public List<IfcParameterValue>? Knots { get; set; }
-		public IfcKnotType? KnotSpec { get; set; }
+		public virtual List<IfcInteger>? KnotMultiplicities { get; set; }
+		public virtual List<IfcParameterValue>? Knots { get; set; }
+		public virtual IfcKnotType? KnotSpec { get; set; }
 		//TODO DERIVE
 		public virtual IfcInteger? UpperIndexOnKnots {get {return null;}}
 		public IfcBSplineCurveWithKnots() : base()
@@ -11023,13 +11222,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcBSplineSurface : IfcBoundedSurface
 	{
-		public IfcInteger? UDegree { get; set; }
-		public IfcInteger? VDegree { get; set; }
-		public List<List<IfcCartesianPoint >>? ControlPointsList { get; set; }
-		public IfcBSplineSurfaceForm? SurfaceForm { get; set; }
-		public IfcLogical? UClosed { get; set; }
-		public IfcLogical? VClosed { get; set; }
-		public IfcLogical? SelfIntersect { get; set; }
+		public virtual IfcInteger? UDegree { get; set; }
+		public virtual IfcInteger? VDegree { get; set; }
+		public virtual List<List<IfcCartesianPoint >>? ControlPointsList { get; set; }
+		public virtual IfcBSplineSurfaceForm? SurfaceForm { get; set; }
+		public virtual IfcLogical? UClosed { get; set; }
+		public virtual IfcLogical? VClosed { get; set; }
+		public virtual IfcLogical? SelfIntersect { get; set; }
 		//TODO DERIVE
 		public virtual IfcInteger? UUpper {get {return null;}}
 		//TODO DERIVE
@@ -11077,11 +11276,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBSplineSurfaceWithKnots : IfcBSplineSurface
 	{
-		public List<IfcInteger>? UMultiplicities { get; set; }
-		public List<IfcInteger>? VMultiplicities { get; set; }
-		public List<IfcParameterValue>? UKnots { get; set; }
-		public List<IfcParameterValue>? VKnots { get; set; }
-		public IfcKnotType? KnotSpec { get; set; }
+		public virtual List<IfcInteger>? UMultiplicities { get; set; }
+		public virtual List<IfcInteger>? VMultiplicities { get; set; }
+		public virtual List<IfcParameterValue>? UKnots { get; set; }
+		public virtual List<IfcParameterValue>? VKnots { get; set; }
+		public virtual IfcKnotType? KnotSpec { get; set; }
 		//TODO DERIVE
 		public virtual IfcInteger? KnotVUpper {get {return null;}}
 		//TODO DERIVE
@@ -11113,7 +11312,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBeam : IfcBuiltElement
 	{
-		public IfcBeamTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBeamTypeEnum? PredefinedType { get; set; }
 		public IfcBeam() : base()
 		{
 		}
@@ -11134,7 +11333,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBeamType : IfcBuiltElementType
 	{
-		public IfcBeamTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBeamTypeEnum? PredefinedType { get; set; }
 		public IfcBeamType() : base()
 		{
 		}
@@ -11158,7 +11357,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBearing : IfcBuiltElement
 	{
-		public IfcBearingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBearingTypeEnum? PredefinedType { get; set; }
 		public IfcBearing() : base()
 		{
 		}
@@ -11179,7 +11378,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBearingType : IfcBuiltElementType
 	{
-		public IfcBearingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBearingTypeEnum? PredefinedType { get; set; }
 		public IfcBearingType() : base()
 		{
 		}
@@ -11201,8 +11400,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBlobTexture : IfcSurfaceTexture
 	{
-		public IfcIdentifier? RasterFormat { get; set; }
-		public IfcBinary? RasterCode { get; set; }
+		public virtual IfcIdentifier? RasterFormat { get; set; }
+		public virtual IfcBinary? RasterCode { get; set; }
 		public IfcBlobTexture() : base()
 		{
 		}
@@ -11223,9 +11422,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBlock : IfcCsgPrimitive3D
 	{
-		public IfcPositiveLengthMeasure? XLength { get; set; }
-		public IfcPositiveLengthMeasure? YLength { get; set; }
-		public IfcPositiveLengthMeasure? ZLength { get; set; }
+		public virtual IfcPositiveLengthMeasure? XLength { get; set; }
+		public virtual IfcPositiveLengthMeasure? YLength { get; set; }
+		public virtual IfcPositiveLengthMeasure? ZLength { get; set; }
 		public IfcBlock() : base()
 		{
 		}
@@ -11251,7 +11450,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBoiler : IfcEnergyConversionDevice
 	{
-		public IfcBoilerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBoilerTypeEnum? PredefinedType { get; set; }
 		public IfcBoiler() : base()
 		{
 		}
@@ -11272,7 +11471,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBoilerType : IfcEnergyConversionDeviceType
 	{
-		public IfcBoilerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBoilerTypeEnum? PredefinedType { get; set; }
 		public IfcBoilerType() : base()
 		{
 		}
@@ -11321,9 +11520,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBooleanResult : IfcGeometricRepresentationItem, IfcBooleanOperand, IfcCsgSelect
 	{
-		public IfcBooleanOperator? Operator { get; set; }
-		public IfcBooleanOperand? FirstOperand { get; set; }
-		public IfcBooleanOperand? SecondOperand { get; set; }
+		public virtual IfcBooleanOperator? Operator { get; set; }
+		public virtual IfcBooleanOperand? FirstOperand { get; set; }
+		public virtual IfcBooleanOperand? SecondOperand { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcBooleanResult() : base()
@@ -11363,7 +11562,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcBoundaryCondition : Entity
 	{
-		public IfcLabel? Name { get; set; }
+		public virtual IfcLabel? Name { get; set; }
 		public IfcBoundaryCondition() : base()
 		{
 		}
@@ -11405,12 +11604,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBoundaryEdgeCondition : IfcBoundaryCondition
 	{
-		public IfcModulusOfTranslationalSubgradeReactionSelect? TranslationalStiffnessByLengthX { get; set; }
-		public IfcModulusOfTranslationalSubgradeReactionSelect? TranslationalStiffnessByLengthY { get; set; }
-		public IfcModulusOfTranslationalSubgradeReactionSelect? TranslationalStiffnessByLengthZ { get; set; }
-		public IfcModulusOfRotationalSubgradeReactionSelect? RotationalStiffnessByLengthX { get; set; }
-		public IfcModulusOfRotationalSubgradeReactionSelect? RotationalStiffnessByLengthY { get; set; }
-		public IfcModulusOfRotationalSubgradeReactionSelect? RotationalStiffnessByLengthZ { get; set; }
+		public virtual IfcModulusOfTranslationalSubgradeReactionSelect? TranslationalStiffnessByLengthX { get; set; }
+		public virtual IfcModulusOfTranslationalSubgradeReactionSelect? TranslationalStiffnessByLengthY { get; set; }
+		public virtual IfcModulusOfTranslationalSubgradeReactionSelect? TranslationalStiffnessByLengthZ { get; set; }
+		public virtual IfcModulusOfRotationalSubgradeReactionSelect? RotationalStiffnessByLengthX { get; set; }
+		public virtual IfcModulusOfRotationalSubgradeReactionSelect? RotationalStiffnessByLengthY { get; set; }
+		public virtual IfcModulusOfRotationalSubgradeReactionSelect? RotationalStiffnessByLengthZ { get; set; }
 		public IfcBoundaryEdgeCondition() : base()
 		{
 		}
@@ -11435,9 +11634,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBoundaryFaceCondition : IfcBoundaryCondition
 	{
-		public IfcModulusOfSubgradeReactionSelect? TranslationalStiffnessByAreaX { get; set; }
-		public IfcModulusOfSubgradeReactionSelect? TranslationalStiffnessByAreaY { get; set; }
-		public IfcModulusOfSubgradeReactionSelect? TranslationalStiffnessByAreaZ { get; set; }
+		public virtual IfcModulusOfSubgradeReactionSelect? TranslationalStiffnessByAreaX { get; set; }
+		public virtual IfcModulusOfSubgradeReactionSelect? TranslationalStiffnessByAreaY { get; set; }
+		public virtual IfcModulusOfSubgradeReactionSelect? TranslationalStiffnessByAreaZ { get; set; }
 		public IfcBoundaryFaceCondition() : base()
 		{
 		}
@@ -11464,12 +11663,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBoundaryNodeCondition : IfcBoundaryCondition
 	{
-		public IfcTranslationalStiffnessSelect? TranslationalStiffnessX { get; set; }
-		public IfcTranslationalStiffnessSelect? TranslationalStiffnessY { get; set; }
-		public IfcTranslationalStiffnessSelect? TranslationalStiffnessZ { get; set; }
-		public IfcRotationalStiffnessSelect? RotationalStiffnessX { get; set; }
-		public IfcRotationalStiffnessSelect? RotationalStiffnessY { get; set; }
-		public IfcRotationalStiffnessSelect? RotationalStiffnessZ { get; set; }
+		public virtual IfcTranslationalStiffnessSelect? TranslationalStiffnessX { get; set; }
+		public virtual IfcTranslationalStiffnessSelect? TranslationalStiffnessY { get; set; }
+		public virtual IfcTranslationalStiffnessSelect? TranslationalStiffnessZ { get; set; }
+		public virtual IfcRotationalStiffnessSelect? RotationalStiffnessX { get; set; }
+		public virtual IfcRotationalStiffnessSelect? RotationalStiffnessY { get; set; }
+		public virtual IfcRotationalStiffnessSelect? RotationalStiffnessZ { get; set; }
 		public IfcBoundaryNodeCondition() : base()
 		{
 		}
@@ -11492,7 +11691,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBoundaryNodeConditionWarping : IfcBoundaryNodeCondition
 	{
-		public IfcWarpingStiffnessSelect? WarpingStiffness { get; set; }
+		public virtual IfcWarpingStiffnessSelect? WarpingStiffness { get; set; }
 		public IfcBoundaryNodeConditionWarping() : base()
 		{
 		}
@@ -11550,10 +11749,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBoundingBox : IfcGeometricRepresentationItem
 	{
-		public IfcCartesianPoint? Corner { get; set; }
-		public IfcPositiveLengthMeasure? XDim { get; set; }
-		public IfcPositiveLengthMeasure? YDim { get; set; }
-		public IfcPositiveLengthMeasure? ZDim { get; set; }
+		public virtual IfcCartesianPoint? Corner { get; set; }
+		public virtual IfcPositiveLengthMeasure? XDim { get; set; }
+		public virtual IfcPositiveLengthMeasure? YDim { get; set; }
+		public virtual IfcPositiveLengthMeasure? ZDim { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcBoundingBox() : base()
@@ -11578,7 +11777,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBoxedHalfSpace : IfcHalfSpaceSolid
 	{
-		public IfcBoundingBox? Enclosure { get; set; }
+		public virtual IfcBoundingBox? Enclosure { get; set; }
 		public IfcBoxedHalfSpace() : base()
 		{
 		}
@@ -11600,7 +11799,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBridge : IfcFacility
 	{
-		public IfcBridgeTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBridgeTypeEnum? PredefinedType { get; set; }
 		public IfcBridge() : base()
 		{
 		}
@@ -11622,7 +11821,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBridgePart : IfcFacilityPart
 	{
-		public IfcBridgePartTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBridgePartTypeEnum? PredefinedType { get; set; }
 		public IfcBridgePart() : base()
 		{
 		}
@@ -11642,9 +11841,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBuilding : IfcFacility
 	{
-		public IfcLengthMeasure? ElevationOfRefHeight { get; set; }
-		public IfcLengthMeasure? ElevationOfTerrain { get; set; }
-		public IfcPostalAddress? BuildingAddress { get; set; }
+		public virtual IfcLengthMeasure? ElevationOfRefHeight { get; set; }
+		public virtual IfcLengthMeasure? ElevationOfTerrain { get; set; }
+		public virtual IfcPostalAddress? BuildingAddress { get; set; }
 		public IfcBuilding() : base()
 		{
 		}
@@ -11670,7 +11869,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBuildingElementPart : IfcElementComponent
 	{
-		public IfcBuildingElementPartTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBuildingElementPartTypeEnum? PredefinedType { get; set; }
 		public IfcBuildingElementPart() : base()
 		{
 		}
@@ -11691,7 +11890,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBuildingElementPartType : IfcElementComponentType
 	{
-		public IfcBuildingElementPartTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBuildingElementPartTypeEnum? PredefinedType { get; set; }
 		public IfcBuildingElementPartType() : base()
 		{
 		}
@@ -11716,7 +11915,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBuildingElementProxy : IfcBuiltElement
 	{
-		public IfcBuildingElementProxyTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBuildingElementProxyTypeEnum? PredefinedType { get; set; }
 		public IfcBuildingElementProxy() : base()
 		{
 		}
@@ -11737,7 +11936,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBuildingElementProxyType : IfcBuiltElementType
 	{
-		public IfcBuildingElementProxyTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBuildingElementProxyTypeEnum? PredefinedType { get; set; }
 		public IfcBuildingElementProxyType() : base()
 		{
 		}
@@ -11755,7 +11954,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBuildingStorey : IfcSpatialStructureElement
 	{
-		public IfcLengthMeasure? Elevation { get; set; }
+		public virtual IfcLengthMeasure? Elevation { get; set; }
 		public IfcBuildingStorey() : base()
 		{
 		}
@@ -11778,8 +11977,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBuildingSystem : IfcSystem
 	{
-		public IfcBuildingSystemTypeEnum? PredefinedType { get; set; }
-		public IfcLabel? LongName { get; set; }
+		public virtual IfcBuildingSystemTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLabel? LongName { get; set; }
 		public IfcBuildingSystem() : base()
 		{
 		}
@@ -11898,8 +12097,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBuiltSystem : IfcSystem
 	{
-		public IfcBuiltSystemTypeEnum? PredefinedType { get; set; }
-		public IfcLabel? LongName { get; set; }
+		public virtual IfcBuiltSystemTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLabel? LongName { get; set; }
 		public IfcBuiltSystem() : base()
 		{
 		}
@@ -11924,7 +12123,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBurner : IfcEnergyConversionDevice
 	{
-		public IfcBurnerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBurnerTypeEnum? PredefinedType { get; set; }
 		public IfcBurner() : base()
 		{
 		}
@@ -11945,7 +12144,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcBurnerType : IfcEnergyConversionDeviceType
 	{
-		public IfcBurnerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcBurnerTypeEnum? PredefinedType { get; set; }
 		public IfcBurnerType() : base()
 		{
 		}
@@ -11972,11 +12171,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCShapeProfileDef : IfcParameterizedProfileDef
 	{
-		public IfcPositiveLengthMeasure? Depth { get; set; }
-		public IfcPositiveLengthMeasure? Width { get; set; }
-		public IfcPositiveLengthMeasure? WallThickness { get; set; }
-		public IfcPositiveLengthMeasure? Girth { get; set; }
-		public IfcNonNegativeLengthMeasure? InternalFilletRadius { get; set; }
+		public virtual IfcPositiveLengthMeasure? Depth { get; set; }
+		public virtual IfcPositiveLengthMeasure? Width { get; set; }
+		public virtual IfcPositiveLengthMeasure? WallThickness { get; set; }
+		public virtual IfcPositiveLengthMeasure? Girth { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? InternalFilletRadius { get; set; }
 		public IfcCShapeProfileDef() : base()
 		{
 		}
@@ -12004,7 +12203,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCableCarrierFitting : IfcFlowFitting
 	{
-		public IfcCableCarrierFittingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCableCarrierFittingTypeEnum? PredefinedType { get; set; }
 		public IfcCableCarrierFitting() : base()
 		{
 		}
@@ -12025,7 +12224,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCableCarrierFittingType : IfcFlowFittingType
 	{
-		public IfcCableCarrierFittingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCableCarrierFittingTypeEnum? PredefinedType { get; set; }
 		public IfcCableCarrierFittingType() : base()
 		{
 		}
@@ -12049,7 +12248,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCableCarrierSegment : IfcFlowSegment
 	{
-		public IfcCableCarrierSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCableCarrierSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcCableCarrierSegment() : base()
 		{
 		}
@@ -12070,7 +12269,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCableCarrierSegmentType : IfcFlowSegmentType
 	{
-		public IfcCableCarrierSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCableCarrierSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcCableCarrierSegmentType() : base()
 		{
 		}
@@ -12094,7 +12293,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCableFitting : IfcFlowFitting
 	{
-		public IfcCableFittingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCableFittingTypeEnum? PredefinedType { get; set; }
 		public IfcCableFitting() : base()
 		{
 		}
@@ -12115,7 +12314,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCableFittingType : IfcFlowFittingType
 	{
-		public IfcCableFittingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCableFittingTypeEnum? PredefinedType { get; set; }
 		public IfcCableFittingType() : base()
 		{
 		}
@@ -12139,7 +12338,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCableSegment : IfcFlowSegment
 	{
-		public IfcCableSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCableSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcCableSegment() : base()
 		{
 		}
@@ -12160,7 +12359,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCableSegmentType : IfcFlowSegmentType
 	{
-		public IfcCableSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCableSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcCableSegmentType() : base()
 		{
 		}
@@ -12184,7 +12383,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCaissonFoundation : IfcDeepFoundation
 	{
-		public IfcCaissonFoundationTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCaissonFoundationTypeEnum? PredefinedType { get; set; }
 		public IfcCaissonFoundation() : base()
 		{
 		}
@@ -12205,7 +12404,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCaissonFoundationType : IfcDeepFoundationType
 	{
-		public IfcCaissonFoundationTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCaissonFoundationTypeEnum? PredefinedType { get; set; }
 		public IfcCaissonFoundationType() : base()
 		{
 		}
@@ -12225,7 +12424,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCartesianPoint : IfcPoint, IfcTrimmingSelect
 	{
-		public List<IfcLengthMeasure>? Coordinates { get; set; }
+		public virtual List<IfcLengthMeasure>? Coordinates { get; set; }
 		public IfcCartesianPoint() : base()
 		{
 		}
@@ -12263,8 +12462,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCartesianPointList2D : IfcCartesianPointList
 	{
-		public List<List<IfcLengthMeasure >>? CoordList { get; set; }
-		public List<IfcLabel>? TagList { get; set; }
+		public virtual List<List<IfcLengthMeasure >>? CoordList { get; set; }
+		public virtual List<IfcLabel>? TagList { get; set; }
 		public IfcCartesianPointList2D() : base()
 		{
 		}
@@ -12284,8 +12483,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCartesianPointList3D : IfcCartesianPointList
 	{
-		public List<List<IfcLengthMeasure >>? CoordList { get; set; }
-		public List<IfcLabel>? TagList { get; set; }
+		public virtual List<List<IfcLengthMeasure >>? CoordList { get; set; }
+		public virtual List<IfcLabel>? TagList { get; set; }
 		public IfcCartesianPointList3D() : base()
 		{
 		}
@@ -12315,10 +12514,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcCartesianTransformationOperator : IfcGeometricRepresentationItem
 	{
-		public IfcDirection? Axis1 { get; set; }
-		public IfcDirection? Axis2 { get; set; }
-		public IfcCartesianPoint? LocalOrigin { get; set; }
-		public IfcReal? Scale { get; set; }
+		public virtual IfcDirection? Axis1 { get; set; }
+		public virtual IfcDirection? Axis2 { get; set; }
+		public virtual IfcCartesianPoint? LocalOrigin { get; set; }
+		public virtual IfcReal? Scale { get; set; }
 		//TODO DERIVE
 		public virtual IfcReal? Scl {get {return null;}}
 		//TODO DERIVE
@@ -12375,7 +12574,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCartesianTransformationOperator2DnonUniform : IfcCartesianTransformationOperator2D
 	{
-		public IfcReal? Scale2 { get; set; }
+		public virtual IfcReal? Scale2 { get; set; }
 		//TODO DERIVE
 		public virtual IfcReal? Scl2 {get {return null;}}
 		public IfcCartesianTransformationOperator2DnonUniform() : base()
@@ -12407,7 +12606,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCartesianTransformationOperator3D : IfcCartesianTransformationOperator
 	{
-		public IfcDirection? Axis3 { get; set; }
+		public virtual IfcDirection? Axis3 { get; set; }
 		//TODO DERIVE
 		public virtual List<IfcDirection>? U {get {return null;}}
 		public IfcCartesianTransformationOperator3D() : base()
@@ -12434,8 +12633,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCartesianTransformationOperator3DnonUniform : IfcCartesianTransformationOperator3D
 	{
-		public IfcReal? Scale2 { get; set; }
-		public IfcReal? Scale3 { get; set; }
+		public virtual IfcReal? Scale2 { get; set; }
+		public virtual IfcReal? Scale3 { get; set; }
 		//TODO DERIVE
 		public virtual IfcReal? Scl2 {get {return null;}}
 		//TODO DERIVE
@@ -12458,7 +12657,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCenterLineProfileDef : IfcArbitraryOpenProfileDef
 	{
-		public IfcPositiveLengthMeasure? Thickness { get; set; }
+		public virtual IfcPositiveLengthMeasure? Thickness { get; set; }
 		public IfcCenterLineProfileDef() : base()
 		{
 		}
@@ -12482,7 +12681,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcChiller : IfcEnergyConversionDevice
 	{
-		public IfcChillerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcChillerTypeEnum? PredefinedType { get; set; }
 		public IfcChiller() : base()
 		{
 		}
@@ -12503,7 +12702,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcChillerType : IfcEnergyConversionDeviceType
 	{
-		public IfcChillerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcChillerTypeEnum? PredefinedType { get; set; }
 		public IfcChillerType() : base()
 		{
 		}
@@ -12527,7 +12726,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcChimney : IfcBuiltElement
 	{
-		public IfcChimneyTypeEnum? PredefinedType { get; set; }
+		public virtual IfcChimneyTypeEnum? PredefinedType { get; set; }
 		public IfcChimney() : base()
 		{
 		}
@@ -12548,7 +12747,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcChimneyType : IfcBuiltElementType
 	{
-		public IfcChimneyTypeEnum? PredefinedType { get; set; }
+		public virtual IfcChimneyTypeEnum? PredefinedType { get; set; }
 		public IfcChimneyType() : base()
 		{
 		}
@@ -12566,7 +12765,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCircle : IfcConic
 	{
-		public IfcPositiveLengthMeasure? Radius { get; set; }
+		public virtual IfcPositiveLengthMeasure? Radius { get; set; }
 		public IfcCircle() : base()
 		{
 		}
@@ -12586,7 +12785,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCircleHollowProfileDef : IfcCircleProfileDef
 	{
-		public IfcPositiveLengthMeasure? WallThickness { get; set; }
+		public virtual IfcPositiveLengthMeasure? WallThickness { get; set; }
 		public IfcCircleHollowProfileDef() : base()
 		{
 		}
@@ -12606,7 +12805,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCircleProfileDef : IfcParameterizedProfileDef
 	{
-		public IfcPositiveLengthMeasure? Radius { get; set; }
+		public virtual IfcPositiveLengthMeasure? Radius { get; set; }
 		public IfcCircleProfileDef() : base()
 		{
 		}
@@ -12663,15 +12862,17 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcClassification : IfcExternalInformation, IfcClassificationReferenceSelect, IfcClassificationSelect
 	{
-		public IfcLabel? Source { get; set; }
-		public IfcLabel? Edition { get; set; }
-		public IfcDate? EditionDate { get; set; }
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcURIReference? Specification { get; set; }
-		public List<IfcIdentifier>? ReferenceTokens { get; set; }
+		public virtual IfcLabel? Source { get; set; }
+		public virtual IfcLabel? Edition { get; set; }
+		public virtual IfcDate? EditionDate { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcURIReference? Specification { get; set; }
+		public virtual List<IfcIdentifier>? ReferenceTokens { get; set; }
 		//TODO INVERSE
+		public List<IfcRelAssociatesClassification>? ClassificationForObjects => Model?.GetItems<IfcRelAssociatesClassification>().Where(x => x.RelatingClassification != null && x.RelatingClassification == this).ToList();
 		//TODO INVERSE
+		public List<IfcClassificationReference>? HasReferences => Model?.GetItems<IfcClassificationReference>().Where(x => x.ReferencedSource != null && x.ReferencedSource == this).ToList();
 		public IfcClassification() : base()
 		{
 		}
@@ -12700,10 +12901,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcClassificationReference : IfcExternalReference, IfcClassificationReferenceSelect, IfcClassificationSelect
 	{
-		public IfcClassificationReferenceSelect? ReferencedSource { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcIdentifier? Sort { get; set; }
+		public virtual IfcClassificationReferenceSelect? ReferencedSource { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcIdentifier? Sort { get; set; }
 		//TODO INVERSE
+		public List<IfcRelAssociatesClassification>? ClassificationRefForObjects => Model?.GetItems<IfcRelAssociatesClassification>().Where(x => x.RelatingClassification != null && x.RelatingClassification == this).ToList();
 		//TODO INVERSE
 		public List<IfcClassificationReference>? HasReferences => Model?.GetItems<IfcClassificationReference>().Where(x => x.ReferencedSource != null && x.ReferencedSource == this).ToList();
 		public IfcClassificationReference() : base()
@@ -12740,7 +12942,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcClothoid : IfcSpiral
 	{
-		public IfcLengthMeasure? ClothoidConstant { get; set; }
+		public virtual IfcLengthMeasure? ClothoidConstant { get; set; }
 		public IfcClothoid() : base()
 		{
 		}
@@ -12764,7 +12966,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCoil : IfcEnergyConversionDevice
 	{
-		public IfcCoilTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCoilTypeEnum? PredefinedType { get; set; }
 		public IfcCoil() : base()
 		{
 		}
@@ -12785,7 +12987,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCoilType : IfcEnergyConversionDeviceType
 	{
-		public IfcCoilTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCoilTypeEnum? PredefinedType { get; set; }
 		public IfcCoilType() : base()
 		{
 		}
@@ -12805,9 +13007,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcColourRgb : IfcColourSpecification, IfcColourOrFactor
 	{
-		public IfcNormalisedRatioMeasure? Red { get; set; }
-		public IfcNormalisedRatioMeasure? Green { get; set; }
-		public IfcNormalisedRatioMeasure? Blue { get; set; }
+		public virtual IfcNormalisedRatioMeasure? Red { get; set; }
+		public virtual IfcNormalisedRatioMeasure? Green { get; set; }
+		public virtual IfcNormalisedRatioMeasure? Blue { get; set; }
 		public IfcColourRgb() : base()
 		{
 		}
@@ -12827,7 +13029,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcColourRgbList : IfcPresentationItem
 	{
-		public List<List<IfcNormalisedRatioMeasure >>? ColourList { get; set; }
+		public virtual List<List<IfcNormalisedRatioMeasure >>? ColourList { get; set; }
 		public IfcColourRgbList() : base()
 		{
 		}
@@ -12847,7 +13049,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcColourSpecification : IfcPresentationItem, IfcColour
 	{
-		public IfcLabel? Name { get; set; }
+		public virtual IfcLabel? Name { get; set; }
 		public IfcColourSpecification() : base()
 		{
 		}
@@ -12871,7 +13073,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcColumn : IfcBuiltElement
 	{
-		public IfcColumnTypeEnum? PredefinedType { get; set; }
+		public virtual IfcColumnTypeEnum? PredefinedType { get; set; }
 		public IfcColumn() : base()
 		{
 		}
@@ -12892,7 +13094,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcColumnType : IfcBuiltElementType
 	{
-		public IfcColumnTypeEnum? PredefinedType { get; set; }
+		public virtual IfcColumnTypeEnum? PredefinedType { get; set; }
 		public IfcColumnType() : base()
 		{
 		}
@@ -12916,7 +13118,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCommunicationsAppliance : IfcFlowTerminal
 	{
-		public IfcCommunicationsApplianceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCommunicationsApplianceTypeEnum? PredefinedType { get; set; }
 		public IfcCommunicationsAppliance() : base()
 		{
 		}
@@ -12937,7 +13139,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCommunicationsApplianceType : IfcFlowTerminalType
 	{
-		public IfcCommunicationsApplianceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCommunicationsApplianceTypeEnum? PredefinedType { get; set; }
 		public IfcCommunicationsApplianceType() : base()
 		{
 		}
@@ -12959,8 +13161,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcComplexProperty : IfcProperty
 	{
-		public IfcIdentifier? UsageName { get; set; }
-		public List<IfcProperty>? HasProperties { get; set; }
+		public virtual IfcIdentifier? UsageName { get; set; }
+		public virtual List<IfcProperty>? HasProperties { get; set; }
 		public IfcComplexProperty() : base()
 		{
 		}
@@ -12984,9 +13186,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcComplexPropertyTemplate : IfcPropertyTemplate
 	{
-		public IfcLabel? UsageName { get; set; }
-		public IfcComplexPropertyTemplateTypeEnum? TemplateType { get; set; }
-		public List<IfcPropertyTemplate>? HasPropertyTemplates { get; set; }
+		public virtual IfcLabel? UsageName { get; set; }
+		public virtual IfcComplexPropertyTemplateTypeEnum? TemplateType { get; set; }
+		public virtual List<IfcPropertyTemplate>? HasPropertyTemplates { get; set; }
 		public IfcComplexPropertyTemplate() : base()
 		{
 		}
@@ -13017,8 +13219,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCompositeCurve : IfcBoundedCurve
 	{
-		public List<IfcSegment>? Segments { get; set; }
-		public IfcLogical? SelfIntersect { get; set; }
+		public virtual List<IfcSegment>? Segments { get; set; }
+		public virtual IfcLogical? SelfIntersect { get; set; }
 		//TODO DERIVE
 		public virtual IfcInteger? NSegments {get {return null;}}
 		//TODO DERIVE
@@ -13069,8 +13271,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCompositeCurveSegment : IfcSegment
 	{
-		public IfcBoolean? SameSense { get; set; }
-		public IfcCurve? ParentCurve { get; set; }
+		public virtual IfcBoolean? SameSense { get; set; }
+		public virtual IfcCurve? ParentCurve { get; set; }
 		public IfcCompositeCurveSegment() : base()
 		{
 		}
@@ -13093,8 +13295,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCompositeProfileDef : IfcProfileDef
 	{
-		public List<IfcProfileDef>? Profiles { get; set; }
-		public IfcLabel? Label { get; set; }
+		public virtual List<IfcProfileDef>? Profiles { get; set; }
+		public virtual IfcLabel? Label { get; set; }
 		public IfcCompositeProfileDef() : base()
 		{
 		}
@@ -13119,7 +13321,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCompressor : IfcFlowMovingDevice
 	{
-		public IfcCompressorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCompressorTypeEnum? PredefinedType { get; set; }
 		public IfcCompressor() : base()
 		{
 		}
@@ -13140,7 +13342,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCompressorType : IfcFlowMovingDeviceType
 	{
-		public IfcCompressorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCompressorTypeEnum? PredefinedType { get; set; }
 		public IfcCompressorType() : base()
 		{
 		}
@@ -13164,7 +13366,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCondenser : IfcEnergyConversionDevice
 	{
-		public IfcCondenserTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCondenserTypeEnum? PredefinedType { get; set; }
 		public IfcCondenser() : base()
 		{
 		}
@@ -13185,7 +13387,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCondenserType : IfcEnergyConversionDeviceType
 	{
-		public IfcCondenserTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCondenserTypeEnum? PredefinedType { get; set; }
 		public IfcCondenserType() : base()
 		{
 		}
@@ -13206,7 +13408,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcConic : IfcCurve
 	{
-		public IfcAxis2Placement? Position { get; set; }
+		public virtual IfcAxis2Placement? Position { get; set; }
 		public IfcConic() : base()
 		{
 		}
@@ -13227,7 +13429,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConnectedFaceSet : IfcTopologicalRepresentationItem
 	{
-		public List<IfcFace>? CfsFaces { get; set; }
+		public virtual List<IfcFace>? CfsFaces { get; set; }
 		public IfcConnectedFaceSet() : base()
 		{
 		}
@@ -13246,8 +13448,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConnectionCurveGeometry : IfcConnectionGeometry
 	{
-		public IfcCurveOrEdgeCurve? CurveOnRelatingElement { get; set; }
-		public IfcCurveOrEdgeCurve? CurveOnRelatedElement { get; set; }
+		public virtual IfcCurveOrEdgeCurve? CurveOnRelatingElement { get; set; }
+		public virtual IfcCurveOrEdgeCurve? CurveOnRelatedElement { get; set; }
 		public IfcConnectionCurveGeometry() : base()
 		{
 		}
@@ -13284,9 +13486,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConnectionPointEccentricity : IfcConnectionPointGeometry
 	{
-		public IfcLengthMeasure? EccentricityInX { get; set; }
-		public IfcLengthMeasure? EccentricityInY { get; set; }
-		public IfcLengthMeasure? EccentricityInZ { get; set; }
+		public virtual IfcLengthMeasure? EccentricityInX { get; set; }
+		public virtual IfcLengthMeasure? EccentricityInY { get; set; }
+		public virtual IfcLengthMeasure? EccentricityInZ { get; set; }
 		public IfcConnectionPointEccentricity() : base()
 		{
 		}
@@ -13309,8 +13511,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConnectionPointGeometry : IfcConnectionGeometry
 	{
-		public IfcPointOrVertexPoint? PointOnRelatingElement { get; set; }
-		public IfcPointOrVertexPoint? PointOnRelatedElement { get; set; }
+		public virtual IfcPointOrVertexPoint? PointOnRelatingElement { get; set; }
+		public virtual IfcPointOrVertexPoint? PointOnRelatedElement { get; set; }
 		public IfcConnectionPointGeometry() : base()
 		{
 		}
@@ -13330,8 +13532,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConnectionSurfaceGeometry : IfcConnectionGeometry
 	{
-		public IfcSurfaceOrFaceSurface? SurfaceOnRelatingElement { get; set; }
-		public IfcSurfaceOrFaceSurface? SurfaceOnRelatedElement { get; set; }
+		public virtual IfcSurfaceOrFaceSurface? SurfaceOnRelatingElement { get; set; }
+		public virtual IfcSurfaceOrFaceSurface? SurfaceOnRelatedElement { get; set; }
 		public IfcConnectionSurfaceGeometry() : base()
 		{
 		}
@@ -13351,8 +13553,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConnectionVolumeGeometry : IfcConnectionGeometry
 	{
-		public IfcSolidOrShell? VolumeOnRelatingElement { get; set; }
-		public IfcSolidOrShell? VolumeOnRelatedElement { get; set; }
+		public virtual IfcSolidOrShell? VolumeOnRelatingElement { get; set; }
+		public virtual IfcSolidOrShell? VolumeOnRelatedElement { get; set; }
 		public IfcConnectionVolumeGeometry() : base()
 		{
 		}
@@ -13385,15 +13587,17 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcConstraint : Entity, IfcResourceObjectSelect
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcConstraintEnum? ConstraintGrade { get; set; }
-		public IfcLabel? ConstraintSource { get; set; }
-		public IfcActorSelect? CreatingActor { get; set; }
-		public IfcDateTime? CreationTime { get; set; }
-		public IfcLabel? UserDefinedGrade { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcConstraintEnum? ConstraintGrade { get; set; }
+		public virtual IfcLabel? ConstraintSource { get; set; }
+		public virtual IfcActorSelect? CreatingActor { get; set; }
+		public virtual IfcDateTime? CreationTime { get; set; }
+		public virtual IfcLabel? UserDefinedGrade { get; set; }
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? HasExternalReferences => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcResourceConstraintRelationship>? PropertiesForConstraint => Model?.GetItems<IfcResourceConstraintRelationship>().Where(x => x.RelatingConstraint != null && x.RelatingConstraint == this).ToList();
 		public IfcConstraint() : base()
 		{
 		}
@@ -13421,7 +13625,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConstructionEquipmentResource : IfcConstructionResource
 	{
-		public IfcConstructionEquipmentResourceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcConstructionEquipmentResourceTypeEnum? PredefinedType { get; set; }
 		public IfcConstructionEquipmentResource() : base()
 		{
 		}
@@ -13442,7 +13646,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConstructionEquipmentResourceType : IfcConstructionResourceType
 	{
-		public IfcConstructionEquipmentResourceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcConstructionEquipmentResourceTypeEnum? PredefinedType { get; set; }
 		public IfcConstructionEquipmentResourceType() : base()
 		{
 		}
@@ -13464,7 +13668,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConstructionMaterialResource : IfcConstructionResource
 	{
-		public IfcConstructionMaterialResourceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcConstructionMaterialResourceTypeEnum? PredefinedType { get; set; }
 		public IfcConstructionMaterialResource() : base()
 		{
 		}
@@ -13485,7 +13689,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConstructionMaterialResourceType : IfcConstructionResourceType
 	{
-		public IfcConstructionMaterialResourceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcConstructionMaterialResourceTypeEnum? PredefinedType { get; set; }
 		public IfcConstructionMaterialResourceType() : base()
 		{
 		}
@@ -13507,7 +13711,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConstructionProductResource : IfcConstructionResource
 	{
-		public IfcConstructionProductResourceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcConstructionProductResourceTypeEnum? PredefinedType { get; set; }
 		public IfcConstructionProductResource() : base()
 		{
 		}
@@ -13528,7 +13732,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConstructionProductResourceType : IfcConstructionResourceType
 	{
-		public IfcConstructionProductResourceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcConstructionProductResourceTypeEnum? PredefinedType { get; set; }
 		public IfcConstructionProductResourceType() : base()
 		{
 		}
@@ -13555,9 +13759,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcConstructionResource : IfcResource
 	{
-		public IfcResourceTime? Usage { get; set; }
-		public List<IfcAppliedValue>? BaseCosts { get; set; }
-		public IfcPhysicalQuantity? BaseQuantity { get; set; }
+		public virtual IfcResourceTime? Usage { get; set; }
+		public override List<IfcAppliedValue>? BaseCosts { get; set; }
+		public override IfcPhysicalQuantity? BaseQuantity { get; set; }
 		public IfcConstructionResource() : base()
 		{
 		}
@@ -13585,8 +13789,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcConstructionResourceType : IfcTypeResource
 	{
-		public List<IfcAppliedValue>? BaseCosts { get; set; }
-		public IfcPhysicalQuantity? BaseQuantity { get; set; }
+		public override List<IfcAppliedValue>? BaseCosts { get; set; }
+		public override IfcPhysicalQuantity? BaseQuantity { get; set; }
 		public IfcConstructionResourceType() : base()
 		{
 		}
@@ -13615,13 +13819,15 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcContext : IfcObjectDefinition
 	{
-		public IfcLabel? ObjectType { get; set; }
-		public IfcLabel? LongName { get; set; }
-		public IfcLabel? Phase { get; set; }
-		public List<IfcRepresentationContext>? RepresentationContexts { get; set; }
-		public IfcUnitAssignment? UnitsInContext { get; set; }
+		public virtual IfcLabel? ObjectType { get; set; }
+		public virtual IfcLabel? LongName { get; set; }
+		public virtual IfcLabel? Phase { get; set; }
+		public virtual List<IfcRepresentationContext>? RepresentationContexts { get; set; }
+		public virtual IfcUnitAssignment? UnitsInContext { get; set; }
 		//TODO INVERSE
+		public List<IfcRelDefinesByProperties>? IsDefinedBy => Model?.GetItems<IfcRelDefinesByProperties>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelDeclares>? Declares => Model?.GetItems<IfcRelDeclares>().Where(x => x.RelatingContext != null && x.RelatingContext == this).ToList();
 		public IfcContext() : base()
 		{
 		}
@@ -13645,8 +13851,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcContextDependentUnit : IfcNamedUnit, IfcResourceObjectSelect
 	{
-		public IfcLabel? Name { get; set; }
+		public virtual IfcLabel? Name { get; set; }
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? HasExternalReference => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		public IfcContextDependentUnit() : base()
 		{
 		}
@@ -13675,8 +13882,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcControl : IfcObject
 	{
-		public IfcIdentifier? Identification { get; set; }
+		public virtual IfcIdentifier? Identification { get; set; }
 		//TODO INVERSE
+		public List<IfcRelAssignsToControl>? Controls => Model?.GetItems<IfcRelAssignsToControl>().Where(x => x.RelatingControl != null && x.RelatingControl == this).ToList();
 		public IfcControl() : base()
 		{
 		}
@@ -13700,7 +13908,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcController : IfcDistributionControlElement
 	{
-		public IfcControllerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcControllerTypeEnum? PredefinedType { get; set; }
 		public IfcController() : base()
 		{
 		}
@@ -13721,7 +13929,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcControllerType : IfcDistributionControlElementType
 	{
-		public IfcControllerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcControllerTypeEnum? PredefinedType { get; set; }
 		public IfcControllerType() : base()
 		{
 		}
@@ -13744,9 +13952,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConversionBasedUnit : IfcNamedUnit, IfcResourceObjectSelect
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcMeasureWithUnit? ConversionFactor { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcMeasureWithUnit? ConversionFactor { get; set; }
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? HasExternalReference => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		public IfcConversionBasedUnit() : base()
 		{
 		}
@@ -13765,7 +13974,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConversionBasedUnitWithOffset : IfcConversionBasedUnit
 	{
-		public IfcReal? ConversionOffset { get; set; }
+		public virtual IfcReal? ConversionOffset { get; set; }
 		public IfcConversionBasedUnitWithOffset() : base()
 		{
 		}
@@ -13789,7 +13998,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConveyorSegment : IfcFlowSegment
 	{
-		public IfcConveyorSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcConveyorSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcConveyorSegment() : base()
 		{
 		}
@@ -13810,7 +14019,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcConveyorSegmentType : IfcFlowSegmentType
 	{
-		public IfcConveyorSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcConveyorSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcConveyorSegmentType() : base()
 		{
 		}
@@ -13834,7 +14043,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCooledBeam : IfcEnergyConversionDevice
 	{
-		public IfcCooledBeamTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCooledBeamTypeEnum? PredefinedType { get; set; }
 		public IfcCooledBeam() : base()
 		{
 		}
@@ -13855,7 +14064,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCooledBeamType : IfcEnergyConversionDeviceType
 	{
-		public IfcCooledBeamTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCooledBeamTypeEnum? PredefinedType { get; set; }
 		public IfcCooledBeamType() : base()
 		{
 		}
@@ -13879,7 +14088,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCoolingTower : IfcEnergyConversionDevice
 	{
-		public IfcCoolingTowerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCoolingTowerTypeEnum? PredefinedType { get; set; }
 		public IfcCoolingTower() : base()
 		{
 		}
@@ -13900,7 +14109,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCoolingTowerType : IfcEnergyConversionDeviceType
 	{
-		public IfcCoolingTowerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCoolingTowerTypeEnum? PredefinedType { get; set; }
 		public IfcCoolingTowerType() : base()
 		{
 		}
@@ -13921,8 +14130,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcCoordinateOperation : Entity
 	{
-		public IfcCoordinateReferenceSystemSelect? SourceCRS { get; set; }
-		public IfcCoordinateReferenceSystem? TargetCRS { get; set; }
+		public virtual IfcCoordinateReferenceSystemSelect? SourceCRS { get; set; }
+		public virtual IfcCoordinateReferenceSystem? TargetCRS { get; set; }
 		public IfcCoordinateOperation() : base()
 		{
 		}
@@ -13950,11 +14159,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcCoordinateReferenceSystem : Entity, IfcCoordinateReferenceSystemSelect
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcIdentifier? GeodeticDatum { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcIdentifier? GeodeticDatum { get; set; }
 		//TODO INVERSE
+		public List<IfcCoordinateOperation>? HasCoordinateOperation => Model?.GetItems<IfcCoordinateOperation>().Where(x => x.SourceCRS != null && x.SourceCRS == this).ToList();
 		//TODO INVERSE
+		public List<IfcWellKnownText>? WellKnownText => Model?.GetItems<IfcWellKnownText>().Where(x => x.CoordinateReferenceSystem != null && x.CoordinateReferenceSystem == this).ToList();
 		public IfcCoordinateReferenceSystem() : base()
 		{
 		}
@@ -13975,8 +14186,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCosineSpiral : IfcSpiral
 	{
-		public IfcLengthMeasure? CosineTerm { get; set; }
-		public IfcLengthMeasure? ConstantTerm { get; set; }
+		public virtual IfcLengthMeasure? CosineTerm { get; set; }
+		public virtual IfcLengthMeasure? ConstantTerm { get; set; }
 		public IfcCosineSpiral() : base()
 		{
 		}
@@ -13997,9 +14208,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCostItem : IfcControl
 	{
-		public IfcCostItemTypeEnum? PredefinedType { get; set; }
-		public List<IfcCostValue>? CostValues { get; set; }
-		public List<IfcPhysicalQuantity>? CostQuantities { get; set; }
+		public virtual IfcCostItemTypeEnum? PredefinedType { get; set; }
+		public virtual List<IfcCostValue>? CostValues { get; set; }
+		public virtual List<IfcPhysicalQuantity>? CostQuantities { get; set; }
 		public IfcCostItem() : base()
 		{
 		}
@@ -14022,10 +14233,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCostSchedule : IfcControl
 	{
-		public IfcCostScheduleTypeEnum? PredefinedType { get; set; }
-		public IfcLabel? Status { get; set; }
-		public IfcDateTime? SubmittedOn { get; set; }
-		public IfcDateTime? UpdateDate { get; set; }
+		public virtual IfcCostScheduleTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLabel? Status { get; set; }
+		public virtual IfcDateTime? SubmittedOn { get; set; }
+		public virtual IfcDateTime? UpdateDate { get; set; }
 		public IfcCostSchedule() : base()
 		{
 		}
@@ -14067,7 +14278,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCourse : IfcBuiltElement
 	{
-		public IfcCourseTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCourseTypeEnum? PredefinedType { get; set; }
 		public IfcCourse() : base()
 		{
 		}
@@ -14088,7 +14299,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCourseType : IfcBuiltElementType
 	{
-		public IfcCourseTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCourseTypeEnum? PredefinedType { get; set; }
 		public IfcCourseType() : base()
 		{
 		}
@@ -14115,9 +14326,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCovering : IfcBuiltElement
 	{
-		public IfcCoveringTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCoveringTypeEnum? PredefinedType { get; set; }
 		//TODO INVERSE
+		public List<IfcRelCoversSpaces>? CoversSpaces => Model?.GetItems<IfcRelCoversSpaces>().Where(x => x.RelatedCoverings != null && x.RelatedCoverings.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelCoversBldgElements>? CoversElements => Model?.GetItems<IfcRelCoversBldgElements>().Where(x => x.RelatedCoverings != null && x.RelatedCoverings.Contains(this)).ToList();
 		public IfcCovering() : base()
 		{
 		}
@@ -14138,7 +14351,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCoveringType : IfcBuiltElementType
 	{
-		public IfcCoveringTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCoveringTypeEnum? PredefinedType { get; set; }
 		public IfcCoveringType() : base()
 		{
 		}
@@ -14160,7 +14373,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCrewResource : IfcConstructionResource
 	{
-		public IfcCrewResourceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCrewResourceTypeEnum? PredefinedType { get; set; }
 		public IfcCrewResource() : base()
 		{
 		}
@@ -14181,7 +14394,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCrewResourceType : IfcConstructionResourceType
 	{
-		public IfcCrewResourceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCrewResourceTypeEnum? PredefinedType { get; set; }
 		public IfcCrewResourceType() : base()
 		{
 		}
@@ -14207,7 +14420,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcCsgPrimitive3D : IfcGeometricRepresentationItem, IfcBooleanOperand, IfcCsgSelect
 	{
-		public IfcAxis2Placement3D? Position { get; set; }
+		public virtual IfcAxis2Placement3D? Position { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcCsgPrimitive3D() : base()
@@ -14227,7 +14440,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCsgSolid : IfcSolidModel
 	{
-		public IfcCsgSelect? TreeRootExpression { get; set; }
+		public virtual IfcCsgSelect? TreeRootExpression { get; set; }
 		public IfcCsgSolid() : base()
 		{
 		}
@@ -14249,11 +14462,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCurrencyRelationship : IfcResourceLevelRelationship
 	{
-		public IfcMonetaryUnit? RelatingMonetaryUnit { get; set; }
-		public IfcMonetaryUnit? RelatedMonetaryUnit { get; set; }
-		public IfcPositiveRatioMeasure? ExchangeRate { get; set; }
-		public IfcDateTime? RateDateTime { get; set; }
-		public IfcLibraryInformation? RateSource { get; set; }
+		public virtual IfcMonetaryUnit? RelatingMonetaryUnit { get; set; }
+		public virtual IfcMonetaryUnit? RelatedMonetaryUnit { get; set; }
+		public virtual IfcPositiveRatioMeasure? ExchangeRate { get; set; }
+		public virtual IfcDateTime? RateDateTime { get; set; }
+		public virtual IfcLibraryInformation? RateSource { get; set; }
 		public IfcCurrencyRelationship() : base()
 		{
 		}
@@ -14281,7 +14494,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCurtainWall : IfcBuiltElement
 	{
-		public IfcCurtainWallTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCurtainWallTypeEnum? PredefinedType { get; set; }
 		public IfcCurtainWall() : base()
 		{
 		}
@@ -14302,7 +14515,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCurtainWallType : IfcBuiltElementType
 	{
-		public IfcCurtainWallTypeEnum? PredefinedType { get; set; }
+		public virtual IfcCurtainWallTypeEnum? PredefinedType { get; set; }
 		public IfcCurtainWallType() : base()
 		{
 		}
@@ -14347,9 +14560,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCurveBoundedPlane : IfcBoundedSurface
 	{
-		public IfcPlane? BasisSurface { get; set; }
-		public IfcCurve? OuterBoundary { get; set; }
-		public List<IfcCurve>? InnerBoundaries { get; set; }
+		public virtual IfcPlane? BasisSurface { get; set; }
+		public virtual IfcCurve? OuterBoundary { get; set; }
+		public virtual List<IfcCurve>? InnerBoundaries { get; set; }
 		public IfcCurveBoundedPlane() : base()
 		{
 		}
@@ -14371,9 +14584,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCurveBoundedSurface : IfcBoundedSurface
 	{
-		public IfcSurface? BasisSurface { get; set; }
-		public List<IfcBoundaryCurve>? Boundaries { get; set; }
-		public IfcBoolean? ImplicitOuter { get; set; }
+		public virtual IfcSurface? BasisSurface { get; set; }
+		public virtual List<IfcBoundaryCurve>? Boundaries { get; set; }
+		public virtual IfcBoolean? ImplicitOuter { get; set; }
 		public IfcCurveBoundedSurface() : base()
 		{
 		}
@@ -14396,10 +14609,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCurveSegment : IfcSegment
 	{
-		public IfcPlacement? Placement { get; set; }
-		public IfcCurveMeasureSelect? SegmentStart { get; set; }
-		public IfcCurveMeasureSelect? SegmentLength { get; set; }
-		public IfcCurve? ParentCurve { get; set; }
+		public virtual IfcPlacement? Placement { get; set; }
+		public virtual IfcCurveMeasureSelect? SegmentStart { get; set; }
+		public virtual IfcCurveMeasureSelect? SegmentLength { get; set; }
+		public virtual IfcCurve? ParentCurve { get; set; }
 		public IfcCurveSegment() : base()
 		{
 		}
@@ -14429,10 +14642,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCurveStyle : IfcPresentationStyle
 	{
-		public IfcCurveFontOrScaledCurveFontSelect? CurveFont { get; set; }
-		public IfcSizeSelect? CurveWidth { get; set; }
-		public IfcColour? CurveColour { get; set; }
-		public IfcBoolean? ModelOrDraughting { get; set; }
+		public virtual IfcCurveFontOrScaledCurveFontSelect? CurveFont { get; set; }
+		public virtual IfcSizeSelect? CurveWidth { get; set; }
+		public virtual IfcColour? CurveColour { get; set; }
+		public virtual IfcBoolean? ModelOrDraughting { get; set; }
 		public IfcCurveStyle() : base()
 		{
 		}
@@ -14454,8 +14667,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCurveStyleFont : IfcPresentationItem, IfcCurveStyleFontSelect
 	{
-		public IfcLabel? Name { get; set; }
-		public List<IfcCurveStyleFontPattern>? PatternList { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual List<IfcCurveStyleFontPattern>? PatternList { get; set; }
 		public IfcCurveStyleFont() : base()
 		{
 		}
@@ -14476,9 +14689,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCurveStyleFontAndScaling : IfcPresentationItem, IfcCurveFontOrScaledCurveFontSelect
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcCurveStyleFontSelect? CurveStyleFont { get; set; }
-		public IfcPositiveRatioMeasure? CurveFontScaling { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcCurveStyleFontSelect? CurveStyleFont { get; set; }
+		public virtual IfcPositiveRatioMeasure? CurveFontScaling { get; set; }
 		public IfcCurveStyleFontAndScaling() : base()
 		{
 		}
@@ -14501,8 +14714,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCurveStyleFontPattern : IfcPresentationItem
 	{
-		public IfcLengthMeasure? VisibleSegmentLength { get; set; }
-		public IfcPositiveLengthMeasure? InvisibleSegmentLength { get; set; }
+		public virtual IfcLengthMeasure? VisibleSegmentLength { get; set; }
+		public virtual IfcPositiveLengthMeasure? InvisibleSegmentLength { get; set; }
 		public IfcCurveStyleFontPattern() : base()
 		{
 		}
@@ -14521,7 +14734,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcCylindricalSurface : IfcElementarySurface
 	{
-		public IfcPositiveLengthMeasure? Radius { get; set; }
+		public virtual IfcPositiveLengthMeasure? Radius { get; set; }
 		public IfcCylindricalSurface() : base()
 		{
 		}
@@ -14545,7 +14758,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDamper : IfcFlowController
 	{
-		public IfcDamperTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDamperTypeEnum? PredefinedType { get; set; }
 		public IfcDamper() : base()
 		{
 		}
@@ -14566,7 +14779,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDamperType : IfcFlowControllerType
 	{
-		public IfcDamperTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDamperTypeEnum? PredefinedType { get; set; }
 		public IfcDamperType() : base()
 		{
 		}
@@ -14629,9 +14842,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDerivedProfileDef : IfcProfileDef
 	{
-		public IfcProfileDef? ParentProfile { get; set; }
-		public IfcCartesianTransformationOperator2D? Operator { get; set; }
-		public IfcLabel? Label { get; set; }
+		public virtual IfcProfileDef? ParentProfile { get; set; }
+		public virtual IfcCartesianTransformationOperator2D? Operator { get; set; }
+		public virtual IfcLabel? Label { get; set; }
 		public IfcDerivedProfileDef() : base()
 		{
 		}
@@ -14660,10 +14873,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDerivedUnit : Entity, IfcUnit
 	{
-		public List<IfcDerivedUnitElement>? Elements { get; set; }
-		public IfcDerivedUnitEnum? UnitType { get; set; }
-		public IfcLabel? UserDefinedType { get; set; }
-		public IfcLabel? Name { get; set; }
+		public virtual List<IfcDerivedUnitElement>? Elements { get; set; }
+		public virtual IfcDerivedUnitEnum? UnitType { get; set; }
+		public virtual IfcLabel? UserDefinedType { get; set; }
+		public virtual IfcLabel? Name { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionalExponents? Dimensions {get {return null;}}
 		public IfcDerivedUnit() : base()
@@ -14686,8 +14899,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDerivedUnitElement : Entity
 	{
-		public IfcNamedUnit? Unit { get; set; }
-		public INTEGER? Exponent { get; set; }
+		public virtual IfcNamedUnit? Unit { get; set; }
+		public virtual INTEGER? Exponent { get; set; }
 		public IfcDerivedUnitElement() : base()
 		{
 		}
@@ -14711,13 +14924,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDimensionalExponents : Entity
 	{
-		public INTEGER? LengthExponent { get; set; }
-		public INTEGER? MassExponent { get; set; }
-		public INTEGER? TimeExponent { get; set; }
-		public INTEGER? ElectricCurrentExponent { get; set; }
-		public INTEGER? ThermodynamicTemperatureExponent { get; set; }
-		public INTEGER? AmountOfSubstanceExponent { get; set; }
-		public INTEGER? LuminousIntensityExponent { get; set; }
+		public virtual INTEGER? LengthExponent { get; set; }
+		public virtual INTEGER? MassExponent { get; set; }
+		public virtual INTEGER? TimeExponent { get; set; }
+		public virtual INTEGER? ElectricCurrentExponent { get; set; }
+		public virtual INTEGER? ThermodynamicTemperatureExponent { get; set; }
+		public virtual INTEGER? AmountOfSubstanceExponent { get; set; }
+		public virtual INTEGER? LuminousIntensityExponent { get; set; }
 		public IfcDimensionalExponents() : base()
 		{
 		}
@@ -14745,7 +14958,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDirection : IfcGeometricRepresentationItem, IfcGridPlacementDirectionSelect, IfcVectorOrDirection
 	{
-		public List<IfcReal>? DirectionRatios { get; set; }
+		public virtual List<IfcReal>? DirectionRatios { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcDirection() : base()
@@ -14773,9 +14986,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcDirectrixCurveSweptAreaSolid : IfcSweptAreaSolid
 	{
-		public IfcCurve? Directrix { get; set; }
-		public IfcCurveMeasureSelect? StartParam { get; set; }
-		public IfcCurveMeasureSelect? EndParam { get; set; }
+		public virtual IfcCurve? Directrix { get; set; }
+		public virtual IfcCurveMeasureSelect? StartParam { get; set; }
+		public virtual IfcCurveMeasureSelect? EndParam { get; set; }
 		public IfcDirectrixCurveSweptAreaSolid() : base()
 		{
 		}
@@ -14816,7 +15029,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDiscreteAccessory : IfcElementComponent
 	{
-		public IfcDiscreteAccessoryTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDiscreteAccessoryTypeEnum? PredefinedType { get; set; }
 		public IfcDiscreteAccessory() : base()
 		{
 		}
@@ -14837,7 +15050,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDiscreteAccessoryType : IfcElementComponentType
 	{
-		public IfcDiscreteAccessoryTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDiscreteAccessoryTypeEnum? PredefinedType { get; set; }
 		public IfcDiscreteAccessoryType() : base()
 		{
 		}
@@ -14861,7 +15074,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDistributionBoard : IfcFlowController
 	{
-		public IfcDistributionBoardTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDistributionBoardTypeEnum? PredefinedType { get; set; }
 		public IfcDistributionBoard() : base()
 		{
 		}
@@ -14882,7 +15095,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDistributionBoardType : IfcFlowControllerType
 	{
-		public IfcDistributionBoardTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDistributionBoardTypeEnum? PredefinedType { get; set; }
 		public IfcDistributionBoardType() : base()
 		{
 		}
@@ -14906,7 +15119,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDistributionChamberElement : IfcDistributionFlowElement
 	{
-		public IfcDistributionChamberElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDistributionChamberElementTypeEnum? PredefinedType { get; set; }
 		public IfcDistributionChamberElement() : base()
 		{
 		}
@@ -14927,7 +15140,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDistributionChamberElementType : IfcDistributionFlowElementType
 	{
-		public IfcDistributionChamberElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDistributionChamberElementTypeEnum? PredefinedType { get; set; }
 		public IfcDistributionChamberElementType() : base()
 		{
 		}
@@ -14970,6 +15183,7 @@ namespace IFC.IFC4x3
 	public class IfcDistributionControlElement : IfcDistributionElement
 	{
 		//TODO INVERSE
+		public List<IfcRelFlowControlElements>? AssignedToFlowElement => Model?.GetItems<IfcRelFlowControlElements>().Where(x => x.RelatedControlElements != null && x.RelatedControlElements.Contains(this)).ToList();
 		public IfcDistributionControlElement() : base()
 		{
 		}
@@ -15014,6 +15228,7 @@ namespace IFC.IFC4x3
 	public class IfcDistributionElement : IfcElement
 	{
 		//TODO INVERSE
+		public List<IfcRelConnectsPortToElement>? HasPorts => Model?.GetItems<IfcRelConnectsPortToElement>().Where(x => x.RelatedElement != null && x.RelatedElement == this).ToList();
 		public IfcDistributionElement() : base()
 		{
 		}
@@ -15060,6 +15275,7 @@ namespace IFC.IFC4x3
 	public class IfcDistributionFlowElement : IfcDistributionElement
 	{
 		//TODO INVERSE
+		public List<IfcRelFlowControlElements>? HasControlElements => Model?.GetItems<IfcRelFlowControlElements>().Where(x => x.RelatingFlowElement != null && x.RelatingFlowElement == this).ToList();
 		public IfcDistributionFlowElement() : base()
 		{
 		}
@@ -15103,9 +15319,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDistributionPort : IfcPort
 	{
-		public IfcFlowDirectionEnum? FlowDirection { get; set; }
-		public IfcDistributionPortTypeEnum? PredefinedType { get; set; }
-		public IfcDistributionSystemEnum? SystemType { get; set; }
+		public virtual IfcFlowDirectionEnum? FlowDirection { get; set; }
+		public virtual IfcDistributionPortTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDistributionSystemEnum? SystemType { get; set; }
 		public IfcDistributionPort() : base()
 		{
 		}
@@ -15132,8 +15348,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDistributionSystem : IfcSystem
 	{
-		public IfcLabel? LongName { get; set; }
-		public IfcDistributionSystemEnum? PredefinedType { get; set; }
+		public virtual IfcLabel? LongName { get; set; }
+		public virtual IfcDistributionSystemEnum? PredefinedType { get; set; }
 		public IfcDistributionSystem() : base()
 		{
 		}
@@ -15173,27 +15389,31 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDocumentInformation : IfcExternalInformation, IfcDocumentSelect
 	{
-		public IfcIdentifier? Identification { get; set; }
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcURIReference? Location { get; set; }
-		public IfcText? Purpose { get; set; }
-		public IfcText? IntendedUse { get; set; }
-		public IfcText? Scope { get; set; }
-		public IfcLabel? Revision { get; set; }
-		public IfcActorSelect? DocumentOwner { get; set; }
-		public List<IfcActorSelect>? Editors { get; set; }
-		public IfcDateTime? CreationTime { get; set; }
-		public IfcDateTime? LastRevisionTime { get; set; }
-		public IfcIdentifier? ElectronicFormat { get; set; }
-		public IfcDate? ValidFrom { get; set; }
-		public IfcDate? ValidUntil { get; set; }
-		public IfcDocumentConfidentialityEnum? Confidentiality { get; set; }
-		public IfcDocumentStatusEnum? Status { get; set; }
+		public virtual IfcIdentifier? Identification { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcURIReference? Location { get; set; }
+		public virtual IfcText? Purpose { get; set; }
+		public virtual IfcText? IntendedUse { get; set; }
+		public virtual IfcText? Scope { get; set; }
+		public virtual IfcLabel? Revision { get; set; }
+		public virtual IfcActorSelect? DocumentOwner { get; set; }
+		public virtual List<IfcActorSelect>? Editors { get; set; }
+		public virtual IfcDateTime? CreationTime { get; set; }
+		public virtual IfcDateTime? LastRevisionTime { get; set; }
+		public virtual IfcIdentifier? ElectronicFormat { get; set; }
+		public virtual IfcDate? ValidFrom { get; set; }
+		public virtual IfcDate? ValidUntil { get; set; }
+		public virtual IfcDocumentConfidentialityEnum? Confidentiality { get; set; }
+		public virtual IfcDocumentStatusEnum? Status { get; set; }
 		//TODO INVERSE
+		public List<IfcRelAssociatesDocument>? DocumentInfoForObjects => Model?.GetItems<IfcRelAssociatesDocument>().Where(x => x.RelatingDocument != null && x.RelatingDocument == this).ToList();
 		//TODO INVERSE
+		public List<IfcDocumentReference>? HasDocumentReferences => Model?.GetItems<IfcDocumentReference>().Where(x => x.ReferencedDocument != null && x.ReferencedDocument == this).ToList();
 		//TODO INVERSE
+		public List<IfcDocumentInformationRelationship>? IsPointedTo => Model?.GetItems<IfcDocumentInformationRelationship>().Where(x => x.RelatedDocuments != null && x.RelatedDocuments.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcDocumentInformationRelationship>? IsPointer => Model?.GetItems<IfcDocumentInformationRelationship>().Where(x => x.RelatingDocument != null && x.RelatingDocument == this).ToList();
 		public IfcDocumentInformation() : base()
 		{
 		}
@@ -15229,9 +15449,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDocumentInformationRelationship : IfcResourceLevelRelationship
 	{
-		public IfcDocumentInformation? RelatingDocument { get; set; }
-		public List<IfcDocumentInformation>? RelatedDocuments { get; set; }
-		public IfcLabel? RelationshipType { get; set; }
+		public virtual IfcDocumentInformation? RelatingDocument { get; set; }
+		public virtual List<IfcDocumentInformation>? RelatedDocuments { get; set; }
+		public virtual IfcLabel? RelationshipType { get; set; }
 		public IfcDocumentInformationRelationship() : base()
 		{
 		}
@@ -15256,9 +15476,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDocumentReference : IfcExternalReference, IfcDocumentSelect
 	{
-		public IfcText? Description { get; set; }
-		public IfcDocumentInformation? ReferencedDocument { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcDocumentInformation? ReferencedDocument { get; set; }
 		//TODO INVERSE
+		public List<IfcRelAssociatesDocument>? DocumentRefForObjects => Model?.GetItems<IfcRelAssociatesDocument>().Where(x => x.RelatingDocument != null && x.RelatingDocument == this).ToList();
 		public IfcDocumentReference() : base()
 		{
 		}
@@ -15287,11 +15508,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDoor : IfcBuiltElement
 	{
-		public IfcPositiveLengthMeasure? OverallHeight { get; set; }
-		public IfcPositiveLengthMeasure? OverallWidth { get; set; }
-		public IfcDoorTypeEnum? PredefinedType { get; set; }
-		public IfcDoorTypeOperationEnum? OperationType { get; set; }
-		public IfcLabel? UserDefinedOperationType { get; set; }
+		public virtual IfcPositiveLengthMeasure? OverallHeight { get; set; }
+		public virtual IfcPositiveLengthMeasure? OverallWidth { get; set; }
+		public virtual IfcDoorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDoorTypeOperationEnum? OperationType { get; set; }
+		public virtual IfcLabel? UserDefinedOperationType { get; set; }
 		public IfcDoor() : base()
 		{
 		}
@@ -15335,19 +15556,19 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDoorLiningProperties : IfcPreDefinedPropertySet
 	{
-		public IfcPositiveLengthMeasure? LiningDepth { get; set; }
-		public IfcNonNegativeLengthMeasure? LiningThickness { get; set; }
-		public IfcPositiveLengthMeasure? ThresholdDepth { get; set; }
-		public IfcNonNegativeLengthMeasure? ThresholdThickness { get; set; }
-		public IfcNonNegativeLengthMeasure? TransomThickness { get; set; }
-		public IfcLengthMeasure? TransomOffset { get; set; }
-		public IfcLengthMeasure? LiningOffset { get; set; }
-		public IfcLengthMeasure? ThresholdOffset { get; set; }
-		public IfcPositiveLengthMeasure? CasingThickness { get; set; }
-		public IfcPositiveLengthMeasure? CasingDepth { get; set; }
-		public IfcShapeAspect? ShapeAspectStyle { get; set; }
-		public IfcLengthMeasure? LiningToPanelOffsetX { get; set; }
-		public IfcLengthMeasure? LiningToPanelOffsetY { get; set; }
+		public virtual IfcPositiveLengthMeasure? LiningDepth { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? LiningThickness { get; set; }
+		public virtual IfcPositiveLengthMeasure? ThresholdDepth { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? ThresholdThickness { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? TransomThickness { get; set; }
+		public virtual IfcLengthMeasure? TransomOffset { get; set; }
+		public virtual IfcLengthMeasure? LiningOffset { get; set; }
+		public virtual IfcLengthMeasure? ThresholdOffset { get; set; }
+		public virtual IfcPositiveLengthMeasure? CasingThickness { get; set; }
+		public virtual IfcPositiveLengthMeasure? CasingDepth { get; set; }
+		public virtual IfcShapeAspect? ShapeAspectStyle { get; set; }
+		public virtual IfcLengthMeasure? LiningToPanelOffsetX { get; set; }
+		public virtual IfcLengthMeasure? LiningToPanelOffsetY { get; set; }
 		public IfcDoorLiningProperties() : base()
 		{
 		}
@@ -15385,11 +15606,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDoorPanelProperties : IfcPreDefinedPropertySet
 	{
-		public IfcPositiveLengthMeasure? PanelDepth { get; set; }
-		public IfcDoorPanelOperationEnum? PanelOperation { get; set; }
-		public IfcNormalisedRatioMeasure? PanelWidth { get; set; }
-		public IfcDoorPanelPositionEnum? PanelPosition { get; set; }
-		public IfcShapeAspect? ShapeAspectStyle { get; set; }
+		public virtual IfcPositiveLengthMeasure? PanelDepth { get; set; }
+		public virtual IfcDoorPanelOperationEnum? PanelOperation { get; set; }
+		public virtual IfcNormalisedRatioMeasure? PanelWidth { get; set; }
+		public virtual IfcDoorPanelPositionEnum? PanelPosition { get; set; }
+		public virtual IfcShapeAspect? ShapeAspectStyle { get; set; }
 		public IfcDoorPanelProperties() : base()
 		{
 		}
@@ -15417,10 +15638,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDoorType : IfcBuiltElementType
 	{
-		public IfcDoorTypeEnum? PredefinedType { get; set; }
-		public IfcDoorTypeOperationEnum? OperationType { get; set; }
-		public IfcBoolean? ParameterTakesPrecedence { get; set; }
-		public IfcLabel? UserDefinedOperationType { get; set; }
+		public virtual IfcDoorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDoorTypeOperationEnum? OperationType { get; set; }
+		public virtual IfcBoolean? ParameterTakesPrecedence { get; set; }
+		public virtual IfcLabel? UserDefinedOperationType { get; set; }
 		public IfcDoorType() : base()
 		{
 		}
@@ -15488,7 +15709,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDuctFitting : IfcFlowFitting
 	{
-		public IfcDuctFittingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDuctFittingTypeEnum? PredefinedType { get; set; }
 		public IfcDuctFitting() : base()
 		{
 		}
@@ -15509,7 +15730,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDuctFittingType : IfcFlowFittingType
 	{
-		public IfcDuctFittingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDuctFittingTypeEnum? PredefinedType { get; set; }
 		public IfcDuctFittingType() : base()
 		{
 		}
@@ -15533,7 +15754,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDuctSegment : IfcFlowSegment
 	{
-		public IfcDuctSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDuctSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcDuctSegment() : base()
 		{
 		}
@@ -15554,7 +15775,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDuctSegmentType : IfcFlowSegmentType
 	{
-		public IfcDuctSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDuctSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcDuctSegmentType() : base()
 		{
 		}
@@ -15578,7 +15799,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDuctSilencer : IfcFlowTreatmentDevice
 	{
-		public IfcDuctSilencerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDuctSilencerTypeEnum? PredefinedType { get; set; }
 		public IfcDuctSilencer() : base()
 		{
 		}
@@ -15599,7 +15820,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDuctSilencerType : IfcFlowTreatmentDeviceType
 	{
-		public IfcDuctSilencerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDuctSilencerTypeEnum? PredefinedType { get; set; }
 		public IfcDuctSilencerType() : base()
 		{
 		}
@@ -15621,7 +15842,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEarthworksCut : IfcFeatureElementSubtraction
 	{
-		public IfcEarthworksCutTypeEnum? PredefinedType { get; set; }
+		public virtual IfcEarthworksCutTypeEnum? PredefinedType { get; set; }
 		public IfcEarthworksCut() : base()
 		{
 		}
@@ -15661,7 +15882,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEarthworksFill : IfcEarthworksElement
 	{
-		public IfcEarthworksFillTypeEnum? PredefinedType { get; set; }
+		public virtual IfcEarthworksFillTypeEnum? PredefinedType { get; set; }
 		public IfcEarthworksFill() : base()
 		{
 		}
@@ -15684,8 +15905,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEdge : IfcTopologicalRepresentationItem
 	{
-		public IfcVertex? EdgeStart { get; set; }
-		public IfcVertex? EdgeEnd { get; set; }
+		public virtual IfcVertex? EdgeStart { get; set; }
+		public virtual IfcVertex? EdgeEnd { get; set; }
 		public IfcEdge() : base()
 		{
 		}
@@ -15705,8 +15926,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEdgeCurve : IfcEdge, IfcCurveOrEdgeCurve
 	{
-		public IfcCurve? EdgeGeometry { get; set; }
-		public IfcBoolean? SameSense { get; set; }
+		public virtual IfcCurve? EdgeGeometry { get; set; }
+		public virtual IfcBoolean? SameSense { get; set; }
 		public IfcEdgeCurve() : base()
 		{
 		}
@@ -15730,7 +15951,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEdgeLoop : IfcLoop
 	{
-		public List<IfcOrientedEdge>? EdgeList { get; set; }
+		public virtual List<IfcOrientedEdge>? EdgeList { get; set; }
 		//TODO DERIVE
 		public virtual IfcInteger? Ne {get {return null;}}
 		public IfcEdgeLoop() : base()
@@ -15756,7 +15977,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricAppliance : IfcFlowTerminal
 	{
-		public IfcElectricApplianceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricApplianceTypeEnum? PredefinedType { get; set; }
 		public IfcElectricAppliance() : base()
 		{
 		}
@@ -15777,7 +15998,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricApplianceType : IfcFlowTerminalType
 	{
-		public IfcElectricApplianceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricApplianceTypeEnum? PredefinedType { get; set; }
 		public IfcElectricApplianceType() : base()
 		{
 		}
@@ -15801,7 +16022,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricDistributionBoard : IfcFlowController
 	{
-		public IfcElectricDistributionBoardTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricDistributionBoardTypeEnum? PredefinedType { get; set; }
 		public IfcElectricDistributionBoard() : base()
 		{
 		}
@@ -15822,7 +16043,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricDistributionBoardType : IfcFlowControllerType
 	{
-		public IfcElectricDistributionBoardTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricDistributionBoardTypeEnum? PredefinedType { get; set; }
 		public IfcElectricDistributionBoardType() : base()
 		{
 		}
@@ -15846,7 +16067,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricFlowStorageDevice : IfcFlowStorageDevice
 	{
-		public IfcElectricFlowStorageDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricFlowStorageDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcElectricFlowStorageDevice() : base()
 		{
 		}
@@ -15867,7 +16088,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricFlowStorageDeviceType : IfcFlowStorageDeviceType
 	{
-		public IfcElectricFlowStorageDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricFlowStorageDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcElectricFlowStorageDeviceType() : base()
 		{
 		}
@@ -15891,7 +16112,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricFlowTreatmentDevice : IfcFlowTreatmentDevice
 	{
-		public IfcElectricFlowTreatmentDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricFlowTreatmentDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcElectricFlowTreatmentDevice() : base()
 		{
 		}
@@ -15912,7 +16133,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricFlowTreatmentDeviceType : IfcFlowTreatmentDeviceType
 	{
-		public IfcElectricFlowTreatmentDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricFlowTreatmentDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcElectricFlowTreatmentDeviceType() : base()
 		{
 		}
@@ -15936,7 +16157,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricGenerator : IfcEnergyConversionDevice
 	{
-		public IfcElectricGeneratorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricGeneratorTypeEnum? PredefinedType { get; set; }
 		public IfcElectricGenerator() : base()
 		{
 		}
@@ -15957,7 +16178,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricGeneratorType : IfcEnergyConversionDeviceType
 	{
-		public IfcElectricGeneratorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricGeneratorTypeEnum? PredefinedType { get; set; }
 		public IfcElectricGeneratorType() : base()
 		{
 		}
@@ -15981,7 +16202,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricMotor : IfcEnergyConversionDevice
 	{
-		public IfcElectricMotorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricMotorTypeEnum? PredefinedType { get; set; }
 		public IfcElectricMotor() : base()
 		{
 		}
@@ -16002,7 +16223,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricMotorType : IfcEnergyConversionDeviceType
 	{
-		public IfcElectricMotorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricMotorTypeEnum? PredefinedType { get; set; }
 		public IfcElectricMotorType() : base()
 		{
 		}
@@ -16026,7 +16247,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricTimeControl : IfcFlowController
 	{
-		public IfcElectricTimeControlTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricTimeControlTypeEnum? PredefinedType { get; set; }
 		public IfcElectricTimeControl() : base()
 		{
 		}
@@ -16047,7 +16268,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElectricTimeControlType : IfcFlowControllerType
 	{
-		public IfcElectricTimeControlTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElectricTimeControlTypeEnum? PredefinedType { get; set; }
 		public IfcElectricTimeControlType() : base()
 		{
 		}
@@ -16090,19 +16311,31 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcElement : IfcProduct, IfcInterferenceSelect, IfcStructuralActivityAssignmentSelect
 	{
-		public IfcIdentifier? Tag { get; set; }
+		public virtual IfcIdentifier? Tag { get; set; }
 		//TODO INVERSE
+		public List<IfcRelFillsElement>? FillsVoids => Model?.GetItems<IfcRelFillsElement>().Where(x => x.RelatedBuildingElement != null && x.RelatedBuildingElement == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelConnectsElements>? ConnectedTo => Model?.GetItems<IfcRelConnectsElements>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelInterferesElements>? IsInterferedByElements => Model?.GetItems<IfcRelInterferesElements>().Where(x => x.RelatedElement != null && x.RelatedElement == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelInterferesElements>? InterferesElements => Model?.GetItems<IfcRelInterferesElements>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelProjectsElement>? HasProjections => Model?.GetItems<IfcRelProjectsElement>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelVoidsElement>? HasOpenings => Model?.GetItems<IfcRelVoidsElement>().Where(x => x.RelatingBuildingElement != null && x.RelatingBuildingElement == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelConnectsWithRealizingElements>? IsConnectionRealization => Model?.GetItems<IfcRelConnectsWithRealizingElements>().Where(x => x.RealizingElements != null && x.RealizingElements.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelSpaceBoundary>? ProvidesBoundaries => Model?.GetItems<IfcRelSpaceBoundary>().Where(x => x.RelatedBuildingElement != null && x.RelatedBuildingElement == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelConnectsElements>? ConnectedFrom => Model?.GetItems<IfcRelConnectsElements>().Where(x => x.RelatedElement != null && x.RelatedElement == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelContainedInSpatialStructure>? ContainedInStructure => Model?.GetItems<IfcRelContainedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelCoversBldgElements>? HasCoverings => Model?.GetItems<IfcRelCoversBldgElements>().Where(x => x.RelatingBuildingElement != null && x.RelatingBuildingElement == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelAdheresToElement>? HasSurfaceFeatures => Model?.GetItems<IfcRelAdheresToElement>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();
 		public IfcElement() : base()
 		{
 		}
@@ -16127,8 +16360,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElementAssembly : IfcElement
 	{
-		public IfcAssemblyPlaceEnum? AssemblyPlace { get; set; }
-		public IfcElementAssemblyTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAssemblyPlaceEnum? AssemblyPlace { get; set; }
+		public virtual IfcElementAssemblyTypeEnum? PredefinedType { get; set; }
 		public IfcElementAssembly() : base()
 		{
 		}
@@ -16150,7 +16383,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElementAssemblyType : IfcElementType
 	{
-		public IfcElementAssemblyTypeEnum? PredefinedType { get; set; }
+		public virtual IfcElementAssemblyTypeEnum? PredefinedType { get; set; }
 		public IfcElementAssemblyType() : base()
 		{
 		}
@@ -16221,8 +16454,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcElementQuantity : IfcQuantitySet
 	{
-		public IfcLabel? MethodOfMeasurement { get; set; }
-		public List<IfcPhysicalQuantity>? Quantities { get; set; }
+		public virtual IfcLabel? MethodOfMeasurement { get; set; }
+		public virtual List<IfcPhysicalQuantity>? Quantities { get; set; }
 		public IfcElementQuantity() : base()
 		{
 		}
@@ -16250,7 +16483,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcElementType : IfcTypeProduct
 	{
-		public IfcLabel? ElementType { get; set; }
+		public virtual IfcLabel? ElementType { get; set; }
 		public IfcElementType() : base()
 		{
 		}
@@ -16273,7 +16506,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcElementarySurface : IfcSurface
 	{
-		public IfcAxis2Placement3D? Position { get; set; }
+		public virtual IfcAxis2Placement3D? Position { get; set; }
 		public IfcElementarySurface() : base()
 		{
 		}
@@ -16292,8 +16525,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEllipse : IfcConic
 	{
-		public IfcPositiveLengthMeasure? SemiAxis1 { get; set; }
-		public IfcPositiveLengthMeasure? SemiAxis2 { get; set; }
+		public virtual IfcPositiveLengthMeasure? SemiAxis1 { get; set; }
+		public virtual IfcPositiveLengthMeasure? SemiAxis2 { get; set; }
 		public IfcEllipse() : base()
 		{
 		}
@@ -16313,8 +16546,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEllipseProfileDef : IfcParameterizedProfileDef
 	{
-		public IfcPositiveLengthMeasure? SemiAxis1 { get; set; }
-		public IfcPositiveLengthMeasure? SemiAxis2 { get; set; }
+		public virtual IfcPositiveLengthMeasure? SemiAxis1 { get; set; }
+		public virtual IfcPositiveLengthMeasure? SemiAxis2 { get; set; }
 		public IfcEllipseProfileDef() : base()
 		{
 		}
@@ -16411,7 +16644,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEngine : IfcEnergyConversionDevice
 	{
-		public IfcEngineTypeEnum? PredefinedType { get; set; }
+		public virtual IfcEngineTypeEnum? PredefinedType { get; set; }
 		public IfcEngine() : base()
 		{
 		}
@@ -16432,7 +16665,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEngineType : IfcEnergyConversionDeviceType
 	{
-		public IfcEngineTypeEnum? PredefinedType { get; set; }
+		public virtual IfcEngineTypeEnum? PredefinedType { get; set; }
 		public IfcEngineType() : base()
 		{
 		}
@@ -16456,7 +16689,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEvaporativeCooler : IfcEnergyConversionDevice
 	{
-		public IfcEvaporativeCoolerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcEvaporativeCoolerTypeEnum? PredefinedType { get; set; }
 		public IfcEvaporativeCooler() : base()
 		{
 		}
@@ -16477,7 +16710,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEvaporativeCoolerType : IfcEnergyConversionDeviceType
 	{
-		public IfcEvaporativeCoolerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcEvaporativeCoolerTypeEnum? PredefinedType { get; set; }
 		public IfcEvaporativeCoolerType() : base()
 		{
 		}
@@ -16501,7 +16734,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEvaporator : IfcEnergyConversionDevice
 	{
-		public IfcEvaporatorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcEvaporatorTypeEnum? PredefinedType { get; set; }
 		public IfcEvaporator() : base()
 		{
 		}
@@ -16522,7 +16755,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEvaporatorType : IfcEnergyConversionDeviceType
 	{
-		public IfcEvaporatorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcEvaporatorTypeEnum? PredefinedType { get; set; }
 		public IfcEvaporatorType() : base()
 		{
 		}
@@ -16546,10 +16779,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEvent : IfcProcess
 	{
-		public IfcEventTypeEnum? PredefinedType { get; set; }
-		public IfcEventTriggerTypeEnum? EventTriggerType { get; set; }
-		public IfcLabel? UserDefinedEventTriggerType { get; set; }
-		public IfcEventTime? EventOccurenceTime { get; set; }
+		public virtual IfcEventTypeEnum? PredefinedType { get; set; }
+		public virtual IfcEventTriggerTypeEnum? EventTriggerType { get; set; }
+		public virtual IfcLabel? UserDefinedEventTriggerType { get; set; }
+		public virtual IfcEventTime? EventOccurenceTime { get; set; }
 		public IfcEvent() : base()
 		{
 		}
@@ -16573,10 +16806,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEventTime : IfcSchedulingTime
 	{
-		public IfcDateTime? ActualDate { get; set; }
-		public IfcDateTime? EarlyDate { get; set; }
-		public IfcDateTime? LateDate { get; set; }
-		public IfcDateTime? ScheduleDate { get; set; }
+		public virtual IfcDateTime? ActualDate { get; set; }
+		public virtual IfcDateTime? EarlyDate { get; set; }
+		public virtual IfcDateTime? LateDate { get; set; }
+		public virtual IfcDateTime? ScheduleDate { get; set; }
 		public IfcEventTime() : base()
 		{
 		}
@@ -16602,9 +16835,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcEventType : IfcTypeProcess
 	{
-		public IfcEventTypeEnum? PredefinedType { get; set; }
-		public IfcEventTriggerTypeEnum? EventTriggerType { get; set; }
-		public IfcLabel? UserDefinedEventTriggerType { get; set; }
+		public virtual IfcEventTypeEnum? PredefinedType { get; set; }
+		public virtual IfcEventTriggerTypeEnum? EventTriggerType { get; set; }
+		public virtual IfcLabel? UserDefinedEventTriggerType { get; set; }
 		public IfcEventType() : base()
 		{
 		}
@@ -16629,9 +16862,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcExtendedProperties : IfcPropertyAbstraction
 	{
-		public IfcIdentifier? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public List<IfcProperty>? Properties { get; set; }
+		public virtual IfcIdentifier? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual List<IfcProperty>? Properties { get; set; }
 		public IfcExtendedProperties() : base()
 		{
 		}
@@ -16678,10 +16911,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcExternalReference : Entity, IfcLightDistributionDataSourceSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
-		public IfcURIReference? Location { get; set; }
-		public IfcIdentifier? Identification { get; set; }
-		public IfcLabel? Name { get; set; }
+		public virtual IfcURIReference? Location { get; set; }
+		public virtual IfcIdentifier? Identification { get; set; }
+		public virtual IfcLabel? Name { get; set; }
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? ExternalReferenceForResources => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatingReference != null && x.RelatingReference == this).ToList();
 		public IfcExternalReference() : base()
 		{
 		}
@@ -16702,8 +16936,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcExternalReferenceRelationship : IfcResourceLevelRelationship
 	{
-		public IfcExternalReference? RelatingReference { get; set; }
-		public List<IfcResourceObjectSelect>? RelatedResourceObjects { get; set; }
+		public virtual IfcExternalReference? RelatingReference { get; set; }
+		public virtual List<IfcResourceObjectSelect>? RelatedResourceObjects { get; set; }
 		public IfcExternalReferenceRelationship() : base()
 		{
 		}
@@ -16724,8 +16958,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcExternalSpatialElement : IfcExternalSpatialStructureElement, IfcSpaceBoundarySelect
 	{
-		public IfcExternalSpatialElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcExternalSpatialElementTypeEnum? PredefinedType { get; set; }
 		//TODO INVERSE
+		public List<IfcRelSpaceBoundary>? BoundedBy => Model?.GetItems<IfcRelSpaceBoundary>().Where(x => x.RelatingSpace != null && x.RelatingSpace == this).ToList();
 		public IfcExternalSpatialElement() : base()
 		{
 		}
@@ -16810,8 +17045,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcExtrudedAreaSolid : IfcSweptAreaSolid
 	{
-		public IfcDirection? ExtrudedDirection { get; set; }
-		public IfcPositiveLengthMeasure? Depth { get; set; }
+		public virtual IfcDirection? ExtrudedDirection { get; set; }
+		public virtual IfcPositiveLengthMeasure? Depth { get; set; }
 		public IfcExtrudedAreaSolid() : base()
 		{
 		}
@@ -16832,7 +17067,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcExtrudedAreaSolidTapered : IfcExtrudedAreaSolid
 	{
-		public IfcProfileDef? EndSweptArea { get; set; }
+		public virtual IfcProfileDef? EndSweptArea { get; set; }
 		public IfcExtrudedAreaSolidTapered() : base()
 		{
 		}
@@ -16856,8 +17091,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFace : IfcTopologicalRepresentationItem
 	{
-		public List<IfcFaceBound>? Bounds { get; set; }
+		public virtual List<IfcFaceBound>? Bounds { get; set; }
 		//TODO INVERSE
+		public List<IfcTextureMap>? HasTextureMaps => Model?.GetItems<IfcTextureMap>().Where(x => x.MappedTo != null && x.MappedTo == this).ToList();
 		public IfcFace() : base()
 		{
 		}
@@ -16877,7 +17113,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFaceBasedSurfaceModel : IfcGeometricRepresentationItem, IfcSurfaceOrFaceSurface
 	{
-		public List<IfcConnectedFaceSet>? FbsmFaces { get; set; }
+		public virtual List<IfcConnectedFaceSet>? FbsmFaces { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcFaceBasedSurfaceModel() : base()
@@ -16900,8 +17136,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFaceBound : IfcTopologicalRepresentationItem
 	{
-		public IfcLoop? Bound { get; set; }
-		public IfcBoolean? Orientation { get; set; }
+		public virtual IfcLoop? Bound { get; set; }
+		public virtual IfcBoolean? Orientation { get; set; }
 		public IfcFaceBound() : base()
 		{
 		}
@@ -16938,8 +17174,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFaceSurface : IfcFace, IfcSurfaceOrFaceSurface
 	{
-		public IfcSurface? FaceSurface { get; set; }
-		public IfcBoolean? SameSense { get; set; }
+		public virtual IfcSurface? FaceSurface { get; set; }
+		public virtual IfcBoolean? SameSense { get; set; }
 		public IfcFaceSurface() : base()
 		{
 		}
@@ -16975,7 +17211,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFacetedBrepWithVoids : IfcFacetedBrep
 	{
-		public List<IfcClosedShell>? Voids { get; set; }
+		public virtual List<IfcClosedShell>? Voids { get; set; }
 		public IfcFacetedBrepWithVoids() : base()
 		{
 		}
@@ -17020,7 +17256,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcFacilityPart : IfcSpatialStructureElement
 	{
-		public IfcFacilityUsageEnum? UsageType { get; set; }
+		public virtual IfcFacilityUsageEnum? UsageType { get; set; }
 		public IfcFacilityPart() : base()
 		{
 		}
@@ -17042,7 +17278,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFacilityPartCommon : IfcFacilityPart
 	{
-		public IfcFacilityPartCommonTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFacilityPartCommonTypeEnum? PredefinedType { get; set; }
 		public IfcFacilityPartCommon() : base()
 		{
 		}
@@ -17065,12 +17301,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFailureConnectionCondition : IfcStructuralConnectionCondition
 	{
-		public IfcForceMeasure? TensionFailureX { get; set; }
-		public IfcForceMeasure? TensionFailureY { get; set; }
-		public IfcForceMeasure? TensionFailureZ { get; set; }
-		public IfcForceMeasure? CompressionFailureX { get; set; }
-		public IfcForceMeasure? CompressionFailureY { get; set; }
-		public IfcForceMeasure? CompressionFailureZ { get; set; }
+		public virtual IfcForceMeasure? TensionFailureX { get; set; }
+		public virtual IfcForceMeasure? TensionFailureY { get; set; }
+		public virtual IfcForceMeasure? TensionFailureZ { get; set; }
+		public virtual IfcForceMeasure? CompressionFailureX { get; set; }
+		public virtual IfcForceMeasure? CompressionFailureY { get; set; }
+		public virtual IfcForceMeasure? CompressionFailureZ { get; set; }
 		public IfcFailureConnectionCondition() : base()
 		{
 		}
@@ -17099,7 +17335,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFan : IfcFlowMovingDevice
 	{
-		public IfcFanTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFanTypeEnum? PredefinedType { get; set; }
 		public IfcFan() : base()
 		{
 		}
@@ -17120,7 +17356,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFanType : IfcFlowMovingDeviceType
 	{
-		public IfcFanTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFanTypeEnum? PredefinedType { get; set; }
 		public IfcFanType() : base()
 		{
 		}
@@ -17144,7 +17380,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFastener : IfcElementComponent
 	{
-		public IfcFastenerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFastenerTypeEnum? PredefinedType { get; set; }
 		public IfcFastener() : base()
 		{
 		}
@@ -17165,7 +17401,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFastenerType : IfcElementComponentType
 	{
-		public IfcFastenerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFastenerTypeEnum? PredefinedType { get; set; }
 		public IfcFastenerType() : base()
 		{
 		}
@@ -17208,6 +17444,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcFeatureElementAddition : IfcFeatureElement
 	{
 		//TODO INVERSE
+		public IfcRelProjectsElement? ProjectsElements => Model?.GetItems<IfcRelProjectsElement>().FirstOrDefault(x => x.RelatedFeatureElement != null && x.RelatedFeatureElement == this);
 		public IfcFeatureElementAddition() : base()
 		{
 		}
@@ -17233,6 +17470,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcFeatureElementSubtraction : IfcFeatureElement
 	{
 		//TODO INVERSE
+		public IfcRelVoidsElement? VoidsElements => Model?.GetItems<IfcRelVoidsElement>().FirstOrDefault(x => x.RelatedOpeningElement != null && x.RelatedOpeningElement == this);
 		public IfcFeatureElementSubtraction() : base()
 		{
 		}
@@ -17260,8 +17498,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFillAreaStyle : IfcPresentationStyle
 	{
-		public List<IfcFillStyleSelect>? FillStyles { get; set; }
-		public IfcBoolean? ModelOrDraughting { get; set; }
+		public virtual List<IfcFillStyleSelect>? FillStyles { get; set; }
+		public virtual IfcBoolean? ModelOrDraughting { get; set; }
 		public IfcFillAreaStyle() : base()
 		{
 		}
@@ -17288,11 +17526,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFillAreaStyleHatching : IfcGeometricRepresentationItem, IfcFillStyleSelect
 	{
-		public IfcCurveStyle? HatchLineAppearance { get; set; }
-		public IfcHatchLineDistanceSelect? StartOfNextHatchLine { get; set; }
-		public IfcCartesianPoint? PointOfReferenceHatchLine { get; set; }
-		public IfcCartesianPoint? PatternStart { get; set; }
-		public IfcPlaneAngleMeasure? HatchLineAngle { get; set; }
+		public virtual IfcCurveStyle? HatchLineAppearance { get; set; }
+		public virtual IfcHatchLineDistanceSelect? StartOfNextHatchLine { get; set; }
+		public virtual IfcCartesianPoint? PointOfReferenceHatchLine { get; set; }
+		public virtual IfcCartesianPoint? PatternStart { get; set; }
+		public virtual IfcPlaneAngleMeasure? HatchLineAngle { get; set; }
 		public IfcFillAreaStyleHatching() : base()
 		{
 		}
@@ -17316,9 +17554,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFillAreaStyleTiles : IfcGeometricRepresentationItem, IfcFillStyleSelect
 	{
-		public List<IfcVector>? TilingPattern { get; set; }
-		public List<IfcStyledItem>? Tiles { get; set; }
-		public IfcPositiveRatioMeasure? TilingScale { get; set; }
+		public virtual List<IfcVector>? TilingPattern { get; set; }
+		public virtual List<IfcStyledItem>? Tiles { get; set; }
+		public virtual IfcPositiveRatioMeasure? TilingScale { get; set; }
 		public IfcFillAreaStyleTiles() : base()
 		{
 		}
@@ -17344,7 +17582,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFilter : IfcFlowTreatmentDevice
 	{
-		public IfcFilterTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFilterTypeEnum? PredefinedType { get; set; }
 		public IfcFilter() : base()
 		{
 		}
@@ -17365,7 +17603,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFilterType : IfcFlowTreatmentDeviceType
 	{
-		public IfcFilterTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFilterTypeEnum? PredefinedType { get; set; }
 		public IfcFilterType() : base()
 		{
 		}
@@ -17389,7 +17627,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFireSuppressionTerminal : IfcFlowTerminal
 	{
-		public IfcFireSuppressionTerminalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFireSuppressionTerminalTypeEnum? PredefinedType { get; set; }
 		public IfcFireSuppressionTerminal() : base()
 		{
 		}
@@ -17410,7 +17648,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFireSuppressionTerminalType : IfcFlowTerminalType
 	{
-		public IfcFireSuppressionTerminalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFireSuppressionTerminalTypeEnum? PredefinedType { get; set; }
 		public IfcFireSuppressionTerminalType() : base()
 		{
 		}
@@ -17430,7 +17668,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFixedReferenceSweptAreaSolid : IfcDirectrixCurveSweptAreaSolid
 	{
-		public IfcDirection? FixedReference { get; set; }
+		public virtual IfcDirection? FixedReference { get; set; }
 		public IfcFixedReferenceSweptAreaSolid() : base()
 		{
 		}
@@ -17546,7 +17784,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFlowInstrument : IfcDistributionControlElement
 	{
-		public IfcFlowInstrumentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFlowInstrumentTypeEnum? PredefinedType { get; set; }
 		public IfcFlowInstrument() : base()
 		{
 		}
@@ -17567,7 +17805,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFlowInstrumentType : IfcDistributionControlElementType
 	{
-		public IfcFlowInstrumentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFlowInstrumentTypeEnum? PredefinedType { get; set; }
 		public IfcFlowInstrumentType() : base()
 		{
 		}
@@ -17591,7 +17829,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFlowMeter : IfcFlowController
 	{
-		public IfcFlowMeterTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFlowMeterTypeEnum? PredefinedType { get; set; }
 		public IfcFlowMeter() : base()
 		{
 		}
@@ -17612,7 +17850,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFlowMeterType : IfcFlowControllerType
 	{
-		public IfcFlowMeterTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFlowMeterTypeEnum? PredefinedType { get; set; }
 		public IfcFlowMeterType() : base()
 		{
 		}
@@ -17856,7 +18094,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFooting : IfcBuiltElement
 	{
-		public IfcFootingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFootingTypeEnum? PredefinedType { get; set; }
 		public IfcFooting() : base()
 		{
 		}
@@ -17877,7 +18115,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFootingType : IfcBuiltElementType
 	{
-		public IfcFootingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFootingTypeEnum? PredefinedType { get; set; }
 		public IfcFootingType() : base()
 		{
 		}
@@ -17937,7 +18175,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFurniture : IfcFurnishingElement
 	{
-		public IfcFurnitureTypeEnum? PredefinedType { get; set; }
+		public virtual IfcFurnitureTypeEnum? PredefinedType { get; set; }
 		public IfcFurniture() : base()
 		{
 		}
@@ -17960,8 +18198,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcFurnitureType : IfcFurnishingElementType
 	{
-		public IfcAssemblyPlaceEnum? AssemblyPlace { get; set; }
-		public IfcFurnitureTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAssemblyPlaceEnum? AssemblyPlace { get; set; }
+		public virtual IfcFurnitureTypeEnum? PredefinedType { get; set; }
 		public IfcFurnitureType() : base()
 		{
 		}
@@ -17985,9 +18223,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcGeographicCRS : IfcCoordinateReferenceSystem
 	{
-		public IfcIdentifier? PrimeMeridian { get; set; }
-		public IfcNamedUnit? AngleUnit { get; set; }
-		public IfcNamedUnit? HeightUnit { get; set; }
+		public virtual IfcIdentifier? PrimeMeridian { get; set; }
+		public virtual IfcNamedUnit? AngleUnit { get; set; }
+		public virtual IfcNamedUnit? HeightUnit { get; set; }
 		public IfcGeographicCRS() : base()
 		{
 		}
@@ -18013,7 +18251,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcGeographicElement : IfcElement
 	{
-		public IfcGeographicElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcGeographicElementTypeEnum? PredefinedType { get; set; }
 		public IfcGeographicElement() : base()
 		{
 		}
@@ -18034,7 +18272,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcGeographicElementType : IfcElementType
 	{
-		public IfcGeographicElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcGeographicElementTypeEnum? PredefinedType { get; set; }
 		public IfcGeographicElementType() : base()
 		{
 		}
@@ -18080,12 +18318,14 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcGeometricRepresentationContext : IfcRepresentationContext, IfcCoordinateReferenceSystemSelect
 	{
-		public IfcDimensionCount? CoordinateSpaceDimension { get; set; }
-		public IfcReal? Precision { get; set; }
-		public IfcAxis2Placement? WorldCoordinateSystem { get; set; }
-		public IfcDirection? TrueNorth { get; set; }
+		public virtual IfcDimensionCount? CoordinateSpaceDimension { get; set; }
+		public virtual IfcReal? Precision { get; set; }
+		public virtual IfcAxis2Placement? WorldCoordinateSystem { get; set; }
+		public virtual IfcDirection? TrueNorth { get; set; }
 		//TODO INVERSE
+		public List<IfcGeometricRepresentationSubContext>? HasSubContexts => Model?.GetItems<IfcGeometricRepresentationSubContext>().Where(x => x.ParentContext != null && x.ParentContext == this).ToList();
 		//TODO INVERSE
+		public List<IfcCoordinateOperation>? HasCoordinateOperation => Model?.GetItems<IfcCoordinateOperation>().Where(x => x.SourceCRS != null && x.SourceCRS == this).ToList();
 		public IfcGeometricRepresentationContext() : base()
 		{
 		}
@@ -18157,18 +18397,18 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcGeometricRepresentationSubContext : IfcGeometricRepresentationContext
 	{
-		public IfcGeometricRepresentationContext? ParentContext { get; set; }
-		public IfcPositiveRatioMeasure? TargetScale { get; set; }
-		public IfcGeometricProjectionEnum? TargetView { get; set; }
-		public IfcLabel? UserDefinedTargetView { get; set; }
+		public virtual IfcGeometricRepresentationContext? ParentContext { get; set; }
+		public virtual IfcPositiveRatioMeasure? TargetScale { get; set; }
+		public virtual IfcGeometricProjectionEnum? TargetView { get; set; }
+		public virtual IfcLabel? UserDefinedTargetView { get; set; }
 		//TODO DERIVE
-		public virtual IfcAxis2Placement? WorldCoordinateSystem {get {return null;}}
+		public override IfcAxis2Placement? WorldCoordinateSystem {get {return null;}}
 		//TODO DERIVE
-		public virtual IfcDimensionCount? CoordinateSpaceDimension {get {return null;}}
+		public override IfcDimensionCount? CoordinateSpaceDimension {get {return null;}}
 		//TODO DERIVE
-		public virtual IfcDirection? TrueNorth {get {return null;}}
+		public override IfcDirection? TrueNorth {get {return null;}}
 		//TODO DERIVE
-		public virtual IfcReal? Precision {get {return null;}}
+		public override IfcReal? Precision {get {return null;}}
 		public IfcGeometricRepresentationSubContext() : base()
 		{
 		}
@@ -18197,7 +18437,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcGeometricSet : IfcGeometricRepresentationItem
 	{
-		public List<IfcGeometricSetSelect>? Elements { get; set; }
+		public virtual List<IfcGeometricSetSelect>? Elements { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcGeometricSet() : base()
@@ -18288,7 +18528,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcGeotechnicalStratum : IfcGeotechnicalElement
 	{
-		public IfcGeotechnicalStratumTypeEnum? PredefinedType { get; set; }
+		public virtual IfcGeotechnicalStratumTypeEnum? PredefinedType { get; set; }
 		public IfcGeotechnicalStratum() : base()
 		{
 		}
@@ -18307,8 +18547,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcGradientCurve : IfcCompositeCurve
 	{
-		public IfcBoundedCurve? BaseCurve { get; set; }
-		public IfcPlacement? EndPoint { get; set; }
+		public virtual IfcBoundedCurve? BaseCurve { get; set; }
+		public virtual IfcPlacement? EndPoint { get; set; }
 		public IfcGradientCurve() : base()
 		{
 		}
@@ -18355,9 +18595,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcGridAxis : Entity
 	{
-		public IfcLabel? AxisTag { get; set; }
-		public IfcCurve? AxisCurve { get; set; }
-		public IfcBoolean? SameSense { get; set; }
+		public virtual IfcLabel? AxisTag { get; set; }
+		public virtual IfcCurve? AxisCurve { get; set; }
+		public virtual IfcBoolean? SameSense { get; set; }
 		//TODO INVERSE
 		//TODO INVERSE
 		//TODO INVERSE
@@ -18382,8 +18622,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcGridPlacement : IfcObjectPlacement
 	{
-		public IfcVirtualGridIntersection? PlacementLocation { get; set; }
-		public IfcGridPlacementDirectionSelect? PlacementRefDirection { get; set; }
+		public virtual IfcVirtualGridIntersection? PlacementLocation { get; set; }
+		public virtual IfcGridPlacementDirectionSelect? PlacementRefDirection { get; set; }
 		public IfcGridPlacement() : base()
 		{
 		}
@@ -18411,7 +18651,9 @@ namespace IFC.IFC4x3
 	public class IfcGroup : IfcObject, IfcSpatialReferenceSelect
 	{
 		//TODO INVERSE
+		public List<IfcRelAssignsToGroup>? IsGroupedBy => Model?.GetItems<IfcRelAssignsToGroup>().Where(x => x.RelatingGroup != null && x.RelatingGroup == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures => Model?.GetItems<IfcRelReferencedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();
 		public IfcGroup() : base()
 		{
 		}
@@ -18434,8 +18676,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcHalfSpaceSolid : IfcGeometricRepresentationItem, IfcBooleanOperand
 	{
-		public IfcSurface? BaseSurface { get; set; }
-		public IfcBoolean? AgreementFlag { get; set; }
+		public virtual IfcSurface? BaseSurface { get; set; }
+		public virtual IfcBoolean? AgreementFlag { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcHalfSpaceSolid() : base()
@@ -18462,7 +18704,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcHeatExchanger : IfcEnergyConversionDevice
 	{
-		public IfcHeatExchangerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcHeatExchangerTypeEnum? PredefinedType { get; set; }
 		public IfcHeatExchanger() : base()
 		{
 		}
@@ -18483,7 +18725,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcHeatExchangerType : IfcEnergyConversionDeviceType
 	{
-		public IfcHeatExchangerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcHeatExchangerTypeEnum? PredefinedType { get; set; }
 		public IfcHeatExchangerType() : base()
 		{
 		}
@@ -18507,7 +18749,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcHumidifier : IfcEnergyConversionDevice
 	{
-		public IfcHumidifierTypeEnum? PredefinedType { get; set; }
+		public virtual IfcHumidifierTypeEnum? PredefinedType { get; set; }
 		public IfcHumidifier() : base()
 		{
 		}
@@ -18528,7 +18770,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcHumidifierType : IfcEnergyConversionDeviceType
 	{
-		public IfcHumidifierTypeEnum? PredefinedType { get; set; }
+		public virtual IfcHumidifierTypeEnum? PredefinedType { get; set; }
 		public IfcHumidifierType() : base()
 		{
 		}
@@ -18558,13 +18800,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcIShapeProfileDef : IfcParameterizedProfileDef
 	{
-		public IfcPositiveLengthMeasure? OverallWidth { get; set; }
-		public IfcPositiveLengthMeasure? OverallDepth { get; set; }
-		public IfcPositiveLengthMeasure? WebThickness { get; set; }
-		public IfcPositiveLengthMeasure? FlangeThickness { get; set; }
-		public IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure? FlangeEdgeRadius { get; set; }
-		public IfcPlaneAngleMeasure? FlangeSlope { get; set; }
+		public virtual IfcPositiveLengthMeasure? OverallWidth { get; set; }
+		public virtual IfcPositiveLengthMeasure? OverallDepth { get; set; }
+		public virtual IfcPositiveLengthMeasure? WebThickness { get; set; }
+		public virtual IfcPositiveLengthMeasure? FlangeThickness { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? FlangeEdgeRadius { get; set; }
+		public virtual IfcPlaneAngleMeasure? FlangeSlope { get; set; }
 		public IfcIShapeProfileDef() : base()
 		{
 		}
@@ -18588,7 +18830,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcImageTexture : IfcSurfaceTexture
 	{
-		public IfcURIReference? URLReference { get; set; }
+		public virtual IfcURIReference? URLReference { get; set; }
 		public IfcImageTexture() : base()
 		{
 		}
@@ -18612,7 +18854,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcImpactProtectionDevice : IfcElementComponent
 	{
-		public IfcImpactProtectionDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcImpactProtectionDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcImpactProtectionDevice() : base()
 		{
 		}
@@ -18633,7 +18875,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcImpactProtectionDeviceType : IfcElementComponentType
 	{
-		public IfcImpactProtectionDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcImpactProtectionDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcImpactProtectionDeviceType() : base()
 		{
 		}
@@ -18654,10 +18896,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcIndexedColourMap : IfcPresentationItem
 	{
-		public IfcTessellatedFaceSet? MappedTo { get; set; }
-		public IfcNormalisedRatioMeasure? Opacity { get; set; }
-		public IfcColourRgbList? Colours { get; set; }
-		public List<IfcPositiveInteger>? ColourIndex { get; set; }
+		public virtual IfcTessellatedFaceSet? MappedTo { get; set; }
+		public virtual IfcNormalisedRatioMeasure? Opacity { get; set; }
+		public virtual IfcColourRgbList? Colours { get; set; }
+		public virtual List<IfcPositiveInteger>? ColourIndex { get; set; }
 		public IfcIndexedColourMap() : base()
 		{
 		}
@@ -18682,9 +18924,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcIndexedPolyCurve : IfcBoundedCurve
 	{
-		public IfcCartesianPointList? Points { get; set; }
-		public List<IfcSegmentIndexSelect>? Segments { get; set; }
-		public IfcBoolean? SelfIntersect { get; set; }
+		public virtual IfcCartesianPointList? Points { get; set; }
+		public virtual List<IfcSegmentIndexSelect>? Segments { get; set; }
+		public virtual IfcBoolean? SelfIntersect { get; set; }
 		public IfcIndexedPolyCurve() : base()
 		{
 		}
@@ -18709,9 +18951,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcIndexedPolygonalFace : IfcTessellatedItem
 	{
-		public List<IfcPositiveInteger>? CoordIndex { get; set; }
+		public virtual List<IfcPositiveInteger>? CoordIndex { get; set; }
 		//TODO INVERSE
 		//TODO INVERSE
+		public List<IfcTextureCoordinateIndices>? HasTexCoords => Model?.GetItems<IfcTextureCoordinateIndices>().Where(x => x.TexCoordsOf != null && x.TexCoordsOf == this).ToList();
 		public IfcIndexedPolygonalFace() : base()
 		{
 		}
@@ -18745,7 +18988,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcIndexedPolygonalTextureMap : IfcIndexedTextureMap
 	{
-		public List<IfcTextureCoordinateIndices>? TexCoordIndices { get; set; }
+		public virtual List<IfcTextureCoordinateIndices>? TexCoordIndices { get; set; }
 		public IfcIndexedPolygonalTextureMap() : base()
 		{
 		}
@@ -18767,8 +19010,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcIndexedTextureMap : IfcTextureCoordinate
 	{
-		public IfcTessellatedFaceSet? MappedTo { get; set; }
-		public IfcTextureVertexList? TexCoords { get; set; }
+		public virtual IfcTessellatedFaceSet? MappedTo { get; set; }
+		public virtual IfcTextureVertexList? TexCoords { get; set; }
 		public IfcIndexedTextureMap() : base()
 		{
 		}
@@ -18787,7 +19030,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcIndexedTriangleTextureMap : IfcIndexedTextureMap
 	{
-		public List<List<IfcPositiveInteger >>? TexCoordIndex { get; set; }
+		public virtual List<List<IfcPositiveInteger >>? TexCoordIndex { get; set; }
 		public IfcIndexedTriangleTextureMap() : base()
 		{
 		}
@@ -18811,7 +19054,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcInterceptor : IfcFlowTreatmentDevice
 	{
-		public IfcInterceptorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcInterceptorTypeEnum? PredefinedType { get; set; }
 		public IfcInterceptor() : base()
 		{
 		}
@@ -18832,7 +19075,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcInterceptorType : IfcFlowTreatmentDeviceType
 	{
-		public IfcInterceptorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcInterceptorTypeEnum? PredefinedType { get; set; }
 		public IfcInterceptorType() : base()
 		{
 		}
@@ -18873,12 +19116,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcInventory : IfcGroup
 	{
-		public IfcInventoryTypeEnum? PredefinedType { get; set; }
-		public IfcActorSelect? Jurisdiction { get; set; }
-		public List<IfcPerson>? ResponsiblePersons { get; set; }
-		public IfcDate? LastUpdateDate { get; set; }
-		public IfcCostValue? CurrentValue { get; set; }
-		public IfcCostValue? OriginalValue { get; set; }
+		public virtual IfcInventoryTypeEnum? PredefinedType { get; set; }
+		public virtual IfcActorSelect? Jurisdiction { get; set; }
+		public virtual List<IfcPerson>? ResponsiblePersons { get; set; }
+		public virtual IfcDate? LastUpdateDate { get; set; }
+		public virtual IfcCostValue? CurrentValue { get; set; }
+		public virtual IfcCostValue? OriginalValue { get; set; }
 		public IfcInventory() : base()
 		{
 		}
@@ -18901,7 +19144,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcIrregularTimeSeries : IfcTimeSeries
 	{
-		public List<IfcIrregularTimeSeriesValue>? Values { get; set; }
+		public virtual List<IfcIrregularTimeSeriesValue>? Values { get; set; }
 		public IfcIrregularTimeSeries() : base()
 		{
 		}
@@ -18919,8 +19162,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcIrregularTimeSeriesValue : Entity
 	{
-		public IfcDateTime? TimeStamp { get; set; }
-		public List<IfcValue>? ListValues { get; set; }
+		public virtual IfcDateTime? TimeStamp { get; set; }
+		public virtual List<IfcValue>? ListValues { get; set; }
 		public IfcIrregularTimeSeriesValue() : base()
 		{
 		}
@@ -18945,7 +19188,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcJunctionBox : IfcFlowFitting
 	{
-		public IfcJunctionBoxTypeEnum? PredefinedType { get; set; }
+		public virtual IfcJunctionBoxTypeEnum? PredefinedType { get; set; }
 		public IfcJunctionBox() : base()
 		{
 		}
@@ -18966,7 +19209,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcJunctionBoxType : IfcFlowFittingType
 	{
-		public IfcJunctionBoxTypeEnum? PredefinedType { get; set; }
+		public virtual IfcJunctionBoxTypeEnum? PredefinedType { get; set; }
 		public IfcJunctionBoxType() : base()
 		{
 		}
@@ -18990,7 +19233,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcKerb : IfcBuiltElement
 	{
-		public IfcKerbTypeEnum? PredefinedType { get; set; }
+		public virtual IfcKerbTypeEnum? PredefinedType { get; set; }
 		public IfcKerb() : base()
 		{
 		}
@@ -19011,7 +19254,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcKerbType : IfcBuiltElementType
 	{
-		public IfcKerbTypeEnum? PredefinedType { get; set; }
+		public virtual IfcKerbTypeEnum? PredefinedType { get; set; }
 		public IfcKerbType() : base()
 		{
 		}
@@ -19036,12 +19279,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLShapeProfileDef : IfcParameterizedProfileDef
 	{
-		public IfcPositiveLengthMeasure? Depth { get; set; }
-		public IfcPositiveLengthMeasure? Width { get; set; }
-		public IfcPositiveLengthMeasure? Thickness { get; set; }
-		public IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure? EdgeRadius { get; set; }
-		public IfcPlaneAngleMeasure? LegSlope { get; set; }
+		public virtual IfcPositiveLengthMeasure? Depth { get; set; }
+		public virtual IfcPositiveLengthMeasure? Width { get; set; }
+		public virtual IfcPositiveLengthMeasure? Thickness { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? EdgeRadius { get; set; }
+		public virtual IfcPlaneAngleMeasure? LegSlope { get; set; }
 		public IfcLShapeProfileDef() : base()
 		{
 		}
@@ -19068,7 +19311,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLaborResource : IfcConstructionResource
 	{
-		public IfcLaborResourceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLaborResourceTypeEnum? PredefinedType { get; set; }
 		public IfcLaborResource() : base()
 		{
 		}
@@ -19089,7 +19332,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLaborResourceType : IfcConstructionResourceType
 	{
-		public IfcLaborResourceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLaborResourceTypeEnum? PredefinedType { get; set; }
 		public IfcLaborResourceType() : base()
 		{
 		}
@@ -19108,8 +19351,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLagTime : IfcSchedulingTime
 	{
-		public IfcTimeOrRatioSelect? LagValue { get; set; }
-		public IfcTaskDurationEnum? DurationType { get; set; }
+		public virtual IfcTimeOrRatioSelect? LagValue { get; set; }
+		public virtual IfcTaskDurationEnum? DurationType { get; set; }
 		public IfcLagTime() : base()
 		{
 		}
@@ -19134,7 +19377,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLamp : IfcFlowTerminal
 	{
-		public IfcLampTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLampTypeEnum? PredefinedType { get; set; }
 		public IfcLamp() : base()
 		{
 		}
@@ -19155,7 +19398,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLampType : IfcFlowTerminalType
 	{
-		public IfcLampTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLampTypeEnum? PredefinedType { get; set; }
 		public IfcLampType() : base()
 		{
 		}
@@ -19181,14 +19424,16 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLibraryInformation : IfcExternalInformation, IfcLibrarySelect
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcLabel? Version { get; set; }
-		public IfcActorSelect? Publisher { get; set; }
-		public IfcDateTime? VersionDate { get; set; }
-		public IfcURIReference? Location { get; set; }
-		public IfcText? Description { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcLabel? Version { get; set; }
+		public virtual IfcActorSelect? Publisher { get; set; }
+		public virtual IfcDateTime? VersionDate { get; set; }
+		public virtual IfcURIReference? Location { get; set; }
+		public virtual IfcText? Description { get; set; }
 		//TODO INVERSE
+		public List<IfcRelAssociatesLibrary>? LibraryInfoForObjects => Model?.GetItems<IfcRelAssociatesLibrary>().Where(x => x.RelatingLibrary != null && x.RelatingLibrary == this).ToList();
 		//TODO INVERSE
+		public List<IfcLibraryReference>? HasLibraryReferences => Model?.GetItems<IfcLibraryReference>().Where(x => x.ReferencedLibrary != null && x.ReferencedLibrary == this).ToList();
 		public IfcLibraryInformation() : base()
 		{
 		}
@@ -19215,10 +19460,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLibraryReference : IfcExternalReference, IfcLibrarySelect
 	{
-		public IfcText? Description { get; set; }
-		public IfcLanguageId? Language { get; set; }
-		public IfcLibraryInformation? ReferencedLibrary { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcLanguageId? Language { get; set; }
+		public virtual IfcLibraryInformation? ReferencedLibrary { get; set; }
 		//TODO INVERSE
+		public List<IfcRelAssociatesLibrary>? LibraryRefForObjects => Model?.GetItems<IfcRelAssociatesLibrary>().Where(x => x.RelatingLibrary != null && x.RelatingLibrary == this).ToList();
 		public IfcLibraryReference() : base()
 		{
 		}
@@ -19239,9 +19485,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLightDistributionData : Entity
 	{
-		public IfcPlaneAngleMeasure? MainPlaneAngle { get; set; }
-		public List<IfcPlaneAngleMeasure>? SecondaryPlaneAngle { get; set; }
-		public List<IfcLuminousIntensityDistributionMeasure>? LuminousIntensity { get; set; }
+		public virtual IfcPlaneAngleMeasure? MainPlaneAngle { get; set; }
+		public virtual List<IfcPlaneAngleMeasure>? SecondaryPlaneAngle { get; set; }
+		public virtual List<IfcLuminousIntensityDistributionMeasure>? LuminousIntensity { get; set; }
 		public IfcLightDistributionData() : base()
 		{
 		}
@@ -19267,7 +19513,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLightFixture : IfcFlowTerminal
 	{
-		public IfcLightFixtureTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLightFixtureTypeEnum? PredefinedType { get; set; }
 		public IfcLightFixture() : base()
 		{
 		}
@@ -19288,7 +19534,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLightFixtureType : IfcFlowTerminalType
 	{
-		public IfcLightFixtureTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLightFixtureTypeEnum? PredefinedType { get; set; }
 		public IfcLightFixtureType() : base()
 		{
 		}
@@ -19306,8 +19552,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLightIntensityDistribution : Entity, IfcLightDistributionDataSourceSelect
 	{
-		public IfcLightDistributionCurveEnum? LightDistributionCurve { get; set; }
-		public List<IfcLightDistributionData>? DistributionData { get; set; }
+		public virtual IfcLightDistributionCurveEnum? LightDistributionCurve { get; set; }
+		public virtual List<IfcLightDistributionData>? DistributionData { get; set; }
 		public IfcLightIntensityDistribution() : base()
 		{
 		}
@@ -19334,10 +19580,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcLightSource : IfcGeometricRepresentationItem
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcColourRgb? LightColour { get; set; }
-		public IfcNormalisedRatioMeasure? AmbientIntensity { get; set; }
-		public IfcNormalisedRatioMeasure? Intensity { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcColourRgb? LightColour { get; set; }
+		public virtual IfcNormalisedRatioMeasure? AmbientIntensity { get; set; }
+		public virtual IfcNormalisedRatioMeasure? Intensity { get; set; }
 		public IfcLightSource() : base()
 		{
 		}
@@ -19373,7 +19619,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLightSourceDirectional : IfcLightSource
 	{
-		public IfcDirection? Orientation { get; set; }
+		public virtual IfcDirection? Orientation { get; set; }
 		public IfcLightSourceDirectional() : base()
 		{
 		}
@@ -19396,12 +19642,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLightSourceGoniometric : IfcLightSource
 	{
-		public IfcAxis2Placement3D? Position { get; set; }
-		public IfcColourRgb? ColourAppearance { get; set; }
-		public IfcThermodynamicTemperatureMeasure? ColourTemperature { get; set; }
-		public IfcLuminousFluxMeasure? LuminousFlux { get; set; }
-		public IfcLightEmissionSourceEnum? LightEmissionSource { get; set; }
-		public IfcLightDistributionDataSourceSelect? LightDistributionDataSource { get; set; }
+		public virtual IfcAxis2Placement3D? Position { get; set; }
+		public virtual IfcColourRgb? ColourAppearance { get; set; }
+		public virtual IfcThermodynamicTemperatureMeasure? ColourTemperature { get; set; }
+		public virtual IfcLuminousFluxMeasure? LuminousFlux { get; set; }
+		public virtual IfcLightEmissionSourceEnum? LightEmissionSource { get; set; }
+		public virtual IfcLightDistributionDataSourceSelect? LightDistributionDataSource { get; set; }
 		public IfcLightSourceGoniometric() : base()
 		{
 		}
@@ -19430,11 +19676,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLightSourcePositional : IfcLightSource
 	{
-		public IfcCartesianPoint? Position { get; set; }
-		public IfcPositiveLengthMeasure? Radius { get; set; }
-		public IfcReal? ConstantAttenuation { get; set; }
-		public IfcReal? DistanceAttenuation { get; set; }
-		public IfcReal? QuadricAttenuation { get; set; }
+		public virtual IfcCartesianPoint? Position { get; set; }
+		public virtual IfcPositiveLengthMeasure? Radius { get; set; }
+		public virtual IfcReal? ConstantAttenuation { get; set; }
+		public virtual IfcReal? DistanceAttenuation { get; set; }
+		public virtual IfcReal? QuadricAttenuation { get; set; }
 		public IfcLightSourcePositional() : base()
 		{
 		}
@@ -19459,10 +19705,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLightSourceSpot : IfcLightSourcePositional
 	{
-		public IfcDirection? Orientation { get; set; }
-		public IfcReal? ConcentrationExponent { get; set; }
-		public IfcPositivePlaneAngleMeasure? SpreadAngle { get; set; }
-		public IfcPositivePlaneAngleMeasure? BeamWidthAngle { get; set; }
+		public virtual IfcDirection? Orientation { get; set; }
+		public virtual IfcReal? ConcentrationExponent { get; set; }
+		public virtual IfcPositivePlaneAngleMeasure? SpreadAngle { get; set; }
+		public virtual IfcPositivePlaneAngleMeasure? BeamWidthAngle { get; set; }
 		public IfcLightSourceSpot() : base()
 		{
 		}
@@ -19486,8 +19732,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLine : IfcCurve
 	{
-		public IfcCartesianPoint? Pnt { get; set; }
-		public IfcVector? Dir { get; set; }
+		public virtual IfcCartesianPoint? Pnt { get; set; }
+		public virtual IfcVector? Dir { get; set; }
 		public IfcLine() : base()
 		{
 		}
@@ -19527,8 +19773,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLinearPlacement : IfcObjectPlacement
 	{
-		public IfcAxis2PlacementLinear? RelativePlacement { get; set; }
-		public IfcAxis2Placement3D? CartesianPosition { get; set; }
+		public virtual IfcAxis2PlacementLinear? RelativePlacement { get; set; }
+		public virtual IfcAxis2Placement3D? CartesianPosition { get; set; }
 		public IfcLinearPlacement() : base()
 		{
 		}
@@ -19570,7 +19816,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLiquidTerminal : IfcFlowTerminal
 	{
-		public IfcLiquidTerminalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLiquidTerminalTypeEnum? PredefinedType { get; set; }
 		public IfcLiquidTerminal() : base()
 		{
 		}
@@ -19591,7 +19837,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLiquidTerminalType : IfcFlowTerminalType
 	{
-		public IfcLiquidTerminalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLiquidTerminalTypeEnum? PredefinedType { get; set; }
 		public IfcLiquidTerminalType() : base()
 		{
 		}
@@ -19611,7 +19857,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcLocalPlacement : IfcObjectPlacement
 	{
-		public IfcAxis2Placement? RelativePlacement { get; set; }
+		public virtual IfcAxis2Placement? RelativePlacement { get; set; }
 		public IfcLocalPlacement() : base()
 		{
 		}
@@ -19648,7 +19894,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcManifoldSolidBrep : IfcSolidModel
 	{
-		public IfcClosedShell? Outer { get; set; }
+		public virtual IfcClosedShell? Outer { get; set; }
 		public IfcManifoldSolidBrep() : base()
 		{
 		}
@@ -19675,12 +19921,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMapConversion : IfcCoordinateOperation
 	{
-		public IfcLengthMeasure? Eastings { get; set; }
-		public IfcLengthMeasure? Northings { get; set; }
-		public IfcLengthMeasure? OrthogonalHeight { get; set; }
-		public IfcReal? XAxisAbscissa { get; set; }
-		public IfcReal? XAxisOrdinate { get; set; }
-		public IfcReal? Scale { get; set; }
+		public virtual IfcLengthMeasure? Eastings { get; set; }
+		public virtual IfcLengthMeasure? Northings { get; set; }
+		public virtual IfcLengthMeasure? OrthogonalHeight { get; set; }
+		public virtual IfcReal? XAxisAbscissa { get; set; }
+		public virtual IfcReal? XAxisOrdinate { get; set; }
+		public virtual IfcReal? Scale { get; set; }
 		public IfcMapConversion() : base()
 		{
 		}
@@ -19705,9 +19951,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMapConversionScaled : IfcMapConversion
 	{
-		public IfcReal? FactorX { get; set; }
-		public IfcReal? FactorY { get; set; }
-		public IfcReal? FactorZ { get; set; }
+		public virtual IfcReal? FactorX { get; set; }
+		public virtual IfcReal? FactorY { get; set; }
+		public virtual IfcReal? FactorZ { get; set; }
 		public IfcMapConversionScaled() : base()
 		{
 		}
@@ -19728,8 +19974,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMappedItem : IfcRepresentationItem
 	{
-		public IfcRepresentationMap? MappingSource { get; set; }
-		public IfcCartesianTransformationOperator? MappingTarget { get; set; }
+		public virtual IfcRepresentationMap? MappingSource { get; set; }
+		public virtual IfcCartesianTransformationOperator? MappingTarget { get; set; }
 		public IfcMappedItem() : base()
 		{
 		}
@@ -19752,7 +19998,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMarineFacility : IfcFacility
 	{
-		public IfcMarineFacilityTypeEnum? PredefinedType { get; set; }
+		public virtual IfcMarineFacilityTypeEnum? PredefinedType { get; set; }
 		public IfcMarineFacility() : base()
 		{
 		}
@@ -19774,7 +20020,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMarinePart : IfcFacilityPart
 	{
-		public IfcMarinePartTypeEnum? PredefinedType { get; set; }
+		public virtual IfcMarinePartTypeEnum? PredefinedType { get; set; }
 		public IfcMarinePart() : base()
 		{
 		}
@@ -19798,12 +20044,15 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterial : IfcMaterialDefinition
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcLabel? Category { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcLabel? Category { get; set; }
 		//TODO INVERSE
+		public List<IfcMaterialDefinitionRepresentation>? HasRepresentation => Model?.GetItems<IfcMaterialDefinitionRepresentation>().Where(x => x.RepresentedMaterial != null && x.RepresentedMaterial == this).ToList();
 		//TODO INVERSE
+		public List<IfcMaterialRelationship>? IsRelatedWith => Model?.GetItems<IfcMaterialRelationship>().Where(x => x.RelatedMaterials != null && x.RelatedMaterials.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcMaterialRelationship>? RelatesTo => Model?.GetItems<IfcMaterialRelationship>().Where(x => x.RelatingMaterial != null && x.RelatingMaterial == this).ToList();
 		public IfcMaterial() : base()
 		{
 		}
@@ -19823,8 +20072,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialClassificationRelationship : Entity
 	{
-		public List<IfcClassificationSelect>? MaterialClassifications { get; set; }
-		public IfcMaterial? ClassifiedMaterial { get; set; }
+		public virtual List<IfcClassificationSelect>? MaterialClassifications { get; set; }
+		public virtual IfcMaterial? ClassifiedMaterial { get; set; }
 		public IfcMaterialClassificationRelationship() : base()
 		{
 		}
@@ -19849,12 +20098,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialConstituent : IfcMaterialDefinition
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcMaterial? Material { get; set; }
-		public IfcNormalisedRatioMeasure? Fraction { get; set; }
-		public IfcLabel? Category { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcMaterial? Material { get; set; }
+		public virtual IfcNormalisedRatioMeasure? Fraction { get; set; }
+		public virtual IfcLabel? Category { get; set; }
 		//TODO INVERSE
+		public IfcMaterialConstituentSet? ToMaterialConstituentSet => Model?.GetItems<IfcMaterialConstituentSet>().FirstOrDefault(x => x.MaterialConstituents != null && x.MaterialConstituents.Contains(this));
 		public IfcMaterialConstituent() : base()
 		{
 		}
@@ -19878,9 +20128,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialConstituentSet : IfcMaterialDefinition
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public List<IfcMaterialConstituent>? MaterialConstituents { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual List<IfcMaterialConstituent>? MaterialConstituents { get; set; }
 		public IfcMaterialConstituentSet() : base()
 		{
 		}
@@ -19911,8 +20161,11 @@ namespace IFC.IFC4x3
 	public abstract class IfcMaterialDefinition : Entity, IfcMaterialSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
 		//TODO INVERSE
+		public List<IfcRelAssociatesMaterial>? AssociatedTo => Model?.GetItems<IfcRelAssociatesMaterial>().Where(x => x.RelatingMaterial != null && x.RelatingMaterial == this).ToList();
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? HasExternalReferences => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcMaterialProperties>? HasProperties => Model?.GetItems<IfcMaterialProperties>().Where(x => x.Material != null && x.Material == this).ToList();
 		public IfcMaterialDefinition() : base()
 		{
 		}
@@ -19930,7 +20183,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialDefinitionRepresentation : IfcProductRepresentation
 	{
-		public IfcMaterial? RepresentedMaterial { get; set; }
+		public virtual IfcMaterial? RepresentedMaterial { get; set; }
 		public IfcMaterialDefinitionRepresentation() : base()
 		{
 		}
@@ -19960,14 +20213,15 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialLayer : IfcMaterialDefinition
 	{
-		public IfcMaterial? Material { get; set; }
-		public IfcNonNegativeLengthMeasure? LayerThickness { get; set; }
-		public IfcLogical? IsVentilated { get; set; }
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcLabel? Category { get; set; }
-		public IfcInteger? Priority { get; set; }
+		public virtual IfcMaterial? Material { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? LayerThickness { get; set; }
+		public virtual IfcLogical? IsVentilated { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcLabel? Category { get; set; }
+		public virtual IfcInteger? Priority { get; set; }
 		//TODO INVERSE
+		public IfcMaterialLayerSet? ToMaterialLayerSet => Model?.GetItems<IfcMaterialLayerSet>().FirstOrDefault(x => x.MaterialLayers != null && x.MaterialLayers.Contains(this));
 		public IfcMaterialLayer() : base()
 		{
 		}
@@ -19995,9 +20249,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialLayerSet : IfcMaterialDefinition
 	{
-		public List<IfcMaterialLayer>? MaterialLayers { get; set; }
-		public IfcLabel? LayerSetName { get; set; }
-		public IfcText? Description { get; set; }
+		public virtual List<IfcMaterialLayer>? MaterialLayers { get; set; }
+		public virtual IfcLabel? LayerSetName { get; set; }
+		public virtual IfcText? Description { get; set; }
 		//TODO DERIVE
 		public virtual IfcLengthMeasure? TotalThickness {get {return null;}}
 		public IfcMaterialLayerSet() : base()
@@ -20023,11 +20277,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialLayerSetUsage : IfcMaterialUsageDefinition
 	{
-		public IfcMaterialLayerSet? ForLayerSet { get; set; }
-		public IfcLayerSetDirectionEnum? LayerSetDirection { get; set; }
-		public IfcDirectionSenseEnum? DirectionSense { get; set; }
-		public IfcLengthMeasure? OffsetFromReferenceLine { get; set; }
-		public IfcPositiveLengthMeasure? ReferenceExtent { get; set; }
+		public virtual IfcMaterialLayerSet? ForLayerSet { get; set; }
+		public virtual IfcLayerSetDirectionEnum? LayerSetDirection { get; set; }
+		public virtual IfcDirectionSenseEnum? DirectionSense { get; set; }
+		public virtual IfcLengthMeasure? OffsetFromReferenceLine { get; set; }
+		public virtual IfcPositiveLengthMeasure? ReferenceExtent { get; set; }
 		public IfcMaterialLayerSetUsage() : base()
 		{
 		}
@@ -20050,8 +20304,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialLayerWithOffsets : IfcMaterialLayer
 	{
-		public IfcLayerSetDirectionEnum? OffsetDirection { get; set; }
-		public List<IfcLengthMeasure>? OffsetValues { get; set; }
+		public virtual IfcLayerSetDirectionEnum? OffsetDirection { get; set; }
+		public virtual List<IfcLengthMeasure>? OffsetValues { get; set; }
 		public IfcMaterialLayerWithOffsets() : base()
 		{
 		}
@@ -20069,7 +20323,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialList : Entity, IfcMaterialSelect
 	{
-		public List<IfcMaterial>? Materials { get; set; }
+		public virtual List<IfcMaterial>? Materials { get; set; }
 		public IfcMaterialList() : base()
 		{
 		}
@@ -20098,13 +20352,14 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialProfile : IfcMaterialDefinition
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcMaterial? Material { get; set; }
-		public IfcProfileDef? Profile { get; set; }
-		public IfcInteger? Priority { get; set; }
-		public IfcLabel? Category { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcMaterial? Material { get; set; }
+		public virtual IfcProfileDef? Profile { get; set; }
+		public virtual IfcInteger? Priority { get; set; }
+		public virtual IfcLabel? Category { get; set; }
 		//TODO INVERSE
+		public IfcMaterialProfileSet? ToMaterialProfileSet => Model?.GetItems<IfcMaterialProfileSet>().FirstOrDefault(x => x.MaterialProfiles != null && x.MaterialProfiles.Contains(this));
 		public IfcMaterialProfile() : base()
 		{
 		}
@@ -20130,10 +20385,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialProfileSet : IfcMaterialDefinition
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public List<IfcMaterialProfile>? MaterialProfiles { get; set; }
-		public IfcCompositeProfileDef? CompositeProfile { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual List<IfcMaterialProfile>? MaterialProfiles { get; set; }
+		public virtual IfcCompositeProfileDef? CompositeProfile { get; set; }
 		public IfcMaterialProfileSet() : base()
 		{
 		}
@@ -20158,9 +20413,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialProfileSetUsage : IfcMaterialUsageDefinition
 	{
-		public IfcMaterialProfileSet? ForProfileSet { get; set; }
-		public IfcCardinalPointReference? CardinalPoint { get; set; }
-		public IfcPositiveLengthMeasure? ReferenceExtent { get; set; }
+		public virtual IfcMaterialProfileSet? ForProfileSet { get; set; }
+		public virtual IfcCardinalPointReference? CardinalPoint { get; set; }
+		public virtual IfcPositiveLengthMeasure? ReferenceExtent { get; set; }
 		public IfcMaterialProfileSetUsage() : base()
 		{
 		}
@@ -20181,8 +20436,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialProfileSetUsageTapering : IfcMaterialProfileSetUsage
 	{
-		public IfcMaterialProfileSet? ForProfileEndSet { get; set; }
-		public IfcCardinalPointReference? CardinalEndPoint { get; set; }
+		public virtual IfcMaterialProfileSet? ForProfileEndSet { get; set; }
+		public virtual IfcCardinalPointReference? CardinalEndPoint { get; set; }
 		public IfcMaterialProfileSetUsageTapering() : base()
 		{
 		}
@@ -20201,7 +20456,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialProfileWithOffsets : IfcMaterialProfile
 	{
-		public List<IfcLengthMeasure>? OffsetValues { get; set; }
+		public virtual List<IfcLengthMeasure>? OffsetValues { get; set; }
 		public IfcMaterialProfileWithOffsets() : base()
 		{
 		}
@@ -20219,7 +20474,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialProperties : IfcExtendedProperties
 	{
-		public IfcMaterialDefinition? Material { get; set; }
+		public virtual IfcMaterialDefinition? Material { get; set; }
 		public IfcMaterialProperties() : base()
 		{
 		}
@@ -20239,9 +20494,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMaterialRelationship : IfcResourceLevelRelationship
 	{
-		public IfcMaterial? RelatingMaterial { get; set; }
-		public List<IfcMaterial>? RelatedMaterials { get; set; }
-		public IfcLabel? MaterialExpression { get; set; }
+		public virtual IfcMaterial? RelatingMaterial { get; set; }
+		public virtual List<IfcMaterial>? RelatedMaterials { get; set; }
+		public virtual IfcLabel? MaterialExpression { get; set; }
 		public IfcMaterialRelationship() : base()
 		{
 		}
@@ -20265,6 +20520,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcMaterialUsageDefinition : Entity, IfcMaterialSelect
 	{
 		//TODO INVERSE
+		public List<IfcRelAssociatesMaterial>? AssociatedTo => Model?.GetItems<IfcRelAssociatesMaterial>().Where(x => x.RelatingMaterial != null && x.RelatingMaterial == this).ToList();
 		public IfcMaterialUsageDefinition() : base()
 		{
 		}
@@ -20278,8 +20534,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMeasureWithUnit : Entity, IfcAppliedValueSelect, IfcMetricValueSelect
 	{
-		public IfcValue? ValueComponent { get; set; }
-		public IfcUnit? UnitComponent { get; set; }
+		public virtual IfcValue? ValueComponent { get; set; }
+		public virtual IfcUnit? UnitComponent { get; set; }
 		public IfcMeasureWithUnit() : base()
 		{
 		}
@@ -20306,9 +20562,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMechanicalFastener : IfcElementComponent
 	{
-		public IfcPositiveLengthMeasure? NominalDiameter { get; set; }
-		public IfcPositiveLengthMeasure? NominalLength { get; set; }
-		public IfcMechanicalFastenerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPositiveLengthMeasure? NominalDiameter { get; set; }
+		public virtual IfcPositiveLengthMeasure? NominalLength { get; set; }
+		public virtual IfcMechanicalFastenerTypeEnum? PredefinedType { get; set; }
 		public IfcMechanicalFastener() : base()
 		{
 		}
@@ -20333,9 +20589,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMechanicalFastenerType : IfcElementComponentType
 	{
-		public IfcMechanicalFastenerTypeEnum? PredefinedType { get; set; }
-		public IfcPositiveLengthMeasure? NominalDiameter { get; set; }
-		public IfcPositiveLengthMeasure? NominalLength { get; set; }
+		public virtual IfcMechanicalFastenerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPositiveLengthMeasure? NominalDiameter { get; set; }
+		public virtual IfcPositiveLengthMeasure? NominalLength { get; set; }
 		public IfcMechanicalFastenerType() : base()
 		{
 		}
@@ -20361,7 +20617,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMedicalDevice : IfcFlowTerminal
 	{
-		public IfcMedicalDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcMedicalDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcMedicalDevice() : base()
 		{
 		}
@@ -20382,7 +20638,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMedicalDeviceType : IfcFlowTerminalType
 	{
-		public IfcMedicalDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcMedicalDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcMedicalDeviceType() : base()
 		{
 		}
@@ -20406,7 +20662,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMember : IfcBuiltElement
 	{
-		public IfcMemberTypeEnum? PredefinedType { get; set; }
+		public virtual IfcMemberTypeEnum? PredefinedType { get; set; }
 		public IfcMember() : base()
 		{
 		}
@@ -20427,7 +20683,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMemberType : IfcBuiltElementType
 	{
-		public IfcMemberTypeEnum? PredefinedType { get; set; }
+		public virtual IfcMemberTypeEnum? PredefinedType { get; set; }
 		public IfcMemberType() : base()
 		{
 		}
@@ -20448,10 +20704,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMetric : IfcConstraint
 	{
-		public IfcBenchmarkEnum? Benchmark { get; set; }
-		public IfcLabel? ValueSource { get; set; }
-		public IfcMetricValueSelect? DataValue { get; set; }
-		public IfcReference? ReferencePath { get; set; }
+		public virtual IfcBenchmarkEnum? Benchmark { get; set; }
+		public virtual IfcLabel? ValueSource { get; set; }
+		public virtual IfcMetricValueSelect? DataValue { get; set; }
+		public virtual IfcReference? ReferencePath { get; set; }
 		public IfcMetric() : base()
 		{
 		}
@@ -20488,7 +20744,7 @@ namespace IFC.IFC4x3
 	public class IfcMirroredProfileDef : IfcDerivedProfileDef
 	{
 		//TODO DERIVE
-		public virtual IfcCartesianTransformationOperator2D? Operator {get {return null;}}
+		public override IfcCartesianTransformationOperator2D? Operator {get {return null;}}
 		public IfcMirroredProfileDef() : base()
 		{
 		}
@@ -20511,7 +20767,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMobileTelecommunicationsAppliance : IfcFlowTerminal
 	{
-		public IfcMobileTelecommunicationsApplianceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcMobileTelecommunicationsApplianceTypeEnum? PredefinedType { get; set; }
 		public IfcMobileTelecommunicationsAppliance() : base()
 		{
 		}
@@ -20532,7 +20788,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMobileTelecommunicationsApplianceType : IfcFlowTerminalType
 	{
-		public IfcMobileTelecommunicationsApplianceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcMobileTelecommunicationsApplianceTypeEnum? PredefinedType { get; set; }
 		public IfcMobileTelecommunicationsApplianceType() : base()
 		{
 		}
@@ -20549,7 +20805,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMonetaryUnit : Entity, IfcUnit
 	{
-		public IfcLabel? Currency { get; set; }
+		public virtual IfcLabel? Currency { get; set; }
 		public IfcMonetaryUnit() : base()
 		{
 		}
@@ -20573,7 +20829,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMooringDevice : IfcBuiltElement
 	{
-		public IfcMooringDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcMooringDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcMooringDevice() : base()
 		{
 		}
@@ -20594,7 +20850,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMooringDeviceType : IfcBuiltElementType
 	{
-		public IfcMooringDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcMooringDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcMooringDeviceType() : base()
 		{
 		}
@@ -20618,7 +20874,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMotorConnection : IfcEnergyConversionDevice
 	{
-		public IfcMotorConnectionTypeEnum? PredefinedType { get; set; }
+		public virtual IfcMotorConnectionTypeEnum? PredefinedType { get; set; }
 		public IfcMotorConnection() : base()
 		{
 		}
@@ -20639,7 +20895,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcMotorConnectionType : IfcEnergyConversionDeviceType
 	{
-		public IfcMotorConnectionTypeEnum? PredefinedType { get; set; }
+		public virtual IfcMotorConnectionTypeEnum? PredefinedType { get; set; }
 		public IfcMotorConnectionType() : base()
 		{
 		}
@@ -20663,8 +20919,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcNamedUnit : Entity, IfcUnit
 	{
-		public IfcDimensionalExponents? Dimensions { get; set; }
-		public IfcUnitEnum? UnitType { get; set; }
+		public virtual IfcDimensionalExponents? Dimensions { get; set; }
+		public virtual IfcUnitEnum? UnitType { get; set; }
 		public IfcNamedUnit() : base()
 		{
 		}
@@ -20689,7 +20945,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcNavigationElement : IfcBuiltElement
 	{
-		public IfcNavigationElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcNavigationElementTypeEnum? PredefinedType { get; set; }
 		public IfcNavigationElement() : base()
 		{
 		}
@@ -20710,7 +20966,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcNavigationElementType : IfcBuiltElementType
 	{
-		public IfcNavigationElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcNavigationElementTypeEnum? PredefinedType { get; set; }
 		public IfcNavigationElementType() : base()
 		{
 		}
@@ -20742,11 +20998,15 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcObject : IfcObjectDefinition
 	{
-		public IfcLabel? ObjectType { get; set; }
+		public virtual IfcLabel? ObjectType { get; set; }
 		//TODO INVERSE
+		public List<IfcRelDefinesByObject>? IsDeclaredBy => Model?.GetItems<IfcRelDefinesByObject>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelDefinesByObject>? Declares => Model?.GetItems<IfcRelDefinesByObject>().Where(x => x.RelatingObject != null && x.RelatingObject == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelDefinesByType>? IsTypedBy => Model?.GetItems<IfcRelDefinesByType>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelDefinesByProperties>? IsDefinedBy => Model?.GetItems<IfcRelDefinesByProperties>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();
 		public IfcObject() : base()
 		{
 		}
@@ -20776,12 +21036,19 @@ namespace IFC.IFC4x3
 	public abstract class IfcObjectDefinition : IfcRoot, IfcDefinitionSelect
 	{
 		//TODO INVERSE
+		public List<IfcRelAssigns>? HasAssignments => Model?.GetItems<IfcRelAssigns>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelNests>? Nests => Model?.GetItems<IfcRelNests>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelNests>? IsNestedBy => Model?.GetItems<IfcRelNests>().Where(x => x.RelatingObject != null && x.RelatingObject == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelDeclares>? HasContext => Model?.GetItems<IfcRelDeclares>().Where(x => x.RelatedDefinitions != null && x.RelatedDefinitions.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelAggregates>? IsDecomposedBy => Model?.GetItems<IfcRelAggregates>().Where(x => x.RelatingObject != null && x.RelatingObject == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelAggregates>? Decomposes => Model?.GetItems<IfcRelAggregates>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelAssociates>? HasAssociations => Model?.GetItems<IfcRelAssociates>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();
 		public IfcObjectDefinition() : base()
 		{
 		}
@@ -20804,8 +21071,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcObjectPlacement : Entity
 	{
-		public IfcObjectPlacement? PlacementRelTo { get; set; }
+		public virtual IfcObjectPlacement? PlacementRelTo { get; set; }
 		//TODO INVERSE
+		public List<IfcProduct>? PlacesObject => Model?.GetItems<IfcProduct>().Where(x => x.ObjectPlacement != null && x.ObjectPlacement == this).ToList();
 		//TODO INVERSE
 		public List<IfcObjectPlacement>? ReferencedByPlacements => Model?.GetItems<IfcObjectPlacement>().Where(x => x.PlacementRelTo != null && x.PlacementRelTo == this).ToList();
 		public IfcObjectPlacement() : base()
@@ -20831,10 +21099,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcObjective : IfcConstraint
 	{
-		public List<IfcConstraint>? BenchmarkValues { get; set; }
-		public IfcLogicalOperatorEnum? LogicalAggregator { get; set; }
-		public IfcObjectiveEnum? ObjectiveQualifier { get; set; }
-		public IfcLabel? UserDefinedQualifier { get; set; }
+		public virtual List<IfcConstraint>? BenchmarkValues { get; set; }
+		public virtual IfcLogicalOperatorEnum? LogicalAggregator { get; set; }
+		public virtual IfcObjectiveEnum? ObjectiveQualifier { get; set; }
+		public virtual IfcLabel? UserDefinedQualifier { get; set; }
 		public IfcObjective() : base()
 		{
 		}
@@ -20858,7 +21126,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcOccupant : IfcActor
 	{
-		public IfcOccupantTypeEnum? PredefinedType { get; set; }
+		public virtual IfcOccupantTypeEnum? PredefinedType { get; set; }
 		public IfcOccupant() : base()
 		{
 		}
@@ -20880,7 +21148,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcOffsetCurve : IfcCurve
 	{
-		public IfcCurve? BasisCurve { get; set; }
+		public virtual IfcCurve? BasisCurve { get; set; }
 		public IfcOffsetCurve() : base()
 		{
 		}
@@ -20901,8 +21169,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcOffsetCurve2D : IfcOffsetCurve
 	{
-		public IfcLengthMeasure? Distance { get; set; }
-		public IfcLogical? SelfIntersect { get; set; }
+		public virtual IfcLengthMeasure? Distance { get; set; }
+		public virtual IfcLogical? SelfIntersect { get; set; }
 		public IfcOffsetCurve2D() : base()
 		{
 		}
@@ -20925,9 +21193,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcOffsetCurve3D : IfcOffsetCurve
 	{
-		public IfcLengthMeasure? Distance { get; set; }
-		public IfcLogical? SelfIntersect { get; set; }
-		public IfcDirection? RefDirection { get; set; }
+		public virtual IfcLengthMeasure? Distance { get; set; }
+		public virtual IfcLogical? SelfIntersect { get; set; }
+		public virtual IfcDirection? RefDirection { get; set; }
 		public IfcOffsetCurve3D() : base()
 		{
 		}
@@ -20948,8 +21216,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcOffsetCurveByDistances : IfcOffsetCurve
 	{
-		public List<IfcPointByDistanceExpression>? OffsetValues { get; set; }
-		public IfcLabel? Tag { get; set; }
+		public virtual List<IfcPointByDistanceExpression>? OffsetValues { get; set; }
+		public virtual IfcLabel? Tag { get; set; }
 		public IfcOffsetCurveByDistances() : base()
 		{
 		}
@@ -20976,11 +21244,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcOpenCrossProfileDef : IfcProfileDef
 	{
-		public IfcBoolean? HorizontalWidths { get; set; }
-		public List<IfcNonNegativeLengthMeasure>? Widths { get; set; }
-		public List<IfcPlaneAngleMeasure>? Slopes { get; set; }
-		public List<IfcLabel>? Tags { get; set; }
-		public IfcCartesianPoint? OffsetPoint { get; set; }
+		public virtual IfcBoolean? HorizontalWidths { get; set; }
+		public virtual List<IfcNonNegativeLengthMeasure>? Widths { get; set; }
+		public virtual List<IfcPlaneAngleMeasure>? Slopes { get; set; }
+		public virtual List<IfcLabel>? Tags { get; set; }
+		public virtual IfcCartesianPoint? OffsetPoint { get; set; }
 		public IfcOpenCrossProfileDef() : base()
 		{
 		}
@@ -21023,8 +21291,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcOpeningElement : IfcFeatureElementSubtraction
 	{
-		public IfcOpeningElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcOpeningElementTypeEnum? PredefinedType { get; set; }
 		//TODO INVERSE
+		public List<IfcRelFillsElement>? HasFillings => Model?.GetItems<IfcRelFillsElement>().Where(x => x.RelatingOpeningElement != null && x.RelatingOpeningElement == this).ToList();
 		public IfcOpeningElement() : base()
 		{
 		}
@@ -21049,14 +21318,17 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcOrganization : Entity, IfcActorSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
-		public IfcIdentifier? Identification { get; set; }
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public List<IfcActorRole>? Roles { get; set; }
-		public List<IfcAddress>? Addresses { get; set; }
+		public virtual IfcIdentifier? Identification { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual List<IfcActorRole>? Roles { get; set; }
+		public virtual List<IfcAddress>? Addresses { get; set; }
 		//TODO INVERSE
+		public List<IfcOrganizationRelationship>? IsRelatedBy => Model?.GetItems<IfcOrganizationRelationship>().Where(x => x.RelatedOrganizations != null && x.RelatedOrganizations.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcOrganizationRelationship>? Relates => Model?.GetItems<IfcOrganizationRelationship>().Where(x => x.RelatingOrganization != null && x.RelatingOrganization == this).ToList();
 		//TODO INVERSE
+		public List<IfcPersonAndOrganization>? Engages => Model?.GetItems<IfcPersonAndOrganization>().Where(x => x.TheOrganization != null && x.TheOrganization == this).ToList();
 		public IfcOrganization() : base()
 		{
 		}
@@ -21079,8 +21351,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcOrganizationRelationship : IfcResourceLevelRelationship
 	{
-		public IfcOrganization? RelatingOrganization { get; set; }
-		public List<IfcOrganization>? RelatedOrganizations { get; set; }
+		public virtual IfcOrganization? RelatingOrganization { get; set; }
+		public virtual List<IfcOrganization>? RelatedOrganizations { get; set; }
 		public IfcOrganizationRelationship() : base()
 		{
 		}
@@ -21107,12 +21379,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcOrientedEdge : IfcEdge
 	{
-		public IfcEdge? EdgeElement { get; set; }
-		public IfcBoolean? Orientation { get; set; }
+		public virtual IfcEdge? EdgeElement { get; set; }
+		public virtual IfcBoolean? Orientation { get; set; }
 		//TODO DERIVE
-		public virtual IfcVertex? EdgeStart {get {return null;}}
+		public override IfcVertex? EdgeStart {get {return null;}}
 		//TODO DERIVE
-		public virtual IfcVertex? EdgeEnd {get {return null;}}
+		public override IfcVertex? EdgeEnd {get {return null;}}
 		public IfcOrientedEdge() : base()
 		{
 		}
@@ -21152,7 +21424,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcOutlet : IfcFlowTerminal
 	{
-		public IfcOutletTypeEnum? PredefinedType { get; set; }
+		public virtual IfcOutletTypeEnum? PredefinedType { get; set; }
 		public IfcOutlet() : base()
 		{
 		}
@@ -21173,7 +21445,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcOutletType : IfcFlowTerminalType
 	{
-		public IfcOutletTypeEnum? PredefinedType { get; set; }
+		public virtual IfcOutletTypeEnum? PredefinedType { get; set; }
 		public IfcOutletType() : base()
 		{
 		}
@@ -21201,14 +21473,14 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcOwnerHistory : Entity
 	{
-		public IfcPersonAndOrganization? OwningUser { get; set; }
-		public IfcApplication? OwningApplication { get; set; }
-		public IfcStateEnum? State { get; set; }
-		public IfcChangeActionEnum? ChangeAction { get; set; }
-		public IfcTimeStamp? LastModifiedDate { get; set; }
-		public IfcPersonAndOrganization? LastModifyingUser { get; set; }
-		public IfcApplication? LastModifyingApplication { get; set; }
-		public IfcTimeStamp? CreationDate { get; set; }
+		public virtual IfcPersonAndOrganization? OwningUser { get; set; }
+		public virtual IfcApplication? OwningApplication { get; set; }
+		public virtual IfcStateEnum? State { get; set; }
+		public virtual IfcChangeActionEnum? ChangeAction { get; set; }
+		public virtual IfcTimeStamp? LastModifiedDate { get; set; }
+		public virtual IfcPersonAndOrganization? LastModifyingUser { get; set; }
+		public virtual IfcApplication? LastModifyingApplication { get; set; }
+		public virtual IfcTimeStamp? CreationDate { get; set; }
 		public IfcOwnerHistory() : base()
 		{
 		}
@@ -21245,7 +21517,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcParameterizedProfileDef : IfcProfileDef
 	{
-		public IfcAxis2Placement2D? Position { get; set; }
+		public virtual IfcAxis2Placement2D? Position { get; set; }
 		public IfcParameterizedProfileDef() : base()
 		{
 		}
@@ -21284,7 +21556,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPavement : IfcBuiltElement
 	{
-		public IfcPavementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPavementTypeEnum? PredefinedType { get; set; }
 		public IfcPavement() : base()
 		{
 		}
@@ -21305,7 +21577,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPavementType : IfcBuiltElementType
 	{
-		public IfcPavementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPavementTypeEnum? PredefinedType { get; set; }
 		public IfcPavementType() : base()
 		{
 		}
@@ -21326,8 +21598,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPcurve : IfcCurve, IfcCurveOnSurface
 	{
-		public IfcSurface? BasisSurface { get; set; }
-		public IfcCurve? ReferenceCurve { get; set; }
+		public virtual IfcSurface? BasisSurface { get; set; }
+		public virtual IfcCurve? ReferenceCurve { get; set; }
 		public IfcPcurve() : base()
 		{
 		}
@@ -21347,8 +21619,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPerformanceHistory : IfcControl
 	{
-		public IfcLabel? LifeCyclePhase { get; set; }
-		public IfcPerformanceHistoryTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLabel? LifeCyclePhase { get; set; }
+		public virtual IfcPerformanceHistoryTypeEnum? PredefinedType { get; set; }
 		public IfcPerformanceHistory() : base()
 		{
 		}
@@ -21371,11 +21643,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPermeableCoveringProperties : IfcPreDefinedPropertySet
 	{
-		public IfcPermeableCoveringOperationEnum? OperationType { get; set; }
-		public IfcWindowPanelPositionEnum? PanelPosition { get; set; }
-		public IfcPositiveLengthMeasure? FrameDepth { get; set; }
-		public IfcPositiveLengthMeasure? FrameThickness { get; set; }
-		public IfcShapeAspect? ShapeAspectStyle { get; set; }
+		public virtual IfcPermeableCoveringOperationEnum? OperationType { get; set; }
+		public virtual IfcWindowPanelPositionEnum? PanelPosition { get; set; }
+		public virtual IfcPositiveLengthMeasure? FrameDepth { get; set; }
+		public virtual IfcPositiveLengthMeasure? FrameThickness { get; set; }
+		public virtual IfcShapeAspect? ShapeAspectStyle { get; set; }
 		public IfcPermeableCoveringProperties() : base()
 		{
 		}
@@ -21399,9 +21671,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPermit : IfcControl
 	{
-		public IfcPermitTypeEnum? PredefinedType { get; set; }
-		public IfcLabel? Status { get; set; }
-		public IfcText? LongDescription { get; set; }
+		public virtual IfcPermitTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLabel? Status { get; set; }
+		public virtual IfcText? LongDescription { get; set; }
 		public IfcPermit() : base()
 		{
 		}
@@ -21432,15 +21704,16 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPerson : Entity, IfcActorSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
-		public IfcIdentifier? Identification { get; set; }
-		public IfcLabel? FamilyName { get; set; }
-		public IfcLabel? GivenName { get; set; }
-		public List<IfcLabel>? MiddleNames { get; set; }
-		public List<IfcLabel>? PrefixTitles { get; set; }
-		public List<IfcLabel>? SuffixTitles { get; set; }
-		public List<IfcActorRole>? Roles { get; set; }
-		public List<IfcAddress>? Addresses { get; set; }
+		public virtual IfcIdentifier? Identification { get; set; }
+		public virtual IfcLabel? FamilyName { get; set; }
+		public virtual IfcLabel? GivenName { get; set; }
+		public virtual List<IfcLabel>? MiddleNames { get; set; }
+		public virtual List<IfcLabel>? PrefixTitles { get; set; }
+		public virtual List<IfcLabel>? SuffixTitles { get; set; }
+		public virtual List<IfcActorRole>? Roles { get; set; }
+		public virtual List<IfcAddress>? Addresses { get; set; }
 		//TODO INVERSE
+		public List<IfcPersonAndOrganization>? EngagedIn => Model?.GetItems<IfcPersonAndOrganization>().Where(x => x.ThePerson != null && x.ThePerson == this).ToList();
 		public IfcPerson() : base()
 		{
 		}
@@ -21466,9 +21739,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPersonAndOrganization : Entity, IfcActorSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
-		public IfcPerson? ThePerson { get; set; }
-		public IfcOrganization? TheOrganization { get; set; }
-		public List<IfcActorRole>? Roles { get; set; }
+		public virtual IfcPerson? ThePerson { get; set; }
+		public virtual IfcOrganization? TheOrganization { get; set; }
+		public virtual List<IfcActorRole>? Roles { get; set; }
 		public IfcPersonAndOrganization() : base()
 		{
 		}
@@ -21494,10 +21767,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPhysicalComplexQuantity : IfcPhysicalQuantity
 	{
-		public List<IfcPhysicalQuantity>? HasQuantities { get; set; }
-		public IfcLabel? Discrimination { get; set; }
-		public IfcLabel? Quality { get; set; }
-		public IfcLabel? Usage { get; set; }
+		public virtual List<IfcPhysicalQuantity>? HasQuantities { get; set; }
+		public virtual IfcLabel? Discrimination { get; set; }
+		public virtual IfcLabel? Quality { get; set; }
+		public virtual IfcLabel? Usage { get; set; }
 		public IfcPhysicalComplexQuantity() : base()
 		{
 		}
@@ -21524,10 +21797,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcPhysicalQuantity : Entity, IfcResourceObjectSelect
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? HasExternalReferences => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcPhysicalComplexQuantity>? PartOfComplex => Model?.GetItems<IfcPhysicalComplexQuantity>().Where(x => x.HasQuantities != null && x.HasQuantities.Contains(this)).ToList();
 		public IfcPhysicalQuantity() : base()
 		{
 		}
@@ -21554,7 +21829,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcPhysicalSimpleQuantity : IfcPhysicalQuantity
 	{
-		public IfcNamedUnit? Unit { get; set; }
+		public virtual IfcNamedUnit? Unit { get; set; }
 		public IfcPhysicalSimpleQuantity() : base()
 		{
 		}
@@ -21579,8 +21854,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPile : IfcDeepFoundation
 	{
-		public IfcPileTypeEnum? PredefinedType { get; set; }
-		public IfcPileConstructionEnum? ConstructionType { get; set; }
+		public virtual IfcPileTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPileConstructionEnum? ConstructionType { get; set; }
 		public IfcPile() : base()
 		{
 		}
@@ -21602,7 +21877,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPileType : IfcDeepFoundationType
 	{
-		public IfcPileTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPileTypeEnum? PredefinedType { get; set; }
 		public IfcPileType() : base()
 		{
 		}
@@ -21626,7 +21901,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPipeFitting : IfcFlowFitting
 	{
-		public IfcPipeFittingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPipeFittingTypeEnum? PredefinedType { get; set; }
 		public IfcPipeFitting() : base()
 		{
 		}
@@ -21647,7 +21922,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPipeFittingType : IfcFlowFittingType
 	{
-		public IfcPipeFittingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPipeFittingTypeEnum? PredefinedType { get; set; }
 		public IfcPipeFittingType() : base()
 		{
 		}
@@ -21671,7 +21946,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPipeSegment : IfcFlowSegment
 	{
-		public IfcPipeSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPipeSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcPipeSegment() : base()
 		{
 		}
@@ -21692,7 +21967,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPipeSegmentType : IfcFlowSegmentType
 	{
-		public IfcPipeSegmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPipeSegmentTypeEnum? PredefinedType { get; set; }
 		public IfcPipeSegmentType() : base()
 		{
 		}
@@ -21722,10 +21997,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPixelTexture : IfcSurfaceTexture
 	{
-		public IfcInteger? Width { get; set; }
-		public IfcInteger? Height { get; set; }
-		public IfcInteger? ColourComponents { get; set; }
-		public List<IfcBinary>? Pixel { get; set; }
+		public virtual IfcInteger? Width { get; set; }
+		public virtual IfcInteger? Height { get; set; }
+		public virtual IfcInteger? ColourComponents { get; set; }
+		public virtual List<IfcBinary>? Pixel { get; set; }
 		public IfcPixelTexture() : base()
 		{
 		}
@@ -21753,7 +22028,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcPlacement : IfcGeometricRepresentationItem
 	{
-		public IfcPoint? Location { get; set; }
+		public virtual IfcPoint? Location { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcPlacement() : base()
@@ -21773,7 +22048,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPlanarBox : IfcPlanarExtent
 	{
-		public IfcAxis2Placement? Placement { get; set; }
+		public virtual IfcAxis2Placement? Placement { get; set; }
 		public IfcPlanarBox() : base()
 		{
 		}
@@ -21794,8 +22069,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPlanarExtent : IfcGeometricRepresentationItem
 	{
-		public IfcLengthMeasure? SizeInX { get; set; }
-		public IfcLengthMeasure? SizeInY { get; set; }
+		public virtual IfcLengthMeasure? SizeInX { get; set; }
+		public virtual IfcLengthMeasure? SizeInY { get; set; }
 		public IfcPlanarExtent() : base()
 		{
 		}
@@ -21835,7 +22110,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPlate : IfcBuiltElement
 	{
-		public IfcPlateTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPlateTypeEnum? PredefinedType { get; set; }
 		public IfcPlate() : base()
 		{
 		}
@@ -21856,7 +22131,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPlateType : IfcBuiltElementType
 	{
-		public IfcPlateTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPlateTypeEnum? PredefinedType { get; set; }
 		public IfcPlateType() : base()
 		{
 		}
@@ -21899,11 +22174,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPointByDistanceExpression : IfcPoint
 	{
-		public IfcCurveMeasureSelect? DistanceAlong { get; set; }
-		public IfcLengthMeasure? OffsetLateral { get; set; }
-		public IfcLengthMeasure? OffsetVertical { get; set; }
-		public IfcLengthMeasure? OffsetLongitudinal { get; set; }
-		public IfcCurve? BasisCurve { get; set; }
+		public virtual IfcCurveMeasureSelect? DistanceAlong { get; set; }
+		public virtual IfcLengthMeasure? OffsetLateral { get; set; }
+		public virtual IfcLengthMeasure? OffsetVertical { get; set; }
+		public virtual IfcLengthMeasure? OffsetLongitudinal { get; set; }
+		public virtual IfcCurve? BasisCurve { get; set; }
 		public IfcPointByDistanceExpression() : base()
 		{
 		}
@@ -21926,8 +22201,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPointOnCurve : IfcPoint
 	{
-		public IfcCurve? BasisCurve { get; set; }
-		public IfcParameterValue? PointParameter { get; set; }
+		public virtual IfcCurve? BasisCurve { get; set; }
+		public virtual IfcParameterValue? PointParameter { get; set; }
 		public IfcPointOnCurve() : base()
 		{
 		}
@@ -21948,9 +22223,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPointOnSurface : IfcPoint
 	{
-		public IfcSurface? BasisSurface { get; set; }
-		public IfcParameterValue? PointParameterU { get; set; }
-		public IfcParameterValue? PointParameterV { get; set; }
+		public virtual IfcSurface? BasisSurface { get; set; }
+		public virtual IfcParameterValue? PointParameterU { get; set; }
+		public virtual IfcParameterValue? PointParameterV { get; set; }
 		public IfcPointOnSurface() : base()
 		{
 		}
@@ -21993,8 +22268,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPolygonalBoundedHalfSpace : IfcHalfSpaceSolid
 	{
-		public IfcAxis2Placement3D? Position { get; set; }
-		public IfcBoundedCurve? PolygonalBoundary { get; set; }
+		public virtual IfcAxis2Placement3D? Position { get; set; }
+		public virtual IfcBoundedCurve? PolygonalBoundary { get; set; }
 		public IfcPolygonalBoundedHalfSpace() : base()
 		{
 		}
@@ -22015,7 +22290,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPolygonalFaceSet : IfcTessellatedFaceSet
 	{
-		public IfcBoolean? Closed { get; set; }
+		public virtual IfcBoolean? Closed { get; set; }
 		public IfcPolygonalFaceSet() : base()
 		{
 		}
@@ -22035,7 +22310,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPolyline : IfcBoundedCurve
 	{
-		public List<IfcCartesianPoint>? Points { get; set; }
+		public virtual List<IfcCartesianPoint>? Points { get; set; }
 		public IfcPolyline() : base()
 		{
 		}
@@ -22059,10 +22334,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPolynomialCurve : IfcCurve
 	{
-		public IfcPlacement? Position { get; set; }
-		public List<IfcReal>? CoefficientsX { get; set; }
-		public List<IfcReal>? CoefficientsY { get; set; }
-		public List<IfcReal>? CoefficientsZ { get; set; }
+		public virtual IfcPlacement? Position { get; set; }
+		public virtual List<IfcReal>? CoefficientsX { get; set; }
+		public virtual List<IfcReal>? CoefficientsY { get; set; }
+		public virtual List<IfcReal>? CoefficientsZ { get; set; }
 		public IfcPolynomialCurve() : base()
 		{
 		}
@@ -22089,8 +22364,11 @@ namespace IFC.IFC4x3
 	public abstract class IfcPort : IfcProduct
 	{
 		//TODO INVERSE
+		public List<IfcRelConnectsPortToElement>? ContainedIn => Model?.GetItems<IfcRelConnectsPortToElement>().Where(x => x.RelatingPort != null && x.RelatingPort == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelConnectsPorts>? ConnectedFrom => Model?.GetItems<IfcRelConnectsPorts>().Where(x => x.RelatedPort != null && x.RelatedPort == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelConnectsPorts>? ConnectedTo => Model?.GetItems<IfcRelConnectsPorts>().Where(x => x.RelatingPort != null && x.RelatingPort == this).ToList();
 		public IfcPort() : base()
 		{
 		}
@@ -22116,7 +22394,9 @@ namespace IFC.IFC4x3
 	public abstract class IfcPositioningElement : IfcProduct
 	{
 		//TODO INVERSE
+		public List<IfcRelContainedInSpatialStructure>? ContainedInStructure => Model?.GetItems<IfcRelContainedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelPositions>? Positions => Model?.GetItems<IfcRelPositions>().Where(x => x.RelatingPositioningElement != null && x.RelatingPositioningElement == this).ToList();
 		public IfcPositioningElement() : base()
 		{
 		}
@@ -22147,13 +22427,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPostalAddress : IfcAddress
 	{
-		public IfcLabel? InternalLocation { get; set; }
-		public List<IfcLabel>? AddressLines { get; set; }
-		public IfcLabel? PostalBox { get; set; }
-		public IfcLabel? Town { get; set; }
-		public IfcLabel? Region { get; set; }
-		public IfcLabel? PostalCode { get; set; }
-		public IfcLabel? Country { get; set; }
+		public virtual IfcLabel? InternalLocation { get; set; }
+		public virtual List<IfcLabel>? AddressLines { get; set; }
+		public virtual IfcLabel? PostalBox { get; set; }
+		public virtual IfcLabel? Town { get; set; }
+		public virtual IfcLabel? Region { get; set; }
+		public virtual IfcLabel? PostalCode { get; set; }
+		public virtual IfcLabel? Country { get; set; }
 		public IfcPostalAddress() : base()
 		{
 		}
@@ -22215,7 +22495,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcPreDefinedItem : IfcPresentationItem
 	{
-		public IfcLabel? Name { get; set; }
+		public virtual IfcLabel? Name { get; set; }
 		public IfcPreDefinedItem() : base()
 		{
 		}
@@ -22328,10 +22608,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPresentationLayerAssignment : Entity
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public List<IfcLayeredItem>? AssignedItems { get; set; }
-		public IfcIdentifier? Identifier { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual List<IfcLayeredItem>? AssignedItems { get; set; }
+		public virtual IfcIdentifier? Identifier { get; set; }
 		public IfcPresentationLayerAssignment() : base()
 		{
 		}
@@ -22357,10 +22637,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPresentationLayerWithStyle : IfcPresentationLayerAssignment
 	{
-		public IfcLogical? LayerOn { get; set; }
-		public IfcLogical? LayerFrozen { get; set; }
-		public IfcLogical? LayerBlocked { get; set; }
-		public List<IfcPresentationStyle>? LayerStyles { get; set; }
+		public virtual IfcLogical? LayerOn { get; set; }
+		public virtual IfcLogical? LayerFrozen { get; set; }
+		public virtual IfcLogical? LayerBlocked { get; set; }
+		public virtual List<IfcPresentationStyle>? LayerStyles { get; set; }
 		public IfcPresentationLayerWithStyle() : base()
 		{
 		}
@@ -22385,7 +22665,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcPresentationStyle : Entity
 	{
-		public IfcLabel? Name { get; set; }
+		public virtual IfcLabel? Name { get; set; }
 		public IfcPresentationStyle() : base()
 		{
 		}
@@ -22407,7 +22687,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcProcedure : IfcProcess
 	{
-		public IfcProcedureTypeEnum? PredefinedType { get; set; }
+		public virtual IfcProcedureTypeEnum? PredefinedType { get; set; }
 		public IfcProcedure() : base()
 		{
 		}
@@ -22427,7 +22707,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcProcedureType : IfcTypeProcess
 	{
-		public IfcProcedureTypeEnum? PredefinedType { get; set; }
+		public virtual IfcProcedureTypeEnum? PredefinedType { get; set; }
 		public IfcProcedureType() : base()
 		{
 		}
@@ -22454,11 +22734,14 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcProcess : IfcObject, IfcProcessSelect
 	{
-		public IfcIdentifier? Identification { get; set; }
-		public IfcText? LongDescription { get; set; }
+		public virtual IfcIdentifier? Identification { get; set; }
+		public virtual IfcText? LongDescription { get; set; }
 		//TODO INVERSE
+		public List<IfcRelSequence>? IsPredecessorTo => Model?.GetItems<IfcRelSequence>().Where(x => x.RelatingProcess != null && x.RelatingProcess == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelSequence>? IsSuccessorFrom => Model?.GetItems<IfcRelSequence>().Where(x => x.RelatedProcess != null && x.RelatedProcess == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelAssignsToProcess>? OperatesOn => Model?.GetItems<IfcRelAssignsToProcess>().Where(x => x.RelatingProcess != null && x.RelatingProcess == this).ToList();
 		public IfcProcess() : base()
 		{
 		}
@@ -22496,11 +22779,14 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcProduct : IfcObject, IfcProductSelect, IfcSpatialReferenceSelect
 	{
-		public IfcObjectPlacement? ObjectPlacement { get; set; }
-		public IfcProductRepresentation? Representation { get; set; }
+		public virtual IfcObjectPlacement? ObjectPlacement { get; set; }
+		public virtual IfcProductRepresentation? Representation { get; set; }
 		//TODO INVERSE
+		public List<IfcRelAssignsToProduct>? ReferencedBy => Model?.GetItems<IfcRelAssignsToProduct>().Where(x => x.RelatingProduct != null && x.RelatingProduct == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelPositions>? PositionedRelativeTo => Model?.GetItems<IfcRelPositions>().Where(x => x.RelatedProducts != null && x.RelatedProducts.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures => Model?.GetItems<IfcRelReferencedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();
 		public IfcProduct() : base()
 		{
 		}
@@ -22526,7 +22812,9 @@ namespace IFC.IFC4x3
 	public class IfcProductDefinitionShape : IfcProductRepresentation, IfcProductRepresentationSelect
 	{
 		//TODO INVERSE
+		public List<IfcProduct>? ShapeOfProduct => Model?.GetItems<IfcProduct>().Where(x => x.Representation != null && x.Representation == this).ToList();
 		//TODO INVERSE
+		public List<IfcShapeAspect>? HasShapeAspects => Model?.GetItems<IfcShapeAspect>().Where(x => x.PartOfProductDefinitionShape != null && x.PartOfProductDefinitionShape == this).ToList();
 		public IfcProductDefinitionShape() : base()
 		{
 		}
@@ -22547,9 +22835,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcProductRepresentation : Entity
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public List<IfcRepresentation>? Representations { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual List<IfcRepresentation>? Representations { get; set; }
 		public IfcProductRepresentation() : base()
 		{
 		}
@@ -22579,10 +22867,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcProfileDef : Entity, IfcResourceObjectSelect
 	{
-		public IfcProfileTypeEnum? ProfileType { get; set; }
-		public IfcLabel? ProfileName { get; set; }
+		public virtual IfcProfileTypeEnum? ProfileType { get; set; }
+		public virtual IfcLabel? ProfileName { get; set; }
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? HasExternalReference => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcProfileProperties>? HasProperties => Model?.GetItems<IfcProfileProperties>().Where(x => x.ProfileDefinition != null && x.ProfileDefinition == this).ToList();
 		public IfcProfileDef() : base()
 		{
 		}
@@ -22601,7 +22891,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcProfileProperties : IfcExtendedProperties
 	{
-		public IfcProfileDef? ProfileDefinition { get; set; }
+		public virtual IfcProfileDef? ProfileDefinition { get; set; }
 		public IfcProfileProperties() : base()
 		{
 		}
@@ -22658,9 +22948,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcProjectOrder : IfcControl
 	{
-		public IfcProjectOrderTypeEnum? PredefinedType { get; set; }
-		public IfcLabel? Status { get; set; }
-		public IfcText? LongDescription { get; set; }
+		public virtual IfcProjectOrderTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLabel? Status { get; set; }
+		public virtual IfcText? LongDescription { get; set; }
 		public IfcProjectOrder() : base()
 		{
 		}
@@ -22685,10 +22975,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcProjectedCRS : IfcCoordinateReferenceSystem
 	{
-		public IfcIdentifier? VerticalDatum { get; set; }
-		public IfcIdentifier? MapProjection { get; set; }
-		public IfcIdentifier? MapZone { get; set; }
-		public IfcNamedUnit? MapUnit { get; set; }
+		public virtual IfcIdentifier? VerticalDatum { get; set; }
+		public virtual IfcIdentifier? MapProjection { get; set; }
+		public virtual IfcIdentifier? MapZone { get; set; }
+		public virtual IfcNamedUnit? MapUnit { get; set; }
 		public IfcProjectedCRS() : base()
 		{
 		}
@@ -22713,7 +23003,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcProjectionElement : IfcFeatureElementAddition
 	{
-		public IfcProjectionElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcProjectionElementTypeEnum? PredefinedType { get; set; }
 		public IfcProjectionElement() : base()
 		{
 		}
@@ -22742,14 +23032,20 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcProperty : IfcPropertyAbstraction
 	{
-		public IfcIdentifier? Name { get; set; }
-		public IfcText? Specification { get; set; }
+		public virtual IfcIdentifier? Name { get; set; }
+		public virtual IfcText? Specification { get; set; }
 		//TODO INVERSE
+		public List<IfcPropertySet>? PartOfPset => Model?.GetItems<IfcPropertySet>().Where(x => x.HasProperties != null && x.HasProperties.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcPropertyDependencyRelationship>? PropertyForDependance => Model?.GetItems<IfcPropertyDependencyRelationship>().Where(x => x.DependingProperty != null && x.DependingProperty == this).ToList();
 		//TODO INVERSE
+		public List<IfcPropertyDependencyRelationship>? PropertyDependsOn => Model?.GetItems<IfcPropertyDependencyRelationship>().Where(x => x.DependantProperty != null && x.DependantProperty == this).ToList();
 		//TODO INVERSE
+		public List<IfcComplexProperty>? PartOfComplex => Model?.GetItems<IfcComplexProperty>().Where(x => x.HasProperties != null && x.HasProperties.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcResourceConstraintRelationship>? HasConstraints => Model?.GetItems<IfcResourceConstraintRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcResourceApprovalRelationship>? HasApprovals => Model?.GetItems<IfcResourceApprovalRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		public IfcProperty() : base()
 		{
 		}
@@ -22774,6 +23070,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcPropertyAbstraction : Entity, IfcResourceObjectSelect
 	{
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? HasExternalReferences => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		public IfcPropertyAbstraction() : base()
 		{
 		}
@@ -22797,10 +23094,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPropertyBoundedValue : IfcSimpleProperty
 	{
-		public IfcValue? UpperBoundValue { get; set; }
-		public IfcValue? LowerBoundValue { get; set; }
-		public IfcUnit? Unit { get; set; }
-		public IfcValue? SetPointValue { get; set; }
+		public virtual IfcValue? UpperBoundValue { get; set; }
+		public virtual IfcValue? LowerBoundValue { get; set; }
+		public virtual IfcUnit? Unit { get; set; }
+		public virtual IfcValue? SetPointValue { get; set; }
 		public IfcPropertyBoundedValue() : base()
 		{
 		}
@@ -22827,7 +23124,9 @@ namespace IFC.IFC4x3
 	public abstract class IfcPropertyDefinition : IfcRoot, IfcDefinitionSelect
 	{
 		//TODO INVERSE
+		public List<IfcRelDeclares>? HasContext => Model?.GetItems<IfcRelDeclares>().Where(x => x.RelatedDefinitions != null && x.RelatedDefinitions.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelAssociates>? HasAssociations => Model?.GetItems<IfcRelAssociates>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();
 		public IfcPropertyDefinition() : base()
 		{
 		}
@@ -22848,9 +23147,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPropertyDependencyRelationship : IfcResourceLevelRelationship
 	{
-		public IfcProperty? DependingProperty { get; set; }
-		public IfcProperty? DependantProperty { get; set; }
-		public IfcText? Expression { get; set; }
+		public virtual IfcProperty? DependingProperty { get; set; }
+		public virtual IfcProperty? DependantProperty { get; set; }
+		public virtual IfcText? Expression { get; set; }
 		public IfcPropertyDependencyRelationship() : base()
 		{
 		}
@@ -22877,8 +23176,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPropertyEnumeratedValue : IfcSimpleProperty
 	{
-		public List<IfcValue>? EnumerationValues { get; set; }
-		public IfcPropertyEnumeration? EnumerationReference { get; set; }
+		public virtual List<IfcValue>? EnumerationValues { get; set; }
+		public virtual IfcPropertyEnumeration? EnumerationReference { get; set; }
 		public IfcPropertyEnumeratedValue() : base()
 		{
 		}
@@ -22905,7 +23204,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPropertyEnumeration : IfcPropertyAbstraction
 	{
-		public IfcLabel? Name { get; set; }
+		public virtual IfcLabel? Name { get; set; }
 		public IfcPropertyEnumeration() : base()
 		{
 		}
@@ -22928,8 +23227,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPropertyListValue : IfcSimpleProperty
 	{
-		public List<IfcValue>? ListValues { get; set; }
-		public IfcUnit? Unit { get; set; }
+		public virtual List<IfcValue>? ListValues { get; set; }
+		public virtual IfcUnit? Unit { get; set; }
 		public IfcPropertyListValue() : base()
 		{
 		}
@@ -22949,8 +23248,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPropertyReferenceValue : IfcSimpleProperty
 	{
-		public IfcText? UsageName { get; set; }
-		public IfcObjectReferenceSelect? PropertyReference { get; set; }
+		public virtual IfcText? UsageName { get; set; }
+		public virtual IfcObjectReferenceSelect? PropertyReference { get; set; }
 		public IfcPropertyReferenceValue() : base()
 		{
 		}
@@ -22972,7 +23271,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPropertySet : IfcPropertySetDefinition
 	{
-		public List<IfcProperty>? HasProperties { get; set; }
+		public virtual List<IfcProperty>? HasProperties { get; set; }
 		public IfcPropertySet() : base()
 		{
 		}
@@ -22998,8 +23297,11 @@ namespace IFC.IFC4x3
 	public abstract class IfcPropertySetDefinition : IfcPropertyDefinition, IfcPropertySetDefinitionSelect
 	{
 		//TODO INVERSE
+		public List<IfcTypeObject>? DefinesType => Model?.GetItems<IfcTypeObject>().Where(x => x.HasPropertySets != null && x.HasPropertySets.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelDefinesByTemplate>? IsDefinedBy => Model?.GetItems<IfcRelDefinesByTemplate>().Where(x => x.RelatedPropertySets != null && x.RelatedPropertySets.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelDefinesByProperties>? DefinesOccurrence => Model?.GetItems<IfcRelDefinesByProperties>().Where(x => x.RelatingPropertyDefinition != null && x.RelatingPropertyDefinition == this).ToList();
 		public IfcPropertySetDefinition() : base()
 		{
 		}
@@ -23023,10 +23325,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPropertySetTemplate : IfcPropertyTemplateDefinition
 	{
-		public IfcPropertySetTemplateTypeEnum? TemplateType { get; set; }
-		public IfcIdentifier? ApplicableEntity { get; set; }
-		public List<IfcPropertyTemplate>? HasPropertyTemplates { get; set; }
+		public virtual IfcPropertySetTemplateTypeEnum? TemplateType { get; set; }
+		public virtual IfcIdentifier? ApplicableEntity { get; set; }
+		public virtual List<IfcPropertyTemplate>? HasPropertyTemplates { get; set; }
 		//TODO INVERSE
+		public List<IfcRelDefinesByTemplate>? Defines => Model?.GetItems<IfcRelDefinesByTemplate>().Where(x => x.RelatingTemplate != null && x.RelatingTemplate == this).ToList();
 		public IfcPropertySetTemplate() : base()
 		{
 		}
@@ -23047,8 +23350,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPropertySingleValue : IfcSimpleProperty
 	{
-		public IfcValue? NominalValue { get; set; }
-		public IfcUnit? Unit { get; set; }
+		public virtual IfcValue? NominalValue { get; set; }
+		public virtual IfcUnit? Unit { get; set; }
 		public IfcPropertySingleValue() : base()
 		{
 		}
@@ -23103,7 +23406,9 @@ namespace IFC.IFC4x3
 	public abstract class IfcPropertyTemplate : IfcPropertyTemplateDefinition
 	{
 		//TODO INVERSE
+		public List<IfcComplexPropertyTemplate>? PartOfComplexTemplate => Model?.GetItems<IfcComplexPropertyTemplate>().Where(x => x.HasPropertyTemplates != null && x.HasPropertyTemplates.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcPropertySetTemplate>? PartOfPsetTemplate => Model?.GetItems<IfcPropertySetTemplate>().Where(x => x.HasPropertyTemplates != null && x.HasPropertyTemplates.Contains(this)).ToList();
 		public IfcPropertyTemplate() : base()
 		{
 		}
@@ -23144,7 +23449,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcProtectiveDevice : IfcFlowController
 	{
-		public IfcProtectiveDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcProtectiveDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcProtectiveDevice() : base()
 		{
 		}
@@ -23168,7 +23473,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcProtectiveDeviceTrippingUnit : IfcDistributionControlElement
 	{
-		public IfcProtectiveDeviceTrippingUnitTypeEnum? PredefinedType { get; set; }
+		public virtual IfcProtectiveDeviceTrippingUnitTypeEnum? PredefinedType { get; set; }
 		public IfcProtectiveDeviceTrippingUnit() : base()
 		{
 		}
@@ -23189,7 +23494,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcProtectiveDeviceTrippingUnitType : IfcDistributionControlElementType
 	{
-		public IfcProtectiveDeviceTrippingUnitTypeEnum? PredefinedType { get; set; }
+		public virtual IfcProtectiveDeviceTrippingUnitTypeEnum? PredefinedType { get; set; }
 		public IfcProtectiveDeviceTrippingUnitType() : base()
 		{
 		}
@@ -23210,7 +23515,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcProtectiveDeviceType : IfcFlowControllerType
 	{
-		public IfcProtectiveDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcProtectiveDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcProtectiveDeviceType() : base()
 		{
 		}
@@ -23234,7 +23539,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPump : IfcFlowMovingDevice
 	{
-		public IfcPumpTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPumpTypeEnum? PredefinedType { get; set; }
 		public IfcPump() : base()
 		{
 		}
@@ -23255,7 +23560,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcPumpType : IfcFlowMovingDeviceType
 	{
-		public IfcPumpTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPumpTypeEnum? PredefinedType { get; set; }
 		public IfcPumpType() : base()
 		{
 		}
@@ -23278,8 +23583,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcQuantityArea : IfcPhysicalSimpleQuantity
 	{
-		public IfcAreaMeasure? AreaValue { get; set; }
-		public IfcLabel? Formula { get; set; }
+		public virtual IfcAreaMeasure? AreaValue { get; set; }
+		public virtual IfcLabel? Formula { get; set; }
 		public IfcQuantityArea() : base()
 		{
 		}
@@ -23301,8 +23606,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcQuantityCount : IfcPhysicalSimpleQuantity
 	{
-		public IfcCountMeasure? CountValue { get; set; }
-		public IfcLabel? Formula { get; set; }
+		public virtual IfcCountMeasure? CountValue { get; set; }
+		public virtual IfcLabel? Formula { get; set; }
 		public IfcQuantityCount() : base()
 		{
 		}
@@ -23326,8 +23631,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcQuantityLength : IfcPhysicalSimpleQuantity
 	{
-		public IfcLengthMeasure? LengthValue { get; set; }
-		public IfcLabel? Formula { get; set; }
+		public virtual IfcLengthMeasure? LengthValue { get; set; }
+		public virtual IfcLabel? Formula { get; set; }
 		public IfcQuantityLength() : base()
 		{
 		}
@@ -23347,8 +23652,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcQuantityNumber : IfcPhysicalSimpleQuantity
 	{
-		public IfcNumericMeasure? NumberValue { get; set; }
-		public IfcLabel? Formula { get; set; }
+		public virtual IfcNumericMeasure? NumberValue { get; set; }
+		public virtual IfcLabel? Formula { get; set; }
 		public IfcQuantityNumber() : base()
 		{
 		}
@@ -23389,8 +23694,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcQuantityTime : IfcPhysicalSimpleQuantity
 	{
-		public IfcTimeMeasure? TimeValue { get; set; }
-		public IfcLabel? Formula { get; set; }
+		public virtual IfcTimeMeasure? TimeValue { get; set; }
+		public virtual IfcLabel? Formula { get; set; }
 		public IfcQuantityTime() : base()
 		{
 		}
@@ -23414,8 +23719,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcQuantityVolume : IfcPhysicalSimpleQuantity
 	{
-		public IfcVolumeMeasure? VolumeValue { get; set; }
-		public IfcLabel? Formula { get; set; }
+		public virtual IfcVolumeMeasure? VolumeValue { get; set; }
+		public virtual IfcLabel? Formula { get; set; }
 		public IfcQuantityVolume() : base()
 		{
 		}
@@ -23439,8 +23744,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcQuantityWeight : IfcPhysicalSimpleQuantity
 	{
-		public IfcMassMeasure? WeightValue { get; set; }
-		public IfcLabel? Formula { get; set; }
+		public virtual IfcMassMeasure? WeightValue { get; set; }
+		public virtual IfcLabel? Formula { get; set; }
 		public IfcQuantityWeight() : base()
 		{
 		}
@@ -23465,7 +23770,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRail : IfcBuiltElement
 	{
-		public IfcRailTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRailTypeEnum? PredefinedType { get; set; }
 		public IfcRail() : base()
 		{
 		}
@@ -23486,7 +23791,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRailType : IfcBuiltElementType
 	{
-		public IfcRailTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRailTypeEnum? PredefinedType { get; set; }
 		public IfcRailType() : base()
 		{
 		}
@@ -23510,7 +23815,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRailing : IfcBuiltElement
 	{
-		public IfcRailingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRailingTypeEnum? PredefinedType { get; set; }
 		public IfcRailing() : base()
 		{
 		}
@@ -23531,7 +23836,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRailingType : IfcBuiltElementType
 	{
-		public IfcRailingTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRailingTypeEnum? PredefinedType { get; set; }
 		public IfcRailingType() : base()
 		{
 		}
@@ -23553,7 +23858,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRailway : IfcFacility
 	{
-		public IfcRailwayTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRailwayTypeEnum? PredefinedType { get; set; }
 		public IfcRailway() : base()
 		{
 		}
@@ -23575,7 +23880,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRailwayPart : IfcFacilityPart
 	{
-		public IfcRailwayPartTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRailwayPartTypeEnum? PredefinedType { get; set; }
 		public IfcRailwayPart() : base()
 		{
 		}
@@ -23599,7 +23904,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRamp : IfcBuiltElement
 	{
-		public IfcRampTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRampTypeEnum? PredefinedType { get; set; }
 		public IfcRamp() : base()
 		{
 		}
@@ -23623,7 +23928,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRampFlight : IfcBuiltElement
 	{
-		public IfcRampFlightTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRampFlightTypeEnum? PredefinedType { get; set; }
 		public IfcRampFlight() : base()
 		{
 		}
@@ -23644,7 +23949,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRampFlightType : IfcBuiltElementType
 	{
-		public IfcRampFlightTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRampFlightTypeEnum? PredefinedType { get; set; }
 		public IfcRampFlightType() : base()
 		{
 		}
@@ -23665,7 +23970,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRampType : IfcBuiltElementType
 	{
-		public IfcRampTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRampTypeEnum? PredefinedType { get; set; }
 		public IfcRampType() : base()
 		{
 		}
@@ -23688,7 +23993,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRationalBSplineCurveWithKnots : IfcBSplineCurveWithKnots
 	{
-		public List<IfcReal>? WeightsData { get; set; }
+		public virtual List<IfcReal>? WeightsData { get; set; }
 		//TODO DERIVE
 		public virtual List<IfcReal>? Weights {get {return null;}}
 		public IfcRationalBSplineCurveWithKnots() : base()
@@ -23715,7 +24020,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRationalBSplineSurfaceWithKnots : IfcBSplineSurfaceWithKnots
 	{
-		public List<List<IfcReal >>? WeightsData { get; set; }
+		public virtual List<List<IfcReal >>? WeightsData { get; set; }
 		//TODO DERIVE
 		public virtual List<List<IfcReal >>? Weights {get {return null;}}
 		public IfcRationalBSplineSurfaceWithKnots() : base()
@@ -23747,9 +24052,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRectangleHollowProfileDef : IfcRectangleProfileDef
 	{
-		public IfcPositiveLengthMeasure? WallThickness { get; set; }
-		public IfcNonNegativeLengthMeasure? InnerFilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure? OuterFilletRadius { get; set; }
+		public virtual IfcPositiveLengthMeasure? WallThickness { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? InnerFilletRadius { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? OuterFilletRadius { get; set; }
 		public IfcRectangleHollowProfileDef() : base()
 		{
 		}
@@ -23773,8 +24078,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRectangleProfileDef : IfcParameterizedProfileDef
 	{
-		public IfcPositiveLengthMeasure? XDim { get; set; }
-		public IfcPositiveLengthMeasure? YDim { get; set; }
+		public virtual IfcPositiveLengthMeasure? XDim { get; set; }
+		public virtual IfcPositiveLengthMeasure? YDim { get; set; }
 		public IfcRectangleProfileDef() : base()
 		{
 		}
@@ -23795,9 +24100,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRectangularPyramid : IfcCsgPrimitive3D
 	{
-		public IfcPositiveLengthMeasure? XLength { get; set; }
-		public IfcPositiveLengthMeasure? YLength { get; set; }
-		public IfcPositiveLengthMeasure? Height { get; set; }
+		public virtual IfcPositiveLengthMeasure? XLength { get; set; }
+		public virtual IfcPositiveLengthMeasure? YLength { get; set; }
+		public virtual IfcPositiveLengthMeasure? Height { get; set; }
 		public IfcRectangularPyramid() : base()
 		{
 		}
@@ -23831,13 +24136,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRectangularTrimmedSurface : IfcBoundedSurface
 	{
-		public IfcSurface? BasisSurface { get; set; }
-		public IfcParameterValue? U1 { get; set; }
-		public IfcParameterValue? V1 { get; set; }
-		public IfcParameterValue? U2 { get; set; }
-		public IfcParameterValue? V2 { get; set; }
-		public IfcBoolean? Usense { get; set; }
-		public IfcBoolean? Vsense { get; set; }
+		public virtual IfcSurface? BasisSurface { get; set; }
+		public virtual IfcParameterValue? U1 { get; set; }
+		public virtual IfcParameterValue? V1 { get; set; }
+		public virtual IfcParameterValue? U2 { get; set; }
+		public virtual IfcParameterValue? V2 { get; set; }
+		public virtual IfcBoolean? Usense { get; set; }
+		public virtual IfcBoolean? Vsense { get; set; }
 		public IfcRectangularTrimmedSurface() : base()
 		{
 		}
@@ -23867,14 +24172,14 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRecurrencePattern : Entity
 	{
-		public IfcRecurrenceTypeEnum? RecurrenceType { get; set; }
-		public List<IfcDayInMonthNumber>? DayComponent { get; set; }
-		public List<IfcDayInWeekNumber>? WeekdayComponent { get; set; }
-		public List<IfcMonthInYearNumber>? MonthComponent { get; set; }
-		public IfcInteger? Position { get; set; }
-		public IfcInteger? Interval { get; set; }
-		public IfcInteger? Occurrences { get; set; }
-		public List<IfcTimePeriod>? TimePeriods { get; set; }
+		public virtual IfcRecurrenceTypeEnum? RecurrenceType { get; set; }
+		public virtual List<IfcDayInMonthNumber>? DayComponent { get; set; }
+		public virtual List<IfcDayInWeekNumber>? WeekdayComponent { get; set; }
+		public virtual List<IfcMonthInYearNumber>? MonthComponent { get; set; }
+		public virtual IfcInteger? Position { get; set; }
+		public virtual IfcInteger? Interval { get; set; }
+		public virtual IfcInteger? Occurrences { get; set; }
+		public virtual List<IfcTimePeriod>? TimePeriods { get; set; }
 		public IfcRecurrencePattern() : base()
 		{
 		}
@@ -23902,11 +24207,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcReference : Entity, IfcAppliedValueSelect, IfcMetricValueSelect
 	{
-		public IfcIdentifier? TypeIdentifier { get; set; }
-		public IfcIdentifier? AttributeIdentifier { get; set; }
-		public IfcLabel? InstanceName { get; set; }
-		public List<IfcInteger>? ListPositions { get; set; }
-		public IfcReference? InnerReference { get; set; }
+		public virtual IfcIdentifier? TypeIdentifier { get; set; }
+		public virtual IfcIdentifier? AttributeIdentifier { get; set; }
+		public virtual IfcLabel? InstanceName { get; set; }
+		public virtual List<IfcInteger>? ListPositions { get; set; }
+		public virtual IfcReference? InnerReference { get; set; }
 		public IfcReference() : base()
 		{
 		}
@@ -23928,7 +24233,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcReferent : IfcPositioningElement
 	{
-		public IfcReferentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcReferentTypeEnum? PredefinedType { get; set; }
 		public IfcReferent() : base()
 		{
 		}
@@ -23947,8 +24252,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRegularTimeSeries : IfcTimeSeries
 	{
-		public IfcTimeMeasure? TimeStep { get; set; }
-		public List<IfcTimeSeriesValue>? Values { get; set; }
+		public virtual IfcTimeMeasure? TimeStep { get; set; }
+		public virtual List<IfcTimeSeriesValue>? Values { get; set; }
 		public IfcRegularTimeSeries() : base()
 		{
 		}
@@ -23971,7 +24276,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcReinforcedSoil : IfcEarthworksElement
 	{
-		public IfcReinforcedSoilTypeEnum? PredefinedType { get; set; }
+		public virtual IfcReinforcedSoilTypeEnum? PredefinedType { get; set; }
 		public IfcReinforcedSoil() : base()
 		{
 		}
@@ -23994,12 +24299,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcReinforcementBarProperties : IfcPreDefinedProperties
 	{
-		public IfcAreaMeasure? TotalCrossSectionArea { get; set; }
-		public IfcLabel? SteelGrade { get; set; }
-		public IfcReinforcingBarSurfaceEnum? BarSurface { get; set; }
-		public IfcLengthMeasure? EffectiveDepth { get; set; }
-		public IfcPositiveLengthMeasure? NominalBarDiameter { get; set; }
-		public IfcCountMeasure? BarCount { get; set; }
+		public virtual IfcAreaMeasure? TotalCrossSectionArea { get; set; }
+		public virtual IfcLabel? SteelGrade { get; set; }
+		public virtual IfcReinforcingBarSurfaceEnum? BarSurface { get; set; }
+		public virtual IfcLengthMeasure? EffectiveDepth { get; set; }
+		public virtual IfcPositiveLengthMeasure? NominalBarDiameter { get; set; }
+		public virtual IfcCountMeasure? BarCount { get; set; }
 		public IfcReinforcementBarProperties() : base()
 		{
 		}
@@ -24023,8 +24328,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcReinforcementDefinitionProperties : IfcPreDefinedPropertySet
 	{
-		public IfcLabel? DefinitionType { get; set; }
-		public List<IfcSectionReinforcementProperties>? ReinforcementSectionDefinitions { get; set; }
+		public virtual IfcLabel? DefinitionType { get; set; }
+		public virtual List<IfcSectionReinforcementProperties>? ReinforcementSectionDefinitions { get; set; }
 		public IfcReinforcementDefinitionProperties() : base()
 		{
 		}
@@ -24053,11 +24358,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcReinforcingBar : IfcReinforcingElement
 	{
-		public IfcPositiveLengthMeasure? NominalDiameter { get; set; }
-		public IfcAreaMeasure? CrossSectionArea { get; set; }
-		public IfcPositiveLengthMeasure? BarLength { get; set; }
-		public IfcReinforcingBarTypeEnum? PredefinedType { get; set; }
-		public IfcReinforcingBarSurfaceEnum? BarSurface { get; set; }
+		public virtual IfcPositiveLengthMeasure? NominalDiameter { get; set; }
+		public virtual IfcAreaMeasure? CrossSectionArea { get; set; }
+		public virtual IfcPositiveLengthMeasure? BarLength { get; set; }
+		public virtual IfcReinforcingBarTypeEnum? PredefinedType { get; set; }
+		public virtual IfcReinforcingBarSurfaceEnum? BarSurface { get; set; }
 		public IfcReinforcingBar() : base()
 		{
 		}
@@ -24089,13 +24394,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcReinforcingBarType : IfcReinforcingElementType
 	{
-		public IfcReinforcingBarTypeEnum? PredefinedType { get; set; }
-		public IfcPositiveLengthMeasure? NominalDiameter { get; set; }
-		public IfcAreaMeasure? CrossSectionArea { get; set; }
-		public IfcPositiveLengthMeasure? BarLength { get; set; }
-		public IfcReinforcingBarSurfaceEnum? BarSurface { get; set; }
-		public IfcLabel? BendingShapeCode { get; set; }
-		public List<IfcBendingParameterSelect>? BendingParameters { get; set; }
+		public virtual IfcReinforcingBarTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPositiveLengthMeasure? NominalDiameter { get; set; }
+		public virtual IfcAreaMeasure? CrossSectionArea { get; set; }
+		public virtual IfcPositiveLengthMeasure? BarLength { get; set; }
+		public virtual IfcReinforcingBarSurfaceEnum? BarSurface { get; set; }
+		public virtual IfcLabel? BendingShapeCode { get; set; }
+		public virtual List<IfcBendingParameterSelect>? BendingParameters { get; set; }
 		public IfcReinforcingBarType() : base()
 		{
 		}
@@ -24125,7 +24430,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcReinforcingElement : IfcElementComponent
 	{
-		public IfcLabel? SteelGrade { get; set; }
+		public virtual IfcLabel? SteelGrade { get; set; }
 		public IfcReinforcingElement() : base()
 		{
 		}
@@ -24178,15 +24483,15 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcReinforcingMesh : IfcReinforcingElement
 	{
-		public IfcPositiveLengthMeasure? MeshLength { get; set; }
-		public IfcPositiveLengthMeasure? MeshWidth { get; set; }
-		public IfcPositiveLengthMeasure? LongitudinalBarNominalDiameter { get; set; }
-		public IfcPositiveLengthMeasure? TransverseBarNominalDiameter { get; set; }
-		public IfcAreaMeasure? LongitudinalBarCrossSectionArea { get; set; }
-		public IfcAreaMeasure? TransverseBarCrossSectionArea { get; set; }
-		public IfcPositiveLengthMeasure? LongitudinalBarSpacing { get; set; }
-		public IfcPositiveLengthMeasure? TransverseBarSpacing { get; set; }
-		public IfcReinforcingMeshTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPositiveLengthMeasure? MeshLength { get; set; }
+		public virtual IfcPositiveLengthMeasure? MeshWidth { get; set; }
+		public virtual IfcPositiveLengthMeasure? LongitudinalBarNominalDiameter { get; set; }
+		public virtual IfcPositiveLengthMeasure? TransverseBarNominalDiameter { get; set; }
+		public virtual IfcAreaMeasure? LongitudinalBarCrossSectionArea { get; set; }
+		public virtual IfcAreaMeasure? TransverseBarCrossSectionArea { get; set; }
+		public virtual IfcPositiveLengthMeasure? LongitudinalBarSpacing { get; set; }
+		public virtual IfcPositiveLengthMeasure? TransverseBarSpacing { get; set; }
+		public virtual IfcReinforcingMeshTypeEnum? PredefinedType { get; set; }
 		public IfcReinforcingMesh() : base()
 		{
 		}
@@ -24226,17 +24531,17 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcReinforcingMeshType : IfcReinforcingElementType
 	{
-		public IfcReinforcingMeshTypeEnum? PredefinedType { get; set; }
-		public IfcPositiveLengthMeasure? MeshLength { get; set; }
-		public IfcPositiveLengthMeasure? MeshWidth { get; set; }
-		public IfcPositiveLengthMeasure? LongitudinalBarNominalDiameter { get; set; }
-		public IfcPositiveLengthMeasure? TransverseBarNominalDiameter { get; set; }
-		public IfcAreaMeasure? LongitudinalBarCrossSectionArea { get; set; }
-		public IfcAreaMeasure? TransverseBarCrossSectionArea { get; set; }
-		public IfcPositiveLengthMeasure? LongitudinalBarSpacing { get; set; }
-		public IfcPositiveLengthMeasure? TransverseBarSpacing { get; set; }
-		public IfcLabel? BendingShapeCode { get; set; }
-		public List<IfcBendingParameterSelect>? BendingParameters { get; set; }
+		public virtual IfcReinforcingMeshTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPositiveLengthMeasure? MeshLength { get; set; }
+		public virtual IfcPositiveLengthMeasure? MeshWidth { get; set; }
+		public virtual IfcPositiveLengthMeasure? LongitudinalBarNominalDiameter { get; set; }
+		public virtual IfcPositiveLengthMeasure? TransverseBarNominalDiameter { get; set; }
+		public virtual IfcAreaMeasure? LongitudinalBarCrossSectionArea { get; set; }
+		public virtual IfcAreaMeasure? TransverseBarCrossSectionArea { get; set; }
+		public virtual IfcPositiveLengthMeasure? LongitudinalBarSpacing { get; set; }
+		public virtual IfcPositiveLengthMeasure? TransverseBarSpacing { get; set; }
+		public virtual IfcLabel? BendingShapeCode { get; set; }
+		public virtual List<IfcBendingParameterSelect>? BendingParameters { get; set; }
 		public IfcReinforcingMeshType() : base()
 		{
 		}
@@ -24265,8 +24570,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAdheresToElement : IfcRelDecomposes
 	{
-		public IfcElement? RelatingElement { get; set; }
-		public List<IfcSurfaceFeature>? RelatedSurfaceFeatures { get; set; }
+		public virtual IfcElement? RelatingElement { get; set; }
+		public virtual List<IfcSurfaceFeature>? RelatedSurfaceFeatures { get; set; }
 		public IfcRelAdheresToElement() : base()
 		{
 		}
@@ -24288,8 +24593,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAggregates : IfcRelDecomposes
 	{
-		public IfcObjectDefinition? RelatingObject { get; set; }
-		public List<IfcObjectDefinition>? RelatedObjects { get; set; }
+		public virtual IfcObjectDefinition? RelatingObject { get; set; }
+		public virtual List<IfcObjectDefinition>? RelatedObjects { get; set; }
 		public IfcRelAggregates() : base()
 		{
 		}
@@ -24316,8 +24621,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcRelAssigns : IfcRelationship
 	{
-		public List<IfcObjectDefinition>? RelatedObjects { get; set; }
-		public IfcStrippedOptional? RelatedObjectsType { get; set; }
+		public virtual List<IfcObjectDefinition>? RelatedObjects { get; set; }
+		public virtual IfcStrippedOptional? RelatedObjectsType { get; set; }
 		public IfcRelAssigns() : base()
 		{
 		}
@@ -24339,8 +24644,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssignsToActor : IfcRelAssigns
 	{
-		public IfcActor? RelatingActor { get; set; }
-		public IfcActorRole? ActingRole { get; set; }
+		public virtual IfcActor? RelatingActor { get; set; }
+		public virtual IfcActorRole? ActingRole { get; set; }
 		public IfcRelAssignsToActor() : base()
 		{
 		}
@@ -24361,7 +24666,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssignsToControl : IfcRelAssigns
 	{
-		public IfcControl? RelatingControl { get; set; }
+		public virtual IfcControl? RelatingControl { get; set; }
 		public IfcRelAssignsToControl() : base()
 		{
 		}
@@ -24383,7 +24688,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssignsToGroup : IfcRelAssigns
 	{
-		public IfcGroup? RelatingGroup { get; set; }
+		public virtual IfcGroup? RelatingGroup { get; set; }
 		public IfcRelAssignsToGroup() : base()
 		{
 		}
@@ -24401,7 +24706,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssignsToGroupByFactor : IfcRelAssignsToGroup
 	{
-		public IfcRatioMeasure? Factor { get; set; }
+		public virtual IfcRatioMeasure? Factor { get; set; }
 		public IfcRelAssignsToGroupByFactor() : base()
 		{
 		}
@@ -24422,8 +24727,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssignsToProcess : IfcRelAssigns
 	{
-		public IfcProcessSelect? RelatingProcess { get; set; }
-		public IfcMeasureWithUnit? QuantityInProcess { get; set; }
+		public virtual IfcProcessSelect? RelatingProcess { get; set; }
+		public virtual IfcMeasureWithUnit? QuantityInProcess { get; set; }
 		public IfcRelAssignsToProcess() : base()
 		{
 		}
@@ -24444,7 +24749,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssignsToProduct : IfcRelAssigns
 	{
-		public IfcProductSelect? RelatingProduct { get; set; }
+		public virtual IfcProductSelect? RelatingProduct { get; set; }
 		public IfcRelAssignsToProduct() : base()
 		{
 		}
@@ -24464,7 +24769,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssignsToResource : IfcRelAssigns
 	{
-		public IfcResourceSelect? RelatingResource { get; set; }
+		public virtual IfcResourceSelect? RelatingResource { get; set; }
 		public IfcRelAssignsToResource() : base()
 		{
 		}
@@ -24490,7 +24795,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcRelAssociates : IfcRelationship
 	{
-		public List<IfcDefinitionSelect>? RelatedObjects { get; set; }
+		public virtual List<IfcDefinitionSelect>? RelatedObjects { get; set; }
 		public IfcRelAssociates() : base()
 		{
 		}
@@ -24508,7 +24813,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssociatesApproval : IfcRelAssociates
 	{
-		public IfcApproval? RelatingApproval { get; set; }
+		public virtual IfcApproval? RelatingApproval { get; set; }
 		public IfcRelAssociatesApproval() : base()
 		{
 		}
@@ -24526,7 +24831,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssociatesClassification : IfcRelAssociates
 	{
-		public IfcClassificationSelect? RelatingClassification { get; set; }
+		public virtual IfcClassificationSelect? RelatingClassification { get; set; }
 		public IfcRelAssociatesClassification() : base()
 		{
 		}
@@ -24545,8 +24850,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssociatesConstraint : IfcRelAssociates
 	{
-		public IfcLabel? Intent { get; set; }
-		public IfcConstraint? RelatingConstraint { get; set; }
+		public virtual IfcLabel? Intent { get; set; }
+		public virtual IfcConstraint? RelatingConstraint { get; set; }
 		public IfcRelAssociatesConstraint() : base()
 		{
 		}
@@ -24565,7 +24870,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssociatesDocument : IfcRelAssociates
 	{
-		public IfcDocumentSelect? RelatingDocument { get; set; }
+		public virtual IfcDocumentSelect? RelatingDocument { get; set; }
 		public IfcRelAssociatesDocument() : base()
 		{
 		}
@@ -24583,7 +24888,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssociatesLibrary : IfcRelAssociates
 	{
-		public IfcLibrarySelect? RelatingLibrary { get; set; }
+		public virtual IfcLibrarySelect? RelatingLibrary { get; set; }
 		public IfcRelAssociatesLibrary() : base()
 		{
 		}
@@ -24613,7 +24918,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssociatesMaterial : IfcRelAssociates
 	{
-		public IfcMaterialSelect? RelatingMaterial { get; set; }
+		public virtual IfcMaterialSelect? RelatingMaterial { get; set; }
 		public IfcRelAssociatesMaterial() : base()
 		{
 		}
@@ -24631,7 +24936,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelAssociatesProfileDef : IfcRelAssociates
 	{
-		public IfcProfileDef? RelatingProfileDef { get; set; }
+		public virtual IfcProfileDef? RelatingProfileDef { get; set; }
 		public IfcRelAssociatesProfileDef() : base()
 		{
 		}
@@ -24688,9 +24993,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelConnectsElements : IfcRelConnects
 	{
-		public IfcConnectionGeometry? ConnectionGeometry { get; set; }
-		public IfcElement? RelatingElement { get; set; }
-		public IfcElement? RelatedElement { get; set; }
+		public virtual IfcConnectionGeometry? ConnectionGeometry { get; set; }
+		public virtual IfcElement? RelatingElement { get; set; }
+		public virtual IfcElement? RelatedElement { get; set; }
 		public IfcRelConnectsElements() : base()
 		{
 		}
@@ -24724,10 +25029,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelConnectsPathElements : IfcRelConnectsElements
 	{
-		public List<IfcInteger>? RelatingPriorities { get; set; }
-		public List<IfcInteger>? RelatedPriorities { get; set; }
-		public IfcConnectionTypeEnum? RelatedConnectionType { get; set; }
-		public IfcConnectionTypeEnum? RelatingConnectionType { get; set; }
+		public virtual List<IfcInteger>? RelatingPriorities { get; set; }
+		public virtual List<IfcInteger>? RelatedPriorities { get; set; }
+		public virtual IfcConnectionTypeEnum? RelatedConnectionType { get; set; }
+		public virtual IfcConnectionTypeEnum? RelatingConnectionType { get; set; }
 		public IfcRelConnectsPathElements() : base()
 		{
 		}
@@ -24749,8 +25054,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelConnectsPortToElement : IfcRelConnects
 	{
-		public IfcPort? RelatingPort { get; set; }
-		public IfcDistributionElement? RelatedElement { get; set; }
+		public virtual IfcPort? RelatingPort { get; set; }
+		public virtual IfcDistributionElement? RelatedElement { get; set; }
 		public IfcRelConnectsPortToElement() : base()
 		{
 		}
@@ -24773,9 +25078,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelConnectsPorts : IfcRelConnects
 	{
-		public IfcPort? RelatingPort { get; set; }
-		public IfcPort? RelatedPort { get; set; }
-		public IfcElement? RealizingElement { get; set; }
+		public virtual IfcPort? RelatingPort { get; set; }
+		public virtual IfcPort? RelatedPort { get; set; }
+		public virtual IfcElement? RealizingElement { get; set; }
 		public IfcRelConnectsPorts() : base()
 		{
 		}
@@ -24796,8 +25101,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelConnectsStructuralActivity : IfcRelConnects
 	{
-		public IfcStructuralActivityAssignmentSelect? RelatingElement { get; set; }
-		public IfcStructuralActivity? RelatedStructuralActivity { get; set; }
+		public virtual IfcStructuralActivityAssignmentSelect? RelatingElement { get; set; }
+		public virtual IfcStructuralActivity? RelatedStructuralActivity { get; set; }
 		public IfcRelConnectsStructuralActivity() : base()
 		{
 		}
@@ -24823,12 +25128,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelConnectsStructuralMember : IfcRelConnects
 	{
-		public IfcStructuralMember? RelatingStructuralMember { get; set; }
-		public IfcStructuralConnection? RelatedStructuralConnection { get; set; }
-		public IfcBoundaryCondition? AppliedCondition { get; set; }
-		public IfcStructuralConnectionCondition? AdditionalConditions { get; set; }
-		public IfcLengthMeasure? SupportedLength { get; set; }
-		public IfcAxis2Placement3D? ConditionCoordinateSystem { get; set; }
+		public virtual IfcStructuralMember? RelatingStructuralMember { get; set; }
+		public virtual IfcStructuralConnection? RelatedStructuralConnection { get; set; }
+		public virtual IfcBoundaryCondition? AppliedCondition { get; set; }
+		public virtual IfcStructuralConnectionCondition? AdditionalConditions { get; set; }
+		public virtual IfcLengthMeasure? SupportedLength { get; set; }
+		public virtual IfcAxis2Placement3D? ConditionCoordinateSystem { get; set; }
 		public IfcRelConnectsStructuralMember() : base()
 		{
 		}
@@ -24851,7 +25156,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelConnectsWithEccentricity : IfcRelConnectsStructuralMember
 	{
-		public IfcConnectionGeometry? ConnectionConstraint { get; set; }
+		public virtual IfcConnectionGeometry? ConnectionConstraint { get; set; }
 		public IfcRelConnectsWithEccentricity() : base()
 		{
 		}
@@ -24870,8 +25175,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelConnectsWithRealizingElements : IfcRelConnectsElements
 	{
-		public List<IfcElement>? RealizingElements { get; set; }
-		public IfcLabel? ConnectionType { get; set; }
+		public virtual List<IfcElement>? RealizingElements { get; set; }
+		public virtual IfcLabel? ConnectionType { get; set; }
 		public IfcRelConnectsWithRealizingElements() : base()
 		{
 		}
@@ -24893,8 +25198,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelContainedInSpatialStructure : IfcRelConnects
 	{
-		public List<IfcProduct>? RelatedElements { get; set; }
-		public IfcSpatialElement? RelatingStructure { get; set; }
+		public virtual List<IfcProduct>? RelatedElements { get; set; }
+		public virtual IfcSpatialElement? RelatingStructure { get; set; }
 		public IfcRelContainedInSpatialStructure() : base()
 		{
 		}
@@ -24914,8 +25219,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelCoversBldgElements : IfcRelConnects
 	{
-		public IfcElement? RelatingBuildingElement { get; set; }
-		public List<IfcCovering>? RelatedCoverings { get; set; }
+		public virtual IfcElement? RelatingBuildingElement { get; set; }
+		public virtual List<IfcCovering>? RelatedCoverings { get; set; }
 		public IfcRelCoversBldgElements() : base()
 		{
 		}
@@ -24935,8 +25240,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelCoversSpaces : IfcRelConnects
 	{
-		public IfcSpace? RelatingSpace { get; set; }
-		public List<IfcCovering>? RelatedCoverings { get; set; }
+		public virtual IfcSpace? RelatingSpace { get; set; }
+		public virtual List<IfcCovering>? RelatedCoverings { get; set; }
 		public IfcRelCoversSpaces() : base()
 		{
 		}
@@ -24958,8 +25263,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelDeclares : IfcRelationship
 	{
-		public IfcContext? RelatingContext { get; set; }
-		public List<IfcDefinitionSelect>? RelatedDefinitions { get; set; }
+		public virtual IfcContext? RelatingContext { get; set; }
+		public virtual List<IfcDefinitionSelect>? RelatedDefinitions { get; set; }
 		public IfcRelDeclares() : base()
 		{
 		}
@@ -25020,8 +25325,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelDefinesByObject : IfcRelDefines
 	{
-		public List<IfcObject>? RelatedObjects { get; set; }
-		public IfcObject? RelatingObject { get; set; }
+		public virtual List<IfcObject>? RelatedObjects { get; set; }
+		public virtual IfcObject? RelatingObject { get; set; }
 		public IfcRelDefinesByObject() : base()
 		{
 		}
@@ -25043,8 +25348,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelDefinesByProperties : IfcRelDefines
 	{
-		public List<IfcObjectDefinition>? RelatedObjects { get; set; }
-		public IfcPropertySetDefinitionSelect? RelatingPropertyDefinition { get; set; }
+		public virtual List<IfcObjectDefinition>? RelatedObjects { get; set; }
+		public virtual IfcPropertySetDefinitionSelect? RelatingPropertyDefinition { get; set; }
 		public IfcRelDefinesByProperties() : base()
 		{
 		}
@@ -25064,8 +25369,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelDefinesByTemplate : IfcRelDefines
 	{
-		public List<IfcPropertySetDefinition>? RelatedPropertySets { get; set; }
-		public IfcPropertySetTemplate? RelatingTemplate { get; set; }
+		public virtual List<IfcPropertySetDefinition>? RelatedPropertySets { get; set; }
+		public virtual IfcPropertySetTemplate? RelatingTemplate { get; set; }
 		public IfcRelDefinesByTemplate() : base()
 		{
 		}
@@ -25085,8 +25390,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelDefinesByType : IfcRelDefines
 	{
-		public List<IfcObject>? RelatedObjects { get; set; }
-		public IfcTypeObject? RelatingType { get; set; }
+		public virtual List<IfcObject>? RelatedObjects { get; set; }
+		public virtual IfcTypeObject? RelatingType { get; set; }
 		public IfcRelDefinesByType() : base()
 		{
 		}
@@ -25106,8 +25411,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelFillsElement : IfcRelConnects
 	{
-		public IfcOpeningElement? RelatingOpeningElement { get; set; }
-		public IfcElement? RelatedBuildingElement { get; set; }
+		public virtual IfcOpeningElement? RelatingOpeningElement { get; set; }
+		public virtual IfcElement? RelatedBuildingElement { get; set; }
 		public IfcRelFillsElement() : base()
 		{
 		}
@@ -25127,8 +25432,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelFlowControlElements : IfcRelConnects
 	{
-		public List<IfcDistributionControlElement>? RelatedControlElements { get; set; }
-		public IfcDistributionFlowElement? RelatingFlowElement { get; set; }
+		public virtual List<IfcDistributionControlElement>? RelatedControlElements { get; set; }
+		public virtual IfcDistributionFlowElement? RelatingFlowElement { get; set; }
 		public IfcRelFlowControlElements() : base()
 		{
 		}
@@ -25154,12 +25459,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelInterferesElements : IfcRelConnects
 	{
-		public IfcInterferenceSelect? RelatingElement { get; set; }
-		public IfcInterferenceSelect? RelatedElement { get; set; }
-		public IfcConnectionGeometry? InterferenceGeometry { get; set; }
-		public IfcIdentifier? InterferenceType { get; set; }
-		public IfcLogical? ImpliedOrder { get; set; }
-		public IfcSpatialZone? InterferenceSpace { get; set; }
+		public virtual IfcInterferenceSelect? RelatingElement { get; set; }
+		public virtual IfcInterferenceSelect? RelatedElement { get; set; }
+		public virtual IfcConnectionGeometry? InterferenceGeometry { get; set; }
+		public virtual IfcIdentifier? InterferenceType { get; set; }
+		public virtual IfcLogical? ImpliedOrder { get; set; }
+		public virtual IfcSpatialZone? InterferenceSpace { get; set; }
 		public IfcRelInterferesElements() : base()
 		{
 		}
@@ -25185,8 +25490,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelNests : IfcRelDecomposes
 	{
-		public IfcObjectDefinition? RelatingObject { get; set; }
-		public List<IfcObjectDefinition>? RelatedObjects { get; set; }
+		public virtual IfcObjectDefinition? RelatingObject { get; set; }
+		public virtual List<IfcObjectDefinition>? RelatedObjects { get; set; }
 		public IfcRelNests() : base()
 		{
 		}
@@ -25208,8 +25513,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelPositions : IfcRelConnects
 	{
-		public IfcPositioningElement? RelatingPositioningElement { get; set; }
-		public List<IfcProduct>? RelatedProducts { get; set; }
+		public virtual IfcPositioningElement? RelatingPositioningElement { get; set; }
+		public virtual List<IfcProduct>? RelatedProducts { get; set; }
 		public IfcRelPositions() : base()
 		{
 		}
@@ -25229,8 +25534,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelProjectsElement : IfcRelDecomposes
 	{
-		public IfcElement? RelatingElement { get; set; }
-		public IfcFeatureElementAddition? RelatedFeatureElement { get; set; }
+		public virtual IfcElement? RelatingElement { get; set; }
+		public virtual IfcFeatureElementAddition? RelatedFeatureElement { get; set; }
 		public IfcRelProjectsElement() : base()
 		{
 		}
@@ -25253,8 +25558,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelReferencedInSpatialStructure : IfcRelConnects
 	{
-		public List<IfcSpatialReferenceSelect>? RelatedElements { get; set; }
-		public IfcSpatialElement? RelatingStructure { get; set; }
+		public virtual List<IfcSpatialReferenceSelect>? RelatedElements { get; set; }
+		public virtual IfcSpatialElement? RelatingStructure { get; set; }
 		public IfcRelReferencedInSpatialStructure() : base()
 		{
 		}
@@ -25280,11 +25585,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelSequence : IfcRelConnects
 	{
-		public IfcProcess? RelatingProcess { get; set; }
-		public IfcProcess? RelatedProcess { get; set; }
-		public IfcLagTime? TimeLag { get; set; }
-		public IfcSequenceEnum? SequenceType { get; set; }
-		public IfcLabel? UserDefinedSequenceType { get; set; }
+		public virtual IfcProcess? RelatingProcess { get; set; }
+		public virtual IfcProcess? RelatedProcess { get; set; }
+		public virtual IfcLagTime? TimeLag { get; set; }
+		public virtual IfcSequenceEnum? SequenceType { get; set; }
+		public virtual IfcLabel? UserDefinedSequenceType { get; set; }
 		public IfcRelSequence() : base()
 		{
 		}
@@ -25307,8 +25612,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelServicesBuildings : IfcRelConnects
 	{
-		public IfcSystem? RelatingSystem { get; set; }
-		public List<IfcSpatialElement>? RelatedBuildings { get; set; }
+		public virtual IfcSystem? RelatingSystem { get; set; }
+		public virtual List<IfcSpatialElement>? RelatedBuildings { get; set; }
 		public IfcRelServicesBuildings() : base()
 		{
 		}
@@ -25342,11 +25647,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelSpaceBoundary : IfcRelConnects
 	{
-		public IfcSpaceBoundarySelect? RelatingSpace { get; set; }
-		public IfcElement? RelatedBuildingElement { get; set; }
-		public IfcConnectionGeometry? ConnectionGeometry { get; set; }
-		public IfcPhysicalOrVirtualEnum? PhysicalOrVirtualBoundary { get; set; }
-		public IfcInternalOrExternalEnum? InternalOrExternalBoundary { get; set; }
+		public virtual IfcSpaceBoundarySelect? RelatingSpace { get; set; }
+		public virtual IfcElement? RelatedBuildingElement { get; set; }
+		public virtual IfcConnectionGeometry? ConnectionGeometry { get; set; }
+		public virtual IfcPhysicalOrVirtualEnum? PhysicalOrVirtualBoundary { get; set; }
+		public virtual IfcInternalOrExternalEnum? InternalOrExternalBoundary { get; set; }
 		public IfcRelSpaceBoundary() : base()
 		{
 		}
@@ -25372,7 +25677,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelSpaceBoundary1stLevel : IfcRelSpaceBoundary
 	{
-		public IfcRelSpaceBoundary1stLevel? ParentBoundary { get; set; }
+		public virtual IfcRelSpaceBoundary1stLevel? ParentBoundary { get; set; }
 		//TODO INVERSE
 		public List<IfcRelSpaceBoundary1stLevel>? InnerBoundaries => Model?.GetItems<IfcRelSpaceBoundary1stLevel>().Where(x => x.ParentBoundary != null && x.ParentBoundary == this).ToList();
 		public IfcRelSpaceBoundary1stLevel() : base()
@@ -25394,7 +25699,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelSpaceBoundary2ndLevel : IfcRelSpaceBoundary1stLevel
 	{
-		public IfcRelSpaceBoundary2ndLevel? CorrespondingBoundary { get; set; }
+		public virtual IfcRelSpaceBoundary2ndLevel? CorrespondingBoundary { get; set; }
 		//TODO INVERSE
 		public List<IfcRelSpaceBoundary2ndLevel>? Corresponds => Model?.GetItems<IfcRelSpaceBoundary2ndLevel>().Where(x => x.CorrespondingBoundary != null && x.CorrespondingBoundary == this).ToList();
 		public IfcRelSpaceBoundary2ndLevel() : base()
@@ -25415,8 +25720,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRelVoidsElement : IfcRelDecomposes
 	{
-		public IfcElement? RelatingBuildingElement { get; set; }
-		public IfcFeatureElementSubtraction? RelatedOpeningElement { get; set; }
+		public virtual IfcElement? RelatingBuildingElement { get; set; }
+		public virtual IfcFeatureElementSubtraction? RelatedOpeningElement { get; set; }
 		public IfcRelVoidsElement() : base()
 		{
 		}
@@ -25459,7 +25764,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcReparametrisedCompositeCurveSegment : IfcCompositeCurveSegment
 	{
-		public IfcParameterValue? ParamLength { get; set; }
+		public virtual IfcParameterValue? ParamLength { get; set; }
 		public IfcReparametrisedCompositeCurveSegment() : base()
 		{
 		}
@@ -25486,13 +25791,16 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcRepresentation : Entity, IfcLayeredItem
 	{
-		public IfcRepresentationContext? ContextOfItems { get; set; }
-		public IfcLabel? RepresentationIdentifier { get; set; }
-		public IfcLabel? RepresentationType { get; set; }
-		public List<IfcRepresentationItem>? Items { get; set; }
+		public virtual IfcRepresentationContext? ContextOfItems { get; set; }
+		public virtual IfcLabel? RepresentationIdentifier { get; set; }
+		public virtual IfcLabel? RepresentationType { get; set; }
+		public virtual List<IfcRepresentationItem>? Items { get; set; }
 		//TODO INVERSE
+		public List<IfcRepresentationMap>? RepresentationMap => Model?.GetItems<IfcRepresentationMap>().Where(x => x.MappedRepresentation != null && x.MappedRepresentation == this).ToList();
 		//TODO INVERSE
+		public List<IfcPresentationLayerAssignment>? LayerAssignments => Model?.GetItems<IfcPresentationLayerAssignment>().Where(x => x.AssignedItems != null && x.AssignedItems.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcProductRepresentation>? OfProductRepresentation => Model?.GetItems<IfcProductRepresentation>().Where(x => x.Representations != null && x.Representations.Contains(this)).ToList();
 		public IfcRepresentation() : base()
 		{
 		}
@@ -25517,9 +25825,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcRepresentationContext : Entity
 	{
-		public IfcLabel? ContextIdentifier { get; set; }
-		public IfcLabel? ContextType { get; set; }
+		public virtual IfcLabel? ContextIdentifier { get; set; }
+		public virtual IfcLabel? ContextType { get; set; }
 		//TODO INVERSE
+		public List<IfcRepresentation>? RepresentationsInContext => Model?.GetItems<IfcRepresentation>().Where(x => x.ContextOfItems != null && x.ContextOfItems == this).ToList();
 		public IfcRepresentationContext() : base()
 		{
 		}
@@ -25545,7 +25854,9 @@ namespace IFC.IFC4x3
 	public abstract class IfcRepresentationItem : Entity, IfcLayeredItem
 	{
 		//TODO INVERSE
+		public List<IfcPresentationLayerAssignment>? LayerAssignment => Model?.GetItems<IfcPresentationLayerAssignment>().Where(x => x.AssignedItems != null && x.AssignedItems.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcStyledItem>? StyledByItem => Model?.GetItems<IfcStyledItem>().Where(x => x.Item != null && x.Item == this).ToList();
 		public IfcRepresentationItem() : base()
 		{
 		}
@@ -25564,10 +25875,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRepresentationMap : Entity, IfcProductRepresentationSelect
 	{
-		public IfcAxis2Placement? MappingOrigin { get; set; }
-		public IfcRepresentation? MappedRepresentation { get; set; }
+		public virtual IfcAxis2Placement? MappingOrigin { get; set; }
+		public virtual IfcRepresentation? MappedRepresentation { get; set; }
 		//TODO INVERSE
+		public List<IfcShapeAspect>? HasShapeAspects => Model?.GetItems<IfcShapeAspect>().Where(x => x.PartOfProductDefinitionShape != null && x.PartOfProductDefinitionShape == this).ToList();
 		//TODO INVERSE
+		public List<IfcMappedItem>? MapUsage => Model?.GetItems<IfcMappedItem>().Where(x => x.MappingSource != null && x.MappingSource == this).ToList();
 		public IfcRepresentationMap() : base()
 		{
 		}
@@ -25591,9 +25904,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcResource : IfcObject, IfcResourceSelect
 	{
-		public IfcIdentifier? Identification { get; set; }
-		public IfcText? LongDescription { get; set; }
+		public virtual IfcIdentifier? Identification { get; set; }
+		public virtual IfcText? LongDescription { get; set; }
+		public virtual List<IfcAppliedValue>? BaseCosts { get; set;  }
+		public virtual IfcPhysicalQuantity? BaseQuantity { get; set;  }
 		//TODO INVERSE
+		public List<IfcRelAssignsToResource>? ResourceOf => Model?.GetItems<IfcRelAssignsToResource>().Where(x => x.RelatingResource != null && x.RelatingResource == this).ToList();
 		public IfcResource() : base()
 		{
 		}
@@ -25613,8 +25929,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcResourceApprovalRelationship : IfcResourceLevelRelationship
 	{
-		public List<IfcResourceObjectSelect>? RelatedResourceObjects { get; set; }
-		public IfcApproval? RelatingApproval { get; set; }
+		public virtual List<IfcResourceObjectSelect>? RelatedResourceObjects { get; set; }
+		public virtual IfcApproval? RelatingApproval { get; set; }
 		public IfcResourceApprovalRelationship() : base()
 		{
 		}
@@ -25634,8 +25950,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcResourceConstraintRelationship : IfcResourceLevelRelationship
 	{
-		public IfcConstraint? RelatingConstraint { get; set; }
-		public List<IfcResourceObjectSelect>? RelatedResourceObjects { get; set; }
+		public virtual IfcConstraint? RelatingConstraint { get; set; }
+		public virtual List<IfcResourceObjectSelect>? RelatedResourceObjects { get; set; }
 		public IfcResourceConstraintRelationship() : base()
 		{
 		}
@@ -25664,8 +25980,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcResourceLevelRelationship : Entity
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
 		public IfcResourceLevelRelationship() : base()
 		{
 		}
@@ -25698,21 +26014,21 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcResourceTime : IfcSchedulingTime
 	{
-		public IfcDuration? ScheduleWork { get; set; }
-		public IfcPositiveRatioMeasure? ScheduleUsage { get; set; }
-		public IfcDateTime? ScheduleStart { get; set; }
-		public IfcDateTime? ScheduleFinish { get; set; }
-		public IfcLabel? ScheduleContour { get; set; }
-		public IfcDuration? LevelingDelay { get; set; }
-		public IfcBoolean? IsOverAllocated { get; set; }
-		public IfcDateTime? StatusTime { get; set; }
-		public IfcDuration? ActualWork { get; set; }
-		public IfcPositiveRatioMeasure? ActualUsage { get; set; }
-		public IfcDateTime? ActualStart { get; set; }
-		public IfcDateTime? ActualFinish { get; set; }
-		public IfcDuration? RemainingWork { get; set; }
-		public IfcPositiveRatioMeasure? RemainingUsage { get; set; }
-		public IfcPositiveRatioMeasure? Completion { get; set; }
+		public virtual IfcDuration? ScheduleWork { get; set; }
+		public virtual IfcPositiveRatioMeasure? ScheduleUsage { get; set; }
+		public virtual IfcDateTime? ScheduleStart { get; set; }
+		public virtual IfcDateTime? ScheduleFinish { get; set; }
+		public virtual IfcLabel? ScheduleContour { get; set; }
+		public virtual IfcDuration? LevelingDelay { get; set; }
+		public virtual IfcBoolean? IsOverAllocated { get; set; }
+		public virtual IfcDateTime? StatusTime { get; set; }
+		public virtual IfcDuration? ActualWork { get; set; }
+		public virtual IfcPositiveRatioMeasure? ActualUsage { get; set; }
+		public virtual IfcDateTime? ActualStart { get; set; }
+		public virtual IfcDateTime? ActualFinish { get; set; }
+		public virtual IfcDuration? RemainingWork { get; set; }
+		public virtual IfcPositiveRatioMeasure? RemainingUsage { get; set; }
+		public virtual IfcPositiveRatioMeasure? Completion { get; set; }
 		public IfcResourceTime() : base()
 		{
 		}
@@ -25753,8 +26069,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRevolvedAreaSolid : IfcSweptAreaSolid
 	{
-		public IfcAxis1Placement? Axis { get; set; }
-		public IfcPlaneAngleMeasure? Angle { get; set; }
+		public virtual IfcAxis1Placement? Axis { get; set; }
+		public virtual IfcPlaneAngleMeasure? Angle { get; set; }
 		//TODO DERIVE
 		public virtual IfcLine? AxisLine {get {return null;}}
 		public IfcRevolvedAreaSolid() : base()
@@ -25777,7 +26093,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRevolvedAreaSolidTapered : IfcRevolvedAreaSolid
 	{
-		public IfcProfileDef? EndSweptArea { get; set; }
+		public virtual IfcProfileDef? EndSweptArea { get; set; }
 		public IfcRevolvedAreaSolidTapered() : base()
 		{
 		}
@@ -25796,8 +26112,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRightCircularCone : IfcCsgPrimitive3D
 	{
-		public IfcPositiveLengthMeasure? Height { get; set; }
-		public IfcPositiveLengthMeasure? BottomRadius { get; set; }
+		public virtual IfcPositiveLengthMeasure? Height { get; set; }
+		public virtual IfcPositiveLengthMeasure? BottomRadius { get; set; }
 		public IfcRightCircularCone() : base()
 		{
 		}
@@ -25817,8 +26133,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRightCircularCylinder : IfcCsgPrimitive3D
 	{
-		public IfcPositiveLengthMeasure? Height { get; set; }
-		public IfcPositiveLengthMeasure? Radius { get; set; }
+		public virtual IfcPositiveLengthMeasure? Height { get; set; }
+		public virtual IfcPositiveLengthMeasure? Radius { get; set; }
 		public IfcRightCircularCylinder() : base()
 		{
 		}
@@ -25841,9 +26157,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRigidOperation : IfcCoordinateOperation
 	{
-		public IfcMeasureValue? FirstCoordinate { get; set; }
-		public IfcMeasureValue? SecondCoordinate { get; set; }
-		public IfcLengthMeasure? Height { get; set; }
+		public virtual IfcMeasureValue? FirstCoordinate { get; set; }
+		public virtual IfcMeasureValue? SecondCoordinate { get; set; }
+		public virtual IfcLengthMeasure? Height { get; set; }
 		public IfcRigidOperation() : base()
 		{
 		}
@@ -25867,7 +26183,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRoad : IfcFacility
 	{
-		public IfcRoadTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRoadTypeEnum? PredefinedType { get; set; }
 		public IfcRoad() : base()
 		{
 		}
@@ -25889,7 +26205,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRoadPart : IfcFacilityPart
 	{
-		public IfcRoadPartTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRoadPartTypeEnum? PredefinedType { get; set; }
 		public IfcRoadPart() : base()
 		{
 		}
@@ -25913,7 +26229,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRoof : IfcBuiltElement
 	{
-		public IfcRoofTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRoofTypeEnum? PredefinedType { get; set; }
 		public IfcRoof() : base()
 		{
 		}
@@ -25934,7 +26250,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRoofType : IfcBuiltElementType
 	{
-		public IfcRoofTypeEnum? PredefinedType { get; set; }
+		public virtual IfcRoofTypeEnum? PredefinedType { get; set; }
 		public IfcRoofType() : base()
 		{
 		}
@@ -25960,10 +26276,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcRoot : Entity
 	{
-		public IfcGloballyUniqueId? GlobalId { get; set; }
-		public IfcOwnerHistory? OwnerHistory { get; set; }
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
+		public virtual IfcGloballyUniqueId? GlobalId { get; set; }
+		public virtual IfcOwnerHistory? OwnerHistory { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
 		public IfcRoot() : base()
 		{
 		}
@@ -25987,7 +26303,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcRoundedRectangleProfileDef : IfcRectangleProfileDef
 	{
-		public IfcPositiveLengthMeasure? RoundingRadius { get; set; }
+		public virtual IfcPositiveLengthMeasure? RoundingRadius { get; set; }
 		public IfcRoundedRectangleProfileDef() : base()
 		{
 		}
@@ -26008,10 +26324,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSIUnit : IfcNamedUnit
 	{
-		public IfcSIPrefix? Prefix { get; set; }
-		public IfcSIUnitName? Name { get; set; }
+		public virtual IfcSIPrefix? Prefix { get; set; }
+		public virtual IfcSIUnitName? Name { get; set; }
 		//TODO DERIVE
-		public virtual IfcDimensionalExponents? Dimensions {get {return null;}}
+		public override IfcDimensionalExponents? Dimensions {get {return null;}}
 		public IfcSIUnit() : base()
 		{
 		}
@@ -26036,7 +26352,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSanitaryTerminal : IfcFlowTerminal
 	{
-		public IfcSanitaryTerminalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSanitaryTerminalTypeEnum? PredefinedType { get; set; }
 		public IfcSanitaryTerminal() : base()
 		{
 		}
@@ -26057,7 +26373,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSanitaryTerminalType : IfcFlowTerminalType
 	{
-		public IfcSanitaryTerminalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSanitaryTerminalTypeEnum? PredefinedType { get; set; }
 		public IfcSanitaryTerminalType() : base()
 		{
 		}
@@ -26082,9 +26398,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcSchedulingTime : Entity
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcDataOriginEnum? DataOrigin { get; set; }
-		public IfcLabel? UserDefinedDataOrigin { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcDataOriginEnum? DataOrigin { get; set; }
+		public virtual IfcLabel? UserDefinedDataOrigin { get; set; }
 		public IfcSchedulingTime() : base()
 		{
 		}
@@ -26124,9 +26440,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSecondOrderPolynomialSpiral : IfcSpiral
 	{
-		public IfcLengthMeasure? QuadraticTerm { get; set; }
-		public IfcLengthMeasure? LinearTerm { get; set; }
-		public IfcLengthMeasure? ConstantTerm { get; set; }
+		public virtual IfcLengthMeasure? QuadraticTerm { get; set; }
+		public virtual IfcLengthMeasure? LinearTerm { get; set; }
+		public virtual IfcLengthMeasure? ConstantTerm { get; set; }
 		public IfcSecondOrderPolynomialSpiral() : base()
 		{
 		}
@@ -26148,9 +26464,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSectionProperties : IfcPreDefinedProperties
 	{
-		public IfcSectionTypeEnum? SectionType { get; set; }
-		public IfcProfileDef? StartProfile { get; set; }
-		public IfcProfileDef? EndProfile { get; set; }
+		public virtual IfcSectionTypeEnum? SectionType { get; set; }
+		public virtual IfcProfileDef? StartProfile { get; set; }
+		public virtual IfcProfileDef? EndProfile { get; set; }
 		public IfcSectionProperties() : base()
 		{
 		}
@@ -26175,12 +26491,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSectionReinforcementProperties : IfcPreDefinedProperties
 	{
-		public IfcLengthMeasure? LongitudinalStartPosition { get; set; }
-		public IfcLengthMeasure? LongitudinalEndPosition { get; set; }
-		public IfcLengthMeasure? TransversePosition { get; set; }
-		public IfcReinforcingBarRoleEnum? ReinforcementRole { get; set; }
-		public IfcSectionProperties? SectionDefinition { get; set; }
-		public List<IfcReinforcementBarProperties>? CrossSectionReinforcementDefinitions { get; set; }
+		public virtual IfcLengthMeasure? LongitudinalStartPosition { get; set; }
+		public virtual IfcLengthMeasure? LongitudinalEndPosition { get; set; }
+		public virtual IfcLengthMeasure? TransversePosition { get; set; }
+		public virtual IfcReinforcingBarRoleEnum? ReinforcementRole { get; set; }
+		public virtual IfcSectionProperties? SectionDefinition { get; set; }
+		public virtual List<IfcReinforcementBarProperties>? CrossSectionReinforcementDefinitions { get; set; }
 		public IfcSectionReinforcementProperties() : base()
 		{
 		}
@@ -26210,8 +26526,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcSectionedSolid : IfcSolidModel
 	{
-		public IfcCurve? Directrix { get; set; }
-		public List<IfcProfileDef>? CrossSections { get; set; }
+		public virtual IfcCurve? Directrix { get; set; }
+		public virtual List<IfcProfileDef>? CrossSections { get; set; }
 		public IfcSectionedSolid() : base()
 		{
 		}
@@ -26233,7 +26549,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSectionedSolidHorizontal : IfcSectionedSolid
 	{
-		public List<IfcAxis2PlacementLinear>? CrossSectionPositions { get; set; }
+		public virtual List<IfcAxis2PlacementLinear>? CrossSectionPositions { get; set; }
 		public IfcSectionedSolidHorizontal() : base()
 		{
 		}
@@ -26259,9 +26575,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSectionedSpine : IfcGeometricRepresentationItem
 	{
-		public IfcCompositeCurve? SpineCurve { get; set; }
-		public List<IfcProfileDef>? CrossSections { get; set; }
-		public List<IfcAxis2Placement3D>? CrossSectionPositions { get; set; }
+		public virtual IfcCompositeCurve? SpineCurve { get; set; }
+		public virtual List<IfcProfileDef>? CrossSections { get; set; }
+		public virtual List<IfcAxis2Placement3D>? CrossSectionPositions { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcSectionedSpine() : base()
@@ -26291,9 +26607,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSectionedSurface : IfcSurface
 	{
-		public IfcCurve? Directrix { get; set; }
-		public List<IfcAxis2PlacementLinear>? CrossSectionPositions { get; set; }
-		public List<IfcProfileDef>? CrossSections { get; set; }
+		public virtual IfcCurve? Directrix { get; set; }
+		public virtual List<IfcAxis2PlacementLinear>? CrossSectionPositions { get; set; }
+		public virtual List<IfcProfileDef>? CrossSections { get; set; }
 		public IfcSectionedSurface() : base()
 		{
 		}
@@ -26320,10 +26636,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcSegment : IfcGeometricRepresentationItem
 	{
-		public IfcTransitionCode? Transition { get; set; }
+		public virtual IfcTransitionCode? Transition { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		//TODO INVERSE
+		public List<IfcCompositeCurve>? UsingCurves => Model?.GetItems<IfcCompositeCurve>().Where(x => x.Segments != null && x.Segments.Contains(this)).ToList();
 		public IfcSegment() : base()
 		{
 		}
@@ -26342,8 +26659,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSegmentedReferenceCurve : IfcCompositeCurve
 	{
-		public IfcBoundedCurve? BaseCurve { get; set; }
-		public IfcPlacement? EndPoint { get; set; }
+		public virtual IfcBoundedCurve? BaseCurve { get; set; }
+		public virtual IfcPlacement? EndPoint { get; set; }
 		public IfcSegmentedReferenceCurve() : base()
 		{
 		}
@@ -26368,7 +26685,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSensor : IfcDistributionControlElement
 	{
-		public IfcSensorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSensorTypeEnum? PredefinedType { get; set; }
 		public IfcSensor() : base()
 		{
 		}
@@ -26389,7 +26706,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSensorType : IfcDistributionControlElementType
 	{
-		public IfcSensorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSensorTypeEnum? PredefinedType { get; set; }
 		public IfcSensorType() : base()
 		{
 		}
@@ -26414,14 +26731,14 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSeventhOrderPolynomialSpiral : IfcSpiral
 	{
-		public IfcLengthMeasure? SepticTerm { get; set; }
-		public IfcLengthMeasure? SexticTerm { get; set; }
-		public IfcLengthMeasure? QuinticTerm { get; set; }
-		public IfcLengthMeasure? QuarticTerm { get; set; }
-		public IfcLengthMeasure? CubicTerm { get; set; }
-		public IfcLengthMeasure? QuadraticTerm { get; set; }
-		public IfcLengthMeasure? LinearTerm { get; set; }
-		public IfcLengthMeasure? ConstantTerm { get; set; }
+		public virtual IfcLengthMeasure? SepticTerm { get; set; }
+		public virtual IfcLengthMeasure? SexticTerm { get; set; }
+		public virtual IfcLengthMeasure? QuinticTerm { get; set; }
+		public virtual IfcLengthMeasure? QuarticTerm { get; set; }
+		public virtual IfcLengthMeasure? CubicTerm { get; set; }
+		public virtual IfcLengthMeasure? QuadraticTerm { get; set; }
+		public virtual IfcLengthMeasure? LinearTerm { get; set; }
+		public virtual IfcLengthMeasure? ConstantTerm { get; set; }
 		public IfcSeventhOrderPolynomialSpiral() : base()
 		{
 		}
@@ -26452,7 +26769,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcShadingDevice : IfcBuiltElement
 	{
-		public IfcShadingDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcShadingDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcShadingDevice() : base()
 		{
 		}
@@ -26473,7 +26790,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcShadingDeviceType : IfcBuiltElementType
 	{
-		public IfcShadingDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcShadingDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcShadingDeviceType() : base()
 		{
 		}
@@ -26496,12 +26813,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcShapeAspect : Entity, IfcResourceObjectSelect
 	{
-		public List<IfcShapeModel>? ShapeRepresentations { get; set; }
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcLogical? ProductDefinitional { get; set; }
-		public IfcProductRepresentationSelect? PartOfProductDefinitionShape { get; set; }
+		public virtual List<IfcShapeModel>? ShapeRepresentations { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcLogical? ProductDefinitional { get; set; }
+		public virtual IfcProductRepresentationSelect? PartOfProductDefinitionShape { get; set; }
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? HasExternalReferences => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		public IfcShapeAspect() : base()
 		{
 		}
@@ -26532,6 +26850,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcShapeModel : IfcRepresentation
 	{
 		//TODO INVERSE
+		public List<IfcShapeAspect>? OfShapeAspect => Model?.GetItems<IfcShapeAspect>().Where(x => x.ShapeRepresentations != null && x.ShapeRepresentations.Contains(this)).ToList();
 		public IfcShapeModel() : base()
 		{
 		}
@@ -26578,7 +26897,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcShellBasedSurfaceModel : IfcGeometricRepresentationItem
 	{
-		public List<IfcShell>? SbsmBoundary { get; set; }
+		public virtual List<IfcShell>? SbsmBoundary { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcShellBasedSurfaceModel() : base()
@@ -26604,7 +26923,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSign : IfcElementComponent
 	{
-		public IfcSignTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSignTypeEnum? PredefinedType { get; set; }
 		public IfcSign() : base()
 		{
 		}
@@ -26625,7 +26944,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSignType : IfcElementComponentType
 	{
-		public IfcSignTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSignTypeEnum? PredefinedType { get; set; }
 		public IfcSignType() : base()
 		{
 		}
@@ -26649,7 +26968,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSignal : IfcFlowTerminal
 	{
-		public IfcSignalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSignalTypeEnum? PredefinedType { get; set; }
 		public IfcSignal() : base()
 		{
 		}
@@ -26670,7 +26989,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSignalType : IfcFlowTerminalType
 	{
-		public IfcSignalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSignalTypeEnum? PredefinedType { get; set; }
 		public IfcSignalType() : base()
 		{
 		}
@@ -26717,14 +27036,14 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSimplePropertyTemplate : IfcPropertyTemplate
 	{
-		public IfcSimplePropertyTemplateTypeEnum? TemplateType { get; set; }
-		public IfcLabel? PrimaryMeasureType { get; set; }
-		public IfcLabel? SecondaryMeasureType { get; set; }
-		public IfcPropertyEnumeration? Enumerators { get; set; }
-		public IfcUnit? PrimaryUnit { get; set; }
-		public IfcUnit? SecondaryUnit { get; set; }
-		public IfcLabel? Expression { get; set; }
-		public IfcStateEnum? AccessState { get; set; }
+		public virtual IfcSimplePropertyTemplateTypeEnum? TemplateType { get; set; }
+		public virtual IfcLabel? PrimaryMeasureType { get; set; }
+		public virtual IfcLabel? SecondaryMeasureType { get; set; }
+		public virtual IfcPropertyEnumeration? Enumerators { get; set; }
+		public virtual IfcUnit? PrimaryUnit { get; set; }
+		public virtual IfcUnit? SecondaryUnit { get; set; }
+		public virtual IfcLabel? Expression { get; set; }
+		public virtual IfcStateEnum? AccessState { get; set; }
 		public IfcSimplePropertyTemplate() : base()
 		{
 		}
@@ -26751,9 +27070,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSineSpiral : IfcSpiral
 	{
-		public IfcLengthMeasure? SineTerm { get; set; }
-		public IfcLengthMeasure? LinearTerm { get; set; }
-		public IfcLengthMeasure? ConstantTerm { get; set; }
+		public virtual IfcLengthMeasure? SineTerm { get; set; }
+		public virtual IfcLengthMeasure? LinearTerm { get; set; }
+		public virtual IfcLengthMeasure? ConstantTerm { get; set; }
 		public IfcSineSpiral() : base()
 		{
 		}
@@ -26777,11 +27096,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSite : IfcSpatialStructureElement
 	{
-		public IfcCompoundPlaneAngleMeasure? RefLatitude { get; set; }
-		public IfcCompoundPlaneAngleMeasure? RefLongitude { get; set; }
-		public IfcLengthMeasure? RefElevation { get; set; }
-		public IfcLabel? LandTitleNumber { get; set; }
-		public IfcPostalAddress? SiteAddress { get; set; }
+		public virtual IfcCompoundPlaneAngleMeasure? RefLatitude { get; set; }
+		public virtual IfcCompoundPlaneAngleMeasure? RefLongitude { get; set; }
+		public virtual IfcLengthMeasure? RefElevation { get; set; }
+		public virtual IfcLabel? LandTitleNumber { get; set; }
+		public virtual IfcPostalAddress? SiteAddress { get; set; }
 		public IfcSite() : base()
 		{
 		}
@@ -26809,7 +27128,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSlab : IfcBuiltElement
 	{
-		public IfcSlabTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSlabTypeEnum? PredefinedType { get; set; }
 		public IfcSlab() : base()
 		{
 		}
@@ -26830,7 +27149,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSlabType : IfcBuiltElementType
 	{
-		public IfcSlabTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSlabTypeEnum? PredefinedType { get; set; }
 		public IfcSlabType() : base()
 		{
 		}
@@ -26850,9 +27169,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSlippageConnectionCondition : IfcStructuralConnectionCondition
 	{
-		public IfcLengthMeasure? SlippageX { get; set; }
-		public IfcLengthMeasure? SlippageY { get; set; }
-		public IfcLengthMeasure? SlippageZ { get; set; }
+		public virtual IfcLengthMeasure? SlippageX { get; set; }
+		public virtual IfcLengthMeasure? SlippageY { get; set; }
+		public virtual IfcLengthMeasure? SlippageZ { get; set; }
 		public IfcSlippageConnectionCondition() : base()
 		{
 		}
@@ -26878,7 +27197,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSolarDevice : IfcEnergyConversionDevice
 	{
-		public IfcSolarDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSolarDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcSolarDevice() : base()
 		{
 		}
@@ -26899,7 +27218,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSolarDeviceType : IfcEnergyConversionDeviceType
 	{
-		public IfcSolarDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSolarDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcSolarDeviceType() : base()
 		{
 		}
@@ -26949,10 +27268,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSpace : IfcSpatialStructureElement, IfcSpaceBoundarySelect
 	{
-		public IfcSpaceTypeEnum? PredefinedType { get; set; }
-		public IfcLengthMeasure? ElevationWithFlooring { get; set; }
+		public virtual IfcSpaceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLengthMeasure? ElevationWithFlooring { get; set; }
 		//TODO INVERSE
+		public List<IfcRelCoversSpaces>? HasCoverings => Model?.GetItems<IfcRelCoversSpaces>().Where(x => x.RelatingSpace != null && x.RelatingSpace == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelSpaceBoundary>? BoundedBy => Model?.GetItems<IfcRelSpaceBoundary>().Where(x => x.RelatingSpace != null && x.RelatingSpace == this).ToList();
 		public IfcSpace() : base()
 		{
 		}
@@ -26977,7 +27298,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSpaceHeater : IfcFlowTerminal
 	{
-		public IfcSpaceHeaterTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSpaceHeaterTypeEnum? PredefinedType { get; set; }
 		public IfcSpaceHeater() : base()
 		{
 		}
@@ -26998,7 +27319,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSpaceHeaterType : IfcFlowTerminalType
 	{
-		public IfcSpaceHeaterTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSpaceHeaterTypeEnum? PredefinedType { get; set; }
 		public IfcSpaceHeaterType() : base()
 		{
 		}
@@ -27020,8 +27341,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSpaceType : IfcSpatialStructureElementType
 	{
-		public IfcSpaceTypeEnum? PredefinedType { get; set; }
-		public IfcLabel? LongName { get; set; }
+		public virtual IfcSpaceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLabel? LongName { get; set; }
 		public IfcSpaceType() : base()
 		{
 		}
@@ -27050,12 +27371,17 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcSpatialElement : IfcProduct, IfcInterferenceSelect
 	{
-		public IfcLabel? LongName { get; set; }
+		public virtual IfcLabel? LongName { get; set; }
 		//TODO INVERSE
+		public List<IfcRelContainedInSpatialStructure>? ContainsElements => Model?.GetItems<IfcRelContainedInSpatialStructure>().Where(x => x.RelatingStructure != null && x.RelatingStructure == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelServicesBuildings>? ServicedBySystems => Model?.GetItems<IfcRelServicesBuildings>().Where(x => x.RelatedBuildings != null && x.RelatedBuildings.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcRelReferencedInSpatialStructure>? ReferencesElements => Model?.GetItems<IfcRelReferencedInSpatialStructure>().Where(x => x.RelatingStructure != null && x.RelatingStructure == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelInterferesElements>? IsInterferedByElements => Model?.GetItems<IfcRelInterferesElements>().Where(x => x.RelatedElement != null && x.RelatedElement == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelInterferesElements>? InterferesElements => Model?.GetItems<IfcRelInterferesElements>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();
 		public IfcSpatialElement() : base()
 		{
 		}
@@ -27076,7 +27402,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcSpatialElementType : IfcTypeProduct
 	{
-		public IfcLabel? ElementType { get; set; }
+		public virtual IfcLabel? ElementType { get; set; }
 		public IfcSpatialElementType() : base()
 		{
 		}
@@ -27108,7 +27434,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcSpatialStructureElement : IfcSpatialElement
 	{
-		public IfcElementCompositionEnum? CompositionType { get; set; }
+		public virtual IfcElementCompositionEnum? CompositionType { get; set; }
 		public IfcSpatialStructureElement() : base()
 		{
 		}
@@ -27149,7 +27475,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSpatialZone : IfcSpatialElement
 	{
-		public IfcSpatialZoneTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSpatialZoneTypeEnum? PredefinedType { get; set; }
 		public IfcSpatialZone() : base()
 		{
 		}
@@ -27171,8 +27497,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSpatialZoneType : IfcSpatialElementType
 	{
-		public IfcSpatialZoneTypeEnum? PredefinedType { get; set; }
-		public IfcLabel? LongName { get; set; }
+		public virtual IfcSpatialZoneTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLabel? LongName { get; set; }
 		public IfcSpatialZoneType() : base()
 		{
 		}
@@ -27191,7 +27517,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSphere : IfcCsgPrimitive3D
 	{
-		public IfcPositiveLengthMeasure? Radius { get; set; }
+		public virtual IfcPositiveLengthMeasure? Radius { get; set; }
 		public IfcSphere() : base()
 		{
 		}
@@ -27209,7 +27535,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSphericalSurface : IfcElementarySurface
 	{
-		public IfcPositiveLengthMeasure? Radius { get; set; }
+		public virtual IfcPositiveLengthMeasure? Radius { get; set; }
 		public IfcSphericalSurface() : base()
 		{
 		}
@@ -27234,7 +27560,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcSpiral : IfcCurve
 	{
-		public IfcAxis2Placement? Position { get; set; }
+		public virtual IfcAxis2Placement? Position { get; set; }
 		public IfcSpiral() : base()
 		{
 		}
@@ -27258,7 +27584,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStackTerminal : IfcFlowTerminal
 	{
-		public IfcStackTerminalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcStackTerminalTypeEnum? PredefinedType { get; set; }
 		public IfcStackTerminal() : base()
 		{
 		}
@@ -27279,7 +27605,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStackTerminalType : IfcFlowTerminalType
 	{
-		public IfcStackTerminalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcStackTerminalTypeEnum? PredefinedType { get; set; }
 		public IfcStackTerminalType() : base()
 		{
 		}
@@ -27303,7 +27629,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStair : IfcBuiltElement
 	{
-		public IfcStairTypeEnum? PredefinedType { get; set; }
+		public virtual IfcStairTypeEnum? PredefinedType { get; set; }
 		public IfcStair() : base()
 		{
 		}
@@ -27331,11 +27657,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStairFlight : IfcBuiltElement
 	{
-		public IfcInteger? NumberOfRisers { get; set; }
-		public IfcInteger? NumberOfTreads { get; set; }
-		public IfcPositiveLengthMeasure? RiserHeight { get; set; }
-		public IfcPositiveLengthMeasure? TreadLength { get; set; }
-		public IfcStairFlightTypeEnum? PredefinedType { get; set; }
+		public virtual IfcInteger? NumberOfRisers { get; set; }
+		public virtual IfcInteger? NumberOfTreads { get; set; }
+		public virtual IfcPositiveLengthMeasure? RiserHeight { get; set; }
+		public virtual IfcPositiveLengthMeasure? TreadLength { get; set; }
+		public virtual IfcStairFlightTypeEnum? PredefinedType { get; set; }
 		public IfcStairFlight() : base()
 		{
 		}
@@ -27360,7 +27686,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStairFlightType : IfcBuiltElementType
 	{
-		public IfcStairFlightTypeEnum? PredefinedType { get; set; }
+		public virtual IfcStairFlightTypeEnum? PredefinedType { get; set; }
 		public IfcStairFlightType() : base()
 		{
 		}
@@ -27381,7 +27707,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStairType : IfcBuiltElementType
 	{
-		public IfcStairTypeEnum? PredefinedType { get; set; }
+		public virtual IfcStairTypeEnum? PredefinedType { get; set; }
 		public IfcStairType() : base()
 		{
 		}
@@ -27403,7 +27729,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcStructuralAction : IfcStructuralActivity
 	{
-		public IfcBoolean? DestabilizingLoad { get; set; }
+		public virtual IfcBoolean? DestabilizingLoad { get; set; }
 		public IfcStructuralAction() : base()
 		{
 		}
@@ -27427,9 +27753,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcStructuralActivity : IfcProduct
 	{
-		public IfcStructuralLoad? AppliedLoad { get; set; }
-		public IfcGlobalOrLocalEnum? GlobalOrLocal { get; set; }
+		public virtual IfcStructuralLoad? AppliedLoad { get; set; }
+		public virtual IfcGlobalOrLocalEnum? GlobalOrLocal { get; set; }
 		//TODO INVERSE
+		public List<IfcRelConnectsStructuralActivity>? AssignedToStructuralItem => Model?.GetItems<IfcRelConnectsStructuralActivity>().Where(x => x.RelatedStructuralActivity != null && x.RelatedStructuralActivity == this).ToList();
 		public IfcStructuralActivity() : base()
 		{
 		}
@@ -27455,11 +27782,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralAnalysisModel : IfcSystem
 	{
-		public IfcAnalysisModelTypeEnum? PredefinedType { get; set; }
-		public IfcAxis2Placement3D? OrientationOf2DPlane { get; set; }
-		public List<IfcStructuralLoadGroup>? LoadedBy { get; set; }
-		public List<IfcStructuralResultGroup>? HasResults { get; set; }
-		public IfcObjectPlacement? SharedPlacement { get; set; }
+		public virtual IfcAnalysisModelTypeEnum? PredefinedType { get; set; }
+		public virtual IfcAxis2Placement3D? OrientationOf2DPlane { get; set; }
+		public virtual List<IfcStructuralLoadGroup>? LoadedBy { get; set; }
+		public virtual List<IfcStructuralResultGroup>? HasResults { get; set; }
+		public virtual IfcObjectPlacement? SharedPlacement { get; set; }
 		public IfcStructuralAnalysisModel() : base()
 		{
 		}
@@ -27487,8 +27814,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcStructuralConnection : IfcStructuralItem
 	{
-		public IfcBoundaryCondition? AppliedCondition { get; set; }
+		public virtual IfcBoundaryCondition? AppliedCondition { get; set; }
 		//TODO INVERSE
+		public List<IfcRelConnectsStructuralMember>? ConnectsStructuralMembers => Model?.GetItems<IfcRelConnectsStructuralMember>().Where(x => x.RelatedStructuralConnection != null && x.RelatedStructuralConnection == this).ToList();
 		public IfcStructuralConnection() : base()
 		{
 		}
@@ -27508,7 +27836,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcStructuralConnectionCondition : Entity
 	{
-		public IfcLabel? Name { get; set; }
+		public virtual IfcLabel? Name { get; set; }
 		public IfcStructuralConnectionCondition() : base()
 		{
 		}
@@ -27535,8 +27863,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralCurveAction : IfcStructuralAction
 	{
-		public IfcProjectedOrTrueLengthEnum? ProjectedOrTrue { get; set; }
-		public IfcStructuralCurveActivityTypeEnum? PredefinedType { get; set; }
+		public virtual IfcProjectedOrTrueLengthEnum? ProjectedOrTrue { get; set; }
+		public virtual IfcStructuralCurveActivityTypeEnum? PredefinedType { get; set; }
 		public IfcStructuralCurveAction() : base()
 		{
 		}
@@ -27555,7 +27883,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralCurveConnection : IfcStructuralConnection
 	{
-		public IfcDirection? AxisDirection { get; set; }
+		public virtual IfcDirection? AxisDirection { get; set; }
 		public IfcStructuralCurveConnection() : base()
 		{
 		}
@@ -27578,8 +27906,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralCurveMember : IfcStructuralMember
 	{
-		public IfcStructuralCurveMemberTypeEnum? PredefinedType { get; set; }
-		public IfcDirection? Axis { get; set; }
+		public virtual IfcStructuralCurveMemberTypeEnum? PredefinedType { get; set; }
+		public virtual IfcDirection? Axis { get; set; }
 		public IfcStructuralCurveMember() : base()
 		{
 		}
@@ -27616,7 +27944,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralCurveReaction : IfcStructuralReaction
 	{
-		public IfcStructuralCurveActivityTypeEnum? PredefinedType { get; set; }
+		public virtual IfcStructuralCurveActivityTypeEnum? PredefinedType { get; set; }
 		public IfcStructuralCurveReaction() : base()
 		{
 		}
@@ -27639,6 +27967,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcStructuralItem : IfcProduct, IfcStructuralActivityAssignmentSelect
 	{
 		//TODO INVERSE
+		public List<IfcRelConnectsStructuralActivity>? AssignedStructuralActivity => Model?.GetItems<IfcRelConnectsStructuralActivity>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();
 		public IfcStructuralItem() : base()
 		{
 		}
@@ -27675,7 +28004,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcStructuralLoad : Entity
 	{
-		public IfcLabel? Name { get; set; }
+		public virtual IfcLabel? Name { get; set; }
 		public IfcStructuralLoad() : base()
 		{
 		}
@@ -27695,7 +28024,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralLoadCase : IfcStructuralLoadGroup
 	{
-		public List<IfcRatioMeasure>? SelfWeightCoefficients { get; set; }
+		public virtual List<IfcRatioMeasure>? SelfWeightCoefficients { get; set; }
 		public IfcStructuralLoadCase() : base()
 		{
 		}
@@ -27716,7 +28045,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralLoadConfiguration : IfcStructuralLoad
 	{
-		public List<IfcStructuralLoadOrResult>? Values { get; set; }
+		public virtual List<IfcStructuralLoadOrResult>? Values { get; set; }
 		public IfcStructuralLoadConfiguration() : base()
 		{
 		}
@@ -27749,13 +28078,15 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralLoadGroup : IfcGroup
 	{
-		public IfcLoadGroupTypeEnum? PredefinedType { get; set; }
-		public IfcActionTypeEnum? ActionType { get; set; }
-		public IfcActionSourceTypeEnum? ActionSource { get; set; }
-		public IfcRatioMeasure? Coefficient { get; set; }
-		public IfcLabel? Purpose { get; set; }
+		public virtual IfcLoadGroupTypeEnum? PredefinedType { get; set; }
+		public virtual IfcActionTypeEnum? ActionType { get; set; }
+		public virtual IfcActionSourceTypeEnum? ActionSource { get; set; }
+		public virtual IfcRatioMeasure? Coefficient { get; set; }
+		public virtual IfcLabel? Purpose { get; set; }
 		//TODO INVERSE
+		public List<IfcStructuralResultGroup>? SourceOfResultGroup => Model?.GetItems<IfcStructuralResultGroup>().Where(x => x.ResultForLoadGroup != null && x.ResultForLoadGroup == this).ToList();
 		//TODO INVERSE
+		public List<IfcStructuralAnalysisModel>? LoadGroupFor => Model?.GetItems<IfcStructuralAnalysisModel>().Where(x => x.LoadedBy != null && x.LoadedBy.Contains(this)).ToList();
 		public IfcStructuralLoadGroup() : base()
 		{
 		}
@@ -27782,12 +28113,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralLoadLinearForce : IfcStructuralLoadStatic
 	{
-		public IfcLinearForceMeasure? LinearForceX { get; set; }
-		public IfcLinearForceMeasure? LinearForceY { get; set; }
-		public IfcLinearForceMeasure? LinearForceZ { get; set; }
-		public IfcLinearMomentMeasure? LinearMomentX { get; set; }
-		public IfcLinearMomentMeasure? LinearMomentY { get; set; }
-		public IfcLinearMomentMeasure? LinearMomentZ { get; set; }
+		public virtual IfcLinearForceMeasure? LinearForceX { get; set; }
+		public virtual IfcLinearForceMeasure? LinearForceY { get; set; }
+		public virtual IfcLinearForceMeasure? LinearForceZ { get; set; }
+		public virtual IfcLinearMomentMeasure? LinearMomentX { get; set; }
+		public virtual IfcLinearMomentMeasure? LinearMomentY { get; set; }
+		public virtual IfcLinearMomentMeasure? LinearMomentZ { get; set; }
 		public IfcStructuralLoadLinearForce() : base()
 		{
 		}
@@ -27830,9 +28161,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralLoadPlanarForce : IfcStructuralLoadStatic
 	{
-		public IfcPlanarForceMeasure? PlanarForceX { get; set; }
-		public IfcPlanarForceMeasure? PlanarForceY { get; set; }
-		public IfcPlanarForceMeasure? PlanarForceZ { get; set; }
+		public virtual IfcPlanarForceMeasure? PlanarForceX { get; set; }
+		public virtual IfcPlanarForceMeasure? PlanarForceY { get; set; }
+		public virtual IfcPlanarForceMeasure? PlanarForceZ { get; set; }
 		public IfcStructuralLoadPlanarForce() : base()
 		{
 		}
@@ -27859,12 +28190,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralLoadSingleDisplacement : IfcStructuralLoadStatic
 	{
-		public IfcLengthMeasure? DisplacementX { get; set; }
-		public IfcLengthMeasure? DisplacementY { get; set; }
-		public IfcLengthMeasure? DisplacementZ { get; set; }
-		public IfcPlaneAngleMeasure? RotationalDisplacementRX { get; set; }
-		public IfcPlaneAngleMeasure? RotationalDisplacementRY { get; set; }
-		public IfcPlaneAngleMeasure? RotationalDisplacementRZ { get; set; }
+		public virtual IfcLengthMeasure? DisplacementX { get; set; }
+		public virtual IfcLengthMeasure? DisplacementY { get; set; }
+		public virtual IfcLengthMeasure? DisplacementZ { get; set; }
+		public virtual IfcPlaneAngleMeasure? RotationalDisplacementRX { get; set; }
+		public virtual IfcPlaneAngleMeasure? RotationalDisplacementRY { get; set; }
+		public virtual IfcPlaneAngleMeasure? RotationalDisplacementRZ { get; set; }
 		public IfcStructuralLoadSingleDisplacement() : base()
 		{
 		}
@@ -27887,7 +28218,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralLoadSingleDisplacementDistortion : IfcStructuralLoadSingleDisplacement
 	{
-		public IfcCurvatureMeasure? Distortion { get; set; }
+		public virtual IfcCurvatureMeasure? Distortion { get; set; }
 		public IfcStructuralLoadSingleDisplacementDistortion() : base()
 		{
 		}
@@ -27912,12 +28243,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralLoadSingleForce : IfcStructuralLoadStatic
 	{
-		public IfcForceMeasure? ForceX { get; set; }
-		public IfcForceMeasure? ForceY { get; set; }
-		public IfcForceMeasure? ForceZ { get; set; }
-		public IfcTorqueMeasure? MomentX { get; set; }
-		public IfcTorqueMeasure? MomentY { get; set; }
-		public IfcTorqueMeasure? MomentZ { get; set; }
+		public virtual IfcForceMeasure? ForceX { get; set; }
+		public virtual IfcForceMeasure? ForceY { get; set; }
+		public virtual IfcForceMeasure? ForceZ { get; set; }
+		public virtual IfcTorqueMeasure? MomentX { get; set; }
+		public virtual IfcTorqueMeasure? MomentY { get; set; }
+		public virtual IfcTorqueMeasure? MomentZ { get; set; }
 		public IfcStructuralLoadSingleForce() : base()
 		{
 		}
@@ -27940,7 +28271,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralLoadSingleForceWarping : IfcStructuralLoadSingleForce
 	{
-		public IfcWarpingMomentMeasure? WarpingMoment { get; set; }
+		public virtual IfcWarpingMomentMeasure? WarpingMoment { get; set; }
 		public IfcStructuralLoadSingleForceWarping() : base()
 		{
 		}
@@ -27981,9 +28312,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralLoadTemperature : IfcStructuralLoadStatic
 	{
-		public IfcThermodynamicTemperatureMeasure? DeltaTConstant { get; set; }
-		public IfcThermodynamicTemperatureMeasure? DeltaTY { get; set; }
-		public IfcThermodynamicTemperatureMeasure? DeltaTZ { get; set; }
+		public virtual IfcThermodynamicTemperatureMeasure? DeltaTConstant { get; set; }
+		public virtual IfcThermodynamicTemperatureMeasure? DeltaTY { get; set; }
+		public virtual IfcThermodynamicTemperatureMeasure? DeltaTZ { get; set; }
 		public IfcStructuralLoadTemperature() : base()
 		{
 		}
@@ -28008,6 +28339,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcStructuralMember : IfcStructuralItem
 	{
 		//TODO INVERSE
+		public List<IfcRelConnectsStructuralMember>? ConnectedBy => Model?.GetItems<IfcRelConnectsStructuralMember>().Where(x => x.RelatingStructuralMember != null && x.RelatingStructuralMember == this).ToList();
 		public IfcStructuralMember() : base()
 		{
 		}
@@ -28059,7 +28391,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralPointConnection : IfcStructuralConnection
 	{
-		public IfcAxis2Placement3D? ConditionCoordinateSystem { get; set; }
+		public virtual IfcAxis2Placement3D? ConditionCoordinateSystem { get; set; }
 		public IfcStructuralPointConnection() : base()
 		{
 		}
@@ -28119,10 +28451,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralResultGroup : IfcGroup
 	{
-		public IfcAnalysisTheoryTypeEnum? TheoryType { get; set; }
-		public IfcStructuralLoadGroup? ResultForLoadGroup { get; set; }
-		public IfcBoolean? IsLinear { get; set; }
+		public virtual IfcAnalysisTheoryTypeEnum? TheoryType { get; set; }
+		public virtual IfcStructuralLoadGroup? ResultForLoadGroup { get; set; }
+		public virtual IfcBoolean? IsLinear { get; set; }
 		//TODO INVERSE
+		public List<IfcStructuralAnalysisModel>? ResultGroupFor => Model?.GetItems<IfcStructuralAnalysisModel>().Where(x => x.HasResults != null && x.HasResults.Contains(this)).ToList();
 		public IfcStructuralResultGroup() : base()
 		{
 		}
@@ -28150,8 +28483,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralSurfaceAction : IfcStructuralAction
 	{
-		public IfcProjectedOrTrueLengthEnum? ProjectedOrTrue { get; set; }
-		public IfcStructuralSurfaceActivityTypeEnum? PredefinedType { get; set; }
+		public virtual IfcProjectedOrTrueLengthEnum? ProjectedOrTrue { get; set; }
+		public virtual IfcStructuralSurfaceActivityTypeEnum? PredefinedType { get; set; }
 		public IfcStructuralSurfaceAction() : base()
 		{
 		}
@@ -28190,8 +28523,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralSurfaceMember : IfcStructuralMember
 	{
-		public IfcStructuralSurfaceMemberTypeEnum? PredefinedType { get; set; }
-		public IfcPositiveLengthMeasure? Thickness { get; set; }
+		public virtual IfcStructuralSurfaceMemberTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPositiveLengthMeasure? Thickness { get; set; }
 		public IfcStructuralSurfaceMember() : base()
 		{
 		}
@@ -28227,7 +28560,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStructuralSurfaceReaction : IfcStructuralReaction
 	{
-		public IfcStructuralSurfaceActivityTypeEnum? PredefinedType { get; set; }
+		public virtual IfcStructuralSurfaceActivityTypeEnum? PredefinedType { get; set; }
 		public IfcStructuralSurfaceReaction() : base()
 		{
 		}
@@ -28266,9 +28599,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcStyledItem : IfcRepresentationItem
 	{
-		public IfcRepresentationItem? Item { get; set; }
-		public List<IfcPresentationStyle>? Styles { get; set; }
-		public IfcLabel? Name { get; set; }
+		public virtual IfcRepresentationItem? Item { get; set; }
+		public virtual List<IfcPresentationStyle>? Styles { get; set; }
+		public virtual IfcLabel? Name { get; set; }
 		public IfcStyledItem() : base()
 		{
 		}
@@ -28311,7 +28644,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSubContractResource : IfcConstructionResource
 	{
-		public IfcSubContractResourceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSubContractResourceTypeEnum? PredefinedType { get; set; }
 		public IfcSubContractResource() : base()
 		{
 		}
@@ -28332,7 +28665,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSubContractResourceType : IfcConstructionResourceType
 	{
-		public IfcSubContractResourceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSubContractResourceTypeEnum? PredefinedType { get; set; }
 		public IfcSubContractResourceType() : base()
 		{
 		}
@@ -28350,7 +28683,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSubedge : IfcEdge
 	{
-		public IfcEdge? ParentEdge { get; set; }
+		public virtual IfcEdge? ParentEdge { get; set; }
 		public IfcSubedge() : base()
 		{
 		}
@@ -28399,9 +28732,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSurfaceCurve : IfcCurve, IfcCurveOnSurface
 	{
-		public IfcCurve? Curve3D { get; set; }
-		public List<IfcPcurve>? AssociatedGeometry { get; set; }
-		public IfcPreferredSurfaceCurveRepresentation? MasterRepresentation { get; set; }
+		public virtual IfcCurve? Curve3D { get; set; }
+		public virtual List<IfcPcurve>? AssociatedGeometry { get; set; }
+		public virtual IfcPreferredSurfaceCurveRepresentation? MasterRepresentation { get; set; }
 		//TODO DERIVE
 		public virtual List<IfcSurface>? BasisSurface {get {return null;}}
 		public IfcSurfaceCurve() : base()
@@ -28423,7 +28756,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSurfaceCurveSweptAreaSolid : IfcDirectrixCurveSweptAreaSolid
 	{
-		public IfcSurface? ReferenceSurface { get; set; }
+		public virtual IfcSurface? ReferenceSurface { get; set; }
 		public IfcSurfaceCurveSweptAreaSolid() : base()
 		{
 		}
@@ -28447,8 +28780,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSurfaceFeature : IfcFeatureElement
 	{
-		public IfcSurfaceFeatureTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSurfaceFeatureTypeEnum? PredefinedType { get; set; }
 		//TODO INVERSE
+		public IfcRelAdheresToElement? AdheresToElement => Model?.GetItems<IfcRelAdheresToElement>().FirstOrDefault(x => x.RelatedSurfaceFeatures != null && x.RelatedSurfaceFeatures.Contains(this));
 		public IfcSurfaceFeature() : base()
 		{
 		}
@@ -28471,8 +28805,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSurfaceOfLinearExtrusion : IfcSweptSurface
 	{
-		public IfcDirection? ExtrudedDirection { get; set; }
-		public IfcLengthMeasure? Depth { get; set; }
+		public virtual IfcDirection? ExtrudedDirection { get; set; }
+		public virtual IfcLengthMeasure? Depth { get; set; }
 		//TODO DERIVE
 		public virtual IfcVector? ExtrusionAxis {get {return null;}}
 		public IfcSurfaceOfLinearExtrusion() : base()
@@ -28496,7 +28830,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSurfaceOfRevolution : IfcSweptSurface
 	{
-		public IfcAxis1Placement? AxisPosition { get; set; }
+		public virtual IfcAxis1Placement? AxisPosition { get; set; }
 		//TODO DERIVE
 		public virtual IfcLine? AxisLine {get {return null;}}
 		public IfcSurfaceOfRevolution() : base()
@@ -28531,9 +28865,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSurfaceReinforcementArea : IfcStructuralLoadOrResult
 	{
-		public List<IfcLengthMeasure>? SurfaceReinforcement1 { get; set; }
-		public List<IfcLengthMeasure>? SurfaceReinforcement2 { get; set; }
-		public IfcRatioMeasure? ShearReinforcement { get; set; }
+		public virtual List<IfcLengthMeasure>? SurfaceReinforcement1 { get; set; }
+		public virtual List<IfcLengthMeasure>? SurfaceReinforcement2 { get; set; }
+		public virtual IfcRatioMeasure? ShearReinforcement { get; set; }
 		public IfcSurfaceReinforcementArea() : base()
 		{
 		}
@@ -28575,8 +28909,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSurfaceStyle : IfcPresentationStyle
 	{
-		public IfcSurfaceSide? Side { get; set; }
-		public List<IfcSurfaceStyleElementSelect>? Styles { get; set; }
+		public virtual IfcSurfaceSide? Side { get; set; }
+		public virtual List<IfcSurfaceStyleElementSelect>? Styles { get; set; }
 		public IfcSurfaceStyle() : base()
 		{
 		}
@@ -28598,10 +28932,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSurfaceStyleLighting : IfcPresentationItem, IfcSurfaceStyleElementSelect
 	{
-		public IfcColourRgb? DiffuseTransmissionColour { get; set; }
-		public IfcColourRgb? DiffuseReflectionColour { get; set; }
-		public IfcColourRgb? TransmissionColour { get; set; }
-		public IfcColourRgb? ReflectanceColour { get; set; }
+		public virtual IfcColourRgb? DiffuseTransmissionColour { get; set; }
+		public virtual IfcColourRgb? DiffuseReflectionColour { get; set; }
+		public virtual IfcColourRgb? TransmissionColour { get; set; }
+		public virtual IfcColourRgb? ReflectanceColour { get; set; }
 		public IfcSurfaceStyleLighting() : base()
 		{
 		}
@@ -28623,8 +28957,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSurfaceStyleRefraction : IfcPresentationItem, IfcSurfaceStyleElementSelect
 	{
-		public IfcReal? RefractionIndex { get; set; }
-		public IfcReal? DispersionFactor { get; set; }
+		public virtual IfcReal? RefractionIndex { get; set; }
+		public virtual IfcReal? DispersionFactor { get; set; }
 		public IfcSurfaceStyleRefraction() : base()
 		{
 		}
@@ -28649,13 +28983,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSurfaceStyleRendering : IfcSurfaceStyleShading
 	{
-		public IfcColourOrFactor? DiffuseColour { get; set; }
-		public IfcColourOrFactor? TransmissionColour { get; set; }
-		public IfcColourOrFactor? DiffuseTransmissionColour { get; set; }
-		public IfcColourOrFactor? ReflectionColour { get; set; }
-		public IfcColourOrFactor? SpecularColour { get; set; }
-		public IfcSpecularHighlightSelect? SpecularHighlight { get; set; }
-		public IfcReflectanceMethodEnum? ReflectanceMethod { get; set; }
+		public virtual IfcColourOrFactor? DiffuseColour { get; set; }
+		public virtual IfcColourOrFactor? TransmissionColour { get; set; }
+		public virtual IfcColourOrFactor? DiffuseTransmissionColour { get; set; }
+		public virtual IfcColourOrFactor? ReflectionColour { get; set; }
+		public virtual IfcColourOrFactor? SpecularColour { get; set; }
+		public virtual IfcSpecularHighlightSelect? SpecularHighlight { get; set; }
+		public virtual IfcReflectanceMethodEnum? ReflectanceMethod { get; set; }
 		public IfcSurfaceStyleRendering() : base()
 		{
 		}
@@ -28682,8 +29016,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSurfaceStyleShading : IfcPresentationItem, IfcSurfaceStyleElementSelect
 	{
-		public IfcColourRgb? SurfaceColour { get; set; }
-		public IfcNormalisedRatioMeasure? Transparency { get; set; }
+		public virtual IfcColourRgb? SurfaceColour { get; set; }
+		public virtual IfcNormalisedRatioMeasure? Transparency { get; set; }
 		public IfcSurfaceStyleShading() : base()
 		{
 		}
@@ -28702,7 +29036,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSurfaceStyleWithTextures : IfcPresentationItem, IfcSurfaceStyleElementSelect
 	{
-		public List<IfcSurfaceTexture>? Textures { get; set; }
+		public virtual List<IfcSurfaceTexture>? Textures { get; set; }
 		public IfcSurfaceStyleWithTextures() : base()
 		{
 		}
@@ -28731,13 +29065,15 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcSurfaceTexture : IfcPresentationItem
 	{
-		public IfcBoolean? RepeatS { get; set; }
-		public IfcBoolean? RepeatT { get; set; }
-		public IfcIdentifier? Mode { get; set; }
-		public IfcCartesianTransformationOperator2D? TextureTransform { get; set; }
-		public List<IfcIdentifier>? Parameter { get; set; }
+		public virtual IfcBoolean? RepeatS { get; set; }
+		public virtual IfcBoolean? RepeatT { get; set; }
+		public virtual IfcIdentifier? Mode { get; set; }
+		public virtual IfcCartesianTransformationOperator2D? TextureTransform { get; set; }
+		public virtual List<IfcIdentifier>? Parameter { get; set; }
 		//TODO INVERSE
+		public List<IfcTextureCoordinate>? IsMappedBy => Model?.GetItems<IfcTextureCoordinate>().Where(x => x.Maps != null && x.Maps.Contains(this)).ToList();
 		//TODO INVERSE
+		public List<IfcSurfaceStyleWithTextures>? UsedInStyles => Model?.GetItems<IfcSurfaceStyleWithTextures>().Where(x => x.Textures != null && x.Textures.Contains(this)).ToList();
 		public IfcSurfaceTexture() : base()
 		{
 		}
@@ -28766,8 +29102,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcSweptAreaSolid : IfcSolidModel
 	{
-		public IfcProfileDef? SweptArea { get; set; }
-		public IfcAxis2Placement3D? Position { get; set; }
+		public virtual IfcProfileDef? SweptArea { get; set; }
+		public virtual IfcAxis2Placement3D? Position { get; set; }
 		public IfcSweptAreaSolid() : base()
 		{
 		}
@@ -28797,11 +29133,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSweptDiskSolid : IfcSolidModel
 	{
-		public IfcCurve? Directrix { get; set; }
-		public IfcPositiveLengthMeasure? Radius { get; set; }
-		public IfcPositiveLengthMeasure? InnerRadius { get; set; }
-		public IfcParameterValue? StartParam { get; set; }
-		public IfcParameterValue? EndParam { get; set; }
+		public virtual IfcCurve? Directrix { get; set; }
+		public virtual IfcPositiveLengthMeasure? Radius { get; set; }
+		public virtual IfcPositiveLengthMeasure? InnerRadius { get; set; }
+		public virtual IfcParameterValue? StartParam { get; set; }
+		public virtual IfcParameterValue? EndParam { get; set; }
 		public IfcSweptDiskSolid() : base()
 		{
 		}
@@ -28827,7 +29163,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSweptDiskSolidPolygonal : IfcSweptDiskSolid
 	{
-		public IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
 		public IfcSweptDiskSolidPolygonal() : base()
 		{
 		}
@@ -28851,8 +29187,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcSweptSurface : IfcSurface
 	{
-		public IfcProfileDef? SweptCurve { get; set; }
-		public IfcAxis2Placement3D? Position { get; set; }
+		public virtual IfcProfileDef? SweptCurve { get; set; }
+		public virtual IfcAxis2Placement3D? Position { get; set; }
 		public IfcSweptSurface() : base()
 		{
 		}
@@ -28877,7 +29213,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSwitchingDevice : IfcFlowController
 	{
-		public IfcSwitchingDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSwitchingDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcSwitchingDevice() : base()
 		{
 		}
@@ -28898,7 +29234,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSwitchingDeviceType : IfcFlowControllerType
 	{
-		public IfcSwitchingDeviceTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSwitchingDeviceTypeEnum? PredefinedType { get; set; }
 		public IfcSwitchingDeviceType() : base()
 		{
 		}
@@ -28925,7 +29261,9 @@ namespace IFC.IFC4x3
 	public class IfcSystem : IfcGroup
 	{
 		//TODO INVERSE
+		public List<IfcRelServicesBuildings>? ServicesBuildings => Model?.GetItems<IfcRelServicesBuildings>().Where(x => x.RelatingSystem != null && x.RelatingSystem == this).ToList();
 		//TODO INVERSE
+		public List<IfcRelReferencedInSpatialStructure>? ServicesFacilities => Model?.GetItems<IfcRelReferencedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();
 		public IfcSystem() : base()
 		{
 		}
@@ -28948,7 +29286,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSystemFurnitureElement : IfcFurnishingElement
 	{
-		public IfcSystemFurnitureElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSystemFurnitureElementTypeEnum? PredefinedType { get; set; }
 		public IfcSystemFurnitureElement() : base()
 		{
 		}
@@ -28970,7 +29308,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSystemFurnitureElementType : IfcFurnishingElementType
 	{
-		public IfcSystemFurnitureElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcSystemFurnitureElementTypeEnum? PredefinedType { get; set; }
 		public IfcSystemFurnitureElementType() : base()
 		{
 		}
@@ -28999,15 +29337,15 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTShapeProfileDef : IfcParameterizedProfileDef
 	{
-		public IfcPositiveLengthMeasure? Depth { get; set; }
-		public IfcPositiveLengthMeasure? FlangeWidth { get; set; }
-		public IfcPositiveLengthMeasure? WebThickness { get; set; }
-		public IfcPositiveLengthMeasure? FlangeThickness { get; set; }
-		public IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure? FlangeEdgeRadius { get; set; }
-		public IfcNonNegativeLengthMeasure? WebEdgeRadius { get; set; }
-		public IfcPlaneAngleMeasure? WebSlope { get; set; }
-		public IfcPlaneAngleMeasure? FlangeSlope { get; set; }
+		public virtual IfcPositiveLengthMeasure? Depth { get; set; }
+		public virtual IfcPositiveLengthMeasure? FlangeWidth { get; set; }
+		public virtual IfcPositiveLengthMeasure? WebThickness { get; set; }
+		public virtual IfcPositiveLengthMeasure? FlangeThickness { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? FlangeEdgeRadius { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? WebEdgeRadius { get; set; }
+		public virtual IfcPlaneAngleMeasure? WebSlope { get; set; }
+		public virtual IfcPlaneAngleMeasure? FlangeSlope { get; set; }
 		public IfcTShapeProfileDef() : base()
 		{
 		}
@@ -29041,9 +29379,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTable : Entity, IfcMetricValueSelect, IfcObjectReferenceSelect
 	{
-		public IfcLabel? Name { get; set; }
-		public List<IfcTableRow>? Rows { get; set; }
-		public List<IfcTableColumn>? Columns { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual List<IfcTableRow>? Rows { get; set; }
+		public virtual List<IfcTableColumn>? Columns { get; set; }
 		//TODO DERIVE
 		public virtual IfcInteger? NumberOfCellsInRow {get {return null;}}
 		//TODO DERIVE
@@ -29072,11 +29410,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTableColumn : Entity
 	{
-		public IfcIdentifier? Identifier { get; set; }
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcUnit? Unit { get; set; }
-		public IfcReference? ReferencePath { get; set; }
+		public virtual IfcIdentifier? Identifier { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcUnit? Unit { get; set; }
+		public virtual IfcReference? ReferencePath { get; set; }
 		public IfcTableColumn() : base()
 		{
 		}
@@ -29098,8 +29436,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTableRow : Entity
 	{
-		public List<IfcValue>? RowCells { get; set; }
-		public IfcBoolean? IsHeading { get; set; }
+		public virtual List<IfcValue>? RowCells { get; set; }
+		public virtual IfcBoolean? IsHeading { get; set; }
 		public IfcTableRow() : base()
 		{
 		}
@@ -29124,7 +29462,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTank : IfcFlowStorageDevice
 	{
-		public IfcTankTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTankTypeEnum? PredefinedType { get; set; }
 		public IfcTank() : base()
 		{
 		}
@@ -29145,7 +29483,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTankType : IfcFlowStorageDeviceType
 	{
-		public IfcTankTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTankTypeEnum? PredefinedType { get; set; }
 		public IfcTankType() : base()
 		{
 		}
@@ -29171,12 +29509,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTask : IfcProcess
 	{
-		public IfcLabel? Status { get; set; }
-		public IfcLabel? WorkMethod { get; set; }
-		public IfcBoolean? IsMilestone { get; set; }
-		public IfcInteger? Priority { get; set; }
-		public IfcTaskTime? TaskTime { get; set; }
-		public IfcTaskTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLabel? Status { get; set; }
+		public virtual IfcLabel? WorkMethod { get; set; }
+		public virtual IfcBoolean? IsMilestone { get; set; }
+		public virtual IfcInteger? Priority { get; set; }
+		public virtual IfcTaskTime? TaskTime { get; set; }
+		public virtual IfcTaskTypeEnum? PredefinedType { get; set; }
 		public IfcTask() : base()
 		{
 		}
@@ -29217,23 +29555,23 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTaskTime : IfcSchedulingTime
 	{
-		public IfcTaskDurationEnum? DurationType { get; set; }
-		public IfcDuration? ScheduleDuration { get; set; }
-		public IfcDateTime? ScheduleStart { get; set; }
-		public IfcDateTime? ScheduleFinish { get; set; }
-		public IfcDateTime? EarlyStart { get; set; }
-		public IfcDateTime? EarlyFinish { get; set; }
-		public IfcDateTime? LateStart { get; set; }
-		public IfcDateTime? LateFinish { get; set; }
-		public IfcDuration? FreeFloat { get; set; }
-		public IfcDuration? TotalFloat { get; set; }
-		public IfcBoolean? IsCritical { get; set; }
-		public IfcDateTime? StatusTime { get; set; }
-		public IfcDuration? ActualDuration { get; set; }
-		public IfcDateTime? ActualStart { get; set; }
-		public IfcDateTime? ActualFinish { get; set; }
-		public IfcDuration? RemainingTime { get; set; }
-		public IfcPositiveRatioMeasure? Completion { get; set; }
+		public virtual IfcTaskDurationEnum? DurationType { get; set; }
+		public virtual IfcDuration? ScheduleDuration { get; set; }
+		public virtual IfcDateTime? ScheduleStart { get; set; }
+		public virtual IfcDateTime? ScheduleFinish { get; set; }
+		public virtual IfcDateTime? EarlyStart { get; set; }
+		public virtual IfcDateTime? EarlyFinish { get; set; }
+		public virtual IfcDateTime? LateStart { get; set; }
+		public virtual IfcDateTime? LateFinish { get; set; }
+		public virtual IfcDuration? FreeFloat { get; set; }
+		public virtual IfcDuration? TotalFloat { get; set; }
+		public virtual IfcBoolean? IsCritical { get; set; }
+		public virtual IfcDateTime? StatusTime { get; set; }
+		public virtual IfcDuration? ActualDuration { get; set; }
+		public virtual IfcDateTime? ActualStart { get; set; }
+		public virtual IfcDateTime? ActualFinish { get; set; }
+		public virtual IfcDuration? RemainingTime { get; set; }
+		public virtual IfcPositiveRatioMeasure? Completion { get; set; }
 		public IfcTaskTime() : base()
 		{
 		}
@@ -29267,7 +29605,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTaskTimeRecurring : IfcTaskTime
 	{
-		public IfcRecurrencePattern? Recurrence { get; set; }
+		public virtual IfcRecurrencePattern? Recurrence { get; set; }
 		public IfcTaskTimeRecurring() : base()
 		{
 		}
@@ -29288,8 +29626,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTaskType : IfcTypeProcess
 	{
-		public IfcTaskTypeEnum? PredefinedType { get; set; }
-		public IfcLabel? WorkMethod { get; set; }
+		public virtual IfcTaskTypeEnum? PredefinedType { get; set; }
+		public virtual IfcLabel? WorkMethod { get; set; }
 		public IfcTaskType() : base()
 		{
 		}
@@ -29320,12 +29658,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTelecomAddress : IfcAddress
 	{
-		public List<IfcLabel>? TelephoneNumbers { get; set; }
-		public List<IfcLabel>? FacsimileNumbers { get; set; }
-		public IfcLabel? PagerNumber { get; set; }
-		public List<IfcLabel>? ElectronicMailAddresses { get; set; }
-		public IfcURIReference? WWWHomePageURL { get; set; }
-		public List<IfcURIReference>? MessagingIDs { get; set; }
+		public virtual List<IfcLabel>? TelephoneNumbers { get; set; }
+		public virtual List<IfcLabel>? FacsimileNumbers { get; set; }
+		public virtual IfcLabel? PagerNumber { get; set; }
+		public virtual List<IfcLabel>? ElectronicMailAddresses { get; set; }
+		public virtual IfcURIReference? WWWHomePageURL { get; set; }
+		public virtual List<IfcURIReference>? MessagingIDs { get; set; }
 		public IfcTelecomAddress() : base()
 		{
 		}
@@ -29361,14 +29699,14 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTendon : IfcReinforcingElement
 	{
-		public IfcTendonTypeEnum? PredefinedType { get; set; }
-		public IfcPositiveLengthMeasure? NominalDiameter { get; set; }
-		public IfcAreaMeasure? CrossSectionArea { get; set; }
-		public IfcForceMeasure? TensionForce { get; set; }
-		public IfcPressureMeasure? PreStress { get; set; }
-		public IfcNormalisedRatioMeasure? FrictionCoefficient { get; set; }
-		public IfcPositiveLengthMeasure? AnchorageSlip { get; set; }
-		public IfcPositiveLengthMeasure? MinCurvatureRadius { get; set; }
+		public virtual IfcTendonTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPositiveLengthMeasure? NominalDiameter { get; set; }
+		public virtual IfcAreaMeasure? CrossSectionArea { get; set; }
+		public virtual IfcForceMeasure? TensionForce { get; set; }
+		public virtual IfcPressureMeasure? PreStress { get; set; }
+		public virtual IfcNormalisedRatioMeasure? FrictionCoefficient { get; set; }
+		public virtual IfcPositiveLengthMeasure? AnchorageSlip { get; set; }
+		public virtual IfcPositiveLengthMeasure? MinCurvatureRadius { get; set; }
 		public IfcTendon() : base()
 		{
 		}
@@ -29399,7 +29737,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTendonAnchor : IfcReinforcingElement
 	{
-		public IfcTendonAnchorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTendonAnchorTypeEnum? PredefinedType { get; set; }
 		public IfcTendonAnchor() : base()
 		{
 		}
@@ -29420,7 +29758,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTendonAnchorType : IfcReinforcingElementType
 	{
-		public IfcTendonAnchorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTendonAnchorTypeEnum? PredefinedType { get; set; }
 		public IfcTendonAnchorType() : base()
 		{
 		}
@@ -29444,7 +29782,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTendonConduit : IfcReinforcingElement
 	{
-		public IfcTendonConduitTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTendonConduitTypeEnum? PredefinedType { get; set; }
 		public IfcTendonConduit() : base()
 		{
 		}
@@ -29465,7 +29803,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTendonConduitType : IfcReinforcingElementType
 	{
-		public IfcTendonConduitTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTendonConduitTypeEnum? PredefinedType { get; set; }
 		public IfcTendonConduitType() : base()
 		{
 		}
@@ -29489,10 +29827,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTendonType : IfcReinforcingElementType
 	{
-		public IfcTendonTypeEnum? PredefinedType { get; set; }
-		public IfcPositiveLengthMeasure? NominalDiameter { get; set; }
-		public IfcAreaMeasure? CrossSectionArea { get; set; }
-		public IfcPositiveLengthMeasure? SheathDiameter { get; set; }
+		public virtual IfcTendonTypeEnum? PredefinedType { get; set; }
+		public virtual IfcPositiveLengthMeasure? NominalDiameter { get; set; }
+		public virtual IfcAreaMeasure? CrossSectionArea { get; set; }
+		public virtual IfcPositiveLengthMeasure? SheathDiameter { get; set; }
 		public IfcTendonType() : base()
 		{
 		}
@@ -29521,11 +29859,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcTessellatedFaceSet : IfcTessellatedItem, IfcBooleanOperand
 	{
-		public IfcCartesianPointList3D? Coordinates { get; set; }
+		public virtual IfcCartesianPointList3D? Coordinates { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		//TODO INVERSE
+		public List<IfcIndexedColourMap>? HasColours => Model?.GetItems<IfcIndexedColourMap>().Where(x => x.MappedTo != null && x.MappedTo == this).ToList();
 		//TODO INVERSE
+		public List<IfcIndexedTextureMap>? HasTextures => Model?.GetItems<IfcIndexedTextureMap>().Where(x => x.MappedTo != null && x.MappedTo == this).ToList();
 		public IfcTessellatedFaceSet() : base()
 		{
 		}
@@ -29562,9 +29902,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTextLiteral : IfcGeometricRepresentationItem
 	{
-		public IfcPresentableText? Literal { get; set; }
-		public IfcAxis2Placement? Placement { get; set; }
-		public IfcTextPath? Path { get; set; }
+		public virtual IfcPresentableText? Literal { get; set; }
+		public virtual IfcAxis2Placement? Placement { get; set; }
+		public virtual IfcTextPath? Path { get; set; }
 		public IfcTextLiteral() : base()
 		{
 		}
@@ -29587,8 +29927,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTextLiteralWithExtent : IfcTextLiteral
 	{
-		public IfcPlanarExtent? Extent { get; set; }
-		public IfcBoxAlignment? BoxAlignment { get; set; }
+		public virtual IfcPlanarExtent? Extent { get; set; }
+		public virtual IfcBoxAlignment? BoxAlignment { get; set; }
 		public IfcTextLiteralWithExtent() : base()
 		{
 		}
@@ -29610,10 +29950,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTextStyle : IfcPresentationStyle
 	{
-		public IfcTextStyleForDefinedFont? TextCharacterAppearance { get; set; }
-		public IfcTextStyleTextModel? TextStyle { get; set; }
-		public IfcTextFontSelect? TextFontStyle { get; set; }
-		public IfcBoolean? ModelOrDraughting { get; set; }
+		public virtual IfcTextStyleForDefinedFont? TextCharacterAppearance { get; set; }
+		public virtual IfcTextStyleTextModel? TextStyle { get; set; }
+		public virtual IfcTextFontSelect? TextFontStyle { get; set; }
+		public virtual IfcBoolean? ModelOrDraughting { get; set; }
 		public IfcTextStyle() : base()
 		{
 		}
@@ -29641,11 +29981,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTextStyleFontModel : IfcPreDefinedTextFont
 	{
-		public List<IfcTextFontName>? FontFamily { get; set; }
-		public IfcFontStyle? FontStyle { get; set; }
-		public IfcFontVariant? FontVariant { get; set; }
-		public IfcFontWeight? FontWeight { get; set; }
-		public IfcSizeSelect? FontSize { get; set; }
+		public virtual List<IfcTextFontName>? FontFamily { get; set; }
+		public virtual IfcFontStyle? FontStyle { get; set; }
+		public virtual IfcFontVariant? FontVariant { get; set; }
+		public virtual IfcFontWeight? FontWeight { get; set; }
+		public virtual IfcSizeSelect? FontSize { get; set; }
 		public IfcTextStyleFontModel() : base()
 		{
 		}
@@ -29668,8 +30008,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTextStyleForDefinedFont : IfcPresentationItem
 	{
-		public IfcColour? Colour { get; set; }
-		public IfcColour? BackgroundColour { get; set; }
+		public virtual IfcColour? Colour { get; set; }
+		public virtual IfcColour? BackgroundColour { get; set; }
 		public IfcTextStyleForDefinedFont() : base()
 		{
 		}
@@ -29694,13 +30034,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTextStyleTextModel : IfcPresentationItem
 	{
-		public IfcSizeSelect? TextIndent { get; set; }
-		public IfcTextAlignment? TextAlign { get; set; }
-		public IfcTextDecoration? TextDecoration { get; set; }
-		public IfcSizeSelect? LetterSpacing { get; set; }
-		public IfcSizeSelect? WordSpacing { get; set; }
-		public IfcTextTransformation? TextTransform { get; set; }
-		public IfcSizeSelect? LineHeight { get; set; }
+		public virtual IfcSizeSelect? TextIndent { get; set; }
+		public virtual IfcTextAlignment? TextAlign { get; set; }
+		public virtual IfcTextDecoration? TextDecoration { get; set; }
+		public virtual IfcSizeSelect? LetterSpacing { get; set; }
+		public virtual IfcSizeSelect? WordSpacing { get; set; }
+		public virtual IfcTextTransformation? TextTransform { get; set; }
+		public virtual IfcSizeSelect? LineHeight { get; set; }
 		public IfcTextStyleTextModel() : base()
 		{
 		}
@@ -29728,7 +30068,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcTextureCoordinate : IfcPresentationItem
 	{
-		public List<IfcSurfaceTexture>? Maps { get; set; }
+		public virtual List<IfcSurfaceTexture>? Maps { get; set; }
 		public IfcTextureCoordinate() : base()
 		{
 		}
@@ -29747,8 +30087,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTextureCoordinateGenerator : IfcTextureCoordinate
 	{
-		public IfcLabel? Mode { get; set; }
-		public List<IfcReal>? Parameter { get; set; }
+		public virtual IfcLabel? Mode { get; set; }
+		public virtual List<IfcReal>? Parameter { get; set; }
 		public IfcTextureCoordinateGenerator() : base()
 		{
 		}
@@ -29771,9 +30111,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTextureCoordinateIndices : Entity
 	{
-		public List<IfcPositiveInteger>? TexCoordIndex { get; set; }
-		public IfcIndexedPolygonalFace? TexCoordsOf { get; set; }
+		public virtual List<IfcPositiveInteger>? TexCoordIndex { get; set; }
+		public virtual IfcIndexedPolygonalFace? TexCoordsOf { get; set; }
 		//TODO INVERSE
+		public IfcIndexedPolygonalTextureMap? ToTexMap => Model?.GetItems<IfcIndexedPolygonalTextureMap>().FirstOrDefault(x => x.TexCoordIndices != null && x.TexCoordIndices.Contains(this));
 		public IfcTextureCoordinateIndices() : base()
 		{
 		}
@@ -29809,8 +30150,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTextureMap : IfcTextureCoordinate
 	{
-		public List<IfcTextureVertex>? Vertices { get; set; }
-		public IfcFace? MappedTo { get; set; }
+		public virtual List<IfcTextureVertex>? Vertices { get; set; }
+		public virtual IfcFace? MappedTo { get; set; }
 		public IfcTextureMap() : base()
 		{
 		}
@@ -29829,7 +30170,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTextureVertex : IfcPresentationItem
 	{
-		public List<IfcParameterValue>? Coordinates { get; set; }
+		public virtual List<IfcParameterValue>? Coordinates { get; set; }
 		public IfcTextureVertex() : base()
 		{
 		}
@@ -29847,7 +30188,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTextureVertexList : IfcPresentationItem
 	{
-		public List<List<IfcParameterValue >>? TexCoordsList { get; set; }
+		public virtual List<List<IfcParameterValue >>? TexCoordsList { get; set; }
 		public IfcTextureVertexList() : base()
 		{
 		}
@@ -29868,10 +30209,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcThirdOrderPolynomialSpiral : IfcSpiral
 	{
-		public IfcLengthMeasure? CubicTerm { get; set; }
-		public IfcLengthMeasure? QuadraticTerm { get; set; }
-		public IfcLengthMeasure? LinearTerm { get; set; }
-		public IfcLengthMeasure? ConstantTerm { get; set; }
+		public virtual IfcLengthMeasure? CubicTerm { get; set; }
+		public virtual IfcLengthMeasure? QuadraticTerm { get; set; }
+		public virtual IfcLengthMeasure? LinearTerm { get; set; }
+		public virtual IfcLengthMeasure? ConstantTerm { get; set; }
 		public IfcThirdOrderPolynomialSpiral() : base()
 		{
 		}
@@ -29892,8 +30233,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTimePeriod : Entity
 	{
-		public IfcTime? StartTime { get; set; }
-		public IfcTime? EndTime { get; set; }
+		public virtual IfcTime? StartTime { get; set; }
+		public virtual IfcTime? EndTime { get; set; }
 		public IfcTimePeriod() : base()
 		{
 		}
@@ -29923,15 +30264,16 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcTimeSeries : Entity, IfcMetricValueSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect
 	{
-		public IfcLabel? Name { get; set; }
-		public IfcText? Description { get; set; }
-		public IfcDateTime? StartTime { get; set; }
-		public IfcDateTime? EndTime { get; set; }
-		public IfcTimeSeriesDataTypeEnum? TimeSeriesDataType { get; set; }
-		public IfcDataOriginEnum? DataOrigin { get; set; }
-		public IfcLabel? UserDefinedDataOrigin { get; set; }
-		public IfcUnit? Unit { get; set; }
+		public virtual IfcLabel? Name { get; set; }
+		public virtual IfcText? Description { get; set; }
+		public virtual IfcDateTime? StartTime { get; set; }
+		public virtual IfcDateTime? EndTime { get; set; }
+		public virtual IfcTimeSeriesDataTypeEnum? TimeSeriesDataType { get; set; }
+		public virtual IfcDataOriginEnum? DataOrigin { get; set; }
+		public virtual IfcLabel? UserDefinedDataOrigin { get; set; }
+		public virtual IfcUnit? Unit { get; set; }
 		//TODO INVERSE
+		public List<IfcExternalReferenceRelationship>? HasExternalReference => Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();
 		public IfcTimeSeries() : base()
 		{
 		}
@@ -29955,7 +30297,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTimeSeriesValue : Entity
 	{
-		public List<IfcValue>? ListValues { get; set; }
+		public virtual List<IfcValue>? ListValues { get; set; }
 		public IfcTimeSeriesValue() : base()
 		{
 		}
@@ -30019,8 +30361,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcToroidalSurface : IfcElementarySurface
 	{
-		public IfcPositiveLengthMeasure? MajorRadius { get; set; }
-		public IfcPositiveLengthMeasure? MinorRadius { get; set; }
+		public virtual IfcPositiveLengthMeasure? MajorRadius { get; set; }
+		public virtual IfcPositiveLengthMeasure? MinorRadius { get; set; }
 		public IfcToroidalSurface() : base()
 		{
 		}
@@ -30045,7 +30387,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTrackElement : IfcBuiltElement
 	{
-		public IfcTrackElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTrackElementTypeEnum? PredefinedType { get; set; }
 		public IfcTrackElement() : base()
 		{
 		}
@@ -30066,7 +30408,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTrackElementType : IfcBuiltElementType
 	{
-		public IfcTrackElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTrackElementTypeEnum? PredefinedType { get; set; }
 		public IfcTrackElementType() : base()
 		{
 		}
@@ -30090,7 +30432,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTransformer : IfcEnergyConversionDevice
 	{
-		public IfcTransformerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTransformerTypeEnum? PredefinedType { get; set; }
 		public IfcTransformer() : base()
 		{
 		}
@@ -30111,7 +30453,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTransformerType : IfcEnergyConversionDeviceType
 	{
-		public IfcTransformerTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTransformerTypeEnum? PredefinedType { get; set; }
 		public IfcTransformerType() : base()
 		{
 		}
@@ -30135,7 +30477,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTransportElement : IfcTransportationDevice
 	{
-		public IfcTransportElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTransportElementTypeEnum? PredefinedType { get; set; }
 		public IfcTransportElement() : base()
 		{
 		}
@@ -30156,7 +30498,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTransportElementType : IfcTransportationDeviceType
 	{
-		public IfcTransportElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTransportElementTypeEnum? PredefinedType { get; set; }
 		public IfcTransportElementType() : base()
 		{
 		}
@@ -30213,10 +30555,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTrapeziumProfileDef : IfcParameterizedProfileDef
 	{
-		public IfcPositiveLengthMeasure? BottomXDim { get; set; }
-		public IfcPositiveLengthMeasure? TopXDim { get; set; }
-		public IfcPositiveLengthMeasure? YDim { get; set; }
-		public IfcLengthMeasure? TopXOffset { get; set; }
+		public virtual IfcPositiveLengthMeasure? BottomXDim { get; set; }
+		public virtual IfcPositiveLengthMeasure? TopXDim { get; set; }
+		public virtual IfcPositiveLengthMeasure? YDim { get; set; }
+		public virtual IfcLengthMeasure? TopXOffset { get; set; }
 		public IfcTrapeziumProfileDef() : base()
 		{
 		}
@@ -30244,10 +30586,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTriangulatedFaceSet : IfcTessellatedFaceSet
 	{
-		public List<List<IfcParameterValue >>? Normals { get; set; }
-		public IfcBoolean? Closed { get; set; }
-		public List<List<IfcPositiveInteger >>? CoordIndex { get; set; }
-		public List<IfcPositiveInteger>? PnIndex { get; set; }
+		public virtual List<List<IfcParameterValue >>? Normals { get; set; }
+		public virtual IfcBoolean? Closed { get; set; }
+		public virtual List<List<IfcPositiveInteger >>? CoordIndex { get; set; }
+		public virtual List<IfcPositiveInteger>? PnIndex { get; set; }
 		//TODO DERIVE
 		public virtual IfcInteger? NumberOfTriangles {get {return null;}}
 		public IfcTriangulatedFaceSet() : base()
@@ -30272,7 +30614,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTriangulatedIrregularNetwork : IfcTriangulatedFaceSet
 	{
-		public List<IfcInteger>? Flags { get; set; }
+		public virtual List<IfcInteger>? Flags { get; set; }
 		public IfcTriangulatedIrregularNetwork() : base()
 		{
 		}
@@ -30298,11 +30640,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTrimmedCurve : IfcBoundedCurve
 	{
-		public IfcCurve? BasisCurve { get; set; }
-		public List<IfcTrimmingSelect>? Trim1 { get; set; }
-		public List<IfcTrimmingSelect>? Trim2 { get; set; }
-		public IfcBoolean? SenseAgreement { get; set; }
-		public IfcTrimmingPreference? MasterRepresentation { get; set; }
+		public virtual IfcCurve? BasisCurve { get; set; }
+		public virtual List<IfcTrimmingSelect>? Trim1 { get; set; }
+		public virtual List<IfcTrimmingSelect>? Trim2 { get; set; }
+		public virtual IfcBoolean? SenseAgreement { get; set; }
+		public virtual IfcTrimmingPreference? MasterRepresentation { get; set; }
 		public IfcTrimmedCurve() : base()
 		{
 		}
@@ -30330,7 +30672,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTubeBundle : IfcEnergyConversionDevice
 	{
-		public IfcTubeBundleTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTubeBundleTypeEnum? PredefinedType { get; set; }
 		public IfcTubeBundle() : base()
 		{
 		}
@@ -30351,7 +30693,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTubeBundleType : IfcEnergyConversionDeviceType
 	{
-		public IfcTubeBundleTypeEnum? PredefinedType { get; set; }
+		public virtual IfcTubeBundleTypeEnum? PredefinedType { get; set; }
 		public IfcTubeBundleType() : base()
 		{
 		}
@@ -30379,9 +30721,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcTypeObject : IfcObjectDefinition
 	{
-		public IfcIdentifier? ApplicableOccurrence { get; set; }
-		public List<IfcPropertySetDefinition>? HasPropertySets { get; set; }
+		public virtual IfcIdentifier? ApplicableOccurrence { get; set; }
+		public virtual List<IfcPropertySetDefinition>? HasPropertySets { get; set; }
 		//TODO INVERSE
+		public List<IfcRelDefinesByType>? Types => Model?.GetItems<IfcRelDefinesByType>().Where(x => x.RelatingType != null && x.RelatingType == this).ToList();
 		public IfcTypeObject() : base()
 		{
 		}
@@ -30408,10 +30751,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcTypeProcess : IfcTypeObject, IfcProcessSelect
 	{
-		public IfcIdentifier? Identification { get; set; }
-		public IfcText? LongDescription { get; set; }
-		public IfcLabel? ProcessType { get; set; }
+		public virtual IfcIdentifier? Identification { get; set; }
+		public virtual IfcText? LongDescription { get; set; }
+		public virtual IfcLabel? ProcessType { get; set; }
 		//TODO INVERSE
+		public List<IfcRelAssignsToProcess>? OperatesOn => Model?.GetItems<IfcRelAssignsToProcess>().Where(x => x.RelatingProcess != null && x.RelatingProcess == this).ToList();
 		public IfcTypeProcess() : base()
 		{
 		}
@@ -30443,6 +30787,7 @@ namespace IFC.IFC4x3
 	public class IfcTypeProduct : IfcTypeObject, IfcProductSelect
 	{
 		//TODO INVERSE
+		public List<IfcRelAssignsToProduct>? ReferencedBy => Model?.GetItems<IfcRelAssignsToProduct>().Where(x => x.RelatingProduct != null && x.RelatingProduct == this).ToList();
 		public IfcTypeProduct() : base()
 		{
 		}
@@ -30465,10 +30810,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcTypeResource : IfcTypeObject, IfcResourceSelect
 	{
-		public IfcIdentifier? Identification { get; set; }
-		public IfcText? LongDescription { get; set; }
-		public IfcLabel? ResourceType { get; set; }
+		public virtual IfcIdentifier? Identification { get; set; }
+		public virtual IfcText? LongDescription { get; set; }
+		public virtual IfcLabel? ResourceType { get; set; }
+		public virtual List<IfcAppliedValue>? BaseCosts { get; set;  }
+		public virtual IfcPhysicalQuantity? BaseQuantity { get; set;  }
 		//TODO INVERSE
+		public List<IfcRelAssignsToResource>? ResourceOf => Model?.GetItems<IfcRelAssignsToResource>().Where(x => x.RelatingResource != null && x.RelatingResource == this).ToList();
 		public IfcTypeResource() : base()
 		{
 		}
@@ -30497,13 +30845,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcUShapeProfileDef : IfcParameterizedProfileDef
 	{
-		public IfcPositiveLengthMeasure? Depth { get; set; }
-		public IfcPositiveLengthMeasure? FlangeWidth { get; set; }
-		public IfcPositiveLengthMeasure? WebThickness { get; set; }
-		public IfcPositiveLengthMeasure? FlangeThickness { get; set; }
-		public IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure? EdgeRadius { get; set; }
-		public IfcPlaneAngleMeasure? FlangeSlope { get; set; }
+		public virtual IfcPositiveLengthMeasure? Depth { get; set; }
+		public virtual IfcPositiveLengthMeasure? FlangeWidth { get; set; }
+		public virtual IfcPositiveLengthMeasure? WebThickness { get; set; }
+		public virtual IfcPositiveLengthMeasure? FlangeThickness { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? EdgeRadius { get; set; }
+		public virtual IfcPlaneAngleMeasure? FlangeSlope { get; set; }
 		public IfcUShapeProfileDef() : base()
 		{
 		}
@@ -30528,7 +30876,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcUnitAssignment : Entity
 	{
-		public List<IfcUnit>? Units { get; set; }
+		public virtual List<IfcUnit>? Units { get; set; }
 		public IfcUnitAssignment() : base()
 		{
 		}
@@ -30552,7 +30900,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcUnitaryControlElement : IfcDistributionControlElement
 	{
-		public IfcUnitaryControlElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcUnitaryControlElementTypeEnum? PredefinedType { get; set; }
 		public IfcUnitaryControlElement() : base()
 		{
 		}
@@ -30573,7 +30921,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcUnitaryControlElementType : IfcDistributionControlElementType
 	{
-		public IfcUnitaryControlElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcUnitaryControlElementTypeEnum? PredefinedType { get; set; }
 		public IfcUnitaryControlElementType() : base()
 		{
 		}
@@ -30597,7 +30945,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcUnitaryEquipment : IfcEnergyConversionDevice
 	{
-		public IfcUnitaryEquipmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcUnitaryEquipmentTypeEnum? PredefinedType { get; set; }
 		public IfcUnitaryEquipment() : base()
 		{
 		}
@@ -30618,7 +30966,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcUnitaryEquipmentType : IfcEnergyConversionDeviceType
 	{
-		public IfcUnitaryEquipmentTypeEnum? PredefinedType { get; set; }
+		public virtual IfcUnitaryEquipmentTypeEnum? PredefinedType { get; set; }
 		public IfcUnitaryEquipmentType() : base()
 		{
 		}
@@ -30642,7 +30990,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcValve : IfcFlowController
 	{
-		public IfcValveTypeEnum? PredefinedType { get; set; }
+		public virtual IfcValveTypeEnum? PredefinedType { get; set; }
 		public IfcValve() : base()
 		{
 		}
@@ -30663,7 +31011,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcValveType : IfcFlowControllerType
 	{
-		public IfcValveTypeEnum? PredefinedType { get; set; }
+		public virtual IfcValveTypeEnum? PredefinedType { get; set; }
 		public IfcValveType() : base()
 		{
 		}
@@ -30686,8 +31034,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcVector : IfcGeometricRepresentationItem, IfcHatchLineDistanceSelect, IfcVectorOrDirection
 	{
-		public IfcDirection? Orientation { get; set; }
-		public IfcLengthMeasure? Magnitude { get; set; }
+		public virtual IfcDirection? Orientation { get; set; }
+		public virtual IfcLengthMeasure? Magnitude { get; set; }
 		//TODO DERIVE
 		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcVector() : base()
@@ -30714,7 +31062,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcVehicle : IfcTransportationDevice
 	{
-		public IfcVehicleTypeEnum? PredefinedType { get; set; }
+		public virtual IfcVehicleTypeEnum? PredefinedType { get; set; }
 		public IfcVehicle() : base()
 		{
 		}
@@ -30735,7 +31083,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcVehicleType : IfcTransportationDeviceType
 	{
-		public IfcVehicleTypeEnum? PredefinedType { get; set; }
+		public virtual IfcVehicleTypeEnum? PredefinedType { get; set; }
 		public IfcVehicleType() : base()
 		{
 		}
@@ -30767,7 +31115,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcVertexLoop : IfcLoop
 	{
-		public IfcVertex? LoopVertex { get; set; }
+		public virtual IfcVertex? LoopVertex { get; set; }
 		public IfcVertexLoop() : base()
 		{
 		}
@@ -30785,7 +31133,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcVertexPoint : IfcVertex, IfcPointOrVertexPoint
 	{
-		public IfcPoint? VertexGeometry { get; set; }
+		public virtual IfcPoint? VertexGeometry { get; set; }
 		public IfcVertexPoint() : base()
 		{
 		}
@@ -30809,7 +31157,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcVibrationDamper : IfcElementComponent
 	{
-		public IfcVibrationDamperTypeEnum? PredefinedType { get; set; }
+		public virtual IfcVibrationDamperTypeEnum? PredefinedType { get; set; }
 		public IfcVibrationDamper() : base()
 		{
 		}
@@ -30830,7 +31178,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcVibrationDamperType : IfcElementComponentType
 	{
-		public IfcVibrationDamperTypeEnum? PredefinedType { get; set; }
+		public virtual IfcVibrationDamperTypeEnum? PredefinedType { get; set; }
 		public IfcVibrationDamperType() : base()
 		{
 		}
@@ -30854,7 +31202,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcVibrationIsolator : IfcElementComponent
 	{
-		public IfcVibrationIsolatorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcVibrationIsolatorTypeEnum? PredefinedType { get; set; }
 		public IfcVibrationIsolator() : base()
 		{
 		}
@@ -30875,7 +31223,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcVibrationIsolatorType : IfcElementComponentType
 	{
-		public IfcVibrationIsolatorTypeEnum? PredefinedType { get; set; }
+		public virtual IfcVibrationIsolatorTypeEnum? PredefinedType { get; set; }
 		public IfcVibrationIsolatorType() : base()
 		{
 		}
@@ -30897,7 +31245,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcVirtualElement : IfcElement
 	{
-		public IfcVirtualElementTypeEnum? PredefinedType { get; set; }
+		public virtual IfcVirtualElementTypeEnum? PredefinedType { get; set; }
 		public IfcVirtualElement() : base()
 		{
 		}
@@ -30932,7 +31280,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcVoidingFeature : IfcFeatureElementSubtraction
 	{
-		public IfcVoidingFeatureTypeEnum? PredefinedType { get; set; }
+		public virtual IfcVoidingFeatureTypeEnum? PredefinedType { get; set; }
 		public IfcVoidingFeature() : base()
 		{
 		}
@@ -30958,7 +31306,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWall : IfcBuiltElement
 	{
-		public IfcWallTypeEnum? PredefinedType { get; set; }
+		public virtual IfcWallTypeEnum? PredefinedType { get; set; }
 		public IfcWall() : base()
 		{
 		}
@@ -30999,7 +31347,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWallType : IfcBuiltElementType
 	{
-		public IfcWallTypeEnum? PredefinedType { get; set; }
+		public virtual IfcWallTypeEnum? PredefinedType { get; set; }
 		public IfcWallType() : base()
 		{
 		}
@@ -31023,7 +31371,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWasteTerminal : IfcFlowTerminal
 	{
-		public IfcWasteTerminalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcWasteTerminalTypeEnum? PredefinedType { get; set; }
 		public IfcWasteTerminal() : base()
 		{
 		}
@@ -31044,7 +31392,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWasteTerminalType : IfcFlowTerminalType
 	{
-		public IfcWasteTerminalTypeEnum? PredefinedType { get; set; }
+		public virtual IfcWasteTerminalTypeEnum? PredefinedType { get; set; }
 		public IfcWasteTerminalType() : base()
 		{
 		}
@@ -31062,8 +31410,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWellKnownText : Entity
 	{
-		public IfcWellKnownTextLiteral? WellKnownText { get; set; }
-		public IfcCoordinateReferenceSystem? CoordinateReferenceSystem { get; set; }
+		public virtual IfcWellKnownTextLiteral? WellKnownText { get; set; }
+		public virtual IfcCoordinateReferenceSystem? CoordinateReferenceSystem { get; set; }
 		public IfcWellKnownText() : base()
 		{
 		}
@@ -31092,11 +31440,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWindow : IfcBuiltElement
 	{
-		public IfcPositiveLengthMeasure? OverallHeight { get; set; }
-		public IfcPositiveLengthMeasure? OverallWidth { get; set; }
-		public IfcWindowTypeEnum? PredefinedType { get; set; }
-		public IfcWindowTypePartitioningEnum? PartitioningType { get; set; }
-		public IfcLabel? UserDefinedPartitioningType { get; set; }
+		public virtual IfcPositiveLengthMeasure? OverallHeight { get; set; }
+		public virtual IfcPositiveLengthMeasure? OverallWidth { get; set; }
+		public virtual IfcWindowTypeEnum? PredefinedType { get; set; }
+		public virtual IfcWindowTypePartitioningEnum? PartitioningType { get; set; }
+		public virtual IfcLabel? UserDefinedPartitioningType { get; set; }
 		public IfcWindow() : base()
 		{
 		}
@@ -31136,18 +31484,18 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWindowLiningProperties : IfcPreDefinedPropertySet
 	{
-		public IfcPositiveLengthMeasure? LiningDepth { get; set; }
-		public IfcNonNegativeLengthMeasure? LiningThickness { get; set; }
-		public IfcNonNegativeLengthMeasure? TransomThickness { get; set; }
-		public IfcNonNegativeLengthMeasure? MullionThickness { get; set; }
-		public IfcNormalisedRatioMeasure? FirstTransomOffset { get; set; }
-		public IfcNormalisedRatioMeasure? SecondTransomOffset { get; set; }
-		public IfcNormalisedRatioMeasure? FirstMullionOffset { get; set; }
-		public IfcNormalisedRatioMeasure? SecondMullionOffset { get; set; }
-		public IfcShapeAspect? ShapeAspectStyle { get; set; }
-		public IfcLengthMeasure? LiningOffset { get; set; }
-		public IfcLengthMeasure? LiningToPanelOffsetX { get; set; }
-		public IfcLengthMeasure? LiningToPanelOffsetY { get; set; }
+		public virtual IfcPositiveLengthMeasure? LiningDepth { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? LiningThickness { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? TransomThickness { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? MullionThickness { get; set; }
+		public virtual IfcNormalisedRatioMeasure? FirstTransomOffset { get; set; }
+		public virtual IfcNormalisedRatioMeasure? SecondTransomOffset { get; set; }
+		public virtual IfcNormalisedRatioMeasure? FirstMullionOffset { get; set; }
+		public virtual IfcNormalisedRatioMeasure? SecondMullionOffset { get; set; }
+		public virtual IfcShapeAspect? ShapeAspectStyle { get; set; }
+		public virtual IfcLengthMeasure? LiningOffset { get; set; }
+		public virtual IfcLengthMeasure? LiningToPanelOffsetX { get; set; }
+		public virtual IfcLengthMeasure? LiningToPanelOffsetY { get; set; }
 		public IfcWindowLiningProperties() : base()
 		{
 		}
@@ -31184,11 +31532,11 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWindowPanelProperties : IfcPreDefinedPropertySet
 	{
-		public IfcWindowPanelOperationEnum? OperationType { get; set; }
-		public IfcWindowPanelPositionEnum? PanelPosition { get; set; }
-		public IfcPositiveLengthMeasure? FrameDepth { get; set; }
-		public IfcPositiveLengthMeasure? FrameThickness { get; set; }
-		public IfcShapeAspect? ShapeAspectStyle { get; set; }
+		public virtual IfcWindowPanelOperationEnum? OperationType { get; set; }
+		public virtual IfcWindowPanelPositionEnum? PanelPosition { get; set; }
+		public virtual IfcPositiveLengthMeasure? FrameDepth { get; set; }
+		public virtual IfcPositiveLengthMeasure? FrameThickness { get; set; }
+		public virtual IfcShapeAspect? ShapeAspectStyle { get; set; }
 		public IfcWindowPanelProperties() : base()
 		{
 		}
@@ -31216,10 +31564,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWindowType : IfcBuiltElementType
 	{
-		public IfcWindowTypeEnum? PredefinedType { get; set; }
-		public IfcWindowTypePartitioningEnum? PartitioningType { get; set; }
-		public IfcBoolean? ParameterTakesPrecedence { get; set; }
-		public IfcLabel? UserDefinedPartitioningType { get; set; }
+		public virtual IfcWindowTypeEnum? PredefinedType { get; set; }
+		public virtual IfcWindowTypePartitioningEnum? PartitioningType { get; set; }
+		public virtual IfcBoolean? ParameterTakesPrecedence { get; set; }
+		public virtual IfcLabel? UserDefinedPartitioningType { get; set; }
 		public IfcWindowType() : base()
 		{
 		}
@@ -31245,9 +31593,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWorkCalendar : IfcControl
 	{
-		public List<IfcWorkTime>? WorkingTimes { get; set; }
-		public List<IfcWorkTime>? ExceptionTimes { get; set; }
-		public IfcWorkCalendarTypeEnum? PredefinedType { get; set; }
+		public virtual List<IfcWorkTime>? WorkingTimes { get; set; }
+		public virtual List<IfcWorkTime>? ExceptionTimes { get; set; }
+		public virtual IfcWorkCalendarTypeEnum? PredefinedType { get; set; }
 		public IfcWorkCalendar() : base()
 		{
 		}
@@ -31276,13 +31624,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcWorkControl : IfcControl
 	{
-		public IfcDateTime? CreationDate { get; set; }
-		public List<IfcPerson>? Creators { get; set; }
-		public IfcLabel? Purpose { get; set; }
-		public IfcDuration? Duration { get; set; }
-		public IfcDuration? TotalFloat { get; set; }
-		public IfcDateTime? StartTime { get; set; }
-		public IfcDateTime? FinishTime { get; set; }
+		public virtual IfcDateTime? CreationDate { get; set; }
+		public virtual List<IfcPerson>? Creators { get; set; }
+		public virtual IfcLabel? Purpose { get; set; }
+		public virtual IfcDuration? Duration { get; set; }
+		public virtual IfcDuration? TotalFloat { get; set; }
+		public virtual IfcDateTime? StartTime { get; set; }
+		public virtual IfcDateTime? FinishTime { get; set; }
 		public IfcWorkControl() : base()
 		{
 		}
@@ -31309,7 +31657,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWorkPlan : IfcWorkControl
 	{
-		public IfcWorkPlanTypeEnum? PredefinedType { get; set; }
+		public virtual IfcWorkPlanTypeEnum? PredefinedType { get; set; }
 		public IfcWorkPlan() : base()
 		{
 		}
@@ -31330,7 +31678,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWorkSchedule : IfcWorkControl
 	{
-		public IfcWorkScheduleTypeEnum? PredefinedType { get; set; }
+		public virtual IfcWorkScheduleTypeEnum? PredefinedType { get; set; }
 		public IfcWorkSchedule() : base()
 		{
 		}
@@ -31350,9 +31698,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcWorkTime : IfcSchedulingTime
 	{
-		public IfcRecurrencePattern? RecurrencePattern { get; set; }
-		public IfcDate? StartDate { get; set; }
-		public IfcDate? FinishDate { get; set; }
+		public virtual IfcRecurrencePattern? RecurrencePattern { get; set; }
+		public virtual IfcDate? StartDate { get; set; }
+		public virtual IfcDate? FinishDate { get; set; }
 		public IfcWorkTime() : base()
 		{
 		}
@@ -31379,12 +31727,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcZShapeProfileDef : IfcParameterizedProfileDef
 	{
-		public IfcPositiveLengthMeasure? Depth { get; set; }
-		public IfcPositiveLengthMeasure? FlangeWidth { get; set; }
-		public IfcPositiveLengthMeasure? WebThickness { get; set; }
-		public IfcPositiveLengthMeasure? FlangeThickness { get; set; }
-		public IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
-		public IfcNonNegativeLengthMeasure? EdgeRadius { get; set; }
+		public virtual IfcPositiveLengthMeasure? Depth { get; set; }
+		public virtual IfcPositiveLengthMeasure? FlangeWidth { get; set; }
+		public virtual IfcPositiveLengthMeasure? WebThickness { get; set; }
+		public virtual IfcPositiveLengthMeasure? FlangeThickness { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? FilletRadius { get; set; }
+		public virtual IfcNonNegativeLengthMeasure? EdgeRadius { get; set; }
 		public IfcZShapeProfileDef() : base()
 		{
 		}
@@ -31414,7 +31762,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcZone : IfcSystem
 	{
-		public IfcLabel? LongName { get; set; }
+		public virtual IfcLabel? LongName { get; set; }
 		public IfcZone() : base()
 		{
 		}

@@ -8,11 +8,11 @@ namespace IFCProjectCreator
 {
     public class IFCSelectType : IFCClass
     {
-        public List<IFCAttribute> Attributes;
+        public List<IFCSelectAttribute> SelectAttributes;
 
         public IFCSelectType(IFCDataSet dataSet, string version) : base(dataSet, version)
         {
-            Attributes = new List<IFCAttribute>();
+            SelectAttributes = new List<IFCSelectAttribute>();
         }
         public override void ReadEXP(StreamReader reader, string header)
         {
@@ -32,7 +32,15 @@ namespace IFCProjectCreator
             
             // constructor
             texts.Add("\t{");
-          
+            var parents = ParentSelects;
+            foreach (IFCAttribute attribute in SelectAttributes)
+            {
+                if(parents.FirstOrDefault(p => p.SelectAttributes.FirstOrDefault(e=>e.Name == attribute.Name) != null) == null)
+                {
+                    texts.AddRange(attribute.GetCSharpText());
+                }
+              
+            }
             texts.Add("\t}");
 
             return texts;

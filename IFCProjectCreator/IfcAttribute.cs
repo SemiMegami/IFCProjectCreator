@@ -14,13 +14,14 @@ namespace IFCProjectCreator
         public string Name { get; set; }
         public string TypeName { get; set; }
 
-
+        public bool isOverride { get; set; }
         public IFCAttribute()
         {
             Name = "";
             TypeName = "";
             AttributeType = IFCAttributeType.SINGLE;
             Aggregation = IFCAggregation.NONE;
+            isOverride = false;
         }
 
         public override string ToString()

@@ -25,11 +25,15 @@
             {
                 texts.Add("\t\tpublic static string " + enumValue + " { get {return \"." + enumValue +".\";} }"  );
             }
+
+            foreach (var attribute in AdditionalSelectAttibutes)
+            {
+                texts.AddRange(attribute.GetCSharpText());
+            }
             texts.Add("\t\tpublic string Value;");
             if(EnumValues.Count > 0)
             {
                 texts.Add("\t\tpublic " + Name + "() { Value = \"." + EnumValues[0] + ".\";}");
-                
             }
             else
             {

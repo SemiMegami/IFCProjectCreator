@@ -2,6 +2,9 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Data;
+using System.Linq;
+using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace IFCProjectCreator
 {
@@ -19,13 +22,13 @@ namespace IFCProjectCreator
         };
         public readonly Dictionary<string, string> CSharpBasicDataDefaultValue = new Dictionary<string, string>()
         {
-            { "REAL", "double" },
-            { "INTEGER", "int" },
-            { "NUMBER", "double" },
-            { "LOGICAL", "bool" },
-            { "BOOLEAN", "bool" },
-            { "BINARY", "int" },
-            { "STRING", "string" },
+            { "REAL", "0" },
+            { "INTEGER", "0" },
+            { "NUMBER", "0" },
+            { "LOGICAL", "false" },
+            { "BOOLEAN", "false" },
+            { "BINARY", "0" },
+            { "STRING", "\"\"" },
         };
 
         public List<IFCBasicType> BasicTypes { get; private set; }
@@ -69,48 +72,49 @@ namespace IFCProjectCreator
                         if (line != null)
                         {
                             line = line.Trim();
-                        }
-                        string[] words = line.Split(' ');
-  
-                        if (words.Length > 0)
-                        {
-                            IFCClass? item = null;
-                            switch (words[0])
+
+                            string[] words = line.Split(' ');
+
+                            if (words.Length > 0)
                             {
-                                case "TYPE":
-                                    if (line.Contains("ENUMERATION OF"))
-                                    {
-                                        item = new IFCEnumType(this, version);
-                                        EnumTypes.Add((IFCEnumType)item);
-                                    }
-                                    else if (line.Contains(" = SELECT"))
-                                    {
-                                        item = new IFCSelectType(this, version);
-                                        SelectTypes.Add((IFCSelectType)item);
-                                    }
-                                    else if (line.Contains("]"))
-                                    {
-                                        item = new IFCBasicTypeList(this, version);
-                                        BasicTypeLists.Add((IFCBasicTypeList)item);
-                                    }
-                                    else
-                                    {
-                                        item = new IFCBasicType(this, version);
-                                        BasicTypes.Add((IFCBasicType)item);
-                                    }
-                                    break;
-                                case "ENTITY":
-                                    item = new IFCEntity(this, version);
-                                    Entities.Add((IFCEntity)item);
-                                    break;
-                                case "FUNCTION":
-                                    item = new IFCFunction(this, version);
-                                    Functions.Add((IFCFunction)item);
-                                    break;
-                                default:
-                                    break;
+                                IFCClass? item = null;
+                                switch (words[0])
+                                {
+                                    case "TYPE":
+                                        if (line.Contains("ENUMERATION OF"))
+                                        {
+                                            item = new IFCEnumType(this, version);
+                                            EnumTypes.Add((IFCEnumType)item);
+                                        }
+                                        else if (line.Contains(" = SELECT"))
+                                        {
+                                            item = new IFCSelectType(this, version);
+                                            SelectTypes.Add((IFCSelectType)item);
+                                        }
+                                        else if (line.Contains("]"))
+                                        {
+                                            item = new IFCBasicTypeList(this, version);
+                                            BasicTypeLists.Add((IFCBasicTypeList)item);
+                                        }
+                                        else
+                                        {
+                                            item = new IFCBasicType(this, version);
+                                            BasicTypes.Add((IFCBasicType)item);
+                                        }
+                                        break;
+                                    case "ENTITY":
+                                        item = new IFCEntity(this, version);
+                                        Entities.Add((IFCEntity)item);
+                                        break;
+                                    case "FUNCTION":
+                                        item = new IFCFunction(this, version);
+                                        Functions.Add((IFCFunction)item);
+                                        break;
+                                    default:
+                                        break;
+                                }
+                                item?.ReadEXP(reader, line);
                             }
-                            item?.ReadEXP(reader, line);
                         }
                     }
                     reader.Close();
@@ -118,6 +122,7 @@ namespace IFCProjectCreator
             }
             SetParent();
             SetAtribute();
+            
         }
 
         /// <summary>
@@ -127,7 +132,7 @@ namespace IFCProjectCreator
         {
             List<IFCClass> items = GetItems();
 
-            foreach(var selectType in SelectTypes)
+            foreach (var selectType in SelectTypes)
             {
                 foreach (var subClassName in selectType.SubClassesNames)
                 {
@@ -137,14 +142,13 @@ namespace IFCProjectCreator
                         subClass.InterfaceNames.Add(selectType.Name);
                         subClass.ParentInterfaces.Add(selectType);
                         selectType.SubClasses.Add(subClass);
-
                     }
                 }
             }
-            foreach(var entity in Entities)
+            foreach (var entity in Entities)
             {
                 List<IFCEntity> parents = Entities.Where(e => e.Name == entity.ParentName && e.VersionName == entity.VersionName).ToList();
-                if(parents.Count > 0)
+                if (parents.Count > 0)
                 {
                     IFCEntity parent = parents.First();
                     entity.ParentClass = parent;
@@ -166,8 +170,166 @@ namespace IFCProjectCreator
                     parent.SubClasses.Add(basicType);
                 }
             }
-        }
 
+            // set attribute for select tyoe
+            foreach (var selectType in SelectTypes)
+            {
+                var allSubClasses = selectType.GetAllSubClasses();
+
+                List<IFCEntity> subEntities = new List<IFCEntity>();
+                if (allSubClasses.Where(e => e is IFCBasicType || e is IFCBasicTypeList).Count() > 0)
+                {
+                    continue;
+                }
+                foreach (var subclass in allSubClasses)
+                {
+                    if (subclass is IFCEntity subEntity)
+                    {
+                        if (subEntity.SubClasses.Count == 0)
+                        {
+                            subEntities.Add(subEntity);
+                        }
+                    }
+                }
+                List<List<IFCAttribute>> attributesSets = new List<List<IFCAttribute>>();
+                foreach (var subEntity in subEntities)
+                {
+                    attributesSets.Add(subEntity.AllAttributes);
+                }
+                List<string> attributesNames = new List<string>();
+                if (attributesSets.Count > 0)
+                {
+                    foreach (var attributes in attributesSets)
+                    {
+                        foreach (var attribute in attributes)
+                        {
+                            if (!attributesNames.Contains(attribute.Name))
+                            {
+                                attributesNames.Add(attribute.Name);
+                            }
+                        }
+                    }
+                    List<IFCAttribute> commonAttributes = new List<IFCAttribute>();
+
+                    foreach (var attributeName in attributesNames)
+                    {
+                        bool isCommon = true;
+                        foreach (var attributes in attributesSets)
+                        {
+                            if (attributes.FirstOrDefault(e => e.Name == attributeName) == null)
+                            {
+                                isCommon = false;
+                            }
+                        }
+                        if (isCommon)
+                        {
+                            var attribute0 = attributesSets[0].First(e => e.Name == attributeName);
+
+                            foreach (var attributes in attributesSets)
+                            {
+                                var attribute = attributes.First(e => e.Name == attributeName);
+
+                                if (attribute0.TypeName != attribute.TypeName || attribute0.Aggregation != attribute.Aggregation || attribute0.AttributeType != attribute.AttributeType)
+                                {
+                                    isCommon = false;
+                                }
+                            }
+                        }
+
+                        if (isCommon)
+                        {
+                            commonAttributes.Add(attributesSets[0].First(e => e.Name == attributeName));
+                        }
+                    }
+                    foreach (var attribute in commonAttributes)
+                    {
+                        if (selectType.SelectAttributes.FirstOrDefault(e => e.Name == attribute.Name) == null)
+                        {
+                            selectType.SelectAttributes.Add(new IFCSelectAttribute()
+                            {
+                                Name = attribute.Name,
+                                TypeName = attribute.TypeName,
+                                Aggregation = attribute.Aggregation,
+                                AttributeType = attribute.AttributeType
+                            });
+                        }
+
+
+                    }
+                }
+            }
+
+            // Additional select attribute
+            foreach (var entity in Entities)
+            {
+                var allAttribute = entity.AllAttributes;
+                Dictionary<string, IFCSelectAttribute> selectarributeDict = new Dictionary<string, IFCSelectAttribute>();
+
+                var parents = entity.ParentSelects;
+                foreach(var parent in parents)
+                {
+                    foreach(var attribute in parent.SelectAttributes)
+                    {
+                        if (!(selectarributeDict.ContainsKey(attribute.Name)))
+                        {
+                            selectarributeDict.Add(attribute.Name, attribute);
+                        }
+                    }
+                }
+                foreach(var att in selectarributeDict)
+                {
+                    var attribute = att.Value;
+
+                    if(allAttribute.FirstOrDefault(e => e.Name == attribute.Name) == null && entity.AdditionalSelectAttibutes.FirstOrDefault(e => e.Name == attribute.Name) == null)
+                    {
+                        entity.AdditionalSelectAttibutes.Add(new IFCSelectAttribute()
+                        {
+                            Name = attribute.Name,
+                            TypeName = attribute.TypeName,
+                            Aggregation = attribute.Aggregation,
+                            AttributeType = attribute.AttributeType,
+                            isClassAttribute = true,
+                        });
+                    }
+                }
+            }
+            foreach (var enumType in EnumTypes)
+            {
+                Dictionary<string, IFCSelectAttribute> selectarributeDict = new Dictionary<string, IFCSelectAttribute>();
+
+                var parents = enumType.ParentSelects;
+                foreach (var parent in parents)
+                {
+                    foreach (var attribute in parent.SelectAttributes)
+                    {
+                        if (!(selectarributeDict.ContainsKey(attribute.Name)))
+                        {
+                            selectarributeDict.Add(attribute.Name, attribute);
+                        }
+                    }
+                }
+                foreach (var att in selectarributeDict)
+                {
+                    var attribute = att.Value;
+
+                    if (enumType.AdditionalSelectAttibutes.FirstOrDefault(e => e.Name == attribute.Name) == null)
+                    {
+                        enumType.AdditionalSelectAttibutes.Add(new IFCSelectAttribute()
+                        {
+                            Name = attribute.Name,
+                            TypeName = attribute.TypeName,
+                            Aggregation = attribute.Aggregation,
+                            AttributeType = attribute.AttributeType,
+                            isClassAttribute = true,
+                        });
+                    }
+                }
+            }
+        }
+   
+        /// <summary>
+        /// Link arribute 
+        /// </summary>
         private void SetAtribute()
         {
             foreach (var entity in Entities)
@@ -175,19 +337,47 @@ namespace IFCProjectCreator
                 List<IFCEntity> parents = entity.ParentClasses;
                 foreach (var attribute in entity.DeriveAttributes)
                 {
+                    
                     foreach(var parent in parents)
                     {
-                        if(parent.DeriveAttributes.Where(x=>x.Name == attribute.Name).Any())
+                        if(parent.DeriveAttributes.Where(x=>x.Name == attribute.Name).Count() >0)
+                        {
+                            attribute.isOverride = true;
+                        }
+                        if (parent.ParameterAttributes.Where(x => x.Name == attribute.Name).Count() > 0)
+                        {
+                            attribute.isOverride = true;
+                        }
+                        if (parent.AdditionalSelectAttibutes.Where(x => x.Name == attribute.Name).Count() > 0)
                         {
                             attribute.isOverride = true;
                         }
                     }
                 }
+                foreach (var attribute in entity.ParameterAttributes)
+                {
 
+                    foreach (var parent in parents)
+                    {
+                        //if (parent.DeriveAttributes.Where(x => x.Name == attribute.Name).Count() > 0)
+                        //{
+                        //    attribute.isOverride = true;
+                        //}
+                        //if (parent.ParameterAttributes.Where(x => x.Name == attribute.Name).Count() > 0)
+                        //{
+                        //    attribute.isOverride = true;
+                        //}
+                        if (parent.AdditionalSelectAttibutes.Where(x => x.Name == attribute.Name).Count() > 0)
+                        {
+                            attribute.isOverride = true;
+                        }
+                    }
+                }
                 foreach (var attribute in entity.InverseAttributes)
                 {
-                    var parameterClassAttributes = entity.ParameterClassAttributes;
-                    foreach(var param in parameterClassAttributes)
+                    var relatingEntity = Entities.Where(x => x.Name == attribute.TypeName && x.VersionName == entity.VersionName).ToList()[0];
+                    var parameterAttributes = relatingEntity.ParameterAttributes;
+                    foreach(var param in parameterAttributes)
                     {
                         if(param.Name == attribute.RelatedAttributeName)
                         {
@@ -350,7 +540,7 @@ namespace IFCProjectCreator
                     writer.WriteLine("\tpublic class " + data.Key);
                     writer.WriteLine("\t{");
                     writer.WriteLine("\t\tpublic " + cSharpText + " Value {get; set;}");
-                    writer.WriteLine("\t\tpublic " + name + " () {}");
+                    writer.WriteLine("\t\tpublic " + name + " () {Value = " + CSharpBasicDataDefaultValue[name] +  ";}");
                     writer.WriteLine("\t\tpublic " + name + " (" + cSharpText + " value) {Value = value;}");
                     List<string> ImplicitTexts = GetImplicitText(name, cSharpText);
                     foreach(string ImplicitText in ImplicitTexts) { writer.WriteLine(ImplicitText); }

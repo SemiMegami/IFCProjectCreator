@@ -27,6 +27,70 @@ namespace IFCProjectCreator
             WhereAttributes = new List<IFCWhereAttribute>();
         }
 
+
+        /// <summary>
+        /// ParameterClassAttributes including from parent
+        /// </summary>
+        public List<IFCAttribute> AllAttributes
+        {
+            get
+            {
+                Dictionary<string, IFCAttribute> attributes = new Dictionary<string, IFCAttribute>();
+                if(ParentClass != null)
+                {
+                    List<IFCAttribute> parentAttributes = ParentClass.AllAttributes;
+                    foreach(IFCAttribute attribute in parentAttributes)
+                    {
+                        attributes.Add(attribute.Name, attribute);
+                    }              
+                }
+                List<IFCAttribute> classAttributes = AllClassAttributes;
+                foreach (IFCAttribute attribute in classAttributes)
+                {
+                    if (!attributes.ContainsKey(attribute.Name))
+                    {
+                        attributes.Add(attribute.Name, attribute);
+                    }
+                }
+                return attributes.Values.ToList();
+            }
+        }
+
+        /// <summary>
+        /// ParameterClassAttributes including from parent
+        /// </summary>
+        public List<IFCAttribute> AllClassAttributes
+        {
+            get
+            {
+
+                Dictionary<string, IFCAttribute> attributes = new Dictionary<string, IFCAttribute>();
+
+                foreach (IFCAttribute attribute in ParameterClassAttributes)
+                {
+                    if (!attributes.ContainsKey(attribute.Name))
+                    {
+                        attributes.Add(attribute.Name, attribute);
+                    }
+                }
+                foreach (IFCAttribute attribute in DeriveAttributes)
+                {
+                    if (!attributes.ContainsKey(attribute.Name))
+                    {
+                        attributes.Add(attribute.Name, attribute);
+                    }
+                }
+                foreach (IFCAttribute attribute in InverseAttributes)
+                {
+                    if (!attributes.ContainsKey(attribute.Name))
+                    {
+                        attributes.Add(attribute.Name, attribute);
+                    }
+                }
+                return attributes.Values.ToList();
+            }
+        }
+
         /// <summary>
         /// ParameterClassAttributes including from parent
         /// </summary>
@@ -72,8 +136,8 @@ namespace IFCProjectCreator
                 return classes;
             }
         }
-      
 
+   
 
 
         public override void ReadEXP(StreamReader reader, string header)
@@ -227,6 +291,10 @@ namespace IFCProjectCreator
                 texts.AddRange(attribute.GetCSharpText());
             }
             foreach (var attribute in DeriveAttributes)
+            {
+                texts.AddRange(attribute.GetCSharpText());
+            }
+            foreach (var attribute in AdditionalSelectAttibutes)
             {
                 texts.AddRange(attribute.GetCSharpText());
             }

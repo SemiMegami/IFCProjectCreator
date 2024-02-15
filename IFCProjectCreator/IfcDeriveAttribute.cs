@@ -10,11 +10,10 @@ namespace IFCProjectCreator
     {
         public string DeriveText { get; set; }
 
-        public bool isOverride { get; set; }
+       
         public IFCDeriveAttribute() : base()
         {
             DeriveText = "";
-            isOverride = false;
         }
 
         public override List<string> GetCSharpText()

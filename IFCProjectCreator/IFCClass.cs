@@ -20,7 +20,7 @@ namespace IFCProjectCreator
         public List<string> EXPLines;
         public List<IFCSelectType> ParentInterfaces;
         public List<IFCClass> SubClasses;
-        
+        public List<IFCSelectAttribute> AdditionalSelectAttibutes;
         /// <summary>
         /// Constructor of the IFC Class 
         /// </summary>
@@ -36,7 +36,43 @@ namespace IFCProjectCreator
             EXPLines = new List<string>();
             ParentInterfaces = new List<IFCSelectType>();
             SubClasses = new List<IFCClass>();
+            AdditionalSelectAttibutes = new List<IFCSelectAttribute>();
         }
+
+
+        /// <summary>
+        /// ParameterClassAttributes including from parent
+        /// </summary>
+        public List<IFCSelectType> ParentSelects
+        {
+            get
+            {
+                List<IFCSelectType> classes =new List<IFCSelectType>();
+                if (ParentInterfaces == null)
+                {
+                    return new List<IFCSelectType>();
+                }
+                foreach (var item in ParentInterfaces)
+                {
+                    classes.AddRange(item.ParentInterfaces);
+                    classes.Add(item);
+                }
+                return classes;
+            }
+        }
+
+        public virtual List<IFCClass> GetAllSubClasses()
+        {
+            List<IFCClass> children = new List<IFCClass>();
+            children.AddRange(SubClasses);
+            foreach (IFCClass child in SubClasses)
+            {
+                children.AddRange(child.GetAllSubClasses());
+            }
+            return children;
+        }
+
+
         /// <summary>
         /// Read EXP file and update class Data
         /// </summary>

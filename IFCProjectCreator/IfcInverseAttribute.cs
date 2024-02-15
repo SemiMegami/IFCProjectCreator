@@ -25,15 +25,38 @@ namespace IFCProjectCreator
             };
             if(RelatedAttribute != null)
             {
-                if (RelatedAttribute.AttributeType == IFCAttributeType.LIST)
+                if (AttributeType == IFCAttributeType.LIST)
                 {
-                    texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " => Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this)).ToList();");
+                    if (RelatedAttribute.AttributeType == IFCAttributeType.LIST)
+                    {
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " => Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this)).ToList();");
+                    }
+                    else if (RelatedAttribute.AttributeType == IFCAttributeType.SINGLE)
+                    {
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " => Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this).ToList();");
+                    }
+                    else
+                    {
+
+                    }
                 }
-                else if (RelatedAttribute.AttributeType == IFCAttributeType.SINGLE)
+                else
                 {
-                    texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " => Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this).ToList();");
+                    if (RelatedAttribute.AttributeType == IFCAttributeType.LIST)
+                    {
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " => Model?.GetItems<" + TypeName + ">().FirstOrDefault(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this));");
+                    }
+                    else if (RelatedAttribute.AttributeType == IFCAttributeType.SINGLE)
+                    {
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " => Model?.GetItems<" + TypeName + ">().FirstOrDefault(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this);");
+                    }
+                    else
+                    {
+
+                    }
                 }
             }
+  
             
             return texts;
         }
