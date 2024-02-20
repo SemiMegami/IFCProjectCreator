@@ -129,14 +129,18 @@ namespace IFCProjectCreator
             List<string> summary = new List<string>();
             string s = "\t/// ";
             summary.Add(s + "<summary>");
-            if(EXPLines.Count > 0)
-            {
-                summary.Add(s + EXPLines[0]);
-            }
+            //if(EXPLines.Count > 0)
+            //{
+            //    summary.Add(s + EXPLines[0]);
+            //}
             int n = EXPLines.Count;
+            //for (int i = 0; i < n; i++)
+            //{
+            //    summary.Add(s + "<para>" + EXPLines[i] + "</para>");
+            //}
             for (int i = 0; i < n; i++)
             {
-                summary.Add(s + "<para>" + EXPLines[i] + "</para>");
+                summary.Add(s + EXPLines[i] );
             }
             summary.Add(s + "<summary>");
             return summary;
@@ -161,6 +165,18 @@ namespace IFCProjectCreator
                 {
                     text += ", " + InterfaceNames[i];
                 }
+            }
+            if (VersionName != DataSet.globalName)
+            {
+                if (text.Contains(":"))
+                {
+                    text += ", " + DataSet.globalName + "." + Name;
+                }
+                else 
+                {
+                    text += ": " + DataSet.globalName + "." + Name;
+                }
+              
             }
             return text;
         }

@@ -43,6 +43,76 @@ namespace IFCProjectCreator
         }
 
         public abstract List<string> GetCSharpText();
+        public virtual List<string> GetCSharpGlobalText(IFCDataSet dataSet)
+        {
+            string global = "Global";
+            string typeName = TypeName;
+            if (!dataSet.CSharpBasicDataTypes.ContainsKey(TypeName))
+            {
+                typeName = global + "." + TypeName;
+            }
+
+            if (AttributeType == IFCAttributeType.SINGLE)
+            {
+                return new List<string>
+                {
+                    "\t\tpublic " +  (isOverride? "override ": "virtual ") + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name + " { get { return " + Name + "; } set { } }"
+                };
+            }
+            else if (AttributeType == IFCAttributeType.LIST)
+            {
+
+                List<string> texts = new List<string>()
+                {
+                    "\t\tpublic " +  (isOverride? "override ": "virtual ") + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                    "\t\t{",
+                    "\t\t\tget",
+                    "\t\t\t{",
+                    "\t\t\t\tif(" + Name + " != null)",
+                    "\t\t\t\t{",
+                    "\t\t\t\t\tList<"+typeName + ">? items = new List<"+typeName +">();",
+                    "\t\t\t\t\tforeach (" + TypeName + " item in " + Name +")",
+                    "\t\t\t\t\t{",
+                    "\t\t\t\t\t\titems.Add(item);",
+                    "\t\t\t\t\t}",
+                    "\t\t\t\t\treturn items;",
+                    "\t\t\t\t}",
+                    "\t\t\t\treturn null;",
+                    "\t\t\t}",
+                    "\t\t}",
+                };
+                return texts;
+            }
+            else
+            {
+                List<string> texts = new List<string>()
+                {
+                   "\t\tpublic " +  (isOverride? "override ": "virtual ") + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                    "\t\t{",
+                    "\t\t\tget",
+                    "\t\t\t{",
+                    "\t\t\t\tif(" + Name + " != null)",
+                    "\t\t\t\t{",
+                    "\t\t\t\t\tList<List<"+typeName + ">>? items = new List<List<"+typeName +">>();",
+                    "\t\t\t\t\tforeach (List<" + TypeName + "> item1s in " + Name +")",
+                    "\t\t\t\t\t{",
+                    "\t\t\t\t\t\tList<"+typeName + ">? resultItems = new List<"+typeName +">();",
+                    "\t\t\t\t\t\tforeach (" + TypeName + " item in item1s)",
+                    "\t\t\t\t\t\t{",
+                    "\t\t\t\t\t\t\tresultItems.Add(item);",
+                    "\t\t\t\t\t\t}",
+                    "\t\t\t\t\t\titems.Add(resultItems);",
+                    "\t\t\t\t\t}",
+                    "\t\t\t\t\treturn items;",
+                    "\t\t\t\t}",
+                    "\t\t\t\treturn null;",
+                    "\t\t\t}",
+                    "\t\t}",
+                };
+                return texts;
+            }
+        }
+
 
         public string GetCSharpTypeText()
         {
@@ -53,7 +123,27 @@ namespace IFCProjectCreator
                 case IFCAttributeType.LIST:
                     return "List<" + TypeName + ">";
                 case IFCAttributeType.LISTLIST:
-                    return"List<List<" + TypeName + " >>";
+                    return"List<List<" + TypeName + ">>";
+            }
+            return TypeName;
+        }
+
+        public string GetCSharpTypeText(IFCDataSet dataSet, string interfaceName)
+        {
+            if (dataSet.CSharpBasicDataTypes.ContainsKey(TypeName))
+            {
+                return GetCSharpTypeText();
+            }
+
+            string typeName = interfaceName + "." + TypeName;
+            switch (AttributeType)
+            {
+                case IFCAttributeType.SINGLE:
+                    return typeName;
+                case IFCAttributeType.LIST:
+                    return "List<" + typeName + ">";
+                case IFCAttributeType.LISTLIST:
+                    return "List<List<" + typeName + ">>";
             }
             return TypeName;
         }

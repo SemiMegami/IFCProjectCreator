@@ -43,19 +43,6 @@
             string outputText = headerLine.Split(")")[1].Replace("(", "").Replace(";", "").Replace(":", "");
             SetInputs(inputText);
             SetOutput(outputText);
-
-            Console.WriteLine(Name);
-    
-
-            Console.WriteLine("intput : ");
-            foreach ( var input in Inputs )
-            {
-                Console.WriteLine("    " + input);
-            }
-            Console.WriteLine("output : ");
-            Console.WriteLine("    " + Output);
-            Console.WriteLine("");
-
         }
 
         private void SetInputs(string inputText)

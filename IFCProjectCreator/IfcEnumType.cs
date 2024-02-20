@@ -23,14 +23,14 @@
             texts.Add("\t{");
             foreach (string enumValue in EnumValues)
             {
-                texts.Add("\t\tpublic static string " + enumValue + " { get {return \"." + enumValue +".\";} }"  );
+                texts.Add("\t\tpublic static string " + enumValue + " { get { return \"." + enumValue + ".\"; } private set { } }");
             }
 
             foreach (var attribute in AdditionalSelectAttibutes)
             {
                 texts.AddRange(attribute.GetCSharpText());
             }
-            texts.Add("\t\tpublic string Value;");
+            texts.Add("\t\tpublic string Value {get; set;}");
             if(EnumValues.Count > 0)
             {
                 texts.Add("\t\tpublic " + Name + "() { Value = \"." + EnumValues[0] + ".\";}");

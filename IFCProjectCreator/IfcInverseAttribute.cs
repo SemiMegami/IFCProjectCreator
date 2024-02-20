@@ -19,10 +19,8 @@ namespace IFCProjectCreator
 
         public override List<string> GetCSharpText()
         {
-            List<string> texts = new List<string>
-            {
-                "\t\t//TODO INVERSE",
-            };
+            List<string> texts = new List<string>();
+          
             if(RelatedAttribute != null)
             {
                 if (AttributeType == IFCAttributeType.LIST)
@@ -57,6 +55,10 @@ namespace IFCProjectCreator
                 }
             }
   
+            if(texts.Count == 0)
+            {
+                texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " => null;");
+            }
             
             return texts;
         }

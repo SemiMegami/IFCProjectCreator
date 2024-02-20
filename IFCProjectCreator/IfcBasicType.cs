@@ -54,7 +54,7 @@
         /// Get C# type name
         /// </summary>
         /// <returns></returns>
-        protected string GetCSharpType()
+        public virtual string GetCSharpType()
         {
             if (ParentClass == null)
             {

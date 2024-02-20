@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFCProjectCreator", "IFCProjectCreator\IFCProjectCreator.csproj", "{3777B507-D6D9-439E-B557-1960DE3DAFC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratedIFCLibrary", "GeneratedIFCLibrary\GeneratedIFCLibrary.csproj", "{5A7EFB82-B3D7-4939-A2EF-F782B4C0BF32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneratedIFCLibrary", "GeneratedIFCLibrary\GeneratedIFCLibrary.csproj", "{5A7EFB82-B3D7-4939-A2EF-F782B4C0BF32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestIFCApp", "TestIFCApp\TestIFCApp.csproj", "{CD892713-0914-4892-A661-0E584CD9A322}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5A7EFB82-B3D7-4939-A2EF-F782B4C0BF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A7EFB82-B3D7-4939-A2EF-F782B4C0BF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A7EFB82-B3D7-4939-A2EF-F782B4C0BF32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD892713-0914-4892-A661-0E584CD9A322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD892713-0914-4892-A661-0E584CD9A322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD892713-0914-4892-A661-0E584CD9A322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD892713-0914-4892-A661-0E584CD9A322}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

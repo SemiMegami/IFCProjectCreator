@@ -17,9 +17,15 @@ namespace IFCProjectCreator
         }
         public override List<string> GetCSharpText()
         {
+            var typeText = GetCSharpTypeText();
+            if(typeText != "int" && typeText != "float" && typeText != "double" && typeText != "bool") 
+            {
+                typeText = typeText + "?";
+            }
+
             return new List<string>
             {
-                "\t\tpublic " + (isClassAttribute?"virtual ":"") + GetCSharpTypeText() + "?" + " " + Name + " { get; " + (isClassAttribute?"set; ":"") +" }"
+                "\t\tpublic " + (isClassAttribute?"virtual ":"") + typeText + " " + Name + " { get; " + (isClassAttribute?"set; ":"") +" }"
             };
         }
     }

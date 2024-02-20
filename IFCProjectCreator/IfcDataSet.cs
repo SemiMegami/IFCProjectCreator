@@ -1,15 +1,19 @@
 ﻿using Microsoft.SqlServer.Management.XEvent;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Numerics;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using static Azure.Core.HttpHeader;
 
 namespace IFCProjectCreator
 {
     public class IFCDataSet
     {
+        public readonly string globalName = "Global";
         public readonly Dictionary<string, string> CSharpBasicDataTypes = new Dictionary<string, string>()
         {
             { "REAL", "double" },
@@ -30,7 +34,7 @@ namespace IFCProjectCreator
             { "BINARY", "0" },
             { "STRING", "\"\"" },
         };
-
+        public string NamespaceName;
         public List<IFCBasicType> BasicTypes { get; private set; }
         public List<IFCBasicTypeList> BasicTypeLists { get; private set; }
         public List<IFCEnumType> EnumTypes { get; private set; }
@@ -39,6 +43,7 @@ namespace IFCProjectCreator
         public List<IFCFunction> Functions { get; private set; }
         public List<string> Versions { get; private set; }
 
+        public List<IFCSelectType> GlobalSelectTypes { get; private set; }
         /// <summary>
         /// Constructor
         /// </summary>
@@ -51,6 +56,8 @@ namespace IFCProjectCreator
             Entities = new List<IFCEntity>();
             Functions = new List<IFCFunction>();
             Versions = new List<string> ();
+            GlobalSelectTypes = new List<IFCSelectType> ();
+            NamespaceName = "";
         }
 
         /// <summary>
@@ -58,8 +65,23 @@ namespace IFCProjectCreator
         /// </summary>
         /// <param name="path">File Path</param>
         /// <param name="version">Version Name</param>
-        public void ReadExp(string path, string version)
-        {     
+        public void ReadData(string path, string version)
+        {
+            ReadEXP(path, version);
+            SetParent();
+            SetAtribute();
+            SetSelectType();
+            
+        }
+
+
+        /// <summary>
+        /// Read an EXP file to store data
+        /// </summary>
+        /// <param name="path">File Path</param>
+        /// <param name="version">Version Name</param>
+        private void ReadEXP(string path, string version)
+        {
             using (StreamReader reader = new StreamReader(path))
             {
                 if (reader != null)
@@ -120,9 +142,6 @@ namespace IFCProjectCreator
                     reader.Close();
                 }
             }
-            SetParent();
-            SetAtribute();
-            
         }
 
         /// <summary>
@@ -171,7 +190,11 @@ namespace IFCProjectCreator
                 }
             }
 
-            // set attribute for select tyoe
+           
+        }
+
+        private void SetSelectType()
+        {
             foreach (var selectType in SelectTypes)
             {
                 var allSubClasses = selectType.GetAllSubClasses();
@@ -179,6 +202,9 @@ namespace IFCProjectCreator
                 List<IFCEntity> subEntities = new List<IFCEntity>();
                 if (allSubClasses.Where(e => e is IFCBasicType || e is IFCBasicTypeList).Count() > 0)
                 {
+                    //selectType.SelectAttributes.Add(new IFCSelectAttribute() { 
+
+                    //})
                     continue;
                 }
                 foreach (var subclass in allSubClasses)
@@ -266,9 +292,9 @@ namespace IFCProjectCreator
                 Dictionary<string, IFCSelectAttribute> selectarributeDict = new Dictionary<string, IFCSelectAttribute>();
 
                 var parents = entity.ParentSelects;
-                foreach(var parent in parents)
+                foreach (var parent in parents)
                 {
-                    foreach(var attribute in parent.SelectAttributes)
+                    foreach (var attribute in parent.SelectAttributes)
                     {
                         if (!(selectarributeDict.ContainsKey(attribute.Name)))
                         {
@@ -276,11 +302,11 @@ namespace IFCProjectCreator
                         }
                     }
                 }
-                foreach(var att in selectarributeDict)
+                foreach (var att in selectarributeDict)
                 {
                     var attribute = att.Value;
 
-                    if(allAttribute.FirstOrDefault(e => e.Name == attribute.Name) == null && entity.AdditionalSelectAttibutes.FirstOrDefault(e => e.Name == attribute.Name) == null)
+                    if (allAttribute.FirstOrDefault(e => e.Name == attribute.Name) == null && entity.AdditionalSelectAttibutes.FirstOrDefault(e => e.Name == attribute.Name) == null)
                     {
                         entity.AdditionalSelectAttibutes.Add(new IFCSelectAttribute()
                         {
@@ -326,7 +352,125 @@ namespace IFCProjectCreator
                 }
             }
         }
-   
+
+        public void SetGlobal()
+        {
+            Dictionary<string, IFCSelectType> globalTypes = new Dictionary<string, IFCSelectType> ();
+            List<IFCClass> items = GetItems();
+
+            foreach (var item in items)
+            {
+                if (!globalTypes.ContainsKey(item.Name))
+                {
+                    IFCSelectType newType = new IFCSelectType(this, globalName) 
+                    { 
+                        Name = item.Name,
+                        IsGlobal = true,
+                    };
+                    globalTypes.Add(item.Name, newType);
+                }
+                IFCSelectType global = globalTypes[item.Name];
+
+                if (item is IFCEntity && global.ParentName.Length > 0 && !global.InterfaceNames.Contains(item.ParentName))
+                {
+                    global.InterfaceNames.Add(item.ParentName);
+                }
+                foreach(var itf in item.InterfaceNames)
+                {
+                    if (!global.InterfaceNames.Contains(itf))
+                    {
+                        global.InterfaceNames.Add(itf);
+                    }
+                }
+            }
+            GlobalSelectTypes = globalTypes.Values.ToList();
+
+            foreach (var globalSelectType in GlobalSelectTypes)
+            {
+                List < IFCClass > typeitems = items.Where(e => e.Name == globalSelectType.Name).ToList();
+                if (typeitems.Count > 0)
+                {
+                    if (typeitems[0] is IFCBasicTypeList basicTypeList)
+                    {
+                        string cSharpType = basicTypeList.GetCSharpType();
+                        if (cSharpType.Length > 0)
+                        {
+                            globalSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = "Value", TypeName = basicTypeList.GetCSharpType() });
+                        }
+                    }
+
+                    else if (typeitems[0] is IFCBasicType basicType)
+                    {
+                        string cSharpType = basicType.GetCSharpType();
+                        bool found = false;
+                        foreach (var item in typeitems)
+                        {
+                            if (item is IFCBasicType basicType1)
+                            {
+                                if (basicType1.GetCSharpType() != cSharpType)
+                                {
+                                    found = true;
+                                }
+                            }
+                            else
+                            {
+                                found = true;
+                            }
+                        }
+                        if (!found)
+                        {
+                            globalSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = "Value", TypeName = cSharpType });
+                        }
+                    }
+
+                    else if (typeitems[0] is IFCEnumType enumType)
+                    {
+                        List<IFCEnumType> enumItems = new List<IFCEnumType>();
+                        bool found = false;
+                        List<string> values = new List<string>();
+                        foreach (var typeItem in typeitems)
+                        {
+                            if (typeItem is IFCEnumType enumType1)
+                            {
+                                enumItems.Add(enumType1);
+                            }
+                            else
+                            {
+                                found = true;
+                            }
+                        }
+
+
+                        if (!found)
+                        {
+
+                            foreach (var enumValue in enumType.EnumValues)
+                            {
+                                bool canAdd = true;
+                                foreach (var item in enumItems)
+                                {
+                                    if (!item.EnumValues.Contains(enumValue))
+                                    {
+                                        canAdd = false;
+                                    }
+                                }
+                                if (canAdd)
+                                {
+                                    globalSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = enumValue, TypeName = "static string" });
+                                }
+                            }
+
+                            globalSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = "Value", TypeName = "string" });
+                        }
+                    }
+                    else if (typeitems[0] is IFCSelectType selectType)
+                    {
+
+                    }
+                }
+            }
+        }
+
         /// <summary>
         /// Link arribute 
         /// </summary>
@@ -359,14 +503,6 @@ namespace IFCProjectCreator
 
                     foreach (var parent in parents)
                     {
-                        //if (parent.DeriveAttributes.Where(x => x.Name == attribute.Name).Count() > 0)
-                        //{
-                        //    attribute.isOverride = true;
-                        //}
-                        //if (parent.ParameterAttributes.Where(x => x.Name == attribute.Name).Count() > 0)
-                        //{
-                        //    attribute.isOverride = true;
-                        //}
                         if (parent.AdditionalSelectAttibutes.Where(x => x.Name == attribute.Name).Count() > 0)
                         {
                             attribute.isOverride = true;
@@ -383,6 +519,10 @@ namespace IFCProjectCreator
                         {
                             attribute.RelatedAttribute = param;
                         }
+                    }
+                    if(attribute.RelatedAttribute == null)
+                    {
+
                     }
                 }
             }
@@ -410,7 +550,21 @@ namespace IFCProjectCreator
         /// <param name="version"></param>
         /// <returns></returns>
         public List<IFCClass> GetItems(string version) { 
-            return GetItems().Where(e=> e.VersionName == version).ToList();
+
+            if(version == globalName)
+            {
+                List<IFCClass> classes = new List<IFCClass>();
+                foreach (var g in GlobalSelectTypes)
+                {
+                    classes.Add(g);
+                }
+                return classes;
+            }
+            else
+            {
+                return GetItems().Where(e => e.VersionName == version).ToList();
+            }
+            
         }
 
         /// <summary>
@@ -419,55 +573,87 @@ namespace IFCProjectCreator
         /// <param name="folderDir"></param>
         public void WriteCSharp(string folderDir, string nameSpaceName)
         {
+            NamespaceName = nameSpaceName;
             WtiteCSharpModel(folderDir, nameSpaceName);
             WtiteCSharpEntity(folderDir, nameSpaceName);
             WtiteCSharpBasicType(folderDir, nameSpaceName);
             foreach (var version in Versions)
             {
-                using (StreamWriter writer = new StreamWriter(folderDir + version + ".cs"))
+                WriteCSharp(folderDir, nameSpaceName, version);
+            }
+            WriteCSharp(folderDir, nameSpaceName, globalName);
+        }
+
+        /// <summary>
+        /// Write C# classes file in specificed folder
+        /// </summary>
+        /// <param name="folderDir"></param>
+        public void WriteCSharp(string folderDir, string nameSpaceName, string version)
+        {
+            using (StreamWriter writer = new StreamWriter(folderDir + version + ".cs"))
+            {
+                var items = GetItems(version);
+                writer.WriteLine("using System;");
+                writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("namespace " + nameSpaceName + "." + version);
+                writer.WriteLine("{");
+                foreach (var item in items)
                 {
-                    var items = GetItems(version);
-                    writer.WriteLine("using System;");
-                    writer.WriteLine("using System.Collections.Generic;");
-                    writer.WriteLine("namespace " + nameSpaceName + "." + version);
-                    writer.WriteLine("{");
-                    foreach (var item in items)
+                    var texts = item.GetCSharpTexts();
+                    foreach (var text in texts)
                     {
-                        var texts = item.GetCSharpTexts();
-                        foreach (var text in texts)
-                        {
-                            writer.WriteLine(text);
-                        }
+                        writer.WriteLine(text);
                     }
-                    writer.WriteLine("}");
                 }
+                writer.WriteLine("}");
             }
         }
 
         private void WtiteCSharpModel(string folderDir, string nameSpaceName)
         {
-            using (StreamWriter writer = new StreamWriter(folderDir + "Model.cs"))
+            using (StreamWriter writer = new StreamWriter(folderDir + "Ifc_Model.cs"))
             {
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
-                writer.WriteLine("\tpublic class Model");
+                writer.WriteLine("\tpublic class Ifc_Model");
                 writer.WriteLine("\t{");
         
                 string contain =
         @"
+               /// <summary>
+        /// Version of this model
+        /// </summary>
+        protected Ifc_Version Version;
+
         /// <summary>
         /// IFC Items
         /// </summary>
-		public List<Entity> Items;
-        
+		public Dictionary<string, Ifc_Entity> items;
+
         /// <summary>
         /// Constructure
         /// </summary>
-        public Model()
+        public Ifc_Model(string version)
         {
-            Items = new List<Entity>();
+            switch (version.ToUpper())
+            {
+                case ""IFC2X3"": this.Version = Ifc_Version.Ifc2x3; break;
+                case ""IFC4"": this.Version = Ifc_Version.Ifc4; break;
+                case ""IFC4X1"": this.Version = Ifc_Version.Ifc4x1; break;
+                case ""IFC4X2"": this.Version = Ifc_Version.Ifc4x2; break;
+                case ""IFC4X3"": this.Version = Ifc_Version.Ifc4x3; break;
+            }
+            items = new Dictionary<string, Ifc_Entity>();
+        }
+
+        /// <summary>
+        /// Initalize the model
+        /// </summary>
+        public virtual void Initialize()
+        {
+            items = new Dictionary<string, Ifc_Entity>();
         }
 
         /// <summary>
@@ -475,33 +661,162 @@ namespace IFCProjectCreator
         /// </summary>
         /// <typeparam name=""T""></typeparam>
         /// <returns></returns>
-        public List<T> GetItems<T>() where T : Entity
+        public List<T> GetItems<T>() where T : Ifc_Entity
 		{
-			List<Entity> items = Items.Where(x => x is T).ToList();
-            List < T > results = new List<T>();
-			foreach (var item in items)
+			List<Ifc_Entity> itemList = items.Values.Where(x => x is T).ToList();
+            List <T> results = new List<T>();
+			foreach (var item in itemList)
 			{
 				results.Add((T)item);
 			}
 			return results;
         }
+
+        void CheckAndAddItem(dynamic parameter)
+        {
+            if (parameter == null)
+            {
+                return;
+            }
+            if(parameter != null)
+            {
+                if (parameter is Ifc_Entity entity)
+                {
+                    if (entity.Model != this)
+                    {
+                        AddItem(entity);
+                    }
+                }
+                else if (parameter.GetType().GetInterface(""IEnumerable"") != null)
+                {
+                    for (int i = 0; i < parameter.Count; i++)
+                    {
+                        CheckAndAddItem(parameter[i]);
+                    }
+                }
+            }
+        }
+
+        public static string GenerateID()
+        {
+            return Guid.NewGuid().ToString().Replace(""-"", """").Substring(0, 22);
+        }
+
+        public virtual void Clear()
+        {
+            items.Clear();
+        }
+
+        public virtual void AddItem(Ifc_Entity ifcBase)
+        {
+
+            List<object?> parameters = ifcBase.GetParameters();
+
+            foreach (var parameter in parameters)
+            {
+                if(parameter!= null)
+                {
+                    CheckAndAddItem(parameter);
+                }
+            }
+
+            if (ifcBase.Model == this)
+            {
+                return;
+            }
+
+            string ifcid = ""#"" + (items.Count + 1);
+            ifcBase.ifcid = ifcid;
+            items.Add(ifcid, ifcBase);
+            ifcBase.Model = this;
+
+        }
+
+        /// <summary>
+        /// Export model to Ifc
+        /// </summary>
+        /// <returns></returns>
+        public virtual void ExportIfc(string path)
+        {
+            var now = DateTime.UtcNow.ToString();
+            using (StreamWriter writer = new StreamWriter(path))
+            {
+                writer.WriteLine(""ISO-10303-21;"");
+                writer.WriteLine(""HEADER;"");
+                writer.WriteLine(""FILE_DESCRIPTION("");
+                writer.WriteLine(""/* description */ ('ViewDefinition [PresentationView]', 'Comment [Cutouts,SDS/2 Detailed model]'),"");
+                writer.WriteLine(""/* implementation_level */ '2;1');"");
+                writer.WriteLine(""FILE_NAME("");
+                writer.WriteLine(""/* name */ '"" + path + ""',"");
+                writer.WriteLine(""/* time_stamp */ '"" + now + ""',"");
+                writer.WriteLine(""/* author */ ('Author Name'),"");
+                writer.WriteLine(""/* organization */ ('Oganaization Name'),"");
+                writer.WriteLine(""/* preprocessor_version */ 'Version Name',"");
+                writer.WriteLine(""/* originating_system */ 'System Name',"");
+                writer.WriteLine(""/* authorization */ 'None');"");
+                writer.WriteLine(""FILE_SCHEMA (('"" + GetVersionText().ToUpper() + ""'));"");
+                writer.WriteLine(""ENDSEC;"");
+                writer.WriteLine(""DATA;"");
+                writer.WriteLine("""");
+                foreach (var item in items.Values.ToList())
+                {
+                    if (item != null)
+                    {
+                        string text = item.GetIfcFullText();
+                        writer.WriteLine(text);
+                    }
+                }
+                writer.WriteLine("""");
+                writer.WriteLine(""ENDSEC;"");
+                writer.WriteLine(""END-ISO-10303-21;"");
+            }
+        }
+
+        /// <summary>
+        /// Get Version text of this version
+        /// </summary>
+        /// <returns></returns>
+        public string GetVersionText()
+        {
+            switch (Version)
+            {
+                case Ifc_Version.UNDEFINED: return """";
+                case Ifc_Version.Ifc2x3: return ""Ifc2x3"";
+                case Ifc_Version.Ifc4: return ""Ifc4"";
+                case Ifc_Version.Ifc4x1: return ""Ifc4x1"";
+                case Ifc_Version.Ifc4x2: return ""Ifc4x2"";
+                case Ifc_Version.Ifc4x3: return ""Ifc4x3"";
+            }
+            return """";
+        }
  ";
                 writer.Write(contain);
 
                 writer.WriteLine("\t}");
+
+                writer.WriteLine("\tpublic enum Ifc_Version");
+                writer.WriteLine("\t{");
+                writer.WriteLine("\t\tUNDEFINED = 0,");
+                writer.WriteLine("\t\tIfc2x3 = 23,");
+                writer.WriteLine("\t\tIfc4 = 4,");
+                writer.WriteLine("\t\tIfc4x1 = 41,");
+                writer.WriteLine("\t\tIfc4x2 = 42,");
+                writer.WriteLine("\t\tIfc4x3 = 43,");
+                writer.WriteLine("\t}");
+
                 writer.WriteLine("}");
             }
         }
 
         private void WtiteCSharpEntity(string folderDir, string nameSpaceName)
         {
-            using (StreamWriter writer = new StreamWriter(folderDir + "Entity.cs"))
+            using (StreamWriter writer = new StreamWriter(folderDir + "Ifc_Entity.cs"))
             {
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
-                writer.WriteLine("\tpublic class Entity");
+                writer.WriteLine("\tpublic abstract class Ifc_Entity");
                 writer.WriteLine("\t{");
 
                 string contain =
@@ -509,12 +824,250 @@ namespace IFCProjectCreator
 		/// <summary>
 		/// Model that contains this.
 		/// </summary>
-        public Model? Model;
+        public Ifc_Model? Model;
 
 		/// <summary>
 		/// ID used in an IFC file.
 		/// </summary>
-		public string? IFC_ID;
+		public string ifcid;
+
+        /// <summary>
+		/// Get All Parameters
+		/// </summary>
+		/// <returns></returns>
+        public abstract List<object?> GetParameters();
+
+        /// <summary>
+		/// Constructor
+		/// </summary>
+        public Ifc_Entity()
+		{
+			ifcid = string.Empty;
+        }
+
+        public string GetIfcFullText()
+        {
+            var parameters = GetParameters();
+            string str = ifcid + ""="" + GetType().Name.ToUpper() + ""("";   
+
+            if (parameters != null)
+            {
+                if (GetType().Name == ""IfcPropertySingleValue"")
+                {
+                    for (int i = 0; i < parameters.Count; i++)
+                    {
+                        var parameter = parameters[i];
+                        if(parameter!= null)
+                        {
+                            if (i == 2)
+                            {
+                                str += parameter.GetType().Name.ToUpper() + ""("" + GetParameterText(parameter) + "")"";
+                            }
+                            else
+                            {
+                                str += GetParameterText(parameter);
+                            }
+                            if (i < parameters.Count - 1)
+                            {
+                                str += "","";
+                            }
+                        }
+                        else
+                        {
+                            str += GetParameterText(parameter);
+                            if (i < parameters.Count - 1)
+                            {
+                                str += "","";
+                            }
+                        }
+                    }
+                }
+                else if (GetType().Name == ""IfcPropertyEnumeration"")
+                {
+                    for (int i = 0; i < parameters.Count; i++)
+                    {
+
+                        dynamic? parameter = parameters[i];
+                        if (parameter != null)
+                        {
+                            if (i == 1)
+                            {
+                                var paramTexts = parameter.ToArray();
+                                str += ""("";
+                                for (int j = 0; j < paramTexts.Length; j++)
+                                {
+                                    str += ""IFCTEXT('"" + paramTexts[j] + ""')"";
+                                    if (j < paramTexts.Length - 1)
+                                    {
+                                        str += "","";
+                                    }
+                                }
+                                str += "")"";
+                            }
+                            else
+                            {
+                                str += GetParameterText(parameter);
+                            }
+
+                            if (i < parameters.Count - 1)
+                            {
+                                str += "","";
+                            }
+                        }
+                        else
+                        {
+                            str += GetParameterText(parameter);
+                            if (i < parameters.Count - 1)
+                            {
+                                str += "","";
+                            }
+                        }
+
+                    }
+                }
+                else if (GetType().Name == ""IfcPropertyEnumeratedValue"")
+                {
+                    for (int i = 0; i < parameters.Count; i++)
+                    {
+
+                        dynamic? parameter = parameters[i];
+                        if (parameter != null)
+                        {
+                            if (i == 2)
+                            {
+                                var paramTexts = parameter.ToArray();
+                                str += ""("";
+                                for (int j = 0; j < paramTexts.Length; j++)
+                                {
+                                    str += ""IFCTEXT('"" + paramTexts[j] + ""')"";
+                                    if (j < paramTexts.Length - 1)
+                                    {
+                                        str += "","";
+                                    }
+                                }
+                                str += "")"";
+                            }
+                            else
+                            {
+                                str += GetParameterText(parameter);
+                            }
+                            if (i < parameters.Count - 1)
+                            {
+                                str += "","";
+                            }
+                        }
+                        else
+                        {
+                            str += GetParameterText(parameter);
+                            if (i < parameters.Count - 1)
+                            {
+                                str += "","";
+                            }
+                        }
+                    }
+                }
+
+
+                else
+                {
+                    for (int i = 0; i < parameters.Count; i++)
+                    {
+                        var parameter = parameters[i];
+                        if(parameter != null)
+                        {
+                            str += GetParameterText(parameter);
+                            if (i < parameters.Count - 1)
+                            {
+                                str += "","";
+                            }
+                        }
+                        else
+                        {
+                            str += GetParameterText(parameter);
+                            if (i < parameters.Count - 1)
+                            {
+                                str += "","";
+                            }
+                        }
+                    }
+                }
+                str += "");"";
+            }
+            return str;
+        }
+
+
+        private static string GetParameterText(dynamic? parameter)
+        {
+
+            string str = """";
+            if (parameter == null)
+            {
+                str += ""$"";
+            }
+            else if (parameter is Ifc_Entity)
+            {
+                str += ((Ifc_Entity)parameter).ifcid;
+            }
+            else if (parameter.GetType().GetInterface(""IEnumerable"") != null)
+            {
+                str += ""("";
+                for (int i = 0; i < parameter.Count; i++)
+                {
+
+                    str += GetParameterText(parameter[i]);
+                    if (i < parameter.Count - 1)
+                    {
+                        str += "","";
+                    }
+                }
+                str += "")"";
+            }
+            else
+            {
+                string typeName = parameter.GetType().Name;
+
+                if (parameter is STRING)
+                {
+                    str += ""'"" + parameter.ToString() + ""'"";
+                }
+                else if (typeName.Contains(""Enum"")
+                    || typeName == ""IfcBSplineCurveForm""
+                    || typeName == ""IfcBSplineSurfaceForm""
+                    || typeName == ""IfcKnotType""
+                    || typeName == ""IfcPreferredSurfaceCurveRepresentation""
+                    || typeName == ""IfcSIPrefix""
+                    || typeName == ""IfcSIUnitName""
+                    || typeName == ""IfcSurfaceSide""
+                    || typeName == ""IfcTextPath""
+                    || typeName == ""IfcTransitionCode""
+                    || typeName == ""IfcTrimmingPreference"")
+                {
+                    str += """" + parameter + """";
+                }
+                else if (typeName == ""IfcBoolean"" || typeName == ""IfcLogical"" || typeName == ""BOOLEAN"")
+                {
+                    if ((bool)parameter)
+                    {
+                        str += "".T."";
+                    }
+                    else
+                    {
+                        str += "".F."";
+                    }
+                }
+                else
+                {
+                    str += (float)parameter;
+                }
+            }
+            return str;
+        }
+
+        public override string ToString()
+        {
+            return ifcid + "" : "" + GetType().Name;
+        }
 ";
                 writer.Write(contain);
 

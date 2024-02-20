@@ -13,7 +13,7 @@ namespace IFCProjectCreator
         public bool IsOptional { get; set; }
         public bool IsUnique { get; set; }
 
-        public IFCParameterAttribute() : base() 
+        public IFCParameterAttribute() : base()
         {
             IsOptional = false;
             IsUnique = false;
@@ -26,5 +26,7 @@ namespace IFCProjectCreator
                 "\t\tpublic " +  (isOverride? "override ": "virtual ") + GetCSharpTypeText() + "?" + " " + Name + " { get; set; }"
             };
         }
+
+        
     }
 }

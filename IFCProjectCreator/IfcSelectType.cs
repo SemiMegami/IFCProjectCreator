@@ -10,9 +10,12 @@ namespace IFCProjectCreator
     {
         public List<IFCSelectAttribute> SelectAttributes;
 
+        public bool IsGlobal;
+
         public IFCSelectType(IFCDataSet dataSet, string version) : base(dataSet, version)
         {
             SelectAttributes = new List<IFCSelectAttribute>();
+            IsGlobal = false;
         }
         public override void ReadEXP(StreamReader reader, string header)
         {
@@ -20,7 +23,7 @@ namespace IFCProjectCreator
             for(int i = 1; i < EXPLines.Count - 1; i++)
             {
                 SubClassesNames.Add(EXPLines[i].Replace("(","").Replace(")","").Replace("\t","").Replace(",","").Replace(";",""));
-            }      
+            }
         }
 
 

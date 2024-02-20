@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -143,7 +144,7 @@ namespace IFCProjectCreator
         public override void ReadEXP(StreamReader reader, string header)
         {
             GetNameAndEXPText(reader, header, "END_ENTITY;");
-            string AttributeType = "";
+            string attributeType = "";
             
             foreach (string line in EXPLines)
             {
@@ -152,7 +153,6 @@ namespace IFCProjectCreator
                 // find parent class
                 if (line.Contains("SUBTYPE OF"))
                 {
-                  
                     ParentName = words[nW - 1].Replace(";", "").Replace("(", "").Replace(")", "");
                 }
                 // Set Abstract
@@ -163,19 +163,24 @@ namespace IFCProjectCreator
                 // Set reading mode
                 if (line.Contains("INVERSE") || line.Contains("DERIVE") || line.Contains("WHERE") || line.Contains("UNIQUE"))
                 {
-                    AttributeType = line.Replace(" ", "");
+                    string attType = line.Replace(" ", "");
+                    if(attType == "INVERSE" || attType == "DERIVE" || attType == "WHERE" || attType == "UNIQUE")
+                    {
+                        attributeType = attType.Replace(" ", "");
+                    }
+                    
                 }
-                // Read Attributes
+          
                 if (line.Contains(':'))
                 {
-                    if (AttributeType == "")
+                    if (attributeType == "")
                     {
                         IFCParameterAttribute IFCAttribute = new IFCParameterAttribute();
                         IFCAttribute.IsOptional = line.Contains("OPTIONAL");
                         SetAttributeType(IFCAttribute, line, nW);
                         ParameterClassAttributes.Add(IFCAttribute);
                     }
-                    else if (AttributeType == "DERIVE")
+                    else if (attributeType == "DERIVE")
                     {
                         int splitIndex = -1;
                         for (int i = 0; i < nW; i++)
@@ -198,7 +203,7 @@ namespace IFCProjectCreator
                         SetAttributeType(IFCAttribute, line, splitIndex);
                         DeriveAttributes.Add(IFCAttribute);
                     }
-                    else if (AttributeType == "INVERSE")
+                    else if (attributeType == "INVERSE")
                     {
                         int splitIndex = -1;
                         for (int i = 0; i < nW; i++)
@@ -218,24 +223,24 @@ namespace IFCProjectCreator
         }
 
 
-        private void SetAttributeType(IFCAttribute IFCAttribute, string line, int splitIndex)
+        private void SetAttributeType(IFCAttribute attribute, string line, int splitIndex)
         {
 
             string[] words = line.Replace("\t", "").Split(" ");
 
             // coorect attribute name
-            IFCAttribute.Name = words[0];
-            if (IFCAttribute.Name.Contains("."))
+            attribute.Name = words[0];
+            if (attribute.Name.Contains("."))
             {
-                string[] splitedName = IFCAttribute.Name.Split(".");
-                IFCAttribute.Name = splitedName[splitedName.Length - 1];
+                string[] splitedName = attribute.Name.Split(".");
+                attribute.Name = splitedName[splitedName.Length - 1];
             }
 
             // correct attibute type name
-            IFCAttribute.TypeName = words[splitIndex - 1].Replace(";","");
-            if( IFCAttribute.TypeName == "BINARY(32)")
+            attribute.TypeName = words[splitIndex - 1].Replace(";","");
+            if( attribute.TypeName == "BINARY(32)")
             {
-                IFCAttribute.TypeName = "INTEGER";
+                attribute.TypeName = "INTEGER";
             }
 
             int ofCount = 0;
@@ -250,32 +255,32 @@ namespace IFCProjectCreator
             switch (ofCount)
             {
                 case 0:
-                    IFCAttribute.AttributeType = IFCAttributeType.SINGLE;
+                    attribute.AttributeType = IFCAttributeType.SINGLE;
                     break;
                 case 1:
-                    IFCAttribute.AttributeType = IFCAttributeType.LIST;
+                    attribute.AttributeType = IFCAttributeType.LIST;
                     break;
                 case 2:
-                    IFCAttribute.AttributeType = IFCAttributeType.LISTLIST;
+                    attribute.AttributeType = IFCAttributeType.LISTLIST;
                     break;
             }
             if (ofCount > 0)
             {
                 if (line.Contains("ARRAY"))
                 {
-                    IFCAttribute.Aggregation = IFCAggregation.ARRAY;
+                    attribute.Aggregation = IFCAggregation.ARRAY;
                 }
                 if (line.Contains("BAG"))
                 {
-                    IFCAttribute.Aggregation = IFCAggregation.BAG;
+                    attribute.Aggregation = IFCAggregation.BAG;
                 }
                 if (line.Contains("LIST"))
                 {
-                    IFCAttribute.Aggregation = IFCAggregation.LIST;
+                    attribute.Aggregation = IFCAggregation.LIST;
                 }
                 if (line.Contains("SET"))
                 {
-                    IFCAttribute.Aggregation = IFCAggregation.SET;
+                    attribute.Aggregation = IFCAggregation.SET;
                 }
             }
         }
@@ -285,10 +290,15 @@ namespace IFCProjectCreator
             texts.Add(GetCSharpHeaderText());
                  
             texts.Add("\t{");
+            var parents = ParentClasses;
 
-            foreach(var attribute in ParameterClassAttributes)
+            // variables
+            foreach (var attribute in ParameterClassAttributes)
             {
-                texts.AddRange(attribute.GetCSharpText());
+                if (parents.FirstOrDefault(p => p.AdditionalSelectAttibutes.FirstOrDefault(e => e.Name == attribute.Name) != null) == null)
+                {
+                    texts.AddRange(attribute.GetCSharpText());
+                }
             }
             foreach (var attribute in DeriveAttributes)
             {
@@ -308,6 +318,7 @@ namespace IFCProjectCreator
             texts.Add("\t\t{");
             texts.Add("\t\t}");
 
+           
             // constructor with parameters
             var attributes = ParameterAttributes;
             if(attributes.Count > 0)
@@ -315,7 +326,7 @@ namespace IFCProjectCreator
                 string constructor = "\t\tpublic " + Name + "(";
                 for (int i = 0; i < attributes.Count; i++)
                 {
-                    constructor += attributes[i].GetCSharpTypeText() + " " + attributes[i].Name + (i < attributes.Count - 1 ? ", " : "");
+                    constructor += attributes[i].GetCSharpTypeText() + "? " + attributes[i].Name + (i < attributes.Count - 1 ? ", " : "");
                 }
                 constructor += ") : base (";
                 attributes = ParentParameterAttributes;
@@ -332,7 +343,43 @@ namespace IFCProjectCreator
                 }
                 texts.Add("\t\t}");
             }
+
+            // get parameter function
+            texts.Add("\t\tpublic override List<object?> GetParameters()");
+            texts.Add("\t\t{");
+            texts.Add("\t\t\treturn new List<object?>()");
+            texts.Add("\t\t\t{");
+            var parameterClassAttributes = ParameterAttributes;
+            for(int i = 0; i < parameterClassAttributes.Count; i++)
+            {
+                texts.Add("\t\t\t\t" + parameterClassAttributes[i].Name + (i < parameterClassAttributes.Count - 1 ? "," : ""));
+            }
+            texts.Add("\t\t\t};");
+            texts.Add("\t\t}");
+
+            // Global
+            foreach (var attribute in ParameterClassAttributes)
+            {
+                if (parents.FirstOrDefault(p => p.AdditionalSelectAttibutes.FirstOrDefault(e => e.Name == attribute.Name) != null) == null)
+                {
+                    texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
+                }
+            }
+            foreach (var attribute in DeriveAttributes)
+            {
+                texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
+            }
+            foreach (var attribute in AdditionalSelectAttibutes)
+            {
+                texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
+            }
+            foreach (var attribute in InverseAttributes)
+            {
+                texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
+            }
+
             texts.Add("\t}");
+
             return texts;
         }
 
@@ -348,7 +395,7 @@ namespace IFCProjectCreator
             }
             else
             {
-                return " : " + "Entity";
+                return " : " + "Ifc_Entity";
             }
         }
     }
