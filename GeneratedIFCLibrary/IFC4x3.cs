@@ -8747,7 +8747,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcActorSelect: Global.IfcActorSelect
 	{
-		public List<IfcActorRole>? Roles {get;set;}
+		public List<IfcActorRole>? Roles {get; set;}
 	}
 	/// <summary>
 	/// TYPE IfcAppliedValueSelect = SELECT
@@ -8767,12 +8767,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcAxis2Placement: Global.IfcAxis2Placement
 	{
-		public List<IfcPresentationLayerAssignment>? LayerAssignment {get;set;}
-		public List<IfcStyledItem>? StyledByItem {get;set;}
-		public IfcPoint? Location {get;set;}
-		public IfcDimensionCount? Dim {get;set;}
-		public IfcDirection? RefDirection {get;set;}
-		public List<IfcDirection>? P {get;set;}
+		public List<IfcPresentationLayerAssignment>? LayerAssignment {get; }
+		public List<IfcStyledItem>? StyledByItem {get; }
+		public IfcPoint? Location {get; set;}
+		public IfcDimensionCount? Dim {get; }
+		public IfcDirection? RefDirection {get; set;}
+		public List<IfcDirection>? P {get; }
 		public virtual List<Global.IfcPresentationLayerAssignment>? _LayerAssignment
 		{
 			get
@@ -8788,9 +8788,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual Global.IfcPoint? _Location
 		{
@@ -8803,6 +8800,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPoint val)
 				{
 					Location = val;
+				}
+				else if(value == null)
+				{
+					Location = null;
 				}
 			}
 		}
@@ -8827,9 +8828,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcBooleanOperand: Global.IfcBooleanOperand
 	{
-		public List<IfcPresentationLayerAssignment>? LayerAssignment {get;set;}
-		public List<IfcStyledItem>? StyledByItem {get;set;}
-		public IfcDimensionCount? Dim {get;set;}
+		public List<IfcPresentationLayerAssignment>? LayerAssignment {get; }
+		public List<IfcStyledItem>? StyledByItem {get; }
+		public IfcDimensionCount? Dim {get; }
 		public virtual List<Global.IfcPresentationLayerAssignment>? _LayerAssignment
 		{
 			get
@@ -8845,9 +8846,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -8858,9 +8856,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcClassificationReferenceSelect: Global.IfcClassificationReferenceSelect
 	{
-		public IfcLabel? Name {get;set;}
-		public IfcText? Description {get;set;}
-		public List<IfcClassificationReference>? HasReferences {get;set;}
+		public IfcLabel? Name {get; set;}
+		public IfcText? Description {get; set;}
+		public List<IfcClassificationReference>? HasReferences {get; }
 	}
 	/// <summary>
 	/// TYPE IfcClassificationSelect = SELECT
@@ -8870,9 +8868,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcClassificationSelect: Global.IfcClassificationSelect
 	{
-		public IfcLabel? Name {get;set;}
-		public IfcText? Description {get;set;}
-		public List<IfcClassificationReference>? HasReferences {get;set;}
+		public IfcLabel? Name {get; set;}
+		public IfcText? Description {get; set;}
+		public List<IfcClassificationReference>? HasReferences {get; }
 	}
 	/// <summary>
 	/// TYPE IfcColour = SELECT
@@ -8882,7 +8880,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcColour: IfcFillStyleSelect, Global.IfcColour
 	{
-		public IfcLabel? Name {get;set;}
+		public IfcLabel? Name {get; set;}
 	}
 	/// <summary>
 	/// TYPE IfcColourOrFactor = SELECT
@@ -8901,7 +8899,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcCoordinateReferenceSystemSelect: Global.IfcCoordinateReferenceSystemSelect
 	{
-		public List<IfcCoordinateOperation>? HasCoordinateOperation {get;set;}
+		public List<IfcCoordinateOperation>? HasCoordinateOperation {get; }
 	}
 	/// <summary>
 	/// TYPE IfcCsgSelect = SELECT
@@ -8911,9 +8909,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcCsgSelect: Global.IfcCsgSelect
 	{
-		public List<IfcPresentationLayerAssignment>? LayerAssignment {get;set;}
-		public List<IfcStyledItem>? StyledByItem {get;set;}
-		public IfcDimensionCount? Dim {get;set;}
+		public List<IfcPresentationLayerAssignment>? LayerAssignment {get; }
+		public List<IfcStyledItem>? StyledByItem {get; }
+		public IfcDimensionCount? Dim {get; }
 		public virtual List<Global.IfcPresentationLayerAssignment>? _LayerAssignment
 		{
 			get
@@ -8929,9 +8927,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -8942,7 +8937,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcCurveFontOrScaledCurveFontSelect: Global.IfcCurveFontOrScaledCurveFontSelect
 	{
-		public IfcLabel? Name {get;set;}
+		public IfcLabel? Name {get; set;}
 	}
 	/// <summary>
 	/// TYPE IfcCurveMeasureSelect = SELECT
@@ -8962,9 +8957,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcCurveOnSurface: Global.IfcCurveOnSurface
 	{
-		public List<IfcPresentationLayerAssignment>? LayerAssignment {get;set;}
-		public List<IfcStyledItem>? StyledByItem {get;set;}
-		public IfcDimensionCount? Dim {get;set;}
+		public List<IfcPresentationLayerAssignment>? LayerAssignment {get; }
+		public List<IfcStyledItem>? StyledByItem {get; }
+		public IfcDimensionCount? Dim {get; }
 	}
 	/// <summary>
 	/// TYPE IfcCurveOrEdgeCurve = SELECT
@@ -8974,8 +8969,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcCurveOrEdgeCurve: Global.IfcCurveOrEdgeCurve
 	{
-		public List<IfcPresentationLayerAssignment>? LayerAssignment {get;set;}
-		public List<IfcStyledItem>? StyledByItem {get;set;}
+		public List<IfcPresentationLayerAssignment>? LayerAssignment {get; }
+		public List<IfcStyledItem>? StyledByItem {get; }
 		public virtual List<Global.IfcPresentationLayerAssignment>? _LayerAssignment
 		{
 			get
@@ -8990,9 +8985,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -9013,12 +9005,12 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcDefinitionSelect: Global.IfcDefinitionSelect
 	{
-		public IfcGloballyUniqueId? GlobalId {get;set;}
-		public IfcOwnerHistory? OwnerHistory {get;set;}
-		public IfcLabel? Name {get;set;}
-		public IfcText? Description {get;set;}
-		public List<IfcRelDeclares>? HasContext {get;set;}
-		public List<IfcRelAssociates>? HasAssociations {get;set;}
+		public IfcGloballyUniqueId? GlobalId {get; set;}
+		public IfcOwnerHistory? OwnerHistory {get; set;}
+		public IfcLabel? Name {get; set;}
+		public IfcText? Description {get; set;}
+		public List<IfcRelDeclares>? HasContext {get; }
+		public List<IfcRelAssociates>? HasAssociations {get; }
 	}
 	/// <summary>
 	/// TYPE IfcDerivedMeasureValue = SELECT
@@ -9106,10 +9098,10 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcDocumentSelect: Global.IfcDocumentSelect
 	{
-		public IfcIdentifier? Identification {get;set;}
-		public IfcLabel? Name {get;set;}
-		public IfcText? Description {get;set;}
-		public IfcURIReference? Location {get;set;}
+		public IfcIdentifier? Identification {get; set;}
+		public IfcLabel? Name {get; set;}
+		public IfcText? Description {get; set;}
+		public IfcURIReference? Location {get; set;}
 		public virtual Global.IfcIdentifier? _Identification
 		{
 			get
@@ -9121,6 +9113,10 @@ namespace IFC.IFC4x3
 				if(value is IfcIdentifier val)
 				{
 					Identification = val;
+				}
+				else if(value == null)
+				{
+					Identification = null;
 				}
 			}
 		}
@@ -9136,6 +9132,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcURIReference? _Location
@@ -9149,6 +9149,10 @@ namespace IFC.IFC4x3
 				if(value is IfcURIReference val)
 				{
 					Location = val;
+				}
+				else if(value == null)
+				{
+					Location = null;
 				}
 			}
 		}
@@ -9173,9 +9177,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcGeometricSetSelect: Global.IfcGeometricSetSelect
 	{
-		public List<IfcPresentationLayerAssignment>? LayerAssignment {get;set;}
-		public List<IfcStyledItem>? StyledByItem {get;set;}
-		public IfcDimensionCount? Dim {get;set;}
+		public List<IfcPresentationLayerAssignment>? LayerAssignment {get; }
+		public List<IfcStyledItem>? StyledByItem {get; }
+		public IfcDimensionCount? Dim {get; }
 		public virtual List<Global.IfcPresentationLayerAssignment>? _LayerAssignment
 		{
 			get
@@ -9190,9 +9194,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -9222,29 +9223,29 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcInterferenceSelect: Global.IfcInterferenceSelect
 	{
-		public IfcGloballyUniqueId? GlobalId {get;set;}
-		public IfcOwnerHistory? OwnerHistory {get;set;}
-		public IfcLabel? Name {get;set;}
-		public IfcText? Description {get;set;}
-		public List<IfcRelAssigns>? HasAssignments {get;set;}
-		public List<IfcRelNests>? Nests {get;set;}
-		public List<IfcRelNests>? IsNestedBy {get;set;}
-		public List<IfcRelDeclares>? HasContext {get;set;}
-		public List<IfcRelAggregates>? IsDecomposedBy {get;set;}
-		public List<IfcRelAggregates>? Decomposes {get;set;}
-		public List<IfcRelAssociates>? HasAssociations {get;set;}
-		public IfcLabel? ObjectType {get;set;}
-		public List<IfcRelDefinesByObject>? IsDeclaredBy {get;set;}
-		public List<IfcRelDefinesByObject>? Declares {get;set;}
-		public List<IfcRelDefinesByType>? IsTypedBy {get;set;}
-		public List<IfcRelDefinesByProperties>? IsDefinedBy {get;set;}
-		public IfcObjectPlacement? ObjectPlacement {get;set;}
-		public IfcProductRepresentation? Representation {get;set;}
-		public List<IfcRelAssignsToProduct>? ReferencedBy {get;set;}
-		public List<IfcRelPositions>? PositionedRelativeTo {get;set;}
-		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures {get;set;}
-		public List<IfcRelInterferesElements>? IsInterferedByElements {get;set;}
-		public List<IfcRelInterferesElements>? InterferesElements {get;set;}
+		public IfcGloballyUniqueId? GlobalId {get; set;}
+		public IfcOwnerHistory? OwnerHistory {get; set;}
+		public IfcLabel? Name {get; set;}
+		public IfcText? Description {get; set;}
+		public List<IfcRelAssigns>? HasAssignments {get; }
+		public List<IfcRelNests>? Nests {get; }
+		public List<IfcRelNests>? IsNestedBy {get; }
+		public List<IfcRelDeclares>? HasContext {get; }
+		public List<IfcRelAggregates>? IsDecomposedBy {get; }
+		public List<IfcRelAggregates>? Decomposes {get; }
+		public List<IfcRelAssociates>? HasAssociations {get; }
+		public IfcLabel? ObjectType {get; set;}
+		public List<IfcRelDefinesByObject>? IsDeclaredBy {get; }
+		public List<IfcRelDefinesByObject>? Declares {get; }
+		public List<IfcRelDefinesByType>? IsTypedBy {get; }
+		public List<IfcRelDefinesByProperties>? IsDefinedBy {get; }
+		public IfcObjectPlacement? ObjectPlacement {get; set;}
+		public IfcProductRepresentation? Representation {get; set;}
+		public List<IfcRelAssignsToProduct>? ReferencedBy {get; }
+		public List<IfcRelPositions>? PositionedRelativeTo {get; }
+		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures {get; }
+		public List<IfcRelInterferesElements>? IsInterferedByElements {get; }
+		public List<IfcRelInterferesElements>? InterferesElements {get; }
 	}
 	/// <summary>
 	/// TYPE IfcLayeredItem = SELECT
@@ -9263,9 +9264,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcLibrarySelect: Global.IfcLibrarySelect
 	{
-		public IfcLabel? Name {get;set;}
-		public IfcURIReference? Location {get;set;}
-		public IfcText? Description {get;set;}
+		public IfcLabel? Name {get; set;}
+		public IfcURIReference? Location {get; set;}
+		public IfcText? Description {get; set;}
 		public virtual Global.IfcURIReference? _Location
 		{
 			get
@@ -9277,6 +9278,10 @@ namespace IFC.IFC4x3
 				if(value is IfcURIReference val)
 				{
 					Location = val;
+				}
+				else if(value == null)
+				{
+					Location = null;
 				}
 			}
 		}
@@ -9291,6 +9296,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -9408,8 +9417,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcPointOrVertexPoint: Global.IfcPointOrVertexPoint
 	{
-		public List<IfcPresentationLayerAssignment>? LayerAssignment {get;set;}
-		public List<IfcStyledItem>? StyledByItem {get;set;}
+		public List<IfcPresentationLayerAssignment>? LayerAssignment {get; }
+		public List<IfcStyledItem>? StyledByItem {get; }
 		public virtual List<Global.IfcPresentationLayerAssignment>? _LayerAssignment
 		{
 			get
@@ -9425,9 +9434,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -9438,20 +9444,20 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcProcessSelect: Global.IfcProcessSelect
 	{
-		public IfcGloballyUniqueId? GlobalId {get;set;}
-		public IfcOwnerHistory? OwnerHistory {get;set;}
-		public IfcLabel? Name {get;set;}
-		public IfcText? Description {get;set;}
-		public List<IfcRelAssigns>? HasAssignments {get;set;}
-		public List<IfcRelNests>? Nests {get;set;}
-		public List<IfcRelNests>? IsNestedBy {get;set;}
-		public List<IfcRelDeclares>? HasContext {get;set;}
-		public List<IfcRelAggregates>? IsDecomposedBy {get;set;}
-		public List<IfcRelAggregates>? Decomposes {get;set;}
-		public List<IfcRelAssociates>? HasAssociations {get;set;}
-		public IfcIdentifier? Identification {get;set;}
-		public IfcText? LongDescription {get;set;}
-		public List<IfcRelAssignsToProcess>? OperatesOn {get;set;}
+		public IfcGloballyUniqueId? GlobalId {get; set;}
+		public IfcOwnerHistory? OwnerHistory {get; set;}
+		public IfcLabel? Name {get; set;}
+		public IfcText? Description {get; set;}
+		public List<IfcRelAssigns>? HasAssignments {get; }
+		public List<IfcRelNests>? Nests {get; }
+		public List<IfcRelNests>? IsNestedBy {get; }
+		public List<IfcRelDeclares>? HasContext {get; }
+		public List<IfcRelAggregates>? IsDecomposedBy {get; }
+		public List<IfcRelAggregates>? Decomposes {get; }
+		public List<IfcRelAssociates>? HasAssociations {get; }
+		public IfcIdentifier? Identification {get; set;}
+		public IfcText? LongDescription {get; set;}
+		public List<IfcRelAssignsToProcess>? OperatesOn {get; }
 	}
 	/// <summary>
 	/// TYPE IfcProductRepresentationSelect = SELECT
@@ -9461,7 +9467,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcProductRepresentationSelect: Global.IfcProductRepresentationSelect
 	{
-		public List<IfcShapeAspect>? HasShapeAspects {get;set;}
+		public List<IfcShapeAspect>? HasShapeAspects {get; }
 	}
 	/// <summary>
 	/// TYPE IfcProductSelect = SELECT
@@ -9471,18 +9477,18 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcProductSelect: Global.IfcProductSelect
 	{
-		public IfcGloballyUniqueId? GlobalId {get;set;}
-		public IfcOwnerHistory? OwnerHistory {get;set;}
-		public IfcLabel? Name {get;set;}
-		public IfcText? Description {get;set;}
-		public List<IfcRelAssigns>? HasAssignments {get;set;}
-		public List<IfcRelNests>? Nests {get;set;}
-		public List<IfcRelNests>? IsNestedBy {get;set;}
-		public List<IfcRelDeclares>? HasContext {get;set;}
-		public List<IfcRelAggregates>? IsDecomposedBy {get;set;}
-		public List<IfcRelAggregates>? Decomposes {get;set;}
-		public List<IfcRelAssociates>? HasAssociations {get;set;}
-		public List<IfcRelAssignsToProduct>? ReferencedBy {get;set;}
+		public IfcGloballyUniqueId? GlobalId {get; set;}
+		public IfcOwnerHistory? OwnerHistory {get; set;}
+		public IfcLabel? Name {get; set;}
+		public IfcText? Description {get; set;}
+		public List<IfcRelAssigns>? HasAssignments {get; }
+		public List<IfcRelNests>? Nests {get; }
+		public List<IfcRelNests>? IsNestedBy {get; }
+		public List<IfcRelDeclares>? HasContext {get; }
+		public List<IfcRelAggregates>? IsDecomposedBy {get; }
+		public List<IfcRelAggregates>? Decomposes {get; }
+		public List<IfcRelAssociates>? HasAssociations {get; }
+		public List<IfcRelAssignsToProduct>? ReferencedBy {get; }
 	}
 	/// <summary>
 	/// TYPE IfcPropertySetDefinitionSelect = SELECT
@@ -9525,22 +9531,22 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcResourceSelect: Global.IfcResourceSelect
 	{
-		public IfcGloballyUniqueId? GlobalId {get;set;}
-		public IfcOwnerHistory? OwnerHistory {get;set;}
-		public IfcLabel? Name {get;set;}
-		public IfcText? Description {get;set;}
-		public List<IfcRelAssigns>? HasAssignments {get;set;}
-		public List<IfcRelNests>? Nests {get;set;}
-		public List<IfcRelNests>? IsNestedBy {get;set;}
-		public List<IfcRelDeclares>? HasContext {get;set;}
-		public List<IfcRelAggregates>? IsDecomposedBy {get;set;}
-		public List<IfcRelAggregates>? Decomposes {get;set;}
-		public List<IfcRelAssociates>? HasAssociations {get;set;}
-		public IfcIdentifier? Identification {get;set;}
-		public IfcText? LongDescription {get;set;}
-		public List<IfcRelAssignsToResource>? ResourceOf {get;set;}
-		public List<IfcAppliedValue>? BaseCosts {get;set;}
-		public IfcPhysicalQuantity? BaseQuantity {get;set;}
+		public IfcGloballyUniqueId? GlobalId {get; set;}
+		public IfcOwnerHistory? OwnerHistory {get; set;}
+		public IfcLabel? Name {get; set;}
+		public IfcText? Description {get; set;}
+		public List<IfcRelAssigns>? HasAssignments {get; }
+		public List<IfcRelNests>? Nests {get; }
+		public List<IfcRelNests>? IsNestedBy {get; }
+		public List<IfcRelDeclares>? HasContext {get; }
+		public List<IfcRelAggregates>? IsDecomposedBy {get; }
+		public List<IfcRelAggregates>? Decomposes {get; }
+		public List<IfcRelAssociates>? HasAssociations {get; }
+		public IfcIdentifier? Identification {get; set;}
+		public IfcText? LongDescription {get; set;}
+		public List<IfcRelAssignsToResource>? ResourceOf {get; }
+		public List<IfcAppliedValue>? BaseCosts {get; set;}
+		public IfcPhysicalQuantity? BaseQuantity {get; set;}
 	}
 	/// <summary>
 	/// TYPE IfcRotationalStiffnessSelect = SELECT
@@ -9568,9 +9574,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcShell: Global.IfcShell
 	{
-		public List<IfcPresentationLayerAssignment>? LayerAssignment {get;set;}
-		public List<IfcStyledItem>? StyledByItem {get;set;}
-		public List<IfcFace>? CfsFaces {get;set;}
+		public List<IfcPresentationLayerAssignment>? LayerAssignment {get; }
+		public List<IfcStyledItem>? StyledByItem {get; }
+		public List<IfcFace>? CfsFaces {get; set;}
 		public virtual List<Global.IfcPresentationLayerAssignment>? _LayerAssignment
 		{
 			get
@@ -9585,9 +9591,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -9634,8 +9637,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcSolidOrShell: Global.IfcSolidOrShell
 	{
-		public List<IfcPresentationLayerAssignment>? LayerAssignment {get;set;}
-		public List<IfcStyledItem>? StyledByItem {get;set;}
+		public List<IfcPresentationLayerAssignment>? LayerAssignment {get; }
+		public List<IfcStyledItem>? StyledByItem {get; }
 	}
 	/// <summary>
 	/// TYPE IfcSpaceBoundarySelect = SELECT
@@ -9645,34 +9648,34 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcSpaceBoundarySelect: Global.IfcSpaceBoundarySelect
 	{
-		public IfcGloballyUniqueId? GlobalId {get;set;}
-		public IfcOwnerHistory? OwnerHistory {get;set;}
-		public IfcLabel? Name {get;set;}
-		public IfcText? Description {get;set;}
-		public List<IfcRelAssigns>? HasAssignments {get;set;}
-		public List<IfcRelNests>? Nests {get;set;}
-		public List<IfcRelNests>? IsNestedBy {get;set;}
-		public List<IfcRelDeclares>? HasContext {get;set;}
-		public List<IfcRelAggregates>? IsDecomposedBy {get;set;}
-		public List<IfcRelAggregates>? Decomposes {get;set;}
-		public List<IfcRelAssociates>? HasAssociations {get;set;}
-		public IfcLabel? ObjectType {get;set;}
-		public List<IfcRelDefinesByObject>? IsDeclaredBy {get;set;}
-		public List<IfcRelDefinesByObject>? Declares {get;set;}
-		public List<IfcRelDefinesByType>? IsTypedBy {get;set;}
-		public List<IfcRelDefinesByProperties>? IsDefinedBy {get;set;}
-		public IfcObjectPlacement? ObjectPlacement {get;set;}
-		public IfcProductRepresentation? Representation {get;set;}
-		public List<IfcRelAssignsToProduct>? ReferencedBy {get;set;}
-		public List<IfcRelPositions>? PositionedRelativeTo {get;set;}
-		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures {get;set;}
-		public IfcLabel? LongName {get;set;}
-		public List<IfcRelContainedInSpatialStructure>? ContainsElements {get;set;}
-		public List<IfcRelServicesBuildings>? ServicedBySystems {get;set;}
-		public List<IfcRelReferencedInSpatialStructure>? ReferencesElements {get;set;}
-		public List<IfcRelInterferesElements>? IsInterferedByElements {get;set;}
-		public List<IfcRelInterferesElements>? InterferesElements {get;set;}
-		public List<IfcRelSpaceBoundary>? BoundedBy {get;set;}
+		public IfcGloballyUniqueId? GlobalId {get; set;}
+		public IfcOwnerHistory? OwnerHistory {get; set;}
+		public IfcLabel? Name {get; set;}
+		public IfcText? Description {get; set;}
+		public List<IfcRelAssigns>? HasAssignments {get; }
+		public List<IfcRelNests>? Nests {get; }
+		public List<IfcRelNests>? IsNestedBy {get; }
+		public List<IfcRelDeclares>? HasContext {get; }
+		public List<IfcRelAggregates>? IsDecomposedBy {get; }
+		public List<IfcRelAggregates>? Decomposes {get; }
+		public List<IfcRelAssociates>? HasAssociations {get; }
+		public IfcLabel? ObjectType {get; set;}
+		public List<IfcRelDefinesByObject>? IsDeclaredBy {get; }
+		public List<IfcRelDefinesByObject>? Declares {get; }
+		public List<IfcRelDefinesByType>? IsTypedBy {get; }
+		public List<IfcRelDefinesByProperties>? IsDefinedBy {get; }
+		public IfcObjectPlacement? ObjectPlacement {get; set;}
+		public IfcProductRepresentation? Representation {get; set;}
+		public List<IfcRelAssignsToProduct>? ReferencedBy {get; }
+		public List<IfcRelPositions>? PositionedRelativeTo {get; }
+		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures {get; }
+		public IfcLabel? LongName {get; set;}
+		public List<IfcRelContainedInSpatialStructure>? ContainsElements {get; }
+		public List<IfcRelServicesBuildings>? ServicedBySystems {get; }
+		public List<IfcRelReferencedInSpatialStructure>? ReferencesElements {get; }
+		public List<IfcRelInterferesElements>? IsInterferedByElements {get; }
+		public List<IfcRelInterferesElements>? InterferesElements {get; }
+		public List<IfcRelSpaceBoundary>? BoundedBy {get; }
 		public virtual List<Global.IfcRelPositions>? _PositionedRelativeTo
 		{
 			get
@@ -9687,9 +9690,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelReferencedInSpatialStructure>? _ReferencedInStructures
@@ -9707,9 +9707,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelInterferesElements>? _IsInterferedByElements
 		{
@@ -9725,9 +9722,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelInterferesElements>? _InterferesElements
@@ -9745,9 +9739,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -9758,23 +9749,23 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcSpatialReferenceSelect: Global.IfcSpatialReferenceSelect
 	{
-		public IfcGloballyUniqueId? GlobalId {get;set;}
-		public IfcOwnerHistory? OwnerHistory {get;set;}
-		public IfcLabel? Name {get;set;}
-		public IfcText? Description {get;set;}
-		public List<IfcRelAssigns>? HasAssignments {get;set;}
-		public List<IfcRelNests>? Nests {get;set;}
-		public List<IfcRelNests>? IsNestedBy {get;set;}
-		public List<IfcRelDeclares>? HasContext {get;set;}
-		public List<IfcRelAggregates>? IsDecomposedBy {get;set;}
-		public List<IfcRelAggregates>? Decomposes {get;set;}
-		public List<IfcRelAssociates>? HasAssociations {get;set;}
-		public IfcLabel? ObjectType {get;set;}
-		public List<IfcRelDefinesByObject>? IsDeclaredBy {get;set;}
-		public List<IfcRelDefinesByObject>? Declares {get;set;}
-		public List<IfcRelDefinesByType>? IsTypedBy {get;set;}
-		public List<IfcRelDefinesByProperties>? IsDefinedBy {get;set;}
-		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures {get;set;}
+		public IfcGloballyUniqueId? GlobalId {get; set;}
+		public IfcOwnerHistory? OwnerHistory {get; set;}
+		public IfcLabel? Name {get; set;}
+		public IfcText? Description {get; set;}
+		public List<IfcRelAssigns>? HasAssignments {get; }
+		public List<IfcRelNests>? Nests {get; }
+		public List<IfcRelNests>? IsNestedBy {get; }
+		public List<IfcRelDeclares>? HasContext {get; }
+		public List<IfcRelAggregates>? IsDecomposedBy {get; }
+		public List<IfcRelAggregates>? Decomposes {get; }
+		public List<IfcRelAssociates>? HasAssociations {get; }
+		public IfcLabel? ObjectType {get; set;}
+		public List<IfcRelDefinesByObject>? IsDeclaredBy {get; }
+		public List<IfcRelDefinesByObject>? Declares {get; }
+		public List<IfcRelDefinesByType>? IsTypedBy {get; }
+		public List<IfcRelDefinesByProperties>? IsDefinedBy {get; }
+		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures {get; }
 	}
 	/// <summary>
 	/// TYPE IfcSpecularHighlightSelect = SELECT
@@ -9793,27 +9784,27 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcStructuralActivityAssignmentSelect: Global.IfcStructuralActivityAssignmentSelect
 	{
-		public IfcGloballyUniqueId? GlobalId {get;set;}
-		public IfcOwnerHistory? OwnerHistory {get;set;}
-		public IfcLabel? Name {get;set;}
-		public IfcText? Description {get;set;}
-		public List<IfcRelAssigns>? HasAssignments {get;set;}
-		public List<IfcRelNests>? Nests {get;set;}
-		public List<IfcRelNests>? IsNestedBy {get;set;}
-		public List<IfcRelDeclares>? HasContext {get;set;}
-		public List<IfcRelAggregates>? IsDecomposedBy {get;set;}
-		public List<IfcRelAggregates>? Decomposes {get;set;}
-		public List<IfcRelAssociates>? HasAssociations {get;set;}
-		public IfcLabel? ObjectType {get;set;}
-		public List<IfcRelDefinesByObject>? IsDeclaredBy {get;set;}
-		public List<IfcRelDefinesByObject>? Declares {get;set;}
-		public List<IfcRelDefinesByType>? IsTypedBy {get;set;}
-		public List<IfcRelDefinesByProperties>? IsDefinedBy {get;set;}
-		public IfcObjectPlacement? ObjectPlacement {get;set;}
-		public IfcProductRepresentation? Representation {get;set;}
-		public List<IfcRelAssignsToProduct>? ReferencedBy {get;set;}
-		public List<IfcRelPositions>? PositionedRelativeTo {get;set;}
-		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures {get;set;}
+		public IfcGloballyUniqueId? GlobalId {get; set;}
+		public IfcOwnerHistory? OwnerHistory {get; set;}
+		public IfcLabel? Name {get; set;}
+		public IfcText? Description {get; set;}
+		public List<IfcRelAssigns>? HasAssignments {get; }
+		public List<IfcRelNests>? Nests {get; }
+		public List<IfcRelNests>? IsNestedBy {get; }
+		public List<IfcRelDeclares>? HasContext {get; }
+		public List<IfcRelAggregates>? IsDecomposedBy {get; }
+		public List<IfcRelAggregates>? Decomposes {get; }
+		public List<IfcRelAssociates>? HasAssociations {get; }
+		public IfcLabel? ObjectType {get; set;}
+		public List<IfcRelDefinesByObject>? IsDeclaredBy {get; }
+		public List<IfcRelDefinesByObject>? Declares {get; }
+		public List<IfcRelDefinesByType>? IsTypedBy {get; }
+		public List<IfcRelDefinesByProperties>? IsDefinedBy {get; }
+		public IfcObjectPlacement? ObjectPlacement {get; set;}
+		public IfcProductRepresentation? Representation {get; set;}
+		public List<IfcRelAssignsToProduct>? ReferencedBy {get; }
+		public List<IfcRelPositions>? PositionedRelativeTo {get; }
+		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures {get; }
 		public virtual List<Global.IfcRelNests>? _Nests
 		{
 			get
@@ -9828,9 +9819,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelNests>? _IsNestedBy
@@ -9848,9 +9836,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelDeclares>? _HasContext
 		{
@@ -9866,9 +9851,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelAggregates>? _IsDecomposedBy
@@ -9886,9 +9868,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelAggregates>? _Decomposes
 		{
@@ -9904,9 +9883,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelDefinesByObject>? _IsDeclaredBy
@@ -9924,9 +9900,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelDefinesByObject>? _Declares
 		{
@@ -9942,9 +9915,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelDefinesByType>? _IsTypedBy
@@ -9962,9 +9932,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelDefinesByProperties>? _IsDefinedBy
 		{
@@ -9980,9 +9947,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelPositions>? _PositionedRelativeTo
@@ -10000,9 +9964,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelReferencedInSpatialStructure>? _ReferencedInStructures
 		{
@@ -10019,9 +9980,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -10033,8 +9991,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcSurfaceOrFaceSurface: Global.IfcSurfaceOrFaceSurface
 	{
-		public List<IfcPresentationLayerAssignment>? LayerAssignment {get;set;}
-		public List<IfcStyledItem>? StyledByItem {get;set;}
+		public List<IfcPresentationLayerAssignment>? LayerAssignment {get; }
+		public List<IfcStyledItem>? StyledByItem {get; }
 		public virtual List<Global.IfcPresentationLayerAssignment>? _LayerAssignment
 		{
 			get
@@ -10049,9 +10007,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -10075,7 +10030,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcTextFontSelect: Global.IfcTextFontSelect
 	{
-		public IfcLabel? Name {get;set;}
+		public IfcLabel? Name {get; set;}
 	}
 	/// <summary>
 	/// TYPE IfcTimeOrRatioSelect = SELECT
@@ -10132,9 +10087,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public interface IfcVectorOrDirection: Global.IfcVectorOrDirection
 	{
-		public List<IfcPresentationLayerAssignment>? LayerAssignment {get;set;}
-		public List<IfcStyledItem>? StyledByItem {get;set;}
-		public IfcDimensionCount? Dim {get;set;}
+		public List<IfcPresentationLayerAssignment>? LayerAssignment {get; }
+		public List<IfcStyledItem>? StyledByItem {get; }
+		public IfcDimensionCount? Dim {get; }
 		public virtual List<Global.IfcPresentationLayerAssignment>? _LayerAssignment
 		{
 			get
@@ -10149,9 +10104,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -10213,6 +10165,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Status
@@ -10227,6 +10183,10 @@ namespace IFC.IFC4x3
 				{
 					Status = val;
 				}
+				else if(value == null)
+				{
+					Status = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _LongDescription
@@ -10240,6 +10200,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					LongDescription = val;
+				}
+				else if(value == null)
+				{
+					LongDescription = null;
 				}
 			}
 		}
@@ -10257,7 +10221,7 @@ namespace IFC.IFC4x3
 	public class IfcActor : IfcObject, Global.IfcActor
 	{
 		public virtual IfcActorSelect? TheActor { get; set; }
-		public List<IfcRelAssignsToActor>? IsActingUpon {get{return Model?.GetItems<IfcRelAssignsToActor>().Where(x => x.RelatingActor != null && x.RelatingActor == this).ToList();} set{}}
+		public List<IfcRelAssignsToActor>? IsActingUpon {get{return Model?.GetItems<IfcRelAssignsToActor>().Where(x => x.RelatingActor != null && x.RelatingActor == this).ToList();}}
 		public IfcActor() : base()
 		{
 		}
@@ -10289,6 +10253,10 @@ namespace IFC.IFC4x3
 				{
 					TheActor = val;
 				}
+				else if(value == null)
+				{
+					TheActor = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcRelAssignsToActor>? _IsActingUpon
@@ -10305,9 +10273,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -10329,7 +10294,7 @@ namespace IFC.IFC4x3
 		public virtual IfcRoleEnum? Role { get; set; }
 		public virtual IfcLabel? UserDefinedRole { get; set; }
 		public virtual IfcText? Description { get; set; }
-		public List<IfcExternalReferenceRelationship>? HasExternalReference {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
+		public List<IfcExternalReferenceRelationship>? HasExternalReference {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
 		public IfcActorRole() : base()
 		{
 		}
@@ -10360,6 +10325,10 @@ namespace IFC.IFC4x3
 				{
 					Role = val;
 				}
+				else if(value == null)
+				{
+					Role = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _UserDefinedRole
@@ -10374,6 +10343,10 @@ namespace IFC.IFC4x3
 				{
 					UserDefinedRole = val;
 				}
+				else if(value == null)
+				{
+					UserDefinedRole = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -10387,6 +10360,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -10404,9 +10381,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -10459,6 +10433,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -10509,6 +10487,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -10535,8 +10517,8 @@ namespace IFC.IFC4x3
 		public virtual IfcAddressTypeEnum? Purpose { get; set; }
 		public virtual IfcText? Description { get; set; }
 		public virtual IfcLabel? UserDefinedPurpose { get; set; }
-		public List<IfcPerson>? OfPerson {get{return Model?.GetItems<IfcPerson>().Where(x => x.Addresses != null && x.Addresses.Contains(this)).ToList();}set{}}
-		public List<IfcOrganization>? OfOrganization {get{return Model?.GetItems<IfcOrganization>().Where(x => x.Addresses != null && x.Addresses.Contains(this)).ToList();}set{}}
+		public List<IfcPerson>? OfPerson {get{return Model?.GetItems<IfcPerson>().Where(x => x.Addresses != null && x.Addresses.Contains(this)).ToList();}}
+		public List<IfcOrganization>? OfOrganization {get{return Model?.GetItems<IfcOrganization>().Where(x => x.Addresses != null && x.Addresses.Contains(this)).ToList();}}
 		public IfcAddress() : base()
 		{
 		}
@@ -10567,6 +10549,10 @@ namespace IFC.IFC4x3
 				{
 					Purpose = val;
 				}
+				else if(value == null)
+				{
+					Purpose = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -10581,6 +10567,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _UserDefinedPurpose
@@ -10594,6 +10584,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					UserDefinedPurpose = val;
+				}
+				else if(value == null)
+				{
+					UserDefinedPurpose = null;
 				}
 			}
 		}
@@ -10612,9 +10606,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcOrganization>? _OfOrganization
 		{
@@ -10630,9 +10621,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -10710,6 +10698,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Voids = null;
+				}
+				else
+				{
+					Voids = new List<IfcClosedShell>();
+					foreach(var val in value)
+					{
+						if(val is IfcClosedShell v)
+						{
+							Voids.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -10810,6 +10813,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -10862,6 +10869,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -10912,6 +10923,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -10961,6 +10976,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAirTerminalTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -11014,6 +11033,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -11063,6 +11086,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAirToAirHeatRecoveryTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -11116,6 +11143,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -11166,6 +11197,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -11211,6 +11246,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -11255,6 +11294,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					RailHeadDistance = val;
+				}
+				else if(value == null)
+				{
+					RailHeadDistance = null;
 				}
 			}
 		}
@@ -11320,6 +11363,10 @@ namespace IFC.IFC4x3
 				{
 					StartDistAlong = val;
 				}
+				else if(value == null)
+				{
+					StartDistAlong = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _HorizontalLength
@@ -11333,6 +11380,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					HorizontalLength = val;
+				}
+				else if(value == null)
+				{
+					HorizontalLength = null;
 				}
 			}
 		}
@@ -11348,6 +11399,10 @@ namespace IFC.IFC4x3
 				{
 					StartCantLeft = val;
 				}
+				else if(value == null)
+				{
+					StartCantLeft = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _EndCantLeft
@@ -11361,6 +11416,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					EndCantLeft = val;
+				}
+				else if(value == null)
+				{
+					EndCantLeft = null;
 				}
 			}
 		}
@@ -11376,6 +11435,10 @@ namespace IFC.IFC4x3
 				{
 					StartCantRight = val;
 				}
+				else if(value == null)
+				{
+					StartCantRight = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _EndCantRight
@@ -11390,6 +11453,10 @@ namespace IFC.IFC4x3
 				{
 					EndCantRight = val;
 				}
+				else if(value == null)
+				{
+					EndCantRight = null;
+				}
 			}
 		}
 		public virtual Global.IfcAlignmentCantSegmentTypeEnum? _PredefinedType
@@ -11403,6 +11470,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAlignmentCantSegmentTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -11495,6 +11566,10 @@ namespace IFC.IFC4x3
 				{
 					StartPoint = val;
 				}
+				else if(value == null)
+				{
+					StartPoint = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlaneAngleMeasure? _StartDirection
@@ -11508,6 +11583,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlaneAngleMeasure val)
 				{
 					StartDirection = val;
+				}
+				else if(value == null)
+				{
+					StartDirection = null;
 				}
 			}
 		}
@@ -11523,6 +11602,10 @@ namespace IFC.IFC4x3
 				{
 					StartRadiusOfCurvature = val;
 				}
+				else if(value == null)
+				{
+					StartRadiusOfCurvature = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _EndRadiusOfCurvature
@@ -11536,6 +11619,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					EndRadiusOfCurvature = val;
+				}
+				else if(value == null)
+				{
+					EndRadiusOfCurvature = null;
 				}
 			}
 		}
@@ -11551,6 +11638,10 @@ namespace IFC.IFC4x3
 				{
 					SegmentLength = val;
 				}
+				else if(value == null)
+				{
+					SegmentLength = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _GravityCenterLineHeight
@@ -11565,6 +11656,10 @@ namespace IFC.IFC4x3
 				{
 					GravityCenterLineHeight = val;
 				}
+				else if(value == null)
+				{
+					GravityCenterLineHeight = null;
+				}
 			}
 		}
 		public virtual Global.IfcAlignmentHorizontalSegmentTypeEnum? _PredefinedType
@@ -11578,6 +11673,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAlignmentHorizontalSegmentTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -11624,6 +11723,10 @@ namespace IFC.IFC4x3
 				{
 					StartTag = val;
 				}
+				else if(value == null)
+				{
+					StartTag = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _EndTag
@@ -11637,6 +11740,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					EndTag = val;
+				}
+				else if(value == null)
+				{
+					EndTag = null;
 				}
 			}
 		}
@@ -11682,6 +11789,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAlignmentParameterSegment val)
 				{
 					DesignParameters = val;
+				}
+				else if(value == null)
+				{
+					DesignParameters = null;
 				}
 			}
 		}
@@ -11774,6 +11885,10 @@ namespace IFC.IFC4x3
 				{
 					StartDistAlong = val;
 				}
+				else if(value == null)
+				{
+					StartDistAlong = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _HorizontalLength
@@ -11787,6 +11902,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					HorizontalLength = val;
+				}
+				else if(value == null)
+				{
+					HorizontalLength = null;
 				}
 			}
 		}
@@ -11802,6 +11921,10 @@ namespace IFC.IFC4x3
 				{
 					StartHeight = val;
 				}
+				else if(value == null)
+				{
+					StartHeight = null;
+				}
 			}
 		}
 		public virtual Global.IfcRatioMeasure? _StartGradient
@@ -11815,6 +11938,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRatioMeasure val)
 				{
 					StartGradient = val;
+				}
+				else if(value == null)
+				{
+					StartGradient = null;
 				}
 			}
 		}
@@ -11830,6 +11957,10 @@ namespace IFC.IFC4x3
 				{
 					EndGradient = val;
 				}
+				else if(value == null)
+				{
+					EndGradient = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _RadiusOfCurvature
@@ -11843,6 +11974,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					RadiusOfCurvature = val;
+				}
+				else if(value == null)
+				{
+					RadiusOfCurvature = null;
 				}
 			}
 		}
@@ -11858,6 +11993,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -11872,7 +12011,7 @@ namespace IFC.IFC4x3
 	public class IfcAnnotation : IfcProduct, Global.IfcAnnotation
 	{
 		public virtual IfcAnnotationTypeEnum? PredefinedType { get; set; }
-		public List<IfcRelContainedInSpatialStructure>? ContainedInStructure {get{return Model?.GetItems<IfcRelContainedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();}set{}}
+		public List<IfcRelContainedInSpatialStructure>? ContainedInStructure {get{return Model?.GetItems<IfcRelContainedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();}}
 		public IfcAnnotation() : base()
 		{
 		}
@@ -11906,6 +12045,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcRelContainedInSpatialStructure>? _ContainedInStructure
@@ -11922,9 +12065,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -11967,6 +12107,10 @@ namespace IFC.IFC4x3
 				{
 					OuterBoundary = val;
 				}
+				else if(value == null)
+				{
+					OuterBoundary = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcCurve>? _InnerBoundaries
@@ -11986,6 +12130,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					InnerBoundaries = null;
+				}
+				else
+				{
+					InnerBoundaries = new List<IfcCurve>();
+					foreach(var val in value)
+					{
+						if(val is IfcCurve v)
+						{
+							InnerBoundaries.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -12038,6 +12197,10 @@ namespace IFC.IFC4x3
 				{
 					ApplicationDeveloper = val;
 				}
+				else if(value == null)
+				{
+					ApplicationDeveloper = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Version
@@ -12051,6 +12214,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Version = val;
+				}
+				else if(value == null)
+				{
+					Version = null;
 				}
 			}
 		}
@@ -12066,6 +12233,10 @@ namespace IFC.IFC4x3
 				{
 					ApplicationFullName = val;
 				}
+				else if(value == null)
+				{
+					ApplicationFullName = null;
+				}
 			}
 		}
 		public virtual Global.IfcIdentifier? _ApplicationIdentifier
@@ -12079,6 +12250,10 @@ namespace IFC.IFC4x3
 				if(value is IfcIdentifier val)
 				{
 					ApplicationIdentifier = val;
+				}
+				else if(value == null)
+				{
+					ApplicationIdentifier = null;
 				}
 			}
 		}
@@ -12113,7 +12288,7 @@ namespace IFC.IFC4x3
 		public virtual IfcLabel? Condition { get; set; }
 		public virtual IfcArithmeticOperatorEnum? ArithmeticOperator { get; set; }
 		public virtual List<IfcAppliedValue>? Components { get; set; }
-		public List<IfcExternalReferenceRelationship>? HasExternalReference {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
+		public List<IfcExternalReferenceRelationship>? HasExternalReference {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
 		public IfcAppliedValue() : base()
 		{
 		}
@@ -12158,6 +12333,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -12171,6 +12350,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -12186,6 +12369,10 @@ namespace IFC.IFC4x3
 				{
 					AppliedValue = val;
 				}
+				else if(value == null)
+				{
+					AppliedValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcMeasureWithUnit? _UnitBasis
@@ -12199,6 +12386,10 @@ namespace IFC.IFC4x3
 				if(value is IfcMeasureWithUnit val)
 				{
 					UnitBasis = val;
+				}
+				else if(value == null)
+				{
+					UnitBasis = null;
 				}
 			}
 		}
@@ -12214,6 +12405,10 @@ namespace IFC.IFC4x3
 				{
 					ApplicableDate = val;
 				}
+				else if(value == null)
+				{
+					ApplicableDate = null;
+				}
 			}
 		}
 		public virtual Global.IfcDate? _FixedUntilDate
@@ -12227,6 +12422,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDate val)
 				{
 					FixedUntilDate = val;
+				}
+				else if(value == null)
+				{
+					FixedUntilDate = null;
 				}
 			}
 		}
@@ -12242,6 +12441,10 @@ namespace IFC.IFC4x3
 				{
 					Category = val;
 				}
+				else if(value == null)
+				{
+					Category = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Condition
@@ -12256,6 +12459,10 @@ namespace IFC.IFC4x3
 				{
 					Condition = val;
 				}
+				else if(value == null)
+				{
+					Condition = null;
+				}
 			}
 		}
 		public virtual Global.IfcArithmeticOperatorEnum? _ArithmeticOperator
@@ -12269,6 +12476,10 @@ namespace IFC.IFC4x3
 				if(value is IfcArithmeticOperatorEnum val)
 				{
 					ArithmeticOperator = val;
+				}
+				else if(value == null)
+				{
+					ArithmeticOperator = null;
 				}
 			}
 		}
@@ -12289,6 +12500,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Components = null;
+				}
+				else
+				{
+					Components = new List<IfcAppliedValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcAppliedValue v)
+						{
+							Components.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcExternalReferenceRelationship>? _HasExternalReference
@@ -12305,9 +12531,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -12343,11 +12566,11 @@ namespace IFC.IFC4x3
 		public virtual IfcText? Qualifier { get; set; }
 		public virtual IfcActorSelect? RequestingApproval { get; set; }
 		public virtual IfcActorSelect? GivingApproval { get; set; }
-		public List<IfcExternalReferenceRelationship>? HasExternalReferences {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
-		public List<IfcRelAssociatesApproval>? ApprovedObjects {get{return Model?.GetItems<IfcRelAssociatesApproval>().Where(x => x.RelatingApproval != null && x.RelatingApproval == this).ToList();} set{}}
-		public List<IfcResourceApprovalRelationship>? ApprovedResources {get{return Model?.GetItems<IfcResourceApprovalRelationship>().Where(x => x.RelatingApproval != null && x.RelatingApproval == this).ToList();} set{}}
-		public List<IfcApprovalRelationship>? IsRelatedWith {get{return Model?.GetItems<IfcApprovalRelationship>().Where(x => x.RelatedApprovals != null && x.RelatedApprovals.Contains(this)).ToList();}set{}}
-		public List<IfcApprovalRelationship>? Relates {get{return Model?.GetItems<IfcApprovalRelationship>().Where(x => x.RelatingApproval != null && x.RelatingApproval == this).ToList();} set{}}
+		public List<IfcExternalReferenceRelationship>? HasExternalReferences {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
+		public List<IfcRelAssociatesApproval>? ApprovedObjects {get{return Model?.GetItems<IfcRelAssociatesApproval>().Where(x => x.RelatingApproval != null && x.RelatingApproval == this).ToList();}}
+		public List<IfcResourceApprovalRelationship>? ApprovedResources {get{return Model?.GetItems<IfcResourceApprovalRelationship>().Where(x => x.RelatingApproval != null && x.RelatingApproval == this).ToList();}}
+		public List<IfcApprovalRelationship>? IsRelatedWith {get{return Model?.GetItems<IfcApprovalRelationship>().Where(x => x.RelatedApprovals != null && x.RelatedApprovals.Contains(this)).ToList();}}
+		public List<IfcApprovalRelationship>? Relates {get{return Model?.GetItems<IfcApprovalRelationship>().Where(x => x.RelatingApproval != null && x.RelatingApproval == this).ToList();}}
 		public IfcApproval() : base()
 		{
 		}
@@ -12390,6 +12613,10 @@ namespace IFC.IFC4x3
 				{
 					Identifier = val;
 				}
+				else if(value == null)
+				{
+					Identifier = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Name
@@ -12403,6 +12630,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -12418,6 +12649,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _TimeOfApproval
@@ -12431,6 +12666,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					TimeOfApproval = val;
+				}
+				else if(value == null)
+				{
+					TimeOfApproval = null;
 				}
 			}
 		}
@@ -12446,6 +12685,10 @@ namespace IFC.IFC4x3
 				{
 					Status = val;
 				}
+				else if(value == null)
+				{
+					Status = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Level
@@ -12459,6 +12702,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Level = val;
+				}
+				else if(value == null)
+				{
+					Level = null;
 				}
 			}
 		}
@@ -12474,6 +12721,10 @@ namespace IFC.IFC4x3
 				{
 					Qualifier = val;
 				}
+				else if(value == null)
+				{
+					Qualifier = null;
+				}
 			}
 		}
 		public virtual Global.IfcActorSelect? _RequestingApproval
@@ -12488,6 +12739,10 @@ namespace IFC.IFC4x3
 				{
 					RequestingApproval = val;
 				}
+				else if(value == null)
+				{
+					RequestingApproval = null;
+				}
 			}
 		}
 		public virtual Global.IfcActorSelect? _GivingApproval
@@ -12501,6 +12756,10 @@ namespace IFC.IFC4x3
 				if(value is IfcActorSelect val)
 				{
 					GivingApproval = val;
+				}
+				else if(value == null)
+				{
+					GivingApproval = null;
 				}
 			}
 		}
@@ -12519,9 +12778,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelAssociatesApproval>? _ApprovedObjects
 		{
@@ -12537,9 +12793,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcResourceApprovalRelationship>? _ApprovedResources
@@ -12557,9 +12810,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcApprovalRelationship>? _IsRelatedWith
 		{
@@ -12576,9 +12826,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcApprovalRelationship>? _Relates
 		{
@@ -12594,9 +12841,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -12641,6 +12885,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingApproval = val;
 				}
+				else if(value == null)
+				{
+					RelatingApproval = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcApproval>? _RelatedApprovals
@@ -12660,6 +12908,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedApprovals = null;
+				}
+				else
+				{
+					RelatedApprovals = new List<IfcApproval>();
+					foreach(var val in value)
+					{
+						if(val is IfcApproval v)
+						{
+							RelatedApprovals.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -12706,6 +12969,10 @@ namespace IFC.IFC4x3
 				{
 					OuterCurve = val;
 				}
+				else if(value == null)
+				{
+					OuterCurve = null;
+				}
 			}
 		}
 	}
@@ -12751,6 +13018,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoundedCurve val)
 				{
 					Curve = val;
+				}
+				else if(value == null)
+				{
+					Curve = null;
 				}
 			}
 		}
@@ -12802,6 +13073,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					InnerCurves = null;
+				}
+				else
+				{
+					InnerCurves = new List<IfcCurve>();
+					foreach(var val in value)
+					{
+						if(val is IfcCurve v)
+						{
+							InnerCurves.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -12877,6 +13163,10 @@ namespace IFC.IFC4x3
 				{
 					Identification = val;
 				}
+				else if(value == null)
+				{
+					Identification = null;
+				}
 			}
 		}
 		public virtual Global.IfcCostValue? _OriginalValue
@@ -12890,6 +13180,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCostValue val)
 				{
 					OriginalValue = val;
+				}
+				else if(value == null)
+				{
+					OriginalValue = null;
 				}
 			}
 		}
@@ -12905,6 +13199,10 @@ namespace IFC.IFC4x3
 				{
 					CurrentValue = val;
 				}
+				else if(value == null)
+				{
+					CurrentValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcCostValue? _TotalReplacementCost
@@ -12918,6 +13216,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCostValue val)
 				{
 					TotalReplacementCost = val;
+				}
+				else if(value == null)
+				{
+					TotalReplacementCost = null;
 				}
 			}
 		}
@@ -12933,6 +13235,10 @@ namespace IFC.IFC4x3
 				{
 					Owner = val;
 				}
+				else if(value == null)
+				{
+					Owner = null;
+				}
 			}
 		}
 		public virtual Global.IfcActorSelect? _User
@@ -12946,6 +13252,10 @@ namespace IFC.IFC4x3
 				if(value is IfcActorSelect val)
 				{
 					User = val;
+				}
+				else if(value == null)
+				{
+					User = null;
 				}
 			}
 		}
@@ -12961,6 +13271,10 @@ namespace IFC.IFC4x3
 				{
 					ResponsiblePerson = val;
 				}
+				else if(value == null)
+				{
+					ResponsiblePerson = null;
+				}
 			}
 		}
 		public virtual Global.IfcDate? _IncorporationDate
@@ -12975,6 +13289,10 @@ namespace IFC.IFC4x3
 				{
 					IncorporationDate = val;
 				}
+				else if(value == null)
+				{
+					IncorporationDate = null;
+				}
 			}
 		}
 		public virtual Global.IfcCostValue? _DepreciatedValue
@@ -12988,6 +13306,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCostValue val)
 				{
 					DepreciatedValue = val;
+				}
+				else if(value == null)
+				{
+					DepreciatedValue = null;
 				}
 			}
 		}
@@ -13081,6 +13403,10 @@ namespace IFC.IFC4x3
 				{
 					BottomFlangeWidth = val;
 				}
+				else if(value == null)
+				{
+					BottomFlangeWidth = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _OverallDepth
@@ -13094,6 +13420,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					OverallDepth = val;
+				}
+				else if(value == null)
+				{
+					OverallDepth = null;
 				}
 			}
 		}
@@ -13109,6 +13439,10 @@ namespace IFC.IFC4x3
 				{
 					WebThickness = val;
 				}
+				else if(value == null)
+				{
+					WebThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _BottomFlangeThickness
@@ -13122,6 +13456,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					BottomFlangeThickness = val;
+				}
+				else if(value == null)
+				{
+					BottomFlangeThickness = null;
 				}
 			}
 		}
@@ -13137,6 +13475,10 @@ namespace IFC.IFC4x3
 				{
 					BottomFlangeFilletRadius = val;
 				}
+				else if(value == null)
+				{
+					BottomFlangeFilletRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _TopFlangeWidth
@@ -13150,6 +13492,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					TopFlangeWidth = val;
+				}
+				else if(value == null)
+				{
+					TopFlangeWidth = null;
 				}
 			}
 		}
@@ -13165,6 +13511,10 @@ namespace IFC.IFC4x3
 				{
 					TopFlangeThickness = val;
 				}
+				else if(value == null)
+				{
+					TopFlangeThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _TopFlangeFilletRadius
@@ -13178,6 +13528,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					TopFlangeFilletRadius = val;
+				}
+				else if(value == null)
+				{
+					TopFlangeFilletRadius = null;
 				}
 			}
 		}
@@ -13193,6 +13547,10 @@ namespace IFC.IFC4x3
 				{
 					BottomFlangeEdgeRadius = val;
 				}
+				else if(value == null)
+				{
+					BottomFlangeEdgeRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlaneAngleMeasure? _BottomFlangeSlope
@@ -13206,6 +13564,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlaneAngleMeasure val)
 				{
 					BottomFlangeSlope = val;
+				}
+				else if(value == null)
+				{
+					BottomFlangeSlope = null;
 				}
 			}
 		}
@@ -13221,6 +13583,10 @@ namespace IFC.IFC4x3
 				{
 					TopFlangeEdgeRadius = val;
 				}
+				else if(value == null)
+				{
+					TopFlangeEdgeRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlaneAngleMeasure? _TopFlangeSlope
@@ -13234,6 +13600,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlaneAngleMeasure val)
 				{
 					TopFlangeSlope = val;
+				}
+				else if(value == null)
+				{
+					TopFlangeSlope = null;
 				}
 			}
 		}
@@ -13287,6 +13657,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -13337,6 +13711,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -13356,7 +13734,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcDirection? Axis { get; set; }
 		//DERIVE
-		public virtual IfcDirection? Z {get {return null;} set{}}
+		public virtual IfcDirection? Z {get {return null;}}
 		public IfcAxis1Placement() : base()
 		{
 		}
@@ -13384,6 +13762,10 @@ namespace IFC.IFC4x3
 				{
 					Axis = val;
 				}
+				else if(value == null)
+				{
+					Axis = null;
+				}
 			}
 		}
 		public virtual Global.IfcDirection? _Z
@@ -13391,9 +13773,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Z;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -13413,7 +13792,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcDirection? RefDirection { get; set; }
 		//DERIVE
-		public virtual List<IfcDirection>? P {get {return null;} set{}}
+		public virtual List<IfcDirection>? P {get {return null;}}
 		public IfcAxis2Placement2D() : base()
 		{
 		}
@@ -13441,6 +13820,10 @@ namespace IFC.IFC4x3
 				{
 					RefDirection = val;
 				}
+				else if(value == null)
+				{
+					RefDirection = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcDirection>? _P
@@ -13457,9 +13840,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -13484,7 +13864,7 @@ namespace IFC.IFC4x3
 		public virtual IfcDirection? Axis { get; set; }
 		public virtual IfcDirection? RefDirection { get; set; }
 		//DERIVE
-		public virtual List<IfcDirection>? P {get {return null;} set{}}
+		public virtual List<IfcDirection>? P {get {return null;}}
 		public IfcAxis2Placement3D() : base()
 		{
 		}
@@ -13514,6 +13894,10 @@ namespace IFC.IFC4x3
 				{
 					Axis = val;
 				}
+				else if(value == null)
+				{
+					Axis = null;
+				}
 			}
 		}
 		public virtual Global.IfcDirection? _RefDirection
@@ -13527,6 +13911,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDirection val)
 				{
 					RefDirection = val;
+				}
+				else if(value == null)
+				{
+					RefDirection = null;
 				}
 			}
 		}
@@ -13544,9 +13932,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -13593,6 +13978,10 @@ namespace IFC.IFC4x3
 				{
 					Axis = val;
 				}
+				else if(value == null)
+				{
+					Axis = null;
+				}
 			}
 		}
 		public virtual Global.IfcDirection? _RefDirection
@@ -13606,6 +13995,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDirection val)
 				{
 					RefDirection = val;
+				}
+				else if(value == null)
+				{
+					RefDirection = null;
 				}
 			}
 		}
@@ -13637,9 +14030,9 @@ namespace IFC.IFC4x3
 		public virtual IfcLogical? ClosedCurve { get; set; }
 		public virtual IfcLogical? SelfIntersect { get; set; }
 		//DERIVE
-		public virtual IfcInteger? UpperIndexOnControlPoints {get {return null;} set{}}
+		public virtual IfcInteger? UpperIndexOnControlPoints {get {return null;}}
 		//DERIVE
-		public virtual List<IfcCartesianPoint>? ControlPoints {get {return null;} set{}}
+		public virtual List<IfcCartesianPoint>? ControlPoints {get {return null;}}
 		public IfcBSplineCurve() : base()
 		{
 		}
@@ -13674,6 +14067,10 @@ namespace IFC.IFC4x3
 				{
 					Degree = val;
 				}
+				else if(value == null)
+				{
+					Degree = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcCartesianPoint>? _ControlPointsList
@@ -13693,6 +14090,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ControlPointsList = null;
+				}
+				else
+				{
+					ControlPointsList = new List<IfcCartesianPoint>();
+					foreach(var val in value)
+					{
+						if(val is IfcCartesianPoint v)
+						{
+							ControlPointsList.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcBSplineCurveForm? _CurveForm
@@ -13706,6 +14118,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBSplineCurveForm val)
 				{
 					CurveForm = val;
+				}
+				else if(value == null)
+				{
+					CurveForm = null;
 				}
 			}
 		}
@@ -13721,6 +14137,10 @@ namespace IFC.IFC4x3
 				{
 					ClosedCurve = val;
 				}
+				else if(value == null)
+				{
+					ClosedCurve = null;
+				}
 			}
 		}
 		public virtual Global.IfcLogical? _SelfIntersect
@@ -13735,6 +14155,10 @@ namespace IFC.IFC4x3
 				{
 					SelfIntersect = val;
 				}
+				else if(value == null)
+				{
+					SelfIntersect = null;
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _UpperIndexOnControlPoints
@@ -13742,9 +14166,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return UpperIndexOnControlPoints;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcCartesianPoint>? _ControlPoints
@@ -13761,9 +14182,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -13789,7 +14207,7 @@ namespace IFC.IFC4x3
 		public virtual List<IfcParameterValue>? Knots { get; set; }
 		public virtual IfcKnotType? KnotSpec { get; set; }
 		//DERIVE
-		public virtual IfcInteger? UpperIndexOnKnots {get {return null;} set{}}
+		public virtual IfcInteger? UpperIndexOnKnots {get {return null;}}
 		public IfcBSplineCurveWithKnots() : base()
 		{
 		}
@@ -13830,6 +14248,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					KnotMultiplicities = null;
+				}
+				else
+				{
+					KnotMultiplicities = new List<IfcInteger>();
+					foreach(var val in value)
+					{
+						if(val is IfcInteger v)
+						{
+							KnotMultiplicities.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcParameterValue>? _Knots
@@ -13849,6 +14282,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Knots = null;
+				}
+				else
+				{
+					Knots = new List<IfcParameterValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcParameterValue v)
+						{
+							Knots.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcKnotType? _KnotSpec
@@ -13863,6 +14311,10 @@ namespace IFC.IFC4x3
 				{
 					KnotSpec = val;
 				}
+				else if(value == null)
+				{
+					KnotSpec = null;
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _UpperIndexOnKnots
@@ -13870,9 +14322,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return UpperIndexOnKnots;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -13905,11 +14354,11 @@ namespace IFC.IFC4x3
 		public virtual IfcLogical? VClosed { get; set; }
 		public virtual IfcLogical? SelfIntersect { get; set; }
 		//DERIVE
-		public virtual IfcInteger? UUpper {get {return null;} set{}}
+		public virtual IfcInteger? UUpper {get {return null;}}
 		//DERIVE
-		public virtual IfcInteger? VUpper {get {return null;} set{}}
+		public virtual IfcInteger? VUpper {get {return null;}}
 		//DERIVE
-		public virtual List<List<IfcCartesianPoint>>? ControlPoints {get {return null;} set{}}
+		public virtual List<List<IfcCartesianPoint>>? ControlPoints {get {return null;}}
 		public IfcBSplineSurface() : base()
 		{
 		}
@@ -13948,6 +14397,10 @@ namespace IFC.IFC4x3
 				{
 					UDegree = val;
 				}
+				else if(value == null)
+				{
+					UDegree = null;
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _VDegree
@@ -13961,6 +14414,10 @@ namespace IFC.IFC4x3
 				if(value is IfcInteger val)
 				{
 					VDegree = val;
+				}
+				else if(value == null)
+				{
+					VDegree = null;
 				}
 			}
 		}
@@ -13986,6 +14443,29 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ControlPointsList = null;
+				}
+				else
+				{
+					ControlPointsList = new List<List<IfcCartesianPoint>>();
+					foreach(var vals in value)
+					{
+						if(vals != null)
+						{
+							List<IfcCartesianPoint> items = new List<IfcCartesianPoint>();
+							foreach(var val in vals)
+							{
+								if(val is IfcCartesianPoint v)
+								{
+									items.Add(v);
+								}
+							}
+							ControlPointsList.Add(items);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcBSplineSurfaceForm? _SurfaceForm
@@ -13999,6 +14479,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBSplineSurfaceForm val)
 				{
 					SurfaceForm = val;
+				}
+				else if(value == null)
+				{
+					SurfaceForm = null;
 				}
 			}
 		}
@@ -14014,6 +14498,10 @@ namespace IFC.IFC4x3
 				{
 					UClosed = val;
 				}
+				else if(value == null)
+				{
+					UClosed = null;
+				}
 			}
 		}
 		public virtual Global.IfcLogical? _VClosed
@@ -14027,6 +14515,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLogical val)
 				{
 					VClosed = val;
+				}
+				else if(value == null)
+				{
+					VClosed = null;
 				}
 			}
 		}
@@ -14042,6 +14534,10 @@ namespace IFC.IFC4x3
 				{
 					SelfIntersect = val;
 				}
+				else if(value == null)
+				{
+					SelfIntersect = null;
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _UUpper
@@ -14050,18 +14546,12 @@ namespace IFC.IFC4x3
 			{
 				return UUpper;
 			}
-			set
-			{
-			}
 		}
 		public virtual Global.IfcInteger? _VUpper
 		{
 			get
 			{
 				return VUpper;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<List<Global.IfcCartesianPoint>>? _ControlPoints
@@ -14083,9 +14573,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -14121,9 +14608,9 @@ namespace IFC.IFC4x3
 		public virtual List<IfcParameterValue>? VKnots { get; set; }
 		public virtual IfcKnotType? KnotSpec { get; set; }
 		//DERIVE
-		public virtual IfcInteger? KnotVUpper {get {return null;} set{}}
+		public virtual IfcInteger? KnotVUpper {get {return null;}}
 		//DERIVE
-		public virtual IfcInteger? KnotUUpper {get {return null;} set{}}
+		public virtual IfcInteger? KnotUUpper {get {return null;}}
 		public IfcBSplineSurfaceWithKnots() : base()
 		{
 		}
@@ -14170,6 +14657,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					UMultiplicities = null;
+				}
+				else
+				{
+					UMultiplicities = new List<IfcInteger>();
+					foreach(var val in value)
+					{
+						if(val is IfcInteger v)
+						{
+							UMultiplicities.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcInteger>? _VMultiplicities
@@ -14189,6 +14691,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					VMultiplicities = null;
+				}
+				else
+				{
+					VMultiplicities = new List<IfcInteger>();
+					foreach(var val in value)
+					{
+						if(val is IfcInteger v)
+						{
+							VMultiplicities.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcParameterValue>? _UKnots
@@ -14208,6 +14725,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					UKnots = null;
+				}
+				else
+				{
+					UKnots = new List<IfcParameterValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcParameterValue v)
+						{
+							UKnots.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcParameterValue>? _VKnots
@@ -14227,6 +14759,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					VKnots = null;
+				}
+				else
+				{
+					VKnots = new List<IfcParameterValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcParameterValue v)
+						{
+							VKnots.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcKnotType? _KnotSpec
@@ -14241,6 +14788,10 @@ namespace IFC.IFC4x3
 				{
 					KnotSpec = val;
 				}
+				else if(value == null)
+				{
+					KnotSpec = null;
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _KnotVUpper
@@ -14249,18 +14800,12 @@ namespace IFC.IFC4x3
 			{
 				return KnotVUpper;
 			}
-			set
-			{
-			}
 		}
 		public virtual Global.IfcInteger? _KnotUUpper
 		{
 			get
 			{
 				return KnotUUpper;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -14313,6 +14858,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -14362,6 +14911,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBeamTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -14415,6 +14968,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -14464,6 +15021,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBearingTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -14515,6 +15076,10 @@ namespace IFC.IFC4x3
 				{
 					RasterFormat = val;
 				}
+				else if(value == null)
+				{
+					RasterFormat = null;
+				}
 			}
 		}
 		public virtual Global.IfcBinary? _RasterCode
@@ -14528,6 +15093,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBinary val)
 				{
 					RasterCode = val;
+				}
+				else if(value == null)
+				{
+					RasterCode = null;
 				}
 			}
 		}
@@ -14576,6 +15145,10 @@ namespace IFC.IFC4x3
 				{
 					XLength = val;
 				}
+				else if(value == null)
+				{
+					XLength = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _YLength
@@ -14590,6 +15163,10 @@ namespace IFC.IFC4x3
 				{
 					YLength = val;
 				}
+				else if(value == null)
+				{
+					YLength = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _ZLength
@@ -14603,6 +15180,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					ZLength = val;
+				}
+				else if(value == null)
+				{
+					ZLength = null;
 				}
 			}
 		}
@@ -14656,6 +15237,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -14705,6 +15290,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoilerTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -14760,7 +15349,7 @@ namespace IFC.IFC4x3
 		public virtual IfcBooleanOperand? FirstOperand { get; set; }
 		public virtual IfcBooleanOperand? SecondOperand { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcBooleanResult() : base()
 		{
 		}
@@ -14791,6 +15380,10 @@ namespace IFC.IFC4x3
 				{
 					Operator = val;
 				}
+				else if(value == null)
+				{
+					Operator = null;
+				}
 			}
 		}
 		public virtual Global.IfcBooleanOperand? _FirstOperand
@@ -14804,6 +15397,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBooleanOperand val)
 				{
 					FirstOperand = val;
+				}
+				else if(value == null)
+				{
+					FirstOperand = null;
 				}
 			}
 		}
@@ -14819,6 +15416,10 @@ namespace IFC.IFC4x3
 				{
 					SecondOperand = val;
 				}
+				else if(value == null)
+				{
+					SecondOperand = null;
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -14826,9 +15427,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -14897,6 +15495,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -14983,6 +15585,10 @@ namespace IFC.IFC4x3
 				{
 					TranslationalStiffnessByLengthX = val;
 				}
+				else if(value == null)
+				{
+					TranslationalStiffnessByLengthX = null;
+				}
 			}
 		}
 		public virtual Global.IfcModulusOfTranslationalSubgradeReactionSelect? _TranslationalStiffnessByLengthY
@@ -14996,6 +15602,10 @@ namespace IFC.IFC4x3
 				if(value is IfcModulusOfTranslationalSubgradeReactionSelect val)
 				{
 					TranslationalStiffnessByLengthY = val;
+				}
+				else if(value == null)
+				{
+					TranslationalStiffnessByLengthY = null;
 				}
 			}
 		}
@@ -15011,6 +15621,10 @@ namespace IFC.IFC4x3
 				{
 					TranslationalStiffnessByLengthZ = val;
 				}
+				else if(value == null)
+				{
+					TranslationalStiffnessByLengthZ = null;
+				}
 			}
 		}
 		public virtual Global.IfcModulusOfRotationalSubgradeReactionSelect? _RotationalStiffnessByLengthX
@@ -15024,6 +15638,10 @@ namespace IFC.IFC4x3
 				if(value is IfcModulusOfRotationalSubgradeReactionSelect val)
 				{
 					RotationalStiffnessByLengthX = val;
+				}
+				else if(value == null)
+				{
+					RotationalStiffnessByLengthX = null;
 				}
 			}
 		}
@@ -15039,6 +15657,10 @@ namespace IFC.IFC4x3
 				{
 					RotationalStiffnessByLengthY = val;
 				}
+				else if(value == null)
+				{
+					RotationalStiffnessByLengthY = null;
+				}
 			}
 		}
 		public virtual Global.IfcModulusOfRotationalSubgradeReactionSelect? _RotationalStiffnessByLengthZ
@@ -15052,6 +15674,10 @@ namespace IFC.IFC4x3
 				if(value is IfcModulusOfRotationalSubgradeReactionSelect val)
 				{
 					RotationalStiffnessByLengthZ = val;
+				}
+				else if(value == null)
+				{
+					RotationalStiffnessByLengthZ = null;
 				}
 			}
 		}
@@ -15100,6 +15726,10 @@ namespace IFC.IFC4x3
 				{
 					TranslationalStiffnessByAreaX = val;
 				}
+				else if(value == null)
+				{
+					TranslationalStiffnessByAreaX = null;
+				}
 			}
 		}
 		public virtual Global.IfcModulusOfSubgradeReactionSelect? _TranslationalStiffnessByAreaY
@@ -15114,6 +15744,10 @@ namespace IFC.IFC4x3
 				{
 					TranslationalStiffnessByAreaY = val;
 				}
+				else if(value == null)
+				{
+					TranslationalStiffnessByAreaY = null;
+				}
 			}
 		}
 		public virtual Global.IfcModulusOfSubgradeReactionSelect? _TranslationalStiffnessByAreaZ
@@ -15127,6 +15761,10 @@ namespace IFC.IFC4x3
 				if(value is IfcModulusOfSubgradeReactionSelect val)
 				{
 					TranslationalStiffnessByAreaZ = val;
+				}
+				else if(value == null)
+				{
+					TranslationalStiffnessByAreaZ = null;
 				}
 			}
 		}
@@ -15189,6 +15827,10 @@ namespace IFC.IFC4x3
 				{
 					TranslationalStiffnessX = val;
 				}
+				else if(value == null)
+				{
+					TranslationalStiffnessX = null;
+				}
 			}
 		}
 		public virtual Global.IfcTranslationalStiffnessSelect? _TranslationalStiffnessY
@@ -15202,6 +15844,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTranslationalStiffnessSelect val)
 				{
 					TranslationalStiffnessY = val;
+				}
+				else if(value == null)
+				{
+					TranslationalStiffnessY = null;
 				}
 			}
 		}
@@ -15217,6 +15863,10 @@ namespace IFC.IFC4x3
 				{
 					TranslationalStiffnessZ = val;
 				}
+				else if(value == null)
+				{
+					TranslationalStiffnessZ = null;
+				}
 			}
 		}
 		public virtual Global.IfcRotationalStiffnessSelect? _RotationalStiffnessX
@@ -15230,6 +15880,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRotationalStiffnessSelect val)
 				{
 					RotationalStiffnessX = val;
+				}
+				else if(value == null)
+				{
+					RotationalStiffnessX = null;
 				}
 			}
 		}
@@ -15245,6 +15899,10 @@ namespace IFC.IFC4x3
 				{
 					RotationalStiffnessY = val;
 				}
+				else if(value == null)
+				{
+					RotationalStiffnessY = null;
+				}
 			}
 		}
 		public virtual Global.IfcRotationalStiffnessSelect? _RotationalStiffnessZ
@@ -15258,6 +15916,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRotationalStiffnessSelect val)
 				{
 					RotationalStiffnessZ = val;
+				}
+				else if(value == null)
+				{
+					RotationalStiffnessZ = null;
 				}
 			}
 		}
@@ -15303,6 +15965,10 @@ namespace IFC.IFC4x3
 				if(value is IfcWarpingStiffnessSelect val)
 				{
 					WarpingStiffness = val;
+				}
+				else if(value == null)
+				{
+					WarpingStiffness = null;
 				}
 			}
 		}
@@ -15370,7 +16036,7 @@ namespace IFC.IFC4x3
 		public virtual IfcPositiveLengthMeasure? YDim { get; set; }
 		public virtual IfcPositiveLengthMeasure? ZDim { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcBoundingBox() : base()
 		{
 		}
@@ -15403,6 +16069,10 @@ namespace IFC.IFC4x3
 				{
 					Corner = val;
 				}
+				else if(value == null)
+				{
+					Corner = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _XDim
@@ -15416,6 +16086,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					XDim = val;
+				}
+				else if(value == null)
+				{
+					XDim = null;
 				}
 			}
 		}
@@ -15431,6 +16105,10 @@ namespace IFC.IFC4x3
 				{
 					YDim = val;
 				}
+				else if(value == null)
+				{
+					YDim = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _ZDim
@@ -15445,6 +16123,10 @@ namespace IFC.IFC4x3
 				{
 					ZDim = val;
 				}
+				else if(value == null)
+				{
+					ZDim = null;
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -15452,9 +16134,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -15496,6 +16175,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoundingBox val)
 				{
 					Enclosure = val;
+				}
+				else if(value == null)
+				{
+					Enclosure = null;
 				}
 			}
 		}
@@ -15548,6 +16231,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -15599,6 +16286,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBridgePartTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -15655,6 +16346,10 @@ namespace IFC.IFC4x3
 				{
 					ElevationOfRefHeight = val;
 				}
+				else if(value == null)
+				{
+					ElevationOfRefHeight = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _ElevationOfTerrain
@@ -15669,6 +16364,10 @@ namespace IFC.IFC4x3
 				{
 					ElevationOfTerrain = val;
 				}
+				else if(value == null)
+				{
+					ElevationOfTerrain = null;
+				}
 			}
 		}
 		public virtual Global.IfcPostalAddress? _BuildingAddress
@@ -15682,6 +16381,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPostalAddress val)
 				{
 					BuildingAddress = val;
+				}
+				else if(value == null)
+				{
+					BuildingAddress = null;
 				}
 			}
 		}
@@ -15735,6 +16438,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -15784,6 +16491,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBuildingElementPartTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -15838,6 +16549,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -15888,6 +16603,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -15934,6 +16653,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					Elevation = val;
+				}
+				else if(value == null)
+				{
+					Elevation = null;
 				}
 			}
 		}
@@ -15986,6 +16709,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _LongName
@@ -15999,6 +16726,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					LongName = val;
+				}
+				else if(value == null)
+				{
+					LongName = null;
 				}
 			}
 		}
@@ -16173,6 +16904,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _LongName
@@ -16186,6 +16921,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					LongName = val;
+				}
+				else if(value == null)
+				{
+					LongName = null;
 				}
 			}
 		}
@@ -16239,6 +16978,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -16288,6 +17031,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBurnerTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -16351,6 +17098,10 @@ namespace IFC.IFC4x3
 				{
 					Depth = val;
 				}
+				else if(value == null)
+				{
+					Depth = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _Width
@@ -16364,6 +17115,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Width = val;
+				}
+				else if(value == null)
+				{
+					Width = null;
 				}
 			}
 		}
@@ -16379,6 +17134,10 @@ namespace IFC.IFC4x3
 				{
 					WallThickness = val;
 				}
+				else if(value == null)
+				{
+					WallThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _Girth
@@ -16393,6 +17152,10 @@ namespace IFC.IFC4x3
 				{
 					Girth = val;
 				}
+				else if(value == null)
+				{
+					Girth = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _InternalFilletRadius
@@ -16406,6 +17169,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					InternalFilletRadius = val;
+				}
+				else if(value == null)
+				{
+					InternalFilletRadius = null;
 				}
 			}
 		}
@@ -16459,6 +17226,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -16508,6 +17279,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCableCarrierFittingTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -16561,6 +17336,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -16610,6 +17389,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCableCarrierSegmentTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -16663,6 +17446,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -16712,6 +17499,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCableFittingTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -16765,6 +17556,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -16814,6 +17609,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCableSegmentTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -16867,6 +17666,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -16917,6 +17720,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -16962,6 +17769,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Coordinates = null;
+				}
+				else
+				{
+					Coordinates = new List<IfcLengthMeasure>();
+					foreach(var val in value)
+					{
+						if(val is IfcLengthMeasure v)
+						{
+							Coordinates.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -16978,7 +17800,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcCartesianPointList : IfcGeometricRepresentationItem, Global.IfcCartesianPointList
 	{
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcCartesianPointList() : base()
 		{
 		}
@@ -16993,9 +17815,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -17048,6 +17867,29 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CoordList = null;
+				}
+				else
+				{
+					CoordList = new List<List<IfcLengthMeasure>>();
+					foreach(var vals in value)
+					{
+						if(vals != null)
+						{
+							List<IfcLengthMeasure> items = new List<IfcLengthMeasure>();
+							foreach(var val in vals)
+							{
+								if(val is IfcLengthMeasure v)
+								{
+									items.Add(v);
+								}
+							}
+							CoordList.Add(items);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcLabel>? _TagList
@@ -17067,6 +17909,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					TagList = null;
+				}
+				else
+				{
+					TagList = new List<IfcLabel>();
+					foreach(var val in value)
+					{
+						if(val is IfcLabel v)
+						{
+							TagList.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -17119,6 +17976,29 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CoordList = null;
+				}
+				else
+				{
+					CoordList = new List<List<IfcLengthMeasure>>();
+					foreach(var vals in value)
+					{
+						if(vals != null)
+						{
+							List<IfcLengthMeasure> items = new List<IfcLengthMeasure>();
+							foreach(var val in vals)
+							{
+								if(val is IfcLengthMeasure v)
+								{
+									items.Add(v);
+								}
+							}
+							CoordList.Add(items);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcLabel>? _TagList
@@ -17138,6 +18018,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					TagList = null;
+				}
+				else
+				{
+					TagList = new List<IfcLabel>();
+					foreach(var val in value)
+					{
+						if(val is IfcLabel v)
+						{
+							TagList.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -17165,9 +18060,9 @@ namespace IFC.IFC4x3
 		public virtual IfcCartesianPoint? LocalOrigin { get; set; }
 		public virtual IfcReal? Scale { get; set; }
 		//DERIVE
-		public virtual IfcReal? Scl {get {return null;} set{}}
+		public virtual IfcReal? Scl {get {return null;}}
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcCartesianTransformationOperator() : base()
 		{
 		}
@@ -17200,6 +18095,10 @@ namespace IFC.IFC4x3
 				{
 					Axis1 = val;
 				}
+				else if(value == null)
+				{
+					Axis1 = null;
+				}
 			}
 		}
 		public virtual Global.IfcDirection? _Axis2
@@ -17213,6 +18112,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDirection val)
 				{
 					Axis2 = val;
+				}
+				else if(value == null)
+				{
+					Axis2 = null;
 				}
 			}
 		}
@@ -17228,6 +18131,10 @@ namespace IFC.IFC4x3
 				{
 					LocalOrigin = val;
 				}
+				else if(value == null)
+				{
+					LocalOrigin = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _Scale
@@ -17242,6 +18149,10 @@ namespace IFC.IFC4x3
 				{
 					Scale = val;
 				}
+				else if(value == null)
+				{
+					Scale = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _Scl
@@ -17250,18 +18161,12 @@ namespace IFC.IFC4x3
 			{
 				return Scl;
 			}
-			set
-			{
-			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
 		{
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -17284,7 +18189,7 @@ namespace IFC.IFC4x3
 	public class IfcCartesianTransformationOperator2D : IfcCartesianTransformationOperator, Global.IfcCartesianTransformationOperator2D
 	{
 		//DERIVE
-		public virtual List<IfcDirection>? U {get {return null;} set{}}
+		public virtual List<IfcDirection>? U {get {return null;}}
 		public IfcCartesianTransformationOperator2D() : base()
 		{
 		}
@@ -17316,9 +18221,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -17335,7 +18237,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcReal? Scale2 { get; set; }
 		//DERIVE
-		public virtual IfcReal? Scl2 {get {return null;} set{}}
+		public virtual IfcReal? Scl2 {get {return null;}}
 		public IfcCartesianTransformationOperator2DnonUniform() : base()
 		{
 		}
@@ -17366,6 +18268,10 @@ namespace IFC.IFC4x3
 				{
 					Scale2 = val;
 				}
+				else if(value == null)
+				{
+					Scale2 = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _Scl2
@@ -17373,9 +18279,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Scl2;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -17401,7 +18304,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcDirection? Axis3 { get; set; }
 		//DERIVE
-		public virtual List<IfcDirection>? U {get {return null;} set{}}
+		public virtual List<IfcDirection>? U {get {return null;}}
 		public IfcCartesianTransformationOperator3D() : base()
 		{
 		}
@@ -17432,6 +18335,10 @@ namespace IFC.IFC4x3
 				{
 					Axis3 = val;
 				}
+				else if(value == null)
+				{
+					Axis3 = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcDirection>? _U
@@ -17448,9 +18355,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -17472,9 +18376,9 @@ namespace IFC.IFC4x3
 		public virtual IfcReal? Scale2 { get; set; }
 		public virtual IfcReal? Scale3 { get; set; }
 		//DERIVE
-		public virtual IfcReal? Scl2 {get {return null;} set{}}
+		public virtual IfcReal? Scl2 {get {return null;}}
 		//DERIVE
-		public virtual IfcReal? Scl3 {get {return null;} set{}}
+		public virtual IfcReal? Scl3 {get {return null;}}
 		public IfcCartesianTransformationOperator3DnonUniform() : base()
 		{
 		}
@@ -17508,6 +18412,10 @@ namespace IFC.IFC4x3
 				{
 					Scale2 = val;
 				}
+				else if(value == null)
+				{
+					Scale2 = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _Scale3
@@ -17522,6 +18430,10 @@ namespace IFC.IFC4x3
 				{
 					Scale3 = val;
 				}
+				else if(value == null)
+				{
+					Scale3 = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _Scl2
@@ -17530,18 +18442,12 @@ namespace IFC.IFC4x3
 			{
 				return Scl2;
 			}
-			set
-			{
-			}
 		}
 		public virtual Global.IfcReal? _Scl3
 		{
 			get
 			{
 				return Scl3;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -17582,6 +18488,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Thickness = val;
+				}
+				else if(value == null)
+				{
+					Thickness = null;
 				}
 			}
 		}
@@ -17635,6 +18545,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -17684,6 +18598,10 @@ namespace IFC.IFC4x3
 				if(value is IfcChillerTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -17737,6 +18655,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -17787,6 +18709,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -17825,6 +18751,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Radius = val;
+				}
+				else if(value == null)
+				{
+					Radius = null;
 				}
 			}
 		}
@@ -17870,6 +18800,10 @@ namespace IFC.IFC4x3
 				{
 					WallThickness = val;
 				}
+				else if(value == null)
+				{
+					WallThickness = null;
+				}
 			}
 		}
 	}
@@ -17912,6 +18846,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Radius = val;
+				}
+				else if(value == null)
+				{
+					Radius = null;
 				}
 			}
 		}
@@ -17997,8 +18935,8 @@ namespace IFC.IFC4x3
 		public virtual IfcText? Description { get; set; }
 		public virtual IfcURIReference? Specification { get; set; }
 		public virtual List<IfcIdentifier>? ReferenceTokens { get; set; }
-		public List<IfcRelAssociatesClassification>? ClassificationForObjects {get{return Model?.GetItems<IfcRelAssociatesClassification>().Where(x => x.RelatingClassification != null && x.RelatingClassification == this).ToList();} set{}}
-		public List<IfcClassificationReference>? HasReferences {get{return Model?.GetItems<IfcClassificationReference>().Where(x => x.ReferencedSource != null && x.ReferencedSource == this).ToList();} set{}}
+		public List<IfcRelAssociatesClassification>? ClassificationForObjects {get{return Model?.GetItems<IfcRelAssociatesClassification>().Where(x => x.RelatingClassification != null && x.RelatingClassification == this).ToList();}}
+		public List<IfcClassificationReference>? HasReferences {get{return Model?.GetItems<IfcClassificationReference>().Where(x => x.ReferencedSource != null && x.ReferencedSource == this).ToList();}}
 		public IfcClassification() : base()
 		{
 		}
@@ -18037,6 +18975,10 @@ namespace IFC.IFC4x3
 				{
 					Source = val;
 				}
+				else if(value == null)
+				{
+					Source = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Edition
@@ -18050,6 +18992,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Edition = val;
+				}
+				else if(value == null)
+				{
+					Edition = null;
 				}
 			}
 		}
@@ -18065,6 +19011,10 @@ namespace IFC.IFC4x3
 				{
 					EditionDate = val;
 				}
+				else if(value == null)
+				{
+					EditionDate = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Name
@@ -18078,6 +19028,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -18093,6 +19047,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcURIReference? _Specification
@@ -18106,6 +19064,10 @@ namespace IFC.IFC4x3
 				if(value is IfcURIReference val)
 				{
 					Specification = val;
+				}
+				else if(value == null)
+				{
+					Specification = null;
 				}
 			}
 		}
@@ -18126,6 +19088,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ReferenceTokens = null;
+				}
+				else
+				{
+					ReferenceTokens = new List<IfcIdentifier>();
+					foreach(var val in value)
+					{
+						if(val is IfcIdentifier v)
+						{
+							ReferenceTokens.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcRelAssociatesClassification>? _ClassificationForObjects
@@ -18143,9 +19120,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcClassificationReference>? _HasReferences
 		{
@@ -18161,9 +19135,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -18183,8 +19154,8 @@ namespace IFC.IFC4x3
 		public virtual IfcClassificationReferenceSelect? ReferencedSource { get; set; }
 		public virtual IfcText? Description { get; set; }
 		public virtual IfcIdentifier? Sort { get; set; }
-		public List<IfcRelAssociatesClassification>? ClassificationRefForObjects {get{return Model?.GetItems<IfcRelAssociatesClassification>().Where(x => x.RelatingClassification != null && x.RelatingClassification == this).ToList();} set{}}
-		public List<IfcClassificationReference>? HasReferences {get{return Model?.GetItems<IfcClassificationReference>().Where(x => x.ReferencedSource != null && x.ReferencedSource == this).ToList();} set{}}
+		public List<IfcRelAssociatesClassification>? ClassificationRefForObjects {get{return Model?.GetItems<IfcRelAssociatesClassification>().Where(x => x.RelatingClassification != null && x.RelatingClassification == this).ToList();}}
+		public List<IfcClassificationReference>? HasReferences {get{return Model?.GetItems<IfcClassificationReference>().Where(x => x.ReferencedSource != null && x.ReferencedSource == this).ToList();}}
 		public IfcClassificationReference() : base()
 		{
 		}
@@ -18218,6 +19189,10 @@ namespace IFC.IFC4x3
 				{
 					ReferencedSource = val;
 				}
+				else if(value == null)
+				{
+					ReferencedSource = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -18232,6 +19207,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcIdentifier? _Sort
@@ -18245,6 +19224,10 @@ namespace IFC.IFC4x3
 				if(value is IfcIdentifier val)
 				{
 					Sort = val;
+				}
+				else if(value == null)
+				{
+					Sort = null;
 				}
 			}
 		}
@@ -18263,9 +19246,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcClassificationReference>? _HasReferences
 		{
@@ -18281,9 +19261,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -18344,6 +19321,10 @@ namespace IFC.IFC4x3
 				{
 					ClothoidConstant = val;
 				}
+				else if(value == null)
+				{
+					ClothoidConstant = null;
+				}
 			}
 		}
 	}
@@ -18396,6 +19377,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -18446,6 +19431,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -18493,6 +19482,10 @@ namespace IFC.IFC4x3
 				{
 					Red = val;
 				}
+				else if(value == null)
+				{
+					Red = null;
+				}
 			}
 		}
 		public virtual Global.IfcNormalisedRatioMeasure? _Green
@@ -18507,6 +19500,10 @@ namespace IFC.IFC4x3
 				{
 					Green = val;
 				}
+				else if(value == null)
+				{
+					Green = null;
+				}
 			}
 		}
 		public virtual Global.IfcNormalisedRatioMeasure? _Blue
@@ -18520,6 +19517,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNormalisedRatioMeasure val)
 				{
 					Blue = val;
+				}
+				else if(value == null)
+				{
+					Blue = null;
 				}
 			}
 		}
@@ -18569,6 +19570,29 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ColourList = null;
+				}
+				else
+				{
+					ColourList = new List<List<IfcNormalisedRatioMeasure>>();
+					foreach(var vals in value)
+					{
+						if(vals != null)
+						{
+							List<IfcNormalisedRatioMeasure> items = new List<IfcNormalisedRatioMeasure>();
+							foreach(var val in vals)
+							{
+								if(val is IfcNormalisedRatioMeasure v)
+								{
+									items.Add(v);
+								}
+							}
+							ColourList.Add(items);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -18608,6 +19632,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -18661,6 +19689,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -18710,6 +19742,10 @@ namespace IFC.IFC4x3
 				if(value is IfcColumnTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -18763,6 +19799,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -18813,6 +19853,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -18860,6 +19904,10 @@ namespace IFC.IFC4x3
 				{
 					UsageName = val;
 				}
+				else if(value == null)
+				{
+					UsageName = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcProperty>? _HasProperties
@@ -18879,6 +19927,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					HasProperties = null;
+				}
+				else
+				{
+					HasProperties = new List<IfcProperty>();
+					foreach(var val in value)
+					{
+						if(val is IfcProperty v)
+						{
+							HasProperties.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -18932,6 +19995,10 @@ namespace IFC.IFC4x3
 				{
 					UsageName = val;
 				}
+				else if(value == null)
+				{
+					UsageName = null;
+				}
 			}
 		}
 		public virtual Global.IfcComplexPropertyTemplateTypeEnum? _TemplateType
@@ -18945,6 +20012,10 @@ namespace IFC.IFC4x3
 				if(value is IfcComplexPropertyTemplateTypeEnum val)
 				{
 					TemplateType = val;
+				}
+				else if(value == null)
+				{
+					TemplateType = null;
 				}
 			}
 		}
@@ -18965,6 +20036,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					HasPropertyTemplates = null;
+				}
+				else
+				{
+					HasPropertyTemplates = new List<IfcPropertyTemplate>();
+					foreach(var val in value)
+					{
+						if(val is IfcPropertyTemplate v)
+						{
+							HasPropertyTemplates.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -18990,9 +20076,9 @@ namespace IFC.IFC4x3
 		public virtual List<IfcSegment>? Segments { get; set; }
 		public virtual IfcLogical? SelfIntersect { get; set; }
 		//DERIVE
-		public virtual IfcInteger? NSegments {get {return null;} set{}}
+		public virtual IfcInteger? NSegments {get {return null;}}
 		//DERIVE
-		public virtual IfcLogical? ClosedCurve {get {return null;} set{}}
+		public virtual IfcLogical? ClosedCurve {get {return null;}}
 		public IfcCompositeCurve() : base()
 		{
 		}
@@ -19026,6 +20112,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Segments = null;
+				}
+				else
+				{
+					Segments = new List<IfcSegment>();
+					foreach(var val in value)
+					{
+						if(val is IfcSegment v)
+						{
+							Segments.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLogical? _SelfIntersect
@@ -19040,6 +20141,10 @@ namespace IFC.IFC4x3
 				{
 					SelfIntersect = val;
 				}
+				else if(value == null)
+				{
+					SelfIntersect = null;
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _NSegments
@@ -19048,18 +20153,12 @@ namespace IFC.IFC4x3
 			{
 				return NSegments;
 			}
-			set
-			{
-			}
 		}
 		public virtual Global.IfcLogical? _ClosedCurve
 		{
 			get
 			{
 				return ClosedCurve;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -19077,7 +20176,7 @@ namespace IFC.IFC4x3
 	public class IfcCompositeCurveOnSurface : IfcCompositeCurve, IfcCurveOnSurface, Global.IfcCompositeCurveOnSurface
 	{
 		//DERIVE
-		public virtual List<IfcSurface>? BasisSurface {get {return null;} set{}}
+		public virtual List<IfcSurface>? BasisSurface {get {return null;}}
 		public IfcCompositeCurveOnSurface() : base()
 		{
 		}
@@ -19106,9 +20205,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -19156,6 +20252,10 @@ namespace IFC.IFC4x3
 				{
 					SameSense = val;
 				}
+				else if(value == null)
+				{
+					SameSense = null;
+				}
 			}
 		}
 		public virtual Global.IfcCurve? _ParentCurve
@@ -19169,6 +20269,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCurve val)
 				{
 					ParentCurve = val;
+				}
+				else if(value == null)
+				{
+					ParentCurve = null;
 				}
 			}
 		}
@@ -19222,6 +20326,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Profiles = null;
+				}
+				else
+				{
+					Profiles = new List<IfcProfileDef>();
+					foreach(var val in value)
+					{
+						if(val is IfcProfileDef v)
+						{
+							Profiles.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Label
@@ -19235,6 +20354,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Label = val;
+				}
+				else if(value == null)
+				{
+					Label = null;
 				}
 			}
 		}
@@ -19288,6 +20411,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -19337,6 +20464,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCompressorTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -19390,6 +20521,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -19440,6 +20575,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -19480,6 +20619,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAxis2Placement val)
 				{
 					Position = val;
+				}
+				else if(value == null)
+				{
+					Position = null;
 				}
 			}
 		}
@@ -19527,6 +20670,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CfsFaces = null;
+				}
+				else
+				{
+					CfsFaces = new List<IfcFace>();
+					foreach(var val in value)
+					{
+						if(val is IfcFace v)
+						{
+							CfsFaces.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -19569,6 +20727,10 @@ namespace IFC.IFC4x3
 				{
 					CurveOnRelatingElement = val;
 				}
+				else if(value == null)
+				{
+					CurveOnRelatingElement = null;
+				}
 			}
 		}
 		public virtual Global.IfcCurveOrEdgeCurve? _CurveOnRelatedElement
@@ -19582,6 +20744,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCurveOrEdgeCurve val)
 				{
 					CurveOnRelatedElement = val;
+				}
+				else if(value == null)
+				{
+					CurveOnRelatedElement = null;
 				}
 			}
 		}
@@ -19652,6 +20818,10 @@ namespace IFC.IFC4x3
 				{
 					EccentricityInX = val;
 				}
+				else if(value == null)
+				{
+					EccentricityInX = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _EccentricityInY
@@ -19666,6 +20836,10 @@ namespace IFC.IFC4x3
 				{
 					EccentricityInY = val;
 				}
+				else if(value == null)
+				{
+					EccentricityInY = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _EccentricityInZ
@@ -19679,6 +20853,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					EccentricityInZ = val;
+				}
+				else if(value == null)
+				{
+					EccentricityInZ = null;
 				}
 			}
 		}
@@ -19724,6 +20902,10 @@ namespace IFC.IFC4x3
 				{
 					PointOnRelatingElement = val;
 				}
+				else if(value == null)
+				{
+					PointOnRelatingElement = null;
+				}
 			}
 		}
 		public virtual Global.IfcPointOrVertexPoint? _PointOnRelatedElement
@@ -19737,6 +20919,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPointOrVertexPoint val)
 				{
 					PointOnRelatedElement = val;
+				}
+				else if(value == null)
+				{
+					PointOnRelatedElement = null;
 				}
 			}
 		}
@@ -19780,6 +20966,10 @@ namespace IFC.IFC4x3
 				{
 					SurfaceOnRelatingElement = val;
 				}
+				else if(value == null)
+				{
+					SurfaceOnRelatingElement = null;
+				}
 			}
 		}
 		public virtual Global.IfcSurfaceOrFaceSurface? _SurfaceOnRelatedElement
@@ -19793,6 +20983,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSurfaceOrFaceSurface val)
 				{
 					SurfaceOnRelatedElement = val;
+				}
+				else if(value == null)
+				{
+					SurfaceOnRelatedElement = null;
 				}
 			}
 		}
@@ -19836,6 +21030,10 @@ namespace IFC.IFC4x3
 				{
 					VolumeOnRelatingElement = val;
 				}
+				else if(value == null)
+				{
+					VolumeOnRelatingElement = null;
+				}
 			}
 		}
 		public virtual Global.IfcSolidOrShell? _VolumeOnRelatedElement
@@ -19849,6 +21047,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSolidOrShell val)
 				{
 					VolumeOnRelatedElement = val;
+				}
+				else if(value == null)
+				{
+					VolumeOnRelatedElement = null;
 				}
 			}
 		}
@@ -19882,8 +21084,8 @@ namespace IFC.IFC4x3
 		public virtual IfcActorSelect? CreatingActor { get; set; }
 		public virtual IfcDateTime? CreationTime { get; set; }
 		public virtual IfcLabel? UserDefinedGrade { get; set; }
-		public List<IfcExternalReferenceRelationship>? HasExternalReferences {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
-		public List<IfcResourceConstraintRelationship>? PropertiesForConstraint {get{return Model?.GetItems<IfcResourceConstraintRelationship>().Where(x => x.RelatingConstraint != null && x.RelatingConstraint == this).ToList();} set{}}
+		public List<IfcExternalReferenceRelationship>? HasExternalReferences {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
+		public List<IfcResourceConstraintRelationship>? PropertiesForConstraint {get{return Model?.GetItems<IfcResourceConstraintRelationship>().Where(x => x.RelatingConstraint != null && x.RelatingConstraint == this).ToList();}}
 		public IfcConstraint() : base()
 		{
 		}
@@ -19922,6 +21124,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -19935,6 +21141,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -19950,6 +21160,10 @@ namespace IFC.IFC4x3
 				{
 					ConstraintGrade = val;
 				}
+				else if(value == null)
+				{
+					ConstraintGrade = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _ConstraintSource
@@ -19963,6 +21177,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					ConstraintSource = val;
+				}
+				else if(value == null)
+				{
+					ConstraintSource = null;
 				}
 			}
 		}
@@ -19978,6 +21196,10 @@ namespace IFC.IFC4x3
 				{
 					CreatingActor = val;
 				}
+				else if(value == null)
+				{
+					CreatingActor = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _CreationTime
@@ -19992,6 +21214,10 @@ namespace IFC.IFC4x3
 				{
 					CreationTime = val;
 				}
+				else if(value == null)
+				{
+					CreationTime = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _UserDefinedGrade
@@ -20005,6 +21231,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					UserDefinedGrade = val;
+				}
+				else if(value == null)
+				{
+					UserDefinedGrade = null;
 				}
 			}
 		}
@@ -20023,9 +21253,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcResourceConstraintRelationship>? _PropertiesForConstraint
 		{
@@ -20041,9 +21268,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -20095,6 +21319,10 @@ namespace IFC.IFC4x3
 				if(value is IfcConstructionEquipmentResourceTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -20148,6 +21376,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -20199,6 +21431,10 @@ namespace IFC.IFC4x3
 				if(value is IfcConstructionMaterialResourceTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -20252,6 +21488,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -20304,6 +21544,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -20355,6 +21599,10 @@ namespace IFC.IFC4x3
 				if(value is IfcConstructionProductResourceTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -20413,6 +21661,10 @@ namespace IFC.IFC4x3
 				if(value is IfcResourceTime val)
 				{
 					Usage = val;
+				}
+				else if(value == null)
+				{
+					Usage = null;
 				}
 			}
 		}
@@ -20482,8 +21734,8 @@ namespace IFC.IFC4x3
 		public virtual IfcLabel? Phase { get; set; }
 		public virtual List<IfcRepresentationContext>? RepresentationContexts { get; set; }
 		public virtual IfcUnitAssignment? UnitsInContext { get; set; }
-		public List<IfcRelDefinesByProperties>? IsDefinedBy {get{return Model?.GetItems<IfcRelDefinesByProperties>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}set{}}
-		public List<IfcRelDeclares>? Declares {get{return Model?.GetItems<IfcRelDeclares>().Where(x => x.RelatingContext != null && x.RelatingContext == this).ToList();} set{}}
+		public List<IfcRelDefinesByProperties>? IsDefinedBy {get{return Model?.GetItems<IfcRelDefinesByProperties>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}}
+		public List<IfcRelDeclares>? Declares {get{return Model?.GetItems<IfcRelDeclares>().Where(x => x.RelatingContext != null && x.RelatingContext == this).ToList();}}
 		public IfcContext() : base()
 		{
 		}
@@ -20522,6 +21774,10 @@ namespace IFC.IFC4x3
 				{
 					ObjectType = val;
 				}
+				else if(value == null)
+				{
+					ObjectType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _LongName
@@ -20536,6 +21792,10 @@ namespace IFC.IFC4x3
 				{
 					LongName = val;
 				}
+				else if(value == null)
+				{
+					LongName = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Phase
@@ -20549,6 +21809,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Phase = val;
+				}
+				else if(value == null)
+				{
+					Phase = null;
 				}
 			}
 		}
@@ -20569,6 +21833,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RepresentationContexts = null;
+				}
+				else
+				{
+					RepresentationContexts = new List<IfcRepresentationContext>();
+					foreach(var val in value)
+					{
+						if(val is IfcRepresentationContext v)
+						{
+							RepresentationContexts.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcUnitAssignment? _UnitsInContext
@@ -20582,6 +21861,10 @@ namespace IFC.IFC4x3
 				if(value is IfcUnitAssignment val)
 				{
 					UnitsInContext = val;
+				}
+				else if(value == null)
+				{
+					UnitsInContext = null;
 				}
 			}
 		}
@@ -20600,9 +21883,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelDeclares>? _Declares
 		{
@@ -20619,9 +21899,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -20635,7 +21912,7 @@ namespace IFC.IFC4x3
 	public class IfcContextDependentUnit : IfcNamedUnit, IfcResourceObjectSelect, Global.IfcContextDependentUnit
 	{
 		public virtual IfcLabel? Name { get; set; }
-		public List<IfcExternalReferenceRelationship>? HasExternalReference {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
+		public List<IfcExternalReferenceRelationship>? HasExternalReference {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
 		public IfcContextDependentUnit() : base()
 		{
 		}
@@ -20664,6 +21941,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcExternalReferenceRelationship>? _HasExternalReference
@@ -20680,9 +21961,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -20706,7 +21984,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcControl : IfcObject, Global.IfcControl
 	{
 		public virtual IfcIdentifier? Identification { get; set; }
-		public List<IfcRelAssignsToControl>? Controls {get{return Model?.GetItems<IfcRelAssignsToControl>().Where(x => x.RelatingControl != null && x.RelatingControl == this).ToList();} set{}}
+		public List<IfcRelAssignsToControl>? Controls {get{return Model?.GetItems<IfcRelAssignsToControl>().Where(x => x.RelatingControl != null && x.RelatingControl == this).ToList();}}
 		public IfcControl() : base()
 		{
 		}
@@ -20738,6 +22016,10 @@ namespace IFC.IFC4x3
 				{
 					Identification = val;
 				}
+				else if(value == null)
+				{
+					Identification = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcRelAssignsToControl>? _Controls
@@ -20754,9 +22036,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -20809,6 +22088,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -20859,6 +22142,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -20877,7 +22164,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcLabel? Name { get; set; }
 		public virtual IfcMeasureWithUnit? ConversionFactor { get; set; }
-		public List<IfcExternalReferenceRelationship>? HasExternalReference {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
+		public List<IfcExternalReferenceRelationship>? HasExternalReference {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
 		public IfcConversionBasedUnit() : base()
 		{
 		}
@@ -20908,6 +22195,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcMeasureWithUnit? _ConversionFactor
@@ -20921,6 +22212,10 @@ namespace IFC.IFC4x3
 				if(value is IfcMeasureWithUnit val)
 				{
 					ConversionFactor = val;
+				}
+				else if(value == null)
+				{
+					ConversionFactor = null;
 				}
 			}
 		}
@@ -20938,9 +22233,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -20982,6 +22274,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReal val)
 				{
 					ConversionOffset = val;
+				}
+				else if(value == null)
+				{
+					ConversionOffset = null;
 				}
 			}
 		}
@@ -21035,6 +22331,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -21084,6 +22384,10 @@ namespace IFC.IFC4x3
 				if(value is IfcConveyorSegmentTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -21137,6 +22441,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -21186,6 +22494,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCooledBeamTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -21239,6 +22551,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -21289,6 +22605,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -21333,6 +22653,10 @@ namespace IFC.IFC4x3
 				{
 					SourceCRS = val;
 				}
+				else if(value == null)
+				{
+					SourceCRS = null;
+				}
 			}
 		}
 		public virtual Global.IfcCoordinateReferenceSystem? _TargetCRS
@@ -21346,6 +22670,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCoordinateReferenceSystem val)
 				{
 					TargetCRS = val;
+				}
+				else if(value == null)
+				{
+					TargetCRS = null;
 				}
 			}
 		}
@@ -21370,8 +22698,8 @@ namespace IFC.IFC4x3
 		public virtual IfcLabel? Name { get; set; }
 		public virtual IfcText? Description { get; set; }
 		public virtual IfcIdentifier? GeodeticDatum { get; set; }
-		public List<IfcCoordinateOperation>? HasCoordinateOperation {get{return Model?.GetItems<IfcCoordinateOperation>().Where(x => x.SourceCRS != null && x.SourceCRS == this).ToList();} set{}}
-		public List<IfcWellKnownText>? WellKnownText {get{return Model?.GetItems<IfcWellKnownText>().Where(x => x.CoordinateReferenceSystem != null && x.CoordinateReferenceSystem == this).ToList();} set{}}
+		public List<IfcCoordinateOperation>? HasCoordinateOperation {get{return Model?.GetItems<IfcCoordinateOperation>().Where(x => x.SourceCRS != null && x.SourceCRS == this).ToList();}}
+		public List<IfcWellKnownText>? WellKnownText {get{return Model?.GetItems<IfcWellKnownText>().Where(x => x.CoordinateReferenceSystem != null && x.CoordinateReferenceSystem == this).ToList();}}
 		public IfcCoordinateReferenceSystem() : base()
 		{
 		}
@@ -21402,6 +22730,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -21416,6 +22748,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcIdentifier? _GeodeticDatum
@@ -21429,6 +22765,10 @@ namespace IFC.IFC4x3
 				if(value is IfcIdentifier val)
 				{
 					GeodeticDatum = val;
+				}
+				else if(value == null)
+				{
+					GeodeticDatum = null;
 				}
 			}
 		}
@@ -21447,9 +22787,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcWellKnownText>? _WellKnownText
 		{
@@ -21465,9 +22802,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -21511,6 +22845,10 @@ namespace IFC.IFC4x3
 				{
 					CosineTerm = val;
 				}
+				else if(value == null)
+				{
+					CosineTerm = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _ConstantTerm
@@ -21524,6 +22862,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					ConstantTerm = val;
+				}
+				else if(value == null)
+				{
+					ConstantTerm = null;
 				}
 			}
 		}
@@ -21577,6 +22919,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcCostValue>? _CostValues
@@ -21596,6 +22942,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CostValues = null;
+				}
+				else
+				{
+					CostValues = new List<IfcCostValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcCostValue v)
+						{
+							CostValues.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcPhysicalQuantity>? _CostQuantities
@@ -21615,6 +22976,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CostQuantities = null;
+				}
+				else
+				{
+					CostQuantities = new List<IfcPhysicalQuantity>();
+					foreach(var val in value)
+					{
+						if(val is IfcPhysicalQuantity v)
+						{
+							CostQuantities.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -21671,6 +23047,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Status
@@ -21684,6 +23064,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Status = val;
+				}
+				else if(value == null)
+				{
+					Status = null;
 				}
 			}
 		}
@@ -21699,6 +23083,10 @@ namespace IFC.IFC4x3
 				{
 					SubmittedOn = val;
 				}
+				else if(value == null)
+				{
+					SubmittedOn = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _UpdateDate
@@ -21712,6 +23100,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					UpdateDate = val;
+				}
+				else if(value == null)
+				{
+					UpdateDate = null;
 				}
 			}
 		}
@@ -21795,6 +23187,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -21845,6 +23241,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -21866,8 +23266,8 @@ namespace IFC.IFC4x3
 	public class IfcCovering : IfcBuiltElement, Global.IfcCovering
 	{
 		public virtual IfcCoveringTypeEnum? PredefinedType { get; set; }
-		public List<IfcRelCoversSpaces>? CoversSpaces {get{return Model?.GetItems<IfcRelCoversSpaces>().Where(x => x.RelatedCoverings != null && x.RelatedCoverings.Contains(this)).ToList();}set{}}
-		public List<IfcRelCoversBldgElements>? CoversElements {get{return Model?.GetItems<IfcRelCoversBldgElements>().Where(x => x.RelatedCoverings != null && x.RelatedCoverings.Contains(this)).ToList();}set{}}
+		public List<IfcRelCoversSpaces>? CoversSpaces {get{return Model?.GetItems<IfcRelCoversSpaces>().Where(x => x.RelatedCoverings != null && x.RelatedCoverings.Contains(this)).ToList();}}
+		public List<IfcRelCoversBldgElements>? CoversElements {get{return Model?.GetItems<IfcRelCoversBldgElements>().Where(x => x.RelatedCoverings != null && x.RelatedCoverings.Contains(this)).ToList();}}
 		public IfcCovering() : base()
 		{
 		}
@@ -21902,6 +23302,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcRelCoversSpaces>? _CoversSpaces
@@ -21919,9 +23323,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelCoversBldgElements>? _CoversElements
 		{
@@ -21937,9 +23338,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -21989,6 +23387,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCoveringTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -22042,6 +23444,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -22094,6 +23500,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -22115,7 +23525,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcAxis2Placement3D? Position { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcCsgPrimitive3D() : base()
 		{
 		}
@@ -22142,6 +23552,10 @@ namespace IFC.IFC4x3
 				{
 					Position = val;
 				}
+				else if(value == null)
+				{
+					Position = null;
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -22149,9 +23563,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -22189,6 +23600,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCsgSelect val)
 				{
 					TreeRootExpression = val;
+				}
+				else if(value == null)
+				{
+					TreeRootExpression = null;
 				}
 			}
 		}
@@ -22246,6 +23661,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingMonetaryUnit = val;
 				}
+				else if(value == null)
+				{
+					RelatingMonetaryUnit = null;
+				}
 			}
 		}
 		public virtual Global.IfcMonetaryUnit? _RelatedMonetaryUnit
@@ -22259,6 +23678,10 @@ namespace IFC.IFC4x3
 				if(value is IfcMonetaryUnit val)
 				{
 					RelatedMonetaryUnit = val;
+				}
+				else if(value == null)
+				{
+					RelatedMonetaryUnit = null;
 				}
 			}
 		}
@@ -22274,6 +23697,10 @@ namespace IFC.IFC4x3
 				{
 					ExchangeRate = val;
 				}
+				else if(value == null)
+				{
+					ExchangeRate = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _RateDateTime
@@ -22288,6 +23715,10 @@ namespace IFC.IFC4x3
 				{
 					RateDateTime = val;
 				}
+				else if(value == null)
+				{
+					RateDateTime = null;
+				}
 			}
 		}
 		public virtual Global.IfcLibraryInformation? _RateSource
@@ -22301,6 +23732,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLibraryInformation val)
 				{
 					RateSource = val;
+				}
+				else if(value == null)
+				{
+					RateSource = null;
 				}
 			}
 		}
@@ -22354,6 +23789,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -22404,6 +23843,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -22426,7 +23869,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcCurve : IfcGeometricRepresentationItem, IfcGeometricSetSelect, Global.IfcCurve
 	{
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcCurve() : base()
 		{
 		}
@@ -22441,9 +23884,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -22490,6 +23930,10 @@ namespace IFC.IFC4x3
 				{
 					BasisSurface = val;
 				}
+				else if(value == null)
+				{
+					BasisSurface = null;
+				}
 			}
 		}
 		public virtual Global.IfcCurve? _OuterBoundary
@@ -22503,6 +23947,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCurve val)
 				{
 					OuterBoundary = val;
+				}
+				else if(value == null)
+				{
+					OuterBoundary = null;
 				}
 			}
 		}
@@ -22523,6 +23971,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					InnerBoundaries = null;
+				}
+				else
+				{
+					InnerBoundaries = new List<IfcCurve>();
+					foreach(var val in value)
+					{
+						if(val is IfcCurve v)
+						{
+							InnerBoundaries.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -22569,6 +24032,10 @@ namespace IFC.IFC4x3
 				{
 					BasisSurface = val;
 				}
+				else if(value == null)
+				{
+					BasisSurface = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcBoundaryCurve>? _Boundaries
@@ -22588,6 +24055,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Boundaries = null;
+				}
+				else
+				{
+					Boundaries = new List<IfcBoundaryCurve>();
+					foreach(var val in value)
+					{
+						if(val is IfcBoundaryCurve v)
+						{
+							Boundaries.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _ImplicitOuter
@@ -22601,6 +24083,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					ImplicitOuter = val;
+				}
+				else if(value == null)
+				{
+					ImplicitOuter = null;
 				}
 			}
 		}
@@ -22653,6 +24139,10 @@ namespace IFC.IFC4x3
 				{
 					Placement = val;
 				}
+				else if(value == null)
+				{
+					Placement = null;
+				}
 			}
 		}
 		public virtual Global.IfcCurveMeasureSelect? _SegmentStart
@@ -22666,6 +24156,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCurveMeasureSelect val)
 				{
 					SegmentStart = val;
+				}
+				else if(value == null)
+				{
+					SegmentStart = null;
 				}
 			}
 		}
@@ -22681,6 +24175,10 @@ namespace IFC.IFC4x3
 				{
 					SegmentLength = val;
 				}
+				else if(value == null)
+				{
+					SegmentLength = null;
+				}
 			}
 		}
 		public virtual Global.IfcCurve? _ParentCurve
@@ -22694,6 +24192,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCurve val)
 				{
 					ParentCurve = val;
+				}
+				else if(value == null)
+				{
+					ParentCurve = null;
 				}
 			}
 		}
@@ -22752,6 +24254,10 @@ namespace IFC.IFC4x3
 				{
 					CurveFont = val;
 				}
+				else if(value == null)
+				{
+					CurveFont = null;
+				}
 			}
 		}
 		public virtual Global.IfcSizeSelect? _CurveWidth
@@ -22765,6 +24271,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSizeSelect val)
 				{
 					CurveWidth = val;
+				}
+				else if(value == null)
+				{
+					CurveWidth = null;
 				}
 			}
 		}
@@ -22780,6 +24290,10 @@ namespace IFC.IFC4x3
 				{
 					CurveColour = val;
 				}
+				else if(value == null)
+				{
+					CurveColour = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _ModelOrDraughting
@@ -22793,6 +24307,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					ModelOrDraughting = val;
+				}
+				else if(value == null)
+				{
+					ModelOrDraughting = null;
 				}
 			}
 		}
@@ -22836,6 +24354,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcCurveStyleFontPattern>? _PatternList
@@ -22855,6 +24377,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					PatternList = null;
+				}
+				else
+				{
+					PatternList = new List<IfcCurveStyleFontPattern>();
+					foreach(var val in value)
+					{
+						if(val is IfcCurveStyleFontPattern v)
+						{
+							PatternList.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -22901,6 +24438,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcCurveStyleFontSelect? _CurveStyleFont
@@ -22915,6 +24456,10 @@ namespace IFC.IFC4x3
 				{
 					CurveStyleFont = val;
 				}
+				else if(value == null)
+				{
+					CurveStyleFont = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveRatioMeasure? _CurveFontScaling
@@ -22928,6 +24473,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveRatioMeasure val)
 				{
 					CurveFontScaling = val;
+				}
+				else if(value == null)
+				{
+					CurveFontScaling = null;
 				}
 			}
 		}
@@ -22973,6 +24522,10 @@ namespace IFC.IFC4x3
 				{
 					VisibleSegmentLength = val;
 				}
+				else if(value == null)
+				{
+					VisibleSegmentLength = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _InvisibleSegmentLength
@@ -22986,6 +24539,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					InvisibleSegmentLength = val;
+				}
+				else if(value == null)
+				{
+					InvisibleSegmentLength = null;
 				}
 			}
 		}
@@ -23025,6 +24582,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Radius = val;
+				}
+				else if(value == null)
+				{
+					Radius = null;
 				}
 			}
 		}
@@ -23078,6 +24639,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -23127,6 +24692,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDamperTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -23246,6 +24815,10 @@ namespace IFC.IFC4x3
 				{
 					ParentProfile = val;
 				}
+				else if(value == null)
+				{
+					ParentProfile = null;
+				}
 			}
 		}
 		public virtual Global.IfcCartesianTransformationOperator2D? _Operator
@@ -23260,6 +24833,10 @@ namespace IFC.IFC4x3
 				{
 					Operator = val;
 				}
+				else if(value == null)
+				{
+					Operator = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Label
@@ -23273,6 +24850,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Label = val;
+				}
+				else if(value == null)
+				{
+					Label = null;
 				}
 			}
 		}
@@ -23299,7 +24880,7 @@ namespace IFC.IFC4x3
 		public virtual IfcLabel? UserDefinedType { get; set; }
 		public virtual IfcLabel? Name { get; set; }
 		//DERIVE
-		public virtual IfcDimensionalExponents? Dimensions {get {return null;} set{}}
+		public virtual IfcDimensionalExponents? Dimensions {get {return null;}}
 		public IfcDerivedUnit() : base()
 		{
 		}
@@ -23337,6 +24918,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Elements = null;
+				}
+				else
+				{
+					Elements = new List<IfcDerivedUnitElement>();
+					foreach(var val in value)
+					{
+						if(val is IfcDerivedUnitElement v)
+						{
+							Elements.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcDerivedUnitEnum? _UnitType
@@ -23350,6 +24946,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDerivedUnitEnum val)
 				{
 					UnitType = val;
+				}
+				else if(value == null)
+				{
+					UnitType = null;
 				}
 			}
 		}
@@ -23365,6 +24965,10 @@ namespace IFC.IFC4x3
 				{
 					UserDefinedType = val;
 				}
+				else if(value == null)
+				{
+					UserDefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Name
@@ -23379,6 +24983,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcDimensionalExponents? _Dimensions
@@ -23386,9 +24994,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dimensions;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -23430,6 +25035,10 @@ namespace IFC.IFC4x3
 				{
 					Unit = val;
 				}
+				else if(value == null)
+				{
+					Unit = null;
+				}
 			}
 		}
 		public virtual INTEGER? _Exponent
@@ -23443,6 +25052,10 @@ namespace IFC.IFC4x3
 				if(value is INTEGER val)
 				{
 					Exponent = val;
+				}
+				else if(value == null)
+				{
+					Exponent = null;
 				}
 			}
 		}
@@ -23505,6 +25118,10 @@ namespace IFC.IFC4x3
 				{
 					LengthExponent = val;
 				}
+				else if(value == null)
+				{
+					LengthExponent = null;
+				}
 			}
 		}
 		public virtual INTEGER? _MassExponent
@@ -23518,6 +25135,10 @@ namespace IFC.IFC4x3
 				if(value is INTEGER val)
 				{
 					MassExponent = val;
+				}
+				else if(value == null)
+				{
+					MassExponent = null;
 				}
 			}
 		}
@@ -23533,6 +25154,10 @@ namespace IFC.IFC4x3
 				{
 					TimeExponent = val;
 				}
+				else if(value == null)
+				{
+					TimeExponent = null;
+				}
 			}
 		}
 		public virtual INTEGER? _ElectricCurrentExponent
@@ -23546,6 +25171,10 @@ namespace IFC.IFC4x3
 				if(value is INTEGER val)
 				{
 					ElectricCurrentExponent = val;
+				}
+				else if(value == null)
+				{
+					ElectricCurrentExponent = null;
 				}
 			}
 		}
@@ -23561,6 +25190,10 @@ namespace IFC.IFC4x3
 				{
 					ThermodynamicTemperatureExponent = val;
 				}
+				else if(value == null)
+				{
+					ThermodynamicTemperatureExponent = null;
+				}
 			}
 		}
 		public virtual INTEGER? _AmountOfSubstanceExponent
@@ -23575,6 +25208,10 @@ namespace IFC.IFC4x3
 				{
 					AmountOfSubstanceExponent = val;
 				}
+				else if(value == null)
+				{
+					AmountOfSubstanceExponent = null;
+				}
 			}
 		}
 		public virtual INTEGER? _LuminousIntensityExponent
@@ -23588,6 +25225,10 @@ namespace IFC.IFC4x3
 				if(value is INTEGER val)
 				{
 					LuminousIntensityExponent = val;
+				}
+				else if(value == null)
+				{
+					LuminousIntensityExponent = null;
 				}
 			}
 		}
@@ -23606,7 +25247,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual List<IfcReal>? DirectionRatios { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcDirection() : base()
 		{
 		}
@@ -23638,6 +25279,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					DirectionRatios = null;
+				}
+				else
+				{
+					DirectionRatios = new List<IfcReal>();
+					foreach(var val in value)
+					{
+						if(val is IfcReal v)
+						{
+							DirectionRatios.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -23645,9 +25301,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -23702,6 +25355,10 @@ namespace IFC.IFC4x3
 				{
 					Directrix = val;
 				}
+				else if(value == null)
+				{
+					Directrix = null;
+				}
 			}
 		}
 		public virtual Global.IfcCurveMeasureSelect? _StartParam
@@ -23716,6 +25373,10 @@ namespace IFC.IFC4x3
 				{
 					StartParam = val;
 				}
+				else if(value == null)
+				{
+					StartParam = null;
+				}
 			}
 		}
 		public virtual Global.IfcCurveMeasureSelect? _EndParam
@@ -23729,6 +25390,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCurveMeasureSelect val)
 				{
 					EndParam = val;
+				}
+				else if(value == null)
+				{
+					EndParam = null;
 				}
 			}
 		}
@@ -23808,6 +25473,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -23857,6 +25526,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDiscreteAccessoryTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -23910,6 +25583,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -23959,6 +25636,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDistributionBoardTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -24012,6 +25693,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -24062,6 +25747,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -24109,7 +25798,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDistributionControlElement : IfcDistributionElement, Global.IfcDistributionControlElement
 	{
-		public List<IfcRelFlowControlElements>? AssignedToFlowElement {get{return Model?.GetItems<IfcRelFlowControlElements>().Where(x => x.RelatedControlElements != null && x.RelatedControlElements.Contains(this)).ToList();}set{}}
+		public List<IfcRelFlowControlElements>? AssignedToFlowElement {get{return Model?.GetItems<IfcRelFlowControlElements>().Where(x => x.RelatedControlElements != null && x.RelatedControlElements.Contains(this)).ToList();}}
 		public IfcDistributionControlElement() : base()
 		{
 		}
@@ -24144,9 +25833,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -24199,7 +25885,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDistributionElement : IfcElement, Global.IfcDistributionElement
 	{
-		public List<IfcRelConnectsPortToElement>? HasPorts {get{return Model?.GetItems<IfcRelConnectsPortToElement>().Where(x => x.RelatedElement != null && x.RelatedElement == this).ToList();} set{}}
+		public List<IfcRelConnectsPortToElement>? HasPorts {get{return Model?.GetItems<IfcRelConnectsPortToElement>().Where(x => x.RelatedElement != null && x.RelatedElement == this).ToList();}}
 		public IfcDistributionElement() : base()
 		{
 		}
@@ -24234,9 +25920,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -24291,7 +25974,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcDistributionFlowElement : IfcDistributionElement, Global.IfcDistributionFlowElement
 	{
-		public List<IfcRelFlowControlElements>? HasControlElements {get{return Model?.GetItems<IfcRelFlowControlElements>().Where(x => x.RelatingFlowElement != null && x.RelatingFlowElement == this).ToList();} set{}}
+		public List<IfcRelFlowControlElements>? HasControlElements {get{return Model?.GetItems<IfcRelFlowControlElements>().Where(x => x.RelatingFlowElement != null && x.RelatingFlowElement == this).ToList();}}
 		public IfcDistributionFlowElement() : base()
 		{
 		}
@@ -24326,9 +26009,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -24421,6 +26101,10 @@ namespace IFC.IFC4x3
 				{
 					FlowDirection = val;
 				}
+				else if(value == null)
+				{
+					FlowDirection = null;
+				}
 			}
 		}
 		public virtual Global.IfcDistributionPortTypeEnum? _PredefinedType
@@ -24435,6 +26119,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcDistributionSystemEnum? _SystemType
@@ -24448,6 +26136,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDistributionSystemEnum val)
 				{
 					SystemType = val;
+				}
+				else if(value == null)
+				{
+					SystemType = null;
 				}
 			}
 		}
@@ -24502,6 +26194,10 @@ namespace IFC.IFC4x3
 				{
 					LongName = val;
 				}
+				else if(value == null)
+				{
+					LongName = null;
+				}
 			}
 		}
 		public virtual Global.IfcDistributionSystemEnum? _PredefinedType
@@ -24515,6 +26211,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDistributionSystemEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -24565,10 +26265,10 @@ namespace IFC.IFC4x3
 		public virtual IfcDate? ValidUntil { get; set; }
 		public virtual IfcDocumentConfidentialityEnum? Confidentiality { get; set; }
 		public virtual IfcDocumentStatusEnum? Status { get; set; }
-		public List<IfcRelAssociatesDocument>? DocumentInfoForObjects {get{return Model?.GetItems<IfcRelAssociatesDocument>().Where(x => x.RelatingDocument != null && x.RelatingDocument == this).ToList();} set{}}
-		public List<IfcDocumentReference>? HasDocumentReferences {get{return Model?.GetItems<IfcDocumentReference>().Where(x => x.ReferencedDocument != null && x.ReferencedDocument == this).ToList();} set{}}
-		public List<IfcDocumentInformationRelationship>? IsPointedTo {get{return Model?.GetItems<IfcDocumentInformationRelationship>().Where(x => x.RelatedDocuments != null && x.RelatedDocuments.Contains(this)).ToList();}set{}}
-		public List<IfcDocumentInformationRelationship>? IsPointer {get{return Model?.GetItems<IfcDocumentInformationRelationship>().Where(x => x.RelatingDocument != null && x.RelatingDocument == this).ToList();} set{}}
+		public List<IfcRelAssociatesDocument>? DocumentInfoForObjects {get{return Model?.GetItems<IfcRelAssociatesDocument>().Where(x => x.RelatingDocument != null && x.RelatingDocument == this).ToList();}}
+		public List<IfcDocumentReference>? HasDocumentReferences {get{return Model?.GetItems<IfcDocumentReference>().Where(x => x.ReferencedDocument != null && x.ReferencedDocument == this).ToList();}}
+		public List<IfcDocumentInformationRelationship>? IsPointedTo {get{return Model?.GetItems<IfcDocumentInformationRelationship>().Where(x => x.RelatedDocuments != null && x.RelatedDocuments.Contains(this)).ToList();}}
+		public List<IfcDocumentInformationRelationship>? IsPointer {get{return Model?.GetItems<IfcDocumentInformationRelationship>().Where(x => x.RelatingDocument != null && x.RelatingDocument == this).ToList();}}
 		public IfcDocumentInformation() : base()
 		{
 		}
@@ -24627,6 +26327,10 @@ namespace IFC.IFC4x3
 				{
 					Identification = val;
 				}
+				else if(value == null)
+				{
+					Identification = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Name
@@ -24640,6 +26344,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -24655,6 +26363,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcURIReference? _Location
@@ -24668,6 +26380,10 @@ namespace IFC.IFC4x3
 				if(value is IfcURIReference val)
 				{
 					Location = val;
+				}
+				else if(value == null)
+				{
+					Location = null;
 				}
 			}
 		}
@@ -24683,6 +26399,10 @@ namespace IFC.IFC4x3
 				{
 					Purpose = val;
 				}
+				else if(value == null)
+				{
+					Purpose = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _IntendedUse
@@ -24696,6 +26416,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					IntendedUse = val;
+				}
+				else if(value == null)
+				{
+					IntendedUse = null;
 				}
 			}
 		}
@@ -24711,6 +26435,10 @@ namespace IFC.IFC4x3
 				{
 					Scope = val;
 				}
+				else if(value == null)
+				{
+					Scope = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Revision
@@ -24725,6 +26453,10 @@ namespace IFC.IFC4x3
 				{
 					Revision = val;
 				}
+				else if(value == null)
+				{
+					Revision = null;
+				}
 			}
 		}
 		public virtual Global.IfcActorSelect? _DocumentOwner
@@ -24738,6 +26470,10 @@ namespace IFC.IFC4x3
 				if(value is IfcActorSelect val)
 				{
 					DocumentOwner = val;
+				}
+				else if(value == null)
+				{
+					DocumentOwner = null;
 				}
 			}
 		}
@@ -24758,6 +26494,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Editors = null;
+				}
+				else
+				{
+					Editors = new List<IfcActorSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcActorSelect v)
+						{
+							Editors.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _CreationTime
@@ -24771,6 +26522,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					CreationTime = val;
+				}
+				else if(value == null)
+				{
+					CreationTime = null;
 				}
 			}
 		}
@@ -24786,6 +26541,10 @@ namespace IFC.IFC4x3
 				{
 					LastRevisionTime = val;
 				}
+				else if(value == null)
+				{
+					LastRevisionTime = null;
+				}
 			}
 		}
 		public virtual Global.IfcIdentifier? _ElectronicFormat
@@ -24799,6 +26558,10 @@ namespace IFC.IFC4x3
 				if(value is IfcIdentifier val)
 				{
 					ElectronicFormat = val;
+				}
+				else if(value == null)
+				{
+					ElectronicFormat = null;
 				}
 			}
 		}
@@ -24814,6 +26577,10 @@ namespace IFC.IFC4x3
 				{
 					ValidFrom = val;
 				}
+				else if(value == null)
+				{
+					ValidFrom = null;
+				}
 			}
 		}
 		public virtual Global.IfcDate? _ValidUntil
@@ -24827,6 +26594,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDate val)
 				{
 					ValidUntil = val;
+				}
+				else if(value == null)
+				{
+					ValidUntil = null;
 				}
 			}
 		}
@@ -24842,6 +26613,10 @@ namespace IFC.IFC4x3
 				{
 					Confidentiality = val;
 				}
+				else if(value == null)
+				{
+					Confidentiality = null;
+				}
 			}
 		}
 		public virtual Global.IfcDocumentStatusEnum? _Status
@@ -24855,6 +26630,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDocumentStatusEnum val)
 				{
 					Status = val;
+				}
+				else if(value == null)
+				{
+					Status = null;
 				}
 			}
 		}
@@ -24873,9 +26652,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcDocumentReference>? _HasDocumentReferences
 		{
@@ -24891,9 +26667,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcDocumentInformationRelationship>? _IsPointedTo
@@ -24911,9 +26684,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcDocumentInformationRelationship>? _IsPointer
 		{
@@ -24929,9 +26699,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -24980,6 +26747,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingDocument = val;
 				}
+				else if(value == null)
+				{
+					RelatingDocument = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcDocumentInformation>? _RelatedDocuments
@@ -24999,6 +26770,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedDocuments = null;
+				}
+				else
+				{
+					RelatedDocuments = new List<IfcDocumentInformation>();
+					foreach(var val in value)
+					{
+						if(val is IfcDocumentInformation v)
+						{
+							RelatedDocuments.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _RelationshipType
@@ -25012,6 +26798,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					RelationshipType = val;
+				}
+				else if(value == null)
+				{
+					RelationshipType = null;
 				}
 			}
 		}
@@ -25031,7 +26821,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcText? Description { get; set; }
 		public virtual IfcDocumentInformation? ReferencedDocument { get; set; }
-		public List<IfcRelAssociatesDocument>? DocumentRefForObjects {get{return Model?.GetItems<IfcRelAssociatesDocument>().Where(x => x.RelatingDocument != null && x.RelatingDocument == this).ToList();} set{}}
+		public List<IfcRelAssociatesDocument>? DocumentRefForObjects {get{return Model?.GetItems<IfcRelAssociatesDocument>().Where(x => x.RelatingDocument != null && x.RelatingDocument == this).ToList();}}
 		public IfcDocumentReference() : base()
 		{
 		}
@@ -25063,6 +26853,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcDocumentInformation? _ReferencedDocument
@@ -25076,6 +26870,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDocumentInformation val)
 				{
 					ReferencedDocument = val;
+				}
+				else if(value == null)
+				{
+					ReferencedDocument = null;
 				}
 			}
 		}
@@ -25093,9 +26891,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -25164,6 +26959,10 @@ namespace IFC.IFC4x3
 				{
 					OverallHeight = val;
 				}
+				else if(value == null)
+				{
+					OverallHeight = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _OverallWidth
@@ -25177,6 +26976,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					OverallWidth = val;
+				}
+				else if(value == null)
+				{
+					OverallWidth = null;
 				}
 			}
 		}
@@ -25192,6 +26995,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcDoorTypeOperationEnum? _OperationType
@@ -25206,6 +27013,10 @@ namespace IFC.IFC4x3
 				{
 					OperationType = val;
 				}
+				else if(value == null)
+				{
+					OperationType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _UserDefinedOperationType
@@ -25219,6 +27030,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					UserDefinedOperationType = val;
+				}
+				else if(value == null)
+				{
+					UserDefinedOperationType = null;
 				}
 			}
 		}
@@ -25320,6 +27135,10 @@ namespace IFC.IFC4x3
 				{
 					LiningDepth = val;
 				}
+				else if(value == null)
+				{
+					LiningDepth = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _LiningThickness
@@ -25333,6 +27152,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					LiningThickness = val;
+				}
+				else if(value == null)
+				{
+					LiningThickness = null;
 				}
 			}
 		}
@@ -25348,6 +27171,10 @@ namespace IFC.IFC4x3
 				{
 					ThresholdDepth = val;
 				}
+				else if(value == null)
+				{
+					ThresholdDepth = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _ThresholdThickness
@@ -25361,6 +27188,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					ThresholdThickness = val;
+				}
+				else if(value == null)
+				{
+					ThresholdThickness = null;
 				}
 			}
 		}
@@ -25376,6 +27207,10 @@ namespace IFC.IFC4x3
 				{
 					TransomThickness = val;
 				}
+				else if(value == null)
+				{
+					TransomThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _TransomOffset
@@ -25389,6 +27224,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					TransomOffset = val;
+				}
+				else if(value == null)
+				{
+					TransomOffset = null;
 				}
 			}
 		}
@@ -25404,6 +27243,10 @@ namespace IFC.IFC4x3
 				{
 					LiningOffset = val;
 				}
+				else if(value == null)
+				{
+					LiningOffset = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _ThresholdOffset
@@ -25417,6 +27260,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					ThresholdOffset = val;
+				}
+				else if(value == null)
+				{
+					ThresholdOffset = null;
 				}
 			}
 		}
@@ -25432,6 +27279,10 @@ namespace IFC.IFC4x3
 				{
 					CasingThickness = val;
 				}
+				else if(value == null)
+				{
+					CasingThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _CasingDepth
@@ -25445,6 +27296,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					CasingDepth = val;
+				}
+				else if(value == null)
+				{
+					CasingDepth = null;
 				}
 			}
 		}
@@ -25460,6 +27315,10 @@ namespace IFC.IFC4x3
 				{
 					ShapeAspectStyle = val;
 				}
+				else if(value == null)
+				{
+					ShapeAspectStyle = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _LiningToPanelOffsetX
@@ -25474,6 +27333,10 @@ namespace IFC.IFC4x3
 				{
 					LiningToPanelOffsetX = val;
 				}
+				else if(value == null)
+				{
+					LiningToPanelOffsetX = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _LiningToPanelOffsetY
@@ -25487,6 +27350,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					LiningToPanelOffsetY = val;
+				}
+				else if(value == null)
+				{
+					LiningToPanelOffsetY = null;
 				}
 			}
 		}
@@ -25550,6 +27417,10 @@ namespace IFC.IFC4x3
 				{
 					PanelDepth = val;
 				}
+				else if(value == null)
+				{
+					PanelDepth = null;
+				}
 			}
 		}
 		public virtual Global.IfcDoorPanelOperationEnum? _PanelOperation
@@ -25563,6 +27434,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDoorPanelOperationEnum val)
 				{
 					PanelOperation = val;
+				}
+				else if(value == null)
+				{
+					PanelOperation = null;
 				}
 			}
 		}
@@ -25578,6 +27453,10 @@ namespace IFC.IFC4x3
 				{
 					PanelWidth = val;
 				}
+				else if(value == null)
+				{
+					PanelWidth = null;
+				}
 			}
 		}
 		public virtual Global.IfcDoorPanelPositionEnum? _PanelPosition
@@ -25592,6 +27471,10 @@ namespace IFC.IFC4x3
 				{
 					PanelPosition = val;
 				}
+				else if(value == null)
+				{
+					PanelPosition = null;
+				}
 			}
 		}
 		public virtual Global.IfcShapeAspect? _ShapeAspectStyle
@@ -25605,6 +27488,10 @@ namespace IFC.IFC4x3
 				if(value is IfcShapeAspect val)
 				{
 					ShapeAspectStyle = val;
+				}
+				else if(value == null)
+				{
+					ShapeAspectStyle = null;
 				}
 			}
 		}
@@ -25668,6 +27555,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcDoorTypeOperationEnum? _OperationType
@@ -25681,6 +27572,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDoorTypeOperationEnum val)
 				{
 					OperationType = val;
+				}
+				else if(value == null)
+				{
+					OperationType = null;
 				}
 			}
 		}
@@ -25696,6 +27591,10 @@ namespace IFC.IFC4x3
 				{
 					ParameterTakesPrecedence = val;
 				}
+				else if(value == null)
+				{
+					ParameterTakesPrecedence = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _UserDefinedOperationType
@@ -25709,6 +27608,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					UserDefinedOperationType = val;
+				}
+				else if(value == null)
+				{
+					UserDefinedOperationType = null;
 				}
 			}
 		}
@@ -25815,6 +27718,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -25864,6 +27771,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDuctFittingTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -25917,6 +27828,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -25966,6 +27881,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDuctSegmentTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -26019,6 +27938,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -26069,6 +27992,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -26118,6 +28045,10 @@ namespace IFC.IFC4x3
 				if(value is IfcEarthworksCutTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -26200,6 +28131,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -26246,6 +28181,10 @@ namespace IFC.IFC4x3
 				{
 					EdgeStart = val;
 				}
+				else if(value == null)
+				{
+					EdgeStart = null;
+				}
 			}
 		}
 		public virtual Global.IfcVertex? _EdgeEnd
@@ -26259,6 +28198,10 @@ namespace IFC.IFC4x3
 				if(value is IfcVertex val)
 				{
 					EdgeEnd = val;
+				}
+				else if(value == null)
+				{
+					EdgeEnd = null;
 				}
 			}
 		}
@@ -26304,6 +28247,10 @@ namespace IFC.IFC4x3
 				{
 					EdgeGeometry = val;
 				}
+				else if(value == null)
+				{
+					EdgeGeometry = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _SameSense
@@ -26317,6 +28264,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					SameSense = val;
+				}
+				else if(value == null)
+				{
+					SameSense = null;
 				}
 			}
 		}
@@ -26336,7 +28287,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual List<IfcOrientedEdge>? EdgeList { get; set; }
 		//DERIVE
-		public virtual IfcInteger? Ne {get {return null;} set{}}
+		public virtual IfcInteger? Ne {get {return null;}}
 		public IfcEdgeLoop() : base()
 		{
 		}
@@ -26368,6 +28319,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					EdgeList = null;
+				}
+				else
+				{
+					EdgeList = new List<IfcOrientedEdge>();
+					foreach(var val in value)
+					{
+						if(val is IfcOrientedEdge v)
+						{
+							EdgeList.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _Ne
@@ -26375,9 +28341,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Ne;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -26430,6 +28393,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -26479,6 +28446,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElectricApplianceTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -26532,6 +28503,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -26581,6 +28556,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElectricDistributionBoardTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -26634,6 +28613,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -26683,6 +28666,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElectricFlowStorageDeviceTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -26736,6 +28723,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -26785,6 +28776,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElectricFlowTreatmentDeviceTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -26838,6 +28833,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -26887,6 +28886,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElectricGeneratorTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -26940,6 +28943,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -26989,6 +28996,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElectricMotorTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -27042,6 +29053,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -27092,6 +29107,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -27129,18 +29148,18 @@ namespace IFC.IFC4x3
 	public abstract class IfcElement : IfcProduct, IfcInterferenceSelect, IfcStructuralActivityAssignmentSelect, Global.IfcElement
 	{
 		public virtual IfcIdentifier? Tag { get; set; }
-		public List<IfcRelFillsElement>? FillsVoids {get{return Model?.GetItems<IfcRelFillsElement>().Where(x => x.RelatedBuildingElement != null && x.RelatedBuildingElement == this).ToList();} set{}}
-		public List<IfcRelConnectsElements>? ConnectedTo {get{return Model?.GetItems<IfcRelConnectsElements>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();} set{}}
-		public List<IfcRelInterferesElements>? IsInterferedByElements {get{return Model?.GetItems<IfcRelInterferesElements>().Where(x => x.RelatedElement != null && x.RelatedElement == this).ToList();} set{}}
-		public List<IfcRelInterferesElements>? InterferesElements {get{return Model?.GetItems<IfcRelInterferesElements>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();} set{}}
-		public List<IfcRelProjectsElement>? HasProjections {get{return Model?.GetItems<IfcRelProjectsElement>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();} set{}}
-		public List<IfcRelVoidsElement>? HasOpenings {get{return Model?.GetItems<IfcRelVoidsElement>().Where(x => x.RelatingBuildingElement != null && x.RelatingBuildingElement == this).ToList();} set{}}
-		public List<IfcRelConnectsWithRealizingElements>? IsConnectionRealization {get{return Model?.GetItems<IfcRelConnectsWithRealizingElements>().Where(x => x.RealizingElements != null && x.RealizingElements.Contains(this)).ToList();}set{}}
-		public List<IfcRelSpaceBoundary>? ProvidesBoundaries {get{return Model?.GetItems<IfcRelSpaceBoundary>().Where(x => x.RelatedBuildingElement != null && x.RelatedBuildingElement == this).ToList();} set{}}
-		public List<IfcRelConnectsElements>? ConnectedFrom {get{return Model?.GetItems<IfcRelConnectsElements>().Where(x => x.RelatedElement != null && x.RelatedElement == this).ToList();} set{}}
-		public List<IfcRelContainedInSpatialStructure>? ContainedInStructure {get{return Model?.GetItems<IfcRelContainedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();}set{}}
-		public List<IfcRelCoversBldgElements>? HasCoverings {get{return Model?.GetItems<IfcRelCoversBldgElements>().Where(x => x.RelatingBuildingElement != null && x.RelatingBuildingElement == this).ToList();} set{}}
-		public List<IfcRelAdheresToElement>? HasSurfaceFeatures {get{return Model?.GetItems<IfcRelAdheresToElement>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();} set{}}
+		public List<IfcRelFillsElement>? FillsVoids {get{return Model?.GetItems<IfcRelFillsElement>().Where(x => x.RelatedBuildingElement != null && x.RelatedBuildingElement == this).ToList();}}
+		public List<IfcRelConnectsElements>? ConnectedTo {get{return Model?.GetItems<IfcRelConnectsElements>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();}}
+		public List<IfcRelInterferesElements>? IsInterferedByElements {get{return Model?.GetItems<IfcRelInterferesElements>().Where(x => x.RelatedElement != null && x.RelatedElement == this).ToList();}}
+		public List<IfcRelInterferesElements>? InterferesElements {get{return Model?.GetItems<IfcRelInterferesElements>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();}}
+		public List<IfcRelProjectsElement>? HasProjections {get{return Model?.GetItems<IfcRelProjectsElement>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();}}
+		public List<IfcRelVoidsElement>? HasOpenings {get{return Model?.GetItems<IfcRelVoidsElement>().Where(x => x.RelatingBuildingElement != null && x.RelatingBuildingElement == this).ToList();}}
+		public List<IfcRelConnectsWithRealizingElements>? IsConnectionRealization {get{return Model?.GetItems<IfcRelConnectsWithRealizingElements>().Where(x => x.RealizingElements != null && x.RealizingElements.Contains(this)).ToList();}}
+		public List<IfcRelSpaceBoundary>? ProvidesBoundaries {get{return Model?.GetItems<IfcRelSpaceBoundary>().Where(x => x.RelatedBuildingElement != null && x.RelatedBuildingElement == this).ToList();}}
+		public List<IfcRelConnectsElements>? ConnectedFrom {get{return Model?.GetItems<IfcRelConnectsElements>().Where(x => x.RelatedElement != null && x.RelatedElement == this).ToList();}}
+		public List<IfcRelContainedInSpatialStructure>? ContainedInStructure {get{return Model?.GetItems<IfcRelContainedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();}}
+		public List<IfcRelCoversBldgElements>? HasCoverings {get{return Model?.GetItems<IfcRelCoversBldgElements>().Where(x => x.RelatingBuildingElement != null && x.RelatingBuildingElement == this).ToList();}}
+		public List<IfcRelAdheresToElement>? HasSurfaceFeatures {get{return Model?.GetItems<IfcRelAdheresToElement>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();}}
 		public IfcElement() : base()
 		{
 		}
@@ -27174,6 +29193,10 @@ namespace IFC.IFC4x3
 				{
 					Tag = val;
 				}
+				else if(value == null)
+				{
+					Tag = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcRelFillsElement>? _FillsVoids
@@ -27191,9 +29214,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelConnectsElements>? _ConnectedTo
 		{
@@ -27209,9 +29229,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelInterferesElements>? _IsInterferedByElements
@@ -27229,9 +29246,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelInterferesElements>? _InterferesElements
 		{
@@ -27247,9 +29261,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelProjectsElement>? _HasProjections
@@ -27267,9 +29278,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelVoidsElement>? _HasOpenings
 		{
@@ -27285,9 +29293,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelConnectsWithRealizingElements>? _IsConnectionRealization
@@ -27305,9 +29310,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelSpaceBoundary>? _ProvidesBoundaries
 		{
@@ -27323,9 +29325,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelConnectsElements>? _ConnectedFrom
@@ -27343,9 +29342,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelContainedInSpatialStructure>? _ContainedInStructure
 		{
@@ -27361,9 +29357,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelCoversBldgElements>? _HasCoverings
@@ -27381,9 +29374,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelAdheresToElement>? _HasSurfaceFeatures
 		{
@@ -27399,9 +29389,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -27458,6 +29445,10 @@ namespace IFC.IFC4x3
 				{
 					AssemblyPlace = val;
 				}
+				else if(value == null)
+				{
+					AssemblyPlace = null;
+				}
 			}
 		}
 		public virtual Global.IfcElementAssemblyTypeEnum? _PredefinedType
@@ -27471,6 +29462,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElementAssemblyTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -27521,6 +29516,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElementAssemblyTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -27647,6 +29646,10 @@ namespace IFC.IFC4x3
 				{
 					MethodOfMeasurement = val;
 				}
+				else if(value == null)
+				{
+					MethodOfMeasurement = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcPhysicalQuantity>? _Quantities
@@ -27666,6 +29669,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Quantities = null;
+				}
+				else
+				{
+					Quantities = new List<IfcPhysicalQuantity>();
+					foreach(var val in value)
+					{
+						if(val is IfcPhysicalQuantity v)
+						{
+							Quantities.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -27721,6 +29739,10 @@ namespace IFC.IFC4x3
 				{
 					ElementType = val;
 				}
+				else if(value == null)
+				{
+					ElementType = null;
+				}
 			}
 		}
 	}
@@ -27763,6 +29785,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAxis2Placement3D val)
 				{
 					Position = val;
+				}
+				else if(value == null)
+				{
+					Position = null;
 				}
 			}
 		}
@@ -27807,6 +29833,10 @@ namespace IFC.IFC4x3
 				{
 					SemiAxis1 = val;
 				}
+				else if(value == null)
+				{
+					SemiAxis1 = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _SemiAxis2
@@ -27820,6 +29850,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					SemiAxis2 = val;
+				}
+				else if(value == null)
+				{
+					SemiAxis2 = null;
 				}
 			}
 		}
@@ -27866,6 +29900,10 @@ namespace IFC.IFC4x3
 				{
 					SemiAxis1 = val;
 				}
+				else if(value == null)
+				{
+					SemiAxis1 = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _SemiAxis2
@@ -27879,6 +29917,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					SemiAxis2 = val;
+				}
+				else if(value == null)
+				{
+					SemiAxis2 = null;
 				}
 			}
 		}
@@ -28031,6 +30073,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -28080,6 +30126,10 @@ namespace IFC.IFC4x3
 				if(value is IfcEngineTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -28133,6 +30183,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -28182,6 +30236,10 @@ namespace IFC.IFC4x3
 				if(value is IfcEvaporativeCoolerTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -28235,6 +30293,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -28284,6 +30346,10 @@ namespace IFC.IFC4x3
 				if(value is IfcEvaporatorTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -28345,6 +30411,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcEventTriggerTypeEnum? _EventTriggerType
@@ -28358,6 +30428,10 @@ namespace IFC.IFC4x3
 				if(value is IfcEventTriggerTypeEnum val)
 				{
 					EventTriggerType = val;
+				}
+				else if(value == null)
+				{
+					EventTriggerType = null;
 				}
 			}
 		}
@@ -28373,6 +30447,10 @@ namespace IFC.IFC4x3
 				{
 					UserDefinedEventTriggerType = val;
 				}
+				else if(value == null)
+				{
+					UserDefinedEventTriggerType = null;
+				}
 			}
 		}
 		public virtual Global.IfcEventTime? _EventOccurenceTime
@@ -28386,6 +30464,10 @@ namespace IFC.IFC4x3
 				if(value is IfcEventTime val)
 				{
 					EventOccurenceTime = val;
+				}
+				else if(value == null)
+				{
+					EventOccurenceTime = null;
 				}
 			}
 		}
@@ -28440,6 +30522,10 @@ namespace IFC.IFC4x3
 				{
 					ActualDate = val;
 				}
+				else if(value == null)
+				{
+					ActualDate = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _EarlyDate
@@ -28453,6 +30539,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					EarlyDate = val;
+				}
+				else if(value == null)
+				{
+					EarlyDate = null;
 				}
 			}
 		}
@@ -28468,6 +30558,10 @@ namespace IFC.IFC4x3
 				{
 					LateDate = val;
 				}
+				else if(value == null)
+				{
+					LateDate = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _ScheduleDate
@@ -28481,6 +30575,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					ScheduleDate = val;
+				}
+				else if(value == null)
+				{
+					ScheduleDate = null;
 				}
 			}
 		}
@@ -28540,6 +30638,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcEventTriggerTypeEnum? _EventTriggerType
@@ -28554,6 +30656,10 @@ namespace IFC.IFC4x3
 				{
 					EventTriggerType = val;
 				}
+				else if(value == null)
+				{
+					EventTriggerType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _UserDefinedEventTriggerType
@@ -28567,6 +30673,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					UserDefinedEventTriggerType = val;
+				}
+				else if(value == null)
+				{
+					UserDefinedEventTriggerType = null;
 				}
 			}
 		}
@@ -28617,6 +30727,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -28630,6 +30744,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -28650,6 +30768,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Properties = null;
+				}
+				else
+				{
+					Properties = new List<IfcProperty>();
+					foreach(var val in value)
+					{
+						if(val is IfcProperty v)
+						{
+							Properties.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -28696,7 +30829,7 @@ namespace IFC.IFC4x3
 		public virtual IfcURIReference? Location { get; set; }
 		public virtual IfcIdentifier? Identification { get; set; }
 		public virtual IfcLabel? Name { get; set; }
-		public List<IfcExternalReferenceRelationship>? ExternalReferenceForResources {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatingReference != null && x.RelatingReference == this).ToList();} set{}}
+		public List<IfcExternalReferenceRelationship>? ExternalReferenceForResources {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatingReference != null && x.RelatingReference == this).ToList();}}
 		public IfcExternalReference() : base()
 		{
 		}
@@ -28727,6 +30860,10 @@ namespace IFC.IFC4x3
 				{
 					Location = val;
 				}
+				else if(value == null)
+				{
+					Location = null;
+				}
 			}
 		}
 		public virtual Global.IfcIdentifier? _Identification
@@ -28741,6 +30878,10 @@ namespace IFC.IFC4x3
 				{
 					Identification = val;
 				}
+				else if(value == null)
+				{
+					Identification = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Name
@@ -28754,6 +30895,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -28771,9 +30916,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -28818,6 +30960,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingReference = val;
 				}
+				else if(value == null)
+				{
+					RelatingReference = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcResourceObjectSelect>? _RelatedResourceObjects
@@ -28837,6 +30983,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedResourceObjects = null;
+				}
+				else
+				{
+					RelatedResourceObjects = new List<IfcResourceObjectSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcResourceObjectSelect v)
+						{
+							RelatedResourceObjects.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -28851,7 +31012,7 @@ namespace IFC.IFC4x3
 	public class IfcExternalSpatialElement : IfcExternalSpatialStructureElement, IfcSpaceBoundarySelect, Global.IfcExternalSpatialElement
 	{
 		public virtual IfcExternalSpatialElementTypeEnum? PredefinedType { get; set; }
-		public List<IfcRelSpaceBoundary>? BoundedBy {get{return Model?.GetItems<IfcRelSpaceBoundary>().Where(x => x.RelatingSpace != null && x.RelatingSpace == this).ToList();} set{}}
+		public List<IfcRelSpaceBoundary>? BoundedBy {get{return Model?.GetItems<IfcRelSpaceBoundary>().Where(x => x.RelatingSpace != null && x.RelatingSpace == this).ToList();}}
 		public IfcExternalSpatialElement() : base()
 		{
 		}
@@ -28886,6 +31047,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcRelSpaceBoundary>? _BoundedBy
@@ -28902,9 +31067,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -29052,6 +31214,10 @@ namespace IFC.IFC4x3
 				{
 					ExtrudedDirection = val;
 				}
+				else if(value == null)
+				{
+					ExtrudedDirection = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _Depth
@@ -29065,6 +31231,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Depth = val;
+				}
+				else if(value == null)
+				{
+					Depth = null;
 				}
 			}
 		}
@@ -29110,6 +31280,10 @@ namespace IFC.IFC4x3
 				{
 					EndSweptArea = val;
 				}
+				else if(value == null)
+				{
+					EndSweptArea = null;
+				}
 			}
 		}
 	}
@@ -29128,7 +31302,7 @@ namespace IFC.IFC4x3
 	public class IfcFace : IfcTopologicalRepresentationItem, Global.IfcFace
 	{
 		public virtual List<IfcFaceBound>? Bounds { get; set; }
-		public List<IfcTextureMap>? HasTextureMaps {get{return Model?.GetItems<IfcTextureMap>().Where(x => x.MappedTo != null && x.MappedTo == this).ToList();} set{}}
+		public List<IfcTextureMap>? HasTextureMaps {get{return Model?.GetItems<IfcTextureMap>().Where(x => x.MappedTo != null && x.MappedTo == this).ToList();}}
 		public IfcFace() : base()
 		{
 		}
@@ -29160,6 +31334,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Bounds = null;
+				}
+				else
+				{
+					Bounds = new List<IfcFaceBound>();
+					foreach(var val in value)
+					{
+						if(val is IfcFaceBound v)
+						{
+							Bounds.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcTextureMap>? _HasTextureMaps
@@ -29177,9 +31366,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -29194,7 +31380,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual List<IfcConnectedFaceSet>? FbsmFaces { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcFaceBasedSurfaceModel() : base()
 		{
 		}
@@ -29226,6 +31412,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					FbsmFaces = null;
+				}
+				else
+				{
+					FbsmFaces = new List<IfcConnectedFaceSet>();
+					foreach(var val in value)
+					{
+						if(val is IfcConnectedFaceSet v)
+						{
+							FbsmFaces.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -29233,9 +31434,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -29280,6 +31478,10 @@ namespace IFC.IFC4x3
 				{
 					Bound = val;
 				}
+				else if(value == null)
+				{
+					Bound = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _Orientation
@@ -29293,6 +31495,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					Orientation = val;
+				}
+				else if(value == null)
+				{
+					Orientation = null;
 				}
 			}
 		}
@@ -29361,6 +31567,10 @@ namespace IFC.IFC4x3
 				{
 					FaceSurface = val;
 				}
+				else if(value == null)
+				{
+					FaceSurface = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _SameSense
@@ -29374,6 +31584,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					SameSense = val;
+				}
+				else if(value == null)
+				{
+					SameSense = null;
 				}
 			}
 		}
@@ -29442,6 +31656,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Voids = null;
+				}
+				else
+				{
+					Voids = new List<IfcClosedShell>();
+					foreach(var val in value)
+					{
+						if(val is IfcClosedShell v)
+						{
+							Voids.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -29530,6 +31759,10 @@ namespace IFC.IFC4x3
 				{
 					UsageType = val;
 				}
+				else if(value == null)
+				{
+					UsageType = null;
+				}
 			}
 		}
 	}
@@ -29581,6 +31814,10 @@ namespace IFC.IFC4x3
 				if(value is IfcFacilityPartCommonTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -29641,6 +31878,10 @@ namespace IFC.IFC4x3
 				{
 					TensionFailureX = val;
 				}
+				else if(value == null)
+				{
+					TensionFailureX = null;
+				}
 			}
 		}
 		public virtual Global.IfcForceMeasure? _TensionFailureY
@@ -29654,6 +31895,10 @@ namespace IFC.IFC4x3
 				if(value is IfcForceMeasure val)
 				{
 					TensionFailureY = val;
+				}
+				else if(value == null)
+				{
+					TensionFailureY = null;
 				}
 			}
 		}
@@ -29669,6 +31914,10 @@ namespace IFC.IFC4x3
 				{
 					TensionFailureZ = val;
 				}
+				else if(value == null)
+				{
+					TensionFailureZ = null;
+				}
 			}
 		}
 		public virtual Global.IfcForceMeasure? _CompressionFailureX
@@ -29682,6 +31931,10 @@ namespace IFC.IFC4x3
 				if(value is IfcForceMeasure val)
 				{
 					CompressionFailureX = val;
+				}
+				else if(value == null)
+				{
+					CompressionFailureX = null;
 				}
 			}
 		}
@@ -29697,6 +31950,10 @@ namespace IFC.IFC4x3
 				{
 					CompressionFailureY = val;
 				}
+				else if(value == null)
+				{
+					CompressionFailureY = null;
+				}
 			}
 		}
 		public virtual Global.IfcForceMeasure? _CompressionFailureZ
@@ -29710,6 +31967,10 @@ namespace IFC.IFC4x3
 				if(value is IfcForceMeasure val)
 				{
 					CompressionFailureZ = val;
+				}
+				else if(value == null)
+				{
+					CompressionFailureZ = null;
 				}
 			}
 		}
@@ -29763,6 +32024,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -29812,6 +32077,10 @@ namespace IFC.IFC4x3
 				if(value is IfcFanTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -29865,6 +32134,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -29915,6 +32188,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -29963,7 +32240,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcFeatureElementAddition : IfcFeatureElement, Global.IfcFeatureElementAddition
 	{
-		public IfcRelProjectsElement? ProjectsElements {get{return Model?.GetItems<IfcRelProjectsElement>().FirstOrDefault(x => x.RelatedFeatureElement != null && x.RelatedFeatureElement == this);} set{}}
+		public IfcRelProjectsElement? ProjectsElements {get{return Model?.GetItems<IfcRelProjectsElement>().FirstOrDefault(x => x.RelatedFeatureElement != null && x.RelatedFeatureElement == this);}}
 		public IfcFeatureElementAddition() : base()
 		{
 		}
@@ -29990,9 +32267,6 @@ namespace IFC.IFC4x3
 			{
 				return ProjectsElements;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -30011,7 +32285,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcFeatureElementSubtraction : IfcFeatureElement, Global.IfcFeatureElementSubtraction
 	{
-		public IfcRelVoidsElement? VoidsElements {get{return Model?.GetItems<IfcRelVoidsElement>().FirstOrDefault(x => x.RelatedOpeningElement != null && x.RelatedOpeningElement == this);} set{}}
+		public IfcRelVoidsElement? VoidsElements {get{return Model?.GetItems<IfcRelVoidsElement>().FirstOrDefault(x => x.RelatedOpeningElement != null && x.RelatedOpeningElement == this);}}
 		public IfcFeatureElementSubtraction() : base()
 		{
 		}
@@ -30037,9 +32311,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return VoidsElements;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -30098,6 +32369,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					FillStyles = null;
+				}
+				else
+				{
+					FillStyles = new List<IfcFillStyleSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcFillStyleSelect v)
+						{
+							FillStyles.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _ModelOrDraughting
@@ -30111,6 +32397,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					ModelOrDraughting = val;
+				}
+				else if(value == null)
+				{
+					ModelOrDraughting = null;
 				}
 			}
 		}
@@ -30170,6 +32460,10 @@ namespace IFC.IFC4x3
 				{
 					HatchLineAppearance = val;
 				}
+				else if(value == null)
+				{
+					HatchLineAppearance = null;
+				}
 			}
 		}
 		public virtual Global.IfcHatchLineDistanceSelect? _StartOfNextHatchLine
@@ -30183,6 +32477,10 @@ namespace IFC.IFC4x3
 				if(value is IfcHatchLineDistanceSelect val)
 				{
 					StartOfNextHatchLine = val;
+				}
+				else if(value == null)
+				{
+					StartOfNextHatchLine = null;
 				}
 			}
 		}
@@ -30198,6 +32496,10 @@ namespace IFC.IFC4x3
 				{
 					PointOfReferenceHatchLine = val;
 				}
+				else if(value == null)
+				{
+					PointOfReferenceHatchLine = null;
+				}
 			}
 		}
 		public virtual Global.IfcCartesianPoint? _PatternStart
@@ -30212,6 +32514,10 @@ namespace IFC.IFC4x3
 				{
 					PatternStart = val;
 				}
+				else if(value == null)
+				{
+					PatternStart = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlaneAngleMeasure? _HatchLineAngle
@@ -30225,6 +32531,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlaneAngleMeasure val)
 				{
 					HatchLineAngle = val;
+				}
+				else if(value == null)
+				{
+					HatchLineAngle = null;
 				}
 			}
 		}
@@ -30277,6 +32587,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					TilingPattern = null;
+				}
+				else
+				{
+					TilingPattern = new List<IfcVector>();
+					foreach(var val in value)
+					{
+						if(val is IfcVector v)
+						{
+							TilingPattern.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcStyledItem>? _Tiles
@@ -30296,6 +32621,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Tiles = null;
+				}
+				else
+				{
+					Tiles = new List<IfcStyledItem>();
+					foreach(var val in value)
+					{
+						if(val is IfcStyledItem v)
+						{
+							Tiles.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcPositiveRatioMeasure? _TilingScale
@@ -30309,6 +32649,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveRatioMeasure val)
 				{
 					TilingScale = val;
+				}
+				else if(value == null)
+				{
+					TilingScale = null;
 				}
 			}
 		}
@@ -30362,6 +32706,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -30411,6 +32759,10 @@ namespace IFC.IFC4x3
 				if(value is IfcFilterTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -30464,6 +32816,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -30514,6 +32870,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -30558,6 +32918,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDirection val)
 				{
 					FixedReference = val;
+				}
+				else if(value == null)
+				{
+					FixedReference = null;
 				}
 			}
 		}
@@ -30757,6 +33121,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -30806,6 +33174,10 @@ namespace IFC.IFC4x3
 				if(value is IfcFlowInstrumentTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -30859,6 +33231,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -30908,6 +33284,10 @@ namespace IFC.IFC4x3
 				if(value is IfcFlowMeterTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -31316,6 +33696,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -31365,6 +33749,10 @@ namespace IFC.IFC4x3
 				if(value is IfcFootingTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -31481,6 +33869,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -31536,6 +33928,10 @@ namespace IFC.IFC4x3
 				{
 					AssemblyPlace = val;
 				}
+				else if(value == null)
+				{
+					AssemblyPlace = null;
+				}
 			}
 		}
 		public virtual Global.IfcFurnitureTypeEnum? _PredefinedType
@@ -31549,6 +33945,10 @@ namespace IFC.IFC4x3
 				if(value is IfcFurnitureTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -31602,6 +34002,10 @@ namespace IFC.IFC4x3
 				{
 					PrimeMeridian = val;
 				}
+				else if(value == null)
+				{
+					PrimeMeridian = null;
+				}
 			}
 		}
 		public virtual Global.IfcNamedUnit? _AngleUnit
@@ -31616,6 +34020,10 @@ namespace IFC.IFC4x3
 				{
 					AngleUnit = val;
 				}
+				else if(value == null)
+				{
+					AngleUnit = null;
+				}
 			}
 		}
 		public virtual Global.IfcNamedUnit? _HeightUnit
@@ -31629,6 +34037,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNamedUnit val)
 				{
 					HeightUnit = val;
+				}
+				else if(value == null)
+				{
+					HeightUnit = null;
 				}
 			}
 		}
@@ -31682,6 +34094,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -31732,6 +34148,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -31781,8 +34201,8 @@ namespace IFC.IFC4x3
 		public virtual IfcReal? Precision { get; set; }
 		public virtual IfcAxis2Placement? WorldCoordinateSystem { get; set; }
 		public virtual IfcDirection? TrueNorth { get; set; }
-		public List<IfcGeometricRepresentationSubContext>? HasSubContexts {get{return Model?.GetItems<IfcGeometricRepresentationSubContext>().Where(x => x.ParentContext != null && x.ParentContext == this).ToList();} set{}}
-		public List<IfcCoordinateOperation>? HasCoordinateOperation {get{return Model?.GetItems<IfcCoordinateOperation>().Where(x => x.SourceCRS != null && x.SourceCRS == this).ToList();} set{}}
+		public List<IfcGeometricRepresentationSubContext>? HasSubContexts {get{return Model?.GetItems<IfcGeometricRepresentationSubContext>().Where(x => x.ParentContext != null && x.ParentContext == this).ToList();}}
+		public List<IfcCoordinateOperation>? HasCoordinateOperation {get{return Model?.GetItems<IfcCoordinateOperation>().Where(x => x.SourceCRS != null && x.SourceCRS == this).ToList();}}
 		public IfcGeometricRepresentationContext() : base()
 		{
 		}
@@ -31817,6 +34237,10 @@ namespace IFC.IFC4x3
 				{
 					CoordinateSpaceDimension = val;
 				}
+				else if(value == null)
+				{
+					CoordinateSpaceDimension = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _Precision
@@ -31830,6 +34254,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReal val)
 				{
 					Precision = val;
+				}
+				else if(value == null)
+				{
+					Precision = null;
 				}
 			}
 		}
@@ -31845,6 +34273,10 @@ namespace IFC.IFC4x3
 				{
 					WorldCoordinateSystem = val;
 				}
+				else if(value == null)
+				{
+					WorldCoordinateSystem = null;
+				}
 			}
 		}
 		public virtual Global.IfcDirection? _TrueNorth
@@ -31858,6 +34290,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDirection val)
 				{
 					TrueNorth = val;
+				}
+				else if(value == null)
+				{
+					TrueNorth = null;
 				}
 			}
 		}
@@ -31876,9 +34312,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcCoordinateOperation>? _HasCoordinateOperation
 		{
@@ -31894,9 +34327,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -31969,13 +34399,13 @@ namespace IFC.IFC4x3
 		public virtual IfcGeometricProjectionEnum? TargetView { get; set; }
 		public virtual IfcLabel? UserDefinedTargetView { get; set; }
 		//DERIVE
-		public override IfcAxis2Placement? WorldCoordinateSystem {get {return null;} set{}}
+		public override IfcAxis2Placement? WorldCoordinateSystem {get {return null;}}
 		//DERIVE
-		public override IfcDimensionCount? CoordinateSpaceDimension {get {return null;} set{}}
+		public override IfcDimensionCount? CoordinateSpaceDimension {get {return null;}}
 		//DERIVE
-		public override IfcDirection? TrueNorth {get {return null;} set{}}
+		public override IfcDirection? TrueNorth {get {return null;}}
 		//DERIVE
-		public override IfcReal? Precision {get {return null;} set{}}
+		public override IfcReal? Precision {get {return null;}}
 		public IfcGeometricRepresentationSubContext() : base()
 		{
 		}
@@ -32014,6 +34444,10 @@ namespace IFC.IFC4x3
 				{
 					ParentContext = val;
 				}
+				else if(value == null)
+				{
+					ParentContext = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveRatioMeasure? _TargetScale
@@ -32027,6 +34461,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveRatioMeasure val)
 				{
 					TargetScale = val;
+				}
+				else if(value == null)
+				{
+					TargetScale = null;
 				}
 			}
 		}
@@ -32042,6 +34480,10 @@ namespace IFC.IFC4x3
 				{
 					TargetView = val;
 				}
+				else if(value == null)
+				{
+					TargetView = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _UserDefinedTargetView
@@ -32056,6 +34498,10 @@ namespace IFC.IFC4x3
 				{
 					UserDefinedTargetView = val;
 				}
+				else if(value == null)
+				{
+					UserDefinedTargetView = null;
+				}
 			}
 		}
 		public override Global.IfcAxis2Placement? _WorldCoordinateSystem
@@ -32064,18 +34510,12 @@ namespace IFC.IFC4x3
 			{
 				return WorldCoordinateSystem;
 			}
-			set
-			{
-			}
 		}
 		public override Global.IfcDimensionCount? _CoordinateSpaceDimension
 		{
 			get
 			{
 				return CoordinateSpaceDimension;
-			}
-			set
-			{
 			}
 		}
 		public override Global.IfcDirection? _TrueNorth
@@ -32084,18 +34524,12 @@ namespace IFC.IFC4x3
 			{
 				return TrueNorth;
 			}
-			set
-			{
-			}
 		}
 		public override Global.IfcReal? _Precision
 		{
 			get
 			{
 				return Precision;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -32117,7 +34551,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual List<IfcGeometricSetSelect>? Elements { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcGeometricSet() : base()
 		{
 		}
@@ -32149,6 +34583,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Elements = null;
+				}
+				else
+				{
+					Elements = new List<IfcGeometricSetSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcGeometricSetSelect v)
+						{
+							Elements.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -32156,9 +34605,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -32328,6 +34774,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -32372,6 +34822,10 @@ namespace IFC.IFC4x3
 				{
 					BaseCurve = val;
 				}
+				else if(value == null)
+				{
+					BaseCurve = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlacement? _EndPoint
@@ -32385,6 +34839,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlacement val)
 				{
 					EndPoint = val;
+				}
+				else if(value == null)
+				{
+					EndPoint = null;
 				}
 			}
 		}
@@ -32448,6 +34906,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					UAxes = null;
+				}
+				else
+				{
+					UAxes = new List<IfcGridAxis>();
+					foreach(var val in value)
+					{
+						if(val is IfcGridAxis v)
+						{
+							UAxes.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcGridAxis>? _VAxes
@@ -32467,6 +34940,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					VAxes = null;
+				}
+				else
+				{
+					VAxes = new List<IfcGridAxis>();
+					foreach(var val in value)
+					{
+						if(val is IfcGridAxis v)
+						{
+							VAxes.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcGridAxis>? _WAxes
@@ -32486,6 +34974,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					WAxes = null;
+				}
+				else
+				{
+					WAxes = new List<IfcGridAxis>();
+					foreach(var val in value)
+					{
+						if(val is IfcGridAxis v)
+						{
+							WAxes.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcGridTypeEnum? _PredefinedType
@@ -32499,6 +35002,10 @@ namespace IFC.IFC4x3
 				if(value is IfcGridTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -32523,10 +35030,10 @@ namespace IFC.IFC4x3
 		public virtual IfcLabel? AxisTag { get; set; }
 		public virtual IfcCurve? AxisCurve { get; set; }
 		public virtual IfcBoolean? SameSense { get; set; }
-		public List<IfcGrid>? PartOfW {get{return Model?.GetItems<IfcGrid>().Where(x => x.WAxes != null && x.WAxes.Contains(this)).ToList();}set{}}
-		public List<IfcGrid>? PartOfV {get{return Model?.GetItems<IfcGrid>().Where(x => x.VAxes != null && x.VAxes.Contains(this)).ToList();}set{}}
-		public List<IfcGrid>? PartOfU {get{return Model?.GetItems<IfcGrid>().Where(x => x.UAxes != null && x.UAxes.Contains(this)).ToList();}set{}}
-		public List<IfcVirtualGridIntersection>? HasIntersections {get{return Model?.GetItems<IfcVirtualGridIntersection>().Where(x => x.IntersectingAxes != null && x.IntersectingAxes.Contains(this)).ToList();}set{}}
+		public List<IfcGrid>? PartOfW {get{return Model?.GetItems<IfcGrid>().Where(x => x.WAxes != null && x.WAxes.Contains(this)).ToList();}}
+		public List<IfcGrid>? PartOfV {get{return Model?.GetItems<IfcGrid>().Where(x => x.VAxes != null && x.VAxes.Contains(this)).ToList();}}
+		public List<IfcGrid>? PartOfU {get{return Model?.GetItems<IfcGrid>().Where(x => x.UAxes != null && x.UAxes.Contains(this)).ToList();}}
+		public List<IfcVirtualGridIntersection>? HasIntersections {get{return Model?.GetItems<IfcVirtualGridIntersection>().Where(x => x.IntersectingAxes != null && x.IntersectingAxes.Contains(this)).ToList();}}
 		public IfcGridAxis() : base()
 		{
 		}
@@ -32557,6 +35064,10 @@ namespace IFC.IFC4x3
 				{
 					AxisTag = val;
 				}
+				else if(value == null)
+				{
+					AxisTag = null;
+				}
 			}
 		}
 		public virtual Global.IfcCurve? _AxisCurve
@@ -32571,6 +35082,10 @@ namespace IFC.IFC4x3
 				{
 					AxisCurve = val;
 				}
+				else if(value == null)
+				{
+					AxisCurve = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _SameSense
@@ -32584,6 +35099,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					SameSense = val;
+				}
+				else if(value == null)
+				{
+					SameSense = null;
 				}
 			}
 		}
@@ -32602,9 +35121,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcGrid>? _PartOfV
 		{
@@ -32620,9 +35136,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcGrid>? _PartOfU
@@ -32640,9 +35153,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcVirtualGridIntersection>? _HasIntersections
 		{
@@ -32658,9 +35168,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -32704,6 +35211,10 @@ namespace IFC.IFC4x3
 				{
 					PlacementLocation = val;
 				}
+				else if(value == null)
+				{
+					PlacementLocation = null;
+				}
 			}
 		}
 		public virtual Global.IfcGridPlacementDirectionSelect? _PlacementRefDirection
@@ -32717,6 +35228,10 @@ namespace IFC.IFC4x3
 				if(value is IfcGridPlacementDirectionSelect val)
 				{
 					PlacementRefDirection = val;
+				}
+				else if(value == null)
+				{
+					PlacementRefDirection = null;
 				}
 			}
 		}
@@ -32737,8 +35252,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcGroup : IfcObject, IfcSpatialReferenceSelect, Global.IfcGroup
 	{
-		public List<IfcRelAssignsToGroup>? IsGroupedBy {get{return Model?.GetItems<IfcRelAssignsToGroup>().Where(x => x.RelatingGroup != null && x.RelatingGroup == this).ToList();} set{}}
-		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures {get{return Model?.GetItems<IfcRelReferencedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();}set{}}
+		public List<IfcRelAssignsToGroup>? IsGroupedBy {get{return Model?.GetItems<IfcRelAssignsToGroup>().Where(x => x.RelatingGroup != null && x.RelatingGroup == this).ToList();}}
+		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures {get{return Model?.GetItems<IfcRelReferencedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();}}
 		public IfcGroup() : base()
 		{
 		}
@@ -32771,9 +35286,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelReferencedInSpatialStructure>? _ReferencedInStructures
 		{
@@ -32789,9 +35301,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -32812,7 +35321,7 @@ namespace IFC.IFC4x3
 		public virtual IfcSurface? BaseSurface { get; set; }
 		public virtual IfcBoolean? AgreementFlag { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcHalfSpaceSolid() : base()
 		{
 		}
@@ -32841,6 +35350,10 @@ namespace IFC.IFC4x3
 				{
 					BaseSurface = val;
 				}
+				else if(value == null)
+				{
+					BaseSurface = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _AgreementFlag
@@ -32855,6 +35368,10 @@ namespace IFC.IFC4x3
 				{
 					AgreementFlag = val;
 				}
+				else if(value == null)
+				{
+					AgreementFlag = null;
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -32862,9 +35379,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -32917,6 +35431,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -32966,6 +35484,10 @@ namespace IFC.IFC4x3
 				if(value is IfcHeatExchangerTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -33019,6 +35541,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -33068,6 +35594,10 @@ namespace IFC.IFC4x3
 				if(value is IfcHumidifierTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -33140,6 +35670,10 @@ namespace IFC.IFC4x3
 				{
 					OverallWidth = val;
 				}
+				else if(value == null)
+				{
+					OverallWidth = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _OverallDepth
@@ -33153,6 +35687,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					OverallDepth = val;
+				}
+				else if(value == null)
+				{
+					OverallDepth = null;
 				}
 			}
 		}
@@ -33168,6 +35706,10 @@ namespace IFC.IFC4x3
 				{
 					WebThickness = val;
 				}
+				else if(value == null)
+				{
+					WebThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _FlangeThickness
@@ -33181,6 +35723,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					FlangeThickness = val;
+				}
+				else if(value == null)
+				{
+					FlangeThickness = null;
 				}
 			}
 		}
@@ -33196,6 +35742,10 @@ namespace IFC.IFC4x3
 				{
 					FilletRadius = val;
 				}
+				else if(value == null)
+				{
+					FilletRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _FlangeEdgeRadius
@@ -33210,6 +35760,10 @@ namespace IFC.IFC4x3
 				{
 					FlangeEdgeRadius = val;
 				}
+				else if(value == null)
+				{
+					FlangeEdgeRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlaneAngleMeasure? _FlangeSlope
@@ -33223,6 +35777,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlaneAngleMeasure val)
 				{
 					FlangeSlope = val;
+				}
+				else if(value == null)
+				{
+					FlangeSlope = null;
 				}
 			}
 		}
@@ -33266,6 +35824,10 @@ namespace IFC.IFC4x3
 				if(value is IfcURIReference val)
 				{
 					URLReference = val;
+				}
+				else if(value == null)
+				{
+					URLReference = null;
 				}
 			}
 		}
@@ -33319,6 +35881,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -33368,6 +35934,10 @@ namespace IFC.IFC4x3
 				if(value is IfcImpactProtectionDeviceTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -33419,6 +35989,10 @@ namespace IFC.IFC4x3
 				{
 					MappedTo = val;
 				}
+				else if(value == null)
+				{
+					MappedTo = null;
+				}
 			}
 		}
 		public virtual Global.IfcNormalisedRatioMeasure? _Opacity
@@ -33433,6 +36007,10 @@ namespace IFC.IFC4x3
 				{
 					Opacity = val;
 				}
+				else if(value == null)
+				{
+					Opacity = null;
+				}
 			}
 		}
 		public virtual Global.IfcColourRgbList? _Colours
@@ -33446,6 +36024,10 @@ namespace IFC.IFC4x3
 				if(value is IfcColourRgbList val)
 				{
 					Colours = val;
+				}
+				else if(value == null)
+				{
+					Colours = null;
 				}
 			}
 		}
@@ -33466,6 +36048,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ColourIndex = null;
+				}
+				else
+				{
+					ColourIndex = new List<IfcPositiveInteger>();
+					foreach(var val in value)
+					{
+						if(val is IfcPositiveInteger v)
+						{
+							ColourIndex.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -33514,6 +36111,10 @@ namespace IFC.IFC4x3
 				{
 					Points = val;
 				}
+				else if(value == null)
+				{
+					Points = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcSegmentIndexSelect>? _Segments
@@ -33533,6 +36134,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Segments = null;
+				}
+				else
+				{
+					Segments = new List<IfcSegmentIndexSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcSegmentIndexSelect v)
+						{
+							Segments.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _SelfIntersect
@@ -33546,6 +36162,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					SelfIntersect = val;
+				}
+				else if(value == null)
+				{
+					SelfIntersect = null;
 				}
 			}
 		}
@@ -33564,8 +36184,8 @@ namespace IFC.IFC4x3
 	public class IfcIndexedPolygonalFace : IfcTessellatedItem, Global.IfcIndexedPolygonalFace
 	{
 		public virtual List<IfcPositiveInteger>? CoordIndex { get; set; }
-		public List<IfcPolygonalFaceSet>? ToFaceSet {get{return Model?.GetItems<IfcPolygonalFaceSet>().Where(x => x.Faces != null && x.Faces.Contains(this)).ToList();}set{}}
-		public List<IfcTextureCoordinateIndices>? HasTexCoords {get{return Model?.GetItems<IfcTextureCoordinateIndices>().Where(x => x.TexCoordsOf != null && x.TexCoordsOf == this).ToList();} set{}}
+		public List<IfcPolygonalFaceSet>? ToFaceSet {get{return Model?.GetItems<IfcPolygonalFaceSet>().Where(x => x.Faces != null && x.Faces.Contains(this)).ToList();}}
+		public List<IfcTextureCoordinateIndices>? HasTexCoords {get{return Model?.GetItems<IfcTextureCoordinateIndices>().Where(x => x.TexCoordsOf != null && x.TexCoordsOf == this).ToList();}}
 		public IfcIndexedPolygonalFace() : base()
 		{
 		}
@@ -33597,6 +36217,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CoordIndex = null;
+				}
+				else
+				{
+					CoordIndex = new List<IfcPositiveInteger>();
+					foreach(var val in value)
+					{
+						if(val is IfcPositiveInteger v)
+						{
+							CoordIndex.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcPolygonalFaceSet>? _ToFaceSet
@@ -33614,9 +36249,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcTextureCoordinateIndices>? _HasTexCoords
 		{
@@ -33632,9 +36264,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -33684,6 +36313,29 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					InnerCoordIndices = null;
+				}
+				else
+				{
+					InnerCoordIndices = new List<List<IfcPositiveInteger>>();
+					foreach(var vals in value)
+					{
+						if(vals != null)
+						{
+							List<IfcPositiveInteger> items = new List<IfcPositiveInteger>();
+							foreach(var val in vals)
+							{
+								if(val is IfcPositiveInteger v)
+								{
+									items.Add(v);
+								}
+							}
+							InnerCoordIndices.Add(items);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -33730,6 +36382,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					TexCoordIndices = null;
+				}
+				else
+				{
+					TexCoordIndices = new List<IfcTextureCoordinateIndices>();
+					foreach(var val in value)
+					{
+						if(val is IfcTextureCoordinateIndices v)
+						{
+							TexCoordIndices.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -33776,6 +36443,10 @@ namespace IFC.IFC4x3
 				{
 					MappedTo = val;
 				}
+				else if(value == null)
+				{
+					MappedTo = null;
+				}
 			}
 		}
 		public virtual Global.IfcTextureVertexList? _TexCoords
@@ -33789,6 +36460,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTextureVertexList val)
 				{
 					TexCoords = val;
+				}
+				else if(value == null)
+				{
+					TexCoords = null;
 				}
 			}
 		}
@@ -33841,6 +36516,29 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					TexCoordIndex = null;
+				}
+				else
+				{
+					TexCoordIndex = new List<List<IfcPositiveInteger>>();
+					foreach(var vals in value)
+					{
+						if(vals != null)
+						{
+							List<IfcPositiveInteger> items = new List<IfcPositiveInteger>();
+							foreach(var val in vals)
+							{
+								if(val is IfcPositiveInteger v)
+								{
+									items.Add(v);
+								}
+							}
+							TexCoordIndex.Add(items);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -33893,6 +36591,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -33942,6 +36644,10 @@ namespace IFC.IFC4x3
 				if(value is IfcInterceptorTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -34032,6 +36738,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcActorSelect? _Jurisdiction
@@ -34045,6 +36755,10 @@ namespace IFC.IFC4x3
 				if(value is IfcActorSelect val)
 				{
 					Jurisdiction = val;
+				}
+				else if(value == null)
+				{
+					Jurisdiction = null;
 				}
 			}
 		}
@@ -34065,6 +36779,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ResponsiblePersons = null;
+				}
+				else
+				{
+					ResponsiblePersons = new List<IfcPerson>();
+					foreach(var val in value)
+					{
+						if(val is IfcPerson v)
+						{
+							ResponsiblePersons.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcDate? _LastUpdateDate
@@ -34078,6 +36807,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDate val)
 				{
 					LastUpdateDate = val;
+				}
+				else if(value == null)
+				{
+					LastUpdateDate = null;
 				}
 			}
 		}
@@ -34093,6 +36826,10 @@ namespace IFC.IFC4x3
 				{
 					CurrentValue = val;
 				}
+				else if(value == null)
+				{
+					CurrentValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcCostValue? _OriginalValue
@@ -34106,6 +36843,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCostValue val)
 				{
 					OriginalValue = val;
+				}
+				else if(value == null)
+				{
+					OriginalValue = null;
 				}
 			}
 		}
@@ -34158,6 +36899,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Values = null;
+				}
+				else
+				{
+					Values = new List<IfcIrregularTimeSeriesValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcIrregularTimeSeriesValue v)
+						{
+							Values.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -34199,6 +36955,10 @@ namespace IFC.IFC4x3
 				{
 					TimeStamp = val;
 				}
+				else if(value == null)
+				{
+					TimeStamp = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcValue>? _ListValues
@@ -34218,6 +36978,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ListValues = null;
+				}
+				else
+				{
+					ListValues = new List<IfcValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcValue v)
+						{
+							ListValues.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -34270,6 +37045,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -34319,6 +37098,10 @@ namespace IFC.IFC4x3
 				if(value is IfcJunctionBoxTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -34372,6 +37155,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -34421,6 +37208,10 @@ namespace IFC.IFC4x3
 				if(value is IfcKerbTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -34485,6 +37276,10 @@ namespace IFC.IFC4x3
 				{
 					Depth = val;
 				}
+				else if(value == null)
+				{
+					Depth = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _Width
@@ -34498,6 +37293,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Width = val;
+				}
+				else if(value == null)
+				{
+					Width = null;
 				}
 			}
 		}
@@ -34513,6 +37312,10 @@ namespace IFC.IFC4x3
 				{
 					Thickness = val;
 				}
+				else if(value == null)
+				{
+					Thickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _FilletRadius
@@ -34526,6 +37329,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					FilletRadius = val;
+				}
+				else if(value == null)
+				{
+					FilletRadius = null;
 				}
 			}
 		}
@@ -34541,6 +37348,10 @@ namespace IFC.IFC4x3
 				{
 					EdgeRadius = val;
 				}
+				else if(value == null)
+				{
+					EdgeRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlaneAngleMeasure? _LegSlope
@@ -34554,6 +37365,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlaneAngleMeasure val)
 				{
 					LegSlope = val;
+				}
+				else if(value == null)
+				{
+					LegSlope = null;
 				}
 			}
 		}
@@ -34607,6 +37422,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -34659,6 +37478,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -34704,6 +37527,10 @@ namespace IFC.IFC4x3
 				{
 					LagValue = val;
 				}
+				else if(value == null)
+				{
+					LagValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcTaskDurationEnum? _DurationType
@@ -34717,6 +37544,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTaskDurationEnum val)
 				{
 					DurationType = val;
+				}
+				else if(value == null)
+				{
+					DurationType = null;
 				}
 			}
 		}
@@ -34770,6 +37601,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -34820,6 +37655,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -34845,8 +37684,8 @@ namespace IFC.IFC4x3
 		public virtual IfcDateTime? VersionDate { get; set; }
 		public virtual IfcURIReference? Location { get; set; }
 		public virtual IfcText? Description { get; set; }
-		public List<IfcRelAssociatesLibrary>? LibraryInfoForObjects {get{return Model?.GetItems<IfcRelAssociatesLibrary>().Where(x => x.RelatingLibrary != null && x.RelatingLibrary == this).ToList();} set{}}
-		public List<IfcLibraryReference>? HasLibraryReferences {get{return Model?.GetItems<IfcLibraryReference>().Where(x => x.ReferencedLibrary != null && x.ReferencedLibrary == this).ToList();} set{}}
+		public List<IfcRelAssociatesLibrary>? LibraryInfoForObjects {get{return Model?.GetItems<IfcRelAssociatesLibrary>().Where(x => x.RelatingLibrary != null && x.RelatingLibrary == this).ToList();}}
+		public List<IfcLibraryReference>? HasLibraryReferences {get{return Model?.GetItems<IfcLibraryReference>().Where(x => x.ReferencedLibrary != null && x.ReferencedLibrary == this).ToList();}}
 		public IfcLibraryInformation() : base()
 		{
 		}
@@ -34883,6 +37722,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Version
@@ -34896,6 +37739,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Version = val;
+				}
+				else if(value == null)
+				{
+					Version = null;
 				}
 			}
 		}
@@ -34911,6 +37758,10 @@ namespace IFC.IFC4x3
 				{
 					Publisher = val;
 				}
+				else if(value == null)
+				{
+					Publisher = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _VersionDate
@@ -34924,6 +37775,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					VersionDate = val;
+				}
+				else if(value == null)
+				{
+					VersionDate = null;
 				}
 			}
 		}
@@ -34939,6 +37794,10 @@ namespace IFC.IFC4x3
 				{
 					Location = val;
 				}
+				else if(value == null)
+				{
+					Location = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -34952,6 +37811,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -34970,9 +37833,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcLibraryReference>? _HasLibraryReferences
 		{
@@ -34988,9 +37848,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -35009,7 +37866,7 @@ namespace IFC.IFC4x3
 		public virtual IfcText? Description { get; set; }
 		public virtual IfcLanguageId? Language { get; set; }
 		public virtual IfcLibraryInformation? ReferencedLibrary { get; set; }
-		public List<IfcRelAssociatesLibrary>? LibraryRefForObjects {get{return Model?.GetItems<IfcRelAssociatesLibrary>().Where(x => x.RelatingLibrary != null && x.RelatingLibrary == this).ToList();} set{}}
+		public List<IfcRelAssociatesLibrary>? LibraryRefForObjects {get{return Model?.GetItems<IfcRelAssociatesLibrary>().Where(x => x.RelatingLibrary != null && x.RelatingLibrary == this).ToList();}}
 		public IfcLibraryReference() : base()
 		{
 		}
@@ -35043,6 +37900,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcLanguageId? _Language
@@ -35057,6 +37918,10 @@ namespace IFC.IFC4x3
 				{
 					Language = val;
 				}
+				else if(value == null)
+				{
+					Language = null;
+				}
 			}
 		}
 		public virtual Global.IfcLibraryInformation? _ReferencedLibrary
@@ -35070,6 +37935,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLibraryInformation val)
 				{
 					ReferencedLibrary = val;
+				}
+				else if(value == null)
+				{
+					ReferencedLibrary = null;
 				}
 			}
 		}
@@ -35087,9 +37956,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -35135,6 +38001,10 @@ namespace IFC.IFC4x3
 				{
 					MainPlaneAngle = val;
 				}
+				else if(value == null)
+				{
+					MainPlaneAngle = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcPlaneAngleMeasure>? _SecondaryPlaneAngle
@@ -35154,6 +38024,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					SecondaryPlaneAngle = null;
+				}
+				else
+				{
+					SecondaryPlaneAngle = new List<IfcPlaneAngleMeasure>();
+					foreach(var val in value)
+					{
+						if(val is IfcPlaneAngleMeasure v)
+						{
+							SecondaryPlaneAngle.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcLuminousIntensityDistributionMeasure>? _LuminousIntensity
@@ -35173,6 +38058,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					LuminousIntensity = null;
+				}
+				else
+				{
+					LuminousIntensity = new List<IfcLuminousIntensityDistributionMeasure>();
+					foreach(var val in value)
+					{
+						if(val is IfcLuminousIntensityDistributionMeasure v)
+						{
+							LuminousIntensity.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -35225,6 +38125,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -35275,6 +38179,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -35316,6 +38224,10 @@ namespace IFC.IFC4x3
 				{
 					LightDistributionCurve = val;
 				}
+				else if(value == null)
+				{
+					LightDistributionCurve = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcLightDistributionData>? _DistributionData
@@ -35335,6 +38247,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					DistributionData = null;
+				}
+				else
+				{
+					DistributionData = new List<IfcLightDistributionData>();
+					foreach(var val in value)
+					{
+						if(val is IfcLightDistributionData v)
+						{
+							DistributionData.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -35390,6 +38317,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcColourRgb? _LightColour
@@ -35403,6 +38334,10 @@ namespace IFC.IFC4x3
 				if(value is IfcColourRgb val)
 				{
 					LightColour = val;
+				}
+				else if(value == null)
+				{
+					LightColour = null;
 				}
 			}
 		}
@@ -35418,6 +38353,10 @@ namespace IFC.IFC4x3
 				{
 					AmbientIntensity = val;
 				}
+				else if(value == null)
+				{
+					AmbientIntensity = null;
+				}
 			}
 		}
 		public virtual Global.IfcNormalisedRatioMeasure? _Intensity
@@ -35431,6 +38370,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNormalisedRatioMeasure val)
 				{
 					Intensity = val;
+				}
+				else if(value == null)
+				{
+					Intensity = null;
 				}
 			}
 		}
@@ -35498,6 +38441,10 @@ namespace IFC.IFC4x3
 				{
 					Orientation = val;
 				}
+				else if(value == null)
+				{
+					Orientation = null;
+				}
 			}
 		}
 	}
@@ -35560,6 +38507,10 @@ namespace IFC.IFC4x3
 				{
 					Position = val;
 				}
+				else if(value == null)
+				{
+					Position = null;
+				}
 			}
 		}
 		public virtual Global.IfcColourRgb? _ColourAppearance
@@ -35573,6 +38524,10 @@ namespace IFC.IFC4x3
 				if(value is IfcColourRgb val)
 				{
 					ColourAppearance = val;
+				}
+				else if(value == null)
+				{
+					ColourAppearance = null;
 				}
 			}
 		}
@@ -35588,6 +38543,10 @@ namespace IFC.IFC4x3
 				{
 					ColourTemperature = val;
 				}
+				else if(value == null)
+				{
+					ColourTemperature = null;
+				}
 			}
 		}
 		public virtual Global.IfcLuminousFluxMeasure? _LuminousFlux
@@ -35601,6 +38560,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLuminousFluxMeasure val)
 				{
 					LuminousFlux = val;
+				}
+				else if(value == null)
+				{
+					LuminousFlux = null;
 				}
 			}
 		}
@@ -35616,6 +38579,10 @@ namespace IFC.IFC4x3
 				{
 					LightEmissionSource = val;
 				}
+				else if(value == null)
+				{
+					LightEmissionSource = null;
+				}
 			}
 		}
 		public virtual Global.IfcLightDistributionDataSourceSelect? _LightDistributionDataSource
@@ -35629,6 +38596,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLightDistributionDataSourceSelect val)
 				{
 					LightDistributionDataSource = val;
+				}
+				else if(value == null)
+				{
+					LightDistributionDataSource = null;
 				}
 			}
 		}
@@ -35690,6 +38661,10 @@ namespace IFC.IFC4x3
 				{
 					Position = val;
 				}
+				else if(value == null)
+				{
+					Position = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _Radius
@@ -35703,6 +38678,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Radius = val;
+				}
+				else if(value == null)
+				{
+					Radius = null;
 				}
 			}
 		}
@@ -35718,6 +38697,10 @@ namespace IFC.IFC4x3
 				{
 					ConstantAttenuation = val;
 				}
+				else if(value == null)
+				{
+					ConstantAttenuation = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _DistanceAttenuation
@@ -35732,6 +38715,10 @@ namespace IFC.IFC4x3
 				{
 					DistanceAttenuation = val;
 				}
+				else if(value == null)
+				{
+					DistanceAttenuation = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _QuadricAttenuation
@@ -35745,6 +38732,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReal val)
 				{
 					QuadricAttenuation = val;
+				}
+				else if(value == null)
+				{
+					QuadricAttenuation = null;
 				}
 			}
 		}
@@ -35805,6 +38796,10 @@ namespace IFC.IFC4x3
 				{
 					Orientation = val;
 				}
+				else if(value == null)
+				{
+					Orientation = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _ConcentrationExponent
@@ -35818,6 +38813,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReal val)
 				{
 					ConcentrationExponent = val;
+				}
+				else if(value == null)
+				{
+					ConcentrationExponent = null;
 				}
 			}
 		}
@@ -35833,6 +38832,10 @@ namespace IFC.IFC4x3
 				{
 					SpreadAngle = val;
 				}
+				else if(value == null)
+				{
+					SpreadAngle = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositivePlaneAngleMeasure? _BeamWidthAngle
@@ -35846,6 +38849,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositivePlaneAngleMeasure val)
 				{
 					BeamWidthAngle = val;
+				}
+				else if(value == null)
+				{
+					BeamWidthAngle = null;
 				}
 			}
 		}
@@ -35891,6 +38898,10 @@ namespace IFC.IFC4x3
 				{
 					Pnt = val;
 				}
+				else if(value == null)
+				{
+					Pnt = null;
+				}
 			}
 		}
 		public virtual Global.IfcVector? _Dir
@@ -35904,6 +38915,10 @@ namespace IFC.IFC4x3
 				if(value is IfcVector val)
 				{
 					Dir = val;
+				}
+				else if(value == null)
+				{
+					Dir = null;
 				}
 			}
 		}
@@ -35980,6 +38995,10 @@ namespace IFC.IFC4x3
 				{
 					RelativePlacement = val;
 				}
+				else if(value == null)
+				{
+					RelativePlacement = null;
+				}
 			}
 		}
 		public virtual Global.IfcAxis2Placement3D? _CartesianPosition
@@ -35993,6 +39012,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAxis2Placement3D val)
 				{
 					CartesianPosition = val;
+				}
+				else if(value == null)
+				{
+					CartesianPosition = null;
 				}
 			}
 		}
@@ -36075,6 +39098,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -36125,6 +39152,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -36165,6 +39196,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAxis2Placement val)
 				{
 					RelativePlacement = val;
+				}
+				else if(value == null)
+				{
+					RelativePlacement = null;
 				}
 			}
 		}
@@ -36227,6 +39262,10 @@ namespace IFC.IFC4x3
 				if(value is IfcClosedShell val)
 				{
 					Outer = val;
+				}
+				else if(value == null)
+				{
+					Outer = null;
 				}
 			}
 		}
@@ -36292,6 +39331,10 @@ namespace IFC.IFC4x3
 				{
 					Eastings = val;
 				}
+				else if(value == null)
+				{
+					Eastings = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _Northings
@@ -36305,6 +39348,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					Northings = val;
+				}
+				else if(value == null)
+				{
+					Northings = null;
 				}
 			}
 		}
@@ -36320,6 +39367,10 @@ namespace IFC.IFC4x3
 				{
 					OrthogonalHeight = val;
 				}
+				else if(value == null)
+				{
+					OrthogonalHeight = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _XAxisAbscissa
@@ -36333,6 +39384,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReal val)
 				{
 					XAxisAbscissa = val;
+				}
+				else if(value == null)
+				{
+					XAxisAbscissa = null;
 				}
 			}
 		}
@@ -36348,6 +39403,10 @@ namespace IFC.IFC4x3
 				{
 					XAxisOrdinate = val;
 				}
+				else if(value == null)
+				{
+					XAxisOrdinate = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _Scale
@@ -36361,6 +39420,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReal val)
 				{
 					Scale = val;
+				}
+				else if(value == null)
+				{
+					Scale = null;
 				}
 			}
 		}
@@ -36416,6 +39479,10 @@ namespace IFC.IFC4x3
 				{
 					FactorX = val;
 				}
+				else if(value == null)
+				{
+					FactorX = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _FactorY
@@ -36430,6 +39497,10 @@ namespace IFC.IFC4x3
 				{
 					FactorY = val;
 				}
+				else if(value == null)
+				{
+					FactorY = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _FactorZ
@@ -36443,6 +39514,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReal val)
 				{
 					FactorZ = val;
+				}
+				else if(value == null)
+				{
+					FactorZ = null;
 				}
 			}
 		}
@@ -36486,6 +39561,10 @@ namespace IFC.IFC4x3
 				{
 					MappingSource = val;
 				}
+				else if(value == null)
+				{
+					MappingSource = null;
+				}
 			}
 		}
 		public virtual Global.IfcCartesianTransformationOperator? _MappingTarget
@@ -36499,6 +39578,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCartesianTransformationOperator val)
 				{
 					MappingTarget = val;
+				}
+				else if(value == null)
+				{
+					MappingTarget = null;
 				}
 			}
 		}
@@ -36550,6 +39633,10 @@ namespace IFC.IFC4x3
 				if(value is IfcMarineFacilityTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -36603,6 +39690,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -36623,9 +39714,9 @@ namespace IFC.IFC4x3
 		public virtual IfcLabel? Name { get; set; }
 		public virtual IfcText? Description { get; set; }
 		public virtual IfcLabel? Category { get; set; }
-		public List<IfcMaterialDefinitionRepresentation>? HasRepresentation {get{return Model?.GetItems<IfcMaterialDefinitionRepresentation>().Where(x => x.RepresentedMaterial != null && x.RepresentedMaterial == this).ToList();} set{}}
-		public List<IfcMaterialRelationship>? IsRelatedWith {get{return Model?.GetItems<IfcMaterialRelationship>().Where(x => x.RelatedMaterials != null && x.RelatedMaterials.Contains(this)).ToList();}set{}}
-		public List<IfcMaterialRelationship>? RelatesTo {get{return Model?.GetItems<IfcMaterialRelationship>().Where(x => x.RelatingMaterial != null && x.RelatingMaterial == this).ToList();} set{}}
+		public List<IfcMaterialDefinitionRepresentation>? HasRepresentation {get{return Model?.GetItems<IfcMaterialDefinitionRepresentation>().Where(x => x.RepresentedMaterial != null && x.RepresentedMaterial == this).ToList();}}
+		public List<IfcMaterialRelationship>? IsRelatedWith {get{return Model?.GetItems<IfcMaterialRelationship>().Where(x => x.RelatedMaterials != null && x.RelatedMaterials.Contains(this)).ToList();}}
+		public List<IfcMaterialRelationship>? RelatesTo {get{return Model?.GetItems<IfcMaterialRelationship>().Where(x => x.RelatingMaterial != null && x.RelatingMaterial == this).ToList();}}
 		public IfcMaterial() : base()
 		{
 		}
@@ -36656,6 +39747,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -36670,6 +39765,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Category
@@ -36683,6 +39782,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Category = val;
+				}
+				else if(value == null)
+				{
+					Category = null;
 				}
 			}
 		}
@@ -36701,9 +39804,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcMaterialRelationship>? _IsRelatedWith
 		{
@@ -36720,9 +39820,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcMaterialRelationship>? _RelatesTo
 		{
@@ -36738,9 +39835,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -36787,6 +39881,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					MaterialClassifications = null;
+				}
+				else
+				{
+					MaterialClassifications = new List<IfcClassificationSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcClassificationSelect v)
+						{
+							MaterialClassifications.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcMaterial? _ClassifiedMaterial
@@ -36800,6 +39909,10 @@ namespace IFC.IFC4x3
 				if(value is IfcMaterial val)
 				{
 					ClassifiedMaterial = val;
+				}
+				else if(value == null)
+				{
+					ClassifiedMaterial = null;
 				}
 			}
 		}
@@ -36823,7 +39936,7 @@ namespace IFC.IFC4x3
 		public virtual IfcMaterial? Material { get; set; }
 		public virtual IfcNormalisedRatioMeasure? Fraction { get; set; }
 		public virtual IfcLabel? Category { get; set; }
-		public IfcMaterialConstituentSet? ToMaterialConstituentSet {get{return Model?.GetItems<IfcMaterialConstituentSet>().FirstOrDefault(x => x.MaterialConstituents != null && x.MaterialConstituents.Contains(this));} set{}}
+		public IfcMaterialConstituentSet? ToMaterialConstituentSet {get{return Model?.GetItems<IfcMaterialConstituentSet>().FirstOrDefault(x => x.MaterialConstituents != null && x.MaterialConstituents.Contains(this));}}
 		public IfcMaterialConstituent() : base()
 		{
 		}
@@ -36858,6 +39971,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -36871,6 +39988,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -36886,6 +40007,10 @@ namespace IFC.IFC4x3
 				{
 					Material = val;
 				}
+				else if(value == null)
+				{
+					Material = null;
+				}
 			}
 		}
 		public virtual Global.IfcNormalisedRatioMeasure? _Fraction
@@ -36899,6 +40024,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNormalisedRatioMeasure val)
 				{
 					Fraction = val;
+				}
+				else if(value == null)
+				{
+					Fraction = null;
 				}
 			}
 		}
@@ -36914,6 +40043,10 @@ namespace IFC.IFC4x3
 				{
 					Category = val;
 				}
+				else if(value == null)
+				{
+					Category = null;
+				}
 			}
 		}
 		public virtual Global.IfcMaterialConstituentSet? _ToMaterialConstituentSet
@@ -36921,9 +40054,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return ToMaterialConstituentSet;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -36970,6 +40100,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -36983,6 +40117,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -37003,6 +40141,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					MaterialConstituents = null;
+				}
+				else
+				{
+					MaterialConstituents = new List<IfcMaterialConstituent>();
+					foreach(var val in value)
+					{
+						if(val is IfcMaterialConstituent v)
+						{
+							MaterialConstituents.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -37024,9 +40177,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcMaterialDefinition : Ifc_Entity, IfcMaterialSelect, IfcObjectReferenceSelect, IfcResourceObjectSelect, Global.IfcMaterialDefinition
 	{
-		public List<IfcRelAssociatesMaterial>? AssociatedTo {get{return Model?.GetItems<IfcRelAssociatesMaterial>().Where(x => x.RelatingMaterial != null && x.RelatingMaterial == this).ToList();} set{}}
-		public List<IfcExternalReferenceRelationship>? HasExternalReferences {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
-		public List<IfcMaterialProperties>? HasProperties {get{return Model?.GetItems<IfcMaterialProperties>().Where(x => x.Material != null && x.Material == this).ToList();} set{}}
+		public List<IfcRelAssociatesMaterial>? AssociatedTo {get{return Model?.GetItems<IfcRelAssociatesMaterial>().Where(x => x.RelatingMaterial != null && x.RelatingMaterial == this).ToList();}}
+		public List<IfcExternalReferenceRelationship>? HasExternalReferences {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
+		public List<IfcMaterialProperties>? HasProperties {get{return Model?.GetItems<IfcMaterialProperties>().Where(x => x.Material != null && x.Material == this).ToList();}}
 		public IfcMaterialDefinition() : base()
 		{
 		}
@@ -37051,9 +40204,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcExternalReferenceRelationship>? _HasExternalReferences
 		{
@@ -37070,9 +40220,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcMaterialProperties>? _HasProperties
 		{
@@ -37088,9 +40235,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -37136,6 +40280,10 @@ namespace IFC.IFC4x3
 				{
 					RepresentedMaterial = val;
 				}
+				else if(value == null)
+				{
+					RepresentedMaterial = null;
+				}
 			}
 		}
 	}
@@ -37166,7 +40314,7 @@ namespace IFC.IFC4x3
 		public virtual IfcText? Description { get; set; }
 		public virtual IfcLabel? Category { get; set; }
 		public virtual IfcInteger? Priority { get; set; }
-		public IfcMaterialLayerSet? ToMaterialLayerSet {get{return Model?.GetItems<IfcMaterialLayerSet>().FirstOrDefault(x => x.MaterialLayers != null && x.MaterialLayers.Contains(this));} set{}}
+		public IfcMaterialLayerSet? ToMaterialLayerSet {get{return Model?.GetItems<IfcMaterialLayerSet>().FirstOrDefault(x => x.MaterialLayers != null && x.MaterialLayers.Contains(this));}}
 		public IfcMaterialLayer() : base()
 		{
 		}
@@ -37205,6 +40353,10 @@ namespace IFC.IFC4x3
 				{
 					Material = val;
 				}
+				else if(value == null)
+				{
+					Material = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _LayerThickness
@@ -37218,6 +40370,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					LayerThickness = val;
+				}
+				else if(value == null)
+				{
+					LayerThickness = null;
 				}
 			}
 		}
@@ -37233,6 +40389,10 @@ namespace IFC.IFC4x3
 				{
 					IsVentilated = val;
 				}
+				else if(value == null)
+				{
+					IsVentilated = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Name
@@ -37246,6 +40406,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -37261,6 +40425,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Category
@@ -37274,6 +40442,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Category = val;
+				}
+				else if(value == null)
+				{
+					Category = null;
 				}
 			}
 		}
@@ -37289,6 +40461,10 @@ namespace IFC.IFC4x3
 				{
 					Priority = val;
 				}
+				else if(value == null)
+				{
+					Priority = null;
+				}
 			}
 		}
 		public virtual Global.IfcMaterialLayerSet? _ToMaterialLayerSet
@@ -37296,9 +40472,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return ToMaterialLayerSet;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -37318,7 +40491,7 @@ namespace IFC.IFC4x3
 		public virtual IfcLabel? LayerSetName { get; set; }
 		public virtual IfcText? Description { get; set; }
 		//DERIVE
-		public virtual IfcLengthMeasure? TotalThickness {get {return null;} set{}}
+		public virtual IfcLengthMeasure? TotalThickness {get {return null;}}
 		public IfcMaterialLayerSet() : base()
 		{
 		}
@@ -37354,6 +40527,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					MaterialLayers = null;
+				}
+				else
+				{
+					MaterialLayers = new List<IfcMaterialLayer>();
+					foreach(var val in value)
+					{
+						if(val is IfcMaterialLayer v)
+						{
+							MaterialLayers.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _LayerSetName
@@ -37367,6 +40555,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					LayerSetName = val;
+				}
+				else if(value == null)
+				{
+					LayerSetName = null;
 				}
 			}
 		}
@@ -37382,6 +40574,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _TotalThickness
@@ -37389,9 +40585,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return TotalThickness;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -37446,6 +40639,10 @@ namespace IFC.IFC4x3
 				{
 					ForLayerSet = val;
 				}
+				else if(value == null)
+				{
+					ForLayerSet = null;
+				}
 			}
 		}
 		public virtual Global.IfcLayerSetDirectionEnum? _LayerSetDirection
@@ -37459,6 +40656,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLayerSetDirectionEnum val)
 				{
 					LayerSetDirection = val;
+				}
+				else if(value == null)
+				{
+					LayerSetDirection = null;
 				}
 			}
 		}
@@ -37474,6 +40675,10 @@ namespace IFC.IFC4x3
 				{
 					DirectionSense = val;
 				}
+				else if(value == null)
+				{
+					DirectionSense = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _OffsetFromReferenceLine
@@ -37488,6 +40693,10 @@ namespace IFC.IFC4x3
 				{
 					OffsetFromReferenceLine = val;
 				}
+				else if(value == null)
+				{
+					OffsetFromReferenceLine = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _ReferenceExtent
@@ -37501,6 +40710,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					ReferenceExtent = val;
+				}
+				else if(value == null)
+				{
+					ReferenceExtent = null;
 				}
 			}
 		}
@@ -37551,6 +40764,10 @@ namespace IFC.IFC4x3
 				{
 					OffsetDirection = val;
 				}
+				else if(value == null)
+				{
+					OffsetDirection = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcLengthMeasure>? _OffsetValues
@@ -37570,6 +40787,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					OffsetValues = null;
+				}
+				else
+				{
+					OffsetValues = new List<IfcLengthMeasure>();
+					foreach(var val in value)
+					{
+						if(val is IfcLengthMeasure v)
+						{
+							OffsetValues.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -37612,6 +40844,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Materials = null;
+				}
+				else
+				{
+					Materials = new List<IfcMaterial>();
+					foreach(var val in value)
+					{
+						if(val is IfcMaterial v)
+						{
+							Materials.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -37640,7 +40887,7 @@ namespace IFC.IFC4x3
 		public virtual IfcProfileDef? Profile { get; set; }
 		public virtual IfcInteger? Priority { get; set; }
 		public virtual IfcLabel? Category { get; set; }
-		public IfcMaterialProfileSet? ToMaterialProfileSet {get{return Model?.GetItems<IfcMaterialProfileSet>().FirstOrDefault(x => x.MaterialProfiles != null && x.MaterialProfiles.Contains(this));} set{}}
+		public IfcMaterialProfileSet? ToMaterialProfileSet {get{return Model?.GetItems<IfcMaterialProfileSet>().FirstOrDefault(x => x.MaterialProfiles != null && x.MaterialProfiles.Contains(this));}}
 		public IfcMaterialProfile() : base()
 		{
 		}
@@ -37677,6 +40924,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -37690,6 +40941,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -37705,6 +40960,10 @@ namespace IFC.IFC4x3
 				{
 					Material = val;
 				}
+				else if(value == null)
+				{
+					Material = null;
+				}
 			}
 		}
 		public virtual Global.IfcProfileDef? _Profile
@@ -37718,6 +40977,10 @@ namespace IFC.IFC4x3
 				if(value is IfcProfileDef val)
 				{
 					Profile = val;
+				}
+				else if(value == null)
+				{
+					Profile = null;
 				}
 			}
 		}
@@ -37733,6 +40996,10 @@ namespace IFC.IFC4x3
 				{
 					Priority = val;
 				}
+				else if(value == null)
+				{
+					Priority = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Category
@@ -37747,6 +41014,10 @@ namespace IFC.IFC4x3
 				{
 					Category = val;
 				}
+				else if(value == null)
+				{
+					Category = null;
+				}
 			}
 		}
 		public virtual Global.IfcMaterialProfileSet? _ToMaterialProfileSet
@@ -37754,9 +41025,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return ToMaterialProfileSet;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -37807,6 +41075,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -37820,6 +41092,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -37840,6 +41116,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					MaterialProfiles = null;
+				}
+				else
+				{
+					MaterialProfiles = new List<IfcMaterialProfile>();
+					foreach(var val in value)
+					{
+						if(val is IfcMaterialProfile v)
+						{
+							MaterialProfiles.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcCompositeProfileDef? _CompositeProfile
@@ -37853,6 +41144,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCompositeProfileDef val)
 				{
 					CompositeProfile = val;
+				}
+				else if(value == null)
+				{
+					CompositeProfile = null;
 				}
 			}
 		}
@@ -37902,6 +41197,10 @@ namespace IFC.IFC4x3
 				{
 					ForProfileSet = val;
 				}
+				else if(value == null)
+				{
+					ForProfileSet = null;
+				}
 			}
 		}
 		public virtual Global.IfcCardinalPointReference? _CardinalPoint
@@ -37916,6 +41215,10 @@ namespace IFC.IFC4x3
 				{
 					CardinalPoint = val;
 				}
+				else if(value == null)
+				{
+					CardinalPoint = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _ReferenceExtent
@@ -37929,6 +41232,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					ReferenceExtent = val;
+				}
+				else if(value == null)
+				{
+					ReferenceExtent = null;
 				}
 			}
 		}
@@ -37975,6 +41282,10 @@ namespace IFC.IFC4x3
 				{
 					ForProfileEndSet = val;
 				}
+				else if(value == null)
+				{
+					ForProfileEndSet = null;
+				}
 			}
 		}
 		public virtual Global.IfcCardinalPointReference? _CardinalEndPoint
@@ -37988,6 +41299,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCardinalPointReference val)
 				{
 					CardinalEndPoint = val;
+				}
+				else if(value == null)
+				{
+					CardinalEndPoint = null;
 				}
 			}
 		}
@@ -38038,6 +41353,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					OffsetValues = null;
+				}
+				else
+				{
+					OffsetValues = new List<IfcLengthMeasure>();
+					foreach(var val in value)
+					{
+						if(val is IfcLengthMeasure v)
+						{
+							OffsetValues.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -38078,6 +41408,10 @@ namespace IFC.IFC4x3
 				if(value is IfcMaterialDefinition val)
 				{
 					Material = val;
+				}
+				else if(value == null)
+				{
+					Material = null;
 				}
 			}
 		}
@@ -38127,6 +41461,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingMaterial = val;
 				}
+				else if(value == null)
+				{
+					RelatingMaterial = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcMaterial>? _RelatedMaterials
@@ -38146,6 +41484,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedMaterials = null;
+				}
+				else
+				{
+					RelatedMaterials = new List<IfcMaterial>();
+					foreach(var val in value)
+					{
+						if(val is IfcMaterial v)
+						{
+							RelatedMaterials.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _MaterialExpression
@@ -38159,6 +41512,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					MaterialExpression = val;
+				}
+				else if(value == null)
+				{
+					MaterialExpression = null;
 				}
 			}
 		}
@@ -38174,7 +41531,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcMaterialUsageDefinition : Ifc_Entity, IfcMaterialSelect, Global.IfcMaterialUsageDefinition
 	{
-		public List<IfcRelAssociatesMaterial>? AssociatedTo {get{return Model?.GetItems<IfcRelAssociatesMaterial>().Where(x => x.RelatingMaterial != null && x.RelatingMaterial == this).ToList();} set{}}
+		public List<IfcRelAssociatesMaterial>? AssociatedTo {get{return Model?.GetItems<IfcRelAssociatesMaterial>().Where(x => x.RelatingMaterial != null && x.RelatingMaterial == this).ToList();}}
 		public IfcMaterialUsageDefinition() : base()
 		{
 		}
@@ -38198,9 +41555,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -38242,6 +41596,10 @@ namespace IFC.IFC4x3
 				{
 					ValueComponent = val;
 				}
+				else if(value == null)
+				{
+					ValueComponent = null;
+				}
 			}
 		}
 		public virtual Global.IfcUnit? _UnitComponent
@@ -38255,6 +41613,10 @@ namespace IFC.IFC4x3
 				if(value is IfcUnit val)
 				{
 					UnitComponent = val;
+				}
+				else if(value == null)
+				{
+					UnitComponent = null;
 				}
 			}
 		}
@@ -38316,6 +41678,10 @@ namespace IFC.IFC4x3
 				{
 					NominalDiameter = val;
 				}
+				else if(value == null)
+				{
+					NominalDiameter = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _NominalLength
@@ -38330,6 +41696,10 @@ namespace IFC.IFC4x3
 				{
 					NominalLength = val;
 				}
+				else if(value == null)
+				{
+					NominalLength = null;
+				}
 			}
 		}
 		public virtual Global.IfcMechanicalFastenerTypeEnum? _PredefinedType
@@ -38343,6 +41713,10 @@ namespace IFC.IFC4x3
 				if(value is IfcMechanicalFastenerTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -38402,6 +41776,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _NominalDiameter
@@ -38416,6 +41794,10 @@ namespace IFC.IFC4x3
 				{
 					NominalDiameter = val;
 				}
+				else if(value == null)
+				{
+					NominalDiameter = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _NominalLength
@@ -38429,6 +41811,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					NominalLength = val;
+				}
+				else if(value == null)
+				{
+					NominalLength = null;
 				}
 			}
 		}
@@ -38482,6 +41868,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -38531,6 +41921,10 @@ namespace IFC.IFC4x3
 				if(value is IfcMedicalDeviceTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -38584,6 +41978,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -38633,6 +42031,10 @@ namespace IFC.IFC4x3
 				if(value is IfcMemberTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -38691,6 +42093,10 @@ namespace IFC.IFC4x3
 				{
 					Benchmark = val;
 				}
+				else if(value == null)
+				{
+					Benchmark = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _ValueSource
@@ -38704,6 +42110,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					ValueSource = val;
+				}
+				else if(value == null)
+				{
+					ValueSource = null;
 				}
 			}
 		}
@@ -38719,6 +42129,10 @@ namespace IFC.IFC4x3
 				{
 					DataValue = val;
 				}
+				else if(value == null)
+				{
+					DataValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcReference? _ReferencePath
@@ -38732,6 +42146,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReference val)
 				{
 					ReferencePath = val;
+				}
+				else if(value == null)
+				{
+					ReferencePath = null;
 				}
 			}
 		}
@@ -38760,7 +42178,7 @@ namespace IFC.IFC4x3
 	public class IfcMirroredProfileDef : IfcDerivedProfileDef, Global.IfcMirroredProfileDef
 	{
 		//DERIVE
-		public override IfcCartesianTransformationOperator2D? Operator {get {return null;} set{}}
+		public override IfcCartesianTransformationOperator2D? Operator {get {return null;}}
 		public IfcMirroredProfileDef() : base()
 		{
 		}
@@ -38783,9 +42201,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Operator;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -38838,6 +42253,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -38888,6 +42307,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -38924,6 +42347,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Currency = val;
+				}
+				else if(value == null)
+				{
+					Currency = null;
 				}
 			}
 		}
@@ -38977,6 +42404,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -39026,6 +42457,10 @@ namespace IFC.IFC4x3
 				if(value is IfcMooringDeviceTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -39079,6 +42514,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -39129,6 +42568,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -39176,6 +42619,10 @@ namespace IFC.IFC4x3
 				{
 					Dimensions = val;
 				}
+				else if(value == null)
+				{
+					Dimensions = null;
+				}
 			}
 		}
 		public virtual Global.IfcUnitEnum? _UnitType
@@ -39189,6 +42636,10 @@ namespace IFC.IFC4x3
 				if(value is IfcUnitEnum val)
 				{
 					UnitType = val;
+				}
+				else if(value == null)
+				{
+					UnitType = null;
 				}
 			}
 		}
@@ -39242,6 +42693,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -39292,6 +42747,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -39318,10 +42777,10 @@ namespace IFC.IFC4x3
 	public abstract class IfcObject : IfcObjectDefinition, Global.IfcObject
 	{
 		public virtual IfcLabel? ObjectType { get; set; }
-		public List<IfcRelDefinesByObject>? IsDeclaredBy {get{return Model?.GetItems<IfcRelDefinesByObject>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}set{}}
-		public List<IfcRelDefinesByObject>? Declares {get{return Model?.GetItems<IfcRelDefinesByObject>().Where(x => x.RelatingObject != null && x.RelatingObject == this).ToList();} set{}}
-		public List<IfcRelDefinesByType>? IsTypedBy {get{return Model?.GetItems<IfcRelDefinesByType>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}set{}}
-		public List<IfcRelDefinesByProperties>? IsDefinedBy {get{return Model?.GetItems<IfcRelDefinesByProperties>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}set{}}
+		public List<IfcRelDefinesByObject>? IsDeclaredBy {get{return Model?.GetItems<IfcRelDefinesByObject>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}}
+		public List<IfcRelDefinesByObject>? Declares {get{return Model?.GetItems<IfcRelDefinesByObject>().Where(x => x.RelatingObject != null && x.RelatingObject == this).ToList();}}
+		public List<IfcRelDefinesByType>? IsTypedBy {get{return Model?.GetItems<IfcRelDefinesByType>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}}
+		public List<IfcRelDefinesByProperties>? IsDefinedBy {get{return Model?.GetItems<IfcRelDefinesByProperties>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}}
 		public IfcObject() : base()
 		{
 		}
@@ -39352,6 +42811,10 @@ namespace IFC.IFC4x3
 				{
 					ObjectType = val;
 				}
+				else if(value == null)
+				{
+					ObjectType = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcRelDefinesByObject>? _IsDeclaredBy
@@ -39369,9 +42832,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelDefinesByObject>? _Declares
 		{
@@ -39387,9 +42847,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelDefinesByType>? _IsTypedBy
@@ -39407,9 +42864,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelDefinesByProperties>? _IsDefinedBy
 		{
@@ -39425,9 +42879,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -39450,13 +42901,13 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcObjectDefinition : IfcRoot, IfcDefinitionSelect, Global.IfcObjectDefinition
 	{
-		public List<IfcRelAssigns>? HasAssignments {get{return Model?.GetItems<IfcRelAssigns>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}set{}}
-		public List<IfcRelNests>? Nests {get{return Model?.GetItems<IfcRelNests>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}set{}}
-		public List<IfcRelNests>? IsNestedBy {get{return Model?.GetItems<IfcRelNests>().Where(x => x.RelatingObject != null && x.RelatingObject == this).ToList();} set{}}
-		public List<IfcRelDeclares>? HasContext {get{return Model?.GetItems<IfcRelDeclares>().Where(x => x.RelatedDefinitions != null && x.RelatedDefinitions.Contains(this)).ToList();}set{}}
-		public List<IfcRelAggregates>? IsDecomposedBy {get{return Model?.GetItems<IfcRelAggregates>().Where(x => x.RelatingObject != null && x.RelatingObject == this).ToList();} set{}}
-		public List<IfcRelAggregates>? Decomposes {get{return Model?.GetItems<IfcRelAggregates>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}set{}}
-		public List<IfcRelAssociates>? HasAssociations {get{return Model?.GetItems<IfcRelAssociates>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}set{}}
+		public List<IfcRelAssigns>? HasAssignments {get{return Model?.GetItems<IfcRelAssigns>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}}
+		public List<IfcRelNests>? Nests {get{return Model?.GetItems<IfcRelNests>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}}
+		public List<IfcRelNests>? IsNestedBy {get{return Model?.GetItems<IfcRelNests>().Where(x => x.RelatingObject != null && x.RelatingObject == this).ToList();}}
+		public List<IfcRelDeclares>? HasContext {get{return Model?.GetItems<IfcRelDeclares>().Where(x => x.RelatedDefinitions != null && x.RelatedDefinitions.Contains(this)).ToList();}}
+		public List<IfcRelAggregates>? IsDecomposedBy {get{return Model?.GetItems<IfcRelAggregates>().Where(x => x.RelatingObject != null && x.RelatingObject == this).ToList();}}
+		public List<IfcRelAggregates>? Decomposes {get{return Model?.GetItems<IfcRelAggregates>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}}
+		public List<IfcRelAssociates>? HasAssociations {get{return Model?.GetItems<IfcRelAssociates>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}}
 		public IfcObjectDefinition() : base()
 		{
 		}
@@ -39488,9 +42939,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelNests>? _Nests
 		{
@@ -39506,9 +42954,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelNests>? _IsNestedBy
@@ -39526,9 +42971,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelDeclares>? _HasContext
 		{
@@ -39544,9 +42986,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelAggregates>? _IsDecomposedBy
@@ -39564,9 +43003,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelAggregates>? _Decomposes
 		{
@@ -39583,9 +43019,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelAssociates>? _HasAssociations
 		{
@@ -39601,9 +43034,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -39622,8 +43052,8 @@ namespace IFC.IFC4x3
 	public abstract class IfcObjectPlacement : Ifc_Entity, Global.IfcObjectPlacement
 	{
 		public virtual IfcObjectPlacement? PlacementRelTo { get; set; }
-		public List<IfcProduct>? PlacesObject {get{return Model?.GetItems<IfcProduct>().Where(x => x.ObjectPlacement != null && x.ObjectPlacement == this).ToList();} set{}}
-		public List<IfcObjectPlacement>? ReferencedByPlacements {get{return Model?.GetItems<IfcObjectPlacement>().Where(x => x.PlacementRelTo != null && x.PlacementRelTo == this).ToList();} set{}}
+		public List<IfcProduct>? PlacesObject {get{return Model?.GetItems<IfcProduct>().Where(x => x.ObjectPlacement != null && x.ObjectPlacement == this).ToList();}}
+		public List<IfcObjectPlacement>? ReferencedByPlacements {get{return Model?.GetItems<IfcObjectPlacement>().Where(x => x.PlacementRelTo != null && x.PlacementRelTo == this).ToList();}}
 		public IfcObjectPlacement() : base()
 		{
 		}
@@ -39650,6 +43080,10 @@ namespace IFC.IFC4x3
 				{
 					PlacementRelTo = val;
 				}
+				else if(value == null)
+				{
+					PlacementRelTo = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcProduct>? _PlacesObject
@@ -39667,9 +43101,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcObjectPlacement>? _ReferencedByPlacements
 		{
@@ -39685,9 +43116,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -39753,6 +43181,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					BenchmarkValues = null;
+				}
+				else
+				{
+					BenchmarkValues = new List<IfcConstraint>();
+					foreach(var val in value)
+					{
+						if(val is IfcConstraint v)
+						{
+							BenchmarkValues.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLogicalOperatorEnum? _LogicalAggregator
@@ -39766,6 +43209,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLogicalOperatorEnum val)
 				{
 					LogicalAggregator = val;
+				}
+				else if(value == null)
+				{
+					LogicalAggregator = null;
 				}
 			}
 		}
@@ -39781,6 +43228,10 @@ namespace IFC.IFC4x3
 				{
 					ObjectiveQualifier = val;
 				}
+				else if(value == null)
+				{
+					ObjectiveQualifier = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _UserDefinedQualifier
@@ -39794,6 +43245,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					UserDefinedQualifier = val;
+				}
+				else if(value == null)
+				{
+					UserDefinedQualifier = null;
 				}
 			}
 		}
@@ -39842,6 +43297,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -39883,6 +43342,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCurve val)
 				{
 					BasisCurve = val;
+				}
+				else if(value == null)
+				{
+					BasisCurve = null;
 				}
 			}
 		}
@@ -39929,6 +43392,10 @@ namespace IFC.IFC4x3
 				{
 					Distance = val;
 				}
+				else if(value == null)
+				{
+					Distance = null;
+				}
 			}
 		}
 		public virtual Global.IfcLogical? _SelfIntersect
@@ -39942,6 +43409,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLogical val)
 				{
 					SelfIntersect = val;
+				}
+				else if(value == null)
+				{
+					SelfIntersect = null;
 				}
 			}
 		}
@@ -39992,6 +43463,10 @@ namespace IFC.IFC4x3
 				{
 					Distance = val;
 				}
+				else if(value == null)
+				{
+					Distance = null;
+				}
 			}
 		}
 		public virtual Global.IfcLogical? _SelfIntersect
@@ -40006,6 +43481,10 @@ namespace IFC.IFC4x3
 				{
 					SelfIntersect = val;
 				}
+				else if(value == null)
+				{
+					SelfIntersect = null;
+				}
 			}
 		}
 		public virtual Global.IfcDirection? _RefDirection
@@ -40019,6 +43498,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDirection val)
 				{
 					RefDirection = val;
+				}
+				else if(value == null)
+				{
+					RefDirection = null;
 				}
 			}
 		}
@@ -40068,6 +43551,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					OffsetValues = null;
+				}
+				else
+				{
+					OffsetValues = new List<IfcPointByDistanceExpression>();
+					foreach(var val in value)
+					{
+						if(val is IfcPointByDistanceExpression v)
+						{
+							OffsetValues.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Tag
@@ -40081,6 +43579,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Tag = val;
+				}
+				else if(value == null)
+				{
+					Tag = null;
 				}
 			}
 		}
@@ -40142,6 +43644,10 @@ namespace IFC.IFC4x3
 				{
 					HorizontalWidths = val;
 				}
+				else if(value == null)
+				{
+					HorizontalWidths = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcNonNegativeLengthMeasure>? _Widths
@@ -40161,6 +43667,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Widths = null;
+				}
+				else
+				{
+					Widths = new List<IfcNonNegativeLengthMeasure>();
+					foreach(var val in value)
+					{
+						if(val is IfcNonNegativeLengthMeasure v)
+						{
+							Widths.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcPlaneAngleMeasure>? _Slopes
@@ -40180,6 +43701,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Slopes = null;
+				}
+				else
+				{
+					Slopes = new List<IfcPlaneAngleMeasure>();
+					foreach(var val in value)
+					{
+						if(val is IfcPlaneAngleMeasure v)
+						{
+							Slopes.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcLabel>? _Tags
@@ -40199,6 +43735,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Tags = null;
+				}
+				else
+				{
+					Tags = new List<IfcLabel>();
+					foreach(var val in value)
+					{
+						if(val is IfcLabel v)
+						{
+							Tags.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcCartesianPoint? _OffsetPoint
@@ -40212,6 +43763,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCartesianPoint val)
 				{
 					OffsetPoint = val;
+				}
+				else if(value == null)
+				{
+					OffsetPoint = null;
 				}
 			}
 		}
@@ -40252,7 +43807,7 @@ namespace IFC.IFC4x3
 	public class IfcOpeningElement : IfcFeatureElementSubtraction, Global.IfcOpeningElement
 	{
 		public virtual IfcOpeningElementTypeEnum? PredefinedType { get; set; }
-		public List<IfcRelFillsElement>? HasFillings {get{return Model?.GetItems<IfcRelFillsElement>().Where(x => x.RelatingOpeningElement != null && x.RelatingOpeningElement == this).ToList();} set{}}
+		public List<IfcRelFillsElement>? HasFillings {get{return Model?.GetItems<IfcRelFillsElement>().Where(x => x.RelatingOpeningElement != null && x.RelatingOpeningElement == this).ToList();}}
 		public IfcOpeningElement() : base()
 		{
 		}
@@ -40287,6 +43842,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcRelFillsElement>? _HasFillings
@@ -40303,9 +43862,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -40329,9 +43885,9 @@ namespace IFC.IFC4x3
 		public virtual IfcText? Description { get; set; }
 		public virtual List<IfcActorRole>? Roles { get; set; }
 		public virtual List<IfcAddress>? Addresses { get; set; }
-		public List<IfcOrganizationRelationship>? IsRelatedBy {get{return Model?.GetItems<IfcOrganizationRelationship>().Where(x => x.RelatedOrganizations != null && x.RelatedOrganizations.Contains(this)).ToList();}set{}}
-		public List<IfcOrganizationRelationship>? Relates {get{return Model?.GetItems<IfcOrganizationRelationship>().Where(x => x.RelatingOrganization != null && x.RelatingOrganization == this).ToList();} set{}}
-		public List<IfcPersonAndOrganization>? Engages {get{return Model?.GetItems<IfcPersonAndOrganization>().Where(x => x.TheOrganization != null && x.TheOrganization == this).ToList();} set{}}
+		public List<IfcOrganizationRelationship>? IsRelatedBy {get{return Model?.GetItems<IfcOrganizationRelationship>().Where(x => x.RelatedOrganizations != null && x.RelatedOrganizations.Contains(this)).ToList();}}
+		public List<IfcOrganizationRelationship>? Relates {get{return Model?.GetItems<IfcOrganizationRelationship>().Where(x => x.RelatingOrganization != null && x.RelatingOrganization == this).ToList();}}
+		public List<IfcPersonAndOrganization>? Engages {get{return Model?.GetItems<IfcPersonAndOrganization>().Where(x => x.TheOrganization != null && x.TheOrganization == this).ToList();}}
 		public IfcOrganization() : base()
 		{
 		}
@@ -40366,6 +43922,10 @@ namespace IFC.IFC4x3
 				{
 					Identification = val;
 				}
+				else if(value == null)
+				{
+					Identification = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Name
@@ -40380,6 +43940,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -40393,6 +43957,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -40413,6 +43981,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Roles = null;
+				}
+				else
+				{
+					Roles = new List<IfcActorRole>();
+					foreach(var val in value)
+					{
+						if(val is IfcActorRole v)
+						{
+							Roles.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcAddress>? _Addresses
@@ -40432,6 +44015,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Addresses = null;
+				}
+				else
+				{
+					Addresses = new List<IfcAddress>();
+					foreach(var val in value)
+					{
+						if(val is IfcAddress v)
+						{
+							Addresses.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcOrganizationRelationship>? _IsRelatedBy
@@ -40449,9 +44047,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcOrganizationRelationship>? _Relates
 		{
@@ -40468,9 +44063,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcPersonAndOrganization>? _Engages
 		{
@@ -40486,9 +44078,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -40533,6 +44122,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingOrganization = val;
 				}
+				else if(value == null)
+				{
+					RelatingOrganization = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcOrganization>? _RelatedOrganizations
@@ -40552,6 +44145,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedOrganizations = null;
+				}
+				else
+				{
+					RelatedOrganizations = new List<IfcOrganization>();
+					foreach(var val in value)
+					{
+						if(val is IfcOrganization v)
+						{
+							RelatedOrganizations.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -40574,9 +44182,9 @@ namespace IFC.IFC4x3
 		public virtual IfcEdge? EdgeElement { get; set; }
 		public virtual IfcBoolean? Orientation { get; set; }
 		//DERIVE
-		public override IfcVertex? EdgeStart {get {return null;} set{}}
+		public override IfcVertex? EdgeStart {get {return null;}}
 		//DERIVE
-		public override IfcVertex? EdgeEnd {get {return null;} set{}}
+		public override IfcVertex? EdgeEnd {get {return null;}}
 		public IfcOrientedEdge() : base()
 		{
 		}
@@ -40607,6 +44215,10 @@ namespace IFC.IFC4x3
 				{
 					EdgeElement = val;
 				}
+				else if(value == null)
+				{
+					EdgeElement = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _Orientation
@@ -40621,6 +44233,10 @@ namespace IFC.IFC4x3
 				{
 					Orientation = val;
 				}
+				else if(value == null)
+				{
+					Orientation = null;
+				}
 			}
 		}
 		public override Global.IfcVertex? _EdgeStart
@@ -40629,18 +44245,12 @@ namespace IFC.IFC4x3
 			{
 				return EdgeStart;
 			}
-			set
-			{
-			}
 		}
 		public override Global.IfcVertex? _EdgeEnd
 		{
 			get
 			{
 				return EdgeEnd;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -40715,6 +44325,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -40764,6 +44378,10 @@ namespace IFC.IFC4x3
 				if(value is IfcOutletTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -40834,6 +44452,10 @@ namespace IFC.IFC4x3
 				{
 					OwningUser = val;
 				}
+				else if(value == null)
+				{
+					OwningUser = null;
+				}
 			}
 		}
 		public virtual Global.IfcApplication? _OwningApplication
@@ -40847,6 +44469,10 @@ namespace IFC.IFC4x3
 				if(value is IfcApplication val)
 				{
 					OwningApplication = val;
+				}
+				else if(value == null)
+				{
+					OwningApplication = null;
 				}
 			}
 		}
@@ -40862,6 +44488,10 @@ namespace IFC.IFC4x3
 				{
 					State = val;
 				}
+				else if(value == null)
+				{
+					State = null;
+				}
 			}
 		}
 		public virtual Global.IfcChangeActionEnum? _ChangeAction
@@ -40875,6 +44505,10 @@ namespace IFC.IFC4x3
 				if(value is IfcChangeActionEnum val)
 				{
 					ChangeAction = val;
+				}
+				else if(value == null)
+				{
+					ChangeAction = null;
 				}
 			}
 		}
@@ -40890,6 +44524,10 @@ namespace IFC.IFC4x3
 				{
 					LastModifiedDate = val;
 				}
+				else if(value == null)
+				{
+					LastModifiedDate = null;
+				}
 			}
 		}
 		public virtual Global.IfcPersonAndOrganization? _LastModifyingUser
@@ -40903,6 +44541,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPersonAndOrganization val)
 				{
 					LastModifyingUser = val;
+				}
+				else if(value == null)
+				{
+					LastModifyingUser = null;
 				}
 			}
 		}
@@ -40918,6 +44560,10 @@ namespace IFC.IFC4x3
 				{
 					LastModifyingApplication = val;
 				}
+				else if(value == null)
+				{
+					LastModifyingApplication = null;
+				}
 			}
 		}
 		public virtual Global.IfcTimeStamp? _CreationDate
@@ -40931,6 +44577,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTimeStamp val)
 				{
 					CreationDate = val;
+				}
+				else if(value == null)
+				{
+					CreationDate = null;
 				}
 			}
 		}
@@ -40984,6 +44634,10 @@ namespace IFC.IFC4x3
 				{
 					Position = val;
 				}
+				else if(value == null)
+				{
+					Position = null;
+				}
 			}
 		}
 	}
@@ -41029,6 +44683,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					EdgeList = null;
+				}
+				else
+				{
+					EdgeList = new List<IfcOrientedEdge>();
+					foreach(var val in value)
+					{
+						if(val is IfcOrientedEdge v)
+						{
+							EdgeList.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -41081,6 +44750,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -41131,6 +44804,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -41175,6 +44852,10 @@ namespace IFC.IFC4x3
 				{
 					BasisSurface = val;
 				}
+				else if(value == null)
+				{
+					BasisSurface = null;
+				}
 			}
 		}
 		public virtual Global.IfcCurve? _ReferenceCurve
@@ -41188,6 +44869,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCurve val)
 				{
 					ReferenceCurve = val;
+				}
+				else if(value == null)
+				{
+					ReferenceCurve = null;
 				}
 			}
 		}
@@ -41237,6 +44922,10 @@ namespace IFC.IFC4x3
 				{
 					LifeCyclePhase = val;
 				}
+				else if(value == null)
+				{
+					LifeCyclePhase = null;
+				}
 			}
 		}
 		public virtual Global.IfcPerformanceHistoryTypeEnum? _PredefinedType
@@ -41250,6 +44939,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPerformanceHistoryTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -41309,6 +45002,10 @@ namespace IFC.IFC4x3
 				{
 					OperationType = val;
 				}
+				else if(value == null)
+				{
+					OperationType = null;
+				}
 			}
 		}
 		public virtual Global.IfcWindowPanelPositionEnum? _PanelPosition
@@ -41322,6 +45019,10 @@ namespace IFC.IFC4x3
 				if(value is IfcWindowPanelPositionEnum val)
 				{
 					PanelPosition = val;
+				}
+				else if(value == null)
+				{
+					PanelPosition = null;
 				}
 			}
 		}
@@ -41337,6 +45038,10 @@ namespace IFC.IFC4x3
 				{
 					FrameDepth = val;
 				}
+				else if(value == null)
+				{
+					FrameDepth = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _FrameThickness
@@ -41351,6 +45056,10 @@ namespace IFC.IFC4x3
 				{
 					FrameThickness = val;
 				}
+				else if(value == null)
+				{
+					FrameThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcShapeAspect? _ShapeAspectStyle
@@ -41364,6 +45073,10 @@ namespace IFC.IFC4x3
 				if(value is IfcShapeAspect val)
 				{
 					ShapeAspectStyle = val;
+				}
+				else if(value == null)
+				{
+					ShapeAspectStyle = null;
 				}
 			}
 		}
@@ -41417,6 +45130,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Status
@@ -41431,6 +45148,10 @@ namespace IFC.IFC4x3
 				{
 					Status = val;
 				}
+				else if(value == null)
+				{
+					Status = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _LongDescription
@@ -41444,6 +45165,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					LongDescription = val;
+				}
+				else if(value == null)
+				{
+					LongDescription = null;
 				}
 			}
 		}
@@ -41475,7 +45200,7 @@ namespace IFC.IFC4x3
 		public virtual List<IfcLabel>? SuffixTitles { get; set; }
 		public virtual List<IfcActorRole>? Roles { get; set; }
 		public virtual List<IfcAddress>? Addresses { get; set; }
-		public List<IfcPersonAndOrganization>? EngagedIn {get{return Model?.GetItems<IfcPersonAndOrganization>().Where(x => x.ThePerson != null && x.ThePerson == this).ToList();} set{}}
+		public List<IfcPersonAndOrganization>? EngagedIn {get{return Model?.GetItems<IfcPersonAndOrganization>().Where(x => x.ThePerson != null && x.ThePerson == this).ToList();}}
 		public IfcPerson() : base()
 		{
 		}
@@ -41516,6 +45241,10 @@ namespace IFC.IFC4x3
 				{
 					Identification = val;
 				}
+				else if(value == null)
+				{
+					Identification = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _FamilyName
@@ -41530,6 +45259,10 @@ namespace IFC.IFC4x3
 				{
 					FamilyName = val;
 				}
+				else if(value == null)
+				{
+					FamilyName = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _GivenName
@@ -41543,6 +45276,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					GivenName = val;
+				}
+				else if(value == null)
+				{
+					GivenName = null;
 				}
 			}
 		}
@@ -41563,6 +45300,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					MiddleNames = null;
+				}
+				else
+				{
+					MiddleNames = new List<IfcLabel>();
+					foreach(var val in value)
+					{
+						if(val is IfcLabel v)
+						{
+							MiddleNames.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcLabel>? _PrefixTitles
@@ -41582,6 +45334,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					PrefixTitles = null;
+				}
+				else
+				{
+					PrefixTitles = new List<IfcLabel>();
+					foreach(var val in value)
+					{
+						if(val is IfcLabel v)
+						{
+							PrefixTitles.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcLabel>? _SuffixTitles
@@ -41601,6 +45368,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					SuffixTitles = null;
+				}
+				else
+				{
+					SuffixTitles = new List<IfcLabel>();
+					foreach(var val in value)
+					{
+						if(val is IfcLabel v)
+						{
+							SuffixTitles.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcActorRole>? _Roles
@@ -41620,6 +45402,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Roles = null;
+				}
+				else
+				{
+					Roles = new List<IfcActorRole>();
+					foreach(var val in value)
+					{
+						if(val is IfcActorRole v)
+						{
+							Roles.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcAddress>? _Addresses
@@ -41639,6 +45436,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Addresses = null;
+				}
+				else
+				{
+					Addresses = new List<IfcAddress>();
+					foreach(var val in value)
+					{
+						if(val is IfcAddress v)
+						{
+							Addresses.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcPersonAndOrganization>? _EngagedIn
@@ -41655,9 +45467,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -41703,6 +45512,10 @@ namespace IFC.IFC4x3
 				{
 					ThePerson = val;
 				}
+				else if(value == null)
+				{
+					ThePerson = null;
+				}
 			}
 		}
 		public virtual Global.IfcOrganization? _TheOrganization
@@ -41716,6 +45529,10 @@ namespace IFC.IFC4x3
 				if(value is IfcOrganization val)
 				{
 					TheOrganization = val;
+				}
+				else if(value == null)
+				{
+					TheOrganization = null;
 				}
 			}
 		}
@@ -41736,6 +45553,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Roles = null;
+				}
+				else
+				{
+					Roles = new List<IfcActorRole>();
+					foreach(var val in value)
+					{
+						if(val is IfcActorRole v)
+						{
+							Roles.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -41796,6 +45628,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					HasQuantities = null;
+				}
+				else
+				{
+					HasQuantities = new List<IfcPhysicalQuantity>();
+					foreach(var val in value)
+					{
+						if(val is IfcPhysicalQuantity v)
+						{
+							HasQuantities.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Discrimination
@@ -41809,6 +45656,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Discrimination = val;
+				}
+				else if(value == null)
+				{
+					Discrimination = null;
 				}
 			}
 		}
@@ -41824,6 +45675,10 @@ namespace IFC.IFC4x3
 				{
 					Quality = val;
 				}
+				else if(value == null)
+				{
+					Quality = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Usage
@@ -41837,6 +45692,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Usage = val;
+				}
+				else if(value == null)
+				{
+					Usage = null;
 				}
 			}
 		}
@@ -41857,8 +45716,8 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcLabel? Name { get; set; }
 		public virtual IfcText? Description { get; set; }
-		public List<IfcExternalReferenceRelationship>? HasExternalReferences {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
-		public List<IfcPhysicalComplexQuantity>? PartOfComplex {get{return Model?.GetItems<IfcPhysicalComplexQuantity>().Where(x => x.HasQuantities != null && x.HasQuantities.Contains(this)).ToList();}set{}}
+		public List<IfcExternalReferenceRelationship>? HasExternalReferences {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
+		public List<IfcPhysicalComplexQuantity>? PartOfComplex {get{return Model?.GetItems<IfcPhysicalComplexQuantity>().Where(x => x.HasQuantities != null && x.HasQuantities.Contains(this)).ToList();}}
 		public IfcPhysicalQuantity() : base()
 		{
 		}
@@ -41887,6 +45746,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -41900,6 +45763,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -41918,9 +45785,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcPhysicalComplexQuantity>? _PartOfComplex
 		{
@@ -41936,9 +45800,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -41986,6 +45847,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNamedUnit val)
 				{
 					Unit = val;
+				}
+				else if(value == null)
+				{
+					Unit = null;
 				}
 			}
 		}
@@ -42043,6 +45908,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcPileConstructionEnum? _ConstructionType
@@ -42056,6 +45925,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPileConstructionEnum val)
 				{
 					ConstructionType = val;
+				}
+				else if(value == null)
+				{
+					ConstructionType = null;
 				}
 			}
 		}
@@ -42106,6 +45979,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPileTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -42159,6 +46036,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -42208,6 +46089,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPipeFittingTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -42261,6 +46146,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -42310,6 +46199,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPipeSegmentTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -42375,6 +46268,10 @@ namespace IFC.IFC4x3
 				{
 					Width = val;
 				}
+				else if(value == null)
+				{
+					Width = null;
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _Height
@@ -42389,6 +46286,10 @@ namespace IFC.IFC4x3
 				{
 					Height = val;
 				}
+				else if(value == null)
+				{
+					Height = null;
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _ColourComponents
@@ -42402,6 +46303,10 @@ namespace IFC.IFC4x3
 				if(value is IfcInteger val)
 				{
 					ColourComponents = val;
+				}
+				else if(value == null)
+				{
+					ColourComponents = null;
 				}
 			}
 		}
@@ -42422,6 +46327,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Pixel = null;
+				}
+				else
+				{
+					Pixel = new List<IfcBinary>();
+					foreach(var val in value)
+					{
+						if(val is IfcBinary v)
+						{
+							Pixel.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -42442,7 +46362,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcPoint? Location { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcPlacement() : base()
 		{
 		}
@@ -42469,6 +46389,10 @@ namespace IFC.IFC4x3
 				{
 					Location = val;
 				}
+				else if(value == null)
+				{
+					Location = null;
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -42476,9 +46400,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -42518,6 +46439,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAxis2Placement val)
 				{
 					Placement = val;
+				}
+				else if(value == null)
+				{
+					Placement = null;
 				}
 			}
 		}
@@ -42563,6 +46488,10 @@ namespace IFC.IFC4x3
 				{
 					SizeInX = val;
 				}
+				else if(value == null)
+				{
+					SizeInX = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _SizeInY
@@ -42576,6 +46505,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					SizeInY = val;
+				}
+				else if(value == null)
+				{
+					SizeInY = null;
 				}
 			}
 		}
@@ -42650,6 +46583,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -42700,6 +46637,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -42718,7 +46659,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcPoint : IfcGeometricRepresentationItem, IfcGeometricSetSelect, IfcPointOrVertexPoint, Global.IfcPoint
 	{
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcPoint() : base()
 		{
 		}
@@ -42733,9 +46674,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -42790,6 +46728,10 @@ namespace IFC.IFC4x3
 				{
 					DistanceAlong = val;
 				}
+				else if(value == null)
+				{
+					DistanceAlong = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _OffsetLateral
@@ -42803,6 +46745,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					OffsetLateral = val;
+				}
+				else if(value == null)
+				{
+					OffsetLateral = null;
 				}
 			}
 		}
@@ -42818,6 +46764,10 @@ namespace IFC.IFC4x3
 				{
 					OffsetVertical = val;
 				}
+				else if(value == null)
+				{
+					OffsetVertical = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _OffsetLongitudinal
@@ -42832,6 +46782,10 @@ namespace IFC.IFC4x3
 				{
 					OffsetLongitudinal = val;
 				}
+				else if(value == null)
+				{
+					OffsetLongitudinal = null;
+				}
 			}
 		}
 		public virtual Global.IfcCurve? _BasisCurve
@@ -42845,6 +46799,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCurve val)
 				{
 					BasisCurve = val;
+				}
+				else if(value == null)
+				{
+					BasisCurve = null;
 				}
 			}
 		}
@@ -42888,6 +46846,10 @@ namespace IFC.IFC4x3
 				{
 					BasisCurve = val;
 				}
+				else if(value == null)
+				{
+					BasisCurve = null;
+				}
 			}
 		}
 		public virtual Global.IfcParameterValue? _PointParameter
@@ -42901,6 +46863,10 @@ namespace IFC.IFC4x3
 				if(value is IfcParameterValue val)
 				{
 					PointParameter = val;
+				}
+				else if(value == null)
+				{
+					PointParameter = null;
 				}
 			}
 		}
@@ -42948,6 +46914,10 @@ namespace IFC.IFC4x3
 				{
 					BasisSurface = val;
 				}
+				else if(value == null)
+				{
+					BasisSurface = null;
+				}
 			}
 		}
 		public virtual Global.IfcParameterValue? _PointParameterU
@@ -42962,6 +46932,10 @@ namespace IFC.IFC4x3
 				{
 					PointParameterU = val;
 				}
+				else if(value == null)
+				{
+					PointParameterU = null;
+				}
 			}
 		}
 		public virtual Global.IfcParameterValue? _PointParameterV
@@ -42975,6 +46949,10 @@ namespace IFC.IFC4x3
 				if(value is IfcParameterValue val)
 				{
 					PointParameterV = val;
+				}
+				else if(value == null)
+				{
+					PointParameterV = null;
 				}
 			}
 		}
@@ -43021,6 +46999,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Polygon = null;
+				}
+				else
+				{
+					Polygon = new List<IfcCartesianPoint>();
+					foreach(var val in value)
+					{
+						if(val is IfcCartesianPoint v)
+						{
+							Polygon.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -43072,6 +47065,10 @@ namespace IFC.IFC4x3
 				{
 					Position = val;
 				}
+				else if(value == null)
+				{
+					Position = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoundedCurve? _PolygonalBoundary
@@ -43085,6 +47082,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoundedCurve val)
 				{
 					PolygonalBoundary = val;
+				}
+				else if(value == null)
+				{
+					PolygonalBoundary = null;
 				}
 			}
 		}
@@ -43133,6 +47134,10 @@ namespace IFC.IFC4x3
 				{
 					Closed = val;
 				}
+				else if(value == null)
+				{
+					Closed = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcIndexedPolygonalFace>? _Faces
@@ -43152,6 +47157,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Faces = null;
+				}
+				else
+				{
+					Faces = new List<IfcIndexedPolygonalFace>();
+					foreach(var val in value)
+					{
+						if(val is IfcIndexedPolygonalFace v)
+						{
+							Faces.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcPositiveInteger>? _PnIndex
@@ -43171,6 +47191,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					PnIndex = null;
+				}
+				else
+				{
+					PnIndex = new List<IfcPositiveInteger>();
+					foreach(var val in value)
+					{
+						if(val is IfcPositiveInteger v)
+						{
+							PnIndex.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -43216,6 +47251,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Points = null;
+				}
+				else
+				{
+					Points = new List<IfcCartesianPoint>();
+					foreach(var val in value)
+					{
+						if(val is IfcCartesianPoint v)
+						{
+							Points.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -43269,6 +47319,10 @@ namespace IFC.IFC4x3
 				{
 					Position = val;
 				}
+				else if(value == null)
+				{
+					Position = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcReal>? _CoefficientsX
@@ -43288,6 +47342,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CoefficientsX = null;
+				}
+				else
+				{
+					CoefficientsX = new List<IfcReal>();
+					foreach(var val in value)
+					{
+						if(val is IfcReal v)
+						{
+							CoefficientsX.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcReal>? _CoefficientsY
@@ -43307,6 +47376,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CoefficientsY = null;
+				}
+				else
+				{
+					CoefficientsY = new List<IfcReal>();
+					foreach(var val in value)
+					{
+						if(val is IfcReal v)
+						{
+							CoefficientsY.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcReal>? _CoefficientsZ
@@ -43326,6 +47410,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CoefficientsZ = null;
+				}
+				else
+				{
+					CoefficientsZ = new List<IfcReal>();
+					foreach(var val in value)
+					{
+						if(val is IfcReal v)
+						{
+							CoefficientsZ.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -43342,9 +47441,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcPort : IfcProduct, Global.IfcPort
 	{
-		public List<IfcRelConnectsPortToElement>? ContainedIn {get{return Model?.GetItems<IfcRelConnectsPortToElement>().Where(x => x.RelatingPort != null && x.RelatingPort == this).ToList();} set{}}
-		public List<IfcRelConnectsPorts>? ConnectedFrom {get{return Model?.GetItems<IfcRelConnectsPorts>().Where(x => x.RelatedPort != null && x.RelatedPort == this).ToList();} set{}}
-		public List<IfcRelConnectsPorts>? ConnectedTo {get{return Model?.GetItems<IfcRelConnectsPorts>().Where(x => x.RelatingPort != null && x.RelatingPort == this).ToList();} set{}}
+		public List<IfcRelConnectsPortToElement>? ContainedIn {get{return Model?.GetItems<IfcRelConnectsPortToElement>().Where(x => x.RelatingPort != null && x.RelatingPort == this).ToList();}}
+		public List<IfcRelConnectsPorts>? ConnectedFrom {get{return Model?.GetItems<IfcRelConnectsPorts>().Where(x => x.RelatedPort != null && x.RelatedPort == this).ToList();}}
+		public List<IfcRelConnectsPorts>? ConnectedTo {get{return Model?.GetItems<IfcRelConnectsPorts>().Where(x => x.RelatingPort != null && x.RelatingPort == this).ToList();}}
 		public IfcPort() : base()
 		{
 		}
@@ -43379,9 +47478,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelConnectsPorts>? _ConnectedFrom
 		{
@@ -43398,9 +47494,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelConnectsPorts>? _ConnectedTo
 		{
@@ -43416,9 +47509,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -43438,8 +47528,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcPositioningElement : IfcProduct, Global.IfcPositioningElement
 	{
-		public List<IfcRelContainedInSpatialStructure>? ContainedInStructure {get{return Model?.GetItems<IfcRelContainedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();}set{}}
-		public List<IfcRelPositions>? Positions {get{return Model?.GetItems<IfcRelPositions>().Where(x => x.RelatingPositioningElement != null && x.RelatingPositioningElement == this).ToList();} set{}}
+		public List<IfcRelContainedInSpatialStructure>? ContainedInStructure {get{return Model?.GetItems<IfcRelContainedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();}}
+		public List<IfcRelPositions>? Positions {get{return Model?.GetItems<IfcRelPositions>().Where(x => x.RelatingPositioningElement != null && x.RelatingPositioningElement == this).ToList();}}
 		public IfcPositioningElement() : base()
 		{
 		}
@@ -43474,9 +47564,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelPositions>? _Positions
 		{
@@ -43492,9 +47579,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -43568,6 +47652,10 @@ namespace IFC.IFC4x3
 				{
 					InternalLocation = val;
 				}
+				else if(value == null)
+				{
+					InternalLocation = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcLabel>? _AddressLines
@@ -43587,6 +47675,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					AddressLines = null;
+				}
+				else
+				{
+					AddressLines = new List<IfcLabel>();
+					foreach(var val in value)
+					{
+						if(val is IfcLabel v)
+						{
+							AddressLines.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _PostalBox
@@ -43600,6 +47703,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					PostalBox = val;
+				}
+				else if(value == null)
+				{
+					PostalBox = null;
 				}
 			}
 		}
@@ -43615,6 +47722,10 @@ namespace IFC.IFC4x3
 				{
 					Town = val;
 				}
+				else if(value == null)
+				{
+					Town = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Region
@@ -43628,6 +47739,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Region = val;
+				}
+				else if(value == null)
+				{
+					Region = null;
 				}
 			}
 		}
@@ -43643,6 +47758,10 @@ namespace IFC.IFC4x3
 				{
 					PostalCode = val;
 				}
+				else if(value == null)
+				{
+					PostalCode = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Country
@@ -43656,6 +47775,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Country = val;
+				}
+				else if(value == null)
+				{
+					Country = null;
 				}
 			}
 		}
@@ -43744,6 +47867,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -43912,6 +48039,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -43925,6 +48056,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -43945,6 +48080,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					AssignedItems = null;
+				}
+				else
+				{
+					AssignedItems = new List<IfcLayeredItem>();
+					foreach(var val in value)
+					{
+						if(val is IfcLayeredItem v)
+						{
+							AssignedItems.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcIdentifier? _Identifier
@@ -43958,6 +48108,10 @@ namespace IFC.IFC4x3
 				if(value is IfcIdentifier val)
 				{
 					Identifier = val;
+				}
+				else if(value == null)
+				{
+					Identifier = null;
 				}
 			}
 		}
@@ -44015,6 +48169,10 @@ namespace IFC.IFC4x3
 				{
 					LayerOn = val;
 				}
+				else if(value == null)
+				{
+					LayerOn = null;
+				}
 			}
 		}
 		public virtual Global.IfcLogical? _LayerFrozen
@@ -44029,6 +48187,10 @@ namespace IFC.IFC4x3
 				{
 					LayerFrozen = val;
 				}
+				else if(value == null)
+				{
+					LayerFrozen = null;
+				}
 			}
 		}
 		public virtual Global.IfcLogical? _LayerBlocked
@@ -44042,6 +48204,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLogical val)
 				{
 					LayerBlocked = val;
+				}
+				else if(value == null)
+				{
+					LayerBlocked = null;
 				}
 			}
 		}
@@ -44062,6 +48228,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					LayerStyles = null;
+				}
+				else
+				{
+					LayerStyles = new List<IfcPresentationStyle>();
+					foreach(var val in value)
+					{
+						if(val is IfcPresentationStyle v)
+						{
+							LayerStyles.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -44103,6 +48284,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -44153,6 +48338,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -44202,6 +48391,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -44224,9 +48417,9 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcIdentifier? Identification { get; set; }
 		public virtual IfcText? LongDescription { get; set; }
-		public List<IfcRelSequence>? IsPredecessorTo {get{return Model?.GetItems<IfcRelSequence>().Where(x => x.RelatingProcess != null && x.RelatingProcess == this).ToList();} set{}}
-		public List<IfcRelSequence>? IsSuccessorFrom {get{return Model?.GetItems<IfcRelSequence>().Where(x => x.RelatedProcess != null && x.RelatedProcess == this).ToList();} set{}}
-		public List<IfcRelAssignsToProcess>? OperatesOn {get{return Model?.GetItems<IfcRelAssignsToProcess>().Where(x => x.RelatingProcess != null && x.RelatingProcess == this).ToList();} set{}}
+		public List<IfcRelSequence>? IsPredecessorTo {get{return Model?.GetItems<IfcRelSequence>().Where(x => x.RelatingProcess != null && x.RelatingProcess == this).ToList();}}
+		public List<IfcRelSequence>? IsSuccessorFrom {get{return Model?.GetItems<IfcRelSequence>().Where(x => x.RelatedProcess != null && x.RelatedProcess == this).ToList();}}
+		public List<IfcRelAssignsToProcess>? OperatesOn {get{return Model?.GetItems<IfcRelAssignsToProcess>().Where(x => x.RelatingProcess != null && x.RelatingProcess == this).ToList();}}
 		public IfcProcess() : base()
 		{
 		}
@@ -44260,6 +48453,10 @@ namespace IFC.IFC4x3
 				{
 					Identification = val;
 				}
+				else if(value == null)
+				{
+					Identification = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _LongDescription
@@ -44273,6 +48470,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					LongDescription = val;
+				}
+				else if(value == null)
+				{
+					LongDescription = null;
 				}
 			}
 		}
@@ -44291,9 +48492,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelSequence>? _IsSuccessorFrom
 		{
@@ -44310,9 +48508,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelAssignsToProcess>? _OperatesOn
 		{
@@ -44328,9 +48523,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -44363,9 +48555,9 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcObjectPlacement? ObjectPlacement { get; set; }
 		public virtual IfcProductRepresentation? Representation { get; set; }
-		public List<IfcRelAssignsToProduct>? ReferencedBy {get{return Model?.GetItems<IfcRelAssignsToProduct>().Where(x => x.RelatingProduct != null && x.RelatingProduct == this).ToList();} set{}}
-		public List<IfcRelPositions>? PositionedRelativeTo {get{return Model?.GetItems<IfcRelPositions>().Where(x => x.RelatedProducts != null && x.RelatedProducts.Contains(this)).ToList();}set{}}
-		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures {get{return Model?.GetItems<IfcRelReferencedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();}set{}}
+		public List<IfcRelAssignsToProduct>? ReferencedBy {get{return Model?.GetItems<IfcRelAssignsToProduct>().Where(x => x.RelatingProduct != null && x.RelatingProduct == this).ToList();}}
+		public List<IfcRelPositions>? PositionedRelativeTo {get{return Model?.GetItems<IfcRelPositions>().Where(x => x.RelatedProducts != null && x.RelatedProducts.Contains(this)).ToList();}}
+		public List<IfcRelReferencedInSpatialStructure>? ReferencedInStructures {get{return Model?.GetItems<IfcRelReferencedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();}}
 		public IfcProduct() : base()
 		{
 		}
@@ -44399,6 +48591,10 @@ namespace IFC.IFC4x3
 				{
 					ObjectPlacement = val;
 				}
+				else if(value == null)
+				{
+					ObjectPlacement = null;
+				}
 			}
 		}
 		public virtual Global.IfcProductRepresentation? _Representation
@@ -44412,6 +48608,10 @@ namespace IFC.IFC4x3
 				if(value is IfcProductRepresentation val)
 				{
 					Representation = val;
+				}
+				else if(value == null)
+				{
+					Representation = null;
 				}
 			}
 		}
@@ -44430,9 +48630,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelPositions>? _PositionedRelativeTo
 		{
@@ -44448,9 +48645,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelReferencedInSpatialStructure>? _ReferencedInStructures
@@ -44468,9 +48662,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -44487,8 +48678,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcProductDefinitionShape : IfcProductRepresentation, IfcProductRepresentationSelect, Global.IfcProductDefinitionShape
 	{
-		public List<IfcProduct>? ShapeOfProduct {get{return Model?.GetItems<IfcProduct>().Where(x => x.Representation != null && x.Representation == this).ToList();} set{}}
-		public List<IfcShapeAspect>? HasShapeAspects {get{return Model?.GetItems<IfcShapeAspect>().Where(x => x.PartOfProductDefinitionShape != null && x.PartOfProductDefinitionShape == this).ToList();} set{}}
+		public List<IfcProduct>? ShapeOfProduct {get{return Model?.GetItems<IfcProduct>().Where(x => x.Representation != null && x.Representation == this).ToList();}}
+		public List<IfcShapeAspect>? HasShapeAspects {get{return Model?.GetItems<IfcShapeAspect>().Where(x => x.PartOfProductDefinitionShape != null && x.PartOfProductDefinitionShape == this).ToList();}}
 		public IfcProductDefinitionShape() : base()
 		{
 		}
@@ -44519,9 +48710,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcShapeAspect>? _HasShapeAspects
 		{
@@ -44537,9 +48725,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -44588,6 +48773,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -44601,6 +48790,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -44621,6 +48814,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Representations = null;
+				}
+				else
+				{
+					Representations = new List<IfcRepresentation>();
+					foreach(var val in value)
+					{
+						if(val is IfcRepresentation v)
+						{
+							Representations.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -44644,8 +48852,8 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcProfileTypeEnum? ProfileType { get; set; }
 		public virtual IfcLabel? ProfileName { get; set; }
-		public List<IfcExternalReferenceRelationship>? HasExternalReference {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
-		public List<IfcProfileProperties>? HasProperties {get{return Model?.GetItems<IfcProfileProperties>().Where(x => x.ProfileDefinition != null && x.ProfileDefinition == this).ToList();} set{}}
+		public List<IfcExternalReferenceRelationship>? HasExternalReference {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
+		public List<IfcProfileProperties>? HasProperties {get{return Model?.GetItems<IfcProfileProperties>().Where(x => x.ProfileDefinition != null && x.ProfileDefinition == this).ToList();}}
 		public IfcProfileDef() : base()
 		{
 		}
@@ -44674,6 +48882,10 @@ namespace IFC.IFC4x3
 				{
 					ProfileType = val;
 				}
+				else if(value == null)
+				{
+					ProfileType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _ProfileName
@@ -44687,6 +48899,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					ProfileName = val;
+				}
+				else if(value == null)
+				{
+					ProfileName = null;
 				}
 			}
 		}
@@ -44705,9 +48921,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcProfileProperties>? _HasProperties
 		{
@@ -44723,9 +48936,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -44766,6 +48976,10 @@ namespace IFC.IFC4x3
 				if(value is IfcProfileDef val)
 				{
 					ProfileDefinition = val;
+				}
+				else if(value == null)
+				{
+					ProfileDefinition = null;
 				}
 			}
 		}
@@ -44884,6 +49098,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Status
@@ -44898,6 +49116,10 @@ namespace IFC.IFC4x3
 				{
 					Status = val;
 				}
+				else if(value == null)
+				{
+					Status = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _LongDescription
@@ -44911,6 +49133,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					LongDescription = val;
+				}
+				else if(value == null)
+				{
+					LongDescription = null;
 				}
 			}
 		}
@@ -44967,6 +49193,10 @@ namespace IFC.IFC4x3
 				{
 					VerticalDatum = val;
 				}
+				else if(value == null)
+				{
+					VerticalDatum = null;
+				}
 			}
 		}
 		public virtual Global.IfcIdentifier? _MapProjection
@@ -44980,6 +49210,10 @@ namespace IFC.IFC4x3
 				if(value is IfcIdentifier val)
 				{
 					MapProjection = val;
+				}
+				else if(value == null)
+				{
+					MapProjection = null;
 				}
 			}
 		}
@@ -44995,6 +49229,10 @@ namespace IFC.IFC4x3
 				{
 					MapZone = val;
 				}
+				else if(value == null)
+				{
+					MapZone = null;
+				}
 			}
 		}
 		public virtual Global.IfcNamedUnit? _MapUnit
@@ -45008,6 +49246,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNamedUnit val)
 				{
 					MapUnit = val;
+				}
+				else if(value == null)
+				{
+					MapUnit = null;
 				}
 			}
 		}
@@ -45059,6 +49301,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -45083,12 +49329,12 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcIdentifier? Name { get; set; }
 		public virtual IfcText? Specification { get; set; }
-		public List<IfcPropertySet>? PartOfPset {get{return Model?.GetItems<IfcPropertySet>().Where(x => x.HasProperties != null && x.HasProperties.Contains(this)).ToList();}set{}}
-		public List<IfcPropertyDependencyRelationship>? PropertyForDependance {get{return Model?.GetItems<IfcPropertyDependencyRelationship>().Where(x => x.DependingProperty != null && x.DependingProperty == this).ToList();} set{}}
-		public List<IfcPropertyDependencyRelationship>? PropertyDependsOn {get{return Model?.GetItems<IfcPropertyDependencyRelationship>().Where(x => x.DependantProperty != null && x.DependantProperty == this).ToList();} set{}}
-		public List<IfcComplexProperty>? PartOfComplex {get{return Model?.GetItems<IfcComplexProperty>().Where(x => x.HasProperties != null && x.HasProperties.Contains(this)).ToList();}set{}}
-		public List<IfcResourceConstraintRelationship>? HasConstraints {get{return Model?.GetItems<IfcResourceConstraintRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
-		public List<IfcResourceApprovalRelationship>? HasApprovals {get{return Model?.GetItems<IfcResourceApprovalRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
+		public List<IfcPropertySet>? PartOfPset {get{return Model?.GetItems<IfcPropertySet>().Where(x => x.HasProperties != null && x.HasProperties.Contains(this)).ToList();}}
+		public List<IfcPropertyDependencyRelationship>? PropertyForDependance {get{return Model?.GetItems<IfcPropertyDependencyRelationship>().Where(x => x.DependingProperty != null && x.DependingProperty == this).ToList();}}
+		public List<IfcPropertyDependencyRelationship>? PropertyDependsOn {get{return Model?.GetItems<IfcPropertyDependencyRelationship>().Where(x => x.DependantProperty != null && x.DependantProperty == this).ToList();}}
+		public List<IfcComplexProperty>? PartOfComplex {get{return Model?.GetItems<IfcComplexProperty>().Where(x => x.HasProperties != null && x.HasProperties.Contains(this)).ToList();}}
+		public List<IfcResourceConstraintRelationship>? HasConstraints {get{return Model?.GetItems<IfcResourceConstraintRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
+		public List<IfcResourceApprovalRelationship>? HasApprovals {get{return Model?.GetItems<IfcResourceApprovalRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
 		public IfcProperty() : base()
 		{
 		}
@@ -45117,6 +49363,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Specification
@@ -45130,6 +49380,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Specification = val;
+				}
+				else if(value == null)
+				{
+					Specification = null;
 				}
 			}
 		}
@@ -45148,9 +49402,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcPropertyDependencyRelationship>? _PropertyForDependance
 		{
@@ -45166,9 +49417,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcPropertyDependencyRelationship>? _PropertyDependsOn
@@ -45186,9 +49434,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcComplexProperty>? _PartOfComplex
 		{
@@ -45204,9 +49449,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcResourceConstraintRelationship>? _HasConstraints
@@ -45224,9 +49466,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcResourceApprovalRelationship>? _HasApprovals
 		{
@@ -45243,9 +49482,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -45261,7 +49497,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcPropertyAbstraction : Ifc_Entity, IfcResourceObjectSelect, Global.IfcPropertyAbstraction
 	{
-		public List<IfcExternalReferenceRelationship>? HasExternalReferences {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
+		public List<IfcExternalReferenceRelationship>? HasExternalReferences {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
 		public IfcPropertyAbstraction() : base()
 		{
 		}
@@ -45285,9 +49521,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -45347,6 +49580,10 @@ namespace IFC.IFC4x3
 				{
 					UpperBoundValue = val;
 				}
+				else if(value == null)
+				{
+					UpperBoundValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcValue? _LowerBoundValue
@@ -45360,6 +49597,10 @@ namespace IFC.IFC4x3
 				if(value is IfcValue val)
 				{
 					LowerBoundValue = val;
+				}
+				else if(value == null)
+				{
+					LowerBoundValue = null;
 				}
 			}
 		}
@@ -45375,6 +49616,10 @@ namespace IFC.IFC4x3
 				{
 					Unit = val;
 				}
+				else if(value == null)
+				{
+					Unit = null;
+				}
 			}
 		}
 		public virtual Global.IfcValue? _SetPointValue
@@ -45388,6 +49633,10 @@ namespace IFC.IFC4x3
 				if(value is IfcValue val)
 				{
 					SetPointValue = val;
+				}
+				else if(value == null)
+				{
+					SetPointValue = null;
 				}
 			}
 		}
@@ -45405,8 +49654,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcPropertyDefinition : IfcRoot, IfcDefinitionSelect, Global.IfcPropertyDefinition
 	{
-		public List<IfcRelDeclares>? HasContext {get{return Model?.GetItems<IfcRelDeclares>().Where(x => x.RelatedDefinitions != null && x.RelatedDefinitions.Contains(this)).ToList();}set{}}
-		public List<IfcRelAssociates>? HasAssociations {get{return Model?.GetItems<IfcRelAssociates>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}set{}}
+		public List<IfcRelDeclares>? HasContext {get{return Model?.GetItems<IfcRelDeclares>().Where(x => x.RelatedDefinitions != null && x.RelatedDefinitions.Contains(this)).ToList();}}
+		public List<IfcRelAssociates>? HasAssociations {get{return Model?.GetItems<IfcRelAssociates>().Where(x => x.RelatedObjects != null && x.RelatedObjects.Contains(this)).ToList();}}
 		public IfcPropertyDefinition() : base()
 		{
 		}
@@ -45438,9 +49687,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelAssociates>? _HasAssociations
 		{
@@ -45456,9 +49702,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -45509,6 +49752,10 @@ namespace IFC.IFC4x3
 				{
 					DependingProperty = val;
 				}
+				else if(value == null)
+				{
+					DependingProperty = null;
+				}
 			}
 		}
 		public virtual Global.IfcProperty? _DependantProperty
@@ -45523,6 +49770,10 @@ namespace IFC.IFC4x3
 				{
 					DependantProperty = val;
 				}
+				else if(value == null)
+				{
+					DependantProperty = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Expression
@@ -45536,6 +49787,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Expression = val;
+				}
+				else if(value == null)
+				{
+					Expression = null;
 				}
 			}
 		}
@@ -45592,6 +49847,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					EnumerationValues = null;
+				}
+				else
+				{
+					EnumerationValues = new List<IfcValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcValue v)
+						{
+							EnumerationValues.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcPropertyEnumeration? _EnumerationReference
@@ -45605,6 +49875,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPropertyEnumeration val)
 				{
 					EnumerationReference = val;
+				}
+				else if(value == null)
+				{
+					EnumerationReference = null;
 				}
 			}
 		}
@@ -45658,6 +49932,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcValue>? _EnumerationValues
@@ -45677,6 +49955,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					EnumerationValues = null;
+				}
+				else
+				{
+					EnumerationValues = new List<IfcValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcValue v)
+						{
+							EnumerationValues.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcUnit? _Unit
@@ -45690,6 +49983,10 @@ namespace IFC.IFC4x3
 				if(value is IfcUnit val)
 				{
 					Unit = val;
+				}
+				else if(value == null)
+				{
+					Unit = null;
 				}
 			}
 		}
@@ -45744,6 +50041,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ListValues = null;
+				}
+				else
+				{
+					ListValues = new List<IfcValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcValue v)
+						{
+							ListValues.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcUnit? _Unit
@@ -45757,6 +50069,10 @@ namespace IFC.IFC4x3
 				if(value is IfcUnit val)
 				{
 					Unit = val;
+				}
+				else if(value == null)
+				{
+					Unit = null;
 				}
 			}
 		}
@@ -45802,6 +50118,10 @@ namespace IFC.IFC4x3
 				{
 					UsageName = val;
 				}
+				else if(value == null)
+				{
+					UsageName = null;
+				}
 			}
 		}
 		public virtual Global.IfcObjectReferenceSelect? _PropertyReference
@@ -45815,6 +50135,10 @@ namespace IFC.IFC4x3
 				if(value is IfcObjectReferenceSelect val)
 				{
 					PropertyReference = val;
+				}
+				else if(value == null)
+				{
+					PropertyReference = null;
 				}
 			}
 		}
@@ -45866,6 +50190,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					HasProperties = null;
+				}
+				else
+				{
+					HasProperties = new List<IfcProperty>();
+					foreach(var val in value)
+					{
+						if(val is IfcProperty v)
+						{
+							HasProperties.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -45884,9 +50223,9 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcPropertySetDefinition : IfcPropertyDefinition, IfcPropertySetDefinitionSelect, Global.IfcPropertySetDefinition
 	{
-		public List<IfcTypeObject>? DefinesType {get{return Model?.GetItems<IfcTypeObject>().Where(x => x.HasPropertySets != null && x.HasPropertySets.Contains(this)).ToList();}set{}}
-		public List<IfcRelDefinesByTemplate>? IsDefinedBy {get{return Model?.GetItems<IfcRelDefinesByTemplate>().Where(x => x.RelatedPropertySets != null && x.RelatedPropertySets.Contains(this)).ToList();}set{}}
-		public List<IfcRelDefinesByProperties>? DefinesOccurrence {get{return Model?.GetItems<IfcRelDefinesByProperties>().Where(x => x.RelatingPropertyDefinition != null && x.RelatingPropertyDefinition == this).ToList();} set{}}
+		public List<IfcTypeObject>? DefinesType {get{return Model?.GetItems<IfcTypeObject>().Where(x => x.HasPropertySets != null && x.HasPropertySets.Contains(this)).ToList();}}
+		public List<IfcRelDefinesByTemplate>? IsDefinedBy {get{return Model?.GetItems<IfcRelDefinesByTemplate>().Where(x => x.RelatedPropertySets != null && x.RelatedPropertySets.Contains(this)).ToList();}}
+		public List<IfcRelDefinesByProperties>? DefinesOccurrence {get{return Model?.GetItems<IfcRelDefinesByProperties>().Where(x => x.RelatingPropertyDefinition != null && x.RelatingPropertyDefinition == this).ToList();}}
 		public IfcPropertySetDefinition() : base()
 		{
 		}
@@ -45918,9 +50257,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelDefinesByTemplate>? _IsDefinedBy
 		{
@@ -45937,9 +50273,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelDefinesByProperties>? _DefinesOccurrence
 		{
@@ -45955,9 +50288,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -45979,7 +50309,7 @@ namespace IFC.IFC4x3
 		public virtual IfcPropertySetTemplateTypeEnum? TemplateType { get; set; }
 		public virtual IfcIdentifier? ApplicableEntity { get; set; }
 		public virtual List<IfcPropertyTemplate>? HasPropertyTemplates { get; set; }
-		public List<IfcRelDefinesByTemplate>? Defines {get{return Model?.GetItems<IfcRelDefinesByTemplate>().Where(x => x.RelatingTemplate != null && x.RelatingTemplate == this).ToList();} set{}}
+		public List<IfcRelDefinesByTemplate>? Defines {get{return Model?.GetItems<IfcRelDefinesByTemplate>().Where(x => x.RelatingTemplate != null && x.RelatingTemplate == this).ToList();}}
 		public IfcPropertySetTemplate() : base()
 		{
 		}
@@ -46014,6 +50344,10 @@ namespace IFC.IFC4x3
 				{
 					TemplateType = val;
 				}
+				else if(value == null)
+				{
+					TemplateType = null;
+				}
 			}
 		}
 		public virtual Global.IfcIdentifier? _ApplicableEntity
@@ -46027,6 +50361,10 @@ namespace IFC.IFC4x3
 				if(value is IfcIdentifier val)
 				{
 					ApplicableEntity = val;
+				}
+				else if(value == null)
+				{
+					ApplicableEntity = null;
 				}
 			}
 		}
@@ -46047,6 +50385,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					HasPropertyTemplates = null;
+				}
+				else
+				{
+					HasPropertyTemplates = new List<IfcPropertyTemplate>();
+					foreach(var val in value)
+					{
+						if(val is IfcPropertyTemplate v)
+						{
+							HasPropertyTemplates.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcRelDefinesByTemplate>? _Defines
@@ -46063,9 +50416,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -46110,6 +50460,10 @@ namespace IFC.IFC4x3
 				{
 					NominalValue = val;
 				}
+				else if(value == null)
+				{
+					NominalValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcUnit? _Unit
@@ -46123,6 +50477,10 @@ namespace IFC.IFC4x3
 				if(value is IfcUnit val)
 				{
 					Unit = val;
+				}
+				else if(value == null)
+				{
+					Unit = null;
 				}
 			}
 		}
@@ -46198,6 +50556,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					DefiningValues = null;
+				}
+				else
+				{
+					DefiningValues = new List<IfcValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcValue v)
+						{
+							DefiningValues.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcValue>? _DefinedValues
@@ -46217,6 +50590,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					DefinedValues = null;
+				}
+				else
+				{
+					DefinedValues = new List<IfcValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcValue v)
+						{
+							DefinedValues.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcText? _Expression
@@ -46230,6 +50618,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Expression = val;
+				}
+				else if(value == null)
+				{
+					Expression = null;
 				}
 			}
 		}
@@ -46245,6 +50637,10 @@ namespace IFC.IFC4x3
 				{
 					DefiningUnit = val;
 				}
+				else if(value == null)
+				{
+					DefiningUnit = null;
+				}
 			}
 		}
 		public virtual Global.IfcUnit? _DefinedUnit
@@ -46259,6 +50655,10 @@ namespace IFC.IFC4x3
 				{
 					DefinedUnit = val;
 				}
+				else if(value == null)
+				{
+					DefinedUnit = null;
+				}
 			}
 		}
 		public virtual Global.IfcCurveInterpolationEnum? _CurveInterpolation
@@ -46272,6 +50672,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCurveInterpolationEnum val)
 				{
 					CurveInterpolation = val;
+				}
+				else if(value == null)
+				{
+					CurveInterpolation = null;
 				}
 			}
 		}
@@ -46289,8 +50693,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcPropertyTemplate : IfcPropertyTemplateDefinition, Global.IfcPropertyTemplate
 	{
-		public List<IfcComplexPropertyTemplate>? PartOfComplexTemplate {get{return Model?.GetItems<IfcComplexPropertyTemplate>().Where(x => x.HasPropertyTemplates != null && x.HasPropertyTemplates.Contains(this)).ToList();}set{}}
-		public List<IfcPropertySetTemplate>? PartOfPsetTemplate {get{return Model?.GetItems<IfcPropertySetTemplate>().Where(x => x.HasPropertyTemplates != null && x.HasPropertyTemplates.Contains(this)).ToList();}set{}}
+		public List<IfcComplexPropertyTemplate>? PartOfComplexTemplate {get{return Model?.GetItems<IfcComplexPropertyTemplate>().Where(x => x.HasPropertyTemplates != null && x.HasPropertyTemplates.Contains(this)).ToList();}}
+		public List<IfcPropertySetTemplate>? PartOfPsetTemplate {get{return Model?.GetItems<IfcPropertySetTemplate>().Where(x => x.HasPropertyTemplates != null && x.HasPropertyTemplates.Contains(this)).ToList();}}
 		public IfcPropertyTemplate() : base()
 		{
 		}
@@ -46322,9 +50726,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcPropertySetTemplate>? _PartOfPsetTemplate
 		{
@@ -46340,9 +50741,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -46422,6 +50820,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -46474,6 +50876,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -46524,6 +50930,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -46573,6 +50983,10 @@ namespace IFC.IFC4x3
 				if(value is IfcProtectiveDeviceTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -46626,6 +51040,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -46676,6 +51094,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -46725,6 +51147,10 @@ namespace IFC.IFC4x3
 				{
 					AreaValue = val;
 				}
+				else if(value == null)
+				{
+					AreaValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Formula
@@ -46738,6 +51164,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Formula = val;
+				}
+				else if(value == null)
+				{
+					Formula = null;
 				}
 			}
 		}
@@ -46786,6 +51216,10 @@ namespace IFC.IFC4x3
 				{
 					CountValue = val;
 				}
+				else if(value == null)
+				{
+					CountValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Formula
@@ -46799,6 +51233,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Formula = val;
+				}
+				else if(value == null)
+				{
+					Formula = null;
 				}
 			}
 		}
@@ -46849,6 +51287,10 @@ namespace IFC.IFC4x3
 				{
 					LengthValue = val;
 				}
+				else if(value == null)
+				{
+					LengthValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Formula
@@ -46862,6 +51304,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Formula = val;
+				}
+				else if(value == null)
+				{
+					Formula = null;
 				}
 			}
 		}
@@ -46908,6 +51354,10 @@ namespace IFC.IFC4x3
 				{
 					NumberValue = val;
 				}
+				else if(value == null)
+				{
+					NumberValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Formula
@@ -46921,6 +51371,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Formula = val;
+				}
+				else if(value == null)
+				{
+					Formula = null;
 				}
 			}
 		}
@@ -46997,6 +51451,10 @@ namespace IFC.IFC4x3
 				{
 					TimeValue = val;
 				}
+				else if(value == null)
+				{
+					TimeValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Formula
@@ -47010,6 +51468,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Formula = val;
+				}
+				else if(value == null)
+				{
+					Formula = null;
 				}
 			}
 		}
@@ -47060,6 +51522,10 @@ namespace IFC.IFC4x3
 				{
 					VolumeValue = val;
 				}
+				else if(value == null)
+				{
+					VolumeValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Formula
@@ -47073,6 +51539,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Formula = val;
+				}
+				else if(value == null)
+				{
+					Formula = null;
 				}
 			}
 		}
@@ -47123,6 +51593,10 @@ namespace IFC.IFC4x3
 				{
 					WeightValue = val;
 				}
+				else if(value == null)
+				{
+					WeightValue = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Formula
@@ -47136,6 +51610,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Formula = val;
+				}
+				else if(value == null)
+				{
+					Formula = null;
 				}
 			}
 		}
@@ -47189,6 +51667,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -47238,6 +51720,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRailTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -47291,6 +51777,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -47340,6 +51830,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRailingTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -47391,6 +51885,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRailwayTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -47444,6 +51942,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -47495,6 +51997,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRampTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -47548,6 +52054,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -47597,6 +52107,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRampFlightTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -47648,6 +52162,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -47666,7 +52184,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual List<IfcReal>? WeightsData { get; set; }
 		//DERIVE
-		public virtual List<IfcReal>? Weights {get {return null;} set{}}
+		public virtual List<IfcReal>? Weights {get {return null;}}
 		public IfcRationalBSplineCurveWithKnots() : base()
 		{
 		}
@@ -47706,6 +52224,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					WeightsData = null;
+				}
+				else
+				{
+					WeightsData = new List<IfcReal>();
+					foreach(var val in value)
+					{
+						if(val is IfcReal v)
+						{
+							WeightsData.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcReal>? _Weights
@@ -47722,9 +52255,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -47745,7 +52275,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual List<List<IfcReal>>? WeightsData { get; set; }
 		//DERIVE
-		public virtual List<List<IfcReal>>? Weights {get {return null;} set{}}
+		public virtual List<List<IfcReal>>? Weights {get {return null;}}
 		public IfcRationalBSplineSurfaceWithKnots() : base()
 		{
 		}
@@ -47794,6 +52324,29 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					WeightsData = null;
+				}
+				else
+				{
+					WeightsData = new List<List<IfcReal>>();
+					foreach(var vals in value)
+					{
+						if(vals != null)
+						{
+							List<IfcReal> items = new List<IfcReal>();
+							foreach(var val in vals)
+							{
+								if(val is IfcReal v)
+								{
+									items.Add(v);
+								}
+							}
+							WeightsData.Add(items);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<List<Global.IfcReal>>? _Weights
@@ -47815,9 +52368,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -47879,6 +52429,10 @@ namespace IFC.IFC4x3
 				{
 					WallThickness = val;
 				}
+				else if(value == null)
+				{
+					WallThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _InnerFilletRadius
@@ -47893,6 +52447,10 @@ namespace IFC.IFC4x3
 				{
 					InnerFilletRadius = val;
 				}
+				else if(value == null)
+				{
+					InnerFilletRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _OuterFilletRadius
@@ -47906,6 +52464,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					OuterFilletRadius = val;
+				}
+				else if(value == null)
+				{
+					OuterFilletRadius = null;
 				}
 			}
 		}
@@ -47955,6 +52517,10 @@ namespace IFC.IFC4x3
 				{
 					XDim = val;
 				}
+				else if(value == null)
+				{
+					XDim = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _YDim
@@ -47968,6 +52534,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					YDim = val;
+				}
+				else if(value == null)
+				{
+					YDim = null;
 				}
 			}
 		}
@@ -48016,6 +52586,10 @@ namespace IFC.IFC4x3
 				{
 					XLength = val;
 				}
+				else if(value == null)
+				{
+					XLength = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _YLength
@@ -48030,6 +52604,10 @@ namespace IFC.IFC4x3
 				{
 					YLength = val;
 				}
+				else if(value == null)
+				{
+					YLength = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _Height
@@ -48043,6 +52621,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Height = val;
+				}
+				else if(value == null)
+				{
+					Height = null;
 				}
 			}
 		}
@@ -48114,6 +52696,10 @@ namespace IFC.IFC4x3
 				{
 					BasisSurface = val;
 				}
+				else if(value == null)
+				{
+					BasisSurface = null;
+				}
 			}
 		}
 		public virtual Global.IfcParameterValue? _U1
@@ -48127,6 +52713,10 @@ namespace IFC.IFC4x3
 				if(value is IfcParameterValue val)
 				{
 					U1 = val;
+				}
+				else if(value == null)
+				{
+					U1 = null;
 				}
 			}
 		}
@@ -48142,6 +52732,10 @@ namespace IFC.IFC4x3
 				{
 					V1 = val;
 				}
+				else if(value == null)
+				{
+					V1 = null;
+				}
 			}
 		}
 		public virtual Global.IfcParameterValue? _U2
@@ -48155,6 +52749,10 @@ namespace IFC.IFC4x3
 				if(value is IfcParameterValue val)
 				{
 					U2 = val;
+				}
+				else if(value == null)
+				{
+					U2 = null;
 				}
 			}
 		}
@@ -48170,6 +52768,10 @@ namespace IFC.IFC4x3
 				{
 					V2 = val;
 				}
+				else if(value == null)
+				{
+					V2 = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _Usense
@@ -48184,6 +52786,10 @@ namespace IFC.IFC4x3
 				{
 					Usense = val;
 				}
+				else if(value == null)
+				{
+					Usense = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _Vsense
@@ -48197,6 +52803,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					Vsense = val;
+				}
+				else if(value == null)
+				{
+					Vsense = null;
 				}
 			}
 		}
@@ -48263,6 +52873,10 @@ namespace IFC.IFC4x3
 				{
 					RecurrenceType = val;
 				}
+				else if(value == null)
+				{
+					RecurrenceType = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcDayInMonthNumber>? _DayComponent
@@ -48282,6 +52896,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					DayComponent = null;
+				}
+				else
+				{
+					DayComponent = new List<IfcDayInMonthNumber>();
+					foreach(var val in value)
+					{
+						if(val is IfcDayInMonthNumber v)
+						{
+							DayComponent.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcDayInWeekNumber>? _WeekdayComponent
@@ -48301,6 +52930,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					WeekdayComponent = null;
+				}
+				else
+				{
+					WeekdayComponent = new List<IfcDayInWeekNumber>();
+					foreach(var val in value)
+					{
+						if(val is IfcDayInWeekNumber v)
+						{
+							WeekdayComponent.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcMonthInYearNumber>? _MonthComponent
@@ -48320,6 +52964,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					MonthComponent = null;
+				}
+				else
+				{
+					MonthComponent = new List<IfcMonthInYearNumber>();
+					foreach(var val in value)
+					{
+						if(val is IfcMonthInYearNumber v)
+						{
+							MonthComponent.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _Position
@@ -48333,6 +52992,10 @@ namespace IFC.IFC4x3
 				if(value is IfcInteger val)
 				{
 					Position = val;
+				}
+				else if(value == null)
+				{
+					Position = null;
 				}
 			}
 		}
@@ -48348,6 +53011,10 @@ namespace IFC.IFC4x3
 				{
 					Interval = val;
 				}
+				else if(value == null)
+				{
+					Interval = null;
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _Occurrences
@@ -48361,6 +53028,10 @@ namespace IFC.IFC4x3
 				if(value is IfcInteger val)
 				{
 					Occurrences = val;
+				}
+				else if(value == null)
+				{
+					Occurrences = null;
 				}
 			}
 		}
@@ -48381,6 +53052,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					TimePeriods = null;
+				}
+				else
+				{
+					TimePeriods = new List<IfcTimePeriod>();
+					foreach(var val in value)
+					{
+						if(val is IfcTimePeriod v)
+						{
+							TimePeriods.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -48434,6 +53120,10 @@ namespace IFC.IFC4x3
 				{
 					TypeIdentifier = val;
 				}
+				else if(value == null)
+				{
+					TypeIdentifier = null;
+				}
 			}
 		}
 		public virtual Global.IfcIdentifier? _AttributeIdentifier
@@ -48448,6 +53138,10 @@ namespace IFC.IFC4x3
 				{
 					AttributeIdentifier = val;
 				}
+				else if(value == null)
+				{
+					AttributeIdentifier = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _InstanceName
@@ -48461,6 +53155,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					InstanceName = val;
+				}
+				else if(value == null)
+				{
+					InstanceName = null;
 				}
 			}
 		}
@@ -48481,6 +53179,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ListPositions = null;
+				}
+				else
+				{
+					ListPositions = new List<IfcInteger>();
+					foreach(var val in value)
+					{
+						if(val is IfcInteger v)
+						{
+							ListPositions.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcReference? _InnerReference
@@ -48494,6 +53207,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReference val)
 				{
 					InnerReference = val;
+				}
+				else if(value == null)
+				{
+					InnerReference = null;
 				}
 			}
 		}
@@ -48539,6 +53256,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReferentTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -48590,6 +53311,10 @@ namespace IFC.IFC4x3
 				{
 					TimeStep = val;
 				}
+				else if(value == null)
+				{
+					TimeStep = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcTimeSeriesValue>? _Values
@@ -48609,6 +53334,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Values = null;
+				}
+				else
+				{
+					Values = new List<IfcTimeSeriesValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcTimeSeriesValue v)
+						{
+							Values.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -48658,6 +53398,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReinforcedSoilTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -48717,6 +53461,10 @@ namespace IFC.IFC4x3
 				{
 					TotalCrossSectionArea = val;
 				}
+				else if(value == null)
+				{
+					TotalCrossSectionArea = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _SteelGrade
@@ -48730,6 +53478,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					SteelGrade = val;
+				}
+				else if(value == null)
+				{
+					SteelGrade = null;
 				}
 			}
 		}
@@ -48745,6 +53497,10 @@ namespace IFC.IFC4x3
 				{
 					BarSurface = val;
 				}
+				else if(value == null)
+				{
+					BarSurface = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _EffectiveDepth
@@ -48758,6 +53514,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					EffectiveDepth = val;
+				}
+				else if(value == null)
+				{
+					EffectiveDepth = null;
 				}
 			}
 		}
@@ -48773,6 +53533,10 @@ namespace IFC.IFC4x3
 				{
 					NominalBarDiameter = val;
 				}
+				else if(value == null)
+				{
+					NominalBarDiameter = null;
+				}
 			}
 		}
 		public virtual Global.IfcCountMeasure? _BarCount
@@ -48786,6 +53550,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCountMeasure val)
 				{
 					BarCount = val;
+				}
+				else if(value == null)
+				{
+					BarCount = null;
 				}
 			}
 		}
@@ -48833,6 +53601,10 @@ namespace IFC.IFC4x3
 				{
 					DefinitionType = val;
 				}
+				else if(value == null)
+				{
+					DefinitionType = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcSectionReinforcementProperties>? _ReinforcementSectionDefinitions
@@ -48852,6 +53624,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ReinforcementSectionDefinitions = null;
+				}
+				else
+				{
+					ReinforcementSectionDefinitions = new List<IfcSectionReinforcementProperties>();
+					foreach(var val in value)
+					{
+						if(val is IfcSectionReinforcementProperties v)
+						{
+							ReinforcementSectionDefinitions.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -48921,6 +53708,10 @@ namespace IFC.IFC4x3
 				{
 					NominalDiameter = val;
 				}
+				else if(value == null)
+				{
+					NominalDiameter = null;
+				}
 			}
 		}
 		public virtual Global.IfcAreaMeasure? _CrossSectionArea
@@ -48934,6 +53725,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAreaMeasure val)
 				{
 					CrossSectionArea = val;
+				}
+				else if(value == null)
+				{
+					CrossSectionArea = null;
 				}
 			}
 		}
@@ -48949,6 +53744,10 @@ namespace IFC.IFC4x3
 				{
 					BarLength = val;
 				}
+				else if(value == null)
+				{
+					BarLength = null;
+				}
 			}
 		}
 		public virtual Global.IfcReinforcingBarTypeEnum? _PredefinedType
@@ -48963,6 +53762,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcReinforcingBarSurfaceEnum? _BarSurface
@@ -48976,6 +53779,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReinforcingBarSurfaceEnum val)
 				{
 					BarSurface = val;
+				}
+				else if(value == null)
+				{
+					BarSurface = null;
 				}
 			}
 		}
@@ -49052,6 +53859,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _NominalDiameter
@@ -49065,6 +53876,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					NominalDiameter = val;
+				}
+				else if(value == null)
+				{
+					NominalDiameter = null;
 				}
 			}
 		}
@@ -49080,6 +53895,10 @@ namespace IFC.IFC4x3
 				{
 					CrossSectionArea = val;
 				}
+				else if(value == null)
+				{
+					CrossSectionArea = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _BarLength
@@ -49093,6 +53912,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					BarLength = val;
+				}
+				else if(value == null)
+				{
+					BarLength = null;
 				}
 			}
 		}
@@ -49108,6 +53931,10 @@ namespace IFC.IFC4x3
 				{
 					BarSurface = val;
 				}
+				else if(value == null)
+				{
+					BarSurface = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _BendingShapeCode
@@ -49121,6 +53948,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					BendingShapeCode = val;
+				}
+				else if(value == null)
+				{
+					BendingShapeCode = null;
 				}
 			}
 		}
@@ -49141,6 +53972,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					BendingParameters = null;
+				}
+				else
+				{
+					BendingParameters = new List<IfcBendingParameterSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcBendingParameterSelect v)
+						{
+							BendingParameters.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -49192,6 +54038,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					SteelGrade = val;
+				}
+				else if(value == null)
+				{
+					SteelGrade = null;
 				}
 			}
 		}
@@ -49313,6 +54163,10 @@ namespace IFC.IFC4x3
 				{
 					MeshLength = val;
 				}
+				else if(value == null)
+				{
+					MeshLength = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _MeshWidth
@@ -49326,6 +54180,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					MeshWidth = val;
+				}
+				else if(value == null)
+				{
+					MeshWidth = null;
 				}
 			}
 		}
@@ -49341,6 +54199,10 @@ namespace IFC.IFC4x3
 				{
 					LongitudinalBarNominalDiameter = val;
 				}
+				else if(value == null)
+				{
+					LongitudinalBarNominalDiameter = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _TransverseBarNominalDiameter
@@ -49354,6 +54216,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					TransverseBarNominalDiameter = val;
+				}
+				else if(value == null)
+				{
+					TransverseBarNominalDiameter = null;
 				}
 			}
 		}
@@ -49369,6 +54235,10 @@ namespace IFC.IFC4x3
 				{
 					LongitudinalBarCrossSectionArea = val;
 				}
+				else if(value == null)
+				{
+					LongitudinalBarCrossSectionArea = null;
+				}
 			}
 		}
 		public virtual Global.IfcAreaMeasure? _TransverseBarCrossSectionArea
@@ -49382,6 +54252,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAreaMeasure val)
 				{
 					TransverseBarCrossSectionArea = val;
+				}
+				else if(value == null)
+				{
+					TransverseBarCrossSectionArea = null;
 				}
 			}
 		}
@@ -49397,6 +54271,10 @@ namespace IFC.IFC4x3
 				{
 					LongitudinalBarSpacing = val;
 				}
+				else if(value == null)
+				{
+					LongitudinalBarSpacing = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _TransverseBarSpacing
@@ -49411,6 +54289,10 @@ namespace IFC.IFC4x3
 				{
 					TransverseBarSpacing = val;
 				}
+				else if(value == null)
+				{
+					TransverseBarSpacing = null;
+				}
 			}
 		}
 		public virtual Global.IfcReinforcingMeshTypeEnum? _PredefinedType
@@ -49424,6 +54306,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReinforcingMeshTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -49516,6 +54402,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _MeshLength
@@ -49529,6 +54419,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					MeshLength = val;
+				}
+				else if(value == null)
+				{
+					MeshLength = null;
 				}
 			}
 		}
@@ -49544,6 +54438,10 @@ namespace IFC.IFC4x3
 				{
 					MeshWidth = val;
 				}
+				else if(value == null)
+				{
+					MeshWidth = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _LongitudinalBarNominalDiameter
@@ -49557,6 +54455,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					LongitudinalBarNominalDiameter = val;
+				}
+				else if(value == null)
+				{
+					LongitudinalBarNominalDiameter = null;
 				}
 			}
 		}
@@ -49572,6 +54474,10 @@ namespace IFC.IFC4x3
 				{
 					TransverseBarNominalDiameter = val;
 				}
+				else if(value == null)
+				{
+					TransverseBarNominalDiameter = null;
+				}
 			}
 		}
 		public virtual Global.IfcAreaMeasure? _LongitudinalBarCrossSectionArea
@@ -49585,6 +54491,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAreaMeasure val)
 				{
 					LongitudinalBarCrossSectionArea = val;
+				}
+				else if(value == null)
+				{
+					LongitudinalBarCrossSectionArea = null;
 				}
 			}
 		}
@@ -49600,6 +54510,10 @@ namespace IFC.IFC4x3
 				{
 					TransverseBarCrossSectionArea = val;
 				}
+				else if(value == null)
+				{
+					TransverseBarCrossSectionArea = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _LongitudinalBarSpacing
@@ -49613,6 +54527,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					LongitudinalBarSpacing = val;
+				}
+				else if(value == null)
+				{
+					LongitudinalBarSpacing = null;
 				}
 			}
 		}
@@ -49628,6 +54546,10 @@ namespace IFC.IFC4x3
 				{
 					TransverseBarSpacing = val;
 				}
+				else if(value == null)
+				{
+					TransverseBarSpacing = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _BendingShapeCode
@@ -49641,6 +54563,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					BendingShapeCode = val;
+				}
+				else if(value == null)
+				{
+					BendingShapeCode = null;
 				}
 			}
 		}
@@ -49661,6 +54587,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					BendingParameters = null;
+				}
+				else
+				{
+					BendingParameters = new List<IfcBendingParameterSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcBendingParameterSelect v)
+						{
+							BendingParameters.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -49707,6 +54648,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingElement = val;
 				}
+				else if(value == null)
+				{
+					RelatingElement = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcSurfaceFeature>? _RelatedSurfaceFeatures
@@ -49726,6 +54671,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedSurfaceFeatures = null;
+				}
+				else
+				{
+					RelatedSurfaceFeatures = new List<IfcSurfaceFeature>();
+					foreach(var val in value)
+					{
+						if(val is IfcSurfaceFeature v)
+						{
+							RelatedSurfaceFeatures.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -49774,6 +54734,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingObject = val;
 				}
+				else if(value == null)
+				{
+					RelatingObject = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcObjectDefinition>? _RelatedObjects
@@ -49793,6 +54757,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+					RelatedObjects = new List<IfcObjectDefinition>();
+					foreach(var val in value)
+					{
+						if(val is IfcObjectDefinition v)
+						{
+							RelatedObjects.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -49851,6 +54830,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+					RelatedObjects = new List<IfcObjectDefinition>();
+					foreach(var val in value)
+					{
+						if(val is IfcObjectDefinition v)
+						{
+							RelatedObjects.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcStrippedOptional? _RelatedObjectsType
@@ -49864,6 +54858,10 @@ namespace IFC.IFC4x3
 				if(value is IfcStrippedOptional val)
 				{
 					RelatedObjectsType = val;
+				}
+				else if(value == null)
+				{
+					RelatedObjectsType = null;
 				}
 			}
 		}
@@ -49915,6 +54913,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingActor = val;
 				}
+				else if(value == null)
+				{
+					RelatingActor = null;
+				}
 			}
 		}
 		public virtual Global.IfcActorRole? _ActingRole
@@ -49928,6 +54930,10 @@ namespace IFC.IFC4x3
 				if(value is IfcActorRole val)
 				{
 					ActingRole = val;
+				}
+				else if(value == null)
+				{
+					ActingRole = null;
 				}
 			}
 		}
@@ -49974,6 +54980,10 @@ namespace IFC.IFC4x3
 				if(value is IfcControl val)
 				{
 					RelatingControl = val;
+				}
+				else if(value == null)
+				{
+					RelatingControl = null;
 				}
 			}
 		}
@@ -50023,6 +55033,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingGroup = val;
 				}
+				else if(value == null)
+				{
+					RelatingGroup = null;
+				}
 			}
 		}
 	}
@@ -50067,6 +55081,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRatioMeasure val)
 				{
 					Factor = val;
+				}
+				else if(value == null)
+				{
+					Factor = null;
 				}
 			}
 		}
@@ -50118,6 +55136,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingProcess = val;
 				}
+				else if(value == null)
+				{
+					RelatingProcess = null;
+				}
 			}
 		}
 		public virtual Global.IfcMeasureWithUnit? _QuantityInProcess
@@ -50131,6 +55153,10 @@ namespace IFC.IFC4x3
 				if(value is IfcMeasureWithUnit val)
 				{
 					QuantityInProcess = val;
+				}
+				else if(value == null)
+				{
+					QuantityInProcess = null;
 				}
 			}
 		}
@@ -50178,6 +55204,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingProduct = val;
 				}
+				else if(value == null)
+				{
+					RelatingProduct = null;
+				}
 			}
 		}
 	}
@@ -50223,6 +55253,10 @@ namespace IFC.IFC4x3
 				if(value is IfcResourceSelect val)
 				{
 					RelatingResource = val;
+				}
+				else if(value == null)
+				{
+					RelatingResource = null;
 				}
 			}
 		}
@@ -50279,6 +55313,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+					RelatedObjects = new List<IfcDefinitionSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcDefinitionSelect v)
+						{
+							RelatedObjects.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -50322,6 +55371,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingApproval = val;
 				}
+				else if(value == null)
+				{
+					RelatingApproval = null;
+				}
 			}
 		}
 	}
@@ -50364,6 +55417,10 @@ namespace IFC.IFC4x3
 				if(value is IfcClassificationSelect val)
 				{
 					RelatingClassification = val;
+				}
+				else if(value == null)
+				{
+					RelatingClassification = null;
 				}
 			}
 		}
@@ -50412,6 +55469,10 @@ namespace IFC.IFC4x3
 				{
 					Intent = val;
 				}
+				else if(value == null)
+				{
+					Intent = null;
+				}
 			}
 		}
 		public virtual Global.IfcConstraint? _RelatingConstraint
@@ -50425,6 +55486,10 @@ namespace IFC.IFC4x3
 				if(value is IfcConstraint val)
 				{
 					RelatingConstraint = val;
+				}
+				else if(value == null)
+				{
+					RelatingConstraint = null;
 				}
 			}
 		}
@@ -50469,6 +55534,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingDocument = val;
 				}
+				else if(value == null)
+				{
+					RelatingDocument = null;
+				}
 			}
 		}
 	}
@@ -50511,6 +55580,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLibrarySelect val)
 				{
 					RelatingLibrary = val;
+				}
+				else if(value == null)
+				{
+					RelatingLibrary = null;
 				}
 			}
 		}
@@ -50567,6 +55640,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingMaterial = val;
 				}
+				else if(value == null)
+				{
+					RelatingMaterial = null;
+				}
 			}
 		}
 	}
@@ -50609,6 +55686,10 @@ namespace IFC.IFC4x3
 				if(value is IfcProfileDef val)
 				{
 					RelatingProfileDef = val;
+				}
+				else if(value == null)
+				{
+					RelatingProfileDef = null;
 				}
 			}
 		}
@@ -50706,6 +55787,10 @@ namespace IFC.IFC4x3
 				{
 					ConnectionGeometry = val;
 				}
+				else if(value == null)
+				{
+					ConnectionGeometry = null;
+				}
 			}
 		}
 		public virtual Global.IfcElement? _RelatingElement
@@ -50720,6 +55805,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingElement = val;
 				}
+				else if(value == null)
+				{
+					RelatingElement = null;
+				}
 			}
 		}
 		public virtual Global.IfcElement? _RelatedElement
@@ -50733,6 +55822,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElement val)
 				{
 					RelatedElement = val;
+				}
+				else if(value == null)
+				{
+					RelatedElement = null;
 				}
 			}
 		}
@@ -50807,6 +55900,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatingPriorities = null;
+				}
+				else
+				{
+					RelatingPriorities = new List<IfcInteger>();
+					foreach(var val in value)
+					{
+						if(val is IfcInteger v)
+						{
+							RelatingPriorities.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcInteger>? _RelatedPriorities
@@ -50826,6 +55934,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedPriorities = null;
+				}
+				else
+				{
+					RelatedPriorities = new List<IfcInteger>();
+					foreach(var val in value)
+					{
+						if(val is IfcInteger v)
+						{
+							RelatedPriorities.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcConnectionTypeEnum? _RelatedConnectionType
@@ -50840,6 +55963,10 @@ namespace IFC.IFC4x3
 				{
 					RelatedConnectionType = val;
 				}
+				else if(value == null)
+				{
+					RelatedConnectionType = null;
+				}
 			}
 		}
 		public virtual Global.IfcConnectionTypeEnum? _RelatingConnectionType
@@ -50853,6 +55980,10 @@ namespace IFC.IFC4x3
 				if(value is IfcConnectionTypeEnum val)
 				{
 					RelatingConnectionType = val;
+				}
+				else if(value == null)
+				{
+					RelatingConnectionType = null;
 				}
 			}
 		}
@@ -50900,6 +56031,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingPort = val;
 				}
+				else if(value == null)
+				{
+					RelatingPort = null;
+				}
 			}
 		}
 		public virtual Global.IfcDistributionElement? _RelatedElement
@@ -50913,6 +56048,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDistributionElement val)
 				{
 					RelatedElement = val;
+				}
+				else if(value == null)
+				{
+					RelatedElement = null;
 				}
 			}
 		}
@@ -50966,6 +56105,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingPort = val;
 				}
+				else if(value == null)
+				{
+					RelatingPort = null;
+				}
 			}
 		}
 		public virtual Global.IfcPort? _RelatedPort
@@ -50980,6 +56123,10 @@ namespace IFC.IFC4x3
 				{
 					RelatedPort = val;
 				}
+				else if(value == null)
+				{
+					RelatedPort = null;
+				}
 			}
 		}
 		public virtual Global.IfcElement? _RealizingElement
@@ -50993,6 +56140,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElement val)
 				{
 					RealizingElement = val;
+				}
+				else if(value == null)
+				{
+					RealizingElement = null;
 				}
 			}
 		}
@@ -51040,6 +56191,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingElement = val;
 				}
+				else if(value == null)
+				{
+					RelatingElement = null;
+				}
 			}
 		}
 		public virtual Global.IfcStructuralActivity? _RelatedStructuralActivity
@@ -51053,6 +56208,10 @@ namespace IFC.IFC4x3
 				if(value is IfcStructuralActivity val)
 				{
 					RelatedStructuralActivity = val;
+				}
+				else if(value == null)
+				{
+					RelatedStructuralActivity = null;
 				}
 			}
 		}
@@ -51118,6 +56277,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingStructuralMember = val;
 				}
+				else if(value == null)
+				{
+					RelatingStructuralMember = null;
+				}
 			}
 		}
 		public virtual Global.IfcStructuralConnection? _RelatedStructuralConnection
@@ -51131,6 +56294,10 @@ namespace IFC.IFC4x3
 				if(value is IfcStructuralConnection val)
 				{
 					RelatedStructuralConnection = val;
+				}
+				else if(value == null)
+				{
+					RelatedStructuralConnection = null;
 				}
 			}
 		}
@@ -51146,6 +56313,10 @@ namespace IFC.IFC4x3
 				{
 					AppliedCondition = val;
 				}
+				else if(value == null)
+				{
+					AppliedCondition = null;
+				}
 			}
 		}
 		public virtual Global.IfcStructuralConnectionCondition? _AdditionalConditions
@@ -51159,6 +56330,10 @@ namespace IFC.IFC4x3
 				if(value is IfcStructuralConnectionCondition val)
 				{
 					AdditionalConditions = val;
+				}
+				else if(value == null)
+				{
+					AdditionalConditions = null;
 				}
 			}
 		}
@@ -51174,6 +56349,10 @@ namespace IFC.IFC4x3
 				{
 					SupportedLength = val;
 				}
+				else if(value == null)
+				{
+					SupportedLength = null;
+				}
 			}
 		}
 		public virtual Global.IfcAxis2Placement3D? _ConditionCoordinateSystem
@@ -51187,6 +56366,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAxis2Placement3D val)
 				{
 					ConditionCoordinateSystem = val;
+				}
+				else if(value == null)
+				{
+					ConditionCoordinateSystem = null;
 				}
 			}
 		}
@@ -51235,6 +56418,10 @@ namespace IFC.IFC4x3
 				if(value is IfcConnectionGeometry val)
 				{
 					ConnectionConstraint = val;
+				}
+				else if(value == null)
+				{
+					ConnectionConstraint = null;
 				}
 			}
 		}
@@ -51290,6 +56477,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RealizingElements = null;
+				}
+				else
+				{
+					RealizingElements = new List<IfcElement>();
+					foreach(var val in value)
+					{
+						if(val is IfcElement v)
+						{
+							RealizingElements.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _ConnectionType
@@ -51303,6 +56505,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					ConnectionType = val;
+				}
+				else if(value == null)
+				{
+					ConnectionType = null;
 				}
 			}
 		}
@@ -51357,6 +56563,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedElements = null;
+				}
+				else
+				{
+					RelatedElements = new List<IfcProduct>();
+					foreach(var val in value)
+					{
+						if(val is IfcProduct v)
+						{
+							RelatedElements.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcSpatialElement? _RelatingStructure
@@ -51370,6 +56591,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSpatialElement val)
 				{
 					RelatingStructure = val;
+				}
+				else if(value == null)
+				{
+					RelatingStructure = null;
 				}
 			}
 		}
@@ -51417,6 +56642,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingBuildingElement = val;
 				}
+				else if(value == null)
+				{
+					RelatingBuildingElement = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcCovering>? _RelatedCoverings
@@ -51436,6 +56665,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedCoverings = null;
+				}
+				else
+				{
+					RelatedCoverings = new List<IfcCovering>();
+					foreach(var val in value)
+					{
+						if(val is IfcCovering v)
+						{
+							RelatedCoverings.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -51482,6 +56726,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingSpace = val;
 				}
+				else if(value == null)
+				{
+					RelatingSpace = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcCovering>? _RelatedCoverings
@@ -51501,6 +56749,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedCoverings = null;
+				}
+				else
+				{
+					RelatedCoverings = new List<IfcCovering>();
+					foreach(var val in value)
+					{
+						if(val is IfcCovering v)
+						{
+							RelatedCoverings.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -51549,6 +56812,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingContext = val;
 				}
+				else if(value == null)
+				{
+					RelatingContext = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcDefinitionSelect>? _RelatedDefinitions
@@ -51568,6 +56835,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedDefinitions = null;
+				}
+				else
+				{
+					RelatedDefinitions = new List<IfcDefinitionSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcDefinitionSelect v)
+						{
+							RelatedDefinitions.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -51678,6 +56960,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+					RelatedObjects = new List<IfcObject>();
+					foreach(var val in value)
+					{
+						if(val is IfcObject v)
+						{
+							RelatedObjects.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcObject? _RelatingObject
@@ -51691,6 +56988,10 @@ namespace IFC.IFC4x3
 				if(value is IfcObject val)
 				{
 					RelatingObject = val;
+				}
+				else if(value == null)
+				{
+					RelatingObject = null;
 				}
 			}
 		}
@@ -51745,6 +57046,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+					RelatedObjects = new List<IfcObjectDefinition>();
+					foreach(var val in value)
+					{
+						if(val is IfcObjectDefinition v)
+						{
+							RelatedObjects.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcPropertySetDefinitionSelect? _RelatingPropertyDefinition
@@ -51758,6 +57074,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPropertySetDefinitionSelect val)
 				{
 					RelatingPropertyDefinition = val;
+				}
+				else if(value == null)
+				{
+					RelatingPropertyDefinition = null;
 				}
 			}
 		}
@@ -51810,6 +57130,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedPropertySets = null;
+				}
+				else
+				{
+					RelatedPropertySets = new List<IfcPropertySetDefinition>();
+					foreach(var val in value)
+					{
+						if(val is IfcPropertySetDefinition v)
+						{
+							RelatedPropertySets.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcPropertySetTemplate? _RelatingTemplate
@@ -51823,6 +57158,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPropertySetTemplate val)
 				{
 					RelatingTemplate = val;
+				}
+				else if(value == null)
+				{
+					RelatingTemplate = null;
 				}
 			}
 		}
@@ -51875,6 +57214,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+					RelatedObjects = new List<IfcObject>();
+					foreach(var val in value)
+					{
+						if(val is IfcObject v)
+						{
+							RelatedObjects.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcTypeObject? _RelatingType
@@ -51888,6 +57242,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTypeObject val)
 				{
 					RelatingType = val;
+				}
+				else if(value == null)
+				{
+					RelatingType = null;
 				}
 			}
 		}
@@ -51935,6 +57293,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingOpeningElement = val;
 				}
+				else if(value == null)
+				{
+					RelatingOpeningElement = null;
+				}
 			}
 		}
 		public virtual Global.IfcElement? _RelatedBuildingElement
@@ -51948,6 +57310,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElement val)
 				{
 					RelatedBuildingElement = val;
+				}
+				else if(value == null)
+				{
+					RelatedBuildingElement = null;
 				}
 			}
 		}
@@ -52000,6 +57366,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedControlElements = null;
+				}
+				else
+				{
+					RelatedControlElements = new List<IfcDistributionControlElement>();
+					foreach(var val in value)
+					{
+						if(val is IfcDistributionControlElement v)
+						{
+							RelatedControlElements.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcDistributionFlowElement? _RelatingFlowElement
@@ -52013,6 +57394,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDistributionFlowElement val)
 				{
 					RelatingFlowElement = val;
+				}
+				else if(value == null)
+				{
+					RelatingFlowElement = null;
 				}
 			}
 		}
@@ -52078,6 +57463,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingElement = val;
 				}
+				else if(value == null)
+				{
+					RelatingElement = null;
+				}
 			}
 		}
 		public virtual Global.IfcInterferenceSelect? _RelatedElement
@@ -52091,6 +57480,10 @@ namespace IFC.IFC4x3
 				if(value is IfcInterferenceSelect val)
 				{
 					RelatedElement = val;
+				}
+				else if(value == null)
+				{
+					RelatedElement = null;
 				}
 			}
 		}
@@ -52106,6 +57499,10 @@ namespace IFC.IFC4x3
 				{
 					InterferenceGeometry = val;
 				}
+				else if(value == null)
+				{
+					InterferenceGeometry = null;
+				}
 			}
 		}
 		public virtual Global.IfcIdentifier? _InterferenceType
@@ -52119,6 +57516,10 @@ namespace IFC.IFC4x3
 				if(value is IfcIdentifier val)
 				{
 					InterferenceType = val;
+				}
+				else if(value == null)
+				{
+					InterferenceType = null;
 				}
 			}
 		}
@@ -52134,6 +57535,10 @@ namespace IFC.IFC4x3
 				{
 					ImpliedOrder = val;
 				}
+				else if(value == null)
+				{
+					ImpliedOrder = null;
+				}
 			}
 		}
 		public virtual Global.IfcSpatialZone? _InterferenceSpace
@@ -52147,6 +57552,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSpatialZone val)
 				{
 					InterferenceSpace = val;
+				}
+				else if(value == null)
+				{
+					InterferenceSpace = null;
 				}
 			}
 		}
@@ -52196,6 +57605,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingObject = val;
 				}
+				else if(value == null)
+				{
+					RelatingObject = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcObjectDefinition>? _RelatedObjects
@@ -52215,6 +57628,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+					RelatedObjects = new List<IfcObjectDefinition>();
+					foreach(var val in value)
+					{
+						if(val is IfcObjectDefinition v)
+						{
+							RelatedObjects.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -52263,6 +57691,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingPositioningElement = val;
 				}
+				else if(value == null)
+				{
+					RelatingPositioningElement = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcProduct>? _RelatedProducts
@@ -52282,6 +57714,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedProducts = null;
+				}
+				else
+				{
+					RelatedProducts = new List<IfcProduct>();
+					foreach(var val in value)
+					{
+						if(val is IfcProduct v)
+						{
+							RelatedProducts.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -52328,6 +57775,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingElement = val;
 				}
+				else if(value == null)
+				{
+					RelatingElement = null;
+				}
 			}
 		}
 		public virtual Global.IfcFeatureElementAddition? _RelatedFeatureElement
@@ -52341,6 +57792,10 @@ namespace IFC.IFC4x3
 				if(value is IfcFeatureElementAddition val)
 				{
 					RelatedFeatureElement = val;
+				}
+				else if(value == null)
+				{
+					RelatedFeatureElement = null;
 				}
 			}
 		}
@@ -52396,6 +57851,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedElements = null;
+				}
+				else
+				{
+					RelatedElements = new List<IfcSpatialReferenceSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcSpatialReferenceSelect v)
+						{
+							RelatedElements.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcSpatialElement? _RelatingStructure
@@ -52409,6 +57879,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSpatialElement val)
 				{
 					RelatingStructure = val;
+				}
+				else if(value == null)
+				{
+					RelatingStructure = null;
 				}
 			}
 		}
@@ -52471,6 +57945,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingProcess = val;
 				}
+				else if(value == null)
+				{
+					RelatingProcess = null;
+				}
 			}
 		}
 		public virtual Global.IfcProcess? _RelatedProcess
@@ -52484,6 +57962,10 @@ namespace IFC.IFC4x3
 				if(value is IfcProcess val)
 				{
 					RelatedProcess = val;
+				}
+				else if(value == null)
+				{
+					RelatedProcess = null;
 				}
 			}
 		}
@@ -52499,6 +57981,10 @@ namespace IFC.IFC4x3
 				{
 					TimeLag = val;
 				}
+				else if(value == null)
+				{
+					TimeLag = null;
+				}
 			}
 		}
 		public virtual Global.IfcSequenceEnum? _SequenceType
@@ -52513,6 +57999,10 @@ namespace IFC.IFC4x3
 				{
 					SequenceType = val;
 				}
+				else if(value == null)
+				{
+					SequenceType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _UserDefinedSequenceType
@@ -52526,6 +58016,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					UserDefinedSequenceType = val;
+				}
+				else if(value == null)
+				{
+					UserDefinedSequenceType = null;
 				}
 			}
 		}
@@ -52573,6 +58067,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingSystem = val;
 				}
+				else if(value == null)
+				{
+					RelatingSystem = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcSpatialElement>? _RelatedBuildings
@@ -52592,6 +58090,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedBuildings = null;
+				}
+				else
+				{
+					RelatedBuildings = new List<IfcSpatialElement>();
+					foreach(var val in value)
+					{
+						if(val is IfcSpatialElement v)
+						{
+							RelatedBuildings.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -52661,6 +58174,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingSpace = val;
 				}
+				else if(value == null)
+				{
+					RelatingSpace = null;
+				}
 			}
 		}
 		public virtual Global.IfcElement? _RelatedBuildingElement
@@ -52674,6 +58191,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElement val)
 				{
 					RelatedBuildingElement = val;
+				}
+				else if(value == null)
+				{
+					RelatedBuildingElement = null;
 				}
 			}
 		}
@@ -52689,6 +58210,10 @@ namespace IFC.IFC4x3
 				{
 					ConnectionGeometry = val;
 				}
+				else if(value == null)
+				{
+					ConnectionGeometry = null;
+				}
 			}
 		}
 		public virtual Global.IfcPhysicalOrVirtualEnum? _PhysicalOrVirtualBoundary
@@ -52703,6 +58228,10 @@ namespace IFC.IFC4x3
 				{
 					PhysicalOrVirtualBoundary = val;
 				}
+				else if(value == null)
+				{
+					PhysicalOrVirtualBoundary = null;
+				}
 			}
 		}
 		public virtual Global.IfcInternalOrExternalEnum? _InternalOrExternalBoundary
@@ -52716,6 +58245,10 @@ namespace IFC.IFC4x3
 				if(value is IfcInternalOrExternalEnum val)
 				{
 					InternalOrExternalBoundary = val;
+				}
+				else if(value == null)
+				{
+					InternalOrExternalBoundary = null;
 				}
 			}
 		}
@@ -52733,7 +58266,7 @@ namespace IFC.IFC4x3
 	public class IfcRelSpaceBoundary1stLevel : IfcRelSpaceBoundary, Global.IfcRelSpaceBoundary1stLevel
 	{
 		public virtual IfcRelSpaceBoundary1stLevel? ParentBoundary { get; set; }
-		public List<IfcRelSpaceBoundary1stLevel>? InnerBoundaries {get{return Model?.GetItems<IfcRelSpaceBoundary1stLevel>().Where(x => x.ParentBoundary != null && x.ParentBoundary == this).ToList();} set{}}
+		public List<IfcRelSpaceBoundary1stLevel>? InnerBoundaries {get{return Model?.GetItems<IfcRelSpaceBoundary1stLevel>().Where(x => x.ParentBoundary != null && x.ParentBoundary == this).ToList();}}
 		public IfcRelSpaceBoundary1stLevel() : base()
 		{
 		}
@@ -52769,6 +58302,10 @@ namespace IFC.IFC4x3
 				{
 					ParentBoundary = val;
 				}
+				else if(value == null)
+				{
+					ParentBoundary = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcRelSpaceBoundary1stLevel>? _InnerBoundaries
@@ -52786,9 +58323,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -52802,7 +58336,7 @@ namespace IFC.IFC4x3
 	public class IfcRelSpaceBoundary2ndLevel : IfcRelSpaceBoundary1stLevel, Global.IfcRelSpaceBoundary2ndLevel
 	{
 		public virtual IfcRelSpaceBoundary2ndLevel? CorrespondingBoundary { get; set; }
-		public List<IfcRelSpaceBoundary2ndLevel>? Corresponds {get{return Model?.GetItems<IfcRelSpaceBoundary2ndLevel>().Where(x => x.CorrespondingBoundary != null && x.CorrespondingBoundary == this).ToList();} set{}}
+		public List<IfcRelSpaceBoundary2ndLevel>? Corresponds {get{return Model?.GetItems<IfcRelSpaceBoundary2ndLevel>().Where(x => x.CorrespondingBoundary != null && x.CorrespondingBoundary == this).ToList();}}
 		public IfcRelSpaceBoundary2ndLevel() : base()
 		{
 		}
@@ -52839,6 +58373,10 @@ namespace IFC.IFC4x3
 				{
 					CorrespondingBoundary = val;
 				}
+				else if(value == null)
+				{
+					CorrespondingBoundary = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcRelSpaceBoundary2ndLevel>? _Corresponds
@@ -52855,9 +58393,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -52904,6 +58439,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingBuildingElement = val;
 				}
+				else if(value == null)
+				{
+					RelatingBuildingElement = null;
+				}
 			}
 		}
 		public virtual Global.IfcFeatureElementSubtraction? _RelatedOpeningElement
@@ -52917,6 +58456,10 @@ namespace IFC.IFC4x3
 				if(value is IfcFeatureElementSubtraction val)
 				{
 					RelatedOpeningElement = val;
+				}
+				else if(value == null)
+				{
+					RelatedOpeningElement = null;
 				}
 			}
 		}
@@ -52992,6 +58535,10 @@ namespace IFC.IFC4x3
 				{
 					ParamLength = val;
 				}
+				else if(value == null)
+				{
+					ParamLength = null;
+				}
 			}
 		}
 	}
@@ -53016,9 +58563,9 @@ namespace IFC.IFC4x3
 		public virtual IfcLabel? RepresentationIdentifier { get; set; }
 		public virtual IfcLabel? RepresentationType { get; set; }
 		public virtual List<IfcRepresentationItem>? Items { get; set; }
-		public List<IfcRepresentationMap>? RepresentationMap {get{return Model?.GetItems<IfcRepresentationMap>().Where(x => x.MappedRepresentation != null && x.MappedRepresentation == this).ToList();} set{}}
-		public List<IfcPresentationLayerAssignment>? LayerAssignments {get{return Model?.GetItems<IfcPresentationLayerAssignment>().Where(x => x.AssignedItems != null && x.AssignedItems.Contains(this)).ToList();}set{}}
-		public List<IfcProductRepresentation>? OfProductRepresentation {get{return Model?.GetItems<IfcProductRepresentation>().Where(x => x.Representations != null && x.Representations.Contains(this)).ToList();}set{}}
+		public List<IfcRepresentationMap>? RepresentationMap {get{return Model?.GetItems<IfcRepresentationMap>().Where(x => x.MappedRepresentation != null && x.MappedRepresentation == this).ToList();}}
+		public List<IfcPresentationLayerAssignment>? LayerAssignments {get{return Model?.GetItems<IfcPresentationLayerAssignment>().Where(x => x.AssignedItems != null && x.AssignedItems.Contains(this)).ToList();}}
+		public List<IfcProductRepresentation>? OfProductRepresentation {get{return Model?.GetItems<IfcProductRepresentation>().Where(x => x.Representations != null && x.Representations.Contains(this)).ToList();}}
 		public IfcRepresentation() : base()
 		{
 		}
@@ -53051,6 +58598,10 @@ namespace IFC.IFC4x3
 				{
 					ContextOfItems = val;
 				}
+				else if(value == null)
+				{
+					ContextOfItems = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _RepresentationIdentifier
@@ -53065,6 +58616,10 @@ namespace IFC.IFC4x3
 				{
 					RepresentationIdentifier = val;
 				}
+				else if(value == null)
+				{
+					RepresentationIdentifier = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _RepresentationType
@@ -53078,6 +58633,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					RepresentationType = val;
+				}
+				else if(value == null)
+				{
+					RepresentationType = null;
 				}
 			}
 		}
@@ -53098,6 +58657,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Items = null;
+				}
+				else
+				{
+					Items = new List<IfcRepresentationItem>();
+					foreach(var val in value)
+					{
+						if(val is IfcRepresentationItem v)
+						{
+							Items.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcRepresentationMap>? _RepresentationMap
@@ -53115,9 +58689,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcPresentationLayerAssignment>? _LayerAssignments
 		{
@@ -53133,9 +58704,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcProductRepresentation>? _OfProductRepresentation
@@ -53153,9 +58721,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -53172,7 +58737,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcLabel? ContextIdentifier { get; set; }
 		public virtual IfcLabel? ContextType { get; set; }
-		public List<IfcRepresentation>? RepresentationsInContext {get{return Model?.GetItems<IfcRepresentation>().Where(x => x.ContextOfItems != null && x.ContextOfItems == this).ToList();} set{}}
+		public List<IfcRepresentation>? RepresentationsInContext {get{return Model?.GetItems<IfcRepresentation>().Where(x => x.ContextOfItems != null && x.ContextOfItems == this).ToList();}}
 		public IfcRepresentationContext() : base()
 		{
 		}
@@ -53201,6 +58766,10 @@ namespace IFC.IFC4x3
 				{
 					ContextIdentifier = val;
 				}
+				else if(value == null)
+				{
+					ContextIdentifier = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _ContextType
@@ -53214,6 +58783,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					ContextType = val;
+				}
+				else if(value == null)
+				{
+					ContextType = null;
 				}
 			}
 		}
@@ -53232,9 +58805,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 	}
 	/// <summary>
@@ -53251,8 +58821,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcRepresentationItem : Ifc_Entity, IfcLayeredItem, Global.IfcRepresentationItem
 	{
-		public List<IfcPresentationLayerAssignment>? LayerAssignment {get{return Model?.GetItems<IfcPresentationLayerAssignment>().Where(x => x.AssignedItems != null && x.AssignedItems.Contains(this)).ToList();}set{}}
-		public List<IfcStyledItem>? StyledByItem {get{return Model?.GetItems<IfcStyledItem>().Where(x => x.Item != null && x.Item == this).ToList();} set{}}
+		public List<IfcPresentationLayerAssignment>? LayerAssignment {get{return Model?.GetItems<IfcPresentationLayerAssignment>().Where(x => x.AssignedItems != null && x.AssignedItems.Contains(this)).ToList();}}
+		public List<IfcStyledItem>? StyledByItem {get{return Model?.GetItems<IfcStyledItem>().Where(x => x.Item != null && x.Item == this).ToList();}}
 		public IfcRepresentationItem() : base()
 		{
 		}
@@ -53277,9 +58847,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcStyledItem>? _StyledByItem
 		{
@@ -53295,9 +58862,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -53316,8 +58880,8 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcAxis2Placement? MappingOrigin { get; set; }
 		public virtual IfcRepresentation? MappedRepresentation { get; set; }
-		public List<IfcShapeAspect>? HasShapeAspects {get{return Model?.GetItems<IfcShapeAspect>().Where(x => x.PartOfProductDefinitionShape != null && x.PartOfProductDefinitionShape == this).ToList();} set{}}
-		public List<IfcMappedItem>? MapUsage {get{return Model?.GetItems<IfcMappedItem>().Where(x => x.MappingSource != null && x.MappingSource == this).ToList();} set{}}
+		public List<IfcShapeAspect>? HasShapeAspects {get{return Model?.GetItems<IfcShapeAspect>().Where(x => x.PartOfProductDefinitionShape != null && x.PartOfProductDefinitionShape == this).ToList();}}
+		public List<IfcMappedItem>? MapUsage {get{return Model?.GetItems<IfcMappedItem>().Where(x => x.MappingSource != null && x.MappingSource == this).ToList();}}
 		public IfcRepresentationMap() : base()
 		{
 		}
@@ -53346,6 +58910,10 @@ namespace IFC.IFC4x3
 				{
 					MappingOrigin = val;
 				}
+				else if(value == null)
+				{
+					MappingOrigin = null;
+				}
 			}
 		}
 		public virtual Global.IfcRepresentation? _MappedRepresentation
@@ -53359,6 +58927,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRepresentation val)
 				{
 					MappedRepresentation = val;
+				}
+				else if(value == null)
+				{
+					MappedRepresentation = null;
 				}
 			}
 		}
@@ -53377,9 +58949,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcMappedItem>? _MapUsage
 		{
@@ -53395,9 +58964,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -53416,9 +58982,9 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcIdentifier? Identification { get; set; }
 		public virtual IfcText? LongDescription { get; set; }
-		public virtual List<IfcAppliedValue>? BaseCosts {get;set;}
-		public virtual IfcPhysicalQuantity? BaseQuantity {get;set;}
-		public List<IfcRelAssignsToResource>? ResourceOf {get{return Model?.GetItems<IfcRelAssignsToResource>().Where(x => x.RelatingResource != null && x.RelatingResource == this).ToList();} set{}}
+		public virtual List<IfcAppliedValue>? BaseCosts {get; set;}
+		public virtual IfcPhysicalQuantity? BaseQuantity {get; set;}
+		public List<IfcRelAssignsToResource>? ResourceOf {get{return Model?.GetItems<IfcRelAssignsToResource>().Where(x => x.RelatingResource != null && x.RelatingResource == this).ToList();}}
 		public IfcResource() : base()
 		{
 		}
@@ -53452,6 +59018,10 @@ namespace IFC.IFC4x3
 				{
 					Identification = val;
 				}
+				else if(value == null)
+				{
+					Identification = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _LongDescription
@@ -53465,6 +59035,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					LongDescription = val;
+				}
+				else if(value == null)
+				{
+					LongDescription = null;
 				}
 			}
 		}
@@ -53485,6 +59059,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					BaseCosts = null;
+				}
+				else
+				{
+					BaseCosts = new List<IfcAppliedValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcAppliedValue v)
+						{
+							BaseCosts.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcPhysicalQuantity? _BaseQuantity
@@ -53498,6 +59087,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPhysicalQuantity val)
 				{
 					BaseQuantity = val;
+				}
+				else if(value == null)
+				{
+					BaseQuantity = null;
 				}
 			}
 		}
@@ -53515,9 +59108,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -53567,6 +59157,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedResourceObjects = null;
+				}
+				else
+				{
+					RelatedResourceObjects = new List<IfcResourceObjectSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcResourceObjectSelect v)
+						{
+							RelatedResourceObjects.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcApproval? _RelatingApproval
@@ -53580,6 +59185,10 @@ namespace IFC.IFC4x3
 				if(value is IfcApproval val)
 				{
 					RelatingApproval = val;
+				}
+				else if(value == null)
+				{
+					RelatingApproval = null;
 				}
 			}
 		}
@@ -53625,6 +59234,10 @@ namespace IFC.IFC4x3
 				{
 					RelatingConstraint = val;
 				}
+				else if(value == null)
+				{
+					RelatingConstraint = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcResourceObjectSelect>? _RelatedResourceObjects
@@ -53644,6 +59257,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RelatedResourceObjects = null;
+				}
+				else
+				{
+					RelatedResourceObjects = new List<IfcResourceObjectSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcResourceObjectSelect v)
+						{
+							RelatedResourceObjects.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -53695,6 +59323,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -53708,6 +59340,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -53806,6 +59442,10 @@ namespace IFC.IFC4x3
 				{
 					ScheduleWork = val;
 				}
+				else if(value == null)
+				{
+					ScheduleWork = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveRatioMeasure? _ScheduleUsage
@@ -53819,6 +59459,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveRatioMeasure val)
 				{
 					ScheduleUsage = val;
+				}
+				else if(value == null)
+				{
+					ScheduleUsage = null;
 				}
 			}
 		}
@@ -53834,6 +59478,10 @@ namespace IFC.IFC4x3
 				{
 					ScheduleStart = val;
 				}
+				else if(value == null)
+				{
+					ScheduleStart = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _ScheduleFinish
@@ -53847,6 +59495,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					ScheduleFinish = val;
+				}
+				else if(value == null)
+				{
+					ScheduleFinish = null;
 				}
 			}
 		}
@@ -53862,6 +59514,10 @@ namespace IFC.IFC4x3
 				{
 					ScheduleContour = val;
 				}
+				else if(value == null)
+				{
+					ScheduleContour = null;
+				}
 			}
 		}
 		public virtual Global.IfcDuration? _LevelingDelay
@@ -53875,6 +59531,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDuration val)
 				{
 					LevelingDelay = val;
+				}
+				else if(value == null)
+				{
+					LevelingDelay = null;
 				}
 			}
 		}
@@ -53890,6 +59550,10 @@ namespace IFC.IFC4x3
 				{
 					IsOverAllocated = val;
 				}
+				else if(value == null)
+				{
+					IsOverAllocated = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _StatusTime
@@ -53903,6 +59567,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					StatusTime = val;
+				}
+				else if(value == null)
+				{
+					StatusTime = null;
 				}
 			}
 		}
@@ -53918,6 +59586,10 @@ namespace IFC.IFC4x3
 				{
 					ActualWork = val;
 				}
+				else if(value == null)
+				{
+					ActualWork = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveRatioMeasure? _ActualUsage
@@ -53931,6 +59603,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveRatioMeasure val)
 				{
 					ActualUsage = val;
+				}
+				else if(value == null)
+				{
+					ActualUsage = null;
 				}
 			}
 		}
@@ -53946,6 +59622,10 @@ namespace IFC.IFC4x3
 				{
 					ActualStart = val;
 				}
+				else if(value == null)
+				{
+					ActualStart = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _ActualFinish
@@ -53959,6 +59639,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					ActualFinish = val;
+				}
+				else if(value == null)
+				{
+					ActualFinish = null;
 				}
 			}
 		}
@@ -53974,6 +59658,10 @@ namespace IFC.IFC4x3
 				{
 					RemainingWork = val;
 				}
+				else if(value == null)
+				{
+					RemainingWork = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveRatioMeasure? _RemainingUsage
@@ -53988,6 +59676,10 @@ namespace IFC.IFC4x3
 				{
 					RemainingUsage = val;
 				}
+				else if(value == null)
+				{
+					RemainingUsage = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveRatioMeasure? _Completion
@@ -54001,6 +59693,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveRatioMeasure val)
 				{
 					Completion = val;
+				}
+				else if(value == null)
+				{
+					Completion = null;
 				}
 			}
 		}
@@ -54025,7 +59721,7 @@ namespace IFC.IFC4x3
 		public virtual IfcAxis1Placement? Axis { get; set; }
 		public virtual IfcPlaneAngleMeasure? Angle { get; set; }
 		//DERIVE
-		public virtual IfcLine? AxisLine {get {return null;} set{}}
+		public virtual IfcLine? AxisLine {get {return null;}}
 		public IfcRevolvedAreaSolid() : base()
 		{
 		}
@@ -54056,6 +59752,10 @@ namespace IFC.IFC4x3
 				{
 					Axis = val;
 				}
+				else if(value == null)
+				{
+					Axis = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlaneAngleMeasure? _Angle
@@ -54070,6 +59770,10 @@ namespace IFC.IFC4x3
 				{
 					Angle = val;
 				}
+				else if(value == null)
+				{
+					Angle = null;
+				}
 			}
 		}
 		public virtual Global.IfcLine? _AxisLine
@@ -54077,9 +59781,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return AxisLine;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -54124,6 +59825,10 @@ namespace IFC.IFC4x3
 				{
 					EndSweptArea = val;
 				}
+				else if(value == null)
+				{
+					EndSweptArea = null;
+				}
 			}
 		}
 	}
@@ -54167,6 +59872,10 @@ namespace IFC.IFC4x3
 				{
 					Height = val;
 				}
+				else if(value == null)
+				{
+					Height = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _BottomRadius
@@ -54180,6 +59889,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					BottomRadius = val;
+				}
+				else if(value == null)
+				{
+					BottomRadius = null;
 				}
 			}
 		}
@@ -54224,6 +59937,10 @@ namespace IFC.IFC4x3
 				{
 					Height = val;
 				}
+				else if(value == null)
+				{
+					Height = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _Radius
@@ -54237,6 +59954,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Radius = val;
+				}
+				else if(value == null)
+				{
+					Radius = null;
 				}
 			}
 		}
@@ -54288,6 +60009,10 @@ namespace IFC.IFC4x3
 				{
 					FirstCoordinate = val;
 				}
+				else if(value == null)
+				{
+					FirstCoordinate = null;
+				}
 			}
 		}
 		public virtual Global.IfcMeasureValue? _SecondCoordinate
@@ -54302,6 +60027,10 @@ namespace IFC.IFC4x3
 				{
 					SecondCoordinate = val;
 				}
+				else if(value == null)
+				{
+					SecondCoordinate = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _Height
@@ -54315,6 +60044,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					Height = val;
+				}
+				else if(value == null)
+				{
+					Height = null;
 				}
 			}
 		}
@@ -54366,6 +60099,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRoadTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -54419,6 +60156,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -54471,6 +60212,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -54520,6 +60265,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRoofTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -54576,6 +60325,10 @@ namespace IFC.IFC4x3
 				{
 					GlobalId = val;
 				}
+				else if(value == null)
+				{
+					GlobalId = null;
+				}
 			}
 		}
 		public virtual Global.IfcOwnerHistory? _OwnerHistory
@@ -54589,6 +60342,10 @@ namespace IFC.IFC4x3
 				if(value is IfcOwnerHistory val)
 				{
 					OwnerHistory = val;
+				}
+				else if(value == null)
+				{
+					OwnerHistory = null;
 				}
 			}
 		}
@@ -54604,6 +60361,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -54617,6 +60378,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -54664,6 +60429,10 @@ namespace IFC.IFC4x3
 				{
 					RoundingRadius = val;
 				}
+				else if(value == null)
+				{
+					RoundingRadius = null;
+				}
 			}
 		}
 	}
@@ -54681,7 +60450,7 @@ namespace IFC.IFC4x3
 		public virtual IfcSIPrefix? Prefix { get; set; }
 		public virtual IfcSIUnitName? Name { get; set; }
 		//DERIVE
-		public override IfcDimensionalExponents? Dimensions {get {return null;} set{}}
+		public override IfcDimensionalExponents? Dimensions {get {return null;}}
 		public IfcSIUnit() : base()
 		{
 		}
@@ -54712,6 +60481,10 @@ namespace IFC.IFC4x3
 				{
 					Prefix = val;
 				}
+				else if(value == null)
+				{
+					Prefix = null;
+				}
 			}
 		}
 		public virtual Global.IfcSIUnitName? _Name
@@ -54726,6 +60499,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public override Global.IfcDimensionalExponents? _Dimensions
@@ -54733,9 +60510,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dimensions;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -54788,6 +60562,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -54837,6 +60615,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSanitaryTerminalTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -54889,6 +60671,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcDataOriginEnum? _DataOrigin
@@ -54903,6 +60689,10 @@ namespace IFC.IFC4x3
 				{
 					DataOrigin = val;
 				}
+				else if(value == null)
+				{
+					DataOrigin = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _UserDefinedDataOrigin
@@ -54916,6 +60706,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					UserDefinedDataOrigin = val;
+				}
+				else if(value == null)
+				{
+					UserDefinedDataOrigin = null;
 				}
 			}
 		}
@@ -54990,6 +60784,10 @@ namespace IFC.IFC4x3
 				{
 					QuadraticTerm = val;
 				}
+				else if(value == null)
+				{
+					QuadraticTerm = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _LinearTerm
@@ -55004,6 +60802,10 @@ namespace IFC.IFC4x3
 				{
 					LinearTerm = val;
 				}
+				else if(value == null)
+				{
+					LinearTerm = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _ConstantTerm
@@ -55017,6 +60819,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					ConstantTerm = val;
+				}
+				else if(value == null)
+				{
+					ConstantTerm = null;
 				}
 			}
 		}
@@ -55064,6 +60870,10 @@ namespace IFC.IFC4x3
 				{
 					SectionType = val;
 				}
+				else if(value == null)
+				{
+					SectionType = null;
+				}
 			}
 		}
 		public virtual Global.IfcProfileDef? _StartProfile
@@ -55078,6 +60888,10 @@ namespace IFC.IFC4x3
 				{
 					StartProfile = val;
 				}
+				else if(value == null)
+				{
+					StartProfile = null;
+				}
 			}
 		}
 		public virtual Global.IfcProfileDef? _EndProfile
@@ -55091,6 +60905,10 @@ namespace IFC.IFC4x3
 				if(value is IfcProfileDef val)
 				{
 					EndProfile = val;
+				}
+				else if(value == null)
+				{
+					EndProfile = null;
 				}
 			}
 		}
@@ -55150,6 +60968,10 @@ namespace IFC.IFC4x3
 				{
 					LongitudinalStartPosition = val;
 				}
+				else if(value == null)
+				{
+					LongitudinalStartPosition = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _LongitudinalEndPosition
@@ -55163,6 +60985,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					LongitudinalEndPosition = val;
+				}
+				else if(value == null)
+				{
+					LongitudinalEndPosition = null;
 				}
 			}
 		}
@@ -55178,6 +61004,10 @@ namespace IFC.IFC4x3
 				{
 					TransversePosition = val;
 				}
+				else if(value == null)
+				{
+					TransversePosition = null;
+				}
 			}
 		}
 		public virtual Global.IfcReinforcingBarRoleEnum? _ReinforcementRole
@@ -55192,6 +61022,10 @@ namespace IFC.IFC4x3
 				{
 					ReinforcementRole = val;
 				}
+				else if(value == null)
+				{
+					ReinforcementRole = null;
+				}
 			}
 		}
 		public virtual Global.IfcSectionProperties? _SectionDefinition
@@ -55205,6 +61039,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSectionProperties val)
 				{
 					SectionDefinition = val;
+				}
+				else if(value == null)
+				{
+					SectionDefinition = null;
 				}
 			}
 		}
@@ -55225,6 +61063,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CrossSectionReinforcementDefinitions = null;
+				}
+				else
+				{
+					CrossSectionReinforcementDefinitions = new List<IfcReinforcementBarProperties>();
+					foreach(var val in value)
+					{
+						if(val is IfcReinforcementBarProperties v)
+						{
+							CrossSectionReinforcementDefinitions.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -55273,6 +61126,10 @@ namespace IFC.IFC4x3
 				{
 					Directrix = val;
 				}
+				else if(value == null)
+				{
+					Directrix = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcProfileDef>? _CrossSections
@@ -55292,6 +61149,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CrossSections = null;
+				}
+				else
+				{
+					CrossSections = new List<IfcProfileDef>();
+					foreach(var val in value)
+					{
+						if(val is IfcProfileDef v)
+						{
+							CrossSections.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -55340,6 +61212,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CrossSectionPositions = null;
+				}
+				else
+				{
+					CrossSectionPositions = new List<IfcAxis2PlacementLinear>();
+					foreach(var val in value)
+					{
+						if(val is IfcAxis2PlacementLinear v)
+						{
+							CrossSectionPositions.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -55363,7 +61250,7 @@ namespace IFC.IFC4x3
 		public virtual List<IfcProfileDef>? CrossSections { get; set; }
 		public virtual List<IfcAxis2Placement3D>? CrossSectionPositions { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcSectionedSpine() : base()
 		{
 		}
@@ -55394,6 +61281,10 @@ namespace IFC.IFC4x3
 				{
 					SpineCurve = val;
 				}
+				else if(value == null)
+				{
+					SpineCurve = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcProfileDef>? _CrossSections
@@ -55413,6 +61304,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CrossSections = null;
+				}
+				else
+				{
+					CrossSections = new List<IfcProfileDef>();
+					foreach(var val in value)
+					{
+						if(val is IfcProfileDef v)
+						{
+							CrossSections.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcAxis2Placement3D>? _CrossSectionPositions
@@ -55432,6 +61338,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CrossSectionPositions = null;
+				}
+				else
+				{
+					CrossSectionPositions = new List<IfcAxis2Placement3D>();
+					foreach(var val in value)
+					{
+						if(val is IfcAxis2Placement3D v)
+						{
+							CrossSectionPositions.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -55439,9 +61360,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -55494,6 +61412,10 @@ namespace IFC.IFC4x3
 				{
 					Directrix = val;
 				}
+				else if(value == null)
+				{
+					Directrix = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcAxis2PlacementLinear>? _CrossSectionPositions
@@ -55513,6 +61435,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CrossSectionPositions = null;
+				}
+				else
+				{
+					CrossSectionPositions = new List<IfcAxis2PlacementLinear>();
+					foreach(var val in value)
+					{
+						if(val is IfcAxis2PlacementLinear v)
+						{
+							CrossSectionPositions.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcProfileDef>? _CrossSections
@@ -55532,6 +61469,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CrossSections = null;
+				}
+				else
+				{
+					CrossSections = new List<IfcProfileDef>();
+					foreach(var val in value)
+					{
+						if(val is IfcProfileDef v)
+						{
+							CrossSections.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -55552,8 +61504,8 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcTransitionCode? Transition { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
-		public List<IfcCompositeCurve>? UsingCurves {get{return Model?.GetItems<IfcCompositeCurve>().Where(x => x.Segments != null && x.Segments.Contains(this)).ToList();}set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
+		public List<IfcCompositeCurve>? UsingCurves {get{return Model?.GetItems<IfcCompositeCurve>().Where(x => x.Segments != null && x.Segments.Contains(this)).ToList();}}
 		public IfcSegment() : base()
 		{
 		}
@@ -55580,6 +61532,10 @@ namespace IFC.IFC4x3
 				{
 					Transition = val;
 				}
+				else if(value == null)
+				{
+					Transition = null;
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -55587,9 +61543,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcCompositeCurve>? _UsingCurves
@@ -55606,9 +61559,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -55653,6 +61603,10 @@ namespace IFC.IFC4x3
 				{
 					BaseCurve = val;
 				}
+				else if(value == null)
+				{
+					BaseCurve = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlacement? _EndPoint
@@ -55666,6 +61620,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlacement val)
 				{
 					EndPoint = val;
+				}
+				else if(value == null)
+				{
+					EndPoint = null;
 				}
 			}
 		}
@@ -55719,6 +61677,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -55768,6 +61730,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSensorTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -55836,6 +61802,10 @@ namespace IFC.IFC4x3
 				{
 					SepticTerm = val;
 				}
+				else if(value == null)
+				{
+					SepticTerm = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _SexticTerm
@@ -55849,6 +61819,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					SexticTerm = val;
+				}
+				else if(value == null)
+				{
+					SexticTerm = null;
 				}
 			}
 		}
@@ -55864,6 +61838,10 @@ namespace IFC.IFC4x3
 				{
 					QuinticTerm = val;
 				}
+				else if(value == null)
+				{
+					QuinticTerm = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _QuarticTerm
@@ -55877,6 +61855,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					QuarticTerm = val;
+				}
+				else if(value == null)
+				{
+					QuarticTerm = null;
 				}
 			}
 		}
@@ -55892,6 +61874,10 @@ namespace IFC.IFC4x3
 				{
 					CubicTerm = val;
 				}
+				else if(value == null)
+				{
+					CubicTerm = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _QuadraticTerm
@@ -55905,6 +61891,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					QuadraticTerm = val;
+				}
+				else if(value == null)
+				{
+					QuadraticTerm = null;
 				}
 			}
 		}
@@ -55920,6 +61910,10 @@ namespace IFC.IFC4x3
 				{
 					LinearTerm = val;
 				}
+				else if(value == null)
+				{
+					LinearTerm = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _ConstantTerm
@@ -55933,6 +61927,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					ConstantTerm = val;
+				}
+				else if(value == null)
+				{
+					ConstantTerm = null;
 				}
 			}
 		}
@@ -55986,6 +61984,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -56036,6 +62038,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -56057,7 +62063,7 @@ namespace IFC.IFC4x3
 		public virtual IfcText? Description { get; set; }
 		public virtual IfcLogical? ProductDefinitional { get; set; }
 		public virtual IfcProductRepresentationSelect? PartOfProductDefinitionShape { get; set; }
-		public List<IfcExternalReferenceRelationship>? HasExternalReferences {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
+		public List<IfcExternalReferenceRelationship>? HasExternalReferences {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
 		public IfcShapeAspect() : base()
 		{
 		}
@@ -56097,6 +62103,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ShapeRepresentations = null;
+				}
+				else
+				{
+					ShapeRepresentations = new List<IfcShapeModel>();
+					foreach(var val in value)
+					{
+						if(val is IfcShapeModel v)
+						{
+							ShapeRepresentations.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Name
@@ -56110,6 +62131,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -56125,6 +62150,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcLogical? _ProductDefinitional
@@ -56139,6 +62168,10 @@ namespace IFC.IFC4x3
 				{
 					ProductDefinitional = val;
 				}
+				else if(value == null)
+				{
+					ProductDefinitional = null;
+				}
 			}
 		}
 		public virtual Global.IfcProductRepresentationSelect? _PartOfProductDefinitionShape
@@ -56152,6 +62185,10 @@ namespace IFC.IFC4x3
 				if(value is IfcProductRepresentationSelect val)
 				{
 					PartOfProductDefinitionShape = val;
+				}
+				else if(value == null)
+				{
+					PartOfProductDefinitionShape = null;
 				}
 			}
 		}
@@ -56169,9 +62206,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -56191,7 +62225,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcShapeModel : IfcRepresentation, Global.IfcShapeModel
 	{
-		public List<IfcShapeAspect>? OfShapeAspect {get{return Model?.GetItems<IfcShapeAspect>().Where(x => x.ShapeRepresentations != null && x.ShapeRepresentations.Contains(this)).ToList();}set{}}
+		public List<IfcShapeAspect>? OfShapeAspect {get{return Model?.GetItems<IfcShapeAspect>().Where(x => x.ShapeRepresentations != null && x.ShapeRepresentations.Contains(this)).ToList();}}
 		public IfcShapeModel() : base()
 		{
 		}
@@ -56222,9 +62256,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -56277,7 +62308,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual List<IfcShell>? SbsmBoundary { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcShellBasedSurfaceModel() : base()
 		{
 		}
@@ -56309,6 +62340,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					SbsmBoundary = null;
+				}
+				else
+				{
+					SbsmBoundary = new List<IfcShell>();
+					foreach(var val in value)
+					{
+						if(val is IfcShell v)
+						{
+							SbsmBoundary.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -56316,9 +62362,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -56371,6 +62414,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -56420,6 +62467,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSignTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -56473,6 +62524,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -56522,6 +62577,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSignalTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -56622,6 +62681,10 @@ namespace IFC.IFC4x3
 				{
 					TemplateType = val;
 				}
+				else if(value == null)
+				{
+					TemplateType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _PrimaryMeasureType
@@ -56635,6 +62698,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					PrimaryMeasureType = val;
+				}
+				else if(value == null)
+				{
+					PrimaryMeasureType = null;
 				}
 			}
 		}
@@ -56650,6 +62717,10 @@ namespace IFC.IFC4x3
 				{
 					SecondaryMeasureType = val;
 				}
+				else if(value == null)
+				{
+					SecondaryMeasureType = null;
+				}
 			}
 		}
 		public virtual Global.IfcPropertyEnumeration? _Enumerators
@@ -56663,6 +62734,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPropertyEnumeration val)
 				{
 					Enumerators = val;
+				}
+				else if(value == null)
+				{
+					Enumerators = null;
 				}
 			}
 		}
@@ -56678,6 +62753,10 @@ namespace IFC.IFC4x3
 				{
 					PrimaryUnit = val;
 				}
+				else if(value == null)
+				{
+					PrimaryUnit = null;
+				}
 			}
 		}
 		public virtual Global.IfcUnit? _SecondaryUnit
@@ -56691,6 +62770,10 @@ namespace IFC.IFC4x3
 				if(value is IfcUnit val)
 				{
 					SecondaryUnit = val;
+				}
+				else if(value == null)
+				{
+					SecondaryUnit = null;
 				}
 			}
 		}
@@ -56706,6 +62789,10 @@ namespace IFC.IFC4x3
 				{
 					Expression = val;
 				}
+				else if(value == null)
+				{
+					Expression = null;
+				}
 			}
 		}
 		public virtual Global.IfcStateEnum? _AccessState
@@ -56719,6 +62806,10 @@ namespace IFC.IFC4x3
 				if(value is IfcStateEnum val)
 				{
 					AccessState = val;
+				}
+				else if(value == null)
+				{
+					AccessState = null;
 				}
 			}
 		}
@@ -56767,6 +62858,10 @@ namespace IFC.IFC4x3
 				{
 					SineTerm = val;
 				}
+				else if(value == null)
+				{
+					SineTerm = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _LinearTerm
@@ -56781,6 +62876,10 @@ namespace IFC.IFC4x3
 				{
 					LinearTerm = val;
 				}
+				else if(value == null)
+				{
+					LinearTerm = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _ConstantTerm
@@ -56794,6 +62893,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					ConstantTerm = val;
+				}
+				else if(value == null)
+				{
+					ConstantTerm = null;
 				}
 			}
 		}
@@ -56858,6 +62961,10 @@ namespace IFC.IFC4x3
 				{
 					RefLatitude = val;
 				}
+				else if(value == null)
+				{
+					RefLatitude = null;
+				}
 			}
 		}
 		public virtual Global.IfcCompoundPlaneAngleMeasure? _RefLongitude
@@ -56871,6 +62978,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCompoundPlaneAngleMeasure val)
 				{
 					RefLongitude = val;
+				}
+				else if(value == null)
+				{
+					RefLongitude = null;
 				}
 			}
 		}
@@ -56886,6 +62997,10 @@ namespace IFC.IFC4x3
 				{
 					RefElevation = val;
 				}
+				else if(value == null)
+				{
+					RefElevation = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _LandTitleNumber
@@ -56900,6 +63015,10 @@ namespace IFC.IFC4x3
 				{
 					LandTitleNumber = val;
 				}
+				else if(value == null)
+				{
+					LandTitleNumber = null;
+				}
 			}
 		}
 		public virtual Global.IfcPostalAddress? _SiteAddress
@@ -56913,6 +63032,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPostalAddress val)
 				{
 					SiteAddress = val;
+				}
+				else if(value == null)
+				{
+					SiteAddress = null;
 				}
 			}
 		}
@@ -56966,6 +63089,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -57016,6 +63143,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -57063,6 +63194,10 @@ namespace IFC.IFC4x3
 				{
 					SlippageX = val;
 				}
+				else if(value == null)
+				{
+					SlippageX = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _SlippageY
@@ -57077,6 +63212,10 @@ namespace IFC.IFC4x3
 				{
 					SlippageY = val;
 				}
+				else if(value == null)
+				{
+					SlippageY = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _SlippageZ
@@ -57090,6 +63229,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					SlippageZ = val;
+				}
+				else if(value == null)
+				{
+					SlippageZ = null;
 				}
 			}
 		}
@@ -57143,6 +63286,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -57193,6 +63340,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -57212,7 +63363,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcSolidModel : IfcGeometricRepresentationItem, IfcBooleanOperand, IfcSolidOrShell, Global.IfcSolidModel
 	{
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcSolidModel() : base()
 		{
 		}
@@ -57227,9 +63378,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -57253,8 +63401,8 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcSpaceTypeEnum? PredefinedType { get; set; }
 		public virtual IfcLengthMeasure? ElevationWithFlooring { get; set; }
-		public List<IfcRelCoversSpaces>? HasCoverings {get{return Model?.GetItems<IfcRelCoversSpaces>().Where(x => x.RelatingSpace != null && x.RelatingSpace == this).ToList();} set{}}
-		public List<IfcRelSpaceBoundary>? BoundedBy {get{return Model?.GetItems<IfcRelSpaceBoundary>().Where(x => x.RelatingSpace != null && x.RelatingSpace == this).ToList();} set{}}
+		public List<IfcRelCoversSpaces>? HasCoverings {get{return Model?.GetItems<IfcRelCoversSpaces>().Where(x => x.RelatingSpace != null && x.RelatingSpace == this).ToList();}}
+		public List<IfcRelSpaceBoundary>? BoundedBy {get{return Model?.GetItems<IfcRelSpaceBoundary>().Where(x => x.RelatingSpace != null && x.RelatingSpace == this).ToList();}}
 		public IfcSpace() : base()
 		{
 		}
@@ -57292,6 +63440,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _ElevationWithFlooring
@@ -57305,6 +63457,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					ElevationWithFlooring = val;
+				}
+				else if(value == null)
+				{
+					ElevationWithFlooring = null;
 				}
 			}
 		}
@@ -57323,9 +63479,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelSpaceBoundary>? _BoundedBy
 		{
@@ -57341,9 +63494,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -57396,6 +63546,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -57445,6 +63599,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSpaceHeaterTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -57500,6 +63658,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _LongName
@@ -57513,6 +63675,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					LongName = val;
+				}
+				else if(value == null)
+				{
+					LongName = null;
 				}
 			}
 		}
@@ -57536,11 +63702,11 @@ namespace IFC.IFC4x3
 	public abstract class IfcSpatialElement : IfcProduct, IfcInterferenceSelect, Global.IfcSpatialElement
 	{
 		public virtual IfcLabel? LongName { get; set; }
-		public List<IfcRelContainedInSpatialStructure>? ContainsElements {get{return Model?.GetItems<IfcRelContainedInSpatialStructure>().Where(x => x.RelatingStructure != null && x.RelatingStructure == this).ToList();} set{}}
-		public List<IfcRelServicesBuildings>? ServicedBySystems {get{return Model?.GetItems<IfcRelServicesBuildings>().Where(x => x.RelatedBuildings != null && x.RelatedBuildings.Contains(this)).ToList();}set{}}
-		public List<IfcRelReferencedInSpatialStructure>? ReferencesElements {get{return Model?.GetItems<IfcRelReferencedInSpatialStructure>().Where(x => x.RelatingStructure != null && x.RelatingStructure == this).ToList();} set{}}
-		public List<IfcRelInterferesElements>? IsInterferedByElements {get{return Model?.GetItems<IfcRelInterferesElements>().Where(x => x.RelatedElement != null && x.RelatedElement == this).ToList();} set{}}
-		public List<IfcRelInterferesElements>? InterferesElements {get{return Model?.GetItems<IfcRelInterferesElements>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();} set{}}
+		public List<IfcRelContainedInSpatialStructure>? ContainsElements {get{return Model?.GetItems<IfcRelContainedInSpatialStructure>().Where(x => x.RelatingStructure != null && x.RelatingStructure == this).ToList();}}
+		public List<IfcRelServicesBuildings>? ServicedBySystems {get{return Model?.GetItems<IfcRelServicesBuildings>().Where(x => x.RelatedBuildings != null && x.RelatedBuildings.Contains(this)).ToList();}}
+		public List<IfcRelReferencedInSpatialStructure>? ReferencesElements {get{return Model?.GetItems<IfcRelReferencedInSpatialStructure>().Where(x => x.RelatingStructure != null && x.RelatingStructure == this).ToList();}}
+		public List<IfcRelInterferesElements>? IsInterferedByElements {get{return Model?.GetItems<IfcRelInterferesElements>().Where(x => x.RelatedElement != null && x.RelatedElement == this).ToList();}}
+		public List<IfcRelInterferesElements>? InterferesElements {get{return Model?.GetItems<IfcRelInterferesElements>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();}}
 		public IfcSpatialElement() : base()
 		{
 		}
@@ -57574,6 +63740,10 @@ namespace IFC.IFC4x3
 				{
 					LongName = val;
 				}
+				else if(value == null)
+				{
+					LongName = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcRelContainedInSpatialStructure>? _ContainsElements
@@ -57591,9 +63761,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelServicesBuildings>? _ServicedBySystems
 		{
@@ -57609,9 +63776,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcRelReferencedInSpatialStructure>? _ReferencesElements
@@ -57629,9 +63793,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelInterferesElements>? _IsInterferedByElements
 		{
@@ -57648,9 +63809,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelInterferesElements>? _InterferesElements
 		{
@@ -57666,9 +63824,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -57717,6 +63872,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					ElementType = val;
+				}
+				else if(value == null)
+				{
+					ElementType = null;
 				}
 			}
 		}
@@ -57777,6 +63936,10 @@ namespace IFC.IFC4x3
 				if(value is IfcElementCompositionEnum val)
 				{
 					CompositionType = val;
+				}
+				else if(value == null)
+				{
+					CompositionType = null;
 				}
 			}
 		}
@@ -57861,6 +64024,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -57915,6 +64082,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _LongName
@@ -57928,6 +64099,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					LongName = val;
+				}
+				else if(value == null)
+				{
+					LongName = null;
 				}
 			}
 		}
@@ -57968,6 +64143,10 @@ namespace IFC.IFC4x3
 				{
 					Radius = val;
 				}
+				else if(value == null)
+				{
+					Radius = null;
+				}
 			}
 		}
 	}
@@ -58006,6 +64185,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Radius = val;
+				}
+				else if(value == null)
+				{
+					Radius = null;
 				}
 			}
 		}
@@ -58051,6 +64234,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAxis2Placement val)
 				{
 					Position = val;
+				}
+				else if(value == null)
+				{
+					Position = null;
 				}
 			}
 		}
@@ -58104,6 +64291,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -58153,6 +64344,10 @@ namespace IFC.IFC4x3
 				if(value is IfcStackTerminalTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -58205,6 +64400,10 @@ namespace IFC.IFC4x3
 				if(value is IfcStairTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -58274,6 +64473,10 @@ namespace IFC.IFC4x3
 				{
 					NumberOfRisers = val;
 				}
+				else if(value == null)
+				{
+					NumberOfRisers = null;
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _NumberOfTreads
@@ -58287,6 +64490,10 @@ namespace IFC.IFC4x3
 				if(value is IfcInteger val)
 				{
 					NumberOfTreads = val;
+				}
+				else if(value == null)
+				{
+					NumberOfTreads = null;
 				}
 			}
 		}
@@ -58302,6 +64509,10 @@ namespace IFC.IFC4x3
 				{
 					RiserHeight = val;
 				}
+				else if(value == null)
+				{
+					RiserHeight = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _TreadLength
@@ -58316,6 +64527,10 @@ namespace IFC.IFC4x3
 				{
 					TreadLength = val;
 				}
+				else if(value == null)
+				{
+					TreadLength = null;
+				}
 			}
 		}
 		public virtual Global.IfcStairFlightTypeEnum? _PredefinedType
@@ -58329,6 +64544,10 @@ namespace IFC.IFC4x3
 				if(value is IfcStairFlightTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -58380,6 +64599,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -58429,6 +64652,10 @@ namespace IFC.IFC4x3
 				if(value is IfcStairTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -58481,6 +64708,10 @@ namespace IFC.IFC4x3
 				{
 					DestabilizingLoad = val;
 				}
+				else if(value == null)
+				{
+					DestabilizingLoad = null;
+				}
 			}
 		}
 	}
@@ -58500,7 +64731,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcStructuralLoad? AppliedLoad { get; set; }
 		public virtual IfcGlobalOrLocalEnum? GlobalOrLocal { get; set; }
-		public List<IfcRelConnectsStructuralActivity>? AssignedToStructuralItem {get{return Model?.GetItems<IfcRelConnectsStructuralActivity>().Where(x => x.RelatedStructuralActivity != null && x.RelatedStructuralActivity == this).ToList();} set{}}
+		public List<IfcRelConnectsStructuralActivity>? AssignedToStructuralItem {get{return Model?.GetItems<IfcRelConnectsStructuralActivity>().Where(x => x.RelatedStructuralActivity != null && x.RelatedStructuralActivity == this).ToList();}}
 		public IfcStructuralActivity() : base()
 		{
 		}
@@ -58536,6 +64767,10 @@ namespace IFC.IFC4x3
 				{
 					AppliedLoad = val;
 				}
+				else if(value == null)
+				{
+					AppliedLoad = null;
+				}
 			}
 		}
 		public virtual Global.IfcGlobalOrLocalEnum? _GlobalOrLocal
@@ -58549,6 +64784,10 @@ namespace IFC.IFC4x3
 				if(value is IfcGlobalOrLocalEnum val)
 				{
 					GlobalOrLocal = val;
+				}
+				else if(value == null)
+				{
+					GlobalOrLocal = null;
 				}
 			}
 		}
@@ -58566,9 +64805,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -58631,6 +64867,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcAxis2Placement3D? _OrientationOf2DPlane
@@ -58644,6 +64884,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAxis2Placement3D val)
 				{
 					OrientationOf2DPlane = val;
+				}
+				else if(value == null)
+				{
+					OrientationOf2DPlane = null;
 				}
 			}
 		}
@@ -58664,6 +64908,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					LoadedBy = null;
+				}
+				else
+				{
+					LoadedBy = new List<IfcStructuralLoadGroup>();
+					foreach(var val in value)
+					{
+						if(val is IfcStructuralLoadGroup v)
+						{
+							LoadedBy.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcStructuralResultGroup>? _HasResults
@@ -58683,6 +64942,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					HasResults = null;
+				}
+				else
+				{
+					HasResults = new List<IfcStructuralResultGroup>();
+					foreach(var val in value)
+					{
+						if(val is IfcStructuralResultGroup v)
+						{
+							HasResults.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcObjectPlacement? _SharedPlacement
@@ -58696,6 +64970,10 @@ namespace IFC.IFC4x3
 				if(value is IfcObjectPlacement val)
 				{
 					SharedPlacement = val;
+				}
+				else if(value == null)
+				{
+					SharedPlacement = null;
 				}
 			}
 		}
@@ -58715,7 +64993,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcStructuralConnection : IfcStructuralItem, Global.IfcStructuralConnection
 	{
 		public virtual IfcBoundaryCondition? AppliedCondition { get; set; }
-		public List<IfcRelConnectsStructuralMember>? ConnectsStructuralMembers {get{return Model?.GetItems<IfcRelConnectsStructuralMember>().Where(x => x.RelatedStructuralConnection != null && x.RelatedStructuralConnection == this).ToList();} set{}}
+		public List<IfcRelConnectsStructuralMember>? ConnectsStructuralMembers {get{return Model?.GetItems<IfcRelConnectsStructuralMember>().Where(x => x.RelatedStructuralConnection != null && x.RelatedStructuralConnection == this).ToList();}}
 		public IfcStructuralConnection() : base()
 		{
 		}
@@ -58749,6 +65027,10 @@ namespace IFC.IFC4x3
 				{
 					AppliedCondition = val;
 				}
+				else if(value == null)
+				{
+					AppliedCondition = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcRelConnectsStructuralMember>? _ConnectsStructuralMembers
@@ -58765,9 +65047,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -58807,6 +65086,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -58868,6 +65151,10 @@ namespace IFC.IFC4x3
 				{
 					ProjectedOrTrue = val;
 				}
+				else if(value == null)
+				{
+					ProjectedOrTrue = null;
+				}
 			}
 		}
 		public virtual Global.IfcStructuralCurveActivityTypeEnum? _PredefinedType
@@ -58881,6 +65168,10 @@ namespace IFC.IFC4x3
 				if(value is IfcStructuralCurveActivityTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -58927,6 +65218,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDirection val)
 				{
 					AxisDirection = val;
+				}
+				else if(value == null)
+				{
+					AxisDirection = null;
 				}
 			}
 		}
@@ -58981,6 +65276,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcDirection? _Axis
@@ -58994,6 +65293,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDirection val)
 				{
 					Axis = val;
+				}
+				else if(value == null)
+				{
+					Axis = null;
 				}
 			}
 		}
@@ -59074,6 +65377,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -59089,7 +65396,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcStructuralItem : IfcProduct, IfcStructuralActivityAssignmentSelect, Global.IfcStructuralItem
 	{
-		public List<IfcRelConnectsStructuralActivity>? AssignedStructuralActivity {get{return Model?.GetItems<IfcRelConnectsStructuralActivity>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();} set{}}
+		public List<IfcRelConnectsStructuralActivity>? AssignedStructuralActivity {get{return Model?.GetItems<IfcRelConnectsStructuralActivity>().Where(x => x.RelatingElement != null && x.RelatingElement == this).ToList();}}
 		public IfcStructuralItem() : base()
 		{
 		}
@@ -59123,9 +65430,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -59201,6 +65505,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 	}
@@ -59256,6 +65564,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					SelfWeightCoefficients = null;
+				}
+				else
+				{
+					SelfWeightCoefficients = new List<IfcRatioMeasure>();
+					foreach(var val in value)
+					{
+						if(val is IfcRatioMeasure v)
+						{
+							SelfWeightCoefficients.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -59306,6 +65629,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Values = null;
+				}
+				else
+				{
+					Values = new List<IfcStructuralLoadOrResult>();
+					foreach(var val in value)
+					{
+						if(val is IfcStructuralLoadOrResult v)
+						{
+							Values.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<List<Global.IfcLengthMeasure>>? _Locations
@@ -59330,6 +65668,29 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Locations = null;
+				}
+				else
+				{
+					Locations = new List<List<IfcLengthMeasure>>();
+					foreach(var vals in value)
+					{
+						if(vals != null)
+						{
+							List<IfcLengthMeasure> items = new List<IfcLengthMeasure>();
+							foreach(var val in vals)
+							{
+								if(val is IfcLengthMeasure v)
+								{
+									items.Add(v);
+								}
+							}
+							Locations.Add(items);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -59361,8 +65722,8 @@ namespace IFC.IFC4x3
 		public virtual IfcActionSourceTypeEnum? ActionSource { get; set; }
 		public virtual IfcRatioMeasure? Coefficient { get; set; }
 		public virtual IfcLabel? Purpose { get; set; }
-		public List<IfcStructuralResultGroup>? SourceOfResultGroup {get{return Model?.GetItems<IfcStructuralResultGroup>().Where(x => x.ResultForLoadGroup != null && x.ResultForLoadGroup == this).ToList();} set{}}
-		public List<IfcStructuralAnalysisModel>? LoadGroupFor {get{return Model?.GetItems<IfcStructuralAnalysisModel>().Where(x => x.LoadedBy != null && x.LoadedBy.Contains(this)).ToList();}set{}}
+		public List<IfcStructuralResultGroup>? SourceOfResultGroup {get{return Model?.GetItems<IfcStructuralResultGroup>().Where(x => x.ResultForLoadGroup != null && x.ResultForLoadGroup == this).ToList();}}
+		public List<IfcStructuralAnalysisModel>? LoadGroupFor {get{return Model?.GetItems<IfcStructuralAnalysisModel>().Where(x => x.LoadedBy != null && x.LoadedBy.Contains(this)).ToList();}}
 		public IfcStructuralLoadGroup() : base()
 		{
 		}
@@ -59402,6 +65763,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcActionTypeEnum? _ActionType
@@ -59415,6 +65780,10 @@ namespace IFC.IFC4x3
 				if(value is IfcActionTypeEnum val)
 				{
 					ActionType = val;
+				}
+				else if(value == null)
+				{
+					ActionType = null;
 				}
 			}
 		}
@@ -59430,6 +65799,10 @@ namespace IFC.IFC4x3
 				{
 					ActionSource = val;
 				}
+				else if(value == null)
+				{
+					ActionSource = null;
+				}
 			}
 		}
 		public virtual Global.IfcRatioMeasure? _Coefficient
@@ -59444,6 +65817,10 @@ namespace IFC.IFC4x3
 				{
 					Coefficient = val;
 				}
+				else if(value == null)
+				{
+					Coefficient = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Purpose
@@ -59457,6 +65834,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Purpose = val;
+				}
+				else if(value == null)
+				{
+					Purpose = null;
 				}
 			}
 		}
@@ -59475,9 +65856,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcStructuralAnalysisModel>? _LoadGroupFor
 		{
@@ -59493,9 +65871,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -59555,6 +65930,10 @@ namespace IFC.IFC4x3
 				{
 					LinearForceX = val;
 				}
+				else if(value == null)
+				{
+					LinearForceX = null;
+				}
 			}
 		}
 		public virtual Global.IfcLinearForceMeasure? _LinearForceY
@@ -59568,6 +65947,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLinearForceMeasure val)
 				{
 					LinearForceY = val;
+				}
+				else if(value == null)
+				{
+					LinearForceY = null;
 				}
 			}
 		}
@@ -59583,6 +65966,10 @@ namespace IFC.IFC4x3
 				{
 					LinearForceZ = val;
 				}
+				else if(value == null)
+				{
+					LinearForceZ = null;
+				}
 			}
 		}
 		public virtual Global.IfcLinearMomentMeasure? _LinearMomentX
@@ -59596,6 +65983,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLinearMomentMeasure val)
 				{
 					LinearMomentX = val;
+				}
+				else if(value == null)
+				{
+					LinearMomentX = null;
 				}
 			}
 		}
@@ -59611,6 +66002,10 @@ namespace IFC.IFC4x3
 				{
 					LinearMomentY = val;
 				}
+				else if(value == null)
+				{
+					LinearMomentY = null;
+				}
 			}
 		}
 		public virtual Global.IfcLinearMomentMeasure? _LinearMomentZ
@@ -59624,6 +66019,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLinearMomentMeasure val)
 				{
 					LinearMomentZ = val;
+				}
+				else if(value == null)
+				{
+					LinearMomentZ = null;
 				}
 			}
 		}
@@ -59696,6 +66095,10 @@ namespace IFC.IFC4x3
 				{
 					PlanarForceX = val;
 				}
+				else if(value == null)
+				{
+					PlanarForceX = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlanarForceMeasure? _PlanarForceY
@@ -59710,6 +66113,10 @@ namespace IFC.IFC4x3
 				{
 					PlanarForceY = val;
 				}
+				else if(value == null)
+				{
+					PlanarForceY = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlanarForceMeasure? _PlanarForceZ
@@ -59723,6 +66130,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlanarForceMeasure val)
 				{
 					PlanarForceZ = val;
+				}
+				else if(value == null)
+				{
+					PlanarForceZ = null;
 				}
 			}
 		}
@@ -59785,6 +66196,10 @@ namespace IFC.IFC4x3
 				{
 					DisplacementX = val;
 				}
+				else if(value == null)
+				{
+					DisplacementX = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _DisplacementY
@@ -59798,6 +66213,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					DisplacementY = val;
+				}
+				else if(value == null)
+				{
+					DisplacementY = null;
 				}
 			}
 		}
@@ -59813,6 +66232,10 @@ namespace IFC.IFC4x3
 				{
 					DisplacementZ = val;
 				}
+				else if(value == null)
+				{
+					DisplacementZ = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlaneAngleMeasure? _RotationalDisplacementRX
@@ -59826,6 +66249,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlaneAngleMeasure val)
 				{
 					RotationalDisplacementRX = val;
+				}
+				else if(value == null)
+				{
+					RotationalDisplacementRX = null;
 				}
 			}
 		}
@@ -59841,6 +66268,10 @@ namespace IFC.IFC4x3
 				{
 					RotationalDisplacementRY = val;
 				}
+				else if(value == null)
+				{
+					RotationalDisplacementRY = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlaneAngleMeasure? _RotationalDisplacementRZ
@@ -59854,6 +66285,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlaneAngleMeasure val)
 				{
 					RotationalDisplacementRZ = val;
+				}
+				else if(value == null)
+				{
+					RotationalDisplacementRZ = null;
 				}
 			}
 		}
@@ -59899,6 +66334,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCurvatureMeasure val)
 				{
 					Distortion = val;
+				}
+				else if(value == null)
+				{
+					Distortion = null;
 				}
 			}
 		}
@@ -59961,6 +66400,10 @@ namespace IFC.IFC4x3
 				{
 					ForceX = val;
 				}
+				else if(value == null)
+				{
+					ForceX = null;
+				}
 			}
 		}
 		public virtual Global.IfcForceMeasure? _ForceY
@@ -59974,6 +66417,10 @@ namespace IFC.IFC4x3
 				if(value is IfcForceMeasure val)
 				{
 					ForceY = val;
+				}
+				else if(value == null)
+				{
+					ForceY = null;
 				}
 			}
 		}
@@ -59989,6 +66436,10 @@ namespace IFC.IFC4x3
 				{
 					ForceZ = val;
 				}
+				else if(value == null)
+				{
+					ForceZ = null;
+				}
 			}
 		}
 		public virtual Global.IfcTorqueMeasure? _MomentX
@@ -60002,6 +66453,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTorqueMeasure val)
 				{
 					MomentX = val;
+				}
+				else if(value == null)
+				{
+					MomentX = null;
 				}
 			}
 		}
@@ -60017,6 +66472,10 @@ namespace IFC.IFC4x3
 				{
 					MomentY = val;
 				}
+				else if(value == null)
+				{
+					MomentY = null;
+				}
 			}
 		}
 		public virtual Global.IfcTorqueMeasure? _MomentZ
@@ -60030,6 +66489,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTorqueMeasure val)
 				{
 					MomentZ = val;
+				}
+				else if(value == null)
+				{
+					MomentZ = null;
 				}
 			}
 		}
@@ -60075,6 +66538,10 @@ namespace IFC.IFC4x3
 				if(value is IfcWarpingMomentMeasure val)
 				{
 					WarpingMoment = val;
+				}
+				else if(value == null)
+				{
+					WarpingMoment = null;
 				}
 			}
 		}
@@ -60150,6 +66617,10 @@ namespace IFC.IFC4x3
 				{
 					DeltaTConstant = val;
 				}
+				else if(value == null)
+				{
+					DeltaTConstant = null;
+				}
 			}
 		}
 		public virtual Global.IfcThermodynamicTemperatureMeasure? _DeltaTY
@@ -60164,6 +66635,10 @@ namespace IFC.IFC4x3
 				{
 					DeltaTY = val;
 				}
+				else if(value == null)
+				{
+					DeltaTY = null;
+				}
 			}
 		}
 		public virtual Global.IfcThermodynamicTemperatureMeasure? _DeltaTZ
@@ -60177,6 +66652,10 @@ namespace IFC.IFC4x3
 				if(value is IfcThermodynamicTemperatureMeasure val)
 				{
 					DeltaTZ = val;
+				}
+				else if(value == null)
+				{
+					DeltaTZ = null;
 				}
 			}
 		}
@@ -60193,7 +66672,7 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IfcStructuralMember : IfcStructuralItem, Global.IfcStructuralMember
 	{
-		public List<IfcRelConnectsStructuralMember>? ConnectedBy {get{return Model?.GetItems<IfcRelConnectsStructuralMember>().Where(x => x.RelatingStructuralMember != null && x.RelatingStructuralMember == this).ToList();} set{}}
+		public List<IfcRelConnectsStructuralMember>? ConnectedBy {get{return Model?.GetItems<IfcRelConnectsStructuralMember>().Where(x => x.RelatingStructuralMember != null && x.RelatingStructuralMember == this).ToList();}}
 		public IfcStructuralMember() : base()
 		{
 		}
@@ -60227,9 +66706,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -60343,6 +66819,10 @@ namespace IFC.IFC4x3
 				{
 					ConditionCoordinateSystem = val;
 				}
+				else if(value == null)
+				{
+					ConditionCoordinateSystem = null;
+				}
 			}
 		}
 	}
@@ -60427,7 +66907,7 @@ namespace IFC.IFC4x3
 		public virtual IfcAnalysisTheoryTypeEnum? TheoryType { get; set; }
 		public virtual IfcStructuralLoadGroup? ResultForLoadGroup { get; set; }
 		public virtual IfcBoolean? IsLinear { get; set; }
-		public List<IfcStructuralAnalysisModel>? ResultGroupFor {get{return Model?.GetItems<IfcStructuralAnalysisModel>().Where(x => x.HasResults != null && x.HasResults.Contains(this)).ToList();}set{}}
+		public List<IfcStructuralAnalysisModel>? ResultGroupFor {get{return Model?.GetItems<IfcStructuralAnalysisModel>().Where(x => x.HasResults != null && x.HasResults.Contains(this)).ToList();}}
 		public IfcStructuralResultGroup() : base()
 		{
 		}
@@ -60463,6 +66943,10 @@ namespace IFC.IFC4x3
 				{
 					TheoryType = val;
 				}
+				else if(value == null)
+				{
+					TheoryType = null;
+				}
 			}
 		}
 		public virtual Global.IfcStructuralLoadGroup? _ResultForLoadGroup
@@ -60477,6 +66961,10 @@ namespace IFC.IFC4x3
 				{
 					ResultForLoadGroup = val;
 				}
+				else if(value == null)
+				{
+					ResultForLoadGroup = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _IsLinear
@@ -60490,6 +66978,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					IsLinear = val;
+				}
+				else if(value == null)
+				{
+					IsLinear = null;
 				}
 			}
 		}
@@ -60507,9 +66999,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -60569,6 +67058,10 @@ namespace IFC.IFC4x3
 				{
 					ProjectedOrTrue = val;
 				}
+				else if(value == null)
+				{
+					ProjectedOrTrue = null;
+				}
 			}
 		}
 		public virtual Global.IfcStructuralSurfaceActivityTypeEnum? _PredefinedType
@@ -60582,6 +67075,10 @@ namespace IFC.IFC4x3
 				if(value is IfcStructuralSurfaceActivityTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -60664,6 +67161,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _Thickness
@@ -60677,6 +67178,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Thickness = val;
+				}
+				else if(value == null)
+				{
+					Thickness = null;
 				}
 			}
 		}
@@ -60756,6 +67261,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -60830,6 +67339,10 @@ namespace IFC.IFC4x3
 				{
 					Item = val;
 				}
+				else if(value == null)
+				{
+					Item = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcPresentationStyle>? _Styles
@@ -60849,6 +67362,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Styles = null;
+				}
+				else
+				{
+					Styles = new List<IfcPresentationStyle>();
+					foreach(var val in value)
+					{
+						if(val is IfcPresentationStyle v)
+						{
+							Styles.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Name
@@ -60862,6 +67390,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -60943,6 +67475,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -60995,6 +67531,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -61035,6 +67575,10 @@ namespace IFC.IFC4x3
 				{
 					ParentEdge = val;
 				}
+				else if(value == null)
+				{
+					ParentEdge = null;
+				}
 			}
 		}
 	}
@@ -61053,7 +67597,7 @@ namespace IFC.IFC4x3
 	public abstract class IfcSurface : IfcGeometricRepresentationItem, IfcGeometricSetSelect, IfcSurfaceOrFaceSurface, Global.IfcSurface
 	{
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcSurface() : base()
 		{
 		}
@@ -61068,9 +67612,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -61096,7 +67637,7 @@ namespace IFC.IFC4x3
 		public virtual List<IfcPcurve>? AssociatedGeometry { get; set; }
 		public virtual IfcPreferredSurfaceCurveRepresentation? MasterRepresentation { get; set; }
 		//DERIVE
-		public virtual List<IfcSurface>? BasisSurface {get {return null;} set{}}
+		public virtual List<IfcSurface>? BasisSurface {get {return null;}}
 		public IfcSurfaceCurve() : base()
 		{
 		}
@@ -61127,6 +67668,10 @@ namespace IFC.IFC4x3
 				{
 					Curve3D = val;
 				}
+				else if(value == null)
+				{
+					Curve3D = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcPcurve>? _AssociatedGeometry
@@ -61146,6 +67691,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					AssociatedGeometry = null;
+				}
+				else
+				{
+					AssociatedGeometry = new List<IfcPcurve>();
+					foreach(var val in value)
+					{
+						if(val is IfcPcurve v)
+						{
+							AssociatedGeometry.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcPreferredSurfaceCurveRepresentation? _MasterRepresentation
@@ -61159,6 +67719,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPreferredSurfaceCurveRepresentation val)
 				{
 					MasterRepresentation = val;
+				}
+				else if(value == null)
+				{
+					MasterRepresentation = null;
 				}
 			}
 		}
@@ -61176,9 +67740,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -61222,6 +67783,10 @@ namespace IFC.IFC4x3
 				{
 					ReferenceSurface = val;
 				}
+				else if(value == null)
+				{
+					ReferenceSurface = null;
+				}
 			}
 		}
 	}
@@ -61240,7 +67805,7 @@ namespace IFC.IFC4x3
 	public class IfcSurfaceFeature : IfcFeatureElement, Global.IfcSurfaceFeature
 	{
 		public virtual IfcSurfaceFeatureTypeEnum? PredefinedType { get; set; }
-		public IfcRelAdheresToElement? AdheresToElement {get{return Model?.GetItems<IfcRelAdheresToElement>().FirstOrDefault(x => x.RelatedSurfaceFeatures != null && x.RelatedSurfaceFeatures.Contains(this));} set{}}
+		public IfcRelAdheresToElement? AdheresToElement {get{return Model?.GetItems<IfcRelAdheresToElement>().FirstOrDefault(x => x.RelatedSurfaceFeatures != null && x.RelatedSurfaceFeatures.Contains(this));}}
 		public IfcSurfaceFeature() : base()
 		{
 		}
@@ -61275,6 +67840,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcRelAdheresToElement? _AdheresToElement
@@ -61282,9 +67851,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return AdheresToElement;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -61304,7 +67870,7 @@ namespace IFC.IFC4x3
 		public virtual IfcDirection? ExtrudedDirection { get; set; }
 		public virtual IfcLengthMeasure? Depth { get; set; }
 		//DERIVE
-		public virtual IfcVector? ExtrusionAxis {get {return null;} set{}}
+		public virtual IfcVector? ExtrusionAxis {get {return null;}}
 		public IfcSurfaceOfLinearExtrusion() : base()
 		{
 		}
@@ -61335,6 +67901,10 @@ namespace IFC.IFC4x3
 				{
 					ExtrudedDirection = val;
 				}
+				else if(value == null)
+				{
+					ExtrudedDirection = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _Depth
@@ -61349,6 +67919,10 @@ namespace IFC.IFC4x3
 				{
 					Depth = val;
 				}
+				else if(value == null)
+				{
+					Depth = null;
+				}
 			}
 		}
 		public virtual Global.IfcVector? _ExtrusionAxis
@@ -61356,9 +67930,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return ExtrusionAxis;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -61375,7 +67946,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcAxis1Placement? AxisPosition { get; set; }
 		//DERIVE
-		public virtual IfcLine? AxisLine {get {return null;} set{}}
+		public virtual IfcLine? AxisLine {get {return null;}}
 		public IfcSurfaceOfRevolution() : base()
 		{
 		}
@@ -61404,6 +67975,10 @@ namespace IFC.IFC4x3
 				{
 					AxisPosition = val;
 				}
+				else if(value == null)
+				{
+					AxisPosition = null;
+				}
 			}
 		}
 		public virtual Global.IfcLine? _AxisLine
@@ -61411,9 +67986,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return AxisLine;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -61479,6 +68051,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					SurfaceReinforcement1 = null;
+				}
+				else
+				{
+					SurfaceReinforcement1 = new List<IfcLengthMeasure>();
+					foreach(var val in value)
+					{
+						if(val is IfcLengthMeasure v)
+						{
+							SurfaceReinforcement1.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcLengthMeasure>? _SurfaceReinforcement2
@@ -61498,6 +68085,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					SurfaceReinforcement2 = null;
+				}
+				else
+				{
+					SurfaceReinforcement2 = new List<IfcLengthMeasure>();
+					foreach(var val in value)
+					{
+						if(val is IfcLengthMeasure v)
+						{
+							SurfaceReinforcement2.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcRatioMeasure? _ShearReinforcement
@@ -61511,6 +68113,10 @@ namespace IFC.IFC4x3
 				if(value is IfcRatioMeasure val)
 				{
 					ShearReinforcement = val;
+				}
+				else if(value == null)
+				{
+					ShearReinforcement = null;
 				}
 			}
 		}
@@ -61576,6 +68182,10 @@ namespace IFC.IFC4x3
 				{
 					Side = val;
 				}
+				else if(value == null)
+				{
+					Side = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcSurfaceStyleElementSelect>? _Styles
@@ -61595,6 +68205,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Styles = null;
+				}
+				else
+				{
+					Styles = new List<IfcSurfaceStyleElementSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcSurfaceStyleElementSelect v)
+						{
+							Styles.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -61645,6 +68270,10 @@ namespace IFC.IFC4x3
 				{
 					DiffuseTransmissionColour = val;
 				}
+				else if(value == null)
+				{
+					DiffuseTransmissionColour = null;
+				}
 			}
 		}
 		public virtual Global.IfcColourRgb? _DiffuseReflectionColour
@@ -61658,6 +68287,10 @@ namespace IFC.IFC4x3
 				if(value is IfcColourRgb val)
 				{
 					DiffuseReflectionColour = val;
+				}
+				else if(value == null)
+				{
+					DiffuseReflectionColour = null;
 				}
 			}
 		}
@@ -61673,6 +68306,10 @@ namespace IFC.IFC4x3
 				{
 					TransmissionColour = val;
 				}
+				else if(value == null)
+				{
+					TransmissionColour = null;
+				}
 			}
 		}
 		public virtual Global.IfcColourRgb? _ReflectanceColour
@@ -61686,6 +68323,10 @@ namespace IFC.IFC4x3
 				if(value is IfcColourRgb val)
 				{
 					ReflectanceColour = val;
+				}
+				else if(value == null)
+				{
+					ReflectanceColour = null;
 				}
 			}
 		}
@@ -61729,6 +68370,10 @@ namespace IFC.IFC4x3
 				{
 					RefractionIndex = val;
 				}
+				else if(value == null)
+				{
+					RefractionIndex = null;
+				}
 			}
 		}
 		public virtual Global.IfcReal? _DispersionFactor
@@ -61742,6 +68387,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReal val)
 				{
 					DispersionFactor = val;
+				}
+				else if(value == null)
+				{
+					DispersionFactor = null;
 				}
 			}
 		}
@@ -61807,6 +68456,10 @@ namespace IFC.IFC4x3
 				{
 					DiffuseColour = val;
 				}
+				else if(value == null)
+				{
+					DiffuseColour = null;
+				}
 			}
 		}
 		public virtual Global.IfcColourOrFactor? _TransmissionColour
@@ -61820,6 +68473,10 @@ namespace IFC.IFC4x3
 				if(value is IfcColourOrFactor val)
 				{
 					TransmissionColour = val;
+				}
+				else if(value == null)
+				{
+					TransmissionColour = null;
 				}
 			}
 		}
@@ -61835,6 +68492,10 @@ namespace IFC.IFC4x3
 				{
 					DiffuseTransmissionColour = val;
 				}
+				else if(value == null)
+				{
+					DiffuseTransmissionColour = null;
+				}
 			}
 		}
 		public virtual Global.IfcColourOrFactor? _ReflectionColour
@@ -61848,6 +68509,10 @@ namespace IFC.IFC4x3
 				if(value is IfcColourOrFactor val)
 				{
 					ReflectionColour = val;
+				}
+				else if(value == null)
+				{
+					ReflectionColour = null;
 				}
 			}
 		}
@@ -61863,6 +68528,10 @@ namespace IFC.IFC4x3
 				{
 					SpecularColour = val;
 				}
+				else if(value == null)
+				{
+					SpecularColour = null;
+				}
 			}
 		}
 		public virtual Global.IfcSpecularHighlightSelect? _SpecularHighlight
@@ -61877,6 +68546,10 @@ namespace IFC.IFC4x3
 				{
 					SpecularHighlight = val;
 				}
+				else if(value == null)
+				{
+					SpecularHighlight = null;
+				}
 			}
 		}
 		public virtual Global.IfcReflectanceMethodEnum? _ReflectanceMethod
@@ -61890,6 +68563,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReflectanceMethodEnum val)
 				{
 					ReflectanceMethod = val;
+				}
+				else if(value == null)
+				{
+					ReflectanceMethod = null;
 				}
 			}
 		}
@@ -61935,6 +68612,10 @@ namespace IFC.IFC4x3
 				{
 					SurfaceColour = val;
 				}
+				else if(value == null)
+				{
+					SurfaceColour = null;
+				}
 			}
 		}
 		public virtual Global.IfcNormalisedRatioMeasure? _Transparency
@@ -61948,6 +68629,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNormalisedRatioMeasure val)
 				{
 					Transparency = val;
+				}
+				else if(value == null)
+				{
+					Transparency = null;
 				}
 			}
 		}
@@ -61992,6 +68677,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Textures = null;
+				}
+				else
+				{
+					Textures = new List<IfcSurfaceTexture>();
+					foreach(var val in value)
+					{
+						if(val is IfcSurfaceTexture v)
+						{
+							Textures.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -62019,8 +68719,8 @@ namespace IFC.IFC4x3
 		public virtual IfcIdentifier? Mode { get; set; }
 		public virtual IfcCartesianTransformationOperator2D? TextureTransform { get; set; }
 		public virtual List<IfcIdentifier>? Parameter { get; set; }
-		public List<IfcTextureCoordinate>? IsMappedBy {get{return Model?.GetItems<IfcTextureCoordinate>().Where(x => x.Maps != null && x.Maps.Contains(this)).ToList();}set{}}
-		public List<IfcSurfaceStyleWithTextures>? UsedInStyles {get{return Model?.GetItems<IfcSurfaceStyleWithTextures>().Where(x => x.Textures != null && x.Textures.Contains(this)).ToList();}set{}}
+		public List<IfcTextureCoordinate>? IsMappedBy {get{return Model?.GetItems<IfcTextureCoordinate>().Where(x => x.Maps != null && x.Maps.Contains(this)).ToList();}}
+		public List<IfcSurfaceStyleWithTextures>? UsedInStyles {get{return Model?.GetItems<IfcSurfaceStyleWithTextures>().Where(x => x.Textures != null && x.Textures.Contains(this)).ToList();}}
 		public IfcSurfaceTexture() : base()
 		{
 		}
@@ -62055,6 +68755,10 @@ namespace IFC.IFC4x3
 				{
 					RepeatS = val;
 				}
+				else if(value == null)
+				{
+					RepeatS = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _RepeatT
@@ -62068,6 +68772,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					RepeatT = val;
+				}
+				else if(value == null)
+				{
+					RepeatT = null;
 				}
 			}
 		}
@@ -62083,6 +68791,10 @@ namespace IFC.IFC4x3
 				{
 					Mode = val;
 				}
+				else if(value == null)
+				{
+					Mode = null;
+				}
 			}
 		}
 		public virtual Global.IfcCartesianTransformationOperator2D? _TextureTransform
@@ -62096,6 +68808,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCartesianTransformationOperator2D val)
 				{
 					TextureTransform = val;
+				}
+				else if(value == null)
+				{
+					TextureTransform = null;
 				}
 			}
 		}
@@ -62116,6 +68832,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Parameter = null;
+				}
+				else
+				{
+					Parameter = new List<IfcIdentifier>();
+					foreach(var val in value)
+					{
+						if(val is IfcIdentifier v)
+						{
+							Parameter.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcTextureCoordinate>? _IsMappedBy
@@ -62133,9 +68864,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcSurfaceStyleWithTextures>? _UsedInStyles
 		{
@@ -62151,9 +68879,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -62202,6 +68927,10 @@ namespace IFC.IFC4x3
 				{
 					SweptArea = val;
 				}
+				else if(value == null)
+				{
+					SweptArea = null;
+				}
 			}
 		}
 		public virtual Global.IfcAxis2Placement3D? _Position
@@ -62215,6 +68944,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAxis2Placement3D val)
 				{
 					Position = val;
+				}
+				else if(value == null)
+				{
+					Position = null;
 				}
 			}
 		}
@@ -62277,6 +69010,10 @@ namespace IFC.IFC4x3
 				{
 					Directrix = val;
 				}
+				else if(value == null)
+				{
+					Directrix = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _Radius
@@ -62290,6 +69027,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					Radius = val;
+				}
+				else if(value == null)
+				{
+					Radius = null;
 				}
 			}
 		}
@@ -62305,6 +69046,10 @@ namespace IFC.IFC4x3
 				{
 					InnerRadius = val;
 				}
+				else if(value == null)
+				{
+					InnerRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcParameterValue? _StartParam
@@ -62319,6 +69064,10 @@ namespace IFC.IFC4x3
 				{
 					StartParam = val;
 				}
+				else if(value == null)
+				{
+					StartParam = null;
+				}
 			}
 		}
 		public virtual Global.IfcParameterValue? _EndParam
@@ -62332,6 +69081,10 @@ namespace IFC.IFC4x3
 				if(value is IfcParameterValue val)
 				{
 					EndParam = val;
+				}
+				else if(value == null)
+				{
+					EndParam = null;
 				}
 			}
 		}
@@ -62380,6 +69133,10 @@ namespace IFC.IFC4x3
 				{
 					FilletRadius = val;
 				}
+				else if(value == null)
+				{
+					FilletRadius = null;
+				}
 			}
 		}
 	}
@@ -62427,6 +69184,10 @@ namespace IFC.IFC4x3
 				{
 					SweptCurve = val;
 				}
+				else if(value == null)
+				{
+					SweptCurve = null;
+				}
 			}
 		}
 		public virtual Global.IfcAxis2Placement3D? _Position
@@ -62440,6 +69201,10 @@ namespace IFC.IFC4x3
 				if(value is IfcAxis2Placement3D val)
 				{
 					Position = val;
+				}
+				else if(value == null)
+				{
+					Position = null;
 				}
 			}
 		}
@@ -62493,6 +69258,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -62543,6 +69312,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -62562,8 +69335,8 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IfcSystem : IfcGroup, Global.IfcSystem
 	{
-		public List<IfcRelServicesBuildings>? ServicesBuildings {get{return Model?.GetItems<IfcRelServicesBuildings>().Where(x => x.RelatingSystem != null && x.RelatingSystem == this).ToList();} set{}}
-		public List<IfcRelReferencedInSpatialStructure>? ServicesFacilities {get{return Model?.GetItems<IfcRelReferencedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();}set{}}
+		public List<IfcRelServicesBuildings>? ServicesBuildings {get{return Model?.GetItems<IfcRelServicesBuildings>().Where(x => x.RelatingSystem != null && x.RelatingSystem == this).ToList();}}
+		public List<IfcRelReferencedInSpatialStructure>? ServicesFacilities {get{return Model?.GetItems<IfcRelReferencedInSpatialStructure>().Where(x => x.RelatedElements != null && x.RelatedElements.Contains(this)).ToList();}}
 		public IfcSystem() : base()
 		{
 		}
@@ -62596,9 +69369,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcRelReferencedInSpatialStructure>? _ServicesFacilities
 		{
@@ -62614,9 +69384,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -62669,6 +69436,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -62719,6 +69490,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSystemFurnitureElementTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -62796,6 +69571,10 @@ namespace IFC.IFC4x3
 				{
 					Depth = val;
 				}
+				else if(value == null)
+				{
+					Depth = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _FlangeWidth
@@ -62809,6 +69588,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					FlangeWidth = val;
+				}
+				else if(value == null)
+				{
+					FlangeWidth = null;
 				}
 			}
 		}
@@ -62824,6 +69607,10 @@ namespace IFC.IFC4x3
 				{
 					WebThickness = val;
 				}
+				else if(value == null)
+				{
+					WebThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _FlangeThickness
@@ -62837,6 +69624,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					FlangeThickness = val;
+				}
+				else if(value == null)
+				{
+					FlangeThickness = null;
 				}
 			}
 		}
@@ -62852,6 +69643,10 @@ namespace IFC.IFC4x3
 				{
 					FilletRadius = val;
 				}
+				else if(value == null)
+				{
+					FilletRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _FlangeEdgeRadius
@@ -62865,6 +69660,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					FlangeEdgeRadius = val;
+				}
+				else if(value == null)
+				{
+					FlangeEdgeRadius = null;
 				}
 			}
 		}
@@ -62880,6 +69679,10 @@ namespace IFC.IFC4x3
 				{
 					WebEdgeRadius = val;
 				}
+				else if(value == null)
+				{
+					WebEdgeRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlaneAngleMeasure? _WebSlope
@@ -62894,6 +69697,10 @@ namespace IFC.IFC4x3
 				{
 					WebSlope = val;
 				}
+				else if(value == null)
+				{
+					WebSlope = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlaneAngleMeasure? _FlangeSlope
@@ -62907,6 +69714,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlaneAngleMeasure val)
 				{
 					FlangeSlope = val;
+				}
+				else if(value == null)
+				{
+					FlangeSlope = null;
 				}
 			}
 		}
@@ -62931,11 +69742,11 @@ namespace IFC.IFC4x3
 		public virtual List<IfcTableRow>? Rows { get; set; }
 		public virtual List<IfcTableColumn>? Columns { get; set; }
 		//DERIVE
-		public virtual IfcInteger? NumberOfCellsInRow {get {return null;} set{}}
+		public virtual IfcInteger? NumberOfCellsInRow {get {return null;}}
 		//DERIVE
-		public virtual IfcInteger? NumberOfHeadings {get {return null;} set{}}
+		public virtual IfcInteger? NumberOfHeadings {get {return null;}}
 		//DERIVE
-		public virtual IfcInteger? NumberOfDataRows {get {return null;} set{}}
+		public virtual IfcInteger? NumberOfDataRows {get {return null;}}
 		public IfcTable() : base()
 		{
 		}
@@ -62966,6 +69777,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcTableRow>? _Rows
@@ -62985,6 +69800,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Rows = null;
+				}
+				else
+				{
+					Rows = new List<IfcTableRow>();
+					foreach(var val in value)
+					{
+						if(val is IfcTableRow v)
+						{
+							Rows.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcTableColumn>? _Columns
@@ -63004,6 +69834,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Columns = null;
+				}
+				else
+				{
+					Columns = new List<IfcTableColumn>();
+					foreach(var val in value)
+					{
+						if(val is IfcTableColumn v)
+						{
+							Columns.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _NumberOfCellsInRow
@@ -63012,9 +69857,6 @@ namespace IFC.IFC4x3
 			{
 				return NumberOfCellsInRow;
 			}
-			set
-			{
-			}
 		}
 		public virtual Global.IfcInteger? _NumberOfHeadings
 		{
@@ -63022,18 +69864,12 @@ namespace IFC.IFC4x3
 			{
 				return NumberOfHeadings;
 			}
-			set
-			{
-			}
 		}
 		public virtual Global.IfcInteger? _NumberOfDataRows
 		{
 			get
 			{
 				return NumberOfDataRows;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -63087,6 +69923,10 @@ namespace IFC.IFC4x3
 				{
 					Identifier = val;
 				}
+				else if(value == null)
+				{
+					Identifier = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Name
@@ -63100,6 +69940,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Name = val;
+				}
+				else if(value == null)
+				{
+					Name = null;
 				}
 			}
 		}
@@ -63115,6 +69959,10 @@ namespace IFC.IFC4x3
 				{
 					Description = val;
 				}
+				else if(value == null)
+				{
+					Description = null;
+				}
 			}
 		}
 		public virtual Global.IfcUnit? _Unit
@@ -63129,6 +69977,10 @@ namespace IFC.IFC4x3
 				{
 					Unit = val;
 				}
+				else if(value == null)
+				{
+					Unit = null;
+				}
 			}
 		}
 		public virtual Global.IfcReference? _ReferencePath
@@ -63142,6 +69994,10 @@ namespace IFC.IFC4x3
 				if(value is IfcReference val)
 				{
 					ReferencePath = val;
+				}
+				else if(value == null)
+				{
+					ReferencePath = null;
 				}
 			}
 		}
@@ -63189,6 +70045,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RowCells = null;
+				}
+				else
+				{
+					RowCells = new List<IfcValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcValue v)
+						{
+							RowCells.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _IsHeading
@@ -63202,6 +70073,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					IsHeading = val;
+				}
+				else if(value == null)
+				{
+					IsHeading = null;
 				}
 			}
 		}
@@ -63255,6 +70130,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -63304,6 +70183,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTankTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -63373,6 +70256,10 @@ namespace IFC.IFC4x3
 				{
 					Status = val;
 				}
+				else if(value == null)
+				{
+					Status = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _WorkMethod
@@ -63386,6 +70273,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					WorkMethod = val;
+				}
+				else if(value == null)
+				{
+					WorkMethod = null;
 				}
 			}
 		}
@@ -63401,6 +70292,10 @@ namespace IFC.IFC4x3
 				{
 					IsMilestone = val;
 				}
+				else if(value == null)
+				{
+					IsMilestone = null;
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _Priority
@@ -63414,6 +70309,10 @@ namespace IFC.IFC4x3
 				if(value is IfcInteger val)
 				{
 					Priority = val;
+				}
+				else if(value == null)
+				{
+					Priority = null;
 				}
 			}
 		}
@@ -63429,6 +70328,10 @@ namespace IFC.IFC4x3
 				{
 					TaskTime = val;
 				}
+				else if(value == null)
+				{
+					TaskTime = null;
+				}
 			}
 		}
 		public virtual Global.IfcTaskTypeEnum? _PredefinedType
@@ -63442,6 +70345,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTaskTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -63550,6 +70457,10 @@ namespace IFC.IFC4x3
 				{
 					DurationType = val;
 				}
+				else if(value == null)
+				{
+					DurationType = null;
+				}
 			}
 		}
 		public virtual Global.IfcDuration? _ScheduleDuration
@@ -63563,6 +70474,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDuration val)
 				{
 					ScheduleDuration = val;
+				}
+				else if(value == null)
+				{
+					ScheduleDuration = null;
 				}
 			}
 		}
@@ -63578,6 +70493,10 @@ namespace IFC.IFC4x3
 				{
 					ScheduleStart = val;
 				}
+				else if(value == null)
+				{
+					ScheduleStart = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _ScheduleFinish
@@ -63591,6 +70510,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					ScheduleFinish = val;
+				}
+				else if(value == null)
+				{
+					ScheduleFinish = null;
 				}
 			}
 		}
@@ -63606,6 +70529,10 @@ namespace IFC.IFC4x3
 				{
 					EarlyStart = val;
 				}
+				else if(value == null)
+				{
+					EarlyStart = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _EarlyFinish
@@ -63619,6 +70546,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					EarlyFinish = val;
+				}
+				else if(value == null)
+				{
+					EarlyFinish = null;
 				}
 			}
 		}
@@ -63634,6 +70565,10 @@ namespace IFC.IFC4x3
 				{
 					LateStart = val;
 				}
+				else if(value == null)
+				{
+					LateStart = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _LateFinish
@@ -63647,6 +70582,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					LateFinish = val;
+				}
+				else if(value == null)
+				{
+					LateFinish = null;
 				}
 			}
 		}
@@ -63662,6 +70601,10 @@ namespace IFC.IFC4x3
 				{
 					FreeFloat = val;
 				}
+				else if(value == null)
+				{
+					FreeFloat = null;
+				}
 			}
 		}
 		public virtual Global.IfcDuration? _TotalFloat
@@ -63675,6 +70618,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDuration val)
 				{
 					TotalFloat = val;
+				}
+				else if(value == null)
+				{
+					TotalFloat = null;
 				}
 			}
 		}
@@ -63690,6 +70637,10 @@ namespace IFC.IFC4x3
 				{
 					IsCritical = val;
 				}
+				else if(value == null)
+				{
+					IsCritical = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _StatusTime
@@ -63703,6 +70654,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					StatusTime = val;
+				}
+				else if(value == null)
+				{
+					StatusTime = null;
 				}
 			}
 		}
@@ -63718,6 +70673,10 @@ namespace IFC.IFC4x3
 				{
 					ActualDuration = val;
 				}
+				else if(value == null)
+				{
+					ActualDuration = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _ActualStart
@@ -63731,6 +70690,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					ActualStart = val;
+				}
+				else if(value == null)
+				{
+					ActualStart = null;
 				}
 			}
 		}
@@ -63746,6 +70709,10 @@ namespace IFC.IFC4x3
 				{
 					ActualFinish = val;
 				}
+				else if(value == null)
+				{
+					ActualFinish = null;
+				}
 			}
 		}
 		public virtual Global.IfcDuration? _RemainingTime
@@ -63760,6 +70727,10 @@ namespace IFC.IFC4x3
 				{
 					RemainingTime = val;
 				}
+				else if(value == null)
+				{
+					RemainingTime = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveRatioMeasure? _Completion
@@ -63773,6 +70744,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveRatioMeasure val)
 				{
 					Completion = val;
+				}
+				else if(value == null)
+				{
+					Completion = null;
 				}
 			}
 		}
@@ -63832,6 +70807,10 @@ namespace IFC.IFC4x3
 				{
 					Recurrence = val;
 				}
+				else if(value == null)
+				{
+					Recurrence = null;
+				}
 			}
 		}
 	}
@@ -63885,6 +70864,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _WorkMethod
@@ -63898,6 +70881,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					WorkMethod = val;
+				}
+				else if(value == null)
+				{
+					WorkMethod = null;
 				}
 			}
 		}
@@ -63972,6 +70959,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					TelephoneNumbers = null;
+				}
+				else
+				{
+					TelephoneNumbers = new List<IfcLabel>();
+					foreach(var val in value)
+					{
+						if(val is IfcLabel v)
+						{
+							TelephoneNumbers.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcLabel>? _FacsimileNumbers
@@ -63991,6 +70993,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					FacsimileNumbers = null;
+				}
+				else
+				{
+					FacsimileNumbers = new List<IfcLabel>();
+					foreach(var val in value)
+					{
+						if(val is IfcLabel v)
+						{
+							FacsimileNumbers.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _PagerNumber
@@ -64004,6 +71021,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					PagerNumber = val;
+				}
+				else if(value == null)
+				{
+					PagerNumber = null;
 				}
 			}
 		}
@@ -64024,6 +71045,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ElectronicMailAddresses = null;
+				}
+				else
+				{
+					ElectronicMailAddresses = new List<IfcLabel>();
+					foreach(var val in value)
+					{
+						if(val is IfcLabel v)
+						{
+							ElectronicMailAddresses.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcURIReference? _WWWHomePageURL
@@ -64037,6 +71073,10 @@ namespace IFC.IFC4x3
 				if(value is IfcURIReference val)
 				{
 					WWWHomePageURL = val;
+				}
+				else if(value == null)
+				{
+					WWWHomePageURL = null;
 				}
 			}
 		}
@@ -64057,6 +71097,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					MessagingIDs = null;
+				}
+				else
+				{
+					MessagingIDs = new List<IfcURIReference>();
+					foreach(var val in value)
+					{
+						if(val is IfcURIReference v)
+						{
+							MessagingIDs.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -64138,6 +71193,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _NominalDiameter
@@ -64151,6 +71210,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					NominalDiameter = val;
+				}
+				else if(value == null)
+				{
+					NominalDiameter = null;
 				}
 			}
 		}
@@ -64166,6 +71229,10 @@ namespace IFC.IFC4x3
 				{
 					CrossSectionArea = val;
 				}
+				else if(value == null)
+				{
+					CrossSectionArea = null;
+				}
 			}
 		}
 		public virtual Global.IfcForceMeasure? _TensionForce
@@ -64179,6 +71246,10 @@ namespace IFC.IFC4x3
 				if(value is IfcForceMeasure val)
 				{
 					TensionForce = val;
+				}
+				else if(value == null)
+				{
+					TensionForce = null;
 				}
 			}
 		}
@@ -64194,6 +71265,10 @@ namespace IFC.IFC4x3
 				{
 					PreStress = val;
 				}
+				else if(value == null)
+				{
+					PreStress = null;
+				}
 			}
 		}
 		public virtual Global.IfcNormalisedRatioMeasure? _FrictionCoefficient
@@ -64207,6 +71282,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNormalisedRatioMeasure val)
 				{
 					FrictionCoefficient = val;
+				}
+				else if(value == null)
+				{
+					FrictionCoefficient = null;
 				}
 			}
 		}
@@ -64222,6 +71301,10 @@ namespace IFC.IFC4x3
 				{
 					AnchorageSlip = val;
 				}
+				else if(value == null)
+				{
+					AnchorageSlip = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _MinCurvatureRadius
@@ -64235,6 +71318,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					MinCurvatureRadius = val;
+				}
+				else if(value == null)
+				{
+					MinCurvatureRadius = null;
 				}
 			}
 		}
@@ -64289,6 +71376,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -64338,6 +71429,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTendonAnchorTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -64392,6 +71487,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -64441,6 +71540,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTendonConduitTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -64504,6 +71607,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _NominalDiameter
@@ -64517,6 +71624,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					NominalDiameter = val;
+				}
+				else if(value == null)
+				{
+					NominalDiameter = null;
 				}
 			}
 		}
@@ -64532,6 +71643,10 @@ namespace IFC.IFC4x3
 				{
 					CrossSectionArea = val;
 				}
+				else if(value == null)
+				{
+					CrossSectionArea = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _SheathDiameter
@@ -64545,6 +71660,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					SheathDiameter = val;
+				}
+				else if(value == null)
+				{
+					SheathDiameter = null;
 				}
 			}
 		}
@@ -64567,9 +71686,9 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcCartesianPointList3D? Coordinates { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
-		public List<IfcIndexedColourMap>? HasColours {get{return Model?.GetItems<IfcIndexedColourMap>().Where(x => x.MappedTo != null && x.MappedTo == this).ToList();} set{}}
-		public List<IfcIndexedTextureMap>? HasTextures {get{return Model?.GetItems<IfcIndexedTextureMap>().Where(x => x.MappedTo != null && x.MappedTo == this).ToList();} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
+		public List<IfcIndexedColourMap>? HasColours {get{return Model?.GetItems<IfcIndexedColourMap>().Where(x => x.MappedTo != null && x.MappedTo == this).ToList();}}
+		public List<IfcIndexedTextureMap>? HasTextures {get{return Model?.GetItems<IfcIndexedTextureMap>().Where(x => x.MappedTo != null && x.MappedTo == this).ToList();}}
 		public IfcTessellatedFaceSet() : base()
 		{
 		}
@@ -64596,6 +71715,10 @@ namespace IFC.IFC4x3
 				{
 					Coordinates = val;
 				}
+				else if(value == null)
+				{
+					Coordinates = null;
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -64603,9 +71726,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 		public virtual List<Global.IfcIndexedColourMap>? _HasColours
@@ -64623,9 +71743,6 @@ namespace IFC.IFC4x3
 				}
 				return null;
 			}
-			set
-			{
-			}
 		}
 		public virtual List<Global.IfcIndexedTextureMap>? _HasTextures
 		{
@@ -64641,9 +71758,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -64712,6 +71826,10 @@ namespace IFC.IFC4x3
 				{
 					Literal = val;
 				}
+				else if(value == null)
+				{
+					Literal = null;
+				}
 			}
 		}
 		public virtual Global.IfcAxis2Placement? _Placement
@@ -64726,6 +71844,10 @@ namespace IFC.IFC4x3
 				{
 					Placement = val;
 				}
+				else if(value == null)
+				{
+					Placement = null;
+				}
 			}
 		}
 		public virtual Global.IfcTextPath? _Path
@@ -64739,6 +71861,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTextPath val)
 				{
 					Path = val;
+				}
+				else if(value == null)
+				{
+					Path = null;
 				}
 			}
 		}
@@ -64787,6 +71913,10 @@ namespace IFC.IFC4x3
 				{
 					Extent = val;
 				}
+				else if(value == null)
+				{
+					Extent = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoxAlignment? _BoxAlignment
@@ -64800,6 +71930,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoxAlignment val)
 				{
 					BoxAlignment = val;
+				}
+				else if(value == null)
+				{
+					BoxAlignment = null;
 				}
 			}
 		}
@@ -64852,6 +71986,10 @@ namespace IFC.IFC4x3
 				{
 					TextCharacterAppearance = val;
 				}
+				else if(value == null)
+				{
+					TextCharacterAppearance = null;
+				}
 			}
 		}
 		public virtual Global.IfcTextStyleTextModel? _TextStyle
@@ -64865,6 +72003,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTextStyleTextModel val)
 				{
 					TextStyle = val;
+				}
+				else if(value == null)
+				{
+					TextStyle = null;
 				}
 			}
 		}
@@ -64880,6 +72022,10 @@ namespace IFC.IFC4x3
 				{
 					TextFontStyle = val;
 				}
+				else if(value == null)
+				{
+					TextFontStyle = null;
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _ModelOrDraughting
@@ -64893,6 +72039,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					ModelOrDraughting = val;
+				}
+				else if(value == null)
+				{
+					ModelOrDraughting = null;
 				}
 			}
 		}
@@ -64957,6 +72107,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					FontFamily = null;
+				}
+				else
+				{
+					FontFamily = new List<IfcTextFontName>();
+					foreach(var val in value)
+					{
+						if(val is IfcTextFontName v)
+						{
+							FontFamily.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcFontStyle? _FontStyle
@@ -64970,6 +72135,10 @@ namespace IFC.IFC4x3
 				if(value is IfcFontStyle val)
 				{
 					FontStyle = val;
+				}
+				else if(value == null)
+				{
+					FontStyle = null;
 				}
 			}
 		}
@@ -64985,6 +72154,10 @@ namespace IFC.IFC4x3
 				{
 					FontVariant = val;
 				}
+				else if(value == null)
+				{
+					FontVariant = null;
+				}
 			}
 		}
 		public virtual Global.IfcFontWeight? _FontWeight
@@ -64999,6 +72172,10 @@ namespace IFC.IFC4x3
 				{
 					FontWeight = val;
 				}
+				else if(value == null)
+				{
+					FontWeight = null;
+				}
 			}
 		}
 		public virtual Global.IfcSizeSelect? _FontSize
@@ -65012,6 +72189,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSizeSelect val)
 				{
 					FontSize = val;
+				}
+				else if(value == null)
+				{
+					FontSize = null;
 				}
 			}
 		}
@@ -65055,6 +72236,10 @@ namespace IFC.IFC4x3
 				{
 					Colour = val;
 				}
+				else if(value == null)
+				{
+					Colour = null;
+				}
 			}
 		}
 		public virtual Global.IfcColour? _BackgroundColour
@@ -65068,6 +72253,10 @@ namespace IFC.IFC4x3
 				if(value is IfcColour val)
 				{
 					BackgroundColour = val;
+				}
+				else if(value == null)
+				{
+					BackgroundColour = null;
 				}
 			}
 		}
@@ -65131,6 +72320,10 @@ namespace IFC.IFC4x3
 				{
 					TextIndent = val;
 				}
+				else if(value == null)
+				{
+					TextIndent = null;
+				}
 			}
 		}
 		public virtual Global.IfcTextAlignment? _TextAlign
@@ -65144,6 +72337,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTextAlignment val)
 				{
 					TextAlign = val;
+				}
+				else if(value == null)
+				{
+					TextAlign = null;
 				}
 			}
 		}
@@ -65159,6 +72356,10 @@ namespace IFC.IFC4x3
 				{
 					TextDecoration = val;
 				}
+				else if(value == null)
+				{
+					TextDecoration = null;
+				}
 			}
 		}
 		public virtual Global.IfcSizeSelect? _LetterSpacing
@@ -65172,6 +72373,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSizeSelect val)
 				{
 					LetterSpacing = val;
+				}
+				else if(value == null)
+				{
+					LetterSpacing = null;
 				}
 			}
 		}
@@ -65187,6 +72392,10 @@ namespace IFC.IFC4x3
 				{
 					WordSpacing = val;
 				}
+				else if(value == null)
+				{
+					WordSpacing = null;
+				}
 			}
 		}
 		public virtual Global.IfcTextTransformation? _TextTransform
@@ -65201,6 +72410,10 @@ namespace IFC.IFC4x3
 				{
 					TextTransform = val;
 				}
+				else if(value == null)
+				{
+					TextTransform = null;
+				}
 			}
 		}
 		public virtual Global.IfcSizeSelect? _LineHeight
@@ -65214,6 +72427,10 @@ namespace IFC.IFC4x3
 				if(value is IfcSizeSelect val)
 				{
 					LineHeight = val;
+				}
+				else if(value == null)
+				{
+					LineHeight = null;
 				}
 			}
 		}
@@ -65262,6 +72479,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Maps = null;
+				}
+				else
+				{
+					Maps = new List<IfcSurfaceTexture>();
+					foreach(var val in value)
+					{
+						if(val is IfcSurfaceTexture v)
+						{
+							Maps.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -65305,6 +72537,10 @@ namespace IFC.IFC4x3
 				{
 					Mode = val;
 				}
+				else if(value == null)
+				{
+					Mode = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcReal>? _Parameter
@@ -65324,6 +72560,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Parameter = null;
+				}
+				else
+				{
+					Parameter = new List<IfcReal>();
+					foreach(var val in value)
+					{
+						if(val is IfcReal v)
+						{
+							Parameter.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -65341,7 +72592,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual List<IfcPositiveInteger>? TexCoordIndex { get; set; }
 		public virtual IfcIndexedPolygonalFace? TexCoordsOf { get; set; }
-		public IfcIndexedPolygonalTextureMap? ToTexMap {get{return Model?.GetItems<IfcIndexedPolygonalTextureMap>().FirstOrDefault(x => x.TexCoordIndices != null && x.TexCoordIndices.Contains(this));} set{}}
+		public IfcIndexedPolygonalTextureMap? ToTexMap {get{return Model?.GetItems<IfcIndexedPolygonalTextureMap>().FirstOrDefault(x => x.TexCoordIndices != null && x.TexCoordIndices.Contains(this));}}
 		public IfcTextureCoordinateIndices() : base()
 		{
 		}
@@ -65375,6 +72626,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					TexCoordIndex = null;
+				}
+				else
+				{
+					TexCoordIndex = new List<IfcPositiveInteger>();
+					foreach(var val in value)
+					{
+						if(val is IfcPositiveInteger v)
+						{
+							TexCoordIndex.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcIndexedPolygonalFace? _TexCoordsOf
@@ -65389,6 +72655,10 @@ namespace IFC.IFC4x3
 				{
 					TexCoordsOf = val;
 				}
+				else if(value == null)
+				{
+					TexCoordsOf = null;
+				}
 			}
 		}
 		public virtual Global.IfcIndexedPolygonalTextureMap? _ToTexMap
@@ -65396,9 +72666,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return ToTexMap;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -65449,6 +72716,29 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					InnerTexCoordIndices = null;
+				}
+				else
+				{
+					InnerTexCoordIndices = new List<List<IfcPositiveInteger>>();
+					foreach(var vals in value)
+					{
+						if(vals != null)
+						{
+							List<IfcPositiveInteger> items = new List<IfcPositiveInteger>();
+							foreach(var val in vals)
+							{
+								if(val is IfcPositiveInteger v)
+								{
+									items.Add(v);
+								}
+							}
+							InnerTexCoordIndices.Add(items);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -65497,6 +72787,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Vertices = null;
+				}
+				else
+				{
+					Vertices = new List<IfcTextureVertex>();
+					foreach(var val in value)
+					{
+						if(val is IfcTextureVertex v)
+						{
+							Vertices.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcFace? _MappedTo
@@ -65510,6 +72815,10 @@ namespace IFC.IFC4x3
 				if(value is IfcFace val)
 				{
 					MappedTo = val;
+				}
+				else if(value == null)
+				{
+					MappedTo = null;
 				}
 			}
 		}
@@ -65554,6 +72863,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Coordinates = null;
+				}
+				else
+				{
+					Coordinates = new List<IfcParameterValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcParameterValue v)
+						{
+							Coordinates.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -65602,6 +72926,29 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					TexCoordsList = null;
+				}
+				else
+				{
+					TexCoordsList = new List<List<IfcParameterValue>>();
+					foreach(var vals in value)
+					{
+						if(vals != null)
+						{
+							List<IfcParameterValue> items = new List<IfcParameterValue>();
+							foreach(var val in vals)
+							{
+								if(val is IfcParameterValue v)
+								{
+									items.Add(v);
+								}
+							}
+							TexCoordsList.Add(items);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -65653,6 +73000,10 @@ namespace IFC.IFC4x3
 				{
 					CubicTerm = val;
 				}
+				else if(value == null)
+				{
+					CubicTerm = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _QuadraticTerm
@@ -65666,6 +73017,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					QuadraticTerm = val;
+				}
+				else if(value == null)
+				{
+					QuadraticTerm = null;
 				}
 			}
 		}
@@ -65681,6 +73036,10 @@ namespace IFC.IFC4x3
 				{
 					LinearTerm = val;
 				}
+				else if(value == null)
+				{
+					LinearTerm = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _ConstantTerm
@@ -65694,6 +73053,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					ConstantTerm = val;
+				}
+				else if(value == null)
+				{
+					ConstantTerm = null;
 				}
 			}
 		}
@@ -65736,6 +73099,10 @@ namespace IFC.IFC4x3
 				{
 					StartTime = val;
 				}
+				else if(value == null)
+				{
+					StartTime = null;
+				}
 			}
 		}
 		public virtual Global.IfcTime? _EndTime
@@ -65749,6 +73116,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTime val)
 				{
 					EndTime = val;
+				}
+				else if(value == null)
+				{
+					EndTime = null;
 				}
 			}
 		}
@@ -65780,7 +73151,7 @@ namespace IFC.IFC4x3
 		public virtual IfcDataOriginEnum? DataOrigin { get; set; }
 		public virtual IfcLabel? UserDefinedDataOrigin { get; set; }
 		public virtual IfcUnit? Unit { get; set; }
-		public List<IfcExternalReferenceRelationship>? HasExternalReference {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}set{}}
+		public List<IfcExternalReferenceRelationship>? HasExternalReference {get{return Model?.GetItems<IfcExternalReferenceRelationship>().Where(x => x.RelatedResourceObjects != null && x.RelatedResourceObjects.Contains(this)).ToList();}}
 		public IfcTimeSeries() : base()
 		{
 		}
@@ -65821,6 +73192,10 @@ namespace IFC.IFC4x3
 				{
 					Name = val;
 				}
+				else if(value == null)
+				{
+					Name = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _Description
@@ -65834,6 +73209,10 @@ namespace IFC.IFC4x3
 				if(value is IfcText val)
 				{
 					Description = val;
+				}
+				else if(value == null)
+				{
+					Description = null;
 				}
 			}
 		}
@@ -65849,6 +73228,10 @@ namespace IFC.IFC4x3
 				{
 					StartTime = val;
 				}
+				else if(value == null)
+				{
+					StartTime = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _EndTime
@@ -65862,6 +73245,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					EndTime = val;
+				}
+				else if(value == null)
+				{
+					EndTime = null;
 				}
 			}
 		}
@@ -65877,6 +73264,10 @@ namespace IFC.IFC4x3
 				{
 					TimeSeriesDataType = val;
 				}
+				else if(value == null)
+				{
+					TimeSeriesDataType = null;
+				}
 			}
 		}
 		public virtual Global.IfcDataOriginEnum? _DataOrigin
@@ -65890,6 +73281,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDataOriginEnum val)
 				{
 					DataOrigin = val;
+				}
+				else if(value == null)
+				{
+					DataOrigin = null;
 				}
 			}
 		}
@@ -65905,6 +73300,10 @@ namespace IFC.IFC4x3
 				{
 					UserDefinedDataOrigin = val;
 				}
+				else if(value == null)
+				{
+					UserDefinedDataOrigin = null;
+				}
 			}
 		}
 		public virtual Global.IfcUnit? _Unit
@@ -65918,6 +73317,10 @@ namespace IFC.IFC4x3
 				if(value is IfcUnit val)
 				{
 					Unit = val;
+				}
+				else if(value == null)
+				{
+					Unit = null;
 				}
 			}
 		}
@@ -65935,9 +73338,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -65980,6 +73380,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ListValues = null;
+				}
+				else
+				{
+					ListValues = new List<IfcValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcValue v)
+						{
+							ListValues.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -66082,6 +73497,10 @@ namespace IFC.IFC4x3
 				{
 					MajorRadius = val;
 				}
+				else if(value == null)
+				{
+					MajorRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _MinorRadius
@@ -66095,6 +73514,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					MinorRadius = val;
+				}
+				else if(value == null)
+				{
+					MinorRadius = null;
 				}
 			}
 		}
@@ -66148,6 +73571,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -66197,6 +73624,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTrackElementTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -66250,6 +73681,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -66299,6 +73734,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTransformerTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -66352,6 +73791,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -66401,6 +73844,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTransportElementTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -66518,6 +73965,10 @@ namespace IFC.IFC4x3
 				{
 					BottomXDim = val;
 				}
+				else if(value == null)
+				{
+					BottomXDim = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _TopXDim
@@ -66531,6 +73982,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					TopXDim = val;
+				}
+				else if(value == null)
+				{
+					TopXDim = null;
 				}
 			}
 		}
@@ -66546,6 +74001,10 @@ namespace IFC.IFC4x3
 				{
 					YDim = val;
 				}
+				else if(value == null)
+				{
+					YDim = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _TopXOffset
@@ -66559,6 +74018,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					TopXOffset = val;
+				}
+				else if(value == null)
+				{
+					TopXOffset = null;
 				}
 			}
 		}
@@ -66583,7 +74046,7 @@ namespace IFC.IFC4x3
 		public virtual List<List<IfcPositiveInteger>>? CoordIndex { get; set; }
 		public virtual List<IfcPositiveInteger>? PnIndex { get; set; }
 		//DERIVE
-		public virtual IfcInteger? NumberOfTriangles {get {return null;} set{}}
+		public virtual IfcInteger? NumberOfTriangles {get {return null;}}
 		public IfcTriangulatedFaceSet() : base()
 		{
 		}
@@ -66627,6 +74090,29 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Normals = null;
+				}
+				else
+				{
+					Normals = new List<List<IfcParameterValue>>();
+					foreach(var vals in value)
+					{
+						if(vals != null)
+						{
+							List<IfcParameterValue> items = new List<IfcParameterValue>();
+							foreach(var val in vals)
+							{
+								if(val is IfcParameterValue v)
+								{
+									items.Add(v);
+								}
+							}
+							Normals.Add(items);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _Closed
@@ -66640,6 +74126,10 @@ namespace IFC.IFC4x3
 				if(value is IfcBoolean val)
 				{
 					Closed = val;
+				}
+				else if(value == null)
+				{
+					Closed = null;
 				}
 			}
 		}
@@ -66665,6 +74155,29 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					CoordIndex = null;
+				}
+				else
+				{
+					CoordIndex = new List<List<IfcPositiveInteger>>();
+					foreach(var vals in value)
+					{
+						if(vals != null)
+						{
+							List<IfcPositiveInteger> items = new List<IfcPositiveInteger>();
+							foreach(var val in vals)
+							{
+								if(val is IfcPositiveInteger v)
+								{
+									items.Add(v);
+								}
+							}
+							CoordIndex.Add(items);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcPositiveInteger>? _PnIndex
@@ -66684,6 +74197,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					PnIndex = null;
+				}
+				else
+				{
+					PnIndex = new List<IfcPositiveInteger>();
+					foreach(var val in value)
+					{
+						if(val is IfcPositiveInteger v)
+						{
+							PnIndex.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcInteger? _NumberOfTriangles
@@ -66691,9 +74219,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return NumberOfTriangles;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -66744,6 +74269,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Flags = null;
+				}
+				else
+				{
+					Flags = new List<IfcInteger>();
+					foreach(var val in value)
+					{
+						if(val is IfcInteger v)
+						{
+							Flags.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -66802,6 +74342,10 @@ namespace IFC.IFC4x3
 				{
 					BasisCurve = val;
 				}
+				else if(value == null)
+				{
+					BasisCurve = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcTrimmingSelect>? _Trim1
@@ -66821,6 +74365,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Trim1 = null;
+				}
+				else
+				{
+					Trim1 = new List<IfcTrimmingSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcTrimmingSelect v)
+						{
+							Trim1.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcTrimmingSelect>? _Trim2
@@ -66840,6 +74399,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Trim2 = null;
+				}
+				else
+				{
+					Trim2 = new List<IfcTrimmingSelect>();
+					foreach(var val in value)
+					{
+						if(val is IfcTrimmingSelect v)
+						{
+							Trim2.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcBoolean? _SenseAgreement
@@ -66854,6 +74428,10 @@ namespace IFC.IFC4x3
 				{
 					SenseAgreement = val;
 				}
+				else if(value == null)
+				{
+					SenseAgreement = null;
+				}
 			}
 		}
 		public virtual Global.IfcTrimmingPreference? _MasterRepresentation
@@ -66867,6 +74445,10 @@ namespace IFC.IFC4x3
 				if(value is IfcTrimmingPreference val)
 				{
 					MasterRepresentation = val;
+				}
+				else if(value == null)
+				{
+					MasterRepresentation = null;
 				}
 			}
 		}
@@ -66920,6 +74502,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -66970,6 +74556,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -66993,7 +74583,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual IfcIdentifier? ApplicableOccurrence { get; set; }
 		public virtual List<IfcPropertySetDefinition>? HasPropertySets { get; set; }
-		public List<IfcRelDefinesByType>? Types {get{return Model?.GetItems<IfcRelDefinesByType>().Where(x => x.RelatingType != null && x.RelatingType == this).ToList();} set{}}
+		public List<IfcRelDefinesByType>? Types {get{return Model?.GetItems<IfcRelDefinesByType>().Where(x => x.RelatingType != null && x.RelatingType == this).ToList();}}
 		public IfcTypeObject() : base()
 		{
 		}
@@ -67026,6 +74616,10 @@ namespace IFC.IFC4x3
 				{
 					ApplicableOccurrence = val;
 				}
+				else if(value == null)
+				{
+					ApplicableOccurrence = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcPropertySetDefinition>? _HasPropertySets
@@ -67045,6 +74639,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+					HasPropertySets = new List<IfcPropertySetDefinition>();
+					foreach(var val in value)
+					{
+						if(val is IfcPropertySetDefinition v)
+						{
+							HasPropertySets.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcRelDefinesByType>? _Types
@@ -67061,9 +74670,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -67086,7 +74692,7 @@ namespace IFC.IFC4x3
 		public virtual IfcIdentifier? Identification { get; set; }
 		public virtual IfcText? LongDescription { get; set; }
 		public virtual IfcLabel? ProcessType { get; set; }
-		public List<IfcRelAssignsToProcess>? OperatesOn {get{return Model?.GetItems<IfcRelAssignsToProcess>().Where(x => x.RelatingProcess != null && x.RelatingProcess == this).ToList();} set{}}
+		public List<IfcRelAssignsToProcess>? OperatesOn {get{return Model?.GetItems<IfcRelAssignsToProcess>().Where(x => x.RelatingProcess != null && x.RelatingProcess == this).ToList();}}
 		public IfcTypeProcess() : base()
 		{
 		}
@@ -67123,6 +74729,10 @@ namespace IFC.IFC4x3
 				{
 					Identification = val;
 				}
+				else if(value == null)
+				{
+					Identification = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _LongDescription
@@ -67137,6 +74747,10 @@ namespace IFC.IFC4x3
 				{
 					LongDescription = val;
 				}
+				else if(value == null)
+				{
+					LongDescription = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _ProcessType
@@ -67150,6 +74764,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					ProcessType = val;
+				}
+				else if(value == null)
+				{
+					ProcessType = null;
 				}
 			}
 		}
@@ -67167,9 +74785,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -67194,7 +74809,7 @@ namespace IFC.IFC4x3
 	{
 		public virtual List<IfcRepresentationMap>? RepresentationMaps { get; set; }
 		public virtual IfcLabel? Tag { get; set; }
-		public List<IfcRelAssignsToProduct>? ReferencedBy {get{return Model?.GetItems<IfcRelAssignsToProduct>().Where(x => x.RelatingProduct != null && x.RelatingProduct == this).ToList();} set{}}
+		public List<IfcRelAssignsToProduct>? ReferencedBy {get{return Model?.GetItems<IfcRelAssignsToProduct>().Where(x => x.RelatingProduct != null && x.RelatingProduct == this).ToList();}}
 		public IfcTypeProduct() : base()
 		{
 		}
@@ -67234,6 +74849,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+					RepresentationMaps = new List<IfcRepresentationMap>();
+					foreach(var val in value)
+					{
+						if(val is IfcRepresentationMap v)
+						{
+							RepresentationMaps.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Tag
@@ -67247,6 +74877,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Tag = val;
+				}
+				else if(value == null)
+				{
+					Tag = null;
 				}
 			}
 		}
@@ -67264,9 +74898,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -67287,9 +74918,9 @@ namespace IFC.IFC4x3
 		public virtual IfcIdentifier? Identification { get; set; }
 		public virtual IfcText? LongDescription { get; set; }
 		public virtual IfcLabel? ResourceType { get; set; }
-		public virtual List<IfcAppliedValue>? BaseCosts {get;set;}
-		public virtual IfcPhysicalQuantity? BaseQuantity {get;set;}
-		public List<IfcRelAssignsToResource>? ResourceOf {get{return Model?.GetItems<IfcRelAssignsToResource>().Where(x => x.RelatingResource != null && x.RelatingResource == this).ToList();} set{}}
+		public virtual List<IfcAppliedValue>? BaseCosts {get; set;}
+		public virtual IfcPhysicalQuantity? BaseQuantity {get; set;}
+		public List<IfcRelAssignsToResource>? ResourceOf {get{return Model?.GetItems<IfcRelAssignsToResource>().Where(x => x.RelatingResource != null && x.RelatingResource == this).ToList();}}
 		public IfcTypeResource() : base()
 		{
 		}
@@ -67326,6 +74957,10 @@ namespace IFC.IFC4x3
 				{
 					Identification = val;
 				}
+				else if(value == null)
+				{
+					Identification = null;
+				}
 			}
 		}
 		public virtual Global.IfcText? _LongDescription
@@ -67340,6 +74975,10 @@ namespace IFC.IFC4x3
 				{
 					LongDescription = val;
 				}
+				else if(value == null)
+				{
+					LongDescription = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _ResourceType
@@ -67353,6 +74992,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					ResourceType = val;
+				}
+				else if(value == null)
+				{
+					ResourceType = null;
 				}
 			}
 		}
@@ -67373,6 +75016,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					BaseCosts = null;
+				}
+				else
+				{
+					BaseCosts = new List<IfcAppliedValue>();
+					foreach(var val in value)
+					{
+						if(val is IfcAppliedValue v)
+						{
+							BaseCosts.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcPhysicalQuantity? _BaseQuantity
@@ -67386,6 +75044,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPhysicalQuantity val)
 				{
 					BaseQuantity = val;
+				}
+				else if(value == null)
+				{
+					BaseQuantity = null;
 				}
 			}
 		}
@@ -67403,9 +75065,6 @@ namespace IFC.IFC4x3
 					return items;
 				}
 				return null;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -67474,6 +75133,10 @@ namespace IFC.IFC4x3
 				{
 					Depth = val;
 				}
+				else if(value == null)
+				{
+					Depth = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _FlangeWidth
@@ -67487,6 +75150,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					FlangeWidth = val;
+				}
+				else if(value == null)
+				{
+					FlangeWidth = null;
 				}
 			}
 		}
@@ -67502,6 +75169,10 @@ namespace IFC.IFC4x3
 				{
 					WebThickness = val;
 				}
+				else if(value == null)
+				{
+					WebThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _FlangeThickness
@@ -67515,6 +75186,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					FlangeThickness = val;
+				}
+				else if(value == null)
+				{
+					FlangeThickness = null;
 				}
 			}
 		}
@@ -67530,6 +75205,10 @@ namespace IFC.IFC4x3
 				{
 					FilletRadius = val;
 				}
+				else if(value == null)
+				{
+					FilletRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _EdgeRadius
@@ -67544,6 +75223,10 @@ namespace IFC.IFC4x3
 				{
 					EdgeRadius = val;
 				}
+				else if(value == null)
+				{
+					EdgeRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcPlaneAngleMeasure? _FlangeSlope
@@ -67557,6 +75240,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPlaneAngleMeasure val)
 				{
 					FlangeSlope = val;
+				}
+				else if(value == null)
+				{
+					FlangeSlope = null;
 				}
 			}
 		}
@@ -67602,6 +75289,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Units = null;
+				}
+				else
+				{
+					Units = new List<IfcUnit>();
+					foreach(var val in value)
+					{
+						if(val is IfcUnit v)
+						{
+							Units.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -67654,6 +75356,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -67703,6 +75409,10 @@ namespace IFC.IFC4x3
 				if(value is IfcUnitaryControlElementTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -67756,6 +75466,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -67805,6 +75519,10 @@ namespace IFC.IFC4x3
 				if(value is IfcUnitaryEquipmentTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -67858,6 +75576,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -67908,6 +75630,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -67927,7 +75653,7 @@ namespace IFC.IFC4x3
 		public virtual IfcDirection? Orientation { get; set; }
 		public virtual IfcLengthMeasure? Magnitude { get; set; }
 		//DERIVE
-		public virtual IfcDimensionCount? Dim {get {return null;} set{}}
+		public virtual IfcDimensionCount? Dim {get {return null;}}
 		public IfcVector() : base()
 		{
 		}
@@ -67956,6 +75682,10 @@ namespace IFC.IFC4x3
 				{
 					Orientation = val;
 				}
+				else if(value == null)
+				{
+					Orientation = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _Magnitude
@@ -67970,6 +75700,10 @@ namespace IFC.IFC4x3
 				{
 					Magnitude = val;
 				}
+				else if(value == null)
+				{
+					Magnitude = null;
+				}
 			}
 		}
 		public virtual Global.IfcDimensionCount? _Dim
@@ -67977,9 +75711,6 @@ namespace IFC.IFC4x3
 			get
 			{
 				return Dim;
-			}
-			set
-			{
 			}
 		}
 	}
@@ -68032,6 +75763,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -68081,6 +75816,10 @@ namespace IFC.IFC4x3
 				if(value is IfcVehicleTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -68139,6 +75878,10 @@ namespace IFC.IFC4x3
 				{
 					LoopVertex = val;
 				}
+				else if(value == null)
+				{
+					LoopVertex = null;
+				}
 			}
 		}
 	}
@@ -68176,6 +75919,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPoint val)
 				{
 					VertexGeometry = val;
+				}
+				else if(value == null)
+				{
+					VertexGeometry = null;
 				}
 			}
 		}
@@ -68229,6 +75976,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -68278,6 +76029,10 @@ namespace IFC.IFC4x3
 				if(value is IfcVibrationDamperTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -68331,6 +76086,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -68380,6 +76139,10 @@ namespace IFC.IFC4x3
 				if(value is IfcVibrationIsolatorTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -68431,6 +76194,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -68477,6 +76244,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					IntersectingAxes = null;
+				}
+				else
+				{
+					IntersectingAxes = new List<IfcGridAxis>();
+					foreach(var val in value)
+					{
+						if(val is IfcGridAxis v)
+						{
+							IntersectingAxes.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcLengthMeasure>? _OffsetDistances
@@ -68496,6 +76278,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					OffsetDistances = null;
+				}
+				else
+				{
+					OffsetDistances = new List<IfcLengthMeasure>();
+					foreach(var val in value)
+					{
+						if(val is IfcLengthMeasure v)
+						{
+							OffsetDistances.Add(v);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -68545,6 +76342,10 @@ namespace IFC.IFC4x3
 				if(value is IfcVoidingFeatureTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -68599,6 +76400,10 @@ namespace IFC.IFC4x3
 				if(value is IfcWallTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -68684,6 +76489,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -68736,6 +76545,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -68786,6 +76599,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -68827,6 +76644,10 @@ namespace IFC.IFC4x3
 				{
 					WellKnownText = val;
 				}
+				else if(value == null)
+				{
+					WellKnownText = null;
+				}
 			}
 		}
 		public virtual Global.IfcCoordinateReferenceSystem? _CoordinateReferenceSystem
@@ -68840,6 +76661,10 @@ namespace IFC.IFC4x3
 				if(value is IfcCoordinateReferenceSystem val)
 				{
 					CoordinateReferenceSystem = val;
+				}
+				else if(value == null)
+				{
+					CoordinateReferenceSystem = null;
 				}
 			}
 		}
@@ -68909,6 +76734,10 @@ namespace IFC.IFC4x3
 				{
 					OverallHeight = val;
 				}
+				else if(value == null)
+				{
+					OverallHeight = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _OverallWidth
@@ -68922,6 +76751,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					OverallWidth = val;
+				}
+				else if(value == null)
+				{
+					OverallWidth = null;
 				}
 			}
 		}
@@ -68937,6 +76770,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcWindowTypePartitioningEnum? _PartitioningType
@@ -68951,6 +76788,10 @@ namespace IFC.IFC4x3
 				{
 					PartitioningType = val;
 				}
+				else if(value == null)
+				{
+					PartitioningType = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _UserDefinedPartitioningType
@@ -68964,6 +76805,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					UserDefinedPartitioningType = val;
+				}
+				else if(value == null)
+				{
+					UserDefinedPartitioningType = null;
 				}
 			}
 		}
@@ -69058,6 +76903,10 @@ namespace IFC.IFC4x3
 				{
 					LiningDepth = val;
 				}
+				else if(value == null)
+				{
+					LiningDepth = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _LiningThickness
@@ -69071,6 +76920,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					LiningThickness = val;
+				}
+				else if(value == null)
+				{
+					LiningThickness = null;
 				}
 			}
 		}
@@ -69086,6 +76939,10 @@ namespace IFC.IFC4x3
 				{
 					TransomThickness = val;
 				}
+				else if(value == null)
+				{
+					TransomThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _MullionThickness
@@ -69099,6 +76956,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					MullionThickness = val;
+				}
+				else if(value == null)
+				{
+					MullionThickness = null;
 				}
 			}
 		}
@@ -69114,6 +76975,10 @@ namespace IFC.IFC4x3
 				{
 					FirstTransomOffset = val;
 				}
+				else if(value == null)
+				{
+					FirstTransomOffset = null;
+				}
 			}
 		}
 		public virtual Global.IfcNormalisedRatioMeasure? _SecondTransomOffset
@@ -69127,6 +76992,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNormalisedRatioMeasure val)
 				{
 					SecondTransomOffset = val;
+				}
+				else if(value == null)
+				{
+					SecondTransomOffset = null;
 				}
 			}
 		}
@@ -69142,6 +77011,10 @@ namespace IFC.IFC4x3
 				{
 					FirstMullionOffset = val;
 				}
+				else if(value == null)
+				{
+					FirstMullionOffset = null;
+				}
 			}
 		}
 		public virtual Global.IfcNormalisedRatioMeasure? _SecondMullionOffset
@@ -69155,6 +77028,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNormalisedRatioMeasure val)
 				{
 					SecondMullionOffset = val;
+				}
+				else if(value == null)
+				{
+					SecondMullionOffset = null;
 				}
 			}
 		}
@@ -69170,6 +77047,10 @@ namespace IFC.IFC4x3
 				{
 					ShapeAspectStyle = val;
 				}
+				else if(value == null)
+				{
+					ShapeAspectStyle = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _LiningOffset
@@ -69183,6 +77064,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					LiningOffset = val;
+				}
+				else if(value == null)
+				{
+					LiningOffset = null;
 				}
 			}
 		}
@@ -69198,6 +77083,10 @@ namespace IFC.IFC4x3
 				{
 					LiningToPanelOffsetX = val;
 				}
+				else if(value == null)
+				{
+					LiningToPanelOffsetX = null;
+				}
 			}
 		}
 		public virtual Global.IfcLengthMeasure? _LiningToPanelOffsetY
@@ -69211,6 +77100,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLengthMeasure val)
 				{
 					LiningToPanelOffsetY = val;
+				}
+				else if(value == null)
+				{
+					LiningToPanelOffsetY = null;
 				}
 			}
 		}
@@ -69274,6 +77167,10 @@ namespace IFC.IFC4x3
 				{
 					OperationType = val;
 				}
+				else if(value == null)
+				{
+					OperationType = null;
+				}
 			}
 		}
 		public virtual Global.IfcWindowPanelPositionEnum? _PanelPosition
@@ -69287,6 +77184,10 @@ namespace IFC.IFC4x3
 				if(value is IfcWindowPanelPositionEnum val)
 				{
 					PanelPosition = val;
+				}
+				else if(value == null)
+				{
+					PanelPosition = null;
 				}
 			}
 		}
@@ -69302,6 +77203,10 @@ namespace IFC.IFC4x3
 				{
 					FrameDepth = val;
 				}
+				else if(value == null)
+				{
+					FrameDepth = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _FrameThickness
@@ -69316,6 +77221,10 @@ namespace IFC.IFC4x3
 				{
 					FrameThickness = val;
 				}
+				else if(value == null)
+				{
+					FrameThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcShapeAspect? _ShapeAspectStyle
@@ -69329,6 +77238,10 @@ namespace IFC.IFC4x3
 				if(value is IfcShapeAspect val)
 				{
 					ShapeAspectStyle = val;
+				}
+				else if(value == null)
+				{
+					ShapeAspectStyle = null;
 				}
 			}
 		}
@@ -69392,6 +77305,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 		public virtual Global.IfcWindowTypePartitioningEnum? _PartitioningType
@@ -69405,6 +77322,10 @@ namespace IFC.IFC4x3
 				if(value is IfcWindowTypePartitioningEnum val)
 				{
 					PartitioningType = val;
+				}
+				else if(value == null)
+				{
+					PartitioningType = null;
 				}
 			}
 		}
@@ -69420,6 +77341,10 @@ namespace IFC.IFC4x3
 				{
 					ParameterTakesPrecedence = val;
 				}
+				else if(value == null)
+				{
+					ParameterTakesPrecedence = null;
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _UserDefinedPartitioningType
@@ -69433,6 +77358,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					UserDefinedPartitioningType = val;
+				}
+				else if(value == null)
+				{
+					UserDefinedPartitioningType = null;
 				}
 			}
 		}
@@ -69494,6 +77423,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					WorkingTimes = null;
+				}
+				else
+				{
+					WorkingTimes = new List<IfcWorkTime>();
+					foreach(var val in value)
+					{
+						if(val is IfcWorkTime v)
+						{
+							WorkingTimes.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual List<Global.IfcWorkTime>? _ExceptionTimes
@@ -69513,6 +77457,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					ExceptionTimes = null;
+				}
+				else
+				{
+					ExceptionTimes = new List<IfcWorkTime>();
+					foreach(var val in value)
+					{
+						if(val is IfcWorkTime v)
+						{
+							ExceptionTimes.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcWorkCalendarTypeEnum? _PredefinedType
@@ -69526,6 +77485,10 @@ namespace IFC.IFC4x3
 				if(value is IfcWorkCalendarTypeEnum val)
 				{
 					PredefinedType = val;
+				}
+				else if(value == null)
+				{
+					PredefinedType = null;
 				}
 			}
 		}
@@ -69598,6 +77561,10 @@ namespace IFC.IFC4x3
 				{
 					CreationDate = val;
 				}
+				else if(value == null)
+				{
+					CreationDate = null;
+				}
 			}
 		}
 		public virtual List<Global.IfcPerson>? _Creators
@@ -69617,6 +77584,21 @@ namespace IFC.IFC4x3
 			}
 			set
 			{
+				if(value == null)
+				{
+					Creators = null;
+				}
+				else
+				{
+					Creators = new List<IfcPerson>();
+					foreach(var val in value)
+					{
+						if(val is IfcPerson v)
+						{
+							Creators.Add(v);
+						}
+					}
+				}
 			}
 		}
 		public virtual Global.IfcLabel? _Purpose
@@ -69630,6 +77612,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					Purpose = val;
+				}
+				else if(value == null)
+				{
+					Purpose = null;
 				}
 			}
 		}
@@ -69645,6 +77631,10 @@ namespace IFC.IFC4x3
 				{
 					Duration = val;
 				}
+				else if(value == null)
+				{
+					Duration = null;
+				}
 			}
 		}
 		public virtual Global.IfcDuration? _TotalFloat
@@ -69658,6 +77648,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDuration val)
 				{
 					TotalFloat = val;
+				}
+				else if(value == null)
+				{
+					TotalFloat = null;
 				}
 			}
 		}
@@ -69673,6 +77667,10 @@ namespace IFC.IFC4x3
 				{
 					StartTime = val;
 				}
+				else if(value == null)
+				{
+					StartTime = null;
+				}
 			}
 		}
 		public virtual Global.IfcDateTime? _FinishTime
@@ -69686,6 +77684,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDateTime val)
 				{
 					FinishTime = val;
+				}
+				else if(value == null)
+				{
+					FinishTime = null;
 				}
 			}
 		}
@@ -69741,6 +77743,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -69795,6 +77801,10 @@ namespace IFC.IFC4x3
 				{
 					PredefinedType = val;
 				}
+				else if(value == null)
+				{
+					PredefinedType = null;
+				}
 			}
 		}
 	}
@@ -69844,6 +77854,10 @@ namespace IFC.IFC4x3
 				{
 					RecurrencePattern = val;
 				}
+				else if(value == null)
+				{
+					RecurrencePattern = null;
+				}
 			}
 		}
 		public virtual Global.IfcDate? _StartDate
@@ -69858,6 +77872,10 @@ namespace IFC.IFC4x3
 				{
 					StartDate = val;
 				}
+				else if(value == null)
+				{
+					StartDate = null;
+				}
 			}
 		}
 		public virtual Global.IfcDate? _FinishDate
@@ -69871,6 +77889,10 @@ namespace IFC.IFC4x3
 				if(value is IfcDate val)
 				{
 					FinishDate = val;
+				}
+				else if(value == null)
+				{
+					FinishDate = null;
 				}
 			}
 		}
@@ -69935,6 +77957,10 @@ namespace IFC.IFC4x3
 				{
 					Depth = val;
 				}
+				else if(value == null)
+				{
+					Depth = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _FlangeWidth
@@ -69948,6 +77974,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					FlangeWidth = val;
+				}
+				else if(value == null)
+				{
+					FlangeWidth = null;
 				}
 			}
 		}
@@ -69963,6 +77993,10 @@ namespace IFC.IFC4x3
 				{
 					WebThickness = val;
 				}
+				else if(value == null)
+				{
+					WebThickness = null;
+				}
 			}
 		}
 		public virtual Global.IfcPositiveLengthMeasure? _FlangeThickness
@@ -69976,6 +78010,10 @@ namespace IFC.IFC4x3
 				if(value is IfcPositiveLengthMeasure val)
 				{
 					FlangeThickness = val;
+				}
+				else if(value == null)
+				{
+					FlangeThickness = null;
 				}
 			}
 		}
@@ -69991,6 +78029,10 @@ namespace IFC.IFC4x3
 				{
 					FilletRadius = val;
 				}
+				else if(value == null)
+				{
+					FilletRadius = null;
+				}
 			}
 		}
 		public virtual Global.IfcNonNegativeLengthMeasure? _EdgeRadius
@@ -70004,6 +78046,10 @@ namespace IFC.IFC4x3
 				if(value is IfcNonNegativeLengthMeasure val)
 				{
 					EdgeRadius = val;
+				}
+				else if(value == null)
+				{
+					EdgeRadius = null;
 				}
 			}
 		}
@@ -70054,6 +78100,10 @@ namespace IFC.IFC4x3
 				if(value is IfcLabel val)
 				{
 					LongName = val;
+				}
+				else if(value == null)
+				{
+					LongName = null;
 				}
 			}
 		}

@@ -13,7 +13,7 @@ namespace IFCProjectCreator
         public IFCParameterAttribute? RelatedAttribute{ get; set; }
         public IFCInverseAttribute() :base() 
         {
-            isReadonly = true;
+            isReadOnly = true;
             RelatedAttributeName = "";
         }
 
@@ -27,11 +27,11 @@ namespace IFCProjectCreator
                 {
                     if (RelatedAttribute.AttributeType == IFCAttributeType.LIST)
                     {
-                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this)).ToList();}set{}}");
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this)).ToList();}}");
                     }
                     else if (RelatedAttribute.AttributeType == IFCAttributeType.SINGLE)
                     {
-                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this).ToList();} set{}}");
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this).ToList();}}");
                     }
                     else
                     {
@@ -42,11 +42,11 @@ namespace IFCProjectCreator
                 {
                     if (RelatedAttribute.AttributeType == IFCAttributeType.LIST)
                     {
-                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().FirstOrDefault(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this));} set{}}");
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().FirstOrDefault(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this));}}");
                     }
                     else if (RelatedAttribute.AttributeType == IFCAttributeType.SINGLE)
                     {
-                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().FirstOrDefault(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this);} set{}}");
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().FirstOrDefault(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this);}}");
                     }
                     else
                     {

@@ -14,7 +14,7 @@ namespace IFCProjectCreator
         public string Name { get; set; }
         public string TypeName { get; set; }
 
-        public bool isReadonly { get; set; }
+        public bool isReadOnly { get; set; }
         public bool isOverride { get; set; }
 
         public bool includedInGlobal { get; set; }
@@ -23,7 +23,7 @@ namespace IFCProjectCreator
             Name = "";
             TypeName = "";
             AttributeType = IFCAttributeType.SINGLE;
-            isReadonly = false;
+            isReadOnly = false;
             Aggregation = IFCAggregation.NONE;
             isOverride = false;
             includedInGlobal = false;
@@ -62,15 +62,15 @@ namespace IFCProjectCreator
             string global = "Global";
             string typeName = TypeName;
             string overideText = isOverride ? "override " : "virtual ";
-         
-             if (!dataSet.CSharpBasicDataTypes.ContainsKey(TypeName))
+
+            if (!dataSet.CSharpBasicDataTypes.ContainsKey(TypeName))
             {
                 typeName = global + "." + TypeName;
             }
 
             if (AttributeType == IFCAttributeType.SINGLE)
             {
-                if (this is IFCDeriveAttribute || this is IFCInverseAttribute)
+                if (this is IFCDeriveAttribute || this is IFCInverseAttribute || isReadOnly)
                 {
                     return new List<string>
                     {
@@ -79,9 +79,6 @@ namespace IFCProjectCreator
                         "\t\t\tget",
                         "\t\t\t{",
                         "\t\t\t\treturn " + Name +";",
-                        "\t\t\t}",
-                        "\t\t\tset",
-                        "\t\t\t{",
                         "\t\t\t}",
                         "\t\t}",
                     };
@@ -102,6 +99,10 @@ namespace IFCProjectCreator
                         "\t\t\t\t{",
                         "\t\t\t\t\t" + Name + " = val;",
                         "\t\t\t\t}",
+                        "\t\t\t\telse if(value == null)",
+                        "\t\t\t\t{",
+                        "\t\t\t\t\t" + Name + " = null;",
+                        "\t\t\t\t}",
                         "\t\t\t}",
                         "\t\t}",
                     };
@@ -110,7 +111,7 @@ namespace IFCProjectCreator
             }
             else if (AttributeType == IFCAttributeType.LIST)
             {
-                if (isReadonly)
+                if (this is IFCDeriveAttribute || this is IFCInverseAttribute || isReadOnly)
                 {
                     List<string> texts = new List<string>()
                     {
@@ -128,9 +129,6 @@ namespace IFCProjectCreator
                         "\t\t\t\t\treturn items;",
                         "\t\t\t\t}",
                         "\t\t\t\treturn null;",
-                        "\t\t\t}",
-                        "\t\t\tset",
-                        "\t\t\t{",
                         "\t\t\t}",
                         "\t\t}",
                     };
@@ -157,6 +155,21 @@ namespace IFCProjectCreator
                         "\t\t\t}",
                         "\t\t\tset",
                         "\t\t\t{",
+                        "\t\t\t\tif(value == null)",
+                        "\t\t\t\t{",
+                        "\t\t\t\t\t" + Name + " = null;",
+                        "\t\t\t\t}",
+                        "\t\t\t\telse",
+                        "\t\t\t\t{",
+                        "\t\t\t\t\t" + Name + " = new List<" + TypeName + ">();",
+                        "\t\t\t\t\tforeach(var val in value)",
+                        "\t\t\t\t\t{",
+                        "\t\t\t\t\t\tif(val is " + TypeName + " v)",
+                        "\t\t\t\t\t\t{",
+                        "\t\t\t\t\t\t\t" + Name + ".Add(v);",
+                        "\t\t\t\t\t\t}",
+                        "\t\t\t\t\t}",
+                        "\t\t\t\t}",
                         "\t\t\t}",
                         "\t\t}",
                     };
@@ -166,34 +179,92 @@ namespace IFCProjectCreator
             }
             else
             {
-                List<string> texts = new List<string>()
+
+                if (this is IFCDeriveAttribute || this is IFCInverseAttribute || isReadOnly)
                 {
-                   "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
-                    "\t\t{",
-                    "\t\t\tget",
-                    "\t\t\t{",
-                    "\t\t\t\tif(" + Name + " != null)",
-                    "\t\t\t\t{",
-                    "\t\t\t\t\tList<List<"+typeName + ">>? items = new List<List<"+typeName +">>();",
-                    "\t\t\t\t\tforeach (List<" + TypeName + "> item1s in " + Name +")",
-                    "\t\t\t\t\t{",
-                    "\t\t\t\t\t\tList<"+typeName + ">? resultItems = new List<"+typeName +">();",
-                    "\t\t\t\t\t\tforeach (" + TypeName + " item in item1s)",
-                    "\t\t\t\t\t\t{",
-                    "\t\t\t\t\t\t\tresultItems.Add(item);",
-                    "\t\t\t\t\t\t}",
-                    "\t\t\t\t\t\titems.Add(resultItems);",
-                    "\t\t\t\t\t}",
-                    "\t\t\t\t\treturn items;",
-                    "\t\t\t\t}",
-                    "\t\t\t\treturn null;",
-                    "\t\t\t}",
-                    "\t\t\tset",
-                    "\t\t\t{",
-                    "\t\t\t}",
-                    "\t\t}",
-                };
-                return texts;
+                    List<string> texts = new List<string>()
+                    {
+                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                        "\t\t{",
+                        "\t\t\tget",
+                        "\t\t\t{",
+                        "\t\t\t\tif(" + Name + " != null)",
+                        "\t\t\t\t{",
+                        "\t\t\t\t\tList<List<"+typeName + ">>? items = new List<List<"+typeName +">>();",
+                        "\t\t\t\t\tforeach (List<" + TypeName + "> item1s in " + Name +")",
+                        "\t\t\t\t\t{",
+                        "\t\t\t\t\t\tList<"+typeName + ">? resultItems = new List<"+typeName +">();",
+                        "\t\t\t\t\t\tforeach (" + TypeName + " item in item1s)",
+                        "\t\t\t\t\t\t{",
+                        "\t\t\t\t\t\t\tresultItems.Add(item);",
+                        "\t\t\t\t\t\t}",
+                        "\t\t\t\t\t\titems.Add(resultItems);",
+                        "\t\t\t\t\t}",
+                        "\t\t\t\t\treturn items;",
+                        "\t\t\t\t}",
+                        "\t\t\t\treturn null;",
+                        "\t\t\t}",
+                        "\t\t}",
+                    };
+                    return texts;
+                }
+                else
+                {
+                    List<string> texts = new List<string>()
+                    {
+                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                        "\t\t{",
+                        "\t\t\tget",
+                        "\t\t\t{",
+                        "\t\t\t\tif(" + Name + " != null)",
+                        "\t\t\t\t{",
+                        "\t\t\t\t\tList<List<"+typeName + ">>? items = new List<List<"+typeName +">>();",
+                        "\t\t\t\t\tforeach (List<" + TypeName + "> item1s in " + Name +")",
+                        "\t\t\t\t\t{",
+                        "\t\t\t\t\t\tList<"+typeName + ">? resultItems = new List<"+typeName +">();",
+                        "\t\t\t\t\t\tforeach (" + TypeName + " item in item1s)",
+                        "\t\t\t\t\t\t{",
+                        "\t\t\t\t\t\t\tresultItems.Add(item);",
+                        "\t\t\t\t\t\t}",
+                        "\t\t\t\t\t\titems.Add(resultItems);",
+                        "\t\t\t\t\t}",
+                        "\t\t\t\t\treturn items;",
+                        "\t\t\t\t}",
+                        "\t\t\t\treturn null;",
+                        "\t\t\t}",
+                        "\t\t\tset",
+                        "\t\t\t{",
+                        "\t\t\t\tif(value == null)",
+                        "\t\t\t\t{",
+                        "\t\t\t\t\t" + Name + " = null;",
+                        "\t\t\t\t}",
+                        "\t\t\t\telse",
+                        "\t\t\t\t{",
+                        "\t\t\t\t\t" + Name + " = new List<List<" + TypeName + ">>();",
+                        "\t\t\t\t\tforeach(var vals in value)",
+                        "\t\t\t\t\t{",
+                        "\t\t\t\t\t\tif(vals != null)",
+                        "\t\t\t\t\t\t{",
+                        "\t\t\t\t\t\t\tList<" + TypeName + "> items = new List<" + TypeName + ">();",
+                        "\t\t\t\t\t\t\tforeach(var val in vals)",
+                        "\t\t\t\t\t\t\t{",
+                        "\t\t\t\t\t\t\t\tif(val is " + TypeName + " v)",
+                        "\t\t\t\t\t\t\t\t{",
+                        "\t\t\t\t\t\t\t\t\titems.Add(v);",
+                        "\t\t\t\t\t\t\t\t}",
+                        "\t\t\t\t\t\t\t}",
+                        "\t\t\t\t\t\t\t" + Name + ".Add(items);",
+                        "\t\t\t\t\t\t}",
+                        "\t\t\t\t\t}",
+                        "\t\t\t\t}",
+                        "\t\t\t}",
+                        "\t\t}",
+                    };
+                    return texts;
+                }
+
+                
+               
             }
         }
 

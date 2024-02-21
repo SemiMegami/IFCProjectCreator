@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Numerics;
+using System.Runtime.InteropServices;
 using System.Xml.Linq;
 using System.Xml.Serialization;
 using static Azure.Core.HttpHeader;
@@ -203,9 +204,6 @@ namespace IFCProjectCreator
                 List<IFCEntity> subEntities = new List<IFCEntity>();
                 if (allSubClasses.Where(e => e is IFCBasicType || e is IFCBasicTypeList).Count() > 0)
                 {
-                    //selectType.SelectAttributes.Add(new IFCSelectAttribute() { 
-
-                    //})
                     continue;
                 }
                 foreach (var subclass in allSubClasses)
@@ -241,6 +239,7 @@ namespace IFCProjectCreator
                     foreach (var attributeName in attributesNames)
                     {
                         bool isCommon = true;
+                        bool isReadonly = false;
                         foreach (var attributes in attributesSets)
                         {
                             if (attributes.FirstOrDefault(e => e.Name == attributeName) == null)
@@ -251,7 +250,6 @@ namespace IFCProjectCreator
                         if (isCommon)
                         {
                             var attribute0 = attributesSets[0].First(e => e.Name == attributeName);
-
                             foreach (var attributes in attributesSets)
                             {
                                 var attribute = attributes.First(e => e.Name == attributeName);
@@ -260,35 +258,58 @@ namespace IFCProjectCreator
                                 {
                                     isCommon = false;
                                 }
+                                if (attribute.isReadOnly)
+                                {
+                                    isReadonly = true;
+                                }
                             }
                         }
 
                         if (isCommon)
                         {
                             commonAttributes.Add(attributesSets[0].First(e => e.Name == attributeName));
-                        }
-                    }
-                    foreach (var attribute in commonAttributes)
-                    {
-                        if (selectType.SelectAttributes.FirstOrDefault(e => e.Name == attribute.Name) == null)
-                        {
-                            selectType.SelectAttributes.Add(new IFCSelectAttribute()
+
+                            var attribute = attributesSets[0].First(e => e.Name == attributeName);
+                            if (selectType.SelectAttributes.FirstOrDefault(e => e.Name == attribute.Name) == null)
                             {
-                                Name = attribute.Name,
-                                TypeName = attribute.TypeName,
-                                Aggregation = attribute.Aggregation,
-                                AttributeType = attribute.AttributeType,
-                                isReadonly = attribute.isReadonly
-                            });
+                                selectType.SelectAttributes.Add(new IFCSelectAttribute()
+                                {
+                                    Name = attribute.Name,
+                                    TypeName = attribute.TypeName,
+                                    Aggregation = attribute.Aggregation,
+                                    AttributeType = attribute.AttributeType,
+                                    isReadOnly = isReadonly
+                                });
+                            }
                         }
-
-
                     }
                 }
             }
 
-            // Additional select attribute
+            // update readOnly
             foreach (var entity in Entities)
+            {
+                var entityAttributes = entity.AllAttributes.Where(e => e is IFCDeriveAttribute || e is IFCInverseAttribute).ToList();
+                if(entity.Name == "IfcAxis2Placement2D")
+                {
+
+                }
+                foreach (var parent in entity.AllParentSelects)
+                {
+                    foreach (var attribute in entityAttributes)
+                    {
+                        var parentAttribute = parent.SelectAttributes.FirstOrDefault(e=>e.Name == attribute.Name);
+                        if(parentAttribute != null)
+                        {
+                            parentAttribute.isReadOnly = true;
+                        }
+                    }
+                  
+                }
+            }
+
+                // Additional select attribute
+                foreach (var entity in Entities)
             {
                 var allAttribute = entity.AllAttributes;
                 Dictionary<string, IFCSelectAttribute> selectarributeDict = new Dictionary<string, IFCSelectAttribute>();
@@ -456,6 +477,7 @@ namespace IFCProjectCreator
                     {
                         List<IFCSelectType> selectItems = new List<IFCSelectType>();
                         bool found = false;
+                        bool isReadOnly = false;
                         foreach (var typeItem in typeitems)
                         {
                             if (typeItem is IFCSelectType selectType1)
@@ -479,7 +501,6 @@ namespace IFCProjectCreator
                                     {
                                         canAdd = false;
                                     }
-
                                 }
                                 if (canAdd)
                                 {
@@ -489,6 +510,10 @@ namespace IFCProjectCreator
                                         if (compareItem != null)
                                         {
                                             compareItem.includedInGlobal = true;
+                                            if (compareItem.isReadOnly)
+                                            {
+                                                isReadOnly = true;
+                                            }
                                         }
                                     }
                                     globalSelectType.SelectAttributes.Add(new IFCSelectAttribute()
@@ -497,6 +522,7 @@ namespace IFCProjectCreator
                                         TypeName = attribute.TypeName,
                                         Aggregation = attribute.Aggregation,
                                         AttributeType = attribute.AttributeType,
+                                        isReadOnly = isReadOnly
                                     });
                                 }
                             }
@@ -507,6 +533,7 @@ namespace IFCProjectCreator
                     {
                         List<IFCEntity> entities = new List<IFCEntity>();
                         bool found = false;
+                        bool isReadOnly = false;
                         foreach (var typeItem in typeitems)
                         {
                             if (typeItem is IFCEntity entity1)
@@ -530,7 +557,6 @@ namespace IFCProjectCreator
                                     {
                                         canAdd = false;
                                     }
-
                                 }
                                 if (canAdd)
                                 {
@@ -540,6 +566,10 @@ namespace IFCProjectCreator
                                         if (compareItem != null)
                                         {
                                             compareItem.includedInGlobal = true;
+                                            if (compareItem.isReadOnly)
+                                            {
+                                                isReadOnly = true;
+                                            }
                                         }
                                     }
                                     globalSelectType.SelectAttributes.Add(new IFCSelectAttribute()
@@ -548,6 +578,7 @@ namespace IFCProjectCreator
                                         TypeName = attribute.TypeName,
                                         Aggregation = attribute.Aggregation,
                                         AttributeType = attribute.AttributeType,
+                                        isReadOnly = isReadOnly,
                                     });
                                 }
                             }

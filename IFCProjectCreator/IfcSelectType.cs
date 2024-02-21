@@ -64,7 +64,7 @@ namespace IFCProjectCreator
             // constructor
             texts.Add("\t{");
             var parents = AllParentSelects;
-            foreach (IFCAttribute attribute in SelectAttributes)
+            foreach (IFCSelectAttribute attribute in SelectAttributes)
             {
                 if(parents.FirstOrDefault(p => p.SelectAttributes.FirstOrDefault(e=>e.Name == attribute.Name) != null) == null)
                 {
