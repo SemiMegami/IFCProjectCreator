@@ -106,7 +106,7 @@ namespace IFCProjectCreator
         }
 
         /// <summary>
-        /// ParameterClassAttributes from parents
+        /// ParameterClassAttributes from parents. not include self
         /// </summary>
         public List<IFCParameterAttribute> ParentParameterAttributes
         {
@@ -122,7 +122,7 @@ namespace IFCProjectCreator
         }
 
         /// <summary>
-        /// ParameterClassAttributes including from parent
+        /// Parent Classes
         /// </summary>
         public List<IFCEntity> ParentClasses
         {

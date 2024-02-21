@@ -3,6 +3,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Numerics;
 using System.Xml.Linq;
@@ -159,7 +160,7 @@ namespace IFCProjectCreator
                     if (!subClass.InterfaceNames.Contains(selectType.Name))
                     {
                         subClass.InterfaceNames.Add(selectType.Name);
-                        subClass.ParentInterfaces.Add(selectType);
+                        subClass.ParentSelects.Add(selectType);
                         selectType.SubClasses.Add(subClass);
                     }
                 }
@@ -276,7 +277,8 @@ namespace IFCProjectCreator
                                 Name = attribute.Name,
                                 TypeName = attribute.TypeName,
                                 Aggregation = attribute.Aggregation,
-                                AttributeType = attribute.AttributeType
+                                AttributeType = attribute.AttributeType,
+                                isReadonly = attribute.isReadonly
                             });
                         }
 
@@ -291,7 +293,7 @@ namespace IFCProjectCreator
                 var allAttribute = entity.AllAttributes;
                 Dictionary<string, IFCSelectAttribute> selectarributeDict = new Dictionary<string, IFCSelectAttribute>();
 
-                var parents = entity.ParentSelects;
+                var parents = entity.AllParentSelects;
                 foreach (var parent in parents)
                 {
                     foreach (var attribute in parent.SelectAttributes)
@@ -323,7 +325,7 @@ namespace IFCProjectCreator
             {
                 Dictionary<string, IFCSelectAttribute> selectarributeDict = new Dictionary<string, IFCSelectAttribute>();
 
-                var parents = enumType.ParentSelects;
+                var parents = enumType.AllParentSelects;
                 foreach (var parent in parents)
                 {
                     foreach (var attribute in parent.SelectAttributes)
@@ -371,17 +373,17 @@ namespace IFCProjectCreator
                 }
                 IFCSelectType global = globalTypes[item.Name];
 
-                if (item is IFCEntity && global.ParentName.Length > 0 && !global.InterfaceNames.Contains(item.ParentName))
-                {
-                    global.InterfaceNames.Add(item.ParentName);
-                }
-                foreach(var itf in item.InterfaceNames)
-                {
-                    if (!global.InterfaceNames.Contains(itf))
-                    {
-                        global.InterfaceNames.Add(itf);
-                    }
-                }
+                //if (item is IFCEntity && global.ParentName.Length > 0 && !global.InterfaceNames.Contains(item.ParentName))
+                //{
+                //    global.InterfaceNames.Add(item.ParentName);
+                //}
+                //foreach(var itf in item.InterfaceNames)
+                //{
+                //    if (!global.InterfaceNames.Contains(itf))
+                //    {
+                //        global.InterfaceNames.Add(itf);
+                //    }
+                //}
             }
             GlobalSelectTypes = globalTypes.Values.ToList();
 
@@ -439,11 +441,8 @@ namespace IFCProjectCreator
                                 found = true;
                             }
                         }
-
-
                         if (!found)
                         {
-
                             foreach (var enumValue in enumType.EnumValues)
                             {
                                 bool canAdd = true;
@@ -465,7 +464,104 @@ namespace IFCProjectCreator
                     }
                     else if (typeitems[0] is IFCSelectType selectType)
                     {
+                        List<IFCSelectType> selectItems = new List<IFCSelectType>();
+                        bool found = false;
+                        foreach (var typeItem in typeitems)
+                        {
+                            if (typeItem is IFCSelectType selectType1)
+                            {
+                                selectItems.Add(selectType1);
+                            }
+                            else
+                            {
+                                found = true;
+                            }
+                        }
+                        if (!found)
+                        {
+                            foreach (var attribute in selectType.AllSelectAttributes)
+                            {
+                                bool canAdd = true;
+                                foreach (var item in selectItems)
+                                {
+                                    var compareItem = item.AllSelectAttributes.FirstOrDefault(e => e.isSameAttribute(attribute));
+                                    if (compareItem == null)
+                                    {
+                                        canAdd = false;
+                                    }
 
+                                }
+                                if (canAdd)
+                                {
+                                    foreach (var item in selectItems)
+                                    {
+                                        var compareItem = item.AllSelectAttributes.FirstOrDefault(e => e.isSameAttribute(attribute));
+                                        if (compareItem != null)
+                                        {
+                                            compareItem.includedInGlobal = true;
+                                        }
+                                    }
+                                    globalSelectType.SelectAttributes.Add(new IFCSelectAttribute()
+                                    {
+                                        Name = "_" + attribute.Name,
+                                        TypeName = attribute.TypeName,
+                                        Aggregation = attribute.Aggregation,
+                                        AttributeType = attribute.AttributeType,
+                                    });
+                                }
+                            }
+                        }
+                    }
+
+                    else if (typeitems[0] is IFCEntity entity)
+                    {
+                        List<IFCEntity> entities = new List<IFCEntity>();
+                        bool found = false;
+                        foreach (var typeItem in typeitems)
+                        {
+                            if (typeItem is IFCEntity entity1)
+                            {
+                                entities.Add(entity1);
+                            }
+                            else
+                            {
+                                found = true;
+                            }
+                        }
+                        if (!found)
+                        {
+                            foreach (var attribute in entity.AllAttributes)
+                            {
+                                bool canAdd = true;
+                                foreach (var item in entities)
+                                {
+                                    var compareItem = item.AllAttributes.FirstOrDefault(e => e.isSameAttribute(attribute));
+                                    if (compareItem == null)
+                                    {
+                                        canAdd = false;
+                                    }
+
+                                }
+                                if (canAdd)
+                                {
+                                    foreach (var item in entities)
+                                    {
+                                        var compareItem = item.AllAttributes.FirstOrDefault(e => e.isSameAttribute(attribute));
+                                        if (compareItem != null)
+                                        {
+                                            compareItem.includedInGlobal = true;
+                                        }
+                                    }
+                                    globalSelectType.SelectAttributes.Add(new IFCSelectAttribute()
+                                    {
+                                        Name = "_" + attribute.Name,
+                                        TypeName = attribute.TypeName,
+                                        Aggregation = attribute.Aggregation,
+                                        AttributeType = attribute.AttributeType,
+                                    });
+                                }
+                            }
+                        }
                     }
                 }
             }

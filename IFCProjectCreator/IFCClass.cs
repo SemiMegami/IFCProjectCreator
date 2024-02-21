@@ -18,7 +18,7 @@ namespace IFCProjectCreator
         public List<string> SubClassesNames;
         public List<string> InterfaceNames;
         public List<string> EXPLines;
-        public List<IFCSelectType> ParentInterfaces;
+        public List<IFCSelectType> ParentSelects;
         public List<IFCClass> SubClasses;
         public List<IFCSelectAttribute> AdditionalSelectAttibutes;
         /// <summary>
@@ -34,27 +34,27 @@ namespace IFCProjectCreator
             SubClassesNames = new List<string>();
             InterfaceNames = new List<string>();
             EXPLines = new List<string>();
-            ParentInterfaces = new List<IFCSelectType>();
+            ParentSelects = new List<IFCSelectType>();
             SubClasses = new List<IFCClass>();
             AdditionalSelectAttibutes = new List<IFCSelectAttribute>();
         }
 
 
         /// <summary>
-        /// ParameterClassAttributes including from parent
+        /// all ParentSelects
         /// </summary>
-        public List<IFCSelectType> ParentSelects
+        public List<IFCSelectType> AllParentSelects
         {
             get
             {
                 List<IFCSelectType> classes =new List<IFCSelectType>();
-                if (ParentInterfaces == null)
+                if (ParentSelects == null)
                 {
                     return new List<IFCSelectType>();
                 }
-                foreach (var item in ParentInterfaces)
+                foreach (var item in ParentSelects)
                 {
-                    classes.AddRange(item.ParentInterfaces);
+                    classes.AddRange(item.ParentSelects);
                     classes.Add(item);
                 }
                 return classes;

@@ -45,6 +45,10 @@
             // implicit operator
             texts.AddRange(DataSet.GetImplicitText(Name, "string"));
 
+            foreach (var attribute in AdditionalSelectAttibutes)
+            {
+                texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
+            }
             texts.Add("\t}");
             return texts;
         }

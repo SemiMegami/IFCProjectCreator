@@ -14,14 +14,28 @@ namespace IFCProjectCreator
         public string Name { get; set; }
         public string TypeName { get; set; }
 
+        public bool isReadonly { get; set; }
         public bool isOverride { get; set; }
+
+        public bool includedInGlobal { get; set; }
         public IFCAttribute()
         {
             Name = "";
             TypeName = "";
             AttributeType = IFCAttributeType.SINGLE;
+            isReadonly = false;
             Aggregation = IFCAggregation.NONE;
             isOverride = false;
+            includedInGlobal = false;
+        }
+        /// <summary>
+        /// for compare attribute
+        /// </summary>
+        /// <param name="attribute"></param>
+        /// <returns></returns>
+        public bool isSameAttribute(IFCAttribute attribute)
+        {
+            return Name == attribute.Name && TypeName == attribute.TypeName && AttributeType == attribute.AttributeType && Aggregation == attribute.Aggregation;
         }
 
         public override string ToString()
@@ -47,47 +61,114 @@ namespace IFCProjectCreator
         {
             string global = "Global";
             string typeName = TypeName;
-            if (!dataSet.CSharpBasicDataTypes.ContainsKey(TypeName))
+            string overideText = isOverride ? "override " : "virtual ";
+         
+             if (!dataSet.CSharpBasicDataTypes.ContainsKey(TypeName))
             {
                 typeName = global + "." + TypeName;
             }
 
             if (AttributeType == IFCAttributeType.SINGLE)
             {
-                return new List<string>
+                if (this is IFCDeriveAttribute || this is IFCInverseAttribute)
                 {
-                    "\t\tpublic " +  (isOverride? "override ": "virtual ") + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name + " { get { return " + Name + "; } set { } }"
-                };
+                    return new List<string>
+                    {
+                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                        "\t\t{",
+                        "\t\t\tget",
+                        "\t\t\t{",
+                        "\t\t\t\treturn " + Name +";",
+                        "\t\t\t}",
+                        "\t\t\tset",
+                        "\t\t\t{",
+                        "\t\t\t}",
+                        "\t\t}",
+                    };
+                }
+                else
+                {
+                    return new List<string>
+                    {
+                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                        "\t\t{",
+                        "\t\t\tget",
+                        "\t\t\t{",
+                        "\t\t\t\treturn " + Name +";",
+                        "\t\t\t}",
+                        "\t\t\tset",
+                        "\t\t\t{",
+                        "\t\t\t\tif(value is " + TypeName + " val)",
+                        "\t\t\t\t{",
+                        "\t\t\t\t\t" + Name + " = val;",
+                        "\t\t\t\t}",
+                        "\t\t\t}",
+                        "\t\t}",
+                    };
+                }
+               
             }
             else if (AttributeType == IFCAttributeType.LIST)
             {
-
-                List<string> texts = new List<string>()
+                if (isReadonly)
                 {
-                    "\t\tpublic " +  (isOverride? "override ": "virtual ") + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
-                    "\t\t{",
-                    "\t\t\tget",
-                    "\t\t\t{",
-                    "\t\t\t\tif(" + Name + " != null)",
-                    "\t\t\t\t{",
-                    "\t\t\t\t\tList<"+typeName + ">? items = new List<"+typeName +">();",
-                    "\t\t\t\t\tforeach (" + TypeName + " item in " + Name +")",
-                    "\t\t\t\t\t{",
-                    "\t\t\t\t\t\titems.Add(item);",
-                    "\t\t\t\t\t}",
-                    "\t\t\t\t\treturn items;",
-                    "\t\t\t\t}",
-                    "\t\t\t\treturn null;",
-                    "\t\t\t}",
-                    "\t\t}",
-                };
-                return texts;
+                    List<string> texts = new List<string>()
+                    {
+                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                        "\t\t{",
+                        "\t\t\tget",
+                        "\t\t\t{",
+                        "\t\t\t\tif(" + Name + " != null)",
+                        "\t\t\t\t{",
+                        "\t\t\t\t\tList<"+typeName + ">? items = new List<"+typeName +">();",
+                        "\t\t\t\t\tforeach (" + TypeName + " item in " + Name +")",
+                        "\t\t\t\t\t{",
+                        "\t\t\t\t\t\titems.Add(item);",
+                        "\t\t\t\t\t}",
+                        "\t\t\t\t\treturn items;",
+                        "\t\t\t\t}",
+                        "\t\t\t\treturn null;",
+                        "\t\t\t}",
+                        "\t\t\tset",
+                        "\t\t\t{",
+                        "\t\t\t}",
+                        "\t\t}",
+                    };
+                    return texts;
+                }
+                else
+                {
+                    List<string> texts = new List<string>()
+                    {
+                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                        "\t\t{",
+                        "\t\t\tget",
+                        "\t\t\t{",
+                        "\t\t\t\tif(" + Name + " != null)",
+                        "\t\t\t\t{",
+                        "\t\t\t\t\tList<"+typeName + ">? items = new List<"+typeName +">();",
+                        "\t\t\t\t\tforeach (" + TypeName + " item in " + Name +")",
+                        "\t\t\t\t\t{",
+                        "\t\t\t\t\t\titems.Add(item);",
+                        "\t\t\t\t\t}",
+                        "\t\t\t\t\treturn items;",
+                        "\t\t\t\t}",
+                        "\t\t\t\treturn null;",
+                        "\t\t\t}",
+                        "\t\t\tset",
+                        "\t\t\t{",
+                        "\t\t\t}",
+                        "\t\t}",
+                    };
+                    return texts;
+                }
+                
             }
             else
             {
                 List<string> texts = new List<string>()
                 {
-                   "\t\tpublic " +  (isOverride? "override ": "virtual ") + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                   "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
                     "\t\t{",
                     "\t\t\tget",
                     "\t\t\t{",
@@ -107,6 +188,9 @@ namespace IFCProjectCreator
                     "\t\t\t\t}",
                     "\t\t\t\treturn null;",
                     "\t\t\t}",
+                    "\t\t\tset",
+                    "\t\t\t{",
+                    "\t\t\t}",
                     "\t\t}",
                 };
                 return texts;
@@ -114,7 +198,7 @@ namespace IFCProjectCreator
         }
 
 
-        public string GetCSharpTypeText()
+        public virtual string GetCSharpTypeText()
         {
             switch (AttributeType)
             {

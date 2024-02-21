@@ -26,7 +26,35 @@ namespace IFCProjectCreator
             }
         }
 
+        public List<IFCSelectAttribute> AllSelectAttributes
+        {
+            get 
+            {
+                Dictionary<string, IFCSelectAttribute> attributes = new Dictionary<string, IFCSelectAttribute>();
+                if (ParentSelects != null)
+                {
+                    foreach (var parent in ParentSelects)
+                    {
+                        foreach (var attribute in parent.AllSelectAttributes)
+                        {
+                            if (!attributes.ContainsKey(attribute.Name))
+                            {
+                                attributes.Add(attribute.Name, attribute);
+                            }
+                        }
+                    }
+                }
 
+                foreach (var attribute in SelectAttributes)
+                {
+                    if (!attributes.ContainsKey(attribute.Name))
+                    {
+                        attributes.Add(attribute.Name, attribute);
+                    }
+                }
+                return attributes.Values.ToList(); 
+            }
+        }
 
         public override List<string> GetCSharpTexts()
         {
@@ -35,15 +63,29 @@ namespace IFCProjectCreator
             
             // constructor
             texts.Add("\t{");
-            var parents = ParentSelects;
+            var parents = AllParentSelects;
             foreach (IFCAttribute attribute in SelectAttributes)
             {
                 if(parents.FirstOrDefault(p => p.SelectAttributes.FirstOrDefault(e=>e.Name == attribute.Name) != null) == null)
                 {
                     texts.AddRange(attribute.GetCSharpText());
                 }
-              
             }
+            if(!IsGlobal)
+            {
+                foreach (IFCAttribute attribute in SelectAttributes)
+                {
+                    if(!attribute.includedInGlobal)
+                    {
+                        if (parents.FirstOrDefault(p => p.SelectAttributes.FirstOrDefault(e => e.Name == attribute.Name) != null) == null)
+                        {
+                            texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
+                        }
+                    }
+                   
+                }
+            }
+            
             texts.Add("\t}");
 
             return texts;

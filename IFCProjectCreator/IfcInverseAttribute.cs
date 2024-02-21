@@ -13,7 +13,7 @@ namespace IFCProjectCreator
         public IFCParameterAttribute? RelatedAttribute{ get; set; }
         public IFCInverseAttribute() :base() 
         {
-           
+            isReadonly = true;
             RelatedAttributeName = "";
         }
 
@@ -27,11 +27,11 @@ namespace IFCProjectCreator
                 {
                     if (RelatedAttribute.AttributeType == IFCAttributeType.LIST)
                     {
-                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " => Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this)).ToList();");
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this)).ToList();}set{}}");
                     }
                     else if (RelatedAttribute.AttributeType == IFCAttributeType.SINGLE)
                     {
-                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " => Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this).ToList();");
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this).ToList();} set{}}");
                     }
                     else
                     {
@@ -42,11 +42,11 @@ namespace IFCProjectCreator
                 {
                     if (RelatedAttribute.AttributeType == IFCAttributeType.LIST)
                     {
-                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " => Model?.GetItems<" + TypeName + ">().FirstOrDefault(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this));");
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().FirstOrDefault(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this));} set{}}");
                     }
                     else if (RelatedAttribute.AttributeType == IFCAttributeType.SINGLE)
                     {
-                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " => Model?.GetItems<" + TypeName + ">().FirstOrDefault(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this);");
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().FirstOrDefault(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this);} set{}}");
                     }
                     else
                     {
@@ -54,12 +54,7 @@ namespace IFCProjectCreator
                     }
                 }
             }
-  
-            if(texts.Count == 0)
-            {
-                texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " => null;");
-            }
-            
+
             return texts;
         }
     }

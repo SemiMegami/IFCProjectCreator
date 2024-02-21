@@ -32,6 +32,10 @@ namespace IFCProjectCreator
                 texts.Add("\t\t\t\t}");
                 texts.Add("\t\t\t\treturn values;");
                 texts.Add("\t\t\t}");
+                texts.Add("\t\t\tset");
+                texts.Add("\t\t\t{");
+                texts.Add("\t\t\t\tValue = value;");
+                texts.Add("\t\t\t}");
                 texts.Add("\t\t}");
                 texts.Add("\t\tpublic " + Name + "() : base () { }");
                 texts.Add("\t\tpublic " + Name + "(" + cSharpText + " value)");
@@ -39,7 +43,6 @@ namespace IFCProjectCreator
                 texts.Add("\t\t\tforeach(var v in value)");
                 texts.Add("\t\t\t{");
                 texts.Add("\t\t\t\tAdd(v);");
-
                 texts.Add("\t\t\t}");
                 texts.Add("\t\t}");
                 texts.AddRange(DataSet.GetImplicitText(Name, cSharpText));

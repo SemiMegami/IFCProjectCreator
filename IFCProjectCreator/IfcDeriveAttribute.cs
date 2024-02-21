@@ -9,10 +9,10 @@ namespace IFCProjectCreator
     public class IFCDeriveAttribute : IFCAttribute
     {
         public string DeriveText { get; set; }
-
-       
+  
         public IFCDeriveAttribute() : base()
         {
+            isReadonly = true;
             DeriveText = "";
         }
 
@@ -20,8 +20,9 @@ namespace IFCProjectCreator
         {
             return new List<string>
             {
-                "\t\t//TODO DERIVE",
-                "\t\tpublic " + (isOverride? "override ": "virtual ") + GetCSharpTypeText() + "? " + Name + " {get {return null;}}"
+                "\t\t//DERIVE",
+                "\t\tpublic " + (isOverride? "override ": "virtual ") + GetCSharpTypeText() + "? " + Name + " {get {return null;} set{}}",
+             
             };
         }
     }
