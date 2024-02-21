@@ -373,17 +373,7 @@ namespace IFCProjectCreator
                 }
                 IFCSelectType global = globalTypes[item.Name];
 
-                //if (item is IFCEntity && global.ParentName.Length > 0 && !global.InterfaceNames.Contains(item.ParentName))
-                //{
-                //    global.InterfaceNames.Add(item.ParentName);
-                //}
-                //foreach(var itf in item.InterfaceNames)
-                //{
-                //    if (!global.InterfaceNames.Contains(itf))
-                //    {
-                //        global.InterfaceNames.Add(itf);
-                //    }
-                //}
+
             }
             GlobalSelectTypes = globalTypes.Values.ToList();
 
@@ -691,6 +681,7 @@ namespace IFCProjectCreator
                 var items = GetItems(version);
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName + "." + version);
                 writer.WriteLine("{");
                 foreach (var item in items)
@@ -711,6 +702,7 @@ namespace IFCProjectCreator
             {
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
                 writer.WriteLine("\tpublic class Ifc_Model");
@@ -910,6 +902,7 @@ namespace IFCProjectCreator
             {
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
                 writer.WriteLine("\tpublic abstract class Ifc_Entity");
@@ -1180,6 +1173,7 @@ namespace IFCProjectCreator
             {
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
                 foreach (var data in CSharpBasicDataTypes)

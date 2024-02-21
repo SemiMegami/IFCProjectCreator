@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+#pragma warning disable VSSpell001 // Spell Check
 namespace IFC.Global
 {
 	/// <summary>
@@ -42,7 +43,7 @@ namespace IFC.Global
 	/// <summary>
 	public interface IfcBoxAlignment
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -77,7 +78,7 @@ namespace IFC.Global
 	/// <summary>
 	public interface IfcDescriptiveMeasure
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -143,19 +144,19 @@ namespace IFC.Global
 	/// <summary>
 	public interface IfcFontStyle
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcFontVariant
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcFontWeight
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -173,7 +174,7 @@ namespace IFC.Global
 	/// <summary>
 	public interface IfcGloballyUniqueId
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -197,7 +198,7 @@ namespace IFC.Global
 	/// <summary>
 	public interface IfcIdentifier
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -245,7 +246,7 @@ namespace IFC.Global
 	/// <summary>
 	public interface IfcLabel
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -461,7 +462,7 @@ namespace IFC.Global
 	/// <summary>
 	public interface IfcPresentableText
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -575,31 +576,31 @@ namespace IFC.Global
 	/// <summary>
 	public interface IfcText
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcTextAlignment
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcTextDecoration
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcTextFontName
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcTextTransformation
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -713,13 +714,13 @@ namespace IFC.Global
 	/// <summary>
 	public interface IfcDate
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcDateTime
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -731,13 +732,13 @@ namespace IFC.Global
 	/// <summary>
 	public interface IfcDuration
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcLanguageId
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -773,13 +774,13 @@ namespace IFC.Global
 	/// <summary>
 	public interface IfcTime
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcURIReference
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -791,31 +792,31 @@ namespace IFC.Global
 	/// <summary>
 	public interface IfcWellKnownTextLiteral
 	{
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcComplexNumber
 	{
-		public List<double>? Value {get;set;}
+		public List<double> Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcCompoundPlaneAngleMeasure
 	{
-		public List<int>? Value {get;set;}
+		public List<int> Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcArcIndex
 	{
-		public List<int>? Value {get;set;}
+		public List<int> Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcLineIndex
 	{
-		public List<int>? Value {get;set;}
+		public List<int> Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -853,7 +854,7 @@ namespace IFC.Global
 		public static string? BRAKES {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -864,7 +865,7 @@ namespace IFC.Global
 		public static string? EXTRAORDINARY_A {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -877,7 +878,7 @@ namespace IFC.Global
 		public static string? THERMOSTATICACTUATOR {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -888,7 +889,7 @@ namespace IFC.Global
 		public static string? HOME {get;set;}
 		public static string? DISTRIBUTIONPOINT {get;set;}
 		public static string? USERDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -896,7 +897,7 @@ namespace IFC.Global
 	{
 		public static string? AHEAD {get;set;}
 		public static string? BEHIND {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -907,7 +908,7 @@ namespace IFC.Global
 		public static string? VARIABLEFLOWPRESSUREINDEPENDANT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -918,7 +919,7 @@ namespace IFC.Global
 		public static string? DIFFUSER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -935,7 +936,7 @@ namespace IFC.Global
 		public static string? THERMOSIPHONCOILTYPEHEATEXCHANGERS {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -949,7 +950,7 @@ namespace IFC.Global
 		public static string? WHISTLE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -960,7 +961,7 @@ namespace IFC.Global
 		public static string? LOADING_3D {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -972,7 +973,7 @@ namespace IFC.Global
 		public static string? FULL_NONLINEAR_THEORY {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -982,7 +983,7 @@ namespace IFC.Global
 		public static string? DIVIDE {get;set;}
 		public static string? MULTIPLY {get;set;}
 		public static string? SUBTRACT {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -991,7 +992,7 @@ namespace IFC.Global
 		public static string? SITE {get;set;}
 		public static string? FACTORY {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1003,7 +1004,7 @@ namespace IFC.Global
 		public static string? PARABOLIC_ARC {get;set;}
 		public static string? HYPERBOLIC_ARC {get;set;}
 		public static string? UNSPECIFIED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1015,7 +1016,7 @@ namespace IFC.Global
 		public static string? T_BEAM {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1027,7 +1028,7 @@ namespace IFC.Global
 		public static string? LESSTHANOREQUALTO {get;set;}
 		public static string? EQUALTO {get;set;}
 		public static string? NOTEQUALTO {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1037,7 +1038,7 @@ namespace IFC.Global
 		public static string? STEAM {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1046,7 +1047,7 @@ namespace IFC.Global
 		public static string? UNION {get;set;}
 		public static string? INTERSECTION {get;set;}
 		public static string? DIFFERENCE {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1054,7 +1055,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1066,7 +1067,7 @@ namespace IFC.Global
 		public static string? TEE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1078,7 +1079,7 @@ namespace IFC.Global
 		public static string? CONDUITSEGMENT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1088,7 +1089,7 @@ namespace IFC.Global
 		public static string? CONDUCTORSEGMENT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1098,7 +1099,7 @@ namespace IFC.Global
 		public static string? MODIFIED {get;set;}
 		public static string? ADDED {get;set;}
 		public static string? DELETED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1109,7 +1110,7 @@ namespace IFC.Global
 		public static string? HEATRECOVERY {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1123,7 +1124,7 @@ namespace IFC.Global
 		public static string? GASHEATINGCOIL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1132,7 +1133,7 @@ namespace IFC.Global
 		public static string? COLUMN {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1155,7 +1156,7 @@ namespace IFC.Global
 		public static string? TWINSCREW {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1169,7 +1170,7 @@ namespace IFC.Global
 		public static string? EVAPORATIVECOOLED {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1179,7 +1180,7 @@ namespace IFC.Global
 		public static string? ATSTART {get;set;}
 		public static string? ATEND {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1190,7 +1191,7 @@ namespace IFC.Global
 		public static string? ADVISORY {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1201,7 +1202,7 @@ namespace IFC.Global
 		public static string? TWOPOSITION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1211,7 +1212,7 @@ namespace IFC.Global
 		public static string? PASSIVE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1222,7 +1223,7 @@ namespace IFC.Global
 		public static string? MECHANICALFORCEDDRAFT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1237,7 +1238,7 @@ namespace IFC.Global
 		public static string? SCHEDULEOFRATES {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1253,7 +1254,7 @@ namespace IFC.Global
 		public static string? WRAPPING {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1342,7 +1343,7 @@ namespace IFC.Global
 		public static string? ZAR {get;set;}
 		public static string? ZWD {get;set;}
 		public static string? NOK {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1350,7 +1351,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1369,7 +1370,7 @@ namespace IFC.Global
 		public static string? FUMEHOODEXHAUST {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1380,7 +1381,7 @@ namespace IFC.Global
 		public static string? SIMULATED {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1435,7 +1436,7 @@ namespace IFC.Global
 		public static string? WARPINGCONSTANTUNIT {get;set;}
 		public static string? WARPINGMOMENTUNIT {get;set;}
 		public static string? USERDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1443,7 +1444,7 @@ namespace IFC.Global
 	{
 		public static string? ORIGIN {get;set;}
 		public static string? TARGET {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1451,7 +1452,7 @@ namespace IFC.Global
 	{
 		public static string? POSITIVE {get;set;}
 		public static string? NEGATIVE {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1467,7 +1468,7 @@ namespace IFC.Global
 		public static string? VALVECHAMBER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1479,7 +1480,7 @@ namespace IFC.Global
 		public static string? PERSONAL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1490,7 +1491,7 @@ namespace IFC.Global
 		public static string? FINAL {get;set;}
 		public static string? REVISION {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1504,7 +1505,7 @@ namespace IFC.Global
 		public static string? ROLLINGUP {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1514,7 +1515,7 @@ namespace IFC.Global
 		public static string? MIDDLE {get;set;}
 		public static string? RIGHT {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1529,7 +1530,7 @@ namespace IFC.Global
 		public static string? PLASTIC {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1553,7 +1554,7 @@ namespace IFC.Global
 		public static string? ROLLINGUP {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1568,7 +1569,7 @@ namespace IFC.Global
 		public static string? TRANSITION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1578,7 +1579,7 @@ namespace IFC.Global
 		public static string? FLEXIBLESEGMENT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1589,7 +1590,7 @@ namespace IFC.Global
 		public static string? ROUND {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1609,7 +1610,7 @@ namespace IFC.Global
 		public static string? WASHINGMACHINE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1618,7 +1619,7 @@ namespace IFC.Global
 		public static string? ALTERNATING {get;set;}
 		public static string? DIRECT {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1635,7 +1636,7 @@ namespace IFC.Global
 		public static string? SWITCHBOARD {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1648,7 +1649,7 @@ namespace IFC.Global
 		public static string? UPS {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1656,7 +1657,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1667,7 +1668,7 @@ namespace IFC.Global
 		public static string? ELECTRICMATHEATER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1680,7 +1681,7 @@ namespace IFC.Global
 		public static string? SYNCHRONOUS {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1691,7 +1692,7 @@ namespace IFC.Global
 		public static string? RELAY {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1708,7 +1709,7 @@ namespace IFC.Global
 		public static string? TRUSS {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1717,7 +1718,7 @@ namespace IFC.Global
 		public static string? COMPLEX {get;set;}
 		public static string? ELEMENT {get;set;}
 		public static string? PARTIAL {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1729,7 +1730,7 @@ namespace IFC.Global
 		public static string? AUXILIARY {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1743,7 +1744,7 @@ namespace IFC.Global
 		public static string? TRANSPORTATION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1760,7 +1761,7 @@ namespace IFC.Global
 		public static string? INDIRECTDIRECTCOMBINATION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1773,7 +1774,7 @@ namespace IFC.Global
 		public static string? SHELLANDCOIL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1788,7 +1789,7 @@ namespace IFC.Global
 		public static string? PROPELLORAXIAL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1801,7 +1802,7 @@ namespace IFC.Global
 		public static string? WATERFILTER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1814,7 +1815,7 @@ namespace IFC.Global
 		public static string? SPRINKLERDEFLECTOR {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1824,7 +1825,7 @@ namespace IFC.Global
 		public static string? SINK {get;set;}
 		public static string? SOURCEANDSINK {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1840,7 +1841,7 @@ namespace IFC.Global
 		public static string? VOLTMETER_RMS {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1852,7 +1853,7 @@ namespace IFC.Global
 		public static string? WATERMETER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1864,7 +1865,7 @@ namespace IFC.Global
 		public static string? STRIP_FOOTING {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1875,7 +1876,7 @@ namespace IFC.Global
 		public static string? GASBURNER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1890,7 +1891,7 @@ namespace IFC.Global
 		public static string? ELEVATION_VIEW {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1898,7 +1899,7 @@ namespace IFC.Global
 	{
 		public static string? GLOBAL_COORDS {get;set;}
 		public static string? LOCAL_COORDS {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1908,7 +1909,7 @@ namespace IFC.Global
 		public static string? SHELLANDTUBE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1929,7 +1930,7 @@ namespace IFC.Global
 		public static string? ASSISTEDSTEAM {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1938,7 +1939,7 @@ namespace IFC.Global
 		public static string? INTERNAL {get;set;}
 		public static string? EXTERNAL {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1949,7 +1950,7 @@ namespace IFC.Global
 		public static string? FURNITUREINVENTORY {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1957,7 +1958,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1971,7 +1972,7 @@ namespace IFC.Global
 		public static string? TUNGSTENFILAMENT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1980,7 +1981,7 @@ namespace IFC.Global
 		public static string? AXIS1 {get;set;}
 		public static string? AXIS2 {get;set;}
 		public static string? AXIS3 {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -1990,7 +1991,7 @@ namespace IFC.Global
 		public static string? TYPE_B {get;set;}
 		public static string? TYPE_C {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2007,7 +2008,7 @@ namespace IFC.Global
 		public static string? METALHALIDE {get;set;}
 		public static string? TUNGSTENFILAMENT {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2017,7 +2018,7 @@ namespace IFC.Global
 		public static string? DIRECTIONSOURCE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2028,7 +2029,7 @@ namespace IFC.Global
 		public static string? LOAD_COMBINATION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2036,7 +2037,7 @@ namespace IFC.Global
 	{
 		public static string? LOGICALAND {get;set;}
 		public static string? LOGICALOR {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2056,7 +2057,7 @@ namespace IFC.Global
 		public static string? STUD {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2067,14 +2068,14 @@ namespace IFC.Global
 		public static string? DIRECTDRIVE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
 	public interface IfcNullStyle
 	{
 		public static string? NULL {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2088,7 +2089,7 @@ namespace IFC.Global
 		public static string? GROUP {get;set;}
 		public static string? PROJECT {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2102,7 +2103,7 @@ namespace IFC.Global
 		public static string? TRIGGERCONDITION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2117,7 +2118,7 @@ namespace IFC.Global
 		public static string? TENANT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2128,7 +2129,7 @@ namespace IFC.Global
 		public static string? POWEROUTLET {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2139,7 +2140,7 @@ namespace IFC.Global
 		public static string? SCREEN {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2148,7 +2149,7 @@ namespace IFC.Global
 		public static string? PHYSICAL {get;set;}
 		public static string? VIRTUAL {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2160,7 +2161,7 @@ namespace IFC.Global
 		public static string? PREFAB_STEEL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2171,7 +2172,7 @@ namespace IFC.Global
 		public static string? SUPPORT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2186,7 +2187,7 @@ namespace IFC.Global
 		public static string? TRANSITION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2198,7 +2199,7 @@ namespace IFC.Global
 		public static string? SPOOL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2208,7 +2209,7 @@ namespace IFC.Global
 		public static string? SHEET {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2223,7 +2224,7 @@ namespace IFC.Global
 		public static string? STARTUP {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2231,7 +2232,7 @@ namespace IFC.Global
 	{
 		public static string? CURVE {get;set;}
 		public static string? AREA {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2244,7 +2245,7 @@ namespace IFC.Global
 		public static string? WORK {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2257,7 +2258,7 @@ namespace IFC.Global
 		public static string? WORKORDER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2265,7 +2266,7 @@ namespace IFC.Global
 	{
 		public static string? PROJECTED_LENGTH {get;set;}
 		public static string? TRUE_LENGTH {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2280,7 +2281,7 @@ namespace IFC.Global
 		public static string? MEASURED {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTKNOWN {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2293,7 +2294,7 @@ namespace IFC.Global
 		public static string? VARISTOR {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2306,7 +2307,7 @@ namespace IFC.Global
 		public static string? VERTICALTURBINE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2317,7 +2318,7 @@ namespace IFC.Global
 		public static string? BALUSTRADE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2327,7 +2328,7 @@ namespace IFC.Global
 		public static string? SPIRAL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2341,7 +2342,7 @@ namespace IFC.Global
 		public static string? SPIRAL_RAMP {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2357,7 +2358,7 @@ namespace IFC.Global
 		public static string? PLASTIC {get;set;}
 		public static string? STRAUSS {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2372,7 +2373,7 @@ namespace IFC.Global
 		public static string? RING {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2380,7 +2381,7 @@ namespace IFC.Global
 	{
 		public static string? PLAIN {get;set;}
 		public static string? TEXTURED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2394,7 +2395,7 @@ namespace IFC.Global
 		public static string? NOTOCCUPIED {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2402,7 +2403,7 @@ namespace IFC.Global
 	{
 		public static string? DIRECTION_X {get;set;}
 		public static string? DIRECTION_Y {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2430,7 +2431,7 @@ namespace IFC.Global
 		public static string? FIELDCONSTRUCTIONMANAGER {get;set;}
 		public static string? RESELLER {get;set;}
 		public static string? USERDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2450,7 +2451,7 @@ namespace IFC.Global
 		public static string? DOME_ROOF {get;set;}
 		public static string? FREEFORM {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2472,7 +2473,7 @@ namespace IFC.Global
 		public static string? PICO {get;set;}
 		public static string? FEMTO {get;set;}
 		public static string? ATTO {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2508,7 +2509,7 @@ namespace IFC.Global
 		public static string? VOLT {get;set;}
 		public static string? WATT {get;set;}
 		public static string? WEBER {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2526,7 +2527,7 @@ namespace IFC.Global
 		public static string? WCSEAT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2534,7 +2535,7 @@ namespace IFC.Global
 	{
 		public static string? UNIFORM {get;set;}
 		public static string? TAPERED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2555,7 +2556,7 @@ namespace IFC.Global
 		public static string? TEMPERATURESENSOR {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2566,7 +2567,7 @@ namespace IFC.Global
 		public static string? FINISH_START {get;set;}
 		public static string? FINISH_FINISH {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2581,7 +2582,7 @@ namespace IFC.Global
 		public static string? G_MAINTENANCELEVEL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2592,7 +2593,7 @@ namespace IFC.Global
 		public static string? OPTIMISTICREFERENCESERVICELIFE {get;set;}
 		public static string? PESSIMISTICREFERENCESERVICELIFE {get;set;}
 		public static string? REFERENCESERVICELIFE {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2604,7 +2605,7 @@ namespace IFC.Global
 		public static string? BASESLAB {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2617,7 +2618,7 @@ namespace IFC.Global
 		public static string? NR {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2626,7 +2627,7 @@ namespace IFC.Global
 		public static string? CONVECTOR {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2634,7 +2635,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2645,7 +2646,7 @@ namespace IFC.Global
 		public static string? RAINWATERHOPPER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2658,7 +2659,7 @@ namespace IFC.Global
 		public static string? FREEFORM {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2680,7 +2681,7 @@ namespace IFC.Global
 		public static string? TWO_CURVED_RUN_STAIR {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2691,7 +2692,7 @@ namespace IFC.Global
 		public static string? LOCKED {get;set;}
 		public static string? READWRITELOCKED {get;set;}
 		public static string? READONLYLOCKED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2704,7 +2705,7 @@ namespace IFC.Global
 		public static string? COMPRESSION_MEMBER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2715,7 +2716,7 @@ namespace IFC.Global
 		public static string? SHELL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2724,7 +2725,7 @@ namespace IFC.Global
 		public static string? POSITIVE {get;set;}
 		public static string? NEGATIVE {get;set;}
 		public static string? BOTH {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2739,7 +2740,7 @@ namespace IFC.Global
 		public static string? TEXTURE {get;set;}
 		public static string? TRANSPARENCYMAP {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2752,7 +2753,7 @@ namespace IFC.Global
 		public static string? TOGGLESWITCH {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2762,7 +2763,7 @@ namespace IFC.Global
 		public static string? PRESSUREVESSEL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2774,7 +2775,7 @@ namespace IFC.Global
 		public static string? COATED {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2784,7 +2785,7 @@ namespace IFC.Global
 		public static string? RIGHT {get;set;}
 		public static string? UP {get;set;}
 		public static string? DOWN {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2803,7 +2804,7 @@ namespace IFC.Global
 		public static string? INFILTRATION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2813,7 +2814,7 @@ namespace IFC.Global
 		public static string? LATENT {get;set;}
 		public static string? RADIANT {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2826,7 +2827,7 @@ namespace IFC.Global
 		public static string? PIECEWISECONSTANT {get;set;}
 		public static string? PIECEWISECONTINUOUS {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2838,7 +2839,7 @@ namespace IFC.Global
 		public static string? DAILY {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2849,7 +2850,7 @@ namespace IFC.Global
 		public static string? VOLTAGE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2859,7 +2860,7 @@ namespace IFC.Global
 		public static string? CONTINUOUS {get;set;}
 		public static string? CONTSAMEGRADIENT {get;set;}
 		public static string? CONTSAMEGRADIENTSAMECURVATURE {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2870,7 +2871,7 @@ namespace IFC.Global
 		public static string? MOVINGWALKWAY {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2879,7 +2880,7 @@ namespace IFC.Global
 		public static string? CARTESIAN {get;set;}
 		public static string? PARAMETER {get;set;}
 		public static string? UNSPECIFIED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2888,7 +2889,7 @@ namespace IFC.Global
 		public static string? FINNED {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2924,7 +2925,7 @@ namespace IFC.Global
 		public static string? TIMEUNIT {get;set;}
 		public static string? VOLUMEUNIT {get;set;}
 		public static string? USERDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2936,7 +2937,7 @@ namespace IFC.Global
 		public static string? ROOFTOPUNIT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2965,7 +2966,7 @@ namespace IFC.Global
 		public static string? STOPCOCK {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2975,7 +2976,7 @@ namespace IFC.Global
 		public static string? SPRING {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -2988,7 +2989,7 @@ namespace IFC.Global
 		public static string? PLUMBINGWALL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3003,7 +3004,7 @@ namespace IFC.Global
 		public static string? WASTETRAP {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3023,7 +3024,7 @@ namespace IFC.Global
 		public static string? FIXEDCASEMENT {get;set;}
 		public static string? OTHEROPERATION {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3035,7 +3036,7 @@ namespace IFC.Global
 		public static string? BOTTOM {get;set;}
 		public static string? TOP {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3049,7 +3050,7 @@ namespace IFC.Global
 		public static string? PLASTIC {get;set;}
 		public static string? OTHER_CONSTRUCTION {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3066,7 +3067,7 @@ namespace IFC.Global
 		public static string? TRIPLE_PANEL_HORIZONTAL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3077,7 +3078,7 @@ namespace IFC.Global
 		public static string? PLANNED {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3090,7 +3091,7 @@ namespace IFC.Global
 		public static string? VERBAL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3109,7 +3110,7 @@ namespace IFC.Global
 		public static string? TUNER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3126,7 +3127,7 @@ namespace IFC.Global
 		public static string? QUADRIC_SURF {get;set;}
 		public static string? SURF_OF_LINEAR_EXTRUSION {get;set;}
 		public static string? UNSPECIFIED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3136,7 +3137,7 @@ namespace IFC.Global
 		public static string? PRECASTPANEL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3150,7 +3151,7 @@ namespace IFC.Global
 		public static string? TRANSPORT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3158,7 +3159,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3171,7 +3172,7 @@ namespace IFC.Global
 		public static string? TRANSITION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3179,7 +3180,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3199,7 +3200,7 @@ namespace IFC.Global
 		public static string? SCANNER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3207,7 +3208,7 @@ namespace IFC.Global
 	{
 		public static string? P_COMPLEX {get;set;}
 		public static string? Q_COMPLEX {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3223,7 +3224,7 @@ namespace IFC.Global
 		public static string? TRANSPORTING {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3240,7 +3241,7 @@ namespace IFC.Global
 		public static string? WOOD {get;set;}
 		public static string? NOTDEFINED {get;set;}
 		public static string? USERDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3250,7 +3251,7 @@ namespace IFC.Global
 		public static string? FORMWORK {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3258,7 +3259,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3268,7 +3269,7 @@ namespace IFC.Global
 		public static string? SITE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3278,7 +3279,7 @@ namespace IFC.Global
 		public static string? LOG_LINEAR {get;set;}
 		public static string? LOG_LOG {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3289,7 +3290,7 @@ namespace IFC.Global
 		public static string? SHOE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3301,7 +3302,7 @@ namespace IFC.Global
 		public static string? PIPE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3351,7 +3352,7 @@ namespace IFC.Global
 		public static string? WATERSUPPLY {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3362,7 +3363,7 @@ namespace IFC.Global
 		public static string? TRAPDOOR {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3388,7 +3389,7 @@ namespace IFC.Global
 		public static string? SWING_FIXED_RIGHT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3400,7 +3401,7 @@ namespace IFC.Global
 		public static string? SWITCHBOARD {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3410,7 +3411,7 @@ namespace IFC.Global
 		public static string? INTERNALCOMBUSTION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3422,7 +3423,7 @@ namespace IFC.Global
 		public static string? EVENTCOMPLEX {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3433,7 +3434,7 @@ namespace IFC.Global
 		public static string? INTERMEDIATEEVENT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3445,7 +3446,7 @@ namespace IFC.Global
 		public static string? EXTERNAL_FIRE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3456,7 +3457,7 @@ namespace IFC.Global
 		public static string? WELD {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3471,7 +3472,7 @@ namespace IFC.Global
 		public static string? SOFA {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3480,7 +3481,7 @@ namespace IFC.Global
 		public static string? TERRAIN {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3492,7 +3493,7 @@ namespace IFC.Global
 		public static string? IRREGULAR {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3504,7 +3505,7 @@ namespace IFC.Global
 		public static string? PETROL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3514,7 +3515,7 @@ namespace IFC.Global
 		public static string? QUASI_UNIFORM_KNOTS {get;set;}
 		public static string? PIECEWISE_BEZIER_KNOTS {get;set;}
 		public static string? UNSPECIFIED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3541,7 +3542,7 @@ namespace IFC.Global
 		public static string? SURVEYING {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3559,7 +3560,7 @@ namespace IFC.Global
 		public static string? STUDSHEARCONNECTOR {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3572,7 +3573,7 @@ namespace IFC.Global
 		public static string? VACUUMSTATION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3582,7 +3583,7 @@ namespace IFC.Global
 		public static string? RECESS {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3590,7 +3591,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3601,7 +3602,7 @@ namespace IFC.Global
 		public static string? WORK {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3610,7 +3611,7 @@ namespace IFC.Global
 		public static string? CURVE3D {get;set;}
 		public static string? PCURVE_S1 {get;set;}
 		public static string? PCURVE_S2 {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3618,7 +3619,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3632,7 +3633,7 @@ namespace IFC.Global
 		public static string? QTO_TYPEDRIVENOVERRIDE {get;set;}
 		public static string? QTO_OCCURRENCEDRIVEN {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3644,7 +3645,7 @@ namespace IFC.Global
 		public static string? THERMAL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3658,7 +3659,7 @@ namespace IFC.Global
 		public static string? BY_WEEKDAY_COUNT {get;set;}
 		public static string? YEARLY_BY_DAY_OF_MONTH {get;set;}
 		public static string? YEARLY_BY_POSITION {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3674,7 +3675,7 @@ namespace IFC.Global
 		public static string? STUD {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3682,7 +3683,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3693,7 +3694,7 @@ namespace IFC.Global
 		public static string? AWNING {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3711,7 +3712,7 @@ namespace IFC.Global
 		public static string? Q_COUNT {get;set;}
 		public static string? Q_WEIGHT {get;set;}
 		public static string? Q_TIME {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3721,7 +3722,7 @@ namespace IFC.Global
 		public static string? SOLARPANEL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3737,7 +3738,7 @@ namespace IFC.Global
 		public static string? VENTILATION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3752,7 +3753,7 @@ namespace IFC.Global
 		public static string? DISCRETE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3765,7 +3766,7 @@ namespace IFC.Global
 		public static string? COMPRESSION_MEMBER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3777,7 +3778,7 @@ namespace IFC.Global
 		public static string? ISOCONTOUR {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3788,7 +3789,7 @@ namespace IFC.Global
 		public static string? SHELL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3798,7 +3799,7 @@ namespace IFC.Global
 		public static string? WORK {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3809,7 +3810,7 @@ namespace IFC.Global
 		public static string? TREATMENT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3819,7 +3820,7 @@ namespace IFC.Global
 		public static string? WORKSURFACE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3828,7 +3829,7 @@ namespace IFC.Global
 		public static string? ELAPSEDTIME {get;set;}
 		public static string? WORKTIME {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3848,7 +3849,7 @@ namespace IFC.Global
 		public static string? RENOVATION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3859,7 +3860,7 @@ namespace IFC.Global
 		public static string? TENSIONING_END {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3875,7 +3876,7 @@ namespace IFC.Global
 		public static string? WEATHERSTATION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3889,7 +3890,7 @@ namespace IFC.Global
 		public static string? EDGE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3900,7 +3901,7 @@ namespace IFC.Global
 		public static string? LIGHTDOME {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3917,7 +3918,7 @@ namespace IFC.Global
 		public static string? TRIPLE_PANEL_HORIZONTAL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3928,7 +3929,7 @@ namespace IFC.Global
 		public static string? THIRDSHIFT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3939,7 +3940,7 @@ namespace IFC.Global
 		public static string? PLANNED {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3950,7 +3951,7 @@ namespace IFC.Global
 		public static string? PLANNED {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3958,7 +3959,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3969,7 +3970,7 @@ namespace IFC.Global
 		public static string? STATION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3981,7 +3982,7 @@ namespace IFC.Global
 		public static string? COSINECURVE {get;set;}
 		public static string? CUBICPARABOLA {get;set;}
 		public static string? SINECURVE {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -3992,7 +3993,7 @@ namespace IFC.Global
 		public static string? GUIDED_TRANSVERSAL {get;set;}
 		public static string? FREE_MOVEMENT {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4008,7 +4009,7 @@ namespace IFC.Global
 		public static string? DISK {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4026,7 +4027,7 @@ namespace IFC.Global
 		public static string? SURFACESTRUCTURE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4042,7 +4043,7 @@ namespace IFC.Global
 		public static string? TRUSS {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4052,7 +4053,7 @@ namespace IFC.Global
 		public static string? CAISSON {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4065,7 +4066,7 @@ namespace IFC.Global
 		public static string? DIABOLO {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4079,7 +4080,7 @@ namespace IFC.Global
 		public static string? RUBBER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4092,7 +4093,7 @@ namespace IFC.Global
 		public static string? LINEARTRANSITION {get;set;}
 		public static string? SINECURVE {get;set;}
 		public static string? VIENNESEBEND {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4107,7 +4108,7 @@ namespace IFC.Global
 		public static string? LINE {get;set;}
 		public static string? SINECURVE {get;set;}
 		public static string? VIENNESEBEND {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4117,7 +4118,7 @@ namespace IFC.Global
 		public static string? CLOTHOID {get;set;}
 		public static string? CONSTANTGRADIENT {get;set;}
 		public static string? PARABOLICARC {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4134,7 +4135,7 @@ namespace IFC.Global
 		public static string? TEXT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4155,7 +4156,7 @@ namespace IFC.Global
 		public static string? TRANSPORT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4167,7 +4168,7 @@ namespace IFC.Global
 		public static string? SCREWCONVEYOR {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4181,7 +4182,7 @@ namespace IFC.Global
 		public static string? PROTECTION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4195,7 +4196,7 @@ namespace IFC.Global
 		public static string? SWITCHBOARD {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4212,7 +4213,7 @@ namespace IFC.Global
 		public static string? TRENCH {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4227,7 +4228,7 @@ namespace IFC.Global
 		public static string? TRANSITIONSECTION {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4236,7 +4237,7 @@ namespace IFC.Global
 		public static string? ELECTRONICFILTER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4252,7 +4253,7 @@ namespace IFC.Global
 		public static string? TERMINAL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4264,7 +4265,7 @@ namespace IFC.Global
 		public static string? VERTICAL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4275,7 +4276,7 @@ namespace IFC.Global
 		public static string? WATER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4287,7 +4288,7 @@ namespace IFC.Global
 		public static string? FENDER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4295,7 +4296,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4305,7 +4306,7 @@ namespace IFC.Global
 		public static string? LOADINGARM {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4332,7 +4333,7 @@ namespace IFC.Global
 		public static string? WATERWAYSHIPLIFT {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4364,7 +4365,7 @@ namespace IFC.Global
 		public static string? WEATHERSIDE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4385,7 +4386,7 @@ namespace IFC.Global
 		public static string? SUBSCRIBERSERVER {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4398,7 +4399,7 @@ namespace IFC.Global
 		public static string? VACUUMDEVICE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4408,7 +4409,7 @@ namespace IFC.Global
 		public static string? BUOY {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4418,7 +4419,7 @@ namespace IFC.Global
 		public static string? RIGID {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4432,7 +4433,7 @@ namespace IFC.Global
 		public static string? STOCKRAIL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4449,7 +4450,7 @@ namespace IFC.Global
 		public static string? TURNOUTTRACK {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4457,7 +4458,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4471,7 +4472,7 @@ namespace IFC.Global
 		public static string? VERTICALLYDRAINED {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4503,7 +4504,7 @@ namespace IFC.Global
 		public static string? TRAFFICLANE {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4511,7 +4512,7 @@ namespace IFC.Global
 	{
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4522,7 +4523,7 @@ namespace IFC.Global
 		public static string? PICTORAL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4533,7 +4534,7 @@ namespace IFC.Global
 		public static string? VISUAL {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4549,7 +4550,7 @@ namespace IFC.Global
 		public static string? VEHICLESTOP {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4564,7 +4565,7 @@ namespace IFC.Global
 		public static string? VEHICLEWHEELED {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>
@@ -4575,7 +4576,7 @@ namespace IFC.Global
 		public static string? PROVISIONFORVOID {get;set;}
 		public static string? USERDEFINED {get;set;}
 		public static string? NOTDEFINED {get;set;}
-		public string? Value {get;set;}
+		public string Value {get;set;}
 	}
 	/// <summary>
 	/// <summary>

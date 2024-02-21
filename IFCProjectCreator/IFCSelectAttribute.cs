@@ -18,10 +18,11 @@ namespace IFCProjectCreator
         public override List<string> GetCSharpText()
         {
             var typeText = GetCSharpTypeText();
-            if(typeText != "int" && typeText != "float" && typeText != "double" && typeText != "bool") 
+            if(typeText != "int" && typeText != "float" && typeText != "double" && typeText != "bool" && typeText != "string" && !typeText.Contains("<int>") && !typeText.Contains("<float>") && !typeText.Contains("<double>") && !typeText.Contains("<bool>") && !typeText.Contains("<string>")) 
             {
                 typeText = typeText + "?";
             }
+          
 
             //return new List<string>
             //{
