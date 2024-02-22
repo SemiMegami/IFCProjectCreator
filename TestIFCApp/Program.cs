@@ -1,5 +1,6 @@
 ﻿using System;
-using IFC.IFC4;
+using IFC.Global;
+using IFC;
 namespace TestIFCApp
 {
     internal class Program
@@ -8,14 +9,10 @@ namespace TestIFCApp
         {
             Console.WriteLine("Hello World!");
 
-            IfcPositiveInteger a = 5;
 
-            int b = a;
 
-            IfcArcIndex arc = new IfcArcIndex();
-            arc.Add(b);
-            List<int> d = arc;
-            IfcArcIndex arc2 = d;
+            IFC.IFC_Model model = new IFC_Model("2x3");
+           // var beams = model.GetItems<IFCBeam>();
         }
     }
 }

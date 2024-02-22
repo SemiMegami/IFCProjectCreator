@@ -23,14 +23,6 @@ namespace IFCProjectCreator
                 typeText = typeText + "?";
             }
 
-    
-       
-
-            //return new List<string>
-            //{
-            //    "\t\tpublic " + (isClassAttribute?"virtual ":"") + typeText + " " + Name + " {get;set;}"
-            //};
-
             return new List<string>
             {
                 "\t\tpublic " + (isClassAttribute?"virtual ":"") + typeText + " " + Name + " {get; " + (isReadOnly?"":"set;") +"}"

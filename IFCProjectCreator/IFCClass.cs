@@ -110,6 +110,7 @@ namespace IFCProjectCreator
                     }
                 }
             }
+            Name = Name.Replace("Ifc", "IFC");
         }
 
         #region ---- CSharp ----

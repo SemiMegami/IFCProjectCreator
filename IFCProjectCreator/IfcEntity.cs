@@ -154,6 +154,7 @@ namespace IFCProjectCreator
                 if (line.Contains("SUBTYPE OF"))
                 {
                     ParentName = words[nW - 1].Replace(";", "").Replace("(", "").Replace(")", "");
+                    ParentName = ParentName.Replace("Ifc", "IFC");
                 }
                 // Set Abstract
                 if (line.Contains("ABSTRACT"))
@@ -242,7 +243,7 @@ namespace IFCProjectCreator
             {
                 attribute.TypeName = "INTEGER";
             }
-
+            attribute.TypeName = attribute.TypeName.Replace("Ifc", "IFC");
             int ofCount = 0;
             for (int i = 0; i < splitIndex; i++)
             {
@@ -395,7 +396,7 @@ namespace IFCProjectCreator
             }
             else
             {
-                return " : " + "Ifc_Entity";
+                return " : " + "IFC_Entity";
             }
         }
     }

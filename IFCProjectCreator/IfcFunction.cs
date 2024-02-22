@@ -70,7 +70,7 @@
             }
 
             string typeName = typeText.Contains("GENERIC") ? "GENERIC" : typeWords[typeWords.Count - 1];
-
+            typeName = typeName.Replace("Ifc", "IFC");
             IFCAggregation aggregation = IFCAggregation.NONE;
             IFCAttributeType attributeType = IFCAttributeType.SINGLE;
             int ofCount = 0;
@@ -141,6 +141,7 @@
             }
 
             Output.TypeName = outputText.Contains("GENERIC") ? "GENERIC" : outputWords[outputWords.Count - 1];
+            Output.TypeName = Output.TypeName.Replace("Ifc", "IFC");
             int ofCount = 0;
             for (int i = 0; i < outputWords.Count; i++)
             {
@@ -227,9 +228,9 @@
                         inputType = inputType.Replace("GENERIC", "T").Replace("Item", "T");
                     }
                     // fix error from express
-                    if (inputType == "IfcSiUnitName")
+                    if (inputType == "IFCSiUnitName")
                     {
-                        inputType = "IfcSIUnitName";
+                        inputType = "IFCSIUnitName";
                     }
                     header += inputType + " " + Inputs[i].Name;
                     if (i < Inputs.Count - 1)

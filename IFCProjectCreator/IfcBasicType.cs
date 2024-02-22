@@ -31,6 +31,7 @@
                     ParentName = "STRING";
                 }
             }
+            ParentName = ParentName.Replace("Ifc", "IFC");
         }
 
         public override List<string> GetCSharpTexts()

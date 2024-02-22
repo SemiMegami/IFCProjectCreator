@@ -3,51 +3,51 @@ using System.Collections.Generic;
 #pragma warning disable VSSpell001 // Spell Check
 namespace IFC
 {
-	public class Ifc_Model
+	public class IFC_Model
 	{
 
-               /// <summary>
+        /// <summary>
         /// Version of this model
         /// </summary>
-        protected Ifc_Version Version;
+        protected IFC_Version Version;
 
         /// <summary>
         /// IFC Items
         /// </summary>
-		public Dictionary<string, Ifc_Entity> items;
+		public Dictionary<string, IFC> items;
 
         /// <summary>
-        /// Constructure
+        /// Constructor
         /// </summary>
-        public Ifc_Model(string version)
+        public IFC_Model(string version)
         {
             switch (version.ToUpper())
             {
-                case "IFC2X3": this.Version = Ifc_Version.Ifc2x3; break;
-                case "IFC4": this.Version = Ifc_Version.Ifc4; break;
-                case "IFC4X1": this.Version = Ifc_Version.Ifc4x1; break;
-                case "IFC4X2": this.Version = Ifc_Version.Ifc4x2; break;
-                case "IFC4X3": this.Version = Ifc_Version.Ifc4x3; break;
+                case "IFC2X3": this.Version = IFC_Version.IFC2x3; break;
+                case "IFC4": this.Version = IFC_Version.IFC4; break;
+                case "IFC4X1": this.Version = IFC_Version.IFC4x1; break;
+                case "IFC4X2": this.Version = IFC_Version.IFC4x2; break;
+                case "IFC4X3": this.Version = IFC_Version.IFC4x3; break;
             }
-            items = new Dictionary<string, Ifc_Entity>();
+            items = new Dictionary<string, IFC>();
         }
 
         /// <summary>
-        /// Initalize the model
+        /// Initialize the model
         /// </summary>
         public virtual void Initialize()
         {
-            items = new Dictionary<string, Ifc_Entity>();
+            items = new Dictionary<string, IFC>();
         }
 
         /// <summary>
-        /// Return IFC Item with specificed type
+        /// Return IFC Item with specified type
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        public List<T> GetItems<T>() where T : Ifc_Entity
+        public List<T> GetItems<T>() where T : IFC
 		{
-			List<Ifc_Entity> itemList = items.Values.Where(x => x is T).ToList();
+			List<IFC> itemList = items.Values.Where(x => x is T).ToList();
             List <T> results = new List<T>();
 			foreach (var item in itemList)
 			{
@@ -64,7 +64,7 @@ namespace IFC
             }
             if(parameter != null)
             {
-                if (parameter is Ifc_Entity entity)
+                if (parameter is IFC_Entity entity)
                 {
                     if (entity.Model != this)
                     {
@@ -91,10 +91,10 @@ namespace IFC
             items.Clear();
         }
 
-        public virtual void AddItem(Ifc_Entity ifcBase)
+        public virtual void AddItem(IFC_Entity IFCBase)
         {
 
-            List<object?> parameters = ifcBase.GetParameters();
+            List<object?> parameters = IFCBase.GetParameters();
 
             foreach (var parameter in parameters)
             {
@@ -104,23 +104,23 @@ namespace IFC
                 }
             }
 
-            if (ifcBase.Model == this)
+            if (IFCBase.Model == this)
             {
                 return;
             }
 
-            string ifcid = "#" + (items.Count + 1);
-            ifcBase.ifcid = ifcid;
-            items.Add(ifcid, ifcBase);
-            ifcBase.Model = this;
+            string IFC_ID = "#" + (items.Count + 1);
+            IFCBase.IFC_ID = IFC_ID;
+            items.Add(IFC_ID, IFCBase);
+            IFCBase.Model = this;
 
         }
 
         /// <summary>
-        /// Export model to Ifc
+        /// Export model to IFC
         /// </summary>
         /// <returns></returns>
-        public virtual void ExportIfc(string path)
+        public virtual void ExportIFC(string path)
         {
             var now = DateTime.UtcNow.ToString();
             using (StreamWriter writer = new StreamWriter(path))
@@ -146,7 +146,7 @@ namespace IFC
                 {
                     if (item != null)
                     {
-                        string text = item.GetIfcFullText();
+                        string text = item.GetIFCFullText();
                         writer.WriteLine(text);
                     }
                 }
@@ -164,23 +164,23 @@ namespace IFC
         {
             switch (Version)
             {
-                case Ifc_Version.UNDEFINED: return "";
-                case Ifc_Version.Ifc2x3: return "Ifc2x3";
-                case Ifc_Version.Ifc4: return "Ifc4";
-                case Ifc_Version.Ifc4x1: return "Ifc4x1";
-                case Ifc_Version.Ifc4x2: return "Ifc4x2";
-                case Ifc_Version.Ifc4x3: return "Ifc4x3";
+                case IFC_Version.UNDEFINED: return "";
+                case IFC_Version.IFC2x3: return "IFC2x3";
+                case IFC_Version.IFC4: return "IFC4";
+                case IFC_Version.IFC4x1: return "IFC4x1";
+                case IFC_Version.IFC4x2: return "IFC4x2";
+                case IFC_Version.IFC4x3: return "IFC4x3";
             }
             return "";
         }
  	}
-	public enum Ifc_Version
+	public enum IFC_Version
 	{
 		UNDEFINED = 0,
-		Ifc2x3 = 23,
-		Ifc4 = 4,
-		Ifc4x1 = 41,
-		Ifc4x2 = 42,
-		Ifc4x3 = 43,
+		IFC2x3 = 23,
+		IFC4 = 4,
+		IFC4x1 = 41,
+		IFC4x2 = 42,
+		IFC4x3 = 43,
 	}
 }

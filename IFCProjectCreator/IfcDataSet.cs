@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Numerics;
 using System.Runtime.InteropServices;
@@ -16,7 +17,7 @@ namespace IFCProjectCreator
     public class IFCDataSet
     {
         public readonly string globalName = "Global";
-        public readonly string ifcName = "Ifc";
+        public readonly string IFCName = "IFC";
 
         public readonly Dictionary<string, string> CSharpBasicDataTypes = new Dictionary<string, string>()
         {
@@ -292,7 +293,7 @@ namespace IFCProjectCreator
             foreach (var entity in Entities)
             {
                 var entityAttributes = entity.AllAttributes.Where(e => e is IFCDeriveAttribute || e is IFCInverseAttribute).ToList();
-                if(entity.Name == "IfcAxis2Placement2D")
+                if(entity.Name == "IFCAxis2Placement2D")
                 {
 
                 }
@@ -692,9 +693,10 @@ namespace IFCProjectCreator
         public void WriteCSharp(string folderDir, string nameSpaceName)
         {
             NamespaceName = nameSpaceName;
-            WtiteCSharpModel(folderDir, nameSpaceName);
-            WtiteCSharpEntity(folderDir, nameSpaceName);
-            WtiteCSharpBasicType(folderDir, nameSpaceName);
+            WriteCSharpModel(folderDir, nameSpaceName);
+            WriteCSharpEntity(folderDir, nameSpaceName);
+            WriteCSharpIFC(folderDir, nameSpaceName);
+            WriteCSharpBasicType(folderDir, nameSpaceName);
             foreach (var version in Versions)
             {
                 WriteCSharp(folderDir, nameSpaceName, version);
@@ -708,7 +710,7 @@ namespace IFCProjectCreator
         /// <param name="folderDir"></param>
         public void WriteCSharp(string folderDir, string nameSpaceName, string version)
         {
-            using (StreamWriter writer = new StreamWriter(folderDir + version + ".cs"))
+            using (StreamWriter writer = new StreamWriter(folderDir + (version == globalName?"IFC_":"") + version + ".cs"))
             {
                 var items = GetItems(version);
                 writer.WriteLine("using System;");
@@ -716,7 +718,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName + "." + version);
                 writer.WriteLine("{");
-                writer.WriteLine("\tpublic abstract class " + ifcName + "_Function : Ifc_Entity");
+                writer.WriteLine("\tpublic abstract class " + IFCName + "_Function : IFC_Entity");
                 writer.WriteLine("\t{");
                 foreach(var f in Functions.Where(e=>e.VersionName == version).ToList())
                 {
@@ -739,62 +741,62 @@ namespace IFCProjectCreator
             }
         }
 
-        private void WtiteCSharpModel(string folderDir, string nameSpaceName)
+        private void WriteCSharpModel(string folderDir, string nameSpaceName)
         {
-            using (StreamWriter writer = new StreamWriter(folderDir + "Ifc_Model.cs"))
+            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Model.cs"))
             {
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
-                writer.WriteLine("\tpublic class Ifc_Model");
+                writer.WriteLine("\tpublic class IFC_Model");
                 writer.WriteLine("\t{");
         
                 string contain =
         @"
-               /// <summary>
+        /// <summary>
         /// Version of this model
         /// </summary>
-        protected Ifc_Version Version;
+        protected IFC_Version Version;
 
         /// <summary>
         /// IFC Items
         /// </summary>
-		public Dictionary<string, Ifc_Entity> items;
+		public Dictionary<string, IFC> items;
 
         /// <summary>
-        /// Constructure
+        /// Constructor
         /// </summary>
-        public Ifc_Model(string version)
+        public IFC_Model(string version)
         {
             switch (version.ToUpper())
             {
-                case ""IFC2X3"": this.Version = Ifc_Version.Ifc2x3; break;
-                case ""IFC4"": this.Version = Ifc_Version.Ifc4; break;
-                case ""IFC4X1"": this.Version = Ifc_Version.Ifc4x1; break;
-                case ""IFC4X2"": this.Version = Ifc_Version.Ifc4x2; break;
-                case ""IFC4X3"": this.Version = Ifc_Version.Ifc4x3; break;
+                case ""IFC2X3"": this.Version = IFC_Version.IFC2x3; break;
+                case ""IFC4"": this.Version = IFC_Version.IFC4; break;
+                case ""IFC4X1"": this.Version = IFC_Version.IFC4x1; break;
+                case ""IFC4X2"": this.Version = IFC_Version.IFC4x2; break;
+                case ""IFC4X3"": this.Version = IFC_Version.IFC4x3; break;
             }
-            items = new Dictionary<string, Ifc_Entity>();
+            items = new Dictionary<string, IFC>();
         }
 
         /// <summary>
-        /// Initalize the model
+        /// Initialize the model
         /// </summary>
         public virtual void Initialize()
         {
-            items = new Dictionary<string, Ifc_Entity>();
+            items = new Dictionary<string, IFC>();
         }
 
         /// <summary>
-        /// Return IFC Item with specificed type
+        /// Return IFC Item with specified type
         /// </summary>
         /// <typeparam name=""T""></typeparam>
         /// <returns></returns>
-        public List<T> GetItems<T>() where T : Ifc_Entity
+        public List<T> GetItems<T>() where T : IFC
 		{
-			List<Ifc_Entity> itemList = items.Values.Where(x => x is T).ToList();
+			List<IFC> itemList = items.Values.Where(x => x is T).ToList();
             List <T> results = new List<T>();
 			foreach (var item in itemList)
 			{
@@ -811,7 +813,7 @@ namespace IFCProjectCreator
             }
             if(parameter != null)
             {
-                if (parameter is Ifc_Entity entity)
+                if (parameter is IFC_Entity entity)
                 {
                     if (entity.Model != this)
                     {
@@ -838,10 +840,10 @@ namespace IFCProjectCreator
             items.Clear();
         }
 
-        public virtual void AddItem(Ifc_Entity ifcBase)
+        public virtual void AddItem(IFC_Entity IFCBase)
         {
 
-            List<object?> parameters = ifcBase.GetParameters();
+            List<object?> parameters = IFCBase.GetParameters();
 
             foreach (var parameter in parameters)
             {
@@ -851,23 +853,23 @@ namespace IFCProjectCreator
                 }
             }
 
-            if (ifcBase.Model == this)
+            if (IFCBase.Model == this)
             {
                 return;
             }
 
-            string ifcid = ""#"" + (items.Count + 1);
-            ifcBase.ifcid = ifcid;
-            items.Add(ifcid, ifcBase);
-            ifcBase.Model = this;
+            string IFC_ID = ""#"" + (items.Count + 1);
+            IFCBase.IFC_ID = IFC_ID;
+            items.Add(IFC_ID, IFCBase);
+            IFCBase.Model = this;
 
         }
 
         /// <summary>
-        /// Export model to Ifc
+        /// Export model to IFC
         /// </summary>
         /// <returns></returns>
-        public virtual void ExportIfc(string path)
+        public virtual void ExportIFC(string path)
         {
             var now = DateTime.UtcNow.ToString();
             using (StreamWriter writer = new StreamWriter(path))
@@ -893,7 +895,7 @@ namespace IFCProjectCreator
                 {
                     if (item != null)
                     {
-                        string text = item.GetIfcFullText();
+                        string text = item.GetIFCFullText();
                         writer.WriteLine(text);
                     }
                 }
@@ -911,44 +913,41 @@ namespace IFCProjectCreator
         {
             switch (Version)
             {
-                case Ifc_Version.UNDEFINED: return """";
-                case Ifc_Version.Ifc2x3: return ""Ifc2x3"";
-                case Ifc_Version.Ifc4: return ""Ifc4"";
-                case Ifc_Version.Ifc4x1: return ""Ifc4x1"";
-                case Ifc_Version.Ifc4x2: return ""Ifc4x2"";
-                case Ifc_Version.Ifc4x3: return ""Ifc4x3"";
+                case IFC_Version.UNDEFINED: return """";
+                case IFC_Version.IFC2x3: return ""IFC2x3"";
+                case IFC_Version.IFC4: return ""IFC4"";
+                case IFC_Version.IFC4x1: return ""IFC4x1"";
+                case IFC_Version.IFC4x2: return ""IFC4x2"";
+                case IFC_Version.IFC4x3: return ""IFC4x3"";
             }
             return """";
         }
  ";
                 writer.Write(contain);
-
                 writer.WriteLine("\t}");
-
-                writer.WriteLine("\tpublic enum Ifc_Version");
+                writer.WriteLine("\tpublic enum IFC_Version");
                 writer.WriteLine("\t{");
                 writer.WriteLine("\t\tUNDEFINED = 0,");
-                writer.WriteLine("\t\tIfc2x3 = 23,");
-                writer.WriteLine("\t\tIfc4 = 4,");
-                writer.WriteLine("\t\tIfc4x1 = 41,");
-                writer.WriteLine("\t\tIfc4x2 = 42,");
-                writer.WriteLine("\t\tIfc4x3 = 43,");
+                writer.WriteLine("\t\tIFC2x3 = 23,");
+                writer.WriteLine("\t\tIFC4 = 4,");
+                writer.WriteLine("\t\tIFC4x1 = 41,");
+                writer.WriteLine("\t\tIFC4x2 = 42,");
+                writer.WriteLine("\t\tIFC4x3 = 43,");
                 writer.WriteLine("\t}");
-
                 writer.WriteLine("}");
             }
         }
 
-        private void WtiteCSharpEntity(string folderDir, string nameSpaceName)
+        private void WriteCSharpEntity(string folderDir, string nameSpaceName)
         {
-            using (StreamWriter writer = new StreamWriter(folderDir + "Ifc_Entity.cs"))
+            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Entity.cs"))
             {
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
-                writer.WriteLine("\tpublic abstract class Ifc_Entity");
+                writer.WriteLine("\tpublic abstract class IFC_Entity : IFC");
                 writer.WriteLine("\t{");
 
                 string contain =
@@ -956,12 +955,12 @@ namespace IFCProjectCreator
 		/// <summary>
 		/// Model that contains this.
 		/// </summary>
-        public Ifc_Model? Model;
+        public IFC_Model? Model { get; set; }
 
 		/// <summary>
 		/// ID used in an IFC file.
 		/// </summary>
-		public string ifcid;
+		public string IFC_ID { get; set; }
 
         /// <summary>
 		/// Get All Parameters
@@ -972,19 +971,19 @@ namespace IFCProjectCreator
         /// <summary>
 		/// Constructor
 		/// </summary>
-        public Ifc_Entity()
+        public IFC_Entity()
 		{
-			ifcid = string.Empty;
+			IFC_ID = string.Empty;
         }
 
-        public string GetIfcFullText()
+        public string GetIFCFullText()
         {
             var parameters = GetParameters();
-            string str = ifcid + ""="" + GetType().Name.ToUpper() + ""("";   
+            string str = IFC_ID + ""="" + GetType().Name.ToUpper() + ""("";   
 
             if (parameters != null)
             {
-                if (GetType().Name == ""IfcPropertySingleValue"")
+                if (GetType().Name == ""IFCPropertySingleValue"")
                 {
                     for (int i = 0; i < parameters.Count; i++)
                     {
@@ -1014,7 +1013,7 @@ namespace IFCProjectCreator
                         }
                     }
                 }
-                else if (GetType().Name == ""IfcPropertyEnumeration"")
+                else if (GetType().Name == ""IFCPropertyEnumeration"")
                 {
                     for (int i = 0; i < parameters.Count; i++)
                     {
@@ -1057,7 +1056,7 @@ namespace IFCProjectCreator
 
                     }
                 }
-                else if (GetType().Name == ""IfcPropertyEnumeratedValue"")
+                else if (GetType().Name == ""IFCPropertyEnumeratedValue"")
                 {
                     for (int i = 0; i < parameters.Count; i++)
                     {
@@ -1137,9 +1136,9 @@ namespace IFCProjectCreator
             {
                 str += ""$"";
             }
-            else if (parameter is Ifc_Entity)
+            else if (parameter is IFC_Entity)
             {
-                str += ((Ifc_Entity)parameter).ifcid;
+                str += ((IFC_Entity)parameter).IFC_ID;
             }
             else if (parameter.GetType().GetInterface(""IEnumerable"") != null)
             {
@@ -1164,20 +1163,20 @@ namespace IFCProjectCreator
                     str += ""'"" + parameter.ToString() + ""'"";
                 }
                 else if (typeName.Contains(""Enum"")
-                    || typeName == ""IfcBSplineCurveForm""
-                    || typeName == ""IfcBSplineSurfaceForm""
-                    || typeName == ""IfcKnotType""
-                    || typeName == ""IfcPreferredSurfaceCurveRepresentation""
-                    || typeName == ""IfcSIPrefix""
-                    || typeName == ""IfcSIUnitName""
-                    || typeName == ""IfcSurfaceSide""
-                    || typeName == ""IfcTextPath""
-                    || typeName == ""IfcTransitionCode""
-                    || typeName == ""IfcTrimmingPreference"")
+                    || typeName == ""IFCBSplineCurveForm""
+                    || typeName == ""IFCBSplineSurfaceForm""
+                    || typeName == ""IFCKnotType""
+                    || typeName == ""IFCPreferredSurfaceCurveRepresentation""
+                    || typeName == ""IFCSIPrefix""
+                    || typeName == ""IFCSIUnitName""
+                    || typeName == ""IFCSurfaceSide""
+                    || typeName == ""IFCTextPath""
+                    || typeName == ""IFCTransitionCode""
+                    || typeName == ""IFCTrimmingPreference"")
                 {
                     str += """" + parameter + """";
                 }
-                else if (typeName == ""IfcBoolean"" || typeName == ""IfcLogical"" || typeName == ""BOOLEAN"")
+                else if (typeName == ""IFCBoolean"" || typeName == ""IFCLogical"" || typeName == ""BOOLEAN"")
                 {
                     if ((bool)parameter)
                     {
@@ -1198,21 +1197,43 @@ namespace IFCProjectCreator
 
         public override string ToString()
         {
-            return ifcid + "" : "" + GetType().Name;
+            return IFC_ID + "" : "" + GetType().Name;
         }
 ";
                 writer.Write(contain);
-
-
-
                 writer.WriteLine("\t}");
                 writer.WriteLine("}");
             }
         }
 
-        private void WtiteCSharpBasicType(string folderDir, string nameSpaceName)
+        private void WriteCSharpIFC(string folderDir, string nameSpaceName)
         {
-            using (StreamWriter writer = new StreamWriter(folderDir + "Basic.cs"))
+            using (StreamWriter writer = new StreamWriter(folderDir + "IFC.cs"))
+            {
+                writer.WriteLine("using System;");
+                writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("namespace " + nameSpaceName);
+                writer.WriteLine("{");
+                writer.WriteLine("\tpublic interface IFC");
+                writer.WriteLine("\t{");
+
+                string contain =
+       @"
+		public IFC_Model? Model { get; set; }
+        public string IFC_ID { get; set; }
+        public List<object?> GetParameters();
+        public string GetIFCFullText();
+";
+                writer.Write(contain);
+                writer.WriteLine("\t}");
+                writer.WriteLine("}");
+            }
+        }
+
+        private void WriteCSharpBasicType(string folderDir, string nameSpaceName)
+        {
+            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Basic.cs"))
             {
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");

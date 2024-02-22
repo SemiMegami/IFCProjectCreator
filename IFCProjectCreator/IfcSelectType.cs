@@ -22,7 +22,7 @@ namespace IFCProjectCreator
             GetNameAndEXPText(reader, header, "END_TYPE;");
             for(int i = 1; i < EXPLines.Count - 1; i++)
             {
-                SubClassesNames.Add(EXPLines[i].Replace("(","").Replace(")","").Replace("\t","").Replace(",","").Replace(";",""));
+                SubClassesNames.Add(EXPLines[i].Replace("(","").Replace(")","").Replace("\t","").Replace(",","").Replace(";","").Replace("Ifc","IFC"));
             }
         }
 

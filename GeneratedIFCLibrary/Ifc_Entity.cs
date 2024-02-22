@@ -3,18 +3,18 @@ using System.Collections.Generic;
 #pragma warning disable VSSpell001 // Spell Check
 namespace IFC
 {
-	public abstract class Ifc_Entity
+	public abstract class IFC_Entity : IFC
 	{
 
 		/// <summary>
 		/// Model that contains this.
 		/// </summary>
-        public Ifc_Model? Model;
+        public IFC_Model? Model { get; set; }
 
 		/// <summary>
 		/// ID used in an IFC file.
 		/// </summary>
-		public string ifcid;
+		public string IFC_ID { get; set; }
 
         /// <summary>
 		/// Get All Parameters
@@ -25,19 +25,19 @@ namespace IFC
         /// <summary>
 		/// Constructor
 		/// </summary>
-        public Ifc_Entity()
+        public IFC_Entity()
 		{
-			ifcid = string.Empty;
+			IFC_ID = string.Empty;
         }
 
-        public string GetIfcFullText()
+        public string GetIFCFullText()
         {
             var parameters = GetParameters();
-            string str = ifcid + "=" + GetType().Name.ToUpper() + "(";   
+            string str = IFC_ID + "=" + GetType().Name.ToUpper() + "(";   
 
             if (parameters != null)
             {
-                if (GetType().Name == "IfcPropertySingleValue")
+                if (GetType().Name == "IFCPropertySingleValue")
                 {
                     for (int i = 0; i < parameters.Count; i++)
                     {
@@ -67,7 +67,7 @@ namespace IFC
                         }
                     }
                 }
-                else if (GetType().Name == "IfcPropertyEnumeration")
+                else if (GetType().Name == "IFCPropertyEnumeration")
                 {
                     for (int i = 0; i < parameters.Count; i++)
                     {
@@ -110,7 +110,7 @@ namespace IFC
 
                     }
                 }
-                else if (GetType().Name == "IfcPropertyEnumeratedValue")
+                else if (GetType().Name == "IFCPropertyEnumeratedValue")
                 {
                     for (int i = 0; i < parameters.Count; i++)
                     {
@@ -190,9 +190,9 @@ namespace IFC
             {
                 str += "$";
             }
-            else if (parameter is Ifc_Entity)
+            else if (parameter is IFC_Entity)
             {
-                str += ((Ifc_Entity)parameter).ifcid;
+                str += ((IFC_Entity)parameter).IFC_ID;
             }
             else if (parameter.GetType().GetInterface("IEnumerable") != null)
             {
@@ -217,20 +217,20 @@ namespace IFC
                     str += "'" + parameter.ToString() + "'";
                 }
                 else if (typeName.Contains("Enum")
-                    || typeName == "IfcBSplineCurveForm"
-                    || typeName == "IfcBSplineSurfaceForm"
-                    || typeName == "IfcKnotType"
-                    || typeName == "IfcPreferredSurfaceCurveRepresentation"
-                    || typeName == "IfcSIPrefix"
-                    || typeName == "IfcSIUnitName"
-                    || typeName == "IfcSurfaceSide"
-                    || typeName == "IfcTextPath"
-                    || typeName == "IfcTransitionCode"
-                    || typeName == "IfcTrimmingPreference")
+                    || typeName == "IFCBSplineCurveForm"
+                    || typeName == "IFCBSplineSurfaceForm"
+                    || typeName == "IFCKnotType"
+                    || typeName == "IFCPreferredSurfaceCurveRepresentation"
+                    || typeName == "IFCSIPrefix"
+                    || typeName == "IFCSIUnitName"
+                    || typeName == "IFCSurfaceSide"
+                    || typeName == "IFCTextPath"
+                    || typeName == "IFCTransitionCode"
+                    || typeName == "IFCTrimmingPreference")
                 {
                     str += "" + parameter + "";
                 }
-                else if (typeName == "IfcBoolean" || typeName == "IfcLogical" || typeName == "BOOLEAN")
+                else if (typeName == "IFCBoolean" || typeName == "IFCLogical" || typeName == "BOOLEAN")
                 {
                     if ((bool)parameter)
                     {
@@ -251,7 +251,7 @@ namespace IFC
 
         public override string ToString()
         {
-            return ifcid + " : " + GetType().Name;
+            return IFC_ID + " : " + GetType().Name;
         }
 	}
 }
