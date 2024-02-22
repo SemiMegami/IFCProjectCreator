@@ -3,6 +3,241 @@ using System.Collections.Generic;
 #pragma warning disable VSSpell001 // Spell Check
 namespace IFC.IFC4x1
 {
+	public abstract class Ifc_Function : Ifc_Entity
+	{
+		public static IfcSurface? IfcAssociatedSurface(IfcPcurve Arg)
+		{
+			return null;
+		}
+		public static List<IfcDirection>? IfcBaseAxis(INTEGER Dim, IfcDirection Axis1, IfcDirection Axis2, IfcDirection Axis3)
+		{
+			List<IfcDirection> result = new List<IfcDirection>();
+			return result;
+		}
+		public static T? IfcBooleanChoose<T>(BOOLEAN B, T Choice1, T Choice2)
+		{
+			return default(T);
+		}
+		public static List<IfcDirection>? IfcBuild2Axes(IfcDirection RefDirection)
+		{
+			List<IfcDirection> result = new List<IfcDirection>();
+			return result;
+		}
+		public static List<IfcDirection>? IfcBuildAxes(IfcDirection Axis, IfcDirection RefDirection)
+		{
+			List<IfcDirection> result = new List<IfcDirection>();
+			return result;
+		}
+		public static BOOLEAN? IfcConsecutiveSegments(List<IfcSegmentIndexSelect> Segments)
+		{
+			BOOLEAN result = new BOOLEAN();
+			return result;
+		}
+		public static BOOLEAN? IfcConstraintsParamBSpline(INTEGER Degree, INTEGER UpKnots, INTEGER UpCp, List<INTEGER> KnotMult, List<IfcParameterValue> Knots)
+		{
+			BOOLEAN result = new BOOLEAN();
+			return result;
+		}
+		public static IfcDirection? IfcConvertDirectionInto2D(IfcDirection Direction)
+		{
+			IfcDirection result = new IfcDirection();
+			return result;
+		}
+		public static LOGICAL? IfcCorrectDimensions(IfcUnitEnum m, IfcDimensionalExponents Dim)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcCorrectFillAreaStyle(List<IfcFillStyleSelect> Styles)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcCorrectLocalPlacement(IfcAxis2Placement AxisPlacement, IfcObjectPlacement RelPlacement)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcCorrectObjectAssignment(IfcObjectTypeEnum Constraint, List<IfcObjectDefinition> Objects)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcCorrectUnitAssignment(List<IfcUnit> Units)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static IfcVector? IfcCrossProduct(IfcDirection Arg1, IfcDirection Arg2)
+		{
+			IfcVector result = new IfcVector();
+			return result;
+		}
+		public static IfcDimensionCount? IfcCurveDim(IfcCurve Curve)
+		{
+			IfcDimensionCount result = new IfcDimensionCount();
+			return result;
+		}
+		public static BOOLEAN? IfcCurveWeightsPositive(IfcRationalBSplineCurveWithKnots B)
+		{
+			BOOLEAN result = new BOOLEAN();
+			return result;
+		}
+		public static IfcDimensionalExponents? IfcDeriveDimensionalExponents(List<IfcDerivedUnitElement> UnitElements)
+		{
+			IfcDimensionalExponents result = new IfcDimensionalExponents();
+			return result;
+		}
+		public static IfcDimensionalExponents? IfcDimensionsForSiUnit(IfcSIUnitName n)
+		{
+			IfcDimensionalExponents result = new IfcDimensionalExponents();
+			return result;
+		}
+		public static REAL? IfcDotProduct(IfcDirection Arg1, IfcDirection Arg2)
+		{
+			REAL result = new REAL();
+			return result;
+		}
+		public static IfcDirection? IfcFirstProjAxis(IfcDirection ZAxis, IfcDirection Arg)
+		{
+			IfcDirection result = new IfcDirection();
+			return result;
+		}
+		public static List<IfcSurface>? IfcGetBasisSurface(IfcCurveOnSurface C)
+		{
+			List<IfcSurface> result = new List<IfcSurface>();
+			return result;
+		}
+		public static List<T>? IfcListToArray<T>(List<T> Lis, INTEGER Low, INTEGER U)
+		{
+			List<T> result = new List<T>();
+			return result;
+		}
+		public static LOGICAL? IfcLoopHeadToTail(IfcEdgeLoop ALoop)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static List<List<T>>? IfcMakeArrayOfArray<T>(List<List<T>> Lis, INTEGER Low1, INTEGER U1, INTEGER Low2, INTEGER U2)
+		{
+			List<List<T>> result = new List<List<T>>();
+			return result;
+		}
+		public static IfcLengthMeasure? IfcMlsTotalThickness(IfcMaterialLayerSet LayerSet)
+		{
+			IfcLengthMeasure result = new IfcLengthMeasure();
+			return result;
+		}
+		public static IfcVectorOrDirection? IfcNormalise(IfcVectorOrDirection Arg)
+		{
+			return null;
+		}
+		public static IfcDirection? IfcOrthogonalComplement(IfcDirection Vec)
+		{
+			IfcDirection result = new IfcDirection();
+			return result;
+		}
+		public static LOGICAL? IfcPathHeadToTail(IfcPath APath)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static IfcDimensionCount? IfcPointListDim(IfcCartesianPointList PointList)
+		{
+			IfcDimensionCount result = new IfcDimensionCount();
+			return result;
+		}
+		public static LOGICAL? IfcSameAxis2Placement(IfcAxis2Placement ap1, IfcAxis2Placement ap2, REAL Epsilon)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcSameCartesianPoint(IfcCartesianPoint cp1, IfcCartesianPoint cp2, REAL Epsilon)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcSameDirection(IfcDirection dir1, IfcDirection dir2, REAL Epsilon)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcSameValidPrecision(REAL Epsilon1, REAL Epsilon2)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcSameValue(REAL Value1, REAL Value2, REAL Epsilon)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static IfcVector? IfcScalarTimesVector(REAL Scalar, IfcVectorOrDirection Vec)
+		{
+			IfcVector result = new IfcVector();
+			return result;
+		}
+		public static IfcDirection? IfcSecondProjAxis(IfcDirection ZAxis, IfcDirection XAxis, IfcDirection Arg)
+		{
+			IfcDirection result = new IfcDirection();
+			return result;
+		}
+		public static LOGICAL? IfcShapeRepresentationTypes(IfcLabel RepType, List<IfcRepresentationItem> Items)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static BOOLEAN? IfcSurfaceWeightsPositive(IfcRationalBSplineSurfaceWithKnots B)
+		{
+			BOOLEAN result = new BOOLEAN();
+			return result;
+		}
+		public static LOGICAL? IfcTaperedSweptAreaProfiles(IfcProfileDef StartArea, IfcProfileDef EndArea)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcTopologyRepresentationTypes(IfcLabel RepType, List<IfcRepresentationItem> Items)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcUniqueDefinitionNames(List<IfcRelDefinesByProperties> Relations)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcUniquePropertyName(List<IfcProperty> Properties)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcUniquePropertySetNames(List<IfcPropertySetDefinition> Properties)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcUniquePropertyTemplateNames(List<IfcPropertyTemplate> Properties)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static LOGICAL? IfcUniqueQuantityNames(List<IfcPhysicalQuantity> Properties)
+		{
+			LOGICAL result = new LOGICAL();
+			return result;
+		}
+		public static IfcVector? IfcVectorDifference(IfcVectorOrDirection Arg1, IfcVectorOrDirection Arg2)
+		{
+			IfcVector result = new IfcVector();
+			return result;
+		}
+		public static IfcVector? IfcVectorSum(IfcVectorOrDirection Arg1, IfcVectorOrDirection Arg2)
+		{
+			IfcVector result = new IfcVector();
+			return result;
+		}
+	}
 	/// <summary>
 	/// TYPE IfcAbsorbedDoseMeasure = REAL;
 	/// END_TYPE;

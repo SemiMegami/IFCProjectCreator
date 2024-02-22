@@ -184,8 +184,85 @@
 
         public override List<string> GetCSharpTexts()
         {
-            List<string> texts = new List<string>();
-            return texts;
+            if (Output != null)
+            {
+                string outputType = Output.GetCSharpTypeText();
+                bool isGeneric = false;
+                if(outputType.Contains("GENERIC") || outputType.Contains("Item"))
+                {
+                    if(DataSet.GetItems(VersionName).FirstOrDefault(e=>e.Name == Output.TypeName) == null)
+                    {
+                        isGeneric = true;
+                    }
+                }
+                if (isGeneric)
+                {
+                    outputType = outputType.Replace("GENERIC", "T").Replace("Item", "T");
+                }
+
+                bool canWrite = false;
+                if(Output.AttributeType == IFCAttributeType.LIST || Output.AttributeType == IFCAttributeType.LISTLIST) 
+                {
+                    canWrite = true;
+                }
+                if (DataSet.CSharpBasicDataTypes.ContainsKey(outputType))
+                {
+                    canWrite = true;
+                }
+                if (DataSet.BasicTypes.FirstOrDefault(e=>e.VersionName == VersionName && e.Name == outputType) != null)
+                {
+                    canWrite = true;
+                }
+                if (DataSet.Entities.FirstOrDefault(e => e.VersionName == VersionName && e.Name == outputType && !e.IsAbstract) != null)
+                {
+                    canWrite = true;
+                }
+
+                string header = "\t\tpublic static " + outputType + "? " + Name + (isGeneric? "<T>":"") +  "(";
+                for (int i = 0; i < Inputs.Count; i++)
+                {
+                    string inputType = Inputs[i].GetCSharpTypeText();
+                    if (isGeneric)
+                    {
+                        inputType = inputType.Replace("GENERIC", "T").Replace("Item", "T");
+                    }
+                    // fix error from express
+                    if (inputType == "IfcSiUnitName")
+                    {
+                        inputType = "IfcSIUnitName";
+                    }
+                    header += inputType + " " + Inputs[i].Name;
+                    if (i < Inputs.Count - 1)
+                    {
+                        header += ", ";
+                    }
+                }
+                header += ")";
+                if (canWrite)
+                {
+                    List<string> texts = new List<string>()
+                    {
+                        header,
+                        "\t\t{",
+                        "\t\t\t" + outputType + " result = new " + outputType + "();",
+                        "\t\t\treturn result;",
+                        "\t\t}"
+                    };
+                    return texts;
+                }
+                else
+                {
+                    List<string> texts = new List<string>()
+                    {
+                        header,
+                        "\t\t{",
+                        outputType == "T"?"\t\t\treturn default(T);": "\t\t\treturn null;",
+                        "\t\t}"
+                    };
+                    return texts;
+                }
+            }
+            return new List<string>();
         }
     }
 }

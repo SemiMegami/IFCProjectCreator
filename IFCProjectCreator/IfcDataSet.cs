@@ -16,6 +16,8 @@ namespace IFCProjectCreator
     public class IFCDataSet
     {
         public readonly string globalName = "Global";
+        public readonly string ifcName = "Ifc";
+
         public readonly Dictionary<string, string> CSharpBasicDataTypes = new Dictionary<string, string>()
         {
             { "REAL", "double" },
@@ -657,7 +659,6 @@ namespace IFCProjectCreator
             items.AddRange(EnumTypes);
             items.AddRange(SelectTypes);
             items.AddRange(Entities);
-            items.AddRange(Functions);
             return items;
         }
 
@@ -715,6 +716,17 @@ namespace IFCProjectCreator
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName + "." + version);
                 writer.WriteLine("{");
+                writer.WriteLine("\tpublic abstract class " + ifcName + "_Function : Ifc_Entity");
+                writer.WriteLine("\t{");
+                foreach(var f in Functions.Where(e=>e.VersionName == version).ToList())
+                {
+                    var texts = f.GetCSharpTexts();
+                    foreach (var text in texts)
+                    {
+                        writer.WriteLine(text);
+                    }
+                }
+                writer.WriteLine("\t}");
                 foreach (var item in items)
                 {
                     var texts = item.GetCSharpTexts();

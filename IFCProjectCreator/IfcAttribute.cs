@@ -59,7 +59,7 @@ namespace IFCProjectCreator
         public abstract List<string> GetCSharpText();
         public virtual List<string> GetCSharpGlobalText(IFCDataSet dataSet)
         {
-            string global = "Global";
+            string global = dataSet.globalName;
             string typeName = TypeName;
             string overideText = isOverride ? "override " : "virtual ";
 
