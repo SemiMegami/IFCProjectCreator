@@ -5,242 +5,2031 @@ namespace IFC.IFC4x3
 {
 	public abstract class IFC_Function : IFC_Entity
 	{
+		/// <summary>
+		/// FUNCTION IfcAssociatedSurface
+		/// (Arg : IfcPcurve) : IfcSurface;
+		/// 
+		/// LOCAL
+		/// Surf : IfcSurface;
+		/// END_LOCAL;
+		/// 
+		/// Surf := Arg\IfcPcurve.BasisSurface;
+		/// 
+		/// RETURN(Surf);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCSurface? IFCAssociatedSurface(IFCPcurve Arg)
 		{
+			//MANUAL : IFC4x3.IFCAssociatedSurface
 			return null;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcBaseAxis
+		/// (Dim : INTEGER;
+		/// Axis1, Axis2, Axis3 : IfcDirection)
+		/// : LIST [2:3] OF IfcDirection;
+		/// 
+		/// LOCAL
+		/// U : LIST [2:3] OF IfcDirection;
+		/// Factor : REAL;
+		/// D1, D2 : IfcDirection;
+		/// END_LOCAL;
+		/// 
+		/// IF (Dim = 3) THEN
+		/// D1 := NVL(IfcNormalise(Axis3), IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0,0.0,1.0]));
+		/// D2 := IfcFirstProjAxis(D1, Axis1);
+		/// U  := [D2, IfcSecondProjAxis(D1, D2, Axis2), D1];
+		/// ELSE
+		/// IF EXISTS(Axis1) THEN
+		/// D1 := IfcNormalise(Axis1);
+		/// U  := [D1, IfcOrthogonalComplement(D1)];
+		/// IF EXISTS(Axis2) THEN
+		/// Factor := IfcDotProduct(Axis2, U[2]);
+		/// IF (Factor < 0.0) THEN
+		/// U[2].DirectionRatios[1] := -U[2].DirectionRatios[1];
+		/// U[2].DirectionRatios[2] := -U[2].DirectionRatios[2];
+		/// END_IF;
+		/// END_IF;
+		/// ELSE
+		/// IF EXISTS(Axis2) THEN
+		/// D1 := IfcNormalise(Axis2);
+		/// U  := [IfcOrthogonalComplement(D1), D1];
+		/// U[1].DirectionRatios[1] := -U[1].DirectionRatios[1];
+		/// U[1].DirectionRatios[2] := -U[1].DirectionRatios[2];
+		/// ELSE
+		/// U := [IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([1.0, 0.0]),
+		/// IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0, 1.0])];
+		/// END_IF;
+		/// END_IF;
+		/// END_IF;
+		/// RETURN(U);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static List<IFCDirection>? IFCBaseAxis(INTEGER Dim, IFCDirection Axis1, IFCDirection Axis2, IFCDirection Axis3)
 		{
+			//MANUAL : IFC4x3.IFCBaseAxis
 			List<IFCDirection> result = new List<IFCDirection>();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcBooleanChoose
+		/// (B : BOOLEAN ;
+		/// Choice1, Choice2 : GENERIC : Item) : GENERIC : Item;
+		/// IF B THEN
+		/// RETURN (Choice1);
+		/// ELSE
+		/// RETURN (Choice2);
+		/// END_IF;
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static T? IFCBooleanChoose<T>(BOOLEAN B, T Choice1, T Choice2)
 		{
+			//MANUAL : IFC4x3.IFCBooleanChoose
 			return default(T);
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcBuild2Axes
+		/// (RefDirection : IfcDirection)
+		/// : LIST [2:2] OF IfcDirection;
+		/// LOCAL
+		/// D : IfcDirection := NVL(IfcNormalise(RefDirection),
+		/// IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([1.0,0.0]));
+		/// END_LOCAL;
+		/// RETURN([D, IfcOrthogonalComplement(D)]);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static List<IFCDirection>? IFCBuild2Axes(IFCDirection RefDirection)
 		{
+			//MANUAL : IFC4x3.IFCBuild2Axes
 			List<IFCDirection> result = new List<IFCDirection>();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcBuildAxes
+		/// (Axis, RefDirection : IfcDirection)
+		/// : LIST [3:3] OF IfcDirection;
+		/// LOCAL
+		/// D1, D2 : IfcDirection;
+		/// END_LOCAL;
+		/// D1 := NVL(IfcNormalise(Axis), IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0,0.0,1.0]));
+		/// D2 := IfcFirstProjAxis(D1, RefDirection);
+		/// RETURN ([D2, IfcNormalise(IfcCrossProduct(D1,D2))\IfcVector.Orientation, D1]);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static List<IFCDirection>? IFCBuildAxes(IFCDirection Axis, IFCDirection RefDirection)
 		{
+			//MANUAL : IFC4x3.IFCBuildAxes
 			List<IFCDirection> result = new List<IFCDirection>();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcConsecutiveSegments
+		/// (Segments : LIST [1:?] OF IfcSegmentIndexSelect)
+		/// : BOOLEAN;
+		/// 
+		/// LOCAL
+		/// Result : BOOLEAN := TRUE;
+		/// END_LOCAL;
+		/// 
+		/// REPEAT i := 1 TO (HIINDEX(Segments)-1);
+		/// IF Segments[i][HIINDEX(Segments[i])] <> Segments[i+1][1] THEN
+		/// BEGIN
+		/// Result := FALSE;
+		/// ESCAPE;
+		/// END;
+		/// END_IF;
+		/// END_REPEAT;
+		/// 
+		/// RETURN (Result);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static BOOLEAN? IFCConsecutiveSegments(List<IFCSegmentIndexSelect> Segments)
 		{
+			//MANUAL : IFC4x3.IFCConsecutiveSegments
 			BOOLEAN result = new BOOLEAN();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcConstraintsParamBSpline
+		/// ( Degree, UpKnots, UpCp : INTEGER;
+		/// KnotMult : LIST OF INTEGER;
+		/// Knots : LIST OF IfcParameterValue )
+		/// : BOOLEAN;
+		/// 
+		/// 
+		/// LOCAL
+		/// Result : BOOLEAN := TRUE;
+		/// K, Sum : INTEGER;
+		/// END_LOCAL;
+		/// 
+		/// (* Find sum of knot multiplicities. *)
+		/// Sum := KnotMult[1];
+		/// REPEAT i := 2 TO UpKnots;
+		/// Sum := Sum + KnotMult[i];
+		/// END_REPEAT;
+		/// 
+		/// (* Check limits holding for all B-spline parametrisations *)
+		/// IF (Degree < 1) OR (UpKnots < 2) OR (UpCp < Degree) OR
+		/// (Sum <> (Degree + UpCp + 2)) THEN
+		/// Result := FALSE;
+		/// RETURN(Result);
+		/// END_IF;
+		/// 
+		/// K := KnotMult[1];
+		/// IF (K < 1) OR (K > Degree + 1) THEN
+		/// Result := FALSE;
+		/// RETURN(Result);
+		/// END_IF;
+		/// 
+		/// REPEAT i := 2 TO UpKnots;
+		/// IF (KnotMult[i] < 1) OR (Knots[i] <= Knots[i-1]) THEN
+		/// Result := FALSE;
+		/// RETURN(Result);
+		/// END_IF;
+		/// K := KnotMult[i];
+		/// IF (i < UpKnots) AND (K > Degree) THEN
+		/// Result := FALSE;
+		/// RETURN(Result);
+		/// END_IF;
+		/// IF (i = UpKnots) AND (K > Degree + 1) THEN
+		/// Result := FALSE;
+		/// RETURN(Result);
+		/// END_IF;
+		/// END_REPEAT;
+		/// 
+		/// RETURN(Result);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static BOOLEAN? IFCConstraintsParamBSpline(INTEGER Degree, INTEGER UpKnots, INTEGER UpCp, List<INTEGER> KnotMult, List<IFCParameterValue> Knots)
 		{
+			//MANUAL : IFC4x3.IFCConstraintsParamBSpline
 			BOOLEAN result = new BOOLEAN();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcConvertDirectionInto2D
+		/// (Direction : IfcDirection)
+		/// : IfcDirection;
+		/// 
+		/// LOCAL
+		/// Direction2D : IfcDirection := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.,1.]);
+		/// END_LOCAL;
+		/// 
+		/// Direction2D.DirectionRatios[1] := Direction.DirectionRatios[1];
+		/// Direction2D.DirectionRatios[2] := Direction.DirectionRatios[2];
+		/// 
+		/// RETURN (Direction2D);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCDirection? IFCConvertDirectionInto2D(IFCDirection Direction)
 		{
+			//MANUAL : IFC4x3.IFCConvertDirectionInto2D
 			IFCDirection result = new IFCDirection();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcCorrectDimensions
+		/// (m   : IfcUnitEnum; Dim : IfcDimensionalExponents) : LOGICAL;
+		/// CASE m OF
+		/// LENGTHUNIT : IF
+		/// Dim = (IfcDimensionalExponents (1, 0, 0, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// MASSUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 1, 0, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// TIMEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 0, 1, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// ELECTRICCURRENTUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 0, 0, 1, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// THERMODYNAMICTEMPERATUREUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 0, 0, 0, 1, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// AMOUNTOFSUBSTANCEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 0, 0, 0, 0, 1, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// LUMINOUSINTENSITYUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 0, 0, 0, 0, 0, 1))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// PLANEANGLEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 0, 0, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// SOLIDANGLEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 0, 0, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// AREAUNIT : IF
+		/// Dim = (IfcDimensionalExponents (2, 0, 0, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// VOLUMEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (3, 0, 0, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// 
+		/// ABSORBEDDOSEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (2, 0, -2, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// RADIOACTIVITYUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 0, -1, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// ELECTRICCAPACITANCEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (-2, -1, 4, 2, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// DOSEEQUIVALENTUNIT : IF
+		/// Dim = (IfcDimensionalExponents (2, 0, -2, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// ELECTRICCHARGEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 0, 1, 1, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// ELECTRICCONDUCTANCEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (-2, -1, 3, 2, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// ELECTRICVOLTAGEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (2, 1, -3, -1, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// ELECTRICRESISTANCEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (2, 1, -3, -2, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// ENERGYUNIT : IF
+		/// Dim = (IfcDimensionalExponents (2, 1, -2, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// FORCEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (1, 1, -2, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// FREQUENCYUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 0, -1, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// INDUCTANCEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (2, 1, -2, -2, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// ILLUMINANCEUNIT : IF
+		/// Dim = (IfcDimensionalExponents (-2, 0, 0, 0, 0, 0, 1))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// LUMINOUSFLUXUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 0, 0, 0, 0, 0, 1))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// MAGNETICFLUXUNIT : IF
+		/// Dim = (IfcDimensionalExponents (2, 1, -2, -1, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// MAGNETICFLUXDENSITYUNIT : IF
+		/// Dim = (IfcDimensionalExponents (0, 1, -2, -1, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// POWERUNIT : IF
+		/// Dim = (IfcDimensionalExponents (2, 1, -3, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// PRESSUREUNIT : IF
+		/// Dim = (IfcDimensionalExponents (-1, 1, -2, 0, 0, 0, 0))
+		/// THEN RETURN(TRUE);
+		/// ELSE RETURN(FALSE);
+		/// END_IF;
+		/// 
+		/// OTHERWISE :
+		/// RETURN (UNKNOWN);
+		/// END_CASE;
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCCorrectDimensions(IFCUnitEnum m, IFCDimensionalExponents Dim)
 		{
+			//MANUAL : IFC4x3.IFCCorrectDimensions
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcCorrectFillAreaStyle
+		/// (Styles : SET[1:?] OF IfcFillStyleSelect)
+		/// :LOGICAL;
+		/// 
+		/// LOCAL
+		/// Hatching : INTEGER := 0;
+		/// Tiles    : INTEGER := 0;
+		/// Colour   : INTEGER := 0;
+		/// External : INTEGER := 0;
+		/// END_LOCAL;
+		/// 
+		/// 
+		/// External := SIZEOF(QUERY(Style <* Styles |
+		/// 'IFC4X3_ADD2.IFCEXTERNALLYDEFINEDHATCHSTYLE' IN
+		/// TYPEOF(Style)));
+		/// 
+		/// Hatching  := SIZEOF(QUERY(Style <* Styles |
+		/// 'IFC4X3_ADD2.IFCFILLAREASTYLEHATCHING' IN
+		/// TYPEOF(Style)));
+		/// 
+		/// Tiles     := SIZEOF(QUERY(Style <* Styles |
+		/// 'IFC4X3_ADD2.IFCFILLAREASTYLETILES' IN
+		/// TYPEOF(Style)));
+		/// 
+		/// Colour    := SIZEOF(QUERY(Style <* Styles |
+		/// 'IFC4X3_ADD2.IFCCOLOUR' IN
+		/// TYPEOF(Style)));
+		/// 
+		/// 
+		/// IF (External > 1) THEN
+		/// RETURN (FALSE);
+		/// END_IF;
+		/// 
+		/// 
+		/// IF ((External = 1) AND ((Hatching > 0) OR (Tiles > 0) OR (Colour > 0))) THEN
+		/// RETURN (FALSE);
+		/// END_IF;
+		/// 
+		/// 
+		/// IF (Colour > 1) THEN
+		/// RETURN (FALSE);
+		/// END_IF;
+		/// 
+		/// IF ((Hatching > 0) AND (Tiles >0)) THEN
+		/// RETURN (FALSE);
+		/// END_IF;
+		/// 
+		/// RETURN(TRUE);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCCorrectFillAreaStyle(List<IFCFillStyleSelect> Styles)
 		{
+			//MANUAL : IFC4x3.IFCCorrectFillAreaStyle
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcCorrectLocalPlacement
+		/// (AxisPlacement:IfcAxis2Placement;
+		/// RelPlacement : IfcObjectPlacement):LOGICAL;
+		/// 
+		/// IF (EXISTS(RelPlacement)) THEN
+		/// IF ('IFC4X3_ADD2.IFCGRIDPLACEMENT' IN TYPEOF(RelPlacement)) THEN
+		/// RETURN(?);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCLOCALPLACEMENT' IN TYPEOF(RelPlacement)) THEN
+		/// IF ('IFC4X3_ADD2.IFCAXIS2PLACEMENT2D' IN TYPEOF(AxisPlacement)) THEN
+		/// RETURN(TRUE);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCAXIS2PLACEMENT3D' IN TYPEOF(AxisPlacement)) THEN
+		/// IF (RelPlacement\IfcLocalPlacement.RelativePlacement.Dim = 3) THEN
+		/// RETURN(TRUE);
+		/// ELSE
+		/// RETURN(FALSE);
+		/// END_IF;
+		/// END_IF;
+		/// END_IF;
+		/// ELSE
+		/// RETURN(TRUE);
+		/// END_IF;
+		/// RETURN(?);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCCorrectLocalPlacement(IFCAxis2Placement AxisPlacement, IFCObjectPlacement RelPlacement)
 		{
+			//MANUAL : IFC4x3.IFCCorrectLocalPlacement
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcCorrectUnitAssignment
+		/// (Units : SET [1:?] OF IfcUnit)
+		/// : LOGICAL;
+		/// 
+		/// LOCAL
+		/// NamedUnitNumber    : INTEGER := 0;
+		/// DerivedUnitNumber  : INTEGER := 0;
+		/// MonetaryUnitNumber : INTEGER := 0;
+		/// NamedUnitNames     : SET OF IfcUnitEnum := [];
+		/// DerivedUnitNames   : SET OF IfcDerivedUnitEnum := [];
+		/// END_LOCAL;
+		/// 
+		/// NamedUnitNumber    := SIZEOF(QUERY(temp <* Units | ('IFC4X3_ADD2.IFCNAMEDUNIT' IN TYPEOF(temp)) AND NOT(temp\IfcNamedUnit.UnitType = IfcUnitEnum.USERDEFINED)));
+		/// DerivedUnitNumber  := SIZEOF(QUERY(temp <* Units | ('IFC4X3_ADD2.IFCDERIVEDUNIT' IN TYPEOF(temp)) AND NOT(temp\IfcDerivedUnit.UnitType = IfcDerivedUnitEnum.USERDEFINED)));
+		/// MonetaryUnitNumber := SIZEOF(QUERY(temp <* Units |  'IFC4X3_ADD2.IFCMONETARYUNIT' IN TYPEOF(temp)));
+		/// 
+		/// REPEAT i := 1 TO SIZEOF(Units);
+		/// IF (('IFC4X3_ADD2.IFCNAMEDUNIT' IN TYPEOF(Units[i])) AND NOT(Units[i]\IfcNamedUnit.UnitType = IfcUnitEnum.USERDEFINED)) THEN
+		/// NamedUnitNames := NamedUnitNames + Units[i]\IfcNamedUnit.UnitType;
+		/// END_IF;
+		/// IF (('IFC4X3_ADD2.IFCDERIVEDUNIT' IN TYPEOF(Units[i])) AND NOT(Units[i]\IfcDerivedUnit.UnitType = IfcDerivedUnitEnum.USERDEFINED)) THEN
+		/// DerivedUnitNames := DerivedUnitNames + Units[i]\IfcDerivedUnit.UnitType;
+		/// END_IF;
+		/// END_REPEAT;
+		/// 
+		/// RETURN((SIZEOF(NamedUnitNames) = NamedUnitNumber) AND (SIZEOF(DerivedUnitNames) = DerivedUnitNumber) AND (MonetaryUnitNumber <= 1));
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCCorrectUnitAssignment(List<IFCUnit> Units)
 		{
+			//MANUAL : IFC4x3.IFCCorrectUnitAssignment
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcCrossProduct
+		/// (Arg1, Arg2 : IfcDirection)
+		/// : IfcVector;
+		/// LOCAL
+		/// Mag : REAL;
+		/// Res : IfcDirection;
+		/// V1,V2  : LIST[3:3] OF REAL;
+		/// Result : IfcVector;
+		/// END_LOCAL;
+		/// 
+		/// IF (NOT EXISTS (Arg1) OR (Arg1.Dim = 2)) OR (NOT EXISTS (Arg2) OR (Arg2.Dim = 2)) THEN
+		/// RETURN(?);
+		/// ELSE
+		/// BEGIN
+		/// V1  := IfcNormalise(Arg1)\IfcDirection.DirectionRatios;
+		/// 
+		/// V2  := IfcNormalise(Arg2)\IfcDirection.DirectionRatios;
+		/// Res := IfcRepresentationItem() || IfcGeometricRepresentationItem ()
+		/// || IfcDirection([(V1[2]*V2[3] - V1[3]*V2[2]), (V1[3]*V2[1] - V1[1]*V2[3]), (V1[1]*V2[2] - V1[2]*V2[1])]);
+		/// Mag := 0.0;
+		/// REPEAT i := 1 TO 3;
+		/// Mag := Mag + Res.DirectionRatios[i]*Res.DirectionRatios[i];
+		/// END_REPEAT;
+		/// IF (Mag > 0.0) THEN
+		/// Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector(Res, SQRT(Mag));
+		/// ELSE
+		/// Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector(Arg1, 0.0);
+		/// END_IF;
+		/// RETURN(Result);
+		/// END;
+		/// END_IF;
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCVector? IFCCrossProduct(IFCDirection Arg1, IFCDirection Arg2)
 		{
+			//MANUAL : IFC4x3.IFCCrossProduct
 			IFCVector result = new IFCVector();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcCurveDim
+		/// (Curve : IfcCurve)
+		/// : IfcDimensionCount;
+		/// 
+		/// IF ('IFC4X3_ADD2.IFCLINE' IN TYPEOF(Curve))
+		/// THEN RETURN(Curve\IfcLine.Pnt.Dim);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCCONIC' IN TYPEOF(Curve))
+		/// THEN RETURN(Curve\IfcConic.Position.Dim);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCPOLYLINE' IN TYPEOF(Curve))
+		/// THEN RETURN(Curve\IfcPolyline.Points[1].Dim);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCTRIMMEDCURVE' IN TYPEOF(Curve))
+		/// THEN RETURN(IfcCurveDim(Curve\IfcTrimmedCurve.BasisCurve));
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCGRADIENTCURVE' IN TYPEOF(Curve))
+		/// THEN RETURN(3);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCSEGMENTEDREFERENCECURVE' IN TYPEOF(Curve))
+		/// THEN RETURN(3);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCCOMPOSITECURVE' IN TYPEOF(Curve))
+		/// THEN RETURN(Curve\IfcCompositeCurve.Segments[1].Dim);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCBSPLINECURVE' IN TYPEOF(Curve))
+		/// THEN RETURN(Curve\IfcBSplineCurve.ControlPointsList[1].Dim);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCOFFSETCURVE2D' IN TYPEOF(Curve))
+		/// THEN RETURN(2);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCOFFSETCURVE3D' IN TYPEOF(Curve))
+		/// THEN RETURN(3);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCOFFSETCURVEBYDISTANCES' IN TYPEOF(Curve))
+		/// THEN RETURN(3);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCCURVESEGMENT2D' IN TYPEOF(Curve))
+		/// THEN RETURN(2);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCPOLYNOMIALCURVE' IN TYPEOF(Curve)) THEN
+		/// IF ( NOT EXISTS(Curve\IfcPolynomialCurve.CoefficientsZ) AND (Curve\IfcPolynomialCurve.Position.Dim = 2 ))
+		/// THEN RETURN(2);
+		/// END_IF;
+		/// RETURN(3);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCPCURVE' IN TYPEOF(Curve))
+		/// THEN RETURN(3);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCINDEXEDPOLYCURVE' IN TYPEOF(Curve))
+		/// THEN RETURN(Curve\IfcIndexedPolyCurve.Points.Dim);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCSPIRAL' IN TYPEOF(Curve))
+		/// THEN RETURN(Curve\IfcSpiral.Position.Dim);
+		/// END_IF;
+		/// RETURN (?);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCDimensionCount? IFCCurveDim(IFCCurve Curve)
 		{
+			//MANUAL : IFC4x3.IFCCurveDim
 			IFCDimensionCount result = new IFCDimensionCount();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcCurveWeightsPositive
+		/// ( B: IfcRationalBSplineCurveWithKnots)
+		/// : BOOLEAN;
+		/// 
+		/// LOCAL
+		/// Result : BOOLEAN := TRUE;
+		/// END_LOCAL;
+		/// 
+		/// REPEAT i := 0 TO B.UpperIndexOnControlPoints;
+		/// IF B.Weights[i] <= 0.0  THEN
+		/// Result := FALSE;
+		/// RETURN(Result);
+		/// END_IF;
+		/// END_REPEAT;
+		/// RETURN(Result);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static BOOLEAN? IFCCurveWeightsPositive(IFCRationalBSplineCurveWithKnots B)
 		{
+			//MANUAL : IFC4x3.IFCCurveWeightsPositive
 			BOOLEAN result = new BOOLEAN();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcDeriveDimensionalExponents
+		/// (UnitElements : SET [1:?] OF IfcDerivedUnitElement)
+		/// : IfcDimensionalExponents;
+		/// LOCAL
+		/// Result : IfcDimensionalExponents :=
+		/// IfcDimensionalExponents(0, 0, 0, 0, 0, 0, 0);
+		/// END_LOCAL;
+		/// REPEAT i := LOINDEX(UnitElements) TO HIINDEX(UnitElements);
+		/// Result.LengthExponent := Result.LengthExponent +
+		/// (UnitElements[i].Exponent *
+		/// UnitElements[i].Unit.Dimensions.LengthExponent);
+		/// Result.MassExponent := Result.MassExponent  +
+		/// (UnitElements[i].Exponent *
+		/// UnitElements[i].Unit.Dimensions.MassExponent);
+		/// Result.TimeExponent := Result.TimeExponent +
+		/// (UnitElements[i].Exponent *
+		/// UnitElements[i].Unit.Dimensions.TimeExponent);
+		/// Result.ElectricCurrentExponent := Result.ElectricCurrentExponent +
+		/// (UnitElements[i].Exponent *
+		/// UnitElements[i].Unit.Dimensions.ElectricCurrentExponent);
+		/// Result.ThermodynamicTemperatureExponent := Result.ThermodynamicTemperatureExponent +
+		/// (UnitElements[i].Exponent *
+		/// UnitElements[i].Unit.Dimensions.ThermodynamicTemperatureExponent);
+		/// Result.AmountOfSubstanceExponent := Result.AmountOfSubstanceExponent +
+		/// (UnitElements[i].Exponent *
+		/// UnitElements[i].Unit.Dimensions.AmountOfSubstanceExponent);
+		/// Result.LuminousIntensityExponent := Result.LuminousIntensityExponent +
+		/// (UnitElements[i].Exponent *
+		/// UnitElements[i].Unit.Dimensions.LuminousIntensityExponent);
+		/// END_REPEAT;
+		/// RETURN (Result);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCDimensionalExponents? IFCDeriveDimensionalExponents(List<IFCDerivedUnitElement> UnitElements)
 		{
+			//MANUAL : IFC4x3.IFCDeriveDimensionalExponents
 			IFCDimensionalExponents result = new IFCDimensionalExponents();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcDimensionsForSIUnit
+		/// (n : IfcSIUnitName )     : IfcDimensionalExponents;
+		/// CASE n OF
+		/// METRE          : RETURN (IfcDimensionalExponents
+		/// (1, 0, 0, 0, 0, 0, 0));
+		/// SQUARE_METRE   : RETURN (IfcDimensionalExponents
+		/// (2, 0, 0, 0, 0, 0, 0));
+		/// CUBIC_METRE    : RETURN (IfcDimensionalExponents
+		/// (3, 0, 0, 0, 0, 0, 0));
+		/// GRAM           : RETURN (IfcDimensionalExponents
+		/// (0, 1, 0, 0, 0, 0, 0));
+		/// SECOND         : RETURN (IfcDimensionalExponents
+		/// (0, 0, 1, 0, 0, 0, 0));
+		/// AMPERE         : RETURN (IfcDimensionalExponents
+		/// (0, 0, 0, 1, 0, 0, 0));
+		/// KELVIN         : RETURN (IfcDimensionalExponents
+		/// (0, 0, 0, 0, 1, 0, 0));
+		/// MOLE           : RETURN (IfcDimensionalExponents
+		/// (0, 0, 0, 0, 0, 1, 0));
+		/// CANDELA        : RETURN (IfcDimensionalExponents
+		/// (0, 0, 0, 0, 0, 0, 1));
+		/// RADIAN         : RETURN (IfcDimensionalExponents
+		/// (0, 0, 0, 0, 0, 0, 0));
+		/// STERADIAN      : RETURN (IfcDimensionalExponents
+		/// (0, 0, 0, 0, 0, 0, 0));
+		/// HERTZ          : RETURN (IfcDimensionalExponents
+		/// (0, 0, -1, 0, 0, 0, 0));
+		/// NEWTON         : RETURN (IfcDimensionalExponents
+		/// (1, 1, -2, 0, 0, 0, 0));
+		/// PASCAL         : RETURN (IfcDimensionalExponents
+		/// (-1, 1, -2, 0, 0, 0, 0));
+		/// JOULE          : RETURN (IfcDimensionalExponents
+		/// (2, 1, -2, 0, 0, 0, 0));
+		/// WATT           : RETURN (IfcDimensionalExponents
+		/// (2, 1, -3, 0, 0, 0, 0));
+		/// COULOMB        : RETURN (IfcDimensionalExponents
+		/// (0, 0, 1, 1, 0, 0, 0));
+		/// VOLT           : RETURN (IfcDimensionalExponents
+		/// (2, 1, -3, -1, 0, 0, 0));
+		/// FARAD          : RETURN (IfcDimensionalExponents
+		/// (-2, -1, 4, 2, 0, 0, 0));
+		/// OHM            : RETURN (IfcDimensionalExponents
+		/// (2, 1, -3, -2, 0, 0, 0));
+		/// SIEMENS        : RETURN (IfcDimensionalExponents
+		/// (-2, -1, 3, 2, 0, 0, 0));
+		/// WEBER          : RETURN (IfcDimensionalExponents
+		/// (2, 1, -2, -1, 0, 0, 0));
+		/// TESLA          : RETURN (IfcDimensionalExponents
+		/// (0, 1, -2, -1, 0, 0, 0));
+		/// HENRY          : RETURN (IfcDimensionalExponents
+		/// (2, 1, -2, -2, 0, 0, 0));
+		/// DEGREE_CELSIUS : RETURN (IfcDimensionalExponents
+		/// (0, 0, 0, 0, 1, 0, 0));
+		/// LUMEN          : RETURN (IfcDimensionalExponents
+		/// (0, 0, 0, 0, 0, 0, 1));
+		/// LUX            : RETURN (IfcDimensionalExponents
+		/// (-2, 0, 0, 0, 0, 0, 1));
+		/// BECQUEREL      : RETURN (IfcDimensionalExponents
+		/// (0, 0, -1, 0, 0, 0, 0));
+		/// GRAY           : RETURN (IfcDimensionalExponents
+		/// (2, 0, -2, 0, 0, 0, 0));
+		/// SIEVERT        : RETURN (IfcDimensionalExponents
+		/// (2, 0, -2, 0, 0, 0, 0));
+		/// OTHERWISE      : RETURN (IfcDimensionalExponents
+		/// (0, 0, 0, 0, 0, 0, 0));
+		/// END_CASE;
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCDimensionalExponents? IFCDimensionsForSIUnit(IFCSIUnitName n)
 		{
+			//MANUAL : IFC4x3.IFCDimensionsForSIUnit
 			IFCDimensionalExponents result = new IFCDimensionalExponents();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcDotProduct
+		/// (Arg1, Arg2 : IfcDirection)
+		/// : REAL;
+		/// LOCAL
+		/// Scalar : REAL;
+		/// Vec1, Vec2 : IfcDirection;
+		/// Ndim   : INTEGER;
+		/// END_LOCAL;
+		/// 
+		/// IF NOT EXISTS (Arg1) OR NOT EXISTS (Arg2) THEN
+		/// Scalar := ?;
+		/// ELSE
+		/// IF (Arg1.Dim <> Arg2.Dim) THEN
+		/// Scalar := ?;
+		/// ELSE
+		/// BEGIN
+		/// Vec1 := IfcNormalise(Arg1);
+		/// Vec2 := IfcNormalise(Arg2);
+		/// Ndim := Arg1.Dim;
+		/// Scalar := 0.0;
+		/// REPEAT i := 1 TO Ndim;
+		/// Scalar := Scalar + Vec1.DirectionRatios[i]*Vec2.DirectionRatios[i];
+		/// END_REPEAT;
+		/// END;
+		/// END_IF;
+		/// END_IF;
+		/// RETURN (Scalar);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static REAL? IFCDotProduct(IFCDirection Arg1, IFCDirection Arg2)
 		{
+			//MANUAL : IFC4x3.IFCDotProduct
 			REAL result = new REAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcFirstProjAxis
+		/// (ZAxis, Arg : IfcDirection) : IfcDirection;
+		/// LOCAL
+		/// XAxis : IfcDirection;
+		/// V     : IfcDirection;
+		/// Z     : IfcDirection;
+		/// XVec  : IfcVector;
+		/// END_LOCAL;
+		/// 
+		/// IF (NOT EXISTS(ZAxis)) THEN
+		/// RETURN (?) ;
+		/// ELSE
+		/// Z := IfcNormalise(ZAxis);
+		/// IF NOT EXISTS(Arg) THEN
+		/// IF (Z.DirectionRatios <> [1.0,0.0,0.0]) THEN
+		/// V := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([1.0,0.0,0.0]);
+		/// ELSE
+		/// V := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0,1.0,0.0]);
+		/// END_IF;
+		/// ELSE
+		/// IF (Arg.Dim <> 3) THEN
+		/// RETURN (?) ;
+		/// END_IF;
+		/// IF ((IfcCrossProduct(Arg,Z).Magnitude) = 0.0) THEN
+		/// RETURN (?);
+		/// ELSE
+		/// V := IfcNormalise(Arg);
+		/// END_IF;
+		/// END_IF;
+		/// XVec  := IfcScalarTimesVector(IfcDotProduct(V, Z), Z);
+		/// XAxis := IfcVectorDifference(V, XVec).Orientation;
+		/// XAxis := IfcNormalise(XAxis);
+		/// END_IF;
+		/// RETURN(XAxis);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCDirection? IFCFirstProjAxis(IFCDirection ZAxis, IFCDirection Arg)
 		{
+			//MANUAL : IFC4x3.IFCFirstProjAxis
 			IFCDirection result = new IFCDirection();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcGetBasisSurface
+		/// (C : IfcCurveOnSurface) : SET[0:2] OF IfcSurface;
+		/// 
+		/// LOCAL
+		/// Surfs : SET[0:2] OF IfcSurface;
+		/// N : INTEGER;
+		/// END_LOCAL;
+		/// 
+		/// Surfs := [];
+		/// IF 'IFC4X3_ADD2.IFCPCURVE' IN TYPEOF (C) THEN
+		/// Surfs := [C\IfcPCurve.BasisSurface];
+		/// ELSE
+		/// IF 'IFC4X3_ADD2.IFCSURFACECURVE' IN TYPEOF (C) THEN
+		/// N := SIZEOF(C\IfcSurfaceCurve.AssociatedGeometry);
+		/// REPEAT i := 1 TO N;
+		/// Surfs := Surfs + IfcAssociatedSurface(C\IfcSurfaceCurve.AssociatedGeometry[i]);
+		/// END_REPEAT;
+		/// END_IF;
+		/// END_IF;
+		/// IF 'IFC4X3_ADD2.IFCCOMPOSITECURVEONSURFACE' IN TYPEOF (C) THEN
+		/// 
+		/// (* For an IfcCompositeCurveOnSurface the BasisSurface is the intersection of the BasisSurface of all the segments. *)
+		/// 
+		/// N := SIZEOF(C\IfcCompositeCurve.Segments);
+		/// 
+		/// IF ('IFC4X3_ADD2.IFCCURVESEGMENT' IN TYPEOF(C\IfcCompositeCurve.Segments[1])) THEN
+		/// Surfs := IfcGetBasisSurface(C\IfcCompositeCurve.Segments[1]\IfcCurveSegment.ParentCurve);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCCOMPOSITECURVESEGMENT' IN TYPEOF(C\IfcCompositeCurve.Segments[1])) THEN
+		/// Surfs := IfcGetBasisSurface(C\IfcCompositeCurve.Segments[1]\IfcCompositeCurveSegment.ParentCurve);
+		/// END_IF;
+		/// 
+		/// IF N > 1 THEN
+		/// REPEAT i := 2 TO N;
+		/// IF ('IFC4X3_ADD2.IFCCURVESEGMENT' IN TYPEOF(C\IfcCompositeCurve.Segments[i])) THEN
+		/// Surfs := Surfs * IfcGetBasisSurface(C\IfcCompositeCurve.Segments[i]\IfcCurveSegment.ParentCurve);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCCOMPOSITECURVESEGMENT' IN TYPEOF(C\IfcCompositeCurve.Segments[i])) THEN
+		/// Surfs := Surfs * IfcGetBasisSurface(C\IfcCompositeCurve.Segments[i]\IfcCompositeCurveSegment.ParentCurve);
+		/// END_IF;
+		/// END_REPEAT;
+		/// END_IF;
+		/// END_IF;
+		/// RETURN(Surfs);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static List<IFCSurface>? IFCGetBasisSurface(IFCCurveOnSurface C)
 		{
+			//MANUAL : IFC4x3.IFCGetBasisSurface
 			List<IFCSurface> result = new List<IFCSurface>();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcListToArray
+		/// (Lis : LIST [0:?] OF GENERIC : T;
+		/// Low,U : INTEGER) : ARRAY OF GENERIC : T;
+		/// LOCAL
+		/// N   : INTEGER;
+		/// Res : ARRAY [Low:U] OF GENERIC : T;
+		/// END_LOCAL;
+		/// 
+		/// N := SIZEOF(Lis);
+		/// IF (N <> (U-Low +1)) THEN
+		/// RETURN(?);
+		/// ELSE
+		/// Res := [Lis[1] : N];
+		/// REPEAT i := 2 TO N;
+		/// Res[Low+i-1] := Lis[i];
+		/// END_REPEAT;
+		/// RETURN(Res);
+		/// END_IF;
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static List<T>? IFCListToArray<T>(List<T> Lis, INTEGER Low, INTEGER U)
 		{
+			//MANUAL : IFC4x3.IFCListToArray
 			List<T> result = new List<T>();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcLoopHeadToTail
+		/// (ALoop : IfcEdgeLoop) : LOGICAL;
+		/// LOCAL
+		/// N : INTEGER;
+		/// P : LOGICAL := TRUE;
+		/// END_LOCAL;
+		/// 
+		/// N := SIZEOF (ALoop.EdgeList);
+		/// REPEAT i := 2 TO N;
+		/// P := P AND (ALoop.EdgeList[i-1].EdgeEnd :=:
+		/// ALoop.EdgeList[i].EdgeStart);
+		/// END_REPEAT;
+		/// RETURN (P);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCLoopHeadToTail(IFCEdgeLoop ALoop)
 		{
+			//MANUAL : IFC4x3.IFCLoopHeadToTail
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcMakeArrayOfArray
+		/// (Lis : LIST[1:?] OF LIST [1:?] OF GENERIC : T;
+		/// Low1, U1, Low2, U2 : INTEGER):
+		/// ARRAY [Low1:U1] OF ARRAY [Low2:U2] OF GENERIC : T;
+		/// 
+		/// LOCAL
+		/// Res : ARRAY[Low1:U1] OF ARRAY [Low2:U2] OF GENERIC : T;
+		/// END_LOCAL;
+		/// 
+		/// (* Check input dimensions for consistency *)
+		/// IF (U1-Low1+1) <> SIZEOF(Lis) THEN
+		/// RETURN (?);
+		/// END_IF;
+		/// IF (U2 - Low2 + 1 ) <> SIZEOF(Lis[1]) THEN
+		/// RETURN (?) ;
+		/// END_IF;
+		/// 
+		/// (* Initialise Res with values from Lis[1] *)
+		/// Res := [IfcListToArray(Lis[1], Low2, U2) : (U1-Low1 + 1)];
+		/// REPEAT i := 2 TO HIINDEX(Lis);
+		/// IF (U2-Low2+1) <> SIZEOF(Lis[i]) THEN
+		/// RETURN (?);
+		/// END_IF;
+		/// Res[Low1+i-1] := IfcListToArray(Lis[i], Low2, U2);
+		/// END_REPEAT;
+		/// RETURN (Res);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static List<List<T>>? IFCMakeArrayOfArray<T>(List<List<T>> Lis, INTEGER Low1, INTEGER U1, INTEGER Low2, INTEGER U2)
 		{
+			//MANUAL : IFC4x3.IFCMakeArrayOfArray
 			List<List<T>> result = new List<List<T>>();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcMlsTotalThickness
+		/// (LayerSet : IfcMaterialLayerSet) : IfcLengthMeasure;
+		/// LOCAL
+		/// Max : IfcLengthMeasure := LayerSet.MaterialLayers[1].LayerThickness;
+		/// END_LOCAL;
+		/// 
+		/// IF SIZEOF(LayerSet.MaterialLayers) > 1 THEN
+		/// REPEAT i := 2 TO HIINDEX(LayerSet.MaterialLayers);
+		/// Max := Max + LayerSet.MaterialLayers[i].LayerThickness;
+		/// END_REPEAT;
+		/// END_IF;
+		/// RETURN (Max);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCLengthMeasure? IFCMlsTotalThickness(IFCMaterialLayerSet LayerSet)
 		{
+			//MANUAL : IFC4x3.IFCMlsTotalThickness
 			IFCLengthMeasure result = new IFCLengthMeasure();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcNormalise
+		/// (Arg : IfcVectorOrDirection)
+		/// : IfcVectorOrDirection;
+		/// LOCAL
+		/// Ndim : INTEGER;
+		/// V    : IfcDirection
+		/// := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([1.,0.]);
+		/// Vec  : IfcVector
+		/// := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector (
+		/// IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([1.,0.]), 1.);
+		/// Mag  : REAL;
+		/// Result : IfcVectorOrDirection
+		/// := V;
+		/// END_LOCAL;
+		/// 
+		/// IF NOT EXISTS (Arg) THEN
+		/// RETURN (?);
+		/// ELSE
+		/// IF 'IFC4X3_ADD2.IFCVECTOR' IN TYPEOF(Arg) THEN
+		/// BEGIN
+		/// Ndim := Arg\IfcVector.Dim;
+		/// V.DirectionRatios := Arg\IfcVector.Orientation.DirectionRatios;
+		/// Vec.Magnitude := Arg\IfcVector.Magnitude;
+		/// Vec.Orientation := V;
+		/// IF Arg\IfcVector.Magnitude = 0.0 THEN
+		/// RETURN(?);
+		/// ELSE
+		/// Vec.Magnitude := 1.0;
+		/// END_IF;
+		/// END;
+		/// ELSE
+		/// BEGIN
+		/// Ndim := Arg\IfcDirection.Dim;
+		/// V.DirectionRatios := Arg\IfcDirection.DirectionRatios;
+		/// END;
+		/// END_IF;
+		/// 
+		/// Mag := 0.0;
+		/// REPEAT i := 1 TO Ndim;
+		/// Mag := Mag + V.DirectionRatios[i]*V.DirectionRatios[i];
+		/// END_REPEAT;
+		/// IF Mag > 0.0 THEN
+		/// Mag := SQRT(Mag);
+		/// REPEAT i := 1 TO Ndim;
+		/// V.DirectionRatios[i] := V.DirectionRatios[i]/Mag;
+		/// END_REPEAT;
+		/// IF 'IFC4X3_ADD2.IFCVECTOR' IN TYPEOF(Arg) THEN
+		/// Vec.Orientation := V;
+		/// Result := Vec;
+		/// ELSE
+		/// Result := V;
+		/// END_IF;
+		/// ELSE
+		/// RETURN(?);
+		/// END_IF;
+		/// END_IF;
+		/// RETURN (Result);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCVectorOrDirection? IFCNormalise(IFCVectorOrDirection Arg)
 		{
+			//MANUAL : IFC4x3.IFCNormalise
 			return null;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcOrthogonalComplement
+		/// (Vec : IfcDirection)
+		/// : IfcDirection;
+		/// LOCAL
+		/// Result : IfcDirection ;
+		/// END_LOCAL;
+		/// IF NOT EXISTS (Vec) OR (Vec.Dim <> 2) THEN
+		/// RETURN(?);
+		/// ELSE
+		/// Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([-Vec.DirectionRatios[2], Vec.DirectionRatios[1]]);
+		/// RETURN(Result);
+		/// END_IF;
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCDirection? IFCOrthogonalComplement(IFCDirection Vec)
 		{
+			//MANUAL : IFC4x3.IFCOrthogonalComplement
 			IFCDirection result = new IFCDirection();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcPathHeadToTail
+		/// (APath : IfcPath) : LOGICAL;
+		/// LOCAL
+		/// N : INTEGER := 0;
+		/// P : LOGICAL := UNKNOWN;
+		/// END_LOCAL;
+		/// N := SIZEOF (APath.EdgeList);
+		/// REPEAT i := 2 TO N;
+		/// P := P AND (APath.EdgeList[i-1].EdgeEnd :=:
+		/// APath.EdgeList[i].EdgeStart);
+		/// END_REPEAT;
+		/// RETURN (P);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCPathHeadToTail(IFCPath APath)
 		{
+			//MANUAL : IFC4x3.IFCPathHeadToTail
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcPointDim
+		/// (Point : IfcPoint)
+		/// : IfcDimensionCount;
+		/// 
+		/// IF ('IFC4X3_ADD2.IFCCARTESIANPOINT' IN TYPEOF(Point))
+		/// THEN RETURN(HIINDEX(Point\IfcCartesianPoint.Coordinates));
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCPOINTBYDISTANCEEXPRESSION' IN TYPEOF(Point))
+		/// THEN RETURN(Point\IfcPointByDistanceExpression.BasisCurve.Dim);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCPOINTONCURVE' IN TYPEOF(Point))
+		/// THEN RETURN(Point\IfcPointOnCurve.BasisCurve.Dim);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCPOINTONSURFACE' IN TYPEOF(Point))
+		/// THEN RETURN(Point\IfcPointOnSurface.BasisSurface.Dim);
+		/// END_IF;
+		/// RETURN (?);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCDimensionCount? IFCPointDim(IFCPoint Point)
 		{
+			//MANUAL : IFC4x3.IFCPointDim
 			IFCDimensionCount result = new IFCDimensionCount();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcPointListDim
+		/// (PointList : IfcCartesianPointList)
+		/// : IfcDimensionCount;
+		/// 
+		/// IF ('IFC4X3_ADD2.IFCCARTESIANPOINTLIST2D' IN TYPEOF(PointList))
+		/// THEN RETURN(2);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCCARTESIANPOINTLIST3D' IN TYPEOF(PointList))
+		/// THEN RETURN(3);
+		/// END_IF;
+		/// RETURN (?);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCDimensionCount? IFCPointListDim(IFCCartesianPointList PointList)
 		{
+			//MANUAL : IFC4x3.IFCPointListDim
 			IFCDimensionCount result = new IFCDimensionCount();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcSameAxis2Placement
+		/// (ap1, ap2 : IfcAxis2Placement; Epsilon : REAL)
+		/// : LOGICAL ;
+		/// 
+		/// RETURN (IfcSameDirection(ap1.P[1],ap2.P[1],Epsilon) AND
+		/// IfcSameDirection(ap1.P[2],ap2.P[2],Epsilon) AND
+		/// IfcSameCartesianPoint(ap1.Location,ap2.Location,Epsilon));
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCSameAxis2Placement(IFCAxis2Placement ap1, IFCAxis2Placement ap2, REAL Epsilon)
 		{
+			//MANUAL : IFC4x3.IFCSameAxis2Placement
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcSameCartesianPoint
+		/// (cp1, cp2 : IfcCartesianPoint; Epsilon : REAL)
+		/// : LOGICAL;
+		/// 
+		/// LOCAL
+		/// cp1x : REAL := cp1.Coordinates[1];
+		/// cp1y : REAL := cp1.Coordinates[2];
+		/// cp1z : REAL := 0;
+		/// cp2x : REAL := cp2.Coordinates[1];
+		/// cp2y : REAL := cp2.Coordinates[2];
+		/// cp2z : REAL := 0;
+		/// END_LOCAL;
+		/// 
+		/// IF (SIZEOF(cp1.Coordinates) > 2) THEN
+		/// cp1z := cp1.Coordinates[3];
+		/// END_IF;
+		/// 
+		/// IF (SIZEOF(cp2.Coordinates) > 2) THEN
+		/// cp2z := cp2.Coordinates[3];
+		/// END_IF;
+		/// 
+		/// RETURN (IfcSameValue(cp1x,cp2x,Epsilon) AND
+		/// IfcSameValue(cp1y,cp2y,Epsilon) AND
+		/// IfcSameValue(cp1z,cp2z,Epsilon));
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCSameCartesianPoint(IFCCartesianPoint cp1, IFCCartesianPoint cp2, REAL Epsilon)
 		{
+			//MANUAL : IFC4x3.IFCSameCartesianPoint
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcSameDirection
+		/// (dir1, dir2 : IfcDirection; Epsilon : REAL)
+		/// : LOGICAL;
+		/// LOCAL
+		/// dir1x : REAL := dir1.DirectionRatios[1];
+		/// dir1y : REAL := dir1.DirectionRatios[2];
+		/// dir1z : REAL := 0;
+		/// dir2x : REAL := dir2.DirectionRatios[1];
+		/// dir2y : REAL := dir2.DirectionRatios[2];
+		/// dir2z : REAL := 0;
+		/// END_LOCAL;
+		/// 
+		/// IF (SIZEOF(dir1.DirectionRatios) > 2) THEN
+		/// dir1z := dir1.DirectionRatios[3];
+		/// END_IF;
+		/// 
+		/// IF (SIZEOF(dir2.DirectionRatios) > 2) THEN
+		/// dir2z := dir2.DirectionRatios[3];
+		/// END_IF;
+		/// 
+		/// RETURN (IfcSameValue(dir1x,dir2x,Epsilon) AND
+		/// IfcSameValue(dir1y,dir2y,Epsilon) AND
+		/// IfcSameValue(dir1z,dir2z,Epsilon));
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCSameDirection(IFCDirection dir1, IFCDirection dir2, REAL Epsilon)
 		{
+			//MANUAL : IFC4x3.IFCSameDirection
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcSameValidPrecision
+		/// (Epsilon1, Epsilon2 : REAL) : LOGICAL ;
+		/// LOCAL
+		/// ValidEps1, ValidEps2 : REAL;
+		/// DefaultEps           : REAL := 0.000001;
+		/// DerivationOfEps      : REAL := 1.001;
+		/// UpperEps             : REAL := 1.0;
+		/// END_LOCAL;
+		/// 
+		/// ValidEps1 := NVL(Epsilon1, DefaultEps);
+		/// ValidEps2 := NVL(Epsilon2, DefaultEps);
+		/// RETURN ((0.0 < ValidEps1) AND (ValidEps1 <= (DerivationOfEps * ValidEps2)) AND
+		/// (ValidEps2 <= (DerivationOfEps * ValidEps1)) AND (ValidEps2 < UpperEps));
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCSameValidPrecision(REAL Epsilon1, REAL Epsilon2)
 		{
+			//MANUAL : IFC4x3.IFCSameValidPrecision
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcSameValue
+		/// (Value1, Value2 : REAL; Epsilon : REAL)
+		/// : LOGICAL;
+		/// LOCAL
+		/// ValidEps    : REAL;
+		/// DefaultEps  : REAL := 0.000001;
+		/// END_LOCAL;
+		/// 
+		/// ValidEps := NVL(Epsilon, DefaultEps);
+		/// RETURN ((Value1 + ValidEps > Value2) AND (Value1 < Value2 + ValidEps));
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCSameValue(REAL Value1, REAL Value2, REAL Epsilon)
 		{
+			//MANUAL : IFC4x3.IFCSameValue
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcScalarTimesVector
+		/// (Scalar : REAL; Vec : IfcVectorOrDirection)
+		/// : IfcVector;
+		/// LOCAL
+		/// V : IfcDirection;
+		/// Mag : REAL;
+		/// Result : IfcVector;
+		/// END_LOCAL;
+		/// 
+		/// IF NOT EXISTS (Scalar) OR NOT EXISTS (Vec) THEN
+		/// RETURN (?) ;
+		/// ELSE
+		/// IF 'IFC4X3_ADD2.IFCVECTOR' IN TYPEOF (Vec) THEN
+		/// V := Vec\IfcVector.Orientation;
+		/// Mag := Scalar * Vec\IfcVector.Magnitude;
+		/// ELSE
+		/// V := Vec;
+		/// Mag := Scalar;
+		/// END_IF;
+		/// IF (Mag < 0.0 ) THEN
+		/// REPEAT i := 1 TO SIZEOF(V.DirectionRatios);
+		/// V.DirectionRatios[i] := -V.DirectionRatios[i];
+		/// END_REPEAT;
+		/// Mag := -Mag;
+		/// END_IF;
+		/// Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector(IfcNormalise(V), Mag);
+		/// END_IF;
+		/// RETURN (Result);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCVector? IFCScalarTimesVector(REAL Scalar, IFCVectorOrDirection Vec)
 		{
+			//MANUAL : IFC4x3.IFCScalarTimesVector
 			IFCVector result = new IFCVector();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcSecondProjAxis
+		/// (ZAxis, XAxis, Arg: IfcDirection)
+		/// : IfcDirection;
+		/// LOCAL
+		/// YAxis : IfcVector;
+		/// V     : IfcDirection;
+		/// Temp  : IfcVector;
+		/// END_LOCAL;
+		/// 
+		/// IF NOT EXISTS(Arg) THEN
+		/// V := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0,1.0,0.0]);
+		/// ELSE
+		/// V := Arg;
+		/// END_IF;
+		/// Temp  := IfcScalarTimesVector(IfcDotProduct(V, ZAxis), ZAxis);
+		/// YAxis := IfcVectorDifference(V, Temp);
+		/// Temp  := IfcScalarTimesVector(IfcDotProduct(V, XAxis), XAxis);
+		/// YAxis := IfcVectorDifference(YAxis, Temp);
+		/// YAxis := IfcNormalise(YAxis);
+		/// RETURN(YAxis.Orientation);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCDirection? IFCSecondProjAxis(IFCDirection ZAxis, IFCDirection XAxis, IFCDirection Arg)
 		{
+			//MANUAL : IFC4x3.IFCSecondProjAxis
 			IFCDirection result = new IFCDirection();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcSegmentDim
+		/// (Segment : IfcSegment)
+		/// : IfcDimensionCount;
+		/// 
+		/// IF ('IFC4X3_ADD2.IFCCURVESEGMENT' IN TYPEOF(Segment))
+		/// THEN RETURN(Segment\IfcCurveSegment.ParentCurve.Dim);
+		/// END_IF;
+		/// IF ('IFC4X3_ADD2.IFCCOMPOSITECURVESEGMENT' IN TYPEOF(Segment))
+		/// THEN RETURN(Segment\IfcCompositeCurveSegment.ParentCurve.Dim);
+		/// END_IF;
+		/// RETURN (?);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCDimensionCount? IFCSegmentDim(IFCSegment Segment)
 		{
+			//MANUAL : IFC4x3.IFCSegmentDim
 			IFCDimensionCount result = new IFCDimensionCount();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcShapeRepresentationTypes
+		/// (RepType : IfcLabel; Items : SET OF IfcRepresentationItem) : LOGICAL;
+		/// 
+		/// LOCAL
+		/// Count : INTEGER := 0;
+		/// END_LOCAL;
+		/// 
+		/// CASE RepType OF
+		/// 'Point' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCPOINT' IN TYPEOF(temp))
+		/// OR ('IFC4X3_ADD2.IFCCARTESIANPOINTLIST' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'PointCloud' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCCARTESIANPOINTLIST3D' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'Curve' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCCURVE' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'Curve2D' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCCURVE' IN TYPEOF(temp))
+		/// AND (temp\IfcCurve.Dim = 2)));
+		/// END;
+		/// 
+		/// 'Curve3D' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCCURVE' IN TYPEOF(temp))
+		/// AND (temp\IfcCurve.Dim = 3)));
+		/// END;
+		/// 
+		/// 'Segment' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCSEGMENT' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'Surface' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCSURFACE' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'Surface2D' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCSURFACE' IN TYPEOF(temp))
+		/// AND (temp\IfcSurface.Dim = 2)));
+		/// END;
+		/// 
+		/// 'Surface3D' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCSURFACE' IN TYPEOF(temp))
+		/// AND (temp\IfcSurface.Dim = 3)));
+		/// END;
+		/// 
+		/// 'SectionedSurface' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | 'IFC4X3_ADD2.IFCSECTIONEDSURFACE' IN TYPEOF(temp)));
+		/// END;
+		/// 
+		/// 'FillArea' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCANNOTATIONFILLAREA' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'Text' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCTEXTLITERAL' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'AdvancedSurface' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | 'IFC4X3_ADD2.IFCBSPLINESURFACE' IN TYPEOF(temp)));
+		/// END;
+		/// 
+		/// 'Annotation2D' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | (
+		/// SIZEOF(TYPEOF(temp) * [
+		/// 'IFC4X3_ADD2.IFCPOINT',
+		/// 'IFC4X3_ADD2.IFCCURVE',
+		/// 'IFC4X3_ADD2.IFCGEOMETRICCURVESET',
+		/// 'IFC4X3_ADD2.IFCANNOTATIONFILLAREA',
+		/// 'IFC4X3_ADD2.IFCTEXTLITERAL']) = 1)
+		/// ));
+		/// END;
+		/// 
+		/// 'GeometricSet' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCGEOMETRICSET' IN TYPEOF(temp))
+		/// OR ('IFC4X3_ADD2.IFCPOINT' IN TYPEOF(temp))
+		/// OR ('IFC4X3_ADD2.IFCCURVE' IN TYPEOF(temp))
+		/// OR ('IFC4X3_ADD2.IFCSURFACE' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'GeometricCurveSet' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCGEOMETRICCURVESET' IN TYPEOF(temp))
+		/// OR ('IFC4X3_ADD2.IFCGEOMETRICSET' IN TYPEOF(temp))
+		/// OR ('IFC4X3_ADD2.IFCPOINT' IN TYPEOF(temp))
+		/// OR ('IFC4X3_ADD2.IFCCURVE' IN TYPEOF(temp))));
+		/// REPEAT i:=1 TO HIINDEX(Items);
+		/// IF ('IFC4X3_ADD2.IFCGEOMETRICSET' IN TYPEOF(Items[i]))
+		/// THEN
+		/// IF (SIZEOF(QUERY(temp <* Items[i]\IfcGeometricSet.Elements | 'IFC4X3_ADD2.IFCSURFACE' IN TYPEOF(temp))) > 0)
+		/// THEN
+		/// Count := Count - 1;
+		/// END_IF;
+		/// END_IF;
+		/// END_REPEAT;
+		/// END;
+		/// 
+		/// 'Tessellation' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | 'IFC4X3_ADD2.IFCTESSELLATEDITEM' IN TYPEOF(temp)));
+		/// END;
+		/// 
+		/// 'SurfaceOrSolidModel' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
+		/// 'IFC4X3_ADD2.IFCTESSELLATEDITEM',
+		/// 'IFC4X3_ADD2.IFCSHELLBASEDSURFACEMODEL',
+		/// 'IFC4X3_ADD2.IFCFACEBASEDSURFACEMODEL',
+		/// 'IFC4X3_ADD2.IFCSOLIDMODEL'] * TYPEOF(temp)) >= 1
+		/// ));
+		/// END;
+		/// 
+		/// 'SurfaceModel' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
+		/// 'IFC4X3_ADD2.IFCTESSELLATEDITEM',
+		/// 'IFC4X3_ADD2.IFCSHELLBASEDSURFACEMODEL',
+		/// 'IFC4X3_ADD2.IFCFACEBASEDSURFACEMODEL'] * TYPEOF(temp)) >= 1
+		/// ));
+		/// END;
+		/// 
+		/// 'SolidModel' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCSOLIDMODEL' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'SweptSolid' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | (SIZEOF([
+		/// 'IFC4X3_ADD2.IFCEXTRUDEDAREASOLID',
+		/// 'IFC4X3_ADD2.IFCREVOLVEDAREASOLID'] * TYPEOF(temp)) >= 1
+		/// ) AND (SIZEOF([
+		/// 'IFC4X3_ADD2.IFCEXTRUDEDAREASOLIDTAPERED',
+		/// 'IFC4X3_ADD2.IFCREVOLVEDAREASOLIDTAPERED'] * TYPEOF(temp)) = 0
+		/// )
+		/// ));
+		/// END;
+		/// 
+		/// 'AdvancedSweptSolid' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
+		/// 'IFC4X3_ADD2.IFCSWEPTAREASOLID',
+		/// 'IFC4X3_ADD2.IFCSWEPTDISKSOLID',
+		/// 'IFC4X3_ADD2.IFCSECTIONEDSOLIDHORIZONTAL'] *  TYPEOF(temp)) >= 1
+		/// ));
+		/// END;
+		/// 
+		/// 'CSG' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
+		/// 'IFC4X3_ADD2.IFCBOOLEANRESULT',
+		/// 'IFC4X3_ADD2.IFCCSGPRIMITIVE3D',
+		/// 'IFC4X3_ADD2.IFCCSGSOLID'] *  TYPEOF(temp)) >= 1
+		/// ));
+		/// END;
+		/// 
+		/// 'Clipping' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
+		/// 'IFC4X3_ADD2.IFCCSGSOLID',
+		/// 'IFC4X3_ADD2.IFCBOOLEANCLIPPINGRESULT'] * TYPEOF(temp)) >= 1
+		/// ));
+		/// END;
+		/// 
+		/// 'Brep' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCFACETEDBREP' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'AdvancedBrep' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCMANIFOLDSOLIDBREP' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'BoundingBox' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCBOUNDINGBOX' IN TYPEOF(temp))));
+		/// IF (SIZEOF(Items) > 1)
+		/// THEN
+		/// Count := 0;
+		/// END_IF;
+		/// END;
+		/// 
+		/// 'SectionedSpine' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCSECTIONEDSPINE' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'LightSource' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCLIGHTSOURCE' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// 'MappedRepresentation' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items | ('IFC4X3_ADD2.IFCMAPPEDITEM' IN TYPEOF(temp))));
+		/// END;
+		/// 
+		/// OTHERWISE : RETURN(?);
+		/// END_CASE;
+		/// RETURN (Count = SIZEOF(Items));
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCShapeRepresentationTypes(IFCLabel RepType, List<IFCRepresentationItem> Items)
 		{
+			//MANUAL : IFC4x3.IFCShapeRepresentationTypes
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcSurfaceWeightsPositive
+		/// ( B: IfcRationalBSplineSurfaceWithKnots)
+		/// : BOOLEAN;
+		/// 
+		/// LOCAL
+		/// Result : BOOLEAN := TRUE;
+		/// Weights : ARRAY [ 0 : B\IfcBSplineSurface.UUpper ] OF ARRAY [ 0 : B\IfcBSplineSurface.VUpper ] OF REAL := B.Weights;
+		/// END_LOCAL;
+		/// 
+		/// REPEAT i := 0 TO B\IfcBSplineSurface.UUpper;
+		/// REPEAT j := 0 TO B\IfcBSplineSurface.VUpper;
+		/// IF (Weights[i][j] <= 0.0) THEN
+		/// Result := FALSE;
+		/// RETURN(Result);
+		/// END_IF;
+		/// END_REPEAT;
+		/// END_REPEAT;
+		/// RETURN(Result);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static BOOLEAN? IFCSurfaceWeightsPositive(IFCRationalBSplineSurfaceWithKnots B)
 		{
+			//MANUAL : IFC4x3.IFCSurfaceWeightsPositive
 			BOOLEAN result = new BOOLEAN();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcTaperedSweptAreaProfiles
+		/// (StartArea, EndArea : IfcProfileDef)
+		/// : LOGICAL;
+		/// 
+		/// LOCAL
+		/// Result : LOGICAL := FALSE;
+		/// END_LOCAL;
+		/// 
+		/// IF ('IFC4X3_ADD2.IFCPARAMETERIZEDPROFILEDEF' IN TYPEOF(StartArea)) THEN
+		/// IF ('IFC4X3_ADD2.IFCDERIVEDPROFILEDEF' IN TYPEOF(EndArea)) THEN
+		/// Result := (StartArea :=: EndArea\IfcDerivedProfileDef.ParentProfile);
+		/// ELSE
+		/// Result := (TYPEOF(StartArea) = TYPEOF(EndArea));
+		/// END_IF;
+		/// ELSE
+		/// IF ('IFC4X3_ADD2.IFCDERIVEDPROFILEDEF' IN TYPEOF(EndArea)) THEN
+		/// Result := (StartArea :=: EndArea\IfcDerivedProfileDef.ParentProfile);
+		/// ELSE
+		/// Result := FALSE;
+		/// END_IF;
+		/// END_IF;
+		/// 
+		/// RETURN(Result);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCTaperedSweptAreaProfiles(IFCProfileDef StartArea, IFCProfileDef EndArea)
 		{
+			//MANUAL : IFC4x3.IFCTaperedSweptAreaProfiles
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcTopologyRepresentationTypes
+		/// (RepType : IfcLabel; Items : SET OF IfcRepresentationItem) : LOGICAL;
+		/// 
+		/// LOCAL
+		/// Count : INTEGER := 0;
+		/// END_LOCAL;
+		/// 
+		/// CASE RepType OF
+		/// 'Vertex' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items |
+		/// ('IFC4X3_ADD2.IFCVERTEX' IN TYPEOF(temp))));
+		/// END;
+		/// 'Edge' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items |
+		/// ('IFC4X3_ADD2.IFCEDGE' IN TYPEOF(temp))));
+		/// END;
+		/// 'Path' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items |
+		/// ('IFC4X3_ADD2.IFCPATH' IN TYPEOF(temp))));
+		/// END;
+		/// 'Face' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items |
+		/// ('IFC4X3_ADD2.IFCFACE' IN TYPEOF(temp))));
+		/// END;
+		/// 'Shell' :
+		/// BEGIN
+		/// Count := SIZEOF(QUERY(temp <* Items |
+		/// ('IFC4X3_ADD2.IFCOPENSHELL' IN TYPEOF(temp))
+		/// OR ('IFC4X3_ADD2.IFCCLOSEDSHELL' IN TYPEOF(temp))));
+		/// END;
+		/// 'Undefined': RETURN(TRUE);
+		/// OTHERWISE : RETURN(?);
+		/// END_CASE;
+		/// RETURN (Count = SIZEOF(Items));
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCTopologyRepresentationTypes(IFCLabel RepType, List<IFCRepresentationItem> Items)
 		{
+			//MANUAL : IFC4x3.IFCTopologyRepresentationTypes
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcUniqueDefinitionNames
+		/// (Relations : SET [1:?] OF IfcRelDefinesByProperties)
+		/// :LOGICAL;
+		/// 
+		/// LOCAL
+		/// Definition : IfcPropertySetDefinitionSelect;
+		/// DefinitionSet : IfcPropertySetDefinitionSet;
+		/// Properties : SET OF IfcPropertySetDefinition := [];
+		/// Result : LOGICAL;
+		/// END_LOCAL;
+		/// 
+		/// IF SIZEOF(Relations) = 0 THEN
+		/// RETURN(TRUE);
+		/// END_IF;
+		/// 
+		/// REPEAT i:=1 TO HIINDEX(Relations);
+		/// Definition := Relations[i].RelatingPropertyDefinition;
+		/// IF 'IFC4X3_ADD2.IFCPROPERTYSETDEFINITION' IN TYPEOF(Definition) THEN
+		/// Properties := Properties + Definition;
+		/// ELSE
+		/// IF 'IFC4X3_ADD2.IFCPROPERTYSETDEFINITIONSET' IN TYPEOF(Definition) THEN
+		/// BEGIN
+		/// DefinitionSet := Definition;
+		/// REPEAT j:= 1 TO HIINDEX(DefinitionSet);
+		/// Properties := Properties + DefinitionSet[j];
+		/// END_REPEAT;
+		/// END;
+		/// END_IF;
+		/// END_IF;
+		/// END_REPEAT;
+		/// 
+		/// Result := IfcUniquePropertySetNames(Properties);
+		/// RETURN (Result);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCUniqueDefinitionNames(List<IFCRelDefinesByProperties> Relations)
 		{
+			//MANUAL : IFC4x3.IFCUniqueDefinitionNames
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcUniquePropertyName
+		/// (Properties : SET [1:?] OF IfcProperty)
+		/// :LOGICAL;
+		/// 
+		/// LOCAL
+		/// Names : SET OF IfcIdentifier := [];
+		/// END_LOCAL;
+		/// 
+		/// REPEAT i:=1 TO HIINDEX(Properties);
+		/// Names := Names + Properties[i].Name;
+		/// END_REPEAT;
+		/// 
+		/// RETURN (SIZEOF(Names) = SIZEOF(Properties));
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCUniquePropertyName(List<IFCProperty> Properties)
 		{
+			//MANUAL : IFC4x3.IFCUniquePropertyName
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcUniquePropertySetNames
+		/// (Properties : SET [1:?] OF IfcPropertySetDefinition)
+		/// :LOGICAL;
+		/// 
+		/// LOCAL
+		/// Names : SET OF IfcLabel := [];
+		/// Unnamed : INTEGER := 0;
+		/// END_LOCAL;
+		/// 
+		/// REPEAT i:=1 TO HIINDEX(Properties);
+		/// IF 'IFC4X3_ADD2.IFCPROPERTYSET' IN TYPEOF(Properties[i]) THEN
+		/// Names := Names + Properties[i]\IfcRoot.Name;
+		/// ELSE
+		/// Unnamed := Unnamed + 1;
+		/// END_IF;
+		/// END_REPEAT;
+		/// 
+		/// RETURN (SIZEOF(Names) + Unnamed = SIZEOF(Properties));
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCUniquePropertySetNames(List<IFCPropertySetDefinition> Properties)
 		{
+			//MANUAL : IFC4x3.IFCUniquePropertySetNames
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcUniquePropertyTemplateNames
+		/// (Properties : SET [1:?] OF IfcPropertyTemplate)
+		/// :LOGICAL;
+		/// 
+		/// LOCAL
+		/// Names : SET OF IfcLabel := [];
+		/// END_LOCAL;
+		/// 
+		/// REPEAT i:=1 TO HIINDEX(Properties);
+		/// Names := Names + Properties[i].Name;
+		/// END_REPEAT;
+		/// RETURN (SIZEOF(Names) = SIZEOF(Properties));
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCUniquePropertyTemplateNames(List<IFCPropertyTemplate> Properties)
 		{
+			//MANUAL : IFC4x3.IFCUniquePropertyTemplateNames
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcUniqueQuantityNames
+		/// (Properties : SET [1:?] OF IfcPhysicalQuantity)
+		/// :LOGICAL;
+		/// 
+		/// LOCAL
+		/// Names : SET OF IfcLabel := [];
+		/// END_LOCAL;
+		/// 
+		/// REPEAT i:=1 TO HIINDEX(Properties);
+		/// Names := Names + Properties[i].Name;
+		/// END_REPEAT;
+		/// RETURN (SIZEOF(Names) = SIZEOF(Properties));
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static LOGICAL? IFCUniqueQuantityNames(List<IFCPhysicalQuantity> Properties)
 		{
+			//MANUAL : IFC4x3.IFCUniqueQuantityNames
 			LOGICAL result = new LOGICAL();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcVectorDifference
+		/// (Arg1, Arg2 : IfcVectorOrDirection)
+		/// : IfcVector;
+		/// LOCAL
+		/// Result : IfcVector;
+		/// Res, Vec1, Vec2 : IfcDirection;
+		/// Mag, Mag1, Mag2 : REAL;
+		/// Ndim : INTEGER;
+		/// END_LOCAL;
+		/// 
+		/// IF ((NOT EXISTS (Arg1)) OR (NOT EXISTS (Arg2))) OR (Arg1.Dim <> Arg2.Dim) THEN
+		/// RETURN (?) ;
+		/// ELSE
+		/// BEGIN
+		/// IF 'IFC4X3_ADD2.IFCVECTOR' IN TYPEOF(Arg1) THEN
+		/// Mag1 := Arg1\IfcVector.Magnitude;
+		/// Vec1 := Arg1\IfcVector.Orientation;
+		/// ELSE
+		/// Mag1 := 1.0;
+		/// Vec1 := Arg1;
+		/// END_IF;
+		/// IF 'IFC4X3_ADD2.IFCVECTOR' IN TYPEOF(Arg2) THEN
+		/// Mag2 := Arg2\IfcVector.Magnitude;
+		/// Vec2 := Arg2\IfcVector.Orientation;
+		/// ELSE
+		/// Mag2 := 1.0;
+		/// Vec2 := Arg2;
+		/// END_IF;
+		/// Vec1 := IfcNormalise (Vec1);
+		/// Vec2 := IfcNormalise (Vec2);
+		/// Ndim := SIZEOF(Vec1.DirectionRatios);
+		/// Mag  := 0.0;
+		/// Res  := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0:Ndim]);
+		/// 
+		/// REPEAT i := 1 TO Ndim;
+		/// Res.DirectionRatios[i] := Mag1*Vec1.DirectionRatios[i] - Mag2*Vec2.DirectionRatios[i];
+		/// Mag := Mag + (Res.DirectionRatios[i]*Res.DirectionRatios[i]);
+		/// END_REPEAT;
+		/// 
+		/// IF (Mag > 0.0 ) THEN
+		/// Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector( Res, SQRT(Mag));
+		/// ELSE
+		/// Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector( Vec1, 0.0);
+		/// END_IF;
+		/// END;
+		/// END_IF;
+		/// RETURN (Result);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCVector? IFCVectorDifference(IFCVectorOrDirection Arg1, IFCVectorOrDirection Arg2)
 		{
+			//MANUAL : IFC4x3.IFCVectorDifference
 			IFCVector result = new IFCVector();
 			return result;
+			//END_MANUAL
 		}
+		/// <summary>
+		/// FUNCTION IfcVectorSum
+		/// (Arg1, Arg2 : IfcVectorOrDirection)
+		/// : IfcVector;
+		/// LOCAL
+		/// Result : IfcVector;
+		/// Res, Vec1, Vec2 : IfcDirection;
+		/// Mag, Mag1, Mag2 : REAL;
+		/// Ndim : INTEGER;
+		/// END_LOCAL;
+		/// 
+		/// IF ((NOT EXISTS (Arg1)) OR (NOT EXISTS (Arg2))) OR (Arg1.Dim <> Arg2.Dim) THEN
+		/// RETURN (?) ;
+		/// ELSE
+		/// BEGIN
+		/// IF 'IFC4X3_ADD2.IFCVECTOR' IN TYPEOF(Arg1) THEN
+		/// Mag1 := Arg1\IfcVector.Magnitude;
+		/// Vec1 := Arg1\IfcVector.Orientation;
+		/// ELSE
+		/// Mag1 := 1.0;
+		/// Vec1 := Arg1;
+		/// END_IF;
+		/// IF 'IFC4X3_ADD2.IFCVECTOR' IN TYPEOF(Arg2) THEN
+		/// Mag2 := Arg2\IfcVector.Magnitude;
+		/// Vec2 := Arg2\IfcVector.Orientation;
+		/// ELSE
+		/// Mag2 := 1.0;
+		/// Vec2 := Arg2;
+		/// END_IF;
+		/// Vec1 := IfcNormalise (Vec1);
+		/// Vec2 := IfcNormalise (Vec2);
+		/// Ndim := SIZEOF(Vec1.DirectionRatios);
+		/// Mag  := 0.0;
+		/// Res  := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0:Ndim]);
+		/// 
+		/// REPEAT i := 1 TO Ndim;
+		/// Res.DirectionRatios[i] := Mag1*Vec1.DirectionRatios[i] + Mag2*Vec2.DirectionRatios[i];
+		/// Mag := Mag + (Res.DirectionRatios[i]*Res.DirectionRatios[i]);
+		/// END_REPEAT;
+		/// 
+		/// IF (Mag > 0.0 ) THEN
+		/// Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector( Res, SQRT(Mag));
+		/// ELSE
+		/// Result := IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector( Vec1, 0.0);
+		/// END_IF;
+		/// END;
+		/// END_IF;
+		/// RETURN (Result);
+		/// 
+		/// END_FUNCTION;
+		/// <summary>
 		public static IFCVector? IFCVectorSum(IFCVectorOrDirection Arg1, IFCVectorOrDirection Arg2)
 		{
+			//MANUAL : IFC4x3.IFCVectorSum
 			IFCVector result = new IFCVector();
 			return result;
+			//END_MANUAL
 		}
 	}
 	/// <summary>
@@ -13973,8 +15762,16 @@ namespace IFC.IFC4x3
 	public class IFCAxis1Placement : IFCPlacement, Global.IFCAxis1Placement
 	{
 		public virtual IFCDirection? Axis { get; set; }
-		//DERIVE
-		public virtual IFCDirection? Z {get {return null;}}
+		public virtual IFCDirection? Z
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCAxis1Placement.Z
+				// NVL (IfcNormalise(Axis), IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcDirection([0.0,0.0,1.0]));
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCAxis1Placement() : base()
 		{
 		}
@@ -14031,8 +15828,16 @@ namespace IFC.IFC4x3
 	public class IFCAxis2Placement2D : IFCPlacement, IFCAxis2Placement, Global.IFCAxis2Placement2D
 	{
 		public virtual IFCDirection? RefDirection { get; set; }
-		//DERIVE
-		public virtual List<IFCDirection>? P {get {return null;}}
+		public virtual List<IFCDirection>? P
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCAxis2Placement2D.P
+				// IfcBuild2Axes(RefDirection);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCAxis2Placement2D() : base()
 		{
 		}
@@ -14103,8 +15908,16 @@ namespace IFC.IFC4x3
 	{
 		public virtual IFCDirection? Axis { get; set; }
 		public virtual IFCDirection? RefDirection { get; set; }
-		//DERIVE
-		public virtual List<IFCDirection>? P {get {return null;}}
+		public virtual List<IFCDirection>? P
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCAxis2Placement3D.P
+				// IfcBuildAxes(Axis, RefDirection);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCAxis2Placement3D() : base()
 		{
 		}
@@ -14269,10 +16082,26 @@ namespace IFC.IFC4x3
 		public virtual IFCBSplineCurveForm? CurveForm { get; set; }
 		public virtual IFCLogical? ClosedCurve { get; set; }
 		public virtual IFCLogical? SelfIntersect { get; set; }
-		//DERIVE
-		public virtual IFCInteger? UpperIndexOnControlPoints {get {return null;}}
-		//DERIVE
-		public virtual List<IFCCartesianPoint>? ControlPoints {get {return null;}}
+		public virtual IFCInteger? UpperIndexOnControlPoints
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCBSplineCurve.UpperIndexOnControlPoints
+				// (SIZEOF(ControlPointsList) - 1);
+				return null;
+				//END_MANUAL
+			}
+		}
+		public virtual List<IFCCartesianPoint>? ControlPoints
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCBSplineCurve.ControlPoints
+				// IfcListToArray(ControlPointsList,0,UpperIndexOnControlPoints);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCBSplineCurve() : base()
 		{
 		}
@@ -14446,8 +16275,16 @@ namespace IFC.IFC4x3
 		public virtual List<IFCInteger>? KnotMultiplicities { get; set; }
 		public virtual List<IFCParameterValue>? Knots { get; set; }
 		public virtual IFCKnotType? KnotSpec { get; set; }
-		//DERIVE
-		public virtual IFCInteger? UpperIndexOnKnots {get {return null;}}
+		public virtual IFCInteger? UpperIndexOnKnots
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCBSplineCurveWithKnots.UpperIndexOnKnots
+				// SIZEOF(Knots);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCBSplineCurveWithKnots() : base()
 		{
 		}
@@ -14593,12 +16430,36 @@ namespace IFC.IFC4x3
 		public virtual IFCLogical? UClosed { get; set; }
 		public virtual IFCLogical? VClosed { get; set; }
 		public virtual IFCLogical? SelfIntersect { get; set; }
-		//DERIVE
-		public virtual IFCInteger? UUpper {get {return null;}}
-		//DERIVE
-		public virtual IFCInteger? VUpper {get {return null;}}
-		//DERIVE
-		public virtual List<List<IFCCartesianPoint>>? ControlPoints {get {return null;}}
+		public virtual IFCInteger? UUpper
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCBSplineSurface.UUpper
+				// SIZEOF(ControlPointsList) - 1;
+				return null;
+				//END_MANUAL
+			}
+		}
+		public virtual IFCInteger? VUpper
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCBSplineSurface.VUpper
+				// SIZEOF(ControlPointsList[1]) - 1;
+				return null;
+				//END_MANUAL
+			}
+		}
+		public virtual List<List<IFCCartesianPoint>>? ControlPoints
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCBSplineSurface.ControlPoints
+				// IfcMakeArrayOfArray(ControlPointsList,
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCBSplineSurface() : base()
 		{
 		}
@@ -14847,10 +16708,26 @@ namespace IFC.IFC4x3
 		public virtual List<IFCParameterValue>? UKnots { get; set; }
 		public virtual List<IFCParameterValue>? VKnots { get; set; }
 		public virtual IFCKnotType? KnotSpec { get; set; }
-		//DERIVE
-		public virtual IFCInteger? KnotVUpper {get {return null;}}
-		//DERIVE
-		public virtual IFCInteger? KnotUUpper {get {return null;}}
+		public virtual IFCInteger? KnotVUpper
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCBSplineSurfaceWithKnots.KnotVUpper
+				// SIZEOF(VKnots);
+				return null;
+				//END_MANUAL
+			}
+		}
+		public virtual IFCInteger? KnotUUpper
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCBSplineSurfaceWithKnots.KnotUUpper
+				// SIZEOF(UKnots);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCBSplineSurfaceWithKnots() : base()
 		{
 		}
@@ -15588,8 +17465,16 @@ namespace IFC.IFC4x3
 		public virtual IFCBooleanOperator? Operator { get; set; }
 		public virtual IFCBooleanOperand? FirstOperand { get; set; }
 		public virtual IFCBooleanOperand? SecondOperand { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCBooleanResult.Dim
+				// FirstOperand.Dim;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCBooleanResult() : base()
 		{
 		}
@@ -16275,8 +18160,16 @@ namespace IFC.IFC4x3
 		public virtual IFCPositiveLengthMeasure? XDim { get; set; }
 		public virtual IFCPositiveLengthMeasure? YDim { get; set; }
 		public virtual IFCPositiveLengthMeasure? ZDim { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCBoundingBox.Dim
+				// 3;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCBoundingBox() : base()
 		{
 		}
@@ -18039,8 +19932,16 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IFCCartesianPointList : IFCGeometricRepresentationItem, Global.IFCCartesianPointList
 	{
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCartesianPointList.Dim
+				// IfcPointListDim(SELF);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCCartesianPointList() : base()
 		{
 		}
@@ -18299,10 +20200,26 @@ namespace IFC.IFC4x3
 		public virtual IFCDirection? Axis2 { get; set; }
 		public virtual IFCCartesianPoint? LocalOrigin { get; set; }
 		public virtual IFCReal? Scale { get; set; }
-		//DERIVE
-		public virtual IFCReal? Scl {get {return null;}}
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCReal? Scl
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCartesianTransformationOperator.Scl
+				// NVL(Scale, 1.0);
+				return null;
+				//END_MANUAL
+			}
+		}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCartesianTransformationOperator.Dim
+				// LocalOrigin.Dim;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCCartesianTransformationOperator() : base()
 		{
 		}
@@ -18428,8 +20345,16 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IFCCartesianTransformationOperator2D : IFCCartesianTransformationOperator, Global.IFCCartesianTransformationOperator2D
 	{
-		//DERIVE
-		public virtual List<IFCDirection>? U {get {return null;}}
+		public virtual List<IFCDirection>? U
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCartesianTransformationOperator2D.U
+				// IfcBaseAxis(2,SELF\IfcCartesianTransformationOperator.Axis1,
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCCartesianTransformationOperator2D() : base()
 		{
 		}
@@ -18476,8 +20401,16 @@ namespace IFC.IFC4x3
 	public class IFCCartesianTransformationOperator2DnonUniform : IFCCartesianTransformationOperator2D, Global.IFCCartesianTransformationOperator2DnonUniform
 	{
 		public virtual IFCReal? Scale2 { get; set; }
-		//DERIVE
-		public virtual IFCReal? Scl2 {get {return null;}}
+		public virtual IFCReal? Scl2
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCartesianTransformationOperator2DnonUniform.Scl2
+				// NVL(Scale2, SELF\IfcCartesianTransformationOperator.Scl);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCCartesianTransformationOperator2DnonUniform() : base()
 		{
 		}
@@ -18543,8 +20476,16 @@ namespace IFC.IFC4x3
 	public class IFCCartesianTransformationOperator3D : IFCCartesianTransformationOperator, Global.IFCCartesianTransformationOperator3D
 	{
 		public virtual IFCDirection? Axis3 { get; set; }
-		//DERIVE
-		public virtual List<IFCDirection>? U {get {return null;}}
+		public virtual List<IFCDirection>? U
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCartesianTransformationOperator3D.U
+				// IfcBaseAxis(3,SELF\IfcCartesianTransformationOperator.Axis1,
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCCartesianTransformationOperator3D() : base()
 		{
 		}
@@ -18615,10 +20556,26 @@ namespace IFC.IFC4x3
 	{
 		public virtual IFCReal? Scale2 { get; set; }
 		public virtual IFCReal? Scale3 { get; set; }
-		//DERIVE
-		public virtual IFCReal? Scl2 {get {return null;}}
-		//DERIVE
-		public virtual IFCReal? Scl3 {get {return null;}}
+		public virtual IFCReal? Scl2
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCartesianTransformationOperator3DnonUniform.Scl2
+				// NVL(Scale2, SELF\IfcCartesianTransformationOperator.Scl);
+				return null;
+				//END_MANUAL
+			}
+		}
+		public virtual IFCReal? Scl3
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCartesianTransformationOperator3DnonUniform.Scl3
+				// NVL(Scale3, SELF\IfcCartesianTransformationOperator.Scl);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCCartesianTransformationOperator3DnonUniform() : base()
 		{
 		}
@@ -20315,10 +22272,26 @@ namespace IFC.IFC4x3
 	{
 		public virtual List<IFCSegment>? Segments { get; set; }
 		public virtual IFCLogical? SelfIntersect { get; set; }
-		//DERIVE
-		public virtual IFCInteger? NSegments {get {return null;}}
-		//DERIVE
-		public virtual IFCLogical? ClosedCurve {get {return null;}}
+		public virtual IFCInteger? NSegments
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCompositeCurve.NSegments
+				// SIZEOF(Segments);
+				return null;
+				//END_MANUAL
+			}
+		}
+		public virtual IFCLogical? ClosedCurve
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCompositeCurve.ClosedCurve
+				// Segments[NSegments].Transition <> Discontinuous;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCCompositeCurve() : base()
 		{
 		}
@@ -20415,8 +22388,16 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IFCCompositeCurveOnSurface : IFCCompositeCurve, IFCCurveOnSurface, Global.IFCCompositeCurveOnSurface
 	{
-		//DERIVE
-		public virtual List<IFCSurface>? BasisSurface {get {return null;}}
+		public virtual List<IFCSurface>? BasisSurface
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCompositeCurveOnSurface.BasisSurface
+				// IfcGetBasisSurface(SELF);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCCompositeCurveOnSurface() : base()
 		{
 		}
@@ -23764,8 +25745,16 @@ namespace IFC.IFC4x3
 	public abstract class IFCCsgPrimitive3D : IFCGeometricRepresentationItem, IFCBooleanOperand, IFCCsgSelect, Global.IFCCsgPrimitive3D
 	{
 		public virtual IFCAxis2Placement3D? Position { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCsgPrimitive3D.Dim
+				// 3;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCCsgPrimitive3D() : base()
 		{
 		}
@@ -24108,8 +26097,16 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IFCCurve : IFCGeometricRepresentationItem, IFCGeometricSetSelect, Global.IFCCurve
 	{
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCCurve.Dim
+				// IfcCurveDim(SELF);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCCurve() : base()
 		{
 		}
@@ -25119,8 +27116,16 @@ namespace IFC.IFC4x3
 		public virtual IFCDerivedUnitEnum? UnitType { get; set; }
 		public virtual IFCLabel? UserDefinedType { get; set; }
 		public virtual IFCLabel? Name { get; set; }
-		//DERIVE
-		public virtual IFCDimensionalExponents? Dimensions {get {return null;}}
+		public virtual IFCDimensionalExponents? Dimensions
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCDerivedUnit.Dimensions
+				// IfcDeriveDimensionalExponents(Elements);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCDerivedUnit() : base()
 		{
 		}
@@ -25486,8 +27491,16 @@ namespace IFC.IFC4x3
 	public class IFCDirection : IFCGeometricRepresentationItem, IFCGridPlacementDirectionSelect, IFCVectorOrDirection, Global.IFCDirection
 	{
 		public virtual List<IFCReal>? DirectionRatios { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCDirection.Dim
+				// HIINDEX(DirectionRatios);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCDirection() : base()
 		{
 		}
@@ -28526,8 +30539,16 @@ namespace IFC.IFC4x3
 	public class IFCEdgeLoop : IFCLoop, Global.IFCEdgeLoop
 	{
 		public virtual List<IFCOrientedEdge>? EdgeList { get; set; }
-		//DERIVE
-		public virtual IFCInteger? Ne {get {return null;}}
+		public virtual IFCInteger? Ne
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCEdgeLoop.Ne
+				// SIZEOF(EdgeList);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCEdgeLoop() : base()
 		{
 		}
@@ -31619,8 +33640,16 @@ namespace IFC.IFC4x3
 	public class IFCFaceBasedSurfaceModel : IFCGeometricRepresentationItem, IFCSurfaceOrFaceSurface, Global.IFCFaceBasedSurfaceModel
 	{
 		public virtual List<IFCConnectedFaceSet>? FbsmFaces { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCFaceBasedSurfaceModel.Dim
+				// 3;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCFaceBasedSurfaceModel() : base()
 		{
 		}
@@ -34638,14 +36667,46 @@ namespace IFC.IFC4x3
 		public virtual IFCPositiveRatioMeasure? TargetScale { get; set; }
 		public virtual IFCGeometricProjectionEnum? TargetView { get; set; }
 		public virtual IFCLabel? UserDefinedTargetView { get; set; }
-		//DERIVE
-		public override IFCAxis2Placement? WorldCoordinateSystem {get {return null;}}
-		//DERIVE
-		public override IFCDimensionCount? CoordinateSpaceDimension {get {return null;}}
-		//DERIVE
-		public override IFCDirection? TrueNorth {get {return null;}}
-		//DERIVE
-		public override IFCReal? Precision {get {return null;}}
+		public override IFCAxis2Placement? WorldCoordinateSystem
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCGeometricRepresentationSubContext.WorldCoordinateSystem
+				// ParentContext.WorldCoordinateSystem;
+				return null;
+				//END_MANUAL
+			}
+		}
+		public override IFCDimensionCount? CoordinateSpaceDimension
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCGeometricRepresentationSubContext.CoordinateSpaceDimension
+				// ParentContext.CoordinateSpaceDimension;
+				return null;
+				//END_MANUAL
+			}
+		}
+		public override IFCDirection? TrueNorth
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCGeometricRepresentationSubContext.TrueNorth
+				// NVL(ParentContext.TrueNorth, IfcConvertDirectionInto2D(SELF\IfcGeometricRepresentationContext.WorldCoordinateSystem.P[2]));
+				return null;
+				//END_MANUAL
+			}
+		}
+		public override IFCReal? Precision
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCGeometricRepresentationSubContext.Precision
+				// NVL(ParentContext.Precision,1.E-5);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCGeometricRepresentationSubContext() : base()
 		{
 		}
@@ -34790,8 +36851,16 @@ namespace IFC.IFC4x3
 	public class IFCGeometricSet : IFCGeometricRepresentationItem, Global.IFCGeometricSet
 	{
 		public virtual List<IFCGeometricSetSelect>? Elements { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCGeometricSet.Dim
+				// Elements[1].Dim;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCGeometricSet() : base()
 		{
 		}
@@ -35560,8 +37629,16 @@ namespace IFC.IFC4x3
 	{
 		public virtual IFCSurface? BaseSurface { get; set; }
 		public virtual IFCBoolean? AgreementFlag { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCHalfSpaceSolid.Dim
+				// 3;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCHalfSpaceSolid() : base()
 		{
 		}
@@ -40730,8 +42807,16 @@ namespace IFC.IFC4x3
 		public virtual List<IFCMaterialLayer>? MaterialLayers { get; set; }
 		public virtual IFCLabel? LayerSetName { get; set; }
 		public virtual IFCText? Description { get; set; }
-		//DERIVE
-		public virtual IFCLengthMeasure? TotalThickness {get {return null;}}
+		public virtual IFCLengthMeasure? TotalThickness
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCMaterialLayerSet.TotalThickness
+				// IfcMlsTotalThickness(SELF);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCMaterialLayerSet() : base()
 		{
 		}
@@ -42417,8 +44502,16 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public class IFCMirroredProfileDef : IFCDerivedProfileDef, Global.IFCMirroredProfileDef
 	{
-		//DERIVE
-		public override IFCCartesianTransformationOperator2D? Operator {get {return null;}}
+		public override IFCCartesianTransformationOperator2D? Operator
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCMirroredProfileDef.Operator
+				// 
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCMirroredProfileDef() : base()
 		{
 		}
@@ -44421,10 +46514,26 @@ namespace IFC.IFC4x3
 	{
 		public virtual IFCEdge? EdgeElement { get; set; }
 		public virtual IFCBoolean? Orientation { get; set; }
-		//DERIVE
-		public override IFCVertex? EdgeStart {get {return null;}}
-		//DERIVE
-		public override IFCVertex? EdgeEnd {get {return null;}}
+		public override IFCVertex? EdgeStart
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCOrientedEdge.EdgeStart
+				// IfcBooleanChoose
+				return null;
+				//END_MANUAL
+			}
+		}
+		public override IFCVertex? EdgeEnd
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCOrientedEdge.EdgeEnd
+				// IfcBooleanChoose
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCOrientedEdge() : base()
 		{
 		}
@@ -46601,8 +48710,16 @@ namespace IFC.IFC4x3
 	public abstract class IFCPlacement : IFCGeometricRepresentationItem, Global.IFCPlacement
 	{
 		public virtual IFCPoint? Location { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCPlacement.Dim
+				// Location.Dim;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCPlacement() : base()
 		{
 		}
@@ -46898,8 +49015,16 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IFCPoint : IFCGeometricRepresentationItem, IFCGeometricSetSelect, IFCPointOrVertexPoint, Global.IFCPoint
 	{
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCPoint.Dim
+				// IfcPointDim(SELF);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCPoint() : base()
 		{
 		}
@@ -52423,8 +54548,16 @@ namespace IFC.IFC4x3
 	public class IFCRationalBSplineCurveWithKnots : IFCBSplineCurveWithKnots, Global.IFCRationalBSplineCurveWithKnots
 	{
 		public virtual List<IFCReal>? WeightsData { get; set; }
-		//DERIVE
-		public virtual List<IFCReal>? Weights {get {return null;}}
+		public virtual List<IFCReal>? Weights
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCRationalBSplineCurveWithKnots.Weights
+				// IfcListToArray(WeightsData,0,SELF\IfcBSplineCurve.UpperIndexOnControlPoints);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCRationalBSplineCurveWithKnots() : base()
 		{
 		}
@@ -52514,8 +54647,16 @@ namespace IFC.IFC4x3
 	public class IFCRationalBSplineSurfaceWithKnots : IFCBSplineSurfaceWithKnots, Global.IFCRationalBSplineSurfaceWithKnots
 	{
 		public virtual List<List<IFCReal>>? WeightsData { get; set; }
-		//DERIVE
-		public virtual List<List<IFCReal>>? Weights {get {return null;}}
+		public virtual List<List<IFCReal>>? Weights
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCRationalBSplineSurfaceWithKnots.Weights
+				// IfcMakeArrayOfArray(WeightsData,0,UUpper,0,VUpper);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCRationalBSplineSurfaceWithKnots() : base()
 		{
 		}
@@ -59960,8 +62101,16 @@ namespace IFC.IFC4x3
 	{
 		public virtual IFCAxis1Placement? Axis { get; set; }
 		public virtual IFCPlaneAngleMeasure? Angle { get; set; }
-		//DERIVE
-		public virtual IFCLine? AxisLine {get {return null;}}
+		public virtual IFCLine? AxisLine
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCRevolvedAreaSolid.AxisLine
+				// IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcCurve() || IfcLine(Axis.Location,
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCRevolvedAreaSolid() : base()
 		{
 		}
@@ -60689,8 +62838,16 @@ namespace IFC.IFC4x3
 	{
 		public virtual IFCSIPrefix? Prefix { get; set; }
 		public virtual IFCSIUnitName? Name { get; set; }
-		//DERIVE
-		public override IFCDimensionalExponents? Dimensions {get {return null;}}
+		public override IFCDimensionalExponents? Dimensions
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCSIUnit.Dimensions
+				// IfcDimensionsForSIUnit (SELF.Name);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCSIUnit() : base()
 		{
 		}
@@ -61489,8 +63646,16 @@ namespace IFC.IFC4x3
 		public virtual IFCCompositeCurve? SpineCurve { get; set; }
 		public virtual List<IFCProfileDef>? CrossSections { get; set; }
 		public virtual List<IFCAxis2Placement3D>? CrossSectionPositions { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCSectionedSpine.Dim
+				// 3;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCSectionedSpine() : base()
 		{
 		}
@@ -61743,8 +63908,16 @@ namespace IFC.IFC4x3
 	public abstract class IFCSegment : IFCGeometricRepresentationItem, Global.IFCSegment
 	{
 		public virtual IFCTransitionCode? Transition { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCSegment.Dim
+				// IfcSegmentDim(SELF);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public List<IFCCompositeCurve>? UsingCurves {get{return Model?.GetItems<IFCCompositeCurve>().Where(x => x.Segments != null && x.Segments.Contains(this)).ToList();}}
 		public IFCSegment() : base()
 		{
@@ -62547,8 +64720,16 @@ namespace IFC.IFC4x3
 	public class IFCShellBasedSurfaceModel : IFCGeometricRepresentationItem, Global.IFCShellBasedSurfaceModel
 	{
 		public virtual List<IFCShell>? SbsmBoundary { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCShellBasedSurfaceModel.Dim
+				// 3;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCShellBasedSurfaceModel() : base()
 		{
 		}
@@ -63602,8 +65783,16 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IFCSolidModel : IFCGeometricRepresentationItem, IFCBooleanOperand, IFCSolidOrShell, Global.IFCSolidModel
 	{
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCSolidModel.Dim
+				// 3;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCSolidModel() : base()
 		{
 		}
@@ -67836,8 +70025,16 @@ namespace IFC.IFC4x3
 	/// <summary>
 	public abstract class IFCSurface : IFCGeometricRepresentationItem, IFCGeometricSetSelect, IFCSurfaceOrFaceSurface, Global.IFCSurface
 	{
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCSurface.Dim
+				// 3;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCSurface() : base()
 		{
 		}
@@ -67876,8 +70073,16 @@ namespace IFC.IFC4x3
 		public virtual IFCCurve? Curve3D { get; set; }
 		public virtual List<IFCPcurve>? AssociatedGeometry { get; set; }
 		public virtual IFCPreferredSurfaceCurveRepresentation? MasterRepresentation { get; set; }
-		//DERIVE
-		public virtual List<IFCSurface>? BasisSurface {get {return null;}}
+		public virtual List<IFCSurface>? BasisSurface
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCSurfaceCurve.BasisSurface
+				// IfcGetBasisSurface(SELF);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCSurfaceCurve() : base()
 		{
 		}
@@ -68109,8 +70314,16 @@ namespace IFC.IFC4x3
 	{
 		public virtual IFCDirection? ExtrudedDirection { get; set; }
 		public virtual IFCLengthMeasure? Depth { get; set; }
-		//DERIVE
-		public virtual IFCVector? ExtrusionAxis {get {return null;}}
+		public virtual IFCVector? ExtrusionAxis
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCSurfaceOfLinearExtrusion.ExtrusionAxis
+				// IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcVector (ExtrudedDirection, Depth);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCSurfaceOfLinearExtrusion() : base()
 		{
 		}
@@ -68185,8 +70398,16 @@ namespace IFC.IFC4x3
 	public class IFCSurfaceOfRevolution : IFCSweptSurface, Global.IFCSurfaceOfRevolution
 	{
 		public virtual IFCAxis1Placement? AxisPosition { get; set; }
-		//DERIVE
-		public virtual IFCLine? AxisLine {get {return null;}}
+		public virtual IFCLine? AxisLine
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCSurfaceOfRevolution.AxisLine
+				// IfcRepresentationItem() || IfcGeometricRepresentationItem () || IfcCurve() || IfcLine(AxisPosition.Location,
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCSurfaceOfRevolution() : base()
 		{
 		}
@@ -69981,12 +72202,36 @@ namespace IFC.IFC4x3
 		public virtual IFCLabel? Name { get; set; }
 		public virtual List<IFCTableRow>? Rows { get; set; }
 		public virtual List<IFCTableColumn>? Columns { get; set; }
-		//DERIVE
-		public virtual IFCInteger? NumberOfCellsInRow {get {return null;}}
-		//DERIVE
-		public virtual IFCInteger? NumberOfHeadings {get {return null;}}
-		//DERIVE
-		public virtual IFCInteger? NumberOfDataRows {get {return null;}}
+		public virtual IFCInteger? NumberOfCellsInRow
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCTable.NumberOfCellsInRow
+				// HIINDEX(Rows[1].RowCells);
+				return null;
+				//END_MANUAL
+			}
+		}
+		public virtual IFCInteger? NumberOfHeadings
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCTable.NumberOfHeadings
+				// SIZEOF(QUERY( Temp <* Rows | Temp.IsHeading));
+				return null;
+				//END_MANUAL
+			}
+		}
+		public virtual IFCInteger? NumberOfDataRows
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCTable.NumberOfDataRows
+				// SIZEOF(QUERY( Temp <* Rows | NOT(Temp.IsHeading)));
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCTable() : base()
 		{
 		}
@@ -71925,8 +74170,16 @@ namespace IFC.IFC4x3
 	public abstract class IFCTessellatedFaceSet : IFCTessellatedItem, IFCBooleanOperand, Global.IFCTessellatedFaceSet
 	{
 		public virtual IFCCartesianPointList3D? Coordinates { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCTessellatedFaceSet.Dim
+				// 3;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public List<IFCIndexedColourMap>? HasColours {get{return Model?.GetItems<IFCIndexedColourMap>().Where(x => x.MappedTo != null && x.MappedTo == this).ToList();}}
 		public List<IFCIndexedTextureMap>? HasTextures {get{return Model?.GetItems<IFCIndexedTextureMap>().Where(x => x.MappedTo != null && x.MappedTo == this).ToList();}}
 		public IFCTessellatedFaceSet() : base()
@@ -74285,8 +76538,16 @@ namespace IFC.IFC4x3
 		public virtual IFCBoolean? Closed { get; set; }
 		public virtual List<List<IFCPositiveInteger>>? CoordIndex { get; set; }
 		public virtual List<IFCPositiveInteger>? PnIndex { get; set; }
-		//DERIVE
-		public virtual IFCInteger? NumberOfTriangles {get {return null;}}
+		public virtual IFCInteger? NumberOfTriangles
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCTriangulatedFaceSet.NumberOfTriangles
+				// SIZEOF(CoordIndex);
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCTriangulatedFaceSet() : base()
 		{
 		}
@@ -75892,8 +78153,16 @@ namespace IFC.IFC4x3
 	{
 		public virtual IFCDirection? Orientation { get; set; }
 		public virtual IFCLengthMeasure? Magnitude { get; set; }
-		//DERIVE
-		public virtual IFCDimensionCount? Dim {get {return null;}}
+		public virtual IFCDimensionCount? Dim
+		{
+			get
+			{
+				//MANUAL : IFC4x3.IFCVector.Dim
+				// Orientation.Dim;
+				return null;
+				//END_MANUAL
+			}
+		}
 		public IFCVector() : base()
 		{
 		}

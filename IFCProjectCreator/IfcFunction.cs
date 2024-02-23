@@ -239,27 +239,36 @@
                     }
                 }
                 header += ")";
+                List<string> texts = GetCSharpSummaryTexts();
+                for(int i = 0; i < texts.Count; i++)
+                {
+                    texts[i] = "\t" + texts[i];
+                }
                 if (canWrite)
                 {
-                    List<string> texts = new List<string>()
+                    texts.AddRange(new List<string>()
                     {
                         header,
                         "\t\t{",
+                        "\t\t\t//MANUAL : " + VersionName + "." + Name,
                         "\t\t\t" + outputType + " result = new " + outputType + "();",
                         "\t\t\treturn result;",
+                        "\t\t\t//END_MANUAL",
                         "\t\t}"
-                    };
+                    });
                     return texts;
                 }
                 else
                 {
-                    List<string> texts = new List<string>()
+                    texts.AddRange(new List<string>()
                     {
                         header,
                         "\t\t{",
+                        "\t\t\t//MANUAL : " + VersionName + "." + Name,
                         outputType == "T"?"\t\t\treturn default(T);": "\t\t\treturn null;",
+                        "\t\t\t//END_MANUAL",
                         "\t\t}"
-                    };
+                    });
                     return texts;
                 }
             }

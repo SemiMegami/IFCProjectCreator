@@ -191,7 +191,7 @@ namespace IFCProjectCreator
                                 splitIndex = i;
                             }
                         }
-                        IFCDeriveAttribute IFCAttribute = new IFCDeriveAttribute();
+                        IFCDeriveAttribute IFCAttribute = new IFCDeriveAttribute() { Entity = this };
                         string[] strings = line.Split(" := ");
                         if(strings.Length > 1)
                         {

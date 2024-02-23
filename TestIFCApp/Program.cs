@@ -12,6 +12,7 @@ namespace TestIFCApp
 
 
             IFC.IFC_Model model = new IFC_Model("2x3");
+
            // var beams = model.GetItems<IFCBeam>();
         }
     }
