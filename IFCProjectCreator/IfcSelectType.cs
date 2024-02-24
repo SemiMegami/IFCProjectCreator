@@ -108,7 +108,7 @@ namespace IFCProjectCreator
             }
             else
             {
-                return "";
+                return ": IFC_Attribute";
             }
         }
     }

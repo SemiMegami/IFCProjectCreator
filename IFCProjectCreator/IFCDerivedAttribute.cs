@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace IFCProjectCreator
 {
-    public class IFCDeriveAttribute : IFCAttribute
+    public class IFCDerivedAttribute : IFCAttribute
     {
         public string DeriveText { get; set; }
         public IFCEntity? Entity { get; set; }
   
-        public IFCDeriveAttribute() : base()
+        public IFCDerivedAttribute() : base()
         {
             isReadOnly = true;
             DeriveText = "";

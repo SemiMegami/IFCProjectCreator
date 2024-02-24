@@ -13,8 +13,8 @@ namespace IFCProjectCreator
     {
         public bool IsAbstract { get; set; }
         public List<IFCParameterAttribute> ParameterClassAttributes { get; set; }
-        public List<IFCDeriveAttribute> DeriveAttributes { get; set; }
-        public List<IFCInverseAttribute> InverseAttributes { get; set; }
+        public List<IFCDerivedAttribute> DeriveClassAttributes { get; set; }
+        public List<IFCInverseAttribute> InverseClassAttributes { get; set; }
         public List<IFCWhereAttribute> WhereAttributes { get; set; }
         public IFCEntity? ParentClass { get; set; }
 
@@ -23,8 +23,8 @@ namespace IFCProjectCreator
         {
             IsAbstract = false;
             ParameterClassAttributes = new List<IFCParameterAttribute>();
-            DeriveAttributes = new List<IFCDeriveAttribute>();
-            InverseAttributes = new List<IFCInverseAttribute>();
+            DeriveClassAttributes = new List<IFCDerivedAttribute>();
+            InverseClassAttributes = new List<IFCInverseAttribute>();
             WhereAttributes = new List<IFCWhereAttribute>();
         }
 
@@ -74,14 +74,14 @@ namespace IFCProjectCreator
                         attributes.Add(attribute.Name, attribute);
                     }
                 }
-                foreach (IFCAttribute attribute in DeriveAttributes)
+                foreach (IFCAttribute attribute in DeriveClassAttributes)
                 {
                     if (!attributes.ContainsKey(attribute.Name))
                     {
                         attributes.Add(attribute.Name, attribute);
                     }
                 }
-                foreach (IFCAttribute attribute in InverseAttributes)
+                foreach (IFCAttribute attribute in InverseClassAttributes)
                 {
                     if (!attributes.ContainsKey(attribute.Name))
                     {
@@ -95,31 +95,70 @@ namespace IFCProjectCreator
         /// <summary>
         /// ParameterClassAttributes including from parent
         /// </summary>
-        public List<IFCParameterAttribute> ParameterAttributes
-        {
-            get
-            {
-                List <IFCParameterAttribute> attributes = ParentParameterAttributes;
-                attributes.AddRange(ParameterClassAttributes);
-                return attributes;
-            }
-        }
-
-        /// <summary>
-        /// ParameterClassAttributes from parents. not include self
-        /// </summary>
-        public List<IFCParameterAttribute> ParentParameterAttributes
+        public List<IFCParameterAttribute> DirectAttributes
         {
             get
             {
                 List<IFCParameterAttribute> attributes = new List<IFCParameterAttribute>();
                 if (ParentClass != null)
                 {
-                    attributes.AddRange(ParentClass.ParameterAttributes);
+                    attributes.AddRange(ParentClass.DirectAttributes);
+                }
+                attributes.AddRange(ParameterClassAttributes);
+                return attributes;
+            }
+        }
+
+        /// <summary>
+        /// ParameterClassAttributes including from parent
+        /// </summary>
+        public List<IFCParameterAttribute> ParentsDirectAttributes
+        {
+            get
+            {
+                List<IFCParameterAttribute> attributes = new List<IFCParameterAttribute>();
+                if (ParentClass != null)
+                {
+                    attributes.AddRange(ParentClass.DirectAttributes);
                 }
                 return attributes;
             }
         }
+
+        /// <summary>
+        /// ParameterClassAttributes including from parent
+        /// </summary>
+        public List<IFCDerivedAttribute> DerivedAttributes
+        {
+            get
+            {
+                List<IFCDerivedAttribute> attributes = new List<IFCDerivedAttribute>();
+                if (ParentClass != null)
+                {
+                    attributes.AddRange(ParentClass.DerivedAttributes);
+                }
+                attributes.AddRange(DeriveClassAttributes);
+                return attributes;
+            }
+        }
+
+        /// <summary>
+        /// ParameterClassAttributes including from parent
+        /// </summary>
+        public List<IFCInverseAttribute> InverseAttributes
+        {
+            get
+            {
+                List<IFCInverseAttribute> attributes = new List<IFCInverseAttribute>();
+                if (ParentClass != null)
+                {
+                    attributes.AddRange(ParentClass.InverseAttributes);
+                }
+                attributes.AddRange(InverseClassAttributes);
+                return attributes;
+            }
+        }
+
 
         /// <summary>
         /// Parent Classes
@@ -191,7 +230,7 @@ namespace IFCProjectCreator
                                 splitIndex = i;
                             }
                         }
-                        IFCDeriveAttribute IFCAttribute = new IFCDeriveAttribute() { Entity = this };
+                        IFCDerivedAttribute IFCAttribute = new IFCDerivedAttribute() { Entity = this };
                         string[] strings = line.Split(" := ");
                         if(strings.Length > 1)
                         {
@@ -202,7 +241,7 @@ namespace IFCProjectCreator
                             IFCAttribute.DeriveText = reader.ReadLine()?? "";
                         }
                         SetAttributeType(IFCAttribute, line, splitIndex);
-                        DeriveAttributes.Add(IFCAttribute);
+                        DeriveClassAttributes.Add(IFCAttribute);
                     }
                     else if (attributeType == "INVERSE")
                     {
@@ -217,7 +256,7 @@ namespace IFCProjectCreator
                         IFCInverseAttribute IFCAttribute = new IFCInverseAttribute();
                         SetAttributeType(IFCAttribute, line, splitIndex);
                         IFCAttribute.RelatedAttributeName = words[nW - 1].Replace(";", "");
-                        InverseAttributes.Add(IFCAttribute);
+                        InverseClassAttributes.Add(IFCAttribute);
                     }
                 }
             }
@@ -301,7 +340,7 @@ namespace IFCProjectCreator
                     texts.AddRange(attribute.GetCSharpText());
                 }
             }
-            foreach (var attribute in DeriveAttributes)
+            foreach (var attribute in DeriveClassAttributes)
             {
                 texts.AddRange(attribute.GetCSharpText());
             }
@@ -309,7 +348,7 @@ namespace IFCProjectCreator
             {
                 texts.AddRange(attribute.GetCSharpText());
             }
-            foreach (var attribute in InverseAttributes)
+            foreach (var attribute in InverseClassAttributes)
             {
                 texts.AddRange(attribute.GetCSharpText());
             }
@@ -321,7 +360,7 @@ namespace IFCProjectCreator
 
            
             // constructor with parameters
-            var attributes = ParameterAttributes;
+            var attributes = DirectAttributes;
             if(attributes.Count > 0)
             {
                 string constructor = "\t\tpublic " + Name + "(";
@@ -330,7 +369,7 @@ namespace IFCProjectCreator
                     constructor += attributes[i].GetCSharpTypeText() + "? " + attributes[i].Name + (i < attributes.Count - 1 ? ", " : "");
                 }
                 constructor += ") : base (";
-                attributes = ParentParameterAttributes;
+                attributes = ParentsDirectAttributes;
                 for (int i = 0; i < attributes.Count; i++)
                 {
                     constructor += attributes[i].Name + (i < attributes.Count - 1 ? ", " : "");
@@ -346,14 +385,40 @@ namespace IFCProjectCreator
             }
 
             // get parameter function
-            texts.Add("\t\tpublic override List<object?> GetParameters()");
+            texts.Add("\t\tpublic override List<object?> GetDirectAttributes()");
             texts.Add("\t\t{");
             texts.Add("\t\t\treturn new List<object?>()");
             texts.Add("\t\t\t{");
-            var parameterClassAttributes = ParameterAttributes;
-            for(int i = 0; i < parameterClassAttributes.Count; i++)
+            var directAttributes = DirectAttributes;
+            for(int i = 0; i < directAttributes.Count; i++)
             {
-                texts.Add("\t\t\t\t" + parameterClassAttributes[i].Name + (i < parameterClassAttributes.Count - 1 ? "," : ""));
+                texts.Add("\t\t\t\t" + directAttributes[i].Name + (i < directAttributes.Count - 1 ? "," : ""));
+            }
+            texts.Add("\t\t\t};");
+            texts.Add("\t\t}");
+
+            // get parameter function
+            texts.Add("\t\tpublic override List<object?> GetDerivedAttributes()");
+            texts.Add("\t\t{");
+            texts.Add("\t\t\treturn new List<object?>()");
+            texts.Add("\t\t\t{");
+            var derivedAttributes = DerivedAttributes;
+            for (int i = 0; i < derivedAttributes.Count; i++)
+            {
+                texts.Add("\t\t\t\t" + derivedAttributes[i].Name + (i < derivedAttributes.Count - 1 ? "," : ""));
+            }
+            texts.Add("\t\t\t};");
+            texts.Add("\t\t}");
+
+            // get parameter function
+            texts.Add("\t\tpublic override List<object?> GetInverseAttributes()");
+            texts.Add("\t\t{");
+            texts.Add("\t\t\treturn new List<object?>()");
+            texts.Add("\t\t\t{");
+            var inverseAttributes = InverseAttributes;
+            for (int i = 0; i < inverseAttributes.Count; i++)
+            {
+                texts.Add("\t\t\t\t" + inverseAttributes[i].Name + (i < inverseAttributes.Count - 1 ? "," : ""));
             }
             texts.Add("\t\t\t};");
             texts.Add("\t\t}");
@@ -366,7 +431,7 @@ namespace IFCProjectCreator
                     texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
                 }
             }
-            foreach (var attribute in DeriveAttributes)
+            foreach (var attribute in DeriveClassAttributes)
             {
                 texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
             }
@@ -374,7 +439,7 @@ namespace IFCProjectCreator
             {
                 texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
             }
-            foreach (var attribute in InverseAttributes)
+            foreach (var attribute in InverseClassAttributes)
             {
                 texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
             }
@@ -396,7 +461,7 @@ namespace IFCProjectCreator
             }
             else
             {
-                return " : " + "IFC_Entity";
+                return " : " + "IFC_ClassEntity";
             }
         }
     }

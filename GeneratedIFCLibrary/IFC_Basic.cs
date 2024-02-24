@@ -3,7 +3,7 @@ using System.Collections.Generic;
 #pragma warning disable VSSpell001 // Spell Check
 namespace IFC
 {
-	public class REAL
+	public class REAL: IFC_Attribute
 	{
 		public double Value {get; set;}
 		public REAL () {Value = 0;}
@@ -11,7 +11,7 @@ namespace IFC
 		public static implicit operator REAL(double value) { return new REAL(value);}
 		public static implicit operator double(REAL value) { return value.Value;}
 	}
-	public class INTEGER
+	public class INTEGER: IFC_Attribute
 	{
 		public int Value {get; set;}
 		public INTEGER () {Value = 0;}
@@ -19,7 +19,7 @@ namespace IFC
 		public static implicit operator INTEGER(int value) { return new INTEGER(value);}
 		public static implicit operator int(INTEGER value) { return value.Value;}
 	}
-	public class NUMBER
+	public class NUMBER: IFC_Attribute
 	{
 		public double Value {get; set;}
 		public NUMBER () {Value = 0;}
@@ -27,7 +27,7 @@ namespace IFC
 		public static implicit operator NUMBER(double value) { return new NUMBER(value);}
 		public static implicit operator double(NUMBER value) { return value.Value;}
 	}
-	public class LOGICAL
+	public class LOGICAL: IFC_Attribute
 	{
 		public bool Value {get; set;}
 		public LOGICAL () {Value = false;}
@@ -35,7 +35,7 @@ namespace IFC
 		public static implicit operator LOGICAL(bool value) { return new LOGICAL(value);}
 		public static implicit operator bool(LOGICAL value) { return value.Value;}
 	}
-	public class BOOLEAN
+	public class BOOLEAN: IFC_Attribute
 	{
 		public bool Value {get; set;}
 		public BOOLEAN () {Value = false;}
@@ -43,7 +43,7 @@ namespace IFC
 		public static implicit operator BOOLEAN(bool value) { return new BOOLEAN(value);}
 		public static implicit operator bool(BOOLEAN value) { return value.Value;}
 	}
-	public class BINARY
+	public class BINARY: IFC_Attribute
 	{
 		public int Value {get; set;}
 		public BINARY () {Value = 0;}
@@ -51,7 +51,7 @@ namespace IFC
 		public static implicit operator BINARY(int value) { return new BINARY(value);}
 		public static implicit operator int(BINARY value) { return value.Value;}
 	}
-	public class STRING
+	public class STRING: IFC_Attribute
 	{
 		public string Value {get; set;}
 		public STRING () {Value = "";}

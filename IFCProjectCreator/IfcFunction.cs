@@ -239,6 +239,10 @@
                     }
                 }
                 header += ")";
+                if (isGeneric)
+                {
+                    header += " where T: IFC_Attribute";
+                }
                 List<string> texts = GetCSharpSummaryTexts();
                 for(int i = 0; i < texts.Count; i++)
                 {

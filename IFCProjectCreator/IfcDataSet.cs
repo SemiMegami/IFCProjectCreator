@@ -292,7 +292,7 @@ namespace IFCProjectCreator
             // update readOnly
             foreach (var entity in Entities)
             {
-                var entityAttributes = entity.AllAttributes.Where(e => e is IFCDeriveAttribute || e is IFCInverseAttribute).ToList();
+                var entityAttributes = entity.AllAttributes.Where(e => e is IFCDerivedAttribute || e is IFCInverseAttribute).ToList();
                 if(entity.Name == "IFCAxis2Placement2D")
                 {
 
@@ -599,16 +599,16 @@ namespace IFCProjectCreator
             foreach (var entity in Entities)
             {
                 List<IFCEntity> parents = entity.ParentClasses;
-                foreach (var attribute in entity.DeriveAttributes)
+                foreach (var attribute in entity.DeriveClassAttributes)
                 {
                     
                     foreach(var parent in parents)
                     {
-                        if(parent.DeriveAttributes.Where(x=>x.Name == attribute.Name).Count() >0)
+                        if(parent.DeriveClassAttributes.Where(x=>x.Name == attribute.Name).Count() >0)
                         {
                             attribute.isOverride = true;
                         }
-                        if (parent.ParameterAttributes.Where(x => x.Name == attribute.Name).Count() > 0)
+                        if (parent.DirectAttributes.Where(x => x.Name == attribute.Name).Count() > 0)
                         {
                             attribute.isOverride = true;
                         }
@@ -618,7 +618,7 @@ namespace IFCProjectCreator
                         }
                     }
                 }
-                foreach (var attribute in entity.ParameterAttributes)
+                foreach (var attribute in entity.DirectAttributes)
                 {
 
                     foreach (var parent in parents)
@@ -629,10 +629,10 @@ namespace IFCProjectCreator
                         }
                     }
                 }
-                foreach (var attribute in entity.InverseAttributes)
+                foreach (var attribute in entity.InverseClassAttributes)
                 {
                     var relatingEntity = Entities.Where(x => x.Name == attribute.TypeName && x.VersionName == entity.VersionName).ToList()[0];
-                    var parameterAttributes = relatingEntity.ParameterAttributes;
+                    var parameterAttributes = relatingEntity.DirectAttributes;
                     foreach(var param in parameterAttributes)
                     {
                         if(param.Name == attribute.RelatedAttributeName)
@@ -694,9 +694,10 @@ namespace IFCProjectCreator
         {
             NamespaceName = nameSpaceName;
             WriteCSharpModel(folderDir, nameSpaceName);
+            WriteCSharpClassEntity(folderDir, nameSpaceName);
             WriteCSharpEntity(folderDir, nameSpaceName);
-            WriteCSharpIFC(folderDir, nameSpaceName);
             WriteCSharpBasicType(folderDir, nameSpaceName);
+            WtiteCSharpList(folderDir, nameSpaceName);
             foreach (var version in Versions)
             {
                 WriteCSharp(folderDir, nameSpaceName, version);
@@ -718,7 +719,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName + "." + version);
                 writer.WriteLine("{");
-                writer.WriteLine("\tpublic abstract class " + IFCName + "_Function : IFC_Entity");
+                writer.WriteLine("\tpublic abstract class " + IFCName + "_Function : IFC_ClassEntity");
                 writer.WriteLine("\t{");
                 foreach(var f in Functions.Where(e=>e.VersionName == version).ToList())
                 {
@@ -763,7 +764,7 @@ namespace IFCProjectCreator
         /// <summary>
         /// IFC Items
         /// </summary>
-		public Dictionary<string, IFC> items;
+		public Dictionary<string, IFC_Entity> items;
 
         /// <summary>
         /// Constructor
@@ -778,7 +779,7 @@ namespace IFCProjectCreator
                 case ""IFC4X2"": this.Version = IFC_Version.IFC4x2; break;
                 case ""IFC4X3"": this.Version = IFC_Version.IFC4x3; break;
             }
-            items = new Dictionary<string, IFC>();
+            items = new Dictionary<string, IFC_Entity>();
         }
 
         /// <summary>
@@ -786,7 +787,7 @@ namespace IFCProjectCreator
         /// </summary>
         public virtual void Initialize()
         {
-            items = new Dictionary<string, IFC>();
+            items = new Dictionary<string, IFC_Entity>();
         }
 
         /// <summary>
@@ -794,10 +795,10 @@ namespace IFCProjectCreator
         /// </summary>
         /// <typeparam name=""T""></typeparam>
         /// <returns></returns>
-        public List<T> GetItems<T>() where T : IFC
+        public IFC_Attributes<T> GetItems<T>() where T : IFC_Entity
 		{
-			List<IFC> itemList = items.Values.Where(x => x is T).ToList();
-            List <T> results = new List<T>();
+			List<IFC_Entity> itemList = items.Values.Where(x => x is T).ToList();
+            IFC_Attributes <T> results = new IFC_Attributes<T>();
 			foreach (var item in itemList)
 			{
 				results.Add((T)item);
@@ -813,7 +814,7 @@ namespace IFCProjectCreator
             }
             if(parameter != null)
             {
-                if (parameter is IFC_Entity entity)
+                if (parameter is IFC_ClassEntity entity)
                 {
                     if (entity.Model != this)
                     {
@@ -840,10 +841,10 @@ namespace IFCProjectCreator
             items.Clear();
         }
 
-        public virtual void AddItem(IFC_Entity IFCBase)
+        public virtual void AddItem(IFC_ClassEntity IFCBase)
         {
 
-            List<object?> parameters = IFCBase.GetParameters();
+            List<object?> parameters = IFCBase.GetDirectAttributes();
 
             foreach (var parameter in parameters)
             {
@@ -938,16 +939,16 @@ namespace IFCProjectCreator
             }
         }
 
-        private void WriteCSharpEntity(string folderDir, string nameSpaceName)
+        private void WriteCSharpClassEntity(string folderDir, string nameSpaceName)
         {
-            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Entity.cs"))
+            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_ClassEntity.cs"))
             {
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
-                writer.WriteLine("\tpublic abstract class IFC_Entity : IFC");
+                writer.WriteLine("\tpublic abstract class IFC_ClassEntity : IFC_Entity, IFC_Attribute");
                 writer.WriteLine("\t{");
 
                 string contain =
@@ -963,22 +964,34 @@ namespace IFCProjectCreator
 		public string IFC_ID { get; set; }
 
         /// <summary>
-		/// Get All Parameters
+		/// Get All airect attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<object?> GetParameters();
+        public abstract List<object?> GetDirectAttributes();
+
+        /// <summary>
+		/// Get derived attributes
+		/// </summary>
+		/// <returns></returns>
+        public abstract List<object?> GetDerivedAttributes();
+
+        /// <summary>
+		/// Get inverse attributes
+		/// </summary>
+		/// <returns></returns>
+        public abstract List<object?> GetInverseAttributes();
 
         /// <summary>
 		/// Constructor
 		/// </summary>
-        public IFC_Entity()
+        public IFC_ClassEntity()
 		{
 			IFC_ID = string.Empty;
         }
 
         public string GetIFCFullText()
         {
-            var parameters = GetParameters();
+            var parameters = GetDirectAttributes();
             string str = IFC_ID + ""="" + GetType().Name.ToUpper() + ""("";   
 
             if (parameters != null)
@@ -1136,9 +1149,9 @@ namespace IFCProjectCreator
             {
                 str += ""$"";
             }
-            else if (parameter is IFC_Entity)
+            else if (parameter is IFC_ClassEntity)
             {
-                str += ((IFC_Entity)parameter).IFC_ID;
+                str += ((IFC_ClassEntity)parameter).IFC_ID;
             }
             else if (parameter.GetType().GetInterface(""IEnumerable"") != null)
             {
@@ -1206,23 +1219,25 @@ namespace IFCProjectCreator
             }
         }
 
-        private void WriteCSharpIFC(string folderDir, string nameSpaceName)
+        private void WriteCSharpEntity(string folderDir, string nameSpaceName)
         {
-            using (StreamWriter writer = new StreamWriter(folderDir + "IFC.cs"))
+            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Entity.cs"))
             {
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
-                writer.WriteLine("\tpublic interface IFC");
+                writer.WriteLine("\tpublic interface IFC_Entity : IFC_Attribute");
                 writer.WriteLine("\t{");
 
                 string contain =
        @"
 		public IFC_Model? Model { get; set; }
         public string IFC_ID { get; set; }
-        public List<object?> GetParameters();
+        public List<object?> GetDirectAttributes();
+        public List<object?> GetDerivedAttributes();
+        public List<object?> GetInverseAttributes();
         public string GetIFCFullText();
 ";
                 writer.Write(contain);
@@ -1244,7 +1259,7 @@ namespace IFCProjectCreator
                 {
                     string name = data.Key;
                     string cSharpText = data.Value;
-                    writer.WriteLine("\tpublic class " + data.Key);
+                    writer.WriteLine("\tpublic class " + data.Key + ": IFC_Attribute");
                     writer.WriteLine("\t{");
                     writer.WriteLine("\t\tpublic " + cSharpText + " Value {get; set;}");
                     writer.WriteLine("\t\tpublic " + name + " () {Value = " + CSharpBasicDataDefaultValue[name] +  ";}");
@@ -1257,6 +1272,49 @@ namespace IFCProjectCreator
             }
         }
 
+        private void WtiteCSharpList(string folderDir, string nameSpaceName)
+        {
+            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Attributes.cs"))
+            {
+                writer.WriteLine("using System;");
+                writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("using System.Linq;");
+                writer.WriteLine("using System.Text;");
+                writer.WriteLine("using System.Threading.Tasks;");
+                writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("namespace " + nameSpaceName);
+                writer.WriteLine("{");
+                writer.WriteLine("\tpublic class IFC_Attributes<T> : List<T>, IFC_Attribute where T: IFC_Attribute ");
+                writer.WriteLine("\t{");
+                string contain =
+   @"
+		public IFC_Attributes() : base() { }
+        public IFC_Attributes(List<T>? value)
+        {
+            if (value != null)
+            {
+                foreach (var v in value)
+                {
+                    Add(v);
+                }
+            }
+        }
+        public IFC_Attributes(IFC_Attributes<T>? value)
+        {
+            if (value != null)
+            {
+                foreach (var v in value)
+                {
+                    Add(v);
+                }
+            }
+        }
+";
+                writer.Write(contain);
+                writer.WriteLine("\t}");
+                writer.WriteLine("}");
+            }
+        }
         /// <summary>
         /// Add implicit text
         /// </summary>

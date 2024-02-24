@@ -14,7 +14,7 @@ namespace IFC
         /// <summary>
         /// IFC Items
         /// </summary>
-		public Dictionary<string, IFC> items;
+		public Dictionary<string, IFC_Entity> items;
 
         /// <summary>
         /// Constructor
@@ -29,7 +29,7 @@ namespace IFC
                 case "IFC4X2": this.Version = IFC_Version.IFC4x2; break;
                 case "IFC4X3": this.Version = IFC_Version.IFC4x3; break;
             }
-            items = new Dictionary<string, IFC>();
+            items = new Dictionary<string, IFC_Entity>();
         }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace IFC
         /// </summary>
         public virtual void Initialize()
         {
-            items = new Dictionary<string, IFC>();
+            items = new Dictionary<string, IFC_Entity>();
         }
 
         /// <summary>
@@ -45,10 +45,10 @@ namespace IFC
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        public List<T> GetItems<T>() where T : IFC
+        public IFC_Attributes<T> GetItems<T>() where T : IFC_Entity
 		{
-			List<IFC> itemList = items.Values.Where(x => x is T).ToList();
-            List <T> results = new List<T>();
+			List<IFC_Entity> itemList = items.Values.Where(x => x is T).ToList();
+            IFC_Attributes <T> results = new IFC_Attributes<T>();
 			foreach (var item in itemList)
 			{
 				results.Add((T)item);
@@ -64,7 +64,7 @@ namespace IFC
             }
             if(parameter != null)
             {
-                if (parameter is IFC_Entity entity)
+                if (parameter is IFC_ClassEntity entity)
                 {
                     if (entity.Model != this)
                     {
@@ -91,10 +91,10 @@ namespace IFC
             items.Clear();
         }
 
-        public virtual void AddItem(IFC_Entity IFCBase)
+        public virtual void AddItem(IFC_ClassEntity IFCBase)
         {
 
-            List<object?> parameters = IFCBase.GetParameters();
+            List<object?> parameters = IFCBase.GetDirectAttributes();
 
             foreach (var parameter in parameters)
             {

@@ -27,11 +27,11 @@ namespace IFCProjectCreator
                 {
                     if (RelatedAttribute.AttributeType == IFCAttributeType.LIST)
                     {
-                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this)).ToList();}}");
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return new IFC_Attributes<" + TypeName + ">(Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this)).ToList());}}");
                     }
                     else if (RelatedAttribute.AttributeType == IFCAttributeType.SINGLE)
                     {
-                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this).ToList();}}");
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return new IFC_Attributes<" + TypeName + ">(Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this).ToList());}}");
                     }
                     else
                     {
