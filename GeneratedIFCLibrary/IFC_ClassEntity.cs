@@ -20,19 +20,19 @@ namespace IFC
 		/// Get All airect attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<object?> GetDirectAttributes();
+        public abstract List<IFC_Attribute?> GetDirectAttributes();
 
         /// <summary>
 		/// Get derived attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<object?> GetDerivedAttributes();
+        public abstract List<IFC_Attribute?> GetDerivedAttributes();
 
         /// <summary>
 		/// Get inverse attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<object?> GetInverseAttributes();
+        public abstract List<IFC_Attribute?> GetInverseAttributes();
 
         /// <summary>
 		/// Constructor

@@ -696,8 +696,11 @@ namespace IFCProjectCreator
             WriteCSharpModel(folderDir, nameSpaceName);
             WriteCSharpClassEntity(folderDir, nameSpaceName);
             WriteCSharpEntity(folderDir, nameSpaceName);
+            WriteCSharpEnum(folderDir, nameSpaceName);
+
             WriteCSharpBasicType(folderDir, nameSpaceName);
-            WtiteCSharpList(folderDir, nameSpaceName);
+            WtiteCSharpAttributes(folderDir, nameSpaceName);
+            WriteCSharpAttribute(folderDir, nameSpaceName);
             foreach (var version in Versions)
             {
                 WriteCSharp(folderDir, nameSpaceName, version);
@@ -844,7 +847,7 @@ namespace IFCProjectCreator
         public virtual void AddItem(IFC_ClassEntity IFCBase)
         {
 
-            List<object?> parameters = IFCBase.GetDirectAttributes();
+            List<IFC_Attribute?> parameters = IFCBase.GetDirectAttributes();
 
             foreach (var parameter in parameters)
             {
@@ -939,6 +942,28 @@ namespace IFCProjectCreator
             }
         }
 
+        private void WriteCSharpAttribute(string folderDir, string nameSpaceName)
+        {
+            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Attribute.cs"))
+            {
+                writer.WriteLine("using System;");
+                writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("namespace " + nameSpaceName);
+                writer.WriteLine("{");
+                writer.WriteLine("\tpublic interface IFC_Attribute");
+                writer.WriteLine("\t{");
+
+                string contain =
+       @"
+		
+";
+                writer.Write(contain);
+                writer.WriteLine("\t}");
+                writer.WriteLine("}");
+            }
+        }
+
         private void WriteCSharpClassEntity(string folderDir, string nameSpaceName)
         {
             using (StreamWriter writer = new StreamWriter(folderDir + "IFC_ClassEntity.cs"))
@@ -967,19 +992,19 @@ namespace IFCProjectCreator
 		/// Get All airect attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<object?> GetDirectAttributes();
+        public abstract List<IFC_Attribute?> GetDirectAttributes();
 
         /// <summary>
 		/// Get derived attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<object?> GetDerivedAttributes();
+        public abstract List<IFC_Attribute?> GetDerivedAttributes();
 
         /// <summary>
 		/// Get inverse attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<object?> GetInverseAttributes();
+        public abstract List<IFC_Attribute?> GetInverseAttributes();
 
         /// <summary>
 		/// Constructor
@@ -1235,10 +1260,32 @@ namespace IFCProjectCreator
        @"
 		public IFC_Model? Model { get; set; }
         public string IFC_ID { get; set; }
-        public List<object?> GetDirectAttributes();
-        public List<object?> GetDerivedAttributes();
-        public List<object?> GetInverseAttributes();
+        public List<IFC_Attribute?> GetDirectAttributes();
+        public List<IFC_Attribute?> GetDerivedAttributes();
+        public List<IFC_Attribute?> GetInverseAttributes();
         public string GetIFCFullText();
+";
+                writer.Write(contain);
+                writer.WriteLine("\t}");
+                writer.WriteLine("}");
+            }
+        }
+
+        private void WriteCSharpEnum(string folderDir, string nameSpaceName)
+        {
+            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Enum.cs"))
+            {
+                writer.WriteLine("using System;");
+                writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("namespace " + nameSpaceName);
+                writer.WriteLine("{");
+                writer.WriteLine("\tpublic class IFC_Enum : IFC_Attribute");
+                writer.WriteLine("\t{");
+
+                string contain =
+       @"
+		
 ";
                 writer.Write(contain);
                 writer.WriteLine("\t}");
@@ -1272,7 +1319,7 @@ namespace IFCProjectCreator
             }
         }
 
-        private void WtiteCSharpList(string folderDir, string nameSpaceName)
+        private void WtiteCSharpAttributes(string folderDir, string nameSpaceName)
         {
             using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Attributes.cs"))
             {

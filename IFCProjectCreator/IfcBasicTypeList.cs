@@ -48,7 +48,6 @@ namespace IFCProjectCreator
                 texts.AddRange(DataSet.GetImplicitText(Name, cSharpText));
             }
            
-
             texts.Add("\t}");
 
             return texts;

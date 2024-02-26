@@ -52,5 +52,10 @@
             texts.Add("\t}");
             return texts;
         }
+
+        protected override string GetCSharpParentText()
+        {
+            return " : IFC_Enum" ;
+        }
     }
 }

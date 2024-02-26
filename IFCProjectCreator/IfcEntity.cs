@@ -385,9 +385,9 @@ namespace IFCProjectCreator
             }
 
             // get parameter function
-            texts.Add("\t\tpublic override List<object?> GetDirectAttributes()");
+            texts.Add("\t\tpublic override List<IFC_Attribute?> GetDirectAttributes()");
             texts.Add("\t\t{");
-            texts.Add("\t\t\treturn new List<object?>()");
+            texts.Add("\t\t\treturn new List<IFC_Attribute?>()");
             texts.Add("\t\t\t{");
             var directAttributes = DirectAttributes;
             for(int i = 0; i < directAttributes.Count; i++)
@@ -398,9 +398,9 @@ namespace IFCProjectCreator
             texts.Add("\t\t}");
 
             // get parameter function
-            texts.Add("\t\tpublic override List<object?> GetDerivedAttributes()");
+            texts.Add("\t\tpublic override List<IFC_Attribute?> GetDerivedAttributes()");
             texts.Add("\t\t{");
-            texts.Add("\t\t\treturn new List<object?>()");
+            texts.Add("\t\t\treturn new List<IFC_Attribute?>()");
             texts.Add("\t\t\t{");
             var derivedAttributes = DerivedAttributes;
             for (int i = 0; i < derivedAttributes.Count; i++)
@@ -411,9 +411,9 @@ namespace IFCProjectCreator
             texts.Add("\t\t}");
 
             // get parameter function
-            texts.Add("\t\tpublic override List<object?> GetInverseAttributes()");
+            texts.Add("\t\tpublic override List<IFC_Attribute?> GetInverseAttributes()");
             texts.Add("\t\t{");
-            texts.Add("\t\t\treturn new List<object?>()");
+            texts.Add("\t\t\treturn new List<IFC_Attribute?>()");
             texts.Add("\t\t\t{");
             var inverseAttributes = InverseAttributes;
             for (int i = 0; i < inverseAttributes.Count; i++)

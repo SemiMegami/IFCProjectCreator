@@ -3628,7 +3628,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCActionRequestTypeEnum: Global.IFCActionRequestTypeEnum
+	public class IFCActionRequestTypeEnum : IFC_Enum, Global.IFCActionRequestTypeEnum
 	{
 		public static string EMAIL { get { return ".EMAIL."; } private set { } }
 		public static string FAX { get { return ".FAX."; } private set { } }
@@ -3674,7 +3674,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCActionSourceTypeEnum: Global.IFCActionSourceTypeEnum
+	public class IFCActionSourceTypeEnum : IFC_Enum, Global.IFCActionSourceTypeEnum
 	{
 		public static string BRAKES { get { return ".BRAKES."; } private set { } }
 		public static string BUOYANCY { get { return ".BUOYANCY."; } private set { } }
@@ -3718,7 +3718,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCActionTypeEnum: Global.IFCActionTypeEnum
+	public class IFCActionTypeEnum : IFC_Enum, Global.IFCActionTypeEnum
 	{
 		public static string EXTRAORDINARY_A { get { return ".EXTRAORDINARY_A."; } private set { } }
 		public static string PERMANENT_G { get { return ".PERMANENT_G."; } private set { } }
@@ -3742,7 +3742,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCActuatorTypeEnum: Global.IFCActuatorTypeEnum
+	public class IFCActuatorTypeEnum : IFC_Enum, Global.IFCActuatorTypeEnum
 	{
 		public static string ELECTRICACTUATOR { get { return ".ELECTRICACTUATOR."; } private set { } }
 		public static string HANDOPERATEDACTUATOR { get { return ".HANDOPERATEDACTUATOR."; } private set { } }
@@ -3766,7 +3766,7 @@ namespace IFC.IFC4x3
 	/// ,USERDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAddressTypeEnum: Global.IFCAddressTypeEnum
+	public class IFCAddressTypeEnum : IFC_Enum, Global.IFCAddressTypeEnum
 	{
 		public static string DISTRIBUTIONPOINT { get { return ".DISTRIBUTIONPOINT."; } private set { } }
 		public static string HOME { get { return ".HOME."; } private set { } }
@@ -3788,7 +3788,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAirTerminalBoxTypeEnum: Global.IFCAirTerminalBoxTypeEnum
+	public class IFCAirTerminalBoxTypeEnum : IFC_Enum, Global.IFCAirTerminalBoxTypeEnum
 	{
 		public static string CONSTANTFLOW { get { return ".CONSTANTFLOW."; } private set { } }
 		public static string VARIABLEFLOWPRESSUREDEPENDANT { get { return ".VARIABLEFLOWPRESSUREDEPENDANT."; } private set { } }
@@ -3811,7 +3811,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAirTerminalTypeEnum: Global.IFCAirTerminalTypeEnum
+	public class IFCAirTerminalTypeEnum : IFC_Enum, Global.IFCAirTerminalTypeEnum
 	{
 		public static string DIFFUSER { get { return ".DIFFUSER."; } private set { } }
 		public static string GRILLE { get { return ".GRILLE."; } private set { } }
@@ -3840,7 +3840,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAirToAirHeatRecoveryTypeEnum: Global.IFCAirToAirHeatRecoveryTypeEnum
+	public class IFCAirToAirHeatRecoveryTypeEnum : IFC_Enum, Global.IFCAirToAirHeatRecoveryTypeEnum
 	{
 		public static string FIXEDPLATECOUNTERFLOWEXCHANGER { get { return ".FIXEDPLATECOUNTERFLOWEXCHANGER."; } private set { } }
 		public static string FIXEDPLATECROSSFLOWEXCHANGER { get { return ".FIXEDPLATECROSSFLOWEXCHANGER."; } private set { } }
@@ -3873,7 +3873,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAlarmTypeEnum: Global.IFCAlarmTypeEnum
+	public class IFCAlarmTypeEnum : IFC_Enum, Global.IFCAlarmTypeEnum
 	{
 		public static string BELL { get { return ".BELL."; } private set { } }
 		public static string BREAKGLASSBUTTON { get { return ".BREAKGLASSBUTTON."; } private set { } }
@@ -3902,7 +3902,7 @@ namespace IFC.IFC4x3
 	/// ,VIENNESEBEND);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAlignmentCantSegmentTypeEnum: Global.IFCAlignmentCantSegmentTypeEnum
+	public class IFCAlignmentCantSegmentTypeEnum : IFC_Enum, Global.IFCAlignmentCantSegmentTypeEnum
 	{
 		public static string BLOSSCURVE { get { return ".BLOSSCURVE."; } private set { } }
 		public static string CONSTANTCANT { get { return ".CONSTANTCANT."; } private set { } }
@@ -3930,7 +3930,7 @@ namespace IFC.IFC4x3
 	/// ,VIENNESEBEND);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAlignmentHorizontalSegmentTypeEnum: Global.IFCAlignmentHorizontalSegmentTypeEnum
+	public class IFCAlignmentHorizontalSegmentTypeEnum : IFC_Enum, Global.IFCAlignmentHorizontalSegmentTypeEnum
 	{
 		public static string BLOSSCURVE { get { return ".BLOSSCURVE."; } private set { } }
 		public static string CIRCULARARC { get { return ".CIRCULARARC."; } private set { } }
@@ -3953,7 +3953,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAlignmentTypeEnum: Global.IFCAlignmentTypeEnum
+	public class IFCAlignmentTypeEnum : IFC_Enum, Global.IFCAlignmentTypeEnum
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
@@ -3971,7 +3971,7 @@ namespace IFC.IFC4x3
 	/// ,PARABOLICARC);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAlignmentVerticalSegmentTypeEnum: Global.IFCAlignmentVerticalSegmentTypeEnum
+	public class IFCAlignmentVerticalSegmentTypeEnum : IFC_Enum, Global.IFCAlignmentVerticalSegmentTypeEnum
 	{
 		public static string CIRCULARARC { get { return ".CIRCULARARC."; } private set { } }
 		public static string CLOTHOID { get { return ".CLOTHOID."; } private set { } }
@@ -3992,7 +3992,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAnalysisModelTypeEnum: Global.IFCAnalysisModelTypeEnum
+	public class IFCAnalysisModelTypeEnum : IFC_Enum, Global.IFCAnalysisModelTypeEnum
 	{
 		public static string IN_PLANE_LOADING_2D { get { return ".IN_PLANE_LOADING_2D."; } private set { } }
 		public static string LOADING_3D { get { return ".LOADING_3D."; } private set { } }
@@ -4015,7 +4015,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAnalysisTheoryTypeEnum: Global.IFCAnalysisTheoryTypeEnum
+	public class IFCAnalysisTheoryTypeEnum : IFC_Enum, Global.IFCAnalysisTheoryTypeEnum
 	{
 		public static string FIRST_ORDER_THEORY { get { return ".FIRST_ORDER_THEORY."; } private set { } }
 		public static string FULL_NONLINEAR_THEORY { get { return ".FULL_NONLINEAR_THEORY."; } private set { } }
@@ -4044,7 +4044,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAnnotationTypeEnum: Global.IFCAnnotationTypeEnum
+	public class IFCAnnotationTypeEnum : IFC_Enum, Global.IFCAnnotationTypeEnum
 	{
 		public static string CONTOURLINE { get { return ".CONTOURLINE."; } private set { } }
 		public static string DIMENSION { get { return ".DIMENSION."; } private set { } }
@@ -4072,7 +4072,7 @@ namespace IFC.IFC4x3
 	/// ,SUBTRACT);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCArithmeticOperatorEnum: Global.IFCArithmeticOperatorEnum
+	public class IFCArithmeticOperatorEnum : IFC_Enum, Global.IFCArithmeticOperatorEnum
 	{
 		public static string ADD { get { return ".ADD."; } private set { } }
 		public static string DIVIDE { get { return ".DIVIDE."; } private set { } }
@@ -4092,7 +4092,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAssemblyPlaceEnum: Global.IFCAssemblyPlaceEnum
+	public class IFCAssemblyPlaceEnum : IFC_Enum, Global.IFCAssemblyPlaceEnum
 	{
 		public static string FACTORY { get { return ".FACTORY."; } private set { } }
 		public static string SITE { get { return ".SITE."; } private set { } }
@@ -4122,7 +4122,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCAudioVisualApplianceTypeEnum: Global.IFCAudioVisualApplianceTypeEnum
+	public class IFCAudioVisualApplianceTypeEnum : IFC_Enum, Global.IFCAudioVisualApplianceTypeEnum
 	{
 		public static string AMPLIFIER { get { return ".AMPLIFIER."; } private set { } }
 		public static string CAMERA { get { return ".CAMERA."; } private set { } }
@@ -4155,7 +4155,7 @@ namespace IFC.IFC4x3
 	/// ,UNSPECIFIED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBSplineCurveForm: Global.IFCBSplineCurveForm
+	public class IFCBSplineCurveForm : IFC_Enum, Global.IFCBSplineCurveForm
 	{
 		public static string CIRCULAR_ARC { get { return ".CIRCULAR_ARC."; } private set { } }
 		public static string ELLIPTIC_ARC { get { return ".ELLIPTIC_ARC."; } private set { } }
@@ -4184,7 +4184,7 @@ namespace IFC.IFC4x3
 	/// ,UNSPECIFIED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBSplineSurfaceForm: Global.IFCBSplineSurfaceForm
+	public class IFCBSplineSurfaceForm : IFC_Enum, Global.IFCBSplineSurfaceForm
 	{
 		public static string CONICAL_SURF { get { return ".CONICAL_SURF."; } private set { } }
 		public static string CYLINDRICAL_SURF { get { return ".CYLINDRICAL_SURF."; } private set { } }
@@ -4221,7 +4221,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBeamTypeEnum: Global.IFCBeamTypeEnum
+	public class IFCBeamTypeEnum : IFC_Enum, Global.IFCBeamTypeEnum
 	{
 		public static string BEAM { get { return ".BEAM."; } private set { } }
 		public static string CORNICE { get { return ".CORNICE."; } private set { } }
@@ -4257,7 +4257,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBearingTypeEnum: Global.IFCBearingTypeEnum
+	public class IFCBearingTypeEnum : IFC_Enum, Global.IFCBearingTypeEnum
 	{
 		public static string CYLINDRICAL { get { return ".CYLINDRICAL."; } private set { } }
 		public static string DISK { get { return ".DISK."; } private set { } }
@@ -4289,7 +4289,7 @@ namespace IFC.IFC4x3
 	/// ,NOTINCLUDES);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBenchmarkEnum: Global.IFCBenchmarkEnum
+	public class IFCBenchmarkEnum : IFC_Enum, Global.IFCBenchmarkEnum
 	{
 		public static string EQUALTO { get { return ".EQUALTO."; } private set { } }
 		public static string GREATERTHAN { get { return ".GREATERTHAN."; } private set { } }
@@ -4315,7 +4315,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBoilerTypeEnum: Global.IFCBoilerTypeEnum
+	public class IFCBoilerTypeEnum : IFC_Enum, Global.IFCBoilerTypeEnum
 	{
 		public static string STEAM { get { return ".STEAM."; } private set { } }
 		public static string WATER { get { return ".WATER."; } private set { } }
@@ -4334,7 +4334,7 @@ namespace IFC.IFC4x3
 	/// ,UNION);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBooleanOperator: Global.IFCBooleanOperator
+	public class IFCBooleanOperator : IFC_Enum, Global.IFCBooleanOperator
 	{
 		public static string DIFFERENCE { get { return ".DIFFERENCE."; } private set { } }
 		public static string INTERSECTION { get { return ".INTERSECTION."; } private set { } }
@@ -4361,7 +4361,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBridgePartTypeEnum: Global.IFCBridgePartTypeEnum
+	public class IFCBridgePartTypeEnum : IFC_Enum, Global.IFCBridgePartTypeEnum
 	{
 		public static string ABUTMENT { get { return ".ABUTMENT."; } private set { } }
 		public static string DECK { get { return ".DECK."; } private set { } }
@@ -4395,7 +4395,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBridgeTypeEnum: Global.IFCBridgeTypeEnum
+	public class IFCBridgeTypeEnum : IFC_Enum, Global.IFCBridgeTypeEnum
 	{
 		public static string ARCHED { get { return ".ARCHED."; } private set { } }
 		public static string CABLE_STAYED { get { return ".CABLE_STAYED."; } private set { } }
@@ -4424,7 +4424,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBuildingElementPartTypeEnum: Global.IFCBuildingElementPartTypeEnum
+	public class IFCBuildingElementPartTypeEnum : IFC_Enum, Global.IFCBuildingElementPartTypeEnum
 	{
 		public static string APRON { get { return ".APRON."; } private set { } }
 		public static string ARMOURUNIT { get { return ".ARMOURUNIT."; } private set { } }
@@ -4450,7 +4450,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBuildingElementProxyTypeEnum: Global.IFCBuildingElementProxyTypeEnum
+	public class IFCBuildingElementProxyTypeEnum : IFC_Enum, Global.IFCBuildingElementProxyTypeEnum
 	{
 		public static string COMPLEX { get { return ".COMPLEX."; } private set { } }
 		public static string ELEMENT { get { return ".ELEMENT."; } private set { } }
@@ -4477,7 +4477,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBuildingSystemTypeEnum: Global.IFCBuildingSystemTypeEnum
+	public class IFCBuildingSystemTypeEnum : IFC_Enum, Global.IFCBuildingSystemTypeEnum
 	{
 		public static string FENESTRATION { get { return ".FENESTRATION."; } private set { } }
 		public static string FOUNDATION { get { return ".FOUNDATION."; } private set { } }
@@ -4512,7 +4512,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBuiltSystemTypeEnum: Global.IFCBuiltSystemTypeEnum
+	public class IFCBuiltSystemTypeEnum : IFC_Enum, Global.IFCBuiltSystemTypeEnum
 	{
 		public static string EROSIONPREVENTION { get { return ".EROSIONPREVENTION."; } private set { } }
 		public static string FENESTRATION { get { return ".FENESTRATION."; } private set { } }
@@ -4541,7 +4541,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCBurnerTypeEnum: Global.IFCBurnerTypeEnum
+	public class IFCBurnerTypeEnum : IFC_Enum, Global.IFCBurnerTypeEnum
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
@@ -4564,7 +4564,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCableCarrierFittingTypeEnum: Global.IFCCableCarrierFittingTypeEnum
+	public class IFCCableCarrierFittingTypeEnum : IFC_Enum, Global.IFCCableCarrierFittingTypeEnum
 	{
 		public static string BEND { get { return ".BEND."; } private set { } }
 		public static string CONNECTOR { get { return ".CONNECTOR."; } private set { } }
@@ -4594,7 +4594,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCableCarrierSegmentTypeEnum: Global.IFCCableCarrierSegmentTypeEnum
+	public class IFCCableCarrierSegmentTypeEnum : IFC_Enum, Global.IFCCableCarrierSegmentTypeEnum
 	{
 		public static string CABLEBRACKET { get { return ".CABLEBRACKET."; } private set { } }
 		public static string CABLELADDERSEGMENT { get { return ".CABLELADDERSEGMENT."; } private set { } }
@@ -4623,7 +4623,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCableFittingTypeEnum: Global.IFCCableFittingTypeEnum
+	public class IFCCableFittingTypeEnum : IFC_Enum, Global.IFCCableFittingTypeEnum
 	{
 		public static string CONNECTOR { get { return ".CONNECTOR."; } private set { } }
 		public static string ENTRY { get { return ".ENTRY."; } private set { } }
@@ -4655,7 +4655,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCableSegmentTypeEnum: Global.IFCCableSegmentTypeEnum
+	public class IFCCableSegmentTypeEnum : IFC_Enum, Global.IFCCableSegmentTypeEnum
 	{
 		public static string BUSBARSEGMENT { get { return ".BUSBARSEGMENT."; } private set { } }
 		public static string CABLESEGMENT { get { return ".CABLESEGMENT."; } private set { } }
@@ -4683,7 +4683,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCaissonFoundationTypeEnum: Global.IFCCaissonFoundationTypeEnum
+	public class IFCCaissonFoundationTypeEnum : IFC_Enum, Global.IFCCaissonFoundationTypeEnum
 	{
 		public static string CAISSON { get { return ".CAISSON."; } private set { } }
 		public static string WELL { get { return ".WELL."; } private set { } }
@@ -4704,7 +4704,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCChangeActionEnum: Global.IFCChangeActionEnum
+	public class IFCChangeActionEnum : IFC_Enum, Global.IFCChangeActionEnum
 	{
 		public static string ADDED { get { return ".ADDED."; } private set { } }
 		public static string DELETED { get { return ".DELETED."; } private set { } }
@@ -4726,7 +4726,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCChillerTypeEnum: Global.IFCChillerTypeEnum
+	public class IFCChillerTypeEnum : IFC_Enum, Global.IFCChillerTypeEnum
 	{
 		public static string AIRCOOLED { get { return ".AIRCOOLED."; } private set { } }
 		public static string HEATRECOVERY { get { return ".HEATRECOVERY."; } private set { } }
@@ -4745,7 +4745,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCChimneyTypeEnum: Global.IFCChimneyTypeEnum
+	public class IFCChimneyTypeEnum : IFC_Enum, Global.IFCChimneyTypeEnum
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
@@ -4768,7 +4768,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCoilTypeEnum: Global.IFCCoilTypeEnum
+	public class IFCCoilTypeEnum : IFC_Enum, Global.IFCCoilTypeEnum
 	{
 		public static string DXCOOLINGCOIL { get { return ".DXCOOLINGCOIL."; } private set { } }
 		public static string ELECTRICHEATINGCOIL { get { return ".ELECTRICHEATINGCOIL."; } private set { } }
@@ -4796,7 +4796,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCColumnTypeEnum: Global.IFCColumnTypeEnum
+	public class IFCColumnTypeEnum : IFC_Enum, Global.IFCColumnTypeEnum
 	{
 		public static string COLUMN { get { return ".COLUMN."; } private set { } }
 		public static string PIERSTEM { get { return ".PIERSTEM."; } private set { } }
@@ -4841,7 +4841,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCommunicationsApplianceTypeEnum: Global.IFCCommunicationsApplianceTypeEnum
+	public class IFCCommunicationsApplianceTypeEnum : IFC_Enum, Global.IFCCommunicationsApplianceTypeEnum
 	{
 		public static string ANTENNA { get { return ".ANTENNA."; } private set { } }
 		public static string AUTOMATON { get { return ".AUTOMATON."; } private set { } }
@@ -4881,7 +4881,7 @@ namespace IFC.IFC4x3
 	/// ,Q_COMPLEX);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCComplexPropertyTemplateTypeEnum: Global.IFCComplexPropertyTemplateTypeEnum
+	public class IFCComplexPropertyTemplateTypeEnum : IFC_Enum, Global.IFCComplexPropertyTemplateTypeEnum
 	{
 		public static string P_COMPLEX { get { return ".P_COMPLEX."; } private set { } }
 		public static string Q_COMPLEX { get { return ".Q_COMPLEX."; } private set { } }
@@ -4912,7 +4912,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCompressorTypeEnum: Global.IFCCompressorTypeEnum
+	public class IFCCompressorTypeEnum : IFC_Enum, Global.IFCCompressorTypeEnum
 	{
 		public static string BOOSTER { get { return ".BOOSTER."; } private set { } }
 		public static string DYNAMIC { get { return ".DYNAMIC."; } private set { } }
@@ -4950,7 +4950,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCondenserTypeEnum: Global.IFCCondenserTypeEnum
+	public class IFCCondenserTypeEnum : IFC_Enum, Global.IFCCondenserTypeEnum
 	{
 		public static string AIRCOOLED { get { return ".AIRCOOLED."; } private set { } }
 		public static string EVAPORATIVECOOLED { get { return ".EVAPORATIVECOOLED."; } private set { } }
@@ -4975,7 +4975,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCConnectionTypeEnum: Global.IFCConnectionTypeEnum
+	public class IFCConnectionTypeEnum : IFC_Enum, Global.IFCConnectionTypeEnum
 	{
 		public static string ATEND { get { return ".ATEND."; } private set { } }
 		public static string ATPATH { get { return ".ATPATH."; } private set { } }
@@ -4996,7 +4996,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCConstraintEnum: Global.IFCConstraintEnum
+	public class IFCConstraintEnum : IFC_Enum, Global.IFCConstraintEnum
 	{
 		public static string ADVISORY { get { return ".ADVISORY."; } private set { } }
 		public static string HARD { get { return ".HARD."; } private set { } }
@@ -5023,7 +5023,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCConstructionEquipmentResourceTypeEnum: Global.IFCConstructionEquipmentResourceTypeEnum
+	public class IFCConstructionEquipmentResourceTypeEnum : IFC_Enum, Global.IFCConstructionEquipmentResourceTypeEnum
 	{
 		public static string DEMOLISHING { get { return ".DEMOLISHING."; } private set { } }
 		public static string EARTHMOVING { get { return ".EARTHMOVING."; } private set { } }
@@ -5056,7 +5056,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCConstructionMaterialResourceTypeEnum: Global.IFCConstructionMaterialResourceTypeEnum
+	public class IFCConstructionMaterialResourceTypeEnum : IFC_Enum, Global.IFCConstructionMaterialResourceTypeEnum
 	{
 		public static string AGGREGATES { get { return ".AGGREGATES."; } private set { } }
 		public static string CONCRETE { get { return ".CONCRETE."; } private set { } }
@@ -5083,7 +5083,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCConstructionProductResourceTypeEnum: Global.IFCConstructionProductResourceTypeEnum
+	public class IFCConstructionProductResourceTypeEnum : IFC_Enum, Global.IFCConstructionProductResourceTypeEnum
 	{
 		public static string ASSEMBLY { get { return ".ASSEMBLY."; } private set { } }
 		public static string FORMWORK { get { return ".FORMWORK."; } private set { } }
@@ -5106,7 +5106,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCControllerTypeEnum: Global.IFCControllerTypeEnum
+	public class IFCControllerTypeEnum : IFC_Enum, Global.IFCControllerTypeEnum
 	{
 		public static string FLOATING { get { return ".FLOATING."; } private set { } }
 		public static string MULTIPOSITION { get { return ".MULTIPOSITION."; } private set { } }
@@ -5131,7 +5131,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCConveyorSegmentTypeEnum: Global.IFCConveyorSegmentTypeEnum
+	public class IFCConveyorSegmentTypeEnum : IFC_Enum, Global.IFCConveyorSegmentTypeEnum
 	{
 		public static string BELTCONVEYOR { get { return ".BELTCONVEYOR."; } private set { } }
 		public static string BUCKETCONVEYOR { get { return ".BUCKETCONVEYOR."; } private set { } }
@@ -5153,7 +5153,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCooledBeamTypeEnum: Global.IFCCooledBeamTypeEnum
+	public class IFCCooledBeamTypeEnum : IFC_Enum, Global.IFCCooledBeamTypeEnum
 	{
 		public static string ACTIVE { get { return ".ACTIVE."; } private set { } }
 		public static string PASSIVE { get { return ".PASSIVE."; } private set { } }
@@ -5174,7 +5174,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCoolingTowerTypeEnum: Global.IFCCoolingTowerTypeEnum
+	public class IFCCoolingTowerTypeEnum : IFC_Enum, Global.IFCCoolingTowerTypeEnum
 	{
 		public static string MECHANICALFORCEDDRAFT { get { return ".MECHANICALFORCEDDRAFT."; } private set { } }
 		public static string MECHANICALINDUCEDDRAFT { get { return ".MECHANICALINDUCEDDRAFT."; } private set { } }
@@ -5193,7 +5193,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCostItemTypeEnum: Global.IFCCostItemTypeEnum
+	public class IFCCostItemTypeEnum : IFC_Enum, Global.IFCCostItemTypeEnum
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
@@ -5216,7 +5216,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCostScheduleTypeEnum: Global.IFCCostScheduleTypeEnum
+	public class IFCCostScheduleTypeEnum : IFC_Enum, Global.IFCCostScheduleTypeEnum
 	{
 		public static string BUDGET { get { return ".BUDGET."; } private set { } }
 		public static string COSTPLAN { get { return ".COSTPLAN."; } private set { } }
@@ -5245,7 +5245,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCourseTypeEnum: Global.IFCCourseTypeEnum
+	public class IFCCourseTypeEnum : IFC_Enum, Global.IFCCourseTypeEnum
 	{
 		public static string ARMOUR { get { return ".ARMOUR."; } private set { } }
 		public static string BALLASTBED { get { return ".BALLASTBED."; } private set { } }
@@ -5279,7 +5279,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCoveringTypeEnum: Global.IFCCoveringTypeEnum
+	public class IFCCoveringTypeEnum : IFC_Enum, Global.IFCCoveringTypeEnum
 	{
 		public static string CEILING { get { return ".CEILING."; } private set { } }
 		public static string CLADDING { get { return ".CLADDING."; } private set { } }
@@ -5309,7 +5309,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCrewResourceTypeEnum: Global.IFCCrewResourceTypeEnum
+	public class IFCCrewResourceTypeEnum : IFC_Enum, Global.IFCCrewResourceTypeEnum
 	{
 		public static string OFFICE { get { return ".OFFICE."; } private set { } }
 		public static string SITE { get { return ".SITE."; } private set { } }
@@ -5327,7 +5327,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCurtainWallTypeEnum: Global.IFCCurtainWallTypeEnum
+	public class IFCCurtainWallTypeEnum : IFC_Enum, Global.IFCCurtainWallTypeEnum
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
@@ -5345,7 +5345,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCurveInterpolationEnum: Global.IFCCurveInterpolationEnum
+	public class IFCCurveInterpolationEnum : IFC_Enum, Global.IFCCurveInterpolationEnum
 	{
 		public static string LINEAR { get { return ".LINEAR."; } private set { } }
 		public static string LOG_LINEAR { get { return ".LOG_LINEAR."; } private set { } }
@@ -5374,7 +5374,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDamperTypeEnum: Global.IFCDamperTypeEnum
+	public class IFCDamperTypeEnum : IFC_Enum, Global.IFCDamperTypeEnum
 	{
 		public static string BACKDRAFTDAMPER { get { return ".BACKDRAFTDAMPER."; } private set { } }
 		public static string BALANCINGDAMPER { get { return ".BALANCINGDAMPER."; } private set { } }
@@ -5404,7 +5404,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDataOriginEnum: Global.IFCDataOriginEnum
+	public class IFCDataOriginEnum : IFC_Enum, Global.IFCDataOriginEnum
 	{
 		public static string MEASURED { get { return ".MEASURED."; } private set { } }
 		public static string PREDICTED { get { return ".PREDICTED."; } private set { } }
@@ -5474,7 +5474,7 @@ namespace IFC.IFC4x3
 	/// ,USERDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDerivedUnitEnum: Global.IFCDerivedUnitEnum
+	public class IFCDerivedUnitEnum : IFC_Enum, Global.IFCDerivedUnitEnum
 	{
 		public static string ACCELERATIONUNIT { get { return ".ACCELERATIONUNIT."; } private set { } }
 		public static string ANGULARVELOCITYUNIT { get { return ".ANGULARVELOCITYUNIT."; } private set { } }
@@ -5541,7 +5541,7 @@ namespace IFC.IFC4x3
 	/// ,POSITIVE);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDirectionSenseEnum: Global.IFCDirectionSenseEnum
+	public class IFCDirectionSenseEnum : IFC_Enum, Global.IFCDirectionSenseEnum
 	{
 		public static string NEGATIVE { get { return ".NEGATIVE."; } private set { } }
 		public static string POSITIVE { get { return ".POSITIVE."; } private set { } }
@@ -5578,7 +5578,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDiscreteAccessoryTypeEnum: Global.IFCDiscreteAccessoryTypeEnum
+	public class IFCDiscreteAccessoryTypeEnum : IFC_Enum, Global.IFCDiscreteAccessoryTypeEnum
 	{
 		public static string ANCHORPLATE { get { return ".ANCHORPLATE."; } private set { } }
 		public static string BIRDPROTECTION { get { return ".BIRDPROTECTION."; } private set { } }
@@ -5621,7 +5621,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDistributionBoardTypeEnum: Global.IFCDistributionBoardTypeEnum
+	public class IFCDistributionBoardTypeEnum : IFC_Enum, Global.IFCDistributionBoardTypeEnum
 	{
 		public static string CONSUMERUNIT { get { return ".CONSUMERUNIT."; } private set { } }
 		public static string DISPATCHINGBOARD { get { return ".DISPATCHINGBOARD."; } private set { } }
@@ -5651,7 +5651,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDistributionChamberElementTypeEnum: Global.IFCDistributionChamberElementTypeEnum
+	public class IFCDistributionChamberElementTypeEnum : IFC_Enum, Global.IFCDistributionChamberElementTypeEnum
 	{
 		public static string FORMEDDUCT { get { return ".FORMEDDUCT."; } private set { } }
 		public static string INSPECTIONCHAMBER { get { return ".INSPECTIONCHAMBER."; } private set { } }
@@ -5680,7 +5680,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDistributionPortTypeEnum: Global.IFCDistributionPortTypeEnum
+	public class IFCDistributionPortTypeEnum : IFC_Enum, Global.IFCDistributionPortTypeEnum
 	{
 		public static string CABLE { get { return ".CABLE."; } private set { } }
 		public static string CABLECARRIER { get { return ".CABLECARRIER."; } private set { } }
@@ -5750,7 +5750,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDistributionSystemEnum: Global.IFCDistributionSystemEnum
+	public class IFCDistributionSystemEnum : IFC_Enum, Global.IFCDistributionSystemEnum
 	{
 		public static string AIRCONDITIONING { get { return ".AIRCONDITIONING."; } private set { } }
 		public static string AUDIOVISUAL { get { return ".AUDIOVISUAL."; } private set { } }
@@ -5819,7 +5819,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDocumentConfidentialityEnum: Global.IFCDocumentConfidentialityEnum
+	public class IFCDocumentConfidentialityEnum : IFC_Enum, Global.IFCDocumentConfidentialityEnum
 	{
 		public static string CONFIDENTIAL { get { return ".CONFIDENTIAL."; } private set { } }
 		public static string PERSONAL { get { return ".PERSONAL."; } private set { } }
@@ -5842,7 +5842,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDocumentStatusEnum: Global.IFCDocumentStatusEnum
+	public class IFCDocumentStatusEnum : IFC_Enum, Global.IFCDocumentStatusEnum
 	{
 		public static string DRAFT { get { return ".DRAFT."; } private set { } }
 		public static string FINAL { get { return ".FINAL."; } private set { } }
@@ -5868,7 +5868,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDoorPanelOperationEnum: Global.IFCDoorPanelOperationEnum
+	public class IFCDoorPanelOperationEnum : IFC_Enum, Global.IFCDoorPanelOperationEnum
 	{
 		public static string DOUBLE_ACTING { get { return ".DOUBLE_ACTING."; } private set { } }
 		public static string FIXEDPANEL { get { return ".FIXEDPANEL."; } private set { } }
@@ -5893,7 +5893,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDoorPanelPositionEnum: Global.IFCDoorPanelPositionEnum
+	public class IFCDoorPanelPositionEnum : IFC_Enum, Global.IFCDoorPanelPositionEnum
 	{
 		public static string LEFT { get { return ".LEFT."; } private set { } }
 		public static string MIDDLE { get { return ".MIDDLE."; } private set { } }
@@ -5916,7 +5916,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDoorTypeEnum: Global.IFCDoorTypeEnum
+	public class IFCDoorTypeEnum : IFC_Enum, Global.IFCDoorTypeEnum
 	{
 		public static string BOOM_BARRIER { get { return ".BOOM_BARRIER."; } private set { } }
 		public static string DOOR { get { return ".DOOR."; } private set { } }
@@ -5960,7 +5960,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDoorTypeOperationEnum: Global.IFCDoorTypeOperationEnum
+	public class IFCDoorTypeOperationEnum : IFC_Enum, Global.IFCDoorTypeOperationEnum
 	{
 		public static string DOUBLE_DOOR_DOUBLE_SWING { get { return ".DOUBLE_DOOR_DOUBLE_SWING."; } private set { } }
 		public static string DOUBLE_DOOR_FOLDING { get { return ".DOUBLE_DOOR_FOLDING."; } private set { } }
@@ -6006,7 +6006,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDuctFittingTypeEnum: Global.IFCDuctFittingTypeEnum
+	public class IFCDuctFittingTypeEnum : IFC_Enum, Global.IFCDuctFittingTypeEnum
 	{
 		public static string BEND { get { return ".BEND."; } private set { } }
 		public static string CONNECTOR { get { return ".CONNECTOR."; } private set { } }
@@ -6031,7 +6031,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDuctSegmentTypeEnum: Global.IFCDuctSegmentTypeEnum
+	public class IFCDuctSegmentTypeEnum : IFC_Enum, Global.IFCDuctSegmentTypeEnum
 	{
 		public static string FLEXIBLESEGMENT { get { return ".FLEXIBLESEGMENT."; } private set { } }
 		public static string RIGIDSEGMENT { get { return ".RIGIDSEGMENT."; } private set { } }
@@ -6052,7 +6052,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCDuctSilencerTypeEnum: Global.IFCDuctSilencerTypeEnum
+	public class IFCDuctSilencerTypeEnum : IFC_Enum, Global.IFCDuctSilencerTypeEnum
 	{
 		public static string FLATOVAL { get { return ".FLATOVAL."; } private set { } }
 		public static string RECTANGULAR { get { return ".RECTANGULAR."; } private set { } }
@@ -6080,7 +6080,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCEarthworksCutTypeEnum: Global.IFCEarthworksCutTypeEnum
+	public class IFCEarthworksCutTypeEnum : IFC_Enum, Global.IFCEarthworksCutTypeEnum
 	{
 		public static string BASE_EXCAVATION { get { return ".BASE_EXCAVATION."; } private set { } }
 		public static string CUT { get { return ".CUT."; } private set { } }
@@ -6112,7 +6112,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCEarthworksFillTypeEnum: Global.IFCEarthworksFillTypeEnum
+	public class IFCEarthworksFillTypeEnum : IFC_Enum, Global.IFCEarthworksFillTypeEnum
 	{
 		public static string BACKFILL { get { return ".BACKFILL."; } private set { } }
 		public static string COUNTERWEIGHT { get { return ".COUNTERWEIGHT."; } private set { } }
@@ -6151,7 +6151,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCElectricApplianceTypeEnum: Global.IFCElectricApplianceTypeEnum
+	public class IFCElectricApplianceTypeEnum : IFC_Enum, Global.IFCElectricApplianceTypeEnum
 	{
 		public static string DISHWASHER { get { return ".DISHWASHER."; } private set { } }
 		public static string ELECTRICCOOKER { get { return ".ELECTRICCOOKER."; } private set { } }
@@ -6187,7 +6187,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCElectricDistributionBoardTypeEnum: Global.IFCElectricDistributionBoardTypeEnum
+	public class IFCElectricDistributionBoardTypeEnum : IFC_Enum, Global.IFCElectricDistributionBoardTypeEnum
 	{
 		public static string CONSUMERUNIT { get { return ".CONSUMERUNIT."; } private set { } }
 		public static string DISTRIBUTIONBOARD { get { return ".DISTRIBUTIONBOARD."; } private set { } }
@@ -6216,7 +6216,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCElectricFlowStorageDeviceTypeEnum: Global.IFCElectricFlowStorageDeviceTypeEnum
+	public class IFCElectricFlowStorageDeviceTypeEnum : IFC_Enum, Global.IFCElectricFlowStorageDeviceTypeEnum
 	{
 		public static string BATTERY { get { return ".BATTERY."; } private set { } }
 		public static string CAPACITOR { get { return ".CAPACITOR."; } private set { } }
@@ -6242,7 +6242,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCElectricFlowTreatmentDeviceTypeEnum: Global.IFCElectricFlowTreatmentDeviceTypeEnum
+	public class IFCElectricFlowTreatmentDeviceTypeEnum : IFC_Enum, Global.IFCElectricFlowTreatmentDeviceTypeEnum
 	{
 		public static string ELECTRONICFILTER { get { return ".ELECTRONICFILTER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
@@ -6262,7 +6262,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCElectricGeneratorTypeEnum: Global.IFCElectricGeneratorTypeEnum
+	public class IFCElectricGeneratorTypeEnum : IFC_Enum, Global.IFCElectricGeneratorTypeEnum
 	{
 		public static string CHP { get { return ".CHP."; } private set { } }
 		public static string ENGINEGENERATOR { get { return ".ENGINEGENERATOR."; } private set { } }
@@ -6286,7 +6286,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCElectricMotorTypeEnum: Global.IFCElectricMotorTypeEnum
+	public class IFCElectricMotorTypeEnum : IFC_Enum, Global.IFCElectricMotorTypeEnum
 	{
 		public static string DC { get { return ".DC."; } private set { } }
 		public static string INDUCTION { get { return ".INDUCTION."; } private set { } }
@@ -6310,7 +6310,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCElectricTimeControlTypeEnum: Global.IFCElectricTimeControlTypeEnum
+	public class IFCElectricTimeControlTypeEnum : IFC_Enum, Global.IFCElectricTimeControlTypeEnum
 	{
 		public static string RELAY { get { return ".RELAY."; } private set { } }
 		public static string TIMECLOCK { get { return ".TIMECLOCK."; } private set { } }
@@ -6357,7 +6357,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCElementAssemblyTypeEnum: Global.IFCElementAssemblyTypeEnum
+	public class IFCElementAssemblyTypeEnum : IFC_Enum, Global.IFCElementAssemblyTypeEnum
 	{
 		public static string ABUTMENT { get { return ".ABUTMENT."; } private set { } }
 		public static string ACCESSORY_ASSEMBLY { get { return ".ACCESSORY_ASSEMBLY."; } private set { } }
@@ -6402,7 +6402,7 @@ namespace IFC.IFC4x3
 	/// ,PARTIAL);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCElementCompositionEnum: Global.IFCElementCompositionEnum
+	public class IFCElementCompositionEnum : IFC_Enum, Global.IFCElementCompositionEnum
 	{
 		public static string COMPLEX { get { return ".COMPLEX."; } private set { } }
 		public static string ELEMENT { get { return ".ELEMENT."; } private set { } }
@@ -6421,7 +6421,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCEngineTypeEnum: Global.IFCEngineTypeEnum
+	public class IFCEngineTypeEnum : IFC_Enum, Global.IFCEngineTypeEnum
 	{
 		public static string EXTERNALCOMBUSTION { get { return ".EXTERNALCOMBUSTION."; } private set { } }
 		public static string INTERNALCOMBUSTION { get { return ".INTERNALCOMBUSTION."; } private set { } }
@@ -6448,7 +6448,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCEvaporativeCoolerTypeEnum: Global.IFCEvaporativeCoolerTypeEnum
+	public class IFCEvaporativeCoolerTypeEnum : IFC_Enum, Global.IFCEvaporativeCoolerTypeEnum
 	{
 		public static string DIRECTEVAPORATIVEAIRWASHER { get { return ".DIRECTEVAPORATIVEAIRWASHER."; } private set { } }
 		public static string DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER { get { return ".DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER."; } private set { } }
@@ -6479,7 +6479,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCEvaporatorTypeEnum: Global.IFCEvaporatorTypeEnum
+	public class IFCEvaporatorTypeEnum : IFC_Enum, Global.IFCEvaporatorTypeEnum
 	{
 		public static string DIRECTEXPANSION { get { return ".DIRECTEXPANSION."; } private set { } }
 		public static string DIRECTEXPANSIONBRAZEDPLATE { get { return ".DIRECTEXPANSIONBRAZEDPLATE."; } private set { } }
@@ -6505,7 +6505,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCEventTriggerTypeEnum: Global.IFCEventTriggerTypeEnum
+	public class IFCEventTriggerTypeEnum : IFC_Enum, Global.IFCEventTriggerTypeEnum
 	{
 		public static string EVENTCOMPLEX { get { return ".EVENTCOMPLEX."; } private set { } }
 		public static string EVENTMESSAGE { get { return ".EVENTMESSAGE."; } private set { } }
@@ -6528,7 +6528,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCEventTypeEnum: Global.IFCEventTypeEnum
+	public class IFCEventTypeEnum : IFC_Enum, Global.IFCEventTypeEnum
 	{
 		public static string ENDEVENT { get { return ".ENDEVENT."; } private set { } }
 		public static string INTERMEDIATEEVENT { get { return ".INTERMEDIATEEVENT."; } private set { } }
@@ -6551,7 +6551,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCExternalSpatialElementTypeEnum: Global.IFCExternalSpatialElementTypeEnum
+	public class IFCExternalSpatialElementTypeEnum : IFC_Enum, Global.IFCExternalSpatialElementTypeEnum
 	{
 		public static string EXTERNAL { get { return ".EXTERNAL."; } private set { } }
 		public static string EXTERNAL_EARTH { get { return ".EXTERNAL_EARTH."; } private set { } }
@@ -6579,7 +6579,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCFacilityPartCommonTypeEnum: Global.IFCFacilityPartCommonTypeEnum
+	public class IFCFacilityPartCommonTypeEnum : IFC_Enum, Global.IFCFacilityPartCommonTypeEnum
 	{
 		public static string ABOVEGROUND { get { return ".ABOVEGROUND."; } private set { } }
 		public static string BELOWGROUND { get { return ".BELOWGROUND."; } private set { } }
@@ -6607,7 +6607,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCFacilityUsageEnum: Global.IFCFacilityUsageEnum
+	public class IFCFacilityUsageEnum : IFC_Enum, Global.IFCFacilityUsageEnum
 	{
 		public static string LATERAL { get { return ".LATERAL."; } private set { } }
 		public static string LONGITUDINAL { get { return ".LONGITUDINAL."; } private set { } }
@@ -6634,7 +6634,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCFanTypeEnum: Global.IFCFanTypeEnum
+	public class IFCFanTypeEnum : IFC_Enum, Global.IFCFanTypeEnum
 	{
 		public static string CENTRIFUGALAIRFOIL { get { return ".CENTRIFUGALAIRFOIL."; } private set { } }
 		public static string CENTRIFUGALBACKWARDINCLINEDCURVED { get { return ".CENTRIFUGALBACKWARDINCLINEDCURVED."; } private set { } }
@@ -6660,7 +6660,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCFastenerTypeEnum: Global.IFCFastenerTypeEnum
+	public class IFCFastenerTypeEnum : IFC_Enum, Global.IFCFastenerTypeEnum
 	{
 		public static string GLUE { get { return ".GLUE."; } private set { } }
 		public static string MORTAR { get { return ".MORTAR."; } private set { } }
@@ -6685,7 +6685,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCFilterTypeEnum: Global.IFCFilterTypeEnum
+	public class IFCFilterTypeEnum : IFC_Enum, Global.IFCFilterTypeEnum
 	{
 		public static string AIRPARTICLEFILTER { get { return ".AIRPARTICLEFILTER."; } private set { } }
 		public static string COMPRESSEDAIRFILTER { get { return ".COMPRESSEDAIRFILTER."; } private set { } }
@@ -6713,7 +6713,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCFireSuppressionTerminalTypeEnum: Global.IFCFireSuppressionTerminalTypeEnum
+	public class IFCFireSuppressionTerminalTypeEnum : IFC_Enum, Global.IFCFireSuppressionTerminalTypeEnum
 	{
 		public static string BREECHINGINLET { get { return ".BREECHINGINLET."; } private set { } }
 		public static string FIREHYDRANT { get { return ".FIREHYDRANT."; } private set { } }
@@ -6737,7 +6737,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCFlowDirectionEnum: Global.IFCFlowDirectionEnum
+	public class IFCFlowDirectionEnum : IFC_Enum, Global.IFCFlowDirectionEnum
 	{
 		public static string SINK { get { return ".SINK."; } private set { } }
 		public static string SOURCE { get { return ".SOURCE."; } private set { } }
@@ -6765,7 +6765,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCFlowInstrumentTypeEnum: Global.IFCFlowInstrumentTypeEnum
+	public class IFCFlowInstrumentTypeEnum : IFC_Enum, Global.IFCFlowInstrumentTypeEnum
 	{
 		public static string AMMETER { get { return ".AMMETER."; } private set { } }
 		public static string COMBINED { get { return ".COMBINED."; } private set { } }
@@ -6795,7 +6795,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCFlowMeterTypeEnum: Global.IFCFlowMeterTypeEnum
+	public class IFCFlowMeterTypeEnum : IFC_Enum, Global.IFCFlowMeterTypeEnum
 	{
 		public static string ENERGYMETER { get { return ".ENERGYMETER."; } private set { } }
 		public static string GASMETER { get { return ".GASMETER."; } private set { } }
@@ -6820,7 +6820,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCFootingTypeEnum: Global.IFCFootingTypeEnum
+	public class IFCFootingTypeEnum : IFC_Enum, Global.IFCFootingTypeEnum
 	{
 		public static string CAISSON_FOUNDATION { get { return ".CAISSON_FOUNDATION."; } private set { } }
 		public static string FOOTING_BEAM { get { return ".FOOTING_BEAM."; } private set { } }
@@ -6849,7 +6849,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCFurnitureTypeEnum: Global.IFCFurnitureTypeEnum
+	public class IFCFurnitureTypeEnum : IFC_Enum, Global.IFCFurnitureTypeEnum
 	{
 		public static string BED { get { return ".BED."; } private set { } }
 		public static string CHAIR { get { return ".CHAIR."; } private set { } }
@@ -6876,7 +6876,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCGeographicElementTypeEnum: Global.IFCGeographicElementTypeEnum
+	public class IFCGeographicElementTypeEnum : IFC_Enum, Global.IFCGeographicElementTypeEnum
 	{
 		public static string SOIL_BORING_POINT { get { return ".SOIL_BORING_POINT."; } private set { } }
 		public static string TERRAIN { get { return ".TERRAIN."; } private set { } }
@@ -6902,7 +6902,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCGeometricProjectionEnum: Global.IFCGeometricProjectionEnum
+	public class IFCGeometricProjectionEnum : IFC_Enum, Global.IFCGeometricProjectionEnum
 	{
 		public static string ELEVATION_VIEW { get { return ".ELEVATION_VIEW."; } private set { } }
 		public static string GRAPH_VIEW { get { return ".GRAPH_VIEW."; } private set { } }
@@ -6928,7 +6928,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCGeotechnicalStratumTypeEnum: Global.IFCGeotechnicalStratumTypeEnum
+	public class IFCGeotechnicalStratumTypeEnum : IFC_Enum, Global.IFCGeotechnicalStratumTypeEnum
 	{
 		public static string SOLID { get { return ".SOLID."; } private set { } }
 		public static string VOID { get { return ".VOID."; } private set { } }
@@ -6947,7 +6947,7 @@ namespace IFC.IFC4x3
 	/// ,LOCAL_COORDS);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCGlobalOrLocalEnum: Global.IFCGlobalOrLocalEnum
+	public class IFCGlobalOrLocalEnum : IFC_Enum, Global.IFCGlobalOrLocalEnum
 	{
 		public static string GLOBAL_COORDS { get { return ".GLOBAL_COORDS."; } private set { } }
 		public static string LOCAL_COORDS { get { return ".LOCAL_COORDS."; } private set { } }
@@ -6967,7 +6967,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCGridTypeEnum: Global.IFCGridTypeEnum
+	public class IFCGridTypeEnum : IFC_Enum, Global.IFCGridTypeEnum
 	{
 		public static string IRREGULAR { get { return ".IRREGULAR."; } private set { } }
 		public static string RADIAL { get { return ".RADIAL."; } private set { } }
@@ -6990,7 +6990,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCHeatExchangerTypeEnum: Global.IFCHeatExchangerTypeEnum
+	public class IFCHeatExchangerTypeEnum : IFC_Enum, Global.IFCHeatExchangerTypeEnum
 	{
 		public static string PLATE { get { return ".PLATE."; } private set { } }
 		public static string SHELLANDTUBE { get { return ".SHELLANDTUBE."; } private set { } }
@@ -7022,7 +7022,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCHumidifierTypeEnum: Global.IFCHumidifierTypeEnum
+	public class IFCHumidifierTypeEnum : IFC_Enum, Global.IFCHumidifierTypeEnum
 	{
 		public static string ADIABATICAIRWASHER { get { return ".ADIABATICAIRWASHER."; } private set { } }
 		public static string ADIABATICATOMIZING { get { return ".ADIABATICATOMIZING."; } private set { } }
@@ -7055,7 +7055,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCImpactProtectionDeviceTypeEnum: Global.IFCImpactProtectionDeviceTypeEnum
+	public class IFCImpactProtectionDeviceTypeEnum : IFC_Enum, Global.IFCImpactProtectionDeviceTypeEnum
 	{
 		public static string BUMPER { get { return ".BUMPER."; } private set { } }
 		public static string CRASHCUSHION { get { return ".CRASHCUSHION."; } private set { } }
@@ -7079,7 +7079,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCInterceptorTypeEnum: Global.IFCInterceptorTypeEnum
+	public class IFCInterceptorTypeEnum : IFC_Enum, Global.IFCInterceptorTypeEnum
 	{
 		public static string CYCLONIC { get { return ".CYCLONIC."; } private set { } }
 		public static string GREASE { get { return ".GREASE."; } private set { } }
@@ -7103,7 +7103,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCInternalOrExternalEnum: Global.IFCInternalOrExternalEnum
+	public class IFCInternalOrExternalEnum : IFC_Enum, Global.IFCInternalOrExternalEnum
 	{
 		public static string EXTERNAL { get { return ".EXTERNAL."; } private set { } }
 		public static string EXTERNAL_EARTH { get { return ".EXTERNAL_EARTH."; } private set { } }
@@ -7126,7 +7126,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCInventoryTypeEnum: Global.IFCInventoryTypeEnum
+	public class IFCInventoryTypeEnum : IFC_Enum, Global.IFCInventoryTypeEnum
 	{
 		public static string ASSETINVENTORY { get { return ".ASSETINVENTORY."; } private set { } }
 		public static string FURNITUREINVENTORY { get { return ".FURNITUREINVENTORY."; } private set { } }
@@ -7147,7 +7147,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCJunctionBoxTypeEnum: Global.IFCJunctionBoxTypeEnum
+	public class IFCJunctionBoxTypeEnum : IFC_Enum, Global.IFCJunctionBoxTypeEnum
 	{
 		public static string DATA { get { return ".DATA."; } private set { } }
 		public static string POWER { get { return ".POWER."; } private set { } }
@@ -7165,7 +7165,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCKerbTypeEnum: Global.IFCKerbTypeEnum
+	public class IFCKerbTypeEnum : IFC_Enum, Global.IFCKerbTypeEnum
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
@@ -7183,7 +7183,7 @@ namespace IFC.IFC4x3
 	/// ,UNSPECIFIED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCKnotType: Global.IFCKnotType
+	public class IFCKnotType : IFC_Enum, Global.IFCKnotType
 	{
 		public static string PIECEWISE_BEZIER_KNOTS { get { return ".PIECEWISE_BEZIER_KNOTS."; } private set { } }
 		public static string QUASI_UNIFORM_KNOTS { get { return ".QUASI_UNIFORM_KNOTS."; } private set { } }
@@ -7220,7 +7220,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCLaborResourceTypeEnum: Global.IFCLaborResourceTypeEnum
+	public class IFCLaborResourceTypeEnum : IFC_Enum, Global.IFCLaborResourceTypeEnum
 	{
 		public static string ADMINISTRATION { get { return ".ADMINISTRATION."; } private set { } }
 		public static string CARPENTRY { get { return ".CARPENTRY."; } private set { } }
@@ -7264,7 +7264,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCLampTypeEnum: Global.IFCLampTypeEnum
+	public class IFCLampTypeEnum : IFC_Enum, Global.IFCLampTypeEnum
 	{
 		public static string COMPACTFLUORESCENT { get { return ".COMPACTFLUORESCENT."; } private set { } }
 		public static string FLUORESCENT { get { return ".FLUORESCENT."; } private set { } }
@@ -7290,7 +7290,7 @@ namespace IFC.IFC4x3
 	/// ,AXIS3);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCLayerSetDirectionEnum: Global.IFCLayerSetDirectionEnum
+	public class IFCLayerSetDirectionEnum : IFC_Enum, Global.IFCLayerSetDirectionEnum
 	{
 		public static string AXIS1 { get { return ".AXIS1."; } private set { } }
 		public static string AXIS2 { get { return ".AXIS2."; } private set { } }
@@ -7309,7 +7309,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCLightDistributionCurveEnum: Global.IFCLightDistributionCurveEnum
+	public class IFCLightDistributionCurveEnum : IFC_Enum, Global.IFCLightDistributionCurveEnum
 	{
 		public static string TYPE_A { get { return ".TYPE_A."; } private set { } }
 		public static string TYPE_B { get { return ".TYPE_B."; } private set { } }
@@ -7336,7 +7336,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCLightEmissionSourceEnum: Global.IFCLightEmissionSourceEnum
+	public class IFCLightEmissionSourceEnum : IFC_Enum, Global.IFCLightEmissionSourceEnum
 	{
 		public static string COMPACTFLUORESCENT { get { return ".COMPACTFLUORESCENT."; } private set { } }
 		public static string FLUORESCENT { get { return ".FLUORESCENT."; } private set { } }
@@ -7364,7 +7364,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCLightFixtureTypeEnum: Global.IFCLightFixtureTypeEnum
+	public class IFCLightFixtureTypeEnum : IFC_Enum, Global.IFCLightFixtureTypeEnum
 	{
 		public static string DIRECTIONSOURCE { get { return ".DIRECTIONSOURCE."; } private set { } }
 		public static string POINTSOURCE { get { return ".POINTSOURCE."; } private set { } }
@@ -7385,7 +7385,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCLiquidTerminalTypeEnum: Global.IFCLiquidTerminalTypeEnum
+	public class IFCLiquidTerminalTypeEnum : IFC_Enum, Global.IFCLiquidTerminalTypeEnum
 	{
 		public static string HOSEREEL { get { return ".HOSEREEL."; } private set { } }
 		public static string LOADINGARM { get { return ".LOADINGARM."; } private set { } }
@@ -7406,7 +7406,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCLoadGroupTypeEnum: Global.IFCLoadGroupTypeEnum
+	public class IFCLoadGroupTypeEnum : IFC_Enum, Global.IFCLoadGroupTypeEnum
 	{
 		public static string LOAD_CASE { get { return ".LOAD_CASE."; } private set { } }
 		public static string LOAD_COMBINATION { get { return ".LOAD_COMBINATION."; } private set { } }
@@ -7428,7 +7428,7 @@ namespace IFC.IFC4x3
 	/// ,LOGICALXOR);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCLogicalOperatorEnum: Global.IFCLogicalOperatorEnum
+	public class IFCLogicalOperatorEnum : IFC_Enum, Global.IFCLogicalOperatorEnum
 	{
 		public static string LOGICALAND { get { return ".LOGICALAND."; } private set { } }
 		public static string LOGICALNOTAND { get { return ".LOGICALNOTAND."; } private set { } }
@@ -7466,7 +7466,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCMarineFacilityTypeEnum: Global.IFCMarineFacilityTypeEnum
+	public class IFCMarineFacilityTypeEnum : IFC_Enum, Global.IFCMarineFacilityTypeEnum
 	{
 		public static string BARRIERBEACH { get { return ".BARRIERBEACH."; } private set { } }
 		public static string BREAKWATER { get { return ".BREAKWATER."; } private set { } }
@@ -7525,7 +7525,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCMarinePartTypeEnum: Global.IFCMarinePartTypeEnum
+	public class IFCMarinePartTypeEnum : IFC_Enum, Global.IFCMarinePartTypeEnum
 	{
 		public static string ABOVEWATERLINE { get { return ".ABOVEWATERLINE."; } private set { } }
 		public static string ANCHORAGE { get { return ".ANCHORAGE."; } private set { } }
@@ -7580,7 +7580,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCMechanicalFastenerTypeEnum: Global.IFCMechanicalFastenerTypeEnum
+	public class IFCMechanicalFastenerTypeEnum : IFC_Enum, Global.IFCMechanicalFastenerTypeEnum
 	{
 		public static string ANCHORBOLT { get { return ".ANCHORBOLT."; } private set { } }
 		public static string BOLT { get { return ".BOLT."; } private set { } }
@@ -7616,7 +7616,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCMedicalDeviceTypeEnum: Global.IFCMedicalDeviceTypeEnum
+	public class IFCMedicalDeviceTypeEnum : IFC_Enum, Global.IFCMedicalDeviceTypeEnum
 	{
 		public static string AIRSTATION { get { return ".AIRSTATION."; } private set { } }
 		public static string FEEDAIRUNIT { get { return ".FEEDAIRUNIT."; } private set { } }
@@ -7656,7 +7656,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCMemberTypeEnum: Global.IFCMemberTypeEnum
+	public class IFCMemberTypeEnum : IFC_Enum, Global.IFCMemberTypeEnum
 	{
 		public static string ARCH_SEGMENT { get { return ".ARCH_SEGMENT."; } private set { } }
 		public static string BRACE { get { return ".BRACE."; } private set { } }
@@ -7704,7 +7704,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCMobileTelecommunicationsApplianceTypeEnum: Global.IFCMobileTelecommunicationsApplianceTypeEnum
+	public class IFCMobileTelecommunicationsApplianceTypeEnum : IFC_Enum, Global.IFCMobileTelecommunicationsApplianceTypeEnum
 	{
 		public static string ACCESSPOINT { get { return ".ACCESSPOINT."; } private set { } }
 		public static string BASEBANDUNIT { get { return ".BASEBANDUNIT."; } private set { } }
@@ -7738,7 +7738,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCMooringDeviceTypeEnum: Global.IFCMooringDeviceTypeEnum
+	public class IFCMooringDeviceTypeEnum : IFC_Enum, Global.IFCMooringDeviceTypeEnum
 	{
 		public static string BOLLARD { get { return ".BOLLARD."; } private set { } }
 		public static string LINETENSIONER { get { return ".LINETENSIONER."; } private set { } }
@@ -7762,7 +7762,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCMotorConnectionTypeEnum: Global.IFCMotorConnectionTypeEnum
+	public class IFCMotorConnectionTypeEnum : IFC_Enum, Global.IFCMotorConnectionTypeEnum
 	{
 		public static string BELTDRIVE { get { return ".BELTDRIVE."; } private set { } }
 		public static string COUPLING { get { return ".COUPLING."; } private set { } }
@@ -7783,7 +7783,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCNavigationElementTypeEnum: Global.IFCNavigationElementTypeEnum
+	public class IFCNavigationElementTypeEnum : IFC_Enum, Global.IFCNavigationElementTypeEnum
 	{
 		public static string BEACON { get { return ".BEACON."; } private set { } }
 		public static string BUOY { get { return ".BUOY."; } private set { } }
@@ -7812,7 +7812,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCObjectiveEnum: Global.IFCObjectiveEnum
+	public class IFCObjectiveEnum : IFC_Enum, Global.IFCObjectiveEnum
 	{
 		public static string CODECOMPLIANCE { get { return ".CODECOMPLIANCE."; } private set { } }
 		public static string CODEWAIVER { get { return ".CODEWAIVER."; } private set { } }
@@ -7846,7 +7846,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCOccupantTypeEnum: Global.IFCOccupantTypeEnum
+	public class IFCOccupantTypeEnum : IFC_Enum, Global.IFCOccupantTypeEnum
 	{
 		public static string ASSIGNEE { get { return ".ASSIGNEE."; } private set { } }
 		public static string ASSIGNOR { get { return ".ASSIGNOR."; } private set { } }
@@ -7871,7 +7871,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCOpeningElementTypeEnum: Global.IFCOpeningElementTypeEnum
+	public class IFCOpeningElementTypeEnum : IFC_Enum, Global.IFCOpeningElementTypeEnum
 	{
 		public static string OPENING { get { return ".OPENING."; } private set { } }
 		public static string RECESS { get { return ".RECESS."; } private set { } }
@@ -7894,7 +7894,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCOutletTypeEnum: Global.IFCOutletTypeEnum
+	public class IFCOutletTypeEnum : IFC_Enum, Global.IFCOutletTypeEnum
 	{
 		public static string AUDIOVISUALOUTLET { get { return ".AUDIOVISUALOUTLET."; } private set { } }
 		public static string COMMUNICATIONSOUTLET { get { return ".COMMUNICATIONSOUTLET."; } private set { } }
@@ -7917,7 +7917,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPavementTypeEnum: Global.IFCPavementTypeEnum
+	public class IFCPavementTypeEnum : IFC_Enum, Global.IFCPavementTypeEnum
 	{
 		public static string FLEXIBLE { get { return ".FLEXIBLE."; } private set { } }
 		public static string RIGID { get { return ".RIGID."; } private set { } }
@@ -7935,7 +7935,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPerformanceHistoryTypeEnum: Global.IFCPerformanceHistoryTypeEnum
+	public class IFCPerformanceHistoryTypeEnum : IFC_Enum, Global.IFCPerformanceHistoryTypeEnum
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
@@ -7954,7 +7954,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPermeableCoveringOperationEnum: Global.IFCPermeableCoveringOperationEnum
+	public class IFCPermeableCoveringOperationEnum : IFC_Enum, Global.IFCPermeableCoveringOperationEnum
 	{
 		public static string GRILL { get { return ".GRILL."; } private set { } }
 		public static string LOUVER { get { return ".LOUVER."; } private set { } }
@@ -7976,7 +7976,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPermitTypeEnum: Global.IFCPermitTypeEnum
+	public class IFCPermitTypeEnum : IFC_Enum, Global.IFCPermitTypeEnum
 	{
 		public static string ACCESS { get { return ".ACCESS."; } private set { } }
 		public static string BUILDING { get { return ".BUILDING."; } private set { } }
@@ -7996,7 +7996,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPhysicalOrVirtualEnum: Global.IFCPhysicalOrVirtualEnum
+	public class IFCPhysicalOrVirtualEnum : IFC_Enum, Global.IFCPhysicalOrVirtualEnum
 	{
 		public static string PHYSICAL { get { return ".PHYSICAL."; } private set { } }
 		public static string VIRTUAL { get { return ".VIRTUAL."; } private set { } }
@@ -8017,7 +8017,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPileConstructionEnum: Global.IFCPileConstructionEnum
+	public class IFCPileConstructionEnum : IFC_Enum, Global.IFCPileConstructionEnum
 	{
 		public static string CAST_IN_PLACE { get { return ".CAST_IN_PLACE."; } private set { } }
 		public static string COMPOSITE { get { return ".COMPOSITE."; } private set { } }
@@ -8043,7 +8043,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPileTypeEnum: Global.IFCPileTypeEnum
+	public class IFCPileTypeEnum : IFC_Enum, Global.IFCPileTypeEnum
 	{
 		public static string BORED { get { return ".BORED."; } private set { } }
 		public static string COHESION { get { return ".COHESION."; } private set { } }
@@ -8072,7 +8072,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPipeFittingTypeEnum: Global.IFCPipeFittingTypeEnum
+	public class IFCPipeFittingTypeEnum : IFC_Enum, Global.IFCPipeFittingTypeEnum
 	{
 		public static string BEND { get { return ".BEND."; } private set { } }
 		public static string CONNECTOR { get { return ".CONNECTOR."; } private set { } }
@@ -8100,7 +8100,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPipeSegmentTypeEnum: Global.IFCPipeSegmentTypeEnum
+	public class IFCPipeSegmentTypeEnum : IFC_Enum, Global.IFCPipeSegmentTypeEnum
 	{
 		public static string CULVERT { get { return ".CULVERT."; } private set { } }
 		public static string FLEXIBLESEGMENT { get { return ".FLEXIBLESEGMENT."; } private set { } }
@@ -8130,7 +8130,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPlateTypeEnum: Global.IFCPlateTypeEnum
+	public class IFCPlateTypeEnum : IFC_Enum, Global.IFCPlateTypeEnum
 	{
 		public static string BASE_PLATE { get { return ".BASE_PLATE."; } private set { } }
 		public static string COVER_PLATE { get { return ".COVER_PLATE."; } private set { } }
@@ -8156,7 +8156,7 @@ namespace IFC.IFC4x3
 	/// ,PCURVE_S2);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPreferredSurfaceCurveRepresentation: Global.IFCPreferredSurfaceCurveRepresentation
+	public class IFCPreferredSurfaceCurveRepresentation : IFC_Enum, Global.IFCPreferredSurfaceCurveRepresentation
 	{
 		public static string CURVE3D { get { return ".CURVE3D."; } private set { } }
 		public static string PCURVE_S1 { get { return ".PCURVE_S1."; } private set { } }
@@ -8180,7 +8180,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCProcedureTypeEnum: Global.IFCProcedureTypeEnum
+	public class IFCProcedureTypeEnum : IFC_Enum, Global.IFCProcedureTypeEnum
 	{
 		public static string ADVICE_CAUTION { get { return ".ADVICE_CAUTION."; } private set { } }
 		public static string ADVICE_NOTE { get { return ".ADVICE_NOTE."; } private set { } }
@@ -8203,7 +8203,7 @@ namespace IFC.IFC4x3
 	/// ,CURVE);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCProfileTypeEnum: Global.IFCProfileTypeEnum
+	public class IFCProfileTypeEnum : IFC_Enum, Global.IFCProfileTypeEnum
 	{
 		public static string AREA { get { return ".AREA."; } private set { } }
 		public static string CURVE { get { return ".CURVE."; } private set { } }
@@ -8224,7 +8224,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCProjectOrderTypeEnum: Global.IFCProjectOrderTypeEnum
+	public class IFCProjectOrderTypeEnum : IFC_Enum, Global.IFCProjectOrderTypeEnum
 	{
 		public static string CHANGEORDER { get { return ".CHANGEORDER."; } private set { } }
 		public static string MAINTENANCEWORKORDER { get { return ".MAINTENANCEWORKORDER."; } private set { } }
@@ -8245,7 +8245,7 @@ namespace IFC.IFC4x3
 	/// ,TRUE_LENGTH);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCProjectedOrTrueLengthEnum: Global.IFCProjectedOrTrueLengthEnum
+	public class IFCProjectedOrTrueLengthEnum : IFC_Enum, Global.IFCProjectedOrTrueLengthEnum
 	{
 		public static string PROJECTED_LENGTH { get { return ".PROJECTED_LENGTH."; } private set { } }
 		public static string TRUE_LENGTH { get { return ".TRUE_LENGTH."; } private set { } }
@@ -8263,7 +8263,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCProjectionElementTypeEnum: Global.IFCProjectionElementTypeEnum
+	public class IFCProjectionElementTypeEnum : IFC_Enum, Global.IFCProjectionElementTypeEnum
 	{
 		public static string BLISTER { get { return ".BLISTER."; } private set { } }
 		public static string DEVIATOR { get { return ".DEVIATOR."; } private set { } }
@@ -8289,7 +8289,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPropertySetTemplateTypeEnum: Global.IFCPropertySetTemplateTypeEnum
+	public class IFCPropertySetTemplateTypeEnum : IFC_Enum, Global.IFCPropertySetTemplateTypeEnum
 	{
 		public static string PSET_MATERIALDRIVEN { get { return ".PSET_MATERIALDRIVEN."; } private set { } }
 		public static string PSET_OCCURRENCEDRIVEN { get { return ".PSET_OCCURRENCEDRIVEN."; } private set { } }
@@ -8317,7 +8317,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCProtectiveDeviceTrippingUnitTypeEnum: Global.IFCProtectiveDeviceTrippingUnitTypeEnum
+	public class IFCProtectiveDeviceTrippingUnitTypeEnum : IFC_Enum, Global.IFCProtectiveDeviceTrippingUnitTypeEnum
 	{
 		public static string ELECTROMAGNETIC { get { return ".ELECTROMAGNETIC."; } private set { } }
 		public static string ELECTRONIC { get { return ".ELECTRONIC."; } private set { } }
@@ -8347,7 +8347,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCProtectiveDeviceTypeEnum: Global.IFCProtectiveDeviceTypeEnum
+	public class IFCProtectiveDeviceTypeEnum : IFC_Enum, Global.IFCProtectiveDeviceTypeEnum
 	{
 		public static string ANTI_ARCING_DEVICE { get { return ".ANTI_ARCING_DEVICE."; } private set { } }
 		public static string CIRCUITBREAKER { get { return ".CIRCUITBREAKER."; } private set { } }
@@ -8380,7 +8380,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPumpTypeEnum: Global.IFCPumpTypeEnum
+	public class IFCPumpTypeEnum : IFC_Enum, Global.IFCPumpTypeEnum
 	{
 		public static string CIRCULATOR { get { return ".CIRCULATOR."; } private set { } }
 		public static string ENDSUCTION { get { return ".ENDSUCTION."; } private set { } }
@@ -8409,7 +8409,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCRailTypeEnum: Global.IFCRailTypeEnum
+	public class IFCRailTypeEnum : IFC_Enum, Global.IFCRailTypeEnum
 	{
 		public static string BLADE { get { return ".BLADE."; } private set { } }
 		public static string CHECKRAIL { get { return ".CHECKRAIL."; } private set { } }
@@ -8435,7 +8435,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCRailingTypeEnum: Global.IFCRailingTypeEnum
+	public class IFCRailingTypeEnum : IFC_Enum, Global.IFCRailingTypeEnum
 	{
 		public static string BALUSTRADE { get { return ".BALUSTRADE."; } private set { } }
 		public static string FENCE { get { return ".FENCE."; } private set { } }
@@ -8464,7 +8464,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCRailwayPartTypeEnum: Global.IFCRailwayPartTypeEnum
+	public class IFCRailwayPartTypeEnum : IFC_Enum, Global.IFCRailwayPartTypeEnum
 	{
 		public static string ABOVETRACK { get { return ".ABOVETRACK."; } private set { } }
 		public static string DILATIONTRACK { get { return ".DILATIONTRACK."; } private set { } }
@@ -8489,7 +8489,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCRailwayTypeEnum: Global.IFCRailwayTypeEnum
+	public class IFCRailwayTypeEnum : IFC_Enum, Global.IFCRailwayTypeEnum
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
@@ -8507,7 +8507,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCRampFlightTypeEnum: Global.IFCRampFlightTypeEnum
+	public class IFCRampFlightTypeEnum : IFC_Enum, Global.IFCRampFlightTypeEnum
 	{
 		public static string SPIRAL { get { return ".SPIRAL."; } private set { } }
 		public static string STRAIGHT { get { return ".STRAIGHT."; } private set { } }
@@ -8531,7 +8531,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCRampTypeEnum: Global.IFCRampTypeEnum
+	public class IFCRampTypeEnum : IFC_Enum, Global.IFCRampTypeEnum
 	{
 		public static string HALF_TURN_RAMP { get { return ".HALF_TURN_RAMP."; } private set { } }
 		public static string QUARTER_TURN_RAMP { get { return ".QUARTER_TURN_RAMP."; } private set { } }
@@ -8559,7 +8559,7 @@ namespace IFC.IFC4x3
 	/// ,YEARLY_BY_POSITION);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCRecurrenceTypeEnum: Global.IFCRecurrenceTypeEnum
+	public class IFCRecurrenceTypeEnum : IFC_Enum, Global.IFCRecurrenceTypeEnum
 	{
 		public static string BY_DAY_COUNT { get { return ".BY_DAY_COUNT."; } private set { } }
 		public static string BY_WEEKDAY_COUNT { get { return ".BY_WEEKDAY_COUNT."; } private set { } }
@@ -8591,7 +8591,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCReferentTypeEnum: Global.IFCReferentTypeEnum
+	public class IFCReferentTypeEnum : IFC_Enum, Global.IFCReferentTypeEnum
 	{
 		public static string BOUNDARY { get { return ".BOUNDARY."; } private set { } }
 		public static string INTERSECTION { get { return ".INTERSECTION."; } private set { } }
@@ -8626,7 +8626,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCReflectanceMethodEnum: Global.IFCReflectanceMethodEnum
+	public class IFCReflectanceMethodEnum : IFC_Enum, Global.IFCReflectanceMethodEnum
 	{
 		public static string BLINN { get { return ".BLINN."; } private set { } }
 		public static string FLAT { get { return ".FLAT."; } private set { } }
@@ -8657,7 +8657,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCReinforcedSoilTypeEnum: Global.IFCReinforcedSoilTypeEnum
+	public class IFCReinforcedSoilTypeEnum : IFC_Enum, Global.IFCReinforcedSoilTypeEnum
 	{
 		public static string DYNAMICALLYCOMPACTED { get { return ".DYNAMICALLYCOMPACTED."; } private set { } }
 		public static string GROUTED { get { return ".GROUTED."; } private set { } }
@@ -8687,7 +8687,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCReinforcingBarRoleEnum: Global.IFCReinforcingBarRoleEnum
+	public class IFCReinforcingBarRoleEnum : IFC_Enum, Global.IFCReinforcingBarRoleEnum
 	{
 		public static string ANCHORING { get { return ".ANCHORING."; } private set { } }
 		public static string EDGE { get { return ".EDGE."; } private set { } }
@@ -8711,7 +8711,7 @@ namespace IFC.IFC4x3
 	/// ,TEXTURED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCReinforcingBarSurfaceEnum: Global.IFCReinforcingBarSurfaceEnum
+	public class IFCReinforcingBarSurfaceEnum : IFC_Enum, Global.IFCReinforcingBarSurfaceEnum
 	{
 		public static string PLAIN { get { return ".PLAIN."; } private set { } }
 		public static string TEXTURED { get { return ".TEXTURED."; } private set { } }
@@ -8736,7 +8736,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCReinforcingBarTypeEnum: Global.IFCReinforcingBarTypeEnum
+	public class IFCReinforcingBarTypeEnum : IFC_Enum, Global.IFCReinforcingBarTypeEnum
 	{
 		public static string ANCHORING { get { return ".ANCHORING."; } private set { } }
 		public static string EDGE { get { return ".EDGE."; } private set { } }
@@ -8761,7 +8761,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCReinforcingMeshTypeEnum: Global.IFCReinforcingMeshTypeEnum
+	public class IFCReinforcingMeshTypeEnum : IFC_Enum, Global.IFCReinforcingMeshTypeEnum
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
@@ -8801,7 +8801,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCRoadPartTypeEnum: Global.IFCRoadPartTypeEnum
+	public class IFCRoadPartTypeEnum : IFC_Enum, Global.IFCRoadPartTypeEnum
 	{
 		public static string BICYCLECROSSING { get { return ".BICYCLECROSSING."; } private set { } }
 		public static string BUS_STOP { get { return ".BUS_STOP."; } private set { } }
@@ -8841,7 +8841,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCRoadTypeEnum: Global.IFCRoadTypeEnum
+	public class IFCRoadTypeEnum : IFC_Enum, Global.IFCRoadTypeEnum
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
@@ -8878,7 +8878,7 @@ namespace IFC.IFC4x3
 	/// ,USERDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCRoleEnum: Global.IFCRoleEnum
+	public class IFCRoleEnum : IFC_Enum, Global.IFCRoleEnum
 	{
 		public static string ARCHITECT { get { return ".ARCHITECT."; } private set { } }
 		public static string BUILDINGOPERATOR { get { return ".BUILDINGOPERATOR."; } private set { } }
@@ -8928,7 +8928,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCRoofTypeEnum: Global.IFCRoofTypeEnum
+	public class IFCRoofTypeEnum : IFC_Enum, Global.IFCRoofTypeEnum
 	{
 		public static string BARREL_ROOF { get { return ".BARREL_ROOF."; } private set { } }
 		public static string BUTTERFLY_ROOF { get { return ".BUTTERFLY_ROOF."; } private set { } }
@@ -8971,7 +8971,7 @@ namespace IFC.IFC4x3
 	/// ,TERA);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSIPrefix: Global.IFCSIPrefix
+	public class IFCSIPrefix : IFC_Enum, Global.IFCSIPrefix
 	{
 		public static string ATTO { get { return ".ATTO."; } private set { } }
 		public static string CENTI { get { return ".CENTI."; } private set { } }
@@ -9029,7 +9029,7 @@ namespace IFC.IFC4x3
 	/// ,WEBER);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSIUnitName: Global.IFCSIUnitName
+	public class IFCSIUnitName : IFC_Enum, Global.IFCSIUnitName
 	{
 		public static string AMPERE { get { return ".AMPERE."; } private set { } }
 		public static string BECQUEREL { get { return ".BECQUEREL."; } private set { } }
@@ -9083,7 +9083,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSanitaryTerminalTypeEnum: Global.IFCSanitaryTerminalTypeEnum
+	public class IFCSanitaryTerminalTypeEnum : IFC_Enum, Global.IFCSanitaryTerminalTypeEnum
 	{
 		public static string BATH { get { return ".BATH."; } private set { } }
 		public static string BIDET { get { return ".BIDET."; } private set { } }
@@ -9109,7 +9109,7 @@ namespace IFC.IFC4x3
 	/// ,UNIFORM);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSectionTypeEnum: Global.IFCSectionTypeEnum
+	public class IFCSectionTypeEnum : IFC_Enum, Global.IFCSectionTypeEnum
 	{
 		public static string TAPERED { get { return ".TAPERED."; } private set { } }
 		public static string UNIFORM { get { return ".UNIFORM."; } private set { } }
@@ -9157,7 +9157,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSensorTypeEnum: Global.IFCSensorTypeEnum
+	public class IFCSensorTypeEnum : IFC_Enum, Global.IFCSensorTypeEnum
 	{
 		public static string CO2SENSOR { get { return ".CO2SENSOR."; } private set { } }
 		public static string CONDUCTANCESENSOR { get { return ".CONDUCTANCESENSOR."; } private set { } }
@@ -9209,7 +9209,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSequenceEnum: Global.IFCSequenceEnum
+	public class IFCSequenceEnum : IFC_Enum, Global.IFCSequenceEnum
 	{
 		public static string FINISH_FINISH { get { return ".FINISH_FINISH."; } private set { } }
 		public static string FINISH_START { get { return ".FINISH_START."; } private set { } }
@@ -9232,7 +9232,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCShadingDeviceTypeEnum: Global.IFCShadingDeviceTypeEnum
+	public class IFCShadingDeviceTypeEnum : IFC_Enum, Global.IFCShadingDeviceTypeEnum
 	{
 		public static string AWNING { get { return ".AWNING."; } private set { } }
 		public static string JALOUSIE { get { return ".JALOUSIE."; } private set { } }
@@ -9254,7 +9254,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSignTypeEnum: Global.IFCSignTypeEnum
+	public class IFCSignTypeEnum : IFC_Enum, Global.IFCSignTypeEnum
 	{
 		public static string MARKER { get { return ".MARKER."; } private set { } }
 		public static string MIRROR { get { return ".MIRROR."; } private set { } }
@@ -9276,7 +9276,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSignalTypeEnum: Global.IFCSignalTypeEnum
+	public class IFCSignalTypeEnum : IFC_Enum, Global.IFCSignalTypeEnum
 	{
 		public static string AUDIO { get { return ".AUDIO."; } private set { } }
 		public static string MIXED { get { return ".MIXED."; } private set { } }
@@ -9306,7 +9306,7 @@ namespace IFC.IFC4x3
 	/// ,Q_WEIGHT);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSimplePropertyTemplateTypeEnum: Global.IFCSimplePropertyTemplateTypeEnum
+	public class IFCSimplePropertyTemplateTypeEnum : IFC_Enum, Global.IFCSimplePropertyTemplateTypeEnum
 	{
 		public static string P_BOUNDEDVALUE { get { return ".P_BOUNDEDVALUE."; } private set { } }
 		public static string P_ENUMERATEDVALUE { get { return ".P_ENUMERATEDVALUE."; } private set { } }
@@ -9342,7 +9342,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSlabTypeEnum: Global.IFCSlabTypeEnum
+	public class IFCSlabTypeEnum : IFC_Enum, Global.IFCSlabTypeEnum
 	{
 		public static string APPROACH_SLAB { get { return ".APPROACH_SLAB."; } private set { } }
 		public static string BASESLAB { get { return ".BASESLAB."; } private set { } }
@@ -9369,7 +9369,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSolarDeviceTypeEnum: Global.IFCSolarDeviceTypeEnum
+	public class IFCSolarDeviceTypeEnum : IFC_Enum, Global.IFCSolarDeviceTypeEnum
 	{
 		public static string SOLARCOLLECTOR { get { return ".SOLARCOLLECTOR."; } private set { } }
 		public static string SOLARPANEL { get { return ".SOLARPANEL."; } private set { } }
@@ -9389,7 +9389,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSpaceHeaterTypeEnum: Global.IFCSpaceHeaterTypeEnum
+	public class IFCSpaceHeaterTypeEnum : IFC_Enum, Global.IFCSpaceHeaterTypeEnum
 	{
 		public static string CONVECTOR { get { return ".CONVECTOR."; } private set { } }
 		public static string RADIATOR { get { return ".RADIATOR."; } private set { } }
@@ -9413,7 +9413,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSpaceTypeEnum: Global.IFCSpaceTypeEnum
+	public class IFCSpaceTypeEnum : IFC_Enum, Global.IFCSpaceTypeEnum
 	{
 		public static string BERTH { get { return ".BERTH."; } private set { } }
 		public static string EXTERNAL { get { return ".EXTERNAL."; } private set { } }
@@ -9445,7 +9445,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSpatialZoneTypeEnum: Global.IFCSpatialZoneTypeEnum
+	public class IFCSpatialZoneTypeEnum : IFC_Enum, Global.IFCSpatialZoneTypeEnum
 	{
 		public static string CONSTRUCTION { get { return ".CONSTRUCTION."; } private set { } }
 		public static string FIRESAFETY { get { return ".FIRESAFETY."; } private set { } }
@@ -9474,7 +9474,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCStackTerminalTypeEnum: Global.IFCStackTerminalTypeEnum
+	public class IFCStackTerminalTypeEnum : IFC_Enum, Global.IFCStackTerminalTypeEnum
 	{
 		public static string BIRDCAGE { get { return ".BIRDCAGE."; } private set { } }
 		public static string COWL { get { return ".COWL."; } private set { } }
@@ -9498,7 +9498,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCStairFlightTypeEnum: Global.IFCStairFlightTypeEnum
+	public class IFCStairFlightTypeEnum : IFC_Enum, Global.IFCStairFlightTypeEnum
 	{
 		public static string CURVED { get { return ".CURVED."; } private set { } }
 		public static string FREEFORM { get { return ".FREEFORM."; } private set { } }
@@ -9534,7 +9534,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCStairTypeEnum: Global.IFCStairTypeEnum
+	public class IFCStairTypeEnum : IFC_Enum, Global.IFCStairTypeEnum
 	{
 		public static string CURVED_RUN_STAIR { get { return ".CURVED_RUN_STAIR."; } private set { } }
 		public static string DOUBLE_RETURN_STAIR { get { return ".DOUBLE_RETURN_STAIR."; } private set { } }
@@ -9568,7 +9568,7 @@ namespace IFC.IFC4x3
 	/// ,READWRITELOCKED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCStateEnum: Global.IFCStateEnum
+	public class IFCStateEnum : IFC_Enum, Global.IFCStateEnum
 	{
 		public static string LOCKED { get { return ".LOCKED."; } private set { } }
 		public static string READONLY { get { return ".READONLY."; } private set { } }
@@ -9594,7 +9594,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCStructuralCurveActivityTypeEnum: Global.IFCStructuralCurveActivityTypeEnum
+	public class IFCStructuralCurveActivityTypeEnum : IFC_Enum, Global.IFCStructuralCurveActivityTypeEnum
 	{
 		public static string CONST { get { return ".CONST."; } private set { } }
 		public static string DISCRETE { get { return ".DISCRETE."; } private set { } }
@@ -9622,7 +9622,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCStructuralCurveMemberTypeEnum: Global.IFCStructuralCurveMemberTypeEnum
+	public class IFCStructuralCurveMemberTypeEnum : IFC_Enum, Global.IFCStructuralCurveMemberTypeEnum
 	{
 		public static string CABLE { get { return ".CABLE."; } private set { } }
 		public static string COMPRESSION_MEMBER { get { return ".COMPRESSION_MEMBER."; } private set { } }
@@ -9647,7 +9647,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCStructuralSurfaceActivityTypeEnum: Global.IFCStructuralSurfaceActivityTypeEnum
+	public class IFCStructuralSurfaceActivityTypeEnum : IFC_Enum, Global.IFCStructuralSurfaceActivityTypeEnum
 	{
 		public static string BILINEAR { get { return ".BILINEAR."; } private set { } }
 		public static string CONST { get { return ".CONST."; } private set { } }
@@ -9670,7 +9670,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCStructuralSurfaceMemberTypeEnum: Global.IFCStructuralSurfaceMemberTypeEnum
+	public class IFCStructuralSurfaceMemberTypeEnum : IFC_Enum, Global.IFCStructuralSurfaceMemberTypeEnum
 	{
 		public static string BENDING_ELEMENT { get { return ".BENDING_ELEMENT."; } private set { } }
 		public static string MEMBRANE_ELEMENT { get { return ".MEMBRANE_ELEMENT."; } private set { } }
@@ -9691,7 +9691,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSubContractResourceTypeEnum: Global.IFCSubContractResourceTypeEnum
+	public class IFCSubContractResourceTypeEnum : IFC_Enum, Global.IFCSubContractResourceTypeEnum
 	{
 		public static string PURCHASE { get { return ".PURCHASE."; } private set { } }
 		public static string WORK { get { return ".WORK."; } private set { } }
@@ -9720,7 +9720,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSurfaceFeatureTypeEnum: Global.IFCSurfaceFeatureTypeEnum
+	public class IFCSurfaceFeatureTypeEnum : IFC_Enum, Global.IFCSurfaceFeatureTypeEnum
 	{
 		public static string DEFECT { get { return ".DEFECT."; } private set { } }
 		public static string HATCHMARKING { get { return ".HATCHMARKING."; } private set { } }
@@ -9748,7 +9748,7 @@ namespace IFC.IFC4x3
 	/// ,POSITIVE);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSurfaceSide: Global.IFCSurfaceSide
+	public class IFCSurfaceSide : IFC_Enum, Global.IFCSurfaceSide
 	{
 		public static string BOTH { get { return ".BOTH."; } private set { } }
 		public static string NEGATIVE { get { return ".NEGATIVE."; } private set { } }
@@ -9776,7 +9776,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSwitchingDeviceTypeEnum: Global.IFCSwitchingDeviceTypeEnum
+	public class IFCSwitchingDeviceTypeEnum : IFC_Enum, Global.IFCSwitchingDeviceTypeEnum
 	{
 		public static string CONTACTOR { get { return ".CONTACTOR."; } private set { } }
 		public static string DIMMERSWITCH { get { return ".DIMMERSWITCH."; } private set { } }
@@ -9806,7 +9806,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCSystemFurnitureElementTypeEnum: Global.IFCSystemFurnitureElementTypeEnum
+	public class IFCSystemFurnitureElementTypeEnum : IFC_Enum, Global.IFCSystemFurnitureElementTypeEnum
 	{
 		public static string PANEL { get { return ".PANEL."; } private set { } }
 		public static string SUBRACK { get { return ".SUBRACK."; } private set { } }
@@ -9833,7 +9833,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTankTypeEnum: Global.IFCTankTypeEnum
+	public class IFCTankTypeEnum : IFC_Enum, Global.IFCTankTypeEnum
 	{
 		public static string BASIN { get { return ".BASIN."; } private set { } }
 		public static string BREAKPRESSURE { get { return ".BREAKPRESSURE."; } private set { } }
@@ -9858,7 +9858,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTaskDurationEnum: Global.IFCTaskDurationEnum
+	public class IFCTaskDurationEnum : IFC_Enum, Global.IFCTaskDurationEnum
 	{
 		public static string ELAPSEDTIME { get { return ".ELAPSEDTIME."; } private set { } }
 		public static string WORKTIME { get { return ".WORKTIME."; } private set { } }
@@ -9896,7 +9896,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTaskTypeEnum: Global.IFCTaskTypeEnum
+	public class IFCTaskTypeEnum : IFC_Enum, Global.IFCTaskTypeEnum
 	{
 		public static string ADJUSTMENT { get { return ".ADJUSTMENT."; } private set { } }
 		public static string ATTENDANCE { get { return ".ATTENDANCE."; } private set { } }
@@ -9936,7 +9936,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTendonAnchorTypeEnum: Global.IFCTendonAnchorTypeEnum
+	public class IFCTendonAnchorTypeEnum : IFC_Enum, Global.IFCTendonAnchorTypeEnum
 	{
 		public static string COUPLER { get { return ".COUPLER."; } private set { } }
 		public static string FIXED_END { get { return ".FIXED_END."; } private set { } }
@@ -9960,7 +9960,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTendonConduitTypeEnum: Global.IFCTendonConduitTypeEnum
+	public class IFCTendonConduitTypeEnum : IFC_Enum, Global.IFCTendonConduitTypeEnum
 	{
 		public static string COUPLER { get { return ".COUPLER."; } private set { } }
 		public static string DIABOLO { get { return ".DIABOLO."; } private set { } }
@@ -9985,7 +9985,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTendonTypeEnum: Global.IFCTendonTypeEnum
+	public class IFCTendonTypeEnum : IFC_Enum, Global.IFCTendonTypeEnum
 	{
 		public static string BAR { get { return ".BAR."; } private set { } }
 		public static string COATED { get { return ".COATED."; } private set { } }
@@ -10007,7 +10007,7 @@ namespace IFC.IFC4x3
 	/// ,UP);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTextPath: Global.IFCTextPath
+	public class IFCTextPath : IFC_Enum, Global.IFCTextPath
 	{
 		public static string DOWN { get { return ".DOWN."; } private set { } }
 		public static string LEFT { get { return ".LEFT."; } private set { } }
@@ -10030,7 +10030,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTimeSeriesDataTypeEnum: Global.IFCTimeSeriesDataTypeEnum
+	public class IFCTimeSeriesDataTypeEnum : IFC_Enum, Global.IFCTimeSeriesDataTypeEnum
 	{
 		public static string CONTINUOUS { get { return ".CONTINUOUS."; } private set { } }
 		public static string DISCRETE { get { return ".DISCRETE."; } private set { } }
@@ -10059,7 +10059,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTrackElementTypeEnum: Global.IFCTrackElementTypeEnum
+	public class IFCTrackElementTypeEnum : IFC_Enum, Global.IFCTrackElementTypeEnum
 	{
 		public static string BLOCKINGDEVICE { get { return ".BLOCKINGDEVICE."; } private set { } }
 		public static string DERAILER { get { return ".DERAILER."; } private set { } }
@@ -10090,7 +10090,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTransformerTypeEnum: Global.IFCTransformerTypeEnum
+	public class IFCTransformerTypeEnum : IFC_Enum, Global.IFCTransformerTypeEnum
 	{
 		public static string CHOPPER { get { return ".CHOPPER."; } private set { } }
 		public static string COMBINED { get { return ".COMBINED."; } private set { } }
@@ -10115,7 +10115,7 @@ namespace IFC.IFC4x3
 	/// ,DISCONTINUOUS);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTransitionCode: Global.IFCTransitionCode
+	public class IFCTransitionCode : IFC_Enum, Global.IFCTransitionCode
 	{
 		public static string CONTINUOUS { get { return ".CONTINUOUS."; } private set { } }
 		public static string CONTSAMEGRADIENT { get { return ".CONTSAMEGRADIENT."; } private set { } }
@@ -10139,7 +10139,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTransportElementTypeEnum: Global.IFCTransportElementTypeEnum
+	public class IFCTransportElementTypeEnum : IFC_Enum, Global.IFCTransportElementTypeEnum
 	{
 		public static string CRANEWAY { get { return ".CRANEWAY."; } private set { } }
 		public static string ELEVATOR { get { return ".ELEVATOR."; } private set { } }
@@ -10162,7 +10162,7 @@ namespace IFC.IFC4x3
 	/// ,UNSPECIFIED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTrimmingPreference: Global.IFCTrimmingPreference
+	public class IFCTrimmingPreference : IFC_Enum, Global.IFCTrimmingPreference
 	{
 		public static string CARTESIAN { get { return ".CARTESIAN."; } private set { } }
 		public static string PARAMETER { get { return ".PARAMETER."; } private set { } }
@@ -10180,7 +10180,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCTubeBundleTypeEnum: Global.IFCTubeBundleTypeEnum
+	public class IFCTubeBundleTypeEnum : IFC_Enum, Global.IFCTubeBundleTypeEnum
 	{
 		public static string FINNED { get { return ".FINNED."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
@@ -10225,7 +10225,7 @@ namespace IFC.IFC4x3
 	/// ,USERDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCUnitEnum: Global.IFCUnitEnum
+	public class IFCUnitEnum : IFC_Enum, Global.IFCUnitEnum
 	{
 		public static string ABSORBEDDOSEUNIT { get { return ".ABSORBEDDOSEUNIT."; } private set { } }
 		public static string AMOUNTOFSUBSTANCEUNIT { get { return ".AMOUNTOFSUBSTANCEUNIT."; } private set { } }
@@ -10279,7 +10279,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCUnitaryControlElementTypeEnum: Global.IFCUnitaryControlElementTypeEnum
+	public class IFCUnitaryControlElementTypeEnum : IFC_Enum, Global.IFCUnitaryControlElementTypeEnum
 	{
 		public static string ALARMPANEL { get { return ".ALARMPANEL."; } private set { } }
 		public static string BASESTATIONCONTROLLER { get { return ".BASESTATIONCONTROLLER."; } private set { } }
@@ -10310,7 +10310,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCUnitaryEquipmentTypeEnum: Global.IFCUnitaryEquipmentTypeEnum
+	public class IFCUnitaryEquipmentTypeEnum : IFC_Enum, Global.IFCUnitaryEquipmentTypeEnum
 	{
 		public static string AIRCONDITIONINGUNIT { get { return ".AIRCONDITIONINGUNIT."; } private set { } }
 		public static string AIRHANDLER { get { return ".AIRHANDLER."; } private set { } }
@@ -10352,7 +10352,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCValveTypeEnum: Global.IFCValveTypeEnum
+	public class IFCValveTypeEnum : IFC_Enum, Global.IFCValveTypeEnum
 	{
 		public static string AIRRELEASE { get { return ".AIRRELEASE."; } private set { } }
 		public static string ANTIVACUUM { get { return ".ANTIVACUUM."; } private set { } }
@@ -10396,7 +10396,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCVehicleTypeEnum: Global.IFCVehicleTypeEnum
+	public class IFCVehicleTypeEnum : IFC_Enum, Global.IFCVehicleTypeEnum
 	{
 		public static string CARGO { get { return ".CARGO."; } private set { } }
 		public static string ROLLINGSTOCK { get { return ".ROLLINGSTOCK."; } private set { } }
@@ -10425,7 +10425,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCVibrationDamperTypeEnum: Global.IFCVibrationDamperTypeEnum
+	public class IFCVibrationDamperTypeEnum : IFC_Enum, Global.IFCVibrationDamperTypeEnum
 	{
 		public static string AXIAL_YIELD { get { return ".AXIAL_YIELD."; } private set { } }
 		public static string BENDING_YIELD { get { return ".BENDING_YIELD."; } private set { } }
@@ -10450,7 +10450,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCVibrationIsolatorTypeEnum: Global.IFCVibrationIsolatorTypeEnum
+	public class IFCVibrationIsolatorTypeEnum : IFC_Enum, Global.IFCVibrationIsolatorTypeEnum
 	{
 		public static string BASE { get { return ".BASE."; } private set { } }
 		public static string COMPRESSION { get { return ".COMPRESSION."; } private set { } }
@@ -10472,7 +10472,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCVirtualElementTypeEnum: Global.IFCVirtualElementTypeEnum
+	public class IFCVirtualElementTypeEnum : IFC_Enum, Global.IFCVirtualElementTypeEnum
 	{
 		public static string BOUNDARY { get { return ".BOUNDARY."; } private set { } }
 		public static string CLEARANCE { get { return ".CLEARANCE."; } private set { } }
@@ -10497,7 +10497,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCVoidingFeatureTypeEnum: Global.IFCVoidingFeatureTypeEnum
+	public class IFCVoidingFeatureTypeEnum : IFC_Enum, Global.IFCVoidingFeatureTypeEnum
 	{
 		public static string CHAMFER { get { return ".CHAMFER."; } private set { } }
 		public static string CUTOUT { get { return ".CUTOUT."; } private set { } }
@@ -10530,7 +10530,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCWallTypeEnum: Global.IFCWallTypeEnum
+	public class IFCWallTypeEnum : IFC_Enum, Global.IFCWallTypeEnum
 	{
 		public static string ELEMENTEDWALL { get { return ".ELEMENTEDWALL."; } private set { } }
 		public static string MOVABLE { get { return ".MOVABLE."; } private set { } }
@@ -10564,7 +10564,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCWasteTerminalTypeEnum: Global.IFCWasteTerminalTypeEnum
+	public class IFCWasteTerminalTypeEnum : IFC_Enum, Global.IFCWasteTerminalTypeEnum
 	{
 		public static string FLOORTRAP { get { return ".FLOORTRAP."; } private set { } }
 		public static string FLOORWASTE { get { return ".FLOORWASTE."; } private set { } }
@@ -10599,7 +10599,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCWindowPanelOperationEnum: Global.IFCWindowPanelOperationEnum
+	public class IFCWindowPanelOperationEnum : IFC_Enum, Global.IFCWindowPanelOperationEnum
 	{
 		public static string BOTTOMHUNG { get { return ".BOTTOMHUNG."; } private set { } }
 		public static string FIXEDCASEMENT { get { return ".FIXEDCASEMENT."; } private set { } }
@@ -10631,7 +10631,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCWindowPanelPositionEnum: Global.IFCWindowPanelPositionEnum
+	public class IFCWindowPanelPositionEnum : IFC_Enum, Global.IFCWindowPanelPositionEnum
 	{
 		public static string BOTTOM { get { return ".BOTTOM."; } private set { } }
 		public static string LEFT { get { return ".LEFT."; } private set { } }
@@ -10654,7 +10654,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCWindowTypeEnum: Global.IFCWindowTypeEnum
+	public class IFCWindowTypeEnum : IFC_Enum, Global.IFCWindowTypeEnum
 	{
 		public static string LIGHTDOME { get { return ".LIGHTDOME."; } private set { } }
 		public static string SKYLIGHT { get { return ".SKYLIGHT."; } private set { } }
@@ -10682,7 +10682,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCWindowTypePartitioningEnum: Global.IFCWindowTypePartitioningEnum
+	public class IFCWindowTypePartitioningEnum : IFC_Enum, Global.IFCWindowTypePartitioningEnum
 	{
 		public static string DOUBLE_PANEL_HORIZONTAL { get { return ".DOUBLE_PANEL_HORIZONTAL."; } private set { } }
 		public static string DOUBLE_PANEL_VERTICAL { get { return ".DOUBLE_PANEL_VERTICAL."; } private set { } }
@@ -10710,7 +10710,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCWorkCalendarTypeEnum: Global.IFCWorkCalendarTypeEnum
+	public class IFCWorkCalendarTypeEnum : IFC_Enum, Global.IFCWorkCalendarTypeEnum
 	{
 		public static string FIRSTSHIFT { get { return ".FIRSTSHIFT."; } private set { } }
 		public static string SECONDSHIFT { get { return ".SECONDSHIFT."; } private set { } }
@@ -10732,7 +10732,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCWorkPlanTypeEnum: Global.IFCWorkPlanTypeEnum
+	public class IFCWorkPlanTypeEnum : IFC_Enum, Global.IFCWorkPlanTypeEnum
 	{
 		public static string ACTUAL { get { return ".ACTUAL."; } private set { } }
 		public static string BASELINE { get { return ".BASELINE."; } private set { } }
@@ -10754,7 +10754,7 @@ namespace IFC.IFC4x3
 	/// ,NOTDEFINED);
 	/// END_TYPE;
 	/// <summary>
-	public class IFCWorkScheduleTypeEnum: Global.IFCWorkScheduleTypeEnum
+	public class IFCWorkScheduleTypeEnum : IFC_Enum, Global.IFCWorkScheduleTypeEnum
 	{
 		public static string ACTUAL { get { return ".ACTUAL."; } private set { } }
 		public static string BASELINE { get { return ".BASELINE."; } private set { } }
@@ -12167,9 +12167,9 @@ namespace IFC.IFC4x3
 			this.Status = Status;
 			this.LongDescription = LongDescription;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -12182,15 +12182,15 @@ namespace IFC.IFC4x3
 				LongDescription
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -12282,9 +12282,9 @@ namespace IFC.IFC4x3
 		{
 			this.TheActor = TheActor;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -12294,15 +12294,15 @@ namespace IFC.IFC4x3
 				TheActor
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -12381,24 +12381,24 @@ namespace IFC.IFC4x3
 			this.UserDefinedRole = UserDefinedRole;
 			this.Description = Description;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Role,
 				UserDefinedRole,
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference
 			};
@@ -12496,9 +12496,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -12511,15 +12511,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -12589,9 +12589,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -12605,15 +12605,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -12679,24 +12679,24 @@ namespace IFC.IFC4x3
 			this.Description = Description;
 			this.UserDefinedPurpose = UserDefinedPurpose;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Purpose,
 				Description,
 				UserDefinedPurpose
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				OfPerson,
 				OfOrganization
@@ -12808,23 +12808,23 @@ namespace IFC.IFC4x3
 		public IFCAdvancedBrep(IFCClosedShell? Outer) : base (Outer)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Outer
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -12853,24 +12853,24 @@ namespace IFC.IFC4x3
 		{
 			this.Voids = Voids;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Outer,
 				Voids
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -12949,24 +12949,24 @@ namespace IFC.IFC4x3
 		public IFCAdvancedFace(IFC_Attributes<IFCFaceBound>? Bounds, IFCSurface? FaceSurface, IFCBoolean? SameSense) : base (Bounds, FaceSurface, SameSense)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Bounds,
 				FaceSurface,
 				SameSense
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -12996,9 +12996,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -13011,15 +13011,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -13092,9 +13092,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -13107,15 +13107,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -13185,9 +13185,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -13201,15 +13201,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -13260,9 +13260,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -13276,15 +13276,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -13338,9 +13338,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -13353,15 +13353,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -13431,9 +13431,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -13447,15 +13447,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -13509,9 +13509,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -13524,15 +13524,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -13602,9 +13602,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -13618,15 +13618,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -13674,9 +13674,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -13688,15 +13688,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -13751,9 +13751,9 @@ namespace IFC.IFC4x3
 		{
 			this.RailHeadDistance = RailHeadDistance;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -13765,15 +13765,15 @@ namespace IFC.IFC4x3
 				RailHeadDistance
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -13844,9 +13844,9 @@ namespace IFC.IFC4x3
 			this.EndCantRight = EndCantRight;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				StartTag,
 				EndTag,
@@ -13859,15 +13859,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -14011,9 +14011,9 @@ namespace IFC.IFC4x3
 		public IFCAlignmentHorizontal(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -14024,15 +14024,15 @@ namespace IFC.IFC4x3
 				Representation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -14085,9 +14085,9 @@ namespace IFC.IFC4x3
 			this.GravityCenterLineHeight = GravityCenterLineHeight;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				StartTag,
 				EndTag,
@@ -14100,15 +14100,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -14261,23 +14261,23 @@ namespace IFC.IFC4x3
 			this.StartTag = StartTag;
 			this.EndTag = EndTag;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				StartTag,
 				EndTag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -14334,9 +14334,9 @@ namespace IFC.IFC4x3
 		{
 			this.DesignParameters = DesignParameters;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -14348,15 +14348,15 @@ namespace IFC.IFC4x3
 				DesignParameters
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -14406,9 +14406,9 @@ namespace IFC.IFC4x3
 		public IFCAlignmentVertical(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -14419,15 +14419,15 @@ namespace IFC.IFC4x3
 				Representation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -14480,9 +14480,9 @@ namespace IFC.IFC4x3
 			this.RadiusOfCurvature = RadiusOfCurvature;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				StartTag,
 				EndTag,
@@ -14495,15 +14495,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -14653,9 +14653,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -14667,15 +14667,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -14748,23 +14748,23 @@ namespace IFC.IFC4x3
 			this.OuterBoundary = OuterBoundary;
 			this.InnerBoundaries = InnerBoundaries;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				OuterBoundary,
 				InnerBoundaries
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -14850,9 +14850,9 @@ namespace IFC.IFC4x3
 			this.ApplicationFullName = ApplicationFullName;
 			this.ApplicationIdentifier = ApplicationIdentifier;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ApplicationDeveloper,
 				Version,
@@ -14860,15 +14860,15 @@ namespace IFC.IFC4x3
 				ApplicationIdentifier
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -14992,9 +14992,9 @@ namespace IFC.IFC4x3
 			this.ArithmeticOperator = ArithmeticOperator;
 			this.Components = Components;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -15008,15 +15008,15 @@ namespace IFC.IFC4x3
 				Components
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference
 			};
@@ -15286,9 +15286,9 @@ namespace IFC.IFC4x3
 			this.RequestingApproval = RequestingApproval;
 			this.GivingApproval = GivingApproval;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Identifier,
 				Name,
@@ -15301,15 +15301,15 @@ namespace IFC.IFC4x3
 				GivingApproval
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				ApprovedObjects,
@@ -15580,9 +15580,9 @@ namespace IFC.IFC4x3
 			this.RelatingApproval = RelatingApproval;
 			this.RelatedApprovals = RelatedApprovals;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -15590,15 +15590,15 @@ namespace IFC.IFC4x3
 				RelatedApprovals
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -15677,24 +15677,24 @@ namespace IFC.IFC4x3
 		{
 			this.OuterCurve = OuterCurve;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
 				OuterCurve
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -15741,24 +15741,24 @@ namespace IFC.IFC4x3
 		{
 			this.Curve = Curve;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
 				Curve
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -15803,9 +15803,9 @@ namespace IFC.IFC4x3
 		{
 			this.InnerCurves = InnerCurves;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -15813,15 +15813,15 @@ namespace IFC.IFC4x3
 				InnerCurves
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -15902,9 +15902,9 @@ namespace IFC.IFC4x3
 			this.IncorporationDate = IncorporationDate;
 			this.DepreciatedValue = DepreciatedValue;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -15922,15 +15922,15 @@ namespace IFC.IFC4x3
 				DepreciatedValue
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -16166,9 +16166,9 @@ namespace IFC.IFC4x3
 			this.TopFlangeEdgeRadius = TopFlangeEdgeRadius;
 			this.TopFlangeSlope = TopFlangeSlope;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -16187,15 +16187,15 @@ namespace IFC.IFC4x3
 				TopFlangeSlope
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -16440,9 +16440,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -16455,15 +16455,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -16533,9 +16533,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -16549,15 +16549,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -16621,25 +16621,25 @@ namespace IFC.IFC4x3
 		{
 			this.Axis = Axis;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Location,
 				Axis
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				Z
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -16703,25 +16703,25 @@ namespace IFC.IFC4x3
 		{
 			this.RefDirection = RefDirection;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Location,
 				RefDirection
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				P
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -16800,26 +16800,26 @@ namespace IFC.IFC4x3
 			this.Axis = Axis;
 			this.RefDirection = RefDirection;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Location,
 				Axis,
 				RefDirection
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				P
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -16900,25 +16900,25 @@ namespace IFC.IFC4x3
 			this.Axis = Axis;
 			this.RefDirection = RefDirection;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Location,
 				Axis,
 				RefDirection
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -17018,9 +17018,9 @@ namespace IFC.IFC4x3
 			this.ClosedCurve = ClosedCurve;
 			this.SelfIntersect = SelfIntersect;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Degree,
 				ControlPointsList,
@@ -17029,18 +17029,18 @@ namespace IFC.IFC4x3
 				SelfIntersect
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				UpperIndexOnControlPoints,
 				ControlPoints
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -17216,9 +17216,9 @@ namespace IFC.IFC4x3
 			this.Knots = Knots;
 			this.KnotSpec = KnotSpec;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Degree,
 				ControlPointsList,
@@ -17230,9 +17230,9 @@ namespace IFC.IFC4x3
 				KnotSpec
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				UpperIndexOnControlPoints,
@@ -17240,9 +17240,9 @@ namespace IFC.IFC4x3
 				UpperIndexOnKnots
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -17413,9 +17413,9 @@ namespace IFC.IFC4x3
 			this.VClosed = VClosed;
 			this.SelfIntersect = SelfIntersect;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				UDegree,
 				VDegree,
@@ -17426,9 +17426,9 @@ namespace IFC.IFC4x3
 				SelfIntersect
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				UUpper,
@@ -17436,9 +17436,9 @@ namespace IFC.IFC4x3
 				ControlPoints
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -17697,9 +17697,9 @@ namespace IFC.IFC4x3
 			this.VKnots = VKnots;
 			this.KnotSpec = KnotSpec;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				UDegree,
 				VDegree,
@@ -17715,9 +17715,9 @@ namespace IFC.IFC4x3
 				KnotSpec
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				UUpper,
@@ -17727,9 +17727,9 @@ namespace IFC.IFC4x3
 				KnotUUpper
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -17926,9 +17926,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -17941,15 +17941,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -18017,9 +18017,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -18033,15 +18033,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -18095,9 +18095,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -18110,15 +18110,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -18186,9 +18186,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -18202,15 +18202,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -18264,9 +18264,9 @@ namespace IFC.IFC4x3
 			this.RasterFormat = RasterFormat;
 			this.RasterCode = RasterCode;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepeatS,
 				RepeatT,
@@ -18277,15 +18277,15 @@ namespace IFC.IFC4x3
 				RasterCode
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				IsMappedBy,
 				UsedInStyles
@@ -18350,9 +18350,9 @@ namespace IFC.IFC4x3
 			this.YLength = YLength;
 			this.ZLength = ZLength;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				XLength,
@@ -18360,16 +18360,16 @@ namespace IFC.IFC4x3
 				ZLength
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -18452,9 +18452,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -18467,15 +18467,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -18545,9 +18545,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -18561,15 +18561,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -18620,25 +18620,25 @@ namespace IFC.IFC4x3
 		public IFCBooleanClippingResult(IFCBooleanOperator? Operator, IFCBooleanOperand? FirstOperand, IFCBooleanOperand? SecondOperand) : base (Operator, FirstOperand, SecondOperand)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Operator,
 				FirstOperand,
 				SecondOperand
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -18685,25 +18685,25 @@ namespace IFC.IFC4x3
 			this.FirstOperand = FirstOperand;
 			this.SecondOperand = SecondOperand;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Operator,
 				FirstOperand,
 				SecondOperand
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -18784,9 +18784,9 @@ namespace IFC.IFC4x3
 		public IFCBorehole(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -18798,15 +18798,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -18856,22 +18856,22 @@ namespace IFC.IFC4x3
 		{
 			this.Name = Name;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -18911,17 +18911,17 @@ namespace IFC.IFC4x3
 		public IFCBoundaryCurve(IFC_Attributes<IFCSegment>? Segments, IFCLogical? SelfIntersect) : base (Segments, SelfIntersect)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Segments,
 				SelfIntersect
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				NSegments,
@@ -18929,9 +18929,9 @@ namespace IFC.IFC4x3
 				BasisSurface
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -18969,9 +18969,9 @@ namespace IFC.IFC4x3
 			this.RotationalStiffnessByLengthY = RotationalStiffnessByLengthY;
 			this.RotationalStiffnessByLengthZ = RotationalStiffnessByLengthZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				TranslationalStiffnessByLengthX,
@@ -18982,15 +18982,15 @@ namespace IFC.IFC4x3
 				RotationalStiffnessByLengthZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -19125,9 +19125,9 @@ namespace IFC.IFC4x3
 			this.TranslationalStiffnessByAreaY = TranslationalStiffnessByAreaY;
 			this.TranslationalStiffnessByAreaZ = TranslationalStiffnessByAreaZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				TranslationalStiffnessByAreaX,
@@ -19135,15 +19135,15 @@ namespace IFC.IFC4x3
 				TranslationalStiffnessByAreaZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -19235,9 +19235,9 @@ namespace IFC.IFC4x3
 			this.RotationalStiffnessY = RotationalStiffnessY;
 			this.RotationalStiffnessZ = RotationalStiffnessZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				TranslationalStiffnessX,
@@ -19248,15 +19248,15 @@ namespace IFC.IFC4x3
 				RotationalStiffnessZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -19385,9 +19385,9 @@ namespace IFC.IFC4x3
 		{
 			this.WarpingStiffness = WarpingStiffness;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				TranslationalStiffnessX,
@@ -19399,15 +19399,15 @@ namespace IFC.IFC4x3
 				WarpingStiffness
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -19446,22 +19446,22 @@ namespace IFC.IFC4x3
 		public IFCBoundedCurve() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -19483,22 +19483,22 @@ namespace IFC.IFC4x3
 		public IFCBoundedSurface() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -19542,9 +19542,9 @@ namespace IFC.IFC4x3
 			this.YDim = YDim;
 			this.ZDim = ZDim;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Corner,
 				XDim,
@@ -19552,16 +19552,16 @@ namespace IFC.IFC4x3
 				ZDim
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -19665,25 +19665,25 @@ namespace IFC.IFC4x3
 		{
 			this.Enclosure = Enclosure;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BaseSurface,
 				AgreementFlag,
 				Enclosure
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -19728,9 +19728,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -19744,15 +19744,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -19814,9 +19814,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -19831,15 +19831,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -19903,9 +19903,9 @@ namespace IFC.IFC4x3
 			this.ElevationOfTerrain = ElevationOfTerrain;
 			this.BuildingAddress = BuildingAddress;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -19921,15 +19921,15 @@ namespace IFC.IFC4x3
 				BuildingAddress
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -20029,9 +20029,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -20044,15 +20044,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -20120,9 +20120,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -20136,15 +20136,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -20199,9 +20199,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -20214,15 +20214,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -20290,9 +20290,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -20306,15 +20306,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -20362,9 +20362,9 @@ namespace IFC.IFC4x3
 		{
 			this.Elevation = Elevation;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -20378,15 +20378,15 @@ namespace IFC.IFC4x3
 				Elevation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -20451,9 +20451,9 @@ namespace IFC.IFC4x3
 			this.PredefinedType = PredefinedType;
 			this.LongName = LongName;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -20464,15 +20464,15 @@ namespace IFC.IFC4x3
 				LongName
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -20576,9 +20576,9 @@ namespace IFC.IFC4x3
 		public IFCBuiltElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -20590,15 +20590,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -20672,9 +20672,9 @@ namespace IFC.IFC4x3
 		public IFCBuiltElementType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -20687,15 +20687,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -20732,9 +20732,9 @@ namespace IFC.IFC4x3
 			this.PredefinedType = PredefinedType;
 			this.LongName = LongName;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -20745,15 +20745,15 @@ namespace IFC.IFC4x3
 				LongName
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -20831,9 +20831,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -20846,15 +20846,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -20924,9 +20924,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -20940,15 +20940,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -21013,9 +21013,9 @@ namespace IFC.IFC4x3
 			this.Girth = Girth;
 			this.InternalFilletRadius = InternalFilletRadius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -21027,15 +21027,15 @@ namespace IFC.IFC4x3
 				InternalFilletRadius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -21154,9 +21154,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -21169,15 +21169,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -21247,9 +21247,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -21263,15 +21263,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -21325,9 +21325,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -21340,15 +21340,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -21418,9 +21418,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -21434,15 +21434,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -21496,9 +21496,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -21511,15 +21511,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -21589,9 +21589,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -21605,15 +21605,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -21667,9 +21667,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -21682,15 +21682,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -21760,9 +21760,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -21776,15 +21776,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -21838,9 +21838,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -21853,15 +21853,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -21929,9 +21929,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -21945,15 +21945,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -22003,23 +22003,23 @@ namespace IFC.IFC4x3
 		{
 			this.Coordinates = Coordinates;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Coordinates
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -22085,22 +22085,22 @@ namespace IFC.IFC4x3
 		public IFCCartesianPointList() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -22133,24 +22133,24 @@ namespace IFC.IFC4x3
 			this.CoordList = CoordList;
 			this.TagList = TagList;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				CoordList,
 				TagList
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -22257,24 +22257,24 @@ namespace IFC.IFC4x3
 			this.CoordList = CoordList;
 			this.TagList = TagList;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				CoordList,
 				TagList
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -22415,9 +22415,9 @@ namespace IFC.IFC4x3
 			this.LocalOrigin = LocalOrigin;
 			this.Scale = Scale;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Axis1,
 				Axis2,
@@ -22425,17 +22425,17 @@ namespace IFC.IFC4x3
 				Scale
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Scl,
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -22562,9 +22562,9 @@ namespace IFC.IFC4x3
 		public IFCCartesianTransformationOperator2D(IFCDirection? Axis1, IFCDirection? Axis2, IFCCartesianPoint? LocalOrigin, IFCReal? Scale) : base (Axis1, Axis2, LocalOrigin, Scale)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Axis1,
 				Axis2,
@@ -22572,18 +22572,18 @@ namespace IFC.IFC4x3
 				Scale
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Scl,
 				Dim,
 				U
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -22636,9 +22636,9 @@ namespace IFC.IFC4x3
 		{
 			this.Scale2 = Scale2;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Axis1,
 				Axis2,
@@ -22647,9 +22647,9 @@ namespace IFC.IFC4x3
 				Scale2
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Scl,
 				Dim,
@@ -22657,9 +22657,9 @@ namespace IFC.IFC4x3
 				Scl2
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -22729,9 +22729,9 @@ namespace IFC.IFC4x3
 		{
 			this.Axis3 = Axis3;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Axis1,
 				Axis2,
@@ -22740,18 +22740,18 @@ namespace IFC.IFC4x3
 				Axis3
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Scl,
 				Dim,
 				U
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -22837,9 +22837,9 @@ namespace IFC.IFC4x3
 			this.Scale2 = Scale2;
 			this.Scale3 = Scale3;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Axis1,
 				Axis2,
@@ -22850,9 +22850,9 @@ namespace IFC.IFC4x3
 				Scale3
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Scl,
 				Dim,
@@ -22861,9 +22861,9 @@ namespace IFC.IFC4x3
 				Scl3
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -22936,9 +22936,9 @@ namespace IFC.IFC4x3
 		{
 			this.Thickness = Thickness;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -22946,15 +22946,15 @@ namespace IFC.IFC4x3
 				Thickness
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -23001,9 +23001,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -23016,15 +23016,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -23094,9 +23094,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -23110,15 +23110,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -23172,9 +23172,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -23187,15 +23187,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -23263,9 +23263,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -23279,15 +23279,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -23335,24 +23335,24 @@ namespace IFC.IFC4x3
 		{
 			this.Radius = Radius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				Radius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -23395,9 +23395,9 @@ namespace IFC.IFC4x3
 		{
 			this.WallThickness = WallThickness;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -23406,15 +23406,15 @@ namespace IFC.IFC4x3
 				WallThickness
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -23457,9 +23457,9 @@ namespace IFC.IFC4x3
 		{
 			this.Radius = Radius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -23467,15 +23467,15 @@ namespace IFC.IFC4x3
 				Radius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -23513,9 +23513,9 @@ namespace IFC.IFC4x3
 		public IFCCivilElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -23527,15 +23527,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -23579,9 +23579,9 @@ namespace IFC.IFC4x3
 		public IFCCivilElementType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -23594,15 +23594,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -23655,9 +23655,9 @@ namespace IFC.IFC4x3
 			this.Specification = Specification;
 			this.ReferenceTokens = ReferenceTokens;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Source,
 				Edition,
@@ -23668,15 +23668,15 @@ namespace IFC.IFC4x3
 				ReferenceTokens
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ClassificationForObjects,
 				HasReferences
@@ -23884,9 +23884,9 @@ namespace IFC.IFC4x3
 			this.Description = Description;
 			this.Sort = Sort;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Location,
 				Identification,
@@ -23896,15 +23896,15 @@ namespace IFC.IFC4x3
 				Sort
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ExternalReferenceForResources,
 				ClassificationRefForObjects,
@@ -24011,22 +24011,22 @@ namespace IFC.IFC4x3
 		public IFCClosedShell(IFC_Attributes<IFCFace>? CfsFaces) : base (CfsFaces)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				CfsFaces
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -24049,24 +24049,24 @@ namespace IFC.IFC4x3
 		{
 			this.ClothoidConstant = ClothoidConstant;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				ClothoidConstant
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -24113,9 +24113,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -24128,15 +24128,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -24206,9 +24206,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -24222,15 +24222,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -24284,9 +24284,9 @@ namespace IFC.IFC4x3
 			this.Green = Green;
 			this.Blue = Blue;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Red,
@@ -24294,15 +24294,15 @@ namespace IFC.IFC4x3
 				Blue
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -24377,22 +24377,22 @@ namespace IFC.IFC4x3
 		{
 			this.ColourList = ColourList;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ColourList
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -24462,22 +24462,22 @@ namespace IFC.IFC4x3
 		{
 			this.Name = Name;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -24522,9 +24522,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -24537,15 +24537,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -24613,9 +24613,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -24629,15 +24629,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -24691,9 +24691,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -24706,15 +24706,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -24784,9 +24784,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -24800,15 +24800,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -24862,9 +24862,9 @@ namespace IFC.IFC4x3
 			this.UsageName = UsageName;
 			this.HasProperties = HasProperties;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Specification,
@@ -24872,15 +24872,15 @@ namespace IFC.IFC4x3
 				HasProperties
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfPset,
@@ -24969,9 +24969,9 @@ namespace IFC.IFC4x3
 			this.TemplateType = TemplateType;
 			this.HasPropertyTemplates = HasPropertyTemplates;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -24982,15 +24982,15 @@ namespace IFC.IFC4x3
 				HasPropertyTemplates
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -25118,26 +25118,26 @@ namespace IFC.IFC4x3
 			this.Segments = Segments;
 			this.SelfIntersect = SelfIntersect;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Segments,
 				SelfIntersect
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				NSegments,
 				ClosedCurve
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -25239,17 +25239,17 @@ namespace IFC.IFC4x3
 		public IFCCompositeCurveOnSurface(IFC_Attributes<IFCSegment>? Segments, IFCLogical? SelfIntersect) : base (Segments, SelfIntersect)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Segments,
 				SelfIntersect
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				NSegments,
@@ -25257,9 +25257,9 @@ namespace IFC.IFC4x3
 				BasisSurface
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -25305,25 +25305,25 @@ namespace IFC.IFC4x3
 			this.SameSense = SameSense;
 			this.ParentCurve = ParentCurve;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Transition,
 				SameSense,
 				ParentCurve
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -25389,9 +25389,9 @@ namespace IFC.IFC4x3
 			this.Profiles = Profiles;
 			this.Label = Label;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -25399,15 +25399,15 @@ namespace IFC.IFC4x3
 				Label
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -25488,9 +25488,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -25503,15 +25503,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -25581,9 +25581,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -25597,15 +25597,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -25659,9 +25659,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -25674,15 +25674,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -25752,9 +25752,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -25768,15 +25768,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -25827,23 +25827,23 @@ namespace IFC.IFC4x3
 		{
 			this.Position = Position;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -25887,22 +25887,22 @@ namespace IFC.IFC4x3
 		{
 			this.CfsFaces = CfsFaces;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				CfsFaces
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -25962,23 +25962,23 @@ namespace IFC.IFC4x3
 			this.CurveOnRelatingElement = CurveOnRelatingElement;
 			this.CurveOnRelatedElement = CurveOnRelatedElement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				CurveOnRelatingElement,
 				CurveOnRelatedElement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -26033,21 +26033,21 @@ namespace IFC.IFC4x3
 		public IFCConnectionGeometry() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -26074,9 +26074,9 @@ namespace IFC.IFC4x3
 			this.EccentricityInY = EccentricityInY;
 			this.EccentricityInZ = EccentricityInZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				PointOnRelatingElement,
 				PointOnRelatedElement,
@@ -26085,15 +26085,15 @@ namespace IFC.IFC4x3
 				EccentricityInZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -26173,23 +26173,23 @@ namespace IFC.IFC4x3
 			this.PointOnRelatingElement = PointOnRelatingElement;
 			this.PointOnRelatedElement = PointOnRelatedElement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				PointOnRelatingElement,
 				PointOnRelatedElement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -26249,23 +26249,23 @@ namespace IFC.IFC4x3
 			this.SurfaceOnRelatingElement = SurfaceOnRelatingElement;
 			this.SurfaceOnRelatedElement = SurfaceOnRelatedElement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SurfaceOnRelatingElement,
 				SurfaceOnRelatedElement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -26325,23 +26325,23 @@ namespace IFC.IFC4x3
 			this.VolumeOnRelatingElement = VolumeOnRelatingElement;
 			this.VolumeOnRelatedElement = VolumeOnRelatedElement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				VolumeOnRelatingElement,
 				VolumeOnRelatedElement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -26426,9 +26426,9 @@ namespace IFC.IFC4x3
 			this.CreationTime = CreationTime;
 			this.UserDefinedGrade = UserDefinedGrade;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -26439,15 +26439,15 @@ namespace IFC.IFC4x3
 				UserDefinedGrade
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PropertiesForConstraint
@@ -26632,9 +26632,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -26649,15 +26649,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -26711,9 +26711,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -26729,15 +26729,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -26789,9 +26789,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -26806,15 +26806,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -26868,9 +26868,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -26886,15 +26886,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -26946,9 +26946,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -26963,15 +26963,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -27025,9 +27025,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -27043,15 +27043,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -27110,9 +27110,9 @@ namespace IFC.IFC4x3
 			this.BaseCosts = BaseCosts;
 			this.BaseQuantity = BaseQuantity;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -27126,15 +27126,15 @@ namespace IFC.IFC4x3
 				BaseQuantity
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -27193,9 +27193,9 @@ namespace IFC.IFC4x3
 			this.BaseCosts = BaseCosts;
 			this.BaseQuantity = BaseQuantity;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -27210,15 +27210,15 @@ namespace IFC.IFC4x3
 				BaseQuantity
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -27268,9 +27268,9 @@ namespace IFC.IFC4x3
 			this.RepresentationContexts = RepresentationContexts;
 			this.UnitsInContext = UnitsInContext;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -27283,15 +27283,15 @@ namespace IFC.IFC4x3
 				UnitsInContext
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -27462,24 +27462,24 @@ namespace IFC.IFC4x3
 		{
 			this.Name = Name;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dimensions,
 				UnitType,
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference
 			};
@@ -27547,9 +27547,9 @@ namespace IFC.IFC4x3
 		{
 			this.Identification = Identification;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -27559,15 +27559,15 @@ namespace IFC.IFC4x3
 				Identification
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -27640,9 +27640,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -27655,15 +27655,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -27733,9 +27733,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -27749,15 +27749,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -27813,9 +27813,9 @@ namespace IFC.IFC4x3
 			this.Name = Name;
 			this.ConversionFactor = ConversionFactor;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dimensions,
 				UnitType,
@@ -27823,15 +27823,15 @@ namespace IFC.IFC4x3
 				ConversionFactor
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference
 			};
@@ -27905,9 +27905,9 @@ namespace IFC.IFC4x3
 		{
 			this.ConversionOffset = ConversionOffset;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dimensions,
 				UnitType,
@@ -27916,15 +27916,15 @@ namespace IFC.IFC4x3
 				ConversionOffset
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference
 			};
@@ -27970,9 +27970,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -27985,15 +27985,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -28063,9 +28063,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -28079,15 +28079,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -28141,9 +28141,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -28156,15 +28156,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -28234,9 +28234,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -28250,15 +28250,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -28312,9 +28312,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -28327,15 +28327,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -28405,9 +28405,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -28421,15 +28421,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -28482,23 +28482,23 @@ namespace IFC.IFC4x3
 			this.SourceCRS = SourceCRS;
 			this.TargetCRS = TargetCRS;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SourceCRS,
 				TargetCRS
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -28570,24 +28570,24 @@ namespace IFC.IFC4x3
 			this.Description = Description;
 			this.GeodeticDatum = GeodeticDatum;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
 				GeodeticDatum
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasCoordinateOperation,
 				WellKnownText
@@ -28699,25 +28699,25 @@ namespace IFC.IFC4x3
 			this.CosineTerm = CosineTerm;
 			this.ConstantTerm = ConstantTerm;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				CosineTerm,
 				ConstantTerm
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -28782,9 +28782,9 @@ namespace IFC.IFC4x3
 			this.CostValues = CostValues;
 			this.CostQuantities = CostQuantities;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -28797,15 +28797,15 @@ namespace IFC.IFC4x3
 				CostQuantities
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -28933,9 +28933,9 @@ namespace IFC.IFC4x3
 			this.SubmittedOn = SubmittedOn;
 			this.UpdateDate = UpdateDate;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -28949,15 +28949,15 @@ namespace IFC.IFC4x3
 				UpdateDate
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -29059,9 +29059,9 @@ namespace IFC.IFC4x3
 		public IFCCostValue(IFCLabel? Name, IFCText? Description, IFCAppliedValueSelect? AppliedValue, IFCMeasureWithUnit? UnitBasis, IFCDate? ApplicableDate, IFCDate? FixedUntilDate, IFCLabel? Category, IFCLabel? Condition, IFCArithmeticOperatorEnum? ArithmeticOperator, IFC_Attributes<IFCAppliedValue>? Components) : base (Name, Description, AppliedValue, UnitBasis, ApplicableDate, FixedUntilDate, Category, Condition, ArithmeticOperator, Components)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -29075,15 +29075,15 @@ namespace IFC.IFC4x3
 				Components
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference
 			};
@@ -29111,9 +29111,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -29126,15 +29126,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -29202,9 +29202,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -29218,15 +29218,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -29285,9 +29285,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -29300,15 +29300,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -29410,9 +29410,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -29426,15 +29426,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -29486,9 +29486,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -29503,15 +29503,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -29565,9 +29565,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -29583,15 +29583,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -29657,23 +29657,23 @@ namespace IFC.IFC4x3
 		{
 			this.Position = Position;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -29721,23 +29721,23 @@ namespace IFC.IFC4x3
 		{
 			this.TreeRootExpression = TreeRootExpression;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				TreeRootExpression
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -29790,9 +29790,9 @@ namespace IFC.IFC4x3
 			this.RateDateTime = RateDateTime;
 			this.RateSource = RateSource;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -29803,15 +29803,15 @@ namespace IFC.IFC4x3
 				RateSource
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -29928,9 +29928,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -29943,15 +29943,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -30019,9 +30019,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -30035,15 +30035,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -30106,22 +30106,22 @@ namespace IFC.IFC4x3
 		public IFCCurve() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -30157,25 +30157,25 @@ namespace IFC.IFC4x3
 			this.OuterBoundary = OuterBoundary;
 			this.InnerBoundaries = InnerBoundaries;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BasisSurface,
 				OuterBoundary,
 				InnerBoundaries
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -30274,25 +30274,25 @@ namespace IFC.IFC4x3
 			this.Boundaries = Boundaries;
 			this.ImplicitOuter = ImplicitOuter;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BasisSurface,
 				Boundaries,
 				ImplicitOuter
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -30394,9 +30394,9 @@ namespace IFC.IFC4x3
 			this.SegmentLength = SegmentLength;
 			this.ParentCurve = ParentCurve;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Transition,
 				Placement,
@@ -30405,16 +30405,16 @@ namespace IFC.IFC4x3
 				ParentCurve
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -30525,9 +30525,9 @@ namespace IFC.IFC4x3
 			this.CurveColour = CurveColour;
 			this.ModelOrDraughting = ModelOrDraughting;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				CurveFont,
@@ -30536,15 +30536,15 @@ namespace IFC.IFC4x3
 				ModelOrDraughting
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -30640,23 +30640,23 @@ namespace IFC.IFC4x3
 			this.Name = Name;
 			this.PatternList = PatternList;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				PatternList
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -30735,24 +30735,24 @@ namespace IFC.IFC4x3
 			this.CurveStyleFont = CurveStyleFont;
 			this.CurveFontScaling = CurveFontScaling;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				CurveStyleFont,
 				CurveFontScaling
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -30832,23 +30832,23 @@ namespace IFC.IFC4x3
 			this.VisibleSegmentLength = VisibleSegmentLength;
 			this.InvisibleSegmentLength = InvisibleSegmentLength;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				VisibleSegmentLength,
 				InvisibleSegmentLength
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -30905,24 +30905,24 @@ namespace IFC.IFC4x3
 		{
 			this.Radius = Radius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				Radius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -30969,9 +30969,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -30984,15 +30984,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -31062,9 +31062,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -31078,15 +31078,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -31137,9 +31137,9 @@ namespace IFC.IFC4x3
 		public IFCDeepFoundation(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -31151,15 +31151,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -31206,9 +31206,9 @@ namespace IFC.IFC4x3
 		public IFCDeepFoundationType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -31221,15 +31221,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -31269,9 +31269,9 @@ namespace IFC.IFC4x3
 			this.Operator = Operator;
 			this.Label = Label;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -31280,15 +31280,15 @@ namespace IFC.IFC4x3
 				Label
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -31390,9 +31390,9 @@ namespace IFC.IFC4x3
 			this.UserDefinedType = UserDefinedType;
 			this.Name = Name;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Elements,
 				UnitType,
@@ -31400,16 +31400,16 @@ namespace IFC.IFC4x3
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dimensions
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -31527,23 +31527,23 @@ namespace IFC.IFC4x3
 			this.Unit = Unit;
 			this.Exponent = Exponent;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Unit,
 				Exponent
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -31617,9 +31617,9 @@ namespace IFC.IFC4x3
 			this.AmountOfSubstanceExponent = AmountOfSubstanceExponent;
 			this.LuminousIntensityExponent = LuminousIntensityExponent;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LengthExponent,
 				MassExponent,
@@ -31630,15 +31630,15 @@ namespace IFC.IFC4x3
 				LuminousIntensityExponent
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -31799,23 +31799,23 @@ namespace IFC.IFC4x3
 		{
 			this.DirectionRatios = DirectionRatios;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				DirectionRatios
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -31891,9 +31891,9 @@ namespace IFC.IFC4x3
 			this.StartParam = StartParam;
 			this.EndParam = EndParam;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SweptArea,
 				Position,
@@ -31902,16 +31902,16 @@ namespace IFC.IFC4x3
 				EndParam
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -31985,9 +31985,9 @@ namespace IFC.IFC4x3
 		public IFCDirectrixDerivedReferenceSweptAreaSolid(IFCProfileDef? SweptArea, IFCAxis2Placement3D? Position, IFCCurve? Directrix, IFCCurveMeasureSelect? StartParam, IFCCurveMeasureSelect? EndParam, IFCDirection? FixedReference) : base (SweptArea, Position, Directrix, StartParam, EndParam, FixedReference)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SweptArea,
 				Position,
@@ -31997,16 +31997,16 @@ namespace IFC.IFC4x3
 				FixedReference
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -32035,9 +32035,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -32050,15 +32050,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -32126,9 +32126,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -32142,15 +32142,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -32204,9 +32204,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -32219,15 +32219,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -32297,9 +32297,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -32313,15 +32313,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -32375,9 +32375,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -32390,15 +32390,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -32468,9 +32468,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -32484,15 +32484,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -32537,9 +32537,9 @@ namespace IFC.IFC4x3
 		public IFCDistributionCircuit(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCLabel? LongName, IFCDistributionSystemEnum? PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, LongName, PredefinedType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -32550,15 +32550,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -32602,9 +32602,9 @@ namespace IFC.IFC4x3
 		public IFCDistributionControlElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -32616,15 +32616,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -32694,9 +32694,9 @@ namespace IFC.IFC4x3
 		public IFCDistributionControlElementType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -32709,15 +32709,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -32750,9 +32750,9 @@ namespace IFC.IFC4x3
 		public IFCDistributionElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -32764,15 +32764,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -32836,9 +32836,9 @@ namespace IFC.IFC4x3
 		public IFCDistributionElementType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -32851,15 +32851,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -32899,9 +32899,9 @@ namespace IFC.IFC4x3
 		public IFCDistributionFlowElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -32913,15 +32913,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -32993,9 +32993,9 @@ namespace IFC.IFC4x3
 		public IFCDistributionFlowElementType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -33008,15 +33008,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -33052,9 +33052,9 @@ namespace IFC.IFC4x3
 			this.PredefinedType = PredefinedType;
 			this.SystemType = SystemType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -33068,15 +33068,15 @@ namespace IFC.IFC4x3
 				SystemType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -33177,9 +33177,9 @@ namespace IFC.IFC4x3
 			this.LongName = LongName;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -33190,15 +33190,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -33327,9 +33327,9 @@ namespace IFC.IFC4x3
 			this.Confidentiality = Confidentiality;
 			this.Status = Status;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Identification,
 				Name,
@@ -33350,15 +33350,15 @@ namespace IFC.IFC4x3
 				Status
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				DocumentInfoForObjects,
 				HasDocumentReferences,
@@ -33775,9 +33775,9 @@ namespace IFC.IFC4x3
 			this.RelatedDocuments = RelatedDocuments;
 			this.RelationshipType = RelationshipType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -33786,15 +33786,15 @@ namespace IFC.IFC4x3
 				RelationshipType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -33893,9 +33893,9 @@ namespace IFC.IFC4x3
 			this.Description = Description;
 			this.ReferencedDocument = ReferencedDocument;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Location,
 				Identification,
@@ -33904,15 +33904,15 @@ namespace IFC.IFC4x3
 				ReferencedDocument
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ExternalReferenceForResources,
 				DocumentRefForObjects
@@ -34005,9 +34005,9 @@ namespace IFC.IFC4x3
 			this.OperationType = OperationType;
 			this.UserDefinedOperationType = UserDefinedOperationType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -34024,15 +34024,15 @@ namespace IFC.IFC4x3
 				UserDefinedOperationType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -34215,9 +34215,9 @@ namespace IFC.IFC4x3
 			this.LiningToPanelOffsetX = LiningToPanelOffsetX;
 			this.LiningToPanelOffsetY = LiningToPanelOffsetY;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -34238,15 +34238,15 @@ namespace IFC.IFC4x3
 				LiningToPanelOffsetY
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -34522,9 +34522,9 @@ namespace IFC.IFC4x3
 			this.PanelPosition = PanelPosition;
 			this.ShapeAspectStyle = ShapeAspectStyle;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -34537,15 +34537,15 @@ namespace IFC.IFC4x3
 				ShapeAspectStyle
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -34673,9 +34673,9 @@ namespace IFC.IFC4x3
 			this.ParameterTakesPrecedence = ParameterTakesPrecedence;
 			this.UserDefinedOperationType = UserDefinedOperationType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -34692,15 +34692,15 @@ namespace IFC.IFC4x3
 				UserDefinedOperationType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -34802,22 +34802,22 @@ namespace IFC.IFC4x3
 		public IFCDraughtingPreDefinedColour(IFCLabel? Name) : base (Name)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -34843,22 +34843,22 @@ namespace IFC.IFC4x3
 		public IFCDraughtingPreDefinedCurveFont(IFCLabel? Name) : base (Name)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -34885,9 +34885,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -34900,15 +34900,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -34978,9 +34978,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -34994,15 +34994,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -35056,9 +35056,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -35071,15 +35071,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -35149,9 +35149,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -35165,15 +35165,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -35227,9 +35227,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -35242,15 +35242,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -35320,9 +35320,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -35336,15 +35336,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -35396,9 +35396,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -35411,15 +35411,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -35485,9 +35485,9 @@ namespace IFC.IFC4x3
 		public IFCEarthworksElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -35499,15 +35499,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -35558,9 +35558,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -35573,15 +35573,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -35653,23 +35653,23 @@ namespace IFC.IFC4x3
 			this.EdgeStart = EdgeStart;
 			this.EdgeEnd = EdgeEnd;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				EdgeStart,
 				EdgeEnd
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -35731,9 +35731,9 @@ namespace IFC.IFC4x3
 			this.EdgeGeometry = EdgeGeometry;
 			this.SameSense = SameSense;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				EdgeStart,
 				EdgeEnd,
@@ -35741,15 +35741,15 @@ namespace IFC.IFC4x3
 				SameSense
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -35823,23 +35823,23 @@ namespace IFC.IFC4x3
 		{
 			this.EdgeList = EdgeList;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				EdgeList
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Ne
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -35909,9 +35909,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -35924,15 +35924,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -36002,9 +36002,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -36018,15 +36018,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -36080,9 +36080,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -36095,15 +36095,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -36173,9 +36173,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -36189,15 +36189,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -36251,9 +36251,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -36266,15 +36266,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -36344,9 +36344,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -36360,15 +36360,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -36422,9 +36422,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -36437,15 +36437,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -36515,9 +36515,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -36531,15 +36531,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -36593,9 +36593,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -36608,15 +36608,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -36686,9 +36686,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -36702,15 +36702,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -36764,9 +36764,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -36779,15 +36779,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -36857,9 +36857,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -36873,15 +36873,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -36935,9 +36935,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -36950,15 +36950,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -37028,9 +37028,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -37044,15 +37044,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -37137,9 +37137,9 @@ namespace IFC.IFC4x3
 		{
 			this.Tag = Tag;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -37151,15 +37151,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -37425,9 +37425,9 @@ namespace IFC.IFC4x3
 			this.AssemblyPlace = AssemblyPlace;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -37441,15 +37441,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -37535,9 +37535,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -37551,15 +37551,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -37614,9 +37614,9 @@ namespace IFC.IFC4x3
 		public IFCElementComponent(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -37628,15 +37628,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -37690,9 +37690,9 @@ namespace IFC.IFC4x3
 		public IFCElementComponentType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -37705,15 +37705,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -37748,9 +37748,9 @@ namespace IFC.IFC4x3
 			this.MethodOfMeasurement = MethodOfMeasurement;
 			this.Quantities = Quantities;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -37760,15 +37760,15 @@ namespace IFC.IFC4x3
 				Quantities
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -37855,9 +37855,9 @@ namespace IFC.IFC4x3
 		{
 			this.ElementType = ElementType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -37870,15 +37870,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -37931,23 +37931,23 @@ namespace IFC.IFC4x3
 		{
 			this.Position = Position;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -37991,25 +37991,25 @@ namespace IFC.IFC4x3
 			this.SemiAxis1 = SemiAxis1;
 			this.SemiAxis2 = SemiAxis2;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				SemiAxis1,
 				SemiAxis2
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -38071,9 +38071,9 @@ namespace IFC.IFC4x3
 			this.SemiAxis1 = SemiAxis1;
 			this.SemiAxis2 = SemiAxis2;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -38082,15 +38082,15 @@ namespace IFC.IFC4x3
 				SemiAxis2
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -38167,9 +38167,9 @@ namespace IFC.IFC4x3
 		public IFCEnergyConversionDevice(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -38181,15 +38181,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -38256,9 +38256,9 @@ namespace IFC.IFC4x3
 		public IFCEnergyConversionDeviceType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -38271,15 +38271,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -38315,9 +38315,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -38330,15 +38330,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -38408,9 +38408,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -38424,15 +38424,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -38486,9 +38486,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -38501,15 +38501,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -38579,9 +38579,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -38595,15 +38595,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -38657,9 +38657,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -38672,15 +38672,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -38750,9 +38750,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -38766,15 +38766,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -38834,9 +38834,9 @@ namespace IFC.IFC4x3
 			this.UserDefinedEventTriggerType = UserDefinedEventTriggerType;
 			this.EventOccurenceTime = EventOccurenceTime;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -38851,15 +38851,15 @@ namespace IFC.IFC4x3
 				EventOccurenceTime
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -38975,9 +38975,9 @@ namespace IFC.IFC4x3
 			this.LateDate = LateDate;
 			this.ScheduleDate = ScheduleDate;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				DataOrigin,
@@ -38988,15 +38988,15 @@ namespace IFC.IFC4x3
 				ScheduleDate
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -39098,9 +39098,9 @@ namespace IFC.IFC4x3
 			this.EventTriggerType = EventTriggerType;
 			this.UserDefinedEventTriggerType = UserDefinedEventTriggerType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -39116,15 +39116,15 @@ namespace IFC.IFC4x3
 				UserDefinedEventTriggerType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -39217,24 +39217,24 @@ namespace IFC.IFC4x3
 			this.Description = Description;
 			this.Properties = Properties;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
 				Properties
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences
 			};
@@ -39323,21 +39323,21 @@ namespace IFC.IFC4x3
 		public IFCExternalInformation() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -39375,24 +39375,24 @@ namespace IFC.IFC4x3
 			this.Identification = Identification;
 			this.Name = Name;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Location,
 				Identification,
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ExternalReferenceForResources
 			};
@@ -39487,9 +39487,9 @@ namespace IFC.IFC4x3
 			this.RelatingReference = RelatingReference;
 			this.RelatedResourceObjects = RelatedResourceObjects;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -39497,15 +39497,15 @@ namespace IFC.IFC4x3
 				RelatedResourceObjects
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -39581,9 +39581,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -39596,15 +39596,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -39678,9 +39678,9 @@ namespace IFC.IFC4x3
 		public IFCExternalSpatialStructureElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCLabel? LongName) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, LongName)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -39692,15 +39692,15 @@ namespace IFC.IFC4x3
 				LongName
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -39737,24 +39737,24 @@ namespace IFC.IFC4x3
 		public IFCExternallyDefinedHatchStyle(IFCURIReference? Location, IFCIdentifier? Identification, IFCLabel? Name) : base (Location, Identification, Name)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Location,
 				Identification,
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ExternalReferenceForResources
 			};
@@ -39773,24 +39773,24 @@ namespace IFC.IFC4x3
 		public IFCExternallyDefinedSurfaceStyle(IFCURIReference? Location, IFCIdentifier? Identification, IFCLabel? Name) : base (Location, Identification, Name)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Location,
 				Identification,
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ExternalReferenceForResources
 			};
@@ -39809,24 +39809,24 @@ namespace IFC.IFC4x3
 		public IFCExternallyDefinedTextFont(IFCURIReference? Location, IFCIdentifier? Identification, IFCLabel? Name) : base (Location, Identification, Name)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Location,
 				Identification,
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ExternalReferenceForResources
 			};
@@ -39855,9 +39855,9 @@ namespace IFC.IFC4x3
 			this.ExtrudedDirection = ExtrudedDirection;
 			this.Depth = Depth;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SweptArea,
 				Position,
@@ -39865,16 +39865,16 @@ namespace IFC.IFC4x3
 				Depth
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -39935,9 +39935,9 @@ namespace IFC.IFC4x3
 		{
 			this.EndSweptArea = EndSweptArea;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SweptArea,
 				Position,
@@ -39946,16 +39946,16 @@ namespace IFC.IFC4x3
 				EndSweptArea
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -40003,22 +40003,22 @@ namespace IFC.IFC4x3
 		{
 			this.Bounds = Bounds;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Bounds
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -40104,23 +40104,23 @@ namespace IFC.IFC4x3
 		{
 			this.FbsmFaces = FbsmFaces;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				FbsmFaces
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -40189,23 +40189,23 @@ namespace IFC.IFC4x3
 			this.Bound = Bound;
 			this.Orientation = Orientation;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Bound,
 				Orientation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -40261,23 +40261,23 @@ namespace IFC.IFC4x3
 		public IFCFaceOuterBound(IFCLoop? Bound, IFCBoolean? Orientation) : base (Bound, Orientation)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Bound,
 				Orientation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -40305,24 +40305,24 @@ namespace IFC.IFC4x3
 			this.FaceSurface = FaceSurface;
 			this.SameSense = SameSense;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Bounds,
 				FaceSurface,
 				SameSense
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -40381,23 +40381,23 @@ namespace IFC.IFC4x3
 		public IFCFacetedBrep(IFCClosedShell? Outer) : base (Outer)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Outer
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -40420,24 +40420,24 @@ namespace IFC.IFC4x3
 		{
 			this.Voids = Voids;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Outer,
 				Voids
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -40497,9 +40497,9 @@ namespace IFC.IFC4x3
 		public IFCFacility(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCLabel? LongName, IFCElementCompositionEnum? CompositionType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, LongName, CompositionType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -40512,15 +40512,15 @@ namespace IFC.IFC4x3
 				CompositionType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -40566,9 +40566,9 @@ namespace IFC.IFC4x3
 		{
 			this.UsageType = UsageType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -40582,15 +40582,15 @@ namespace IFC.IFC4x3
 				UsageType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -40652,9 +40652,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -40669,15 +40669,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -40750,9 +40750,9 @@ namespace IFC.IFC4x3
 			this.CompressionFailureY = CompressionFailureY;
 			this.CompressionFailureZ = CompressionFailureZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				TensionFailureX,
@@ -40763,15 +40763,15 @@ namespace IFC.IFC4x3
 				CompressionFailureZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -40906,9 +40906,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -40921,15 +40921,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -40999,9 +40999,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -41015,15 +41015,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -41077,9 +41077,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -41092,15 +41092,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -41168,9 +41168,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -41184,15 +41184,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -41243,9 +41243,9 @@ namespace IFC.IFC4x3
 		public IFCFeatureElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -41257,15 +41257,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -41314,9 +41314,9 @@ namespace IFC.IFC4x3
 		public IFCFeatureElementAddition(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -41328,15 +41328,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -41398,9 +41398,9 @@ namespace IFC.IFC4x3
 		public IFCFeatureElementSubtraction(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -41412,15 +41412,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -41488,24 +41488,24 @@ namespace IFC.IFC4x3
 			this.FillStyles = FillStyles;
 			this.ModelOrDraughting = ModelOrDraughting;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				FillStyles,
 				ModelOrDraughting
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -41594,9 +41594,9 @@ namespace IFC.IFC4x3
 			this.PatternStart = PatternStart;
 			this.HatchLineAngle = HatchLineAngle;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HatchLineAppearance,
 				StartOfNextHatchLine,
@@ -41605,15 +41605,15 @@ namespace IFC.IFC4x3
 				HatchLineAngle
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -41732,24 +41732,24 @@ namespace IFC.IFC4x3
 			this.Tiles = Tiles;
 			this.TilingScale = TilingScale;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				TilingPattern,
 				Tiles,
 				TilingScale
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -41864,9 +41864,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -41879,15 +41879,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -41957,9 +41957,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -41973,15 +41973,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -42035,9 +42035,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -42050,15 +42050,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -42128,9 +42128,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -42144,15 +42144,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -42202,9 +42202,9 @@ namespace IFC.IFC4x3
 		{
 			this.FixedReference = FixedReference;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SweptArea,
 				Position,
@@ -42214,16 +42214,16 @@ namespace IFC.IFC4x3
 				FixedReference
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -42271,9 +42271,9 @@ namespace IFC.IFC4x3
 		public IFCFlowController(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -42285,15 +42285,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -42349,9 +42349,9 @@ namespace IFC.IFC4x3
 		public IFCFlowControllerType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -42364,15 +42364,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -42405,9 +42405,9 @@ namespace IFC.IFC4x3
 		public IFCFlowFitting(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -42419,15 +42419,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -42479,9 +42479,9 @@ namespace IFC.IFC4x3
 		public IFCFlowFittingType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -42494,15 +42494,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -42538,9 +42538,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -42553,15 +42553,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -42631,9 +42631,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -42647,15 +42647,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -42709,9 +42709,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -42724,15 +42724,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -42802,9 +42802,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -42818,15 +42818,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -42875,9 +42875,9 @@ namespace IFC.IFC4x3
 		public IFCFlowMovingDevice(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -42889,15 +42889,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -42947,9 +42947,9 @@ namespace IFC.IFC4x3
 		public IFCFlowMovingDeviceType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -42962,15 +42962,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43003,9 +43003,9 @@ namespace IFC.IFC4x3
 		public IFCFlowSegment(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43017,15 +43017,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43077,9 +43077,9 @@ namespace IFC.IFC4x3
 		public IFCFlowSegmentType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43092,15 +43092,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43130,9 +43130,9 @@ namespace IFC.IFC4x3
 		public IFCFlowStorageDevice(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43144,15 +43144,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43201,9 +43201,9 @@ namespace IFC.IFC4x3
 		public IFCFlowStorageDeviceType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43216,15 +43216,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43268,9 +43268,9 @@ namespace IFC.IFC4x3
 		public IFCFlowTerminal(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43282,15 +43282,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43353,9 +43353,9 @@ namespace IFC.IFC4x3
 		public IFCFlowTerminalType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43368,15 +43368,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43408,9 +43408,9 @@ namespace IFC.IFC4x3
 		public IFCFlowTreatmentDevice(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43422,15 +43422,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43481,9 +43481,9 @@ namespace IFC.IFC4x3
 		public IFCFlowTreatmentDeviceType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43496,15 +43496,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43540,9 +43540,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43555,15 +43555,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43631,9 +43631,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43647,15 +43647,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43703,9 +43703,9 @@ namespace IFC.IFC4x3
 		public IFCFurnishingElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43717,15 +43717,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43772,9 +43772,9 @@ namespace IFC.IFC4x3
 		public IFCFurnishingElementType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43787,15 +43787,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43831,9 +43831,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43846,15 +43846,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -43926,9 +43926,9 @@ namespace IFC.IFC4x3
 			this.AssemblyPlace = AssemblyPlace;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -43943,15 +43943,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -44026,9 +44026,9 @@ namespace IFC.IFC4x3
 			this.AngleUnit = AngleUnit;
 			this.HeightUnit = HeightUnit;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -44038,15 +44038,15 @@ namespace IFC.IFC4x3
 				HeightUnit
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasCoordinateOperation,
 				WellKnownText
@@ -44129,9 +44129,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -44144,15 +44144,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -44220,9 +44220,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -44236,15 +44236,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -44292,23 +44292,23 @@ namespace IFC.IFC4x3
 		public IFCGeometricCurveSet(IFC_Attributes<IFCGeometricSetSelect>? Elements) : base (Elements)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Elements
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -44349,9 +44349,9 @@ namespace IFC.IFC4x3
 			this.WorldCoordinateSystem = WorldCoordinateSystem;
 			this.TrueNorth = TrueNorth;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ContextIdentifier,
 				ContextType,
@@ -44361,15 +44361,15 @@ namespace IFC.IFC4x3
 				TrueNorth
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepresentationsInContext,
 				HasSubContexts,
@@ -44517,21 +44517,21 @@ namespace IFC.IFC4x3
 		public IFCGeometricRepresentationItem() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -44613,9 +44613,9 @@ namespace IFC.IFC4x3
 			this.TargetView = TargetView;
 			this.UserDefinedTargetView = UserDefinedTargetView;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ContextIdentifier,
 				ContextType,
@@ -44629,9 +44629,9 @@ namespace IFC.IFC4x3
 				UserDefinedTargetView
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				WorldCoordinateSystem,
 				CoordinateSpaceDimension,
@@ -44639,9 +44639,9 @@ namespace IFC.IFC4x3
 				Precision
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepresentationsInContext,
 				HasSubContexts,
@@ -44783,23 +44783,23 @@ namespace IFC.IFC4x3
 		{
 			this.Elements = Elements;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Elements
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -44860,9 +44860,9 @@ namespace IFC.IFC4x3
 		public IFCGeomodel(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -44874,15 +44874,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -44926,9 +44926,9 @@ namespace IFC.IFC4x3
 		public IFCGeoslice(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -44940,15 +44940,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -44996,9 +44996,9 @@ namespace IFC.IFC4x3
 		public IFCGeotechnicalAssembly(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -45010,15 +45010,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -45065,9 +45065,9 @@ namespace IFC.IFC4x3
 		public IFCGeotechnicalElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -45079,15 +45079,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -45138,9 +45138,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -45153,15 +45153,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -45229,9 +45229,9 @@ namespace IFC.IFC4x3
 			this.BaseCurve = BaseCurve;
 			this.EndPoint = EndPoint;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Segments,
 				SelfIntersect,
@@ -45239,18 +45239,18 @@ namespace IFC.IFC4x3
 				EndPoint
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				NSegments,
 				ClosedCurve
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -45318,9 +45318,9 @@ namespace IFC.IFC4x3
 			this.WAxes = WAxes;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -45335,15 +45335,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -45517,24 +45517,24 @@ namespace IFC.IFC4x3
 			this.AxisCurve = AxisCurve;
 			this.SameSense = SameSense;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AxisTag,
 				AxisCurve,
 				SameSense
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				PartOfW,
 				PartOfV,
@@ -45680,24 +45680,24 @@ namespace IFC.IFC4x3
 			this.PlacementLocation = PlacementLocation;
 			this.PlacementRefDirection = PlacementRefDirection;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				PlacementRelTo,
 				PlacementLocation,
 				PlacementRefDirection
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				PlacesObject,
 				ReferencedByPlacements
@@ -45764,9 +45764,9 @@ namespace IFC.IFC4x3
 		public IFCGroup(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -45775,15 +45775,15 @@ namespace IFC.IFC4x3
 				ObjectType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -45867,24 +45867,24 @@ namespace IFC.IFC4x3
 			this.BaseSurface = BaseSurface;
 			this.AgreementFlag = AgreementFlag;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BaseSurface,
 				AgreementFlag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -45956,9 +45956,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -45971,15 +45971,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -46049,9 +46049,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -46065,15 +46065,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -46127,9 +46127,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -46142,15 +46142,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -46220,9 +46220,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -46236,15 +46236,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -46316,9 +46316,9 @@ namespace IFC.IFC4x3
 			this.FlangeEdgeRadius = FlangeEdgeRadius;
 			this.FlangeSlope = FlangeSlope;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -46332,15 +46332,15 @@ namespace IFC.IFC4x3
 				FlangeSlope
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -46489,9 +46489,9 @@ namespace IFC.IFC4x3
 		{
 			this.URLReference = URLReference;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepeatS,
 				RepeatT,
@@ -46501,15 +46501,15 @@ namespace IFC.IFC4x3
 				URLReference
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				IsMappedBy,
 				UsedInStyles
@@ -46556,9 +46556,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -46571,15 +46571,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -46647,9 +46647,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -46663,15 +46663,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -46728,9 +46728,9 @@ namespace IFC.IFC4x3
 			this.Colours = Colours;
 			this.ColourIndex = ColourIndex;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				MappedTo,
 				Opacity,
@@ -46738,15 +46738,15 @@ namespace IFC.IFC4x3
 				ColourIndex
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -46863,25 +46863,25 @@ namespace IFC.IFC4x3
 			this.Segments = Segments;
 			this.SelfIntersect = SelfIntersect;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Points,
 				Segments,
 				SelfIntersect
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -46981,22 +46981,22 @@ namespace IFC.IFC4x3
 		{
 			this.CoordIndex = CoordIndex;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				CoordIndex
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -47087,23 +47087,23 @@ namespace IFC.IFC4x3
 		{
 			this.InnerCoordIndices = InnerCoordIndices;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				CoordIndex,
 				InnerCoordIndices
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -47175,9 +47175,9 @@ namespace IFC.IFC4x3
 		{
 			this.TexCoordIndices = TexCoordIndices;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Maps,
 				MappedTo,
@@ -47185,15 +47185,15 @@ namespace IFC.IFC4x3
 				TexCoordIndices
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -47254,24 +47254,24 @@ namespace IFC.IFC4x3
 			this.MappedTo = MappedTo;
 			this.TexCoords = TexCoords;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Maps,
 				MappedTo,
 				TexCoords
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -47328,9 +47328,9 @@ namespace IFC.IFC4x3
 		{
 			this.TexCoordIndex = TexCoordIndex;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Maps,
 				MappedTo,
@@ -47338,15 +47338,15 @@ namespace IFC.IFC4x3
 				TexCoordIndex
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -47420,9 +47420,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -47435,15 +47435,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -47513,9 +47513,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -47529,15 +47529,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -47585,26 +47585,26 @@ namespace IFC.IFC4x3
 		public IFCIntersectionCurve(IFCCurve? Curve3D, IFC_Attributes<IFCPcurve>? AssociatedGeometry, IFCPreferredSurfaceCurveRepresentation? MasterRepresentation) : base (Curve3D, AssociatedGeometry, MasterRepresentation)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Curve3D,
 				AssociatedGeometry,
 				MasterRepresentation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				BasisSurface
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -47642,9 +47642,9 @@ namespace IFC.IFC4x3
 			this.CurrentValue = CurrentValue;
 			this.OriginalValue = OriginalValue;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -47659,15 +47659,15 @@ namespace IFC.IFC4x3
 				OriginalValue
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -47825,9 +47825,9 @@ namespace IFC.IFC4x3
 		{
 			this.Values = Values;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -47840,15 +47840,15 @@ namespace IFC.IFC4x3
 				Values
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference
 			};
@@ -47906,23 +47906,23 @@ namespace IFC.IFC4x3
 			this.TimeStamp = TimeStamp;
 			this.ListValues = ListValues;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				TimeStamp,
 				ListValues
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -48001,9 +48001,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -48016,15 +48016,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -48094,9 +48094,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -48110,15 +48110,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -48172,9 +48172,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -48187,15 +48187,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -48263,9 +48263,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -48279,15 +48279,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -48352,9 +48352,9 @@ namespace IFC.IFC4x3
 			this.EdgeRadius = EdgeRadius;
 			this.LegSlope = LegSlope;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -48367,15 +48367,15 @@ namespace IFC.IFC4x3
 				LegSlope
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -48510,9 +48510,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -48527,15 +48527,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -48589,9 +48589,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -48607,15 +48607,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -48666,9 +48666,9 @@ namespace IFC.IFC4x3
 			this.LagValue = LagValue;
 			this.DurationType = DurationType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				DataOrigin,
@@ -48677,15 +48677,15 @@ namespace IFC.IFC4x3
 				DurationType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -48748,9 +48748,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -48763,15 +48763,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -48841,9 +48841,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -48857,15 +48857,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -48933,9 +48933,9 @@ namespace IFC.IFC4x3
 			this.Location = Location;
 			this.Description = Description;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Version,
@@ -48945,15 +48945,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LibraryInfoForObjects,
 				HasLibraryReferences
@@ -49125,9 +49125,9 @@ namespace IFC.IFC4x3
 			this.Language = Language;
 			this.ReferencedLibrary = ReferencedLibrary;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Location,
 				Identification,
@@ -49137,15 +49137,15 @@ namespace IFC.IFC4x3
 				ReferencedLibrary
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ExternalReferenceForResources,
 				LibraryRefForObjects
@@ -49243,24 +49243,24 @@ namespace IFC.IFC4x3
 			this.SecondaryPlaneAngle = SecondaryPlaneAngle;
 			this.LuminousIntensity = LuminousIntensity;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				MainPlaneAngle,
 				SecondaryPlaneAngle,
 				LuminousIntensity
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -49373,9 +49373,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -49388,15 +49388,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -49466,9 +49466,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -49482,15 +49482,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -49540,23 +49540,23 @@ namespace IFC.IFC4x3
 			this.LightDistributionCurve = LightDistributionCurve;
 			this.DistributionData = DistributionData;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LightDistributionCurve,
 				DistributionData
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -49643,9 +49643,9 @@ namespace IFC.IFC4x3
 			this.AmbientIntensity = AmbientIntensity;
 			this.Intensity = Intensity;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				LightColour,
@@ -49653,15 +49653,15 @@ namespace IFC.IFC4x3
 				Intensity
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -49753,9 +49753,9 @@ namespace IFC.IFC4x3
 		public IFCLightSourceAmbient(IFCLabel? Name, IFCColourRgb? LightColour, IFCNormalisedRatioMeasure? AmbientIntensity, IFCNormalisedRatioMeasure? Intensity) : base (Name, LightColour, AmbientIntensity, Intensity)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				LightColour,
@@ -49763,15 +49763,15 @@ namespace IFC.IFC4x3
 				Intensity
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -49794,9 +49794,9 @@ namespace IFC.IFC4x3
 		{
 			this.Orientation = Orientation;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				LightColour,
@@ -49805,15 +49805,15 @@ namespace IFC.IFC4x3
 				Orientation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -49869,9 +49869,9 @@ namespace IFC.IFC4x3
 			this.LightEmissionSource = LightEmissionSource;
 			this.LightDistributionDataSource = LightDistributionDataSource;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				LightColour,
@@ -49885,15 +49885,15 @@ namespace IFC.IFC4x3
 				LightDistributionDataSource
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -50038,9 +50038,9 @@ namespace IFC.IFC4x3
 			this.DistanceAttenuation = DistanceAttenuation;
 			this.QuadricAttenuation = QuadricAttenuation;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				LightColour,
@@ -50053,15 +50053,15 @@ namespace IFC.IFC4x3
 				QuadricAttenuation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -50183,9 +50183,9 @@ namespace IFC.IFC4x3
 			this.SpreadAngle = SpreadAngle;
 			this.BeamWidthAngle = BeamWidthAngle;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				LightColour,
@@ -50202,15 +50202,15 @@ namespace IFC.IFC4x3
 				BeamWidthAngle
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -50310,24 +50310,24 @@ namespace IFC.IFC4x3
 			this.Pnt = Pnt;
 			this.Dir = Dir;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Pnt,
 				Dir
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -50388,9 +50388,9 @@ namespace IFC.IFC4x3
 		public IFCLinearElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -50401,15 +50401,15 @@ namespace IFC.IFC4x3
 				Representation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -50447,24 +50447,24 @@ namespace IFC.IFC4x3
 			this.RelativePlacement = RelativePlacement;
 			this.CartesianPosition = CartesianPosition;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				PlacementRelTo,
 				RelativePlacement,
 				CartesianPosition
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				PlacesObject,
 				ReferencedByPlacements
@@ -50522,9 +50522,9 @@ namespace IFC.IFC4x3
 		public IFCLinearPositioningElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -50535,15 +50535,15 @@ namespace IFC.IFC4x3
 				Representation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -50586,9 +50586,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -50601,15 +50601,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -50679,9 +50679,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -50695,15 +50695,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -50753,23 +50753,23 @@ namespace IFC.IFC4x3
 		{
 			this.RelativePlacement = RelativePlacement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				PlacementRelTo,
 				RelativePlacement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				PlacesObject,
 				ReferencedByPlacements
@@ -50808,21 +50808,21 @@ namespace IFC.IFC4x3
 		public IFCLoop() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -50848,23 +50848,23 @@ namespace IFC.IFC4x3
 		{
 			this.Outer = Outer;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Outer
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -50924,9 +50924,9 @@ namespace IFC.IFC4x3
 			this.XAxisOrdinate = XAxisOrdinate;
 			this.Scale = Scale;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SourceCRS,
 				TargetCRS,
@@ -50938,15 +50938,15 @@ namespace IFC.IFC4x3
 				Scale
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -51081,9 +51081,9 @@ namespace IFC.IFC4x3
 			this.FactorY = FactorY;
 			this.FactorZ = FactorZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SourceCRS,
 				TargetCRS,
@@ -51098,15 +51098,15 @@ namespace IFC.IFC4x3
 				FactorZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -51184,23 +51184,23 @@ namespace IFC.IFC4x3
 			this.MappingSource = MappingSource;
 			this.MappingTarget = MappingTarget;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				MappingSource,
 				MappingTarget
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -51263,9 +51263,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -51279,15 +51279,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -51349,9 +51349,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -51366,15 +51366,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -51445,24 +51445,24 @@ namespace IFC.IFC4x3
 			this.Description = Description;
 			this.Category = Category;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
 				Category
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo,
 				HasExternalReferences,
@@ -51593,23 +51593,23 @@ namespace IFC.IFC4x3
 			this.MaterialClassifications = MaterialClassifications;
 			this.ClassifiedMaterial = ClassifiedMaterial;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				MaterialClassifications,
 				ClassifiedMaterial
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -51697,9 +51697,9 @@ namespace IFC.IFC4x3
 			this.Fraction = Fraction;
 			this.Category = Category;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -51708,15 +51708,15 @@ namespace IFC.IFC4x3
 				Category
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo,
 				HasExternalReferences,
@@ -51844,24 +51844,24 @@ namespace IFC.IFC4x3
 			this.Description = Description;
 			this.MaterialConstituents = MaterialConstituents;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
 				MaterialConstituents
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo,
 				HasExternalReferences,
@@ -51963,21 +51963,21 @@ namespace IFC.IFC4x3
 		public IFCMaterialDefinition() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo,
 				HasExternalReferences,
@@ -52053,9 +52053,9 @@ namespace IFC.IFC4x3
 		{
 			this.RepresentedMaterial = RepresentedMaterial;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -52063,15 +52063,15 @@ namespace IFC.IFC4x3
 				RepresentedMaterial
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -52135,9 +52135,9 @@ namespace IFC.IFC4x3
 			this.Category = Category;
 			this.Priority = Priority;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Material,
 				LayerThickness,
@@ -52148,15 +52148,15 @@ namespace IFC.IFC4x3
 				Priority
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo,
 				HasExternalReferences,
@@ -52332,25 +52332,25 @@ namespace IFC.IFC4x3
 			this.LayerSetName = LayerSetName;
 			this.Description = Description;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				MaterialLayers,
 				LayerSetName,
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				TotalThickness
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo,
 				HasExternalReferences,
@@ -52463,9 +52463,9 @@ namespace IFC.IFC4x3
 			this.OffsetFromReferenceLine = OffsetFromReferenceLine;
 			this.ReferenceExtent = ReferenceExtent;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ForLayerSet,
 				LayerSetDirection,
@@ -52474,15 +52474,15 @@ namespace IFC.IFC4x3
 				ReferenceExtent
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo
 			};
@@ -52597,9 +52597,9 @@ namespace IFC.IFC4x3
 			this.OffsetDirection = OffsetDirection;
 			this.OffsetValues = OffsetValues;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Material,
 				LayerThickness,
@@ -52612,15 +52612,15 @@ namespace IFC.IFC4x3
 				OffsetValues
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo,
 				HasExternalReferences,
@@ -52696,22 +52696,22 @@ namespace IFC.IFC4x3
 		{
 			this.Materials = Materials;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Materials
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -52788,9 +52788,9 @@ namespace IFC.IFC4x3
 			this.Priority = Priority;
 			this.Category = Category;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -52800,15 +52800,15 @@ namespace IFC.IFC4x3
 				Category
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo,
 				HasExternalReferences,
@@ -52957,9 +52957,9 @@ namespace IFC.IFC4x3
 			this.MaterialProfiles = MaterialProfiles;
 			this.CompositeProfile = CompositeProfile;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -52967,15 +52967,15 @@ namespace IFC.IFC4x3
 				CompositeProfile
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo,
 				HasExternalReferences,
@@ -53095,24 +53095,24 @@ namespace IFC.IFC4x3
 			this.CardinalPoint = CardinalPoint;
 			this.ReferenceExtent = ReferenceExtent;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ForProfileSet,
 				CardinalPoint,
 				ReferenceExtent
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo
 			};
@@ -53191,9 +53191,9 @@ namespace IFC.IFC4x3
 			this.ForProfileEndSet = ForProfileEndSet;
 			this.CardinalEndPoint = CardinalEndPoint;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ForProfileSet,
 				CardinalPoint,
@@ -53202,15 +53202,15 @@ namespace IFC.IFC4x3
 				CardinalEndPoint
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo
 			};
@@ -53268,9 +53268,9 @@ namespace IFC.IFC4x3
 		{
 			this.OffsetValues = OffsetValues;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -53281,15 +53281,15 @@ namespace IFC.IFC4x3
 				OffsetValues
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo,
 				HasExternalReferences,
@@ -53348,9 +53348,9 @@ namespace IFC.IFC4x3
 		{
 			this.Material = Material;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -53358,15 +53358,15 @@ namespace IFC.IFC4x3
 				Material
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences
 			};
@@ -53412,9 +53412,9 @@ namespace IFC.IFC4x3
 			this.RelatedMaterials = RelatedMaterials;
 			this.MaterialExpression = MaterialExpression;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -53423,15 +53423,15 @@ namespace IFC.IFC4x3
 				MaterialExpression
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -53521,21 +53521,21 @@ namespace IFC.IFC4x3
 		public IFCMaterialUsageDefinition() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				AssociatedTo
 			};
@@ -53575,23 +53575,23 @@ namespace IFC.IFC4x3
 			this.ValueComponent = ValueComponent;
 			this.UnitComponent = UnitComponent;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ValueComponent,
 				UnitComponent
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -53660,9 +53660,9 @@ namespace IFC.IFC4x3
 			this.NominalLength = NominalLength;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -53677,15 +53677,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -53795,9 +53795,9 @@ namespace IFC.IFC4x3
 			this.NominalDiameter = NominalDiameter;
 			this.NominalLength = NominalLength;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -53813,15 +53813,15 @@ namespace IFC.IFC4x3
 				NominalLength
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -53911,9 +53911,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -53926,15 +53926,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -54004,9 +54004,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -54020,15 +54020,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -54082,9 +54082,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -54097,15 +54097,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -54173,9 +54173,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -54189,15 +54189,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -54254,9 +54254,9 @@ namespace IFC.IFC4x3
 			this.DataValue = DataValue;
 			this.ReferencePath = ReferencePath;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -54271,15 +54271,15 @@ namespace IFC.IFC4x3
 				ReferencePath
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PropertiesForConstraint
@@ -54397,9 +54397,9 @@ namespace IFC.IFC4x3
 		public IFCMirroredProfileDef(IFCProfileTypeEnum? ProfileType, IFCLabel? ProfileName, IFCProfileDef? ParentProfile, IFCCartesianTransformationOperator2D? Operator, IFCLabel? Label) : base (ProfileType, ProfileName, ParentProfile, Operator, Label)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -54408,16 +54408,16 @@ namespace IFC.IFC4x3
 				Label
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Operator
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -54453,9 +54453,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -54468,15 +54468,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -54546,9 +54546,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -54562,15 +54562,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -54617,22 +54617,22 @@ namespace IFC.IFC4x3
 		{
 			this.Currency = Currency;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Currency
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -54677,9 +54677,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -54692,15 +54692,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -54768,9 +54768,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -54784,15 +54784,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -54846,9 +54846,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -54861,15 +54861,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -54939,9 +54939,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -54955,15 +54955,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -55019,23 +55019,23 @@ namespace IFC.IFC4x3
 			this.Dimensions = Dimensions;
 			this.UnitType = UnitType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dimensions,
 				UnitType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -55098,9 +55098,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -55113,15 +55113,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -55189,9 +55189,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -55205,15 +55205,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -55279,9 +55279,9 @@ namespace IFC.IFC4x3
 		{
 			this.ObjectType = ObjectType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -55290,15 +55290,15 @@ namespace IFC.IFC4x3
 				ObjectType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -55428,9 +55428,9 @@ namespace IFC.IFC4x3
 		public IFCObjectDefinition(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description) : base (GlobalId, OwnerHistory, Name, Description)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -55438,15 +55438,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -55594,22 +55594,22 @@ namespace IFC.IFC4x3
 		{
 			this.PlacementRelTo = PlacementRelTo;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				PlacementRelTo
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				PlacesObject,
 				ReferencedByPlacements
@@ -55694,9 +55694,9 @@ namespace IFC.IFC4x3
 			this.ObjectiveQualifier = ObjectiveQualifier;
 			this.UserDefinedQualifier = UserDefinedQualifier;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -55711,15 +55711,15 @@ namespace IFC.IFC4x3
 				UserDefinedQualifier
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PropertiesForConstraint
@@ -55833,9 +55833,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -55846,15 +55846,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -55909,23 +55909,23 @@ namespace IFC.IFC4x3
 		{
 			this.BasisCurve = BasisCurve;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BasisCurve
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -55971,25 +55971,25 @@ namespace IFC.IFC4x3
 			this.Distance = Distance;
 			this.SelfIntersect = SelfIntersect;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BasisCurve,
 				Distance,
 				SelfIntersect
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -56056,9 +56056,9 @@ namespace IFC.IFC4x3
 			this.SelfIntersect = SelfIntersect;
 			this.RefDirection = RefDirection;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BasisCurve,
 				Distance,
@@ -56066,16 +56066,16 @@ namespace IFC.IFC4x3
 				RefDirection
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -56155,25 +56155,25 @@ namespace IFC.IFC4x3
 			this.OffsetValues = OffsetValues;
 			this.Tag = Tag;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BasisCurve,
 				OffsetValues,
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -56264,9 +56264,9 @@ namespace IFC.IFC4x3
 			this.Tags = Tags;
 			this.OffsetPoint = OffsetPoint;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -56277,15 +56277,15 @@ namespace IFC.IFC4x3
 				OffsetPoint
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -56443,22 +56443,22 @@ namespace IFC.IFC4x3
 		public IFCOpenShell(IFC_Attributes<IFCFace>? CfsFaces) : base (CfsFaces)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				CfsFaces
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -56488,9 +56488,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -56503,15 +56503,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -56612,9 +56612,9 @@ namespace IFC.IFC4x3
 			this.Roles = Roles;
 			this.Addresses = Addresses;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Identification,
 				Name,
@@ -56623,15 +56623,15 @@ namespace IFC.IFC4x3
 				Addresses
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				IsRelatedBy,
 				Relates,
@@ -56828,9 +56828,9 @@ namespace IFC.IFC4x3
 			this.RelatingOrganization = RelatingOrganization;
 			this.RelatedOrganizations = RelatedOrganizations;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -56838,15 +56838,15 @@ namespace IFC.IFC4x3
 				RelatedOrganizations
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -56949,9 +56949,9 @@ namespace IFC.IFC4x3
 			this.EdgeElement = EdgeElement;
 			this.Orientation = Orientation;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				EdgeStart,
 				EdgeEnd,
@@ -56959,17 +56959,17 @@ namespace IFC.IFC4x3
 				Orientation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				EdgeStart,
 				EdgeEnd
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -57039,17 +57039,17 @@ namespace IFC.IFC4x3
 		public IFCOuterBoundaryCurve(IFC_Attributes<IFCSegment>? Segments, IFCLogical? SelfIntersect) : base (Segments, SelfIntersect)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Segments,
 				SelfIntersect
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				NSegments,
@@ -57057,9 +57057,9 @@ namespace IFC.IFC4x3
 				BasisSurface
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -57088,9 +57088,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -57103,15 +57103,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -57181,9 +57181,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -57197,15 +57197,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -57277,9 +57277,9 @@ namespace IFC.IFC4x3
 			this.LastModifyingApplication = LastModifyingApplication;
 			this.CreationDate = CreationDate;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				OwningUser,
 				OwningApplication,
@@ -57291,15 +57291,15 @@ namespace IFC.IFC4x3
 				CreationDate
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -57476,24 +57476,24 @@ namespace IFC.IFC4x3
 		{
 			this.Position = Position;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
 				Position
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -57536,22 +57536,22 @@ namespace IFC.IFC4x3
 		{
 			this.EdgeList = EdgeList;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				EdgeList
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -57614,9 +57614,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -57629,15 +57629,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -57705,9 +57705,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -57721,15 +57721,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -57782,24 +57782,24 @@ namespace IFC.IFC4x3
 			this.BasisSurface = BasisSurface;
 			this.ReferenceCurve = ReferenceCurve;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BasisSurface,
 				ReferenceCurve
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -57861,9 +57861,9 @@ namespace IFC.IFC4x3
 			this.LifeCyclePhase = LifeCyclePhase;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -57875,15 +57875,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -57964,9 +57964,9 @@ namespace IFC.IFC4x3
 			this.FrameThickness = FrameThickness;
 			this.ShapeAspectStyle = ShapeAspectStyle;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -57979,15 +57979,15 @@ namespace IFC.IFC4x3
 				ShapeAspectStyle
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -58109,9 +58109,9 @@ namespace IFC.IFC4x3
 			this.Status = Status;
 			this.LongDescription = LongDescription;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -58124,15 +58124,15 @@ namespace IFC.IFC4x3
 				LongDescription
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -58245,9 +58245,9 @@ namespace IFC.IFC4x3
 			this.Roles = Roles;
 			this.Addresses = Addresses;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Identification,
 				FamilyName,
@@ -58259,15 +58259,15 @@ namespace IFC.IFC4x3
 				Addresses
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				EngagedIn
 			};
@@ -58534,24 +58534,24 @@ namespace IFC.IFC4x3
 			this.TheOrganization = TheOrganization;
 			this.Roles = Roles;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ThePerson,
 				TheOrganization,
 				Roles
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -58654,9 +58654,9 @@ namespace IFC.IFC4x3
 			this.Quality = Quality;
 			this.Usage = Usage;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -58666,15 +58666,15 @@ namespace IFC.IFC4x3
 				Usage
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfComplex
@@ -58795,23 +58795,23 @@ namespace IFC.IFC4x3
 			this.Name = Name;
 			this.Description = Description;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfComplex
@@ -58910,24 +58910,24 @@ namespace IFC.IFC4x3
 		{
 			this.Unit = Unit;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
 				Unit
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfComplex
@@ -58977,9 +58977,9 @@ namespace IFC.IFC4x3
 			this.PredefinedType = PredefinedType;
 			this.ConstructionType = ConstructionType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -58993,15 +58993,15 @@ namespace IFC.IFC4x3
 				ConstructionType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -59087,9 +59087,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -59103,15 +59103,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -59165,9 +59165,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -59180,15 +59180,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -59258,9 +59258,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -59274,15 +59274,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -59336,9 +59336,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -59351,15 +59351,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -59429,9 +59429,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -59445,15 +59445,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -59519,9 +59519,9 @@ namespace IFC.IFC4x3
 			this.ColourComponents = ColourComponents;
 			this.Pixel = Pixel;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepeatS,
 				RepeatT,
@@ -59534,15 +59534,15 @@ namespace IFC.IFC4x3
 				Pixel
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				IsMappedBy,
 				UsedInStyles
@@ -59670,23 +59670,23 @@ namespace IFC.IFC4x3
 		{
 			this.Location = Location;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Location
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -59734,24 +59734,24 @@ namespace IFC.IFC4x3
 		{
 			this.Placement = Placement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SizeInX,
 				SizeInY,
 				Placement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -59797,23 +59797,23 @@ namespace IFC.IFC4x3
 			this.SizeInX = SizeInX;
 			this.SizeInY = SizeInY;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SizeInX,
 				SizeInY
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -59869,23 +59869,23 @@ namespace IFC.IFC4x3
 		public IFCPlane(IFCAxis2Placement3D? Position) : base (Position)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -59914,9 +59914,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -59929,15 +59929,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -60005,9 +60005,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -60021,15 +60021,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -60088,22 +60088,22 @@ namespace IFC.IFC4x3
 		public IFCPoint() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -60145,9 +60145,9 @@ namespace IFC.IFC4x3
 			this.OffsetLongitudinal = OffsetLongitudinal;
 			this.BasisCurve = BasisCurve;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				DistanceAlong,
 				OffsetLateral,
@@ -60156,16 +60156,16 @@ namespace IFC.IFC4x3
 				BasisCurve
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -60281,24 +60281,24 @@ namespace IFC.IFC4x3
 			this.BasisCurve = BasisCurve;
 			this.PointParameter = PointParameter;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BasisCurve,
 				PointParameter
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -60363,25 +60363,25 @@ namespace IFC.IFC4x3
 			this.PointParameterU = PointParameterU;
 			this.PointParameterV = PointParameterV;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BasisSurface,
 				PointParameterU,
 				PointParameterV
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -60460,22 +60460,22 @@ namespace IFC.IFC4x3
 		{
 			this.Polygon = Polygon;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Polygon
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -60542,9 +60542,9 @@ namespace IFC.IFC4x3
 			this.Position = Position;
 			this.PolygonalBoundary = PolygonalBoundary;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BaseSurface,
 				AgreementFlag,
@@ -60552,16 +60552,16 @@ namespace IFC.IFC4x3
 				PolygonalBoundary
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -60626,9 +60626,9 @@ namespace IFC.IFC4x3
 			this.Faces = Faces;
 			this.PnIndex = PnIndex;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Coordinates,
 				Closed,
@@ -60636,16 +60636,16 @@ namespace IFC.IFC4x3
 				PnIndex
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -60758,23 +60758,23 @@ namespace IFC.IFC4x3
 		{
 			this.Points = Points;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Points
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -60843,9 +60843,9 @@ namespace IFC.IFC4x3
 			this.CoefficientsY = CoefficientsY;
 			this.CoefficientsZ = CoefficientsZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				CoefficientsX,
@@ -60853,16 +60853,16 @@ namespace IFC.IFC4x3
 				CoefficientsZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -61011,9 +61011,9 @@ namespace IFC.IFC4x3
 		public IFCPort(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -61024,15 +61024,15 @@ namespace IFC.IFC4x3
 				Representation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -61126,9 +61126,9 @@ namespace IFC.IFC4x3
 		public IFCPositioningElement(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -61139,15 +61139,15 @@ namespace IFC.IFC4x3
 				Representation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -61242,9 +61242,9 @@ namespace IFC.IFC4x3
 			this.PostalCode = PostalCode;
 			this.Country = Country;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Purpose,
 				Description,
@@ -61258,15 +61258,15 @@ namespace IFC.IFC4x3
 				Country
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				OfPerson,
 				OfOrganization
@@ -61430,22 +61430,22 @@ namespace IFC.IFC4x3
 		public IFCPreDefinedColour(IFCLabel? Name) : base (Name)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -61465,22 +61465,22 @@ namespace IFC.IFC4x3
 		public IFCPreDefinedCurveFont(IFCLabel? Name) : base (Name)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -61505,22 +61505,22 @@ namespace IFC.IFC4x3
 		{
 			this.Name = Name;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -61557,21 +61557,21 @@ namespace IFC.IFC4x3
 		public IFCPreDefinedProperties() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences
 			};
@@ -61597,9 +61597,9 @@ namespace IFC.IFC4x3
 		public IFCPreDefinedPropertySet(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description) : base (GlobalId, OwnerHistory, Name, Description)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -61607,15 +61607,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -61640,22 +61640,22 @@ namespace IFC.IFC4x3
 		public IFCPreDefinedTextFont(IFCLabel? Name) : base (Name)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -61687,21 +61687,21 @@ namespace IFC.IFC4x3
 		public IFCPresentationItem() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -61739,9 +61739,9 @@ namespace IFC.IFC4x3
 			this.AssignedItems = AssignedItems;
 			this.Identifier = Identifier;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -61749,15 +61749,15 @@ namespace IFC.IFC4x3
 				Identifier
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -61877,9 +61877,9 @@ namespace IFC.IFC4x3
 			this.LayerBlocked = LayerBlocked;
 			this.LayerStyles = LayerStyles;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -61891,15 +61891,15 @@ namespace IFC.IFC4x3
 				LayerStyles
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -62012,22 +62012,22 @@ namespace IFC.IFC4x3
 		{
 			this.Name = Name;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -62070,9 +62070,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -62084,15 +62084,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -62147,9 +62147,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -62163,15 +62163,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -62233,9 +62233,9 @@ namespace IFC.IFC4x3
 			this.Identification = Identification;
 			this.LongDescription = LongDescription;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -62246,15 +62246,15 @@ namespace IFC.IFC4x3
 				LongDescription
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -62397,9 +62397,9 @@ namespace IFC.IFC4x3
 			this.ObjectPlacement = ObjectPlacement;
 			this.Representation = Representation;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -62410,15 +62410,15 @@ namespace IFC.IFC4x3
 				Representation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -62543,24 +62543,24 @@ namespace IFC.IFC4x3
 		public IFCProductDefinitionShape(IFCLabel? Name, IFCText? Description, IFC_Attributes<IFCRepresentation>? Representations) : base (Name, Description, Representations)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
 				Representations
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ShapeOfProduct,
 				HasShapeAspects
@@ -62623,24 +62623,24 @@ namespace IFC.IFC4x3
 			this.Description = Description;
 			this.Representations = Representations;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
 				Representations
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -62745,23 +62745,23 @@ namespace IFC.IFC4x3
 			this.ProfileType = ProfileType;
 			this.ProfileName = ProfileName;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -62852,9 +62852,9 @@ namespace IFC.IFC4x3
 		{
 			this.ProfileDefinition = ProfileDefinition;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -62862,15 +62862,15 @@ namespace IFC.IFC4x3
 				ProfileDefinition
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences
 			};
@@ -62914,9 +62914,9 @@ namespace IFC.IFC4x3
 		public IFCProject(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCLabel? LongName, IFCLabel? Phase, IFC_Attributes<IFCRepresentationContext>? RepresentationContexts, IFCUnitAssignment? UnitsInContext) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, LongName, Phase, RepresentationContexts, UnitsInContext)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -62929,15 +62929,15 @@ namespace IFC.IFC4x3
 				UnitsInContext
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -62964,9 +62964,9 @@ namespace IFC.IFC4x3
 		public IFCProjectLibrary(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCLabel? LongName, IFCLabel? Phase, IFC_Attributes<IFCRepresentationContext>? RepresentationContexts, IFCUnitAssignment? UnitsInContext) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, LongName, Phase, RepresentationContexts, UnitsInContext)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -62979,15 +62979,15 @@ namespace IFC.IFC4x3
 				UnitsInContext
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -63023,9 +63023,9 @@ namespace IFC.IFC4x3
 			this.Status = Status;
 			this.LongDescription = LongDescription;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -63038,15 +63038,15 @@ namespace IFC.IFC4x3
 				LongDescription
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -63144,9 +63144,9 @@ namespace IFC.IFC4x3
 			this.MapZone = MapZone;
 			this.MapUnit = MapUnit;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -63157,15 +63157,15 @@ namespace IFC.IFC4x3
 				MapUnit
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasCoordinateOperation,
 				WellKnownText
@@ -63264,9 +63264,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -63279,15 +63279,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -63372,23 +63372,23 @@ namespace IFC.IFC4x3
 			this.Name = Name;
 			this.Specification = Specification;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Specification
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfPset,
@@ -63549,21 +63549,21 @@ namespace IFC.IFC4x3
 		public IFCPropertyAbstraction() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences
 			};
@@ -63617,9 +63617,9 @@ namespace IFC.IFC4x3
 			this.Unit = Unit;
 			this.SetPointValue = SetPointValue;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Specification,
@@ -63629,15 +63629,15 @@ namespace IFC.IFC4x3
 				SetPointValue
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfPset,
@@ -63742,9 +63742,9 @@ namespace IFC.IFC4x3
 		public IFCPropertyDefinition(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description) : base (GlobalId, OwnerHistory, Name, Description)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -63752,15 +63752,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations
@@ -63823,9 +63823,9 @@ namespace IFC.IFC4x3
 			this.DependantProperty = DependantProperty;
 			this.Expression = Expression;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -63834,15 +63834,15 @@ namespace IFC.IFC4x3
 				Expression
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -63926,9 +63926,9 @@ namespace IFC.IFC4x3
 			this.EnumerationValues = EnumerationValues;
 			this.EnumerationReference = EnumerationReference;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Specification,
@@ -63936,15 +63936,15 @@ namespace IFC.IFC4x3
 				EnumerationReference
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfPset,
@@ -64036,24 +64036,24 @@ namespace IFC.IFC4x3
 			this.EnumerationValues = EnumerationValues;
 			this.Unit = Unit;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				EnumerationValues,
 				Unit
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences
 			};
@@ -64152,9 +64152,9 @@ namespace IFC.IFC4x3
 			this.ListValues = ListValues;
 			this.Unit = Unit;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Specification,
@@ -64162,15 +64162,15 @@ namespace IFC.IFC4x3
 				Unit
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfPset,
@@ -64253,9 +64253,9 @@ namespace IFC.IFC4x3
 			this.UsageName = UsageName;
 			this.PropertyReference = PropertyReference;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Specification,
@@ -64263,15 +64263,15 @@ namespace IFC.IFC4x3
 				PropertyReference
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfPset,
@@ -64338,9 +64338,9 @@ namespace IFC.IFC4x3
 		{
 			this.HasProperties = HasProperties;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -64349,15 +64349,15 @@ namespace IFC.IFC4x3
 				HasProperties
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -64425,9 +64425,9 @@ namespace IFC.IFC4x3
 		public IFCPropertySetDefinition(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description) : base (GlobalId, OwnerHistory, Name, Description)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -64435,15 +64435,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -64529,9 +64529,9 @@ namespace IFC.IFC4x3
 			this.ApplicableEntity = ApplicableEntity;
 			this.HasPropertyTemplates = HasPropertyTemplates;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -64542,15 +64542,15 @@ namespace IFC.IFC4x3
 				HasPropertyTemplates
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -64663,9 +64663,9 @@ namespace IFC.IFC4x3
 			this.NominalValue = NominalValue;
 			this.Unit = Unit;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Specification,
@@ -64673,15 +64673,15 @@ namespace IFC.IFC4x3
 				Unit
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfPset,
@@ -64769,9 +64769,9 @@ namespace IFC.IFC4x3
 			this.DefinedUnit = DefinedUnit;
 			this.CurveInterpolation = CurveInterpolation;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Specification,
@@ -64783,15 +64783,15 @@ namespace IFC.IFC4x3
 				CurveInterpolation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfPset,
@@ -64964,9 +64964,9 @@ namespace IFC.IFC4x3
 		public IFCPropertyTemplate(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description) : base (GlobalId, OwnerHistory, Name, Description)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -64974,15 +64974,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -65039,9 +65039,9 @@ namespace IFC.IFC4x3
 		public IFCPropertyTemplateDefinition(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description) : base (GlobalId, OwnerHistory, Name, Description)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -65049,15 +65049,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations
@@ -65086,9 +65086,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -65101,15 +65101,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -65182,9 +65182,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -65197,15 +65197,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -65275,9 +65275,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -65291,15 +65291,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -65350,9 +65350,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -65366,15 +65366,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -65428,9 +65428,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -65443,15 +65443,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -65521,9 +65521,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -65537,15 +65537,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -65600,9 +65600,9 @@ namespace IFC.IFC4x3
 			this.AreaValue = AreaValue;
 			this.Formula = Formula;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -65611,15 +65611,15 @@ namespace IFC.IFC4x3
 				Formula
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfComplex
@@ -65683,9 +65683,9 @@ namespace IFC.IFC4x3
 			this.CountValue = CountValue;
 			this.Formula = Formula;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -65694,15 +65694,15 @@ namespace IFC.IFC4x3
 				Formula
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfComplex
@@ -65768,9 +65768,9 @@ namespace IFC.IFC4x3
 			this.LengthValue = LengthValue;
 			this.Formula = Formula;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -65779,15 +65779,15 @@ namespace IFC.IFC4x3
 				Formula
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfComplex
@@ -65849,9 +65849,9 @@ namespace IFC.IFC4x3
 			this.NumberValue = NumberValue;
 			this.Formula = Formula;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -65860,15 +65860,15 @@ namespace IFC.IFC4x3
 				Formula
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfComplex
@@ -65926,9 +65926,9 @@ namespace IFC.IFC4x3
 		public IFCQuantitySet(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description) : base (GlobalId, OwnerHistory, Name, Description)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -65936,15 +65936,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -65977,9 +65977,9 @@ namespace IFC.IFC4x3
 			this.TimeValue = TimeValue;
 			this.Formula = Formula;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -65988,15 +65988,15 @@ namespace IFC.IFC4x3
 				Formula
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfComplex
@@ -66062,9 +66062,9 @@ namespace IFC.IFC4x3
 			this.VolumeValue = VolumeValue;
 			this.Formula = Formula;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -66073,15 +66073,15 @@ namespace IFC.IFC4x3
 				Formula
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfComplex
@@ -66147,9 +66147,9 @@ namespace IFC.IFC4x3
 			this.WeightValue = WeightValue;
 			this.Formula = Formula;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -66158,15 +66158,15 @@ namespace IFC.IFC4x3
 				Formula
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfComplex
@@ -66231,9 +66231,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -66246,15 +66246,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -66322,9 +66322,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -66338,15 +66338,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -66400,9 +66400,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -66415,15 +66415,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -66491,9 +66491,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -66507,15 +66507,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -66567,9 +66567,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -66583,15 +66583,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -66653,9 +66653,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -66670,15 +66670,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -66742,9 +66742,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -66757,15 +66757,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -66836,9 +66836,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -66851,15 +66851,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -66927,9 +66927,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -66943,15 +66943,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -67002,9 +67002,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -67018,15 +67018,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -67089,9 +67089,9 @@ namespace IFC.IFC4x3
 		{
 			this.WeightsData = WeightsData;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Degree,
 				ControlPointsList,
@@ -67104,9 +67104,9 @@ namespace IFC.IFC4x3
 				WeightsData
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				UpperIndexOnControlPoints,
@@ -67115,9 +67115,9 @@ namespace IFC.IFC4x3
 				Weights
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -67207,9 +67207,9 @@ namespace IFC.IFC4x3
 		{
 			this.WeightsData = WeightsData;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				UDegree,
 				VDegree,
@@ -67226,9 +67226,9 @@ namespace IFC.IFC4x3
 				WeightsData
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				UUpper,
@@ -67239,9 +67239,9 @@ namespace IFC.IFC4x3
 				Weights
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -67348,9 +67348,9 @@ namespace IFC.IFC4x3
 			this.InnerFilletRadius = InnerFilletRadius;
 			this.OuterFilletRadius = OuterFilletRadius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -67362,15 +67362,15 @@ namespace IFC.IFC4x3
 				OuterFilletRadius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -67453,9 +67453,9 @@ namespace IFC.IFC4x3
 			this.XDim = XDim;
 			this.YDim = YDim;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -67464,15 +67464,15 @@ namespace IFC.IFC4x3
 				YDim
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -67537,9 +67537,9 @@ namespace IFC.IFC4x3
 			this.YLength = YLength;
 			this.Height = Height;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				XLength,
@@ -67547,16 +67547,16 @@ namespace IFC.IFC4x3
 				Height
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -67659,9 +67659,9 @@ namespace IFC.IFC4x3
 			this.Usense = Usense;
 			this.Vsense = Vsense;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BasisSurface,
 				U1,
@@ -67672,16 +67672,16 @@ namespace IFC.IFC4x3
 				Vsense
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -67850,9 +67850,9 @@ namespace IFC.IFC4x3
 			this.Occurrences = Occurrences;
 			this.TimePeriods = TimePeriods;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RecurrenceType,
 				DayComponent,
@@ -67864,15 +67864,15 @@ namespace IFC.IFC4x3
 				TimePeriods
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -68112,9 +68112,9 @@ namespace IFC.IFC4x3
 			this.ListPositions = ListPositions;
 			this.InnerReference = InnerReference;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				TypeIdentifier,
 				AttributeIdentifier,
@@ -68123,15 +68123,15 @@ namespace IFC.IFC4x3
 				InnerReference
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -68258,9 +68258,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -68272,15 +68272,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -68338,9 +68338,9 @@ namespace IFC.IFC4x3
 			this.TimeStep = TimeStep;
 			this.Values = Values;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -68354,15 +68354,15 @@ namespace IFC.IFC4x3
 				Values
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference
 			};
@@ -68440,9 +68440,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -68455,15 +68455,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -68543,9 +68543,9 @@ namespace IFC.IFC4x3
 			this.NominalBarDiameter = NominalBarDiameter;
 			this.BarCount = BarCount;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				TotalCrossSectionArea,
 				SteelGrade,
@@ -68555,15 +68555,15 @@ namespace IFC.IFC4x3
 				BarCount
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences
 			};
@@ -68696,9 +68696,9 @@ namespace IFC.IFC4x3
 			this.DefinitionType = DefinitionType;
 			this.ReinforcementSectionDefinitions = ReinforcementSectionDefinitions;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -68708,15 +68708,15 @@ namespace IFC.IFC4x3
 				ReinforcementSectionDefinitions
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -68812,9 +68812,9 @@ namespace IFC.IFC4x3
 			this.PredefinedType = PredefinedType;
 			this.BarSurface = BarSurface;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -68832,15 +68832,15 @@ namespace IFC.IFC4x3
 				BarSurface
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -68999,9 +68999,9 @@ namespace IFC.IFC4x3
 			this.BendingShapeCode = BendingShapeCode;
 			this.BendingParameters = BendingParameters;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -69021,15 +69021,15 @@ namespace IFC.IFC4x3
 				BendingParameters
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -69207,9 +69207,9 @@ namespace IFC.IFC4x3
 		{
 			this.SteelGrade = SteelGrade;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -69222,15 +69222,15 @@ namespace IFC.IFC4x3
 				SteelGrade
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -69298,9 +69298,9 @@ namespace IFC.IFC4x3
 		public IFCReinforcingElementType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -69313,15 +69313,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -69381,9 +69381,9 @@ namespace IFC.IFC4x3
 			this.TransverseBarSpacing = TransverseBarSpacing;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -69405,15 +69405,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -69656,9 +69656,9 @@ namespace IFC.IFC4x3
 			this.BendingShapeCode = BendingShapeCode;
 			this.BendingParameters = BendingParameters;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -69682,15 +69682,15 @@ namespace IFC.IFC4x3
 				BendingParameters
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -69937,9 +69937,9 @@ namespace IFC.IFC4x3
 			this.RelatingElement = RelatingElement;
 			this.RelatedSurfaceFeatures = RelatedSurfaceFeatures;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -69949,15 +69949,15 @@ namespace IFC.IFC4x3
 				RelatedSurfaceFeatures
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70035,9 +70035,9 @@ namespace IFC.IFC4x3
 			this.RelatingObject = RelatingObject;
 			this.RelatedObjects = RelatedObjects;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70047,15 +70047,15 @@ namespace IFC.IFC4x3
 				RelatedObjects
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70138,9 +70138,9 @@ namespace IFC.IFC4x3
 			this.RelatedObjects = RelatedObjects;
 			this.RelatedObjectsType = RelatedObjectsType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70150,15 +70150,15 @@ namespace IFC.IFC4x3
 				RelatedObjectsType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70236,9 +70236,9 @@ namespace IFC.IFC4x3
 			this.RelatingActor = RelatingActor;
 			this.ActingRole = ActingRole;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70250,15 +70250,15 @@ namespace IFC.IFC4x3
 				ActingRole
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70317,9 +70317,9 @@ namespace IFC.IFC4x3
 		{
 			this.RelatingControl = RelatingControl;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70330,15 +70330,15 @@ namespace IFC.IFC4x3
 				RelatingControl
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70381,9 +70381,9 @@ namespace IFC.IFC4x3
 		{
 			this.RelatingGroup = RelatingGroup;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70394,15 +70394,15 @@ namespace IFC.IFC4x3
 				RelatingGroup
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70441,9 +70441,9 @@ namespace IFC.IFC4x3
 		{
 			this.Factor = Factor;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70455,15 +70455,15 @@ namespace IFC.IFC4x3
 				Factor
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70507,9 +70507,9 @@ namespace IFC.IFC4x3
 			this.RelatingProcess = RelatingProcess;
 			this.QuantityInProcess = QuantityInProcess;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70521,15 +70521,15 @@ namespace IFC.IFC4x3
 				QuantityInProcess
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70588,9 +70588,9 @@ namespace IFC.IFC4x3
 		{
 			this.RelatingProduct = RelatingProduct;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70601,15 +70601,15 @@ namespace IFC.IFC4x3
 				RelatingProduct
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70650,9 +70650,9 @@ namespace IFC.IFC4x3
 		{
 			this.RelatingResource = RelatingResource;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70663,15 +70663,15 @@ namespace IFC.IFC4x3
 				RelatingResource
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70718,9 +70718,9 @@ namespace IFC.IFC4x3
 		{
 			this.RelatedObjects = RelatedObjects;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70729,15 +70729,15 @@ namespace IFC.IFC4x3
 				RelatedObjects
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70792,9 +70792,9 @@ namespace IFC.IFC4x3
 		{
 			this.RelatingApproval = RelatingApproval;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70804,15 +70804,15 @@ namespace IFC.IFC4x3
 				RelatingApproval
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70851,9 +70851,9 @@ namespace IFC.IFC4x3
 		{
 			this.RelatingClassification = RelatingClassification;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70863,15 +70863,15 @@ namespace IFC.IFC4x3
 				RelatingClassification
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70913,9 +70913,9 @@ namespace IFC.IFC4x3
 			this.Intent = Intent;
 			this.RelatingConstraint = RelatingConstraint;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -70926,15 +70926,15 @@ namespace IFC.IFC4x3
 				RelatingConstraint
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -70991,9 +70991,9 @@ namespace IFC.IFC4x3
 		{
 			this.RelatingDocument = RelatingDocument;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -71003,15 +71003,15 @@ namespace IFC.IFC4x3
 				RelatingDocument
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -71050,9 +71050,9 @@ namespace IFC.IFC4x3
 		{
 			this.RelatingLibrary = RelatingLibrary;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -71062,15 +71062,15 @@ namespace IFC.IFC4x3
 				RelatingLibrary
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -71121,9 +71121,9 @@ namespace IFC.IFC4x3
 		{
 			this.RelatingMaterial = RelatingMaterial;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -71133,15 +71133,15 @@ namespace IFC.IFC4x3
 				RelatingMaterial
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -71180,9 +71180,9 @@ namespace IFC.IFC4x3
 		{
 			this.RelatingProfileDef = RelatingProfileDef;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -71192,15 +71192,15 @@ namespace IFC.IFC4x3
 				RelatingProfileDef
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -71253,9 +71253,9 @@ namespace IFC.IFC4x3
 		public IFCRelConnects(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description) : base (GlobalId, OwnerHistory, Name, Description)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -71263,15 +71263,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -71303,9 +71303,9 @@ namespace IFC.IFC4x3
 			this.RelatingElement = RelatingElement;
 			this.RelatedElement = RelatedElement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -71316,15 +71316,15 @@ namespace IFC.IFC4x3
 				RelatedElement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -71419,9 +71419,9 @@ namespace IFC.IFC4x3
 			this.RelatedConnectionType = RelatedConnectionType;
 			this.RelatingConnectionType = RelatingConnectionType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -71436,15 +71436,15 @@ namespace IFC.IFC4x3
 				RelatingConnectionType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -71572,9 +71572,9 @@ namespace IFC.IFC4x3
 			this.RelatingPort = RelatingPort;
 			this.RelatedElement = RelatedElement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -71584,15 +71584,15 @@ namespace IFC.IFC4x3
 				RelatedElement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -71657,9 +71657,9 @@ namespace IFC.IFC4x3
 			this.RelatedPort = RelatedPort;
 			this.RealizingElement = RealizingElement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -71670,15 +71670,15 @@ namespace IFC.IFC4x3
 				RealizingElement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -71756,9 +71756,9 @@ namespace IFC.IFC4x3
 			this.RelatingElement = RelatingElement;
 			this.RelatedStructuralActivity = RelatedStructuralActivity;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -71768,15 +71768,15 @@ namespace IFC.IFC4x3
 				RelatedStructuralActivity
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -71850,9 +71850,9 @@ namespace IFC.IFC4x3
 			this.SupportedLength = SupportedLength;
 			this.ConditionCoordinateSystem = ConditionCoordinateSystem;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -71866,15 +71866,15 @@ namespace IFC.IFC4x3
 				ConditionCoordinateSystem
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -72003,9 +72003,9 @@ namespace IFC.IFC4x3
 		{
 			this.ConnectionConstraint = ConnectionConstraint;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -72020,15 +72020,15 @@ namespace IFC.IFC4x3
 				ConnectionConstraint
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -72070,9 +72070,9 @@ namespace IFC.IFC4x3
 			this.RealizingElements = RealizingElements;
 			this.ConnectionType = ConnectionType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -72085,15 +72085,15 @@ namespace IFC.IFC4x3
 				ConnectionType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -72171,9 +72171,9 @@ namespace IFC.IFC4x3
 			this.RelatedElements = RelatedElements;
 			this.RelatingStructure = RelatingStructure;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -72183,15 +72183,15 @@ namespace IFC.IFC4x3
 				RelatingStructure
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -72267,9 +72267,9 @@ namespace IFC.IFC4x3
 			this.RelatingBuildingElement = RelatingBuildingElement;
 			this.RelatedCoverings = RelatedCoverings;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -72279,15 +72279,15 @@ namespace IFC.IFC4x3
 				RelatedCoverings
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -72363,9 +72363,9 @@ namespace IFC.IFC4x3
 			this.RelatingSpace = RelatingSpace;
 			this.RelatedCoverings = RelatedCoverings;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -72375,15 +72375,15 @@ namespace IFC.IFC4x3
 				RelatedCoverings
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -72461,9 +72461,9 @@ namespace IFC.IFC4x3
 			this.RelatingContext = RelatingContext;
 			this.RelatedDefinitions = RelatedDefinitions;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -72473,15 +72473,15 @@ namespace IFC.IFC4x3
 				RelatedDefinitions
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -72557,9 +72557,9 @@ namespace IFC.IFC4x3
 		public IFCRelDecomposes(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description) : base (GlobalId, OwnerHistory, Name, Description)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -72567,15 +72567,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -72598,9 +72598,9 @@ namespace IFC.IFC4x3
 		public IFCRelDefines(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description) : base (GlobalId, OwnerHistory, Name, Description)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -72608,15 +72608,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -72640,9 +72640,9 @@ namespace IFC.IFC4x3
 			this.RelatedObjects = RelatedObjects;
 			this.RelatingObject = RelatingObject;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -72652,15 +72652,15 @@ namespace IFC.IFC4x3
 				RelatingObject
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -72738,9 +72738,9 @@ namespace IFC.IFC4x3
 			this.RelatedObjects = RelatedObjects;
 			this.RelatingPropertyDefinition = RelatingPropertyDefinition;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -72750,15 +72750,15 @@ namespace IFC.IFC4x3
 				RelatingPropertyDefinition
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -72834,9 +72834,9 @@ namespace IFC.IFC4x3
 			this.RelatedPropertySets = RelatedPropertySets;
 			this.RelatingTemplate = RelatingTemplate;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -72846,15 +72846,15 @@ namespace IFC.IFC4x3
 				RelatingTemplate
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -72930,9 +72930,9 @@ namespace IFC.IFC4x3
 			this.RelatedObjects = RelatedObjects;
 			this.RelatingType = RelatingType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -72942,15 +72942,15 @@ namespace IFC.IFC4x3
 				RelatingType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -73026,9 +73026,9 @@ namespace IFC.IFC4x3
 			this.RelatingOpeningElement = RelatingOpeningElement;
 			this.RelatedBuildingElement = RelatedBuildingElement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -73038,15 +73038,15 @@ namespace IFC.IFC4x3
 				RelatedBuildingElement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -73106,9 +73106,9 @@ namespace IFC.IFC4x3
 			this.RelatedControlElements = RelatedControlElements;
 			this.RelatingFlowElement = RelatingFlowElement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -73118,15 +73118,15 @@ namespace IFC.IFC4x3
 				RelatingFlowElement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -73216,9 +73216,9 @@ namespace IFC.IFC4x3
 			this.ImpliedOrder = ImpliedOrder;
 			this.InterferenceSpace = InterferenceSpace;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -73232,15 +73232,15 @@ namespace IFC.IFC4x3
 				InterferenceSpace
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -73374,9 +73374,9 @@ namespace IFC.IFC4x3
 			this.RelatingObject = RelatingObject;
 			this.RelatedObjects = RelatedObjects;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -73386,15 +73386,15 @@ namespace IFC.IFC4x3
 				RelatedObjects
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -73472,9 +73472,9 @@ namespace IFC.IFC4x3
 			this.RelatingPositioningElement = RelatingPositioningElement;
 			this.RelatedProducts = RelatedProducts;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -73484,15 +73484,15 @@ namespace IFC.IFC4x3
 				RelatedProducts
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -73568,9 +73568,9 @@ namespace IFC.IFC4x3
 			this.RelatingElement = RelatingElement;
 			this.RelatedFeatureElement = RelatedFeatureElement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -73580,15 +73580,15 @@ namespace IFC.IFC4x3
 				RelatedFeatureElement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -73651,9 +73651,9 @@ namespace IFC.IFC4x3
 			this.RelatedElements = RelatedElements;
 			this.RelatingStructure = RelatingStructure;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -73663,15 +73663,15 @@ namespace IFC.IFC4x3
 				RelatingStructure
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -73759,9 +73759,9 @@ namespace IFC.IFC4x3
 			this.SequenceType = SequenceType;
 			this.UserDefinedSequenceType = UserDefinedSequenceType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -73774,15 +73774,15 @@ namespace IFC.IFC4x3
 				UserDefinedSequenceType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -73896,9 +73896,9 @@ namespace IFC.IFC4x3
 			this.RelatingSystem = RelatingSystem;
 			this.RelatedBuildings = RelatedBuildings;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -73908,15 +73908,15 @@ namespace IFC.IFC4x3
 				RelatedBuildings
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -74012,9 +74012,9 @@ namespace IFC.IFC4x3
 			this.PhysicalOrVirtualBoundary = PhysicalOrVirtualBoundary;
 			this.InternalOrExternalBoundary = InternalOrExternalBoundary;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -74027,15 +74027,15 @@ namespace IFC.IFC4x3
 				InternalOrExternalBoundary
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -74151,9 +74151,9 @@ namespace IFC.IFC4x3
 		{
 			this.ParentBoundary = ParentBoundary;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -74167,15 +74167,15 @@ namespace IFC.IFC4x3
 				ParentBoundary
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				InnerBoundaries
 			};
@@ -74234,9 +74234,9 @@ namespace IFC.IFC4x3
 		{
 			this.CorrespondingBoundary = CorrespondingBoundary;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -74251,15 +74251,15 @@ namespace IFC.IFC4x3
 				CorrespondingBoundary
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				InnerBoundaries,
 				Corresponds
@@ -74319,9 +74319,9 @@ namespace IFC.IFC4x3
 			this.RelatingBuildingElement = RelatingBuildingElement;
 			this.RelatedOpeningElement = RelatedOpeningElement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -74331,15 +74331,15 @@ namespace IFC.IFC4x3
 				RelatedOpeningElement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -74400,9 +74400,9 @@ namespace IFC.IFC4x3
 		public IFCRelationship(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description) : base (GlobalId, OwnerHistory, Name, Description)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -74410,15 +74410,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -74441,9 +74441,9 @@ namespace IFC.IFC4x3
 		{
 			this.ParamLength = ParamLength;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Transition,
 				SameSense,
@@ -74451,16 +74451,16 @@ namespace IFC.IFC4x3
 				ParamLength
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -74520,9 +74520,9 @@ namespace IFC.IFC4x3
 			this.RepresentationType = RepresentationType;
 			this.Items = Items;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ContextOfItems,
 				RepresentationIdentifier,
@@ -74530,15 +74530,15 @@ namespace IFC.IFC4x3
 				Items
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepresentationMap,
 				LayerAssignments,
@@ -74705,23 +74705,23 @@ namespace IFC.IFC4x3
 			this.ContextIdentifier = ContextIdentifier;
 			this.ContextType = ContextType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ContextIdentifier,
 				ContextType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepresentationsInContext
 			};
@@ -74798,21 +74798,21 @@ namespace IFC.IFC4x3
 		public IFCRepresentationItem() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -74876,23 +74876,23 @@ namespace IFC.IFC4x3
 			this.MappingOrigin = MappingOrigin;
 			this.MappedRepresentation = MappedRepresentation;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				MappingOrigin,
 				MappedRepresentation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasShapeAspects,
 				MapUsage
@@ -74993,9 +74993,9 @@ namespace IFC.IFC4x3
 			this.Identification = Identification;
 			this.LongDescription = LongDescription;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -75006,15 +75006,15 @@ namespace IFC.IFC4x3
 				LongDescription
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -75154,9 +75154,9 @@ namespace IFC.IFC4x3
 			this.RelatedResourceObjects = RelatedResourceObjects;
 			this.RelatingApproval = RelatingApproval;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -75164,15 +75164,15 @@ namespace IFC.IFC4x3
 				RelatingApproval
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -75248,9 +75248,9 @@ namespace IFC.IFC4x3
 			this.RelatingConstraint = RelatingConstraint;
 			this.RelatedResourceObjects = RelatedResourceObjects;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -75258,15 +75258,15 @@ namespace IFC.IFC4x3
 				RelatedResourceObjects
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -75351,23 +75351,23 @@ namespace IFC.IFC4x3
 			this.Name = Name;
 			this.Description = Description;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -75466,9 +75466,9 @@ namespace IFC.IFC4x3
 			this.RemainingUsage = RemainingUsage;
 			this.Completion = Completion;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				DataOrigin,
@@ -75490,15 +75490,15 @@ namespace IFC.IFC4x3
 				Completion
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -75810,9 +75810,9 @@ namespace IFC.IFC4x3
 			this.Axis = Axis;
 			this.Angle = Angle;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SweptArea,
 				Position,
@@ -75820,17 +75820,17 @@ namespace IFC.IFC4x3
 				Angle
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				AxisLine
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -75898,9 +75898,9 @@ namespace IFC.IFC4x3
 		{
 			this.EndSweptArea = EndSweptArea;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SweptArea,
 				Position,
@@ -75909,17 +75909,17 @@ namespace IFC.IFC4x3
 				EndSweptArea
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				AxisLine
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -75963,25 +75963,25 @@ namespace IFC.IFC4x3
 			this.Height = Height;
 			this.BottomRadius = BottomRadius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				Height,
 				BottomRadius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -76043,25 +76043,25 @@ namespace IFC.IFC4x3
 			this.Height = Height;
 			this.Radius = Radius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				Height,
 				Radius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -76128,9 +76128,9 @@ namespace IFC.IFC4x3
 			this.SecondCoordinate = SecondCoordinate;
 			this.Height = Height;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SourceCRS,
 				TargetCRS,
@@ -76139,15 +76139,15 @@ namespace IFC.IFC4x3
 				Height
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -76226,9 +76226,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -76242,15 +76242,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -76312,9 +76312,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -76329,15 +76329,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -76401,9 +76401,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -76416,15 +76416,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -76492,9 +76492,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -76508,15 +76508,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -76578,9 +76578,9 @@ namespace IFC.IFC4x3
 			this.Name = Name;
 			this.Description = Description;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -76588,15 +76588,15 @@ namespace IFC.IFC4x3
 				Description
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -76692,9 +76692,9 @@ namespace IFC.IFC4x3
 		{
 			this.RoundingRadius = RoundingRadius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -76704,15 +76704,15 @@ namespace IFC.IFC4x3
 				RoundingRadius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -76768,9 +76768,9 @@ namespace IFC.IFC4x3
 			this.Prefix = Prefix;
 			this.Name = Name;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dimensions,
 				UnitType,
@@ -76778,16 +76778,16 @@ namespace IFC.IFC4x3
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dimensions
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -76857,9 +76857,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -76872,15 +76872,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -76950,9 +76950,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -76966,15 +76966,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -77033,24 +77033,24 @@ namespace IFC.IFC4x3
 			this.DataOrigin = DataOrigin;
 			this.UserDefinedDataOrigin = UserDefinedDataOrigin;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				DataOrigin,
 				UserDefinedDataOrigin
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -77125,26 +77125,26 @@ namespace IFC.IFC4x3
 		public IFCSeamCurve(IFCCurve? Curve3D, IFC_Attributes<IFCPcurve>? AssociatedGeometry, IFCPreferredSurfaceCurveRepresentation? MasterRepresentation) : base (Curve3D, AssociatedGeometry, MasterRepresentation)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Curve3D,
 				AssociatedGeometry,
 				MasterRepresentation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				BasisSurface
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -77173,9 +77173,9 @@ namespace IFC.IFC4x3
 			this.LinearTerm = LinearTerm;
 			this.ConstantTerm = ConstantTerm;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				QuadraticTerm,
@@ -77183,16 +77183,16 @@ namespace IFC.IFC4x3
 				ConstantTerm
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -77275,24 +77275,24 @@ namespace IFC.IFC4x3
 			this.StartProfile = StartProfile;
 			this.EndProfile = EndProfile;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SectionType,
 				StartProfile,
 				EndProfile
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences
 			};
@@ -77383,9 +77383,9 @@ namespace IFC.IFC4x3
 			this.SectionDefinition = SectionDefinition;
 			this.CrossSectionReinforcementDefinitions = CrossSectionReinforcementDefinitions;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LongitudinalStartPosition,
 				LongitudinalEndPosition,
@@ -77395,15 +77395,15 @@ namespace IFC.IFC4x3
 				CrossSectionReinforcementDefinitions
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences
 			};
@@ -77558,24 +77558,24 @@ namespace IFC.IFC4x3
 			this.Directrix = Directrix;
 			this.CrossSections = CrossSections;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Directrix,
 				CrossSections
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -77653,25 +77653,25 @@ namespace IFC.IFC4x3
 		{
 			this.CrossSectionPositions = CrossSectionPositions;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Directrix,
 				CrossSections,
 				CrossSectionPositions
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -77750,25 +77750,25 @@ namespace IFC.IFC4x3
 			this.CrossSections = CrossSections;
 			this.CrossSectionPositions = CrossSectionPositions;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SpineCurve,
 				CrossSections,
 				CrossSectionPositions
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -77896,25 +77896,25 @@ namespace IFC.IFC4x3
 			this.CrossSectionPositions = CrossSectionPositions;
 			this.CrossSections = CrossSections;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Directrix,
 				CrossSectionPositions,
 				CrossSections
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -78041,23 +78041,23 @@ namespace IFC.IFC4x3
 		{
 			this.Transition = Transition;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Transition
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -78125,9 +78125,9 @@ namespace IFC.IFC4x3
 			this.BaseCurve = BaseCurve;
 			this.EndPoint = EndPoint;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Segments,
 				SelfIntersect,
@@ -78135,18 +78135,18 @@ namespace IFC.IFC4x3
 				EndPoint
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				NSegments,
 				ClosedCurve
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -78211,9 +78211,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -78226,15 +78226,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -78304,9 +78304,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -78320,15 +78320,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -78397,9 +78397,9 @@ namespace IFC.IFC4x3
 			this.LinearTerm = LinearTerm;
 			this.ConstantTerm = ConstantTerm;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				SepticTerm,
@@ -78412,16 +78412,16 @@ namespace IFC.IFC4x3
 				ConstantTerm
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -78594,9 +78594,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -78609,15 +78609,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -78685,9 +78685,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -78701,15 +78701,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -78771,9 +78771,9 @@ namespace IFC.IFC4x3
 			this.ProductDefinitional = ProductDefinitional;
 			this.PartOfProductDefinitionShape = PartOfProductDefinitionShape;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ShapeRepresentations,
 				Name,
@@ -78782,15 +78782,15 @@ namespace IFC.IFC4x3
 				PartOfProductDefinitionShape
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences
 			};
@@ -78941,9 +78941,9 @@ namespace IFC.IFC4x3
 		public IFCShapeModel(IFCRepresentationContext? ContextOfItems, IFCLabel? RepresentationIdentifier, IFCLabel? RepresentationType, IFC_Attributes<IFCRepresentationItem>? Items) : base (ContextOfItems, RepresentationIdentifier, RepresentationType, Items)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ContextOfItems,
 				RepresentationIdentifier,
@@ -78951,15 +78951,15 @@ namespace IFC.IFC4x3
 				Items
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepresentationMap,
 				LayerAssignments,
@@ -79010,9 +79010,9 @@ namespace IFC.IFC4x3
 		public IFCShapeRepresentation(IFCRepresentationContext? ContextOfItems, IFCLabel? RepresentationIdentifier, IFCLabel? RepresentationType, IFC_Attributes<IFCRepresentationItem>? Items) : base (ContextOfItems, RepresentationIdentifier, RepresentationType, Items)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ContextOfItems,
 				RepresentationIdentifier,
@@ -79020,15 +79020,15 @@ namespace IFC.IFC4x3
 				Items
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepresentationMap,
 				LayerAssignments,
@@ -79065,23 +79065,23 @@ namespace IFC.IFC4x3
 		{
 			this.SbsmBoundary = SbsmBoundary;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SbsmBoundary
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -79151,9 +79151,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -79166,15 +79166,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -79242,9 +79242,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -79258,15 +79258,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -79320,9 +79320,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -79335,15 +79335,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -79413,9 +79413,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -79429,15 +79429,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -79489,23 +79489,23 @@ namespace IFC.IFC4x3
 		public IFCSimpleProperty(IFCIdentifier? Name, IFCText? Specification) : base (Name, Specification)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Specification
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReferences,
 				PartOfPset,
@@ -79554,9 +79554,9 @@ namespace IFC.IFC4x3
 			this.Expression = Expression;
 			this.AccessState = AccessState;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -79572,15 +79572,15 @@ namespace IFC.IFC4x3
 				AccessState
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -79755,9 +79755,9 @@ namespace IFC.IFC4x3
 			this.LinearTerm = LinearTerm;
 			this.ConstantTerm = ConstantTerm;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				SineTerm,
@@ -79765,16 +79765,16 @@ namespace IFC.IFC4x3
 				ConstantTerm
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -79863,9 +79863,9 @@ namespace IFC.IFC4x3
 			this.LandTitleNumber = LandTitleNumber;
 			this.SiteAddress = SiteAddress;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -79883,15 +79883,15 @@ namespace IFC.IFC4x3
 				SiteAddress
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -80027,9 +80027,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -80042,15 +80042,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -80118,9 +80118,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -80134,15 +80134,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -80196,9 +80196,9 @@ namespace IFC.IFC4x3
 			this.SlippageY = SlippageY;
 			this.SlippageZ = SlippageZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				SlippageX,
@@ -80206,15 +80206,15 @@ namespace IFC.IFC4x3
 				SlippageZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -80295,9 +80295,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -80310,15 +80310,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -80388,9 +80388,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -80404,15 +80404,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -80472,22 +80472,22 @@ namespace IFC.IFC4x3
 		public IFCSolidModel() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -80531,9 +80531,9 @@ namespace IFC.IFC4x3
 			this.PredefinedType = PredefinedType;
 			this.ElevationWithFlooring = ElevationWithFlooring;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -80548,15 +80548,15 @@ namespace IFC.IFC4x3
 				ElevationWithFlooring
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -80672,9 +80672,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -80687,15 +80687,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -80765,9 +80765,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -80781,15 +80781,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -80843,9 +80843,9 @@ namespace IFC.IFC4x3
 			this.PredefinedType = PredefinedType;
 			this.LongName = LongName;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -80860,15 +80860,15 @@ namespace IFC.IFC4x3
 				LongName
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -80949,9 +80949,9 @@ namespace IFC.IFC4x3
 		{
 			this.LongName = LongName;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -80963,15 +80963,15 @@ namespace IFC.IFC4x3
 				LongName
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -81112,9 +81112,9 @@ namespace IFC.IFC4x3
 		{
 			this.ElementType = ElementType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -81127,15 +81127,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -81197,9 +81197,9 @@ namespace IFC.IFC4x3
 		{
 			this.CompositionType = CompositionType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -81212,15 +81212,15 @@ namespace IFC.IFC4x3
 				CompositionType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -81277,9 +81277,9 @@ namespace IFC.IFC4x3
 		public IFCSpatialStructureElementType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -81292,15 +81292,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -81336,9 +81336,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -81351,15 +81351,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -81423,9 +81423,9 @@ namespace IFC.IFC4x3
 			this.PredefinedType = PredefinedType;
 			this.LongName = LongName;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -81440,15 +81440,15 @@ namespace IFC.IFC4x3
 				LongName
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -81514,24 +81514,24 @@ namespace IFC.IFC4x3
 		{
 			this.Radius = Radius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				Radius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -81572,24 +81572,24 @@ namespace IFC.IFC4x3
 		{
 			this.Radius = Radius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				Radius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -81637,23 +81637,23 @@ namespace IFC.IFC4x3
 		{
 			this.Position = Position;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -81700,9 +81700,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -81715,15 +81715,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -81793,9 +81793,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -81809,15 +81809,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -81871,9 +81871,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -81886,15 +81886,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -81977,9 +81977,9 @@ namespace IFC.IFC4x3
 			this.TreadLength = TreadLength;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -81996,15 +81996,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -82144,9 +82144,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -82160,15 +82160,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -82219,9 +82219,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -82235,15 +82235,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -82295,9 +82295,9 @@ namespace IFC.IFC4x3
 		{
 			this.DestabilizingLoad = DestabilizingLoad;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -82311,15 +82311,15 @@ namespace IFC.IFC4x3
 				DestabilizingLoad
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -82382,9 +82382,9 @@ namespace IFC.IFC4x3
 			this.AppliedLoad = AppliedLoad;
 			this.GlobalOrLocal = GlobalOrLocal;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -82397,15 +82397,15 @@ namespace IFC.IFC4x3
 				GlobalOrLocal
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -82508,9 +82508,9 @@ namespace IFC.IFC4x3
 			this.HasResults = HasResults;
 			this.SharedPlacement = SharedPlacement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -82524,15 +82524,15 @@ namespace IFC.IFC4x3
 				SharedPlacement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -82697,9 +82697,9 @@ namespace IFC.IFC4x3
 		{
 			this.AppliedCondition = AppliedCondition;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -82711,15 +82711,15 @@ namespace IFC.IFC4x3
 				AppliedCondition
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -82792,22 +82792,22 @@ namespace IFC.IFC4x3
 		{
 			this.Name = Name;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -82857,9 +82857,9 @@ namespace IFC.IFC4x3
 			this.ProjectedOrTrue = ProjectedOrTrue;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -82875,15 +82875,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -82955,9 +82955,9 @@ namespace IFC.IFC4x3
 		{
 			this.AxisDirection = AxisDirection;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -82970,15 +82970,15 @@ namespace IFC.IFC4x3
 				AxisDirection
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -83040,9 +83040,9 @@ namespace IFC.IFC4x3
 			this.PredefinedType = PredefinedType;
 			this.Axis = Axis;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -83055,15 +83055,15 @@ namespace IFC.IFC4x3
 				Axis
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -83133,9 +83133,9 @@ namespace IFC.IFC4x3
 		public IFCStructuralCurveMemberVarying(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCStructuralCurveMemberTypeEnum? PredefinedType, IFCDirection? Axis) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, PredefinedType, Axis)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -83148,15 +83148,15 @@ namespace IFC.IFC4x3
 				Axis
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -83196,9 +83196,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -83212,15 +83212,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -83277,9 +83277,9 @@ namespace IFC.IFC4x3
 		public IFCStructuralItem(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -83290,15 +83290,15 @@ namespace IFC.IFC4x3
 				Representation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -83350,9 +83350,9 @@ namespace IFC.IFC4x3
 		public IFCStructuralLinearAction(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCStructuralLoad? AppliedLoad, IFCGlobalOrLocalEnum? GlobalOrLocal, IFCBoolean? DestabilizingLoad, IFCProjectedOrTrueLengthEnum? ProjectedOrTrue, IFCStructuralCurveActivityTypeEnum? PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal, DestabilizingLoad, ProjectedOrTrue, PredefinedType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -83368,15 +83368,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -83414,22 +83414,22 @@ namespace IFC.IFC4x3
 		{
 			this.Name = Name;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -83470,9 +83470,9 @@ namespace IFC.IFC4x3
 		{
 			this.SelfWeightCoefficients = SelfWeightCoefficients;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -83487,15 +83487,15 @@ namespace IFC.IFC4x3
 				SelfWeightCoefficients
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -83570,24 +83570,24 @@ namespace IFC.IFC4x3
 			this.Values = Values;
 			this.Locations = Locations;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Values,
 				Locations
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -83714,9 +83714,9 @@ namespace IFC.IFC4x3
 			this.Coefficient = Coefficient;
 			this.Purpose = Purpose;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -83730,15 +83730,15 @@ namespace IFC.IFC4x3
 				Purpose
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -83911,9 +83911,9 @@ namespace IFC.IFC4x3
 			this.LinearMomentY = LinearMomentY;
 			this.LinearMomentZ = LinearMomentZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				LinearForceX,
@@ -83924,15 +83924,15 @@ namespace IFC.IFC4x3
 				LinearMomentZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -84061,22 +84061,22 @@ namespace IFC.IFC4x3
 		public IFCStructuralLoadOrResult(IFCLabel? Name) : base (Name)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -84103,9 +84103,9 @@ namespace IFC.IFC4x3
 			this.PlanarForceY = PlanarForceY;
 			this.PlanarForceZ = PlanarForceZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				PlanarForceX,
@@ -84113,15 +84113,15 @@ namespace IFC.IFC4x3
 				PlanarForceZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -84213,9 +84213,9 @@ namespace IFC.IFC4x3
 			this.RotationalDisplacementRY = RotationalDisplacementRY;
 			this.RotationalDisplacementRZ = RotationalDisplacementRZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				DisplacementX,
@@ -84226,15 +84226,15 @@ namespace IFC.IFC4x3
 				RotationalDisplacementRZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -84363,9 +84363,9 @@ namespace IFC.IFC4x3
 		{
 			this.Distortion = Distortion;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				DisplacementX,
@@ -84377,15 +84377,15 @@ namespace IFC.IFC4x3
 				Distortion
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -84441,9 +84441,9 @@ namespace IFC.IFC4x3
 			this.MomentY = MomentY;
 			this.MomentZ = MomentZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				ForceX,
@@ -84454,15 +84454,15 @@ namespace IFC.IFC4x3
 				MomentZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -84591,9 +84591,9 @@ namespace IFC.IFC4x3
 		{
 			this.WarpingMoment = WarpingMoment;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				ForceX,
@@ -84605,15 +84605,15 @@ namespace IFC.IFC4x3
 				WarpingMoment
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -84655,22 +84655,22 @@ namespace IFC.IFC4x3
 		public IFCStructuralLoadStatic(IFCLabel? Name) : base (Name)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -84697,9 +84697,9 @@ namespace IFC.IFC4x3
 			this.DeltaTY = DeltaTY;
 			this.DeltaTZ = DeltaTZ;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				DeltaTConstant,
@@ -84707,15 +84707,15 @@ namespace IFC.IFC4x3
 				DeltaTZ
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -84793,9 +84793,9 @@ namespace IFC.IFC4x3
 		public IFCStructuralMember(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -84806,15 +84806,15 @@ namespace IFC.IFC4x3
 				Representation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -84867,9 +84867,9 @@ namespace IFC.IFC4x3
 		public IFCStructuralPlanarAction(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCStructuralLoad? AppliedLoad, IFCGlobalOrLocalEnum? GlobalOrLocal, IFCBoolean? DestabilizingLoad, IFCProjectedOrTrueLengthEnum? ProjectedOrTrue, IFCStructuralSurfaceActivityTypeEnum? PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal, DestabilizingLoad, ProjectedOrTrue, PredefinedType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -84885,15 +84885,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -84928,9 +84928,9 @@ namespace IFC.IFC4x3
 		public IFCStructuralPointAction(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCStructuralLoad? AppliedLoad, IFCGlobalOrLocalEnum? GlobalOrLocal, IFCBoolean? DestabilizingLoad) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal, DestabilizingLoad)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -84944,15 +84944,15 @@ namespace IFC.IFC4x3
 				DestabilizingLoad
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -84988,9 +84988,9 @@ namespace IFC.IFC4x3
 		{
 			this.ConditionCoordinateSystem = ConditionCoordinateSystem;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -85003,15 +85003,15 @@ namespace IFC.IFC4x3
 				ConditionCoordinateSystem
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -85065,9 +85065,9 @@ namespace IFC.IFC4x3
 		public IFCStructuralPointReaction(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCStructuralLoad? AppliedLoad, IFCGlobalOrLocalEnum? GlobalOrLocal) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -85080,15 +85080,15 @@ namespace IFC.IFC4x3
 				GlobalOrLocal
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -85125,9 +85125,9 @@ namespace IFC.IFC4x3
 		public IFCStructuralReaction(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCStructuralLoad? AppliedLoad, IFCGlobalOrLocalEnum? GlobalOrLocal) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedLoad, GlobalOrLocal)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -85140,15 +85140,15 @@ namespace IFC.IFC4x3
 				GlobalOrLocal
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -85195,9 +85195,9 @@ namespace IFC.IFC4x3
 			this.ResultForLoadGroup = ResultForLoadGroup;
 			this.IsLinear = IsLinear;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -85209,15 +85209,15 @@ namespace IFC.IFC4x3
 				IsLinear
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -85332,9 +85332,9 @@ namespace IFC.IFC4x3
 			this.ProjectedOrTrue = ProjectedOrTrue;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -85350,15 +85350,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -85427,9 +85427,9 @@ namespace IFC.IFC4x3
 		public IFCStructuralSurfaceConnection(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCBoundaryCondition? AppliedCondition) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, AppliedCondition)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -85441,15 +85441,15 @@ namespace IFC.IFC4x3
 				AppliedCondition
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -85493,9 +85493,9 @@ namespace IFC.IFC4x3
 			this.PredefinedType = PredefinedType;
 			this.Thickness = Thickness;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -85508,15 +85508,15 @@ namespace IFC.IFC4x3
 				Thickness
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -85586,9 +85586,9 @@ namespace IFC.IFC4x3
 		public IFCStructuralSurfaceMemberVarying(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCStructuralSurfaceMemberTypeEnum? PredefinedType, IFCPositiveLengthMeasure? Thickness) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, PredefinedType, Thickness)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -85601,15 +85601,15 @@ namespace IFC.IFC4x3
 				Thickness
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -85648,9 +85648,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -85664,15 +85664,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -85725,9 +85725,9 @@ namespace IFC.IFC4x3
 		public IFCStyleModel(IFCRepresentationContext? ContextOfItems, IFCLabel? RepresentationIdentifier, IFCLabel? RepresentationType, IFC_Attributes<IFCRepresentationItem>? Items) : base (ContextOfItems, RepresentationIdentifier, RepresentationType, Items)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ContextOfItems,
 				RepresentationIdentifier,
@@ -85735,15 +85735,15 @@ namespace IFC.IFC4x3
 				Items
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepresentationMap,
 				LayerAssignments,
@@ -85775,24 +85775,24 @@ namespace IFC.IFC4x3
 			this.Styles = Styles;
 			this.Name = Name;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Item,
 				Styles,
 				Name
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -85886,9 +85886,9 @@ namespace IFC.IFC4x3
 		public IFCStyledRepresentation(IFCRepresentationContext? ContextOfItems, IFCLabel? RepresentationIdentifier, IFCLabel? RepresentationType, IFC_Attributes<IFCRepresentationItem>? Items) : base (ContextOfItems, RepresentationIdentifier, RepresentationType, Items)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ContextOfItems,
 				RepresentationIdentifier,
@@ -85896,15 +85896,15 @@ namespace IFC.IFC4x3
 				Items
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepresentationMap,
 				LayerAssignments,
@@ -85932,9 +85932,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -85949,15 +85949,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -86011,9 +86011,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -86029,15 +86029,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -86085,24 +86085,24 @@ namespace IFC.IFC4x3
 		{
 			this.ParentEdge = ParentEdge;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				EdgeStart,
 				EdgeEnd,
 				ParentEdge
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -86154,22 +86154,22 @@ namespace IFC.IFC4x3
 		public IFCSurface() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -86223,26 +86223,26 @@ namespace IFC.IFC4x3
 			this.AssociatedGeometry = AssociatedGeometry;
 			this.MasterRepresentation = MasterRepresentation;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Curve3D,
 				AssociatedGeometry,
 				MasterRepresentation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				BasisSurface
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -86351,9 +86351,9 @@ namespace IFC.IFC4x3
 		{
 			this.ReferenceSurface = ReferenceSurface;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SweptArea,
 				Position,
@@ -86363,16 +86363,16 @@ namespace IFC.IFC4x3
 				ReferenceSurface
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -86420,9 +86420,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -86435,15 +86435,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -86533,9 +86533,9 @@ namespace IFC.IFC4x3
 			this.ExtrudedDirection = ExtrudedDirection;
 			this.Depth = Depth;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SweptCurve,
 				Position,
@@ -86543,17 +86543,17 @@ namespace IFC.IFC4x3
 				Depth
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				ExtrusionAxis
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -86632,26 +86632,26 @@ namespace IFC.IFC4x3
 		{
 			this.AxisPosition = AxisPosition;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SweptCurve,
 				Position,
 				AxisPosition
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				AxisLine
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -86718,9 +86718,9 @@ namespace IFC.IFC4x3
 			this.SurfaceReinforcement2 = SurfaceReinforcement2;
 			this.ShearReinforcement = ShearReinforcement;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				SurfaceReinforcement1,
@@ -86728,15 +86728,15 @@ namespace IFC.IFC4x3
 				ShearReinforcement
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -86867,24 +86867,24 @@ namespace IFC.IFC4x3
 			this.Side = Side;
 			this.Styles = Styles;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Side,
 				Styles
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -86966,9 +86966,9 @@ namespace IFC.IFC4x3
 			this.TransmissionColour = TransmissionColour;
 			this.ReflectanceColour = ReflectanceColour;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				DiffuseTransmissionColour,
 				DiffuseReflectionColour,
@@ -86976,15 +86976,15 @@ namespace IFC.IFC4x3
 				ReflectanceColour
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -87080,23 +87080,23 @@ namespace IFC.IFC4x3
 			this.RefractionIndex = RefractionIndex;
 			this.DispersionFactor = DispersionFactor;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RefractionIndex,
 				DispersionFactor
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -87171,9 +87171,9 @@ namespace IFC.IFC4x3
 			this.SpecularHighlight = SpecularHighlight;
 			this.ReflectanceMethod = ReflectanceMethod;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SurfaceColour,
 				Transparency,
@@ -87186,15 +87186,15 @@ namespace IFC.IFC4x3
 				ReflectanceMethod
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -87346,23 +87346,23 @@ namespace IFC.IFC4x3
 			this.SurfaceColour = SurfaceColour;
 			this.Transparency = Transparency;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SurfaceColour,
 				Transparency
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -87419,22 +87419,22 @@ namespace IFC.IFC4x3
 		{
 			this.Textures = Textures;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Textures
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -87510,9 +87510,9 @@ namespace IFC.IFC4x3
 			this.TextureTransform = TextureTransform;
 			this.Parameter = Parameter;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepeatS,
 				RepeatT,
@@ -87521,15 +87521,15 @@ namespace IFC.IFC4x3
 				Parameter
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				IsMappedBy,
 				UsedInStyles
@@ -87699,24 +87699,24 @@ namespace IFC.IFC4x3
 			this.SweptArea = SweptArea;
 			this.Position = Position;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SweptArea,
 				Position
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -87794,9 +87794,9 @@ namespace IFC.IFC4x3
 			this.StartParam = StartParam;
 			this.EndParam = EndParam;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Directrix,
 				Radius,
@@ -87805,16 +87805,16 @@ namespace IFC.IFC4x3
 				EndParam
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -87931,9 +87931,9 @@ namespace IFC.IFC4x3
 		{
 			this.FilletRadius = FilletRadius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Directrix,
 				Radius,
@@ -87943,16 +87943,16 @@ namespace IFC.IFC4x3
 				FilletRadius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -88001,24 +88001,24 @@ namespace IFC.IFC4x3
 			this.SweptCurve = SweptCurve;
 			this.Position = Position;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				SweptCurve,
 				Position
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -88083,9 +88083,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -88098,15 +88098,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -88176,9 +88176,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -88192,15 +88192,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -88256,9 +88256,9 @@ namespace IFC.IFC4x3
 		public IFCSystem(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -88267,15 +88267,15 @@ namespace IFC.IFC4x3
 				ObjectType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -88349,9 +88349,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -88364,15 +88364,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -88441,9 +88441,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -88457,15 +88457,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -88540,9 +88540,9 @@ namespace IFC.IFC4x3
 			this.WebSlope = WebSlope;
 			this.FlangeSlope = FlangeSlope;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -88558,15 +88558,15 @@ namespace IFC.IFC4x3
 				FlangeSlope
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -88793,27 +88793,27 @@ namespace IFC.IFC4x3
 			this.Rows = Rows;
 			this.Columns = Columns;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Rows,
 				Columns
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				NumberOfCellsInRow,
 				NumberOfHeadings,
 				NumberOfDataRows
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -88952,9 +88952,9 @@ namespace IFC.IFC4x3
 			this.Unit = Unit;
 			this.ReferencePath = ReferencePath;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Identifier,
 				Name,
@@ -88963,15 +88963,15 @@ namespace IFC.IFC4x3
 				ReferencePath
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -89084,23 +89084,23 @@ namespace IFC.IFC4x3
 			this.RowCells = RowCells;
 			this.IsHeading = IsHeading;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RowCells,
 				IsHeading
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -89179,9 +89179,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -89194,15 +89194,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -89272,9 +89272,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -89288,15 +89288,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -89362,9 +89362,9 @@ namespace IFC.IFC4x3
 			this.TaskTime = TaskTime;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -89381,15 +89381,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -89582,9 +89582,9 @@ namespace IFC.IFC4x3
 			this.RemainingTime = RemainingTime;
 			this.Completion = Completion;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				DataOrigin,
@@ -89608,15 +89608,15 @@ namespace IFC.IFC4x3
 				Completion
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -89943,9 +89943,9 @@ namespace IFC.IFC4x3
 		{
 			this.Recurrence = Recurrence;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				DataOrigin,
@@ -89970,15 +89970,15 @@ namespace IFC.IFC4x3
 				Recurrence
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -90022,9 +90022,9 @@ namespace IFC.IFC4x3
 			this.PredefinedType = PredefinedType;
 			this.WorkMethod = WorkMethod;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -90039,15 +90039,15 @@ namespace IFC.IFC4x3
 				WorkMethod
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -90135,9 +90135,9 @@ namespace IFC.IFC4x3
 			this.WWWHomePageURL = WWWHomePageURL;
 			this.MessagingIDs = MessagingIDs;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Purpose,
 				Description,
@@ -90150,15 +90150,15 @@ namespace IFC.IFC4x3
 				MessagingIDs
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				OfPerson,
 				OfOrganization
@@ -90380,9 +90380,9 @@ namespace IFC.IFC4x3
 			this.AnchorageSlip = AnchorageSlip;
 			this.MinCurvatureRadius = MinCurvatureRadius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -90403,15 +90403,15 @@ namespace IFC.IFC4x3
 				MinCurvatureRadius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -90608,9 +90608,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -90624,15 +90624,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -90700,9 +90700,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -90716,15 +90716,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -90778,9 +90778,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -90794,15 +90794,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -90870,9 +90870,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -90886,15 +90886,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -90954,9 +90954,9 @@ namespace IFC.IFC4x3
 			this.CrossSectionArea = CrossSectionArea;
 			this.SheathDiameter = SheathDiameter;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -90973,15 +90973,15 @@ namespace IFC.IFC4x3
 				SheathDiameter
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -91103,23 +91103,23 @@ namespace IFC.IFC4x3
 		{
 			this.Coordinates = Coordinates;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Coordinates
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -91198,21 +91198,21 @@ namespace IFC.IFC4x3
 		public IFCTessellatedItem() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -91243,24 +91243,24 @@ namespace IFC.IFC4x3
 			this.Placement = Placement;
 			this.Path = Path;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Literal,
 				Placement,
 				Path
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -91342,9 +91342,9 @@ namespace IFC.IFC4x3
 			this.Extent = Extent;
 			this.BoxAlignment = BoxAlignment;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Literal,
 				Placement,
@@ -91353,15 +91353,15 @@ namespace IFC.IFC4x3
 				BoxAlignment
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -91429,9 +91429,9 @@ namespace IFC.IFC4x3
 			this.TextFontStyle = TextFontStyle;
 			this.ModelOrDraughting = ModelOrDraughting;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				TextCharacterAppearance,
@@ -91440,15 +91440,15 @@ namespace IFC.IFC4x3
 				ModelOrDraughting
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -91556,9 +91556,9 @@ namespace IFC.IFC4x3
 			this.FontWeight = FontWeight;
 			this.FontSize = FontSize;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				FontFamily,
@@ -91568,15 +91568,15 @@ namespace IFC.IFC4x3
 				FontSize
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -91706,23 +91706,23 @@ namespace IFC.IFC4x3
 			this.Colour = Colour;
 			this.BackgroundColour = BackgroundColour;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Colour,
 				BackgroundColour
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -91797,9 +91797,9 @@ namespace IFC.IFC4x3
 			this.TextTransform = TextTransform;
 			this.LineHeight = LineHeight;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				TextIndent,
 				TextAlign,
@@ -91810,15 +91810,15 @@ namespace IFC.IFC4x3
 				LineHeight
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -91969,22 +91969,22 @@ namespace IFC.IFC4x3
 		{
 			this.Maps = Maps;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Maps
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -92042,24 +92042,24 @@ namespace IFC.IFC4x3
 			this.Mode = Mode;
 			this.Parameter = Parameter;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Maps,
 				Mode,
 				Parameter
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -92139,23 +92139,23 @@ namespace IFC.IFC4x3
 			this.TexCoordIndex = TexCoordIndex;
 			this.TexCoordsOf = TexCoordsOf;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				TexCoordIndex,
 				TexCoordsOf
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ToTexMap
 			};
@@ -92236,24 +92236,24 @@ namespace IFC.IFC4x3
 		{
 			this.InnerTexCoordIndices = InnerTexCoordIndices;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				TexCoordIndex,
 				TexCoordsOf,
 				InnerTexCoordIndices
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ToTexMap
 			};
@@ -92325,24 +92325,24 @@ namespace IFC.IFC4x3
 			this.Vertices = Vertices;
 			this.MappedTo = MappedTo;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Maps,
 				Vertices,
 				MappedTo
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -92415,22 +92415,22 @@ namespace IFC.IFC4x3
 		{
 			this.Coordinates = Coordinates;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Coordinates
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -92485,22 +92485,22 @@ namespace IFC.IFC4x3
 		{
 			this.TexCoordsList = TexCoordsList;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				TexCoordsList
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -92577,9 +92577,9 @@ namespace IFC.IFC4x3
 			this.LinearTerm = LinearTerm;
 			this.ConstantTerm = ConstantTerm;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				CubicTerm,
@@ -92588,16 +92588,16 @@ namespace IFC.IFC4x3
 				ConstantTerm
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -92694,23 +92694,23 @@ namespace IFC.IFC4x3
 			this.StartTime = StartTime;
 			this.EndTime = EndTime;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				StartTime,
 				EndTime
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -92793,9 +92793,9 @@ namespace IFC.IFC4x3
 			this.UserDefinedDataOrigin = UserDefinedDataOrigin;
 			this.Unit = Unit;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				Description,
@@ -92807,15 +92807,15 @@ namespace IFC.IFC4x3
 				Unit
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference
 			};
@@ -92996,22 +92996,22 @@ namespace IFC.IFC4x3
 		{
 			this.ListValues = ListValues;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ListValues
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -93068,21 +93068,21 @@ namespace IFC.IFC4x3
 		public IFCTopologicalRepresentationItem() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -93110,9 +93110,9 @@ namespace IFC.IFC4x3
 		public IFCTopologyRepresentation(IFCRepresentationContext? ContextOfItems, IFCLabel? RepresentationIdentifier, IFCLabel? RepresentationType, IFC_Attributes<IFCRepresentationItem>? Items) : base (ContextOfItems, RepresentationIdentifier, RepresentationType, Items)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ContextOfItems,
 				RepresentationIdentifier,
@@ -93120,15 +93120,15 @@ namespace IFC.IFC4x3
 				Items
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				RepresentationMap,
 				LayerAssignments,
@@ -93158,25 +93158,25 @@ namespace IFC.IFC4x3
 			this.MajorRadius = MajorRadius;
 			this.MinorRadius = MinorRadius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Position,
 				MajorRadius,
 				MinorRadius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -93241,9 +93241,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -93256,15 +93256,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -93332,9 +93332,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -93348,15 +93348,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -93410,9 +93410,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -93425,15 +93425,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -93503,9 +93503,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -93519,15 +93519,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -93581,9 +93581,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -93596,15 +93596,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -93672,9 +93672,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -93688,15 +93688,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -93744,9 +93744,9 @@ namespace IFC.IFC4x3
 		public IFCTransportationDevice(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -93758,15 +93758,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -93813,9 +93813,9 @@ namespace IFC.IFC4x3
 		public IFCTransportationDeviceType(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCIdentifier? ApplicableOccurrence, IFC_Attributes<IFCPropertySetDefinition>? HasPropertySets, IFC_Attributes<IFCRepresentationMap>? RepresentationMaps, IFCLabel? Tag, IFCLabel? ElementType) : base (GlobalId, OwnerHistory, Name, Description, ApplicableOccurrence, HasPropertySets, RepresentationMaps, Tag, ElementType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -93828,15 +93828,15 @@ namespace IFC.IFC4x3
 				ElementType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -93875,9 +93875,9 @@ namespace IFC.IFC4x3
 			this.YDim = YDim;
 			this.TopXOffset = TopXOffset;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -93888,15 +93888,15 @@ namespace IFC.IFC4x3
 				TopXOffset
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -94014,9 +94014,9 @@ namespace IFC.IFC4x3
 			this.CoordIndex = CoordIndex;
 			this.PnIndex = PnIndex;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Coordinates,
 				Normals,
@@ -94025,17 +94025,17 @@ namespace IFC.IFC4x3
 				PnIndex
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				NumberOfTriangles
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -94215,9 +94215,9 @@ namespace IFC.IFC4x3
 		{
 			this.Flags = Flags;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Coordinates,
 				Normals,
@@ -94227,17 +94227,17 @@ namespace IFC.IFC4x3
 				Flags
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim,
 				NumberOfTriangles
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem,
@@ -94312,9 +94312,9 @@ namespace IFC.IFC4x3
 			this.SenseAgreement = SenseAgreement;
 			this.MasterRepresentation = MasterRepresentation;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				BasisCurve,
 				Trim1,
@@ -94323,16 +94323,16 @@ namespace IFC.IFC4x3
 				MasterRepresentation
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -94483,9 +94483,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -94498,15 +94498,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -94576,9 +94576,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -94592,15 +94592,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -94661,9 +94661,9 @@ namespace IFC.IFC4x3
 			this.ApplicableOccurrence = ApplicableOccurrence;
 			this.HasPropertySets = HasPropertySets;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -94673,15 +94673,15 @@ namespace IFC.IFC4x3
 				HasPropertySets
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -94791,9 +94791,9 @@ namespace IFC.IFC4x3
 			this.LongDescription = LongDescription;
 			this.ProcessType = ProcessType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -94806,15 +94806,15 @@ namespace IFC.IFC4x3
 				ProcessType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -94928,9 +94928,9 @@ namespace IFC.IFC4x3
 			this.RepresentationMaps = RepresentationMaps;
 			this.Tag = Tag;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -94942,15 +94942,15 @@ namespace IFC.IFC4x3
 				Tag
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -95061,9 +95061,9 @@ namespace IFC.IFC4x3
 			this.LongDescription = LongDescription;
 			this.ResourceType = ResourceType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -95076,15 +95076,15 @@ namespace IFC.IFC4x3
 				ResourceType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -95257,9 +95257,9 @@ namespace IFC.IFC4x3
 			this.EdgeRadius = EdgeRadius;
 			this.FlangeSlope = FlangeSlope;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -95273,15 +95273,15 @@ namespace IFC.IFC4x3
 				FlangeSlope
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -95431,22 +95431,22 @@ namespace IFC.IFC4x3
 		{
 			this.Units = Units;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Units
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -95507,9 +95507,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -95522,15 +95522,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -95600,9 +95600,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -95616,15 +95616,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -95678,9 +95678,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -95693,15 +95693,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -95771,9 +95771,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -95787,15 +95787,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -95849,9 +95849,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -95864,15 +95864,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -95942,9 +95942,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -95958,15 +95958,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -96031,24 +96031,24 @@ namespace IFC.IFC4x3
 			this.Orientation = Orientation;
 			this.Magnitude = Magnitude;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Orientation,
 				Magnitude
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Dim
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -96120,9 +96120,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -96135,15 +96135,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -96211,9 +96211,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -96227,15 +96227,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -96279,21 +96279,21 @@ namespace IFC.IFC4x3
 		public IFCVertex() : base()
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -96316,22 +96316,22 @@ namespace IFC.IFC4x3
 		{
 			this.LoopVertex = LoopVertex;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LoopVertex
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -96372,22 +96372,22 @@ namespace IFC.IFC4x3
 		{
 			this.VertexGeometry = VertexGeometry;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				VertexGeometry
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				LayerAssignment,
 				StyledByItem
@@ -96434,9 +96434,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -96449,15 +96449,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -96525,9 +96525,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -96541,15 +96541,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -96603,9 +96603,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -96618,15 +96618,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -96694,9 +96694,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -96710,15 +96710,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -96770,9 +96770,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -96785,15 +96785,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -96860,23 +96860,23 @@ namespace IFC.IFC4x3
 			this.IntersectingAxes = IntersectingAxes;
 			this.OffsetDistances = OffsetDistances;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				IntersectingAxes,
 				OffsetDistances
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -96969,9 +96969,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -96984,15 +96984,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -97066,9 +97066,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -97081,15 +97081,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -97156,9 +97156,9 @@ namespace IFC.IFC4x3
 		public IFCWallStandardCase(IFCGloballyUniqueId? GlobalId, IFCOwnerHistory? OwnerHistory, IFCLabel? Name, IFCText? Description, IFCLabel? ObjectType, IFCObjectPlacement? ObjectPlacement, IFCProductRepresentation? Representation, IFCIdentifier? Tag, IFCWallTypeEnum? PredefinedType) : base (GlobalId, OwnerHistory, Name, Description, ObjectType, ObjectPlacement, Representation, Tag, PredefinedType)
 		{
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -97171,15 +97171,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -97229,9 +97229,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -97245,15 +97245,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -97307,9 +97307,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -97322,15 +97322,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -97400,9 +97400,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -97416,15 +97416,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -97474,23 +97474,23 @@ namespace IFC.IFC4x3
 			this.WellKnownText = WellKnownText;
 			this.CoordinateReferenceSystem = CoordinateReferenceSystem;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				WellKnownText,
 				CoordinateReferenceSystem
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -97565,9 +97565,9 @@ namespace IFC.IFC4x3
 			this.PartitioningType = PartitioningType;
 			this.UserDefinedPartitioningType = UserDefinedPartitioningType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -97584,15 +97584,15 @@ namespace IFC.IFC4x3
 				UserDefinedPartitioningType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -97769,9 +97769,9 @@ namespace IFC.IFC4x3
 			this.LiningToPanelOffsetX = LiningToPanelOffsetX;
 			this.LiningToPanelOffsetY = LiningToPanelOffsetY;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -97791,15 +97791,15 @@ namespace IFC.IFC4x3
 				LiningToPanelOffsetY
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -98057,9 +98057,9 @@ namespace IFC.IFC4x3
 			this.FrameThickness = FrameThickness;
 			this.ShapeAspectStyle = ShapeAspectStyle;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -98072,15 +98072,15 @@ namespace IFC.IFC4x3
 				ShapeAspectStyle
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasContext,
 				HasAssociations,
@@ -98208,9 +98208,9 @@ namespace IFC.IFC4x3
 			this.ParameterTakesPrecedence = ParameterTakesPrecedence;
 			this.UserDefinedPartitioningType = UserDefinedPartitioningType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -98227,15 +98227,15 @@ namespace IFC.IFC4x3
 				UserDefinedPartitioningType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -98346,9 +98346,9 @@ namespace IFC.IFC4x3
 			this.ExceptionTimes = ExceptionTimes;
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -98361,15 +98361,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -98509,9 +98509,9 @@ namespace IFC.IFC4x3
 			this.StartTime = StartTime;
 			this.FinishTime = FinishTime;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -98528,15 +98528,15 @@ namespace IFC.IFC4x3
 				FinishTime
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -98714,9 +98714,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -98734,15 +98734,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -98796,9 +98796,9 @@ namespace IFC.IFC4x3
 		{
 			this.PredefinedType = PredefinedType;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -98816,15 +98816,15 @@ namespace IFC.IFC4x3
 				PredefinedType
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,
@@ -98881,9 +98881,9 @@ namespace IFC.IFC4x3
 			this.StartDate = StartDate;
 			this.FinishDate = FinishDate;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				Name,
 				DataOrigin,
@@ -98893,15 +98893,15 @@ namespace IFC.IFC4x3
 				FinishDate
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
@@ -98993,9 +98993,9 @@ namespace IFC.IFC4x3
 			this.FilletRadius = FilletRadius;
 			this.EdgeRadius = EdgeRadius;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				ProfileType,
 				ProfileName,
@@ -99008,15 +99008,15 @@ namespace IFC.IFC4x3
 				EdgeRadius
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasExternalReference,
 				HasProperties
@@ -99154,9 +99154,9 @@ namespace IFC.IFC4x3
 		{
 			this.LongName = LongName;
 		}
-		public override List<object?> GetDirectAttributes()
+		public override List<IFC_Attribute?> GetDirectAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				GlobalId,
 				OwnerHistory,
@@ -99166,15 +99166,15 @@ namespace IFC.IFC4x3
 				LongName
 			};
 		}
-		public override List<object?> GetDerivedAttributes()
+		public override List<IFC_Attribute?> GetDerivedAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 			};
 		}
-		public override List<object?> GetInverseAttributes()
+		public override List<IFC_Attribute?> GetInverseAttributes()
 		{
-			return new List<object?>()
+			return new List<IFC_Attribute?>()
 			{
 				HasAssignments,
 				Nests,

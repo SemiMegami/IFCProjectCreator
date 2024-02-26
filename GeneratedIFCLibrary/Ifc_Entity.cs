@@ -8,9 +8,9 @@ namespace IFC
 
 		public IFC_Model? Model { get; set; }
         public string IFC_ID { get; set; }
-        public List<object?> GetDirectAttributes();
-        public List<object?> GetDerivedAttributes();
-        public List<object?> GetInverseAttributes();
+        public List<IFC_Attribute?> GetDirectAttributes();
+        public List<IFC_Attribute?> GetDerivedAttributes();
+        public List<IFC_Attribute?> GetInverseAttributes();
         public string GetIFCFullText();
 	}
 }

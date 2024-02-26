@@ -94,7 +94,7 @@ namespace IFC
         public virtual void AddItem(IFC_ClassEntity IFCBase)
         {
 
-            List<object?> parameters = IFCBase.GetDirectAttributes();
+            List<IFC_Attribute?> parameters = IFCBase.GetDirectAttributes();
 
             foreach (var parameter in parameters)
             {
