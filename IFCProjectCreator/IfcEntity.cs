@@ -15,7 +15,7 @@ namespace IFCProjectCreator
         public List<IFCParameterAttribute> ParameterClassAttributes { get; set; }
         public List<IFCDerivedAttribute> DeriveClassAttributes { get; set; }
         public List<IFCInverseAttribute> InverseClassAttributes { get; set; }
-        public List<IFCWhereAttribute> WhereAttributes { get; set; }
+        public List<IFCWhereAttribute> WhereClassAttributes { get; set; }
         public IFCEntity? ParentClass { get; set; }
 
 
@@ -25,7 +25,7 @@ namespace IFCProjectCreator
             ParameterClassAttributes = new List<IFCParameterAttribute>();
             DeriveClassAttributes = new List<IFCDerivedAttribute>();
             InverseClassAttributes = new List<IFCInverseAttribute>();
-            WhereAttributes = new List<IFCWhereAttribute>();
+            WhereClassAttributes = new List<IFCWhereAttribute>();
         }
 
 
@@ -159,6 +159,22 @@ namespace IFCProjectCreator
             }
         }
 
+        /// <summary>
+        /// ParameterClassAttributes including from parent
+        /// </summary>
+        public List<IFCWhereAttribute> WhereAttributes
+        {
+            get
+            {
+                List<IFCWhereAttribute> attributes = new List<IFCWhereAttribute>();
+                if (ParentClass != null)
+                {
+                    attributes.AddRange(ParentClass.WhereAttributes);
+                }
+                attributes.AddRange(WhereClassAttributes);
+                return attributes;
+            }
+        }
 
         /// <summary>
         /// Parent Classes
@@ -258,6 +274,12 @@ namespace IFCProjectCreator
                         IFCAttribute.RelatedAttributeName = words[nW - 1].Replace(";", "");
                         InverseClassAttributes.Add(IFCAttribute);
                     }
+                    else if(attributeType == "WHERE")
+                    {
+                        IFCWhereAttribute IFCAttribute = new IFCWhereAttribute();
+                        IFCAttribute.Name = "is_" + words[0].Replace(" ", "");
+                        WhereClassAttributes.Add(IFCAttribute);
+                    }
                 }
             }
         }
@@ -352,6 +374,10 @@ namespace IFCProjectCreator
             {
                 texts.AddRange(attribute.GetCSharpText());
             }
+            foreach (var attribute in WhereClassAttributes)
+            {
+                texts.AddRange(attribute.GetCSharpText());
+            }
 
             // constructor with no parameters
             texts .Add("\t\tpublic " + Name + "() : base()" );
@@ -383,42 +409,55 @@ namespace IFCProjectCreator
                 }
                 texts.Add("\t\t}");
             }
-
+            
             // get parameter function
-            texts.Add("\t\tpublic override List<IFC_Attribute?> GetDirectAttributes()");
+            texts.Add("\t\tpublic override Dictionary<string, IFC_Attribute?> GetDirectAttributes()");
             texts.Add("\t\t{");
-            texts.Add("\t\t\treturn new List<IFC_Attribute?>()");
+            texts.Add("\t\t\treturn new Dictionary<string, IFC_Attribute?>()");
             texts.Add("\t\t\t{");
+
             var directAttributes = DirectAttributes;
             for(int i = 0; i < directAttributes.Count; i++)
             {
-                texts.Add("\t\t\t\t" + directAttributes[i].Name + (i < directAttributes.Count - 1 ? "," : ""));
+                texts.Add("\t\t\t\t{\"" + directAttributes[i].Name + "\", " + directAttributes[i].Name + "}" + (i < directAttributes.Count - 1 ? "," : ""));
             }
             texts.Add("\t\t\t};");
             texts.Add("\t\t}");
 
             // get parameter function
-            texts.Add("\t\tpublic override List<IFC_Attribute?> GetDerivedAttributes()");
+            texts.Add("\t\tpublic override Dictionary<string, IFC_Attribute?> GetDerivedAttributes()");
             texts.Add("\t\t{");
-            texts.Add("\t\t\treturn new List<IFC_Attribute?>()");
+            texts.Add("\t\t\treturn new Dictionary<string, IFC_Attribute?>()");
             texts.Add("\t\t\t{");
             var derivedAttributes = DerivedAttributes;
             for (int i = 0; i < derivedAttributes.Count; i++)
             {
-                texts.Add("\t\t\t\t" + derivedAttributes[i].Name + (i < derivedAttributes.Count - 1 ? "," : ""));
+                texts.Add("\t\t\t\t{\""+ derivedAttributes[i].Name + "\", " + derivedAttributes[i].Name + "}" + (i < derivedAttributes.Count - 1 ? "," : ""));
             }
             texts.Add("\t\t\t};");
             texts.Add("\t\t}");
 
             // get parameter function
-            texts.Add("\t\tpublic override List<IFC_Attribute?> GetInverseAttributes()");
+            texts.Add("\t\tpublic override Dictionary<string, IFC_Attribute?> GetInverseAttributes()");
             texts.Add("\t\t{");
-            texts.Add("\t\t\treturn new List<IFC_Attribute?>()");
+            texts.Add("\t\t\treturn new Dictionary<string, IFC_Attribute?>()");
             texts.Add("\t\t\t{");
             var inverseAttributes = InverseAttributes;
             for (int i = 0; i < inverseAttributes.Count; i++)
             {
-                texts.Add("\t\t\t\t" + inverseAttributes[i].Name + (i < inverseAttributes.Count - 1 ? "," : ""));
+                texts.Add("\t\t\t\t{\"" + inverseAttributes[i].Name + "\", " + inverseAttributes[i].Name + "}" + (i < inverseAttributes.Count - 1 ? "," : ""));
+            }
+            texts.Add("\t\t\t};");
+            texts.Add("\t\t}");
+
+            texts.Add("\t\tpublic override Dictionary<string, bool> GetWhereAttributes()");
+            texts.Add("\t\t{");
+            texts.Add("\t\t\treturn new Dictionary<string, bool>()");
+            texts.Add("\t\t\t{");
+            var whereAttributes = WhereAttributes;
+            for (int i = 0; i < whereAttributes.Count; i++)
+            {
+                texts.Add("\t\t\t\t{\"" + whereAttributes[i].Name + "\", " + whereAttributes[i].Name + "}" + (i < whereAttributes.Count - 1 ? "," : ""));
             }
             texts.Add("\t\t\t};");
             texts.Add("\t\t}");

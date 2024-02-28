@@ -29,6 +29,7 @@ namespace IFC
 	}
 	public class LOGICAL: IFC_Attribute
 	{
+		public bool UNKNOWN {get; set;}
 		public bool Value {get; set;}
 		public LOGICAL () {Value = false;}
 		public LOGICAL (bool value) {Value = value;}

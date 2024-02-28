@@ -45,10 +45,10 @@ namespace IFC
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        public IFC_Attributes<T> GetItems<T>() where T : IFC_Entity
+        public List<T> GetItems<T>() where T : IFC_Entity
 		{
 			List<IFC_Entity> itemList = items.Values.Where(x => x is T).ToList();
-            IFC_Attributes <T> results = new IFC_Attributes<T>();
+            List <T> results = new List<T>();
 			foreach (var item in itemList)
 			{
 				results.Add((T)item);
@@ -94,7 +94,7 @@ namespace IFC
         public virtual void AddItem(IFC_ClassEntity IFCBase)
         {
 
-            List<IFC_Attribute?> parameters = IFCBase.GetDirectAttributes();
+            List<IFC_Attribute?> parameters = IFCBase.GetDirectAttributes().Values.ToList();
 
             foreach (var parameter in parameters)
             {

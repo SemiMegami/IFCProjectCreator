@@ -616,11 +616,11 @@ namespace IFCProjectCreator
                         {
                             attribute.isOverride = true;
                         }
+                    
                     }
                 }
                 foreach (var attribute in entity.DirectAttributes)
                 {
-
                     foreach (var parent in parents)
                     {
                         if (parent.AdditionalSelectAttibutes.Where(x => x.Name == attribute.Name).Count() > 0)
@@ -640,9 +640,16 @@ namespace IFCProjectCreator
                             attribute.RelatedAttribute = param;
                         }
                     }
-                    if(attribute.RelatedAttribute == null)
-                    {
+                }
 
+                foreach (var attribute in entity.WhereClassAttributes)
+                {
+                    foreach (var parent in parents)
+                    {
+                        if (parent.WhereAttributes.Where(x => x.Name == attribute.Name).Count() > 0)
+                        {
+                            attribute.isOverride = true;
+                        }
                     }
                 }
             }
@@ -722,9 +729,56 @@ namespace IFCProjectCreator
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName + "." + version);
                 writer.WriteLine("{");
+
+
+                writer.WriteLine("\t#region ---- SIMPLE DATA TYPES ----");
+                foreach (var item in items.Where(e=>e is IFCBasicType || e is IFCBasicTypeList).ToList())
+                {
+                    var texts = item.GetCSharpTexts();
+                    foreach (var text in texts)
+                    {
+                        writer.WriteLine(text);
+                    }
+                }
+                writer.WriteLine("\t#endregion");
+                writer.WriteLine("");
+                writer.WriteLine("\t#region ---- ENUMERATION TYPES ----");
+                foreach (var item in items.Where(e => e is IFCEnumType).ToList())
+                {
+                    var texts = item.GetCSharpTexts();
+                    foreach (var text in texts)
+                    {
+                        writer.WriteLine(text);
+                    }
+                }
+                writer.WriteLine("\t#endregion");
+                writer.WriteLine("");
+                writer.WriteLine("\t#region ---- INTERFACES ----");
+                foreach (var item in items.Where(e => e is IFCSelectType).ToList())
+                {
+                    var texts = item.GetCSharpTexts();
+                    foreach (var text in texts)
+                    {
+                        writer.WriteLine(text);
+                    }
+                }
+                writer.WriteLine("\t#endregion");
+                writer.WriteLine("");
+                writer.WriteLine("\t#region ---- ENTITY ----");
+                foreach (var item in items.Where(e => e is IFCEntity).ToList())
+                {
+                    var texts = item.GetCSharpTexts();
+                    foreach (var text in texts)
+                    {
+                        writer.WriteLine(text);
+                    }
+                }
+                writer.WriteLine("\t#endregion");
+                writer.WriteLine("");
+                writer.WriteLine("\t#region ---- FUNCTION ----");
                 writer.WriteLine("\tpublic abstract class " + IFCName + "_Function : IFC_ClassEntity");
                 writer.WriteLine("\t{");
-                foreach(var f in Functions.Where(e=>e.VersionName == version).ToList())
+                foreach (var f in Functions.Where(e => e.VersionName == version).ToList())
                 {
                     var texts = f.GetCSharpTexts();
                     foreach (var text in texts)
@@ -733,14 +787,7 @@ namespace IFCProjectCreator
                     }
                 }
                 writer.WriteLine("\t}");
-                foreach (var item in items)
-                {
-                    var texts = item.GetCSharpTexts();
-                    foreach (var text in texts)
-                    {
-                        writer.WriteLine(text);
-                    }
-                }
+                writer.WriteLine("\t#endregion");
                 writer.WriteLine("}");
             }
         }
@@ -798,10 +845,10 @@ namespace IFCProjectCreator
         /// </summary>
         /// <typeparam name=""T""></typeparam>
         /// <returns></returns>
-        public IFC_Attributes<T> GetItems<T>() where T : IFC_Entity
+        public List<T> GetItems<T>() where T : IFC_Entity
 		{
 			List<IFC_Entity> itemList = items.Values.Where(x => x is T).ToList();
-            IFC_Attributes <T> results = new IFC_Attributes<T>();
+            List <T> results = new List<T>();
 			foreach (var item in itemList)
 			{
 				results.Add((T)item);
@@ -847,7 +894,7 @@ namespace IFCProjectCreator
         public virtual void AddItem(IFC_ClassEntity IFCBase)
         {
 
-            List<IFC_Attribute?> parameters = IFCBase.GetDirectAttributes();
+            List<IFC_Attribute?> parameters = IFCBase.GetDirectAttributes().Values.ToList();
 
             foreach (var parameter in parameters)
             {
@@ -992,19 +1039,25 @@ namespace IFCProjectCreator
 		/// Get All airect attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<IFC_Attribute?> GetDirectAttributes();
+        public abstract Dictionary<string, IFC_Attribute?> GetDirectAttributes();
 
         /// <summary>
 		/// Get derived attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<IFC_Attribute?> GetDerivedAttributes();
+        public abstract Dictionary<string, IFC_Attribute?> GetDerivedAttributes();
 
         /// <summary>
 		/// Get inverse attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<IFC_Attribute?> GetInverseAttributes();
+        public abstract Dictionary<string, IFC_Attribute?> GetInverseAttributes();
+
+        /// <summary>
+		/// Get inverse attributes
+		/// </summary>
+		/// <returns></returns>
+        public abstract Dictionary<string, bool> GetWhereAttributes();
 
         /// <summary>
 		/// Constructor
@@ -1016,7 +1069,7 @@ namespace IFCProjectCreator
 
         public string GetIFCFullText()
         {
-            var parameters = GetDirectAttributes();
+            var parameters = GetDirectAttributes().Values.ToList();
             string str = IFC_ID + ""="" + GetType().Name.ToUpper() + ""("";   
 
             if (parameters != null)
@@ -1260,9 +1313,10 @@ namespace IFCProjectCreator
        @"
 		public IFC_Model? Model { get; set; }
         public string IFC_ID { get; set; }
-        public List<IFC_Attribute?> GetDirectAttributes();
-        public List<IFC_Attribute?> GetDerivedAttributes();
-        public List<IFC_Attribute?> GetInverseAttributes();
+        public Dictionary<string, IFC_Attribute?> GetDirectAttributes();
+        public Dictionary<string, IFC_Attribute?> GetDerivedAttributes();
+        public Dictionary<string, IFC_Attribute?> GetInverseAttributes();
+        public Dictionary<string, bool> GetWhereAttributes();
         public string GetIFCFullText();
 ";
                 writer.Write(contain);
@@ -1295,7 +1349,7 @@ namespace IFCProjectCreator
 
         private void WriteCSharpBasicType(string folderDir, string nameSpaceName)
         {
-            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Basic.cs"))
+            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_SimpleData.cs"))
             {
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
@@ -1308,6 +1362,12 @@ namespace IFCProjectCreator
                     string cSharpText = data.Value;
                     writer.WriteLine("\tpublic class " + data.Key + ": IFC_Attribute");
                     writer.WriteLine("\t{");
+
+                    if(name == "LOGICAL")
+                    {
+                        writer.WriteLine("\t\tpublic bool UNKNOWN {get; set;}");
+                    }
+
                     writer.WriteLine("\t\tpublic " + cSharpText + " Value {get; set;}");
                     writer.WriteLine("\t\tpublic " + name + " () {Value = " + CSharpBasicDataDefaultValue[name] +  ";}");
                     writer.WriteLine("\t\tpublic " + name + " (" + cSharpText + " value) {Value = value;}");

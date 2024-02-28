@@ -16,7 +16,19 @@ namespace IFCProjectCreator
 
         public override List<string> GetCSharpText()
         {
-            throw new NotImplementedException();
+            return new List<string>()
+            {
+                  "\t\tpublic " + (isOverride?"override":"virtual") +  " bool " + Name,
+                  "\t\t{",
+                  "\t\t\tget",
+                  "\t\t\t{",
+                  "\t\t\t\treturn true;",
+                  "\t\t\t}",
+                  "\t\t}"
+            };
+                
+                
+              
         }
     }
 }

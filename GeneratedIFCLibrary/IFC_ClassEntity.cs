@@ -20,19 +20,25 @@ namespace IFC
 		/// Get All airect attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<IFC_Attribute?> GetDirectAttributes();
+        public abstract Dictionary<string, IFC_Attribute?> GetDirectAttributes();
 
         /// <summary>
 		/// Get derived attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<IFC_Attribute?> GetDerivedAttributes();
+        public abstract Dictionary<string, IFC_Attribute?> GetDerivedAttributes();
 
         /// <summary>
 		/// Get inverse attributes
 		/// </summary>
 		/// <returns></returns>
-        public abstract List<IFC_Attribute?> GetInverseAttributes();
+        public abstract Dictionary<string, IFC_Attribute?> GetInverseAttributes();
+
+        /// <summary>
+		/// Get inverse attributes
+		/// </summary>
+		/// <returns></returns>
+        public abstract Dictionary<string, bool> GetWhereAttributes();
 
         /// <summary>
 		/// Constructor
@@ -44,7 +50,7 @@ namespace IFC
 
         public string GetIFCFullText()
         {
-            var parameters = GetDirectAttributes();
+            var parameters = GetDirectAttributes().Values.ToList();
             string str = IFC_ID + "=" + GetType().Name.ToUpper() + "(";   
 
             if (parameters != null)

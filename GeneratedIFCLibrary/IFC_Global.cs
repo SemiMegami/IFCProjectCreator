@@ -3,9 +3,13 @@ using System.Collections.Generic;
 #pragma warning disable VSSpell001 // Spell Check
 namespace IFC.Global
 {
-	public abstract class IFC_Function : IFC_ClassEntity
-	{
-	}
+	#region ---- SIMPLE DATA TYPES ----
+	#endregion
+
+	#region ---- ENUMERATION TYPES ----
+	#endregion
+
+	#region ---- INTERFACES ----
 	/// <summary>
 	/// <summary>
 	public interface IFCAbsorbedDoseMeasure: IFC_Attribute
@@ -22807,4 +22811,14 @@ namespace IFC.Global
 		public IFCWellKnownTextLiteral? _WellKnownText {get; set;}
 		public IFCCoordinateReferenceSystem? _CoordinateReferenceSystem {get; set;}
 	}
+	#endregion
+
+	#region ---- ENTITY ----
+	#endregion
+
+	#region ---- FUNCTION ----
+	public abstract class IFC_Function : IFC_ClassEntity
+	{
+	}
+	#endregion
 }
