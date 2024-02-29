@@ -16,8 +16,13 @@ namespace IFC
 		/// </summary>
 		public string IFC_ID { get; set; }
 
+	    /// <summary>
+		/// Attribute Texts.
+		/// </summary>
+		public List<string> AttributeTexts { get; set; }
+
         /// <summary>
-		/// Get All airect attributes
+		/// Get All direct attributes
 		/// </summary>
 		/// <returns></returns>
         public abstract Dictionary<string, IFC_Attribute?> GetDirectAttributes();
@@ -46,6 +51,7 @@ namespace IFC
         public IFC_ClassEntity()
 		{
 			IFC_ID = string.Empty;
+            AttributeTexts = new List<string>();
         }
 
         public string GetIFCFullText()
