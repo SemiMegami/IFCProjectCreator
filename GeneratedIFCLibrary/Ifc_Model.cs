@@ -11,7 +11,7 @@ namespace IFC
 	public class IFC_Model
 	{
 
-         /// <summary>
+        /// <summary>
         /// Version of this model
         /// </summary>
         protected IFC_Version Version;
@@ -98,9 +98,7 @@ namespace IFC
 
         public virtual void AddItem(IFC_ClassEntity IFCBase)
         {
-
             List<IFC_Attribute?> parameters = IFCBase.GetDirectAttributes().Values.ToList();
-
             foreach (var parameter in parameters)
             {
                 if(parameter!= null)
@@ -108,17 +106,14 @@ namespace IFC
                     CheckAndAddItem(parameter);
                 }
             }
-
             if (IFCBase.Model == this)
             {
                 return;
             }
-
             string IFC_ID = "#" + (items.Count + 1);
             IFCBase.IFC_ID = IFC_ID;
             items.Add(IFC_ID, IFCBase);
             IFCBase.Model = this;
-
         }
 
         /// <summary>
@@ -161,94 +156,86 @@ namespace IFC
             }
         }
 
-
-
-
-
         void CheckAndAddInstance(dynamic parameter)
         {
-            if (parameter == null)
-            {
-                return;
-            }
-            if (parameter != null && parameter is IFC_Entity)
-            {
-                if (parameter.Model != this)
+			if (parameter != null)
+			{
+                if (parameter is IFC_Entity)
                 {
-                    AddInstance(parameter);
+                    if (parameter.Model != this)
+                    {
+                        AddInstance(parameter);
+                    }
                 }
-            }
-            else if (parameter.GetType().GetInterface("IEnumerable") != null)
-            {
-                for (int i = 0; i < parameter.Count; i++)
+                else if (parameter.GetType().GetInterface("IEnumerable") != null)
                 {
-
-                    CheckAndAddInstance(parameter[i]);
-
+                    for (int i = 0; i < parameter.Count; i++)
+                    {
+                        CheckAndAddInstance(parameter[i]);
+                    }
                 }
-
             }
         }
 
-
-        public void AddInstance(IFC_Entity ifcBase)
+        public void AddInstance(dynamic ifcBase)
         {
-
             var parameters = ifcBase.GetDirectAttributes();
-
             foreach (var parameter in parameters)
             {
                 CheckAndAddInstance(parameter);
             }
-
             if (ifcBase.Model == this)
             {
                 return;
             }
-
             string ifcid = "#" + (items.Count + 1);
             ifcBase.IFC_ID = ifcid;
             items.Add(ifcid, ifcBase);
             ifcBase.Model = this;
-
         }
 
         public void ImportIFC(string path)
         {
             using (StreamReader reader = new StreamReader(path))
             {
-                while (!reader.EndOfStream)
-                {
-                    string text = reader.ReadLine();
-                    if (text.Contains("FILE_SCHEMA"))
+				if (reader != null)
+				{
+                    while (!reader.EndOfStream)
                     {
-                        if (text.Contains("'IFC2X3'"))
-                        {
-                            Version = IFC_Version.IFC2x3;
-                            break;
-                        }
-                        else if (text.Contains("'IFC4'"))
-                        {
-                            Version = IFC_Version.IFC4;
-                            break;
-                        }
-                        else if (text.Contains("'IFC4X1'"))
-                        {
-                            Version = IFC_Version.IFC4x1;
-                            break;
-                        }
-                        else if (text.Contains("'IFC4X2'"))
-                        {
-                            Version = IFC_Version.IFC4x2;
-                            break;
-                        }
-                        else if (text.Contains("'IFC4X3'"))
-                        {
-                            Version = IFC_Version.IFC4x3;
-                            break;
+                        string? text = reader.ReadLine();
+						if(text!= null)
+						{
+                            if (text.Contains("FILE_SCHEMA"))
+                            {
+                                if (text.Contains("'IFC2X3'"))
+                                {
+                                    Version = IFC_Version.IFC2x3;
+                                    break;
+                                }
+                                else if (text.Contains("'IFC4'"))
+                                {
+                                    Version = IFC_Version.IFC4;
+                                    break;
+                                }
+                                else if (text.Contains("'IFC4X1'"))
+                                {
+                                    Version = IFC_Version.IFC4x1;
+                                    break;
+                                }
+                                else if (text.Contains("'IFC4X2'"))
+                                {
+                                    Version = IFC_Version.IFC4x2;
+                                    break;
+                                }
+                                else if (text.Contains("'IFC4X3'"))
+                                {
+                                    Version = IFC_Version.IFC4x3;
+                                    break;
+                                }
+                            }
                         }
                     }
-                }
+                } 
             }
 
             string[] allTexts;
@@ -297,7 +284,6 @@ namespace IFC
 
         private void ReadDataline(string ifcText)
         {
-
             string[] leftright = ifcText.Split('=');
             if (leftright.Length < 2)
             {
@@ -326,31 +312,30 @@ namespace IFC
                     items.Add(key, entity);
                 }
             }
-            else
-            {
-                items.Add(key, null);
-            }
         }
 
         private List<PropertyInfo> GetProperyList(string name)
         {
             List<PropertyInfo> propertyInfos = new List<PropertyInfo>();
-            if (name == "BaseIfcEntity")
+            if (name == "IFC_Entity")
             {
                 return propertyInfos;
             }
-            Type objectType = Type.GetType(name);
-            if (objectType.BaseType != null)
-            {
-                propertyInfos = GetProperyList(objectType.BaseType.Name);
+			
+            Type? objectType = Type.GetType(name);
+			if(objectType != null)
+			{
+                if (objectType.BaseType != null)
+                {
+                    propertyInfos = GetProperyList(objectType.BaseType.Name);
+                }
+                propertyInfos.AddRange(objectType.GetProperties());
             }
-
-            propertyInfos.AddRange(objectType.GetProperties());
             return propertyInfos;
         }
+
         public void MapAandSetProperties(IFC_Entity item)
         {
-
             var textParameters = item.AttributeTexts;
             var itemType = item.GetType();
             var constructors = itemType.GetConstructors();
@@ -363,12 +348,19 @@ namespace IFC
                 {
                     for (int j = 0; j < n; j++)
                     {
-
                         var value = CreateAttribute(textParameters[j], parameters[j].ParameterType);
                         if (value is not null)
                         {
-                            var property = itemType.GetProperty(parameters[j].Name);
-                            property.SetValue(item, value);
+							var name = parameters[j].Name;
+
+                            if (name != null)
+							{
+                                var property = itemType.GetProperty(name);
+								if(property != null)
+								{
+                                    property.SetValue(item, value);
+                                }
+                            }
                         }
                     }
                     break;
@@ -435,23 +427,19 @@ namespace IFC
             {
                 return null;
             }
-
             if (input.Substring(0, 1) == " ")
             {
                 return CreateAttribute(input.Substring(1), type);
             }
-
             // string
             if (input.Substring(0, 1) == "'")
             {
                 return CreateString(type.Name, input.Substring(1, input.Length - 2));
             }
-
-
 			// entity
             if (input.Substring(0, 1) == "#")
             {
-                if (items.TryGetValue(input, out IFC_Entity value))
+                if (items.TryGetValue(input, out IFC_Entity? value))
                 {
                     return value;
                 }
@@ -461,7 +449,6 @@ namespace IFC
                 }
 
             }
-
             // int cast
             if (int.TryParse(input, out int intResult))
             {
@@ -471,7 +458,6 @@ namespace IFC
                     return result;
                 }
             }
-
             //float
             if (double.TryParse(input, out double floatResult))
             {
@@ -481,7 +467,6 @@ namespace IFC
                     return result;
                 }
             }
-
             //logical 
             if (input == ".T.")
             {
@@ -492,7 +477,7 @@ namespace IFC
             {
                 return CreateBool(type.Name, false);
             }
-            if (input == ".U." && type.Name == "IfcLogical")
+            if (input == ".U." && type.Name == "IFCLogical")
             {
                 return null;
             }
@@ -501,109 +486,125 @@ namespace IFC
             {
                 return CreateEnum(type.Name, input);
             }
-
             //List
             if (input.Substring(0, 1) == "(")
             {
-                dynamic elements;
+                dynamic? elements;
                 var elementInput = SplitParamText(input.Substring(1, input.Length - 2));
-                Type elementType = null;
-                if (type.Name == "List`1")
+                Type? elementType = null;
+                if (type != null && type.Name == "IFC_Attributes`1")
                 {
-                    string fullName = type.FullName;
-                    var index1 = fullName.IndexOf("[");
-                    var index2 = fullName.IndexOf(",");
-                    string elementTypeName = fullName.Substring(index1 + 2, index2 - index1 - 2);
-                    elementType = Type.GetType(elementTypeName);
-                    if (elementType == null)
-                    {
-                        var index3 = fullName.IndexOf("]");
-                        string elementTypeName2 = fullName.Substring(index1 + 2, index3 - index1 - 0);
-                        elementType = Type.GetType(elementTypeName2);
+                    string? fullName = type.FullName;
+					if(fullName != null)
+					{
+                        var index1 = fullName.IndexOf("[");
+                        var index2 = fullName.IndexOf(",");
+                        string elementTypeName = fullName.Substring(index1 + 2, index2 - index1 - 2);
+                        elementType = Type.GetType(elementTypeName);
+                        if (elementType == null)
+                        {
+                            var index3 = fullName.IndexOf("]");
+                            string elementTypeName2 = fullName.Substring(index1 + 2, index3 - index1 - 0);
+                            elementType = Type.GetType(elementTypeName2);
 
 
-                        var index4 = elementTypeName.LastIndexOf("["); ;
-                        elementTypeName = elementTypeName.Substring(index4 + 1);
-                        elements = CreateListList(elementTypeName);
+                            var index4 = elementTypeName.LastIndexOf("["); ;
+                            elementTypeName = elementTypeName.Substring(index4 + 1);
+                            elements = CreateListList(elementTypeName);
+                        }
+                        else
+                        {
+                            elements = CreateList(elementTypeName);
+                        }
+                        if (elements == null)
+                        {
+
+                        }
                     }
-                    else
-                    {
-                        elements = CreateList(elementTypeName);
-                    }
-                    if (elements == null)
-                    {
-
+					else
+					{
+                        elements = null;
                     }
                 }
                 else
                 {
-                    elements = CreateItem(type.Name);
-                    if (elements == null)
-                    {
+					if (type != null)
+					{
+						elements = CreateItem(type.Name);
+						switch (Version)
+						{
+							case IFC_Version.IFC2x3:
+								switch (type.Name)
+								{
+									case "IFCComplexNumber": elementType = Type.GetType("CSiBKK.IFC.REAL"); break;
+									case "IFCCompoundPlaneAngleMeasure": elementType = Type.GetType("CSiBKK.IFC.INTEGER"); break;
+									default: elementType = null; break;
+								}
+								break;
+							case IFC_Version.IFC4:
+								switch (type.Name)
+								{
+									case "IFCArcIndex": elementType = Type.GetType("CSiBKK.IFC.IFC4.IFCPositiveInteger"); break;
+									case "IFCComplexNumber": elementType = Type.GetType("CSiBKK.IFC.REAL"); break;
+									case "IFCCompoundPlaneAngleMeasure": elementType = Type.GetType("CSiBKK.IFC.INTEGER"); break;
+									case "IFCLineIndex": elementType = Type.GetType("CSiBKK.IFC.IFC4.IFCPositiveInteger"); break;
+									case "IFCPropertySetDefinitionSet": elementType = Type.GetType("CSiBKK.IFC.IFC4.IFCPropertySetDefinition"); break;
+									default: elementType = null; break;
+								}
+								break;
+							case IFC_Version.IFC4x1:
+								switch (type.Name)
+								{
+									case "IFCArcIndex": elementType = Type.GetType("CSiBKK.IFC.IFC4x1.IFCPositiveInteger"); break;
+									case "IFCComplexNumber": elementType = Type.GetType("CSiBKK.IFC.REAL"); break;
+									case "IFCCompoundPlaneAngleMeasure": elementType = Type.GetType("CSiBKK.IFC.INTEGER"); break;
+									case "IFCLineIndex": elementType = Type.GetType("CSiBKK.IFC.IFC4x1.IFCPositiveInteger"); break;
+									case "IFCPropertySetDefinitionSet": elementType = Type.GetType("CSiBKK.IFC.IFC4x1.IFCPropertySetDefinition"); break;
+									default: elementType = null; break;
+								}
+								break;
+							case IFC_Version.IFC4x2:
+								switch (type.Name)
+								{
+									case "IFCArcIndex": elementType = Type.GetType("CSiBKK.IFC.IFC4x2.IFCPositiveInteger"); break;
+									case "IFCComplexNumber": elementType = Type.GetType("CSiBKK.IFC.REAL"); break;
+									case "IFCCompoundPlaneAngleMeasure": elementType = Type.GetType("CSiBKK.IFC.INTEGER"); break;
+									case "IFCLineIndex": elementType = Type.GetType("CSiBKK.IFC.IFC4x2.IFCPositiveInteger"); break;
+									case "IFCPropertySetDefinitionSet": elementType = Type.GetType("CSiBKK.IFC.IFC4x2.IFCPropertySetDefinition"); break;
+									default: elementType = null; break;
+								}
+								break;
+							case IFC_Version.IFC4x3:
+								switch (type.Name)
+								{
+									case "IFCArcIndex": elementType = Type.GetType("CSiBKK.IFC.IFC4x3.IFCPositiveInteger"); break;
+									case "IFCComplexNumber": elementType = Type.GetType("CSiBKK.IFC.REAL"); break;
+									case "IFCCompoundPlaneAngleMeasure": elementType = Type.GetType("CSiBKK.IFC.INTEGER"); break;
+									case "IFCLineIndex": elementType = Type.GetType("CSiBKK.IFC.IFC4x3.IFCPositiveInteger"); break;
+									case "IFCPropertySetDefinitionSet": elementType = Type.GetType("CSiBKK.IFC.IFC4x3.IFCPropertySetDefinition"); break;
+									default: elementType = null; break;
 
-                    }
-                    switch (Version)
-                    {
-                        case IFC_Version.IFC2x3:
-                            switch (type.Name)
-                            {
-                                case "IfcComplexNumber": elementType = Type.GetType("CSiBKK.Ifc.REAL"); break;
-                                case "IfcCompoundPlaneAngleMeasure": elementType = Type.GetType("CSiBKK.Ifc.INTEGER"); break;
-                                default: elementType = null; break;
-                            }
-                            break;
-                        case IFC_Version.IFC4:
-                            switch (type.Name)
-                            {
-                                case "IfcArcIndex": elementType = Type.GetType("CSiBKK.Ifc.Ifc4.IfcPositiveInteger"); break;
-                                case "IfcComplexNumber": elementType = Type.GetType("CSiBKK.Ifc.REAL"); break;
-                                case "IfcCompoundPlaneAngleMeasure": elementType = Type.GetType("CSiBKK.Ifc.INTEGER"); break;
-                                case "IfcLineIndex": elementType = Type.GetType("CSiBKK.Ifc.Ifc4.IfcPositiveInteger"); break;
-                                case "IfcPropertySetDefinitionSet": elementType = Type.GetType("CSiBKK.Ifc.Ifc4.IfcPropertySetDefinition"); break;
-                                default: elementType = null; break;
-                            }
-                            break;
-                        case IFC_Version.IFC4x1:
-                            switch (type.Name)
-                            {
-                                case "IfcArcIndex": elementType = Type.GetType("CSiBKK.Ifc.Ifc4x1.IfcPositiveInteger"); break;
-                                case "IfcComplexNumber": elementType = Type.GetType("CSiBKK.Ifc.REAL"); break;
-                                case "IfcCompoundPlaneAngleMeasure": elementType = Type.GetType("CSiBKK.Ifc.INTEGER"); break;
-                                case "IfcLineIndex": elementType = Type.GetType("CSiBKK.Ifc.Ifc4x1.IfcPositiveInteger"); break;
-                                case "IfcPropertySetDefinitionSet": elementType = Type.GetType("CSiBKK.Ifc.Ifc4x1.IfcPropertySetDefinition"); break;
-                                default: elementType = null; break;
-                            }
-                            break;
-                        case IFC_Version.IFC4x2:
-                            switch (type.Name)
-                            {
-                                case "IfcArcIndex": elementType = Type.GetType("CSiBKK.Ifc.Ifc4x2.IfcPositiveInteger"); break;
-                                case "IfcComplexNumber": elementType = Type.GetType("CSiBKK.Ifc.REAL"); break;
-                                case "IfcCompoundPlaneAngleMeasure": elementType = Type.GetType("CSiBKK.Ifc.INTEGER"); break;
-                                case "IfcLineIndex": elementType = Type.GetType("CSiBKK.Ifc.Ifc4x2.IfcPositiveInteger"); break;
-                                case "IfcPropertySetDefinitionSet": elementType = Type.GetType("CSiBKK.Ifc.Ifc4x2.IfcPropertySetDefinition"); break;
-                                default: elementType = null; break;
-                            }
-                            break;
-                        case IFC_Version.IFC4x3:
-                            switch (type.Name)
-                            {
-                                case "IfcArcIndex": elementType = Type.GetType("CSiBKK.Ifc.Ifc4x3.IfcPositiveInteger"); break;
-                                case "IfcComplexNumber": elementType = Type.GetType("CSiBKK.Ifc.REAL"); break;
-                                case "IfcCompoundPlaneAngleMeasure": elementType = Type.GetType("CSiBKK.Ifc.INTEGER"); break;
-                                case "IfcLineIndex": elementType = Type.GetType("CSiBKK.Ifc.Ifc4x3.IfcPositiveInteger"); break;
-                                case "IfcPropertySetDefinitionSet": elementType = Type.GetType("CSiBKK.Ifc.Ifc4x3.IfcPropertySetDefinition"); break;
-                                default: elementType = null; break;
-
-                            }
-                            break;
+								}
+								break;
+						}
+					}
+					else
+					{
+						elements = null;
                     }
                 }
-                foreach (var word in elementInput)
-                {
-                    var elemment = CreateAttribute(word, elementType);
-                    elements.Add(elemment);
+				if(elements != null)
+				{
+                    foreach (var word in elementInput)
+                    {
+						if(elementType!= null)
+						{
+                            var elemment = CreateAttribute(word, elementType);
+                            elements.Add(elemment);
+                        }                    
+					}
                 }
+                
                 return elements;
             }
 
@@ -613,19 +614,18 @@ namespace IFC
                 int index2 = input.IndexOf(")");
                 string inputTypeName = input.Substring(0, index1);
                 string parameter = input.Substring(index1 + 1, index2 - index1 - 1);
-                Type inputType = CreateItem(inputTypeName).GetType();
-                if (inputType != null)
-                {
-                    return CreateAttribute(parameter, inputType);
+				var item = CreateItem(inputTypeName);
+				if(item != null)
+				{
+                    Type inputType = item.GetType();
+                    if (inputType != null)
+                    {
+                        return CreateAttribute(parameter, inputType);
+                    }
                 }
-
             }
-            Console.WriteLine("ERROR :" + input + " : " + type.FullName);
             return null;
         }
-       
-
-
  		protected virtual IFC_Attribute? CreateItem(string className)
 		{
 			switch (className)
