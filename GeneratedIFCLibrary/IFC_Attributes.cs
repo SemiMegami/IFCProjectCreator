@@ -30,20 +30,15 @@ namespace IFC
                 }
             }
         }
-        public string GetIFCText(bool includeClassName)
+        public virtual string GetIFCText(bool includeClassName)
         {
-            string texts = "(";
+            string text = "(";
             int n = Count;
             for(int i = 0; i < n; i++)
             {
-                texts += this[i].GetIFCText(includeClassName);
-                if(i < n - 1)
-                {
-                    texts += ", ";
-                }
+                text += this[i].GetIFCText(includeClassName) + (i < (n - 1) ? ",": ")");
             }
-            texts += ")";
-            return texts;
+            return text;
         }
 	}
 }

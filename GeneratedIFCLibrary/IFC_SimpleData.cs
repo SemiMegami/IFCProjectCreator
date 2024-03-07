@@ -12,14 +12,31 @@ namespace IFC
 		public static implicit operator double(REAL value) { return value.Value;}
 		public string GetIFCText(bool includeClassName)
 		{
-
+            string text = Value + "";
+			if (!text.Contains("."))
+			{
+				if (text.Contains("E"))
+				{
+                    int a = text.IndexOf("E");
+                    text = text.Insert(a, ".");
+                }
+                else if (text.Contains("e"))
+                {
+                    int a = text.IndexOf('e');
+                    text = text.Insert(a, ".");
+                }
+                else
+                {
+                    text += ".";
+                }
+			}
 			if (includeClassName)
 			{
-				return GetType().Name.ToUpper() + "(" + Value + ")";
+				return GetType().Name.ToUpper() + "(" + text + ")";
 			}
 			else
 			{
-                return  Value + "";
+                return text + "";
             }
 		}
 	}
@@ -32,8 +49,7 @@ namespace IFC
 		public static implicit operator int(INTEGER value) { return value.Value;}
 		public string GetIFCText(bool includeClassName)
 		{
-
-			if (includeClassName)
+            if (includeClassName)
 			{
 				return GetType().Name.ToUpper() + "(" + Value + ")";
 			}
@@ -52,50 +68,46 @@ namespace IFC
 		public static implicit operator double(NUMBER value) { return value.Value;}
 		public string GetIFCText(bool includeClassName)
 		{
-
+            string text = Value + "";
+			if (!text.Contains("."))
+			{
+				if (text.Contains("E"))
+				{
+                    int a = text.IndexOf("E");
+                    text = text.Insert(a, ".");
+                }
+                else if (text.Contains("e"))
+                {
+                    int a = text.IndexOf('e');
+                    text = text.Insert(a, ".");
+                }
+                else
+                {
+                    text += ".";
+                }
+			}
 			if (includeClassName)
 			{
-				return GetType().Name.ToUpper() + "(" + Value + ")";
+				return GetType().Name.ToUpper() + "(" + text + ")";
 			}
 			else
 			{
-                return  Value + "";
+                return text + "";
             }
 		}
 	}
 	public class LOGICAL: IFC_Attribute
 	{
-		public bool UNKNOWN {get; set;}
+		public bool Unknown {get; set;}
 		public bool Value {get; set;}
-		public LOGICAL () {Value = false;}
-		public LOGICAL (bool value) {Value = value;}
+		public LOGICAL () {Value = false; Unknown = false;}
+		public LOGICAL (bool value) {Value = value; Unknown = false;}
 		public static implicit operator LOGICAL(bool value) { return new LOGICAL(value);}
 		public static implicit operator bool(LOGICAL value) { return value.Value;}
 		public string GetIFCText(bool includeClassName)
 		{
-
-			string text = "";
-			if (UNKNOWN)
-			{
-				text = ".U.";
-            }
-			else if (Value)
-			{
-                text = ".T.";
-            }
-            else if (Value)
-            {
-                text = ".F.";
-            }
-
-            if (includeClassName)
-            {
-                return GetType().Name.ToUpper() + "('" + text + "')";
-            }
-            else
-            {
-                return "'" + text + "'";
-            }
+            string text = Unknown? ".U.": (Value ? ".T." : ".F.");
+            return includeClassName ? (GetType().Name.ToUpper() + "(" + text + ")") : text;
 		}
 	}
 	public class BOOLEAN: IFC_Attribute
@@ -107,25 +119,8 @@ namespace IFC
 		public static implicit operator bool(BOOLEAN value) { return value.Value;}
 		public string GetIFCText(bool includeClassName)
 		{
-
-			string text = "";
-			if (Value)
-			{
-                text = ".T.";
-            }
-            else if (Value)
-            {
-                text = ".F.";
-            }
-
-            if (includeClassName)
-            {
-                return GetType().Name.ToUpper() + "('" + text + "')";
-            }
-            else
-            {
-                return "'" + text + "'";
-            }
+            string text = Value? ".T.": ".F.";
+            return includeClassName ? (GetType().Name.ToUpper() + "(" + text + ")") : text;
 		}
 	}
 	public class BINARY: IFC_Attribute
@@ -137,8 +132,7 @@ namespace IFC
 		public static implicit operator int(BINARY value) { return value.Value;}
 		public string GetIFCText(bool includeClassName)
 		{
-
-			if (includeClassName)
+            if (includeClassName)
 			{
 				return GetType().Name.ToUpper() + "(" + Value + ")";
 			}
@@ -157,7 +151,6 @@ namespace IFC
 		public static implicit operator string(STRING value) { return value.Value;}
 		public string GetIFCText(bool includeClassName)
 		{
-
 			if (includeClassName)
 			{
 				return GetType().Name.ToUpper() + "('" + Value + "')";

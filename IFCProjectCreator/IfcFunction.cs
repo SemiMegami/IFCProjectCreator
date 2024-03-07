@@ -219,7 +219,7 @@
                     canWrite = true;
                 }
 
-                string header = "\t\tpublic static " + outputType + "? " + Name + (isGeneric? "<T>":"") +  "(";
+                string header = "\t\tprotected " + outputType + "? " + Name + (isGeneric? "<T>":"") +  "(";
                 for (int i = 0; i < Inputs.Count; i++)
                 {
                     string inputType = Inputs[i].GetCSharpTypeText();
@@ -254,9 +254,11 @@
                     {
                         header,
                         "\t\t{",
-                        "\t\t\t//MANUAL : " + VersionName + "." + Name,
+                        "\t\t\t//MANUAL_FUNCTION : " + VersionName.ToUpper() + "." + Name.ToUpper(),
+                        "",
                         "\t\t\t" + outputType + " result = new " + outputType + "();",
                         "\t\t\treturn result;",
+                        "",
                         "\t\t\t//END_MANUAL",
                         "\t\t}"
                     });
@@ -268,8 +270,10 @@
                     {
                         header,
                         "\t\t{",
-                        "\t\t\t//MANUAL : " + VersionName + "." + Name,
+                        "\t\t\t//MANUAL_FUNCTION : " + VersionName.ToUpper() + "." + Name.ToUpper(),
+                        "",
                         outputType == "T"?"\t\t\treturn default(T);": "\t\t\treturn null;",
+                        "",
                         "\t\t\t//END_MANUAL",
                         "\t\t}"
                     });

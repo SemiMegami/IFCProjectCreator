@@ -764,7 +764,7 @@ namespace IFCProjectCreator
                 }
                 writer.WriteLine("\t#endregion");
                 writer.WriteLine("");
-                writer.WriteLine("\t#region ---- ENTITY ----");
+                writer.WriteLine("\t#region ---- ENTITIES ----");
                 foreach (var item in items.Where(e => e is IFCEntity).ToList())
                 {
                     var texts = item.GetCSharpTexts();
@@ -775,8 +775,8 @@ namespace IFCProjectCreator
                 }
                 writer.WriteLine("\t#endregion");
                 writer.WriteLine("");
-                writer.WriteLine("\t#region ---- FUNCTION ----");
-                writer.WriteLine("\tpublic abstract class " + IFCName + "_Function : IFC_ClassEntity");
+                writer.WriteLine("\t#region ---- BASE ENTITY ----");
+                writer.WriteLine("\tpublic abstract class " + version.ToUpper() + "_Entity : IFC_ClassEntity");
                 writer.WriteLine("\t{");
                 foreach (var f in Functions.Where(e => e.VersionName == version).ToList())
                 {
@@ -1711,230 +1711,20 @@ namespace IFCProjectCreator
 			IFC_ID = string.Empty;
             AttributeTexts = new List<string>();
         }
+        /// <summary>
+		/// Set all attributes by current ""AttributeTexts""
+		/// </summary>
+        public virtual string SetByAttributeTexts()
+        {
+            return """";
+        }
 
         public string GetIFCText(bool includeClassName)
         {
             return ""#"" + IFC_ID;
         }
 
-        public string GetIFCFullText()
-        {
-            var parameters = GetDirectAttributes().Values.ToList();
-            string str = IFC_ID + ""="" + GetType().Name.ToUpper() + ""("";   
-
-            if (parameters != null)
-            {
-                if (GetType().Name == ""IFCPropertySingleValue"")
-                {
-                    for (int i = 0; i < parameters.Count; i++)
-                    {
-                        var parameter = parameters[i];
-                        if(parameter!= null)
-                        {
-                            if (i == 2)
-                            {
-                                str += parameter.GetType().Name.ToUpper() + ""("" + GetParameterText(parameter) + "")"";
-                            }
-                            else
-                            {
-                                str += GetParameterText(parameter);
-                            }
-                            if (i < parameters.Count - 1)
-                            {
-                                str += "","";
-                            }
-                        }
-                        else
-                        {
-                            str += GetParameterText(parameter);
-                            if (i < parameters.Count - 1)
-                            {
-                                str += "","";
-                            }
-                        }
-                    }
-                }
-                else if (GetType().Name == ""IFCPropertyEnumeration"")
-                {
-                    for (int i = 0; i < parameters.Count; i++)
-                    {
-
-                        dynamic? parameter = parameters[i];
-                        if (parameter != null)
-                        {
-                            if (i == 1)
-                            {
-                                var paramTexts = parameter.ToArray();
-                                str += ""("";
-                                for (int j = 0; j < paramTexts.Length; j++)
-                                {
-                                    str += ""IFCTEXT('"" + paramTexts[j] + ""')"";
-                                    if (j < paramTexts.Length - 1)
-                                    {
-                                        str += "","";
-                                    }
-                                }
-                                str += "")"";
-                            }
-                            else
-                            {
-                                str += GetParameterText(parameter);
-                            }
-
-                            if (i < parameters.Count - 1)
-                            {
-                                str += "","";
-                            }
-                        }
-                        else
-                        {
-                            str += GetParameterText(parameter);
-                            if (i < parameters.Count - 1)
-                            {
-                                str += "","";
-                            }
-                        }
-
-                    }
-                }
-                else if (GetType().Name == ""IFCPropertyEnumeratedValue"")
-                {
-                    for (int i = 0; i < parameters.Count; i++)
-                    {
-
-                        dynamic? parameter = parameters[i];
-                        if (parameter != null)
-                        {
-                            if (i == 2)
-                            {
-                                var paramTexts = parameter.ToArray();
-                                str += ""("";
-                                for (int j = 0; j < paramTexts.Length; j++)
-                                {
-                                    str += ""IFCTEXT('"" + paramTexts[j] + ""')"";
-                                    if (j < paramTexts.Length - 1)
-                                    {
-                                        str += "","";
-                                    }
-                                }
-                                str += "")"";
-                            }
-                            else
-                            {
-                                str += GetParameterText(parameter);
-                            }
-                            if (i < parameters.Count - 1)
-                            {
-                                str += "","";
-                            }
-                        }
-                        else
-                        {
-                            str += GetParameterText(parameter);
-                            if (i < parameters.Count - 1)
-                            {
-                                str += "","";
-                            }
-                        }
-                    }
-                }
-
-
-                else
-                {
-                    for (int i = 0; i < parameters.Count; i++)
-                    {
-                        var parameter = parameters[i];
-                        if(parameter != null)
-                        {
-                            str += GetParameterText(parameter);
-                            if (i < parameters.Count - 1)
-                            {
-                                str += "","";
-                            }
-                        }
-                        else
-                        {
-                            str += GetParameterText(parameter);
-                            if (i < parameters.Count - 1)
-                            {
-                                str += "","";
-                            }
-                        }
-                    }
-                }
-                str += "");"";
-            }
-            return str;
-        }
-
-
-        private static string GetParameterText(dynamic? parameter)
-        {
-
-            string str = """";
-            if (parameter == null)
-            {
-                str += ""$"";
-            }
-            else if (parameter is IFC_ClassEntity)
-            {
-                str += ((IFC_ClassEntity)parameter).IFC_ID;
-            }
-            else if (parameter.GetType().GetInterface(""IEnumerable"") != null)
-            {
-                str += ""("";
-                for (int i = 0; i < parameter.Count; i++)
-                {
-
-                    str += GetParameterText(parameter[i]);
-                    if (i < parameter.Count - 1)
-                    {
-                        str += "","";
-                    }
-                }
-                str += "")"";
-            }
-            else
-            {
-                string typeName = parameter.GetType().Name;
-
-                if (parameter is STRING)
-                {
-                    str += ""'"" + parameter.ToString() + ""'"";
-                }
-                else if (typeName.Contains(""Enum"")
-                    || typeName == ""IFCBSplineCurveForm""
-                    || typeName == ""IFCBSplineSurfaceForm""
-                    || typeName == ""IFCKnotType""
-                    || typeName == ""IFCPreferredSurfaceCurveRepresentation""
-                    || typeName == ""IFCSIPrefix""
-                    || typeName == ""IFCSIUnitName""
-                    || typeName == ""IFCSurfaceSide""
-                    || typeName == ""IFCTextPath""
-                    || typeName == ""IFCTransitionCode""
-                    || typeName == ""IFCTrimmingPreference"")
-                {
-                    str += """" + parameter + """";
-                }
-                else if (typeName == ""IFCBoolean"" || typeName == ""IFCLogical"" || typeName == ""BOOLEAN"")
-                {
-                    if ((bool)parameter)
-                    {
-                        str += "".T."";
-                    }
-                    else
-                    {
-                        str += "".F."";
-                    }
-                }
-                else
-                {
-                    str += (float)parameter;
-                }
-            }
-            return str;
-        }
+        public abstract string GetIFCFullText();
 
         public override string ToString()
         {
@@ -1968,6 +1758,7 @@ namespace IFCProjectCreator
         public Dictionary<string, IFC_Attribute?> GetDerivedAttributes();
         public Dictionary<string, IFC_Attribute?> GetInverseAttributes();
         public Dictionary<string, bool> GetWhereAttributes();
+        public string SetByAttributeTexts();
         public string GetIFCFullText();
 ";
                 writer.Write(contain);
@@ -1989,12 +1780,19 @@ namespace IFCProjectCreator
                 writer.WriteLine("\t{");
 
                 string contain =
-       @"
-                public string Value { get; set; } = """";
-                public string GetIFCText(bool includeClassName)
-                {
-                    return ""."" + Value + ""."";
-                }
+        @"
+        public string Value { get; set; } = """";
+        public string GetIFCText(bool includeClassName)
+        {
+            if (includeClassName)
+            {
+                return GetType().Name.ToUpper() + ""(."" + Value + "".)"";
+            }
+            else
+            {
+                return ""."" + Value + ""."";
+            }
+        }
 ";
                 writer.Write(contain);
                 writer.WriteLine("\t}");
@@ -2020,17 +1818,18 @@ namespace IFCProjectCreator
 
                     if(name == "LOGICAL")
                     {
-                        writer.WriteLine("\t\tpublic bool UNKNOWN {get; set;}");
+                        writer.WriteLine("\t\tpublic bool Unknown {get; set;}");
+                        writer.WriteLine("\t\tpublic " + cSharpText + " Value {get; set;}");
+                        writer.WriteLine("\t\tpublic " + name + " () {Value = " + CSharpBasicDataDefaultValue[name] + "; Unknown = false;}");
+                        writer.WriteLine("\t\tpublic " + name + " (" + cSharpText + " value) {Value = value; Unknown = false;}");
                     }
-
-                    writer.WriteLine("\t\tpublic " + cSharpText + " Value {get; set;}");
-                    writer.WriteLine("\t\tpublic " + name + " () {Value = " + CSharpBasicDataDefaultValue[name] +  ";}");
-                    writer.WriteLine("\t\tpublic " + name + " (" + cSharpText + " value) {Value = value;}");
-
-
-                   
-
-
+                    else
+                    {
+                        writer.WriteLine("\t\tpublic " + cSharpText + " Value {get; set;}");
+                        writer.WriteLine("\t\tpublic " + name + " () {Value = " + CSharpBasicDataDefaultValue[name] + ";}");
+                        writer.WriteLine("\t\tpublic " + name + " (" + cSharpText + " value) {Value = value;}");
+                    }
+      
                     List<string> ImplicitTexts = GetImplicitText(name, cSharpText);
                     foreach(string ImplicitText in ImplicitTexts) { writer.WriteLine(ImplicitText); }
 
@@ -2038,8 +1837,8 @@ namespace IFCProjectCreator
                     writer.WriteLine("\t\t{");
                     if (name == "STRING")
                     {
-                        string contain = @"
-			if (includeClassName)
+                        string contain = 
+@"			if (includeClassName)
 			{
 				return GetType().Name.ToUpper() + ""('"" + Value + ""')"";
 			}
@@ -2052,67 +1851,63 @@ namespace IFCProjectCreator
                     }
                     else if (name == "LOGICAL")
                     {
-                        string contain = @"
-			string text = """";
-			if (UNKNOWN)
-			{
-				text = "".U."";
-            }
-			else if (Value)
-			{
-                text = "".T."";
-            }
-            else if (Value)
-            {
-                text = "".F."";
-            }
-
-            if (includeClassName)
-            {
-                return GetType().Name.ToUpper() + ""('"" + text + ""')"";
-            }
-            else
-            {
-                return ""'"" + text + ""'"";
-            }
+                        string contain = 
+@"            string text = Unknown? "".U."": (Value ? "".T."" : "".F."");
+            return includeClassName ? (GetType().Name.ToUpper() + ""("" + text + "")"") : text;
 ";
                         writer.Write(contain);
                     }
 
                     else if (name == "BOOLEAN")
                     {
-                        string contain = @"
-			string text = """";
-			if (Value)
-			{
-                text = "".T."";
-            }
-            else if (Value)
-            {
-                text = "".F."";
-            }
-
-            if (includeClassName)
-            {
-                return GetType().Name.ToUpper() + ""('"" + text + ""')"";
-            }
-            else
-            {
-                return ""'"" + text + ""'"";
-            }
+                        string contain = 
+@"            string text = Value? "".T."": "".F."";
+            return includeClassName ? (GetType().Name.ToUpper() + ""("" + text + "")"") : text;
 ";
                         writer.Write(contain);
                     }
-                    else
+                    else if (name == "INTEGER" || name == "BINARY")
                     {
-                        string contain = @"
-			if (includeClassName)
+                        string contain = 
+@"            if (includeClassName)
 			{
 				return GetType().Name.ToUpper() + ""("" + Value + "")"";
 			}
 			else
 			{
                 return  Value + """";
+            }
+";
+                        writer.Write(contain);
+                    }
+                    else
+                    {
+                        string contain =
+@"            string text = Value + """";
+			if (!text.Contains("".""))
+			{
+				if (text.Contains(""E""))
+				{
+                    int a = text.IndexOf(""E"");
+                    text = text.Insert(a, ""."");
+                }
+                else if (text.Contains(""e""))
+                {
+                    int a = text.IndexOf('e');
+                    text = text.Insert(a, ""."");
+                }
+                else
+                {
+                    text += ""."";
+                }
+			}
+			if (includeClassName)
+			{
+				return GetType().Name.ToUpper() + ""("" + text + "")"";
+			}
+			else
+			{
+                return text + """";
             }
 ";
                         writer.Write(contain);
@@ -2165,20 +1960,15 @@ namespace IFCProjectCreator
                 }
             }
         }
-        public string GetIFCText(bool includeClassName)
+        public virtual string GetIFCText(bool includeClassName)
         {
-            string texts = ""("";
+            string text = ""("";
             int n = Count;
             for(int i = 0; i < n; i++)
             {
-                texts += this[i].GetIFCText(includeClassName);
-                if(i < n - 1)
-                {
-                    texts += "", "";
-                }
+                text += this[i].GetIFCText(includeClassName) + (i < (n - 1) ? "","": "")"");
             }
-            texts += "")"";
-            return texts;
+            return text;
         }
 ";
                 writer.Write(contain);

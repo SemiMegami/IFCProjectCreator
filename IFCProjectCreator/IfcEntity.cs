@@ -277,7 +277,8 @@ namespace IFCProjectCreator
                     else if(attributeType == "WHERE")
                     {
                         IFCWhereAttribute IFCAttribute = new IFCWhereAttribute();
-                        IFCAttribute.Name = "is_" + words[0].Replace(" ", "");
+                        IFCAttribute.Name = "WR_" + words[0].Replace(" ", "");
+                        IFCAttribute.Entity = this;
                         WhereClassAttributes.Add(IFCAttribute);
                     }
                 }
@@ -302,7 +303,7 @@ namespace IFCProjectCreator
             attribute.TypeName = words[splitIndex - 1].Replace(";","");
             if( attribute.TypeName == "BINARY(32)")
             {
-                attribute.TypeName = "INTEGER";
+                attribute.TypeName = "BINARY";
             }
             attribute.TypeName = attribute.TypeName.Replace("Ifc", "IFC");
             int ofCount = 0;
@@ -457,10 +458,116 @@ namespace IFCProjectCreator
             var whereAttributes = WhereAttributes;
             for (int i = 0; i < whereAttributes.Count; i++)
             {
-                texts.Add("\t\t\t\t{\"" + whereAttributes[i].Name + "\", " + whereAttributes[i].Name + "}" + (i < whereAttributes.Count - 1 ? "," : ""));
+                texts.Add("\t\t\t\t{\"" + whereAttributes[i].Name.Replace("WR_","") + "\", " + whereAttributes[i].Name + "}" + (i < whereAttributes.Count - 1 ? "," : ""));
             }
             texts.Add("\t\t\t};");
             texts.Add("\t\t}");
+
+            var selectDatas = DataSet.SelectTypes.Where(e => e.VersionName == VersionName).ToList();
+            var entityDatas = DataSet.Entities.Where(e => e.VersionName == VersionName).ToList();
+            var basicDatas = DataSet.BasicTypes.Where(e => e.VersionName == VersionName).ToList();
+            var basicListDatas = DataSet.BasicTypeLists.Where(e => e.VersionName == VersionName).ToList();
+            var enumDatas = DataSet.EnumTypes.Where(e => e.VersionName == VersionName).ToList();
+
+
+
+            texts.Add("\t\tpublic override string SetByAttributeTexts()");
+            texts.Add("\t\t{");
+            texts.Add("\t\t\tif(AttributeTexts.Count != " + directAttributes.Count + ")");
+            texts.Add("\t\t\t{");
+            texts.Add("\t\t\t\treturn \"ERROR : (\" + IFC_ID + \") Invalid numbers of attributes\";");
+
+            for (int i = 0; i < directAttributes.Count; i++)
+            {
+                var attribute = directAttributes[i];
+                if (attribute.AttributeType == IFCAttributeType.SINGLE)
+                {
+                    if (selectDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
+                    {
+
+                    }
+                    else if (entityDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
+                    {
+
+                    }
+                    else if (basicDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
+                    {
+
+                    }
+                    else if (basicListDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
+                    {
+
+                    }
+                    else if (enumDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
+                    {
+
+                    }
+                }
+                else if (attribute.AttributeType == IFCAttributeType.LIST)
+                {
+
+                }
+                else
+                {
+
+                }
+            }
+            texts.Add("\t\t\t}");
+            texts.Add("\t\t\treturn \"\";");
+            texts.Add("\t\t}");
+
+            // get ifcfulltext
+            texts.Add("\t\tpublic override string GetIFCFullText()");
+            texts.Add("\t\t{");
+            texts.Add("\t\t\tstring text = IFC_ID + \"=\" + GetType().Name.ToUpper() + \"(\";");
+            for(int i = 0; i < directAttributes.Count; i++)
+            {
+                string comma = i < (directAttributes.Count - 1) ? "," : "";
+                var attribute = directAttributes[i];
+                if (derivedAttributes.FirstOrDefault(e => e.Name == attribute.Name) != null)
+                {
+                    texts.Add("\t\t\ttext += \"*" + comma + "\";");
+                }
+                else
+                {
+                    texts.Add("\t\t\tif(" + attribute.Name + " != null)");
+                    texts.Add("\t\t\t{");
+
+                    if (comma.Length > 0)
+                    {
+                        if (selectDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
+                        {
+                            texts.Add("\t\t\t\ttext += " + attribute.Name + ".GetIFCText(true) + \"" + comma + "\";");
+                        }
+                        else
+                        {
+                            texts.Add("\t\t\t\ttext += " + attribute.Name + ".GetIFCText(false) + \"" + comma + "\";");
+                        }
+                    }
+                    else
+                    {
+                        if (selectDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
+                        {
+                            texts.Add("\t\t\t\ttext += " + attribute.Name + ".GetIFCText(true);");
+                        }
+                        else
+                        {
+                            texts.Add("\t\t\t\ttext += " + attribute.Name + ".GetIFCText(false);");
+                        }
+                    }
+
+                    texts.Add("\t\t\t}");
+                    texts.Add("\t\t\telse");
+                    texts.Add("\t\t\t{");
+                    texts.Add("\t\t\t\ttext +=\"$" + comma + "\";");
+                    texts.Add("\t\t\t}");
+                }
+            }
+
+            texts.Add("\t\t\ttext += \");\";");
+            texts.Add("\t\t\treturn text;");
+            texts.Add("\t\t}");
+
 
             // Global
             foreach (var attribute in ParameterClassAttributes)
@@ -500,7 +607,7 @@ namespace IFCProjectCreator
             }
             else
             {
-                return " : " + "IFC_ClassEntity";
+                return " : " + VersionName.ToUpper() + "_Entity";
             }
         }
     }

@@ -16,10 +16,18 @@ namespace IFCProjectCreator
         {
             string cSharpText = GetCSharpType();
             List<string> texts = GetCSharpSummaryTexts();
-            texts.Add("\tpublic class " + Name + " : IFC_Attributes<" + ParentName + ">" + ", " + DataSet.globalName + "." + Name);
-            texts.Add("\t{");
 
-            if(cSharpText.Length > 0)
+            string header = "\tpublic class " + Name + " : IFC_Attributes<" + ParentName + ">" + ", ";
+
+            foreach (var inf in InterfaceNames)
+            {
+                header += inf + ", ";
+            }
+            header += DataSet.globalName + "." + Name;
+            texts.Add(header);
+            texts.Add("\t{");
+            var selects = DataSet.SelectTypes.Where(e => e.VersionName == VersionName).ToList();
+            if (cSharpText.Length > 0)
             {
                 texts.Add("\t\tpublic "+ cSharpText + " Value");
                 texts.Add("\t\t{");
@@ -46,6 +54,27 @@ namespace IFCProjectCreator
                 texts.Add("\t\t\t}");
                 texts.Add("\t\t}");
                 texts.AddRange(DataSet.GetImplicitText(Name, cSharpText));
+                texts.Add("\t\tpublic override string GetIFCText(bool includeClassName)");
+                texts.Add("\t\t{");
+                texts.Add("\t\t\tstring text = includeClassName ? \"" + GetType().Name.ToUpper() + "(\" : \"(\";");
+                texts.Add("\t\t\tint n = Count;");
+                texts.Add("\t\t\tfor(int i = 0; i < n; i++)");
+                texts.Add("\t\t\t{");
+
+
+                if (selects.FirstOrDefault(e => e.Name == ParentName) != null)
+                {
+                    texts.Add("\t\t\t\ttext += this[i].GetIFCText(true) + (i < (n - 1) ? \",\": \")\");");
+                }
+                else
+                {
+                    texts.Add("\t\t\t\ttext += this[i].GetIFCText(false) + (i < (n - 1) ? \",\": \")\");");
+                }
+
+               
+                texts.Add("\t\t\t}");
+                texts.Add("\t\t\treturn text;");
+                texts.Add("\t\t}");
             }
            
             texts.Add("\t}");
@@ -72,6 +101,7 @@ namespace IFCProjectCreator
                 }
                 return "";
             }
+
         }
     }
 }

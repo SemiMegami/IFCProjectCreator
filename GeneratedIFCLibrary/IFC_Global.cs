@@ -22813,11 +22813,11 @@ namespace IFC.Global
 	}
 	#endregion
 
-	#region ---- ENTITY ----
+	#region ---- ENTITIES ----
 	#endregion
 
-	#region ---- FUNCTION ----
-	public abstract class IFC_Function : IFC_ClassEntity
+	#region ---- BASE ENTITY ----
+	public abstract class GLOBAL_Entity : IFC_ClassEntity
 	{
 	}
 	#endregion
