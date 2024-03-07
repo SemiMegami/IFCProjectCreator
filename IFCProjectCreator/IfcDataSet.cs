@@ -1205,8 +1205,6 @@ namespace IFCProjectCreator
             }
         }
 
-
-
         private void WriteCSharpModelConstructure(string nameSpaceName, StreamWriter writer)
         {
             string contain1 = @"
@@ -1644,7 +1642,7 @@ namespace IFCProjectCreator
 
                 string contain =
        @"
-		
+        public string GetIFCText(bool includeClassName);
 ";
                 writer.Write(contain);
                 writer.WriteLine("\t}");
@@ -1665,7 +1663,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("\t{");
 
                 string contain =
-       @"
+        @"
 		/// <summary>
 		/// Model that contains this.
 		/// </summary>
@@ -1712,6 +1710,11 @@ namespace IFCProjectCreator
 		{
 			IFC_ID = string.Empty;
             AttributeTexts = new List<string>();
+        }
+
+        public string GetIFCText(bool includeClassName)
+        {
+            return ""#"" + IFC_ID;
         }
 
         public string GetIFCFullText()
@@ -1982,12 +1985,16 @@ namespace IFCProjectCreator
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
-                writer.WriteLine("\tpublic class IFC_Enum : IFC_Attribute");
+                writer.WriteLine("\tpublic abstract class IFC_Enum : IFC_Attribute");
                 writer.WriteLine("\t{");
 
                 string contain =
        @"
-		
+                public string Value { get; set; } = """";
+                public string GetIFCText(bool includeClassName)
+                {
+                    return ""."" + Value + ""."";
+                }
 ";
                 writer.Write(contain);
                 writer.WriteLine("\t}");
@@ -2019,8 +2026,102 @@ namespace IFCProjectCreator
                     writer.WriteLine("\t\tpublic " + cSharpText + " Value {get; set;}");
                     writer.WriteLine("\t\tpublic " + name + " () {Value = " + CSharpBasicDataDefaultValue[name] +  ";}");
                     writer.WriteLine("\t\tpublic " + name + " (" + cSharpText + " value) {Value = value;}");
+
+
+                   
+
+
                     List<string> ImplicitTexts = GetImplicitText(name, cSharpText);
                     foreach(string ImplicitText in ImplicitTexts) { writer.WriteLine(ImplicitText); }
+
+                    writer.WriteLine("\t\tpublic string GetIFCText(bool includeClassName)");
+                    writer.WriteLine("\t\t{");
+                    if (name == "STRING")
+                    {
+                        string contain = @"
+			if (includeClassName)
+			{
+				return GetType().Name.ToUpper() + ""('"" + Value + ""')"";
+			}
+			else
+			{
+                return ""'"" + Value + ""'"";
+            }
+";
+                        writer.Write(contain);
+                    }
+                    else if (name == "LOGICAL")
+                    {
+                        string contain = @"
+			string text = """";
+			if (UNKNOWN)
+			{
+				text = "".U."";
+            }
+			else if (Value)
+			{
+                text = "".T."";
+            }
+            else if (Value)
+            {
+                text = "".F."";
+            }
+
+            if (includeClassName)
+            {
+                return GetType().Name.ToUpper() + ""('"" + text + ""')"";
+            }
+            else
+            {
+                return ""'"" + text + ""'"";
+            }
+";
+                        writer.Write(contain);
+                    }
+
+                    else if (name == "BOOLEAN")
+                    {
+                        string contain = @"
+			string text = """";
+			if (Value)
+			{
+                text = "".T."";
+            }
+            else if (Value)
+            {
+                text = "".F."";
+            }
+
+            if (includeClassName)
+            {
+                return GetType().Name.ToUpper() + ""('"" + text + ""')"";
+            }
+            else
+            {
+                return ""'"" + text + ""'"";
+            }
+";
+                        writer.Write(contain);
+                    }
+                    else
+                    {
+                        string contain = @"
+			if (includeClassName)
+			{
+				return GetType().Name.ToUpper() + ""("" + Value + "")"";
+			}
+			else
+			{
+                return  Value + """";
+            }
+";
+                        writer.Write(contain);
+                    }
+
+                    writer.WriteLine("\t\t}");
+
+                    
+
                     writer.WriteLine("\t}");
                 }
                 writer.WriteLine("}");
@@ -2063,6 +2164,21 @@ namespace IFCProjectCreator
                     Add(v);
                 }
             }
+        }
+        public string GetIFCText(bool includeClassName)
+        {
+            string texts = ""("";
+            int n = Count;
+            for(int i = 0; i < n; i++)
+            {
+                texts += this[i].GetIFCText(includeClassName);
+                if(i < n - 1)
+                {
+                    texts += "", "";
+                }
+            }
+            texts += "")"";
+            return texts;
         }
 ";
                 writer.Write(contain);

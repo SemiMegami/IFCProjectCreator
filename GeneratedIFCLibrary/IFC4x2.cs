@@ -1425,7 +1425,7 @@ namespace IFC.IFC4x2
 	/// TYPE IfcArcIndex = LIST [3:3] OF IfcPositiveInteger;
 	/// END_TYPE;
 	/// <summary>
-	public class IFCArcIndex : List<IFCPositiveInteger>, Global.IFCArcIndex
+	public class IFCArcIndex : IFC_Attributes<IFCPositiveInteger>, Global.IFCArcIndex
 	{
 		public List<int> Value
 		{
@@ -1458,7 +1458,7 @@ namespace IFC.IFC4x2
 	/// TYPE IfcComplexNumber = ARRAY [1:2] OF REAL;
 	/// END_TYPE;
 	/// <summary>
-	public class IFCComplexNumber : List<REAL>, Global.IFCComplexNumber
+	public class IFCComplexNumber : IFC_Attributes<REAL>, Global.IFCComplexNumber
 	{
 		public List<double> Value
 		{
@@ -1498,7 +1498,7 @@ namespace IFC.IFC4x2
 	/// ((SELF[1] <= 0) AND (SELF[2] <= 0) AND (SELF[3] <= 0) AND ((SIZEOF(SELF) = 3) OR (SELF[4] <= 0)));
 	/// END_TYPE;
 	/// <summary>
-	public class IFCCompoundPlaneAngleMeasure : List<INTEGER>, Global.IFCCompoundPlaneAngleMeasure
+	public class IFCCompoundPlaneAngleMeasure : IFC_Attributes<INTEGER>, Global.IFCCompoundPlaneAngleMeasure
 	{
 		public List<int> Value
 		{
@@ -1531,7 +1531,7 @@ namespace IFC.IFC4x2
 	/// TYPE IfcLineIndex = LIST [2:?] OF IfcPositiveInteger;
 	/// END_TYPE;
 	/// <summary>
-	public class IFCLineIndex : List<IFCPositiveInteger>, Global.IFCLineIndex
+	public class IFCLineIndex : IFC_Attributes<IFCPositiveInteger>, Global.IFCLineIndex
 	{
 		public List<int> Value
 		{
@@ -1564,7 +1564,7 @@ namespace IFC.IFC4x2
 	/// TYPE IfcPropertySetDefinitionSet = SET [1:?] OF IfcPropertySetDefinition;
 	/// END_TYPE;
 	/// <summary>
-	public class IFCPropertySetDefinitionSet : List<IFCPropertySetDefinition>, Global.IFCPropertySetDefinitionSet
+	public class IFCPropertySetDefinitionSet : IFC_Attributes<IFCPropertySetDefinition>, Global.IFCPropertySetDefinitionSet
 	{
 	}
 	#endregion
@@ -1590,7 +1590,6 @@ namespace IFC.IFC4x2
 		public static string VERBAL { get { return ".VERBAL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCActionRequestTypeEnum() { Value = ".EMAIL.";}
 		public IFCActionRequestTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCActionRequestTypeEnum(string value) { return new IFCActionRequestTypeEnum(value);}
@@ -1656,7 +1655,6 @@ namespace IFC.IFC4x2
 		public static string BRAKES { get { return ".BRAKES."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCActionSourceTypeEnum() { Value = ".DEAD_LOAD_G.";}
 		public IFCActionSourceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCActionSourceTypeEnum(string value) { return new IFCActionSourceTypeEnum(value);}
@@ -1678,7 +1676,6 @@ namespace IFC.IFC4x2
 		public static string EXTRAORDINARY_A { get { return ".EXTRAORDINARY_A."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCActionTypeEnum() { Value = ".PERMANENT_G.";}
 		public IFCActionTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCActionTypeEnum(string value) { return new IFCActionTypeEnum(value);}
@@ -1704,7 +1701,6 @@ namespace IFC.IFC4x2
 		public static string THERMOSTATICACTUATOR { get { return ".THERMOSTATICACTUATOR."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCActuatorTypeEnum() { Value = ".ELECTRICACTUATOR.";}
 		public IFCActuatorTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCActuatorTypeEnum(string value) { return new IFCActuatorTypeEnum(value);}
@@ -1726,7 +1722,6 @@ namespace IFC.IFC4x2
 		public static string HOME { get { return ".HOME."; } private set { } }
 		public static string DISTRIBUTIONPOINT { get { return ".DISTRIBUTIONPOINT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCAddressTypeEnum() { Value = ".OFFICE.";}
 		public IFCAddressTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCAddressTypeEnum(string value) { return new IFCAddressTypeEnum(value);}
@@ -1748,7 +1743,6 @@ namespace IFC.IFC4x2
 		public static string VARIABLEFLOWPRESSUREINDEPENDANT { get { return ".VARIABLEFLOWPRESSUREINDEPENDANT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCAirTerminalBoxTypeEnum() { Value = ".CONSTANTFLOW.";}
 		public IFCAirTerminalBoxTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCAirTerminalBoxTypeEnum(string value) { return new IFCAirTerminalBoxTypeEnum(value);}
@@ -1772,7 +1766,6 @@ namespace IFC.IFC4x2
 		public static string REGISTER { get { return ".REGISTER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCAirTerminalTypeEnum() { Value = ".DIFFUSER.";}
 		public IFCAirTerminalTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCAirTerminalTypeEnum(string value) { return new IFCAirTerminalTypeEnum(value);}
@@ -1806,7 +1799,6 @@ namespace IFC.IFC4x2
 		public static string THERMOSIPHONCOILTYPEHEATEXCHANGERS { get { return ".THERMOSIPHONCOILTYPEHEATEXCHANGERS."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCAirToAirHeatRecoveryTypeEnum() { Value = ".FIXEDPLATECOUNTERFLOWEXCHANGER.";}
 		public IFCAirToAirHeatRecoveryTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCAirToAirHeatRecoveryTypeEnum(string value) { return new IFCAirToAirHeatRecoveryTypeEnum(value);}
@@ -1834,7 +1826,6 @@ namespace IFC.IFC4x2
 		public static string WHISTLE { get { return ".WHISTLE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCAlarmTypeEnum() { Value = ".BELL.";}
 		public IFCAlarmTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCAlarmTypeEnum(string value) { return new IFCAlarmTypeEnum(value);}
@@ -1850,7 +1841,6 @@ namespace IFC.IFC4x2
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCAlignmentTypeEnum() { Value = ".USERDEFINED.";}
 		public IFCAlignmentTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCAlignmentTypeEnum(string value) { return new IFCAlignmentTypeEnum(value);}
@@ -1872,7 +1862,6 @@ namespace IFC.IFC4x2
 		public static string LOADING_3D { get { return ".LOADING_3D."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCAnalysisModelTypeEnum() { Value = ".IN_PLANE_LOADING_2D.";}
 		public IFCAnalysisModelTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCAnalysisModelTypeEnum(string value) { return new IFCAnalysisModelTypeEnum(value);}
@@ -1896,7 +1885,6 @@ namespace IFC.IFC4x2
 		public static string FULL_NONLINEAR_THEORY { get { return ".FULL_NONLINEAR_THEORY."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCAnalysisTheoryTypeEnum() { Value = ".FIRST_ORDER_THEORY.";}
 		public IFCAnalysisTheoryTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCAnalysisTheoryTypeEnum(string value) { return new IFCAnalysisTheoryTypeEnum(value);}
@@ -1916,7 +1904,6 @@ namespace IFC.IFC4x2
 		public static string DIVIDE { get { return ".DIVIDE."; } private set { } }
 		public static string MULTIPLY { get { return ".MULTIPLY."; } private set { } }
 		public static string SUBTRACT { get { return ".SUBTRACT."; } private set { } }
-		public string Value {get; set;}
 		public IFCArithmeticOperatorEnum() { Value = ".ADD.";}
 		public IFCArithmeticOperatorEnum(string value) { Value = value; }
 		public static implicit operator IFCArithmeticOperatorEnum(string value) { return new IFCArithmeticOperatorEnum(value);}
@@ -1934,7 +1921,6 @@ namespace IFC.IFC4x2
 		public static string SITE { get { return ".SITE."; } private set { } }
 		public static string FACTORY { get { return ".FACTORY."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCAssemblyPlaceEnum() { Value = ".SITE.";}
 		public IFCAssemblyPlaceEnum(string value) { Value = value; }
 		public static implicit operator IFCAssemblyPlaceEnum(string value) { return new IFCAssemblyPlaceEnum(value);}
@@ -1972,7 +1958,6 @@ namespace IFC.IFC4x2
 		public static string TUNER { get { return ".TUNER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCAudioVisualApplianceTypeEnum() { Value = ".AMPLIFIER.";}
 		public IFCAudioVisualApplianceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCAudioVisualApplianceTypeEnum(string value) { return new IFCAudioVisualApplianceTypeEnum(value);}
@@ -1996,7 +1981,6 @@ namespace IFC.IFC4x2
 		public static string PARABOLIC_ARC { get { return ".PARABOLIC_ARC."; } private set { } }
 		public static string HYPERBOLIC_ARC { get { return ".HYPERBOLIC_ARC."; } private set { } }
 		public static string UNSPECIFIED { get { return ".UNSPECIFIED."; } private set { } }
-		public string Value {get; set;}
 		public IFCBSplineCurveForm() { Value = ".POLYLINE_FORM.";}
 		public IFCBSplineCurveForm(string value) { Value = value; }
 		public static implicit operator IFCBSplineCurveForm(string value) { return new IFCBSplineCurveForm(value);}
@@ -2030,7 +2014,6 @@ namespace IFC.IFC4x2
 		public static string QUADRIC_SURF { get { return ".QUADRIC_SURF."; } private set { } }
 		public static string SURF_OF_LINEAR_EXTRUSION { get { return ".SURF_OF_LINEAR_EXTRUSION."; } private set { } }
 		public static string UNSPECIFIED { get { return ".UNSPECIFIED."; } private set { } }
-		public string Value {get; set;}
 		public IFCBSplineSurfaceForm() { Value = ".PLANE_SURF.";}
 		public IFCBSplineSurfaceForm(string value) { Value = value; }
 		public static implicit operator IFCBSplineSurfaceForm(string value) { return new IFCBSplineSurfaceForm(value);}
@@ -2070,7 +2053,6 @@ namespace IFC.IFC4x2
 		public static string EDGEBEAM { get { return ".EDGEBEAM."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCBeamTypeEnum() { Value = ".BEAM.";}
 		public IFCBeamTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCBeamTypeEnum(string value) { return new IFCBeamTypeEnum(value);}
@@ -2092,7 +2074,6 @@ namespace IFC.IFC4x2
 		public static string GUIDED_TRANSVERSAL { get { return ".GUIDED_TRANSVERSAL."; } private set { } }
 		public static string FREE_MOVEMENT { get { return ".FREE_MOVEMENT."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCBearingTypeDisplacementEnum() { Value = ".FIXED_MOVEMENT.";}
 		public IFCBearingTypeDisplacementEnum(string value) { Value = value; }
 		public static implicit operator IFCBearingTypeDisplacementEnum(string value) { return new IFCBearingTypeDisplacementEnum(value);}
@@ -2124,7 +2105,6 @@ namespace IFC.IFC4x2
 		public static string DISK { get { return ".DISK."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCBearingTypeEnum() { Value = ".CYLINDRICAL.";}
 		public IFCBearingTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCBearingTypeEnum(string value) { return new IFCBearingTypeEnum(value);}
@@ -2156,7 +2136,6 @@ namespace IFC.IFC4x2
 		public static string NOTINCLUDES { get { return ".NOTINCLUDES."; } private set { } }
 		public static string INCLUDEDIN { get { return ".INCLUDEDIN."; } private set { } }
 		public static string NOTINCLUDEDIN { get { return ".NOTINCLUDEDIN."; } private set { } }
-		public string Value {get; set;}
 		public IFCBenchmarkEnum() { Value = ".GREATERTHAN.";}
 		public IFCBenchmarkEnum(string value) { Value = value; }
 		public static implicit operator IFCBenchmarkEnum(string value) { return new IFCBenchmarkEnum(value);}
@@ -2176,7 +2155,6 @@ namespace IFC.IFC4x2
 		public static string STEAM { get { return ".STEAM."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCBoilerTypeEnum() { Value = ".WATER.";}
 		public IFCBoilerTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCBoilerTypeEnum(string value) { return new IFCBoilerTypeEnum(value);}
@@ -2194,7 +2172,6 @@ namespace IFC.IFC4x2
 		public static string UNION { get { return ".UNION."; } private set { } }
 		public static string INTERSECTION { get { return ".INTERSECTION."; } private set { } }
 		public static string DIFFERENCE { get { return ".DIFFERENCE."; } private set { } }
-		public string Value {get; set;}
 		public IFCBooleanOperator() { Value = ".UNION.";}
 		public IFCBooleanOperator(string value) { Value = value; }
 		public static implicit operator IFCBooleanOperator(string value) { return new IFCBooleanOperator(value);}
@@ -2230,7 +2207,6 @@ namespace IFC.IFC4x2
 		public static string SURFACESTRUCTURE { get { return ".SURFACESTRUCTURE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCBridgePartTypeEnum() { Value = ".ABUTMENT.";}
 		public IFCBridgePartTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCBridgePartTypeEnum(string value) { return new IFCBridgePartTypeEnum(value);}
@@ -2262,7 +2238,6 @@ namespace IFC.IFC4x2
 		public static string TRUSS { get { return ".TRUSS."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCBridgeTypeEnum() { Value = ".ARCHED.";}
 		public IFCBridgeTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCBridgeTypeEnum(string value) { return new IFCBridgeTypeEnum(value);}
@@ -2284,7 +2259,6 @@ namespace IFC.IFC4x2
 		public static string APRON { get { return ".APRON."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCBuildingElementPartTypeEnum() { Value = ".INSULATION.";}
 		public IFCBuildingElementPartTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCBuildingElementPartTypeEnum(string value) { return new IFCBuildingElementPartTypeEnum(value);}
@@ -2310,7 +2284,6 @@ namespace IFC.IFC4x2
 		public static string PROVISIONFORSPACE { get { return ".PROVISIONFORSPACE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCBuildingElementProxyTypeEnum() { Value = ".COMPLEX.";}
 		public IFCBuildingElementProxyTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCBuildingElementProxyTypeEnum(string value) { return new IFCBuildingElementProxyTypeEnum(value);}
@@ -2342,7 +2315,6 @@ namespace IFC.IFC4x2
 		public static string PRESTRESSING { get { return ".PRESTRESSING."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCBuildingSystemTypeEnum() { Value = ".FENESTRATION.";}
 		public IFCBuildingSystemTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCBuildingSystemTypeEnum(string value) { return new IFCBuildingSystemTypeEnum(value);}
@@ -2358,7 +2330,6 @@ namespace IFC.IFC4x2
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCBurnerTypeEnum() { Value = ".USERDEFINED.";}
 		public IFCBurnerTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCBurnerTypeEnum(string value) { return new IFCBurnerTypeEnum(value);}
@@ -2382,7 +2353,6 @@ namespace IFC.IFC4x2
 		public static string TEE { get { return ".TEE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCableCarrierFittingTypeEnum() { Value = ".BEND.";}
 		public IFCCableCarrierFittingTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCableCarrierFittingTypeEnum(string value) { return new IFCCableCarrierFittingTypeEnum(value);}
@@ -2406,7 +2376,6 @@ namespace IFC.IFC4x2
 		public static string CONDUITSEGMENT { get { return ".CONDUITSEGMENT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCableCarrierSegmentTypeEnum() { Value = ".CABLELADDERSEGMENT.";}
 		public IFCCableCarrierSegmentTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCableCarrierSegmentTypeEnum(string value) { return new IFCCableCarrierSegmentTypeEnum(value);}
@@ -2432,7 +2401,6 @@ namespace IFC.IFC4x2
 		public static string TRANSITION { get { return ".TRANSITION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCableFittingTypeEnum() { Value = ".CONNECTOR.";}
 		public IFCCableFittingTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCableFittingTypeEnum(string value) { return new IFCCableFittingTypeEnum(value);}
@@ -2456,7 +2424,6 @@ namespace IFC.IFC4x2
 		public static string CORESEGMENT { get { return ".CORESEGMENT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCableSegmentTypeEnum() { Value = ".BUSBARSEGMENT.";}
 		public IFCCableSegmentTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCableSegmentTypeEnum(string value) { return new IFCCableSegmentTypeEnum(value);}
@@ -2476,7 +2443,6 @@ namespace IFC.IFC4x2
 		public static string CAISSON { get { return ".CAISSON."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCaissonFoundationTypeEnum() { Value = ".WELL.";}
 		public IFCCaissonFoundationTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCaissonFoundationTypeEnum(string value) { return new IFCCaissonFoundationTypeEnum(value);}
@@ -2498,7 +2464,6 @@ namespace IFC.IFC4x2
 		public static string ADDED { get { return ".ADDED."; } private set { } }
 		public static string DELETED { get { return ".DELETED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCChangeActionEnum() { Value = ".NOCHANGE.";}
 		public IFCChangeActionEnum(string value) { Value = value; }
 		public static implicit operator IFCChangeActionEnum(string value) { return new IFCChangeActionEnum(value);}
@@ -2520,7 +2485,6 @@ namespace IFC.IFC4x2
 		public static string HEATRECOVERY { get { return ".HEATRECOVERY."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCChillerTypeEnum() { Value = ".AIRCOOLED.";}
 		public IFCChillerTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCChillerTypeEnum(string value) { return new IFCChillerTypeEnum(value);}
@@ -2536,7 +2500,6 @@ namespace IFC.IFC4x2
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCChimneyTypeEnum() { Value = ".USERDEFINED.";}
 		public IFCChimneyTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCChimneyTypeEnum(string value) { return new IFCChimneyTypeEnum(value);}
@@ -2566,7 +2529,6 @@ namespace IFC.IFC4x2
 		public static string WATERHEATINGCOIL { get { return ".WATERHEATINGCOIL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCoilTypeEnum() { Value = ".DXCOOLINGCOIL.";}
 		public IFCCoilTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCoilTypeEnum(string value) { return new IFCCoilTypeEnum(value);}
@@ -2592,7 +2554,6 @@ namespace IFC.IFC4x2
 		public static string STANDCOLUMN { get { return ".STANDCOLUMN."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCColumnTypeEnum() { Value = ".COLUMN.";}
 		public IFCColumnTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCColumnTypeEnum(string value) { return new IFCColumnTypeEnum(value);}
@@ -2632,7 +2593,6 @@ namespace IFC.IFC4x2
 		public static string SCANNER { get { return ".SCANNER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCommunicationsApplianceTypeEnum() { Value = ".ANTENNA.";}
 		public IFCCommunicationsApplianceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCommunicationsApplianceTypeEnum(string value) { return new IFCCommunicationsApplianceTypeEnum(value);}
@@ -2648,7 +2608,6 @@ namespace IFC.IFC4x2
 	{
 		public static string P_COMPLEX { get { return ".P_COMPLEX."; } private set { } }
 		public static string Q_COMPLEX { get { return ".Q_COMPLEX."; } private set { } }
-		public string Value {get; set;}
 		public IFCComplexPropertyTemplateTypeEnum() { Value = ".P_COMPLEX.";}
 		public IFCComplexPropertyTemplateTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCComplexPropertyTemplateTypeEnum(string value) { return new IFCComplexPropertyTemplateTypeEnum(value);}
@@ -2694,7 +2653,6 @@ namespace IFC.IFC4x2
 		public static string TWINSCREW { get { return ".TWINSCREW."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCompressorTypeEnum() { Value = ".DYNAMIC.";}
 		public IFCCompressorTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCompressorTypeEnum(string value) { return new IFCCompressorTypeEnum(value);}
@@ -2724,7 +2682,6 @@ namespace IFC.IFC4x2
 		public static string WATERCOOLEDTUBEINTUBE { get { return ".WATERCOOLEDTUBEINTUBE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCondenserTypeEnum() { Value = ".AIRCOOLED.";}
 		public IFCCondenserTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCondenserTypeEnum(string value) { return new IFCCondenserTypeEnum(value);}
@@ -2744,7 +2701,6 @@ namespace IFC.IFC4x2
 		public static string ATSTART { get { return ".ATSTART."; } private set { } }
 		public static string ATEND { get { return ".ATEND."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCConnectionTypeEnum() { Value = ".ATPATH.";}
 		public IFCConnectionTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCConnectionTypeEnum(string value) { return new IFCConnectionTypeEnum(value);}
@@ -2766,7 +2722,6 @@ namespace IFC.IFC4x2
 		public static string ADVISORY { get { return ".ADVISORY."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCConstraintEnum() { Value = ".HARD.";}
 		public IFCConstraintEnum(string value) { Value = value; }
 		public static implicit operator IFCConstraintEnum(string value) { return new IFCConstraintEnum(value);}
@@ -2798,7 +2753,6 @@ namespace IFC.IFC4x2
 		public static string TRANSPORTING { get { return ".TRANSPORTING."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCConstructionEquipmentResourceTypeEnum() { Value = ".DEMOLISHING.";}
 		public IFCConstructionEquipmentResourceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCConstructionEquipmentResourceTypeEnum(string value) { return new IFCConstructionEquipmentResourceTypeEnum(value);}
@@ -2832,7 +2786,6 @@ namespace IFC.IFC4x2
 		public static string WOOD { get { return ".WOOD."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCConstructionMaterialResourceTypeEnum() { Value = ".AGGREGATES.";}
 		public IFCConstructionMaterialResourceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCConstructionMaterialResourceTypeEnum(string value) { return new IFCConstructionMaterialResourceTypeEnum(value);}
@@ -2852,7 +2805,6 @@ namespace IFC.IFC4x2
 		public static string FORMWORK { get { return ".FORMWORK."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCConstructionProductResourceTypeEnum() { Value = ".ASSEMBLY.";}
 		public IFCConstructionProductResourceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCConstructionProductResourceTypeEnum(string value) { return new IFCConstructionProductResourceTypeEnum(value);}
@@ -2878,7 +2830,6 @@ namespace IFC.IFC4x2
 		public static string TWOPOSITION { get { return ".TWOPOSITION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCControllerTypeEnum() { Value = ".FLOATING.";}
 		public IFCControllerTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCControllerTypeEnum(string value) { return new IFCControllerTypeEnum(value);}
@@ -2898,7 +2849,6 @@ namespace IFC.IFC4x2
 		public static string PASSIVE { get { return ".PASSIVE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCooledBeamTypeEnum() { Value = ".ACTIVE.";}
 		public IFCCooledBeamTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCooledBeamTypeEnum(string value) { return new IFCCooledBeamTypeEnum(value);}
@@ -2920,7 +2870,6 @@ namespace IFC.IFC4x2
 		public static string MECHANICALFORCEDDRAFT { get { return ".MECHANICALFORCEDDRAFT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCoolingTowerTypeEnum() { Value = ".NATURALDRAFT.";}
 		public IFCCoolingTowerTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCoolingTowerTypeEnum(string value) { return new IFCCoolingTowerTypeEnum(value);}
@@ -2936,7 +2885,6 @@ namespace IFC.IFC4x2
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCostItemTypeEnum() { Value = ".USERDEFINED.";}
 		public IFCCostItemTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCostItemTypeEnum(string value) { return new IFCCostItemTypeEnum(value);}
@@ -2966,7 +2914,6 @@ namespace IFC.IFC4x2
 		public static string SCHEDULEOFRATES { get { return ".SCHEDULEOFRATES."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCostScheduleTypeEnum() { Value = ".BUDGET.";}
 		public IFCCostScheduleTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCostScheduleTypeEnum(string value) { return new IFCCostScheduleTypeEnum(value);}
@@ -3004,7 +2951,6 @@ namespace IFC.IFC4x2
 		public static string COPING { get { return ".COPING."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCoveringTypeEnum() { Value = ".CEILING.";}
 		public IFCCoveringTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCoveringTypeEnum(string value) { return new IFCCoveringTypeEnum(value);}
@@ -3024,7 +2970,6 @@ namespace IFC.IFC4x2
 		public static string SITE { get { return ".SITE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCrewResourceTypeEnum() { Value = ".OFFICE.";}
 		public IFCCrewResourceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCrewResourceTypeEnum(string value) { return new IFCCrewResourceTypeEnum(value);}
@@ -3040,7 +2985,6 @@ namespace IFC.IFC4x2
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCurtainWallTypeEnum() { Value = ".USERDEFINED.";}
 		public IFCCurtainWallTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCCurtainWallTypeEnum(string value) { return new IFCCurtainWallTypeEnum(value);}
@@ -3060,7 +3004,6 @@ namespace IFC.IFC4x2
 		public static string LOG_LINEAR { get { return ".LOG_LINEAR."; } private set { } }
 		public static string LOG_LOG { get { return ".LOG_LOG."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCCurveInterpolationEnum() { Value = ".LINEAR.";}
 		public IFCCurveInterpolationEnum(string value) { Value = value; }
 		public static implicit operator IFCCurveInterpolationEnum(string value) { return new IFCCurveInterpolationEnum(value);}
@@ -3098,7 +3041,6 @@ namespace IFC.IFC4x2
 		public static string SMOKEDAMPER { get { return ".SMOKEDAMPER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDamperTypeEnum() { Value = ".BACKDRAFTDAMPER.";}
 		public IFCDamperTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCDamperTypeEnum(string value) { return new IFCDamperTypeEnum(value);}
@@ -3120,7 +3062,6 @@ namespace IFC.IFC4x2
 		public static string SIMULATED { get { return ".SIMULATED."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDataOriginEnum() { Value = ".MEASURED.";}
 		public IFCDataOriginEnum(string value) { Value = value; }
 		public static implicit operator IFCDataOriginEnum(string value) { return new IFCDataOriginEnum(value);}
@@ -3238,7 +3179,6 @@ namespace IFC.IFC4x2
 		public static string WARPINGCONSTANTUNIT { get { return ".WARPINGCONSTANTUNIT."; } private set { } }
 		public static string WARPINGMOMENTUNIT { get { return ".WARPINGMOMENTUNIT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDerivedUnitEnum() { Value = ".ANGULARVELOCITYUNIT.";}
 		public IFCDerivedUnitEnum(string value) { Value = value; }
 		public static implicit operator IFCDerivedUnitEnum(string value) { return new IFCDerivedUnitEnum(value);}
@@ -3254,7 +3194,6 @@ namespace IFC.IFC4x2
 	{
 		public static string POSITIVE { get { return ".POSITIVE."; } private set { } }
 		public static string NEGATIVE { get { return ".NEGATIVE."; } private set { } }
-		public string Value {get; set;}
 		public IFCDirectionSenseEnum() { Value = ".POSITIVE.";}
 		public IFCDirectionSenseEnum(string value) { Value = value; }
 		public static implicit operator IFCDirectionSenseEnum(string value) { return new IFCDirectionSenseEnum(value);}
@@ -3278,7 +3217,6 @@ namespace IFC.IFC4x2
 		public static string EXPANSION_JOINT_DEVICE { get { return ".EXPANSION_JOINT_DEVICE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDiscreteAccessoryTypeEnum() { Value = ".ANCHORPLATE.";}
 		public IFCDiscreteAccessoryTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCDiscreteAccessoryTypeEnum(string value) { return new IFCDiscreteAccessoryTypeEnum(value);}
@@ -3310,7 +3248,6 @@ namespace IFC.IFC4x2
 		public static string VALVECHAMBER { get { return ".VALVECHAMBER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDistributionChamberElementTypeEnum() { Value = ".FORMEDDUCT.";}
 		public IFCDistributionChamberElementTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCDistributionChamberElementTypeEnum(string value) { return new IFCDistributionChamberElementTypeEnum(value);}
@@ -3334,7 +3271,6 @@ namespace IFC.IFC4x2
 		public static string PIPE { get { return ".PIPE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDistributionPortTypeEnum() { Value = ".CABLE.";}
 		public IFCDistributionPortTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCDistributionPortTypeEnum(string value) { return new IFCDistributionPortTypeEnum(value);}
@@ -3434,7 +3370,6 @@ namespace IFC.IFC4x2
 		public static string WATERSUPPLY { get { return ".WATERSUPPLY."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDistributionSystemEnum() { Value = ".AIRCONDITIONING.";}
 		public IFCDistributionSystemEnum(string value) { Value = value; }
 		public static implicit operator IFCDistributionSystemEnum(string value) { return new IFCDistributionSystemEnum(value);}
@@ -3458,7 +3393,6 @@ namespace IFC.IFC4x2
 		public static string PERSONAL { get { return ".PERSONAL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDocumentConfidentialityEnum() { Value = ".PUBLIC.";}
 		public IFCDocumentConfidentialityEnum(string value) { Value = value; }
 		public static implicit operator IFCDocumentConfidentialityEnum(string value) { return new IFCDocumentConfidentialityEnum(value);}
@@ -3480,7 +3414,6 @@ namespace IFC.IFC4x2
 		public static string FINAL { get { return ".FINAL."; } private set { } }
 		public static string REVISION { get { return ".REVISION."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDocumentStatusEnum() { Value = ".DRAFT.";}
 		public IFCDocumentStatusEnum(string value) { Value = value; }
 		public static implicit operator IFCDocumentStatusEnum(string value) { return new IFCDocumentStatusEnum(value);}
@@ -3510,7 +3443,6 @@ namespace IFC.IFC4x2
 		public static string FIXEDPANEL { get { return ".FIXEDPANEL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDoorPanelOperationEnum() { Value = ".SWINGING.";}
 		public IFCDoorPanelOperationEnum(string value) { Value = value; }
 		public static implicit operator IFCDoorPanelOperationEnum(string value) { return new IFCDoorPanelOperationEnum(value);}
@@ -3530,7 +3462,6 @@ namespace IFC.IFC4x2
 		public static string MIDDLE { get { return ".MIDDLE."; } private set { } }
 		public static string RIGHT { get { return ".RIGHT."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDoorPanelPositionEnum() { Value = ".LEFT.";}
 		public IFCDoorPanelPositionEnum(string value) { Value = value; }
 		public static implicit operator IFCDoorPanelPositionEnum(string value) { return new IFCDoorPanelPositionEnum(value);}
@@ -3560,7 +3491,6 @@ namespace IFC.IFC4x2
 		public static string PLASTIC { get { return ".PLASTIC."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDoorStyleConstructionEnum() { Value = ".ALUMINIUM.";}
 		public IFCDoorStyleConstructionEnum(string value) { Value = value; }
 		public static implicit operator IFCDoorStyleConstructionEnum(string value) { return new IFCDoorStyleConstructionEnum(value);}
@@ -3608,7 +3538,6 @@ namespace IFC.IFC4x2
 		public static string ROLLINGUP { get { return ".ROLLINGUP."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDoorStyleOperationEnum() { Value = ".SINGLE_SWING_LEFT.";}
 		public IFCDoorStyleOperationEnum(string value) { Value = value; }
 		public static implicit operator IFCDoorStyleOperationEnum(string value) { return new IFCDoorStyleOperationEnum(value);}
@@ -3630,7 +3559,6 @@ namespace IFC.IFC4x2
 		public static string TRAPDOOR { get { return ".TRAPDOOR."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDoorTypeEnum() { Value = ".DOOR.";}
 		public IFCDoorTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCDoorTypeEnum(string value) { return new IFCDoorTypeEnum(value);}
@@ -3682,7 +3610,6 @@ namespace IFC.IFC4x2
 		public static string SWING_FIXED_RIGHT { get { return ".SWING_FIXED_RIGHT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDoorTypeOperationEnum() { Value = ".SINGLE_SWING_LEFT.";}
 		public IFCDoorTypeOperationEnum(string value) { Value = value; }
 		public static implicit operator IFCDoorTypeOperationEnum(string value) { return new IFCDoorTypeOperationEnum(value);}
@@ -3712,7 +3639,6 @@ namespace IFC.IFC4x2
 		public static string TRANSITION { get { return ".TRANSITION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDuctFittingTypeEnum() { Value = ".BEND.";}
 		public IFCDuctFittingTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCDuctFittingTypeEnum(string value) { return new IFCDuctFittingTypeEnum(value);}
@@ -3732,7 +3658,6 @@ namespace IFC.IFC4x2
 		public static string FLEXIBLESEGMENT { get { return ".FLEXIBLESEGMENT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDuctSegmentTypeEnum() { Value = ".RIGIDSEGMENT.";}
 		public IFCDuctSegmentTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCDuctSegmentTypeEnum(string value) { return new IFCDuctSegmentTypeEnum(value);}
@@ -3754,7 +3679,6 @@ namespace IFC.IFC4x2
 		public static string ROUND { get { return ".ROUND."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCDuctSilencerTypeEnum() { Value = ".FLATOVAL.";}
 		public IFCDuctSilencerTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCDuctSilencerTypeEnum(string value) { return new IFCDuctSilencerTypeEnum(value);}
@@ -3802,7 +3726,6 @@ namespace IFC.IFC4x2
 		public static string WASHINGMACHINE { get { return ".WASHINGMACHINE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCElectricApplianceTypeEnum() { Value = ".DISHWASHER.";}
 		public IFCElectricApplianceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCElectricApplianceTypeEnum(string value) { return new IFCElectricApplianceTypeEnum(value);}
@@ -3826,7 +3749,6 @@ namespace IFC.IFC4x2
 		public static string SWITCHBOARD { get { return ".SWITCHBOARD."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCElectricDistributionBoardTypeEnum() { Value = ".CONSUMERUNIT.";}
 		public IFCElectricDistributionBoardTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCElectricDistributionBoardTypeEnum(string value) { return new IFCElectricDistributionBoardTypeEnum(value);}
@@ -3852,7 +3774,6 @@ namespace IFC.IFC4x2
 		public static string UPS { get { return ".UPS."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCElectricFlowStorageDeviceTypeEnum() { Value = ".BATTERY.";}
 		public IFCElectricFlowStorageDeviceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCElectricFlowStorageDeviceTypeEnum(string value) { return new IFCElectricFlowStorageDeviceTypeEnum(value);}
@@ -3874,7 +3795,6 @@ namespace IFC.IFC4x2
 		public static string STANDALONE { get { return ".STANDALONE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCElectricGeneratorTypeEnum() { Value = ".CHP.";}
 		public IFCElectricGeneratorTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCElectricGeneratorTypeEnum(string value) { return new IFCElectricGeneratorTypeEnum(value);}
@@ -3900,7 +3820,6 @@ namespace IFC.IFC4x2
 		public static string SYNCHRONOUS { get { return ".SYNCHRONOUS."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCElectricMotorTypeEnum() { Value = ".DC.";}
 		public IFCElectricMotorTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCElectricMotorTypeEnum(string value) { return new IFCElectricMotorTypeEnum(value);}
@@ -3922,7 +3841,6 @@ namespace IFC.IFC4x2
 		public static string RELAY { get { return ".RELAY."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCElectricTimeControlTypeEnum() { Value = ".TIMECLOCK.";}
 		public IFCElectricTimeControlTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCElectricTimeControlTypeEnum(string value) { return new IFCElectricTimeControlTypeEnum(value);}
@@ -3966,7 +3884,6 @@ namespace IFC.IFC4x2
 		public static string DECK { get { return ".DECK."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCElementAssemblyTypeEnum() { Value = ".ACCESSORY_ASSEMBLY.";}
 		public IFCElementAssemblyTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCElementAssemblyTypeEnum(string value) { return new IFCElementAssemblyTypeEnum(value);}
@@ -3984,7 +3901,6 @@ namespace IFC.IFC4x2
 		public static string COMPLEX { get { return ".COMPLEX."; } private set { } }
 		public static string ELEMENT { get { return ".ELEMENT."; } private set { } }
 		public static string PARTIAL { get { return ".PARTIAL."; } private set { } }
-		public string Value {get; set;}
 		public IFCElementCompositionEnum() { Value = ".COMPLEX.";}
 		public IFCElementCompositionEnum(string value) { Value = value; }
 		public static implicit operator IFCElementCompositionEnum(string value) { return new IFCElementCompositionEnum(value);}
@@ -4004,7 +3920,6 @@ namespace IFC.IFC4x2
 		public static string INTERNALCOMBUSTION { get { return ".INTERNALCOMBUSTION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCEngineTypeEnum() { Value = ".EXTERNALCOMBUSTION.";}
 		public IFCEngineTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCEngineTypeEnum(string value) { return new IFCEngineTypeEnum(value);}
@@ -4038,7 +3953,6 @@ namespace IFC.IFC4x2
 		public static string INDIRECTDIRECTCOMBINATION { get { return ".INDIRECTDIRECTCOMBINATION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCEvaporativeCoolerTypeEnum() { Value = ".DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER.";}
 		public IFCEvaporativeCoolerTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCEvaporativeCoolerTypeEnum(string value) { return new IFCEvaporativeCoolerTypeEnum(value);}
@@ -4066,7 +3980,6 @@ namespace IFC.IFC4x2
 		public static string SHELLANDCOIL { get { return ".SHELLANDCOIL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCEvaporatorTypeEnum() { Value = ".DIRECTEXPANSION.";}
 		public IFCEvaporatorTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCEvaporatorTypeEnum(string value) { return new IFCEvaporatorTypeEnum(value);}
@@ -4090,7 +4003,6 @@ namespace IFC.IFC4x2
 		public static string EVENTCOMPLEX { get { return ".EVENTCOMPLEX."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCEventTriggerTypeEnum() { Value = ".EVENTRULE.";}
 		public IFCEventTriggerTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCEventTriggerTypeEnum(string value) { return new IFCEventTriggerTypeEnum(value);}
@@ -4112,7 +4024,6 @@ namespace IFC.IFC4x2
 		public static string INTERMEDIATEEVENT { get { return ".INTERMEDIATEEVENT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCEventTypeEnum() { Value = ".STARTEVENT.";}
 		public IFCEventTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCEventTypeEnum(string value) { return new IFCEventTypeEnum(value);}
@@ -4136,7 +4047,6 @@ namespace IFC.IFC4x2
 		public static string EXTERNAL_FIRE { get { return ".EXTERNAL_FIRE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCExternalSpatialElementTypeEnum() { Value = ".EXTERNAL.";}
 		public IFCExternalSpatialElementTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCExternalSpatialElementTypeEnum(string value) { return new IFCExternalSpatialElementTypeEnum(value);}
@@ -4166,7 +4076,6 @@ namespace IFC.IFC4x2
 		public static string PROPELLORAXIAL { get { return ".PROPELLORAXIAL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCFanTypeEnum() { Value = ".CENTRIFUGALFORWARDCURVED.";}
 		public IFCFanTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCFanTypeEnum(string value) { return new IFCFanTypeEnum(value);}
@@ -4188,7 +4097,6 @@ namespace IFC.IFC4x2
 		public static string WELD { get { return ".WELD."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCFastenerTypeEnum() { Value = ".GLUE.";}
 		public IFCFastenerTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCFastenerTypeEnum(string value) { return new IFCFastenerTypeEnum(value);}
@@ -4216,7 +4124,6 @@ namespace IFC.IFC4x2
 		public static string WATERFILTER { get { return ".WATERFILTER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCFilterTypeEnum() { Value = ".AIRPARTICLEFILTER.";}
 		public IFCFilterTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCFilterTypeEnum(string value) { return new IFCFilterTypeEnum(value);}
@@ -4242,7 +4149,6 @@ namespace IFC.IFC4x2
 		public static string SPRINKLERDEFLECTOR { get { return ".SPRINKLERDEFLECTOR."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCFireSuppressionTerminalTypeEnum() { Value = ".BREECHINGINLET.";}
 		public IFCFireSuppressionTerminalTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCFireSuppressionTerminalTypeEnum(string value) { return new IFCFireSuppressionTerminalTypeEnum(value);}
@@ -4262,7 +4168,6 @@ namespace IFC.IFC4x2
 		public static string SINK { get { return ".SINK."; } private set { } }
 		public static string SOURCEANDSINK { get { return ".SOURCEANDSINK."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCFlowDirectionEnum() { Value = ".SOURCE.";}
 		public IFCFlowDirectionEnum(string value) { Value = value; }
 		public static implicit operator IFCFlowDirectionEnum(string value) { return new IFCFlowDirectionEnum(value);}
@@ -4294,7 +4199,6 @@ namespace IFC.IFC4x2
 		public static string VOLTMETER_RMS { get { return ".VOLTMETER_RMS."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCFlowInstrumentTypeEnum() { Value = ".PRESSUREGAUGE.";}
 		public IFCFlowInstrumentTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCFlowInstrumentTypeEnum(string value) { return new IFCFlowInstrumentTypeEnum(value);}
@@ -4318,7 +4222,6 @@ namespace IFC.IFC4x2
 		public static string WATERMETER { get { return ".WATERMETER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCFlowMeterTypeEnum() { Value = ".ENERGYMETER.";}
 		public IFCFlowMeterTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCFlowMeterTypeEnum(string value) { return new IFCFlowMeterTypeEnum(value);}
@@ -4344,7 +4247,6 @@ namespace IFC.IFC4x2
 		public static string STRIP_FOOTING { get { return ".STRIP_FOOTING."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCFootingTypeEnum() { Value = ".CAISSON_FOUNDATION.";}
 		public IFCFootingTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCFootingTypeEnum(string value) { return new IFCFootingTypeEnum(value);}
@@ -4374,7 +4276,6 @@ namespace IFC.IFC4x2
 		public static string SOFA { get { return ".SOFA."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCFurnitureTypeEnum() { Value = ".CHAIR.";}
 		public IFCFurnitureTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCFurnitureTypeEnum(string value) { return new IFCFurnitureTypeEnum(value);}
@@ -4394,7 +4295,6 @@ namespace IFC.IFC4x2
 		public static string SOIL_BORING_POINT { get { return ".SOIL_BORING_POINT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCGeographicElementTypeEnum() { Value = ".TERRAIN.";}
 		public IFCGeographicElementTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCGeographicElementTypeEnum(string value) { return new IFCGeographicElementTypeEnum(value);}
@@ -4424,7 +4324,6 @@ namespace IFC.IFC4x2
 		public static string ELEVATION_VIEW { get { return ".ELEVATION_VIEW."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCGeometricProjectionEnum() { Value = ".GRAPH_VIEW.";}
 		public IFCGeometricProjectionEnum(string value) { Value = value; }
 		public static implicit operator IFCGeometricProjectionEnum(string value) { return new IFCGeometricProjectionEnum(value);}
@@ -4440,7 +4339,6 @@ namespace IFC.IFC4x2
 	{
 		public static string GLOBAL_COORDS { get { return ".GLOBAL_COORDS."; } private set { } }
 		public static string LOCAL_COORDS { get { return ".LOCAL_COORDS."; } private set { } }
-		public string Value {get; set;}
 		public IFCGlobalOrLocalEnum() { Value = ".GLOBAL_COORDS.";}
 		public IFCGlobalOrLocalEnum(string value) { Value = value; }
 		public static implicit operator IFCGlobalOrLocalEnum(string value) { return new IFCGlobalOrLocalEnum(value);}
@@ -4464,7 +4362,6 @@ namespace IFC.IFC4x2
 		public static string IRREGULAR { get { return ".IRREGULAR."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCGridTypeEnum() { Value = ".RECTANGULAR.";}
 		public IFCGridTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCGridTypeEnum(string value) { return new IFCGridTypeEnum(value);}
@@ -4484,7 +4381,6 @@ namespace IFC.IFC4x2
 		public static string SHELLANDTUBE { get { return ".SHELLANDTUBE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCHeatExchangerTypeEnum() { Value = ".PLATE.";}
 		public IFCHeatExchangerTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCHeatExchangerTypeEnum(string value) { return new IFCHeatExchangerTypeEnum(value);}
@@ -4526,7 +4422,6 @@ namespace IFC.IFC4x2
 		public static string ASSISTEDSTEAM { get { return ".ASSISTEDSTEAM."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCHumidifierTypeEnum() { Value = ".STEAMINJECTION.";}
 		public IFCHumidifierTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCHumidifierTypeEnum(string value) { return new IFCHumidifierTypeEnum(value);}
@@ -4550,7 +4445,6 @@ namespace IFC.IFC4x2
 		public static string PETROL { get { return ".PETROL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCInterceptorTypeEnum() { Value = ".CYCLONIC.";}
 		public IFCInterceptorTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCInterceptorTypeEnum(string value) { return new IFCInterceptorTypeEnum(value);}
@@ -4574,7 +4468,6 @@ namespace IFC.IFC4x2
 		public static string EXTERNAL_WATER { get { return ".EXTERNAL_WATER."; } private set { } }
 		public static string EXTERNAL_FIRE { get { return ".EXTERNAL_FIRE."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCInternalOrExternalEnum() { Value = ".INTERNAL.";}
 		public IFCInternalOrExternalEnum(string value) { Value = value; }
 		public static implicit operator IFCInternalOrExternalEnum(string value) { return new IFCInternalOrExternalEnum(value);}
@@ -4596,7 +4489,6 @@ namespace IFC.IFC4x2
 		public static string FURNITUREINVENTORY { get { return ".FURNITUREINVENTORY."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCInventoryTypeEnum() { Value = ".ASSETINVENTORY.";}
 		public IFCInventoryTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCInventoryTypeEnum(string value) { return new IFCInventoryTypeEnum(value);}
@@ -4616,7 +4508,6 @@ namespace IFC.IFC4x2
 		public static string POWER { get { return ".POWER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCJunctionBoxTypeEnum() { Value = ".DATA.";}
 		public IFCJunctionBoxTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCJunctionBoxTypeEnum(string value) { return new IFCJunctionBoxTypeEnum(value);}
@@ -4636,7 +4527,6 @@ namespace IFC.IFC4x2
 		public static string QUASI_UNIFORM_KNOTS { get { return ".QUASI_UNIFORM_KNOTS."; } private set { } }
 		public static string PIECEWISE_BEZIER_KNOTS { get { return ".PIECEWISE_BEZIER_KNOTS."; } private set { } }
 		public static string UNSPECIFIED { get { return ".UNSPECIFIED."; } private set { } }
-		public string Value {get; set;}
 		public IFCKnotType() { Value = ".UNIFORM_KNOTS.";}
 		public IFCKnotType(string value) { Value = value; }
 		public static implicit operator IFCKnotType(string value) { return new IFCKnotType(value);}
@@ -4690,7 +4580,6 @@ namespace IFC.IFC4x2
 		public static string SURVEYING { get { return ".SURVEYING."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCLaborResourceTypeEnum() { Value = ".ADMINISTRATION.";}
 		public IFCLaborResourceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCLaborResourceTypeEnum(string value) { return new IFCLaborResourceTypeEnum(value);}
@@ -4724,7 +4613,6 @@ namespace IFC.IFC4x2
 		public static string TUNGSTENFILAMENT { get { return ".TUNGSTENFILAMENT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCLampTypeEnum() { Value = ".COMPACTFLUORESCENT.";}
 		public IFCLampTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCLampTypeEnum(string value) { return new IFCLampTypeEnum(value);}
@@ -4742,7 +4630,6 @@ namespace IFC.IFC4x2
 		public static string AXIS1 { get { return ".AXIS1."; } private set { } }
 		public static string AXIS2 { get { return ".AXIS2."; } private set { } }
 		public static string AXIS3 { get { return ".AXIS3."; } private set { } }
-		public string Value {get; set;}
 		public IFCLayerSetDirectionEnum() { Value = ".AXIS1.";}
 		public IFCLayerSetDirectionEnum(string value) { Value = value; }
 		public static implicit operator IFCLayerSetDirectionEnum(string value) { return new IFCLayerSetDirectionEnum(value);}
@@ -4762,7 +4649,6 @@ namespace IFC.IFC4x2
 		public static string TYPE_B { get { return ".TYPE_B."; } private set { } }
 		public static string TYPE_C { get { return ".TYPE_C."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCLightDistributionCurveEnum() { Value = ".TYPE_A.";}
 		public IFCLightDistributionCurveEnum(string value) { Value = value; }
 		public static implicit operator IFCLightDistributionCurveEnum(string value) { return new IFCLightDistributionCurveEnum(value);}
@@ -4796,7 +4682,6 @@ namespace IFC.IFC4x2
 		public static string METALHALIDE { get { return ".METALHALIDE."; } private set { } }
 		public static string TUNGSTENFILAMENT { get { return ".TUNGSTENFILAMENT."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCLightEmissionSourceEnum() { Value = ".COMPACTFLUORESCENT.";}
 		public IFCLightEmissionSourceEnum(string value) { Value = value; }
 		public static implicit operator IFCLightEmissionSourceEnum(string value) { return new IFCLightEmissionSourceEnum(value);}
@@ -4818,7 +4703,6 @@ namespace IFC.IFC4x2
 		public static string SECURITYLIGHTING { get { return ".SECURITYLIGHTING."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCLightFixtureTypeEnum() { Value = ".POINTSOURCE.";}
 		public IFCLightFixtureTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCLightFixtureTypeEnum(string value) { return new IFCLightFixtureTypeEnum(value);}
@@ -4840,7 +4724,6 @@ namespace IFC.IFC4x2
 		public static string LOAD_COMBINATION { get { return ".LOAD_COMBINATION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCLoadGroupTypeEnum() { Value = ".LOAD_GROUP.";}
 		public IFCLoadGroupTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCLoadGroupTypeEnum(string value) { return new IFCLoadGroupTypeEnum(value);}
@@ -4862,7 +4745,6 @@ namespace IFC.IFC4x2
 		public static string LOGICALXOR { get { return ".LOGICALXOR."; } private set { } }
 		public static string LOGICALNOTAND { get { return ".LOGICALNOTAND."; } private set { } }
 		public static string LOGICALNOTOR { get { return ".LOGICALNOTOR."; } private set { } }
-		public string Value {get; set;}
 		public IFCLogicalOperatorEnum() { Value = ".LOGICALAND.";}
 		public IFCLogicalOperatorEnum(string value) { Value = value; }
 		public static implicit operator IFCLogicalOperatorEnum(string value) { return new IFCLogicalOperatorEnum(value);}
@@ -4900,7 +4782,6 @@ namespace IFC.IFC4x2
 		public static string COUPLER { get { return ".COUPLER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCMechanicalFastenerTypeEnum() { Value = ".ANCHORBOLT.";}
 		public IFCMechanicalFastenerTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCMechanicalFastenerTypeEnum(string value) { return new IFCMechanicalFastenerTypeEnum(value);}
@@ -4926,7 +4807,6 @@ namespace IFC.IFC4x2
 		public static string VACUUMSTATION { get { return ".VACUUMSTATION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCMedicalDeviceTypeEnum() { Value = ".AIRSTATION.";}
 		public IFCMedicalDeviceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCMedicalDeviceTypeEnum(string value) { return new IFCMedicalDeviceTypeEnum(value);}
@@ -4976,7 +4856,6 @@ namespace IFC.IFC4x2
 		public static string STAY_CABLE { get { return ".STAY_CABLE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCMemberTypeEnum() { Value = ".BRACE.";}
 		public IFCMemberTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCMemberTypeEnum(string value) { return new IFCMemberTypeEnum(value);}
@@ -4998,7 +4877,6 @@ namespace IFC.IFC4x2
 		public static string DIRECTDRIVE { get { return ".DIRECTDRIVE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCMotorConnectionTypeEnum() { Value = ".BELTDRIVE.";}
 		public IFCMotorConnectionTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCMotorConnectionTypeEnum(string value) { return new IFCMotorConnectionTypeEnum(value);}
@@ -5013,7 +4891,6 @@ namespace IFC.IFC4x2
 	{
 		public static string NULL { get { return ".NULL."; } private set { } }
 		public virtual IFCLabel? Name {get; set;}
-		public string Value {get; set;}
 		public IFCNullStyle() { Value = ".NULL.";}
 		public IFCNullStyle(string value) { Value = value; }
 		public static implicit operator IFCNullStyle(string value) { return new IFCNullStyle(value);}
@@ -5059,7 +4936,6 @@ namespace IFC.IFC4x2
 		public static string GROUP { get { return ".GROUP."; } private set { } }
 		public static string PROJECT { get { return ".PROJECT."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCObjectTypeEnum() { Value = ".PRODUCT.";}
 		public IFCObjectTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCObjectTypeEnum(string value) { return new IFCObjectTypeEnum(value);}
@@ -5097,7 +4973,6 @@ namespace IFC.IFC4x2
 		public static string TRIGGERCONDITION { get { return ".TRIGGERCONDITION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCObjectiveEnum() { Value = ".CODECOMPLIANCE.";}
 		public IFCObjectiveEnum(string value) { Value = value; }
 		public static implicit operator IFCObjectiveEnum(string value) { return new IFCObjectiveEnum(value);}
@@ -5127,7 +5002,6 @@ namespace IFC.IFC4x2
 		public static string TENANT { get { return ".TENANT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCOccupantTypeEnum() { Value = ".ASSIGNEE.";}
 		public IFCOccupantTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCOccupantTypeEnum(string value) { return new IFCOccupantTypeEnum(value);}
@@ -5147,7 +5021,6 @@ namespace IFC.IFC4x2
 		public static string RECESS { get { return ".RECESS."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCOpeningElementTypeEnum() { Value = ".OPENING.";}
 		public IFCOpeningElementTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCOpeningElementTypeEnum(string value) { return new IFCOpeningElementTypeEnum(value);}
@@ -5173,7 +5046,6 @@ namespace IFC.IFC4x2
 		public static string TELEPHONEOUTLET { get { return ".TELEPHONEOUTLET."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCOutletTypeEnum() { Value = ".AUDIOVISUALOUTLET.";}
 		public IFCOutletTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCOutletTypeEnum(string value) { return new IFCOutletTypeEnum(value);}
@@ -5189,7 +5061,6 @@ namespace IFC.IFC4x2
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCPerformanceHistoryTypeEnum() { Value = ".USERDEFINED.";}
 		public IFCPerformanceHistoryTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCPerformanceHistoryTypeEnum(string value) { return new IFCPerformanceHistoryTypeEnum(value);}
@@ -5211,7 +5082,6 @@ namespace IFC.IFC4x2
 		public static string SCREEN { get { return ".SCREEN."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCPermeableCoveringOperationEnum() { Value = ".GRILL.";}
 		public IFCPermeableCoveringOperationEnum(string value) { Value = value; }
 		public static implicit operator IFCPermeableCoveringOperationEnum(string value) { return new IFCPermeableCoveringOperationEnum(value);}
@@ -5233,7 +5103,6 @@ namespace IFC.IFC4x2
 		public static string WORK { get { return ".WORK."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCPermitTypeEnum() { Value = ".ACCESS.";}
 		public IFCPermitTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCPermitTypeEnum(string value) { return new IFCPermitTypeEnum(value);}
@@ -5251,7 +5120,6 @@ namespace IFC.IFC4x2
 		public static string PHYSICAL { get { return ".PHYSICAL."; } private set { } }
 		public static string VIRTUAL { get { return ".VIRTUAL."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCPhysicalOrVirtualEnum() { Value = ".PHYSICAL.";}
 		public IFCPhysicalOrVirtualEnum(string value) { Value = value; }
 		public static implicit operator IFCPhysicalOrVirtualEnum(string value) { return new IFCPhysicalOrVirtualEnum(value);}
@@ -5275,7 +5143,6 @@ namespace IFC.IFC4x2
 		public static string PREFAB_STEEL { get { return ".PREFAB_STEEL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCPileConstructionEnum() { Value = ".CAST_IN_PLACE.";}
 		public IFCPileConstructionEnum(string value) { Value = value; }
 		public static implicit operator IFCPileConstructionEnum(string value) { return new IFCPileConstructionEnum(value);}
@@ -5303,7 +5170,6 @@ namespace IFC.IFC4x2
 		public static string SUPPORT { get { return ".SUPPORT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCPileTypeEnum() { Value = ".BORED.";}
 		public IFCPileTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCPileTypeEnum(string value) { return new IFCPileTypeEnum(value);}
@@ -5333,7 +5199,6 @@ namespace IFC.IFC4x2
 		public static string TRANSITION { get { return ".TRANSITION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCPipeFittingTypeEnum() { Value = ".BEND.";}
 		public IFCPipeFittingTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCPipeFittingTypeEnum(string value) { return new IFCPipeFittingTypeEnum(value);}
@@ -5359,7 +5224,6 @@ namespace IFC.IFC4x2
 		public static string SPOOL { get { return ".SPOOL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCPipeSegmentTypeEnum() { Value = ".CULVERT.";}
 		public IFCPipeSegmentTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCPipeSegmentTypeEnum(string value) { return new IFCPipeSegmentTypeEnum(value);}
@@ -5393,7 +5257,6 @@ namespace IFC.IFC4x2
 		public static string BASE_PLATE { get { return ".BASE_PLATE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCPlateTypeEnum() { Value = ".CURTAIN_PANEL.";}
 		public IFCPlateTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCPlateTypeEnum(string value) { return new IFCPlateTypeEnum(value);}
@@ -5411,7 +5274,6 @@ namespace IFC.IFC4x2
 		public static string CURVE3D { get { return ".CURVE3D."; } private set { } }
 		public static string PCURVE_S1 { get { return ".PCURVE_S1."; } private set { } }
 		public static string PCURVE_S2 { get { return ".PCURVE_S2."; } private set { } }
-		public string Value {get; set;}
 		public IFCPreferredSurfaceCurveRepresentation() { Value = ".CURVE3D.";}
 		public IFCPreferredSurfaceCurveRepresentation(string value) { Value = value; }
 		public static implicit operator IFCPreferredSurfaceCurveRepresentation(string value) { return new IFCPreferredSurfaceCurveRepresentation(value);}
@@ -5441,7 +5303,6 @@ namespace IFC.IFC4x2
 		public static string STARTUP { get { return ".STARTUP."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCProcedureTypeEnum() { Value = ".ADVICE_CAUTION.";}
 		public IFCProcedureTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCProcedureTypeEnum(string value) { return new IFCProcedureTypeEnum(value);}
@@ -5457,7 +5318,6 @@ namespace IFC.IFC4x2
 	{
 		public static string CURVE { get { return ".CURVE."; } private set { } }
 		public static string AREA { get { return ".AREA."; } private set { } }
-		public string Value {get; set;}
 		public IFCProfileTypeEnum() { Value = ".CURVE.";}
 		public IFCProfileTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCProfileTypeEnum(string value) { return new IFCProfileTypeEnum(value);}
@@ -5483,7 +5343,6 @@ namespace IFC.IFC4x2
 		public static string WORKORDER { get { return ".WORKORDER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCProjectOrderTypeEnum() { Value = ".CHANGEORDER.";}
 		public IFCProjectOrderTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCProjectOrderTypeEnum(string value) { return new IFCProjectOrderTypeEnum(value);}
@@ -5499,7 +5358,6 @@ namespace IFC.IFC4x2
 	{
 		public static string PROJECTED_LENGTH { get { return ".PROJECTED_LENGTH."; } private set { } }
 		public static string TRUE_LENGTH { get { return ".TRUE_LENGTH."; } private set { } }
-		public string Value {get; set;}
 		public IFCProjectedOrTrueLengthEnum() { Value = ".PROJECTED_LENGTH.";}
 		public IFCProjectedOrTrueLengthEnum(string value) { Value = value; }
 		public static implicit operator IFCProjectedOrTrueLengthEnum(string value) { return new IFCProjectedOrTrueLengthEnum(value);}
@@ -5519,7 +5377,6 @@ namespace IFC.IFC4x2
 		public static string DEVIATOR { get { return ".DEVIATOR."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCProjectionElementTypeEnum() { Value = ".BLISTER.";}
 		public IFCProjectionElementTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCProjectionElementTypeEnum(string value) { return new IFCProjectionElementTypeEnum(value);}
@@ -5547,7 +5404,6 @@ namespace IFC.IFC4x2
 		public static string QTO_TYPEDRIVENOVERRIDE { get { return ".QTO_TYPEDRIVENOVERRIDE."; } private set { } }
 		public static string QTO_OCCURRENCEDRIVEN { get { return ".QTO_OCCURRENCEDRIVEN."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCPropertySetTemplateTypeEnum() { Value = ".PSET_TYPEDRIVENONLY.";}
 		public IFCPropertySetTemplateTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCPropertySetTemplateTypeEnum(string value) { return new IFCPropertySetTemplateTypeEnum(value);}
@@ -5571,7 +5427,6 @@ namespace IFC.IFC4x2
 		public static string THERMAL { get { return ".THERMAL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCProtectiveDeviceTrippingUnitTypeEnum() { Value = ".ELECTRONIC.";}
 		public IFCProtectiveDeviceTrippingUnitTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCProtectiveDeviceTrippingUnitTypeEnum(string value) { return new IFCProtectiveDeviceTrippingUnitTypeEnum(value);}
@@ -5601,7 +5456,6 @@ namespace IFC.IFC4x2
 		public static string VARISTOR { get { return ".VARISTOR."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCProtectiveDeviceTypeEnum() { Value = ".CIRCUITBREAKER.";}
 		public IFCProtectiveDeviceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCProtectiveDeviceTypeEnum(string value) { return new IFCProtectiveDeviceTypeEnum(value);}
@@ -5631,7 +5485,6 @@ namespace IFC.IFC4x2
 		public static string VERTICALTURBINE { get { return ".VERTICALTURBINE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCPumpTypeEnum() { Value = ".CIRCULATOR.";}
 		public IFCPumpTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCPumpTypeEnum(string value) { return new IFCPumpTypeEnum(value);}
@@ -5653,7 +5506,6 @@ namespace IFC.IFC4x2
 		public static string BALUSTRADE { get { return ".BALUSTRADE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCRailingTypeEnum() { Value = ".HANDRAIL.";}
 		public IFCRailingTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCRailingTypeEnum(string value) { return new IFCRailingTypeEnum(value);}
@@ -5673,7 +5525,6 @@ namespace IFC.IFC4x2
 		public static string SPIRAL { get { return ".SPIRAL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCRampFlightTypeEnum() { Value = ".STRAIGHT.";}
 		public IFCRampFlightTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCRampFlightTypeEnum(string value) { return new IFCRampFlightTypeEnum(value);}
@@ -5701,7 +5552,6 @@ namespace IFC.IFC4x2
 		public static string SPIRAL_RAMP { get { return ".SPIRAL_RAMP."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCRampTypeEnum() { Value = ".STRAIGHT_RUN_RAMP.";}
 		public IFCRampTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCRampTypeEnum(string value) { return new IFCRampTypeEnum(value);}
@@ -5729,7 +5579,6 @@ namespace IFC.IFC4x2
 		public static string BY_WEEKDAY_COUNT { get { return ".BY_WEEKDAY_COUNT."; } private set { } }
 		public static string YEARLY_BY_DAY_OF_MONTH { get { return ".YEARLY_BY_DAY_OF_MONTH."; } private set { } }
 		public static string YEARLY_BY_POSITION { get { return ".YEARLY_BY_POSITION."; } private set { } }
-		public string Value {get; set;}
 		public IFCRecurrenceTypeEnum() { Value = ".DAILY.";}
 		public IFCRecurrenceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCRecurrenceTypeEnum(string value) { return new IFCRecurrenceTypeEnum(value);}
@@ -5751,7 +5600,6 @@ namespace IFC.IFC4x2
 		public static string STATION { get { return ".STATION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCReferentTypeEnum() { Value = ".KILOPOINT.";}
 		public IFCReferentTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCReferentTypeEnum(string value) { return new IFCReferentTypeEnum(value);}
@@ -5783,7 +5631,6 @@ namespace IFC.IFC4x2
 		public static string PLASTIC { get { return ".PLASTIC."; } private set { } }
 		public static string STRAUSS { get { return ".STRAUSS."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCReflectanceMethodEnum() { Value = ".BLINN.";}
 		public IFCReflectanceMethodEnum(string value) { Value = value; }
 		public static implicit operator IFCReflectanceMethodEnum(string value) { return new IFCReflectanceMethodEnum(value);}
@@ -5815,7 +5662,6 @@ namespace IFC.IFC4x2
 		public static string ANCHORING { get { return ".ANCHORING."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCReinforcingBarRoleEnum() { Value = ".MAIN.";}
 		public IFCReinforcingBarRoleEnum(string value) { Value = value; }
 		public static implicit operator IFCReinforcingBarRoleEnum(string value) { return new IFCReinforcingBarRoleEnum(value);}
@@ -5831,7 +5677,6 @@ namespace IFC.IFC4x2
 	{
 		public static string PLAIN { get { return ".PLAIN."; } private set { } }
 		public static string TEXTURED { get { return ".TEXTURED."; } private set { } }
-		public string Value {get; set;}
 		public IFCReinforcingBarSurfaceEnum() { Value = ".PLAIN.";}
 		public IFCReinforcingBarSurfaceEnum(string value) { Value = value; }
 		public static implicit operator IFCReinforcingBarSurfaceEnum(string value) { return new IFCReinforcingBarSurfaceEnum(value);}
@@ -5865,7 +5710,6 @@ namespace IFC.IFC4x2
 		public static string SPACEBAR { get { return ".SPACEBAR."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCReinforcingBarTypeEnum() { Value = ".ANCHORING.";}
 		public IFCReinforcingBarTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCReinforcingBarTypeEnum(string value) { return new IFCReinforcingBarTypeEnum(value);}
@@ -5881,7 +5725,6 @@ namespace IFC.IFC4x2
 	{
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCReinforcingMeshTypeEnum() { Value = ".USERDEFINED.";}
 		public IFCReinforcingMeshTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCReinforcingMeshTypeEnum(string value) { return new IFCReinforcingMeshTypeEnum(value);}
@@ -5939,7 +5782,6 @@ namespace IFC.IFC4x2
 		public static string FIELDCONSTRUCTIONMANAGER { get { return ".FIELDCONSTRUCTIONMANAGER."; } private set { } }
 		public static string RESELLER { get { return ".RESELLER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCRoleEnum() { Value = ".SUPPLIER.";}
 		public IFCRoleEnum(string value) { Value = value; }
 		public static implicit operator IFCRoleEnum(string value) { return new IFCRoleEnum(value);}
@@ -5981,7 +5823,6 @@ namespace IFC.IFC4x2
 		public static string FREEFORM { get { return ".FREEFORM."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCRoofTypeEnum() { Value = ".FLAT_ROOF.";}
 		public IFCRoofTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCRoofTypeEnum(string value) { return new IFCRoofTypeEnum(value);}
@@ -6025,7 +5866,6 @@ namespace IFC.IFC4x2
 		public static string PICO { get { return ".PICO."; } private set { } }
 		public static string FEMTO { get { return ".FEMTO."; } private set { } }
 		public static string ATTO { get { return ".ATTO."; } private set { } }
-		public string Value {get; set;}
 		public IFCSIPrefix() { Value = ".EXA.";}
 		public IFCSIPrefix(string value) { Value = value; }
 		public static implicit operator IFCSIPrefix(string value) { return new IFCSIPrefix(value);}
@@ -6097,7 +5937,6 @@ namespace IFC.IFC4x2
 		public static string VOLT { get { return ".VOLT."; } private set { } }
 		public static string WATT { get { return ".WATT."; } private set { } }
 		public static string WEBER { get { return ".WEBER."; } private set { } }
-		public string Value {get; set;}
 		public IFCSIUnitName() { Value = ".AMPERE.";}
 		public IFCSIUnitName(string value) { Value = value; }
 		public static implicit operator IFCSIUnitName(string value) { return new IFCSIUnitName(value);}
@@ -6133,7 +5972,6 @@ namespace IFC.IFC4x2
 		public static string WCSEAT { get { return ".WCSEAT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSanitaryTerminalTypeEnum() { Value = ".BATH.";}
 		public IFCSanitaryTerminalTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSanitaryTerminalTypeEnum(string value) { return new IFCSanitaryTerminalTypeEnum(value);}
@@ -6149,7 +5987,6 @@ namespace IFC.IFC4x2
 	{
 		public static string UNIFORM { get { return ".UNIFORM."; } private set { } }
 		public static string TAPERED { get { return ".TAPERED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSectionTypeEnum() { Value = ".UNIFORM.";}
 		public IFCSectionTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSectionTypeEnum(string value) { return new IFCSectionTypeEnum(value);}
@@ -6213,7 +6050,6 @@ namespace IFC.IFC4x2
 		public static string WINDSENSOR { get { return ".WINDSENSOR."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSensorTypeEnum() { Value = ".COSENSOR.";}
 		public IFCSensorTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSensorTypeEnum(string value) { return new IFCSensorTypeEnum(value);}
@@ -6237,7 +6073,6 @@ namespace IFC.IFC4x2
 		public static string FINISH_FINISH { get { return ".FINISH_FINISH."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSequenceEnum() { Value = ".START_START.";}
 		public IFCSequenceEnum(string value) { Value = value; }
 		public static implicit operator IFCSequenceEnum(string value) { return new IFCSequenceEnum(value);}
@@ -6259,7 +6094,6 @@ namespace IFC.IFC4x2
 		public static string AWNING { get { return ".AWNING."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCShadingDeviceTypeEnum() { Value = ".JALOUSIE.";}
 		public IFCShadingDeviceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCShadingDeviceTypeEnum(string value) { return new IFCShadingDeviceTypeEnum(value);}
@@ -6295,7 +6129,6 @@ namespace IFC.IFC4x2
 		public static string Q_COUNT { get { return ".Q_COUNT."; } private set { } }
 		public static string Q_WEIGHT { get { return ".Q_WEIGHT."; } private set { } }
 		public static string Q_TIME { get { return ".Q_TIME."; } private set { } }
-		public string Value {get; set;}
 		public IFCSimplePropertyTemplateTypeEnum() { Value = ".P_SINGLEVALUE.";}
 		public IFCSimplePropertyTemplateTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSimplePropertyTemplateTypeEnum(string value) { return new IFCSimplePropertyTemplateTypeEnum(value);}
@@ -6327,7 +6160,6 @@ namespace IFC.IFC4x2
 		public static string SIDEWALK { get { return ".SIDEWALK."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSlabTypeEnum() { Value = ".FLOOR.";}
 		public IFCSlabTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSlabTypeEnum(string value) { return new IFCSlabTypeEnum(value);}
@@ -6347,7 +6179,6 @@ namespace IFC.IFC4x2
 		public static string SOLARPANEL { get { return ".SOLARPANEL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSolarDeviceTypeEnum() { Value = ".SOLARCOLLECTOR.";}
 		public IFCSolarDeviceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSolarDeviceTypeEnum(string value) { return new IFCSolarDeviceTypeEnum(value);}
@@ -6367,7 +6198,6 @@ namespace IFC.IFC4x2
 		public static string RADIATOR { get { return ".RADIATOR."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSpaceHeaterTypeEnum() { Value = ".CONVECTOR.";}
 		public IFCSpaceHeaterTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSpaceHeaterTypeEnum(string value) { return new IFCSpaceHeaterTypeEnum(value);}
@@ -6393,7 +6223,6 @@ namespace IFC.IFC4x2
 		public static string EXTERNAL { get { return ".EXTERNAL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSpaceTypeEnum() { Value = ".SPACE.";}
 		public IFCSpaceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSpaceTypeEnum(string value) { return new IFCSpaceTypeEnum(value);}
@@ -6425,7 +6254,6 @@ namespace IFC.IFC4x2
 		public static string VENTILATION { get { return ".VENTILATION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSpatialZoneTypeEnum() { Value = ".CONSTRUCTION.";}
 		public IFCSpatialZoneTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSpatialZoneTypeEnum(string value) { return new IFCSpatialZoneTypeEnum(value);}
@@ -6447,7 +6275,6 @@ namespace IFC.IFC4x2
 		public static string RAINWATERHOPPER { get { return ".RAINWATERHOPPER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCStackTerminalTypeEnum() { Value = ".BIRDCAGE.";}
 		public IFCStackTerminalTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCStackTerminalTypeEnum(string value) { return new IFCStackTerminalTypeEnum(value);}
@@ -6473,7 +6300,6 @@ namespace IFC.IFC4x2
 		public static string FREEFORM { get { return ".FREEFORM."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCStairFlightTypeEnum() { Value = ".STRAIGHT.";}
 		public IFCStairFlightTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCStairFlightTypeEnum(string value) { return new IFCStairFlightTypeEnum(value);}
@@ -6517,7 +6343,6 @@ namespace IFC.IFC4x2
 		public static string TWO_CURVED_RUN_STAIR { get { return ".TWO_CURVED_RUN_STAIR."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCStairTypeEnum() { Value = ".STRAIGHT_RUN_STAIR.";}
 		public IFCStairTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCStairTypeEnum(string value) { return new IFCStairTypeEnum(value);}
@@ -6539,7 +6364,6 @@ namespace IFC.IFC4x2
 		public static string LOCKED { get { return ".LOCKED."; } private set { } }
 		public static string READWRITELOCKED { get { return ".READWRITELOCKED."; } private set { } }
 		public static string READONLYLOCKED { get { return ".READONLYLOCKED."; } private set { } }
-		public string Value {get; set;}
 		public IFCStateEnum() { Value = ".READWRITE.";}
 		public IFCStateEnum(string value) { Value = value; }
 		public static implicit operator IFCStateEnum(string value) { return new IFCStateEnum(value);}
@@ -6569,7 +6393,6 @@ namespace IFC.IFC4x2
 		public static string DISCRETE { get { return ".DISCRETE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCStructuralCurveActivityTypeEnum() { Value = ".CONST.";}
 		public IFCStructuralCurveActivityTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCStructuralCurveActivityTypeEnum(string value) { return new IFCStructuralCurveActivityTypeEnum(value);}
@@ -6595,7 +6418,6 @@ namespace IFC.IFC4x2
 		public static string COMPRESSION_MEMBER { get { return ".COMPRESSION_MEMBER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCStructuralCurveMemberTypeEnum() { Value = ".RIGID_JOINED_MEMBER.";}
 		public IFCStructuralCurveMemberTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCStructuralCurveMemberTypeEnum(string value) { return new IFCStructuralCurveMemberTypeEnum(value);}
@@ -6619,7 +6441,6 @@ namespace IFC.IFC4x2
 		public static string ISOCONTOUR { get { return ".ISOCONTOUR."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCStructuralSurfaceActivityTypeEnum() { Value = ".CONST.";}
 		public IFCStructuralSurfaceActivityTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCStructuralSurfaceActivityTypeEnum(string value) { return new IFCStructuralSurfaceActivityTypeEnum(value);}
@@ -6641,7 +6462,6 @@ namespace IFC.IFC4x2
 		public static string SHELL { get { return ".SHELL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCStructuralSurfaceMemberTypeEnum() { Value = ".BENDING_ELEMENT.";}
 		public IFCStructuralSurfaceMemberTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCStructuralSurfaceMemberTypeEnum(string value) { return new IFCStructuralSurfaceMemberTypeEnum(value);}
@@ -6661,7 +6481,6 @@ namespace IFC.IFC4x2
 		public static string WORK { get { return ".WORK."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSubContractResourceTypeEnum() { Value = ".PURCHASE.";}
 		public IFCSubContractResourceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSubContractResourceTypeEnum(string value) { return new IFCSubContractResourceTypeEnum(value);}
@@ -6685,7 +6504,6 @@ namespace IFC.IFC4x2
 		public static string DEFECT { get { return ".DEFECT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSurfaceFeatureTypeEnum() { Value = ".MARK.";}
 		public IFCSurfaceFeatureTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSurfaceFeatureTypeEnum(string value) { return new IFCSurfaceFeatureTypeEnum(value);}
@@ -6703,7 +6521,6 @@ namespace IFC.IFC4x2
 		public static string POSITIVE { get { return ".POSITIVE."; } private set { } }
 		public static string NEGATIVE { get { return ".NEGATIVE."; } private set { } }
 		public static string BOTH { get { return ".BOTH."; } private set { } }
-		public string Value {get; set;}
 		public IFCSurfaceSide() { Value = ".POSITIVE.";}
 		public IFCSurfaceSide(string value) { Value = value; }
 		public static implicit operator IFCSurfaceSide(string value) { return new IFCSurfaceSide(value);}
@@ -6737,7 +6554,6 @@ namespace IFC.IFC4x2
 		public static string TOGGLESWITCH { get { return ".TOGGLESWITCH."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSwitchingDeviceTypeEnum() { Value = ".CONTACTOR.";}
 		public IFCSwitchingDeviceTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSwitchingDeviceTypeEnum(string value) { return new IFCSwitchingDeviceTypeEnum(value);}
@@ -6757,7 +6573,6 @@ namespace IFC.IFC4x2
 		public static string WORKSURFACE { get { return ".WORKSURFACE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCSystemFurnitureElementTypeEnum() { Value = ".PANEL.";}
 		public IFCSystemFurnitureElementTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCSystemFurnitureElementTypeEnum(string value) { return new IFCSystemFurnitureElementTypeEnum(value);}
@@ -6787,7 +6602,6 @@ namespace IFC.IFC4x2
 		public static string VESSEL { get { return ".VESSEL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCTankTypeEnum() { Value = ".BASIN.";}
 		public IFCTankTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCTankTypeEnum(string value) { return new IFCTankTypeEnum(value);}
@@ -6805,7 +6619,6 @@ namespace IFC.IFC4x2
 		public static string ELAPSEDTIME { get { return ".ELAPSEDTIME."; } private set { } }
 		public static string WORKTIME { get { return ".WORKTIME."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCTaskDurationEnum() { Value = ".ELAPSEDTIME.";}
 		public IFCTaskDurationEnum(string value) { Value = value; }
 		public static implicit operator IFCTaskDurationEnum(string value) { return new IFCTaskDurationEnum(value);}
@@ -6845,7 +6658,6 @@ namespace IFC.IFC4x2
 		public static string RENOVATION { get { return ".RENOVATION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCTaskTypeEnum() { Value = ".ATTENDANCE.";}
 		public IFCTaskTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCTaskTypeEnum(string value) { return new IFCTaskTypeEnum(value);}
@@ -6867,7 +6679,6 @@ namespace IFC.IFC4x2
 		public static string TENSIONING_END { get { return ".TENSIONING_END."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCTendonAnchorTypeEnum() { Value = ".COUPLER.";}
 		public IFCTendonAnchorTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCTendonAnchorTypeEnum(string value) { return new IFCTendonAnchorTypeEnum(value);}
@@ -6893,7 +6704,6 @@ namespace IFC.IFC4x2
 		public static string DIABOLO { get { return ".DIABOLO."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCTendonConduitTypeEnum() { Value = ".DUCT.";}
 		public IFCTendonConduitTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCTendonConduitTypeEnum(string value) { return new IFCTendonConduitTypeEnum(value);}
@@ -6917,7 +6727,6 @@ namespace IFC.IFC4x2
 		public static string WIRE { get { return ".WIRE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCTendonTypeEnum() { Value = ".BAR.";}
 		public IFCTendonTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCTendonTypeEnum(string value) { return new IFCTendonTypeEnum(value);}
@@ -6937,7 +6746,6 @@ namespace IFC.IFC4x2
 		public static string RIGHT { get { return ".RIGHT."; } private set { } }
 		public static string UP { get { return ".UP."; } private set { } }
 		public static string DOWN { get { return ".DOWN."; } private set { } }
-		public string Value {get; set;}
 		public IFCTextPath() { Value = ".LEFT.";}
 		public IFCTextPath(string value) { Value = value; }
 		public static implicit operator IFCTextPath(string value) { return new IFCTextPath(value);}
@@ -6963,7 +6771,6 @@ namespace IFC.IFC4x2
 		public static string PIECEWISECONSTANT { get { return ".PIECEWISECONSTANT."; } private set { } }
 		public static string PIECEWISECONTINUOUS { get { return ".PIECEWISECONTINUOUS."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCTimeSeriesDataTypeEnum() { Value = ".CONTINUOUS.";}
 		public IFCTimeSeriesDataTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCTimeSeriesDataTypeEnum(string value) { return new IFCTimeSeriesDataTypeEnum(value);}
@@ -6989,7 +6796,6 @@ namespace IFC.IFC4x2
 		public static string VOLTAGE { get { return ".VOLTAGE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCTransformerTypeEnum() { Value = ".CURRENT.";}
 		public IFCTransformerTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCTransformerTypeEnum(string value) { return new IFCTransformerTypeEnum(value);}
@@ -7009,7 +6815,6 @@ namespace IFC.IFC4x2
 		public static string CONTINUOUS { get { return ".CONTINUOUS."; } private set { } }
 		public static string CONTSAMEGRADIENT { get { return ".CONTSAMEGRADIENT."; } private set { } }
 		public static string CONTSAMEGRADIENTSAMECURVATURE { get { return ".CONTSAMEGRADIENTSAMECURVATURE."; } private set { } }
-		public string Value {get; set;}
 		public IFCTransitionCode() { Value = ".DISCONTINUOUS.";}
 		public IFCTransitionCode(string value) { Value = value; }
 		public static implicit operator IFCTransitionCode(string value) { return new IFCTransitionCode(value);}
@@ -7033,7 +6838,6 @@ namespace IFC.IFC4x2
 		public static string COSINECURVE { get { return ".COSINECURVE."; } private set { } }
 		public static string CUBICPARABOLA { get { return ".CUBICPARABOLA."; } private set { } }
 		public static string SINECURVE { get { return ".SINECURVE."; } private set { } }
-		public string Value {get; set;}
 		public IFCTransitionCurveType() { Value = ".BIQUADRATICPARABOLA.";}
 		public IFCTransitionCurveType(string value) { Value = value; }
 		public static implicit operator IFCTransitionCurveType(string value) { return new IFCTransitionCurveType(value);}
@@ -7059,7 +6863,6 @@ namespace IFC.IFC4x2
 		public static string LIFTINGGEAR { get { return ".LIFTINGGEAR."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCTransportElementTypeEnum() { Value = ".ELEVATOR.";}
 		public IFCTransportElementTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCTransportElementTypeEnum(string value) { return new IFCTransportElementTypeEnum(value);}
@@ -7077,7 +6880,6 @@ namespace IFC.IFC4x2
 		public static string CARTESIAN { get { return ".CARTESIAN."; } private set { } }
 		public static string PARAMETER { get { return ".PARAMETER."; } private set { } }
 		public static string UNSPECIFIED { get { return ".UNSPECIFIED."; } private set { } }
-		public string Value {get; set;}
 		public IFCTrimmingPreference() { Value = ".CARTESIAN.";}
 		public IFCTrimmingPreference(string value) { Value = value; }
 		public static implicit operator IFCTrimmingPreference(string value) { return new IFCTrimmingPreference(value);}
@@ -7095,7 +6897,6 @@ namespace IFC.IFC4x2
 		public static string FINNED { get { return ".FINNED."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCTubeBundleTypeEnum() { Value = ".FINNED.";}
 		public IFCTubeBundleTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCTubeBundleTypeEnum(string value) { return new IFCTubeBundleTypeEnum(value);}
@@ -7167,7 +6968,6 @@ namespace IFC.IFC4x2
 		public static string TIMEUNIT { get { return ".TIMEUNIT."; } private set { } }
 		public static string VOLUMEUNIT { get { return ".VOLUMEUNIT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCUnitEnum() { Value = ".ABSORBEDDOSEUNIT.";}
 		public IFCUnitEnum(string value) { Value = value; }
 		public static implicit operator IFCUnitEnum(string value) { return new IFCUnitEnum(value);}
@@ -7199,7 +6999,6 @@ namespace IFC.IFC4x2
 		public static string WEATHERSTATION { get { return ".WEATHERSTATION."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCUnitaryControlElementTypeEnum() { Value = ".ALARMPANEL.";}
 		public IFCUnitaryControlElementTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCUnitaryControlElementTypeEnum(string value) { return new IFCUnitaryControlElementTypeEnum(value);}
@@ -7225,7 +7024,6 @@ namespace IFC.IFC4x2
 		public static string ROOFTOPUNIT { get { return ".ROOFTOPUNIT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCUnitaryEquipmentTypeEnum() { Value = ".AIRHANDLER.";}
 		public IFCUnitaryEquipmentTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCUnitaryEquipmentTypeEnum(string value) { return new IFCUnitaryEquipmentTypeEnum(value);}
@@ -7283,7 +7081,6 @@ namespace IFC.IFC4x2
 		public static string STOPCOCK { get { return ".STOPCOCK."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCValveTypeEnum() { Value = ".AIRRELEASE.";}
 		public IFCValveTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCValveTypeEnum(string value) { return new IFCValveTypeEnum(value);}
@@ -7311,7 +7108,6 @@ namespace IFC.IFC4x2
 		public static string RUBBER { get { return ".RUBBER."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCVibrationDamperTypeEnum() { Value = ".BENDING_YIELD.";}
 		public IFCVibrationDamperTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCVibrationDamperTypeEnum(string value) { return new IFCVibrationDamperTypeEnum(value);}
@@ -7333,7 +7129,6 @@ namespace IFC.IFC4x2
 		public static string BASE { get { return ".BASE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCVibrationIsolatorTypeEnum() { Value = ".COMPRESSION.";}
 		public IFCVibrationIsolatorTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCVibrationIsolatorTypeEnum(string value) { return new IFCVibrationIsolatorTypeEnum(value);}
@@ -7361,7 +7156,6 @@ namespace IFC.IFC4x2
 		public static string EDGE { get { return ".EDGE."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCVoidingFeatureTypeEnum() { Value = ".CUTOUT.";}
 		public IFCVoidingFeatureTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCVoidingFeatureTypeEnum(string value) { return new IFCVoidingFeatureTypeEnum(value);}
@@ -7397,7 +7191,6 @@ namespace IFC.IFC4x2
 		public static string RETAININGWALL { get { return ".RETAININGWALL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCWallTypeEnum() { Value = ".MOVABLE.";}
 		public IFCWallTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCWallTypeEnum(string value) { return new IFCWallTypeEnum(value);}
@@ -7427,7 +7220,6 @@ namespace IFC.IFC4x2
 		public static string WASTETRAP { get { return ".WASTETRAP."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCWasteTerminalTypeEnum() { Value = ".FLOORTRAP.";}
 		public IFCWasteTerminalTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCWasteTerminalTypeEnum(string value) { return new IFCWasteTerminalTypeEnum(value);}
@@ -7467,7 +7259,6 @@ namespace IFC.IFC4x2
 		public static string FIXEDCASEMENT { get { return ".FIXEDCASEMENT."; } private set { } }
 		public static string OTHEROPERATION { get { return ".OTHEROPERATION."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCWindowPanelOperationEnum() { Value = ".SIDEHUNGRIGHTHAND.";}
 		public IFCWindowPanelOperationEnum(string value) { Value = value; }
 		public static implicit operator IFCWindowPanelOperationEnum(string value) { return new IFCWindowPanelOperationEnum(value);}
@@ -7491,7 +7282,6 @@ namespace IFC.IFC4x2
 		public static string BOTTOM { get { return ".BOTTOM."; } private set { } }
 		public static string TOP { get { return ".TOP."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCWindowPanelPositionEnum() { Value = ".LEFT.";}
 		public IFCWindowPanelPositionEnum(string value) { Value = value; }
 		public static implicit operator IFCWindowPanelPositionEnum(string value) { return new IFCWindowPanelPositionEnum(value);}
@@ -7519,7 +7309,6 @@ namespace IFC.IFC4x2
 		public static string PLASTIC { get { return ".PLASTIC."; } private set { } }
 		public static string OTHER_CONSTRUCTION { get { return ".OTHER_CONSTRUCTION."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCWindowStyleConstructionEnum() { Value = ".ALUMINIUM.";}
 		public IFCWindowStyleConstructionEnum(string value) { Value = value; }
 		public static implicit operator IFCWindowStyleConstructionEnum(string value) { return new IFCWindowStyleConstructionEnum(value);}
@@ -7553,7 +7342,6 @@ namespace IFC.IFC4x2
 		public static string TRIPLE_PANEL_HORIZONTAL { get { return ".TRIPLE_PANEL_HORIZONTAL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCWindowStyleOperationEnum() { Value = ".SINGLE_PANEL.";}
 		public IFCWindowStyleOperationEnum(string value) { Value = value; }
 		public static implicit operator IFCWindowStyleOperationEnum(string value) { return new IFCWindowStyleOperationEnum(value);}
@@ -7575,7 +7363,6 @@ namespace IFC.IFC4x2
 		public static string LIGHTDOME { get { return ".LIGHTDOME."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCWindowTypeEnum() { Value = ".WINDOW.";}
 		public IFCWindowTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCWindowTypeEnum(string value) { return new IFCWindowTypeEnum(value);}
@@ -7609,7 +7396,6 @@ namespace IFC.IFC4x2
 		public static string TRIPLE_PANEL_HORIZONTAL { get { return ".TRIPLE_PANEL_HORIZONTAL."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCWindowTypePartitioningEnum() { Value = ".SINGLE_PANEL.";}
 		public IFCWindowTypePartitioningEnum(string value) { Value = value; }
 		public static implicit operator IFCWindowTypePartitioningEnum(string value) { return new IFCWindowTypePartitioningEnum(value);}
@@ -7631,7 +7417,6 @@ namespace IFC.IFC4x2
 		public static string THIRDSHIFT { get { return ".THIRDSHIFT."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCWorkCalendarTypeEnum() { Value = ".FIRSTSHIFT.";}
 		public IFCWorkCalendarTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCWorkCalendarTypeEnum(string value) { return new IFCWorkCalendarTypeEnum(value);}
@@ -7653,7 +7438,6 @@ namespace IFC.IFC4x2
 		public static string PLANNED { get { return ".PLANNED."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCWorkPlanTypeEnum() { Value = ".ACTUAL.";}
 		public IFCWorkPlanTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCWorkPlanTypeEnum(string value) { return new IFCWorkPlanTypeEnum(value);}
@@ -7675,7 +7459,6 @@ namespace IFC.IFC4x2
 		public static string PLANNED { get { return ".PLANNED."; } private set { } }
 		public static string USERDEFINED { get { return ".USERDEFINED."; } private set { } }
 		public static string NOTDEFINED { get { return ".NOTDEFINED."; } private set { } }
-		public string Value {get; set;}
 		public IFCWorkScheduleTypeEnum() { Value = ".ACTUAL.";}
 		public IFCWorkScheduleTypeEnum(string value) { Value = value; }
 		public static implicit operator IFCWorkScheduleTypeEnum(string value) { return new IFCWorkScheduleTypeEnum(value);}

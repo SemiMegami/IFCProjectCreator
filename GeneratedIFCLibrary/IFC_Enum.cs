@@ -3,9 +3,13 @@ using System.Collections.Generic;
 #pragma warning disable VSSpell001 // Spell Check
 namespace IFC
 {
-	public class IFC_Enum : IFC_Attribute
+	public abstract class IFC_Enum : IFC_Attribute
 	{
 
-		
+                public string Value { get; set; } = "";
+                public string GetIFCText(bool includeClassName)
+                {
+                    return "." + Value + ".";
+                }
 	}
 }

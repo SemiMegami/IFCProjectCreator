@@ -6,6 +6,6 @@ namespace IFC
 	public interface IFC_Attribute
 	{
 
-		
+        public string GetIFCText(bool includeClassName);
 	}
 }

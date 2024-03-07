@@ -16,7 +16,7 @@ namespace IFCProjectCreator
         {
             string cSharpText = GetCSharpType();
             List<string> texts = GetCSharpSummaryTexts();
-            texts.Add("\tpublic class " + Name + " : List<" + ParentName + ">" + ", " + DataSet.globalName + "." + Name);
+            texts.Add("\tpublic class " + Name + " : IFC_Attributes<" + ParentName + ">" + ", " + DataSet.globalName + "." + Name);
             texts.Add("\t{");
 
             if(cSharpText.Length > 0)

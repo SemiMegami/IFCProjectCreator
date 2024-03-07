@@ -30,7 +30,7 @@
             {
                 texts.AddRange(attribute.GetCSharpText());
             }
-            texts.Add("\t\tpublic string Value {get; set;}");
+           // texts.Add("\t\tpublic string Value {get; set;}");
             if(EnumValues.Count > 0)
             {
                 texts.Add("\t\tpublic " + Name + "() { Value = \"." + EnumValues[0] + ".\";}");

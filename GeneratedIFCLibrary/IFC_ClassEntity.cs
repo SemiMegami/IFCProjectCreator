@@ -54,6 +54,11 @@ namespace IFC
             AttributeTexts = new List<string>();
         }
 
+        public string GetIFCText(bool includeClassName)
+        {
+            return "#" + IFC_ID;
+        }
+
         public string GetIFCFullText()
         {
             var parameters = GetDirectAttributes().Values.ToList();
