@@ -478,7 +478,7 @@ namespace IFCProjectCreator
             texts.Add("\t\t\t{");
             texts.Add("\t\t\t\tif(AttributeTexts.Count != " + directAttributes.Count + ")");
             texts.Add("\t\t\t\t{");
-            texts.Add("\t\t\t\t\tModel.ImportErrorLogTexts.Add( \"ERROR : (\" + IFC_ID + \") Invalid number of attributes. " + Name.ToUpper() + " requires " + directAttributes.Count + " attributes (Not \" + AttributeTexts.Count + \"). \");");
+            texts.Add("\t\t\t\t\tModel.ImportErrorLogTexts.Add(\"ERROR (\" + IFC_ID + \") : Invalid number of attributes. '" + Name + "' requires " + directAttributes.Count + " attributes (Not \" + AttributeTexts.Count + \"). \");");
             texts.Add("\t\t\t\t\treturn;");
             texts.Add("\t\t\t\t}");
             for (int i = 0; i < directAttributes.Count; i++)
@@ -488,6 +488,10 @@ namespace IFCProjectCreator
 
                 texts.Add("\t\t\t\tif(" + attText + " == \"$\")");
                 texts.Add("\t\t\t\t{");
+                if (!attribute.IsOptional)
+                {
+                    texts.Add("\t\t\t\t\tModel.ImportWarningLogTexts.Add(\"WARNING (\" + IFC_ID + \") : '" + attribute.Name + "' is not optional in '" + Name + "'\");");
+                }
                 texts.Add("\t\t\t\t\t" + attribute.Name + " = null;");
                 texts.Add("\t\t\t\t}");
                 texts.Add("\t\t\t\telse");

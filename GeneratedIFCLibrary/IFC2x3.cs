@@ -6759,11 +6759,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFC2DCOMPOSITECURVE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFC2DCompositeCurve' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Segments' is not optional in 'IFC2DCompositeCurve'");
 					Segments = null;
 				}
 				else
@@ -6771,6 +6772,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SelfIntersect' is not optional in 'IFC2DCompositeCurve'");
 					SelfIntersect = null;
 				}
 				else
@@ -6862,11 +6864,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCACTIONREQUEST requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCActionRequest' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCActionRequest'");
 					GlobalId = null;
 				}
 				else
@@ -6874,6 +6877,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCActionRequest'");
 					OwnerHistory = null;
 				}
 				else
@@ -6902,6 +6906,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RequestID' is not optional in 'IFCActionRequest'");
 					RequestID = null;
 				}
 				else
@@ -7046,11 +7051,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCACTOR requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCActor' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCActor'");
 					GlobalId = null;
 				}
 				else
@@ -7058,6 +7064,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCActor'");
 					OwnerHistory = null;
 				}
 				else
@@ -7086,6 +7093,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TheActor' is not optional in 'IFCActor'");
 					TheActor = null;
 				}
 				else
@@ -7252,11 +7260,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCACTORROLE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCActorRole' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Role' is not optional in 'IFCActorRole'");
 					Role = null;
 				}
 				else
@@ -7426,11 +7435,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCACTUATORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCActuatorType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCActuatorType'");
 					GlobalId = null;
 				}
 				else
@@ -7438,6 +7448,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCActuatorType'");
 					OwnerHistory = null;
 				}
 				else
@@ -7494,6 +7505,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCActuatorType'");
 					PredefinedType = null;
 				}
 				else
@@ -7687,7 +7699,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCADDRESS requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAddress' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -7908,11 +7920,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAIRTERMINALBOXTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAirTerminalBoxType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCAirTerminalBoxType'");
 					GlobalId = null;
 				}
 				else
@@ -7920,6 +7933,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCAirTerminalBoxType'");
 					OwnerHistory = null;
 				}
 				else
@@ -7976,6 +7990,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCAirTerminalBoxType'");
 					PredefinedType = null;
 				}
 				else
@@ -8166,11 +8181,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAIRTERMINALTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAirTerminalType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCAirTerminalType'");
 					GlobalId = null;
 				}
 				else
@@ -8178,6 +8194,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCAirTerminalType'");
 					OwnerHistory = null;
 				}
 				else
@@ -8234,6 +8251,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCAirTerminalType'");
 					PredefinedType = null;
 				}
 				else
@@ -8424,11 +8442,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAIRTOAIRHEATRECOVERYTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAirToAirHeatRecoveryType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCAirToAirHeatRecoveryType'");
 					GlobalId = null;
 				}
 				else
@@ -8436,6 +8455,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCAirToAirHeatRecoveryType'");
 					OwnerHistory = null;
 				}
 				else
@@ -8492,6 +8512,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCAirToAirHeatRecoveryType'");
 					PredefinedType = null;
 				}
 				else
@@ -8667,11 +8688,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCALARMTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAlarmType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCAlarmType'");
 					GlobalId = null;
 				}
 				else
@@ -8679,6 +8701,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCAlarmType'");
 					OwnerHistory = null;
 				}
 				else
@@ -8735,6 +8758,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCAlarmType'");
 					PredefinedType = null;
 				}
 				else
@@ -8897,11 +8921,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANGULARDIMENSION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAngularDimension' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Contents' is not optional in 'IFCAngularDimension'");
 					Contents = null;
 				}
 				else
@@ -8986,11 +9011,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATION requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAnnotation' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCAnnotation'");
 					GlobalId = null;
 				}
 				else
@@ -8998,6 +9024,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCAnnotation'");
 					OwnerHistory = null;
 				}
 				else
@@ -9187,7 +9214,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONCURVEOCCURRENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAnnotationCurveOccurrence' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -9199,6 +9226,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCAnnotationCurveOccurrence'");
 					Styles = null;
 				}
 				else
@@ -9297,11 +9325,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONFILLAREA requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAnnotationFillArea' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OuterBoundary' is not optional in 'IFCAnnotationFillArea'");
 					OuterBoundary = null;
 				}
 				else
@@ -9464,7 +9493,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONFILLAREAOCCURRENCE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAnnotationFillAreaOccurrence' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -9476,6 +9505,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCAnnotationFillAreaOccurrence'");
 					Styles = null;
 				}
 				else
@@ -9643,7 +9673,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONOCCURRENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAnnotationOccurrence' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -9655,6 +9685,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCAnnotationOccurrence'");
 					Styles = null;
 				}
 				else
@@ -9775,11 +9806,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONSURFACE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAnnotationSurface' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Item' is not optional in 'IFCAnnotationSurface'");
 					Item = null;
 				}
 				else
@@ -9923,7 +9955,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONSURFACEOCCURRENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAnnotationSurfaceOccurrence' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -9935,6 +9967,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCAnnotationSurfaceOccurrence'");
 					Styles = null;
 				}
 				else
@@ -10047,7 +10080,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONSYMBOLOCCURRENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAnnotationSymbolOccurrence' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -10059,6 +10092,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCAnnotationSymbolOccurrence'");
 					Styles = null;
 				}
 				else
@@ -10169,7 +10203,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONTEXTOCCURRENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAnnotationTextOccurrence' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -10181,6 +10215,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCAnnotationTextOccurrence'");
 					Styles = null;
 				}
 				else
@@ -10287,11 +10322,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPLICATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCApplication' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ApplicationDeveloper' is not optional in 'IFCApplication'");
 					ApplicationDeveloper = null;
 				}
 				else
@@ -10299,6 +10335,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Version' is not optional in 'IFCApplication'");
 					Version = null;
 				}
 				else
@@ -10306,6 +10343,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ApplicationFullName' is not optional in 'IFCApplication'");
 					ApplicationFullName = null;
 				}
 				else
@@ -10313,6 +10351,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ApplicationIdentifier' is not optional in 'IFCApplication'");
 					ApplicationIdentifier = null;
 				}
 				else
@@ -10525,7 +10564,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPLIEDVALUE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAppliedValue' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -10845,11 +10884,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPLIEDVALUERELATIONSHIP requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAppliedValueRelationship' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ComponentOfTotal' is not optional in 'IFCAppliedValueRelationship'");
 					ComponentOfTotal = null;
 				}
 				else
@@ -10857,6 +10897,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Components' is not optional in 'IFCAppliedValueRelationship'");
 					Components = null;
 				}
 				else
@@ -10864,6 +10905,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ArithmeticOperator' is not optional in 'IFCAppliedValueRelationship'");
 					ArithmeticOperator = null;
 				}
 				else
@@ -11118,7 +11160,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPROVAL requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCApproval' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -11130,6 +11172,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ApprovalDateTime' is not optional in 'IFCApproval'");
 					ApprovalDateTime = null;
 				}
 				else
@@ -11158,6 +11201,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCApproval'");
 					Name = null;
 				}
 				else
@@ -11165,6 +11209,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Identifier' is not optional in 'IFCApproval'");
 					Identifier = null;
 				}
 				else
@@ -11463,11 +11508,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPROVALACTORRELATIONSHIP requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCApprovalActorRelationship' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Actor' is not optional in 'IFCApprovalActorRelationship'");
 					Actor = null;
 				}
 				else
@@ -11475,6 +11521,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Approval' is not optional in 'IFCApprovalActorRelationship'");
 					Approval = null;
 				}
 				else
@@ -11482,6 +11529,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Role' is not optional in 'IFCApprovalActorRelationship'");
 					Role = null;
 				}
 				else
@@ -11624,11 +11672,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPROVALPROPERTYRELATIONSHIP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCApprovalPropertyRelationship' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ApprovedProperties' is not optional in 'IFCApprovalPropertyRelationship'");
 					ApprovedProperties = null;
 				}
 				else
@@ -11636,6 +11685,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Approval' is not optional in 'IFCApprovalPropertyRelationship'");
 					Approval = null;
 				}
 				else
@@ -11776,11 +11826,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPROVALRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCApprovalRelationship' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedApproval' is not optional in 'IFCApprovalRelationship'");
 					RelatedApproval = null;
 				}
 				else
@@ -11788,6 +11839,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingApproval' is not optional in 'IFCApprovalRelationship'");
 					RelatingApproval = null;
 				}
 				else
@@ -11802,6 +11854,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCApprovalRelationship'");
 					Name = null;
 				}
 				else
@@ -12011,11 +12064,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCARBITRARYCLOSEDPROFILEDEF requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCArbitraryClosedProfileDef' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCArbitraryClosedProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -12030,6 +12084,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OuterCurve' is not optional in 'IFCArbitraryClosedProfileDef'");
 					OuterCurve = null;
 				}
 				else
@@ -12165,11 +12220,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCARBITRARYOPENPROFILEDEF requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCArbitraryOpenProfileDef' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCArbitraryOpenProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -12184,6 +12240,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Curve' is not optional in 'IFCArbitraryOpenProfileDef'");
 					Curve = null;
 				}
 				else
@@ -12333,11 +12390,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCARBITRARYPROFILEDEFWITHVOIDS requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCArbitraryProfileDefWithVoids' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCArbitraryProfileDefWithVoids'");
 					ProfileType = null;
 				}
 				else
@@ -12352,6 +12410,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OuterCurve' is not optional in 'IFCArbitraryProfileDefWithVoids'");
 					OuterCurve = null;
 				}
 				else
@@ -12359,6 +12418,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'InnerCurves' is not optional in 'IFCArbitraryProfileDefWithVoids'");
 					InnerCurves = null;
 				}
 				else
@@ -12544,11 +12604,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 14)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCASSET requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAsset' requires 14 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCAsset'");
 					GlobalId = null;
 				}
 				else
@@ -12556,6 +12617,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCAsset'");
 					OwnerHistory = null;
 				}
 				else
@@ -12584,6 +12646,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AssetID' is not optional in 'IFCAsset'");
 					AssetID = null;
 				}
 				else
@@ -12591,6 +12654,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OriginalValue' is not optional in 'IFCAsset'");
 					OriginalValue = null;
 				}
 				else
@@ -12598,6 +12662,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CurrentValue' is not optional in 'IFCAsset'");
 					CurrentValue = null;
 				}
 				else
@@ -12605,6 +12670,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TotalReplacementCost' is not optional in 'IFCAsset'");
 					TotalReplacementCost = null;
 				}
 				else
@@ -12612,6 +12678,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Owner' is not optional in 'IFCAsset'");
 					Owner = null;
 				}
 				else
@@ -12619,6 +12686,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[10] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'User' is not optional in 'IFCAsset'");
 					User = null;
 				}
 				else
@@ -12626,6 +12694,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ResponsiblePerson' is not optional in 'IFCAsset'");
 					ResponsiblePerson = null;
 				}
 				else
@@ -12633,6 +12702,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[12] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'IncorporationDate' is not optional in 'IFCAsset'");
 					IncorporationDate = null;
 				}
 				else
@@ -12640,6 +12710,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[13] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DepreciatedValue' is not optional in 'IFCAsset'");
 					DepreciatedValue = null;
 				}
 				else
@@ -12998,11 +13069,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 12)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCASYMMETRICISHAPEPROFILEDEF requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAsymmetricIShapeProfileDef' requires 12 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCAsymmetricIShapeProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -13017,6 +13089,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCAsymmetricIShapeProfileDef'");
 					Position = null;
 				}
 				else
@@ -13024,6 +13097,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OverallWidth' is not optional in 'IFCAsymmetricIShapeProfileDef'");
 					OverallWidth = null;
 				}
 				else
@@ -13031,6 +13105,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OverallDepth' is not optional in 'IFCAsymmetricIShapeProfileDef'");
 					OverallDepth = null;
 				}
 				else
@@ -13038,6 +13113,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WebThickness' is not optional in 'IFCAsymmetricIShapeProfileDef'");
 					WebThickness = null;
 				}
 				else
@@ -13045,6 +13121,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FlangeThickness' is not optional in 'IFCAsymmetricIShapeProfileDef'");
 					FlangeThickness = null;
 				}
 				else
@@ -13059,6 +13136,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TopFlangeWidth' is not optional in 'IFCAsymmetricIShapeProfileDef'");
 					TopFlangeWidth = null;
 				}
 				else
@@ -13354,11 +13432,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAXIS1PLACEMENT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAxis1Placement' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Location' is not optional in 'IFCAxis1Placement'");
 					Location = null;
 				}
 				else
@@ -13513,11 +13592,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAXIS2PLACEMENT2D requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAxis2Placement2D' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Location' is not optional in 'IFCAxis2Placement2D'");
 					Location = null;
 				}
 				else
@@ -13724,11 +13804,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAXIS2PLACEMENT3D requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCAxis2Placement3D' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Location' is not optional in 'IFCAxis2Placement3D'");
 					Location = null;
 				}
 				else
@@ -13944,11 +14025,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBSPLINECURVE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBSplineCurve' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Degree' is not optional in 'IFCBSplineCurve'");
 					Degree = null;
 				}
 				else
@@ -13956,6 +14038,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ControlPointsList' is not optional in 'IFCBSplineCurve'");
 					ControlPointsList = null;
 				}
 				else
@@ -13963,6 +14046,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CurveForm' is not optional in 'IFCBSplineCurve'");
 					CurveForm = null;
 				}
 				else
@@ -13970,6 +14054,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ClosedCurve' is not optional in 'IFCBSplineCurve'");
 					ClosedCurve = null;
 				}
 				else
@@ -13977,6 +14062,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SelfIntersect' is not optional in 'IFCBSplineCurve'");
 					SelfIntersect = null;
 				}
 				else
@@ -14231,11 +14317,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBEAM requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBeam' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCBeam'");
 					GlobalId = null;
 				}
 				else
@@ -14243,6 +14330,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCBeam'");
 					OwnerHistory = null;
 				}
 				else
@@ -14426,11 +14514,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBEAMTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBeamType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCBeamType'");
 					GlobalId = null;
 				}
 				else
@@ -14438,6 +14527,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCBeamType'");
 					OwnerHistory = null;
 				}
 				else
@@ -14494,6 +14584,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCBeamType'");
 					PredefinedType = null;
 				}
 				else
@@ -14662,11 +14753,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBEZIERCURVE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBezierCurve' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Degree' is not optional in 'IFCBezierCurve'");
 					Degree = null;
 				}
 				else
@@ -14674,6 +14766,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ControlPointsList' is not optional in 'IFCBezierCurve'");
 					ControlPointsList = null;
 				}
 				else
@@ -14681,6 +14774,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CurveForm' is not optional in 'IFCBezierCurve'");
 					CurveForm = null;
 				}
 				else
@@ -14688,6 +14782,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ClosedCurve' is not optional in 'IFCBezierCurve'");
 					ClosedCurve = null;
 				}
 				else
@@ -14695,6 +14790,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SelfIntersect' is not optional in 'IFCBezierCurve'");
 					SelfIntersect = null;
 				}
 				else
@@ -14818,11 +14914,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBLOBTEXTURE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBlobTexture' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RepeatS' is not optional in 'IFCBlobTexture'");
 					RepeatS = null;
 				}
 				else
@@ -14830,6 +14927,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RepeatT' is not optional in 'IFCBlobTexture'");
 					RepeatT = null;
 				}
 				else
@@ -14837,6 +14935,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TextureType' is not optional in 'IFCBlobTexture'");
 					TextureType = null;
 				}
 				else
@@ -14851,6 +14950,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RasterFormat' is not optional in 'IFCBlobTexture'");
 					RasterFormat = null;
 				}
 				else
@@ -14858,6 +14958,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RasterCode' is not optional in 'IFCBlobTexture'");
 					RasterCode = null;
 				}
 				else
@@ -15015,11 +15116,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBLOCK requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBlock' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCBlock'");
 					Position = null;
 				}
 				else
@@ -15027,6 +15129,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'XLength' is not optional in 'IFCBlock'");
 					XLength = null;
 				}
 				else
@@ -15034,6 +15137,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'YLength' is not optional in 'IFCBlock'");
 					YLength = null;
 				}
 				else
@@ -15041,6 +15145,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ZLength' is not optional in 'IFCBlock'");
 					ZLength = null;
 				}
 				else
@@ -15219,11 +15324,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOILERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBoilerType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCBoilerType'");
 					GlobalId = null;
 				}
 				else
@@ -15231,6 +15337,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCBoilerType'");
 					OwnerHistory = null;
 				}
 				else
@@ -15287,6 +15394,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCBoilerType'");
 					PredefinedType = null;
 				}
 				else
@@ -15489,11 +15597,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOOLEANCLIPPINGRESULT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBooleanClippingResult' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Operator' is not optional in 'IFCBooleanClippingResult'");
 					Operator = null;
 				}
 				else
@@ -15501,6 +15610,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FirstOperand' is not optional in 'IFCBooleanClippingResult'");
 					FirstOperand = null;
 				}
 				else
@@ -15508,6 +15618,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SecondOperand' is not optional in 'IFCBooleanClippingResult'");
 					SecondOperand = null;
 				}
 				else
@@ -15633,11 +15744,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOOLEANRESULT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBooleanResult' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Operator' is not optional in 'IFCBooleanResult'");
 					Operator = null;
 				}
 				else
@@ -15645,6 +15757,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FirstOperand' is not optional in 'IFCBooleanResult'");
 					FirstOperand = null;
 				}
 				else
@@ -15652,6 +15765,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SecondOperand' is not optional in 'IFCBooleanResult'");
 					SecondOperand = null;
 				}
 				else
@@ -15801,7 +15915,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDARYCONDITION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBoundaryCondition' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -15914,7 +16028,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDARYEDGECONDITION requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBoundaryEdgeCondition' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -16195,7 +16309,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDARYFACECONDITION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBoundaryFaceCondition' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -16391,7 +16505,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDARYNODECONDITION requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBoundaryNodeCondition' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -16670,7 +16784,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDARYNODECONDITIONWARPING requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBoundaryNodeConditionWarping' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -16868,7 +16982,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDEDCURVE requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBoundedCurve' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -16925,7 +17039,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDEDSURFACE requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBoundedSurface' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -17012,11 +17126,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDINGBOX requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBoundingBox' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Corner' is not optional in 'IFCBoundingBox'");
 					Corner = null;
 				}
 				else
@@ -17024,6 +17139,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'XDim' is not optional in 'IFCBoundingBox'");
 					XDim = null;
 				}
 				else
@@ -17031,6 +17147,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'YDim' is not optional in 'IFCBoundingBox'");
 					YDim = null;
 				}
 				else
@@ -17038,6 +17155,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ZDim' is not optional in 'IFCBoundingBox'");
 					ZDim = null;
 				}
 				else
@@ -17229,11 +17347,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOXEDHALFSPACE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBoxedHalfSpace' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BaseSurface' is not optional in 'IFCBoxedHalfSpace'");
 					BaseSurface = null;
 				}
 				else
@@ -17241,6 +17360,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AgreementFlag' is not optional in 'IFCBoxedHalfSpace'");
 					AgreementFlag = null;
 				}
 				else
@@ -17248,6 +17368,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Enclosure' is not optional in 'IFCBoxedHalfSpace'");
 					Enclosure = null;
 				}
 				else
@@ -17380,11 +17501,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 12)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDING requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBuilding' requires 12 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCBuilding'");
 					GlobalId = null;
 				}
 				else
@@ -17392,6 +17514,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCBuilding'");
 					OwnerHistory = null;
 				}
 				else
@@ -17441,6 +17564,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CompositionType' is not optional in 'IFCBuilding'");
 					CompositionType = null;
 				}
 				else
@@ -17718,11 +17842,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBuildingElement' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCBuildingElement'");
 					GlobalId = null;
 				}
 				else
@@ -17730,6 +17855,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCBuildingElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -17924,11 +18050,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGELEMENTCOMPONENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBuildingElementComponent' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCBuildingElementComponent'");
 					GlobalId = null;
 				}
 				else
@@ -17936,6 +18063,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCBuildingElementComponent'");
 					OwnerHistory = null;
 				}
 				else
@@ -18127,11 +18255,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGELEMENTPART requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBuildingElementPart' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCBuildingElementPart'");
 					GlobalId = null;
 				}
 				else
@@ -18139,6 +18268,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCBuildingElementPart'");
 					OwnerHistory = null;
 				}
 				else
@@ -18348,11 +18478,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGELEMENTPROXY requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBuildingElementProxy' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCBuildingElementProxy'");
 					GlobalId = null;
 				}
 				else
@@ -18360,6 +18491,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCBuildingElementProxy'");
 					OwnerHistory = null;
 				}
 				else
@@ -18576,11 +18708,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGELEMENTPROXYTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBuildingElementProxyType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCBuildingElementProxyType'");
 					GlobalId = null;
 				}
 				else
@@ -18588,6 +18721,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCBuildingElementProxyType'");
 					OwnerHistory = null;
 				}
 				else
@@ -18644,6 +18778,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCBuildingElementProxyType'");
 					PredefinedType = null;
 				}
 				else
@@ -18828,11 +18963,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBuildingElementType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCBuildingElementType'");
 					GlobalId = null;
 				}
 				else
@@ -18840,6 +18976,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCBuildingElementType'");
 					OwnerHistory = null;
 				}
 				else
@@ -19043,11 +19180,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGSTOREY requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCBuildingStorey' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCBuildingStorey'");
 					GlobalId = null;
 				}
 				else
@@ -19055,6 +19193,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCBuildingStorey'");
 					OwnerHistory = null;
 				}
 				else
@@ -19104,6 +19243,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CompositionType' is not optional in 'IFCBuildingStorey'");
 					CompositionType = null;
 				}
 				else
@@ -19334,11 +19474,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCSHAPEPROFILEDEF requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCShapeProfileDef' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCCShapeProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -19353,6 +19494,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCCShapeProfileDef'");
 					Position = null;
 				}
 				else
@@ -19360,6 +19502,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Depth' is not optional in 'IFCCShapeProfileDef'");
 					Depth = null;
 				}
 				else
@@ -19367,6 +19510,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Width' is not optional in 'IFCCShapeProfileDef'");
 					Width = null;
 				}
 				else
@@ -19374,6 +19518,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WallThickness' is not optional in 'IFCCShapeProfileDef'");
 					WallThickness = null;
 				}
 				else
@@ -19381,6 +19526,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Girth' is not optional in 'IFCCShapeProfileDef'");
 					Girth = null;
 				}
 				else
@@ -19667,11 +19813,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCABLECARRIERFITTINGTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCableCarrierFittingType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCableCarrierFittingType'");
 					GlobalId = null;
 				}
 				else
@@ -19679,6 +19826,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCableCarrierFittingType'");
 					OwnerHistory = null;
 				}
 				else
@@ -19735,6 +19883,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCCableCarrierFittingType'");
 					PredefinedType = null;
 				}
 				else
@@ -19910,11 +20059,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCABLECARRIERSEGMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCableCarrierSegmentType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCableCarrierSegmentType'");
 					GlobalId = null;
 				}
 				else
@@ -19922,6 +20072,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCableCarrierSegmentType'");
 					OwnerHistory = null;
 				}
 				else
@@ -19978,6 +20129,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCCableCarrierSegmentType'");
 					PredefinedType = null;
 				}
 				else
@@ -20153,11 +20305,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCABLESEGMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCableSegmentType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCableSegmentType'");
 					GlobalId = null;
 				}
 				else
@@ -20165,6 +20318,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCableSegmentType'");
 					OwnerHistory = null;
 				}
 				else
@@ -20221,6 +20375,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCCableSegmentType'");
 					PredefinedType = null;
 				}
 				else
@@ -20401,11 +20556,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCALENDARDATE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCalendarDate' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DayComponent' is not optional in 'IFCCalendarDate'");
 					DayComponent = null;
 				}
 				else
@@ -20413,6 +20569,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MonthComponent' is not optional in 'IFCCalendarDate'");
 					MonthComponent = null;
 				}
 				else
@@ -20420,6 +20577,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'YearComponent' is not optional in 'IFCCalendarDate'");
 					YearComponent = null;
 				}
 				else
@@ -20589,11 +20747,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCARTESIANPOINT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCartesianPoint' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Coordinates' is not optional in 'IFCCartesianPoint'");
 					Coordinates = null;
 				}
 				else
@@ -20762,7 +20921,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCARTESIANTRANSFORMATIONOPERATOR requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCartesianTransformationOperator' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -20781,6 +20940,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LocalOrigin' is not optional in 'IFCCartesianTransformationOperator'");
 					LocalOrigin = null;
 				}
 				else
@@ -21031,7 +21191,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCARTESIANTRANSFORMATIONOPERATOR2D requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCartesianTransformationOperator2D' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -21050,6 +21210,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LocalOrigin' is not optional in 'IFCCartesianTransformationOperator2D'");
 					LocalOrigin = null;
 				}
 				else
@@ -21207,7 +21368,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCARTESIANTRANSFORMATIONOPERATOR2DNONUNIFORM requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCartesianTransformationOperator2DnonUniform' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -21226,6 +21387,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LocalOrigin' is not optional in 'IFCCartesianTransformationOperator2DnonUniform'");
 					LocalOrigin = null;
 				}
 				else
@@ -21447,7 +21609,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCARTESIANTRANSFORMATIONOPERATOR3D requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCartesianTransformationOperator3D' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -21466,6 +21628,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LocalOrigin' is not optional in 'IFCCartesianTransformationOperator3D'");
 					LocalOrigin = null;
 				}
 				else
@@ -21688,7 +21851,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCARTESIANTRANSFORMATIONOPERATOR3DNONUNIFORM requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCartesianTransformationOperator3DnonUniform' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -21707,6 +21870,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LocalOrigin' is not optional in 'IFCCartesianTransformationOperator3DnonUniform'");
 					LocalOrigin = null;
 				}
 				else
@@ -21907,11 +22071,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCENTERLINEPROFILEDEF requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCenterLineProfileDef' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCCenterLineProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -21926,6 +22091,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Curve' is not optional in 'IFCCenterLineProfileDef'");
 					Curve = null;
 				}
 				else
@@ -21933,6 +22099,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Thickness' is not optional in 'IFCCenterLineProfileDef'");
 					Thickness = null;
 				}
 				else
@@ -22078,11 +22245,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCHAMFEREDGEFEATURE requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCChamferEdgeFeature' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCChamferEdgeFeature'");
 					GlobalId = null;
 				}
 				else
@@ -22090,6 +22258,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCChamferEdgeFeature'");
 					OwnerHistory = null;
 				}
 				else
@@ -22369,11 +22538,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCHILLERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCChillerType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCChillerType'");
 					GlobalId = null;
 				}
 				else
@@ -22381,6 +22551,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCChillerType'");
 					OwnerHistory = null;
 				}
 				else
@@ -22437,6 +22608,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCChillerType'");
 					PredefinedType = null;
 				}
 				else
@@ -22600,11 +22772,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCIRCLE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCircle' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCCircle'");
 					Position = null;
 				}
 				else
@@ -22612,6 +22785,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Radius' is not optional in 'IFCCircle'");
 					Radius = null;
 				}
 				else
@@ -22725,11 +22899,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCIRCLEHOLLOWPROFILEDEF requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCircleHollowProfileDef' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCCircleHollowProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -22744,6 +22919,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCCircleHollowProfileDef'");
 					Position = null;
 				}
 				else
@@ -22751,6 +22927,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Radius' is not optional in 'IFCCircleHollowProfileDef'");
 					Radius = null;
 				}
 				else
@@ -22758,6 +22935,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WallThickness' is not optional in 'IFCCircleHollowProfileDef'");
 					WallThickness = null;
 				}
 				else
@@ -22882,11 +23060,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCIRCLEPROFILEDEF requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCircleProfileDef' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCCircleProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -22901,6 +23080,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCCircleProfileDef'");
 					Position = null;
 				}
 				else
@@ -22908,6 +23088,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Radius' is not optional in 'IFCCircleProfileDef'");
 					Radius = null;
 				}
 				else
@@ -23034,11 +23215,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLASSIFICATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCClassification' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Source' is not optional in 'IFCClassification'");
 					Source = null;
 				}
 				else
@@ -23046,6 +23228,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Edition' is not optional in 'IFCClassification'");
 					Edition = null;
 				}
 				else
@@ -23060,6 +23243,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCClassification'");
 					Name = null;
 				}
 				else
@@ -23255,11 +23439,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLASSIFICATIONITEM requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCClassificationItem' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Notation' is not optional in 'IFCClassificationItem'");
 					Notation = null;
 				}
 				else
@@ -23274,6 +23459,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Title' is not optional in 'IFCClassificationItem'");
 					Title = null;
 				}
 				else
@@ -23448,11 +23634,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLASSIFICATIONITEMRELATIONSHIP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCClassificationItemRelationship' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingItem' is not optional in 'IFCClassificationItemRelationship'");
 					RelatingItem = null;
 				}
 				else
@@ -23460,6 +23647,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedItems' is not optional in 'IFCClassificationItemRelationship'");
 					RelatedItems = null;
 				}
 				else
@@ -23588,11 +23776,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLASSIFICATIONNOTATION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCClassificationNotation' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'NotationFacets' is not optional in 'IFCClassificationNotation'");
 					NotationFacets = null;
 				}
 				else
@@ -23695,11 +23884,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLASSIFICATIONNOTATIONFACET requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCClassificationNotationFacet' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'NotationValue' is not optional in 'IFCClassificationNotationFacet'");
 					NotationValue = null;
 				}
 				else
@@ -23791,7 +23981,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLASSIFICATIONREFERENCE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCClassificationReference' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -23927,11 +24117,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLOSEDSHELL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCClosedShell' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CfsFaces' is not optional in 'IFCClosedShell'");
 					CfsFaces = null;
 				}
 				else
@@ -24032,11 +24223,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOILTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCoilType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCoilType'");
 					GlobalId = null;
 				}
 				else
@@ -24044,6 +24236,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCoilType'");
 					OwnerHistory = null;
 				}
 				else
@@ -24100,6 +24293,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCCoilType'");
 					PredefinedType = null;
 				}
 				else
@@ -24268,7 +24462,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOLOURRGB requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCColourRgb' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -24280,6 +24474,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Red' is not optional in 'IFCColourRgb'");
 					Red = null;
 				}
 				else
@@ -24287,6 +24482,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Green' is not optional in 'IFCColourRgb'");
 					Green = null;
 				}
 				else
@@ -24294,6 +24490,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Blue' is not optional in 'IFCColourRgb'");
 					Blue = null;
 				}
 				else
@@ -24442,7 +24639,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOLOURSPECIFICATION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCColourSpecification' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -24558,11 +24755,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOLUMN requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCColumn' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCColumn'");
 					GlobalId = null;
 				}
 				else
@@ -24570,6 +24768,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCColumn'");
 					OwnerHistory = null;
 				}
 				else
@@ -24753,11 +24952,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOLUMNTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCColumnType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCColumnType'");
 					GlobalId = null;
 				}
 				else
@@ -24765,6 +24965,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCColumnType'");
 					OwnerHistory = null;
 				}
 				else
@@ -24821,6 +25022,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCColumnType'");
 					PredefinedType = null;
 				}
 				else
@@ -25016,11 +25218,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOMPLEXPROPERTY requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCComplexProperty' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCComplexProperty'");
 					Name = null;
 				}
 				else
@@ -25035,6 +25238,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'UsageName' is not optional in 'IFCComplexProperty'");
 					UsageName = null;
 				}
 				else
@@ -25042,6 +25246,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HasProperties' is not optional in 'IFCComplexProperty'");
 					HasProperties = null;
 				}
 				else
@@ -25250,11 +25455,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOMPOSITECURVE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCompositeCurve' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Segments' is not optional in 'IFCCompositeCurve'");
 					Segments = null;
 				}
 				else
@@ -25262,6 +25468,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SelfIntersect' is not optional in 'IFCCompositeCurve'");
 					SelfIntersect = null;
 				}
 				else
@@ -25447,11 +25654,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOMPOSITECURVESEGMENT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCompositeCurveSegment' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Transition' is not optional in 'IFCCompositeCurveSegment'");
 					Transition = null;
 				}
 				else
@@ -25459,6 +25667,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SameSense' is not optional in 'IFCCompositeCurveSegment'");
 					SameSense = null;
 				}
 				else
@@ -25466,6 +25675,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ParentCurve' is not optional in 'IFCCompositeCurveSegment'");
 					ParentCurve = null;
 				}
 				else
@@ -25661,11 +25871,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOMPOSITEPROFILEDEF requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCompositeProfileDef' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCCompositeProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -25680,6 +25891,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Profiles' is not optional in 'IFCCompositeProfileDef'");
 					Profiles = null;
 				}
 				else
@@ -25863,11 +26075,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOMPRESSORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCompressorType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCompressorType'");
 					GlobalId = null;
 				}
 				else
@@ -25875,6 +26088,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCompressorType'");
 					OwnerHistory = null;
 				}
 				else
@@ -25931,6 +26145,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCCompressorType'");
 					PredefinedType = null;
 				}
 				else
@@ -26121,11 +26336,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONDENSERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCondenserType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCondenserType'");
 					GlobalId = null;
 				}
 				else
@@ -26133,6 +26349,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCondenserType'");
 					OwnerHistory = null;
 				}
 				else
@@ -26189,6 +26406,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCCondenserType'");
 					PredefinedType = null;
 				}
 				else
@@ -26356,11 +26574,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONDITION requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCondition' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCondition'");
 					GlobalId = null;
 				}
 				else
@@ -26368,6 +26587,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCondition'");
 					OwnerHistory = null;
 				}
 				else
@@ -26520,11 +26740,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONDITIONCRITERION requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConditionCriterion' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCConditionCriterion'");
 					GlobalId = null;
 				}
 				else
@@ -26532,6 +26753,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCConditionCriterion'");
 					OwnerHistory = null;
 				}
 				else
@@ -26560,6 +26782,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Criterion' is not optional in 'IFCConditionCriterion'");
 					Criterion = null;
 				}
 				else
@@ -26567,6 +26790,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CriterionDateTime' is not optional in 'IFCConditionCriterion'");
 					CriterionDateTime = null;
 				}
 				else
@@ -26726,11 +26950,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONIC requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConic' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCConic'");
 					Position = null;
 				}
 				else
@@ -26823,11 +27048,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTEDFACESET requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConnectedFaceSet' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CfsFaces' is not optional in 'IFCConnectedFaceSet'");
 					CfsFaces = null;
 				}
 				else
@@ -26935,11 +27161,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTIONCURVEGEOMETRY requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConnectionCurveGeometry' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CurveOnRelatingElement' is not optional in 'IFCConnectionCurveGeometry'");
 					CurveOnRelatingElement = null;
 				}
 				else
@@ -27057,7 +27284,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTIONGEOMETRY requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConnectionGeometry' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -27126,11 +27353,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTIONPOINTECCENTRICITY requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConnectionPointEccentricity' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PointOnRelatingElement' is not optional in 'IFCConnectionPointEccentricity'");
 					PointOnRelatingElement = null;
 				}
 				else
@@ -27320,11 +27548,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTIONPOINTGEOMETRY requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConnectionPointGeometry' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PointOnRelatingElement' is not optional in 'IFCConnectionPointGeometry'");
 					PointOnRelatingElement = null;
 				}
 				else
@@ -27453,11 +27682,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTIONPORTGEOMETRY requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConnectionPortGeometry' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LocationAtRelatingElement' is not optional in 'IFCConnectionPortGeometry'");
 					LocationAtRelatingElement = null;
 				}
 				else
@@ -27472,6 +27702,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileOfPort' is not optional in 'IFCConnectionPortGeometry'");
 					ProfileOfPort = null;
 				}
 				else
@@ -27615,11 +27846,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTIONSURFACEGEOMETRY requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConnectionSurfaceGeometry' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SurfaceOnRelatingElement' is not optional in 'IFCConnectionSurfaceGeometry'");
 					SurfaceOnRelatingElement = null;
 				}
 				else
@@ -27800,11 +28032,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRAINT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConstraint' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCConstraint'");
 					Name = null;
 				}
 				else
@@ -27819,6 +28052,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ConstraintGrade' is not optional in 'IFCConstraint'");
 					ConstraintGrade = null;
 				}
 				else
@@ -28229,7 +28463,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRAINTAGGREGATIONRELATIONSHIP requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConstraintAggregationRelationship' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -28248,6 +28482,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingConstraint' is not optional in 'IFCConstraintAggregationRelationship'");
 					RelatingConstraint = null;
 				}
 				else
@@ -28255,6 +28490,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedConstraints' is not optional in 'IFCConstraintAggregationRelationship'");
 					RelatedConstraints = null;
 				}
 				else
@@ -28262,6 +28498,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LogicalAggregator' is not optional in 'IFCConstraintAggregationRelationship'");
 					LogicalAggregator = null;
 				}
 				else
@@ -28472,11 +28709,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRAINTCLASSIFICATIONRELATIONSHIP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConstraintClassificationRelationship' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ClassifiedConstraint' is not optional in 'IFCConstraintClassificationRelationship'");
 					ClassifiedConstraint = null;
 				}
 				else
@@ -28484,6 +28722,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedClassifications' is not optional in 'IFCConstraintClassificationRelationship'");
 					RelatedClassifications = null;
 				}
 				else
@@ -28638,7 +28877,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRAINTRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConstraintRelationship' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -28657,6 +28896,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingConstraint' is not optional in 'IFCConstraintRelationship'");
 					RelatingConstraint = null;
 				}
 				else
@@ -28664,6 +28904,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedConstraints' is not optional in 'IFCConstraintRelationship'");
 					RelatedConstraints = null;
 				}
 				else
@@ -28857,11 +29098,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRUCTIONEQUIPMENTRESOURCE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConstructionEquipmentResource' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCConstructionEquipmentResource'");
 					GlobalId = null;
 				}
 				else
@@ -28869,6 +29111,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCConstructionEquipmentResource'");
 					OwnerHistory = null;
 				}
 				else
@@ -29099,11 +29342,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRUCTIONMATERIALRESOURCE requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConstructionMaterialResource' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCConstructionMaterialResource'");
 					GlobalId = null;
 				}
 				else
@@ -29111,6 +29355,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCConstructionMaterialResource'");
 					OwnerHistory = null;
 				}
 				else
@@ -29415,11 +29660,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRUCTIONPRODUCTRESOURCE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConstructionProductResource' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCConstructionProductResource'");
 					GlobalId = null;
 				}
 				else
@@ -29427,6 +29673,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCConstructionProductResource'");
 					OwnerHistory = null;
 				}
 				else
@@ -29640,11 +29887,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRUCTIONRESOURCE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConstructionResource' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCConstructionResource'");
 					GlobalId = null;
 				}
 				else
@@ -29652,6 +29900,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCConstructionResource'");
 					OwnerHistory = null;
 				}
 				else
@@ -29909,11 +30158,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONTEXTDEPENDENTUNIT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCContextDependentUnit' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Dimensions' is not optional in 'IFCContextDependentUnit'");
 					Dimensions = null;
 				}
 				else
@@ -29921,6 +30171,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'UnitType' is not optional in 'IFCContextDependentUnit'");
 					UnitType = null;
 				}
 				else
@@ -29928,6 +30179,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCContextDependentUnit'");
 					Name = null;
 				}
 				else
@@ -30058,11 +30310,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONTROL requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCControl' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCControl'");
 					GlobalId = null;
 				}
 				else
@@ -30070,6 +30323,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCControl'");
 					OwnerHistory = null;
 				}
 				else
@@ -30224,11 +30478,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONTROLLERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCControllerType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCControllerType'");
 					GlobalId = null;
 				}
 				else
@@ -30236,6 +30491,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCControllerType'");
 					OwnerHistory = null;
 				}
 				else
@@ -30292,6 +30548,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCControllerType'");
 					PredefinedType = null;
 				}
 				else
@@ -30458,11 +30715,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONVERSIONBASEDUNIT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCConversionBasedUnit' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Dimensions' is not optional in 'IFCConversionBasedUnit'");
 					Dimensions = null;
 				}
 				else
@@ -30470,6 +30728,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'UnitType' is not optional in 'IFCConversionBasedUnit'");
 					UnitType = null;
 				}
 				else
@@ -30477,6 +30736,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCConversionBasedUnit'");
 					Name = null;
 				}
 				else
@@ -30484,6 +30744,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ConversionFactor' is not optional in 'IFCConversionBasedUnit'");
 					ConversionFactor = null;
 				}
 				else
@@ -30644,11 +30905,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOOLEDBEAMTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCooledBeamType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCooledBeamType'");
 					GlobalId = null;
 				}
 				else
@@ -30656,6 +30918,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCooledBeamType'");
 					OwnerHistory = null;
 				}
 				else
@@ -30712,6 +30975,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCCooledBeamType'");
 					PredefinedType = null;
 				}
 				else
@@ -30902,11 +31166,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOOLINGTOWERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCoolingTowerType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCoolingTowerType'");
 					GlobalId = null;
 				}
 				else
@@ -30914,6 +31179,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCoolingTowerType'");
 					OwnerHistory = null;
 				}
 				else
@@ -30970,6 +31236,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCCoolingTowerType'");
 					PredefinedType = null;
 				}
 				else
@@ -31136,11 +31403,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOORDINATEDUNIVERSALTIMEOFFSET requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCoordinatedUniversalTimeOffset' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HourOffset' is not optional in 'IFCCoordinatedUniversalTimeOffset'");
 					HourOffset = null;
 				}
 				else
@@ -31155,6 +31423,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Sense' is not optional in 'IFCCoordinatedUniversalTimeOffset'");
 					Sense = null;
 				}
 				else
@@ -31302,11 +31571,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOSTITEM requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCostItem' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCostItem'");
 					GlobalId = null;
 				}
 				else
@@ -31314,6 +31584,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCostItem'");
 					OwnerHistory = null;
 				}
 				else
@@ -31478,11 +31749,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 13)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOSTSCHEDULE requires 13 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCostSchedule' requires 13 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCostSchedule'");
 					GlobalId = null;
 				}
 				else
@@ -31490,6 +31762,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCostSchedule'");
 					OwnerHistory = null;
 				}
 				else
@@ -31560,6 +31833,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ID' is not optional in 'IFCCostSchedule'");
 					ID = null;
 				}
 				else
@@ -31567,6 +31841,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[12] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCCostSchedule'");
 					PredefinedType = null;
 				}
 				else
@@ -31906,7 +32181,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOSTVALUE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCostValue' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -31953,6 +32228,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CostType' is not optional in 'IFCCostValue'");
 					CostType = null;
 				}
 				else
@@ -32172,11 +32448,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOVERING requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCovering' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCovering'");
 					GlobalId = null;
 				}
 				else
@@ -32184,6 +32461,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCovering'");
 					OwnerHistory = null;
 				}
 				else
@@ -32432,11 +32710,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOVERINGTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCoveringType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCoveringType'");
 					GlobalId = null;
 				}
 				else
@@ -32444,6 +32723,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCoveringType'");
 					OwnerHistory = null;
 				}
 				else
@@ -32500,6 +32780,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCCoveringType'");
 					PredefinedType = null;
 				}
 				else
@@ -32706,11 +32987,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 15)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCRANERAILASHAPEPROFILEDEF requires 15 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCraneRailAShapeProfileDef' requires 15 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCCraneRailAShapeProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -32725,6 +33007,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCCraneRailAShapeProfileDef'");
 					Position = null;
 				}
 				else
@@ -32732,6 +33015,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OverallHeight' is not optional in 'IFCCraneRailAShapeProfileDef'");
 					OverallHeight = null;
 				}
 				else
@@ -32739,6 +33023,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BaseWidth2' is not optional in 'IFCCraneRailAShapeProfileDef'");
 					BaseWidth2 = null;
 				}
 				else
@@ -32753,6 +33038,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HeadWidth' is not optional in 'IFCCraneRailAShapeProfileDef'");
 					HeadWidth = null;
 				}
 				else
@@ -32760,6 +33046,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HeadDepth2' is not optional in 'IFCCraneRailAShapeProfileDef'");
 					HeadDepth2 = null;
 				}
 				else
@@ -32767,6 +33054,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HeadDepth3' is not optional in 'IFCCraneRailAShapeProfileDef'");
 					HeadDepth3 = null;
 				}
 				else
@@ -32774,6 +33062,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WebThickness' is not optional in 'IFCCraneRailAShapeProfileDef'");
 					WebThickness = null;
 				}
 				else
@@ -32781,6 +33070,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[10] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BaseWidth4' is not optional in 'IFCCraneRailAShapeProfileDef'");
 					BaseWidth4 = null;
 				}
 				else
@@ -32788,6 +33078,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BaseDepth1' is not optional in 'IFCCraneRailAShapeProfileDef'");
 					BaseDepth1 = null;
 				}
 				else
@@ -32795,6 +33086,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[12] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BaseDepth2' is not optional in 'IFCCraneRailAShapeProfileDef'");
 					BaseDepth2 = null;
 				}
 				else
@@ -32802,6 +33094,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[13] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BaseDepth3' is not optional in 'IFCCraneRailAShapeProfileDef'");
 					BaseDepth3 = null;
 				}
 				else
@@ -33241,11 +33534,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 12)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCRANERAILFSHAPEPROFILEDEF requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCraneRailFShapeProfileDef' requires 12 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCCraneRailFShapeProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -33260,6 +33554,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCCraneRailFShapeProfileDef'");
 					Position = null;
 				}
 				else
@@ -33267,6 +33562,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OverallHeight' is not optional in 'IFCCraneRailFShapeProfileDef'");
 					OverallHeight = null;
 				}
 				else
@@ -33274,6 +33570,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HeadWidth' is not optional in 'IFCCraneRailFShapeProfileDef'");
 					HeadWidth = null;
 				}
 				else
@@ -33288,6 +33585,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HeadDepth2' is not optional in 'IFCCraneRailFShapeProfileDef'");
 					HeadDepth2 = null;
 				}
 				else
@@ -33295,6 +33593,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HeadDepth3' is not optional in 'IFCCraneRailFShapeProfileDef'");
 					HeadDepth3 = null;
 				}
 				else
@@ -33302,6 +33601,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WebThickness' is not optional in 'IFCCraneRailFShapeProfileDef'");
 					WebThickness = null;
 				}
 				else
@@ -33309,6 +33609,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BaseDepth1' is not optional in 'IFCCraneRailFShapeProfileDef'");
 					BaseDepth1 = null;
 				}
 				else
@@ -33316,6 +33617,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[10] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BaseDepth2' is not optional in 'IFCCraneRailFShapeProfileDef'");
 					BaseDepth2 = null;
 				}
 				else
@@ -33654,11 +33956,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCREWRESOURCE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCrewResource' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCrewResource'");
 					GlobalId = null;
 				}
 				else
@@ -33666,6 +33969,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCrewResource'");
 					OwnerHistory = null;
 				}
 				else
@@ -33870,11 +34174,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCSGPRIMITIVE3D requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCsgPrimitive3D' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCCsgPrimitive3D'");
 					Position = null;
 				}
 				else
@@ -33972,11 +34277,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCSGSOLID requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCsgSolid' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TreeRootExpression' is not optional in 'IFCCsgSolid'");
 					TreeRootExpression = null;
 				}
 				else
@@ -34079,11 +34385,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURRENCYRELATIONSHIP requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCurrencyRelationship' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingMonetaryUnit' is not optional in 'IFCCurrencyRelationship'");
 					RelatingMonetaryUnit = null;
 				}
 				else
@@ -34091,6 +34398,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedMonetaryUnit' is not optional in 'IFCCurrencyRelationship'");
 					RelatedMonetaryUnit = null;
 				}
 				else
@@ -34098,6 +34406,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ExchangeRate' is not optional in 'IFCCurrencyRelationship'");
 					ExchangeRate = null;
 				}
 				else
@@ -34105,6 +34414,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RateDateTime' is not optional in 'IFCCurrencyRelationship'");
 					RateDateTime = null;
 				}
 				else
@@ -34327,11 +34637,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURTAINWALL requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCurtainWall' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCurtainWall'");
 					GlobalId = null;
 				}
 				else
@@ -34339,6 +34650,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCurtainWall'");
 					OwnerHistory = null;
 				}
 				else
@@ -34522,11 +34834,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURTAINWALLTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCurtainWallType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCCurtainWallType'");
 					GlobalId = null;
 				}
 				else
@@ -34534,6 +34847,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCCurtainWallType'");
 					OwnerHistory = null;
 				}
 				else
@@ -34590,6 +34904,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCCurtainWallType'");
 					PredefinedType = null;
 				}
 				else
@@ -34764,7 +35079,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURVE requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCurve' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -34854,11 +35169,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURVEBOUNDEDPLANE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCurveBoundedPlane' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BasisSurface' is not optional in 'IFCCurveBoundedPlane'");
 					BasisSurface = null;
 				}
 				else
@@ -34866,6 +35182,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OuterBoundary' is not optional in 'IFCCurveBoundedPlane'");
 					OuterBoundary = null;
 				}
 				else
@@ -34873,6 +35190,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'InnerBoundaries' is not optional in 'IFCCurveBoundedPlane'");
 					InnerBoundaries = null;
 				}
 				else
@@ -35061,7 +35379,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURVESTYLE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCurveStyle' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -35237,7 +35555,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURVESTYLEFONT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCurveStyleFont' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -35249,6 +35567,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PatternList' is not optional in 'IFCCurveStyleFont'");
 					PatternList = null;
 				}
 				else
@@ -35385,7 +35704,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURVESTYLEFONTANDSCALING requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCurveStyleFontAndScaling' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -35397,6 +35716,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CurveFont' is not optional in 'IFCCurveStyleFontAndScaling'");
 					CurveFont = null;
 				}
 				else
@@ -35404,6 +35724,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CurveFontScaling' is not optional in 'IFCCurveStyleFontAndScaling'");
 					CurveFontScaling = null;
 				}
 				else
@@ -35560,11 +35881,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURVESTYLEFONTPATTERN requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCCurveStyleFontPattern' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'VisibleSegmentLength' is not optional in 'IFCCurveStyleFontPattern'");
 					VisibleSegmentLength = null;
 				}
 				else
@@ -35572,6 +35894,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'InvisibleSegmentLength' is not optional in 'IFCCurveStyleFontPattern'");
 					InvisibleSegmentLength = null;
 				}
 				else
@@ -35716,11 +36039,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDAMPERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDamperType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDamperType'");
 					GlobalId = null;
 				}
 				else
@@ -35728,6 +36052,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDamperType'");
 					OwnerHistory = null;
 				}
 				else
@@ -35784,6 +36109,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCDamperType'");
 					PredefinedType = null;
 				}
 				else
@@ -35946,11 +36272,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDATEANDTIME requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDateAndTime' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DateComponent' is not optional in 'IFCDateAndTime'");
 					DateComponent = null;
 				}
 				else
@@ -35958,6 +36285,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TimeComponent' is not optional in 'IFCDateAndTime'");
 					TimeComponent = null;
 				}
 				else
@@ -36077,11 +36405,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDEFINEDSYMBOL requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDefinedSymbol' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Definition' is not optional in 'IFCDefinedSymbol'");
 					Definition = null;
 				}
 				else
@@ -36089,6 +36418,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Target' is not optional in 'IFCDefinedSymbol'");
 					Target = null;
 				}
 				else
@@ -36226,11 +36556,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDERIVEDPROFILEDEF requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDerivedProfileDef' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCDerivedProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -36245,6 +36576,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ParentProfile' is not optional in 'IFCDerivedProfileDef'");
 					ParentProfile = null;
 				}
 				else
@@ -36252,6 +36584,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Operator' is not optional in 'IFCDerivedProfileDef'");
 					Operator = null;
 				}
 				else
@@ -36464,11 +36797,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDERIVEDUNIT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDerivedUnit' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Elements' is not optional in 'IFCDerivedUnit'");
 					Elements = null;
 				}
 				else
@@ -36476,6 +36810,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'UnitType' is not optional in 'IFCDerivedUnit'");
 					UnitType = null;
 				}
 				else
@@ -36648,11 +36983,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDERIVEDUNITELEMENT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDerivedUnitElement' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Unit' is not optional in 'IFCDerivedUnitElement'");
 					Unit = null;
 				}
 				else
@@ -36660,6 +36996,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Exponent' is not optional in 'IFCDerivedUnitElement'");
 					Exponent = null;
 				}
 				else
@@ -36776,11 +37113,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIAMETERDIMENSION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDiameterDimension' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Contents' is not optional in 'IFCDiameterDimension'");
 					Contents = null;
 				}
 				else
@@ -36895,7 +37233,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIMENSIONCALLOUTRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDimensionCalloutRelationship' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -36914,6 +37252,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingDraughtingCallout' is not optional in 'IFCDimensionCalloutRelationship'");
 					RelatingDraughtingCallout = null;
 				}
 				else
@@ -36921,6 +37260,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedDraughtingCallout' is not optional in 'IFCDimensionCalloutRelationship'");
 					RelatedDraughtingCallout = null;
 				}
 				else
@@ -37069,7 +37409,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIMENSIONCURVE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDimensionCurve' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -37081,6 +37421,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCDimensionCurve'");
 					Styles = null;
 				}
 				else
@@ -37226,11 +37567,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIMENSIONCURVEDIRECTEDCALLOUT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDimensionCurveDirectedCallout' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Contents' is not optional in 'IFCDimensionCurveDirectedCallout'");
 					Contents = null;
 				}
 				else
@@ -37324,7 +37666,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIMENSIONCURVETERMINATOR requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDimensionCurveTerminator' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -37336,6 +37678,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCDimensionCurveTerminator'");
 					Styles = null;
 				}
 				else
@@ -37350,6 +37693,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AnnotatedCurve' is not optional in 'IFCDimensionCurveTerminator'");
 					AnnotatedCurve = null;
 				}
 				else
@@ -37357,6 +37701,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Role' is not optional in 'IFCDimensionCurveTerminator'");
 					Role = null;
 				}
 				else
@@ -37524,7 +37869,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIMENSIONPAIR requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDimensionPair' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -37543,6 +37888,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingDraughtingCallout' is not optional in 'IFCDimensionPair'");
 					RelatingDraughtingCallout = null;
 				}
 				else
@@ -37550,6 +37896,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedDraughtingCallout' is not optional in 'IFCDimensionPair'");
 					RelatedDraughtingCallout = null;
 				}
 				else
@@ -37666,11 +38013,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIMENSIONALEXPONENTS requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDimensionalExponents' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LengthExponent' is not optional in 'IFCDimensionalExponents'");
 					LengthExponent = null;
 				}
 				else
@@ -37678,6 +38026,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MassExponent' is not optional in 'IFCDimensionalExponents'");
 					MassExponent = null;
 				}
 				else
@@ -37685,6 +38034,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TimeExponent' is not optional in 'IFCDimensionalExponents'");
 					TimeExponent = null;
 				}
 				else
@@ -37692,6 +38042,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ElectricCurrentExponent' is not optional in 'IFCDimensionalExponents'");
 					ElectricCurrentExponent = null;
 				}
 				else
@@ -37699,6 +38050,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ThermodynamicTemperatureExponent' is not optional in 'IFCDimensionalExponents'");
 					ThermodynamicTemperatureExponent = null;
 				}
 				else
@@ -37706,6 +38058,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AmountOfSubstanceExponent' is not optional in 'IFCDimensionalExponents'");
 					AmountOfSubstanceExponent = null;
 				}
 				else
@@ -37713,6 +38066,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LuminousIntensityExponent' is not optional in 'IFCDimensionalExponents'");
 					LuminousIntensityExponent = null;
 				}
 				else
@@ -37972,11 +38326,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIRECTION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDirection' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DirectionRatios' is not optional in 'IFCDirection'");
 					DirectionRatios = null;
 				}
 				else
@@ -38111,11 +38466,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISCRETEACCESSORY requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDiscreteAccessory' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDiscreteAccessory'");
 					GlobalId = null;
 				}
 				else
@@ -38123,6 +38479,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDiscreteAccessory'");
 					OwnerHistory = null;
 				}
 				else
@@ -38304,11 +38661,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISCRETEACCESSORYTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDiscreteAccessoryType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDiscreteAccessoryType'");
 					GlobalId = null;
 				}
 				else
@@ -38316,6 +38674,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDiscreteAccessoryType'");
 					OwnerHistory = null;
 				}
 				else
@@ -38523,11 +38882,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONCHAMBERELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDistributionChamberElement' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDistributionChamberElement'");
 					GlobalId = null;
 				}
 				else
@@ -38535,6 +38895,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDistributionChamberElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -38718,11 +39079,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONCHAMBERELEMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDistributionChamberElementType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDistributionChamberElementType'");
 					GlobalId = null;
 				}
 				else
@@ -38730,6 +39092,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDistributionChamberElementType'");
 					OwnerHistory = null;
 				}
 				else
@@ -38786,6 +39149,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCDistributionChamberElementType'");
 					PredefinedType = null;
 				}
 				else
@@ -38977,11 +39341,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONCONTROLELEMENT requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDistributionControlElement' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDistributionControlElement'");
 					GlobalId = null;
 				}
 				else
@@ -38989,6 +39354,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDistributionControlElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -39223,11 +39589,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONCONTROLELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDistributionControlElementType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDistributionControlElementType'");
 					GlobalId = null;
 				}
 				else
@@ -39235,6 +39602,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDistributionControlElementType'");
 					OwnerHistory = null;
 				}
 				else
@@ -39444,11 +39812,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDistributionElement' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDistributionElement'");
 					GlobalId = null;
 				}
 				else
@@ -39456,6 +39825,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDistributionElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -39638,11 +40008,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDistributionElementType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDistributionElementType'");
 					GlobalId = null;
 				}
 				else
@@ -39650,6 +40021,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDistributionElementType'");
 					OwnerHistory = null;
 				}
 				else
@@ -39870,11 +40242,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONFLOWELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDistributionFlowElement' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDistributionFlowElement'");
 					GlobalId = null;
 				}
 				else
@@ -39882,6 +40255,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDistributionFlowElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -40087,11 +40461,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONFLOWELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDistributionFlowElementType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDistributionFlowElementType'");
 					GlobalId = null;
 				}
 				else
@@ -40099,6 +40474,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDistributionFlowElementType'");
 					OwnerHistory = null;
 				}
 				else
@@ -40299,11 +40675,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONPORT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDistributionPort' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDistributionPort'");
 					GlobalId = null;
 				}
 				else
@@ -40311,6 +40688,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDistributionPort'");
 					OwnerHistory = null;
 				}
 				else
@@ -40517,7 +40895,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOCUMENTELECTRONICFORMAT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDocumentElectronicFormat' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -40745,11 +41123,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 17)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOCUMENTINFORMATION requires 17 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDocumentInformation' requires 17 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DocumentId' is not optional in 'IFCDocumentInformation'");
 					DocumentId = null;
 				}
 				else
@@ -40757,6 +41136,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCDocumentInformation'");
 					Name = null;
 				}
 				else
@@ -41436,11 +41816,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOCUMENTINFORMATIONRELATIONSHIP requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDocumentInformationRelationship' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingDocument' is not optional in 'IFCDocumentInformationRelationship'");
 					RelatingDocument = null;
 				}
 				else
@@ -41448,6 +41829,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedDocuments' is not optional in 'IFCDocumentInformationRelationship'");
 					RelatedDocuments = null;
 				}
 				else
@@ -41628,7 +42010,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOCUMENTREFERENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDocumentReference' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -41780,11 +42162,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOOR requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDoor' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDoor'");
 					GlobalId = null;
 				}
 				else
@@ -41792,6 +42175,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDoor'");
 					OwnerHistory = null;
 				}
 				else
@@ -42141,11 +42525,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 15)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOORLININGPROPERTIES requires 15 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDoorLiningProperties' requires 15 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDoorLiningProperties'");
 					GlobalId = null;
 				}
 				else
@@ -42153,6 +42538,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDoorLiningProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -42661,11 +43047,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOORPANELPROPERTIES requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDoorPanelProperties' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDoorPanelProperties'");
 					GlobalId = null;
 				}
 				else
@@ -42673,6 +43060,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDoorPanelProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -42701,6 +43089,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PanelOperation' is not optional in 'IFCDoorPanelProperties'");
 					PanelOperation = null;
 				}
 				else
@@ -42715,6 +43104,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PanelPosition' is not optional in 'IFCDoorPanelProperties'");
 					PanelPosition = null;
 				}
 				else
@@ -42972,11 +43362,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 12)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOORSTYLE requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDoorStyle' requires 12 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDoorStyle'");
 					GlobalId = null;
 				}
 				else
@@ -42984,6 +43375,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDoorStyle'");
 					OwnerHistory = null;
 				}
 				else
@@ -43033,6 +43425,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OperationType' is not optional in 'IFCDoorStyle'");
 					OperationType = null;
 				}
 				else
@@ -43040,6 +43433,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ConstructionType' is not optional in 'IFCDoorStyle'");
 					ConstructionType = null;
 				}
 				else
@@ -43047,6 +43441,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[10] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ParameterTakesPrecedence' is not optional in 'IFCDoorStyle'");
 					ParameterTakesPrecedence = null;
 				}
 				else
@@ -43054,6 +43449,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Sizeable' is not optional in 'IFCDoorStyle'");
 					Sizeable = null;
 				}
 				else
@@ -43295,11 +43691,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDRAUGHTINGCALLOUT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDraughtingCallout' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Contents' is not optional in 'IFCDraughtingCallout'");
 					Contents = null;
 				}
 				else
@@ -43449,7 +43846,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDRAUGHTINGCALLOUTRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDraughtingCalloutRelationship' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -43468,6 +43865,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingDraughtingCallout' is not optional in 'IFCDraughtingCalloutRelationship'");
 					RelatingDraughtingCallout = null;
 				}
 				else
@@ -43475,6 +43873,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedDraughtingCallout' is not optional in 'IFCDraughtingCalloutRelationship'");
 					RelatedDraughtingCallout = null;
 				}
 				else
@@ -43652,11 +44051,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDRAUGHTINGPREDEFINEDCOLOUR requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDraughtingPreDefinedColour' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCDraughtingPreDefinedColour'");
 					Name = null;
 				}
 				else
@@ -43743,11 +44143,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDRAUGHTINGPREDEFINEDCURVEFONT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDraughtingPreDefinedCurveFont' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCDraughtingPreDefinedCurveFont'");
 					Name = null;
 				}
 				else
@@ -43828,11 +44229,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDRAUGHTINGPREDEFINEDTEXTFONT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDraughtingPreDefinedTextFont' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCDraughtingPreDefinedTextFont'");
 					Name = null;
 				}
 				else
@@ -43933,11 +44335,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDUCTFITTINGTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDuctFittingType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDuctFittingType'");
 					GlobalId = null;
 				}
 				else
@@ -43945,6 +44348,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDuctFittingType'");
 					OwnerHistory = null;
 				}
 				else
@@ -44001,6 +44405,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCDuctFittingType'");
 					PredefinedType = null;
 				}
 				else
@@ -44191,11 +44596,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDUCTSEGMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDuctSegmentType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDuctSegmentType'");
 					GlobalId = null;
 				}
 				else
@@ -44203,6 +44609,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDuctSegmentType'");
 					OwnerHistory = null;
 				}
 				else
@@ -44259,6 +44666,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCDuctSegmentType'");
 					PredefinedType = null;
 				}
 				else
@@ -44449,11 +44857,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDUCTSILENCERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCDuctSilencerType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCDuctSilencerType'");
 					GlobalId = null;
 				}
 				else
@@ -44461,6 +44870,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCDuctSilencerType'");
 					OwnerHistory = null;
 				}
 				else
@@ -44517,6 +44927,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCDuctSilencerType'");
 					PredefinedType = null;
 				}
 				else
@@ -44686,11 +45097,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEDGE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEdge' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EdgeStart' is not optional in 'IFCEdge'");
 					EdgeStart = null;
 				}
 				else
@@ -44698,6 +45110,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EdgeEnd' is not optional in 'IFCEdge'");
 					EdgeEnd = null;
 				}
 				else
@@ -44819,11 +45232,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEDGECURVE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEdgeCurve' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EdgeStart' is not optional in 'IFCEdgeCurve'");
 					EdgeStart = null;
 				}
 				else
@@ -44831,6 +45245,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EdgeEnd' is not optional in 'IFCEdgeCurve'");
 					EdgeEnd = null;
 				}
 				else
@@ -44838,6 +45253,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EdgeGeometry' is not optional in 'IFCEdgeCurve'");
 					EdgeGeometry = null;
 				}
 				else
@@ -44845,6 +45261,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SameSense' is not optional in 'IFCEdgeCurve'");
 					SameSense = null;
 				}
 				else
@@ -45006,11 +45423,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEDGEFEATURE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEdgeFeature' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCEdgeFeature'");
 					GlobalId = null;
 				}
 				else
@@ -45018,6 +45436,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCEdgeFeature'");
 					OwnerHistory = null;
 				}
 				else
@@ -45261,11 +45680,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEDGELOOP requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEdgeLoop' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EdgeList' is not optional in 'IFCEdgeLoop'");
 					EdgeList = null;
 				}
 				else
@@ -45392,11 +45812,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICAPPLIANCETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElectricApplianceType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElectricApplianceType'");
 					GlobalId = null;
 				}
 				else
@@ -45404,6 +45825,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElectricApplianceType'");
 					OwnerHistory = null;
 				}
 				else
@@ -45460,6 +45882,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCElectricApplianceType'");
 					PredefinedType = null;
 				}
 				else
@@ -45667,11 +46090,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICDISTRIBUTIONPOINT requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElectricDistributionPoint' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElectricDistributionPoint'");
 					GlobalId = null;
 				}
 				else
@@ -45679,6 +46103,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElectricDistributionPoint'");
 					OwnerHistory = null;
 				}
 				else
@@ -45728,6 +46153,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DistributionPointFunction' is not optional in 'IFCElectricDistributionPoint'");
 					DistributionPointFunction = null;
 				}
 				else
@@ -45928,11 +46354,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICFLOWSTORAGEDEVICETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElectricFlowStorageDeviceType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElectricFlowStorageDeviceType'");
 					GlobalId = null;
 				}
 				else
@@ -45940,6 +46367,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElectricFlowStorageDeviceType'");
 					OwnerHistory = null;
 				}
 				else
@@ -45996,6 +46424,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCElectricFlowStorageDeviceType'");
 					PredefinedType = null;
 				}
 				else
@@ -46171,11 +46600,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICGENERATORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElectricGeneratorType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElectricGeneratorType'");
 					GlobalId = null;
 				}
 				else
@@ -46183,6 +46613,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElectricGeneratorType'");
 					OwnerHistory = null;
 				}
 				else
@@ -46239,6 +46670,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCElectricGeneratorType'");
 					PredefinedType = null;
 				}
 				else
@@ -46414,11 +46846,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICHEATERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElectricHeaterType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElectricHeaterType'");
 					GlobalId = null;
 				}
 				else
@@ -46426,6 +46859,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElectricHeaterType'");
 					OwnerHistory = null;
 				}
 				else
@@ -46482,6 +46916,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCElectricHeaterType'");
 					PredefinedType = null;
 				}
 				else
@@ -46657,11 +47092,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICMOTORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElectricMotorType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElectricMotorType'");
 					GlobalId = null;
 				}
 				else
@@ -46669,6 +47105,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElectricMotorType'");
 					OwnerHistory = null;
 				}
 				else
@@ -46725,6 +47162,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCElectricMotorType'");
 					PredefinedType = null;
 				}
 				else
@@ -46900,11 +47338,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICTIMECONTROLTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElectricTimeControlType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElectricTimeControlType'");
 					GlobalId = null;
 				}
 				else
@@ -46912,6 +47351,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElectricTimeControlType'");
 					OwnerHistory = null;
 				}
 				else
@@ -46968,6 +47408,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCElectricTimeControlType'");
 					PredefinedType = null;
 				}
 				else
@@ -47164,11 +47605,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 14)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICALBASEPROPERTIES requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElectricalBaseProperties' requires 14 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElectricalBaseProperties'");
 					GlobalId = null;
 				}
 				else
@@ -47176,6 +47618,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElectricalBaseProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -47218,6 +47661,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'InputVoltage' is not optional in 'IFCElectricalBaseProperties'");
 					InputVoltage = null;
 				}
 				else
@@ -47225,6 +47669,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'InputFrequency' is not optional in 'IFCElectricalBaseProperties'");
 					InputFrequency = null;
 				}
 				else
@@ -47260,6 +47705,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[13] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'InputPhase' is not optional in 'IFCElectricalBaseProperties'");
 					InputPhase = null;
 				}
 				else
@@ -47586,11 +48032,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICALCIRCUIT requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElectricalCircuit' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElectricalCircuit'");
 					GlobalId = null;
 				}
 				else
@@ -47598,6 +48045,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElectricalCircuit'");
 					OwnerHistory = null;
 				}
 				else
@@ -47744,11 +48192,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICALELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElectricalElement' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElectricalElement'");
 					GlobalId = null;
 				}
 				else
@@ -47756,6 +48205,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElectricalElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -47986,11 +48436,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElement' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElement'");
 					GlobalId = null;
 				}
 				else
@@ -47998,6 +48449,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -48421,11 +48873,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENTASSEMBLY requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElementAssembly' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElementAssembly'");
 					GlobalId = null;
 				}
 				else
@@ -48433,6 +48886,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElementAssembly'");
 					OwnerHistory = null;
 				}
 				else
@@ -48489,6 +48943,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCElementAssembly'");
 					PredefinedType = null;
 				}
 				else
@@ -48693,11 +49148,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENTCOMPONENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElementComponent' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElementComponent'");
 					GlobalId = null;
 				}
 				else
@@ -48705,6 +49161,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElementComponent'");
 					OwnerHistory = null;
 				}
 				else
@@ -48887,11 +49344,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENTCOMPONENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElementComponentType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElementComponentType'");
 					GlobalId = null;
 				}
 				else
@@ -48899,6 +49357,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElementComponentType'");
 					OwnerHistory = null;
 				}
 				else
@@ -49092,11 +49551,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENTQUANTITY requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElementQuantity' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElementQuantity'");
 					GlobalId = null;
 				}
 				else
@@ -49104,6 +49564,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElementQuantity'");
 					OwnerHistory = null;
 				}
 				else
@@ -49132,6 +49593,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Quantities' is not optional in 'IFCElementQuantity'");
 					Quantities = null;
 				}
 				else
@@ -49315,11 +49777,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElementType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCElementType'");
 					GlobalId = null;
 				}
 				else
@@ -49327,6 +49790,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCElementType'");
 					OwnerHistory = null;
 				}
 				else
@@ -49545,11 +50009,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENTARYSURFACE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCElementarySurface' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCElementarySurface'");
 					Position = null;
 				}
 				else
@@ -49652,11 +50117,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELLIPSE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEllipse' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCEllipse'");
 					Position = null;
 				}
 				else
@@ -49664,6 +50130,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SemiAxis1' is not optional in 'IFCEllipse'");
 					SemiAxis1 = null;
 				}
 				else
@@ -49671,6 +50138,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SemiAxis2' is not optional in 'IFCEllipse'");
 					SemiAxis2 = null;
 				}
 				else
@@ -49799,11 +50267,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELLIPSEPROFILEDEF requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEllipseProfileDef' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCEllipseProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -49818,6 +50287,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCEllipseProfileDef'");
 					Position = null;
 				}
 				else
@@ -49825,6 +50295,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SemiAxis1' is not optional in 'IFCEllipseProfileDef'");
 					SemiAxis1 = null;
 				}
 				else
@@ -49832,6 +50303,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SemiAxis2' is not optional in 'IFCEllipseProfileDef'");
 					SemiAxis2 = null;
 				}
 				else
@@ -49994,11 +50466,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCENERGYCONVERSIONDEVICE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEnergyConversionDevice' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCEnergyConversionDevice'");
 					GlobalId = null;
 				}
 				else
@@ -50006,6 +50479,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCEnergyConversionDevice'");
 					OwnerHistory = null;
 				}
 				else
@@ -50204,11 +50678,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCENERGYCONVERSIONDEVICETYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEnergyConversionDeviceType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCEnergyConversionDeviceType'");
 					GlobalId = null;
 				}
 				else
@@ -50216,6 +50691,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCEnergyConversionDeviceType'");
 					OwnerHistory = null;
 				}
 				else
@@ -50411,11 +50887,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCENERGYPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEnergyProperties' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCEnergyProperties'");
 					GlobalId = null;
 				}
 				else
@@ -50423,6 +50900,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCEnergyProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -50629,7 +51107,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCENVIRONMENTALIMPACTVALUE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEnvironmentalImpactValue' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -50676,6 +51154,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ImpactType' is not optional in 'IFCEnvironmentalImpactValue'");
 					ImpactType = null;
 				}
 				else
@@ -50683,6 +51162,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Category' is not optional in 'IFCEnvironmentalImpactValue'");
 					Category = null;
 				}
 				else
@@ -50901,11 +51381,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEQUIPMENTELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEquipmentElement' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCEquipmentElement'");
 					GlobalId = null;
 				}
 				else
@@ -50913,6 +51394,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCEquipmentElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -51088,11 +51570,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEQUIPMENTSTANDARD requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEquipmentStandard' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCEquipmentStandard'");
 					GlobalId = null;
 				}
 				else
@@ -51100,6 +51583,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCEquipmentStandard'");
 					OwnerHistory = null;
 				}
 				else
@@ -51253,11 +51737,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEVAPORATIVECOOLERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEvaporativeCoolerType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCEvaporativeCoolerType'");
 					GlobalId = null;
 				}
 				else
@@ -51265,6 +51750,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCEvaporativeCoolerType'");
 					OwnerHistory = null;
 				}
 				else
@@ -51321,6 +51807,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCEvaporativeCoolerType'");
 					PredefinedType = null;
 				}
 				else
@@ -51511,11 +51998,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEVAPORATORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCEvaporatorType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCEvaporatorType'");
 					GlobalId = null;
 				}
 				else
@@ -51523,6 +52011,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCEvaporatorType'");
 					OwnerHistory = null;
 				}
 				else
@@ -51579,6 +52068,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCEvaporatorType'");
 					PredefinedType = null;
 				}
 				else
@@ -51747,11 +52237,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTENDEDMATERIALPROPERTIES requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCExtendedMaterialProperties' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Material' is not optional in 'IFCExtendedMaterialProperties'");
 					Material = null;
 				}
 				else
@@ -51759,6 +52250,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ExtendedProperties' is not optional in 'IFCExtendedMaterialProperties'");
 					ExtendedProperties = null;
 				}
 				else
@@ -51773,6 +52265,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCExtendedMaterialProperties'");
 					Name = null;
 				}
 				else
@@ -51965,7 +52458,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTERNALREFERENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCExternalReference' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -52123,7 +52616,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTERNALLYDEFINEDHATCHSTYLE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCExternallyDefinedHatchStyle' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -52227,7 +52720,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTERNALLYDEFINEDSURFACESTYLE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCExternallyDefinedSurfaceStyle' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -52331,7 +52824,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTERNALLYDEFINEDSYMBOL requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCExternallyDefinedSymbol' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -52435,7 +52928,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTERNALLYDEFINEDTEXTFONT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCExternallyDefinedTextFont' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -52563,11 +53056,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTRUDEDAREASOLID requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCExtrudedAreaSolid' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SweptArea' is not optional in 'IFCExtrudedAreaSolid'");
 					SweptArea = null;
 				}
 				else
@@ -52575,6 +53069,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCExtrudedAreaSolid'");
 					Position = null;
 				}
 				else
@@ -52582,6 +53077,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ExtrudedDirection' is not optional in 'IFCExtrudedAreaSolid'");
 					ExtrudedDirection = null;
 				}
 				else
@@ -52589,6 +53085,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Depth' is not optional in 'IFCExtrudedAreaSolid'");
 					Depth = null;
 				}
 				else
@@ -52736,11 +53233,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFace' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Bounds' is not optional in 'IFCFace'");
 					Bounds = null;
 				}
 				else
@@ -52860,11 +53358,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACEBASEDSURFACEMODEL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFaceBasedSurfaceModel' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FbsmFaces' is not optional in 'IFCFaceBasedSurfaceModel'");
 					FbsmFaces = null;
 				}
 				else
@@ -52983,11 +53482,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACEBOUND requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFaceBound' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Bound' is not optional in 'IFCFaceBound'");
 					Bound = null;
 				}
 				else
@@ -52995,6 +53495,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Orientation' is not optional in 'IFCFaceBound'");
 					Orientation = null;
 				}
 				else
@@ -53108,11 +53609,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACEOUTERBOUND requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFaceOuterBound' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Bound' is not optional in 'IFCFaceOuterBound'");
 					Bound = null;
 				}
 				else
@@ -53120,6 +53622,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Orientation' is not optional in 'IFCFaceOuterBound'");
 					Orientation = null;
 				}
 				else
@@ -53205,11 +53708,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACESURFACE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFaceSurface' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Bounds' is not optional in 'IFCFaceSurface'");
 					Bounds = null;
 				}
 				else
@@ -53217,6 +53721,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FaceSurface' is not optional in 'IFCFaceSurface'");
 					FaceSurface = null;
 				}
 				else
@@ -53224,6 +53729,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SameSense' is not optional in 'IFCFaceSurface'");
 					SameSense = null;
 				}
 				else
@@ -53345,11 +53851,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACETEDBREP requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFacetedBrep' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Outer' is not optional in 'IFCFacetedBrep'");
 					Outer = null;
 				}
 				else
@@ -53423,11 +53930,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACETEDBREPWITHVOIDS requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFacetedBrepWithVoids' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Outer' is not optional in 'IFCFacetedBrepWithVoids'");
 					Outer = null;
 				}
 				else
@@ -53435,6 +53943,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Voids' is not optional in 'IFCFacetedBrepWithVoids'");
 					Voids = null;
 				}
 				else
@@ -53567,7 +54076,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFAILURECONNECTIONCONDITION requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFailureConnectionCondition' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -53870,11 +54379,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFANTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFanType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFanType'");
 					GlobalId = null;
 				}
 				else
@@ -53882,6 +54392,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFanType'");
 					OwnerHistory = null;
 				}
 				else
@@ -53938,6 +54449,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCFanType'");
 					PredefinedType = null;
 				}
 				else
@@ -54123,11 +54635,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFASTENER requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFastener' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFastener'");
 					GlobalId = null;
 				}
 				else
@@ -54135,6 +54648,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFastener'");
 					OwnerHistory = null;
 				}
 				else
@@ -54316,11 +54830,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFASTENERTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFastenerType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFastenerType'");
 					GlobalId = null;
 				}
 				else
@@ -54328,6 +54843,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFastenerType'");
 					OwnerHistory = null;
 				}
 				else
@@ -54537,11 +55053,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFEATUREELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFeatureElement' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFeatureElement'");
 					GlobalId = null;
 				}
 				else
@@ -54549,6 +55066,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFeatureElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -54746,11 +55264,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFEATUREELEMENTADDITION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFeatureElementAddition' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFeatureElementAddition'");
 					GlobalId = null;
 				}
 				else
@@ -54758,6 +55277,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFeatureElementAddition'");
 					OwnerHistory = null;
 				}
 				else
@@ -54963,11 +55483,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFEATUREELEMENTSUBTRACTION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFeatureElementSubtraction' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFeatureElementSubtraction'");
 					GlobalId = null;
 				}
 				else
@@ -54975,6 +55496,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFeatureElementSubtraction'");
 					OwnerHistory = null;
 				}
 				else
@@ -55196,7 +55718,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFILLAREASTYLE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFillAreaStyle' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -55208,6 +55730,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FillStyles' is not optional in 'IFCFillAreaStyle'");
 					FillStyles = null;
 				}
 				else
@@ -55382,11 +55905,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFILLAREASTYLEHATCHING requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFillAreaStyleHatching' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HatchLineAppearance' is not optional in 'IFCFillAreaStyleHatching'");
 					HatchLineAppearance = null;
 				}
 				else
@@ -55394,6 +55918,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'StartOfNextHatchLine' is not optional in 'IFCFillAreaStyleHatching'");
 					StartOfNextHatchLine = null;
 				}
 				else
@@ -55415,6 +55940,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HatchLineAngle' is not optional in 'IFCFillAreaStyleHatching'");
 					HatchLineAngle = null;
 				}
 				else
@@ -55608,11 +56134,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFILLAREASTYLETILESYMBOLWITHSTYLE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFillAreaStyleTileSymbolWithStyle' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Symbol' is not optional in 'IFCFillAreaStyleTileSymbolWithStyle'");
 					Symbol = null;
 				}
 				else
@@ -55710,11 +56237,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFILLAREASTYLETILES requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFillAreaStyleTiles' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TilingPattern' is not optional in 'IFCFillAreaStyleTiles'");
 					TilingPattern = null;
 				}
 				else
@@ -55722,6 +56250,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Tiles' is not optional in 'IFCFillAreaStyleTiles'");
 					Tiles = null;
 				}
 				else
@@ -55729,6 +56258,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TilingScale' is not optional in 'IFCFillAreaStyleTiles'");
 					TilingScale = null;
 				}
 				else
@@ -55915,11 +56445,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFILTERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFilterType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFilterType'");
 					GlobalId = null;
 				}
 				else
@@ -55927,6 +56458,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFilterType'");
 					OwnerHistory = null;
 				}
 				else
@@ -55983,6 +56515,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCFilterType'");
 					PredefinedType = null;
 				}
 				else
@@ -56158,11 +56691,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFIRESUPPRESSIONTERMINALTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFireSuppressionTerminalType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFireSuppressionTerminalType'");
 					GlobalId = null;
 				}
 				else
@@ -56170,6 +56704,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFireSuppressionTerminalType'");
 					OwnerHistory = null;
 				}
 				else
@@ -56226,6 +56761,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCFireSuppressionTerminalType'");
 					PredefinedType = null;
 				}
 				else
@@ -56412,11 +56948,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWCONTROLLER requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowController' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowController'");
 					GlobalId = null;
 				}
 				else
@@ -56424,6 +56961,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowController'");
 					OwnerHistory = null;
 				}
 				else
@@ -56611,11 +57149,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWCONTROLLERTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowControllerType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowControllerType'");
 					GlobalId = null;
 				}
 				else
@@ -56623,6 +57162,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowControllerType'");
 					OwnerHistory = null;
 				}
 				else
@@ -56830,11 +57370,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWFITTING requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowFitting' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowFitting'");
 					GlobalId = null;
 				}
 				else
@@ -56842,6 +57383,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowFitting'");
 					OwnerHistory = null;
 				}
 				else
@@ -57026,11 +57568,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWFITTINGTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowFittingType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowFittingType'");
 					GlobalId = null;
 				}
 				else
@@ -57038,6 +57581,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowFittingType'");
 					OwnerHistory = null;
 				}
 				else
@@ -57236,11 +57780,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWINSTRUMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowInstrumentType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowInstrumentType'");
 					GlobalId = null;
 				}
 				else
@@ -57248,6 +57793,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowInstrumentType'");
 					OwnerHistory = null;
 				}
 				else
@@ -57304,6 +57850,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCFlowInstrumentType'");
 					PredefinedType = null;
 				}
 				else
@@ -57494,11 +58041,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWMETERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowMeterType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowMeterType'");
 					GlobalId = null;
 				}
 				else
@@ -57506,6 +58054,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowMeterType'");
 					OwnerHistory = null;
 				}
 				else
@@ -57562,6 +58111,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCFlowMeterType'");
 					PredefinedType = null;
 				}
 				else
@@ -57746,11 +58296,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWMOVINGDEVICE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowMovingDevice' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowMovingDevice'");
 					GlobalId = null;
 				}
 				else
@@ -57758,6 +58309,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowMovingDevice'");
 					OwnerHistory = null;
 				}
 				else
@@ -57941,11 +58493,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWMOVINGDEVICETYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowMovingDeviceType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowMovingDeviceType'");
 					GlobalId = null;
 				}
 				else
@@ -57953,6 +58506,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowMovingDeviceType'");
 					OwnerHistory = null;
 				}
 				else
@@ -58160,11 +58714,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWSEGMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowSegment' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowSegment'");
 					GlobalId = null;
 				}
 				else
@@ -58172,6 +58727,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowSegment'");
 					OwnerHistory = null;
 				}
 				else
@@ -58356,11 +58912,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWSEGMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowSegmentType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowSegmentType'");
 					GlobalId = null;
 				}
 				else
@@ -58368,6 +58925,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowSegmentType'");
 					OwnerHistory = null;
 				}
 				else
@@ -58575,11 +59133,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWSTORAGEDEVICE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowStorageDevice' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowStorageDevice'");
 					GlobalId = null;
 				}
 				else
@@ -58587,6 +59146,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowStorageDevice'");
 					OwnerHistory = null;
 				}
 				else
@@ -58769,11 +59329,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWSTORAGEDEVICETYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowStorageDeviceType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowStorageDeviceType'");
 					GlobalId = null;
 				}
 				else
@@ -58781,6 +59342,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowStorageDeviceType'");
 					OwnerHistory = null;
 				}
 				else
@@ -58988,11 +59550,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWTERMINAL requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowTerminal' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowTerminal'");
 					GlobalId = null;
 				}
 				else
@@ -59000,6 +59563,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowTerminal'");
 					OwnerHistory = null;
 				}
 				else
@@ -59191,11 +59755,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWTERMINALTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowTerminalType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowTerminalType'");
 					GlobalId = null;
 				}
 				else
@@ -59203,6 +59768,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowTerminalType'");
 					OwnerHistory = null;
 				}
 				else
@@ -59410,11 +59976,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWTREATMENTDEVICE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowTreatmentDevice' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowTreatmentDevice'");
 					GlobalId = null;
 				}
 				else
@@ -59422,6 +59989,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowTreatmentDevice'");
 					OwnerHistory = null;
 				}
 				else
@@ -59604,11 +60172,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWTREATMENTDEVICETYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFlowTreatmentDeviceType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFlowTreatmentDeviceType'");
 					GlobalId = null;
 				}
 				else
@@ -59616,6 +60185,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFlowTreatmentDeviceType'");
 					OwnerHistory = null;
 				}
 				else
@@ -59861,11 +60431,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 19)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLUIDFLOWPROPERTIES requires 19 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFluidFlowProperties' requires 19 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFluidFlowProperties'");
 					GlobalId = null;
 				}
 				else
@@ -59873,6 +60444,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFluidFlowProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -59894,6 +60466,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PropertySource' is not optional in 'IFCFluidFlowProperties'");
 					PropertySource = null;
 				}
 				else
@@ -59922,6 +60495,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Fluid' is not optional in 'IFCFluidFlowProperties'");
 					Fluid = null;
 				}
 				else
@@ -60517,11 +61091,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFOOTING requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFooting' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFooting'");
 					GlobalId = null;
 				}
 				else
@@ -60529,6 +61104,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFooting'");
 					OwnerHistory = null;
 				}
 				else
@@ -60578,6 +61154,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCFooting'");
 					PredefinedType = null;
 				}
 				else
@@ -60744,11 +61321,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFUELPROPERTIES requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFuelProperties' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Material' is not optional in 'IFCFuelProperties'");
 					Material = null;
 				}
 				else
@@ -60974,11 +61552,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFURNISHINGELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFurnishingElement' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFurnishingElement'");
 					GlobalId = null;
 				}
 				else
@@ -60986,6 +61565,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFurnishingElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -61168,11 +61748,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFURNISHINGELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFurnishingElementType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFurnishingElementType'");
 					GlobalId = null;
 				}
 				else
@@ -61180,6 +61761,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFurnishingElementType'");
 					OwnerHistory = null;
 				}
 				else
@@ -61370,11 +61952,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFURNITURESTANDARD requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFurnitureStandard' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFurnitureStandard'");
 					GlobalId = null;
 				}
 				else
@@ -61382,6 +61965,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFurnitureStandard'");
 					OwnerHistory = null;
 				}
 				else
@@ -61520,11 +62104,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFURNITURETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCFurnitureType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCFurnitureType'");
 					GlobalId = null;
 				}
 				else
@@ -61532,6 +62117,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCFurnitureType'");
 					OwnerHistory = null;
 				}
 				else
@@ -61588,6 +62174,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AssemblyPlace' is not optional in 'IFCFurnitureType'");
 					AssemblyPlace = null;
 				}
 				else
@@ -61778,11 +62365,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGASTERMINALTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCGasTerminalType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCGasTerminalType'");
 					GlobalId = null;
 				}
 				else
@@ -61790,6 +62378,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCGasTerminalType'");
 					OwnerHistory = null;
 				}
 				else
@@ -61846,6 +62435,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCGasTerminalType'");
 					PredefinedType = null;
 				}
 				else
@@ -62016,11 +62606,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGENERALMATERIALPROPERTIES requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCGeneralMaterialProperties' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Material' is not optional in 'IFCGeneralMaterialProperties'");
 					Material = null;
 				}
 				else
@@ -62223,7 +62814,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGENERALPROFILEPROPERTIES requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCGeneralProfileProperties' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -62493,11 +63084,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGEOMETRICCURVESET requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCGeometricCurveSet' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Elements' is not optional in 'IFCGeometricCurveSet'");
 					Elements = null;
 				}
 				else
@@ -62588,7 +63180,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGEOMETRICREPRESENTATIONCONTEXT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCGeometricRepresentationContext' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -62607,6 +63199,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CoordinateSpaceDimension' is not optional in 'IFCGeometricRepresentationContext'");
 					CoordinateSpaceDimension = null;
 				}
 				else
@@ -62621,6 +63214,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WorldCoordinateSystem' is not optional in 'IFCGeometricRepresentationContext'");
 					WorldCoordinateSystem = null;
 				}
 				else
@@ -62849,7 +63443,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGEOMETRICREPRESENTATIONITEM requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCGeometricRepresentationItem' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -63010,7 +63604,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGEOMETRICREPRESENTATIONSUBCONTEXT requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCGeometricRepresentationSubContext' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -63029,6 +63623,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CoordinateSpaceDimension' is not optional in 'IFCGeometricRepresentationSubContext'");
 					CoordinateSpaceDimension = null;
 				}
 				else
@@ -63043,6 +63638,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WorldCoordinateSystem' is not optional in 'IFCGeometricRepresentationSubContext'");
 					WorldCoordinateSystem = null;
 				}
 				else
@@ -63057,6 +63653,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ParentContext' is not optional in 'IFCGeometricRepresentationSubContext'");
 					ParentContext = null;
 				}
 				else
@@ -63071,6 +63668,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TargetView' is not optional in 'IFCGeometricRepresentationSubContext'");
 					TargetView = null;
 				}
 				else
@@ -63325,11 +63923,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGEOMETRICSET requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCGeometricSet' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Elements' is not optional in 'IFCGeometricSet'");
 					Elements = null;
 				}
 				else
@@ -63481,11 +64080,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGRID requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCGrid' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCGrid'");
 					GlobalId = null;
 				}
 				else
@@ -63493,6 +64093,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCGrid'");
 					OwnerHistory = null;
 				}
 				else
@@ -63535,6 +64136,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'UAxes' is not optional in 'IFCGrid'");
 					UAxes = null;
 				}
 				else
@@ -63542,6 +64144,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'VAxes' is not optional in 'IFCGrid'");
 					VAxes = null;
 				}
 				else
@@ -63855,7 +64458,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGRIDAXIS requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCGridAxis' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -63867,6 +64470,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AxisCurve' is not optional in 'IFCGridAxis'");
 					AxisCurve = null;
 				}
 				else
@@ -63874,6 +64478,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SameSense' is not optional in 'IFCGridAxis'");
 					SameSense = null;
 				}
 				else
@@ -64083,11 +64688,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGRIDPLACEMENT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCGridPlacement' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PlacementLocation' is not optional in 'IFCGridPlacement'");
 					PlacementLocation = null;
 				}
 				else
@@ -64227,11 +64833,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGROUP requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCGroup' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCGroup'");
 					GlobalId = null;
 				}
 				else
@@ -64239,6 +64846,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCGroup'");
 					OwnerHistory = null;
 				}
 				else
@@ -64391,11 +64999,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCHALFSPACESOLID requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCHalfSpaceSolid' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BaseSurface' is not optional in 'IFCHalfSpaceSolid'");
 					BaseSurface = null;
 				}
 				else
@@ -64403,6 +65012,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AgreementFlag' is not optional in 'IFCHalfSpaceSolid'");
 					AgreementFlag = null;
 				}
 				else
@@ -64554,11 +65164,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCHEATEXCHANGERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCHeatExchangerType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCHeatExchangerType'");
 					GlobalId = null;
 				}
 				else
@@ -64566,6 +65177,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCHeatExchangerType'");
 					OwnerHistory = null;
 				}
 				else
@@ -64622,6 +65234,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCHeatExchangerType'");
 					PredefinedType = null;
 				}
 				else
@@ -64812,11 +65425,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCHUMIDIFIERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCHumidifierType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCHumidifierType'");
 					GlobalId = null;
 				}
 				else
@@ -64824,6 +65438,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCHumidifierType'");
 					OwnerHistory = null;
 				}
 				else
@@ -64880,6 +65495,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCHumidifierType'");
 					PredefinedType = null;
 				}
 				else
@@ -65058,11 +65674,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCHYGROSCOPICMATERIALPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCHygroscopicMaterialProperties' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Material' is not optional in 'IFCHygroscopicMaterialProperties'");
 					Material = null;
 				}
 				else
@@ -65360,11 +65977,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCISHAPEPROFILEDEF requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCIShapeProfileDef' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCIShapeProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -65379,6 +65997,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCIShapeProfileDef'");
 					Position = null;
 				}
 				else
@@ -65386,6 +66005,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OverallWidth' is not optional in 'IFCIShapeProfileDef'");
 					OverallWidth = null;
 				}
 				else
@@ -65393,6 +66013,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OverallDepth' is not optional in 'IFCIShapeProfileDef'");
 					OverallDepth = null;
 				}
 				else
@@ -65400,6 +66021,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WebThickness' is not optional in 'IFCIShapeProfileDef'");
 					WebThickness = null;
 				}
 				else
@@ -65407,6 +66029,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FlangeThickness' is not optional in 'IFCIShapeProfileDef'");
 					FlangeThickness = null;
 				}
 				else
@@ -65633,11 +66256,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCIMAGETEXTURE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCImageTexture' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RepeatS' is not optional in 'IFCImageTexture'");
 					RepeatS = null;
 				}
 				else
@@ -65645,6 +66269,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RepeatT' is not optional in 'IFCImageTexture'");
 					RepeatT = null;
 				}
 				else
@@ -65652,6 +66277,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TextureType' is not optional in 'IFCImageTexture'");
 					TextureType = null;
 				}
 				else
@@ -65666,6 +66292,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'UrlReference' is not optional in 'IFCImageTexture'");
 					UrlReference = null;
 				}
 				else
@@ -65835,11 +66462,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCINVENTORY requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCInventory' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCInventory'");
 					GlobalId = null;
 				}
 				else
@@ -65847,6 +66475,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCInventory'");
 					OwnerHistory = null;
 				}
 				else
@@ -65875,6 +66504,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'InventoryType' is not optional in 'IFCInventory'");
 					InventoryType = null;
 				}
 				else
@@ -65882,6 +66512,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Jurisdiction' is not optional in 'IFCInventory'");
 					Jurisdiction = null;
 				}
 				else
@@ -65889,6 +66520,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ResponsiblePersons' is not optional in 'IFCInventory'");
 					ResponsiblePersons = null;
 				}
 				else
@@ -65896,6 +66528,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LastUpdateDate' is not optional in 'IFCInventory'");
 					LastUpdateDate = null;
 				}
 				else
@@ -66192,11 +66825,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCIRREGULARTIMESERIES requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCIrregularTimeSeries' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCIrregularTimeSeries'");
 					Name = null;
 				}
 				else
@@ -66211,6 +66845,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'StartTime' is not optional in 'IFCIrregularTimeSeries'");
 					StartTime = null;
 				}
 				else
@@ -66218,6 +66853,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EndTime' is not optional in 'IFCIrregularTimeSeries'");
 					EndTime = null;
 				}
 				else
@@ -66225,6 +66861,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TimeSeriesDataType' is not optional in 'IFCIrregularTimeSeries'");
 					TimeSeriesDataType = null;
 				}
 				else
@@ -66232,6 +66869,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DataOrigin' is not optional in 'IFCIrregularTimeSeries'");
 					DataOrigin = null;
 				}
 				else
@@ -66253,6 +66891,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Values' is not optional in 'IFCIrregularTimeSeries'");
 					Values = null;
 				}
 				else
@@ -66423,11 +67062,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCIRREGULARTIMESERIESVALUE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCIrregularTimeSeriesValue' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TimeStamp' is not optional in 'IFCIrregularTimeSeriesValue'");
 					TimeStamp = null;
 				}
 				else
@@ -66435,6 +67075,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ListValues' is not optional in 'IFCIrregularTimeSeriesValue'");
 					ListValues = null;
 				}
 				else
@@ -66580,11 +67221,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCJUNCTIONBOXTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCJunctionBoxType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCJunctionBoxType'");
 					GlobalId = null;
 				}
 				else
@@ -66592,6 +67234,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCJunctionBoxType'");
 					OwnerHistory = null;
 				}
 				else
@@ -66648,6 +67291,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCJunctionBoxType'");
 					PredefinedType = null;
 				}
 				else
@@ -66865,11 +67509,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLSHAPEPROFILEDEF requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLShapeProfileDef' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCLShapeProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -66884,6 +67529,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCLShapeProfileDef'");
 					Position = null;
 				}
 				else
@@ -66891,6 +67537,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Depth' is not optional in 'IFCLShapeProfileDef'");
 					Depth = null;
 				}
 				else
@@ -66905,6 +67552,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Thickness' is not optional in 'IFCLShapeProfileDef'");
 					Thickness = null;
 				}
 				else
@@ -67249,11 +67897,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLABORRESOURCE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLaborResource' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCLaborResource'");
 					GlobalId = null;
 				}
 				else
@@ -67261,6 +67910,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCLaborResource'");
 					OwnerHistory = null;
 				}
 				else
@@ -67492,11 +68142,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLAMPTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLampType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCLampType'");
 					GlobalId = null;
 				}
 				else
@@ -67504,6 +68155,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCLampType'");
 					OwnerHistory = null;
 				}
 				else
@@ -67560,6 +68212,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCLampType'");
 					PredefinedType = null;
 				}
 				else
@@ -67734,11 +68387,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIBRARYINFORMATION requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLibraryInformation' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCLibraryInformation'");
 					Name = null;
 				}
 				else
@@ -67978,7 +68632,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIBRARYREFERENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLibraryReference' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -68105,11 +68759,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTDISTRIBUTIONDATA requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLightDistributionData' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MainPlaneAngle' is not optional in 'IFCLightDistributionData'");
 					MainPlaneAngle = null;
 				}
 				else
@@ -68117,6 +68772,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SecondaryPlaneAngle' is not optional in 'IFCLightDistributionData'");
 					SecondaryPlaneAngle = null;
 				}
 				else
@@ -68124,6 +68780,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LuminousIntensity' is not optional in 'IFCLightDistributionData'");
 					LuminousIntensity = null;
 				}
 				else
@@ -68311,11 +68968,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTFIXTURETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLightFixtureType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCLightFixtureType'");
 					GlobalId = null;
 				}
 				else
@@ -68323,6 +68981,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCLightFixtureType'");
 					OwnerHistory = null;
 				}
 				else
@@ -68379,6 +69038,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCLightFixtureType'");
 					PredefinedType = null;
 				}
 				else
@@ -68541,11 +69201,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTINTENSITYDISTRIBUTION requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLightIntensityDistribution' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LightDistributionCurve' is not optional in 'IFCLightIntensityDistribution'");
 					LightDistributionCurve = null;
 				}
 				else
@@ -68553,6 +69214,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DistributionData' is not optional in 'IFCLightIntensityDistribution'");
 					DistributionData = null;
 				}
 				else
@@ -68701,7 +69363,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTSOURCE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLightSource' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -68713,6 +69375,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LightColour' is not optional in 'IFCLightSource'");
 					LightColour = null;
 				}
 				else
@@ -68894,7 +69557,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTSOURCEAMBIENT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLightSourceAmbient' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -68906,6 +69569,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LightColour' is not optional in 'IFCLightSourceAmbient'");
 					LightColour = null;
 				}
 				else
@@ -69019,7 +69683,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTSOURCEDIRECTIONAL requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLightSourceDirectional' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -69031,6 +69695,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LightColour' is not optional in 'IFCLightSourceDirectional'");
 					LightColour = null;
 				}
 				else
@@ -69052,6 +69717,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Orientation' is not optional in 'IFCLightSourceDirectional'");
 					Orientation = null;
 				}
 				else
@@ -69197,7 +69863,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTSOURCEGONIOMETRIC requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLightSourceGoniometric' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -69209,6 +69875,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LightColour' is not optional in 'IFCLightSourceGoniometric'");
 					LightColour = null;
 				}
 				else
@@ -69230,6 +69897,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCLightSourceGoniometric'");
 					Position = null;
 				}
 				else
@@ -69244,6 +69912,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ColourTemperature' is not optional in 'IFCLightSourceGoniometric'");
 					ColourTemperature = null;
 				}
 				else
@@ -69251,6 +69920,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LuminousFlux' is not optional in 'IFCLightSourceGoniometric'");
 					LuminousFlux = null;
 				}
 				else
@@ -69258,6 +69928,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LightEmissionSource' is not optional in 'IFCLightSourceGoniometric'");
 					LightEmissionSource = null;
 				}
 				else
@@ -69265,6 +69936,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LightDistributionDataSource' is not optional in 'IFCLightSourceGoniometric'");
 					LightDistributionDataSource = null;
 				}
 				else
@@ -69538,7 +70210,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTSOURCEPOSITIONAL requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLightSourcePositional' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -69550,6 +70222,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LightColour' is not optional in 'IFCLightSourcePositional'");
 					LightColour = null;
 				}
 				else
@@ -69571,6 +70244,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCLightSourcePositional'");
 					Position = null;
 				}
 				else
@@ -69578,6 +70252,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Radius' is not optional in 'IFCLightSourcePositional'");
 					Radius = null;
 				}
 				else
@@ -69585,6 +70260,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ConstantAttenuation' is not optional in 'IFCLightSourcePositional'");
 					ConstantAttenuation = null;
 				}
 				else
@@ -69592,6 +70268,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DistanceAttenuation' is not optional in 'IFCLightSourcePositional'");
 					DistanceAttenuation = null;
 				}
 				else
@@ -69599,6 +70276,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'QuadricAttenuation' is not optional in 'IFCLightSourcePositional'");
 					QuadricAttenuation = null;
 				}
 				else
@@ -69845,7 +70523,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 13)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTSOURCESPOT requires 13 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLightSourceSpot' requires 13 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -69857,6 +70535,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LightColour' is not optional in 'IFCLightSourceSpot'");
 					LightColour = null;
 				}
 				else
@@ -69878,6 +70557,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCLightSourceSpot'");
 					Position = null;
 				}
 				else
@@ -69885,6 +70565,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Radius' is not optional in 'IFCLightSourceSpot'");
 					Radius = null;
 				}
 				else
@@ -69892,6 +70573,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ConstantAttenuation' is not optional in 'IFCLightSourceSpot'");
 					ConstantAttenuation = null;
 				}
 				else
@@ -69899,6 +70581,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DistanceAttenuation' is not optional in 'IFCLightSourceSpot'");
 					DistanceAttenuation = null;
 				}
 				else
@@ -69906,6 +70589,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'QuadricAttenuation' is not optional in 'IFCLightSourceSpot'");
 					QuadricAttenuation = null;
 				}
 				else
@@ -69913,6 +70597,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Orientation' is not optional in 'IFCLightSourceSpot'");
 					Orientation = null;
 				}
 				else
@@ -69927,6 +70612,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SpreadAngle' is not optional in 'IFCLightSourceSpot'");
 					SpreadAngle = null;
 				}
 				else
@@ -69934,6 +70620,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[12] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BeamWidthAngle' is not optional in 'IFCLightSourceSpot'");
 					BeamWidthAngle = null;
 				}
 				else
@@ -70192,11 +70879,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLINE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLine' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Pnt' is not optional in 'IFCLine'");
 					Pnt = null;
 				}
 				else
@@ -70204,6 +70892,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Dir' is not optional in 'IFCLine'");
 					Dir = null;
 				}
 				else
@@ -70320,11 +71009,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLINEARDIMENSION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLinearDimension' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Contents' is not optional in 'IFCLinearDimension'");
 					Contents = null;
 				}
 				else
@@ -70414,7 +71104,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLOCALPLACEMENT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLocalPlacement' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -70426,6 +71116,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelativePlacement' is not optional in 'IFCLocalPlacement'");
 					RelativePlacement = null;
 				}
 				else
@@ -70568,11 +71259,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLOCALTIME requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLocalTime' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HourComponent' is not optional in 'IFCLocalTime'");
 					HourComponent = null;
 				}
 				else
@@ -70791,7 +71483,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLOOP requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCLoop' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -70856,11 +71548,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMANIFOLDSOLIDBREP requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCManifoldSolidBrep' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Outer' is not optional in 'IFCManifoldSolidBrep'");
 					Outer = null;
 				}
 				else
@@ -70954,11 +71647,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMAPPEDITEM requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMappedItem' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MappingSource' is not optional in 'IFCMappedItem'");
 					MappingSource = null;
 				}
 				else
@@ -70966,6 +71660,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MappingTarget' is not optional in 'IFCMappedItem'");
 					MappingTarget = null;
 				}
 				else
@@ -71085,11 +71780,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIAL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMaterial' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCMaterial'");
 					Name = null;
 				}
 				else
@@ -71212,11 +71908,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALCLASSIFICATIONRELATIONSHIP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMaterialClassificationRelationship' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MaterialClassifications' is not optional in 'IFCMaterialClassificationRelationship'");
 					MaterialClassifications = null;
 				}
 				else
@@ -71224,6 +71921,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ClassifiedMaterial' is not optional in 'IFCMaterialClassificationRelationship'");
 					ClassifiedMaterial = null;
 				}
 				else
@@ -71372,7 +72070,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALDEFINITIONREPRESENTATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMaterialDefinitionRepresentation' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -71391,6 +72089,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Representations' is not optional in 'IFCMaterialDefinitionRepresentation'");
 					Representations = null;
 				}
 				else
@@ -71398,6 +72097,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RepresentedMaterial' is not optional in 'IFCMaterialDefinitionRepresentation'");
 					RepresentedMaterial = null;
 				}
 				else
@@ -71520,7 +72220,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALLAYER requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMaterialLayer' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -71532,6 +72232,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LayerThickness' is not optional in 'IFCMaterialLayer'");
 					LayerThickness = null;
 				}
 				else
@@ -71702,11 +72403,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALLAYERSET requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMaterialLayerSet' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MaterialLayers' is not optional in 'IFCMaterialLayerSet'");
 					MaterialLayers = null;
 				}
 				else
@@ -71861,11 +72563,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALLAYERSETUSAGE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMaterialLayerSetUsage' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ForLayerSet' is not optional in 'IFCMaterialLayerSetUsage'");
 					ForLayerSet = null;
 				}
 				else
@@ -71873,6 +72576,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LayerSetDirection' is not optional in 'IFCMaterialLayerSetUsage'");
 					LayerSetDirection = null;
 				}
 				else
@@ -71880,6 +72584,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DirectionSense' is not optional in 'IFCMaterialLayerSetUsage'");
 					DirectionSense = null;
 				}
 				else
@@ -71887,6 +72592,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OffsetFromReferenceLine' is not optional in 'IFCMaterialLayerSetUsage'");
 					OffsetFromReferenceLine = null;
 				}
 				else
@@ -72051,11 +72757,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALLIST requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMaterialList' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Materials' is not optional in 'IFCMaterialList'");
 					Materials = null;
 				}
 				else
@@ -72168,11 +72875,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALPROPERTIES requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMaterialProperties' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Material' is not optional in 'IFCMaterialProperties'");
 					Material = null;
 				}
 				else
@@ -72263,11 +72971,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMEASUREWITHUNIT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMeasureWithUnit' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ValueComponent' is not optional in 'IFCMeasureWithUnit'");
 					ValueComponent = null;
 				}
 				else
@@ -72275,6 +72984,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'UnitComponent' is not optional in 'IFCMeasureWithUnit'");
 					UnitComponent = null;
 				}
 				else
@@ -72416,11 +73126,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 12)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMECHANICALCONCRETEMATERIALPROPERTIES requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMechanicalConcreteMaterialProperties' requires 12 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Material' is not optional in 'IFCMechanicalConcreteMaterialProperties'");
 					Material = null;
 				}
 				else
@@ -72795,11 +73506,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMECHANICALFASTENER requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMechanicalFastener' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCMechanicalFastener'");
 					GlobalId = null;
 				}
 				else
@@ -72807,6 +73519,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCMechanicalFastener'");
 					OwnerHistory = null;
 				}
 				else
@@ -73052,11 +73765,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMECHANICALFASTENERTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMechanicalFastenerType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCMechanicalFastenerType'");
 					GlobalId = null;
 				}
 				else
@@ -73064,6 +73778,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCMechanicalFastenerType'");
 					OwnerHistory = null;
 				}
 				else
@@ -73295,11 +74010,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMECHANICALMATERIALPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMechanicalMaterialProperties' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Material' is not optional in 'IFCMechanicalMaterialProperties'");
 					Material = null;
 				}
 				else
@@ -73619,11 +74335,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 13)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMECHANICALSTEELMATERIALPROPERTIES requires 13 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMechanicalSteelMaterialProperties' requires 13 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Material' is not optional in 'IFCMechanicalSteelMaterialProperties'");
 					Material = null;
 				}
 				else
@@ -74039,11 +74756,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMEMBER requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMember' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCMember'");
 					GlobalId = null;
 				}
 				else
@@ -74051,6 +74769,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCMember'");
 					OwnerHistory = null;
 				}
 				else
@@ -74234,11 +74953,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMEMBERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMemberType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCMemberType'");
 					GlobalId = null;
 				}
 				else
@@ -74246,6 +74966,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCMemberType'");
 					OwnerHistory = null;
 				}
 				else
@@ -74302,6 +75023,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCMemberType'");
 					PredefinedType = null;
 				}
 				else
@@ -74483,11 +75205,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMETRIC requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMetric' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCMetric'");
 					Name = null;
 				}
 				else
@@ -74502,6 +75225,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ConstraintGrade' is not optional in 'IFCMetric'");
 					ConstraintGrade = null;
 				}
 				else
@@ -74537,6 +75261,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Benchmark' is not optional in 'IFCMetric'");
 					Benchmark = null;
 				}
 				else
@@ -74551,6 +75276,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DataValue' is not optional in 'IFCMetric'");
 					DataValue = null;
 				}
 				else
@@ -74745,11 +75471,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMONETARYUNIT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMonetaryUnit' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Currency' is not optional in 'IFCMonetaryUnit'");
 					Currency = null;
 				}
 				else
@@ -74853,11 +75580,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMOTORCONNECTIONTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMotorConnectionType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCMotorConnectionType'");
 					GlobalId = null;
 				}
 				else
@@ -74865,6 +75593,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCMotorConnectionType'");
 					OwnerHistory = null;
 				}
 				else
@@ -74921,6 +75650,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCMotorConnectionType'");
 					PredefinedType = null;
 				}
 				else
@@ -75155,11 +75885,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 13)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMOVE requires 13 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCMove' requires 13 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCMove'");
 					GlobalId = null;
 				}
 				else
@@ -75167,6 +75898,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCMove'");
 					OwnerHistory = null;
 				}
 				else
@@ -75195,6 +75927,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TaskId' is not optional in 'IFCMove'");
 					TaskId = null;
 				}
 				else
@@ -75216,6 +75949,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'IsMilestone' is not optional in 'IFCMove'");
 					IsMilestone = null;
 				}
 				else
@@ -75230,6 +75964,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[10] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MoveFrom' is not optional in 'IFCMove'");
 					MoveFrom = null;
 				}
 				else
@@ -75237,6 +75972,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MoveTo' is not optional in 'IFCMove'");
 					MoveTo = null;
 				}
 				else
@@ -75500,11 +76236,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCNAMEDUNIT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCNamedUnit' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Dimensions' is not optional in 'IFCNamedUnit'");
 					Dimensions = null;
 				}
 				else
@@ -75512,6 +76249,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'UnitType' is not optional in 'IFCNamedUnit'");
 					UnitType = null;
 				}
 				else
@@ -75659,11 +76397,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOBJECT requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCObject' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCObject'");
 					GlobalId = null;
 				}
 				else
@@ -75671,6 +76410,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCObject'");
 					OwnerHistory = null;
 				}
 				else
@@ -75843,11 +76583,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOBJECTDEFINITION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCObjectDefinition' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCObjectDefinition'");
 					GlobalId = null;
 				}
 				else
@@ -75855,6 +76596,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCObjectDefinition'");
 					OwnerHistory = null;
 				}
 				else
@@ -76028,7 +76770,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOBJECTPLACEMENT requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCObjectPlacement' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -76160,11 +76902,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOBJECTIVE requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCObjective' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCObjective'");
 					Name = null;
 				}
 				else
@@ -76179,6 +76922,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ConstraintGrade' is not optional in 'IFCObjective'");
 					ConstraintGrade = null;
 				}
 				else
@@ -76228,6 +76972,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ObjectiveQualifier' is not optional in 'IFCObjective'");
 					ObjectiveQualifier = null;
 				}
 				else
@@ -76484,11 +77229,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOCCUPANT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOccupant' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCOccupant'");
 					GlobalId = null;
 				}
 				else
@@ -76496,6 +77242,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCOccupant'");
 					OwnerHistory = null;
 				}
 				else
@@ -76524,6 +77271,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TheActor' is not optional in 'IFCOccupant'");
 					TheActor = null;
 				}
 				else
@@ -76531,6 +77279,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCOccupant'");
 					PredefinedType = null;
 				}
 				else
@@ -76691,11 +77440,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOFFSETCURVE2D requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOffsetCurve2D' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BasisCurve' is not optional in 'IFCOffsetCurve2D'");
 					BasisCurve = null;
 				}
 				else
@@ -76703,6 +77453,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Distance' is not optional in 'IFCOffsetCurve2D'");
 					Distance = null;
 				}
 				else
@@ -76710,6 +77461,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SelfIntersect' is not optional in 'IFCOffsetCurve2D'");
 					SelfIntersect = null;
 				}
 				else
@@ -76878,11 +77630,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOFFSETCURVE3D requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOffsetCurve3D' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BasisCurve' is not optional in 'IFCOffsetCurve3D'");
 					BasisCurve = null;
 				}
 				else
@@ -76890,6 +77643,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Distance' is not optional in 'IFCOffsetCurve3D'");
 					Distance = null;
 				}
 				else
@@ -76897,6 +77651,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SelfIntersect' is not optional in 'IFCOffsetCurve3D'");
 					SelfIntersect = null;
 				}
 				else
@@ -76904,6 +77659,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RefDirection' is not optional in 'IFCOffsetCurve3D'");
 					RefDirection = null;
 				}
 				else
@@ -77073,11 +77829,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCONEDIRECTIONREPEATFACTOR requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOneDirectionRepeatFactor' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RepeatFactor' is not optional in 'IFCOneDirectionRepeatFactor'");
 					RepeatFactor = null;
 				}
 				else
@@ -77164,11 +77921,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOPENSHELL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOpenShell' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CfsFaces' is not optional in 'IFCOpenShell'");
 					CfsFaces = null;
 				}
 				else
@@ -77267,11 +78025,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOPENINGELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOpeningElement' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCOpeningElement'");
 					GlobalId = null;
 				}
 				else
@@ -77279,6 +78038,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCOpeningElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -77497,11 +78257,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOPTICALMATERIALPROPERTIES requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOpticalMaterialProperties' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Material' is not optional in 'IFCOpticalMaterialProperties'");
 					Material = null;
 				}
 				else
@@ -77892,11 +78653,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCORDERACTION requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOrderAction' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCOrderAction'");
 					GlobalId = null;
 				}
 				else
@@ -77904,6 +78666,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCOrderAction'");
 					OwnerHistory = null;
 				}
 				else
@@ -77932,6 +78695,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TaskId' is not optional in 'IFCOrderAction'");
 					TaskId = null;
 				}
 				else
@@ -77953,6 +78717,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'IsMilestone' is not optional in 'IFCOrderAction'");
 					IsMilestone = null;
 				}
 				else
@@ -77967,6 +78732,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[10] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ActionID' is not optional in 'IFCOrderAction'");
 					ActionID = null;
 				}
 				else
@@ -78159,7 +78925,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCORGANIZATION requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOrganization' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -78171,6 +78937,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCOrganization'");
 					Name = null;
 				}
 				else
@@ -78474,11 +79241,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCORGANIZATIONRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOrganizationRelationship' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCOrganizationRelationship'");
 					Name = null;
 				}
 				else
@@ -78493,6 +79261,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingOrganization' is not optional in 'IFCOrganizationRelationship'");
 					RelatingOrganization = null;
 				}
 				else
@@ -78500,6 +79269,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedOrganizations' is not optional in 'IFCOrganizationRelationship'");
 					RelatedOrganizations = null;
 				}
 				else
@@ -78732,11 +79502,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCORIENTEDEDGE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOrientedEdge' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EdgeStart' is not optional in 'IFCOrientedEdge'");
 					EdgeStart = null;
 				}
 				else
@@ -78744,6 +79515,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EdgeEnd' is not optional in 'IFCOrientedEdge'");
 					EdgeEnd = null;
 				}
 				else
@@ -78751,6 +79523,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EdgeElement' is not optional in 'IFCOrientedEdge'");
 					EdgeElement = null;
 				}
 				else
@@ -78758,6 +79531,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Orientation' is not optional in 'IFCOrientedEdge'");
 					Orientation = null;
 				}
 				else
@@ -78903,11 +79677,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOUTLETTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOutletType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCOutletType'");
 					GlobalId = null;
 				}
 				else
@@ -78915,6 +79690,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCOutletType'");
 					OwnerHistory = null;
 				}
 				else
@@ -78971,6 +79747,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCOutletType'");
 					PredefinedType = null;
 				}
 				else
@@ -79157,11 +79934,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOWNERHISTORY requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCOwnerHistory' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwningUser' is not optional in 'IFCOwnerHistory'");
 					OwningUser = null;
 				}
 				else
@@ -79169,6 +79947,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwningApplication' is not optional in 'IFCOwnerHistory'");
 					OwningApplication = null;
 				}
 				else
@@ -79183,6 +79962,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ChangeAction' is not optional in 'IFCOwnerHistory'");
 					ChangeAction = null;
 				}
 				else
@@ -79211,6 +79991,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CreationDate' is not optional in 'IFCOwnerHistory'");
 					CreationDate = null;
 				}
 				else
@@ -79495,11 +80276,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPARAMETERIZEDPROFILEDEF requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCParameterizedProfileDef' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCParameterizedProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -79514,6 +80296,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCParameterizedProfileDef'");
 					Position = null;
 				}
 				else
@@ -79633,11 +80416,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPATH requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPath' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EdgeList' is not optional in 'IFCPath'");
 					EdgeList = null;
 				}
 				else
@@ -79753,11 +80537,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPERFORMANCEHISTORY requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPerformanceHistory' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPerformanceHistory'");
 					GlobalId = null;
 				}
 				else
@@ -79765,6 +80550,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPerformanceHistory'");
 					OwnerHistory = null;
 				}
 				else
@@ -79793,6 +80579,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LifeCyclePhase' is not optional in 'IFCPerformanceHistory'");
 					LifeCyclePhase = null;
 				}
 				else
@@ -79943,11 +80730,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPERMEABLECOVERINGPROPERTIES requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPermeableCoveringProperties' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPermeableCoveringProperties'");
 					GlobalId = null;
 				}
 				else
@@ -79955,6 +80743,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPermeableCoveringProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -79976,6 +80765,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OperationType' is not optional in 'IFCPermeableCoveringProperties'");
 					OperationType = null;
 				}
 				else
@@ -79983,6 +80773,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PanelPosition' is not optional in 'IFCPermeableCoveringProperties'");
 					PanelPosition = null;
 				}
 				else
@@ -80241,11 +81032,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPERMIT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPermit' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPermit'");
 					GlobalId = null;
 				}
 				else
@@ -80253,6 +81045,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPermit'");
 					OwnerHistory = null;
 				}
 				else
@@ -80281,6 +81074,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PermitID' is not optional in 'IFCPermit'");
 					PermitID = null;
 				}
 				else
@@ -80454,7 +81248,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPERSON requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPerson' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -80880,11 +81674,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPERSONANDORGANIZATION requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPersonAndOrganization' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ThePerson' is not optional in 'IFCPersonAndOrganization'");
 					ThePerson = null;
 				}
 				else
@@ -80892,6 +81687,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TheOrganization' is not optional in 'IFCPersonAndOrganization'");
 					TheOrganization = null;
 				}
 				else
@@ -81083,11 +81879,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPHYSICALCOMPLEXQUANTITY requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPhysicalComplexQuantity' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPhysicalComplexQuantity'");
 					Name = null;
 				}
 				else
@@ -81102,6 +81899,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HasQuantities' is not optional in 'IFCPhysicalComplexQuantity'");
 					HasQuantities = null;
 				}
 				else
@@ -81109,6 +81907,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Discrimination' is not optional in 'IFCPhysicalComplexQuantity'");
 					Discrimination = null;
 				}
 				else
@@ -81330,11 +82129,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPHYSICALQUANTITY requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPhysicalQuantity' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPhysicalQuantity'");
 					Name = null;
 				}
 				else
@@ -81481,11 +82281,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPHYSICALSIMPLEQUANTITY requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPhysicalSimpleQuantity' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPhysicalSimpleQuantity'");
 					Name = null;
 				}
 				else
@@ -81649,11 +82450,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPILE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPile' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPile'");
 					GlobalId = null;
 				}
 				else
@@ -81661,6 +82463,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPile'");
 					OwnerHistory = null;
 				}
 				else
@@ -81710,6 +82513,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCPile'");
 					PredefinedType = null;
 				}
 				else
@@ -81925,11 +82729,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPIPEFITTINGTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPipeFittingType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPipeFittingType'");
 					GlobalId = null;
 				}
 				else
@@ -81937,6 +82742,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPipeFittingType'");
 					OwnerHistory = null;
 				}
 				else
@@ -81993,6 +82799,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCPipeFittingType'");
 					PredefinedType = null;
 				}
 				else
@@ -82183,11 +82990,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPIPESEGMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPipeSegmentType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPipeSegmentType'");
 					GlobalId = null;
 				}
 				else
@@ -82195,6 +83003,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPipeSegmentType'");
 					OwnerHistory = null;
 				}
 				else
@@ -82251,6 +83060,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCPipeSegmentType'");
 					PredefinedType = null;
 				}
 				else
@@ -82479,11 +83289,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPIXELTEXTURE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPixelTexture' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RepeatS' is not optional in 'IFCPixelTexture'");
 					RepeatS = null;
 				}
 				else
@@ -82491,6 +83302,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RepeatT' is not optional in 'IFCPixelTexture'");
 					RepeatT = null;
 				}
 				else
@@ -82498,6 +83310,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TextureType' is not optional in 'IFCPixelTexture'");
 					TextureType = null;
 				}
 				else
@@ -82512,6 +83325,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Width' is not optional in 'IFCPixelTexture'");
 					Width = null;
 				}
 				else
@@ -82519,6 +83333,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Height' is not optional in 'IFCPixelTexture'");
 					Height = null;
 				}
 				else
@@ -82526,6 +83341,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ColourComponents' is not optional in 'IFCPixelTexture'");
 					ColourComponents = null;
 				}
 				else
@@ -82533,6 +83349,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Pixel' is not optional in 'IFCPixelTexture'");
 					Pixel = null;
 				}
 				else
@@ -82766,11 +83583,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPLACEMENT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPlacement' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Location' is not optional in 'IFCPlacement'");
 					Location = null;
 				}
 				else
@@ -82869,11 +83687,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPLANARBOX requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPlanarBox' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SizeInX' is not optional in 'IFCPlanarBox'");
 					SizeInX = null;
 				}
 				else
@@ -82881,6 +83700,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SizeInY' is not optional in 'IFCPlanarBox'");
 					SizeInY = null;
 				}
 				else
@@ -82888,6 +83708,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Placement' is not optional in 'IFCPlanarBox'");
 					Placement = null;
 				}
 				else
@@ -82999,11 +83820,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPLANAREXTENT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPlanarExtent' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SizeInX' is not optional in 'IFCPlanarExtent'");
 					SizeInX = null;
 				}
 				else
@@ -83011,6 +83833,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SizeInY' is not optional in 'IFCPlanarExtent'");
 					SizeInY = null;
 				}
 				else
@@ -83124,11 +83947,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPLANE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPlane' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCPlane'");
 					Position = null;
 				}
 				else
@@ -83222,11 +84046,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPLATE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPlate' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPlate'");
 					GlobalId = null;
 				}
 				else
@@ -83234,6 +84059,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPlate'");
 					OwnerHistory = null;
 				}
 				else
@@ -83417,11 +84243,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPLATETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPlateType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPlateType'");
 					GlobalId = null;
 				}
 				else
@@ -83429,6 +84256,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPlateType'");
 					OwnerHistory = null;
 				}
 				else
@@ -83485,6 +84313,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCPlateType'");
 					PredefinedType = null;
 				}
 				else
@@ -83644,7 +84473,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOINT requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPoint' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -83741,11 +84570,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOINTONCURVE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPointOnCurve' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BasisCurve' is not optional in 'IFCPointOnCurve'");
 					BasisCurve = null;
 				}
 				else
@@ -83753,6 +84583,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PointParameter' is not optional in 'IFCPointOnCurve'");
 					PointParameter = null;
 				}
 				else
@@ -83897,11 +84728,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOINTONSURFACE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPointOnSurface' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BasisSurface' is not optional in 'IFCPointOnSurface'");
 					BasisSurface = null;
 				}
 				else
@@ -83909,6 +84741,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PointParameterU' is not optional in 'IFCPointOnSurface'");
 					PointParameterU = null;
 				}
 				else
@@ -83916,6 +84749,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PointParameterV' is not optional in 'IFCPointOnSurface'");
 					PointParameterV = null;
 				}
 				else
@@ -84078,11 +84912,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOLYLOOP requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPolyLoop' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Polygon' is not optional in 'IFCPolyLoop'");
 					Polygon = null;
 				}
 				else
@@ -84225,11 +85060,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOLYGONALBOUNDEDHALFSPACE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPolygonalBoundedHalfSpace' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BaseSurface' is not optional in 'IFCPolygonalBoundedHalfSpace'");
 					BaseSurface = null;
 				}
 				else
@@ -84237,6 +85073,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AgreementFlag' is not optional in 'IFCPolygonalBoundedHalfSpace'");
 					AgreementFlag = null;
 				}
 				else
@@ -84244,6 +85081,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCPolygonalBoundedHalfSpace'");
 					Position = null;
 				}
 				else
@@ -84251,6 +85089,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PolygonalBoundary' is not optional in 'IFCPolygonalBoundedHalfSpace'");
 					PolygonalBoundary = null;
 				}
 				else
@@ -84397,11 +85236,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOLYLINE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPolyline' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Points' is not optional in 'IFCPolyline'");
 					Points = null;
 				}
 				else
@@ -84528,11 +85368,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPORT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPort' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPort'");
 					GlobalId = null;
 				}
 				else
@@ -84540,6 +85381,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPort'");
 					OwnerHistory = null;
 				}
 				else
@@ -84781,7 +85623,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOSTALADDRESS requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPostalAddress' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -85131,11 +85973,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDCOLOUR requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPreDefinedColour' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPreDefinedColour'");
 					Name = null;
 				}
 				else
@@ -85204,11 +86047,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDCURVEFONT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPreDefinedCurveFont' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPreDefinedCurveFont'");
 					Name = null;
 				}
 				else
@@ -85291,11 +86135,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDDIMENSIONSYMBOL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPreDefinedDimensionSymbol' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPreDefinedDimensionSymbol'");
 					Name = null;
 				}
 				else
@@ -85369,11 +86214,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDITEM requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPreDefinedItem' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPreDefinedItem'");
 					Name = null;
 				}
 				else
@@ -85472,11 +86318,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDPOINTMARKERSYMBOL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPreDefinedPointMarkerSymbol' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPreDefinedPointMarkerSymbol'");
 					Name = null;
 				}
 				else
@@ -85547,11 +86394,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDSYMBOL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPreDefinedSymbol' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPreDefinedSymbol'");
 					Name = null;
 				}
 				else
@@ -85634,11 +86482,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDTERMINATORSYMBOL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPreDefinedTerminatorSymbol' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPreDefinedTerminatorSymbol'");
 					Name = null;
 				}
 				else
@@ -85708,11 +86557,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDTEXTFONT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPreDefinedTextFont' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPreDefinedTextFont'");
 					Name = null;
 				}
 				else
@@ -85795,11 +86645,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRESENTATIONLAYERASSIGNMENT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPresentationLayerAssignment' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPresentationLayerAssignment'");
 					Name = null;
 				}
 				else
@@ -85814,6 +86665,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AssignedItems' is not optional in 'IFCPresentationLayerAssignment'");
 					AssignedItems = null;
 				}
 				else
@@ -86018,11 +86870,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRESENTATIONLAYERWITHSTYLE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPresentationLayerWithStyle' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPresentationLayerWithStyle'");
 					Name = null;
 				}
 				else
@@ -86037,6 +86890,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AssignedItems' is not optional in 'IFCPresentationLayerWithStyle'");
 					AssignedItems = null;
 				}
 				else
@@ -86051,6 +86905,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LayerOn' is not optional in 'IFCPresentationLayerWithStyle'");
 					LayerOn = null;
 				}
 				else
@@ -86058,6 +86913,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LayerFrozen' is not optional in 'IFCPresentationLayerWithStyle'");
 					LayerFrozen = null;
 				}
 				else
@@ -86065,6 +86921,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LayerBlocked' is not optional in 'IFCPresentationLayerWithStyle'");
 					LayerBlocked = null;
 				}
 				else
@@ -86072,6 +86929,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LayerStyles' is not optional in 'IFCPresentationLayerWithStyle'");
 					LayerStyles = null;
 				}
 				else
@@ -86290,7 +87148,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRESENTATIONSTYLE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPresentationStyle' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -86381,11 +87239,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRESENTATIONSTYLEASSIGNMENT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPresentationStyleAssignment' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCPresentationStyleAssignment'");
 					Styles = null;
 				}
 				else
@@ -86565,11 +87424,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROCEDURE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProcedure' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCProcedure'");
 					GlobalId = null;
 				}
 				else
@@ -86577,6 +87437,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCProcedure'");
 					OwnerHistory = null;
 				}
 				else
@@ -86605,6 +87466,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProcedureID' is not optional in 'IFCProcedure'");
 					ProcedureID = null;
 				}
 				else
@@ -86612,6 +87474,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProcedureType' is not optional in 'IFCProcedure'");
 					ProcedureType = null;
 				}
 				else
@@ -86818,11 +87681,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROCESS requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProcess' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCProcess'");
 					GlobalId = null;
 				}
 				else
@@ -86830,6 +87694,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCProcess'");
 					OwnerHistory = null;
 				}
 				else
@@ -87045,11 +87910,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRODUCT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProduct' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCProduct'");
 					GlobalId = null;
 				}
 				else
@@ -87057,6 +87923,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCProduct'");
 					OwnerHistory = null;
 				}
 				else
@@ -87283,7 +88150,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRODUCTDEFINITIONSHAPE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProductDefinitionShape' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -87302,6 +88169,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Representations' is not optional in 'IFCProductDefinitionShape'");
 					Representations = null;
 				}
 				else
@@ -87429,7 +88297,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRODUCTREPRESENTATION requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProductRepresentation' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -87448,6 +88316,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Representations' is not optional in 'IFCProductRepresentation'");
 					Representations = null;
 				}
 				else
@@ -87618,11 +88487,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRODUCTSOFCOMBUSTIONPROPERTIES requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProductsOfCombustionProperties' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Material' is not optional in 'IFCProductsOfCombustionProperties'");
 					Material = null;
 				}
 				else
@@ -87833,11 +88703,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROFILEDEF requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProfileDef' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -87964,7 +88835,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROFILEPROPERTIES requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProfileProperties' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -88154,11 +89025,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROJECT requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProject' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCProject'");
 					GlobalId = null;
 				}
 				else
@@ -88166,6 +89038,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCProject'");
 					OwnerHistory = null;
 				}
 				else
@@ -88208,6 +89081,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RepresentationContexts' is not optional in 'IFCProject'");
 					RepresentationContexts = null;
 				}
 				else
@@ -88215,6 +89089,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'UnitsInContext' is not optional in 'IFCProject'");
 					UnitsInContext = null;
 				}
 				else
@@ -88458,11 +89333,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROJECTORDER requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProjectOrder' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCProjectOrder'");
 					GlobalId = null;
 				}
 				else
@@ -88470,6 +89346,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCProjectOrder'");
 					OwnerHistory = null;
 				}
 				else
@@ -88498,6 +89375,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ID' is not optional in 'IFCProjectOrder'");
 					ID = null;
 				}
 				else
@@ -88505,6 +89383,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCProjectOrder'");
 					PredefinedType = null;
 				}
 				else
@@ -88707,11 +89586,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROJECTORDERRECORD requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProjectOrderRecord' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCProjectOrderRecord'");
 					GlobalId = null;
 				}
 				else
@@ -88719,6 +89599,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCProjectOrderRecord'");
 					OwnerHistory = null;
 				}
 				else
@@ -88747,6 +89628,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Records' is not optional in 'IFCProjectOrderRecord'");
 					Records = null;
 				}
 				else
@@ -88754,6 +89636,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCProjectOrderRecord'");
 					PredefinedType = null;
 				}
 				else
@@ -88927,7 +89810,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROJECTIONCURVE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProjectionCurve' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -88939,6 +89822,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCProjectionCurve'");
 					Styles = null;
 				}
 				else
@@ -89056,11 +89940,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROJECTIONELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProjectionElement' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCProjectionElement'");
 					GlobalId = null;
 				}
 				else
@@ -89068,6 +89953,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCProjectionElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -89251,11 +90137,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTY requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProperty' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCProperty'");
 					Name = null;
 				}
 				else
@@ -89465,11 +90352,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYBOUNDEDVALUE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPropertyBoundedValue' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPropertyBoundedValue'");
 					Name = null;
 				}
 				else
@@ -89664,11 +90552,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYCONSTRAINTRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPropertyConstraintRelationship' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingConstraint' is not optional in 'IFCPropertyConstraintRelationship'");
 					RelatingConstraint = null;
 				}
 				else
@@ -89676,6 +90565,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedProperties' is not optional in 'IFCPropertyConstraintRelationship'");
 					RelatedProperties = null;
 				}
 				else
@@ -89877,11 +90767,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYDEFINITION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPropertyDefinition' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPropertyDefinition'");
 					GlobalId = null;
 				}
 				else
@@ -89889,6 +90780,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPropertyDefinition'");
 					OwnerHistory = null;
 				}
 				else
@@ -90041,11 +90933,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYDEPENDENCYRELATIONSHIP requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPropertyDependencyRelationship' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DependingProperty' is not optional in 'IFCPropertyDependencyRelationship'");
 					DependingProperty = null;
 				}
 				else
@@ -90053,6 +90946,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DependantProperty' is not optional in 'IFCPropertyDependencyRelationship'");
 					DependantProperty = null;
 				}
 				else
@@ -90291,11 +91185,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYENUMERATEDVALUE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPropertyEnumeratedValue' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPropertyEnumeratedValue'");
 					Name = null;
 				}
 				else
@@ -90310,6 +91205,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EnumerationValues' is not optional in 'IFCPropertyEnumeratedValue'");
 					EnumerationValues = null;
 				}
 				else
@@ -90487,11 +91383,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYENUMERATION requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPropertyEnumeration' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPropertyEnumeration'");
 					Name = null;
 				}
 				else
@@ -90499,6 +91396,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EnumerationValues' is not optional in 'IFCPropertyEnumeration'");
 					EnumerationValues = null;
 				}
 				else
@@ -90686,11 +91584,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYLISTVALUE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPropertyListValue' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPropertyListValue'");
 					Name = null;
 				}
 				else
@@ -90705,6 +91604,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ListValues' is not optional in 'IFCPropertyListValue'");
 					ListValues = null;
 				}
 				else
@@ -90866,11 +91766,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYREFERENCEVALUE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPropertyReferenceValue' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPropertyReferenceValue'");
 					Name = null;
 				}
 				else
@@ -90892,6 +91793,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PropertyReference' is not optional in 'IFCPropertyReferenceValue'");
 					PropertyReference = null;
 				}
 				else
@@ -91055,11 +91957,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYSET requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPropertySet' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPropertySet'");
 					GlobalId = null;
 				}
 				else
@@ -91067,6 +91970,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPropertySet'");
 					OwnerHistory = null;
 				}
 				else
@@ -91088,6 +91992,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'HasProperties' is not optional in 'IFCPropertySet'");
 					HasProperties = null;
 				}
 				else
@@ -91246,11 +92151,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYSETDEFINITION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPropertySetDefinition' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPropertySetDefinition'");
 					GlobalId = null;
 				}
 				else
@@ -91258,6 +92164,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPropertySetDefinition'");
 					OwnerHistory = null;
 				}
 				else
@@ -91406,11 +92313,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYSINGLEVALUE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPropertySingleValue' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPropertySingleValue'");
 					Name = null;
 				}
 				else
@@ -91622,11 +92530,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYTABLEVALUE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPropertyTableValue' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCPropertyTableValue'");
 					Name = null;
 				}
 				else
@@ -91641,6 +92550,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DefiningValues' is not optional in 'IFCPropertyTableValue'");
 					DefiningValues = null;
 				}
 				else
@@ -91648,6 +92558,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DefinedValues' is not optional in 'IFCPropertyTableValue'");
 					DefinedValues = null;
 				}
 				else
@@ -91924,11 +92835,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROTECTIVEDEVICETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProtectiveDeviceType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCProtectiveDeviceType'");
 					GlobalId = null;
 				}
 				else
@@ -91936,6 +92848,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCProtectiveDeviceType'");
 					OwnerHistory = null;
 				}
 				else
@@ -91992,6 +92905,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCProtectiveDeviceType'");
 					PredefinedType = null;
 				}
 				else
@@ -92184,11 +93098,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROXY requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCProxy' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCProxy'");
 					GlobalId = null;
 				}
 				else
@@ -92196,6 +93111,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCProxy'");
 					OwnerHistory = null;
 				}
 				else
@@ -92238,6 +93154,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProxyType' is not optional in 'IFCProxy'");
 					ProxyType = null;
 				}
 				else
@@ -92445,11 +93362,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPUMPTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCPumpType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCPumpType'");
 					GlobalId = null;
 				}
 				else
@@ -92457,6 +93375,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCPumpType'");
 					OwnerHistory = null;
 				}
 				else
@@ -92513,6 +93432,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCPumpType'");
 					PredefinedType = null;
 				}
 				else
@@ -92704,11 +93624,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCQUANTITYAREA requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCQuantityArea' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCQuantityArea'");
 					Name = null;
 				}
 				else
@@ -92730,6 +93651,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AreaValue' is not optional in 'IFCQuantityArea'");
 					AreaValue = null;
 				}
 				else
@@ -92859,11 +93781,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCQUANTITYCOUNT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCQuantityCount' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCQuantityCount'");
 					Name = null;
 				}
 				else
@@ -92885,6 +93808,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CountValue' is not optional in 'IFCQuantityCount'");
 					CountValue = null;
 				}
 				else
@@ -93028,11 +93952,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCQUANTITYLENGTH requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCQuantityLength' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCQuantityLength'");
 					Name = null;
 				}
 				else
@@ -93054,6 +93979,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LengthValue' is not optional in 'IFCQuantityLength'");
 					LengthValue = null;
 				}
 				else
@@ -93197,11 +94123,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCQUANTITYTIME requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCQuantityTime' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCQuantityTime'");
 					Name = null;
 				}
 				else
@@ -93223,6 +94150,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TimeValue' is not optional in 'IFCQuantityTime'");
 					TimeValue = null;
 				}
 				else
@@ -93366,11 +94294,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCQUANTITYVOLUME requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCQuantityVolume' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCQuantityVolume'");
 					Name = null;
 				}
 				else
@@ -93392,6 +94321,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'VolumeValue' is not optional in 'IFCQuantityVolume'");
 					VolumeValue = null;
 				}
 				else
@@ -93535,11 +94465,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCQUANTITYWEIGHT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCQuantityWeight' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCQuantityWeight'");
 					Name = null;
 				}
 				else
@@ -93561,6 +94492,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WeightValue' is not optional in 'IFCQuantityWeight'");
 					WeightValue = null;
 				}
 				else
@@ -93675,11 +94607,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRADIUSDIMENSION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRadiusDimension' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Contents' is not optional in 'IFCRadiusDimension'");
 					Contents = null;
 				}
 				else
@@ -93793,11 +94726,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRAILING requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRailing' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRailing'");
 					GlobalId = null;
 				}
 				else
@@ -93805,6 +94739,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRailing'");
 					OwnerHistory = null;
 				}
 				else
@@ -94021,11 +94956,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRAILINGTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRailingType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRailingType'");
 					GlobalId = null;
 				}
 				else
@@ -94033,6 +94969,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRailingType'");
 					OwnerHistory = null;
 				}
 				else
@@ -94089,6 +95026,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCRailingType'");
 					PredefinedType = null;
 				}
 				else
@@ -94291,11 +95229,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRAMP requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRamp' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRamp'");
 					GlobalId = null;
 				}
 				else
@@ -94303,6 +95242,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRamp'");
 					OwnerHistory = null;
 				}
 				else
@@ -94352,6 +95292,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ShapeType' is not optional in 'IFCRamp'");
 					ShapeType = null;
 				}
 				else
@@ -94527,11 +95468,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRAMPFLIGHT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRampFlight' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRampFlight'");
 					GlobalId = null;
 				}
 				else
@@ -94539,6 +95481,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRampFlight'");
 					OwnerHistory = null;
 				}
 				else
@@ -94722,11 +95665,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRAMPFLIGHTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRampFlightType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRampFlightType'");
 					GlobalId = null;
 				}
 				else
@@ -94734,6 +95678,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRampFlightType'");
 					OwnerHistory = null;
 				}
 				else
@@ -94790,6 +95735,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCRampFlightType'");
 					PredefinedType = null;
 				}
 				else
@@ -95001,11 +95947,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRATIONALBEZIERCURVE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRationalBezierCurve' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Degree' is not optional in 'IFCRationalBezierCurve'");
 					Degree = null;
 				}
 				else
@@ -95013,6 +95960,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ControlPointsList' is not optional in 'IFCRationalBezierCurve'");
 					ControlPointsList = null;
 				}
 				else
@@ -95020,6 +95968,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CurveForm' is not optional in 'IFCRationalBezierCurve'");
 					CurveForm = null;
 				}
 				else
@@ -95027,6 +95976,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ClosedCurve' is not optional in 'IFCRationalBezierCurve'");
 					ClosedCurve = null;
 				}
 				else
@@ -95034,6 +95984,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SelfIntersect' is not optional in 'IFCRationalBezierCurve'");
 					SelfIntersect = null;
 				}
 				else
@@ -95041,6 +95992,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WeightsData' is not optional in 'IFCRationalBezierCurve'");
 					WeightsData = null;
 				}
 				else
@@ -95258,11 +96210,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRECTANGLEHOLLOWPROFILEDEF requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRectangleHollowProfileDef' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCRectangleHollowProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -95277,6 +96230,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCRectangleHollowProfileDef'");
 					Position = null;
 				}
 				else
@@ -95284,6 +96238,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'XDim' is not optional in 'IFCRectangleHollowProfileDef'");
 					XDim = null;
 				}
 				else
@@ -95291,6 +96246,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'YDim' is not optional in 'IFCRectangleHollowProfileDef'");
 					YDim = null;
 				}
 				else
@@ -95298,6 +96254,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WallThickness' is not optional in 'IFCRectangleHollowProfileDef'");
 					WallThickness = null;
 				}
 				else
@@ -95501,11 +96458,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRECTANGLEPROFILEDEF requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRectangleProfileDef' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCRectangleProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -95520,6 +96478,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCRectangleProfileDef'");
 					Position = null;
 				}
 				else
@@ -95527,6 +96486,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'XDim' is not optional in 'IFCRectangleProfileDef'");
 					XDim = null;
 				}
 				else
@@ -95534,6 +96494,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'YDim' is not optional in 'IFCRectangleProfileDef'");
 					YDim = null;
 				}
 				else
@@ -95683,11 +96644,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRECTANGULARPYRAMID requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRectangularPyramid' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCRectangularPyramid'");
 					Position = null;
 				}
 				else
@@ -95695,6 +96657,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'XLength' is not optional in 'IFCRectangularPyramid'");
 					XLength = null;
 				}
 				else
@@ -95702,6 +96665,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'YLength' is not optional in 'IFCRectangularPyramid'");
 					YLength = null;
 				}
 				else
@@ -95709,6 +96673,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Height' is not optional in 'IFCRectangularPyramid'");
 					Height = null;
 				}
 				else
@@ -95952,11 +96917,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRECTANGULARTRIMMEDSURFACE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRectangularTrimmedSurface' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BasisSurface' is not optional in 'IFCRectangularTrimmedSurface'");
 					BasisSurface = null;
 				}
 				else
@@ -95964,6 +96930,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'U1' is not optional in 'IFCRectangularTrimmedSurface'");
 					U1 = null;
 				}
 				else
@@ -95971,6 +96938,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'V1' is not optional in 'IFCRectangularTrimmedSurface'");
 					V1 = null;
 				}
 				else
@@ -95978,6 +96946,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'U2' is not optional in 'IFCRectangularTrimmedSurface'");
 					U2 = null;
 				}
 				else
@@ -95985,6 +96954,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'V2' is not optional in 'IFCRectangularTrimmedSurface'");
 					V2 = null;
 				}
 				else
@@ -95992,6 +96962,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Usense' is not optional in 'IFCRectangularTrimmedSurface'");
 					Usense = null;
 				}
 				else
@@ -95999,6 +96970,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Vsense' is not optional in 'IFCRectangularTrimmedSurface'");
 					Vsense = null;
 				}
 				else
@@ -96260,11 +97232,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREFERENCESVALUEDOCUMENT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCReferencesValueDocument' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ReferencedDocument' is not optional in 'IFCReferencesValueDocument'");
 					ReferencedDocument = null;
 				}
 				else
@@ -96272,6 +97245,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ReferencingValues' is not optional in 'IFCReferencesValueDocument'");
 					ReferencingValues = null;
 				}
 				else
@@ -96480,11 +97454,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREGULARTIMESERIES requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRegularTimeSeries' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCRegularTimeSeries'");
 					Name = null;
 				}
 				else
@@ -96499,6 +97474,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'StartTime' is not optional in 'IFCRegularTimeSeries'");
 					StartTime = null;
 				}
 				else
@@ -96506,6 +97482,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EndTime' is not optional in 'IFCRegularTimeSeries'");
 					EndTime = null;
 				}
 				else
@@ -96513,6 +97490,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TimeSeriesDataType' is not optional in 'IFCRegularTimeSeries'");
 					TimeSeriesDataType = null;
 				}
 				else
@@ -96520,6 +97498,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DataOrigin' is not optional in 'IFCRegularTimeSeries'");
 					DataOrigin = null;
 				}
 				else
@@ -96541,6 +97520,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TimeStep' is not optional in 'IFCRegularTimeSeries'");
 					TimeStep = null;
 				}
 				else
@@ -96548,6 +97528,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Values' is not optional in 'IFCRegularTimeSeries'");
 					Values = null;
 				}
 				else
@@ -96760,11 +97741,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREINFORCEMENTBARPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCReinforcementBarProperties' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TotalCrossSectionArea' is not optional in 'IFCReinforcementBarProperties'");
 					TotalCrossSectionArea = null;
 				}
 				else
@@ -96772,6 +97754,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SteelGrade' is not optional in 'IFCReinforcementBarProperties'");
 					SteelGrade = null;
 				}
 				else
@@ -97028,11 +98011,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREINFORCEMENTDEFINITIONPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCReinforcementDefinitionProperties' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCReinforcementDefinitionProperties'");
 					GlobalId = null;
 				}
 				else
@@ -97040,6 +98024,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCReinforcementDefinitionProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -97068,6 +98053,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ReinforcementSectionDefinitions' is not optional in 'IFCReinforcementDefinitionProperties'");
 					ReinforcementSectionDefinitions = null;
 				}
 				else
@@ -97288,11 +98274,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 14)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREINFORCINGBAR requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCReinforcingBar' requires 14 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCReinforcingBar'");
 					GlobalId = null;
 				}
 				else
@@ -97300,6 +98287,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCReinforcingBar'");
 					OwnerHistory = null;
 				}
 				else
@@ -97356,6 +98344,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'NominalDiameter' is not optional in 'IFCReinforcingBar'");
 					NominalDiameter = null;
 				}
 				else
@@ -97363,6 +98352,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[10] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CrossSectionArea' is not optional in 'IFCReinforcingBar'");
 					CrossSectionArea = null;
 				}
 				else
@@ -97377,6 +98367,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[12] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BarRole' is not optional in 'IFCReinforcingBar'");
 					BarRole = null;
 				}
 				else
@@ -97680,11 +98671,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREINFORCINGELEMENT requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCReinforcingElement' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCReinforcingElement'");
 					GlobalId = null;
 				}
 				else
@@ -97692,6 +98684,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCReinforcingElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -97949,11 +98942,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 17)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREINFORCINGMESH requires 17 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCReinforcingMesh' requires 17 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCReinforcingMesh'");
 					GlobalId = null;
 				}
 				else
@@ -97961,6 +98955,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCReinforcingMesh'");
 					OwnerHistory = null;
 				}
 				else
@@ -98031,6 +99026,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LongitudinalBarNominalDiameter' is not optional in 'IFCReinforcingMesh'");
 					LongitudinalBarNominalDiameter = null;
 				}
 				else
@@ -98038,6 +99034,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[12] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TransverseBarNominalDiameter' is not optional in 'IFCReinforcingMesh'");
 					TransverseBarNominalDiameter = null;
 				}
 				else
@@ -98045,6 +99042,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[13] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LongitudinalBarCrossSectionArea' is not optional in 'IFCReinforcingMesh'");
 					LongitudinalBarCrossSectionArea = null;
 				}
 				else
@@ -98052,6 +99050,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[14] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TransverseBarCrossSectionArea' is not optional in 'IFCReinforcingMesh'");
 					TransverseBarCrossSectionArea = null;
 				}
 				else
@@ -98059,6 +99058,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[15] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LongitudinalBarSpacing' is not optional in 'IFCReinforcingMesh'");
 					LongitudinalBarSpacing = null;
 				}
 				else
@@ -98066,6 +99066,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[16] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TransverseBarSpacing' is not optional in 'IFCReinforcingMesh'");
 					TransverseBarSpacing = null;
 				}
 				else
@@ -98410,11 +99411,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELAGGREGATES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAggregates' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAggregates'");
 					GlobalId = null;
 				}
 				else
@@ -98422,6 +99424,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAggregates'");
 					OwnerHistory = null;
 				}
 				else
@@ -98443,6 +99446,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingObject' is not optional in 'IFCRelAggregates'");
 					RelatingObject = null;
 				}
 				else
@@ -98450,6 +99454,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAggregates'");
 					RelatedObjects = null;
 				}
 				else
@@ -98588,11 +99593,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNS requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssigns' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssigns'");
 					GlobalId = null;
 				}
 				else
@@ -98600,6 +99606,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssigns'");
 					OwnerHistory = null;
 				}
 				else
@@ -98621,6 +99628,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssigns'");
 					RelatedObjects = null;
 				}
 				else
@@ -98838,11 +99846,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTASKS requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssignsTasks' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssignsTasks'");
 					GlobalId = null;
 				}
 				else
@@ -98850,6 +99859,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssignsTasks'");
 					OwnerHistory = null;
 				}
 				else
@@ -98871,6 +99881,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssignsTasks'");
 					RelatedObjects = null;
 				}
 				else
@@ -98885,6 +99896,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingControl' is not optional in 'IFCRelAssignsTasks'");
 					RelatingControl = null;
 				}
 				else
@@ -99062,11 +100074,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTOACTOR requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssignsToActor' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssignsToActor'");
 					GlobalId = null;
 				}
 				else
@@ -99074,6 +100087,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssignsToActor'");
 					OwnerHistory = null;
 				}
 				else
@@ -99095,6 +100109,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssignsToActor'");
 					RelatedObjects = null;
 				}
 				else
@@ -99109,6 +100124,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingActor' is not optional in 'IFCRelAssignsToActor'");
 					RelatingActor = null;
 				}
 				else
@@ -99302,11 +100318,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTOCONTROL requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssignsToControl' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssignsToControl'");
 					GlobalId = null;
 				}
 				else
@@ -99314,6 +100331,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssignsToControl'");
 					OwnerHistory = null;
 				}
 				else
@@ -99335,6 +100353,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssignsToControl'");
 					RelatedObjects = null;
 				}
 				else
@@ -99349,6 +100368,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingControl' is not optional in 'IFCRelAssignsToControl'");
 					RelatingControl = null;
 				}
 				else
@@ -99505,11 +100525,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTOGROUP requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssignsToGroup' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssignsToGroup'");
 					GlobalId = null;
 				}
 				else
@@ -99517,6 +100538,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssignsToGroup'");
 					OwnerHistory = null;
 				}
 				else
@@ -99538,6 +100560,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssignsToGroup'");
 					RelatedObjects = null;
 				}
 				else
@@ -99552,6 +100575,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingGroup' is not optional in 'IFCRelAssignsToGroup'");
 					RelatingGroup = null;
 				}
 				else
@@ -99712,11 +100736,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTOPROCESS requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssignsToProcess' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssignsToProcess'");
 					GlobalId = null;
 				}
 				else
@@ -99724,6 +100749,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssignsToProcess'");
 					OwnerHistory = null;
 				}
 				else
@@ -99745,6 +100771,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssignsToProcess'");
 					RelatedObjects = null;
 				}
 				else
@@ -99759,6 +100786,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingProcess' is not optional in 'IFCRelAssignsToProcess'");
 					RelatingProcess = null;
 				}
 				else
@@ -99948,11 +100976,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTOPRODUCT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssignsToProduct' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssignsToProduct'");
 					GlobalId = null;
 				}
 				else
@@ -99960,6 +100989,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssignsToProduct'");
 					OwnerHistory = null;
 				}
 				else
@@ -99981,6 +101011,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssignsToProduct'");
 					RelatedObjects = null;
 				}
 				else
@@ -99995,6 +101026,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingProduct' is not optional in 'IFCRelAssignsToProduct'");
 					RelatingProduct = null;
 				}
 				else
@@ -100135,11 +101167,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTOPROJECTORDER requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssignsToProjectOrder' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssignsToProjectOrder'");
 					GlobalId = null;
 				}
 				else
@@ -100147,6 +101180,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssignsToProjectOrder'");
 					OwnerHistory = null;
 				}
 				else
@@ -100168,6 +101202,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssignsToProjectOrder'");
 					RelatedObjects = null;
 				}
 				else
@@ -100182,6 +101217,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingControl' is not optional in 'IFCRelAssignsToProjectOrder'");
 					RelatingControl = null;
 				}
 				else
@@ -100320,11 +101356,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTORESOURCE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssignsToResource' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssignsToResource'");
 					GlobalId = null;
 				}
 				else
@@ -100332,6 +101369,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssignsToResource'");
 					OwnerHistory = null;
 				}
 				else
@@ -100353,6 +101391,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssignsToResource'");
 					RelatedObjects = null;
 				}
 				else
@@ -100367,6 +101406,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingResource' is not optional in 'IFCRelAssignsToResource'");
 					RelatingResource = null;
 				}
 				else
@@ -100532,11 +101572,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATES requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssociates' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssociates'");
 					GlobalId = null;
 				}
 				else
@@ -100544,6 +101585,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssociates'");
 					OwnerHistory = null;
 				}
 				else
@@ -100565,6 +101607,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssociates'");
 					RelatedObjects = null;
 				}
 				else
@@ -100706,11 +101749,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESAPPLIEDVALUE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssociatesAppliedValue' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssociatesAppliedValue'");
 					GlobalId = null;
 				}
 				else
@@ -100718,6 +101762,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssociatesAppliedValue'");
 					OwnerHistory = null;
 				}
 				else
@@ -100739,6 +101784,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssociatesAppliedValue'");
 					RelatedObjects = null;
 				}
 				else
@@ -100746,6 +101792,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingAppliedValue' is not optional in 'IFCRelAssociatesAppliedValue'");
 					RelatingAppliedValue = null;
 				}
 				else
@@ -100879,11 +101926,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESAPPROVAL requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssociatesApproval' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssociatesApproval'");
 					GlobalId = null;
 				}
 				else
@@ -100891,6 +101939,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssociatesApproval'");
 					OwnerHistory = null;
 				}
 				else
@@ -100912,6 +101961,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssociatesApproval'");
 					RelatedObjects = null;
 				}
 				else
@@ -100919,6 +101969,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingApproval' is not optional in 'IFCRelAssociatesApproval'");
 					RelatingApproval = null;
 				}
 				else
@@ -101052,11 +102103,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESCLASSIFICATION requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssociatesClassification' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssociatesClassification'");
 					GlobalId = null;
 				}
 				else
@@ -101064,6 +102116,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssociatesClassification'");
 					OwnerHistory = null;
 				}
 				else
@@ -101085,6 +102138,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssociatesClassification'");
 					RelatedObjects = null;
 				}
 				else
@@ -101092,6 +102146,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingClassification' is not optional in 'IFCRelAssociatesClassification'");
 					RelatingClassification = null;
 				}
 				else
@@ -101229,11 +102284,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESCONSTRAINT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssociatesConstraint' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssociatesConstraint'");
 					GlobalId = null;
 				}
 				else
@@ -101241,6 +102297,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssociatesConstraint'");
 					OwnerHistory = null;
 				}
 				else
@@ -101262,6 +102319,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssociatesConstraint'");
 					RelatedObjects = null;
 				}
 				else
@@ -101269,6 +102327,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Intent' is not optional in 'IFCRelAssociatesConstraint'");
 					Intent = null;
 				}
 				else
@@ -101276,6 +102335,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingConstraint' is not optional in 'IFCRelAssociatesConstraint'");
 					RelatingConstraint = null;
 				}
 				else
@@ -101435,11 +102495,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESDOCUMENT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssociatesDocument' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssociatesDocument'");
 					GlobalId = null;
 				}
 				else
@@ -101447,6 +102508,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssociatesDocument'");
 					OwnerHistory = null;
 				}
 				else
@@ -101468,6 +102530,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssociatesDocument'");
 					RelatedObjects = null;
 				}
 				else
@@ -101475,6 +102538,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingDocument' is not optional in 'IFCRelAssociatesDocument'");
 					RelatingDocument = null;
 				}
 				else
@@ -101608,11 +102672,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESLIBRARY requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssociatesLibrary' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssociatesLibrary'");
 					GlobalId = null;
 				}
 				else
@@ -101620,6 +102685,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssociatesLibrary'");
 					OwnerHistory = null;
 				}
 				else
@@ -101641,6 +102707,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssociatesLibrary'");
 					RelatedObjects = null;
 				}
 				else
@@ -101648,6 +102715,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingLibrary' is not optional in 'IFCRelAssociatesLibrary'");
 					RelatingLibrary = null;
 				}
 				else
@@ -101814,11 +102882,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESMATERIAL requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssociatesMaterial' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssociatesMaterial'");
 					GlobalId = null;
 				}
 				else
@@ -101826,6 +102895,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssociatesMaterial'");
 					OwnerHistory = null;
 				}
 				else
@@ -101847,6 +102917,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssociatesMaterial'");
 					RelatedObjects = null;
 				}
 				else
@@ -101854,6 +102925,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingMaterial' is not optional in 'IFCRelAssociatesMaterial'");
 					RelatingMaterial = null;
 				}
 				else
@@ -101995,11 +103067,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESPROFILEPROPERTIES requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelAssociatesProfileProperties' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelAssociatesProfileProperties'");
 					GlobalId = null;
 				}
 				else
@@ -102007,6 +103080,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelAssociatesProfileProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -102028,6 +103102,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelAssociatesProfileProperties'");
 					RelatedObjects = null;
 				}
 				else
@@ -102035,6 +103110,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingProfileProperties' is not optional in 'IFCRelAssociatesProfileProperties'");
 					RelatingProfileProperties = null;
 				}
 				else
@@ -102247,11 +103323,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTS requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelConnects' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelConnects'");
 					GlobalId = null;
 				}
 				else
@@ -102259,6 +103336,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelConnects'");
 					OwnerHistory = null;
 				}
 				else
@@ -102395,11 +103473,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSELEMENTS requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelConnectsElements' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelConnectsElements'");
 					GlobalId = null;
 				}
 				else
@@ -102407,6 +103486,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelConnectsElements'");
 					OwnerHistory = null;
 				}
 				else
@@ -102435,6 +103515,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingElement' is not optional in 'IFCRelConnectsElements'");
 					RelatingElement = null;
 				}
 				else
@@ -102442,6 +103523,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedElement' is not optional in 'IFCRelConnectsElements'");
 					RelatedElement = null;
 				}
 				else
@@ -102633,11 +103715,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSPATHELEMENTS requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelConnectsPathElements' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelConnectsPathElements'");
 					GlobalId = null;
 				}
 				else
@@ -102645,6 +103728,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelConnectsPathElements'");
 					OwnerHistory = null;
 				}
 				else
@@ -102673,6 +103757,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingElement' is not optional in 'IFCRelConnectsPathElements'");
 					RelatingElement = null;
 				}
 				else
@@ -102680,6 +103765,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedElement' is not optional in 'IFCRelConnectsPathElements'");
 					RelatedElement = null;
 				}
 				else
@@ -102687,6 +103773,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingPriorities' is not optional in 'IFCRelConnectsPathElements'");
 					RelatingPriorities = null;
 				}
 				else
@@ -102694,6 +103781,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedPriorities' is not optional in 'IFCRelConnectsPathElements'");
 					RelatedPriorities = null;
 				}
 				else
@@ -102701,6 +103789,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedConnectionType' is not optional in 'IFCRelConnectsPathElements'");
 					RelatedConnectionType = null;
 				}
 				else
@@ -102708,6 +103797,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[10] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingConnectionType' is not optional in 'IFCRelConnectsPathElements'");
 					RelatingConnectionType = null;
 				}
 				else
@@ -102969,11 +104059,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSPORTTOELEMENT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelConnectsPortToElement' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelConnectsPortToElement'");
 					GlobalId = null;
 				}
 				else
@@ -102981,6 +104072,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelConnectsPortToElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -103002,6 +104094,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingPort' is not optional in 'IFCRelConnectsPortToElement'");
 					RelatingPort = null;
 				}
 				else
@@ -103009,6 +104102,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedElement' is not optional in 'IFCRelConnectsPortToElement'");
 					RelatedElement = null;
 				}
 				else
@@ -103166,11 +104260,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSPORTS requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelConnectsPorts' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelConnectsPorts'");
 					GlobalId = null;
 				}
 				else
@@ -103178,6 +104273,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelConnectsPorts'");
 					OwnerHistory = null;
 				}
 				else
@@ -103199,6 +104295,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingPort' is not optional in 'IFCRelConnectsPorts'");
 					RelatingPort = null;
 				}
 				else
@@ -103206,6 +104303,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedPort' is not optional in 'IFCRelConnectsPorts'");
 					RelatedPort = null;
 				}
 				else
@@ -103392,11 +104490,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSSTRUCTURALACTIVITY requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelConnectsStructuralActivity' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelConnectsStructuralActivity'");
 					GlobalId = null;
 				}
 				else
@@ -103404,6 +104503,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelConnectsStructuralActivity'");
 					OwnerHistory = null;
 				}
 				else
@@ -103425,6 +104525,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingElement' is not optional in 'IFCRelConnectsStructuralActivity'");
 					RelatingElement = null;
 				}
 				else
@@ -103432,6 +104533,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedStructuralActivity' is not optional in 'IFCRelConnectsStructuralActivity'");
 					RelatedStructuralActivity = null;
 				}
 				else
@@ -103585,11 +104687,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSSTRUCTURALELEMENT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelConnectsStructuralElement' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelConnectsStructuralElement'");
 					GlobalId = null;
 				}
 				else
@@ -103597,6 +104700,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelConnectsStructuralElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -103618,6 +104722,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingElement' is not optional in 'IFCRelConnectsStructuralElement'");
 					RelatingElement = null;
 				}
 				else
@@ -103625,6 +104730,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedStructuralMember' is not optional in 'IFCRelConnectsStructuralElement'");
 					RelatedStructuralMember = null;
 				}
 				else
@@ -103796,11 +104902,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSSTRUCTURALMEMBER requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelConnectsStructuralMember' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelConnectsStructuralMember'");
 					GlobalId = null;
 				}
 				else
@@ -103808,6 +104915,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelConnectsStructuralMember'");
 					OwnerHistory = null;
 				}
 				else
@@ -103829,6 +104937,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingStructuralMember' is not optional in 'IFCRelConnectsStructuralMember'");
 					RelatingStructuralMember = null;
 				}
 				else
@@ -103836,6 +104945,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedStructuralConnection' is not optional in 'IFCRelConnectsStructuralMember'");
 					RelatedStructuralConnection = null;
 				}
 				else
@@ -104123,11 +105233,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSWITHECCENTRICITY requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelConnectsWithEccentricity' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelConnectsWithEccentricity'");
 					GlobalId = null;
 				}
 				else
@@ -104135,6 +105246,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelConnectsWithEccentricity'");
 					OwnerHistory = null;
 				}
 				else
@@ -104156,6 +105268,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingStructuralMember' is not optional in 'IFCRelConnectsWithEccentricity'");
 					RelatingStructuralMember = null;
 				}
 				else
@@ -104163,6 +105276,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedStructuralConnection' is not optional in 'IFCRelConnectsWithEccentricity'");
 					RelatedStructuralConnection = null;
 				}
 				else
@@ -104198,6 +105312,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[10] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ConnectionConstraint' is not optional in 'IFCRelConnectsWithEccentricity'");
 					ConnectionConstraint = null;
 				}
 				else
@@ -104377,11 +105492,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSWITHREALIZINGELEMENTS requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelConnectsWithRealizingElements' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelConnectsWithRealizingElements'");
 					GlobalId = null;
 				}
 				else
@@ -104389,6 +105505,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelConnectsWithRealizingElements'");
 					OwnerHistory = null;
 				}
 				else
@@ -104417,6 +105534,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingElement' is not optional in 'IFCRelConnectsWithRealizingElements'");
 					RelatingElement = null;
 				}
 				else
@@ -104424,6 +105542,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedElement' is not optional in 'IFCRelConnectsWithRealizingElements'");
 					RelatedElement = null;
 				}
 				else
@@ -104431,6 +105550,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RealizingElements' is not optional in 'IFCRelConnectsWithRealizingElements'");
 					RealizingElements = null;
 				}
 				else
@@ -104645,11 +105765,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONTAINEDINSPATIALSTRUCTURE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelContainedInSpatialStructure' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelContainedInSpatialStructure'");
 					GlobalId = null;
 				}
 				else
@@ -104657,6 +105778,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelContainedInSpatialStructure'");
 					OwnerHistory = null;
 				}
 				else
@@ -104678,6 +105800,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedElements' is not optional in 'IFCRelContainedInSpatialStructure'");
 					RelatedElements = null;
 				}
 				else
@@ -104685,6 +105808,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingStructure' is not optional in 'IFCRelContainedInSpatialStructure'");
 					RelatingStructure = null;
 				}
 				else
@@ -104854,11 +105978,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCOVERSBLDGELEMENTS requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelCoversBldgElements' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelCoversBldgElements'");
 					GlobalId = null;
 				}
 				else
@@ -104866,6 +105991,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelCoversBldgElements'");
 					OwnerHistory = null;
 				}
 				else
@@ -104887,6 +106013,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingBuildingElement' is not optional in 'IFCRelCoversBldgElements'");
 					RelatingBuildingElement = null;
 				}
 				else
@@ -104894,6 +106021,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedCoverings' is not optional in 'IFCRelCoversBldgElements'");
 					RelatedCoverings = null;
 				}
 				else
@@ -105063,11 +106191,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCOVERSSPACES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelCoversSpaces' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelCoversSpaces'");
 					GlobalId = null;
 				}
 				else
@@ -105075,6 +106204,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelCoversSpaces'");
 					OwnerHistory = null;
 				}
 				else
@@ -105096,6 +106226,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedSpace' is not optional in 'IFCRelCoversSpaces'");
 					RelatedSpace = null;
 				}
 				else
@@ -105103,6 +106234,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedCoverings' is not optional in 'IFCRelCoversSpaces'");
 					RelatedCoverings = null;
 				}
 				else
@@ -105289,11 +106421,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELDECOMPOSES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelDecomposes' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelDecomposes'");
 					GlobalId = null;
 				}
 				else
@@ -105301,6 +106434,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelDecomposes'");
 					OwnerHistory = null;
 				}
 				else
@@ -105322,6 +106456,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingObject' is not optional in 'IFCRelDecomposes'");
 					RelatingObject = null;
 				}
 				else
@@ -105329,6 +106464,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelDecomposes'");
 					RelatedObjects = null;
 				}
 				else
@@ -105497,11 +106633,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELDEFINES requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelDefines' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelDefines'");
 					GlobalId = null;
 				}
 				else
@@ -105509,6 +106646,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelDefines'");
 					OwnerHistory = null;
 				}
 				else
@@ -105530,6 +106668,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelDefines'");
 					RelatedObjects = null;
 				}
 				else
@@ -105672,11 +106811,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELDEFINESBYPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelDefinesByProperties' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelDefinesByProperties'");
 					GlobalId = null;
 				}
 				else
@@ -105684,6 +106824,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelDefinesByProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -105705,6 +106846,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelDefinesByProperties'");
 					RelatedObjects = null;
 				}
 				else
@@ -105712,6 +106854,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingPropertyDefinition' is not optional in 'IFCRelDefinesByProperties'");
 					RelatingPropertyDefinition = null;
 				}
 				else
@@ -105844,11 +106987,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELDEFINESBYTYPE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelDefinesByType' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelDefinesByType'");
 					GlobalId = null;
 				}
 				else
@@ -105856,6 +107000,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelDefinesByType'");
 					OwnerHistory = null;
 				}
 				else
@@ -105877,6 +107022,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelDefinesByType'");
 					RelatedObjects = null;
 				}
 				else
@@ -105884,6 +107030,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingType' is not optional in 'IFCRelDefinesByType'");
 					RelatingType = null;
 				}
 				else
@@ -106019,11 +107166,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELFILLSELEMENT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelFillsElement' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelFillsElement'");
 					GlobalId = null;
 				}
 				else
@@ -106031,6 +107179,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelFillsElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -106052,6 +107201,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingOpeningElement' is not optional in 'IFCRelFillsElement'");
 					RelatingOpeningElement = null;
 				}
 				else
@@ -106059,6 +107209,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedBuildingElement' is not optional in 'IFCRelFillsElement'");
 					RelatedBuildingElement = null;
 				}
 				else
@@ -106212,11 +107363,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELFLOWCONTROLELEMENTS requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelFlowControlElements' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelFlowControlElements'");
 					GlobalId = null;
 				}
 				else
@@ -106224,6 +107376,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelFlowControlElements'");
 					OwnerHistory = null;
 				}
 				else
@@ -106245,6 +107398,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedControlElements' is not optional in 'IFCRelFlowControlElements'");
 					RelatedControlElements = null;
 				}
 				else
@@ -106252,6 +107406,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingFlowElement' is not optional in 'IFCRelFlowControlElements'");
 					RelatingFlowElement = null;
 				}
 				else
@@ -106433,11 +107588,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELINTERACTIONREQUIREMENTS requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelInteractionRequirements' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelInteractionRequirements'");
 					GlobalId = null;
 				}
 				else
@@ -106445,6 +107601,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelInteractionRequirements'");
 					OwnerHistory = null;
 				}
 				else
@@ -106487,6 +107644,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedSpaceProgram' is not optional in 'IFCRelInteractionRequirements'");
 					RelatedSpaceProgram = null;
 				}
 				else
@@ -106494,6 +107652,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingSpaceProgram' is not optional in 'IFCRelInteractionRequirements'");
 					RelatingSpaceProgram = null;
 				}
 				else
@@ -106735,11 +107894,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELNESTS requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelNests' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelNests'");
 					GlobalId = null;
 				}
 				else
@@ -106747,6 +107907,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelNests'");
 					OwnerHistory = null;
 				}
 				else
@@ -106768,6 +107929,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingObject' is not optional in 'IFCRelNests'");
 					RelatingObject = null;
 				}
 				else
@@ -106775,6 +107937,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelNests'");
 					RelatedObjects = null;
 				}
 				else
@@ -106890,11 +108053,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELOCCUPIESSPACES requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelOccupiesSpaces' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelOccupiesSpaces'");
 					GlobalId = null;
 				}
 				else
@@ -106902,6 +108066,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelOccupiesSpaces'");
 					OwnerHistory = null;
 				}
 				else
@@ -106923,6 +108088,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelOccupiesSpaces'");
 					RelatedObjects = null;
 				}
 				else
@@ -106937,6 +108103,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingActor' is not optional in 'IFCRelOccupiesSpaces'");
 					RelatingActor = null;
 				}
 				else
@@ -107089,11 +108256,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELOVERRIDESPROPERTIES requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelOverridesProperties' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelOverridesProperties'");
 					GlobalId = null;
 				}
 				else
@@ -107101,6 +108269,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelOverridesProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -107122,6 +108291,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelOverridesProperties'");
 					RelatedObjects = null;
 				}
 				else
@@ -107129,6 +108299,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingPropertyDefinition' is not optional in 'IFCRelOverridesProperties'");
 					RelatingPropertyDefinition = null;
 				}
 				else
@@ -107136,6 +108307,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OverridingProperties' is not optional in 'IFCRelOverridesProperties'");
 					OverridingProperties = null;
 				}
 				else
@@ -107295,11 +108467,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELPROJECTSELEMENT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelProjectsElement' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelProjectsElement'");
 					GlobalId = null;
 				}
 				else
@@ -107307,6 +108480,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelProjectsElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -107328,6 +108502,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingElement' is not optional in 'IFCRelProjectsElement'");
 					RelatingElement = null;
 				}
 				else
@@ -107335,6 +108510,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedFeatureElement' is not optional in 'IFCRelProjectsElement'");
 					RelatedFeatureElement = null;
 				}
 				else
@@ -107502,11 +108678,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELREFERENCEDINSPATIALSTRUCTURE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelReferencedInSpatialStructure' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelReferencedInSpatialStructure'");
 					GlobalId = null;
 				}
 				else
@@ -107514,6 +108691,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelReferencedInSpatialStructure'");
 					OwnerHistory = null;
 				}
 				else
@@ -107535,6 +108713,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedElements' is not optional in 'IFCRelReferencedInSpatialStructure'");
 					RelatedElements = null;
 				}
 				else
@@ -107542,6 +108721,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingStructure' is not optional in 'IFCRelReferencedInSpatialStructure'");
 					RelatingStructure = null;
 				}
 				else
@@ -107737,11 +108917,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELSCHEDULESCOSTITEMS requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelSchedulesCostItems' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelSchedulesCostItems'");
 					GlobalId = null;
 				}
 				else
@@ -107749,6 +108930,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelSchedulesCostItems'");
 					OwnerHistory = null;
 				}
 				else
@@ -107770,6 +108952,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedObjects' is not optional in 'IFCRelSchedulesCostItems'");
 					RelatedObjects = null;
 				}
 				else
@@ -107784,6 +108967,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingControl' is not optional in 'IFCRelSchedulesCostItems'");
 					RelatingControl = null;
 				}
 				else
@@ -107931,11 +109115,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELSEQUENCE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelSequence' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelSequence'");
 					GlobalId = null;
 				}
 				else
@@ -107943,6 +109128,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelSequence'");
 					OwnerHistory = null;
 				}
 				else
@@ -107964,6 +109150,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingProcess' is not optional in 'IFCRelSequence'");
 					RelatingProcess = null;
 				}
 				else
@@ -107971,6 +109158,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedProcess' is not optional in 'IFCRelSequence'");
 					RelatedProcess = null;
 				}
 				else
@@ -107978,6 +109166,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TimeLag' is not optional in 'IFCRelSequence'");
 					TimeLag = null;
 				}
 				else
@@ -107985,6 +109174,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SequenceType' is not optional in 'IFCRelSequence'");
 					SequenceType = null;
 				}
 				else
@@ -108190,11 +109380,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELSERVICESBUILDINGS requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelServicesBuildings' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelServicesBuildings'");
 					GlobalId = null;
 				}
 				else
@@ -108202,6 +109393,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelServicesBuildings'");
 					OwnerHistory = null;
 				}
 				else
@@ -108223,6 +109415,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingSystem' is not optional in 'IFCRelServicesBuildings'");
 					RelatingSystem = null;
 				}
 				else
@@ -108230,6 +109423,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedBuildings' is not optional in 'IFCRelServicesBuildings'");
 					RelatedBuildings = null;
 				}
 				else
@@ -108431,11 +109625,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELSPACEBOUNDARY requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelSpaceBoundary' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelSpaceBoundary'");
 					GlobalId = null;
 				}
 				else
@@ -108443,6 +109638,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelSpaceBoundary'");
 					OwnerHistory = null;
 				}
 				else
@@ -108464,6 +109660,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingSpace' is not optional in 'IFCRelSpaceBoundary'");
 					RelatingSpace = null;
 				}
 				else
@@ -108485,6 +109682,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PhysicalOrVirtualBoundary' is not optional in 'IFCRelSpaceBoundary'");
 					PhysicalOrVirtualBoundary = null;
 				}
 				else
@@ -108492,6 +109690,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'InternalOrExternalBoundary' is not optional in 'IFCRelSpaceBoundary'");
 					InternalOrExternalBoundary = null;
 				}
 				else
@@ -108723,11 +109922,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELVOIDSELEMENT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelVoidsElement' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelVoidsElement'");
 					GlobalId = null;
 				}
 				else
@@ -108735,6 +109935,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelVoidsElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -108756,6 +109957,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatingBuildingElement' is not optional in 'IFCRelVoidsElement'");
 					RelatingBuildingElement = null;
 				}
 				else
@@ -108763,6 +109965,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelatedOpeningElement' is not optional in 'IFCRelVoidsElement'");
 					RelatedOpeningElement = null;
 				}
 				else
@@ -108914,11 +110117,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelationship' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRelationship'");
 					GlobalId = null;
 				}
 				else
@@ -108926,6 +110130,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRelationship'");
 					OwnerHistory = null;
 				}
 				else
@@ -109036,11 +110241,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELAXATION requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRelaxation' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RelaxationValue' is not optional in 'IFCRelaxation'");
 					RelaxationValue = null;
 				}
 				else
@@ -109048,6 +110254,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'InitialStress' is not optional in 'IFCRelaxation'");
 					InitialStress = null;
 				}
 				else
@@ -109185,11 +110392,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREPRESENTATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRepresentation' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ContextOfItems' is not optional in 'IFCRepresentation'");
 					ContextOfItems = null;
 				}
 				else
@@ -109211,6 +110419,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Items' is not optional in 'IFCRepresentation'");
 					Items = null;
 				}
 				else
@@ -109449,7 +110658,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREPRESENTATIONCONTEXT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRepresentationContext' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -109594,7 +110803,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREPRESENTATIONITEM requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRepresentationItem' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -109692,11 +110901,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREPRESENTATIONMAP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRepresentationMap' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MappingOrigin' is not optional in 'IFCRepresentationMap'");
 					MappingOrigin = null;
 				}
 				else
@@ -109704,6 +110914,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MappedRepresentation' is not optional in 'IFCRepresentationMap'");
 					MappedRepresentation = null;
 				}
 				else
@@ -109846,11 +111057,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRESOURCE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCResource' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCResource'");
 					GlobalId = null;
 				}
 				else
@@ -109858,6 +111070,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCResource'");
 					OwnerHistory = null;
 				}
 				else
@@ -110048,11 +111261,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREVOLVEDAREASOLID requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRevolvedAreaSolid' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SweptArea' is not optional in 'IFCRevolvedAreaSolid'");
 					SweptArea = null;
 				}
 				else
@@ -110060,6 +111274,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCRevolvedAreaSolid'");
 					Position = null;
 				}
 				else
@@ -110067,6 +111282,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Axis' is not optional in 'IFCRevolvedAreaSolid'");
 					Axis = null;
 				}
 				else
@@ -110074,6 +111290,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Angle' is not optional in 'IFCRevolvedAreaSolid'");
 					Angle = null;
 				}
 				else
@@ -110228,7 +111445,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRIBPLATEPROFILEPROPERTIES requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRibPlateProfileProperties' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -110275,6 +111492,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Direction' is not optional in 'IFCRibPlateProfileProperties'");
 					Direction = null;
 				}
 				else
@@ -110490,11 +111708,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRIGHTCIRCULARCONE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRightCircularCone' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCRightCircularCone'");
 					Position = null;
 				}
 				else
@@ -110502,6 +111721,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Height' is not optional in 'IFCRightCircularCone'");
 					Height = null;
 				}
 				else
@@ -110509,6 +111729,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BottomRadius' is not optional in 'IFCRightCircularCone'");
 					BottomRadius = null;
 				}
 				else
@@ -110638,11 +111859,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRIGHTCIRCULARCYLINDER requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRightCircularCylinder' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCRightCircularCylinder'");
 					Position = null;
 				}
 				else
@@ -110650,6 +111872,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Height' is not optional in 'IFCRightCircularCylinder'");
 					Height = null;
 				}
 				else
@@ -110657,6 +111880,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Radius' is not optional in 'IFCRightCircularCylinder'");
 					Radius = null;
 				}
 				else
@@ -110821,11 +112045,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCROOF requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRoof' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRoof'");
 					GlobalId = null;
 				}
 				else
@@ -110833,6 +112058,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRoof'");
 					OwnerHistory = null;
 				}
 				else
@@ -110882,6 +112108,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ShapeType' is not optional in 'IFCRoof'");
 					ShapeType = null;
 				}
 				else
@@ -111050,11 +112277,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCROOT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRoot' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRoot'");
 					GlobalId = null;
 				}
 				else
@@ -111062,6 +112290,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRoot'");
 					OwnerHistory = null;
 				}
 				else
@@ -111271,11 +112500,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCROUNDEDEDGEFEATURE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRoundedEdgeFeature' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCRoundedEdgeFeature'");
 					GlobalId = null;
 				}
 				else
@@ -111283,6 +112513,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCRoundedEdgeFeature'");
 					OwnerHistory = null;
 				}
 				else
@@ -111518,11 +112749,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCROUNDEDRECTANGLEPROFILEDEF requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCRoundedRectangleProfileDef' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCRoundedRectangleProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -111537,6 +112769,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCRoundedRectangleProfileDef'");
 					Position = null;
 				}
 				else
@@ -111544,6 +112777,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'XDim' is not optional in 'IFCRoundedRectangleProfileDef'");
 					XDim = null;
 				}
 				else
@@ -111551,6 +112785,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'YDim' is not optional in 'IFCRoundedRectangleProfileDef'");
 					YDim = null;
 				}
 				else
@@ -111558,6 +112793,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RoundingRadius' is not optional in 'IFCRoundedRectangleProfileDef'");
 					RoundingRadius = null;
 				}
 				else
@@ -111706,11 +112942,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSIUNIT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSIUnit' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Dimensions' is not optional in 'IFCSIUnit'");
 					Dimensions = null;
 				}
 				else
@@ -111718,6 +112955,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'UnitType' is not optional in 'IFCSIUnit'");
 					UnitType = null;
 				}
 				else
@@ -111732,6 +112970,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCSIUnit'");
 					Name = null;
 				}
 				else
@@ -111877,11 +113116,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSANITARYTERMINALTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSanitaryTerminalType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSanitaryTerminalType'");
 					GlobalId = null;
 				}
 				else
@@ -111889,6 +113129,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSanitaryTerminalType'");
 					OwnerHistory = null;
 				}
 				else
@@ -111945,6 +113186,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCSanitaryTerminalType'");
 					PredefinedType = null;
 				}
 				else
@@ -112188,11 +113430,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 23)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSCHEDULETIMECONTROL requires 23 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCScheduleTimeControl' requires 23 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCScheduleTimeControl'");
 					GlobalId = null;
 				}
 				else
@@ -112200,6 +113443,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCScheduleTimeControl'");
 					OwnerHistory = null;
 				}
 				else
@@ -112930,11 +114174,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSECTIONPROPERTIES requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSectionProperties' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SectionType' is not optional in 'IFCSectionProperties'");
 					SectionType = null;
 				}
 				else
@@ -112942,6 +114187,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'StartProfile' is not optional in 'IFCSectionProperties'");
 					StartProfile = null;
 				}
 				else
@@ -113107,11 +114353,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSECTIONREINFORCEMENTPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSectionReinforcementProperties' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LongitudinalStartPosition' is not optional in 'IFCSectionReinforcementProperties'");
 					LongitudinalStartPosition = null;
 				}
 				else
@@ -113119,6 +114366,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LongitudinalEndPosition' is not optional in 'IFCSectionReinforcementProperties'");
 					LongitudinalEndPosition = null;
 				}
 				else
@@ -113133,6 +114381,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ReinforcementRole' is not optional in 'IFCSectionReinforcementProperties'");
 					ReinforcementRole = null;
 				}
 				else
@@ -113140,6 +114389,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SectionDefinition' is not optional in 'IFCSectionReinforcementProperties'");
 					SectionDefinition = null;
 				}
 				else
@@ -113147,6 +114397,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CrossSectionReinforcementDefinitions' is not optional in 'IFCSectionReinforcementProperties'");
 					CrossSectionReinforcementDefinitions = null;
 				}
 				else
@@ -113444,11 +114695,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSECTIONEDSPINE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSectionedSpine' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SpineCurve' is not optional in 'IFCSectionedSpine'");
 					SpineCurve = null;
 				}
 				else
@@ -113456,6 +114708,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CrossSections' is not optional in 'IFCSectionedSpine'");
 					CrossSections = null;
 				}
 				else
@@ -113463,6 +114716,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CrossSectionPositions' is not optional in 'IFCSectionedSpine'");
 					CrossSectionPositions = null;
 				}
 				else
@@ -113657,11 +114911,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSENSORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSensorType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSensorType'");
 					GlobalId = null;
 				}
 				else
@@ -113669,6 +114924,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSensorType'");
 					OwnerHistory = null;
 				}
 				else
@@ -113725,6 +114981,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCSensorType'");
 					PredefinedType = null;
 				}
 				else
@@ -113900,11 +115157,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSERVICELIFE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCServiceLife' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCServiceLife'");
 					GlobalId = null;
 				}
 				else
@@ -113912,6 +115170,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCServiceLife'");
 					OwnerHistory = null;
 				}
 				else
@@ -113940,6 +115199,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ServiceLifeType' is not optional in 'IFCServiceLife'");
 					ServiceLifeType = null;
 				}
 				else
@@ -113947,6 +115207,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ServiceLifeDuration' is not optional in 'IFCServiceLife'");
 					ServiceLifeDuration = null;
 				}
 				else
@@ -114134,11 +115395,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSERVICELIFEFACTOR requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCServiceLifeFactor' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCServiceLifeFactor'");
 					GlobalId = null;
 				}
 				else
@@ -114146,6 +115408,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCServiceLifeFactor'");
 					OwnerHistory = null;
 				}
 				else
@@ -114167,6 +115430,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCServiceLifeFactor'");
 					PredefinedType = null;
 				}
 				else
@@ -114181,6 +115445,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MostUsedValue' is not optional in 'IFCServiceLifeFactor'");
 					MostUsedValue = null;
 				}
 				else
@@ -114400,11 +115665,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSHAPEASPECT requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCShapeAspect' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ShapeRepresentations' is not optional in 'IFCShapeAspect'");
 					ShapeRepresentations = null;
 				}
 				else
@@ -114426,6 +115692,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProductDefinitional' is not optional in 'IFCShapeAspect'");
 					ProductDefinitional = null;
 				}
 				else
@@ -114433,6 +115700,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PartOfProductDefinitionShape' is not optional in 'IFCShapeAspect'");
 					PartOfProductDefinitionShape = null;
 				}
 				else
@@ -114666,11 +115934,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSHAPEMODEL requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCShapeModel' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ContextOfItems' is not optional in 'IFCShapeModel'");
 					ContextOfItems = null;
 				}
 				else
@@ -114692,6 +115961,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Items' is not optional in 'IFCShapeModel'");
 					Items = null;
 				}
 				else
@@ -114866,11 +116136,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSHAPEREPRESENTATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCShapeRepresentation' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ContextOfItems' is not optional in 'IFCShapeRepresentation'");
 					ContextOfItems = null;
 				}
 				else
@@ -114892,6 +116163,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Items' is not optional in 'IFCShapeRepresentation'");
 					Items = null;
 				}
 				else
@@ -115001,11 +116273,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSHELLBASEDSURFACEMODEL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCShellBasedSurfaceModel' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SbsmBoundary' is not optional in 'IFCShellBasedSurfaceModel'");
 					SbsmBoundary = null;
 				}
 				else
@@ -115124,11 +116397,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSIMPLEPROPERTY requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSimpleProperty' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCSimpleProperty'");
 					Name = null;
 				}
 				else
@@ -115250,11 +116524,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 14)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSITE requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSite' requires 14 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSite'");
 					GlobalId = null;
 				}
 				else
@@ -115262,6 +116537,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSite'");
 					OwnerHistory = null;
 				}
 				else
@@ -115311,6 +116587,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CompositionType' is not optional in 'IFCSite'");
 					CompositionType = null;
 				}
 				else
@@ -115653,11 +116930,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSLAB requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSlab' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSlab'");
 					GlobalId = null;
 				}
 				else
@@ -115665,6 +116943,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSlab'");
 					OwnerHistory = null;
 				}
 				else
@@ -115881,11 +117160,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSLABTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSlabType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSlabType'");
 					GlobalId = null;
 				}
 				else
@@ -115893,6 +117173,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSlabType'");
 					OwnerHistory = null;
 				}
 				else
@@ -115949,6 +117230,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCSlabType'");
 					PredefinedType = null;
 				}
 				else
@@ -116117,7 +117399,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSLIPPAGECONNECTIONCONDITION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSlippageConnectionCondition' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -116304,7 +117586,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSOLIDMODEL requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSolidModel' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -116385,11 +117667,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSOUNDPROPERTIES requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSoundProperties' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSoundProperties'");
 					GlobalId = null;
 				}
 				else
@@ -116397,6 +117680,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSoundProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -116418,6 +117702,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'IsAttenuating' is not optional in 'IFCSoundProperties'");
 					IsAttenuating = null;
 				}
 				else
@@ -116432,6 +117717,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SoundValues' is not optional in 'IFCSoundProperties'");
 					SoundValues = null;
 				}
 				else
@@ -116634,11 +117920,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSOUNDVALUE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSoundValue' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSoundValue'");
 					GlobalId = null;
 				}
 				else
@@ -116646,6 +117933,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSoundValue'");
 					OwnerHistory = null;
 				}
 				else
@@ -116674,6 +117962,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Frequency' is not optional in 'IFCSoundValue'");
 					Frequency = null;
 				}
 				else
@@ -116884,11 +118173,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPACE requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSpace' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSpace'");
 					GlobalId = null;
 				}
 				else
@@ -116896,6 +118186,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSpace'");
 					OwnerHistory = null;
 				}
 				else
@@ -116945,6 +118236,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CompositionType' is not optional in 'IFCSpace'");
 					CompositionType = null;
 				}
 				else
@@ -116952,6 +118244,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'InteriorOrExteriorSpace' is not optional in 'IFCSpace'");
 					InteriorOrExteriorSpace = null;
 				}
 				else
@@ -117207,11 +118500,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPACEHEATERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSpaceHeaterType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSpaceHeaterType'");
 					GlobalId = null;
 				}
 				else
@@ -117219,6 +118513,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSpaceHeaterType'");
 					OwnerHistory = null;
 				}
 				else
@@ -117275,6 +118570,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCSpaceHeaterType'");
 					PredefinedType = null;
 				}
 				else
@@ -117469,11 +118765,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPACEPROGRAM requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSpaceProgram' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSpaceProgram'");
 					GlobalId = null;
 				}
 				else
@@ -117481,6 +118778,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSpaceProgram'");
 					OwnerHistory = null;
 				}
 				else
@@ -117509,6 +118807,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SpaceProgramIdentifier' is not optional in 'IFCSpaceProgram'");
 					SpaceProgramIdentifier = null;
 				}
 				else
@@ -117537,6 +118836,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'StandardRequiredArea' is not optional in 'IFCSpaceProgram'");
 					StandardRequiredArea = null;
 				}
 				else
@@ -117843,11 +119143,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 14)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPACETHERMALLOADPROPERTIES requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSpaceThermalLoadProperties' requires 14 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSpaceThermalLoadProperties'");
 					GlobalId = null;
 				}
 				else
@@ -117855,6 +119156,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSpaceThermalLoadProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -117883,6 +119185,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ThermalLoadSource' is not optional in 'IFCSpaceThermalLoadProperties'");
 					ThermalLoadSource = null;
 				}
 				else
@@ -117890,6 +119193,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PropertySource' is not optional in 'IFCSpaceThermalLoadProperties'");
 					PropertySource = null;
 				}
 				else
@@ -117904,6 +119208,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MaximumValue' is not optional in 'IFCSpaceThermalLoadProperties'");
 					MaximumValue = null;
 				}
 				else
@@ -117939,6 +119244,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[13] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ThermalLoadType' is not optional in 'IFCSpaceThermalLoadProperties'");
 					ThermalLoadType = null;
 				}
 				else
@@ -118308,11 +119614,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPACETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSpaceType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSpaceType'");
 					GlobalId = null;
 				}
 				else
@@ -118320,6 +119627,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSpaceType'");
 					OwnerHistory = null;
 				}
 				else
@@ -118376,6 +119684,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCSpaceType'");
 					PredefinedType = null;
 				}
 				else
@@ -118589,11 +119898,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPATIALSTRUCTUREELEMENT requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSpatialStructureElement' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSpatialStructureElement'");
 					GlobalId = null;
 				}
 				else
@@ -118601,6 +119911,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSpatialStructureElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -118650,6 +119961,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CompositionType' is not optional in 'IFCSpatialStructureElement'");
 					CompositionType = null;
 				}
 				else
@@ -118881,11 +120193,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPATIALSTRUCTUREELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSpatialStructureElementType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSpatialStructureElementType'");
 					GlobalId = null;
 				}
 				else
@@ -118893,6 +120206,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSpatialStructureElementType'");
 					OwnerHistory = null;
 				}
 				else
@@ -119079,11 +120393,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPHERE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSphere' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCSphere'");
 					Position = null;
 				}
 				else
@@ -119091,6 +120406,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Radius' is not optional in 'IFCSphere'");
 					Radius = null;
 				}
 				else
@@ -119202,11 +120518,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTACKTERMINALTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStackTerminalType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStackTerminalType'");
 					GlobalId = null;
 				}
 				else
@@ -119214,6 +120531,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStackTerminalType'");
 					OwnerHistory = null;
 				}
 				else
@@ -119270,6 +120588,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCStackTerminalType'");
 					PredefinedType = null;
 				}
 				else
@@ -119472,11 +120791,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTAIR requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStair' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStair'");
 					GlobalId = null;
 				}
 				else
@@ -119484,6 +120804,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStair'");
 					OwnerHistory = null;
 				}
 				else
@@ -119533,6 +120854,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ShapeType' is not optional in 'IFCStair'");
 					ShapeType = null;
 				}
 				else
@@ -119724,11 +121046,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 12)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTAIRFLIGHT requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStairFlight' requires 12 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStairFlight'");
 					GlobalId = null;
 				}
 				else
@@ -119736,6 +121059,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStairFlight'");
 					OwnerHistory = null;
 				}
 				else
@@ -120051,11 +121375,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTAIRFLIGHTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStairFlightType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStairFlightType'");
 					GlobalId = null;
 				}
 				else
@@ -120063,6 +121388,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStairFlightType'");
 					OwnerHistory = null;
 				}
 				else
@@ -120119,6 +121445,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCStairFlightType'");
 					PredefinedType = null;
 				}
 				else
@@ -120304,11 +121631,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALACTION requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralAction' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralAction'");
 					GlobalId = null;
 				}
 				else
@@ -120316,6 +121644,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralAction'");
 					OwnerHistory = null;
 				}
 				else
@@ -120358,6 +121687,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AppliedLoad' is not optional in 'IFCStructuralAction'");
 					AppliedLoad = null;
 				}
 				else
@@ -120365,6 +121695,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalOrLocal' is not optional in 'IFCStructuralAction'");
 					GlobalOrLocal = null;
 				}
 				else
@@ -120372,6 +121703,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DestabilizingLoad' is not optional in 'IFCStructuralAction'");
 					DestabilizingLoad = null;
 				}
 				else
@@ -120590,11 +121922,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALACTIVITY requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralActivity' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralActivity'");
 					GlobalId = null;
 				}
 				else
@@ -120602,6 +121935,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralActivity'");
 					OwnerHistory = null;
 				}
 				else
@@ -120644,6 +121978,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AppliedLoad' is not optional in 'IFCStructuralActivity'");
 					AppliedLoad = null;
 				}
 				else
@@ -120651,6 +121986,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalOrLocal' is not optional in 'IFCStructuralActivity'");
 					GlobalOrLocal = null;
 				}
 				else
@@ -120852,11 +122188,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALANALYSISMODEL requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralAnalysisModel' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralAnalysisModel'");
 					GlobalId = null;
 				}
 				else
@@ -120864,6 +122201,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralAnalysisModel'");
 					OwnerHistory = null;
 				}
 				else
@@ -120892,6 +122230,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCStructuralAnalysisModel'");
 					PredefinedType = null;
 				}
 				else
@@ -121174,11 +122513,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALCONNECTION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralConnection' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralConnection'");
 					GlobalId = null;
 				}
 				else
@@ -121186,6 +122526,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralConnection'");
 					OwnerHistory = null;
 				}
 				else
@@ -121389,7 +122730,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALCONNECTIONCONDITION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralConnectionCondition' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -121495,11 +122836,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALCURVECONNECTION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralCurveConnection' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralCurveConnection'");
 					GlobalId = null;
 				}
 				else
@@ -121507,6 +122849,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralCurveConnection'");
 					OwnerHistory = null;
 				}
 				else
@@ -121694,11 +123037,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALCURVEMEMBER requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralCurveMember' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralCurveMember'");
 					GlobalId = null;
 				}
 				else
@@ -121706,6 +123050,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralCurveMember'");
 					OwnerHistory = null;
 				}
 				else
@@ -121748,6 +123093,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCStructuralCurveMember'");
 					PredefinedType = null;
 				}
 				else
@@ -121906,11 +123252,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALCURVEMEMBERVARYING requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralCurveMemberVarying' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralCurveMemberVarying'");
 					GlobalId = null;
 				}
 				else
@@ -121918,6 +123265,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralCurveMemberVarying'");
 					OwnerHistory = null;
 				}
 				else
@@ -121960,6 +123308,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCStructuralCurveMemberVarying'");
 					PredefinedType = null;
 				}
 				else
@@ -122103,11 +123452,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALITEM requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralItem' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralItem'");
 					GlobalId = null;
 				}
 				else
@@ -122115,6 +123465,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralItem'");
 					OwnerHistory = null;
 				}
 				else
@@ -122321,11 +123672,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 12)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLINEARACTION requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralLinearAction' requires 12 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralLinearAction'");
 					GlobalId = null;
 				}
 				else
@@ -122333,6 +123685,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralLinearAction'");
 					OwnerHistory = null;
 				}
 				else
@@ -122375,6 +123728,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AppliedLoad' is not optional in 'IFCStructuralLinearAction'");
 					AppliedLoad = null;
 				}
 				else
@@ -122382,6 +123736,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalOrLocal' is not optional in 'IFCStructuralLinearAction'");
 					GlobalOrLocal = null;
 				}
 				else
@@ -122389,6 +123744,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DestabilizingLoad' is not optional in 'IFCStructuralLinearAction'");
 					DestabilizingLoad = null;
 				}
 				else
@@ -122403,6 +123759,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProjectedOrTrue' is not optional in 'IFCStructuralLinearAction'");
 					ProjectedOrTrue = null;
 				}
 				else
@@ -122618,11 +123975,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 14)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLINEARACTIONVARYING requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralLinearActionVarying' requires 14 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralLinearActionVarying'");
 					GlobalId = null;
 				}
 				else
@@ -122630,6 +123988,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralLinearActionVarying'");
 					OwnerHistory = null;
 				}
 				else
@@ -122672,6 +124031,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AppliedLoad' is not optional in 'IFCStructuralLinearActionVarying'");
 					AppliedLoad = null;
 				}
 				else
@@ -122679,6 +124039,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalOrLocal' is not optional in 'IFCStructuralLinearActionVarying'");
 					GlobalOrLocal = null;
 				}
 				else
@@ -122686,6 +124047,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DestabilizingLoad' is not optional in 'IFCStructuralLinearActionVarying'");
 					DestabilizingLoad = null;
 				}
 				else
@@ -122700,6 +124062,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProjectedOrTrue' is not optional in 'IFCStructuralLinearActionVarying'");
 					ProjectedOrTrue = null;
 				}
 				else
@@ -122707,6 +124070,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[12] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'VaryingAppliedLoadLocation' is not optional in 'IFCStructuralLinearActionVarying'");
 					VaryingAppliedLoadLocation = null;
 				}
 				else
@@ -122714,6 +124078,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[13] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SubsequentAppliedLoads' is not optional in 'IFCStructuralLinearActionVarying'");
 					SubsequentAppliedLoads = null;
 				}
 				else
@@ -122956,7 +124321,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOAD requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralLoad' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -123083,11 +124448,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADGROUP requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralLoadGroup' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralLoadGroup'");
 					GlobalId = null;
 				}
 				else
@@ -123095,6 +124461,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralLoadGroup'");
 					OwnerHistory = null;
 				}
 				else
@@ -123123,6 +124490,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCStructuralLoadGroup'");
 					PredefinedType = null;
 				}
 				else
@@ -123130,6 +124498,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ActionType' is not optional in 'IFCStructuralLoadGroup'");
 					ActionType = null;
 				}
 				else
@@ -123137,6 +124506,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ActionSource' is not optional in 'IFCStructuralLoadGroup'");
 					ActionSource = null;
 				}
 				else
@@ -123435,7 +124805,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADLINEARFORCE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralLoadLinearForce' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -123716,7 +125086,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADPLANARFORCE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralLoadPlanarForce' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -123912,7 +125282,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADSINGLEDISPLACEMENT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralLoadSingleDisplacement' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -124191,7 +125561,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADSINGLEDISPLACEMENTDISTORTION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralLoadSingleDisplacementDistortion' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -124411,7 +125781,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADSINGLEFORCE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralLoadSingleForce' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -124690,7 +126060,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADSINGLEFORCEWARPING requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralLoadSingleForceWarping' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -124890,7 +126260,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADSTATIC requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralLoadStatic' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -124973,7 +126343,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADTEMPERATURE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralLoadTemperature' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -125168,11 +126538,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALMEMBER requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralMember' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralMember'");
 					GlobalId = null;
 				}
 				else
@@ -125180,6 +126551,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralMember'");
 					OwnerHistory = null;
 				}
 				else
@@ -125402,11 +126774,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 12)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALPLANARACTION requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralPlanarAction' requires 12 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralPlanarAction'");
 					GlobalId = null;
 				}
 				else
@@ -125414,6 +126787,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralPlanarAction'");
 					OwnerHistory = null;
 				}
 				else
@@ -125456,6 +126830,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AppliedLoad' is not optional in 'IFCStructuralPlanarAction'");
 					AppliedLoad = null;
 				}
 				else
@@ -125463,6 +126838,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalOrLocal' is not optional in 'IFCStructuralPlanarAction'");
 					GlobalOrLocal = null;
 				}
 				else
@@ -125470,6 +126846,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DestabilizingLoad' is not optional in 'IFCStructuralPlanarAction'");
 					DestabilizingLoad = null;
 				}
 				else
@@ -125484,6 +126861,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProjectedOrTrue' is not optional in 'IFCStructuralPlanarAction'");
 					ProjectedOrTrue = null;
 				}
 				else
@@ -125699,11 +127077,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 14)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALPLANARACTIONVARYING requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralPlanarActionVarying' requires 14 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralPlanarActionVarying'");
 					GlobalId = null;
 				}
 				else
@@ -125711,6 +127090,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralPlanarActionVarying'");
 					OwnerHistory = null;
 				}
 				else
@@ -125753,6 +127133,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AppliedLoad' is not optional in 'IFCStructuralPlanarActionVarying'");
 					AppliedLoad = null;
 				}
 				else
@@ -125760,6 +127141,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalOrLocal' is not optional in 'IFCStructuralPlanarActionVarying'");
 					GlobalOrLocal = null;
 				}
 				else
@@ -125767,6 +127149,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DestabilizingLoad' is not optional in 'IFCStructuralPlanarActionVarying'");
 					DestabilizingLoad = null;
 				}
 				else
@@ -125781,6 +127164,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProjectedOrTrue' is not optional in 'IFCStructuralPlanarActionVarying'");
 					ProjectedOrTrue = null;
 				}
 				else
@@ -125788,6 +127172,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[12] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'VaryingAppliedLoadLocation' is not optional in 'IFCStructuralPlanarActionVarying'");
 					VaryingAppliedLoadLocation = null;
 				}
 				else
@@ -125795,6 +127180,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[13] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SubsequentAppliedLoads' is not optional in 'IFCStructuralPlanarActionVarying'");
 					SubsequentAppliedLoads = null;
 				}
 				else
@@ -126068,11 +127454,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALPOINTACTION requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralPointAction' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralPointAction'");
 					GlobalId = null;
 				}
 				else
@@ -126080,6 +127467,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralPointAction'");
 					OwnerHistory = null;
 				}
 				else
@@ -126122,6 +127510,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AppliedLoad' is not optional in 'IFCStructuralPointAction'");
 					AppliedLoad = null;
 				}
 				else
@@ -126129,6 +127518,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalOrLocal' is not optional in 'IFCStructuralPointAction'");
 					GlobalOrLocal = null;
 				}
 				else
@@ -126136,6 +127526,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DestabilizingLoad' is not optional in 'IFCStructuralPointAction'");
 					DestabilizingLoad = null;
 				}
 				else
@@ -126306,11 +127697,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALPOINTCONNECTION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralPointConnection' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralPointConnection'");
 					GlobalId = null;
 				}
 				else
@@ -126318,6 +127710,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralPointConnection'");
 					OwnerHistory = null;
 				}
 				else
@@ -126516,11 +127909,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALPOINTREACTION requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralPointReaction' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralPointReaction'");
 					GlobalId = null;
 				}
 				else
@@ -126528,6 +127922,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralPointReaction'");
 					OwnerHistory = null;
 				}
 				else
@@ -126570,6 +127965,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AppliedLoad' is not optional in 'IFCStructuralPointReaction'");
 					AppliedLoad = null;
 				}
 				else
@@ -126577,6 +127973,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalOrLocal' is not optional in 'IFCStructuralPointReaction'");
 					GlobalOrLocal = null;
 				}
 				else
@@ -126807,7 +128204,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 23)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALPROFILEPROPERTIES requires 23 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralProfileProperties' requires 23 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -127519,11 +128916,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALREACTION requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralReaction' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralReaction'");
 					GlobalId = null;
 				}
 				else
@@ -127531,6 +128929,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralReaction'");
 					OwnerHistory = null;
 				}
 				else
@@ -127573,6 +128972,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AppliedLoad' is not optional in 'IFCStructuralReaction'");
 					AppliedLoad = null;
 				}
 				else
@@ -127580,6 +128980,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalOrLocal' is not optional in 'IFCStructuralReaction'");
 					GlobalOrLocal = null;
 				}
 				else
@@ -127753,11 +129154,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALRESULTGROUP requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralResultGroup' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralResultGroup'");
 					GlobalId = null;
 				}
 				else
@@ -127765,6 +129167,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralResultGroup'");
 					OwnerHistory = null;
 				}
 				else
@@ -127793,6 +129196,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TheoryType' is not optional in 'IFCStructuralResultGroup'");
 					TheoryType = null;
 				}
 				else
@@ -127807,6 +129211,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'IsLinear' is not optional in 'IFCStructuralResultGroup'");
 					IsLinear = null;
 				}
 				else
@@ -128067,7 +129472,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 27)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALSTEELPROFILEPROPERTIES requires 27 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralSteelProfileProperties' requires 27 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -128617,11 +130022,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALSURFACECONNECTION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralSurfaceConnection' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralSurfaceConnection'");
 					GlobalId = null;
 				}
 				else
@@ -128629,6 +130035,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralSurfaceConnection'");
 					OwnerHistory = null;
 				}
 				else
@@ -128820,11 +130227,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALSURFACEMEMBER requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralSurfaceMember' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralSurfaceMember'");
 					GlobalId = null;
 				}
 				else
@@ -128832,6 +130240,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralSurfaceMember'");
 					OwnerHistory = null;
 				}
 				else
@@ -128874,6 +130283,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCStructuralSurfaceMember'");
 					PredefinedType = null;
 				}
 				else
@@ -129134,11 +130544,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALSURFACEMEMBERVARYING requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuralSurfaceMemberVarying' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCStructuralSurfaceMemberVarying'");
 					GlobalId = null;
 				}
 				else
@@ -129146,6 +130557,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCStructuralSurfaceMemberVarying'");
 					OwnerHistory = null;
 				}
 				else
@@ -129188,6 +130600,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCStructuralSurfaceMemberVarying'");
 					PredefinedType = null;
 				}
 				else
@@ -129202,6 +130615,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SubsequentThickness' is not optional in 'IFCStructuralSurfaceMemberVarying'");
 					SubsequentThickness = null;
 				}
 				else
@@ -129209,6 +130623,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[10] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'VaryingThicknessLocation' is not optional in 'IFCStructuralSurfaceMemberVarying'");
 					VaryingThicknessLocation = null;
 				}
 				else
@@ -129445,11 +130860,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTUREDDIMENSIONCALLOUT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStructuredDimensionCallout' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Contents' is not optional in 'IFCStructuredDimensionCallout'");
 					Contents = null;
 				}
 				else
@@ -129524,11 +130940,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTYLEMODEL requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStyleModel' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ContextOfItems' is not optional in 'IFCStyleModel'");
 					ContextOfItems = null;
 				}
 				else
@@ -129550,6 +130967,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Items' is not optional in 'IFCStyleModel'");
 					Items = null;
 				}
 				else
@@ -129682,7 +131100,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTYLEDITEM requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStyledItem' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -129694,6 +131112,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCStyledItem'");
 					Styles = null;
 				}
 				else
@@ -129875,11 +131294,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTYLEDREPRESENTATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCStyledRepresentation' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ContextOfItems' is not optional in 'IFCStyledRepresentation'");
 					ContextOfItems = null;
 				}
 				else
@@ -129901,6 +131321,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Items' is not optional in 'IFCStyledRepresentation'");
 					Items = null;
 				}
 				else
@@ -130014,11 +131435,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSUBCONTRACTRESOURCE requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSubContractResource' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSubContractResource'");
 					GlobalId = null;
 				}
 				else
@@ -130026,6 +131448,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSubContractResource'");
 					OwnerHistory = null;
 				}
 				else
@@ -130278,11 +131701,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSUBEDGE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSubedge' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EdgeStart' is not optional in 'IFCSubedge'");
 					EdgeStart = null;
 				}
 				else
@@ -130290,6 +131714,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EdgeEnd' is not optional in 'IFCSubedge'");
 					EdgeEnd = null;
 				}
 				else
@@ -130297,6 +131722,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ParentEdge' is not optional in 'IFCSubedge'");
 					ParentEdge = null;
 				}
 				else
@@ -130400,7 +131826,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACE requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSurface' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -130495,11 +131921,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACECURVESWEPTAREASOLID requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSurfaceCurveSweptAreaSolid' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SweptArea' is not optional in 'IFCSurfaceCurveSweptAreaSolid'");
 					SweptArea = null;
 				}
 				else
@@ -130507,6 +131934,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCSurfaceCurveSweptAreaSolid'");
 					Position = null;
 				}
 				else
@@ -130514,6 +131942,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Directrix' is not optional in 'IFCSurfaceCurveSweptAreaSolid'");
 					Directrix = null;
 				}
 				else
@@ -130521,6 +131950,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'StartParam' is not optional in 'IFCSurfaceCurveSweptAreaSolid'");
 					StartParam = null;
 				}
 				else
@@ -130528,6 +131958,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EndParam' is not optional in 'IFCSurfaceCurveSweptAreaSolid'");
 					EndParam = null;
 				}
 				else
@@ -130535,6 +131966,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ReferenceSurface' is not optional in 'IFCSurfaceCurveSweptAreaSolid'");
 					ReferenceSurface = null;
 				}
 				else
@@ -130755,11 +132187,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACEOFLINEAREXTRUSION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSurfaceOfLinearExtrusion' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SweptCurve' is not optional in 'IFCSurfaceOfLinearExtrusion'");
 					SweptCurve = null;
 				}
 				else
@@ -130767,6 +132200,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCSurfaceOfLinearExtrusion'");
 					Position = null;
 				}
 				else
@@ -130774,6 +132208,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ExtrudedDirection' is not optional in 'IFCSurfaceOfLinearExtrusion'");
 					ExtrudedDirection = null;
 				}
 				else
@@ -130781,6 +132216,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Depth' is not optional in 'IFCSurfaceOfLinearExtrusion'");
 					Depth = null;
 				}
 				else
@@ -130939,11 +132375,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACEOFREVOLUTION requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSurfaceOfRevolution' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SweptCurve' is not optional in 'IFCSurfaceOfRevolution'");
 					SweptCurve = null;
 				}
 				else
@@ -130951,6 +132388,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCSurfaceOfRevolution'");
 					Position = null;
 				}
 				else
@@ -130958,6 +132396,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AxisPosition' is not optional in 'IFCSurfaceOfRevolution'");
 					AxisPosition = null;
 				}
 				else
@@ -131154,7 +132593,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACESTYLE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSurfaceStyle' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -131166,6 +132605,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Side' is not optional in 'IFCSurfaceStyle'");
 					Side = null;
 				}
 				else
@@ -131173,6 +132613,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCSurfaceStyle'");
 					Styles = null;
 				}
 				else
@@ -131321,11 +132762,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACESTYLELIGHTING requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSurfaceStyleLighting' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DiffuseTransmissionColour' is not optional in 'IFCSurfaceStyleLighting'");
 					DiffuseTransmissionColour = null;
 				}
 				else
@@ -131333,6 +132775,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DiffuseReflectionColour' is not optional in 'IFCSurfaceStyleLighting'");
 					DiffuseReflectionColour = null;
 				}
 				else
@@ -131340,6 +132783,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TransmissionColour' is not optional in 'IFCSurfaceStyleLighting'");
 					TransmissionColour = null;
 				}
 				else
@@ -131347,6 +132791,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ReflectanceColour' is not optional in 'IFCSurfaceStyleLighting'");
 					ReflectanceColour = null;
 				}
 				else
@@ -131515,7 +132960,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACESTYLEREFRACTION requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSurfaceStyleRefraction' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -131669,11 +133114,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACESTYLERENDERING requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSurfaceStyleRendering' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SurfaceColour' is not optional in 'IFCSurfaceStyleRendering'");
 					SurfaceColour = null;
 				}
 				else
@@ -131730,6 +133176,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ReflectanceMethod' is not optional in 'IFCSurfaceStyleRendering'");
 					ReflectanceMethod = null;
 				}
 				else
@@ -132008,11 +133455,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACESTYLESHADING requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSurfaceStyleShading' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SurfaceColour' is not optional in 'IFCSurfaceStyleShading'");
 					SurfaceColour = null;
 				}
 				else
@@ -132099,11 +133547,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACESTYLEWITHTEXTURES requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSurfaceStyleWithTextures' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Textures' is not optional in 'IFCSurfaceStyleWithTextures'");
 					Textures = null;
 				}
 				else
@@ -132222,11 +133671,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACETEXTURE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSurfaceTexture' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RepeatS' is not optional in 'IFCSurfaceTexture'");
 					RepeatS = null;
 				}
 				else
@@ -132234,6 +133684,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RepeatT' is not optional in 'IFCSurfaceTexture'");
 					RepeatT = null;
 				}
 				else
@@ -132241,6 +133692,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TextureType' is not optional in 'IFCSurfaceTexture'");
 					TextureType = null;
 				}
 				else
@@ -132438,11 +133890,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSWEPTAREASOLID requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSweptAreaSolid' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SweptArea' is not optional in 'IFCSweptAreaSolid'");
 					SweptArea = null;
 				}
 				else
@@ -132450,6 +133903,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCSweptAreaSolid'");
 					Position = null;
 				}
 				else
@@ -132609,11 +134063,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSWEPTDISKSOLID requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSweptDiskSolid' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Directrix' is not optional in 'IFCSweptDiskSolid'");
 					Directrix = null;
 				}
 				else
@@ -132621,6 +134076,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Radius' is not optional in 'IFCSweptDiskSolid'");
 					Radius = null;
 				}
 				else
@@ -132635,6 +134091,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'StartParam' is not optional in 'IFCSweptDiskSolid'");
 					StartParam = null;
 				}
 				else
@@ -132642,6 +134099,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EndParam' is not optional in 'IFCSweptDiskSolid'");
 					EndParam = null;
 				}
 				else
@@ -132883,11 +134341,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSWEPTSURFACE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSweptSurface' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SweptCurve' is not optional in 'IFCSweptSurface'");
 					SweptCurve = null;
 				}
 				else
@@ -132895,6 +134354,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCSweptSurface'");
 					Position = null;
 				}
 				else
@@ -133031,11 +134491,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSWITCHINGDEVICETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSwitchingDeviceType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSwitchingDeviceType'");
 					GlobalId = null;
 				}
 				else
@@ -133043,6 +134504,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSwitchingDeviceType'");
 					OwnerHistory = null;
 				}
 				else
@@ -133099,6 +134561,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCSwitchingDeviceType'");
 					PredefinedType = null;
 				}
 				else
@@ -133259,7 +134722,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSYMBOLSTYLE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSymbolStyle' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -133271,6 +134734,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'StyleOfSymbol' is not optional in 'IFCSymbolStyle'");
 					StyleOfSymbol = null;
 				}
 				else
@@ -133381,11 +134845,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSYSTEM requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSystem' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSystem'");
 					GlobalId = null;
 				}
 				else
@@ -133393,6 +134858,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSystem'");
 					OwnerHistory = null;
 				}
 				else
@@ -133543,11 +135009,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSYSTEMFURNITUREELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCSystemFurnitureElementType' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCSystemFurnitureElementType'");
 					GlobalId = null;
 				}
 				else
@@ -133555,6 +135022,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCSystemFurnitureElementType'");
 					OwnerHistory = null;
 				}
 				else
@@ -133803,11 +135271,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 13)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTSHAPEPROFILEDEF requires 13 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTShapeProfileDef' requires 13 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCTShapeProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -133822,6 +135291,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCTShapeProfileDef'");
 					Position = null;
 				}
 				else
@@ -133829,6 +135299,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Depth' is not optional in 'IFCTShapeProfileDef'");
 					Depth = null;
 				}
 				else
@@ -133836,6 +135307,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FlangeWidth' is not optional in 'IFCTShapeProfileDef'");
 					FlangeWidth = null;
 				}
 				else
@@ -133843,6 +135315,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WebThickness' is not optional in 'IFCTShapeProfileDef'");
 					WebThickness = null;
 				}
 				else
@@ -133850,6 +135323,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FlangeThickness' is not optional in 'IFCTShapeProfileDef'");
 					FlangeThickness = null;
 				}
 				else
@@ -134320,11 +135794,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTABLE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTable' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCTable'");
 					Name = null;
 				}
 				else
@@ -134332,6 +135807,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Rows' is not optional in 'IFCTable'");
 					Rows = null;
 				}
 				else
@@ -134489,11 +135965,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTABLEROW requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTableRow' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RowCells' is not optional in 'IFCTableRow'");
 					RowCells = null;
 				}
 				else
@@ -134501,6 +135978,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'IsHeading' is not optional in 'IFCTableRow'");
 					IsHeading = null;
 				}
 				else
@@ -134668,11 +136146,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTANKTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTankType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCTankType'");
 					GlobalId = null;
 				}
 				else
@@ -134680,6 +136159,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCTankType'");
 					OwnerHistory = null;
 				}
 				else
@@ -134736,6 +136216,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCTankType'");
 					PredefinedType = null;
 				}
 				else
@@ -134968,11 +136449,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTASK requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTask' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCTask'");
 					GlobalId = null;
 				}
 				else
@@ -134980,6 +136462,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCTask'");
 					OwnerHistory = null;
 				}
 				else
@@ -135008,6 +136491,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TaskId' is not optional in 'IFCTask'");
 					TaskId = null;
 				}
 				else
@@ -135029,6 +136513,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'IsMilestone' is not optional in 'IFCTask'");
 					IsMilestone = null;
 				}
 				else
@@ -135307,7 +136792,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTELECOMADDRESS requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTelecomAddress' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -135695,11 +137180,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 17)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTENDON requires 17 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTendon' requires 17 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCTendon'");
 					GlobalId = null;
 				}
 				else
@@ -135707,6 +137193,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCTendon'");
 					OwnerHistory = null;
 				}
 				else
@@ -135763,6 +137250,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCTendon'");
 					PredefinedType = null;
 				}
 				else
@@ -135770,6 +137258,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[10] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'NominalDiameter' is not optional in 'IFCTendon'");
 					NominalDiameter = null;
 				}
 				else
@@ -135777,6 +137266,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CrossSectionArea' is not optional in 'IFCTendon'");
 					CrossSectionArea = null;
 				}
 				else
@@ -136178,11 +137668,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTENDONANCHOR requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTendonAnchor' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCTendonAnchor'");
 					GlobalId = null;
 				}
 				else
@@ -136190,6 +137681,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCTendonAnchor'");
 					OwnerHistory = null;
 				}
 				else
@@ -136382,7 +137874,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTERMINATORSYMBOL requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTerminatorSymbol' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -136394,6 +137886,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Styles' is not optional in 'IFCTerminatorSymbol'");
 					Styles = null;
 				}
 				else
@@ -136408,6 +137901,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'AnnotatedCurve' is not optional in 'IFCTerminatorSymbol'");
 					AnnotatedCurve = null;
 				}
 				else
@@ -136531,11 +138025,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 3)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTLITERAL requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTextLiteral' requires 3 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Literal' is not optional in 'IFCTextLiteral'");
 					Literal = null;
 				}
 				else
@@ -136543,6 +138038,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Placement' is not optional in 'IFCTextLiteral'");
 					Placement = null;
 				}
 				else
@@ -136550,6 +138046,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Path' is not optional in 'IFCTextLiteral'");
 					Path = null;
 				}
 				else
@@ -136712,11 +138209,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTLITERALWITHEXTENT requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTextLiteralWithExtent' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Literal' is not optional in 'IFCTextLiteralWithExtent'");
 					Literal = null;
 				}
 				else
@@ -136724,6 +138222,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Placement' is not optional in 'IFCTextLiteralWithExtent'");
 					Placement = null;
 				}
 				else
@@ -136731,6 +138230,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Path' is not optional in 'IFCTextLiteralWithExtent'");
 					Path = null;
 				}
 				else
@@ -136738,6 +138238,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Extent' is not optional in 'IFCTextLiteralWithExtent'");
 					Extent = null;
 				}
 				else
@@ -136745,6 +138246,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BoxAlignment' is not optional in 'IFCTextLiteralWithExtent'");
 					BoxAlignment = null;
 				}
 				else
@@ -136891,7 +138393,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTSTYLE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTextStyle' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -136917,6 +138419,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TextFontStyle' is not optional in 'IFCTextStyle'");
 					TextFontStyle = null;
 				}
 				else
@@ -137096,11 +138599,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTSTYLEFONTMODEL requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTextStyleFontModel' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCTextStyleFontModel'");
 					Name = null;
 				}
 				else
@@ -137136,6 +138640,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FontSize' is not optional in 'IFCTextStyleFontModel'");
 					FontSize = null;
 				}
 				else
@@ -137354,11 +138859,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTSTYLEFORDEFINEDFONT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTextStyleForDefinedFont' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Colour' is not optional in 'IFCTextStyleForDefinedFont'");
 					Colour = null;
 				}
 				else
@@ -137502,7 +139008,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTSTYLETEXTMODEL requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTextStyleTextModel' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -137807,7 +139313,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTSTYLEWITHBOXCHARACTERISTICS requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTextStyleWithBoxCharacteristics' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
@@ -138030,7 +139536,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTURECOORDINATE requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTextureCoordinate' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -138110,11 +139616,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTURECOORDINATEGENERATOR requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTextureCoordinateGenerator' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Mode' is not optional in 'IFCTextureCoordinateGenerator'");
 					Mode = null;
 				}
 				else
@@ -138122,6 +139629,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Parameter' is not optional in 'IFCTextureCoordinateGenerator'");
 					Parameter = null;
 				}
 				else
@@ -138272,11 +139780,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTUREMAP requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTextureMap' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TextureMaps' is not optional in 'IFCTextureMap'");
 					TextureMaps = null;
 				}
 				else
@@ -138379,11 +139888,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTUREVERTEX requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTextureVertex' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Coordinates' is not optional in 'IFCTextureVertex'");
 					Coordinates = null;
 				}
 				else
@@ -138502,11 +140012,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTHERMALMATERIALPROPERTIES requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCThermalMaterialProperties' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Material' is not optional in 'IFCThermalMaterialProperties'");
 					Material = null;
 				}
 				else
@@ -138742,11 +140253,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTIMESERIES requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTimeSeries' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Name' is not optional in 'IFCTimeSeries'");
 					Name = null;
 				}
 				else
@@ -138761,6 +140273,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'StartTime' is not optional in 'IFCTimeSeries'");
 					StartTime = null;
 				}
 				else
@@ -138768,6 +140281,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'EndTime' is not optional in 'IFCTimeSeries'");
 					EndTime = null;
 				}
 				else
@@ -138775,6 +140289,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TimeSeriesDataType' is not optional in 'IFCTimeSeries'");
 					TimeSeriesDataType = null;
 				}
 				else
@@ -138782,6 +140297,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'DataOrigin' is not optional in 'IFCTimeSeries'");
 					DataOrigin = null;
 				}
 				else
@@ -139084,11 +140600,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTIMESERIESREFERENCERELATIONSHIP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTimeSeriesReferenceRelationship' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ReferencedTimeSeries' is not optional in 'IFCTimeSeriesReferenceRelationship'");
 					ReferencedTimeSeries = null;
 				}
 				else
@@ -139096,6 +140613,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TimeSeriesReferences' is not optional in 'IFCTimeSeriesReferenceRelationship'");
 					TimeSeriesReferences = null;
 				}
 				else
@@ -139259,11 +140777,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTIMESERIESSCHEDULE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTimeSeriesSchedule' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCTimeSeriesSchedule'");
 					GlobalId = null;
 				}
 				else
@@ -139271,6 +140790,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCTimeSeriesSchedule'");
 					OwnerHistory = null;
 				}
 				else
@@ -139306,6 +140826,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TimeSeriesScheduleType' is not optional in 'IFCTimeSeriesSchedule'");
 					TimeSeriesScheduleType = null;
 				}
 				else
@@ -139313,6 +140834,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[7] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TimeSeries' is not optional in 'IFCTimeSeriesSchedule'");
 					TimeSeries = null;
 				}
 				else
@@ -139507,11 +141029,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTIMESERIESVALUE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTimeSeriesValue' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ListValues' is not optional in 'IFCTimeSeriesValue'");
 					ListValues = null;
 				}
 				else
@@ -139618,7 +141141,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTOPOLOGICALREPRESENTATIONITEM requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTopologicalRepresentationItem' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -139724,11 +141247,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 4)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTOPOLOGYREPRESENTATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTopologyRepresentation' requires 4 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ContextOfItems' is not optional in 'IFCTopologyRepresentation'");
 					ContextOfItems = null;
 				}
 				else
@@ -139750,6 +141274,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Items' is not optional in 'IFCTopologyRepresentation'");
 					Items = null;
 				}
 				else
@@ -139859,11 +141384,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTRANSFORMERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTransformerType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCTransformerType'");
 					GlobalId = null;
 				}
 				else
@@ -139871,6 +141397,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCTransformerType'");
 					OwnerHistory = null;
 				}
 				else
@@ -139927,6 +141454,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCTransformerType'");
 					PredefinedType = null;
 				}
 				else
@@ -140122,11 +141650,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTRANSPORTELEMENT requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTransportElement' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCTransportElement'");
 					GlobalId = null;
 				}
 				else
@@ -140134,6 +141663,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCTransportElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -140416,11 +141946,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTRANSPORTELEMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTransportElementType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCTransportElementType'");
 					GlobalId = null;
 				}
 				else
@@ -140428,6 +141959,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCTransportElementType'");
 					OwnerHistory = null;
 				}
 				else
@@ -140484,6 +142016,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCTransportElementType'");
 					PredefinedType = null;
 				}
 				else
@@ -140658,11 +142191,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 7)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTRAPEZIUMPROFILEDEF requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTrapeziumProfileDef' requires 7 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCTrapeziumProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -140677,6 +142211,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCTrapeziumProfileDef'");
 					Position = null;
 				}
 				else
@@ -140684,6 +142219,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BottomXDim' is not optional in 'IFCTrapeziumProfileDef'");
 					BottomXDim = null;
 				}
 				else
@@ -140691,6 +142227,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TopXDim' is not optional in 'IFCTrapeziumProfileDef'");
 					TopXDim = null;
 				}
 				else
@@ -140698,6 +142235,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'YDim' is not optional in 'IFCTrapeziumProfileDef'");
 					YDim = null;
 				}
 				else
@@ -140705,6 +142243,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TopXOffset' is not optional in 'IFCTrapeziumProfileDef'");
 					TopXOffset = null;
 				}
 				else
@@ -140953,11 +142492,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTRIMMEDCURVE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTrimmedCurve' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'BasisCurve' is not optional in 'IFCTrimmedCurve'");
 					BasisCurve = null;
 				}
 				else
@@ -140965,6 +142505,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Trim1' is not optional in 'IFCTrimmedCurve'");
 					Trim1 = null;
 				}
 				else
@@ -140972,6 +142513,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Trim2' is not optional in 'IFCTrimmedCurve'");
 					Trim2 = null;
 				}
 				else
@@ -140979,6 +142521,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SenseAgreement' is not optional in 'IFCTrimmedCurve'");
 					SenseAgreement = null;
 				}
 				else
@@ -140986,6 +142529,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'MasterRepresentation' is not optional in 'IFCTrimmedCurve'");
 					MasterRepresentation = null;
 				}
 				else
@@ -141240,11 +142784,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTUBEBUNDLETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTubeBundleType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCTubeBundleType'");
 					GlobalId = null;
 				}
 				else
@@ -141252,6 +142797,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCTubeBundleType'");
 					OwnerHistory = null;
 				}
 				else
@@ -141308,6 +142854,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCTubeBundleType'");
 					PredefinedType = null;
 				}
 				else
@@ -141470,11 +143017,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTWODIRECTIONREPEATFACTOR requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTwoDirectionRepeatFactor' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'RepeatFactor' is not optional in 'IFCTwoDirectionRepeatFactor'");
 					RepeatFactor = null;
 				}
 				else
@@ -141482,6 +143030,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'SecondRepeatFactor' is not optional in 'IFCTwoDirectionRepeatFactor'");
 					SecondRepeatFactor = null;
 				}
 				else
@@ -141609,11 +143158,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 6)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTYPEOBJECT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTypeObject' requires 6 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCTypeObject'");
 					GlobalId = null;
 				}
 				else
@@ -141621,6 +143171,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCTypeObject'");
 					OwnerHistory = null;
 				}
 				else
@@ -141863,11 +143414,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTYPEPRODUCT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCTypeProduct' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCTypeProduct'");
 					GlobalId = null;
 				}
 				else
@@ -141875,6 +143427,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCTypeProduct'");
 					OwnerHistory = null;
 				}
 				else
@@ -142152,11 +143705,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 11)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCUSHAPEPROFILEDEF requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCUShapeProfileDef' requires 11 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCUShapeProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -142171,6 +143725,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCUShapeProfileDef'");
 					Position = null;
 				}
 				else
@@ -142178,6 +143733,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Depth' is not optional in 'IFCUShapeProfileDef'");
 					Depth = null;
 				}
 				else
@@ -142185,6 +143741,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FlangeWidth' is not optional in 'IFCUShapeProfileDef'");
 					FlangeWidth = null;
 				}
 				else
@@ -142192,6 +143749,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WebThickness' is not optional in 'IFCUShapeProfileDef'");
 					WebThickness = null;
 				}
 				else
@@ -142199,6 +143757,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FlangeThickness' is not optional in 'IFCUShapeProfileDef'");
 					FlangeThickness = null;
 				}
 				else
@@ -142533,11 +144092,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCUNITASSIGNMENT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCUnitAssignment' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Units' is not optional in 'IFCUnitAssignment'");
 					Units = null;
 				}
 				else
@@ -142672,11 +144232,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCUNITARYEQUIPMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCUnitaryEquipmentType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCUnitaryEquipmentType'");
 					GlobalId = null;
 				}
 				else
@@ -142684,6 +144245,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCUnitaryEquipmentType'");
 					OwnerHistory = null;
 				}
 				else
@@ -142740,6 +144302,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCUnitaryEquipmentType'");
 					PredefinedType = null;
 				}
 				else
@@ -142930,11 +144493,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVALVETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCValveType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCValveType'");
 					GlobalId = null;
 				}
 				else
@@ -142942,6 +144506,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCValveType'");
 					OwnerHistory = null;
 				}
 				else
@@ -142998,6 +144563,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCValveType'");
 					PredefinedType = null;
 				}
 				else
@@ -143191,11 +144757,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVECTOR requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCVector' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Orientation' is not optional in 'IFCVector'");
 					Orientation = null;
 				}
 				else
@@ -143203,6 +144770,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Magnitude' is not optional in 'IFCVector'");
 					Magnitude = null;
 				}
 				else
@@ -143320,7 +144888,7 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 0)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVERTEX requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCVertex' requires 0 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 			}
@@ -143382,11 +144950,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVERTEXBASEDTEXTUREMAP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCVertexBasedTextureMap' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TextureVertices' is not optional in 'IFCVertexBasedTextureMap'");
 					TextureVertices = null;
 				}
 				else
@@ -143394,6 +144963,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'TexturePoints' is not optional in 'IFCVertexBasedTextureMap'");
 					TexturePoints = null;
 				}
 				else
@@ -143541,11 +145111,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVERTEXLOOP requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCVertexLoop' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'LoopVertex' is not optional in 'IFCVertexLoop'");
 					LoopVertex = null;
 				}
 				else
@@ -143635,11 +145206,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 1)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVERTEXPOINT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCVertexPoint' requires 1 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'VertexGeometry' is not optional in 'IFCVertexPoint'");
 					VertexGeometry = null;
 				}
 				else
@@ -143758,11 +145330,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVIBRATIONISOLATORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCVibrationIsolatorType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCVibrationIsolatorType'");
 					GlobalId = null;
 				}
 				else
@@ -143770,6 +145343,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCVibrationIsolatorType'");
 					OwnerHistory = null;
 				}
 				else
@@ -143826,6 +145400,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCVibrationIsolatorType'");
 					PredefinedType = null;
 				}
 				else
@@ -144009,11 +145584,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVIRTUALELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCVirtualElement' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCVirtualElement'");
 					GlobalId = null;
 				}
 				else
@@ -144021,6 +145597,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCVirtualElement'");
 					OwnerHistory = null;
 				}
 				else
@@ -144191,11 +145768,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 2)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVIRTUALGRIDINTERSECTION requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCVirtualGridIntersection' requires 2 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'IntersectingAxes' is not optional in 'IFCVirtualGridIntersection'");
 					IntersectingAxes = null;
 				}
 				else
@@ -144203,6 +145781,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OffsetDistances' is not optional in 'IFCVirtualGridIntersection'");
 					OffsetDistances = null;
 				}
 				else
@@ -144390,11 +145969,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWALL requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCWall' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCWall'");
 					GlobalId = null;
 				}
 				else
@@ -144402,6 +145982,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCWall'");
 					OwnerHistory = null;
 				}
 				else
@@ -144611,11 +146192,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWALLSTANDARDCASE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCWallStandardCase' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCWallStandardCase'");
 					GlobalId = null;
 				}
 				else
@@ -144623,6 +146205,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCWallStandardCase'");
 					OwnerHistory = null;
 				}
 				else
@@ -144806,11 +146389,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWALLTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCWallType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCWallType'");
 					GlobalId = null;
 				}
 				else
@@ -144818,6 +146402,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCWallType'");
 					OwnerHistory = null;
 				}
 				else
@@ -144874,6 +146459,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCWallType'");
 					PredefinedType = null;
 				}
 				else
@@ -145049,11 +146635,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWASTETERMINALTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCWasteTerminalType' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCWasteTerminalType'");
 					GlobalId = null;
 				}
 				else
@@ -145061,6 +146648,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCWasteTerminalType'");
 					OwnerHistory = null;
 				}
 				else
@@ -145117,6 +146705,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PredefinedType' is not optional in 'IFCWasteTerminalType'");
 					PredefinedType = null;
 				}
 				else
@@ -145303,11 +146892,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 8)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWATERPROPERTIES requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCWaterProperties' requires 8 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Material' is not optional in 'IFCWaterProperties'");
 					Material = null;
 				}
 				else
@@ -145640,11 +147230,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 10)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWINDOW requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCWindow' requires 10 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCWindow'");
 					GlobalId = null;
 				}
 				else
@@ -145652,6 +147243,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCWindow'");
 					OwnerHistory = null;
 				}
 				else
@@ -145978,11 +147570,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 13)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWINDOWLININGPROPERTIES requires 13 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCWindowLiningProperties' requires 13 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCWindowLiningProperties'");
 					GlobalId = null;
 				}
 				else
@@ -145990,6 +147583,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCWindowLiningProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -146417,11 +148011,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWINDOWPANELPROPERTIES requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCWindowPanelProperties' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCWindowPanelProperties'");
 					GlobalId = null;
 				}
 				else
@@ -146429,6 +148024,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCWindowPanelProperties'");
 					OwnerHistory = null;
 				}
 				else
@@ -146450,6 +148046,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OperationType' is not optional in 'IFCWindowPanelProperties'");
 					OperationType = null;
 				}
 				else
@@ -146457,6 +148054,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'PanelPosition' is not optional in 'IFCWindowPanelProperties'");
 					PanelPosition = null;
 				}
 				else
@@ -146728,11 +148326,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 12)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWINDOWSTYLE requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCWindowStyle' requires 12 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCWindowStyle'");
 					GlobalId = null;
 				}
 				else
@@ -146740,6 +148339,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCWindowStyle'");
 					OwnerHistory = null;
 				}
 				else
@@ -146789,6 +148389,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[8] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ConstructionType' is not optional in 'IFCWindowStyle'");
 					ConstructionType = null;
 				}
 				else
@@ -146796,6 +148397,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[9] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OperationType' is not optional in 'IFCWindowStyle'");
 					OperationType = null;
 				}
 				else
@@ -146803,6 +148405,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[10] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ParameterTakesPrecedence' is not optional in 'IFCWindowStyle'");
 					ParameterTakesPrecedence = null;
 				}
 				else
@@ -146810,6 +148413,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Sizeable' is not optional in 'IFCWindowStyle'");
 					Sizeable = null;
 				}
 				else
@@ -147105,11 +148709,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 15)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWORKCONTROL requires 15 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCWorkControl' requires 15 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCWorkControl'");
 					GlobalId = null;
 				}
 				else
@@ -147117,6 +148722,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCWorkControl'");
 					OwnerHistory = null;
 				}
 				else
@@ -147145,6 +148751,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Identifier' is not optional in 'IFCWorkControl'");
 					Identifier = null;
 				}
 				else
@@ -147152,6 +148759,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CreationDate' is not optional in 'IFCWorkControl'");
 					CreationDate = null;
 				}
 				else
@@ -147187,6 +148795,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'StartTime' is not optional in 'IFCWorkControl'");
 					StartTime = null;
 				}
 				else
@@ -147604,11 +149213,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 15)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWORKPLAN requires 15 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCWorkPlan' requires 15 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCWorkPlan'");
 					GlobalId = null;
 				}
 				else
@@ -147616,6 +149226,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCWorkPlan'");
 					OwnerHistory = null;
 				}
 				else
@@ -147644,6 +149255,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Identifier' is not optional in 'IFCWorkPlan'");
 					Identifier = null;
 				}
 				else
@@ -147651,6 +149263,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CreationDate' is not optional in 'IFCWorkPlan'");
 					CreationDate = null;
 				}
 				else
@@ -147686,6 +149299,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'StartTime' is not optional in 'IFCWorkPlan'");
 					StartTime = null;
 				}
 				else
@@ -147907,11 +149521,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 15)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWORKSCHEDULE requires 15 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCWorkSchedule' requires 15 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCWorkSchedule'");
 					GlobalId = null;
 				}
 				else
@@ -147919,6 +149534,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCWorkSchedule'");
 					OwnerHistory = null;
 				}
 				else
@@ -147947,6 +149563,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Identifier' is not optional in 'IFCWorkSchedule'");
 					Identifier = null;
 				}
 				else
@@ -147954,6 +149571,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'CreationDate' is not optional in 'IFCWorkSchedule'");
 					CreationDate = null;
 				}
 				else
@@ -147989,6 +149607,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[11] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'StartTime' is not optional in 'IFCWorkSchedule'");
 					StartTime = null;
 				}
 				else
@@ -148228,11 +149847,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 9)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCZSHAPEPROFILEDEF requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCZShapeProfileDef' requires 9 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'ProfileType' is not optional in 'IFCZShapeProfileDef'");
 					ProfileType = null;
 				}
 				else
@@ -148247,6 +149867,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[2] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Position' is not optional in 'IFCZShapeProfileDef'");
 					Position = null;
 				}
 				else
@@ -148254,6 +149875,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[3] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'Depth' is not optional in 'IFCZShapeProfileDef'");
 					Depth = null;
 				}
 				else
@@ -148261,6 +149883,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[4] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FlangeWidth' is not optional in 'IFCZShapeProfileDef'");
 					FlangeWidth = null;
 				}
 				else
@@ -148268,6 +149891,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[5] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'WebThickness' is not optional in 'IFCZShapeProfileDef'");
 					WebThickness = null;
 				}
 				else
@@ -148275,6 +149899,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[6] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'FlangeThickness' is not optional in 'IFCZShapeProfileDef'");
 					FlangeThickness = null;
 				}
 				else
@@ -148552,11 +150177,12 @@ namespace IFC.IFC2x3
 			{
 				if(AttributeTexts.Count != 5)
 				{
-					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCZONE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					Model.ImportErrorLogTexts.Add("ERROR (" + IFC_ID + ") : Invalid number of attributes. 'IFCZone' requires 5 attributes (Not " + AttributeTexts.Count + "). ");
 					return;
 				}
 				if(AttributeTexts[0] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'GlobalId' is not optional in 'IFCZone'");
 					GlobalId = null;
 				}
 				else
@@ -148564,6 +150190,7 @@ namespace IFC.IFC2x3
 				}
 				if(AttributeTexts[1] == "$")
 				{
+					Model.ImportWarningLogTexts.Add("WARNING (" + IFC_ID + ") : 'OwnerHistory' is not optional in 'IFCZone'");
 					OwnerHistory = null;
 				}
 				else

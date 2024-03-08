@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFCProjectCreator", "IFCPro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneratedIFCLibrary", "GeneratedIFCLibrary\GeneratedIFCLibrary.csproj", "{5A7EFB82-B3D7-4939-A2EF-F782B4C0BF32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestIFCApp", "TestIFCApp\TestIFCApp.csproj", "{CD892713-0914-4892-A661-0E584CD9A322}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestIFCApp", "TestIFCApp\TestIFCApp.csproj", "{CD892713-0914-4892-A661-0E584CD9A322}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
