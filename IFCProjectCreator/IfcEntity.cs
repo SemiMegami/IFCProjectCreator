@@ -471,15 +471,28 @@ namespace IFCProjectCreator
 
 
 
-            texts.Add("\t\tpublic override string SetByAttributeTexts()");
+            texts.Add("\t\tpublic override void SetByAttributeTexts()");
             texts.Add("\t\t{");
-            texts.Add("\t\t\tif(AttributeTexts.Count != " + directAttributes.Count + ")");
-            texts.Add("\t\t\t{");
-            texts.Add("\t\t\t\treturn \"ERROR : (\" + IFC_ID + \") Invalid numbers of attributes\";");
 
+            texts.Add("\t\t\tif(Model != null)");
+            texts.Add("\t\t\t{");
+            texts.Add("\t\t\t\tif(AttributeTexts.Count != " + directAttributes.Count + ")");
+            texts.Add("\t\t\t\t{");
+            texts.Add("\t\t\t\t\tModel.ImportErrorLogTexts.Add( \"ERROR : (\" + IFC_ID + \") Invalid number of attributes. " + Name.ToUpper() + " requires " + directAttributes.Count + " attributes (Not \" + AttributeTexts.Count + \"). \");");
+            texts.Add("\t\t\t\t\treturn;");
+            texts.Add("\t\t\t\t}");
             for (int i = 0; i < directAttributes.Count; i++)
             {
+                string attText = "AttributeTexts[" + i + "]";
                 var attribute = directAttributes[i];
+
+                texts.Add("\t\t\t\tif(" + attText + " == \"$\")");
+                texts.Add("\t\t\t\t{");
+                texts.Add("\t\t\t\t\t" + attribute.Name + " = null;");
+                texts.Add("\t\t\t\t}");
+                texts.Add("\t\t\t\telse");
+                texts.Add("\t\t\t\t{");
+                texts.Add("\t\t\t\t}");
                 if (attribute.AttributeType == IFCAttributeType.SINGLE)
                 {
                     if (selectDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
@@ -513,7 +526,6 @@ namespace IFCProjectCreator
                 }
             }
             texts.Add("\t\t\t}");
-            texts.Add("\t\t\treturn \"\";");
             texts.Add("\t\t}");
 
             // get ifcfulltext

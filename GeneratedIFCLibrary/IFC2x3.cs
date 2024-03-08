@@ -5890,12 +5890,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerAssignments != null)
 				{
-					IFC_Attributes<Global.IFCPresentationLayerAssignment>? items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
+					IFC_Attributes<Global.IFCPresentationLayerAssignment>? Items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
 					foreach (IFCPresentationLayerAssignment item in LayerAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -5938,12 +5938,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerAssignments != null)
 				{
-					IFC_Attributes<Global.IFCPresentationLayerAssignment>? items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
+					IFC_Attributes<Global.IFCPresentationLayerAssignment>? Items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
 					foreach (IFCPresentationLayerAssignment item in LayerAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -6012,12 +6012,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerAssignments != null)
 				{
-					IFC_Attributes<Global.IFCPresentationLayerAssignment>? items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
+					IFC_Attributes<Global.IFCPresentationLayerAssignment>? Items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
 					foreach (IFCPresentationLayerAssignment item in LayerAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -6049,12 +6049,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerAssignments != null)
 				{
-					IFC_Attributes<Global.IFCPresentationLayerAssignment>? items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
+					IFC_Attributes<Global.IFCPresentationLayerAssignment>? Items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
 					foreach (IFCPresentationLayerAssignment item in LayerAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -6229,12 +6229,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerAssignments != null)
 				{
-					IFC_Attributes<Global.IFCPresentationLayerAssignment>? items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
+					IFC_Attributes<Global.IFCPresentationLayerAssignment>? Items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
 					foreach (IFCPresentationLayerAssignment item in LayerAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -6264,12 +6264,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerAssignments != null)
 				{
-					IFC_Attributes<Global.IFCPresentationLayerAssignment>? items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
+					IFC_Attributes<Global.IFCPresentationLayerAssignment>? Items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
 					foreach (IFCPresentationLayerAssignment item in LayerAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -6393,12 +6393,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerAssignments != null)
 				{
-					IFC_Attributes<Global.IFCPresentationLayerAssignment>? items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
+					IFC_Attributes<Global.IFCPresentationLayerAssignment>? Items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
 					foreach (IFCPresentationLayerAssignment item in LayerAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -6435,12 +6435,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerAssignments != null)
 				{
-					IFC_Attributes<Global.IFCPresentationLayerAssignment>? items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
+					IFC_Attributes<Global.IFCPresentationLayerAssignment>? Items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
 					foreach (IFCPresentationLayerAssignment item in LayerAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -6509,12 +6509,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsDecomposedBy != null)
 				{
-					IFC_Attributes<Global.IFCRelDecomposes>? items = new IFC_Attributes<Global.IFCRelDecomposes>();
+					IFC_Attributes<Global.IFCRelDecomposes>? Items = new IFC_Attributes<Global.IFCRelDecomposes>();
 					foreach (IFCRelDecomposes item in IsDecomposedBy)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -6525,12 +6525,12 @@ namespace IFC.IFC2x3
 			{
 				if(Decomposes != null)
 				{
-					IFC_Attributes<Global.IFCRelDecomposes>? items = new IFC_Attributes<Global.IFCRelDecomposes>();
+					IFC_Attributes<Global.IFCRelDecomposes>? Items = new IFC_Attributes<Global.IFCRelDecomposes>();
 					foreach (IFCRelDecomposes item in Decomposes)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -6541,12 +6541,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsDefinedBy != null)
 				{
-					IFC_Attributes<Global.IFCRelDefines>? items = new IFC_Attributes<Global.IFCRelDefines>();
+					IFC_Attributes<Global.IFCRelDefines>? Items = new IFC_Attributes<Global.IFCRelDefines>();
 					foreach (IFCRelDefines item in IsDefinedBy)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -6569,12 +6569,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerAssignments != null)
 				{
-					IFC_Attributes<Global.IFCPresentationLayerAssignment>? items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
+					IFC_Attributes<Global.IFCPresentationLayerAssignment>? Items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
 					foreach (IFCPresentationLayerAssignment item in LayerAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -6666,12 +6666,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerAssignments != null)
 				{
-					IFC_Attributes<Global.IFCPresentationLayerAssignment>? items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
+					IFC_Attributes<Global.IFCPresentationLayerAssignment>? Items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
 					foreach (IFCPresentationLayerAssignment item in LayerAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -6753,13 +6753,30 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFC2DCOMPOSITECURVE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Segments = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SelfIntersect = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -6839,13 +6856,58 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCACTIONREQUEST requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RequestID = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -6978,13 +7040,58 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCACTOR requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					TheActor = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -7064,12 +7171,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsActingUpon != null)
 				{
-					IFC_Attributes<Global.IFCRelAssignsToActor>? items = new IFC_Attributes<Global.IFCRelAssignsToActor>();
+					IFC_Attributes<Global.IFCRelAssignsToActor>? Items = new IFC_Attributes<Global.IFCRelAssignsToActor>();
 					foreach (IFCRelAssignsToActor item in IsActingUpon)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -7139,13 +7246,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCACTORROLE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Role = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					UserDefinedRole = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -7289,13 +7420,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCACTUATORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -7477,13 +7681,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCADDRESS requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Purpose = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					UserDefinedPurpose = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -7575,12 +7803,12 @@ namespace IFC.IFC2x3
 			{
 				if(OfPerson != null)
 				{
-					IFC_Attributes<Global.IFCPerson>? items = new IFC_Attributes<Global.IFCPerson>();
+					IFC_Attributes<Global.IFCPerson>? Items = new IFC_Attributes<Global.IFCPerson>();
 					foreach (IFCPerson item in OfPerson)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -7591,12 +7819,12 @@ namespace IFC.IFC2x3
 			{
 				if(OfOrganization != null)
 				{
-					IFC_Attributes<Global.IFCOrganization>? items = new IFC_Attributes<Global.IFCOrganization>();
+					IFC_Attributes<Global.IFCOrganization>? Items = new IFC_Attributes<Global.IFCOrganization>();
 					foreach (IFCOrganization item in OfOrganization)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -7674,13 +7902,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAIRTERMINALBOXTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -7859,13 +8160,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAIRTERMINALTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -8044,13 +8418,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAIRTOAIRHEATRECOVERYTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -8214,13 +8661,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCALARMTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -8371,13 +8891,23 @@ namespace IFC.IFC2x3
 				{"WR42", WR_WR42}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANGULARDIMENSION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Contents = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -8450,13 +8980,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATION requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -8526,12 +9108,12 @@ namespace IFC.IFC2x3
 			{
 				if(ContainedInStructure != null)
 				{
-					IFC_Attributes<Global.IFCRelContainedInSpatialStructure>? items = new IFC_Attributes<Global.IFCRelContainedInSpatialStructure>();
+					IFC_Attributes<Global.IFCRelContainedInSpatialStructure>? Items = new IFC_Attributes<Global.IFCRelContainedInSpatialStructure>();
 					foreach (IFCRelContainedInSpatialStructure item in ContainedInStructure)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -8599,13 +9181,37 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONCURVEOCCURRENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Item = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -8685,13 +9291,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONFILLAREA requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					OuterBoundary = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					InnerBoundaries = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -8739,12 +9362,12 @@ namespace IFC.IFC2x3
 			{
 				if(InnerBoundaries != null)
 				{
-					IFC_Attributes<Global.IFCCurve>? items = new IFC_Attributes<Global.IFCCurve>();
+					IFC_Attributes<Global.IFCCurve>? Items = new IFC_Attributes<Global.IFCCurve>();
 					foreach (IFCCurve item in InnerBoundaries)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -8835,13 +9458,51 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONFILLAREAOCCURRENCE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Item = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					FillStyleTarget = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					GlobalOrLocal = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -8976,13 +9637,37 @@ namespace IFC.IFC2x3
 				{"WR12", WR_WR12}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONOCCURRENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Item = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -9084,13 +9769,30 @@ namespace IFC.IFC2x3
 				{"WR01", WR_WR01}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONSURFACE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Item = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					TextureCoordinates = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -9215,13 +9917,37 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONSURFACEOCCURRENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Item = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -9315,13 +10041,37 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONSYMBOLOCCURRENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Item = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -9413,13 +10163,37 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCANNOTATIONTEXTOCCURRENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Item = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -9507,13 +10281,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPLICATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ApplicationDeveloper = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Version = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ApplicationFullName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ApplicationIdentifier = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -9714,13 +10519,58 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPLIEDVALUE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					AppliedValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					UnitBasis = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					FixedUntilDate = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -9890,12 +10740,12 @@ namespace IFC.IFC2x3
 			{
 				if(ValuesReferenced != null)
 				{
-					IFC_Attributes<Global.IFCReferencesValueDocument>? items = new IFC_Attributes<Global.IFCReferencesValueDocument>();
+					IFC_Attributes<Global.IFCReferencesValueDocument>? Items = new IFC_Attributes<Global.IFCReferencesValueDocument>();
 					foreach (IFCReferencesValueDocument item in ValuesReferenced)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -9906,12 +10756,12 @@ namespace IFC.IFC2x3
 			{
 				if(ValueOfComponents != null)
 				{
-					IFC_Attributes<Global.IFCAppliedValueRelationship>? items = new IFC_Attributes<Global.IFCAppliedValueRelationship>();
+					IFC_Attributes<Global.IFCAppliedValueRelationship>? Items = new IFC_Attributes<Global.IFCAppliedValueRelationship>();
 					foreach (IFCAppliedValueRelationship item in ValueOfComponents)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -9922,12 +10772,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsComponentIn != null)
 				{
-					IFC_Attributes<Global.IFCAppliedValueRelationship>? items = new IFC_Attributes<Global.IFCAppliedValueRelationship>();
+					IFC_Attributes<Global.IFCAppliedValueRelationship>? Items = new IFC_Attributes<Global.IFCAppliedValueRelationship>();
 					foreach (IFCAppliedValueRelationship item in IsComponentIn)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -9989,13 +10839,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPLIEDVALUERELATIONSHIP requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ComponentOfTotal = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Components = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ArithmeticOperator = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -10067,12 +10955,12 @@ namespace IFC.IFC2x3
 			{
 				if(Components != null)
 				{
-					IFC_Attributes<Global.IFCAppliedValue>? items = new IFC_Attributes<Global.IFCAppliedValue>();
+					IFC_Attributes<Global.IFCAppliedValue>? Items = new IFC_Attributes<Global.IFCAppliedValue>();
 					foreach (IFCAppliedValue item in Components)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -10224,13 +11112,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPROVAL requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ApprovalDateTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ApprovalStatus = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ApprovalLevel = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApprovalQualifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Identifier = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -10426,12 +11366,12 @@ namespace IFC.IFC2x3
 			{
 				if(Actors != null)
 				{
-					IFC_Attributes<Global.IFCApprovalActorRelationship>? items = new IFC_Attributes<Global.IFCApprovalActorRelationship>();
+					IFC_Attributes<Global.IFCApprovalActorRelationship>? Items = new IFC_Attributes<Global.IFCApprovalActorRelationship>();
 					foreach (IFCApprovalActorRelationship item in Actors)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -10442,12 +11382,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsRelatedWith != null)
 				{
-					IFC_Attributes<Global.IFCApprovalRelationship>? items = new IFC_Attributes<Global.IFCApprovalRelationship>();
+					IFC_Attributes<Global.IFCApprovalRelationship>? Items = new IFC_Attributes<Global.IFCApprovalRelationship>();
 					foreach (IFCApprovalRelationship item in IsRelatedWith)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -10458,12 +11398,12 @@ namespace IFC.IFC2x3
 			{
 				if(Relates != null)
 				{
-					IFC_Attributes<Global.IFCApprovalRelationship>? items = new IFC_Attributes<Global.IFCApprovalRelationship>();
+					IFC_Attributes<Global.IFCApprovalRelationship>? Items = new IFC_Attributes<Global.IFCApprovalRelationship>();
 					foreach (IFCApprovalRelationship item in Relates)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -10517,13 +11457,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPROVALACTORRELATIONSHIP requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Actor = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Approval = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Role = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -10654,13 +11618,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPROVALPROPERTYRELATIONSHIP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ApprovedProperties = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Approval = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -10690,12 +11671,12 @@ namespace IFC.IFC2x3
 			{
 				if(ApprovedProperties != null)
 				{
-					IFC_Attributes<Global.IFCProperty>? items = new IFC_Attributes<Global.IFCProperty>();
+					IFC_Attributes<Global.IFCProperty>? Items = new IFC_Attributes<Global.IFCProperty>();
 					foreach (IFCProperty item in ApprovedProperties)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -10789,13 +11770,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAPPROVALRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RelatedApproval = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RelatingApproval = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -10993,13 +12005,37 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCARBITRARYCLOSEDPROFILEDEF requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					OuterCurve = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -11123,13 +12159,37 @@ namespace IFC.IFC2x3
 				{"WR12", WR_WR12}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCARBITRARYOPENPROFILEDEF requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Curve = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -11267,13 +12327,44 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCARBITRARYPROFILEDEFWITHVOIDS requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					OuterCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					InnerCurves = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -11319,12 +12410,12 @@ namespace IFC.IFC2x3
 			{
 				if(InnerCurves != null)
 				{
-					IFC_Attributes<Global.IFCCurve>? items = new IFC_Attributes<Global.IFCCurve>();
+					IFC_Attributes<Global.IFCCurve>? Items = new IFC_Attributes<Global.IFCCurve>();
 					foreach (IFCCurve item in InnerCurves)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -11447,13 +12538,114 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 14)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 14)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCASSET requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					AssetID = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					OriginalValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					CurrentValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					TotalReplacementCost = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Owner = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					User = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					ResponsiblePerson = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					IncorporationDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					DepreciatedValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -11800,13 +12992,100 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 12)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 12)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCASYMMETRICISHAPEPROFILEDEF requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					OverallWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					OverallDepth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					WebThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					FlangeThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					FilletRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					TopFlangeWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					TopFlangeThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					TopFlangeFilletRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					CentreOfGravityInY = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -12069,13 +13348,30 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAXIS1PLACEMENT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Location = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Axis = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -12211,13 +13507,30 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAXIS2PLACEMENT2D requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Location = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RefDirection = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -12265,12 +13578,12 @@ namespace IFC.IFC2x3
 			{
 				if(P != null)
 				{
-					IFC_Attributes<Global.IFCDirection>? items = new IFC_Attributes<Global.IFCDirection>();
+					IFC_Attributes<Global.IFCDirection>? Items = new IFC_Attributes<Global.IFCDirection>();
 					foreach (IFCDirection item in P)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -12405,13 +13718,37 @@ namespace IFC.IFC2x3
 				{"WR5", WR_WR5}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCAXIS2PLACEMENT3D requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Location = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Axis = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RefDirection = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -12485,12 +13822,12 @@ namespace IFC.IFC2x3
 			{
 				if(P != null)
 				{
-					IFC_Attributes<Global.IFCDirection>? items = new IFC_Attributes<Global.IFCDirection>();
+					IFC_Attributes<Global.IFCDirection>? Items = new IFC_Attributes<Global.IFCDirection>();
 					foreach (IFCDirection item in P)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -12601,13 +13938,51 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBSPLINECURVE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Degree = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ControlPointsList = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					CurveForm = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ClosedCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					SelfIntersect = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -12679,12 +14054,12 @@ namespace IFC.IFC2x3
 			{
 				if(ControlPointsList != null)
 				{
-					IFC_Attributes<Global.IFCCartesianPoint>? items = new IFC_Attributes<Global.IFCCartesianPoint>();
+					IFC_Attributes<Global.IFCCartesianPoint>? Items = new IFC_Attributes<Global.IFCCartesianPoint>();
 					foreach (IFCCartesianPoint item in ControlPointsList)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -12767,12 +14142,12 @@ namespace IFC.IFC2x3
 			{
 				if(ControlPoints != null)
 				{
-					IFC_Attributes<Global.IFCCartesianPoint>? items = new IFC_Attributes<Global.IFCCartesianPoint>();
+					IFC_Attributes<Global.IFCCartesianPoint>? Items = new IFC_Attributes<Global.IFCCartesianPoint>();
 					foreach (IFCCartesianPoint item in ControlPoints)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -12850,13 +14225,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBEAM requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -12986,13 +14420,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBEAMTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -13149,13 +14656,51 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBEZIERCURVE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Degree = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ControlPointsList = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					CurveForm = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ClosedCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					SelfIntersect = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -13267,13 +14812,58 @@ namespace IFC.IFC2x3
 				{"WR11", WR_WR11}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBLOBTEXTURE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RepeatS = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RepeatT = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					TextureType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					TextureTransform = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RasterFormat = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RasterCode = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -13419,13 +15009,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBLOCK requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					XLength = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					YLength = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ZLength = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -13592,13 +15213,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOILERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -13789,13 +15483,37 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOOLEANCLIPPINGRESULT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Operator = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					FirstOperand = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					SecondOperand = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -13909,13 +15627,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOOLEANRESULT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Operator = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					FirstOperand = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					SecondOperand = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -14053,13 +15795,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDARYCONDITION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -14156,13 +15908,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDARYEDGECONDITION requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LinearStiffnessByLengthX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					LinearStiffnessByLengthY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					LinearStiffnessByLengthZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RotationalStiffnessByLengthX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RotationalStiffnessByLengthY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RotationalStiffnessByLengthZ = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -14385,13 +16189,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDARYFACECONDITION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LinearStiffnessByAreaX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					LinearStiffnessByAreaY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					LinearStiffnessByAreaZ = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -14550,13 +16385,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDARYNODECONDITION requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LinearStiffnessX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					LinearStiffnessY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					LinearStiffnessZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RotationalStiffnessX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RotationalStiffnessY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RotationalStiffnessZ = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -14777,13 +16664,72 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDARYNODECONDITIONWARPING requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LinearStiffnessX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					LinearStiffnessY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					LinearStiffnessZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RotationalStiffnessX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RotationalStiffnessY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RotationalStiffnessZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					WarpingStiffness = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -14916,13 +16862,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDEDCURVE requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -14970,13 +16919,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDEDSURFACE requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -15054,13 +17006,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOUNDINGBOX requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Corner = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					XDim = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					YDim = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ZDim = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -15240,13 +17223,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBOXEDHALFSPACE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					BaseSurface = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					AgreementFlag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Enclosure = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -15367,13 +17374,100 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 12)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 12)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDING requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					LongName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					CompositionType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					ElevationOfRefHeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					ElevationOfTerrain = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					BuildingAddress = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -15618,13 +17712,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -15765,13 +17918,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGELEMENTCOMPONENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -15909,13 +18121,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGELEMENTPART requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -16071,13 +18342,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGELEMENTPROXY requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					CompositionType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -16233,13 +18570,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGELEMENTPROXYTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -16412,13 +18822,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -16561,13 +19037,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCBUILDINGSTOREY requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					LongName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					CompositionType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Elevation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -16779,13 +19328,79 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCSHAPEPROFILEDEF requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Depth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Width = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					WallThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Girth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					InternalFilletRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					CentreOfGravityInX = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -17046,13 +19661,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCABLECARRIERFITTINGTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -17216,13 +19904,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCABLECARRIERSEGMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -17386,13 +20147,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCABLESEGMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -17561,13 +20395,37 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCALENDARDATE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					DayComponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					MonthComponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					YearComponent = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -17725,13 +20583,23 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCARTESIANPOINT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Coordinates = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -17753,12 +20621,12 @@ namespace IFC.IFC2x3
 			{
 				if(Coordinates != null)
 				{
-					IFC_Attributes<Global.IFCLengthMeasure>? items = new IFC_Attributes<Global.IFCLengthMeasure>();
+					IFC_Attributes<Global.IFCLengthMeasure>? Items = new IFC_Attributes<Global.IFCLengthMeasure>();
 					foreach (IFCLengthMeasure item in Coordinates)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -17888,13 +20756,44 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCARTESIANTRANSFORMATIONOPERATOR requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Axis1 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Axis2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					LocalOrigin = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Scale = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -18126,13 +21025,44 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCARTESIANTRANSFORMATIONOPERATOR2D requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Axis1 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Axis2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					LocalOrigin = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Scale = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -18178,12 +21108,12 @@ namespace IFC.IFC2x3
 			{
 				if(U != null)
 				{
-					IFC_Attributes<Global.IFCDirection>? items = new IFC_Attributes<Global.IFCDirection>();
+					IFC_Attributes<Global.IFCDirection>? Items = new IFC_Attributes<Global.IFCDirection>();
 					foreach (IFCDirection item in U)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -18271,13 +21201,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCARTESIANTRANSFORMATIONOPERATOR2DNONUNIFORM requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Axis1 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Axis2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					LocalOrigin = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Scale = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Scale2 = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -18473,13 +21441,51 @@ namespace IFC.IFC2x3
 				{"WR4", WR_WR4}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCARTESIANTRANSFORMATIONOPERATOR3D requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Axis1 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Axis2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					LocalOrigin = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Scale = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Axis3 = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -18551,12 +21557,12 @@ namespace IFC.IFC2x3
 			{
 				if(U != null)
 				{
-					IFC_Attributes<Global.IFCDirection>? items = new IFC_Attributes<Global.IFCDirection>();
+					IFC_Attributes<Global.IFCDirection>? Items = new IFC_Attributes<Global.IFCDirection>();
 					foreach (IFCDirection item in U)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -18676,13 +21682,65 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCARTESIANTRANSFORMATIONOPERATOR3DNONUNIFORM requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Axis1 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Axis2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					LocalOrigin = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Scale = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Axis3 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Scale2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Scale3 = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -18843,13 +21901,44 @@ namespace IFC.IFC2x3
 				{"WR12", WR_WR12}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCENTERLINEPROFILEDEF requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Curve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Thickness = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -18983,13 +22072,93 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCHAMFEREDGEFEATURE requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					FeatureLength = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Width = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					Height = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -19194,13 +22363,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCHILLERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -19352,13 +22594,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCIRCLE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Radius = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -19460,13 +22719,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCIRCLEHOLLOWPROFILEDEF requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Radius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					WallThickness = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -19579,13 +22876,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCIRCLEPROFILEDEF requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Radius = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -19700,13 +23028,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLASSIFICATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Source = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Edition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					EditionDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -19824,12 +23183,12 @@ namespace IFC.IFC2x3
 			{
 				if(Contains != null)
 				{
-					IFC_Attributes<Global.IFCClassificationItem>? items = new IFC_Attributes<Global.IFCClassificationItem>();
+					IFC_Attributes<Global.IFCClassificationItem>? Items = new IFC_Attributes<Global.IFCClassificationItem>();
 					foreach (IFCClassificationItem item in Contains)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -19890,13 +23249,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLASSIFICATIONITEM requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Notation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ItemOf = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Title = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -19988,12 +23371,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsClassifiedItemIn != null)
 				{
-					IFC_Attributes<Global.IFCClassificationItemRelationship>? items = new IFC_Attributes<Global.IFCClassificationItemRelationship>();
+					IFC_Attributes<Global.IFCClassificationItemRelationship>? Items = new IFC_Attributes<Global.IFCClassificationItemRelationship>();
 					foreach (IFCClassificationItemRelationship item in IsClassifiedItemIn)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -20004,12 +23387,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsClassifyingItemIn != null)
 				{
-					IFC_Attributes<Global.IFCClassificationItemRelationship>? items = new IFC_Attributes<Global.IFCClassificationItemRelationship>();
+					IFC_Attributes<Global.IFCClassificationItemRelationship>? Items = new IFC_Attributes<Global.IFCClassificationItemRelationship>();
 					foreach (IFCClassificationItemRelationship item in IsClassifyingItemIn)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -20059,13 +23442,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLASSIFICATIONITEMRELATIONSHIP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RelatingItem = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RelatedItems = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -20113,12 +23513,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedItems != null)
 				{
-					IFC_Attributes<Global.IFCClassificationItem>? items = new IFC_Attributes<Global.IFCClassificationItem>();
+					IFC_Attributes<Global.IFCClassificationItem>? Items = new IFC_Attributes<Global.IFCClassificationItem>();
 					foreach (IFCClassificationItem item in RelatedItems)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -20182,13 +23582,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLASSIFICATIONNOTATION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					NotationFacets = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -20210,12 +23620,12 @@ namespace IFC.IFC2x3
 			{
 				if(NotationFacets != null)
 				{
-					IFC_Attributes<Global.IFCClassificationNotationFacet>? items = new IFC_Attributes<Global.IFCClassificationNotationFacet>();
+					IFC_Attributes<Global.IFCClassificationNotationFacet>? Items = new IFC_Attributes<Global.IFCClassificationNotationFacet>();
 					foreach (IFCClassificationNotationFacet item in NotationFacets)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -20279,13 +23689,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLASSIFICATIONNOTATIONFACET requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					NotationValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -20365,13 +23785,44 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLASSIFICATIONREFERENCE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Location = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ItemReference = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ReferencedSource = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -20470,13 +23921,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCLOSEDSHELL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					CfsFaces = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -20565,13 +24026,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOILTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -20728,13 +24262,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOLOURRGB requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Red = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Green = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Blue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -20871,13 +24436,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOLOURSPECIFICATION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -20977,13 +24552,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOLUMN requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -21113,13 +24747,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOLUMNTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -21303,13 +25010,44 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOMPLEXPROPERTY requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					UsageName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					HasProperties = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -21373,12 +25111,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasProperties != null)
 				{
-					IFC_Attributes<Global.IFCProperty>? items = new IFC_Attributes<Global.IFCProperty>();
+					IFC_Attributes<Global.IFCProperty>? Items = new IFC_Attributes<Global.IFCProperty>();
 					foreach (IFCProperty item in HasProperties)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -21506,13 +25244,30 @@ namespace IFC.IFC2x3
 				{"WR42", WR_WR42}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOMPOSITECURVE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Segments = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SelfIntersect = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -21542,12 +25297,12 @@ namespace IFC.IFC2x3
 			{
 				if(Segments != null)
 				{
-					IFC_Attributes<Global.IFCCompositeCurveSegment>? items = new IFC_Attributes<Global.IFCCompositeCurveSegment>();
+					IFC_Attributes<Global.IFCCompositeCurveSegment>? Items = new IFC_Attributes<Global.IFCCompositeCurveSegment>();
 					foreach (IFCCompositeCurveSegment item in Segments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -21686,13 +25441,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOMPOSITECURVESEGMENT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Transition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SameSense = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ParentCurve = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -21791,12 +25570,12 @@ namespace IFC.IFC2x3
 			{
 				if(UsingCurves != null)
 				{
-					IFC_Attributes<Global.IFCCompositeCurve>? items = new IFC_Attributes<Global.IFCCompositeCurve>();
+					IFC_Attributes<Global.IFCCompositeCurve>? Items = new IFC_Attributes<Global.IFCCompositeCurve>();
 					foreach (IFCCompositeCurve item in UsingCurves)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -21876,13 +25655,44 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOMPOSITEPROFILEDEF requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Profiles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Label = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -21928,12 +25738,12 @@ namespace IFC.IFC2x3
 			{
 				if(Profiles != null)
 				{
-					IFC_Attributes<Global.IFCProfileDef>? items = new IFC_Attributes<Global.IFCProfileDef>();
+					IFC_Attributes<Global.IFCProfileDef>? Items = new IFC_Attributes<Global.IFCProfileDef>();
 					foreach (IFCProfileDef item in Profiles)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -22047,13 +25857,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOMPRESSORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -22232,13 +26115,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONDENSERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -22394,13 +26350,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONDITION requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -22520,13 +26514,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONDITIONCRITERION requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Criterion = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					CriterionDateTime = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -22674,13 +26720,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONIC requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -22761,13 +26817,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTEDFACESET requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					CfsFaces = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -22789,12 +26855,12 @@ namespace IFC.IFC2x3
 			{
 				if(CfsFaces != null)
 				{
-					IFC_Attributes<Global.IFCFace>? items = new IFC_Attributes<Global.IFCFace>();
+					IFC_Attributes<Global.IFCFace>? Items = new IFC_Attributes<Global.IFCFace>();
 					foreach (IFCFace item in CfsFaces)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -22863,13 +26929,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTIONCURVEGEOMETRY requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					CurveOnRelatingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					CurveOnRelatedElement = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -22968,13 +27051,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTIONGEOMETRY requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -23034,13 +27120,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTIONPOINTECCENTRICITY requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					PointOnRelatingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					PointOnRelatedElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					EccentricityInX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					EccentricityInY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					EccentricityInZ = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -23190,13 +27314,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTIONPOINTGEOMETRY requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					PointOnRelatingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					PointOnRelatedElement = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -23306,13 +27447,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTIONPORTGEOMETRY requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					LocationAtRelatingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LocationAtRelatedElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ProfileOfPort = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -23444,13 +27609,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONNECTIONSURFACEGEOMETRY requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SurfaceOnRelatingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SurfaceOnRelatedElement = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -23612,13 +27794,65 @@ namespace IFC.IFC2x3
 				{"WR11", WR_WR11}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRAINT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ConstraintGrade = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ConstraintSource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					CreatingActor = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					CreationTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					UserDefinedGrade = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -23814,12 +28048,12 @@ namespace IFC.IFC2x3
 			{
 				if(ClassifiedAs != null)
 				{
-					IFC_Attributes<Global.IFCConstraintClassificationRelationship>? items = new IFC_Attributes<Global.IFCConstraintClassificationRelationship>();
+					IFC_Attributes<Global.IFCConstraintClassificationRelationship>? Items = new IFC_Attributes<Global.IFCConstraintClassificationRelationship>();
 					foreach (IFCConstraintClassificationRelationship item in ClassifiedAs)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -23830,12 +28064,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatesConstraints != null)
 				{
-					IFC_Attributes<Global.IFCConstraintRelationship>? items = new IFC_Attributes<Global.IFCConstraintRelationship>();
+					IFC_Attributes<Global.IFCConstraintRelationship>? Items = new IFC_Attributes<Global.IFCConstraintRelationship>();
 					foreach (IFCConstraintRelationship item in RelatesConstraints)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -23846,12 +28080,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsRelatedWith != null)
 				{
-					IFC_Attributes<Global.IFCConstraintRelationship>? items = new IFC_Attributes<Global.IFCConstraintRelationship>();
+					IFC_Attributes<Global.IFCConstraintRelationship>? Items = new IFC_Attributes<Global.IFCConstraintRelationship>();
 					foreach (IFCConstraintRelationship item in IsRelatedWith)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -23862,12 +28096,12 @@ namespace IFC.IFC2x3
 			{
 				if(PropertiesForConstraint != null)
 				{
-					IFC_Attributes<Global.IFCPropertyConstraintRelationship>? items = new IFC_Attributes<Global.IFCPropertyConstraintRelationship>();
+					IFC_Attributes<Global.IFCPropertyConstraintRelationship>? Items = new IFC_Attributes<Global.IFCPropertyConstraintRelationship>();
 					foreach (IFCPropertyConstraintRelationship item in PropertiesForConstraint)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -23878,12 +28112,12 @@ namespace IFC.IFC2x3
 			{
 				if(Aggregates != null)
 				{
-					IFC_Attributes<Global.IFCConstraintAggregationRelationship>? items = new IFC_Attributes<Global.IFCConstraintAggregationRelationship>();
+					IFC_Attributes<Global.IFCConstraintAggregationRelationship>? Items = new IFC_Attributes<Global.IFCConstraintAggregationRelationship>();
 					foreach (IFCConstraintAggregationRelationship item in Aggregates)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -23894,12 +28128,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsAggregatedIn != null)
 				{
-					IFC_Attributes<Global.IFCConstraintAggregationRelationship>? items = new IFC_Attributes<Global.IFCConstraintAggregationRelationship>();
+					IFC_Attributes<Global.IFCConstraintAggregationRelationship>? Items = new IFC_Attributes<Global.IFCConstraintAggregationRelationship>();
 					foreach (IFCConstraintAggregationRelationship item in IsAggregatedIn)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -23989,13 +28223,51 @@ namespace IFC.IFC2x3
 				{"temp", WR_temp}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRAINTAGGREGATIONRELATIONSHIP requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RelatingConstraint = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					RelatedConstraints = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					LogicalAggregator = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -24103,12 +28375,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedConstraints != null)
 				{
-					IFC_Attributes<Global.IFCConstraint>? items = new IFC_Attributes<Global.IFCConstraint>();
+					IFC_Attributes<Global.IFCConstraint>? Items = new IFC_Attributes<Global.IFCConstraint>();
 					foreach (IFCConstraint item in RelatedConstraints)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -24194,13 +28466,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRAINTCLASSIFICATIONRELATIONSHIP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ClassifiedConstraint = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RelatedClassifications = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -24248,12 +28537,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedClassifications != null)
 				{
-					IFC_Attributes<Global.IFCClassificationNotationSelect>? items = new IFC_Attributes<Global.IFCClassificationNotationSelect>();
+					IFC_Attributes<Global.IFCClassificationNotationSelect>? Items = new IFC_Attributes<Global.IFCClassificationNotationSelect>();
 					foreach (IFCClassificationNotationSelect item in RelatedClassifications)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -24343,13 +28632,44 @@ namespace IFC.IFC2x3
 				{"WR11", WR_WR11}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRAINTRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RelatingConstraint = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					RelatedConstraints = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -24449,12 +28769,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedConstraints != null)
 				{
-					IFC_Attributes<Global.IFCConstraint>? items = new IFC_Attributes<Global.IFCConstraint>();
+					IFC_Attributes<Global.IFCConstraint>? Items = new IFC_Attributes<Global.IFCConstraint>();
 					foreach (IFCConstraint item in RelatedConstraints)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -24531,13 +28851,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRUCTIONEQUIPMENTRESOURCE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ResourceIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ResourceGroup = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ResourceConsumption = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					BaseQuantity = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -24707,13 +29093,93 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRUCTIONMATERIALRESOURCE requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ResourceIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ResourceGroup = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ResourceConsumption = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					BaseQuantity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Suppliers = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					UsageRatio = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -24815,12 +29281,12 @@ namespace IFC.IFC2x3
 			{
 				if(Suppliers != null)
 				{
-					IFC_Attributes<Global.IFCActorSelect>? items = new IFC_Attributes<Global.IFCActorSelect>();
+					IFC_Attributes<Global.IFCActorSelect>? Items = new IFC_Attributes<Global.IFCActorSelect>();
 					foreach (IFCActorSelect item in Suppliers)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -24943,13 +29409,79 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRUCTIONPRODUCTRESOURCE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ResourceIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ResourceGroup = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ResourceConsumption = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					BaseQuantity = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -25102,13 +29634,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONSTRUCTIONRESOURCE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ResourceIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ResourceGroup = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ResourceConsumption = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					BaseQuantity = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -25305,13 +29903,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONTEXTDEPENDENTUNIT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Dimensions = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					UnitType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -25430,13 +30052,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONTROL requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -25490,12 +30150,12 @@ namespace IFC.IFC2x3
 			{
 				if(Controls != null)
 				{
-					IFC_Attributes<Global.IFCRelAssignsToControl>? items = new IFC_Attributes<Global.IFCRelAssignsToControl>();
+					IFC_Attributes<Global.IFCRelAssignsToControl>? Items = new IFC_Attributes<Global.IFCRelAssignsToControl>();
 					foreach (IFCRelAssignsToControl item in Controls)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -25558,13 +30218,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONTROLLERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -25719,13 +30452,44 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCONVERSIONBASEDUNIT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Dimensions = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					UnitType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ConversionFactor = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -25874,13 +30638,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOOLEDBEAMTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -26059,13 +30896,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOOLINGTOWERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -26220,13 +31130,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOORDINATEDUNIVERSALTIMEOFFSET requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					HourOffset = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					MinuteOffset = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Sense = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -26362,13 +31296,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOSTITEM requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -26500,13 +31472,107 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 13)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 13)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOSTSCHEDULE requires 13 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					SubmittedBy = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					PreparedBy = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					SubmittedOn = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					Status = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					TargetUsers = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					UpdateDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					ID = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -26696,12 +31762,12 @@ namespace IFC.IFC2x3
 			{
 				if(TargetUsers != null)
 				{
-					IFC_Attributes<Global.IFCActorSelect>? items = new IFC_Attributes<Global.IFCActorSelect>();
+					IFC_Attributes<Global.IFCActorSelect>? Items = new IFC_Attributes<Global.IFCActorSelect>();
 					foreach (IFCActorSelect item in TargetUsers)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -26834,13 +31900,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOSTVALUE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					AppliedValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					UnitBasis = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					FixedUntilDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					CostType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Condition = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -27041,13 +32166,79 @@ namespace IFC.IFC2x3
 				{"WR61", WR_WR61}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOVERING requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -27151,12 +32342,12 @@ namespace IFC.IFC2x3
 			{
 				if(CoversSpaces != null)
 				{
-					IFC_Attributes<Global.IFCRelCoversSpaces>? items = new IFC_Attributes<Global.IFCRelCoversSpaces>();
+					IFC_Attributes<Global.IFCRelCoversSpaces>? Items = new IFC_Attributes<Global.IFCRelCoversSpaces>();
 					foreach (IFCRelCoversSpaces item in CoversSpaces)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -27167,12 +32358,12 @@ namespace IFC.IFC2x3
 			{
 				if(Covers != null)
 				{
-					IFC_Attributes<Global.IFCRelCoversBldgElements>? items = new IFC_Attributes<Global.IFCRelCoversBldgElements>();
+					IFC_Attributes<Global.IFCRelCoversBldgElements>? Items = new IFC_Attributes<Global.IFCRelCoversBldgElements>();
 					foreach (IFCRelCoversBldgElements item in Covers)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -27235,13 +32426,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCOVERINGTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -27436,13 +32700,121 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 15)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 15)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCRANERAILASHAPEPROFILEDEF requires 15 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					OverallHeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					BaseWidth2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Radius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					HeadWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					HeadDepth2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					HeadDepth3 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					WebThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					BaseWidth4 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					BaseDepth1 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					BaseDepth2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					BaseDepth3 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[14] == "$")
+				{
+					CentreOfGravityInY = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -27863,13 +33235,100 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 12)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 12)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCRANERAILFSHAPEPROFILEDEF requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					OverallHeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					HeadWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Radius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					HeadDepth2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					HeadDepth3 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					WebThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					BaseDepth1 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					BaseDepth2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					CentreOfGravityInY = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -28189,13 +33648,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCREWRESOURCE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ResourceIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ResourceGroup = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ResourceConsumption = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					BaseQuantity = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -28339,13 +33864,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCSGPRIMITIVE3D requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -28431,13 +33966,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCSGSOLID requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					TreeRootExpression = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -28528,13 +34073,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURRENCYRELATIONSHIP requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RelatingMonetaryUnit = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RelatedMonetaryUnit = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ExchangeRate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					RateDateTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RateSource = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -28738,13 +34321,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURTAINWALL requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -28874,13 +34516,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURTAINWALLTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -29043,13 +34758,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURVE requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -29130,13 +34848,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURVEBOUNDEDPLANE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					BasisSurface = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OuterBoundary = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					InnerBoundaries = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -29210,12 +34952,12 @@ namespace IFC.IFC2x3
 			{
 				if(InnerBoundaries != null)
 				{
-					IFC_Attributes<Global.IFCCurve>? items = new IFC_Attributes<Global.IFCCurve>();
+					IFC_Attributes<Global.IFCCurve>? Items = new IFC_Attributes<Global.IFCCurve>();
 					foreach (IFCCurve item in InnerBoundaries)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -29313,13 +35055,44 @@ namespace IFC.IFC2x3
 				{"WR11", WR_WR11}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURVESTYLE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					CurveFont = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					CurveWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					CurveColour = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -29458,13 +35231,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURVESTYLEFONT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					PatternList = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -29512,12 +35302,12 @@ namespace IFC.IFC2x3
 			{
 				if(PatternList != null)
 				{
-					IFC_Attributes<Global.IFCCurveStyleFontPattern>? items = new IFC_Attributes<Global.IFCCurveStyleFontPattern>();
+					IFC_Attributes<Global.IFCCurveStyleFontPattern>? Items = new IFC_Attributes<Global.IFCCurveStyleFontPattern>();
 					foreach (IFCCurveStyleFontPattern item in PatternList)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -29589,13 +35379,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURVESTYLEFONTANDSCALING requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					CurveFont = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					CurveFontScaling = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -29740,13 +35554,30 @@ namespace IFC.IFC2x3
 				{"WR01", WR_WR01}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCCURVESTYLEFONTPATTERN requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					VisibleSegmentLength = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					InvisibleSegmentLength = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -29879,13 +35710,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDAMPERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -30036,13 +35940,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDATEANDTIME requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					DateComponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					TimeComponent = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -30150,13 +36071,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDEFINEDSYMBOL requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Definition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Target = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -30282,13 +36220,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDERIVEDPROFILEDEF requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ParentProfile = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Operator = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Label = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -30482,13 +36458,37 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDERIVEDUNIT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Elements = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					UnitType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					UserDefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -30526,12 +36526,12 @@ namespace IFC.IFC2x3
 			{
 				if(Elements != null)
 				{
-					IFC_Attributes<Global.IFCDerivedUnitElement>? items = new IFC_Attributes<Global.IFCDerivedUnitElement>();
+					IFC_Attributes<Global.IFCDerivedUnitElement>? Items = new IFC_Attributes<Global.IFCDerivedUnitElement>();
 					foreach (IFCDerivedUnitElement item in Elements)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -30642,13 +36642,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDERIVEDUNITELEMENT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Exponent = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -30753,13 +36770,23 @@ namespace IFC.IFC2x3
 				{"WR42", WR_WR42}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIAMETERDIMENSION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Contents = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -30862,13 +36889,44 @@ namespace IFC.IFC2x3
 				{"WR13", WR_WR13}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIMENSIONCALLOUTRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RelatingDraughtingCallout = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					RelatedDraughtingCallout = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -31005,13 +37063,37 @@ namespace IFC.IFC2x3
 				{"WR53", WR_WR53}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIMENSIONCURVE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Item = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -31049,12 +37131,12 @@ namespace IFC.IFC2x3
 			{
 				if(AnnotatedBySymbols != null)
 				{
-					IFC_Attributes<Global.IFCTerminatorSymbol>? items = new IFC_Attributes<Global.IFCTerminatorSymbol>();
+					IFC_Attributes<Global.IFCTerminatorSymbol>? Items = new IFC_Attributes<Global.IFCTerminatorSymbol>();
 					foreach (IFCTerminatorSymbol item in AnnotatedBySymbols)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -31138,13 +37220,23 @@ namespace IFC.IFC2x3
 				{"WR42", WR_WR42}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIMENSIONCURVEDIRECTEDCALLOUT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Contents = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -31226,13 +37318,51 @@ namespace IFC.IFC2x3
 				{"WR61", WR_WR61}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIMENSIONCURVETERMINATOR requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Item = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					AnnotatedCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Role = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -31388,13 +37518,44 @@ namespace IFC.IFC2x3
 				{"WR13", WR_WR13}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIMENSIONPAIR requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RelatingDraughtingCallout = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					RelatedDraughtingCallout = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -31499,13 +37660,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIMENSIONALEXPONENTS requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					LengthExponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					MassExponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					TimeExponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ElectricCurrentExponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ThermodynamicTemperatureExponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					AmountOfSubstanceExponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					LuminousIntensityExponent = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -31753,13 +37966,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDIRECTION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					DirectionRatios = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -31781,12 +38004,12 @@ namespace IFC.IFC2x3
 			{
 				if(DirectionRatios != null)
 				{
-					IFC_Attributes<REAL>? items = new IFC_Attributes<REAL>();
+					IFC_Attributes<REAL>? Items = new IFC_Attributes<REAL>();
 					foreach (REAL item in DirectionRatios)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -31882,13 +38105,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISCRETEACCESSORY requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -32016,13 +38298,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISCRETEACCESSORYTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -32169,13 +38517,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONCHAMBERELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -32305,13 +38712,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONCHAMBERELEMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -32491,13 +38971,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONCONTROLELEMENT requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ControlElementId = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -32601,12 +39147,12 @@ namespace IFC.IFC2x3
 			{
 				if(AssignedToFlowElement != null)
 				{
-					IFC_Attributes<Global.IFCRelFlowControlElements>? items = new IFC_Attributes<Global.IFCRelFlowControlElements>();
+					IFC_Attributes<Global.IFCRelFlowControlElements>? Items = new IFC_Attributes<Global.IFCRelFlowControlElements>();
 					foreach (IFCRelFlowControlElements item in AssignedToFlowElement)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -32671,13 +39217,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONCONTROLELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -32826,13 +39438,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -32961,13 +39632,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -33127,13 +39864,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONFLOWELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -33211,12 +40007,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasControlElements != null)
 				{
-					IFC_Attributes<Global.IFCRelFlowControlElements>? items = new IFC_Attributes<Global.IFCRelFlowControlElements>();
+					IFC_Attributes<Global.IFCRelFlowControlElements>? Items = new IFC_Attributes<Global.IFCRelFlowControlElements>();
 					foreach (IFCRelFlowControlElements item in HasControlElements)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -33285,13 +40081,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONFLOWELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -33431,13 +40293,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDISTRIBUTIONPORT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					FlowDirection = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -33590,13 +40511,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOCUMENTELECTRONICFORMAT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					FileExtension = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					MimeContentType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					MimeSubtype = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -33794,13 +40739,135 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 17)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 17)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOCUMENTINFORMATION requires 17 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					DocumentId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					DocumentReferences = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Purpose = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					IntendedUse = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Scope = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Revision = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					DocumentOwner = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Editors = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					CreationTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					LastRevisionTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					ElectronicFormat = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					ValidFrom = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[14] == "$")
+				{
+					ValidUntil = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[15] == "$")
+				{
+					Confidentiality = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[16] == "$")
+				{
+					Status = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -34004,12 +41071,12 @@ namespace IFC.IFC2x3
 			{
 				if(DocumentReferences != null)
 				{
-					IFC_Attributes<Global.IFCDocumentReference>? items = new IFC_Attributes<Global.IFCDocumentReference>();
+					IFC_Attributes<Global.IFCDocumentReference>? Items = new IFC_Attributes<Global.IFCDocumentReference>();
 					foreach (IFCDocumentReference item in DocumentReferences)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -34128,12 +41195,12 @@ namespace IFC.IFC2x3
 			{
 				if(Editors != null)
 				{
-					IFC_Attributes<Global.IFCActorSelect>? items = new IFC_Attributes<Global.IFCActorSelect>();
+					IFC_Attributes<Global.IFCActorSelect>? Items = new IFC_Attributes<Global.IFCActorSelect>();
 					foreach (IFCActorSelect item in Editors)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -34288,12 +41355,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsPointedTo != null)
 				{
-					IFC_Attributes<Global.IFCDocumentInformationRelationship>? items = new IFC_Attributes<Global.IFCDocumentInformationRelationship>();
+					IFC_Attributes<Global.IFCDocumentInformationRelationship>? Items = new IFC_Attributes<Global.IFCDocumentInformationRelationship>();
 					foreach (IFCDocumentInformationRelationship item in IsPointedTo)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -34304,12 +41371,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsPointer != null)
 				{
-					IFC_Attributes<Global.IFCDocumentInformationRelationship>? items = new IFC_Attributes<Global.IFCDocumentInformationRelationship>();
+					IFC_Attributes<Global.IFCDocumentInformationRelationship>? Items = new IFC_Attributes<Global.IFCDocumentInformationRelationship>();
 					foreach (IFCDocumentInformationRelationship item in IsPointer)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -34363,13 +41430,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOCUMENTINFORMATIONRELATIONSHIP requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RelatingDocument = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RelatedDocuments = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RelationshipType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -34425,12 +41516,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedDocuments != null)
 				{
-					IFC_Attributes<Global.IFCDocumentInformation>? items = new IFC_Attributes<Global.IFCDocumentInformation>();
+					IFC_Attributes<Global.IFCDocumentInformation>? Items = new IFC_Attributes<Global.IFCDocumentInformation>();
 					foreach (IFCDocumentInformation item in RelatedDocuments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -34531,13 +41622,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOCUMENTREFERENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Location = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ItemReference = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -34575,12 +41690,12 @@ namespace IFC.IFC2x3
 			{
 				if(ReferenceToDocument != null)
 				{
-					IFC_Attributes<Global.IFCDocumentInformation>? items = new IFC_Attributes<Global.IFCDocumentInformation>();
+					IFC_Attributes<Global.IFCDocumentInformation>? Items = new IFC_Attributes<Global.IFCDocumentInformation>();
 					foreach (IFCDocumentInformation item in ReferenceToDocument)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -34659,13 +41774,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOOR requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					OverallHeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					OverallWidth = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -34947,13 +42135,121 @@ namespace IFC.IFC2x3
 				{"WR35", WR_WR35}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 15)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 15)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOORLININGPROPERTIES requires 15 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					LiningDepth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					LiningThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ThresholdDepth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ThresholdThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					TransomThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					TransomOffset = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					LiningOffset = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					ThresholdOffset = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					CasingThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					CasingDepth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[14] == "$")
+				{
+					ShapeAspectStyle = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -35359,13 +42655,79 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOORPANELPROPERTIES requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					PanelDepth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					PanelOperation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					PanelWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					PanelPosition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ShapeAspectStyle = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -35604,13 +42966,100 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 12)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 12)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDOORSTYLE requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					OperationType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					ConstructionType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					ParameterTakesPrecedence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					Sizeable = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -35840,13 +43289,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDRAUGHTINGCALLOUT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Contents = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -35868,12 +43327,12 @@ namespace IFC.IFC2x3
 			{
 				if(Contents != null)
 				{
-					IFC_Attributes<Global.IFCDraughtingCalloutElement>? items = new IFC_Attributes<Global.IFCDraughtingCalloutElement>();
+					IFC_Attributes<Global.IFCDraughtingCalloutElement>? Items = new IFC_Attributes<Global.IFCDraughtingCalloutElement>();
 					foreach (IFCDraughtingCalloutElement item in Contents)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -35902,12 +43361,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsRelatedFromCallout != null)
 				{
-					IFC_Attributes<Global.IFCDraughtingCalloutRelationship>? items = new IFC_Attributes<Global.IFCDraughtingCalloutRelationship>();
+					IFC_Attributes<Global.IFCDraughtingCalloutRelationship>? Items = new IFC_Attributes<Global.IFCDraughtingCalloutRelationship>();
 					foreach (IFCDraughtingCalloutRelationship item in IsRelatedFromCallout)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -35918,12 +43377,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsRelatedToCallout != null)
 				{
-					IFC_Attributes<Global.IFCDraughtingCalloutRelationship>? items = new IFC_Attributes<Global.IFCDraughtingCalloutRelationship>();
+					IFC_Attributes<Global.IFCDraughtingCalloutRelationship>? Items = new IFC_Attributes<Global.IFCDraughtingCalloutRelationship>();
 					foreach (IFCDraughtingCalloutRelationship item in IsRelatedToCallout)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -35984,13 +43443,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDRAUGHTINGCALLOUTRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RelatingDraughtingCallout = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					RelatedDraughtingCallout = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -36156,13 +43646,23 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDRAUGHTINGPREDEFINEDCOLOUR requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -36237,13 +43737,23 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDRAUGHTINGPREDEFINEDCURVEFONT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -36312,13 +43822,23 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDRAUGHTINGPREDEFINEDTEXTFONT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -36407,13 +43927,86 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDUCTFITTINGTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -36592,13 +44185,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDUCTSEGMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -36777,13 +44443,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCDUCTSILENCERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -36941,13 +44680,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEDGE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					EdgeStart = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					EdgeEnd = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -37057,13 +44813,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEDGECURVE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					EdgeStart = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					EdgeEnd = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					EdgeGeometry = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					SameSense = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -37213,13 +45000,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEDGEFEATURE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					FeatureLength = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -37402,13 +45255,23 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEDGELOOP requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					EdgeList = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -37430,12 +45293,12 @@ namespace IFC.IFC2x3
 			{
 				if(EdgeList != null)
 				{
-					IFC_Attributes<Global.IFCOrientedEdge>? items = new IFC_Attributes<Global.IFCOrientedEdge>();
+					IFC_Attributes<Global.IFCOrientedEdge>? Items = new IFC_Attributes<Global.IFCOrientedEdge>();
 					foreach (IFCOrientedEdge item in EdgeList)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -37523,13 +45386,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICAPPLIANCETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -37725,13 +45661,86 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICDISTRIBUTIONPOINT requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					DistributionPointFunction = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					UserDefinedFunction = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -37913,13 +45922,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICFLOWSTORAGEDEVICETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -38083,13 +46165,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICGENERATORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -38253,13 +46408,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICHEATERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -38423,13 +46651,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICMOTORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -38593,13 +46894,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICTIMECONTROLTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -38784,13 +47158,114 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 14)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 14)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICALBASEPROPERTIES requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					EnergySequence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					UserDefinedEnergySequence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ElectricCurrentType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					InputVoltage = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					InputFrequency = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					FullLoadCurrent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					MinimumCircuitCurrent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					MaximumPowerInput = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					RatedPowerInput = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					InputPhase = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -39105,13 +47580,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICALCIRCUIT requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -39225,13 +47738,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELECTRICALELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -39408,13 +47980,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -39510,12 +48141,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasStructuralMember != null)
 				{
-					IFC_Attributes<Global.IFCRelConnectsStructuralElement>? items = new IFC_Attributes<Global.IFCRelConnectsStructuralElement>();
+					IFC_Attributes<Global.IFCRelConnectsStructuralElement>? Items = new IFC_Attributes<Global.IFCRelConnectsStructuralElement>();
 					foreach (IFCRelConnectsStructuralElement item in HasStructuralMember)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -39526,12 +48157,12 @@ namespace IFC.IFC2x3
 			{
 				if(FillsVoids != null)
 				{
-					IFC_Attributes<Global.IFCRelFillsElement>? items = new IFC_Attributes<Global.IFCRelFillsElement>();
+					IFC_Attributes<Global.IFCRelFillsElement>? Items = new IFC_Attributes<Global.IFCRelFillsElement>();
 					foreach (IFCRelFillsElement item in FillsVoids)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -39542,12 +48173,12 @@ namespace IFC.IFC2x3
 			{
 				if(ConnectedTo != null)
 				{
-					IFC_Attributes<Global.IFCRelConnectsElements>? items = new IFC_Attributes<Global.IFCRelConnectsElements>();
+					IFC_Attributes<Global.IFCRelConnectsElements>? Items = new IFC_Attributes<Global.IFCRelConnectsElements>();
 					foreach (IFCRelConnectsElements item in ConnectedTo)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -39558,12 +48189,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasCoverings != null)
 				{
-					IFC_Attributes<Global.IFCRelCoversBldgElements>? items = new IFC_Attributes<Global.IFCRelCoversBldgElements>();
+					IFC_Attributes<Global.IFCRelCoversBldgElements>? Items = new IFC_Attributes<Global.IFCRelCoversBldgElements>();
 					foreach (IFCRelCoversBldgElements item in HasCoverings)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -39574,12 +48205,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasProjections != null)
 				{
-					IFC_Attributes<Global.IFCRelProjectsElement>? items = new IFC_Attributes<Global.IFCRelProjectsElement>();
+					IFC_Attributes<Global.IFCRelProjectsElement>? Items = new IFC_Attributes<Global.IFCRelProjectsElement>();
 					foreach (IFCRelProjectsElement item in HasProjections)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -39590,12 +48221,12 @@ namespace IFC.IFC2x3
 			{
 				if(ReferencedInStructures != null)
 				{
-					IFC_Attributes<Global.IFCRelReferencedInSpatialStructure>? items = new IFC_Attributes<Global.IFCRelReferencedInSpatialStructure>();
+					IFC_Attributes<Global.IFCRelReferencedInSpatialStructure>? Items = new IFC_Attributes<Global.IFCRelReferencedInSpatialStructure>();
 					foreach (IFCRelReferencedInSpatialStructure item in ReferencedInStructures)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -39606,12 +48237,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasPorts != null)
 				{
-					IFC_Attributes<Global.IFCRelConnectsPortToElement>? items = new IFC_Attributes<Global.IFCRelConnectsPortToElement>();
+					IFC_Attributes<Global.IFCRelConnectsPortToElement>? Items = new IFC_Attributes<Global.IFCRelConnectsPortToElement>();
 					foreach (IFCRelConnectsPortToElement item in HasPorts)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -39622,12 +48253,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasOpenings != null)
 				{
-					IFC_Attributes<Global.IFCRelVoidsElement>? items = new IFC_Attributes<Global.IFCRelVoidsElement>();
+					IFC_Attributes<Global.IFCRelVoidsElement>? Items = new IFC_Attributes<Global.IFCRelVoidsElement>();
 					foreach (IFCRelVoidsElement item in HasOpenings)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -39638,12 +48269,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsConnectionRealization != null)
 				{
-					IFC_Attributes<Global.IFCRelConnectsWithRealizingElements>? items = new IFC_Attributes<Global.IFCRelConnectsWithRealizingElements>();
+					IFC_Attributes<Global.IFCRelConnectsWithRealizingElements>? Items = new IFC_Attributes<Global.IFCRelConnectsWithRealizingElements>();
 					foreach (IFCRelConnectsWithRealizingElements item in IsConnectionRealization)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -39654,12 +48285,12 @@ namespace IFC.IFC2x3
 			{
 				if(ProvidesBoundaries != null)
 				{
-					IFC_Attributes<Global.IFCRelSpaceBoundary>? items = new IFC_Attributes<Global.IFCRelSpaceBoundary>();
+					IFC_Attributes<Global.IFCRelSpaceBoundary>? Items = new IFC_Attributes<Global.IFCRelSpaceBoundary>();
 					foreach (IFCRelSpaceBoundary item in ProvidesBoundaries)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -39670,12 +48301,12 @@ namespace IFC.IFC2x3
 			{
 				if(ConnectedFrom != null)
 				{
-					IFC_Attributes<Global.IFCRelConnectsElements>? items = new IFC_Attributes<Global.IFCRelConnectsElements>();
+					IFC_Attributes<Global.IFCRelConnectsElements>? Items = new IFC_Attributes<Global.IFCRelConnectsElements>();
 					foreach (IFCRelConnectsElements item in ConnectedFrom)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -39686,12 +48317,12 @@ namespace IFC.IFC2x3
 			{
 				if(ContainedInStructure != null)
 				{
-					IFC_Attributes<Global.IFCRelContainedInSpatialStructure>? items = new IFC_Attributes<Global.IFCRelContainedInSpatialStructure>();
+					IFC_Attributes<Global.IFCRelContainedInSpatialStructure>? Items = new IFC_Attributes<Global.IFCRelContainedInSpatialStructure>();
 					foreach (IFCRelContainedInSpatialStructure item in ContainedInStructure)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -39784,13 +48415,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENTASSEMBLY requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					AssemblyPlace = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -39983,13 +48687,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENTCOMPONENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -40118,13 +48881,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENTCOMPONENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -40257,13 +49086,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENTQUANTITY requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					MethodOfMeasurement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Quantities = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -40343,12 +49217,12 @@ namespace IFC.IFC2x3
 			{
 				if(Quantities != null)
 				{
-					IFC_Attributes<Global.IFCPhysicalQuantity>? items = new IFC_Attributes<Global.IFCPhysicalQuantity>();
+					IFC_Attributes<Global.IFCPhysicalQuantity>? Items = new IFC_Attributes<Global.IFCPhysicalQuantity>();
 					foreach (IFCPhysicalQuantity item in Quantities)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -40435,13 +49309,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -40599,13 +49539,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELEMENTARYSURFACE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -40696,13 +49646,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELLIPSE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SemiAxis1 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					SemiAxis2 = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -40819,13 +49793,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCELLIPSEPROFILEDEF requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					SemiAxis1 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					SemiAxis2 = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -40976,13 +49988,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCENERGYCONVERSIONDEVICE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -41127,13 +50198,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCENERGYCONVERSIONDEVICETYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -41268,13 +50405,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCENERGYPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					EnergySequence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					UserDefinedEnergySequence = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -41441,13 +50623,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCENVIRONMENTALIMPACTVALUE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					AppliedValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					UnitBasis = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					FixedUntilDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ImpactType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Category = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					UserDefinedCategory = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -41647,13 +50895,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEQUIPMENTELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -41775,13 +51082,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEQUIPMENTSTANDARD requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -41902,13 +51247,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEVAPORATIVECOOLERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -42087,13 +51505,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEVAPORATORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -42250,13 +51741,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTENDEDMATERIALPROPERTIES requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ExtendedProperties = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -42302,12 +51824,12 @@ namespace IFC.IFC2x3
 			{
 				if(ExtendedProperties != null)
 				{
-					IFC_Attributes<Global.IFCProperty>? items = new IFC_Attributes<Global.IFCProperty>();
+					IFC_Attributes<Global.IFCProperty>? Items = new IFC_Attributes<Global.IFCProperty>();
 					foreach (IFCProperty item in ExtendedProperties)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -42437,13 +51959,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTERNALREFERENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Location = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ItemReference = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -42571,13 +52117,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTERNALLYDEFINEDHATCHSTYLE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Location = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ItemReference = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -42651,13 +52221,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTERNALLYDEFINEDSURFACESTYLE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Location = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ItemReference = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -42731,13 +52325,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTERNALLYDEFINEDSYMBOL requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Location = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ItemReference = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -42811,13 +52429,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTERNALLYDEFINEDTEXTFONT requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Location = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ItemReference = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -42915,13 +52557,44 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCEXTRUDEDAREASOLID requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SweptArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ExtrudedDirection = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Depth = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -43057,13 +52730,23 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Bounds = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -43085,12 +52768,12 @@ namespace IFC.IFC2x3
 			{
 				if(Bounds != null)
 				{
-					IFC_Attributes<Global.IFCFaceBound>? items = new IFC_Attributes<Global.IFCFaceBound>();
+					IFC_Attributes<Global.IFCFaceBound>? Items = new IFC_Attributes<Global.IFCFaceBound>();
 					foreach (IFCFaceBound item in Bounds)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -43171,13 +52854,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACEBASEDSURFACEMODEL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					FbsmFaces = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -43199,12 +52892,12 @@ namespace IFC.IFC2x3
 			{
 				if(FbsmFaces != null)
 				{
-					IFC_Attributes<Global.IFCConnectedFaceSet>? items = new IFC_Attributes<Global.IFCConnectedFaceSet>();
+					IFC_Attributes<Global.IFCConnectedFaceSet>? Items = new IFC_Attributes<Global.IFCConnectedFaceSet>();
 					foreach (IFCConnectedFaceSet item in FbsmFaces)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -43284,13 +52977,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACEBOUND requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Bound = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Orientation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -43392,13 +53102,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACEOUTERBOUND requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Bound = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Orientation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -43472,13 +53199,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACESURFACE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Bounds = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					FaceSurface = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					SameSense = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -43588,13 +53339,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACETEDBREP requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Outer = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -43656,13 +53417,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFACETEDBREPWITHVOIDS requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Outer = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Voids = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -43692,12 +53470,12 @@ namespace IFC.IFC2x3
 			{
 				if(Voids != null)
 				{
-					IFC_Attributes<Global.IFCClosedShell>? items = new IFC_Attributes<Global.IFCClosedShell>();
+					IFC_Attributes<Global.IFCClosedShell>? Items = new IFC_Attributes<Global.IFCClosedShell>();
 					foreach (IFCClosedShell item in Voids)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -43783,13 +53561,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFAILURECONNECTIONCONDITION requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					TensionFailureX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					TensionFailureY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					TensionFailureZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					CompressionFailureX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					CompressionFailureY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					CompressionFailureZ = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -44034,13 +53864,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFANTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -44214,13 +54117,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFASTENER requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -44348,13 +54310,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFASTENERTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -44503,13 +54531,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFEATUREELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -44653,13 +54740,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFEATUREELEMENTADDITION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -44811,13 +54957,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFEATUREELEMENTSUBTRACTION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -44985,13 +55190,30 @@ namespace IFC.IFC2x3
 				{"WR13", WR_WR13}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFILLAREASTYLE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					FillStyles = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -45021,12 +55243,12 @@ namespace IFC.IFC2x3
 			{
 				if(FillStyles != null)
 				{
-					IFC_Attributes<Global.IFCFillStyleSelect>? items = new IFC_Attributes<Global.IFCFillStyleSelect>();
+					IFC_Attributes<Global.IFCFillStyleSelect>? Items = new IFC_Attributes<Global.IFCFillStyleSelect>();
 					foreach (IFCFillStyleSelect item in FillStyles)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -45154,13 +55376,51 @@ namespace IFC.IFC2x3
 				{"WR23", WR_WR23}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFILLAREASTYLEHATCHING requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					HatchLineAppearance = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					StartOfNextHatchLine = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					PointOfReferenceHatchLine = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					PatternStart = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					HatchLineAngle = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -45342,13 +55602,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFILLAREASTYLETILESYMBOLWITHSTYLE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Symbol = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -45434,13 +55704,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFILLAREASTYLETILES requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					TilingPattern = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Tiles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					TilingScale = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -45496,12 +55790,12 @@ namespace IFC.IFC2x3
 			{
 				if(Tiles != null)
 				{
-					IFC_Attributes<Global.IFCFillAreaStyleTileShapeSelect>? items = new IFC_Attributes<Global.IFCFillAreaStyleTileShapeSelect>();
+					IFC_Attributes<Global.IFCFillAreaStyleTileShapeSelect>? Items = new IFC_Attributes<Global.IFCFillAreaStyleTileShapeSelect>();
 					foreach (IFCFillAreaStyleTileShapeSelect item in Tiles)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -45615,13 +55909,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFILTERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -45785,13 +56152,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFIRESUPPRESSIONTERMINALTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -45966,13 +56406,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWCONTROLLER requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -46106,13 +56605,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWCONTROLLERTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -46259,13 +56824,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWFITTING requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -46396,13 +57020,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWFITTINGTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -46540,13 +57230,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWINSTRUMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -46725,13 +57488,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWMETERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -46904,13 +57740,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWMOVINGDEVICE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -47040,13 +57935,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWMOVINGDEVICETYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -47193,13 +58154,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWSEGMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -47330,13 +58350,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWSEGMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -47483,13 +58569,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWSTORAGEDEVICE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -47618,13 +58763,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWSTORAGEDEVICETYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -47771,13 +58982,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWTERMINAL requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -47915,13 +59185,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWTERMINALTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -48068,13 +59404,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWTREATMENTDEVICE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -48203,13 +59598,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLOWTREATMENTDEVICETYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -48394,13 +59855,149 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 19)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 19)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFLUIDFLOWPROPERTIES requires 19 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					PropertySource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					FlowConditionTimeSeries = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					VelocityTimeSeries = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					FlowrateTimeSeries = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					Fluid = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PressureTimeSeries = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					UserDefinedPropertySource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					TemperatureSingleValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					WetBulbTemperatureSingleValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					WetBulbTemperatureTimeSeries = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[14] == "$")
+				{
+					TemperatureTimeSeries = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[15] == "$")
+				{
+					FlowrateSingleValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[16] == "$")
+				{
+					FlowConditionSingleValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[17] == "$")
+				{
+					VelocitySingleValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[18] == "$")
+				{
+					PressureSingleValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -48914,13 +60511,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFOOTING requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -49075,13 +60738,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFUELPROPERTIES requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					CombustionTemperature = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					CarbonContent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					LowerHeatingValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					HigherHeatingValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -49267,13 +60968,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFURNISHINGELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -49402,13 +61162,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFURNISHINGELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -49538,13 +61364,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFURNITURESTANDARD requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -49650,13 +61514,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCFURNITURETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					AssemblyPlace = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -49835,13 +61772,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGASTERMINALTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -50000,13 +62010,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGENERALMATERIALPROPERTIES requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					MolecularWeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Porosity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					MassDensity = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -50176,13 +62217,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGENERALPROFILEPROPERTIES requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileDefinition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					PhysicalWeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Perimeter = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					MinimumPlateThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					MaximumPlateThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					CrossSectionArea = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -50394,13 +62487,23 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGEOMETRICCURVESET requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Elements = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -50479,13 +62582,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGEOMETRICREPRESENTATIONCONTEXT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ContextIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ContextType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					CoordinateSpaceDimension = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Precision = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					WorldCoordinateSystem = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					TrueNorth = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -50619,12 +62767,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasSubContexts != null)
 				{
-					IFC_Attributes<Global.IFCGeometricRepresentationSubContext>? items = new IFC_Attributes<Global.IFCGeometricRepresentationSubContext>();
+					IFC_Attributes<Global.IFCGeometricRepresentationSubContext>? Items = new IFC_Attributes<Global.IFCGeometricRepresentationSubContext>();
 					foreach (IFCGeometricRepresentationSubContext item in HasSubContexts)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -50695,13 +62843,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGEOMETRICREPRESENTATIONITEM requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -50853,13 +63004,86 @@ namespace IFC.IFC2x3
 				{"WR32", WR_WR32}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGEOMETRICREPRESENTATIONSUBCONTEXT requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ContextIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ContextType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					CoordinateSpaceDimension = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Precision = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					WorldCoordinateSystem = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					TrueNorth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ParentContext = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					TargetScale = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					TargetView = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					UserDefinedTargetView = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -51095,13 +63319,23 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGEOMETRICSET requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Elements = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -51123,12 +63357,12 @@ namespace IFC.IFC2x3
 			{
 				if(Elements != null)
 				{
-					IFC_Attributes<Global.IFCGeometricSetSelect>? items = new IFC_Attributes<Global.IFCGeometricSetSelect>();
+					IFC_Attributes<Global.IFCGeometricSetSelect>? Items = new IFC_Attributes<Global.IFCGeometricSetSelect>();
 					foreach (IFCGeometricSetSelect item in Elements)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -51241,13 +63475,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGRID requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					UAxes = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					VAxes = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					WAxes = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -51341,12 +63648,12 @@ namespace IFC.IFC2x3
 			{
 				if(UAxes != null)
 				{
-					IFC_Attributes<Global.IFCGridAxis>? items = new IFC_Attributes<Global.IFCGridAxis>();
+					IFC_Attributes<Global.IFCGridAxis>? Items = new IFC_Attributes<Global.IFCGridAxis>();
 					foreach (IFCGridAxis item in UAxes)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -51375,12 +63682,12 @@ namespace IFC.IFC2x3
 			{
 				if(VAxes != null)
 				{
-					IFC_Attributes<Global.IFCGridAxis>? items = new IFC_Attributes<Global.IFCGridAxis>();
+					IFC_Attributes<Global.IFCGridAxis>? Items = new IFC_Attributes<Global.IFCGridAxis>();
 					foreach (IFCGridAxis item in VAxes)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -51409,12 +63716,12 @@ namespace IFC.IFC2x3
 			{
 				if(WAxes != null)
 				{
-					IFC_Attributes<Global.IFCGridAxis>? items = new IFC_Attributes<Global.IFCGridAxis>();
+					IFC_Attributes<Global.IFCGridAxis>? Items = new IFC_Attributes<Global.IFCGridAxis>();
 					foreach (IFCGridAxis item in WAxes)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -51443,12 +63750,12 @@ namespace IFC.IFC2x3
 			{
 				if(ContainedInStructure != null)
 				{
-					IFC_Attributes<Global.IFCRelContainedInSpatialStructure>? items = new IFC_Attributes<Global.IFCRelContainedInSpatialStructure>();
+					IFC_Attributes<Global.IFCRelContainedInSpatialStructure>? Items = new IFC_Attributes<Global.IFCRelContainedInSpatialStructure>();
 					foreach (IFCRelContainedInSpatialStructure item in ContainedInStructure)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -51542,13 +63849,37 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGRIDAXIS requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					AxisTag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					AxisCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					SameSense = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -51640,12 +63971,12 @@ namespace IFC.IFC2x3
 			{
 				if(PartOfW != null)
 				{
-					IFC_Attributes<Global.IFCGrid>? items = new IFC_Attributes<Global.IFCGrid>();
+					IFC_Attributes<Global.IFCGrid>? Items = new IFC_Attributes<Global.IFCGrid>();
 					foreach (IFCGrid item in PartOfW)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -51656,12 +63987,12 @@ namespace IFC.IFC2x3
 			{
 				if(PartOfV != null)
 				{
-					IFC_Attributes<Global.IFCGrid>? items = new IFC_Attributes<Global.IFCGrid>();
+					IFC_Attributes<Global.IFCGrid>? Items = new IFC_Attributes<Global.IFCGrid>();
 					foreach (IFCGrid item in PartOfV)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -51672,12 +64003,12 @@ namespace IFC.IFC2x3
 			{
 				if(PartOfU != null)
 				{
-					IFC_Attributes<Global.IFCGrid>? items = new IFC_Attributes<Global.IFCGrid>();
+					IFC_Attributes<Global.IFCGrid>? Items = new IFC_Attributes<Global.IFCGrid>();
 					foreach (IFCGrid item in PartOfU)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -51688,12 +64019,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasIntersections != null)
 				{
-					IFC_Attributes<Global.IFCVirtualGridIntersection>? items = new IFC_Attributes<Global.IFCVirtualGridIntersection>();
+					IFC_Attributes<Global.IFCVirtualGridIntersection>? Items = new IFC_Attributes<Global.IFCVirtualGridIntersection>();
 					foreach (IFCVirtualGridIntersection item in HasIntersections)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -51746,13 +64077,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGRIDPLACEMENT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					PlacementLocation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					PlacementRefDirection = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -51873,13 +64221,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCGROUP requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -51999,13 +64385,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCHALFSPACESOLID requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					BaseSurface = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					AgreementFlag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -52145,13 +64548,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCHEATEXCHANGERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -52330,13 +64806,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCHUMIDIFIERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -52503,13 +65052,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCHYGROSCOPICMATERIALPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					UpperVaporResistanceFactor = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					LowerVaporResistanceFactor = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					IsothermalMoistureCapacity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					VaporPermeability = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					MoistureDiffusivity = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -52760,13 +65354,72 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCISHAPEPROFILEDEF requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					OverallWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					OverallDepth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					WebThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					FlangeThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					FilletRadius = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -52974,13 +65627,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCIMAGETEXTURE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RepeatS = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RepeatT = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					TextureType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					TextureTransform = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					UrlReference = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -53138,13 +65829,93 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCINVENTORY requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					InventoryType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Jurisdiction = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ResponsiblePersons = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					LastUpdateDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					CurrentValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					OriginalValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -53282,12 +66053,12 @@ namespace IFC.IFC2x3
 			{
 				if(ResponsiblePersons != null)
 				{
-					IFC_Attributes<Global.IFCPerson>? items = new IFC_Attributes<Global.IFCPerson>();
+					IFC_Attributes<Global.IFCPerson>? Items = new IFC_Attributes<Global.IFCPerson>();
 					foreach (IFCPerson item in ResponsiblePersons)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -53415,13 +66186,79 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCIRREGULARTIMESERIES requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					StartTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					EndTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					TimeSeriesDataType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					DataOrigin = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					UserDefinedDataOrigin = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					Values = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -53507,12 +66344,12 @@ namespace IFC.IFC2x3
 			{
 				if(Values != null)
 				{
-					IFC_Attributes<Global.IFCIrregularTimeSeriesValue>? items = new IFC_Attributes<Global.IFCIrregularTimeSeriesValue>();
+					IFC_Attributes<Global.IFCIrregularTimeSeriesValue>? Items = new IFC_Attributes<Global.IFCIrregularTimeSeriesValue>();
 					foreach (IFCIrregularTimeSeriesValue item in Values)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -53580,13 +66417,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCIRREGULARTIMESERIESVALUE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					TimeStamp = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ListValues = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -53634,12 +66488,12 @@ namespace IFC.IFC2x3
 			{
 				if(ListValues != null)
 				{
-					IFC_Attributes<Global.IFCValue>? items = new IFC_Attributes<Global.IFCValue>();
+					IFC_Attributes<Global.IFCValue>? Items = new IFC_Attributes<Global.IFCValue>();
 					foreach (IFCValue item in ListValues)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -53720,13 +66574,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCJUNCTIONBOXTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -53932,13 +66859,93 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLSHAPEPROFILEDEF requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Depth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Width = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Thickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					FilletRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					EdgeRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					LegSlope = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					CentreOfGravityInX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					CentreOfGravityInY = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -54236,13 +67243,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLABORRESOURCE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ResourceIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ResourceGroup = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ResourceConsumption = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					BaseQuantity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					SkillSet = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -54406,13 +67486,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLAMPTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -54575,13 +67728,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIBRARYINFORMATION requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Version = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Publisher = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					VersionDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					LibraryReference = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -54707,12 +67898,12 @@ namespace IFC.IFC2x3
 			{
 				if(LibraryReference != null)
 				{
-					IFC_Attributes<Global.IFCLibraryReference>? items = new IFC_Attributes<Global.IFCLibraryReference>();
+					IFC_Attributes<Global.IFCLibraryReference>? Items = new IFC_Attributes<Global.IFCLibraryReference>();
 					foreach (IFCLibraryReference item in LibraryReference)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -54781,13 +67972,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIBRARYREFERENCE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Location = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ItemReference = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -54825,12 +68040,12 @@ namespace IFC.IFC2x3
 			{
 				if(ReferenceIntoLibrary != null)
 				{
-					IFC_Attributes<Global.IFCLibraryInformation>? items = new IFC_Attributes<Global.IFCLibraryInformation>();
+					IFC_Attributes<Global.IFCLibraryInformation>? Items = new IFC_Attributes<Global.IFCLibraryInformation>();
 					foreach (IFCLibraryInformation item in ReferenceIntoLibrary)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -54884,13 +68099,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTDISTRIBUTIONDATA requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					MainPlaneAngle = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SecondaryPlaneAngle = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					LuminousIntensity = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -54946,12 +68185,12 @@ namespace IFC.IFC2x3
 			{
 				if(SecondaryPlaneAngle != null)
 				{
-					IFC_Attributes<Global.IFCPlaneAngleMeasure>? items = new IFC_Attributes<Global.IFCPlaneAngleMeasure>();
+					IFC_Attributes<Global.IFCPlaneAngleMeasure>? Items = new IFC_Attributes<Global.IFCPlaneAngleMeasure>();
 					foreach (IFCPlaneAngleMeasure item in SecondaryPlaneAngle)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -54980,12 +68219,12 @@ namespace IFC.IFC2x3
 			{
 				if(LuminousIntensity != null)
 				{
-					IFC_Attributes<Global.IFCLuminousIntensityDistributionMeasure>? items = new IFC_Attributes<Global.IFCLuminousIntensityDistributionMeasure>();
+					IFC_Attributes<Global.IFCLuminousIntensityDistributionMeasure>? Items = new IFC_Attributes<Global.IFCLuminousIntensityDistributionMeasure>();
 					foreach (IFCLuminousIntensityDistributionMeasure item in LuminousIntensity)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -55066,13 +68305,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTFIXTURETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -55223,13 +68535,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTINTENSITYDISTRIBUTION requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					LightDistributionCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					DistributionData = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -55277,12 +68606,12 @@ namespace IFC.IFC2x3
 			{
 				if(DistributionData != null)
 				{
-					IFC_Attributes<Global.IFCLightDistributionData>? items = new IFC_Attributes<Global.IFCLightDistributionData>();
+					IFC_Attributes<Global.IFCLightDistributionData>? Items = new IFC_Attributes<Global.IFCLightDistributionData>();
 					foreach (IFCLightDistributionData item in DistributionData)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -55366,13 +68695,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTSOURCE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LightColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					AmbientIntensity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Intensity = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -55528,13 +68888,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTSOURCEAMBIENT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LightColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					AmbientIntensity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Intensity = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -55622,13 +69013,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTSOURCEDIRECTIONAL requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LightColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					AmbientIntensity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Intensity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Orientation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -55762,13 +69191,86 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTSOURCEGONIOMETRIC requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LightColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					AmbientIntensity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Intensity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ColourAppearance = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ColourTemperature = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					LuminousFlux = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					LightEmissionSource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					LightDistributionDataSource = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -56030,13 +69532,79 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTSOURCEPOSITIONAL requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LightColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					AmbientIntensity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Intensity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Radius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ConstantAttenuation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					DistanceAttenuation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					QuadricAttenuation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -56271,13 +69839,107 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 13)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 13)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLIGHTSOURCESPOT requires 13 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LightColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					AmbientIntensity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Intensity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Radius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ConstantAttenuation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					DistanceAttenuation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					QuadricAttenuation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Orientation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					ConcentrationExponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					SpreadAngle = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					BeamWidthAngle = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -56524,13 +70186,30 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLINE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Pnt = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Dir = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -56635,13 +70314,23 @@ namespace IFC.IFC2x3
 				{"WR42", WR_WR42}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLINEARDIMENSION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Contents = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -56719,13 +70408,30 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLOCALPLACEMENT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					PlacementRelTo = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RelativePlacement = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -56856,13 +70562,51 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLOCALTIME requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					HourComponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					MinuteComponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					SecondComponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Zone = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					DaylightSavingOffset = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -57041,13 +70785,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCLOOP requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -57103,13 +70850,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMANIFOLDSOLIDBREP requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Outer = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -57191,13 +70948,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMAPPEDITEM requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					MappingSource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					MappingTarget = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -57305,13 +71079,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIAL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -57351,12 +71135,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasRepresentation != null)
 				{
-					IFC_Attributes<Global.IFCMaterialDefinitionRepresentation>? items = new IFC_Attributes<Global.IFCMaterialDefinitionRepresentation>();
+					IFC_Attributes<Global.IFCMaterialDefinitionRepresentation>? Items = new IFC_Attributes<Global.IFCMaterialDefinitionRepresentation>();
 					foreach (IFCMaterialDefinitionRepresentation item in HasRepresentation)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -57367,12 +71151,12 @@ namespace IFC.IFC2x3
 			{
 				if(ClassifiedAs != null)
 				{
-					IFC_Attributes<Global.IFCMaterialClassificationRelationship>? items = new IFC_Attributes<Global.IFCMaterialClassificationRelationship>();
+					IFC_Attributes<Global.IFCMaterialClassificationRelationship>? Items = new IFC_Attributes<Global.IFCMaterialClassificationRelationship>();
 					foreach (IFCMaterialClassificationRelationship item in ClassifiedAs)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -57422,13 +71206,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALCLASSIFICATIONRELATIONSHIP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					MaterialClassifications = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ClassifiedMaterial = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -57458,12 +71259,12 @@ namespace IFC.IFC2x3
 			{
 				if(MaterialClassifications != null)
 				{
-					IFC_Attributes<Global.IFCClassificationNotationSelect>? items = new IFC_Attributes<Global.IFCClassificationNotationSelect>();
+					IFC_Attributes<Global.IFCClassificationNotationSelect>? Items = new IFC_Attributes<Global.IFCClassificationNotationSelect>();
 					foreach (IFCClassificationNotationSelect item in MaterialClassifications)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -57565,13 +71366,44 @@ namespace IFC.IFC2x3
 				{"WR11", WR_WR11}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALDEFINITIONREPRESENTATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Representations = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					RepresentedMaterial = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -57682,13 +71514,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALLAYER requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LayerThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					IsVentilated = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -57840,13 +71696,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALLAYERSET requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					MaterialLayers = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LayerSetName = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -57876,12 +71749,12 @@ namespace IFC.IFC2x3
 			{
 				if(MaterialLayers != null)
 				{
-					IFC_Attributes<Global.IFCMaterialLayer>? items = new IFC_Attributes<Global.IFCMaterialLayer>();
+					IFC_Attributes<Global.IFCMaterialLayer>? Items = new IFC_Attributes<Global.IFCMaterialLayer>();
 					foreach (IFCMaterialLayer item in MaterialLayers)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -57982,13 +71855,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALLAYERSETUSAGE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ForLayerSet = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LayerSetDirection = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					DirectionSense = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					OffsetFromReferenceLine = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -58141,13 +72045,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALLIST requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Materials = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -58169,12 +72083,12 @@ namespace IFC.IFC2x3
 			{
 				if(Materials != null)
 				{
-					IFC_Attributes<Global.IFCMaterial>? items = new IFC_Attributes<Global.IFCMaterial>();
+					IFC_Attributes<Global.IFCMaterial>? Items = new IFC_Attributes<Global.IFCMaterial>();
 					foreach (IFCMaterial item in Materials)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -58248,13 +72162,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMATERIALPROPERTIES requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -58333,13 +72257,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMEASUREWITHUNIT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ValueComponent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					UnitComponent = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -58469,13 +72410,100 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 12)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 12)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMECHANICALCONCRETEMATERIALPROPERTIES requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					DynamicViscosity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					YoungModulus = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ShearModulus = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					PoissonRatio = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ThermalExpansionCoefficient = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					CompressiveStrength = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					MaxAggregateSize = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					AdmixturesDescription = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Workability = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					ProtectivePoreRatio = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					WaterImpermeability = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -58761,13 +72789,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMECHANICALFASTENER requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					NominalDiameter = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					NominalLength = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -58945,13 +73046,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMECHANICALFASTENERTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -59122,13 +73289,58 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMECHANICALMATERIALPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					DynamicViscosity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					YoungModulus = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ShearModulus = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					PoissonRatio = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ThermalExpansionCoefficient = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -59401,13 +73613,107 @@ namespace IFC.IFC2x3
 				{"WR34", WR_WR34}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 13)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 13)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMECHANICALSTEELMATERIALPROPERTIES requires 13 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					DynamicViscosity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					YoungModulus = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ShearModulus = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					PoissonRatio = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ThermalExpansionCoefficient = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					YieldStress = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					UltimateStress = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					UltimateStrain = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					HardeningModule = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					ProportionalStress = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					PlasticStrain = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					Relaxations = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -59633,12 +73939,12 @@ namespace IFC.IFC2x3
 			{
 				if(Relaxations != null)
 				{
-					IFC_Attributes<Global.IFCRelaxation>? items = new IFC_Attributes<Global.IFCRelaxation>();
+					IFC_Attributes<Global.IFCRelaxation>? Items = new IFC_Attributes<Global.IFCRelaxation>();
 					foreach (IFCRelaxation item in Relaxations)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -59727,13 +74033,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMEMBER requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -59863,13 +74228,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMEMBERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -60039,13 +74477,86 @@ namespace IFC.IFC2x3
 				{"WR11", WR_WR11}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMETRIC requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ConstraintGrade = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ConstraintSource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					CreatingActor = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					CreationTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					UserDefinedGrade = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Benchmark = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ValueSource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					DataValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -60228,13 +74739,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMONETARYUNIT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Currency = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -60326,13 +74847,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMOTORCONNECTIONTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -60555,13 +75149,107 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 13)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 13)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCMOVE requires 13 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					TaskId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Status = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					WorkMethod = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					IsMilestone = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Priority = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					MoveFrom = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					MoveTo = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					PunchList = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -60715,12 +75403,12 @@ namespace IFC.IFC2x3
 			{
 				if(PunchList != null)
 				{
-					IFC_Attributes<Global.IFCText>? items = new IFC_Attributes<Global.IFCText>();
+					IFC_Attributes<Global.IFCText>? Items = new IFC_Attributes<Global.IFCText>();
 					foreach (IFCText item in PunchList)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -60806,13 +75494,30 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCNAMEDUNIT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Dimensions = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					UnitType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -60948,13 +75653,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOBJECT requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -61026,12 +75769,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsDefinedBy != null)
 				{
-					IFC_Attributes<Global.IFCRelDefines>? items = new IFC_Attributes<Global.IFCRelDefines>();
+					IFC_Attributes<Global.IFCRelDefines>? Items = new IFC_Attributes<Global.IFCRelDefines>();
 					foreach (IFCRelDefines item in IsDefinedBy)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -61094,13 +75837,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOBJECTDEFINITION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -61146,12 +75920,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasAssignments != null)
 				{
-					IFC_Attributes<Global.IFCRelAssigns>? items = new IFC_Attributes<Global.IFCRelAssigns>();
+					IFC_Attributes<Global.IFCRelAssigns>? Items = new IFC_Attributes<Global.IFCRelAssigns>();
 					foreach (IFCRelAssigns item in HasAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -61162,12 +75936,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsDecomposedBy != null)
 				{
-					IFC_Attributes<Global.IFCRelDecomposes>? items = new IFC_Attributes<Global.IFCRelDecomposes>();
+					IFC_Attributes<Global.IFCRelDecomposes>? Items = new IFC_Attributes<Global.IFCRelDecomposes>();
 					foreach (IFCRelDecomposes item in IsDecomposedBy)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -61178,12 +75952,12 @@ namespace IFC.IFC2x3
 			{
 				if(Decomposes != null)
 				{
-					IFC_Attributes<Global.IFCRelDecomposes>? items = new IFC_Attributes<Global.IFCRelDecomposes>();
+					IFC_Attributes<Global.IFCRelDecomposes>? Items = new IFC_Attributes<Global.IFCRelDecomposes>();
 					foreach (IFCRelDecomposes item in Decomposes)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -61194,12 +75968,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasAssociations != null)
 				{
-					IFC_Attributes<Global.IFCRelAssociates>? items = new IFC_Attributes<Global.IFCRelAssociates>();
+					IFC_Attributes<Global.IFCRelAssociates>? Items = new IFC_Attributes<Global.IFCRelAssociates>();
 					foreach (IFCRelAssociates item in HasAssociations)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -61248,13 +76022,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOBJECTPLACEMENT requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -61268,12 +76045,12 @@ namespace IFC.IFC2x3
 			{
 				if(PlacesObject != null)
 				{
-					IFC_Attributes<Global.IFCProduct>? items = new IFC_Attributes<Global.IFCProduct>();
+					IFC_Attributes<Global.IFCProduct>? Items = new IFC_Attributes<Global.IFCProduct>();
 					foreach (IFCProduct item in PlacesObject)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -61284,12 +76061,12 @@ namespace IFC.IFC2x3
 			{
 				if(ReferencedByPlacements != null)
 				{
-					IFC_Attributes<Global.IFCLocalPlacement>? items = new IFC_Attributes<Global.IFCLocalPlacement>();
+					IFC_Attributes<Global.IFCLocalPlacement>? Items = new IFC_Attributes<Global.IFCLocalPlacement>();
 					foreach (IFCLocalPlacement item in ReferencedByPlacements)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -61377,13 +76154,93 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOBJECTIVE requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ConstraintGrade = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ConstraintSource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					CreatingActor = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					CreationTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					UserDefinedGrade = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					BenchmarkValues = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ResultValues = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					ObjectiveQualifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					UserDefinedQualifier = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -61621,13 +76478,65 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOCCUPANT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					TheActor = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -61776,13 +76685,37 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOFFSETCURVE2D requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					BasisCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Distance = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					SelfIntersect = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -61939,13 +76872,44 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOFFSETCURVE3D requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					BasisCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Distance = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					SelfIntersect = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					RefDirection = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -62103,13 +77067,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCONEDIRECTIONREPEATFACTOR requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RepeatFactor = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -62184,13 +77158,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOPENSHELL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					CfsFaces = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -62277,13 +77261,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOPENINGELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -62361,12 +77404,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasFillings != null)
 				{
-					IFC_Attributes<Global.IFCRelFillsElement>? items = new IFC_Attributes<Global.IFCRelFillsElement>();
+					IFC_Attributes<Global.IFCRelFillsElement>? Items = new IFC_Attributes<Global.IFCRelFillsElement>();
 					foreach (IFCRelFillsElement item in HasFillings)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -62448,13 +77491,86 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOPTICALMATERIALPROPERTIES requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					VisibleTransmittance = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					SolarTransmittance = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ThermalIrTransmittance = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ThermalIrEmissivityBack = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ThermalIrEmissivityFront = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					VisibleReflectanceBack = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					VisibleReflectanceFront = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					SolarReflectanceFront = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					SolarReflectanceBack = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -62770,13 +77886,93 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCORDERACTION requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					TaskId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Status = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					WorkMethod = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					IsMilestone = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Priority = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					ActionID = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -62957,13 +78153,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCORGANIZATION requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Id = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Roles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Addresses = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -63071,12 +78305,12 @@ namespace IFC.IFC2x3
 			{
 				if(Roles != null)
 				{
-					IFC_Attributes<Global.IFCActorRole>? items = new IFC_Attributes<Global.IFCActorRole>();
+					IFC_Attributes<Global.IFCActorRole>? Items = new IFC_Attributes<Global.IFCActorRole>();
 					foreach (IFCActorRole item in Roles)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -63105,12 +78339,12 @@ namespace IFC.IFC2x3
 			{
 				if(Addresses != null)
 				{
-					IFC_Attributes<Global.IFCAddress>? items = new IFC_Attributes<Global.IFCAddress>();
+					IFC_Attributes<Global.IFCAddress>? Items = new IFC_Attributes<Global.IFCAddress>();
 					foreach (IFCAddress item in Addresses)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -63139,12 +78373,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsRelatedBy != null)
 				{
-					IFC_Attributes<Global.IFCOrganizationRelationship>? items = new IFC_Attributes<Global.IFCOrganizationRelationship>();
+					IFC_Attributes<Global.IFCOrganizationRelationship>? Items = new IFC_Attributes<Global.IFCOrganizationRelationship>();
 					foreach (IFCOrganizationRelationship item in IsRelatedBy)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -63155,12 +78389,12 @@ namespace IFC.IFC2x3
 			{
 				if(Relates != null)
 				{
-					IFC_Attributes<Global.IFCOrganizationRelationship>? items = new IFC_Attributes<Global.IFCOrganizationRelationship>();
+					IFC_Attributes<Global.IFCOrganizationRelationship>? Items = new IFC_Attributes<Global.IFCOrganizationRelationship>();
 					foreach (IFCOrganizationRelationship item in Relates)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -63171,12 +78405,12 @@ namespace IFC.IFC2x3
 			{
 				if(Engages != null)
 				{
-					IFC_Attributes<Global.IFCPersonAndOrganization>? items = new IFC_Attributes<Global.IFCPersonAndOrganization>();
+					IFC_Attributes<Global.IFCPersonAndOrganization>? Items = new IFC_Attributes<Global.IFCPersonAndOrganization>();
 					foreach (IFCPersonAndOrganization item in Engages)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -63234,13 +78468,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCORGANIZATIONRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RelatingOrganization = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					RelatedOrganizations = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -63340,12 +78605,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedOrganizations != null)
 				{
-					IFC_Attributes<Global.IFCOrganization>? items = new IFC_Attributes<Global.IFCOrganization>();
+					IFC_Attributes<Global.IFCOrganization>? Items = new IFC_Attributes<Global.IFCOrganization>();
 					foreach (IFCOrganization item in RelatedOrganizations)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -63461,13 +78726,44 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCORIENTEDEDGE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					EdgeStart = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					EdgeEnd = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					EdgeElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Orientation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -63601,13 +78897,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOUTLETTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -63782,13 +79151,72 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCOWNERHISTORY requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					OwningUser = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwningApplication = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					State = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ChangeAction = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					LastModifiedDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					LastModifyingUser = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					LastModifyingApplication = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					CreationDate = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -64061,13 +79489,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPARAMETERIZEDPROFILEDEF requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -64175,13 +79627,23 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPATH requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					EdgeList = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -64203,12 +79665,12 @@ namespace IFC.IFC2x3
 			{
 				if(EdgeList != null)
 				{
-					IFC_Attributes<Global.IFCOrientedEdge>? items = new IFC_Attributes<Global.IFCOrientedEdge>();
+					IFC_Attributes<Global.IFCOrientedEdge>? Items = new IFC_Attributes<Global.IFCOrientedEdge>();
 					foreach (IFCOrientedEdge item in EdgeList)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -64285,13 +79747,58 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPERFORMANCEHISTORY requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					LifeCyclePhase = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -64430,13 +79937,79 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPERMEABLECOVERINGPROPERTIES requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					OperationType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					PanelPosition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					FrameDepth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					FrameThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ShapeAspectStyle = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -64662,13 +80235,58 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPERMIT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					PermitID = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -64830,13 +80448,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPERSON requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Id = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					FamilyName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					GivenName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					MiddleNames = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					PrefixTitles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					SuffixTitles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Roles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Addresses = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -64968,12 +80645,12 @@ namespace IFC.IFC2x3
 			{
 				if(MiddleNames != null)
 				{
-					IFC_Attributes<Global.IFCLabel>? items = new IFC_Attributes<Global.IFCLabel>();
+					IFC_Attributes<Global.IFCLabel>? Items = new IFC_Attributes<Global.IFCLabel>();
 					foreach (IFCLabel item in MiddleNames)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -65002,12 +80679,12 @@ namespace IFC.IFC2x3
 			{
 				if(PrefixTitles != null)
 				{
-					IFC_Attributes<Global.IFCLabel>? items = new IFC_Attributes<Global.IFCLabel>();
+					IFC_Attributes<Global.IFCLabel>? Items = new IFC_Attributes<Global.IFCLabel>();
 					foreach (IFCLabel item in PrefixTitles)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -65036,12 +80713,12 @@ namespace IFC.IFC2x3
 			{
 				if(SuffixTitles != null)
 				{
-					IFC_Attributes<Global.IFCLabel>? items = new IFC_Attributes<Global.IFCLabel>();
+					IFC_Attributes<Global.IFCLabel>? Items = new IFC_Attributes<Global.IFCLabel>();
 					foreach (IFCLabel item in SuffixTitles)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -65070,12 +80747,12 @@ namespace IFC.IFC2x3
 			{
 				if(Roles != null)
 				{
-					IFC_Attributes<Global.IFCActorRole>? items = new IFC_Attributes<Global.IFCActorRole>();
+					IFC_Attributes<Global.IFCActorRole>? Items = new IFC_Attributes<Global.IFCActorRole>();
 					foreach (IFCActorRole item in Roles)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -65104,12 +80781,12 @@ namespace IFC.IFC2x3
 			{
 				if(Addresses != null)
 				{
-					IFC_Attributes<Global.IFCAddress>? items = new IFC_Attributes<Global.IFCAddress>();
+					IFC_Attributes<Global.IFCAddress>? Items = new IFC_Attributes<Global.IFCAddress>();
 					foreach (IFCAddress item in Addresses)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -65138,12 +80815,12 @@ namespace IFC.IFC2x3
 			{
 				if(EngagedIn != null)
 				{
-					IFC_Attributes<Global.IFCPersonAndOrganization>? items = new IFC_Attributes<Global.IFCPersonAndOrganization>();
+					IFC_Attributes<Global.IFCPersonAndOrganization>? Items = new IFC_Attributes<Global.IFCPersonAndOrganization>();
 					foreach (IFCPersonAndOrganization item in EngagedIn)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -65197,13 +80874,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPERSONANDORGANIZATION requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ThePerson = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					TheOrganization = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Roles = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -65277,12 +80978,12 @@ namespace IFC.IFC2x3
 			{
 				if(Roles != null)
 				{
-					IFC_Attributes<Global.IFCActorRole>? items = new IFC_Attributes<Global.IFCActorRole>();
+					IFC_Attributes<Global.IFCActorRole>? Items = new IFC_Attributes<Global.IFCActorRole>();
 					foreach (IFCActorRole item in Roles)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -65376,13 +81077,58 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPHYSICALCOMPLEXQUANTITY requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					HasQuantities = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Discrimination = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Quality = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Usage = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -65444,12 +81190,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasQuantities != null)
 				{
-					IFC_Attributes<Global.IFCPhysicalQuantity>? items = new IFC_Attributes<Global.IFCPhysicalQuantity>();
+					IFC_Attributes<Global.IFCPhysicalQuantity>? Items = new IFC_Attributes<Global.IFCPhysicalQuantity>();
 					foreach (IFCPhysicalQuantity item in HasQuantities)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -65578,13 +81324,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPHYSICALQUANTITY requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -65650,12 +81413,12 @@ namespace IFC.IFC2x3
 			{
 				if(PartOfComplex != null)
 				{
-					IFC_Attributes<Global.IFCPhysicalComplexQuantity>? items = new IFC_Attributes<Global.IFCPhysicalComplexQuantity>();
+					IFC_Attributes<Global.IFCPhysicalComplexQuantity>? Items = new IFC_Attributes<Global.IFCPhysicalComplexQuantity>();
 					foreach (IFCPhysicalComplexQuantity item in PartOfComplex)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -65712,13 +81475,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPHYSICALSIMPLEQUANTITY requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -65856,13 +81643,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPILE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					ConstructionType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -66059,13 +81919,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPIPEFITTINGTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -66244,13 +82177,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPIPESEGMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -66467,13 +82473,72 @@ namespace IFC.IFC2x3
 				{"WR24", WR_WR24}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPIXELTEXTURE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RepeatS = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RepeatT = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					TextureType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					TextureTransform = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Width = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Height = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ColourComponents = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Pixel = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -66605,12 +82670,12 @@ namespace IFC.IFC2x3
 			{
 				if(Pixel != null)
 				{
-					IFC_Attributes<BINARY>? items = new IFC_Attributes<BINARY>();
+					IFC_Attributes<BINARY>? Items = new IFC_Attributes<BINARY>();
 					foreach (BINARY item in Pixel)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -66695,13 +82760,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPLACEMENT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Location = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -66788,13 +82863,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPLANARBOX requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SizeInX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SizeInY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Placement = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -66894,13 +82993,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPLANAREXTENT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SizeInX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SizeInY = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -67002,13 +83118,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPLANE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -67090,13 +83216,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPLATE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -67226,13 +83411,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPLATETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -67380,13 +83638,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOINT requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -67474,13 +83735,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOINTONCURVE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					BasisCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					PointParameter = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -67613,13 +83891,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOINTONSURFACE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					BasisSurface = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					PointParameterU = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					PointParameterV = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -67770,13 +84072,23 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOLYLOOP requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Polygon = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -67798,12 +84110,12 @@ namespace IFC.IFC2x3
 			{
 				if(Polygon != null)
 				{
-					IFC_Attributes<Global.IFCCartesianPoint>? items = new IFC_Attributes<Global.IFCCartesianPoint>();
+					IFC_Attributes<Global.IFCCartesianPoint>? Items = new IFC_Attributes<Global.IFCCartesianPoint>();
 					foreach (IFCCartesianPoint item in Polygon)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -67907,13 +84219,44 @@ namespace IFC.IFC2x3
 				{"WR42", WR_WR42}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOLYGONALBOUNDEDHALFSPACE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					BaseSurface = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					AgreementFlag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					PolygonalBoundary = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -68048,13 +84391,23 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOLYLINE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Points = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -68076,12 +84429,12 @@ namespace IFC.IFC2x3
 			{
 				if(Points != null)
 				{
-					IFC_Attributes<Global.IFCCartesianPoint>? items = new IFC_Attributes<Global.IFCCartesianPoint>();
+					IFC_Attributes<Global.IFCCartesianPoint>? Items = new IFC_Attributes<Global.IFCCartesianPoint>();
 					foreach (IFCCartesianPoint item in Points)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -68169,13 +84522,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPORT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -68252,12 +84657,12 @@ namespace IFC.IFC2x3
 			{
 				if(ConnectedFrom != null)
 				{
-					IFC_Attributes<Global.IFCRelConnectsPorts>? items = new IFC_Attributes<Global.IFCRelConnectsPorts>();
+					IFC_Attributes<Global.IFCRelConnectsPorts>? Items = new IFC_Attributes<Global.IFCRelConnectsPorts>();
 					foreach (IFCRelConnectsPorts item in ConnectedFrom)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -68268,12 +84673,12 @@ namespace IFC.IFC2x3
 			{
 				if(ConnectedTo != null)
 				{
-					IFC_Attributes<Global.IFCRelConnectsPorts>? items = new IFC_Attributes<Global.IFCRelConnectsPorts>();
+					IFC_Attributes<Global.IFCRelConnectsPorts>? Items = new IFC_Attributes<Global.IFCRelConnectsPorts>();
 					foreach (IFCRelConnectsPorts item in ConnectedTo)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -68370,13 +84775,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPOSTALADDRESS requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Purpose = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					UserDefinedPurpose = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					InternalLocation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					AddressLines = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					PostalBox = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Town = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Region = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					PostalCode = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Country = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -68488,12 +84966,12 @@ namespace IFC.IFC2x3
 			{
 				if(AddressLines != null)
 				{
-					IFC_Attributes<Global.IFCLabel>? items = new IFC_Attributes<Global.IFCLabel>();
+					IFC_Attributes<Global.IFCLabel>? Items = new IFC_Attributes<Global.IFCLabel>();
 					foreach (IFCLabel item in AddressLines)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -68647,13 +85125,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDCOLOUR requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -68710,13 +85198,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDCURVEFONT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -68787,13 +85285,23 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDDIMENSIONSYMBOL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -68855,13 +85363,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDITEM requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -68948,13 +85466,23 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDPOINTMARKERSYMBOL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -69013,13 +85541,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDSYMBOL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -69090,13 +85628,23 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDTERMINATORSYMBOL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -69154,13 +85702,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPREDEFINEDTEXTFONT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -69231,13 +85789,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRESENTATIONLAYERASSIGNMENT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					AssignedItems = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Identifier = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -69319,12 +85908,12 @@ namespace IFC.IFC2x3
 			{
 				if(AssignedItems != null)
 				{
-					IFC_Attributes<Global.IFCLayeredItem>? items = new IFC_Attributes<Global.IFCLayeredItem>();
+					IFC_Attributes<Global.IFCLayeredItem>? Items = new IFC_Attributes<Global.IFCLayeredItem>();
 					foreach (IFCLayeredItem item in AssignedItems)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -69423,13 +86012,72 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRESENTATIONLAYERWITHSTYLE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					AssignedItems = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Identifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					LayerOn = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					LayerFrozen = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					LayerBlocked = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					LayerStyles = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -69561,12 +86209,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerStyles != null)
 				{
-					IFC_Attributes<Global.IFCPresentationStyleSelect>? items = new IFC_Attributes<Global.IFCPresentationStyleSelect>();
+					IFC_Attributes<Global.IFCPresentationStyleSelect>? Items = new IFC_Attributes<Global.IFCPresentationStyleSelect>();
 					foreach (IFCPresentationStyleSelect item in LayerStyles)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -69636,13 +86284,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRESENTATIONSTYLE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -69717,13 +86375,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRESENTATIONSTYLEASSIGNMENT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -69745,12 +86413,12 @@ namespace IFC.IFC2x3
 			{
 				if(Styles != null)
 				{
-					IFC_Attributes<Global.IFCPresentationStyleSelect>? items = new IFC_Attributes<Global.IFCPresentationStyleSelect>();
+					IFC_Attributes<Global.IFCPresentationStyleSelect>? Items = new IFC_Attributes<Global.IFCPresentationStyleSelect>();
 					foreach (IFCPresentationStyleSelect item in Styles)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -69891,13 +86559,72 @@ namespace IFC.IFC2x3
 				{"WR4", WR_WR4}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROCEDURE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ProcedureID = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ProcedureType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					UserDefinedProcedureType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -70085,13 +86812,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROCESS requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -70145,12 +86910,12 @@ namespace IFC.IFC2x3
 			{
 				if(OperatesOn != null)
 				{
-					IFC_Attributes<Global.IFCRelAssignsToProcess>? items = new IFC_Attributes<Global.IFCRelAssignsToProcess>();
+					IFC_Attributes<Global.IFCRelAssignsToProcess>? Items = new IFC_Attributes<Global.IFCRelAssignsToProcess>();
 					foreach (IFCRelAssignsToProcess item in OperatesOn)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -70161,12 +86926,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsSuccessorFrom != null)
 				{
-					IFC_Attributes<Global.IFCRelSequence>? items = new IFC_Attributes<Global.IFCRelSequence>();
+					IFC_Attributes<Global.IFCRelSequence>? Items = new IFC_Attributes<Global.IFCRelSequence>();
 					foreach (IFCRelSequence item in IsSuccessorFrom)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -70177,12 +86942,12 @@ namespace IFC.IFC2x3
 			{
 				if(IsPredecessorTo != null)
 				{
-					IFC_Attributes<Global.IFCRelSequence>? items = new IFC_Attributes<Global.IFCRelSequence>();
+					IFC_Attributes<Global.IFCRelSequence>? Items = new IFC_Attributes<Global.IFCRelSequence>();
 					foreach (IFCRelSequence item in IsPredecessorTo)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -70274,13 +87039,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRODUCT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -70386,12 +87203,12 @@ namespace IFC.IFC2x3
 			{
 				if(ReferencedBy != null)
 				{
-					IFC_Attributes<Global.IFCRelAssignsToProduct>? items = new IFC_Attributes<Global.IFCRelAssignsToProduct>();
+					IFC_Attributes<Global.IFCRelAssignsToProduct>? Items = new IFC_Attributes<Global.IFCRelAssignsToProduct>();
 					foreach (IFCRelAssignsToProduct item in ReferencedBy)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -70460,13 +87277,37 @@ namespace IFC.IFC2x3
 				{"WR11", WR_WR11}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRODUCTDEFINITIONSHAPE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Representations = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -70504,12 +87345,12 @@ namespace IFC.IFC2x3
 			{
 				if(ShapeOfProduct != null)
 				{
-					IFC_Attributes<Global.IFCProduct>? items = new IFC_Attributes<Global.IFCProduct>();
+					IFC_Attributes<Global.IFCProduct>? Items = new IFC_Attributes<Global.IFCProduct>();
 					foreach (IFCProduct item in ShapeOfProduct)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -70520,12 +87361,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasShapeAspects != null)
 				{
-					IFC_Attributes<Global.IFCShapeAspect>? items = new IFC_Attributes<Global.IFCShapeAspect>();
+					IFC_Attributes<Global.IFCShapeAspect>? Items = new IFC_Attributes<Global.IFCShapeAspect>();
 					foreach (IFCShapeAspect item in HasShapeAspects)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -70582,13 +87423,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRODUCTREPRESENTATION requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Representations = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -70662,12 +87527,12 @@ namespace IFC.IFC2x3
 			{
 				if(Representations != null)
 				{
-					IFC_Attributes<Global.IFCRepresentation>? items = new IFC_Attributes<Global.IFCRepresentation>();
+					IFC_Attributes<Global.IFCRepresentation>? Items = new IFC_Attributes<Global.IFCRepresentation>();
 					foreach (IFCRepresentation item in Representations)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -70747,13 +87612,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPRODUCTSOFCOMBUSTIONPROPERTIES requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SpecificHeatCapacity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					N20Content = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					COContent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					CO2Content = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -70924,13 +87827,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROFILEDEF requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -71038,13 +87958,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROFILEPROPERTIES requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileDefinition = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -71211,13 +88148,79 @@ namespace IFC.IFC2x3
 				{"WR33", WR_WR33}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROJECT requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					LongName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Phase = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					RepresentationContexts = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					UnitsInContext = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -71339,12 +88342,12 @@ namespace IFC.IFC2x3
 			{
 				if(RepresentationContexts != null)
 				{
-					IFC_Attributes<Global.IFCRepresentationContext>? items = new IFC_Attributes<Global.IFCRepresentationContext>();
+					IFC_Attributes<Global.IFCRepresentationContext>? Items = new IFC_Attributes<Global.IFCRepresentationContext>();
 					foreach (IFCRepresentationContext item in RepresentationContexts)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -71449,13 +88452,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROJECTORDER requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ID = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Status = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -71639,13 +88701,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROJECTORDERRECORD requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Records = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -71715,12 +88829,12 @@ namespace IFC.IFC2x3
 			{
 				if(Records != null)
 				{
-					IFC_Attributes<Global.IFCRelAssignsToProjectOrder>? items = new IFC_Attributes<Global.IFCRelAssignsToProjectOrder>();
+					IFC_Attributes<Global.IFCRelAssignsToProjectOrder>? Items = new IFC_Attributes<Global.IFCRelAssignsToProjectOrder>();
 					foreach (IFCRelAssignsToProjectOrder item in Records)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -71807,13 +88921,37 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROJECTIONCURVE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Item = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -71912,13 +89050,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROJECTIONELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -72048,13 +89245,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTY requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -72120,12 +89334,12 @@ namespace IFC.IFC2x3
 			{
 				if(PropertyForDependance != null)
 				{
-					IFC_Attributes<Global.IFCPropertyDependencyRelationship>? items = new IFC_Attributes<Global.IFCPropertyDependencyRelationship>();
+					IFC_Attributes<Global.IFCPropertyDependencyRelationship>? Items = new IFC_Attributes<Global.IFCPropertyDependencyRelationship>();
 					foreach (IFCPropertyDependencyRelationship item in PropertyForDependance)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -72136,12 +89350,12 @@ namespace IFC.IFC2x3
 			{
 				if(PropertyDependsOn != null)
 				{
-					IFC_Attributes<Global.IFCPropertyDependencyRelationship>? items = new IFC_Attributes<Global.IFCPropertyDependencyRelationship>();
+					IFC_Attributes<Global.IFCPropertyDependencyRelationship>? Items = new IFC_Attributes<Global.IFCPropertyDependencyRelationship>();
 					foreach (IFCPropertyDependencyRelationship item in PropertyDependsOn)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -72152,12 +89366,12 @@ namespace IFC.IFC2x3
 			{
 				if(PartOfComplex != null)
 				{
-					IFC_Attributes<Global.IFCComplexProperty>? items = new IFC_Attributes<Global.IFCComplexProperty>();
+					IFC_Attributes<Global.IFCComplexProperty>? Items = new IFC_Attributes<Global.IFCComplexProperty>();
 					foreach (IFCComplexProperty item in PartOfComplex)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -72245,13 +89459,51 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYBOUNDEDVALUE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					UpperBoundValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					LowerBoundValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -72406,13 +89658,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYCONSTRAINTRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RelatingConstraint = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RelatedProperties = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -72476,12 +89759,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedProperties != null)
 				{
-					IFC_Attributes<Global.IFCProperty>? items = new IFC_Attributes<Global.IFCProperty>();
+					IFC_Attributes<Global.IFCProperty>? Items = new IFC_Attributes<Global.IFCProperty>();
 					foreach (IFCProperty item in RelatedProperties)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -72588,13 +89871,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYDEFINITION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -72640,12 +89954,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasAssociations != null)
 				{
-					IFC_Attributes<Global.IFCRelAssociates>? items = new IFC_Attributes<Global.IFCRelAssociates>();
+					IFC_Attributes<Global.IFCRelAssociates>? Items = new IFC_Attributes<Global.IFCRelAssociates>();
 					foreach (IFCRelAssociates item in HasAssociations)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -72721,13 +90035,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYDEPENDENCYRELATIONSHIP requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					DependingProperty = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					DependantProperty = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Expression = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -72933,13 +90285,44 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYENUMERATEDVALUE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					EnumerationValues = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					EnumerationReference = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -72985,12 +90368,12 @@ namespace IFC.IFC2x3
 			{
 				if(EnumerationValues != null)
 				{
-					IFC_Attributes<Global.IFCValue>? items = new IFC_Attributes<Global.IFCValue>();
+					IFC_Attributes<Global.IFCValue>? Items = new IFC_Attributes<Global.IFCValue>();
 					foreach (IFCValue item in EnumerationValues)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -73098,13 +90481,37 @@ namespace IFC.IFC2x3
 				{"WR01", WR_WR01}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYENUMERATION requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					EnumerationValues = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -73160,12 +90567,12 @@ namespace IFC.IFC2x3
 			{
 				if(EnumerationValues != null)
 				{
-					IFC_Attributes<Global.IFCValue>? items = new IFC_Attributes<Global.IFCValue>();
+					IFC_Attributes<Global.IFCValue>? Items = new IFC_Attributes<Global.IFCValue>();
 					foreach (IFCValue item in EnumerationValues)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -73273,13 +90680,44 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYLISTVALUE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ListValues = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -73325,12 +90763,12 @@ namespace IFC.IFC2x3
 			{
 				if(ListValues != null)
 				{
-					IFC_Attributes<Global.IFCValue>? items = new IFC_Attributes<Global.IFCValue>();
+					IFC_Attributes<Global.IFCValue>? Items = new IFC_Attributes<Global.IFCValue>();
 					foreach (IFCValue item in ListValues)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -73422,13 +90860,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYREFERENCEVALUE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					UsageName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					PropertyReference = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -73580,13 +91049,51 @@ namespace IFC.IFC2x3
 				{"WR32", WR_WR32}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYSET requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					HasProperties = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -73640,12 +91147,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasProperties != null)
 				{
-					IFC_Attributes<Global.IFCProperty>? items = new IFC_Attributes<Global.IFCProperty>();
+					IFC_Attributes<Global.IFCProperty>? Items = new IFC_Attributes<Global.IFCProperty>();
 					foreach (IFCProperty item in HasProperties)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -73733,13 +91240,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYSETDEFINITION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -73785,12 +91323,12 @@ namespace IFC.IFC2x3
 			{
 				if(PropertyDefinitionOf != null)
 				{
-					IFC_Attributes<Global.IFCRelDefinesByProperties>? items = new IFC_Attributes<Global.IFCRelDefinesByProperties>();
+					IFC_Attributes<Global.IFCRelDefinesByProperties>? Items = new IFC_Attributes<Global.IFCRelDefinesByProperties>();
 					foreach (IFCRelDefinesByProperties item in PropertyDefinitionOf)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -73801,12 +91339,12 @@ namespace IFC.IFC2x3
 			{
 				if(DefinesType != null)
 				{
-					IFC_Attributes<Global.IFCTypeObject>? items = new IFC_Attributes<Global.IFCTypeObject>();
+					IFC_Attributes<Global.IFCTypeObject>? Items = new IFC_Attributes<Global.IFCTypeObject>();
 					foreach (IFCTypeObject item in DefinesType)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -73862,13 +91400,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYSINGLEVALUE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					NominalValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -74047,13 +91616,65 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROPERTYTABLEVALUE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					DefiningValues = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					DefinedValues = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					Expression = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					DefiningUnit = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					DefinedUnit = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -74123,12 +91744,12 @@ namespace IFC.IFC2x3
 			{
 				if(DefiningValues != null)
 				{
-					IFC_Attributes<Global.IFCValue>? items = new IFC_Attributes<Global.IFCValue>();
+					IFC_Attributes<Global.IFCValue>? Items = new IFC_Attributes<Global.IFCValue>();
 					foreach (IFCValue item in DefiningValues)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -74157,12 +91778,12 @@ namespace IFC.IFC2x3
 			{
 				if(DefinedValues != null)
 				{
-					IFC_Attributes<Global.IFCValue>? items = new IFC_Attributes<Global.IFCValue>();
+					IFC_Attributes<Global.IFCValue>? Items = new IFC_Attributes<Global.IFCValue>();
 					foreach (IFCValue item in DefinedValues)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -74297,13 +91918,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROTECTIVEDEVICETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -74484,13 +92178,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPROXY requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ProxyType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -74679,13 +92439,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCPUMPTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -74865,13 +92698,44 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCQUANTITYAREA requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					AreaValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -74989,13 +92853,44 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCQUANTITYCOUNT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					CountValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -75127,13 +93022,44 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCQUANTITYLENGTH requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					LengthValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -75265,13 +93191,44 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCQUANTITYTIME requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					TimeValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -75403,13 +93360,44 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCQUANTITYVOLUME requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					VolumeValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -75541,13 +93529,44 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCQUANTITYWEIGHT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					WeightValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -75650,13 +93669,23 @@ namespace IFC.IFC2x3
 				{"WR42", WR_WR42}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRADIUSDIMENSION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Contents = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -75758,13 +93787,79 @@ namespace IFC.IFC2x3
 				{"WR61", WR_WR61}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRAILING requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -75920,13 +94015,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRAILINGTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -76117,13 +94285,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRAMP requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ShapeType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -76287,13 +94521,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRAMPFLIGHT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -76423,13 +94716,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRAMPFLIGHTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -76629,13 +94995,58 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRATIONALBEZIERCURVE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Degree = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ControlPointsList = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					CurveForm = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ClosedCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					SelfIntersect = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					WeightsData = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -76697,12 +95108,12 @@ namespace IFC.IFC2x3
 			{
 				if(WeightsData != null)
 				{
-					IFC_Attributes<REAL>? items = new IFC_Attributes<REAL>();
+					IFC_Attributes<REAL>? Items = new IFC_Attributes<REAL>();
 					foreach (REAL item in WeightsData)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -76731,12 +95142,12 @@ namespace IFC.IFC2x3
 			{
 				if(Weights != null)
 				{
-					IFC_Attributes<REAL>? items = new IFC_Attributes<REAL>();
+					IFC_Attributes<REAL>? Items = new IFC_Attributes<REAL>();
 					foreach (REAL item in Weights)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -76841,13 +95252,72 @@ namespace IFC.IFC2x3
 				{"WR33", WR_WR33}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRECTANGLEHOLLOWPROFILEDEF requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					XDim = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					YDim = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					WallThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					InnerFilletRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					OuterFilletRadius = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -77025,13 +95495,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRECTANGLEPROFILEDEF requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					XDim = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					YDim = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -77169,13 +95677,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRECTANGULARPYRAMID requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					XLength = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					YLength = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Height = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -77407,13 +95946,65 @@ namespace IFC.IFC2x3
 				{"WR4", WR_WR4}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRECTANGULARTRIMMEDSURFACE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					BasisSurface = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					U1 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					V1 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					U2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					V2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Usense = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Vsense = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -77663,13 +96254,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREFERENCESVALUEDOCUMENT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ReferencedDocument = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ReferencingValues = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -77733,12 +96355,12 @@ namespace IFC.IFC2x3
 			{
 				if(ReferencingValues != null)
 				{
-					IFC_Attributes<Global.IFCAppliedValue>? items = new IFC_Attributes<Global.IFCAppliedValue>();
+					IFC_Attributes<Global.IFCAppliedValue>? Items = new IFC_Attributes<Global.IFCAppliedValue>();
 					foreach (IFCAppliedValue item in ReferencingValues)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -77852,13 +96474,86 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREGULARTIMESERIES requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					StartTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					EndTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					TimeSeriesDataType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					DataOrigin = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					UserDefinedDataOrigin = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					TimeStep = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Values = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -77970,12 +96665,12 @@ namespace IFC.IFC2x3
 			{
 				if(Values != null)
 				{
-					IFC_Attributes<Global.IFCTimeSeriesValue>? items = new IFC_Attributes<Global.IFCTimeSeriesValue>();
+					IFC_Attributes<Global.IFCTimeSeriesValue>? Items = new IFC_Attributes<Global.IFCTimeSeriesValue>();
 					foreach (IFCTimeSeriesValue item in Values)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -78059,13 +96754,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREINFORCEMENTBARPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					TotalCrossSectionArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SteelGrade = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					BarSurface = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					EffectiveDepth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					NominalBarDiameter = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					BarCount = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -78282,13 +97022,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREINFORCEMENTDEFINITIONPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					DefinitionType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ReinforcementSectionDefinitions = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -78368,12 +97153,12 @@ namespace IFC.IFC2x3
 			{
 				if(ReinforcementSectionDefinitions != null)
 				{
-					IFC_Attributes<Global.IFCSectionReinforcementProperties>? items = new IFC_Attributes<Global.IFCSectionReinforcementProperties>();
+					IFC_Attributes<Global.IFCSectionReinforcementProperties>? Items = new IFC_Attributes<Global.IFCSectionReinforcementProperties>();
 					foreach (IFCSectionReinforcementProperties item in ReinforcementSectionDefinitions)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -78497,13 +97282,114 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 14)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 14)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREINFORCINGBAR requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					SteelGrade = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					NominalDiameter = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					CrossSectionArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					BarLength = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					BarRole = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					BarSurface = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -78788,13 +97674,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREINFORCINGELEMENT requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					SteelGrade = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -78991,13 +97943,135 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 17)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 17)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREINFORCINGMESH requires 17 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					SteelGrade = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					MeshLength = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					MeshWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					LongitudinalBarNominalDiameter = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					TransverseBarNominalDiameter = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					LongitudinalBarCrossSectionArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[14] == "$")
+				{
+					TransverseBarCrossSectionArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[15] == "$")
+				{
+					LongitudinalBarSpacing = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[16] == "$")
+				{
+					TransverseBarSpacing = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -79330,13 +98404,58 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELAGGREGATES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingObject = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -79463,13 +98582,58 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNS requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjectsType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -79531,12 +98695,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedObjects != null)
 				{
-					IFC_Attributes<Global.IFCObjectDefinition>? items = new IFC_Attributes<Global.IFCObjectDefinition>();
+					IFC_Attributes<Global.IFCObjectDefinition>? Items = new IFC_Attributes<Global.IFCObjectDefinition>();
 					foreach (IFCObjectDefinition item in RelatedObjects)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -79668,13 +98832,72 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTASKS requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjectsType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatingControl = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					TimeForTask = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -79833,13 +99056,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTOACTOR requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjectsType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatingActor = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ActingRole = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -80014,13 +99296,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTOCONTROL requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjectsType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatingControl = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -80165,13 +99499,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTOGROUP requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjectsType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatingGroup = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -80320,13 +99706,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTOPROCESS requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjectsType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatingProcess = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					QuantityInProcess = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -80497,13 +99942,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTOPRODUCT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjectsType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatingProduct = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -80632,13 +100129,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTOPROJECTORDER requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjectsType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatingControl = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -80765,13 +100314,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSIGNSTORESOURCE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjectsType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatingResource = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -80925,13 +100526,51 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATES requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -80985,12 +100624,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedObjects != null)
 				{
-					IFC_Attributes<Global.IFCRoot>? items = new IFC_Attributes<Global.IFCRoot>();
+					IFC_Attributes<Global.IFCRoot>? Items = new IFC_Attributes<Global.IFCRoot>();
 					foreach (IFCRoot item in RelatedObjects)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -81061,13 +100700,58 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESAPPLIEDVALUE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingAppliedValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -81189,13 +100873,58 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESAPPROVAL requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingApproval = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -81317,13 +101046,58 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESCLASSIFICATION requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingClassification = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -81449,13 +101223,65 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESCONSTRAINT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Intent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatingConstraint = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -81603,13 +101429,58 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESDOCUMENT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingDocument = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -81731,13 +101602,58 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESLIBRARY requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingLibrary = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -81892,13 +101808,58 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESMATERIAL requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingMaterial = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -82028,13 +101989,72 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELASSOCIATESPROFILEPROPERTIES requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingProfileProperties = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ProfileSectionLocation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ProfileOrientation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -82221,13 +102241,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTS requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -82338,13 +102389,65 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSELEMENTS requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ConnectionGeometry = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatedElement = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -82524,13 +102627,93 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSPATHELEMENTS requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ConnectionGeometry = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatedElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					RelatingPriorities = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					RelatedPriorities = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					RelatedConnectionType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					RelatingConnectionType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -82632,12 +102815,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatingPriorities != null)
 				{
-					IFC_Attributes<INTEGER>? items = new IFC_Attributes<INTEGER>();
+					IFC_Attributes<INTEGER>? Items = new IFC_Attributes<INTEGER>();
 					foreach (INTEGER item in RelatingPriorities)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -82666,12 +102849,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedPriorities != null)
 				{
-					IFC_Attributes<INTEGER>? items = new IFC_Attributes<INTEGER>();
+					IFC_Attributes<INTEGER>? Items = new IFC_Attributes<INTEGER>();
 					foreach (INTEGER item in RelatedPriorities)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -82780,13 +102963,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSPORTTOELEMENT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingPort = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedElement = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -82932,13 +103160,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSPORTS requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingPort = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedPort = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RealizingElement = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -83106,13 +103386,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSSTRUCTURALACTIVITY requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedStructuralActivity = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -83254,13 +103579,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSSTRUCTURALELEMENT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedStructuralMember = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -83420,13 +103790,86 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSSTRUCTURALMEMBER requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingStructuralMember = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedStructuralConnection = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					AppliedCondition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AdditionalConditions = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					SupportedLength = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					ConditionCoordinateSystem = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -83674,13 +104117,93 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSWITHECCENTRICITY requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingStructuralMember = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedStructuralConnection = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					AppliedCondition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AdditionalConditions = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					SupportedLength = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					ConditionCoordinateSystem = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					ConnectionConstraint = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -83848,13 +104371,79 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONNECTSWITHREALIZINGELEMENTS requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ConnectionGeometry = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatedElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					RealizingElements = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ConnectionType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -83940,12 +104529,12 @@ namespace IFC.IFC2x3
 			{
 				if(RealizingElements != null)
 				{
-					IFC_Attributes<Global.IFCElement>? items = new IFC_Attributes<Global.IFCElement>();
+					IFC_Attributes<Global.IFCElement>? Items = new IFC_Attributes<Global.IFCElement>();
 					foreach (IFCElement item in RealizingElements)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -84050,13 +104639,58 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCONTAINEDINSPATIALSTRUCTURE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedElements = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingStructure = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -84118,12 +104752,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedElements != null)
 				{
-					IFC_Attributes<Global.IFCProduct>? items = new IFC_Attributes<Global.IFCProduct>();
+					IFC_Attributes<Global.IFCProduct>? Items = new IFC_Attributes<Global.IFCProduct>();
 					foreach (IFCProduct item in RelatedElements)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -84214,13 +104848,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCOVERSBLDGELEMENTS requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingBuildingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedCoverings = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -84300,12 +104979,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedCoverings != null)
 				{
-					IFC_Attributes<Global.IFCCovering>? items = new IFC_Attributes<Global.IFCCovering>();
+					IFC_Attributes<Global.IFCCovering>? Items = new IFC_Attributes<Global.IFCCovering>();
 					foreach (IFCCovering item in RelatedCoverings)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -84378,13 +105057,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELCOVERSSPACES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedSpace = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedCoverings = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -84464,12 +105188,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedCoverings != null)
 				{
-					IFC_Attributes<Global.IFCCovering>? items = new IFC_Attributes<Global.IFCCovering>();
+					IFC_Attributes<Global.IFCCovering>? Items = new IFC_Attributes<Global.IFCCovering>();
 					foreach (IFCCovering item in RelatedCoverings)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -84559,13 +105283,58 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELDECOMPOSES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingObject = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -84645,12 +105414,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedObjects != null)
 				{
-					IFC_Attributes<Global.IFCObjectDefinition>? items = new IFC_Attributes<Global.IFCObjectDefinition>();
+					IFC_Attributes<Global.IFCObjectDefinition>? Items = new IFC_Attributes<Global.IFCObjectDefinition>();
 					foreach (IFCObjectDefinition item in RelatedObjects)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -84722,13 +105491,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELDEFINES requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -84782,12 +105589,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedObjects != null)
 				{
-					IFC_Attributes<Global.IFCObject>? items = new IFC_Attributes<Global.IFCObject>();
+					IFC_Attributes<Global.IFCObject>? Items = new IFC_Attributes<Global.IFCObject>();
 					foreach (IFCObject item in RelatedObjects)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -84859,13 +105666,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELDEFINESBYPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingPropertyDefinition = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -84986,13 +105838,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELDEFINESBYTYPE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -85116,13 +106013,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELFILLSELEMENT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingOpeningElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedBuildingElement = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -85264,13 +106206,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELFLOWCONTROLELEMENTS requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedControlElements = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingFlowElement = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -85332,12 +106319,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedControlElements != null)
 				{
-					IFC_Attributes<Global.IFCDistributionControlElement>? items = new IFC_Attributes<Global.IFCDistributionControlElement>();
+					IFC_Attributes<Global.IFCDistributionControlElement>? Items = new IFC_Attributes<Global.IFCDistributionControlElement>();
 					foreach (IFCDistributionControlElement item in RelatedControlElements)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -85440,13 +106427,79 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELINTERACTIONREQUIREMENTS requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					DailyInteraction = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ImportanceRating = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					LocationOfInteraction = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					RelatedSpaceProgram = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					RelatingSpaceProgram = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -85676,13 +106729,58 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELNESTS requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingObject = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -85786,13 +106884,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELOCCUPIESSPACES requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjectsType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatingActor = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ActingRole = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -85926,13 +107083,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELOVERRIDESPROPERTIES requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingPropertyDefinition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					OverridingProperties = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -86002,12 +107211,12 @@ namespace IFC.IFC2x3
 			{
 				if(OverridingProperties != null)
 				{
-					IFC_Attributes<Global.IFCProperty>? items = new IFC_Attributes<Global.IFCProperty>();
+					IFC_Attributes<Global.IFCProperty>? Items = new IFC_Attributes<Global.IFCProperty>();
 					foreach (IFCProperty item in OverridingProperties)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -86080,13 +107289,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELPROJECTSELEMENT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedFeatureElement = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -86242,13 +107496,58 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELREFERENCEDINSPATIALSTRUCTURE requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedElements = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatingStructure = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -86310,12 +107609,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedElements != null)
 				{
-					IFC_Attributes<Global.IFCProduct>? items = new IFC_Attributes<Global.IFCProduct>();
+					IFC_Attributes<Global.IFCProduct>? Items = new IFC_Attributes<Global.IFCProduct>();
 					foreach (IFCProduct item in RelatedElements)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -86432,13 +107731,65 @@ namespace IFC.IFC2x3
 				{"WR12", WR_WR12}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELSCHEDULESCOSTITEMS requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatedObjects = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedObjectsType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RelatingControl = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -86574,13 +107925,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELSEQUENCE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingProcess = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedProcess = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					TimeLag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					SequenceType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -86774,13 +108184,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELSERVICESBUILDINGS requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingSystem = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedBuildings = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -86860,12 +108315,12 @@ namespace IFC.IFC2x3
 			{
 				if(RelatedBuildings != null)
 				{
-					IFC_Attributes<Global.IFCSpatialStructureElement>? items = new IFC_Attributes<Global.IFCSpatialStructureElement>();
+					IFC_Attributes<Global.IFCSpatialStructureElement>? Items = new IFC_Attributes<Global.IFCSpatialStructureElement>();
 					foreach (IFCSpatialStructureElement item in RelatedBuildings)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -86970,13 +108425,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELSPACEBOUNDARY requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingSpace = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedBuildingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ConnectionGeometry = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					PhysicalOrVirtualBoundary = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					InternalOrExternalBoundary = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -87196,13 +108717,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELVOIDSELEMENT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RelatingBuildingElement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RelatedOpeningElement = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -87342,13 +108908,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELATIONSHIP requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -87433,13 +109030,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRELAXATION requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RelaxationValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					InitialStress = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -87565,13 +109179,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREPRESENTATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ContextOfItems = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RepresentationIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RepresentationType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Items = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -87671,12 +109316,12 @@ namespace IFC.IFC2x3
 			{
 				if(Items != null)
 				{
-					IFC_Attributes<Global.IFCRepresentationItem>? items = new IFC_Attributes<Global.IFCRepresentationItem>();
+					IFC_Attributes<Global.IFCRepresentationItem>? Items = new IFC_Attributes<Global.IFCRepresentationItem>();
 					foreach (IFCRepresentationItem item in Items)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -87705,12 +109350,12 @@ namespace IFC.IFC2x3
 			{
 				if(RepresentationMap != null)
 				{
-					IFC_Attributes<Global.IFCRepresentationMap>? items = new IFC_Attributes<Global.IFCRepresentationMap>();
+					IFC_Attributes<Global.IFCRepresentationMap>? Items = new IFC_Attributes<Global.IFCRepresentationMap>();
 					foreach (IFCRepresentationMap item in RepresentationMap)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -87721,12 +109366,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerAssignments != null)
 				{
-					IFC_Attributes<Global.IFCPresentationLayerAssignment>? items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
+					IFC_Attributes<Global.IFCPresentationLayerAssignment>? Items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
 					foreach (IFCPresentationLayerAssignment item in LayerAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -87737,12 +109382,12 @@ namespace IFC.IFC2x3
 			{
 				if(OfProductRepresentation != null)
 				{
-					IFC_Attributes<Global.IFCProductRepresentation>? items = new IFC_Attributes<Global.IFCProductRepresentation>();
+					IFC_Attributes<Global.IFCProductRepresentation>? Items = new IFC_Attributes<Global.IFCProductRepresentation>();
 					foreach (IFCProductRepresentation item in OfProductRepresentation)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -87798,13 +109443,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREPRESENTATIONCONTEXT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ContextIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ContextType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -87870,12 +109532,12 @@ namespace IFC.IFC2x3
 			{
 				if(RepresentationsInContext != null)
 				{
-					IFC_Attributes<Global.IFCRepresentation>? items = new IFC_Attributes<Global.IFCRepresentation>();
+					IFC_Attributes<Global.IFCRepresentation>? Items = new IFC_Attributes<Global.IFCRepresentation>();
 					foreach (IFCRepresentation item in RepresentationsInContext)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -87926,13 +109588,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREPRESENTATIONITEM requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -87946,12 +109611,12 @@ namespace IFC.IFC2x3
 			{
 				if(LayerAssignments != null)
 				{
-					IFC_Attributes<Global.IFCPresentationLayerAssignment>? items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
+					IFC_Attributes<Global.IFCPresentationLayerAssignment>? Items = new IFC_Attributes<Global.IFCPresentationLayerAssignment>();
 					foreach (IFCPresentationLayerAssignment item in LayerAssignments)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -87962,12 +109627,12 @@ namespace IFC.IFC2x3
 			{
 				if(StyledByItem != null)
 				{
-					IFC_Attributes<Global.IFCStyledItem>? items = new IFC_Attributes<Global.IFCStyledItem>();
+					IFC_Attributes<Global.IFCStyledItem>? Items = new IFC_Attributes<Global.IFCStyledItem>();
 					foreach (IFCStyledItem item in StyledByItem)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -88021,13 +109686,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREPRESENTATIONMAP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					MappingOrigin = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					MappedRepresentation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -88093,12 +109775,12 @@ namespace IFC.IFC2x3
 			{
 				if(MapUsage != null)
 				{
-					IFC_Attributes<Global.IFCMappedItem>? items = new IFC_Attributes<Global.IFCMappedItem>();
+					IFC_Attributes<Global.IFCMappedItem>? Items = new IFC_Attributes<Global.IFCMappedItem>();
 					foreach (IFCMappedItem item in MapUsage)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -88158,13 +109840,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRESOURCE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -88218,12 +109938,12 @@ namespace IFC.IFC2x3
 			{
 				if(ResourceOf != null)
 				{
-					IFC_Attributes<Global.IFCRelAssignsToResource>? items = new IFC_Attributes<Global.IFCRelAssignsToResource>();
+					IFC_Attributes<Global.IFCRelAssignsToResource>? Items = new IFC_Attributes<Global.IFCRelAssignsToResource>();
 					foreach (IFCRelAssignsToResource item in ResourceOf)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -88322,13 +110042,44 @@ namespace IFC.IFC2x3
 				{"WR32", WR_WR32}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCREVOLVEDAREASOLID requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SweptArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Axis = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Angle = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -88471,13 +110222,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRIBPLATEPROFILEPROPERTIES requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileDefinition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Thickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					RibHeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RibWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RibSpacing = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Direction = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -88681,13 +110484,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRIGHTCIRCULARCONE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Height = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					BottomRadius = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -88805,13 +110632,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCRIGHTCIRCULARCYLINDER requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Height = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Radius = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -88964,13 +110815,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCROOF requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ShapeType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -89127,13 +111044,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCROOT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -89317,13 +111265,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCROUNDEDEDGEFEATURE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					FeatureLength = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Radius = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -89491,13 +111512,58 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCROUNDEDRECTANGLEPROFILEDEF requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					XDim = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					YDim = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RoundingRadius = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -89634,13 +111700,44 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSIUNIT requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Dimensions = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					UnitType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Prefix = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -89774,13 +111871,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSANITARYTERMINALTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -90012,13 +112182,177 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 23)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 23)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSCHEDULETIMECONTROL requires 23 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ActualStart = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					EarlyStart = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					LateStart = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ScheduleStart = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					ActualFinish = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					EarlyFinish = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					LateFinish = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					ScheduleFinish = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					ScheduleDuration = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[14] == "$")
+				{
+					ActualDuration = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[15] == "$")
+				{
+					RemainingTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[16] == "$")
+				{
+					FreeFloat = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[17] == "$")
+				{
+					TotalFloat = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[18] == "$")
+				{
+					IsCritical = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[19] == "$")
+				{
+					StatusTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[20] == "$")
+				{
+					StartFloat = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[21] == "$")
+				{
+					FinishFloat = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[22] == "$")
+				{
+					Completion = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -90590,13 +112924,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSECTIONPROPERTIES requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SectionType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					StartProfile = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					EndProfile = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -90743,13 +113101,58 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSECTIONREINFORCEMENTPROPERTIES requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					LongitudinalStartPosition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LongitudinalEndPosition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					TransversePosition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ReinforcementRole = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					SectionDefinition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					CrossSectionReinforcementDefinitions = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -90901,12 +113304,12 @@ namespace IFC.IFC2x3
 			{
 				if(CrossSectionReinforcementDefinitions != null)
 				{
-					IFC_Attributes<Global.IFCReinforcementBarProperties>? items = new IFC_Attributes<Global.IFCReinforcementBarProperties>();
+					IFC_Attributes<Global.IFCReinforcementBarProperties>? Items = new IFC_Attributes<Global.IFCReinforcementBarProperties>();
 					foreach (IFCReinforcementBarProperties item in CrossSectionReinforcementDefinitions)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -91035,13 +113438,37 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSECTIONEDSPINE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SpineCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					CrossSections = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					CrossSectionPositions = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -91097,12 +113524,12 @@ namespace IFC.IFC2x3
 			{
 				if(CrossSections != null)
 				{
-					IFC_Attributes<Global.IFCProfileDef>? items = new IFC_Attributes<Global.IFCProfileDef>();
+					IFC_Attributes<Global.IFCProfileDef>? Items = new IFC_Attributes<Global.IFCProfileDef>();
 					foreach (IFCProfileDef item in CrossSections)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -91131,12 +113558,12 @@ namespace IFC.IFC2x3
 			{
 				if(CrossSectionPositions != null)
 				{
-					IFC_Attributes<Global.IFCAxis2Placement3D>? items = new IFC_Attributes<Global.IFCAxis2Placement3D>();
+					IFC_Attributes<Global.IFCAxis2Placement3D>? Items = new IFC_Attributes<Global.IFCAxis2Placement3D>();
 					foreach (IFCAxis2Placement3D item in CrossSectionPositions)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -91224,13 +113651,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSENSORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -91394,13 +113894,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSERVICELIFE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ServiceLifeType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ServiceLifeDuration = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -91576,13 +114128,72 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSERVICELIFEFACTOR requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					UpperValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					MostUsedValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					LowerValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -91783,13 +114394,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSHAPEASPECT requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ShapeRepresentations = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ProductDefinitional = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					PartOfProductDefinitionShape = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -91843,12 +114492,12 @@ namespace IFC.IFC2x3
 			{
 				if(ShapeRepresentations != null)
 				{
-					IFC_Attributes<Global.IFCShapeModel>? items = new IFC_Attributes<Global.IFCShapeModel>();
+					IFC_Attributes<Global.IFCShapeModel>? Items = new IFC_Attributes<Global.IFCShapeModel>();
 					foreach (IFCShapeModel item in ShapeRepresentations)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -92011,13 +114660,44 @@ namespace IFC.IFC2x3
 				{"WR11", WR_WR11}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSHAPEMODEL requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ContextOfItems = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RepresentationIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RepresentationType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Items = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -92063,12 +114743,12 @@ namespace IFC.IFC2x3
 			{
 				if(OfShapeAspect != null)
 				{
-					IFC_Attributes<Global.IFCShapeAspect>? items = new IFC_Attributes<Global.IFCShapeAspect>();
+					IFC_Attributes<Global.IFCShapeAspect>? Items = new IFC_Attributes<Global.IFCShapeAspect>();
 					foreach (IFCShapeAspect item in OfShapeAspect)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -92180,13 +114860,44 @@ namespace IFC.IFC2x3
 				{"WR24", WR_WR24}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSHAPEREPRESENTATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ContextOfItems = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RepresentationIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RepresentationType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Items = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -92284,13 +114995,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSHELLBASEDSURFACEMODEL requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SbsmBoundary = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -92312,12 +115033,12 @@ namespace IFC.IFC2x3
 			{
 				if(SbsmBoundary != null)
 				{
-					IFC_Attributes<Global.IFCShell>? items = new IFC_Attributes<Global.IFCShell>();
+					IFC_Attributes<Global.IFCShell>? Items = new IFC_Attributes<Global.IFCShell>();
 					foreach (IFCShell item in SbsmBoundary)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -92397,13 +115118,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSIMPLEPROPERTY requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -92506,13 +115244,114 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 14)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 14)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSITE requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					LongName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					CompositionType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					RefLatitude = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					RefLongitude = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					RefElevation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					LandTitleNumber = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					SiteAddress = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -92808,13 +115647,79 @@ namespace IFC.IFC2x3
 				{"WR61", WR_WR61}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSLAB requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -92970,13 +115875,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSLABTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -93133,13 +116111,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSLIPPAGECONNECTIONCONDITION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SlippageX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					SlippageY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					SlippageZ = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -93289,13 +116298,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSOLIDMODEL requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -93367,13 +116379,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSOUNDPROPERTIES requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					IsAttenuating = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					SoundScale = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					SoundValues = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -93479,12 +116543,12 @@ namespace IFC.IFC2x3
 			{
 				if(SoundValues != null)
 				{
-					IFC_Attributes<Global.IFCSoundValue>? items = new IFC_Attributes<Global.IFCSoundValue>();
+					IFC_Attributes<Global.IFCSoundValue>? Items = new IFC_Attributes<Global.IFCSoundValue>();
 					foreach (IFCSoundValue item in SoundValues)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -93564,13 +116628,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSOUNDVALUE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					SoundLevelTimeSeries = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Frequency = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					SoundLevelSingleValue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -93762,13 +116878,93 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPACE requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					LongName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					CompositionType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					InteriorOrExteriorSpace = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					ElevationWithFlooring = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -93906,12 +117102,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasCoverings != null)
 				{
-					IFC_Attributes<Global.IFCRelCoversSpaces>? items = new IFC_Attributes<Global.IFCRelCoversSpaces>();
+					IFC_Attributes<Global.IFCRelCoversSpaces>? Items = new IFC_Attributes<Global.IFCRelCoversSpaces>();
 					foreach (IFCRelCoversSpaces item in HasCoverings)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -93922,12 +117118,12 @@ namespace IFC.IFC2x3
 			{
 				if(BoundedBy != null)
 				{
-					IFC_Attributes<Global.IFCRelSpaceBoundary>? items = new IFC_Attributes<Global.IFCRelSpaceBoundary>();
+					IFC_Attributes<Global.IFCRelSpaceBoundary>? Items = new IFC_Attributes<Global.IFCRelSpaceBoundary>();
 					foreach (IFCRelSpaceBoundary item in BoundedBy)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -94005,13 +117201,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPACEHEATERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -94194,13 +117463,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPACEPROGRAM requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					SpaceProgramIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					MaxRequiredArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					MinRequiredArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					RequestedLocation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					StandardRequiredArea = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -94384,12 +117726,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasInteractionReqsFrom != null)
 				{
-					IFC_Attributes<Global.IFCRelInteractionRequirements>? items = new IFC_Attributes<Global.IFCRelInteractionRequirements>();
+					IFC_Attributes<Global.IFCRelInteractionRequirements>? Items = new IFC_Attributes<Global.IFCRelInteractionRequirements>();
 					foreach (IFCRelInteractionRequirements item in HasInteractionReqsFrom)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -94400,12 +117742,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasInteractionReqsTo != null)
 				{
-					IFC_Attributes<Global.IFCRelInteractionRequirements>? items = new IFC_Attributes<Global.IFCRelInteractionRequirements>();
+					IFC_Attributes<Global.IFCRelInteractionRequirements>? Items = new IFC_Attributes<Global.IFCRelInteractionRequirements>();
 					foreach (IFCRelInteractionRequirements item in HasInteractionReqsTo)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -94495,13 +117837,114 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 14)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 14)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPACETHERMALLOADPROPERTIES requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableValueRatio = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ThermalLoadSource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					PropertySource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					SourceDescription = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					MaximumValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					MinimumValue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					ThermalLoadTimeSeriesValues = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					UserDefinedThermalLoadSource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					UserDefinedPropertySource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					ThermalLoadType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -94859,13 +118302,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPACETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -95067,13 +118583,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPATIALSTRUCTUREELEMENT requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					LongName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					CompositionType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -95195,12 +118777,12 @@ namespace IFC.IFC2x3
 			{
 				if(ReferencesElements != null)
 				{
-					IFC_Attributes<Global.IFCRelReferencedInSpatialStructure>? items = new IFC_Attributes<Global.IFCRelReferencedInSpatialStructure>();
+					IFC_Attributes<Global.IFCRelReferencedInSpatialStructure>? Items = new IFC_Attributes<Global.IFCRelReferencedInSpatialStructure>();
 					foreach (IFCRelReferencedInSpatialStructure item in ReferencesElements)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -95211,12 +118793,12 @@ namespace IFC.IFC2x3
 			{
 				if(ServicedBySystems != null)
 				{
-					IFC_Attributes<Global.IFCRelServicesBuildings>? items = new IFC_Attributes<Global.IFCRelServicesBuildings>();
+					IFC_Attributes<Global.IFCRelServicesBuildings>? Items = new IFC_Attributes<Global.IFCRelServicesBuildings>();
 					foreach (IFCRelServicesBuildings item in ServicedBySystems)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -95227,12 +118809,12 @@ namespace IFC.IFC2x3
 			{
 				if(ContainsElements != null)
 				{
-					IFC_Attributes<Global.IFCRelContainedInSpatialStructure>? items = new IFC_Attributes<Global.IFCRelContainedInSpatialStructure>();
+					IFC_Attributes<Global.IFCRelContainedInSpatialStructure>? Items = new IFC_Attributes<Global.IFCRelContainedInSpatialStructure>();
 					foreach (IFCRelContainedInSpatialStructure item in ContainsElements)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -95293,13 +118875,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPATIALSTRUCTUREELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -95425,13 +119073,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSPHERE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Radius = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -95531,13 +119196,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTACKTERMINALTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -95728,13 +119466,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTAIR requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ShapeType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -95914,13 +119718,100 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 12)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 12)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTAIRFLIGHT requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					NumberOfRiser = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					NumberOfTreads = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					RiserHeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					TreadLength = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -96154,13 +120045,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTAIRFLIGHTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -96334,13 +120298,93 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALACTION requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					GlobalOrLocal = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					DestabilizingLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					CausedBy = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -96540,13 +120584,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALACTIVITY requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					GlobalOrLocal = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -96736,13 +120846,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALANALYSISMODEL requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					OrientationOf2DPlane = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					LoadedBy = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					HasResults = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -96864,12 +121040,12 @@ namespace IFC.IFC2x3
 			{
 				if(LoadedBy != null)
 				{
-					IFC_Attributes<Global.IFCStructuralLoadGroup>? items = new IFC_Attributes<Global.IFCStructuralLoadGroup>();
+					IFC_Attributes<Global.IFCStructuralLoadGroup>? Items = new IFC_Attributes<Global.IFCStructuralLoadGroup>();
 					foreach (IFCStructuralLoadGroup item in LoadedBy)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -96898,12 +121074,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasResults != null)
 				{
-					IFC_Attributes<Global.IFCStructuralResultGroup>? items = new IFC_Attributes<Global.IFCStructuralResultGroup>();
+					IFC_Attributes<Global.IFCStructuralResultGroup>? Items = new IFC_Attributes<Global.IFCStructuralResultGroup>();
 					foreach (IFCStructuralResultGroup item in HasResults)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -96992,13 +121168,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALCONNECTION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedCondition = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -97094,12 +121329,12 @@ namespace IFC.IFC2x3
 			{
 				if(ConnectsStructuralMembers != null)
 				{
-					IFC_Attributes<Global.IFCRelConnectsStructuralMember>? items = new IFC_Attributes<Global.IFCRelConnectsStructuralMember>();
+					IFC_Attributes<Global.IFCRelConnectsStructuralMember>? Items = new IFC_Attributes<Global.IFCRelConnectsStructuralMember>();
 					foreach (IFCRelConnectsStructuralMember item in ConnectsStructuralMembers)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -97148,13 +121383,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALCONNECTIONCONDITION requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -97244,13 +121489,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALCURVECONNECTION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedCondition = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -97384,13 +121688,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALCURVEMEMBER requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -97537,13 +121900,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALCURVEMEMBERVARYING requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -97675,13 +122097,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALITEM requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -97751,12 +122225,12 @@ namespace IFC.IFC2x3
 			{
 				if(AssignedStructuralActivity != null)
 				{
-					IFC_Attributes<Global.IFCRelConnectsStructuralActivity>? items = new IFC_Attributes<Global.IFCRelConnectsStructuralActivity>();
+					IFC_Attributes<Global.IFCRelConnectsStructuralActivity>? Items = new IFC_Attributes<Global.IFCRelConnectsStructuralActivity>();
 					foreach (IFCRelConnectsStructuralActivity item in AssignedStructuralActivity)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -97841,13 +122315,100 @@ namespace IFC.IFC2x3
 				{"WR61", WR_WR61}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 12)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 12)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLINEARACTION requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					GlobalOrLocal = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					DestabilizingLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					CausedBy = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					ProjectedOrTrue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -98051,13 +122612,114 @@ namespace IFC.IFC2x3
 				{"WR61", WR_WR61}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 14)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 14)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLINEARACTIONVARYING requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					GlobalOrLocal = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					DestabilizingLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					CausedBy = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					ProjectedOrTrue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					VaryingAppliedLoadLocation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					SubsequentAppliedLoads = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -98201,12 +122863,12 @@ namespace IFC.IFC2x3
 			{
 				if(SubsequentAppliedLoads != null)
 				{
-					IFC_Attributes<Global.IFCStructuralLoad>? items = new IFC_Attributes<Global.IFCStructuralLoad>();
+					IFC_Attributes<Global.IFCStructuralLoad>? Items = new IFC_Attributes<Global.IFCStructuralLoad>();
 					foreach (IFCStructuralLoad item in SubsequentAppliedLoads)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -98235,12 +122897,12 @@ namespace IFC.IFC2x3
 			{
 				if(VaryingAppliedLoads != null)
 				{
-					IFC_Attributes<Global.IFCStructuralLoad>? items = new IFC_Attributes<Global.IFCStructuralLoad>();
+					IFC_Attributes<Global.IFCStructuralLoad>? Items = new IFC_Attributes<Global.IFCStructuralLoad>();
 					foreach (IFCStructuralLoad item in VaryingAppliedLoads)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -98288,13 +122950,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOAD requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -98405,13 +123077,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADGROUP requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ActionType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ActionSource = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					Coefficient = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Purpose = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -98595,12 +123340,12 @@ namespace IFC.IFC2x3
 			{
 				if(SourceOfResultGroup != null)
 				{
-					IFC_Attributes<Global.IFCStructuralResultGroup>? items = new IFC_Attributes<Global.IFCStructuralResultGroup>();
+					IFC_Attributes<Global.IFCStructuralResultGroup>? Items = new IFC_Attributes<Global.IFCStructuralResultGroup>();
 					foreach (IFCStructuralResultGroup item in SourceOfResultGroup)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -98611,12 +123356,12 @@ namespace IFC.IFC2x3
 			{
 				if(LoadGroupFor != null)
 				{
-					IFC_Attributes<Global.IFCStructuralAnalysisModel>? items = new IFC_Attributes<Global.IFCStructuralAnalysisModel>();
+					IFC_Attributes<Global.IFCStructuralAnalysisModel>? Items = new IFC_Attributes<Global.IFCStructuralAnalysisModel>();
 					foreach (IFCStructuralAnalysisModel item in LoadGroupFor)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -98684,13 +123429,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADLINEARFORCE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					LinearForceX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					LinearForceY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					LinearForceZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					LinearMomentX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					LinearMomentY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					LinearMomentZ = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -98913,13 +123710,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADPLANARFORCE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					PlanarForceX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					PlanarForceY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					PlanarForceZ = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -99078,13 +123906,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADSINGLEDISPLACEMENT requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					DisplacementX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					DisplacementY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					DisplacementZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RotationalDisplacementRX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RotationalDisplacementRY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RotationalDisplacementRZ = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -99305,13 +124185,72 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADSINGLEDISPLACEMENTDISTORTION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					DisplacementX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					DisplacementY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					DisplacementZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					RotationalDisplacementRX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					RotationalDisplacementRY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RotationalDisplacementRZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Distortion = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -99466,13 +124405,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADSINGLEFORCE requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ForceX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ForceY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ForceZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					MomentX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					MomentY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					MomentZ = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -99693,13 +124684,72 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADSINGLEFORCEWARPING requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ForceX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ForceY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ForceZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					MomentX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					MomentY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					MomentZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					WarpingMoment = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -99834,13 +124884,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADSTATIC requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -99907,13 +124967,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALLOADTEMPERATURE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					DeltaT_Constant = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					DeltaT_Y = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					DeltaT_Z = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -100071,13 +125162,65 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALMEMBER requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -100147,12 +125290,12 @@ namespace IFC.IFC2x3
 			{
 				if(ReferencesElement != null)
 				{
-					IFC_Attributes<Global.IFCRelConnectsStructuralElement>? items = new IFC_Attributes<Global.IFCRelConnectsStructuralElement>();
+					IFC_Attributes<Global.IFCRelConnectsStructuralElement>? Items = new IFC_Attributes<Global.IFCRelConnectsStructuralElement>();
 					foreach (IFCRelConnectsStructuralElement item in ReferencesElement)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -100163,12 +125306,12 @@ namespace IFC.IFC2x3
 			{
 				if(ConnectedBy != null)
 				{
-					IFC_Attributes<Global.IFCRelConnectsStructuralMember>? items = new IFC_Attributes<Global.IFCRelConnectsStructuralMember>();
+					IFC_Attributes<Global.IFCRelConnectsStructuralMember>? Items = new IFC_Attributes<Global.IFCRelConnectsStructuralMember>();
 					foreach (IFCRelConnectsStructuralMember item in ConnectedBy)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -100253,13 +125396,100 @@ namespace IFC.IFC2x3
 				{"WR61", WR_WR61}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 12)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 12)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALPLANARACTION requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					GlobalOrLocal = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					DestabilizingLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					CausedBy = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					ProjectedOrTrue = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -100463,13 +125693,114 @@ namespace IFC.IFC2x3
 				{"WR61", WR_WR61}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 14)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 14)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALPLANARACTIONVARYING requires 14 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					GlobalOrLocal = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					DestabilizingLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					CausedBy = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					ProjectedOrTrue = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					VaryingAppliedLoadLocation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					SubsequentAppliedLoads = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -100613,12 +125944,12 @@ namespace IFC.IFC2x3
 			{
 				if(SubsequentAppliedLoads != null)
 				{
-					IFC_Attributes<Global.IFCStructuralLoad>? items = new IFC_Attributes<Global.IFCStructuralLoad>();
+					IFC_Attributes<Global.IFCStructuralLoad>? Items = new IFC_Attributes<Global.IFCStructuralLoad>();
 					foreach (IFCStructuralLoad item in SubsequentAppliedLoads)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -100647,12 +125978,12 @@ namespace IFC.IFC2x3
 			{
 				if(VaryingAppliedLoads != null)
 				{
-					IFC_Attributes<Global.IFCStructuralLoad>? items = new IFC_Attributes<Global.IFCStructuralLoad>();
+					IFC_Attributes<Global.IFCStructuralLoad>? Items = new IFC_Attributes<Global.IFCStructuralLoad>();
 					foreach (IFCStructuralLoad item in VaryingAppliedLoads)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -100731,13 +126062,93 @@ namespace IFC.IFC2x3
 				{"WR61", WR_WR61}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALPOINTACTION requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					GlobalOrLocal = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					DestabilizingLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					CausedBy = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -100889,13 +126300,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALPOINTCONNECTION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedCondition = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -101040,13 +126510,79 @@ namespace IFC.IFC2x3
 				{"WR61", WR_WR61}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALPOINTREACTION requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					GlobalOrLocal = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -101265,13 +126801,177 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 23)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 23)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALPROFILEPROPERTIES requires 23 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileDefinition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					PhysicalWeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Perimeter = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					MinimumPlateThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					MaximumPlateThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					CrossSectionArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					TorsionalConstantX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					MomentOfInertiaYZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					MomentOfInertiaY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					MomentOfInertiaZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					WarpingConstant = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					ShearCentreZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					ShearCentreY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[14] == "$")
+				{
+					ShearDeformationAreaZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[15] == "$")
+				{
+					ShearDeformationAreaY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[16] == "$")
+				{
+					MaximumSectionModulusY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[17] == "$")
+				{
+					MinimumSectionModulusY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[18] == "$")
+				{
+					MaximumSectionModulusZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[19] == "$")
+				{
+					MinimumSectionModulusZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[20] == "$")
+				{
+					TorsionalSectionModulus = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[21] == "$")
+				{
+					CentreOfGravityInX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[22] == "$")
+				{
+					CentreOfGravityInY = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -101813,13 +127513,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALREACTION requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedLoad = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					GlobalOrLocal = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -101905,12 +127671,12 @@ namespace IFC.IFC2x3
 			{
 				if(Causes != null)
 				{
-					IFC_Attributes<Global.IFCStructuralAction>? items = new IFC_Attributes<Global.IFCStructuralAction>();
+					IFC_Attributes<Global.IFCStructuralAction>? Items = new IFC_Attributes<Global.IFCStructuralAction>();
 					foreach (IFCStructuralAction item in Causes)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -101981,13 +127747,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALRESULTGROUP requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					TheoryType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ResultForLoadGroup = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					IsLinear = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -102119,12 +127944,12 @@ namespace IFC.IFC2x3
 			{
 				if(ResultGroupFor != null)
 				{
-					IFC_Attributes<Global.IFCStructuralAnalysisModel>? items = new IFC_Attributes<Global.IFCStructuralAnalysisModel>();
+					IFC_Attributes<Global.IFCStructuralAnalysisModel>? Items = new IFC_Attributes<Global.IFCStructuralAnalysisModel>();
 					foreach (IFCStructuralAnalysisModel item in ResultGroupFor)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -102236,13 +128061,205 @@ namespace IFC.IFC2x3
 				{"WR32", WR_WR32}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 27)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 27)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALSTEELPROFILEPROPERTIES requires 27 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileDefinition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					PhysicalWeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Perimeter = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					MinimumPlateThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					MaximumPlateThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					CrossSectionArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					TorsionalConstantX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					MomentOfInertiaYZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					MomentOfInertiaY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					MomentOfInertiaZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					WarpingConstant = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					ShearCentreZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					ShearCentreY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[14] == "$")
+				{
+					ShearDeformationAreaZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[15] == "$")
+				{
+					ShearDeformationAreaY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[16] == "$")
+				{
+					MaximumSectionModulusY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[17] == "$")
+				{
+					MinimumSectionModulusY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[18] == "$")
+				{
+					MaximumSectionModulusZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[19] == "$")
+				{
+					MinimumSectionModulusZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[20] == "$")
+				{
+					TorsionalSectionModulus = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[21] == "$")
+				{
+					CentreOfGravityInX = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[22] == "$")
+				{
+					CentreOfGravityInY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[23] == "$")
+				{
+					ShearAreaZ = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[24] == "$")
+				{
+					ShearAreaY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[25] == "$")
+				{
+					PlasticShapeFactorY = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[26] == "$")
+				{
+					PlasticShapeFactorZ = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -102594,13 +128611,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALSURFACECONNECTION requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					AppliedCondition = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -102738,13 +128814,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALSURFACEMEMBER requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					Thickness = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -102986,13 +129128,93 @@ namespace IFC.IFC2x3
 				{"WR63", WR_WR63}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTURALSURFACEMEMBERVARYING requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					Thickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					SubsequentThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					VaryingThicknessLocation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -103094,12 +129316,12 @@ namespace IFC.IFC2x3
 			{
 				if(SubsequentThickness != null)
 				{
-					IFC_Attributes<Global.IFCPositiveLengthMeasure>? items = new IFC_Attributes<Global.IFCPositiveLengthMeasure>();
+					IFC_Attributes<Global.IFCPositiveLengthMeasure>? Items = new IFC_Attributes<Global.IFCPositiveLengthMeasure>();
 					foreach (IFCPositiveLengthMeasure item in SubsequentThickness)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -103146,12 +129368,12 @@ namespace IFC.IFC2x3
 			{
 				if(VaryingThickness != null)
 				{
-					IFC_Attributes<Global.IFCPositiveLengthMeasure>? items = new IFC_Attributes<Global.IFCPositiveLengthMeasure>();
+					IFC_Attributes<Global.IFCPositiveLengthMeasure>? Items = new IFC_Attributes<Global.IFCPositiveLengthMeasure>();
 					foreach (IFCPositiveLengthMeasure item in VaryingThickness)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -103217,13 +129439,23 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTRUCTUREDDIMENSIONCALLOUT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Contents = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -103286,13 +129518,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTYLEMODEL requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ContextOfItems = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RepresentationIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RepresentationType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Items = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -103413,13 +129676,37 @@ namespace IFC.IFC2x3
 				{"WR12", WR_WR12}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTYLEDITEM requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Item = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -103475,12 +129762,12 @@ namespace IFC.IFC2x3
 			{
 				if(Styles != null)
 				{
-					IFC_Attributes<Global.IFCPresentationStyleAssignment>? items = new IFC_Attributes<Global.IFCPresentationStyleAssignment>();
+					IFC_Attributes<Global.IFCPresentationStyleAssignment>? Items = new IFC_Attributes<Global.IFCPresentationStyleAssignment>();
 					foreach (IFCPresentationStyleAssignment item in Styles)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -103582,13 +129869,44 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSTYLEDREPRESENTATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ContextOfItems = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RepresentationIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RepresentationType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Items = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -103690,13 +130008,93 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSUBCONTRACTRESOURCE requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ResourceIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ResourceGroup = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					ResourceConsumption = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					BaseQuantity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					SubContractor = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					JobDescription = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -103874,13 +130272,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSUBEDGE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					EdgeStart = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					EdgeEnd = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ParentEdge = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -103972,13 +130394,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACE requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -104064,13 +130489,58 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACECURVESWEPTAREASOLID requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SweptArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Directrix = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					StartParam = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					EndParam = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ReferenceSurface = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -104279,13 +130749,44 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACEOFLINEAREXTRUSION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SweptCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					ExtrudedDirection = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Depth = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -104432,13 +130933,37 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACEOFREVOLUTION requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SweptCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					AxisPosition = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -104623,13 +131148,37 @@ namespace IFC.IFC2x3
 				{"WR15", WR_WR15}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACESTYLE requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Side = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -104685,12 +131234,12 @@ namespace IFC.IFC2x3
 			{
 				if(Styles != null)
 				{
-					IFC_Attributes<Global.IFCSurfaceStyleElementSelect>? items = new IFC_Attributes<Global.IFCSurfaceStyleElementSelect>();
+					IFC_Attributes<Global.IFCSurfaceStyleElementSelect>? Items = new IFC_Attributes<Global.IFCSurfaceStyleElementSelect>();
 					foreach (IFCSurfaceStyleElementSelect item in Styles)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -104766,13 +131315,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACESTYLELIGHTING requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					DiffuseTransmissionColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					DiffuseReflectionColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					TransmissionColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					ReflectanceColour = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -104929,13 +131509,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACESTYLEREFRACTION requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RefractionIndex = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					DispersionFactor = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -105066,13 +131663,79 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACESTYLERENDERING requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SurfaceColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Transparency = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					DiffuseColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					TransmissionColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					DiffuseTransmissionColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ReflectionColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					SpecularColour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					SpecularHighlight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ReflectanceMethod = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -105339,13 +132002,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACESTYLESHADING requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SurfaceColour = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -105420,13 +132093,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACESTYLEWITHTEXTURES requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Textures = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -105448,12 +132131,12 @@ namespace IFC.IFC2x3
 			{
 				if(Textures != null)
 				{
-					IFC_Attributes<Global.IFCSurfaceTexture>? items = new IFC_Attributes<Global.IFCSurfaceTexture>();
+					IFC_Attributes<Global.IFCSurfaceTexture>? Items = new IFC_Attributes<Global.IFCSurfaceTexture>();
 					foreach (IFCSurfaceTexture item in Textures)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -105533,13 +132216,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSURFACETEXTURE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RepeatS = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RepeatT = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					TextureType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					TextureTransform = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -105718,13 +132432,30 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSWEPTAREASOLID requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SweptArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -105872,13 +132603,51 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSWEPTDISKSOLID requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Directrix = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Radius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					InnerRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					StartParam = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					EndParam = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -106108,13 +132877,30 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSWEPTSURFACE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					SweptCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -106239,13 +133025,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSWITCHINGDEVICETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -106394,13 +133253,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSYMBOLSTYLE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					StyleOfSymbol = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -106499,13 +133375,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSYSTEM requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -106559,12 +133473,12 @@ namespace IFC.IFC2x3
 			{
 				if(ServicesBuildings != null)
 				{
-					IFC_Attributes<Global.IFCRelServicesBuildings>? items = new IFC_Attributes<Global.IFCRelServicesBuildings>();
+					IFC_Attributes<Global.IFCRelServicesBuildings>? Items = new IFC_Attributes<Global.IFCRelServicesBuildings>();
 					foreach (IFCRelServicesBuildings item in ServicesBuildings)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -106623,13 +133537,79 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCSYSTEMFURNITUREELEMENTTYPE requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -106817,13 +133797,107 @@ namespace IFC.IFC2x3
 				{"WR2", WR_WR2}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 13)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 13)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTSHAPEPROFILEDEF requires 13 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Depth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					FlangeWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					WebThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					FlangeThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					FilletRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					FlangeEdgeRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					WebEdgeRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					WebSlope = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					FlangeSlope = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					CentreOfGravityInY = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -107240,13 +134314,30 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTABLE requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Rows = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -107294,12 +134385,12 @@ namespace IFC.IFC2x3
 			{
 				if(Rows != null)
 				{
-					IFC_Attributes<Global.IFCTableRow>? items = new IFC_Attributes<Global.IFCTableRow>();
+					IFC_Attributes<Global.IFCTableRow>? Items = new IFC_Attributes<Global.IFCTableRow>();
 					foreach (IFCTableRow item in Rows)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -107392,13 +134483,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTABLEROW requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RowCells = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					IsHeading = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -107428,12 +134536,12 @@ namespace IFC.IFC2x3
 			{
 				if(RowCells != null)
 				{
-					IFC_Attributes<Global.IFCValue>? items = new IFC_Attributes<Global.IFCValue>();
+					IFC_Attributes<Global.IFCValue>? Items = new IFC_Attributes<Global.IFCValue>();
 					foreach (IFCValue item in RowCells)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -107554,13 +134662,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTANKTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -107781,13 +134962,86 @@ namespace IFC.IFC2x3
 				{"WR3", WR_WR3}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTASK requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					TaskId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Status = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					WorkMethod = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					IsMilestone = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Priority = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -108047,13 +135301,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTELECOMADDRESS requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Purpose = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					UserDefinedPurpose = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					TelephoneNumbers = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					FacsimileNumbers = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					PagerNumber = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					ElectronicMailAddresses = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					WWWHomePageURL = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -108131,12 +135444,12 @@ namespace IFC.IFC2x3
 			{
 				if(TelephoneNumbers != null)
 				{
-					IFC_Attributes<Global.IFCLabel>? items = new IFC_Attributes<Global.IFCLabel>();
+					IFC_Attributes<Global.IFCLabel>? Items = new IFC_Attributes<Global.IFCLabel>();
 					foreach (IFCLabel item in TelephoneNumbers)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -108165,12 +135478,12 @@ namespace IFC.IFC2x3
 			{
 				if(FacsimileNumbers != null)
 				{
-					IFC_Attributes<Global.IFCLabel>? items = new IFC_Attributes<Global.IFCLabel>();
+					IFC_Attributes<Global.IFCLabel>? Items = new IFC_Attributes<Global.IFCLabel>();
 					foreach (IFCLabel item in FacsimileNumbers)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -108217,12 +135530,12 @@ namespace IFC.IFC2x3
 			{
 				if(ElectronicMailAddresses != null)
 				{
-					IFC_Attributes<Global.IFCLabel>? items = new IFC_Attributes<Global.IFCLabel>();
+					IFC_Attributes<Global.IFCLabel>? Items = new IFC_Attributes<Global.IFCLabel>();
 					foreach (IFCLabel item in ElectronicMailAddresses)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -108376,13 +135689,135 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 17)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 17)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTENDON requires 17 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					SteelGrade = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					NominalDiameter = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					CrossSectionArea = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					TensionForce = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					PreStress = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[14] == "$")
+				{
+					FrictionCoefficient = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[15] == "$")
+				{
+					AnchorageSlip = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[16] == "$")
+				{
+					MinCurvatureRadius = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -108737,13 +136172,79 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTENDONANCHOR requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					SteelGrade = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -108875,13 +136376,44 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTERMINATORSYMBOL requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Item = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Styles = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					AnnotatedCurve = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -108993,13 +136525,37 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 3)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 3)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTLITERAL requires 3 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Literal = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Placement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Path = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -109150,13 +136706,51 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTLITERALWITHEXTENT requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Literal = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Placement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Path = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Extent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					BoxAlignment = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -109291,13 +136885,44 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTSTYLE requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					TextCharacterAppearance = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					TextStyle = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					TextFontStyle = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -109465,13 +137090,58 @@ namespace IFC.IFC2x3
 				{"WR31", WR_WR31}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTSTYLEFONTMODEL requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					FontFamily = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					FontStyle = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					FontVariant = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					FontWeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					FontSize = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -109533,12 +137203,12 @@ namespace IFC.IFC2x3
 			{
 				if(FontFamily != null)
 				{
-					IFC_Attributes<Global.IFCTextFontName>? items = new IFC_Attributes<Global.IFCTextFontName>();
+					IFC_Attributes<Global.IFCTextFontName>? Items = new IFC_Attributes<Global.IFCTextFontName>();
 					foreach (IFCTextFontName item in FontFamily)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -109678,13 +137348,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTSTYLEFORDEFINEDFONT requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Colour = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					BackgroundColour = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -109809,13 +137496,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTSTYLETEXTMODEL requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					TextIndent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					TextAlign = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					TextDecoration = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					LetterSpacing = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					WordSpacing = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					TextTransform = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					LineHeight = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -110062,13 +137801,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTSTYLEWITHBOXCHARACTERISTICS requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					BoxHeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					BoxWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					BoxSlantAngle = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					BoxRotateAngle = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					CharacterSpacing = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -110247,13 +138024,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTURECOORDINATE requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -110267,12 +138047,12 @@ namespace IFC.IFC2x3
 			{
 				if(AnnotatedSurface != null)
 				{
-					IFC_Attributes<Global.IFCAnnotationSurface>? items = new IFC_Attributes<Global.IFCAnnotationSurface>();
+					IFC_Attributes<Global.IFCAnnotationSurface>? Items = new IFC_Attributes<Global.IFCAnnotationSurface>();
 					foreach (IFCAnnotationSurface item in AnnotatedSurface)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -110324,13 +138104,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTURECOORDINATEGENERATOR requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Mode = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Parameter = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -110378,12 +138175,12 @@ namespace IFC.IFC2x3
 			{
 				if(Parameter != null)
 				{
-					IFC_Attributes<Global.IFCSimpleValue>? items = new IFC_Attributes<Global.IFCSimpleValue>();
+					IFC_Attributes<Global.IFCSimpleValue>? Items = new IFC_Attributes<Global.IFCSimpleValue>();
 					foreach (IFCSimpleValue item in Parameter)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -110469,13 +138266,23 @@ namespace IFC.IFC2x3
 				{"WR11", WR_WR11}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTUREMAP requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					TextureMaps = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -110497,12 +138304,12 @@ namespace IFC.IFC2x3
 			{
 				if(TextureMaps != null)
 				{
-					IFC_Attributes<Global.IFCVertexBasedTextureMap>? items = new IFC_Attributes<Global.IFCVertexBasedTextureMap>();
+					IFC_Attributes<Global.IFCVertexBasedTextureMap>? Items = new IFC_Attributes<Global.IFCVertexBasedTextureMap>();
 					foreach (IFCVertexBasedTextureMap item in TextureMaps)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -110566,13 +138373,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTEXTUREVERTEX requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Coordinates = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -110594,12 +138411,12 @@ namespace IFC.IFC2x3
 			{
 				if(Coordinates != null)
 				{
-					IFC_Attributes<Global.IFCParameterValue>? items = new IFC_Attributes<Global.IFCParameterValue>();
+					IFC_Attributes<Global.IFCParameterValue>? Items = new IFC_Attributes<Global.IFCParameterValue>();
 					foreach (IFCParameterValue item in Coordinates)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -110679,13 +138496,51 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTHERMALMATERIALPROPERTIES requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SpecificHeatCapacity = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					BoilingPoint = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					FreezingPoint = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ThermalConductivity = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -110881,13 +138736,72 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTIMESERIES requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					StartTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					EndTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					TimeSeriesDataType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					DataOrigin = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					UserDefinedDataOrigin = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Unit = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -111109,12 +139023,12 @@ namespace IFC.IFC2x3
 			{
 				if(DocumentedBy != null)
 				{
-					IFC_Attributes<Global.IFCTimeSeriesReferenceRelationship>? items = new IFC_Attributes<Global.IFCTimeSeriesReferenceRelationship>();
+					IFC_Attributes<Global.IFCTimeSeriesReferenceRelationship>? Items = new IFC_Attributes<Global.IFCTimeSeriesReferenceRelationship>();
 					foreach (IFCTimeSeriesReferenceRelationship item in DocumentedBy)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -111164,13 +139078,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTIMESERIESREFERENCERELATIONSHIP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ReferencedTimeSeries = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					TimeSeriesReferences = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -111218,12 +139149,12 @@ namespace IFC.IFC2x3
 			{
 				if(TimeSeriesReferences != null)
 				{
-					IFC_Attributes<Global.IFCDocumentSelect>? items = new IFC_Attributes<Global.IFCDocumentSelect>();
+					IFC_Attributes<Global.IFCDocumentSelect>? Items = new IFC_Attributes<Global.IFCDocumentSelect>();
 					foreach (IFCDocumentSelect item in TimeSeriesReferences)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -111322,13 +139253,72 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTIMESERIESSCHEDULE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ApplicableDates = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					TimeSeriesScheduleType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					TimeSeries = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -111406,12 +139396,12 @@ namespace IFC.IFC2x3
 			{
 				if(ApplicableDates != null)
 				{
-					IFC_Attributes<Global.IFCDateTimeSelect>? items = new IFC_Attributes<Global.IFCDateTimeSelect>();
+					IFC_Attributes<Global.IFCDateTimeSelect>? Items = new IFC_Attributes<Global.IFCDateTimeSelect>();
 					foreach (IFCDateTimeSelect item in ApplicableDates)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -111511,13 +139501,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTIMESERIESVALUE requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ListValues = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -111539,12 +139539,12 @@ namespace IFC.IFC2x3
 			{
 				if(ListValues != null)
 				{
-					IFC_Attributes<Global.IFCValue>? items = new IFC_Attributes<Global.IFCValue>();
+					IFC_Attributes<Global.IFCValue>? Items = new IFC_Attributes<Global.IFCValue>();
 					foreach (IFCValue item in ListValues)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -111612,13 +139612,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTOPOLOGICALREPRESENTATIONITEM requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -111715,13 +139718,44 @@ namespace IFC.IFC2x3
 				{"WR23", WR_WR23}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 4)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 4)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTOPOLOGYREPRESENTATION requires 4 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ContextOfItems = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					RepresentationIdentifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					RepresentationType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Items = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -111819,13 +139853,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTRANSFORMERTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -112009,13 +140116,93 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTRANSPORTELEMENT requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					OperationType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					CapacityByWeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					CapacityByNumber = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -112223,13 +140410,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTRANSPORTELEMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -112392,13 +140652,65 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 7)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 7)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTRAPEZIUMPROFILEDEF requires 7 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					BottomXDim = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					TopXDim = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					YDim = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					TopXOffset = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -112635,13 +140947,51 @@ namespace IFC.IFC2x3
 				{"WR43", WR_WR43}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTRIMMEDCURVE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					BasisCurve = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Trim1 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Trim2 = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					SenseAgreement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					MasterRepresentation = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -112713,12 +141063,12 @@ namespace IFC.IFC2x3
 			{
 				if(Trim1 != null)
 				{
-					IFC_Attributes<Global.IFCTrimmingSelect>? items = new IFC_Attributes<Global.IFCTrimmingSelect>();
+					IFC_Attributes<Global.IFCTrimmingSelect>? Items = new IFC_Attributes<Global.IFCTrimmingSelect>();
 					foreach (IFCTrimmingSelect item in Trim1)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -112747,12 +141097,12 @@ namespace IFC.IFC2x3
 			{
 				if(Trim2 != null)
 				{
-					IFC_Attributes<Global.IFCTrimmingSelect>? items = new IFC_Attributes<Global.IFCTrimmingSelect>();
+					IFC_Attributes<Global.IFCTrimmingSelect>? Items = new IFC_Attributes<Global.IFCTrimmingSelect>();
 					foreach (IFCTrimmingSelect item in Trim2)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -112884,13 +141234,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTUBEBUNDLETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -113041,13 +141464,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTWODIRECTIONREPEATFACTOR requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					RepeatFactor = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					SecondRepeatFactor = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -113163,13 +141603,58 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 6)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 6)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTYPEOBJECT requires 6 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -113249,12 +141734,12 @@ namespace IFC.IFC2x3
 			{
 				if(HasPropertySets != null)
 				{
-					IFC_Attributes<Global.IFCPropertySetDefinition>? items = new IFC_Attributes<Global.IFCPropertySetDefinition>();
+					IFC_Attributes<Global.IFCPropertySetDefinition>? Items = new IFC_Attributes<Global.IFCPropertySetDefinition>();
 					foreach (IFCPropertySetDefinition item in HasPropertySets)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -113283,12 +141768,12 @@ namespace IFC.IFC2x3
 			{
 				if(ObjectTypeOf != null)
 				{
-					IFC_Attributes<Global.IFCRelDefinesByType>? items = new IFC_Attributes<Global.IFCRelDefinesByType>();
+					IFC_Attributes<Global.IFCRelDefinesByType>? Items = new IFC_Attributes<Global.IFCRelDefinesByType>();
 					foreach (IFCRelDefinesByType item in ObjectTypeOf)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -113372,13 +141857,72 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCTYPEPRODUCT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -113456,12 +142000,12 @@ namespace IFC.IFC2x3
 			{
 				if(RepresentationMaps != null)
 				{
-					IFC_Attributes<Global.IFCRepresentationMap>? items = new IFC_Attributes<Global.IFCRepresentationMap>();
+					IFC_Attributes<Global.IFCRepresentationMap>? Items = new IFC_Attributes<Global.IFCRepresentationMap>();
 					foreach (IFCRepresentationMap item in RepresentationMaps)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -113602,13 +142146,93 @@ namespace IFC.IFC2x3
 				{"WR22", WR_WR22}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 11)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 11)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCUSHAPEPROFILEDEF requires 11 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Depth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					FlangeWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					WebThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					FlangeThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					FilletRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					EdgeRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					FlangeSlope = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					CentreOfGravityInX = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -113903,13 +142527,23 @@ namespace IFC.IFC2x3
 				{"WR01", WR_WR01}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCUNITASSIGNMENT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Units = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -113931,12 +142565,12 @@ namespace IFC.IFC2x3
 			{
 				if(Units != null)
 				{
-					IFC_Attributes<Global.IFCUnit>? items = new IFC_Attributes<Global.IFCUnit>();
+					IFC_Attributes<Global.IFCUnit>? Items = new IFC_Attributes<Global.IFCUnit>();
 					foreach (IFCUnit item in Units)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -114032,13 +142666,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCUNITARYEQUIPMENTTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -114217,13 +142924,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVALVETYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -114405,13 +143185,30 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVECTOR requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Orientation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					Magnitude = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -114517,13 +143314,16 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 0)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 0)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVERTEX requires 0 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -114576,13 +143376,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVERTEXBASEDTEXTUREMAP requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					TextureVertices = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					TexturePoints = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -114612,12 +143429,12 @@ namespace IFC.IFC2x3
 			{
 				if(TextureVertices != null)
 				{
-					IFC_Attributes<Global.IFCTextureVertex>? items = new IFC_Attributes<Global.IFCTextureVertex>();
+					IFC_Attributes<Global.IFCTextureVertex>? Items = new IFC_Attributes<Global.IFCTextureVertex>();
 					foreach (IFCTextureVertex item in TextureVertices)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -114646,12 +143463,12 @@ namespace IFC.IFC2x3
 			{
 				if(TexturePoints != null)
 				{
-					IFC_Attributes<Global.IFCCartesianPoint>? items = new IFC_Attributes<Global.IFCCartesianPoint>();
+					IFC_Attributes<Global.IFCCartesianPoint>? Items = new IFC_Attributes<Global.IFCCartesianPoint>();
 					foreach (IFCCartesianPoint item in TexturePoints)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -114718,13 +143535,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVERTEXLOOP requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					LoopVertex = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -114802,13 +143629,23 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 1)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 1)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVERTEXPOINT requires 1 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					VertexGeometry = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -114915,13 +143752,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVIBRATIONISOLATORTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -115093,13 +144003,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVIRTUALELEMENT requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -115216,13 +144185,30 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 2)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 2)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCVIRTUALGRIDINTERSECTION requires 2 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					IntersectingAxes = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OffsetDistances = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -115252,12 +144238,12 @@ namespace IFC.IFC2x3
 			{
 				if(IntersectingAxes != null)
 				{
-					IFC_Attributes<Global.IFCGridAxis>? items = new IFC_Attributes<Global.IFCGridAxis>();
+					IFC_Attributes<Global.IFCGridAxis>? Items = new IFC_Attributes<Global.IFCGridAxis>();
 					foreach (IFCGridAxis item in IntersectingAxes)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -115286,12 +144272,12 @@ namespace IFC.IFC2x3
 			{
 				if(OffsetDistances != null)
 				{
-					IFC_Attributes<Global.IFCLengthMeasure>? items = new IFC_Attributes<Global.IFCLengthMeasure>();
+					IFC_Attributes<Global.IFCLengthMeasure>? Items = new IFC_Attributes<Global.IFCLengthMeasure>();
 					foreach (IFCLengthMeasure item in OffsetDistances)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -115398,13 +144384,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWALL requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -115560,13 +144605,72 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWALLSTANDARDCASE requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -115696,13 +144800,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWALLTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -115866,13 +145043,86 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWASTETERMINALTYPE requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ElementType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					PredefinedType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -116047,13 +145297,72 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 8)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 8)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWATERPROPERTIES requires 8 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					Material = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					IsPotable = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Hardness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					AlkalinityConcentration = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					AcidityConcentration = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ImpuritiesContent = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					PHLevel = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					DissolvedSolidsContent = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -116325,13 +145634,86 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 10)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 10)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWINDOW requires 10 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					ObjectPlacement = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					Representation = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					OverallHeight = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					OverallWidth = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -116590,13 +145972,107 @@ namespace IFC.IFC2x3
 				{"WR34", WR_WR34}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 13)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 13)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWINDOWLININGPROPERTIES requires 13 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					LiningDepth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					LiningThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					TransomThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					MullionThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					FirstTransomOffset = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					SecondTransomOffset = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					FirstMullionOffset = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					SecondMullionOffset = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					ShapeAspectStyle = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -116935,13 +146411,79 @@ namespace IFC.IFC2x3
 			{
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWINDOWPANELPROPERTIES requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					OperationType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					PanelPosition = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					FrameDepth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					FrameThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ShapeAspectStyle = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -117180,13 +146722,100 @@ namespace IFC.IFC2x3
 				{"WR41", WR_WR41}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 12)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 12)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWINDOWSTYLE requires 12 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ApplicableOccurrence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					HasPropertySets = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					RepresentationMaps = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Tag = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					ConstructionType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					OperationType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					ParameterTakesPrecedence = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					Sizeable = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -117470,13 +147099,121 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 15)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 15)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWORKCONTROL requires 15 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Identifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					CreationDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Creators = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					Purpose = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Duration = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					TotalFloat = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					StartTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					FinishTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					WorkControlType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[14] == "$")
+				{
+					UserDefinedControlType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -117646,12 +147383,12 @@ namespace IFC.IFC2x3
 			{
 				if(Creators != null)
 				{
-					IFC_Attributes<Global.IFCPerson>? items = new IFC_Attributes<Global.IFCPerson>();
+					IFC_Attributes<Global.IFCPerson>? Items = new IFC_Attributes<Global.IFCPerson>();
 					foreach (IFCPerson item in Creators)
 					{
-						items.Add(item);
+						Items.Add(item);
 					}
-					return items;
+					return Items;
 				}
 				return null;
 			}
@@ -117861,13 +147598,121 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 15)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 15)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWORKPLAN requires 15 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Identifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					CreationDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Creators = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					Purpose = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Duration = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					TotalFloat = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					StartTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					FinishTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					WorkControlType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[14] == "$")
+				{
+					UserDefinedControlType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -118056,13 +147901,121 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 15)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 15)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCWORKSCHEDULE requires 15 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					Identifier = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					CreationDate = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					Creators = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					Purpose = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[9] == "$")
+				{
+					Duration = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[10] == "$")
+				{
+					TotalFloat = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[11] == "$")
+				{
+					StartTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[12] == "$")
+				{
+					FinishTime = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[13] == "$")
+				{
+					WorkControlType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[14] == "$")
+				{
+					UserDefinedControlType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -118269,13 +148222,79 @@ namespace IFC.IFC2x3
 				{"WR21", WR_WR21}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 9)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 9)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCZSHAPEPROFILEDEF requires 9 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					ProfileType = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					ProfileName = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Position = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Depth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					FlangeWidth = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[5] == "$")
+				{
+					WebThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[6] == "$")
+				{
+					FlangeThickness = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[7] == "$")
+				{
+					FilletRadius = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[8] == "$")
+				{
+					EdgeRadius = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{
@@ -118527,13 +148546,51 @@ namespace IFC.IFC2x3
 				{"WR1", WR_WR1}
 			};
 		}
-		public override string SetByAttributeTexts()
+		public override void SetByAttributeTexts()
 		{
-			if(AttributeTexts.Count != 5)
+			if(Model != null)
 			{
-				return "ERROR : (" + IFC_ID + ") Invalid numbers of attributes";
+				if(AttributeTexts.Count != 5)
+				{
+					Model.ImportErrorLogTexts.Add( "ERROR : (" + IFC_ID + ") Invalid number of attributes. IFCZONE requires 5 attributes (Not " + AttributeTexts.Count + "). ");
+					return;
+				}
+				if(AttributeTexts[0] == "$")
+				{
+					GlobalId = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[1] == "$")
+				{
+					OwnerHistory = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[2] == "$")
+				{
+					Name = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[3] == "$")
+				{
+					Description = null;
+				}
+				else
+				{
+				}
+				if(AttributeTexts[4] == "$")
+				{
+					ObjectType = null;
+				}
+				else
+				{
+				}
 			}
-			return "";
 		}
 		public override string GetIFCFullText()
 		{

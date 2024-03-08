@@ -13,7 +13,7 @@ namespace IFC
         public Dictionary<string, IFC_Attribute?> GetDerivedAttributes();
         public Dictionary<string, IFC_Attribute?> GetInverseAttributes();
         public Dictionary<string, bool> GetWhereAttributes();
-        public string SetByAttributeTexts();
+        public void SetByAttributeTexts();
         public string GetIFCFullText();
 	}
 }

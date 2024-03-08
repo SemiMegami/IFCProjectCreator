@@ -56,9 +56,8 @@ namespace IFC
         /// <summary>
 		/// Set all attributes by current "AttributeTexts"
 		/// </summary>
-        public virtual string SetByAttributeTexts()
+        public virtual void SetByAttributeTexts()
         {
-            return "";
         }
 
         public string GetIFCText(bool includeClassName)

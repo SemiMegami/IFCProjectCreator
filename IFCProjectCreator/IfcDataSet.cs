@@ -154,13 +154,13 @@ namespace IFCProjectCreator
         /// </summary>
         private void SetParent()
         {
-            List<IFCClass> items = GetItems();
+            List<IFCClass> Items = GetItems();
 
             foreach (var selectType in SelectTypes)
             {
                 foreach (var subClassName in selectType.SubClassesNames)
                 {
-                    IFCClass subClass = items.First(e => e.Name == subClassName && e.VersionName == selectType.VersionName);
+                    IFCClass subClass = Items.First(e => e.Name == subClassName && e.VersionName == selectType.VersionName);
                     if (!subClass.InterfaceNames.Contains(selectType.Name))
                     {
                         subClass.InterfaceNames.Add(selectType.Name);
@@ -382,9 +382,9 @@ namespace IFCProjectCreator
         public void SetGlobal()
         {
             Dictionary<string, IFCSelectType> globalTypes = new Dictionary<string, IFCSelectType> ();
-            List<IFCClass> items = GetItems();
+            List<IFCClass> Items = GetItems();
 
-            foreach (var item in items)
+            foreach (var item in Items)
             {
                 if (!globalTypes.ContainsKey(item.Name))
                 {
@@ -403,10 +403,10 @@ namespace IFCProjectCreator
 
             foreach (var globalSelectType in GlobalSelectTypes)
             {
-                List < IFCClass > typeitems = items.Where(e => e.Name == globalSelectType.Name).ToList();
-                if (typeitems.Count > 0)
+                List < IFCClass > typeItems = Items.Where(e => e.Name == globalSelectType.Name).ToList();
+                if (typeItems.Count > 0)
                 {
-                    if (typeitems[0] is IFCBasicTypeList basicTypeList)
+                    if (typeItems[0] is IFCBasicTypeList basicTypeList)
                     {
                         string cSharpType = basicTypeList.GetCSharpType();
                         if (cSharpType.Length > 0)
@@ -415,11 +415,11 @@ namespace IFCProjectCreator
                         }
                     }
 
-                    else if (typeitems[0] is IFCBasicType basicType)
+                    else if (typeItems[0] is IFCBasicType basicType)
                     {
                         string cSharpType = basicType.GetCSharpType();
                         bool found = false;
-                        foreach (var item in typeitems)
+                        foreach (var item in typeItems)
                         {
                             if (item is IFCBasicType basicType1)
                             {
@@ -439,12 +439,12 @@ namespace IFCProjectCreator
                         }
                     }
 
-                    else if (typeitems[0] is IFCEnumType enumType)
+                    else if (typeItems[0] is IFCEnumType enumType)
                     {
                         List<IFCEnumType> enumItems = new List<IFCEnumType>();
                         bool found = false;
                         List<string> values = new List<string>();
-                        foreach (var typeItem in typeitems)
+                        foreach (var typeItem in typeItems)
                         {
                             if (typeItem is IFCEnumType enumType1)
                             {
@@ -476,12 +476,12 @@ namespace IFCProjectCreator
                             globalSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = "Value", TypeName = "string" });
                         }
                     }
-                    else if (typeitems[0] is IFCSelectType selectType)
+                    else if (typeItems[0] is IFCSelectType selectType)
                     {
                         List<IFCSelectType> selectItems = new List<IFCSelectType>();
                         bool found = false;
                         bool isReadOnly = false;
-                        foreach (var typeItem in typeitems)
+                        foreach (var typeItem in typeItems)
                         {
                             if (typeItem is IFCSelectType selectType1)
                             {
@@ -532,12 +532,12 @@ namespace IFCProjectCreator
                         }
                     }
 
-                    else if (typeitems[0] is IFCEntity entity)
+                    else if (typeItems[0] is IFCEntity entity)
                     {
                         List<IFCEntity> entities = new List<IFCEntity>();
                         bool found = false;
                         bool isReadOnly = false;
-                        foreach (var typeItem in typeitems)
+                        foreach (var typeItem in typeItems)
                         {
                             if (typeItem is IFCEntity entity1)
                             {
@@ -661,13 +661,13 @@ namespace IFCProjectCreator
         /// <returns></returns>
         public List<IFCClass> GetItems()
         {
-            List<IFCClass> items = new List<IFCClass>();
-            items.AddRange(BasicTypes);
-            items.AddRange(BasicTypeLists);
-            items.AddRange(EnumTypes);
-            items.AddRange(SelectTypes);
-            items.AddRange(Entities);
-            return items;
+            List<IFCClass> Items = new List<IFCClass>();
+            Items.AddRange(BasicTypes);
+            Items.AddRange(BasicTypeLists);
+            Items.AddRange(EnumTypes);
+            Items.AddRange(SelectTypes);
+            Items.AddRange(Entities);
+            return Items;
         }
 
         /// <summary>
@@ -723,7 +723,7 @@ namespace IFCProjectCreator
         {
             using (StreamWriter writer = new StreamWriter(folderDir + (version == globalName?"IFC_":"") + version + ".cs"))
             {
-                var items = GetItems(version);
+                var Items = GetItems(version);
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
@@ -732,7 +732,7 @@ namespace IFCProjectCreator
 
 
                 writer.WriteLine("\t#region ---- SIMPLE DATA TYPES ----");
-                foreach (var item in items.Where(e=>e is IFCBasicType || e is IFCBasicTypeList).ToList())
+                foreach (var item in Items.Where(e=>e is IFCBasicType || e is IFCBasicTypeList).ToList())
                 {
                     var texts = item.GetCSharpTexts();
                     foreach (var text in texts)
@@ -743,7 +743,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("\t#endregion");
                 writer.WriteLine("");
                 writer.WriteLine("\t#region ---- ENUMERATION TYPES ----");
-                foreach (var item in items.Where(e => e is IFCEnumType).ToList())
+                foreach (var item in Items.Where(e => e is IFCEnumType).ToList())
                 {
                     var texts = item.GetCSharpTexts();
                     foreach (var text in texts)
@@ -754,7 +754,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("\t#endregion");
                 writer.WriteLine("");
                 writer.WriteLine("\t#region ---- INTERFACES ----");
-                foreach (var item in items.Where(e => e is IFCSelectType).ToList())
+                foreach (var item in Items.Where(e => e is IFCSelectType).ToList())
                 {
                     var texts = item.GetCSharpTexts();
                     foreach (var text in texts)
@@ -765,7 +765,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("\t#endregion");
                 writer.WriteLine("");
                 writer.WriteLine("\t#region ---- ENTITIES ----");
-                foreach (var item in items.Where(e => e is IFCEntity).ToList())
+                foreach (var item in Items.Where(e => e is IFCEntity).ToList())
                 {
                     var texts = item.GetCSharpTexts();
                     foreach (var text in texts)
@@ -824,7 +824,7 @@ namespace IFCProjectCreator
         /// <returns></returns>
         public List<T> GetItems<T>() where T : IFC_Entity
 		{
-			List<IFC_Entity> itemList = items.Values.Where(x => x is T).ToList();
+			List<IFC_Entity> itemList = Items.Values.Where(x => x is T).ToList();
             List <T> results = new List<T>();
 			foreach (var item in itemList)
 			{
@@ -865,7 +865,7 @@ namespace IFCProjectCreator
 
         public virtual void Clear()
         {
-            items.Clear();
+            Items.Clear();
         }
 
         public virtual void AddItem(IFC_ClassEntity IFCBase)
@@ -886,9 +886,9 @@ namespace IFCProjectCreator
                 return;
             }
 
-            string IFC_ID = ""#"" + (items.Count + 1);
+            string IFC_ID = ""#"" + (Items.Count + 1);
             IFCBase.IFC_ID = IFC_ID;
-            items.Add(IFC_ID, IFCBase);
+            Items.Add(IFC_ID, IFCBase);
             IFCBase.Model = this;
 
         }
@@ -919,7 +919,7 @@ namespace IFCProjectCreator
                 writer.WriteLine(""ENDSEC;"");
                 writer.WriteLine(""DATA;"");
                 writer.WriteLine("""");
-                foreach (var item in items.Values.ToList())
+                foreach (var item in Items.Values.ToList())
                 {
                     if (item != null)
                     {
@@ -966,7 +966,7 @@ namespace IFCProjectCreator
 				{
                     entity.IFC_ID = key;
                     entity.AttributeTexts = paramList;
-                    items.Add(key, entity);
+                    Items.Add(key, entity);
                 }
             }
         }
@@ -1216,7 +1216,18 @@ namespace IFCProjectCreator
         /// <summary>
         /// IFC Items
         /// </summary>
-		public Dictionary<string, IFC_Entity> items;
+		public Dictionary<string, IFC_Entity> Items;
+
+        /// <summary>
+		/// Error Log generated during importing.
+		/// </summary>
+		public List<string> ImportErrorLogTexts { get; set; }
+
+        /// <summary>
+		/// Warning Log generated during importing.
+		/// </summary>
+		public List<string> ImportWarningLogTexts { get; set; }
+
 
         /// <summary>
         /// Constructor
@@ -1224,13 +1235,15 @@ namespace IFCProjectCreator
         public IFC_Model()
 		{
 			this.Version = IFC_Version.UNDEFINED;
-            items = new Dictionary<string, IFC_Entity>();
+            Items = new Dictionary<string, IFC_Entity>();
+            ImportErrorLogTexts = new List<string>();
+            ImportWarningLogTexts = new List<string>();
         }
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public IFC_Model(string version)
+        public IFC_Model(string version) : this()
         {
             switch (version.ToUpper())
             {
@@ -1238,7 +1251,6 @@ namespace IFCProjectCreator
 
             string contain2 = @"
             }
-            items = new Dictionary<string, IFC_Entity>();
         }
 ";
             writer.WriteLine(contain1);
@@ -1312,7 +1324,7 @@ namespace IFCProjectCreator
                 }
             }
 
-            var its = items.Values.ToList();
+            var its = Items.Values.ToList();
 
             foreach (var item in its)
             {
@@ -1371,7 +1383,7 @@ namespace IFCProjectCreator
 			// entity
             if (input.Substring(0, 1) == ""#"")
             {
-                if (items.TryGetValue(input, out var value))
+                if (Items.TryGetValue(input, out var value))
                 {
                     return value;
                 }
@@ -1714,9 +1726,8 @@ namespace IFCProjectCreator
         /// <summary>
 		/// Set all attributes by current ""AttributeTexts""
 		/// </summary>
-        public virtual string SetByAttributeTexts()
+        public virtual void SetByAttributeTexts()
         {
-            return """";
         }
 
         public string GetIFCText(bool includeClassName)
@@ -1758,7 +1769,7 @@ namespace IFCProjectCreator
         public Dictionary<string, IFC_Attribute?> GetDerivedAttributes();
         public Dictionary<string, IFC_Attribute?> GetInverseAttributes();
         public Dictionary<string, bool> GetWhereAttributes();
-        public string SetByAttributeTexts();
+        public void SetByAttributeTexts();
         public string GetIFCFullText();
 ";
                 writer.Write(contain);

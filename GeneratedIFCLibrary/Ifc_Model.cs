@@ -19,7 +19,18 @@ namespace IFC
         /// <summary>
         /// IFC Items
         /// </summary>
-		public Dictionary<string, IFC_Entity> items;
+		public Dictionary<string, IFC_Entity> Items;
+
+        /// <summary>
+		/// Error Log generated during importing.
+		/// </summary>
+		public List<string> ImportErrorLogTexts { get; set; }
+
+        /// <summary>
+		/// Warning Log generated during importing.
+		/// </summary>
+		public List<string> ImportWarningLogTexts { get; set; }
+
 
         /// <summary>
         /// Constructor
@@ -27,13 +38,15 @@ namespace IFC
         public IFC_Model()
 		{
 			this.Version = IFC_Version.UNDEFINED;
-            items = new Dictionary<string, IFC_Entity>();
+            Items = new Dictionary<string, IFC_Entity>();
+            ImportErrorLogTexts = new List<string>();
+            ImportWarningLogTexts = new List<string>();
         }
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public IFC_Model(string version)
+        public IFC_Model(string version) : this()
         {
             switch (version.ToUpper())
             {
@@ -45,7 +58,6 @@ namespace IFC
 				case "IFC4X3": this.Version = IFC_Version.IFC4x3; break;
 
             }
-            items = new Dictionary<string, IFC_Entity>();
         }
 
 
@@ -58,7 +70,7 @@ namespace IFC
         /// <returns></returns>
         public List<T> GetItems<T>() where T : IFC_Entity
 		{
-			List<IFC_Entity> itemList = items.Values.Where(x => x is T).ToList();
+			List<IFC_Entity> itemList = Items.Values.Where(x => x is T).ToList();
             List <T> results = new List<T>();
 			foreach (var item in itemList)
 			{
@@ -99,7 +111,7 @@ namespace IFC
 
         public virtual void Clear()
         {
-            items.Clear();
+            Items.Clear();
         }
 
         public virtual void AddItem(IFC_ClassEntity IFCBase)
@@ -120,9 +132,9 @@ namespace IFC
                 return;
             }
 
-            string IFC_ID = "#" + (items.Count + 1);
+            string IFC_ID = "#" + (Items.Count + 1);
             IFCBase.IFC_ID = IFC_ID;
-            items.Add(IFC_ID, IFCBase);
+            Items.Add(IFC_ID, IFCBase);
             IFCBase.Model = this;
 
         }
@@ -153,7 +165,7 @@ namespace IFC
                 writer.WriteLine("ENDSEC;");
                 writer.WriteLine("DATA;");
                 writer.WriteLine("");
-                foreach (var item in items.Values.ToList())
+                foreach (var item in Items.Values.ToList())
                 {
                     if (item != null)
                     {
@@ -200,7 +212,7 @@ namespace IFC
 				{
                     entity.IFC_ID = key;
                     entity.AttributeTexts = paramList;
-                    items.Add(key, entity);
+                    Items.Add(key, entity);
                 }
             }
         }
@@ -398,7 +410,7 @@ namespace IFC
                 }
             }
 
-            var its = items.Values.ToList();
+            var its = Items.Values.ToList();
 
             foreach (var item in its)
             {
@@ -441,7 +453,7 @@ namespace IFC
 			// entity
             if (input.Substring(0, 1) == "#")
             {
-                if (items.TryGetValue(input, out var value))
+                if (Items.TryGetValue(input, out var value))
                 {
                     return value;
                 }
