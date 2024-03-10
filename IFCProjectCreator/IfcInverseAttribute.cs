@@ -23,13 +23,13 @@ namespace IFCProjectCreator
           
             if(RelatedAttribute != null)
             {
-                if (AttributeType == IFCAttributeType.LIST)
+                if (ListType == IFCListType.LIST)
                 {
-                    if (RelatedAttribute.AttributeType == IFCAttributeType.LIST)
+                    if (RelatedAttribute.ListType == IFCListType.LIST)
                     {
                         texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return new IFC_Attributes<" + TypeName + ">(Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this)).ToList());}}");
                     }
-                    else if (RelatedAttribute.AttributeType == IFCAttributeType.SINGLE)
+                    else if (RelatedAttribute.ListType == IFCListType.SINGLE)
                     {
                         texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return new IFC_Attributes<" + TypeName + ">(Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this).ToList());}}");
                     }
@@ -40,11 +40,11 @@ namespace IFCProjectCreator
                 }
                 else
                 {
-                    if (RelatedAttribute.AttributeType == IFCAttributeType.LIST)
+                    if (RelatedAttribute.ListType == IFCListType.LIST)
                     {
                         texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().FirstOrDefault(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this));}}");
                     }
-                    else if (RelatedAttribute.AttributeType == IFCAttributeType.SINGLE)
+                    else if (RelatedAttribute.ListType == IFCListType.SINGLE)
                     {
                         texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return Model?.GetItems<" + TypeName + ">().FirstOrDefault(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this);}}");
                     }

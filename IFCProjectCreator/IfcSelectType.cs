@@ -16,6 +16,7 @@ namespace IFCProjectCreator
         {
             SelectAttributes = new List<IFCSelectAttribute>();
             IsGlobal = false;
+            ClassType = IFCAttributeType.SELECT;
         }
         public override void ReadEXP(StreamReader reader, string header)
         {
@@ -82,7 +83,6 @@ namespace IFCProjectCreator
                             texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
                         }
                     }
-                   
                 }
             }
             
@@ -110,6 +110,19 @@ namespace IFCProjectCreator
             {
                 return ": IFC_Attribute";
             }
+        }
+
+        public List<IFCAttributeType> GetAllIFCTypes()
+        {
+            List<IFCAttributeType> types = new List<IFCAttributeType>();
+            foreach (var subClass in FinalSubclasses)
+            {
+                if (!types.Contains(subClass.ClassType))
+                {
+                    types.Add(subClass.ClassType);
+                }
+            }
+            return types;
         }
     }
 }

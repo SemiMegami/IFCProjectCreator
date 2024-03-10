@@ -12,6 +12,7 @@ namespace IFCProjectCreator
     public abstract class IFCClass
     {
         protected IFCDataSet DataSet;
+        public IFCAttributeType ClassType;
         public string VersionName;
         public string Name;
         public string ParentName;
@@ -37,6 +38,7 @@ namespace IFCProjectCreator
             ParentSelects = new List<IFCSelectType>();
             SubClasses = new List<IFCClass>();
             AdditionalSelectAttibutes = new List<IFCSelectAttribute>();
+            ClassType = IFCAttributeType.NONE;
         }
 
 
@@ -60,6 +62,64 @@ namespace IFCProjectCreator
                 return classes;
             }
         }
+
+
+        public List<IFCClass> FinalSubclasses
+        {
+            get
+            {
+                List<IFCClass> subclasses = new List<IFCClass>();
+                foreach (var subclass in SubClasses)
+                {
+                    if (subclass.SubClasses.Count == 0)
+                    {
+                        subclasses.Add(subclass);
+                    }
+                    else
+                    {
+                        subclasses.AddRange(subclass.FinalSubclasses);
+                    }
+                }
+                return subclasses;
+            }
+        }
+
+        public List<IFCClass> AllNonAbstractSubclasses
+        {
+            get
+            {
+                List<IFCClass> subclasses = new List<IFCClass>();
+                foreach (var subclass in SubClasses)
+                {
+                    subclasses.Add(subclass);
+
+                    if(subclass is IFCEntity subEntity)
+                    {
+                        if (!subEntity.IsAbstract)
+                        {
+                            subclasses.Add(subclass);
+                        }
+                    }
+                    else if(! (subclass is IFCSelectType))
+                    {
+                        subclasses.Add(subclass);
+                    }
+                    subclasses.AddRange(subclass.AllNonAbstractSubclasses);
+                }
+                List<IFCClass> results = new List<IFCClass>();
+                foreach (var subclass in subclasses)
+                {
+                    if (!results.Contains(subclass))
+                    {
+                        results.Add(subclass);
+                    }
+                }
+
+              
+                return results;
+            }
+        }
+
 
         public virtual List<IFCClass> GetAllSubClasses()
         {
@@ -206,6 +266,9 @@ namespace IFCProjectCreator
                 return "";
             }
         }
+
+
+
 
         #endregion
 

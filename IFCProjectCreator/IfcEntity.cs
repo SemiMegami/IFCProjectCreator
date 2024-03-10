@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static Azure.Core.HttpHeader;
 
 namespace IFCProjectCreator
 {
@@ -26,6 +28,7 @@ namespace IFCProjectCreator
             DeriveClassAttributes = new List<IFCDerivedAttribute>();
             InverseClassAttributes = new List<IFCInverseAttribute>();
             WhereClassAttributes = new List<IFCWhereAttribute>();
+            ClassType = IFCAttributeType.ENTITY;
         }
 
 
@@ -199,7 +202,7 @@ namespace IFCProjectCreator
         public override void ReadEXP(StreamReader reader, string header)
         {
             GetNameAndEXPText(reader, header, "END_ENTITY;");
-            string attributeType = "";
+            string listType = "";
             
             foreach (string line in EXPLines)
             {
@@ -222,21 +225,21 @@ namespace IFCProjectCreator
                     string attType = line.Replace(" ", "");
                     if(attType == "INVERSE" || attType == "DERIVE" || attType == "WHERE" || attType == "UNIQUE")
                     {
-                        attributeType = attType.Replace(" ", "");
+                        listType = attType.Replace(" ", "");
                     }
                     
                 }
           
                 if (line.Contains(':'))
                 {
-                    if (attributeType == "")
+                    if (listType == "")
                     {
                         IFCParameterAttribute IFCAttribute = new IFCParameterAttribute();
                         IFCAttribute.IsOptional = line.Contains("OPTIONAL");
-                        SetAttributeType(IFCAttribute, line, nW);
+                        SetlistType(IFCAttribute, line, nW);
                         ParameterClassAttributes.Add(IFCAttribute);
                     }
-                    else if (attributeType == "DERIVE")
+                    else if (listType == "DERIVE")
                     {
                         int splitIndex = -1;
                         for (int i = 0; i < nW; i++)
@@ -256,10 +259,10 @@ namespace IFCProjectCreator
                         {
                             IFCAttribute.DeriveText = reader.ReadLine()?? "";
                         }
-                        SetAttributeType(IFCAttribute, line, splitIndex);
+                        SetlistType(IFCAttribute, line, splitIndex);
                         DeriveClassAttributes.Add(IFCAttribute);
                     }
-                    else if (attributeType == "INVERSE")
+                    else if (listType == "INVERSE")
                     {
                         int splitIndex = -1;
                         for (int i = 0; i < nW; i++)
@@ -270,11 +273,11 @@ namespace IFCProjectCreator
                             }
                         }
                         IFCInverseAttribute IFCAttribute = new IFCInverseAttribute();
-                        SetAttributeType(IFCAttribute, line, splitIndex);
+                        SetlistType(IFCAttribute, line, splitIndex);
                         IFCAttribute.RelatedAttributeName = words[nW - 1].Replace(";", "");
                         InverseClassAttributes.Add(IFCAttribute);
                     }
-                    else if(attributeType == "WHERE")
+                    else if(listType == "WHERE")
                     {
                         IFCWhereAttribute IFCAttribute = new IFCWhereAttribute();
                         IFCAttribute.Name = "WR_" + words[0].Replace(" ", "");
@@ -286,7 +289,7 @@ namespace IFCProjectCreator
         }
 
 
-        private void SetAttributeType(IFCAttribute attribute, string line, int splitIndex)
+        private void SetlistType(IFCAttribute attribute, string line, int splitIndex)
         {
 
             string[] words = line.Replace("\t", "").Split(" ");
@@ -318,13 +321,13 @@ namespace IFCProjectCreator
             switch (ofCount)
             {
                 case 0:
-                    attribute.AttributeType = IFCAttributeType.SINGLE;
+                    attribute.ListType = IFCListType.SINGLE;
                     break;
                 case 1:
-                    attribute.AttributeType = IFCAttributeType.LIST;
+                    attribute.ListType = IFCListType.LIST;
                     break;
                 case 2:
-                    attribute.AttributeType = IFCAttributeType.LISTLIST;
+                    attribute.ListType = IFCListType.LISTLIST;
                     break;
             }
             if (ofCount > 0)
@@ -478,7 +481,7 @@ namespace IFCProjectCreator
             texts.Add("\t\t\t{");
             texts.Add("\t\t\t\tif(AttributeTexts.Count != " + directAttributes.Count + ")");
             texts.Add("\t\t\t\t{");
-            texts.Add("\t\t\t\t\tModel.ImportErrorLogTexts.Add(\"ERROR (\" + IFC_ID + \") : Invalid number of attributes. '" + Name + "' requires " + directAttributes.Count + " attributes (Not \" + AttributeTexts.Count + \"). \");");
+            texts.Add("\t\t\t\t\tModel.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Invalid number of attributes. '" + Name + "' requires " + directAttributes.Count + " attributes (Not \" + AttributeTexts.Count + \"). \"));");
             texts.Add("\t\t\t\t\treturn;");
             texts.Add("\t\t\t\t}");
             for (int i = 0; i < directAttributes.Count; i++)
@@ -487,40 +490,35 @@ namespace IFCProjectCreator
                 var attribute = directAttributes[i];
 
                 texts.Add("\t\t\t\tif(" + attText + " == \"$\")");
-                texts.Add("\t\t\t\t{");
+               
                 if (!attribute.IsOptional)
                 {
-                    texts.Add("\t\t\t\t\tModel.ImportWarningLogTexts.Add(\"WARNING (\" + IFC_ID + \") : '" + attribute.Name + "' is not optional in '" + Name + "'\");");
+                    texts.Add("\t\t\t\t{");
+                    texts.Add("\t\t\t\t\tModel.Logs.Add(new IFC_Log(IFC_LogType.WARNING, this, \"'" + attribute.Name + "' is not optional in '" + Name + "'\"));");
                 }
                 texts.Add("\t\t\t\t\t" + attribute.Name + " = null;");
-                texts.Add("\t\t\t\t}");
+                if (!attribute.IsOptional)
+                {
+                    texts.Add("\t\t\t\t}");
+                }
                 texts.Add("\t\t\t\telse");
                 texts.Add("\t\t\t\t{");
-                texts.Add("\t\t\t\t}");
-                if (attribute.AttributeType == IFCAttributeType.SINGLE)
+               
+                if (attribute.ListType == IFCListType.SINGLE)
                 {
-                    if (selectDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
+                    string basicType = "";
+                    var basic = DataSet.BasicTypes.FirstOrDefault(t => t.Name == attribute.TypeName && t.VersionName == VersionName);
+                    if (basic != null)
                     {
-
+                        basicType = basic.GetBasicType();
                     }
-                    else if (entityDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
+                    if (DataSet.CSharpBasicDataTypes.ContainsKey(attribute.TypeName))
                     {
-
+                        basicType = attribute.TypeName;
                     }
-                    else if (basicDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
-                    {
-
-                    }
-                    else if (basicListDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
-                    {
-
-                    }
-                    else if (enumDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null)
-                    {
-
-                    }
+                    AddCsharpImportTextsForSingleValue(texts, attText, "\t\t\t\t\t", attribute.Name, attribute.TypeName, attribute.ListType, attribute.AttributeType, basicType);
                 }
-                else if (attribute.AttributeType == IFCAttributeType.LIST)
+                else if (attribute.ListType == IFCListType.LIST)
                 {
 
                 }
@@ -528,6 +526,7 @@ namespace IFCProjectCreator
                 {
 
                 }
+                texts.Add("\t\t\t\t}");
             }
             texts.Add("\t\t\t}");
             texts.Add("\t\t}");
@@ -609,6 +608,185 @@ namespace IFCProjectCreator
             texts.Add("\t}");
 
             return texts;
+        }
+
+        private void AddCsharpImportTextsForSingleValue(List<string> texts,string attText, string tap,  string name, string typeName, IFCListType listType, IFCAttributeType attributeType, string basicType, IFCSelectType? asInterface = null, bool suppressError = false)
+        {
+            var selectDatas = DataSet.SelectTypes.Where(e => e.VersionName == VersionName).ToList();
+            var entityDatas = DataSet.Entities.Where(e => e.VersionName == VersionName).ToList();
+            var basicDatas = DataSet.BasicTypes.Where(e => e.VersionName == VersionName).ToList();
+            var basicListDatas = DataSet.BasicTypeLists.Where(e => e.VersionName == VersionName).ToList();
+            var enumDatas = DataSet.EnumTypes.Where(e => e.VersionName == VersionName).ToList();
+
+
+            switch (attributeType)
+            {
+                case IFCAttributeType.ENTITY:
+                    texts.Add(tap + "if(Model.Items.TryGetValue(" + attText + ",out IFC_Entity? value))");
+                    texts.Add(tap + "{");
+                    texts.Add(tap + "\tif(value is " + typeName + " item)");
+                    switch (listType)
+                    {
+                        case IFCListType.SINGLE:
+                            texts.Add(tap + "\t\t" + name + " = item;");
+                            break;
+                        case IFCListType.LIST:
+                            texts.Add(tap + "\t\t" + name + ".Add(item);");
+                            break;
+                    }
+                    texts.Add(tap + "\telse");
+                    texts.Add(tap + "\t\tModel.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + value.GetType().Name + \"' as '" + typeName + "' to '" + name + "'.\"));");
+                    texts.Add(tap + "}");
+                    if (!suppressError)
+                    {
+                        texts.Add(tap + "else");
+                        texts.Add(tap + "\tModel.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"'\" + " + attText + " + \"' not found.\"));");
+                    }
+                   
+                    break;
+                case IFCAttributeType.ENUM:
+                    switch (listType)
+                    {
+                        case IFCListType.SINGLE:
+                            texts.Add(tap + name + " = " + attText + ".Replace(\".\",\"\");");
+                            break;
+                        case IFCListType.LIST:
+                            texts.Add(tap + name + ".Add(" + attText + ");");
+                            break;
+                    }
+                    break;
+                case IFCAttributeType.SELECT:
+
+                    var selectItem = selectDatas.FirstOrDefault(e => e.Name == typeName && e.VersionName == VersionName);
+                    if(selectItem != null)
+                    {
+                        var finalClassTypes = selectItem.GetAllIFCTypes();
+
+                        if(finalClassTypes.IndexOf(IFCAttributeType.ENTITY) >= 0)
+                        {
+                            AddCsharpImportTextsForSingleValue(texts, attText, tap, name, typeName, listType, IFCAttributeType.ENTITY, basicType, selectItem, finalClassTypes.Count > 1);
+                        
+                            if(finalClassTypes.Count > 1)
+                            {
+
+                            }
+                        }
+
+                        if(finalClassTypes.Where(e => e!= IFCAttributeType.ENTITY).Count() > 0)
+                        {
+                            texts.Add(tap + "string typeName = " + attText + ".Substring(0," + attText + ".IndexOf(\"(\"));");
+                            texts.Add(tap + "switch (typeName)");
+                            texts.Add(tap + "{");
+                            foreach (var subClass in selectItem.AllNonAbstractSubclasses)
+                            {
+                                if (subClass.ClassType != IFCAttributeType.ENTITY && subClass.ClassType != IFCAttributeType.SELECT)
+                                {
+                                    string basicType1 = "";
+                                    var basic = DataSet.BasicTypes.FirstOrDefault(t => t.Name == subClass.Name && t.VersionName == VersionName);
+                                    if (basic != null)
+                                    {
+                                        basicType1 = basic.GetBasicType();
+                                    }
+                                    if (DataSet.CSharpBasicDataTypes.ContainsKey(subClass.Name))
+                                    {
+                                        basicType1 = subClass.Name;
+                                    }
+                                    texts.Add(tap + "\tcase \"" + subClass.Name.ToUpper() + "\":");
+                                    texts.Add(tap + "\t\t" + subClass.Name + " " + subClass.Name.ToLower() + " = new " + subClass.Name + "();");
+                                    AddCsharpImportTextsForSingleValue(texts, attText, tap + "\t\t", subClass.Name.ToLower(), subClass.Name, listType, subClass.ClassType, basicType1, selectItem);
+                                    texts.Add(tap + "\t\t" + name + " = " + subClass.Name.ToLower() + ";");
+                                    texts.Add(tap + "\tbreak;");
+                                }
+                               
+                            }
+                            texts.Add(tap + "}");
+                        }
+                    }
+                   
+                    break;
+                case IFCAttributeType.SIMPLE:
+                    string dataType = "";
+                    string createName = name;
+
+                    if (DataSet.CSharpBasicDataTypes.TryGetValue(basicType, out var value))
+                    {
+                        dataType = value;
+                    }
+                    if (dataType == "string")
+                    {
+                        switch (listType)
+                        {
+                            case IFCListType.SINGLE:
+                                texts.Add(tap + createName + " = " + attText + ";");
+                                break;
+                            case IFCListType.LIST:
+                                texts.Add(tap + createName + ".Add(" + attText + ");");
+                                break;
+                        }
+                    }
+                    else if (dataType == "int" || dataType == "double" || dataType == "float")
+                    {
+                        texts.Add(tap + "if(" + dataType + ".TryParse(" + attText + ",out " + dataType + " _" + createName + "))");
+                        switch (listType)
+                        {
+                            case IFCListType.SINGLE:
+                                texts.Add(tap + "\t" + createName + " = _" + createName + ";");
+                                break;
+                            case IFCListType.LIST:
+                                texts.Add(tap + createName + ".Add(_" + createName + ");");
+                                break;
+                        }
+                        texts.Add(tap + "else Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as ' " + typeName + "' to '" + name + "'.\"));");
+                    }
+                    else if (dataType == "bool")
+                    {
+                        switch (listType)
+                        {
+                            case IFCListType.SINGLE:
+                                texts.Add(tap + "switch(" + attText + ")");
+                                texts.Add(tap + "{");
+                                texts.Add(tap + "\tcase  \".T.\": " + createName + " = true; break;");
+                                texts.Add(tap + "\tcase  \".F.\": " + createName + " = false; break;");
+                                if (basicType.Contains("LOGICAL"))
+                                {
+                                    texts.Add(tap + "\tcase  \".U.\": " + createName + " = false; " + createName + ".Unknown = true; break;");
+                                }
+                                texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as ' " + typeName + "' to '" + name + "'.\")); break;");
+                                texts.Add(tap + "}");
+                                break;
+                            case IFCListType.LIST:
+                                texts.Add(tap + typeName + "value = null;");
+                                texts.Add(tap + "switch(" + attText + ")");
+                                texts.Add(tap + "{");
+                                texts.Add(tap + "\tcase  \".T.\": value = true; break;");
+                                texts.Add(tap + "\tcase  \".F.\": value = false; break;");
+                                if (basicType.Contains("LOGICAL"))
+                                {
+                                    texts.Add(tap + "\tcase  \".U.\": value = false; value.Unknown = true; break;");
+                                }
+                                texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as ' " + typeName + "' to '" + name + "'.\")); break;");
+
+                                texts.Add(tap + "\t" + createName + ".Add(value);");
+                                texts.Add(tap + "}");
+                                break;
+                        }
+                    }
+                    break;
+                case IFCAttributeType.SIMPLELIST:
+                    texts.Add(tap + name + " = new " + typeName + "();");
+                    texts.Add(tap + "List<string>? " + typeName + "s = SplitList(" + attText + ");");
+                    texts.Add(tap + "if(" + typeName + "s != null)");
+                    texts.Add(tap + "{");
+                    texts.Add(tap + "\tforeach(string text in " + typeName + "s)");
+                    texts.Add(tap + "\t{");
+
+                    texts.Add(tap + "\t}");
+                    texts.Add(tap + "}");
+                    break;
+            }
+
+
+            
         }
 
         protected override string GetCSharpTypeText()

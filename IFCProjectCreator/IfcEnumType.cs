@@ -6,6 +6,7 @@
         public IFCEnumType(IFCDataSet dataSet, string version) : base(dataSet, version)
         {
             EnumValues = new List<string>();
+            ClassType = IFCAttributeType.ENUM;
         }
         public override void ReadEXP(StreamReader reader, string header)
         {
@@ -23,7 +24,7 @@
             texts.Add("\t{");
             foreach (string enumValue in EnumValues)
             {
-                texts.Add("\t\tpublic static string " + enumValue + " { get { return \"." + enumValue + ".\"; } private set { } }");
+                texts.Add("\t\tpublic static string " + enumValue + " { get { return \"" + enumValue + "\"; } private set { } }");
             }
 
             foreach (var attribute in AdditionalSelectAttibutes)
@@ -33,7 +34,7 @@
            // texts.Add("\t\tpublic string Value {get; set;}");
             if(EnumValues.Count > 0)
             {
-                texts.Add("\t\tpublic " + Name + "() { Value = \"." + EnumValues[0] + ".\";}");
+                texts.Add("\t\tpublic " + Name + "() { Value = \"" + EnumValues[EnumValues.Count - 1] + "\";}");
             }
             else
             {

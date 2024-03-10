@@ -22815,10 +22815,4 @@ namespace IFC.Global
 
 	#region ---- ENTITIES ----
 	#endregion
-
-	#region ---- BASE ENTITY ----
-	public abstract class GLOBAL_Entity : IFC_ClassEntity
-	{
-	}
-	#endregion
 }

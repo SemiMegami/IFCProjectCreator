@@ -40,8 +40,8 @@ namespace IFCProjectCreator
             { "STRING", "\"\"" },
         };
         public string NamespaceName;
-        public List<IFCBasicType> BasicTypes { get; private set; }
-        public List<IFCBasicTypeList> BasicTypeLists { get; private set; }
+        public List<IFCSimpleType> BasicTypes { get; private set; }
+        public List<IFCSimpleTypeList> BasicTypeLists { get; private set; }
         public List<IFCEnumType> EnumTypes { get; private set; }
         public List<IFCSelectType> SelectTypes { get; private set; }
         public List<IFCEntity> Entities { get; private set; }
@@ -54,8 +54,8 @@ namespace IFCProjectCreator
         /// </summary>
         public IFCDataSet()
         {
-            BasicTypes = new List<IFCBasicType>();
-            BasicTypeLists = new List<IFCBasicTypeList>();
+            BasicTypes = new List<IFCSimpleType>();
+            BasicTypeLists = new List<IFCSimpleTypeList>();
             EnumTypes = new List<IFCEnumType> ();
             SelectTypes = new List<IFCSelectType>();
             Entities = new List<IFCEntity>();
@@ -120,13 +120,13 @@ namespace IFCProjectCreator
                                         }
                                         else if (line.Contains("]"))
                                         {
-                                            item = new IFCBasicTypeList(this, version);
-                                            BasicTypeLists.Add((IFCBasicTypeList)item);
+                                            item = new IFCSimpleTypeList(this, version);
+                                            BasicTypeLists.Add((IFCSimpleTypeList)item);
                                         }
                                         else
                                         {
-                                            item = new IFCBasicType(this, version);
-                                            BasicTypes.Add((IFCBasicType)item);
+                                            item = new IFCSimpleType(this, version);
+                                            BasicTypes.Add((IFCSimpleType)item);
                                         }
                                         break;
                                     case "ENTITY":
@@ -185,10 +185,10 @@ namespace IFCProjectCreator
             }
             foreach (var basicType in BasicTypes)
             {
-                List<IFCBasicType> parents = BasicTypes.Where(e => e.Name == basicType.ParentName && e.VersionName == basicType.VersionName).ToList();
+                List<IFCSimpleType> parents = BasicTypes.Where(e => e.Name == basicType.ParentName && e.VersionName == basicType.VersionName).ToList();
                 if (parents.Count > 0)
                 {
-                    IFCBasicType parent = parents.First();
+                    IFCSimpleType parent = parents.First();
                     basicType.ParentClass = parent;
                     parent.SubClassesNames.Add(basicType.Name);
                     parent.SubClasses.Add(basicType);
@@ -205,7 +205,7 @@ namespace IFCProjectCreator
                 var allSubClasses = selectType.GetAllSubClasses();
 
                 List<IFCEntity> subEntities = new List<IFCEntity>();
-                if (allSubClasses.Where(e => e is IFCBasicType || e is IFCBasicTypeList).Count() > 0)
+                if (allSubClasses.Where(e => e is IFCSimpleType || e is IFCSimpleTypeList).Count() > 0)
                 {
                     continue;
                 }
@@ -257,7 +257,7 @@ namespace IFCProjectCreator
                             {
                                 var attribute = attributes.First(e => e.Name == attributeName);
 
-                                if (attribute0.TypeName != attribute.TypeName || attribute0.Aggregation != attribute.Aggregation || attribute0.AttributeType != attribute.AttributeType)
+                                if (attribute0.TypeName != attribute.TypeName || attribute0.Aggregation != attribute.Aggregation || attribute0.ListType != attribute.ListType)
                                 {
                                     isCommon = false;
                                 }
@@ -280,7 +280,7 @@ namespace IFCProjectCreator
                                     Name = attribute.Name,
                                     TypeName = attribute.TypeName,
                                     Aggregation = attribute.Aggregation,
-                                    AttributeType = attribute.AttributeType,
+                                    ListType = attribute.ListType,
                                     isReadOnly = isReadonly
                                 });
                             }
@@ -339,7 +339,7 @@ namespace IFCProjectCreator
                             Name = attribute.Name,
                             TypeName = attribute.TypeName,
                             Aggregation = attribute.Aggregation,
-                            AttributeType = attribute.AttributeType,
+                            ListType = attribute.ListType,
                             isClassAttribute = true,
                         });
                     }
@@ -371,7 +371,7 @@ namespace IFCProjectCreator
                             Name = attribute.Name,
                             TypeName = attribute.TypeName,
                             Aggregation = attribute.Aggregation,
-                            AttributeType = attribute.AttributeType,
+                            ListType = attribute.ListType,
                             isClassAttribute = true,
                         });
                     }
@@ -406,7 +406,7 @@ namespace IFCProjectCreator
                 List < IFCClass > typeItems = Items.Where(e => e.Name == globalSelectType.Name).ToList();
                 if (typeItems.Count > 0)
                 {
-                    if (typeItems[0] is IFCBasicTypeList basicTypeList)
+                    if (typeItems[0] is IFCSimpleTypeList basicTypeList)
                     {
                         string cSharpType = basicTypeList.GetCSharpType();
                         if (cSharpType.Length > 0)
@@ -415,13 +415,13 @@ namespace IFCProjectCreator
                         }
                     }
 
-                    else if (typeItems[0] is IFCBasicType basicType)
+                    else if (typeItems[0] is IFCSimpleType basicType)
                     {
                         string cSharpType = basicType.GetCSharpType();
                         bool found = false;
                         foreach (var item in typeItems)
                         {
-                            if (item is IFCBasicType basicType1)
+                            if (item is IFCSimpleType basicType1)
                             {
                                 if (basicType1.GetCSharpType() != cSharpType)
                                 {
@@ -524,7 +524,7 @@ namespace IFCProjectCreator
                                         Name = "_" + attribute.Name,
                                         TypeName = attribute.TypeName,
                                         Aggregation = attribute.Aggregation,
-                                        AttributeType = attribute.AttributeType,
+                                        ListType = attribute.ListType,
                                         isReadOnly = isReadOnly
                                     });
                                 }
@@ -580,7 +580,7 @@ namespace IFCProjectCreator
                                         Name = "_" + attribute.Name,
                                         TypeName = attribute.TypeName,
                                         Aggregation = attribute.Aggregation,
-                                        AttributeType = attribute.AttributeType,
+                                        ListType = attribute.ListType,
                                         isReadOnly = isReadOnly,
                                     });
                                 }
@@ -592,12 +592,20 @@ namespace IFCProjectCreator
         }
 
         /// <summary>
-        /// Link arribute 
+        /// Link attribute 
         /// </summary>
         private void SetAtribute()
         {
+            
             foreach (var entity in Entities)
             {
+                var selectDatas = SelectTypes.Where(e => e.VersionName == entity.VersionName).ToList();
+                var entityDatas = Entities.Where(e => e.VersionName == entity.VersionName).ToList();
+                var basicDatas = BasicTypes.Where(e => e.VersionName == entity.VersionName).ToList();
+                var basicListDatas = BasicTypeLists.Where(e => e.VersionName == entity.VersionName).ToList();
+                var enumDatas = EnumTypes.Where(e => e.VersionName == entity.VersionName).ToList();
+
+
                 List<IFCEntity> parents = entity.ParentClasses;
                 foreach (var attribute in entity.DeriveClassAttributes)
                 {
@@ -616,7 +624,6 @@ namespace IFCProjectCreator
                         {
                             attribute.isOverride = true;
                         }
-                    
                     }
                 }
                 foreach (var attribute in entity.DirectAttributes)
@@ -627,6 +634,25 @@ namespace IFCProjectCreator
                         {
                             attribute.isOverride = true;
                         }
+                    }
+                    if(basicListDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null){
+                        attribute.AttributeType = IFCAttributeType.SIMPLELIST;
+                    }
+                    if (entityDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null){
+                        attribute.AttributeType = IFCAttributeType.ENTITY;
+                    }
+                    if (basicDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null){
+                        attribute.AttributeType = IFCAttributeType.SIMPLE;
+                    }
+                    if (CSharpBasicDataTypes.ContainsKey(attribute.TypeName))
+                    {
+                        attribute.AttributeType = IFCAttributeType.SIMPLE;
+                    }
+                    if (enumDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null){
+                        attribute.AttributeType = IFCAttributeType.ENUM;
+                    }
+                    if (selectDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null){
+                        attribute.AttributeType = IFCAttributeType.SELECT;
                     }
                 }
                 foreach (var attribute in entity.InverseClassAttributes)
@@ -713,6 +739,7 @@ namespace IFCProjectCreator
                 WriteCSharp(folderDir, nameSpaceName, version);
             }
             WriteCSharp(folderDir, nameSpaceName, globalName);
+            WriteCSharpLog(folderDir, nameSpaceName);
         }
 
         /// <summary>
@@ -732,7 +759,7 @@ namespace IFCProjectCreator
 
 
                 writer.WriteLine("\t#region ---- SIMPLE DATA TYPES ----");
-                foreach (var item in Items.Where(e=>e is IFCBasicType || e is IFCBasicTypeList).ToList())
+                foreach (var item in Items.Where(e=>e is IFCSimpleType || e is IFCSimpleTypeList).ToList())
                 {
                     var texts = item.GetCSharpTexts();
                     foreach (var text in texts)
@@ -774,21 +801,27 @@ namespace IFCProjectCreator
                     }
                 }
                 writer.WriteLine("\t#endregion");
-                writer.WriteLine("");
-                writer.WriteLine("\t#region ---- BASE ENTITY ----");
-                writer.WriteLine("\tpublic abstract class " + version.ToUpper() + "_Entity : IFC_ClassEntity");
-                writer.WriteLine("\t{");
-                foreach (var f in Functions.Where(e => e.VersionName == version).ToList())
+
+                if(version!= globalName)
                 {
-                    var texts = f.GetCSharpTexts();
-                    foreach (var text in texts)
+                    writer.WriteLine("");
+                    writer.WriteLine("\t#region ---- BASE ENTITY ----");
+                    writer.WriteLine("\tpublic abstract class " + version.ToUpper() + "_Entity : IFC_ClassEntity");
+                    writer.WriteLine("\t{");
+                    foreach (var f in Functions.Where(e => e.VersionName == version).ToList())
                     {
-                        writer.WriteLine(text);
+                        var texts = f.GetCSharpTexts();
+                        foreach (var text in texts)
+                        {
+                            writer.WriteLine(text);
+                        }
                     }
+                    writer.WriteLine("\t}");
+                    writer.WriteLine("\t#endregion");
+                  
                 }
-                writer.WriteLine("\t}");
-                writer.WriteLine("\t#endregion");
                 writer.WriteLine("}");
+
             }
         }
 
@@ -1107,7 +1140,7 @@ namespace IFCProjectCreator
                     writer.WriteLine("\t\t\t\t\tswitch (className)");
                     writer.WriteLine("\t\t\t\t\t{");
 
-                    foreach (var item in GetItems().Where(e => e.VersionName == version && e is IFCBasicType).ToList())
+                    foreach (var item in GetItems().Where(e => e.VersionName == version && e is IFCSimpleType).ToList())
                     {
                         writer.WriteLine("\t\t\t\t\t\tcase \"" + item.Name.ToUpper() + "\" : return new " + nameSpaceName + "." + version + "." + item.Name + "();");
                     }
@@ -1221,12 +1254,8 @@ namespace IFCProjectCreator
         /// <summary>
 		/// Error Log generated during importing.
 		/// </summary>
-		public List<string> ImportErrorLogTexts { get; set; }
+		public List<IFC_Log> Logs { get; set; }
 
-        /// <summary>
-		/// Warning Log generated during importing.
-		/// </summary>
-		public List<string> ImportWarningLogTexts { get; set; }
 
 
         /// <summary>
@@ -1236,8 +1265,7 @@ namespace IFCProjectCreator
 		{
 			this.Version = IFC_Version.UNDEFINED;
             Items = new Dictionary<string, IFC_Entity>();
-            ImportErrorLogTexts = new List<string>();
-            ImportWarningLogTexts = new List<string>();
+            Logs = new List<IFC_Log>();
         }
 
         /// <summary>
@@ -1577,9 +1605,9 @@ namespace IFCProjectCreator
                 writer.WriteLine("\t\t\t\tcase IFC_Version." + version + ":");
                 writer.WriteLine("\t\t\t\t\tswitch (className)");
                 writer.WriteLine("\t\t\t\t\t{");
-                foreach (var item in GetItems().Where(e => e.VersionName == version && e is IFCBasicType).ToList())
+                foreach (var item in GetItems().Where(e => e.VersionName == version && e is IFCSimpleType).ToList())
                 {
-                    var basicItem = (IFCBasicType)item;
+                    var basicItem = (IFCSimpleType)item;
                     string cSharpType = basicItem.GetCSharpType();
                     if (cSharpType == cSharpTypeName)
                     {
@@ -1619,9 +1647,9 @@ namespace IFCProjectCreator
                 writer.WriteLine("\t\t\t\tcase IFC_Version." + version + ":");
                 writer.WriteLine("\t\t\t\t\tswitch (className)");
                 writer.WriteLine("\t\t\t\t\t{");
-                foreach (var item in GetItems().Where(e => e.VersionName == version && e is IFCBasicType).ToList())
+                foreach (var item in GetItems().Where(e => e.VersionName == version && e is IFCSimpleType).ToList())
                 {
-                    var basicItem = (IFCBasicType)item;
+                    var basicItem = (IFCSimpleType)item;
                     string cSharpType = basicItem.GetCSharpType();
                     if (cSharpType == "double")
                     {
@@ -1640,6 +1668,62 @@ namespace IFCProjectCreator
             writer.WriteLine("\t\t}");
         }
 
+        private void WriteCSharpLog(string folderDir, string nameSpaceName)
+        {
+            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Log.cs"))
+            {
+                string contain = 
+@"          using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+#pragma warning disable VSSpell001 // Spell Check
+namespace IFC
+{
+    public class IFC_Log
+    {
+        IFC_LogType LogType;
+        public IFC_Entity? Source;
+        public string Information;
+
+        public IFC_Log(IFC_LogType logType, IFC_Entity source, string Information) 
+        { 
+            this.LogType = logType;
+            this.Source = source;
+            this.Information = Information;
+        }
+        public IFC_Log(IFC_LogType logType, string Information)
+        {
+            this.LogType = logType;
+            this.Information = Information;
+        }
+
+        public override string ToString()
+        {
+            if(Source != null)
+            {
+                return LogType.ToString()+  "": "" + Source.IFC_ID + ""-"" + Source.GetType().Name.ToUpper() + "": "" + Information;
+            }
+            else
+            {
+                return LogType.ToString() + "": "" + Information;
+            }
+        }
+    }
+
+    public enum IFC_LogType
+    {
+        ERROR,
+        WARNING, 
+        INFO
+    }
+}
+
+";
+                writer.Write(contain);
+            }
+        }
         private void WriteCSharpAttribute(string folderDir, string nameSpaceName)
         {
             using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Attribute.cs"))
@@ -1740,6 +1824,58 @@ namespace IFCProjectCreator
         public override string ToString()
         {
             return IFC_ID + "" : "" + GetType().Name;
+        }
+
+        protected List<string>? SplitList(string input)
+		{
+            int index1 = input.IndexOf(""("");
+            int index2 = input.LastIndexOf("")"");
+			if(index1 > -1 && index2 > -1)
+			{
+                string inputTypeName = input.Substring(0, index1);
+                string trim = input.Substring(index1 + 1, index2 - index1 - 1);
+
+                List<string> outputText = new List<string>();
+                int bracketCount = 0;
+                bool readingString = false;
+                char[] chars = trim.ToCharArray();
+                int n = chars.Length;
+                char c;
+                string scanningText = """";
+                for (int i = 0; i < n; i++)
+                {
+                    c = chars[i];
+                    if (c == '\'')
+                    {
+                        readingString = !readingString; // toggle 
+                        scanningText += c;
+                    }
+                    else if (!readingString && c == '(')
+                    {
+                        scanningText += c;
+                        bracketCount++;
+                    }
+                    else if (!readingString && c == ')')
+                    {
+                        bracketCount--;
+                        scanningText += c;
+                    }
+                    else if (!readingString && c == ',' && bracketCount == 0)
+                    {
+                    }
+                    else
+                    {
+                        scanningText += c;
+                    }
+                    if (i == n - 1 || (!readingString && c == ',' && bracketCount == 0))
+                    {
+                        outputText.Add(scanningText);
+                        scanningText = """";
+                    }
+                }
+                return outputText;
+            }
+            return null;
         }
 ";
                 writer.Write(contain);

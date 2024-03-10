@@ -24,12 +24,8 @@ namespace IFC
         /// <summary>
 		/// Error Log generated during importing.
 		/// </summary>
-		public List<string> ImportErrorLogTexts { get; set; }
+		public List<IFC_Log> Logs { get; set; }
 
-        /// <summary>
-		/// Warning Log generated during importing.
-		/// </summary>
-		public List<string> ImportWarningLogTexts { get; set; }
 
 
         /// <summary>
@@ -39,8 +35,7 @@ namespace IFC
 		{
 			this.Version = IFC_Version.UNDEFINED;
             Items = new Dictionary<string, IFC_Entity>();
-            ImportErrorLogTexts = new List<string>();
-            ImportWarningLogTexts = new List<string>();
+            Logs = new List<IFC_Log>();
         }
 
         /// <summary>

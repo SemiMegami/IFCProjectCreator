@@ -18,13 +18,13 @@ namespace IFCProjectCreator
 
         public override string GetCSharpTypeText()
         {
-            switch (AttributeType)
+            switch (ListType)
             {
-                case IFCAttributeType.SINGLE:
+                case IFCListType.SINGLE:
                     return "C" + TypeName;
-                case IFCAttributeType.LIST:
+                case IFCListType.LIST:
                     return "List<C" + TypeName + ">";
-                case IFCAttributeType.LISTLIST:
+                case IFCListType.LISTLIST:
                     return "List<List<C" + TypeName + ">>";
             }
             return TypeName;

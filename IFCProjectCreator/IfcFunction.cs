@@ -72,7 +72,7 @@
             string typeName = typeText.Contains("GENERIC") ? "GENERIC" : typeWords[typeWords.Count - 1];
             typeName = typeName.Replace("Ifc", "IFC");
             IFCAggregation aggregation = IFCAggregation.NONE;
-            IFCAttributeType attributeType = IFCAttributeType.SINGLE;
+            IFCListType listType = IFCListType.SINGLE;
             int ofCount = 0;
             for (int i = 0; i < typeWords.Count; i++)
             {
@@ -84,13 +84,13 @@
             switch (ofCount)
             {
                 case 0:
-                    attributeType = IFCAttributeType.SINGLE;
+                    listType = IFCListType.SINGLE;
                     break;
                 case 1:
-                    attributeType = IFCAttributeType.LIST;
+                    listType = IFCListType.LIST;
                     break;
                 case 2:
-                    attributeType = IFCAttributeType.LISTLIST;
+                    listType = IFCListType.LISTLIST;
                     break;
             }
             if (ofCount > 0)
@@ -120,7 +120,7 @@
                     IFCAttribute input = new IFCParameterAttribute();
                     input.Name = names[i].Replace(" ", "");
                     input.TypeName = typeName;
-                    input.AttributeType = attributeType;
+                    input.ListType = listType;
                     input.Aggregation = aggregation;
                     Inputs.Add(input);
                 }
@@ -153,13 +153,13 @@
             switch (ofCount)
             {
                 case 0:
-                    Output.AttributeType = IFCAttributeType.SINGLE;
+                    Output.ListType = IFCListType.SINGLE;
                     break;
                 case 1:
-                    Output.AttributeType = IFCAttributeType.LIST;
+                    Output.ListType = IFCListType.LIST;
                     break;
                 case 2:
-                    Output.AttributeType = IFCAttributeType.LISTLIST;
+                    Output.ListType = IFCListType.LISTLIST;
                     break;
             }
             if (ofCount > 0)
@@ -202,7 +202,7 @@
                 }
 
                 bool canWrite = false;
-                if(Output.AttributeType == IFCAttributeType.LIST || Output.AttributeType == IFCAttributeType.LISTLIST) 
+                if(Output.ListType == IFCListType.LIST || Output.ListType == IFCListType.LISTLIST) 
                 {
                     canWrite = true;
                 }

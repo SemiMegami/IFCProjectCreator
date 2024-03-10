@@ -9,6 +9,7 @@ namespace IFCProjectCreator
 {
     public abstract class IFCAttribute
     {
+        public IFCListType ListType { get; set; }
         public IFCAttributeType AttributeType { get; set; }
         public IFCAggregation Aggregation { get; set; }
         public string Name { get; set; }
@@ -22,9 +23,10 @@ namespace IFCProjectCreator
         {
             Name = "";
             TypeName = "";
-            AttributeType = IFCAttributeType.SINGLE;
+            ListType = IFCListType.SINGLE;
             isReadOnly = false;
             Aggregation = IFCAggregation.NONE;
+            AttributeType = IFCAttributeType.NONE;
             isOverride = false;
             includedInGlobal = false;
         }
@@ -35,22 +37,22 @@ namespace IFCProjectCreator
         /// <returns></returns>
         public bool isSameAttribute(IFCAttribute attribute)
         {
-            return Name == attribute.Name && TypeName == attribute.TypeName && AttributeType == attribute.AttributeType && Aggregation == attribute.Aggregation;
+            return Name == attribute.Name && TypeName == attribute.TypeName && ListType == attribute.ListType && Aggregation == attribute.Aggregation;
         }
 
         public override string ToString()
         {
             string aggregationText = "";
-            switch (AttributeType)
+            switch (ListType)
             {
-                case IFCAttributeType.SINGLE:
+                case IFCListType.SINGLE:
                     aggregationText = "";
                     break;
-                case IFCAttributeType.LIST:
-                    aggregationText = AttributeType.ToString() + " ";
+                case IFCListType.LIST:
+                    aggregationText = ListType.ToString() + " ";
                     break;
-                case IFCAttributeType.LISTLIST:
-                    aggregationText = AttributeType.ToString() + " ";
+                case IFCListType.LISTLIST:
+                    aggregationText = ListType.ToString() + " ";
                     break;
             }
             return Name + " : " + aggregationText + TypeName;
@@ -68,7 +70,7 @@ namespace IFCProjectCreator
                 typeName = global + "." + TypeName;
             }
 
-            if (AttributeType == IFCAttributeType.SINGLE)
+            if (ListType == IFCListType.SINGLE)
             {
                 if (this is IFCDerivedAttribute || this is IFCInverseAttribute || isReadOnly)
                 {
@@ -107,9 +109,8 @@ namespace IFCProjectCreator
                         "\t\t}",
                     };
                 }
-               
             }
-            else if (AttributeType == IFCAttributeType.LIST)
+            else if (ListType == IFCListType.LIST)
             {
                 if (this is IFCDerivedAttribute || this is IFCInverseAttribute || isReadOnly)
                 {
@@ -175,11 +176,9 @@ namespace IFCProjectCreator
                     };
                     return texts;
                 }
-                
             }
             else
             {
-
                 if (this is IFCDerivedAttribute || this is IFCInverseAttribute || isReadOnly)
                 {
                     List<string> texts = new List<string>()
@@ -262,22 +261,19 @@ namespace IFCProjectCreator
                     };
                     return texts;
                 }
-
-                
-               
             }
         }
 
 
         public virtual string GetCSharpTypeText()
         {
-            switch (AttributeType)
+            switch (ListType)
             {
-                case IFCAttributeType.SINGLE:
+                case IFCListType.SINGLE:
                     return TypeName;
-                case IFCAttributeType.LIST:
+                case IFCListType.LIST:
                     return "IFC_Attributes<" + TypeName + ">";
-                case IFCAttributeType.LISTLIST:
+                case IFCListType.LISTLIST:
                     return "IFC_Attributes<IFC_Attributes<" + TypeName + ">>";
             }
             return TypeName;
@@ -291,24 +287,34 @@ namespace IFCProjectCreator
             }
 
             string typeName = interfaceName + "." + TypeName;
-            switch (AttributeType)
+            switch (ListType)
             {
-                case IFCAttributeType.SINGLE:
+                case IFCListType.SINGLE:
                     return typeName;
-                case IFCAttributeType.LIST:
+                case IFCListType.LIST:
                     return "IFC_Attributes<" + typeName + ">";
-                case IFCAttributeType.LISTLIST:
+                case IFCListType.LISTLIST:
                     return "IFC_Attributes<IFC_Attributes<" + typeName + ">>";
             }
             return TypeName;
         }
     }
 
-    public enum IFCAttributeType
+    public enum IFCListType
     {
         SINGLE,
         LIST,
         LISTLIST
+    }
+
+    public enum IFCAttributeType
+    {
+        ENTITY,
+        SELECT,
+        SIMPLE,
+        SIMPLELIST,
+        ENUM,
+        NONE
     }
 
     public enum IFCAggregation
