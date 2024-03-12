@@ -10,24 +10,9 @@ namespace TestIFCApp
         {
             Console.WriteLine("Hello World!");
 
-            IFCElectricCapacitanceMeasure testBasic = 5;
-            double sss = testBasic;
-            IFC.IFC_Model model = new IFC_Model("2x3");
-            Console.WriteLine(sss);
-            // var beams = model.GetItems<IFCBeam>();
-
-
-            IFCActuatorTypeEnum testEnum = IFCActuatorTypeEnum.THERMOSTATICACTUATOR;
-            Console.WriteLine(testEnum);
-
-            IFCSIUnit siUnit = new IFCSIUnit();
-            siUnit.Name = "METRE";
+            string IFCDir = "../../../../IFCSamples/";
+            IFC.IFC_Model model = new IFC_Model();
+            model.ImportIFC(IFCDir + "20160125WestRiverSide Hospital - IFC4-Autodesk_Hospital_Metric_Structural.ifc");
         }
-    }
-
-    public enum Days
-    {
-        Sunday,
-        Monday
     }
 }

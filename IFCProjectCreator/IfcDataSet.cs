@@ -74,7 +74,7 @@ namespace IFCProjectCreator
         {
             ReadEXP(path, version);
             SetParent();
-            SetAtribute();
+            SetAttribute();
             SetSelectType();
             
         }
@@ -594,7 +594,7 @@ namespace IFCProjectCreator
         /// <summary>
         /// Link attribute 
         /// </summary>
-        private void SetAtribute()
+        private void SetAttribute()
         {
             
             foreach (var entity in Entities)
@@ -653,6 +653,12 @@ namespace IFCProjectCreator
                     }
                     if (selectDatas.FirstOrDefault(e => e.Name == attribute.TypeName) != null){
                         attribute.AttributeType = IFCAttributeType.SELECT;
+                    }
+
+                    var setDerive = entity.DerivedAttributes.FirstOrDefault(e => e.Name == attribute.Name);
+                    if (setDerive != null)
+                    {
+                        setDerive.includeSet = true;
                     }
                 }
                 foreach (var attribute in entity.InverseClassAttributes)
@@ -1359,7 +1365,13 @@ namespace IFCProjectCreator
                 if (item != null)
                 {
                     item.Model = this;
-                    MapAandSetProperties(item);
+                }
+            }
+            foreach (var item in its)
+            {
+                if (item != null)
+                {
+                    item.SetByAttributeTexts();
                 }
             }
         }
