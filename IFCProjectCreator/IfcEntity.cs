@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using static Azure.Core.HttpHeader;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace IFCProjectCreator
 {
@@ -516,7 +517,7 @@ namespace IFCProjectCreator
                     {
                         basicType = attribute.TypeName;
                     }
-                    AddCsharpImportTextsForSingleValue(texts, attText, "\t\t\t\t\t", attribute.Name, attribute.TypeName, attribute.ListType, attribute.AttributeType, basicType);
+                    AddCsharpImportTextsForSingleValue(texts, attText, "\t\t\t\t\t", attribute.Name, attribute.Name, attribute.TypeName, attribute.ListType, attribute.AttributeType, basicType);
                 }
                 else if (attribute.ListType == IFCListType.LIST)
                 {
@@ -610,7 +611,7 @@ namespace IFCProjectCreator
             return texts;
         }
 
-        private void AddCsharpImportTextsForSingleValue(List<string> texts,string attText, string tap,  string name, string typeName, IFCListType listType, IFCAttributeType attributeType, string basicType, IFCSelectType? asInterface = null, bool suppressError = false)
+        private void AddCsharpImportTextsForSingleValue(List<string> texts,string attText, string tap, string trueName, string name, string typeName, IFCListType listType, IFCAttributeType attributeType, string basicType, bool asInterface = false, bool suppressError = false)
         {
             var selectDatas = DataSet.SelectTypes.Where(e => e.VersionName == VersionName).ToList();
             var entityDatas = DataSet.Entities.Where(e => e.VersionName == VersionName).ToList();
@@ -635,7 +636,7 @@ namespace IFCProjectCreator
                             break;
                     }
                     texts.Add(tap + "\telse");
-                    texts.Add(tap + "\t\tModel.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + value.GetType().Name + \"' as '" + typeName + "' to '" + name + "'.\"));");
+                    texts.Add(tap + "\t\tModel.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + value.GetType().Name + \"' as '" + typeName + "' to '" + trueName + "'.\"));");
                     texts.Add(tap + "}");
                     if (!suppressError)
                     {
@@ -664,19 +665,23 @@ namespace IFCProjectCreator
 
                         if(finalClassTypes.IndexOf(IFCAttributeType.ENTITY) >= 0)
                         {
-                            AddCsharpImportTextsForSingleValue(texts, attText, tap, name, typeName, listType, IFCAttributeType.ENTITY, basicType, selectItem, finalClassTypes.Count > 1);
-                        
-                            if(finalClassTypes.Count > 1)
-                            {
-
-                            }
+                            AddCsharpImportTextsForSingleValue(texts, attText, tap, trueName, name, typeName, listType, IFCAttributeType.ENTITY, basicType, true, finalClassTypes.Count > 1);
                         }
 
                         if(finalClassTypes.Where(e => e!= IFCAttributeType.ENTITY).Count() > 0)
                         {
-                            texts.Add(tap + "string typeName = " + attText + ".Substring(0," + attText + ".IndexOf(\"(\"));");
-                            texts.Add(tap + "switch (typeName)");
+
+                            texts.Add(tap + "string " + name + "Text = " + attText + ".Trim();");
+                            texts.Add(tap + "int " + name + "NameLength = " + name + "Text.IndexOf('(');");
+                            texts.Add(tap + "string " + name + "TypeName = " + name + "Text.Substring(0, " + name + "NameLength);");
+                            texts.Add(tap + "string " + name + "Contain = " + name + "Text.Substring(" + name + "NameLength + 1, " + name +"Text.LastIndexOf(')') - 1 - " + name + "NameLength);");
+
+
+                            texts.Add(tap + "switch (" + name + "TypeName)");
                             texts.Add(tap + "{");
+
+            
+
                             foreach (var subClass in selectItem.AllNonAbstractSubclasses)
                             {
                                 if (subClass.ClassType != IFCAttributeType.ENTITY && subClass.ClassType != IFCAttributeType.SELECT)
@@ -693,7 +698,7 @@ namespace IFCProjectCreator
                                     }
                                     texts.Add(tap + "\tcase \"" + subClass.Name.ToUpper() + "\":");
                                     texts.Add(tap + "\t\t" + subClass.Name + " " + subClass.Name.ToLower() + " = new " + subClass.Name + "();");
-                                    AddCsharpImportTextsForSingleValue(texts, attText, tap + "\t\t", subClass.Name.ToLower(), subClass.Name, listType, subClass.ClassType, basicType1, selectItem);
+                                    AddCsharpImportTextsForSingleValue(texts, name + "Contain", tap + "\t\t", trueName, subClass.Name.ToLower(), subClass.Name, listType, subClass.ClassType, basicType1, true);
                                     texts.Add(tap + "\t\t" + name + " = " + subClass.Name.ToLower() + ";");
                                     texts.Add(tap + "\tbreak;");
                                 }
@@ -706,8 +711,6 @@ namespace IFCProjectCreator
                     break;
                 case IFCAttributeType.SIMPLE:
                     string dataType = "";
-                    string createName = name;
-
                     if (DataSet.CSharpBasicDataTypes.TryGetValue(basicType, out var value))
                     {
                         dataType = value;
@@ -717,26 +720,26 @@ namespace IFCProjectCreator
                         switch (listType)
                         {
                             case IFCListType.SINGLE:
-                                texts.Add(tap + createName + " = " + attText + ";");
+                                texts.Add(tap + name + " = " + attText + ";");
                                 break;
                             case IFCListType.LIST:
-                                texts.Add(tap + createName + ".Add(" + attText + ");");
+                                texts.Add(tap + name + ".Add(" + attText + ");");
                                 break;
                         }
                     }
                     else if (dataType == "int" || dataType == "double" || dataType == "float")
                     {
-                        texts.Add(tap + "if(" + dataType + ".TryParse(" + attText + ",out " + dataType + " _" + createName + "))");
+                        texts.Add(tap + "if(" + dataType + ".TryParse(" + attText + ",out " + dataType + " _" + name + "))");
                         switch (listType)
                         {
                             case IFCListType.SINGLE:
-                                texts.Add(tap + "\t" + createName + " = _" + createName + ";");
+                                texts.Add(tap + "\t" + name + " = _" + name + ";");
                                 break;
                             case IFCListType.LIST:
-                                texts.Add(tap + createName + ".Add(_" + createName + ");");
+                                texts.Add(tap + name + ".Add(_" + name + ");");
                                 break;
                         }
-                        texts.Add(tap + "else Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as ' " + typeName + "' to '" + name + "'.\"));");
+                        texts.Add(tap + "else Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\"));");
                     }
                     else if (dataType == "bool")
                     {
@@ -745,13 +748,13 @@ namespace IFCProjectCreator
                             case IFCListType.SINGLE:
                                 texts.Add(tap + "switch(" + attText + ")");
                                 texts.Add(tap + "{");
-                                texts.Add(tap + "\tcase  \".T.\": " + createName + " = true; break;");
-                                texts.Add(tap + "\tcase  \".F.\": " + createName + " = false; break;");
+                                texts.Add(tap + "\tcase  \".T.\": " + name + " = true; break;");
+                                texts.Add(tap + "\tcase  \".F.\": " + name + " = false; break;");
                                 if (basicType.Contains("LOGICAL"))
                                 {
-                                    texts.Add(tap + "\tcase  \".U.\": " + createName + " = false; " + createName + ".Unknown = true; break;");
+                                    texts.Add(tap + "\tcase  \".U.\": " + name + " = false; " + name + ".Unknown = true; break;");
                                 }
-                                texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as ' " + typeName + "' to '" + name + "'.\")); break;");
+                                texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\")); break;");
                                 texts.Add(tap + "}");
                                 break;
                             case IFCListType.LIST:
@@ -764,9 +767,9 @@ namespace IFCProjectCreator
                                 {
                                     texts.Add(tap + "\tcase  \".U.\": value = false; value.Unknown = true; break;");
                                 }
-                                texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as ' " + typeName + "' to '" + name + "'.\")); break;");
+                                texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\")); break;");
 
-                                texts.Add(tap + "\t" + createName + ".Add(value);");
+                                texts.Add(tap + "\t" + name + ".Add(value);");
                                 texts.Add(tap + "}");
                                 break;
                         }
@@ -777,9 +780,14 @@ namespace IFCProjectCreator
                     texts.Add(tap + "List<string>? " + typeName + "s = SplitList(" + attText + ");");
                     texts.Add(tap + "if(" + typeName + "s != null)");
                     texts.Add(tap + "{");
-                    texts.Add(tap + "\tforeach(string text in " + typeName + "s)");
+                    texts.Add(tap + "\tforeach(string " + typeName + "Item in " + typeName + "s)");
                     texts.Add(tap + "\t{");
-
+                    var listItem = basicListDatas.FirstOrDefault(x => x.Name == typeName);
+                    if(listItem != null)
+                    {
+                        var listBase = listItem.ParentName; 
+                        AddCsharpImportTextsForSingleValue(texts, typeName + "Item", tap + "\t\t", trueName, name, typeName, IFCListType.LIST, IFCAttributeType.SIMPLE, listBase, true);
+                    }
                     texts.Add(tap + "\t}");
                     texts.Add(tap + "}");
                     break;
