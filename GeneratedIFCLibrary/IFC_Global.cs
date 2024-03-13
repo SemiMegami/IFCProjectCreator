@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 #pragma warning disable VSSpell001 // Spell Check
-namespace CSiBKK.IFC.Global
+namespace IFC.Global
 {
 	#region ---- SIMPLE DATA TYPES ----
 	#endregion

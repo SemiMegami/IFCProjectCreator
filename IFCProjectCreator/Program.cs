@@ -19,7 +19,7 @@ namespace IFCProjectCreator
             dataSet.ReadData(resourceDir + "IFC4x2.exp", "IFC4x2");
             dataSet.ReadData(resourceDir + "IFC4X3_ADD2.exp", "IFC4x3");
             dataSet.SetGlobal();
-            dataSet.WriteCSharp(resultDir, "CSiBKK.IFC");
+            dataSet.WriteCSharp(resultDir, "IFC");
          
 
         }

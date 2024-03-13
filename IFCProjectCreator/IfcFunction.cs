@@ -1,14 +1,19 @@
-﻿namespace IFCProjectCreator
+﻿using System.Runtime.InteropServices;
+
+namespace IFCProjectCreator
 {
     public class IFCFunction : IFCClass
     {
 
 
-        public List<IFCAttribute> Inputs { get; set; }
-        public IFCAttribute? Output { get; set; }
+        public List<IFCParameterAttribute> Inputs { get; set; }
+        public IFCParameterAttribute? Output { get; set; }
+
+        public bool IsNullAble { get; set; }
         public IFCFunction(IFCDataSet dataSet, string version) : base(dataSet, version)
         {
-            Inputs = new List<IFCAttribute>();
+            Inputs = new List<IFCParameterAttribute>();
+            IsNullAble = false;
         }
         public override void ReadEXP(StreamReader reader, string header)
         {
@@ -31,6 +36,15 @@
                     string noSpace = EXPLines[i].Replace(" ", "");
                     returnIndex = noSpace.ElementAt(noSpace.Length - 1) == ';' ? i : (i + 1);
                     break;
+                }
+               
+            }
+
+            foreach(var line in EXPLines)
+            {
+                if (line.Contains("RETURN(?)"))
+                {
+                    IsNullAble = true;
                 }
             }
             string headerLine = "";
@@ -117,13 +131,25 @@
             {
                 if (names[i].Length > 0)
                 {
-                    IFCAttribute input = new IFCParameterAttribute();
+                    IFCParameterAttribute input = new IFCParameterAttribute();
                     input.Name = names[i].Replace(" ", "");
                     input.TypeName = typeName;
                     input.ListType = listType;
                     input.Aggregation = aggregation;
+                    input.IsOptional = false;
+                    foreach (var line in EXPLines)
+                    {
+                        if (line.Contains("EXISTS(" + names[i].Trim() + ")"))
+                        {
+                          
+                            input.IsOptional = true;
+                        }
+                    }
+
                     Inputs.Add(input);
                 }
+
+
             }
         }
         private void SetOutput(string outputText)
@@ -189,9 +215,10 @@
             {
                 string outputType = Output.GetCSharpTypeText();
                 bool isGeneric = false;
-                if(outputType.Contains("GENERIC") || outputType.Contains("Item"))
+              
+                if (outputType.Contains("GENERIC") || outputType.Contains("Item"))
                 {
-                    if(DataSet.GetItems(VersionName).FirstOrDefault(e=>e.Name == Output.TypeName) == null)
+                    if (DataSet.GetItems(VersionName).FirstOrDefault(e => e.Name == Output.TypeName) == null)
                     {
                         isGeneric = true;
                     }
@@ -200,9 +227,9 @@
                 {
                     outputType = outputType.Replace("GENERIC", "T").Replace("Item", "T");
                 }
-
+                string returnOutput = outputType;
                 bool canWrite = false;
-                if(Output.ListType == IFCListType.LIST || Output.ListType == IFCListType.LISTLIST) 
+                if (Output.ListType == IFCListType.LIST || Output.ListType == IFCListType.LISTLIST)
                 {
                     canWrite = true;
                 }
@@ -210,7 +237,7 @@
                 {
                     canWrite = true;
                 }
-                if (DataSet.BasicTypes.FirstOrDefault(e=>e.VersionName == VersionName && e.Name == outputType) != null)
+                if (DataSet.BasicTypes.FirstOrDefault(e => e.VersionName == VersionName && e.Name == outputType) != null)
                 {
                     canWrite = true;
                 }
@@ -218,8 +245,33 @@
                 {
                     canWrite = true;
                 }
-
-                string header = "\t\tprotected " + outputType + "? " + Name + (isGeneric? "<T>":"") +  "(";
+                if (DataSet.Entities.FirstOrDefault(e => e.VersionName == VersionName && e.Name == outputType && e.IsAbstract) != null)
+                {
+                    var item = DataSet.Entities.FirstOrDefault(e => e.VersionName == VersionName && e.Name == outputType && e.IsAbstract);
+                    if (item != null)
+                    {
+                        var subclass = item.FinalSubclasses;
+                        if (subclass.Count > 0)
+                        {
+                            returnOutput = subclass[0].Name;
+                            canWrite = true;
+                        }
+                    }
+                }
+                if (DataSet.SelectTypes.FirstOrDefault(e => e.VersionName == VersionName && e.Name == outputType) != null)
+                {
+                    var item = DataSet.SelectTypes.FirstOrDefault(e => e.VersionName == VersionName && e.Name == outputType);
+                    if(item != null)
+                    {
+                        var subclass = item.FinalSubclasses;
+                        if(subclass.Count > 0)
+                        {
+                            returnOutput = subclass[0].Name;
+                            canWrite = true;
+                        }
+                    }
+                }
+                string header = "\t\tprotected " + outputType + ((IsNullAble || isGeneric)? "? " : " ") + Name + (isGeneric ? "<T>" : "") + "(";
                 for (int i = 0; i < Inputs.Count; i++)
                 {
                     string inputType = Inputs[i].GetCSharpTypeText();
@@ -232,7 +284,14 @@
                     {
                         inputType = "IFCSIUnitName";
                     }
-                    header += inputType + " " + Inputs[i].Name;
+                    if (Inputs[i].IsOptional)
+                    {
+                        header += inputType + "? " + Inputs[i].Name;
+                    }
+                    else
+                    {
+                        header += inputType + " " + Inputs[i].Name;
+                    }
                     if (i < Inputs.Count - 1)
                     {
                         header += ", ";
@@ -244,10 +303,12 @@
                     header += " where T: IFC_Attribute";
                 }
                 List<string> texts = GetCSharpSummaryTexts();
-                for(int i = 0; i < texts.Count; i++)
+                for (int i = 0; i < texts.Count; i++)
                 {
                     texts[i] = "\t" + texts[i];
                 }
+
+               
                 if (canWrite)
                 {
                     texts.AddRange(new List<string>()
@@ -256,7 +317,7 @@
                         "\t\t{",
                         "\t\t\t//MANUAL_FUNCTION : " + VersionName.ToUpper() + "." + Name.ToUpper(),
                         "",
-                        "\t\t\t" + outputType + " result = new " + outputType + "();",
+                        "\t\t\t" + outputType + " result = new " + returnOutput + "();",
                         "\t\t\treturn result;",
                         "",
                         "\t\t\t//END_MANUAL",
@@ -264,7 +325,7 @@
                     });
                     return texts;
                 }
-                else
+                else if (outputType == "T")
                 {
                     texts.AddRange(new List<string>()
                     {
@@ -279,6 +340,7 @@
                     });
                     return texts;
                 }
+               
             }
             return new List<string>();
         }

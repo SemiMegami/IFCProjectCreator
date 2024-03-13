@@ -12,7 +12,6 @@ namespace IFCProjectCreator
     {
         public bool IsOptional { get; set; }
         public bool IsUnique { get; set; }
-
         public IFCParameterAttribute() : base()
         {
             IsOptional = false;
@@ -23,7 +22,7 @@ namespace IFCProjectCreator
         {
             return new List<string>
             {
-                "\t\tpublic " +  (isOverride? "override ": "virtual ") + GetCSharpTypeText() + "?" + " " + Name + " { get; set; }"
+                "\t\tpublic " +  (isOverride? "override ": "virtual ") + GetCSharpTypeText() + (IsOptional? "?":"?") + " " + Name + " { get; set; }"
             };
         }
 

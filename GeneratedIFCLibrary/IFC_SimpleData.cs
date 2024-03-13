@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 #pragma warning disable VSSpell001 // Spell Check
-namespace CSiBKK.IFC
+namespace IFC
 {
 	public class REAL: IFC_Attribute
 	{

@@ -353,6 +353,13 @@ namespace IFCProjectCreator
         }
         public override List<string> GetCSharpTexts()
         {
+
+            var selectDatas = DataSet.SelectTypes.Where(e => e.VersionName == VersionName).ToList();
+            var entityDatas = DataSet.Entities.Where(e => e.VersionName == VersionName).ToList();
+            var basicDatas = DataSet.BasicTypes.Where(e => e.VersionName == VersionName).ToList();
+            var basicListDatas = DataSet.BasicTypeLists.Where(e => e.VersionName == VersionName).ToList();
+            var enumDatas = DataSet.EnumTypes.Where(e => e.VersionName == VersionName).ToList();
+
             List<string> texts = GetCSharpSummaryTexts();
             texts.Add(GetCSharpHeaderText());
                  
@@ -384,14 +391,56 @@ namespace IFCProjectCreator
                 texts.AddRange(attribute.GetCSharpText());
             }
 
+            var attributes = DirectAttributes;
+            var directAttributes = DirectAttributes;
             // constructor with no parameters
             texts .Add("\t\tpublic " + Name + "() : base()" );
             texts.Add("\t\t{");
+
+            foreach (var attribute in ParameterClassAttributes)
+            {
+                if (!attribute.IsOptional)
+                {
+                    if (attribute.ListType == IFCListType.SINGLE)
+                    {
+                        var selectItem = selectDatas.FirstOrDefault(e => e.Name == attribute.TypeName);
+                        if (selectItem != null)
+                        {
+                            var subclasses = selectItem.FinalSubclasses;
+                           
+                            if (subclasses.Count > 0)
+                            {
+                                texts.Add("\t\t\t" + attribute.Name + " = new " + subclasses[0].Name + "();");
+                            }
+                        }
+                        var absItem = entityDatas.FirstOrDefault(e => e.Name == attribute.TypeName && e.IsAbstract);
+                        if (absItem != null)
+                        {
+                            var subclasses = absItem.FinalSubclasses;
+                            if (subclasses.Count > 0)
+                            {
+                                texts.Add("\t\t\t" + attribute.Name + " = new " + subclasses[0].Name + "();");
+                            }
+                        }
+                        if (selectItem == null && absItem == null)
+                        {
+                            texts.Add("\t\t\t" + attribute.Name + " = new " + attribute.TypeName + "();");
+                        }
+                    }
+                    else
+                    {
+                        texts.Add("\t\t\t" + attribute.Name + " = new " + attribute.GetCSharpTypeText() + "();");
+                    }
+                    
+                }
+            }
+
+
             texts.Add("\t\t}");
 
            
             // constructor with parameters
-            var attributes = DirectAttributes;
+           
             if(attributes.Count > 0)
             {
                 string constructor = "\t\tpublic " + Name + "(";
@@ -421,7 +470,7 @@ namespace IFCProjectCreator
             texts.Add("\t\t\treturn new Dictionary<string, IFC_Attribute?>()");
             texts.Add("\t\t\t{");
 
-            var directAttributes = DirectAttributes;
+           
             for(int i = 0; i < directAttributes.Count; i++)
             {
                 texts.Add("\t\t\t\t{\"" + directAttributes[i].Name + "\", " + directAttributes[i].Name + "}" + (i < directAttributes.Count - 1 ? "," : ""));
@@ -467,11 +516,7 @@ namespace IFCProjectCreator
             texts.Add("\t\t\t};");
             texts.Add("\t\t}");
 
-            var selectDatas = DataSet.SelectTypes.Where(e => e.VersionName == VersionName).ToList();
-            var entityDatas = DataSet.Entities.Where(e => e.VersionName == VersionName).ToList();
-            var basicDatas = DataSet.BasicTypes.Where(e => e.VersionName == VersionName).ToList();
-            var basicListDatas = DataSet.BasicTypeLists.Where(e => e.VersionName == VersionName).ToList();
-            var enumDatas = DataSet.EnumTypes.Where(e => e.VersionName == VersionName).ToList();
+  
 
 
 
@@ -680,12 +725,6 @@ namespace IFCProjectCreator
                 case IFCAttributeType.ENUM:
 
                     var enumItem = enumDatas.FirstOrDefault(e => e.Name == typeName && e.VersionName == VersionName);
-
-                   
-
-                    trimText = "trim" + name;
-
-                    // texts.Add(tap + "string " + trimText + " = " + attText + ".Trim();");
                     texts.Add(tap + "switch (" + attText + ")");
                     texts.Add(tap + "{");
                     if (enumItem != null)
@@ -702,20 +741,7 @@ namespace IFCProjectCreator
 
                     texts.Add(tap + "}");
 
-                    //texts.Add(tap + "if(" + trimText + ".Length > 1 && " + trimText + "[0] == '.' && " + trimText + "[" + trimText + ".Count() - 1] == '.')");
-                    //texts.Add(tap + "{");
-                    //switch (listType)
-                    //{
-                    //    case IFCListType.SINGLE:
-                    //        texts.Add(tap + "\t" + name + " = " + attText + ".Replace(\".\",\"\");");
-                    //        break;
-                    //    case IFCListType.LIST:
-                    //        texts.Add(tap + "\t" + name + ".Add(" + attText + ");");
-                    //        break;
-                    //}
-
-                    //texts.Add(tap + "}");
-                    //texts.Add(tap + "else Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\"));");
+    
                     break;
                 case IFCAttributeType.SELECT:
 
