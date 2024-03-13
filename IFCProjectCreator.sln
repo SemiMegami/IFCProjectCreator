@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneratedIFCLibrary", "Gene
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestIFCApp", "TestIFCApp\TestIFCApp.csproj", "{CD892713-0914-4892-A661-0E584CD9A322}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFC", "IFC\IFC.csproj", "{3B2A7292-BC3A-4203-9119-65A4AF0B3E81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CD892713-0914-4892-A661-0E584CD9A322}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD892713-0914-4892-A661-0E584CD9A322}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD892713-0914-4892-A661-0E584CD9A322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B2A7292-BC3A-4203-9119-65A4AF0B3E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2A7292-BC3A-4203-9119-65A4AF0B3E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2A7292-BC3A-4203-9119-65A4AF0B3E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2A7292-BC3A-4203-9119-65A4AF0B3E81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

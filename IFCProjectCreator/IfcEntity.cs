@@ -651,6 +651,7 @@ namespace IFCProjectCreator
             var basicDatas = DataSet.BasicTypes.Where(e => e.VersionName == VersionName).ToList();
             var basicListDatas = DataSet.BasicTypeLists.Where(e => e.VersionName == VersionName).ToList();
             var enumDatas = DataSet.EnumTypes.Where(e => e.VersionName == VersionName).ToList();
+            string trimText = "";
             switch (attributeType)
             {
                 case IFCAttributeType.ENTITY:
@@ -677,15 +678,44 @@ namespace IFCProjectCreator
                    
                     break;
                 case IFCAttributeType.ENUM:
-                    switch (listType)
+
+                    var enumItem = enumDatas.FirstOrDefault(e => e.Name == typeName && e.VersionName == VersionName);
+
+                   
+
+                    trimText = "trim" + name;
+
+                    // texts.Add(tap + "string " + trimText + " = " + attText + ".Trim();");
+                    texts.Add(tap + "switch (" + attText + ")");
+                    texts.Add(tap + "{");
+                    if (enumItem != null)
                     {
-                        case IFCListType.SINGLE:
-                            texts.Add(tap + name + " = " + attText + ".Replace(\".\",\"\");");
-                            break;
-                        case IFCListType.LIST:
-                            texts.Add(tap + name + ".Add(" + attText + ");");
-                            break;
+                        foreach (var v in enumItem.EnumValues)
+                        {
+                            if (v != null)
+                            {
+                                texts.Add(tap + "\tcase \"." + v + ".\" : " + name + " = " + attText + ".Replace(\".\",\"\"); break;");
+                            }
+                        }
                     }
+                    texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\")); break;");
+
+                    texts.Add(tap + "}");
+
+                    //texts.Add(tap + "if(" + trimText + ".Length > 1 && " + trimText + "[0] == '.' && " + trimText + "[" + trimText + ".Count() - 1] == '.')");
+                    //texts.Add(tap + "{");
+                    //switch (listType)
+                    //{
+                    //    case IFCListType.SINGLE:
+                    //        texts.Add(tap + "\t" + name + " = " + attText + ".Replace(\".\",\"\");");
+                    //        break;
+                    //    case IFCListType.LIST:
+                    //        texts.Add(tap + "\t" + name + ".Add(" + attText + ");");
+                    //        break;
+                    //}
+
+                    //texts.Add(tap + "}");
+                    //texts.Add(tap + "else Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\"));");
                     break;
                 case IFCAttributeType.SELECT:
 
@@ -731,8 +761,6 @@ namespace IFCProjectCreator
                                     texts.Add(tap1 + "\tcase \"" + subClass.Name.ToUpper() + "\":");
                                     texts.Add(tap1 + "\t\t" + subClass.Name + " " + subClass.Name.ToLower() + " = new " + subClass.Name + "();");
                                     AddCsharpImportTextsForSingleValue(texts, name + "Contain", tap1 + "\t\t", trueName, subClass.Name.ToLower(), subClass.Name, IFCListType.SINGLE, subClass.ClassType, basicType1, true);
-                                   
-
                                     switch (listType)
                                     {
                                         case IFCListType.SINGLE:
@@ -746,6 +774,9 @@ namespace IFCProjectCreator
                                     texts.Add(tap1 + "\tbreak;");
                                 } 
                             }
+                            texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\")); break; // Invalid Select");
+                         
+
                             texts.Add(tap1 + "}");
                             if (finalClassTypes.IndexOf(IFCAttributeType.ENTITY) >= 0)
                             {
@@ -763,7 +794,7 @@ namespace IFCProjectCreator
                     }
                     if (dataType == "string")
                     {
-                        string trimText = "trim" + name;
+                        trimText = "trim" + name;
                        
                         texts.Add(tap + "string "  + trimText + " = " + attText + ".Trim();");
                         texts.Add(tap + "if(" + trimText + ".Length > 1 && " + trimText + "[0] == '\\\'' && " + trimText + "[" + trimText + ".Count() - 1] == '\\'')");
