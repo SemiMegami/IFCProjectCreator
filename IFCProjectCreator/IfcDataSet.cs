@@ -1,4 +1,5 @@
 ﻿using Microsoft.SqlServer.Management.XEvent;
+using Newtonsoft.Json.Bson;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -746,6 +747,7 @@ namespace IFCProjectCreator
             }
             WriteCSharp(folderDir, nameSpaceName, globalName);
             WriteCSharpLog(folderDir, nameSpaceName);
+            WriteCSharpTest(folderDir, nameSpaceName);
         }
 
         /// <summary>
@@ -950,7 +952,7 @@ namespace IFCProjectCreator
                 writer.WriteLine(""/* name */ '"" + path + ""',"");
                 writer.WriteLine(""/* time_stamp */ '"" + now + ""',"");
                 writer.WriteLine(""/* author */ ('Author Name'),"");
-                writer.WriteLine(""/* organization */ ('Oganaization Name'),"");
+                writer.WriteLine(""/* organization */ ('Organization Name'),"");
                 writer.WriteLine(""/* preprocessor_version */ 'Version Name',"");
                 writer.WriteLine(""/* originating_system */ 'System Name',"");
                 writer.WriteLine(""/* authorization */ 'None');"");
@@ -975,14 +977,14 @@ namespace IFCProjectCreator
         private void ReadDataline(string ifcText)
         {
 
-            string[] leftright = ifcText.Split('=');
-            if (leftright.Length < 2)
+            string[] leftRight = ifcText.Split('=');
+            if (leftRight.Length < 2)
             {
                 return;
             }
-            string key = leftright[0].Replace("" "", """");
+            string key = leftRight[0].Replace("" "", """");
 
-            string data = leftright[1];
+            string data = leftRight[1];
             while (data.Length > 0 && data.Substring(0, 1) == "" "")
             {
                 data = data.Substring(1);
@@ -1094,63 +1096,63 @@ namespace IFCProjectCreator
                 writer.WriteLine("\t\t\treturn null;");
                 writer.WriteLine("\t\t}");
 
-                // Create list
-                //writer.WriteLine("\t\tprotected virtual IFC_Attribute? CreateList(string className)");
-                //writer.WriteLine("\t\t{");
-                //writer.WriteLine("\t\t\tswitch (className)");
-                //writer.WriteLine("\t\t\t{");
-                //foreach (var basic in CSharpBasicDataTypes)
-                //{
-                //    writer.WriteLine("\t\t\t\tcase \"" + basic.Key + "\": return new IFC_Attributes<" + nameSpaceName + "." + basic.Key + ">();");
-                //}
-                //writer.WriteLine("\t\t\t}");
+               // Create list
+                writer.WriteLine("\t\tprotected virtual IFC_Attribute? CreateList(string className)");
+                writer.WriteLine("\t\t{");
+                writer.WriteLine("\t\t\tswitch (className)");
+                writer.WriteLine("\t\t\t{");
+                foreach (var basic in CSharpBasicDataTypes)
+                {
+                    writer.WriteLine("\t\t\t\tcase \"" + basic.Key + "\": return new IFC_Attributes<" + nameSpaceName + "." + basic.Key + ">();");
+                }
+                writer.WriteLine("\t\t\t}");
 
-                //writer.WriteLine("\t\t\tswitch (Version)");
-                //writer.WriteLine("\t\t\t{");
-                //foreach (var version in Versions)
-                //{
-                //    writer.WriteLine("\t\t\t\tcase IFC_Version." + version + ":");
-                //    writer.WriteLine("\t\t\t\t\tswitch (className)");
-                //    writer.WriteLine("\t\t\t\t\t{");
-                //    foreach (var item in GetItems().Where(e => e.VersionName == version).ToList())
-                //    {
-                //        writer.WriteLine("\t\t\t\t\t\tcase \"" + item.Name.ToUpper() + "\": return new IFC_Attributes<" + nameSpaceName + "." + version + "." + item.Name + ">();");
-                //    }
-                //    writer.WriteLine("\t\t\t\t\t}");
-                //    writer.WriteLine("\t\t\t\tbreak;");
-                //}
-                //writer.WriteLine("\t\t\t}");
-                //writer.WriteLine("\t\t\treturn null;");
-                //writer.WriteLine("\t\t}");
+                writer.WriteLine("\t\t\tswitch (Version)");
+                writer.WriteLine("\t\t\t{");
+                foreach (var version in Versions)
+                {
+                    writer.WriteLine("\t\t\t\tcase IFC_Version." + version + ":");
+                    writer.WriteLine("\t\t\t\t\tswitch (className)");
+                    writer.WriteLine("\t\t\t\t\t{");
+                    foreach (var item in GetItems().Where(e => e.VersionName == version).ToList())
+                    {
+                        writer.WriteLine("\t\t\t\t\t\tcase \"" + item.Name.ToUpper() + "\": return new IFC_Attributes<" + nameSpaceName + "." + version + "." + item.Name + ">();");
+                    }
+                    writer.WriteLine("\t\t\t\t\t}");
+                    writer.WriteLine("\t\t\t\tbreak;");
+                }
+                writer.WriteLine("\t\t\t}");
+                writer.WriteLine("\t\t\treturn null;");
+                writer.WriteLine("\t\t}");
 
-                //// Create listList
-                //writer.WriteLine("\t\tprotected virtual IFC_Attribute? CreateListList(string className)");
-                //writer.WriteLine("\t\t{");
-                //writer.WriteLine("\t\t\tswitch (className)");
-                //writer.WriteLine("\t\t\t{");
-                //foreach (var basic in CSharpBasicDataTypes)
-                //{
-                //    writer.WriteLine("\t\t\t\tcase \"" + basic.Key + "\":return new IFC_Attributes<IFC_Attributes<" + nameSpaceName + "." + basic.Key + ">>();");
-                //}
-                //writer.WriteLine("\t\t\t}");
+                // Create listList
+                writer.WriteLine("\t\tprotected virtual IFC_Attribute? CreateListList(string className)");
+                writer.WriteLine("\t\t{");
+                writer.WriteLine("\t\t\tswitch (className)");
+                writer.WriteLine("\t\t\t{");
+                foreach (var basic in CSharpBasicDataTypes)
+                {
+                    writer.WriteLine("\t\t\t\tcase \"" + basic.Key + "\":return new IFC_Attributes<IFC_Attributes<" + nameSpaceName + "." + basic.Key + ">>();");
+                }
+                writer.WriteLine("\t\t\t}");
 
-                //writer.WriteLine("\t\t\tswitch (Version)");
-                //writer.WriteLine("\t\t\t{");
-                //foreach (var version in Versions)
-                //{
-                //    writer.WriteLine("\t\t\t\tcase IFC_Version." + version + ":");
-                //    writer.WriteLine("\t\t\t\t\tswitch (className)");
-                //    writer.WriteLine("\t\t\t\t\t{");
-                //    foreach (var item in GetItems().Where(e => e.VersionName == version).ToList())
-                //    {
-                //        writer.WriteLine("\t\t\t\t\t\tcase \"" + item.Name.ToUpper() + "\" : return new IFC_Attributes<IFC_Attributes<" + nameSpaceName + "." + version + "." + item.Name + ">>();");
-                //    }
-                //    writer.WriteLine("\t\t\t\t\t}");
-                //    writer.WriteLine("\t\t\t\tbreak;");
-                //}
-                //writer.WriteLine("\t\t\t}");
-                //writer.WriteLine("\t\t\treturn null;");
-                //writer.WriteLine("\t\t}");
+                writer.WriteLine("\t\t\tswitch (Version)");
+                writer.WriteLine("\t\t\t{");
+                foreach (var version in Versions)
+                {
+                    writer.WriteLine("\t\t\t\tcase IFC_Version." + version + ":");
+                    writer.WriteLine("\t\t\t\t\tswitch (className)");
+                    writer.WriteLine("\t\t\t\t\t{");
+                    foreach (var item in GetItems().Where(e => e.VersionName == version).ToList())
+                    {
+                        writer.WriteLine("\t\t\t\t\t\tcase \"" + item.Name.ToUpper() + "\" : return new IFC_Attributes<IFC_Attributes<" + nameSpaceName + "." + version + "." + item.Name + ">>();");
+                    }
+                    writer.WriteLine("\t\t\t\t\t}");
+                    writer.WriteLine("\t\t\t\tbreak;");
+                }
+                writer.WriteLine("\t\t\t}");
+                writer.WriteLine("\t\t\treturn null;");
+                writer.WriteLine("\t\t}");
 
                 // Create Bool
                 WriteCSharpModelBasicCreate(nameSpaceName, writer, "CreateBool","bool");
@@ -2081,5 +2083,42 @@ namespace IFC
             
         }
 
+
+        public void WriteCSharpTest(string folderDir, string nameSpaceName)
+        {
+            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_Test.cs"))
+            {
+                writer.WriteLine("using System;");
+                writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("using System.Linq;");
+                writer.WriteLine("using System.Text;");
+                writer.WriteLine("using System.Threading.Tasks;");
+                writer.WriteLine("using System.IO;");
+                writer.WriteLine("using System.Reflection;");
+                writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("namespace " + nameSpaceName);
+                writer.WriteLine("{");
+                writer.WriteLine("\tpublic class IFC_Test");
+                writer.WriteLine("\t{");
+
+
+                writer.WriteLine("\t\tpublic void TestLoad()");
+                writer.WriteLine("\t\t{");
+
+                foreach (var entity in Entities)
+                {
+                    if (!entity.IsAbstract)
+                    {
+                        writer.WriteLine("\t\t\tvar " + entity.Name + entity.VersionName + " = new " + nameSpaceName + "." + entity.VersionName + "." + entity.Name + "();");
+                    }
+                    writer.WriteLine("\t\t\tConsole.WriteLine(\"" + entity.Name + entity.VersionName + " = new " + nameSpaceName + "." + entity.VersionName + "." + entity.Name + "()\");");
+                    
+                }
+                writer.WriteLine("\t\t}");
+
+                writer.WriteLine("\t}");
+                writer.WriteLine("}");
+            }
+        }
     }
 }

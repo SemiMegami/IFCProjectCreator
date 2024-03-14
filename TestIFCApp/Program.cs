@@ -1,6 +1,7 @@
 ﻿using System;
 using IFC.IFC4;
 using IFC;
+using System.Numerics;
 #pragma warning disable VSSpell001 // Spell Check
 namespace TestIFCApp
 {
@@ -8,11 +9,23 @@ namespace TestIFCApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Vector3 v;
 
-            string IFCDir = "../../../../IFCSamples/";
-            IFC.IFC_Model model = new IFC_Model();
-            model.ImportIFC(IFCDir + "20160125WestRiverSide Hospital - IFC4-Autodesk_Hospital_Metric_Structural.ifc");
+            new IFC_Test().TestLoad();
+
+            //Console.WriteLine("Hello World!");
+
+            //string IFCDir = "../../../../IFCSamples/";
+            //IFC.IFC_Model model = new IFC_Model();
+            //model.ImportIFC(IFCDir + "20160125WestRiverSide Hospital - IFC4-Autodesk_Hospital_Metric_Structural.ifc");
+        }
+
+        /// <summary>
+        /// ddddddd
+        /// </summary>
+        void TestFunction()
+        {
+
         }
     }
 }

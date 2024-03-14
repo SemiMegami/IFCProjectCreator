@@ -397,43 +397,43 @@ namespace IFCProjectCreator
             texts .Add("\t\tpublic " + Name + "() : base()" );
             texts.Add("\t\t{");
 
-            foreach (var attribute in ParameterClassAttributes)
-            {
-                if (!attribute.IsOptional)
-                {
-                    if (attribute.ListType == IFCListType.SINGLE)
-                    {
-                        var selectItem = selectDatas.FirstOrDefault(e => e.Name == attribute.TypeName);
-                        if (selectItem != null)
-                        {
-                            var subclasses = selectItem.FinalSubclasses;
+            //foreach (var attribute in ParameterClassAttributes)
+            //{
+            //    if (!attribute.IsOptional)
+            //    {
+            //        if (attribute.ListType == IFCListType.SINGLE)
+            //        {
+            //            var selectItem = selectDatas.FirstOrDefault(e => e.Name == attribute.TypeName);
+            //            if (selectItem != null)
+            //            {
+            //                var subclasses = selectItem.FinalSubclasses;
                            
-                            if (subclasses.Count > 0)
-                            {
-                                texts.Add("\t\t\t" + attribute.Name + " = new " + subclasses[0].Name + "();");
-                            }
-                        }
-                        var absItem = entityDatas.FirstOrDefault(e => e.Name == attribute.TypeName && e.IsAbstract);
-                        if (absItem != null)
-                        {
-                            var subclasses = absItem.FinalSubclasses;
-                            if (subclasses.Count > 0)
-                            {
-                                texts.Add("\t\t\t" + attribute.Name + " = new " + subclasses[0].Name + "();");
-                            }
-                        }
-                        if (selectItem == null && absItem == null)
-                        {
-                            texts.Add("\t\t\t" + attribute.Name + " = new " + attribute.TypeName + "();");
-                        }
-                    }
-                    else
-                    {
-                        texts.Add("\t\t\t" + attribute.Name + " = new " + attribute.GetCSharpTypeText() + "();");
-                    }
+            //                if (subclasses.Count > 0)
+            //                {
+            //                    texts.Add("\t\t\t" + attribute.Name + " = new " + subclasses[0].Name + "();");
+            //                }
+            //            }
+            //            var absItem = entityDatas.FirstOrDefault(e => e.Name == attribute.TypeName && e.IsAbstract);
+            //            if (absItem != null)
+            //            {
+            //                var subclasses = absItem.FinalSubclasses;
+            //                if (subclasses.Count > 0)
+            //                {
+            //                    texts.Add("\t\t\t" + attribute.Name + " = new " + subclasses[0].Name + "();");
+            //                }
+            //            }
+            //            if (selectItem == null && absItem == null)
+            //            {
+            //                texts.Add("\t\t\t" + attribute.Name + " = new " + attribute.TypeName + "();");
+            //            }
+            //        }
+            //        else
+            //        {
+            //            texts.Add("\t\t\t" + attribute.Name + " = new " + attribute.GetCSharpTypeText() + "();");
+            //        }
                     
-                }
-            }
+            //    }
+            //}
 
 
             texts.Add("\t\t}");

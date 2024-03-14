@@ -11,827 +11,827 @@ namespace IFC.Global
 
 	#region ---- INTERFACES ----
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAbsorbedDoseMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAccelerationMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAmountOfSubstanceMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAngularVelocityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAreaMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoolean: IFC_Attribute
 	{
 		public bool Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoxAlignment: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCContextDependentMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCountMeasure: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurvatureMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDayInMonthNumber: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDaylightSavingHour: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDescriptiveMeasure: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDimensionCount: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoseEquivalentMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDynamicViscosityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricCapacitanceMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricChargeMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricConductanceMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricCurrentMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricResistanceMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricVoltageMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEnergyMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFontStyle: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFontVariant: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFontWeight: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCForceMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFrequencyMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGloballyUniqueId: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCHeatFluxDensityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCHeatingValueMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCHourInDay: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIdentifier: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIlluminanceMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCInductanceMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCInteger: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIntegerCountRateMeasure: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIonConcentrationMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIsothermalMoistureCapacityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCKinematicViscosityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLabel: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLengthMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLinearForceMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLinearMomentMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLinearStiffnessMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLinearVelocityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLogical: IFC_Attribute
 	{
 		public bool Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLuminousFluxMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLuminousIntensityDistributionMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLuminousIntensityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMagneticFluxDensityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMagneticFluxMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMassDensityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMassFlowRateMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMassMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMassPerLengthMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMinuteInHour: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCModulusOfElasticityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCModulusOfLinearSubgradeReactionMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCModulusOfRotationalSubgradeReactionMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCModulusOfSubgradeReactionMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMoistureDiffusivityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMolecularWeightMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMomentOfInertiaMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMonetaryMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMonthInYearNumber: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCNormalisedRatioMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCNumericMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPHMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCParameterValue: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPlanarForceMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPlaneAngleMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPositiveLengthMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPositivePlaneAngleMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPositiveRatioMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPowerMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPresentableText: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPressureMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRadioActivityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRatioMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReal: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRotationalFrequencyMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRotationalMassMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRotationalStiffnessMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSecondInMinute: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSectionModulusMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSectionalAreaIntegralMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCShearModulusMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSolidAngleMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSoundPowerMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSoundPressureMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpecificHeatCapacityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpecularExponent: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpecularRoughness: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTemperatureGradientMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCText: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextAlignment: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextDecoration: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextFontName: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextTransformation: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCThermalAdmittanceMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCThermalConductivityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCThermalExpansionCoefficientMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCThermalResistanceMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCThermalTransmittanceMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCThermodynamicTemperatureMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTimeMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTimeStamp: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTorqueMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVaporPermeabilityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVolumeMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVolumetricFlowRateMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWarpingConstantMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWarpingMomentMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCYearNumber: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAreaDensityMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBinary: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCardinalPointReference: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDate: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDateTime: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDayInWeekNumber: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDuration: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLanguageId: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCNonNegativeLengthMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPositiveInteger: IFC_Attribute
 	{
 		public int Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSoundPowerLevelMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSoundPressureLevelMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTemperatureRateOfChangeMeasure: IFC_Attribute
 	{
 		public double Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTime: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCURIReference: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStrippedOptional: IFC_Attribute
 	{
 		public bool Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWellKnownTextLiteral: IFC_Attribute
 	{
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCComplexNumber: IFC_Attribute
 	{
 		public List<double> Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCompoundPlaneAngleMeasure: IFC_Attribute
 	{
 		public List<int> Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCArcIndex: IFC_Attribute
 	{
 		public List<int> Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLineIndex: IFC_Attribute
 	{
 		public List<int> Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertySetDefinitionSet: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCActionSourceTypeEnum: IFC_Attribute
 	{
 		public static string? DEAD_LOAD_G {get; set;}
@@ -864,7 +864,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCActionTypeEnum: IFC_Attribute
 	{
 		public static string? PERMANENT_G {get; set;}
@@ -875,7 +875,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCActuatorTypeEnum: IFC_Attribute
 	{
 		public static string? ELECTRICACTUATOR {get; set;}
@@ -888,7 +888,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAddressTypeEnum: IFC_Attribute
 	{
 		public static string? OFFICE {get; set;}
@@ -899,7 +899,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAheadOrBehind: IFC_Attribute
 	{
 		public static string? AHEAD {get; set;}
@@ -907,7 +907,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAirTerminalBoxTypeEnum: IFC_Attribute
 	{
 		public static string? CONSTANTFLOW {get; set;}
@@ -918,7 +918,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAirTerminalTypeEnum: IFC_Attribute
 	{
 		public static string? GRILLE {get; set;}
@@ -929,7 +929,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAirToAirHeatRecoveryTypeEnum: IFC_Attribute
 	{
 		public static string? FIXEDPLATECOUNTERFLOWEXCHANGER {get; set;}
@@ -946,7 +946,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlarmTypeEnum: IFC_Attribute
 	{
 		public static string? BELL {get; set;}
@@ -960,7 +960,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAnalysisModelTypeEnum: IFC_Attribute
 	{
 		public static string? IN_PLANE_LOADING_2D {get; set;}
@@ -971,7 +971,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAnalysisTheoryTypeEnum: IFC_Attribute
 	{
 		public static string? FIRST_ORDER_THEORY {get; set;}
@@ -983,7 +983,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCArithmeticOperatorEnum: IFC_Attribute
 	{
 		public static string? ADD {get; set;}
@@ -993,7 +993,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAssemblyPlaceEnum: IFC_Attribute
 	{
 		public static string? SITE {get; set;}
@@ -1002,7 +1002,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBSplineCurveForm: IFC_Attribute
 	{
 		public static string? POLYLINE_FORM {get; set;}
@@ -1014,7 +1014,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBeamTypeEnum: IFC_Attribute
 	{
 		public static string? BEAM {get; set;}
@@ -1026,7 +1026,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBenchmarkEnum: IFC_Attribute
 	{
 		public static string? GREATERTHAN {get; set;}
@@ -1038,7 +1038,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoilerTypeEnum: IFC_Attribute
 	{
 		public static string? WATER {get; set;}
@@ -1048,7 +1048,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBooleanOperator: IFC_Attribute
 	{
 		public static string? UNION {get; set;}
@@ -1057,7 +1057,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuildingElementProxyTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -1065,7 +1065,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCableCarrierFittingTypeEnum: IFC_Attribute
 	{
 		public static string? BEND {get; set;}
@@ -1077,7 +1077,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCableCarrierSegmentTypeEnum: IFC_Attribute
 	{
 		public static string? CABLELADDERSEGMENT {get; set;}
@@ -1089,7 +1089,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCableSegmentTypeEnum: IFC_Attribute
 	{
 		public static string? CABLESEGMENT {get; set;}
@@ -1099,7 +1099,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCChangeActionEnum: IFC_Attribute
 	{
 		public static string? NOCHANGE {get; set;}
@@ -1109,7 +1109,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCChillerTypeEnum: IFC_Attribute
 	{
 		public static string? AIRCOOLED {get; set;}
@@ -1120,7 +1120,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCoilTypeEnum: IFC_Attribute
 	{
 		public static string? DXCOOLINGCOIL {get; set;}
@@ -1134,7 +1134,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCColumnTypeEnum: IFC_Attribute
 	{
 		public static string? COLUMN {get; set;}
@@ -1143,7 +1143,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCompressorTypeEnum: IFC_Attribute
 	{
 		public static string? DYNAMIC {get; set;}
@@ -1166,7 +1166,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCondenserTypeEnum: IFC_Attribute
 	{
 		public static string? WATERCOOLEDSHELLTUBE {get; set;}
@@ -1180,7 +1180,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConnectionTypeEnum: IFC_Attribute
 	{
 		public static string? ATPATH {get; set;}
@@ -1190,7 +1190,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstraintEnum: IFC_Attribute
 	{
 		public static string? HARD {get; set;}
@@ -1201,7 +1201,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCControllerTypeEnum: IFC_Attribute
 	{
 		public static string? FLOATING {get; set;}
@@ -1212,7 +1212,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCooledBeamTypeEnum: IFC_Attribute
 	{
 		public static string? ACTIVE {get; set;}
@@ -1222,7 +1222,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCoolingTowerTypeEnum: IFC_Attribute
 	{
 		public static string? NATURALDRAFT {get; set;}
@@ -1233,7 +1233,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCostScheduleTypeEnum: IFC_Attribute
 	{
 		public static string? BUDGET {get; set;}
@@ -1248,7 +1248,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCoveringTypeEnum: IFC_Attribute
 	{
 		public static string? CEILING {get; set;}
@@ -1264,7 +1264,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurrencyEnum: IFC_Attribute
 	{
 		public static string? AED {get; set;}
@@ -1353,7 +1353,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurtainWallTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -1361,7 +1361,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDamperTypeEnum: IFC_Attribute
 	{
 		public static string? CONTROLDAMPER {get; set;}
@@ -1380,7 +1380,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDataOriginEnum: IFC_Attribute
 	{
 		public static string? MEASURED {get; set;}
@@ -1391,7 +1391,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDerivedUnitEnum: IFC_Attribute
 	{
 		public static string? ANGULARVELOCITYUNIT {get; set;}
@@ -1446,7 +1446,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDimensionExtentUsage: IFC_Attribute
 	{
 		public static string? ORIGIN {get; set;}
@@ -1454,7 +1454,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDirectionSenseEnum: IFC_Attribute
 	{
 		public static string? POSITIVE {get; set;}
@@ -1462,7 +1462,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionChamberElementTypeEnum: IFC_Attribute
 	{
 		public static string? FORMEDDUCT {get; set;}
@@ -1478,7 +1478,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDocumentConfidentialityEnum: IFC_Attribute
 	{
 		public static string? PUBLIC {get; set;}
@@ -1490,7 +1490,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDocumentStatusEnum: IFC_Attribute
 	{
 		public static string? DRAFT {get; set;}
@@ -1501,7 +1501,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoorPanelOperationEnum: IFC_Attribute
 	{
 		public static string? SWINGING {get; set;}
@@ -1515,7 +1515,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoorPanelPositionEnum: IFC_Attribute
 	{
 		public static string? LEFT {get; set;}
@@ -1525,7 +1525,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoorStyleConstructionEnum: IFC_Attribute
 	{
 		public static string? ALUMINIUM {get; set;}
@@ -1540,7 +1540,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoorStyleOperationEnum: IFC_Attribute
 	{
 		public static string? SINGLE_SWING_LEFT {get; set;}
@@ -1564,7 +1564,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDuctFittingTypeEnum: IFC_Attribute
 	{
 		public static string? BEND {get; set;}
@@ -1579,7 +1579,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDuctSegmentTypeEnum: IFC_Attribute
 	{
 		public static string? RIGIDSEGMENT {get; set;}
@@ -1589,7 +1589,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDuctSilencerTypeEnum: IFC_Attribute
 	{
 		public static string? FLATOVAL {get; set;}
@@ -1600,7 +1600,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricApplianceTypeEnum: IFC_Attribute
 	{
 		public static string? DISHWASHER {get; set;}
@@ -1620,7 +1620,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricCurrentEnum: IFC_Attribute
 	{
 		public static string? ALTERNATING {get; set;}
@@ -1629,7 +1629,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricDistributionPointFunctionEnum: IFC_Attribute
 	{
 		public static string? ALARMPANEL {get; set;}
@@ -1646,7 +1646,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricFlowStorageDeviceTypeEnum: IFC_Attribute
 	{
 		public static string? BATTERY {get; set;}
@@ -1659,7 +1659,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricGeneratorTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -1667,7 +1667,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricHeaterTypeEnum: IFC_Attribute
 	{
 		public static string? ELECTRICPOINTHEATER {get; set;}
@@ -1678,7 +1678,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricMotorTypeEnum: IFC_Attribute
 	{
 		public static string? DC {get; set;}
@@ -1691,7 +1691,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricTimeControlTypeEnum: IFC_Attribute
 	{
 		public static string? TIMECLOCK {get; set;}
@@ -1702,7 +1702,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElementAssemblyTypeEnum: IFC_Attribute
 	{
 		public static string? ACCESSORY_ASSEMBLY {get; set;}
@@ -1719,7 +1719,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElementCompositionEnum: IFC_Attribute
 	{
 		public static string? COMPLEX {get; set;}
@@ -1728,7 +1728,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEnergySequenceEnum: IFC_Attribute
 	{
 		public static string? PRIMARY {get; set;}
@@ -1740,7 +1740,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEnvironmentalImpactCategoryEnum: IFC_Attribute
 	{
 		public static string? COMBINEDVALUE {get; set;}
@@ -1754,7 +1754,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEvaporativeCoolerTypeEnum: IFC_Attribute
 	{
 		public static string? DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER {get; set;}
@@ -1771,7 +1771,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEvaporatorTypeEnum: IFC_Attribute
 	{
 		public static string? DIRECTEXPANSIONSHELLANDTUBE {get; set;}
@@ -1784,7 +1784,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFanTypeEnum: IFC_Attribute
 	{
 		public static string? CENTRIFUGALFORWARDCURVED {get; set;}
@@ -1799,7 +1799,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFilterTypeEnum: IFC_Attribute
 	{
 		public static string? AIRPARTICLEFILTER {get; set;}
@@ -1812,7 +1812,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFireSuppressionTerminalTypeEnum: IFC_Attribute
 	{
 		public static string? BREECHINGINLET {get; set;}
@@ -1825,7 +1825,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowDirectionEnum: IFC_Attribute
 	{
 		public static string? SOURCE {get; set;}
@@ -1835,7 +1835,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowInstrumentTypeEnum: IFC_Attribute
 	{
 		public static string? PRESSUREGAUGE {get; set;}
@@ -1851,7 +1851,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowMeterTypeEnum: IFC_Attribute
 	{
 		public static string? ENERGYMETER {get; set;}
@@ -1863,7 +1863,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFootingTypeEnum: IFC_Attribute
 	{
 		public static string? FOOTING_BEAM {get; set;}
@@ -1875,7 +1875,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGasTerminalTypeEnum: IFC_Attribute
 	{
 		public static string? GASAPPLIANCE {get; set;}
@@ -1886,7 +1886,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeometricProjectionEnum: IFC_Attribute
 	{
 		public static string? GRAPH_VIEW {get; set;}
@@ -1901,7 +1901,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGlobalOrLocalEnum: IFC_Attribute
 	{
 		public static string? GLOBAL_COORDS {get; set;}
@@ -1909,7 +1909,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCHeatExchangerTypeEnum: IFC_Attribute
 	{
 		public static string? PLATE {get; set;}
@@ -1919,7 +1919,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCHumidifierTypeEnum: IFC_Attribute
 	{
 		public static string? STEAMINJECTION {get; set;}
@@ -1940,7 +1940,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCInternalOrExternalEnum: IFC_Attribute
 	{
 		public static string? INTERNAL {get; set;}
@@ -1949,7 +1949,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCInventoryTypeEnum: IFC_Attribute
 	{
 		public static string? ASSETINVENTORY {get; set;}
@@ -1960,7 +1960,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCJunctionBoxTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -1968,7 +1968,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLampTypeEnum: IFC_Attribute
 	{
 		public static string? COMPACTFLUORESCENT {get; set;}
@@ -1982,7 +1982,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLayerSetDirectionEnum: IFC_Attribute
 	{
 		public static string? AXIS1 {get; set;}
@@ -1991,7 +1991,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightDistributionCurveEnum: IFC_Attribute
 	{
 		public static string? TYPE_A {get; set;}
@@ -2001,7 +2001,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightEmissionSourceEnum: IFC_Attribute
 	{
 		public static string? COMPACTFLUORESCENT {get; set;}
@@ -2018,7 +2018,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightFixtureTypeEnum: IFC_Attribute
 	{
 		public static string? POINTSOURCE {get; set;}
@@ -2028,7 +2028,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLoadGroupTypeEnum: IFC_Attribute
 	{
 		public static string? LOAD_GROUP {get; set;}
@@ -2039,7 +2039,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLogicalOperatorEnum: IFC_Attribute
 	{
 		public static string? LOGICALAND {get; set;}
@@ -2047,7 +2047,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMemberTypeEnum: IFC_Attribute
 	{
 		public static string? BRACE {get; set;}
@@ -2067,7 +2067,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMotorConnectionTypeEnum: IFC_Attribute
 	{
 		public static string? BELTDRIVE {get; set;}
@@ -2078,14 +2078,14 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCNullStyle: IFC_Attribute
 	{
 		public static string? NULL {get; set;}
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCObjectTypeEnum: IFC_Attribute
 	{
 		public static string? PRODUCT {get; set;}
@@ -2099,7 +2099,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCObjectiveEnum: IFC_Attribute
 	{
 		public static string? CODECOMPLIANCE {get; set;}
@@ -2113,7 +2113,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOccupantTypeEnum: IFC_Attribute
 	{
 		public static string? ASSIGNEE {get; set;}
@@ -2128,7 +2128,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOutletTypeEnum: IFC_Attribute
 	{
 		public static string? AUDIOVISUALOUTLET {get; set;}
@@ -2139,7 +2139,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPermeableCoveringOperationEnum: IFC_Attribute
 	{
 		public static string? GRILL {get; set;}
@@ -2150,7 +2150,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPhysicalOrVirtualEnum: IFC_Attribute
 	{
 		public static string? PHYSICAL {get; set;}
@@ -2159,7 +2159,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPileConstructionEnum: IFC_Attribute
 	{
 		public static string? CAST_IN_PLACE {get; set;}
@@ -2171,7 +2171,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPileTypeEnum: IFC_Attribute
 	{
 		public static string? COHESION {get; set;}
@@ -2182,7 +2182,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPipeFittingTypeEnum: IFC_Attribute
 	{
 		public static string? BEND {get; set;}
@@ -2197,7 +2197,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPipeSegmentTypeEnum: IFC_Attribute
 	{
 		public static string? FLEXIBLESEGMENT {get; set;}
@@ -2209,7 +2209,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPlateTypeEnum: IFC_Attribute
 	{
 		public static string? CURTAIN_PANEL {get; set;}
@@ -2219,7 +2219,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProcedureTypeEnum: IFC_Attribute
 	{
 		public static string? ADVICE_CAUTION {get; set;}
@@ -2234,7 +2234,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProfileTypeEnum: IFC_Attribute
 	{
 		public static string? CURVE {get; set;}
@@ -2242,7 +2242,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProjectOrderRecordTypeEnum: IFC_Attribute
 	{
 		public static string? CHANGE {get; set;}
@@ -2255,7 +2255,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProjectOrderTypeEnum: IFC_Attribute
 	{
 		public static string? CHANGEORDER {get; set;}
@@ -2268,7 +2268,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProjectedOrTrueLengthEnum: IFC_Attribute
 	{
 		public static string? PROJECTED_LENGTH {get; set;}
@@ -2276,7 +2276,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertySourceEnum: IFC_Attribute
 	{
 		public static string? DESIGN {get; set;}
@@ -2291,7 +2291,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProtectiveDeviceTypeEnum: IFC_Attribute
 	{
 		public static string? FUSEDISCONNECTOR {get; set;}
@@ -2304,7 +2304,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPumpTypeEnum: IFC_Attribute
 	{
 		public static string? CIRCULATOR {get; set;}
@@ -2317,7 +2317,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRailingTypeEnum: IFC_Attribute
 	{
 		public static string? HANDRAIL {get; set;}
@@ -2328,7 +2328,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRampFlightTypeEnum: IFC_Attribute
 	{
 		public static string? STRAIGHT {get; set;}
@@ -2338,7 +2338,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRampTypeEnum: IFC_Attribute
 	{
 		public static string? STRAIGHT_RUN_RAMP {get; set;}
@@ -2352,7 +2352,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReflectanceMethodEnum: IFC_Attribute
 	{
 		public static string? BLINN {get; set;}
@@ -2368,7 +2368,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcingBarRoleEnum: IFC_Attribute
 	{
 		public static string? MAIN {get; set;}
@@ -2383,7 +2383,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcingBarSurfaceEnum: IFC_Attribute
 	{
 		public static string? PLAIN {get; set;}
@@ -2391,7 +2391,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCResourceConsumptionEnum: IFC_Attribute
 	{
 		public static string? CONSUMED {get; set;}
@@ -2405,7 +2405,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRibPlateDirectionEnum: IFC_Attribute
 	{
 		public static string? DIRECTION_X {get; set;}
@@ -2413,7 +2413,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRoleEnum: IFC_Attribute
 	{
 		public static string? SUPPLIER {get; set;}
@@ -2441,7 +2441,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRoofTypeEnum: IFC_Attribute
 	{
 		public static string? FLAT_ROOF {get; set;}
@@ -2461,7 +2461,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSIPrefix: IFC_Attribute
 	{
 		public static string? EXA {get; set;}
@@ -2483,7 +2483,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSIUnitName: IFC_Attribute
 	{
 		public static string? AMPERE {get; set;}
@@ -2519,7 +2519,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSanitaryTerminalTypeEnum: IFC_Attribute
 	{
 		public static string? BATH {get; set;}
@@ -2537,7 +2537,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSectionTypeEnum: IFC_Attribute
 	{
 		public static string? UNIFORM {get; set;}
@@ -2545,7 +2545,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSensorTypeEnum: IFC_Attribute
 	{
 		public static string? CO2SENSOR {get; set;}
@@ -2566,7 +2566,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSequenceEnum: IFC_Attribute
 	{
 		public static string? START_START {get; set;}
@@ -2577,7 +2577,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCServiceLifeFactorTypeEnum: IFC_Attribute
 	{
 		public static string? A_QUALITYOFCOMPONENTS {get; set;}
@@ -2592,7 +2592,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCServiceLifeTypeEnum: IFC_Attribute
 	{
 		public static string? ACTUALSERVICELIFE {get; set;}
@@ -2603,7 +2603,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSlabTypeEnum: IFC_Attribute
 	{
 		public static string? FLOOR {get; set;}
@@ -2615,7 +2615,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSoundScaleEnum: IFC_Attribute
 	{
 		public static string? DBA {get; set;}
@@ -2628,7 +2628,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpaceHeaterTypeEnum: IFC_Attribute
 	{
 		public static string? CONVECTOR {get; set;}
@@ -2637,7 +2637,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpaceTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -2645,7 +2645,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStackTerminalTypeEnum: IFC_Attribute
 	{
 		public static string? BIRDCAGE {get; set;}
@@ -2656,7 +2656,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStairFlightTypeEnum: IFC_Attribute
 	{
 		public static string? STRAIGHT {get; set;}
@@ -2669,7 +2669,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStairTypeEnum: IFC_Attribute
 	{
 		public static string? STRAIGHT_RUN_STAIR {get; set;}
@@ -2691,7 +2691,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStateEnum: IFC_Attribute
 	{
 		public static string? READWRITE {get; set;}
@@ -2702,7 +2702,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralCurveTypeEnum: IFC_Attribute
 	{
 		public static string? RIGID_JOINED_MEMBER {get; set;}
@@ -2715,7 +2715,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralSurfaceTypeEnum: IFC_Attribute
 	{
 		public static string? BENDING_ELEMENT {get; set;}
@@ -2726,7 +2726,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceSide: IFC_Attribute
 	{
 		public static string? POSITIVE {get; set;}
@@ -2735,7 +2735,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceTextureEnum: IFC_Attribute
 	{
 		public static string? BUMP {get; set;}
@@ -2750,7 +2750,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSwitchingDeviceTypeEnum: IFC_Attribute
 	{
 		public static string? CONTACTOR {get; set;}
@@ -2763,7 +2763,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTankTypeEnum: IFC_Attribute
 	{
 		public static string? EXPANSION {get; set;}
@@ -2773,7 +2773,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTendonTypeEnum: IFC_Attribute
 	{
 		public static string? STRAND {get; set;}
@@ -2785,7 +2785,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextPath: IFC_Attribute
 	{
 		public static string? LEFT {get; set;}
@@ -2795,7 +2795,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCThermalLoadSourceEnum: IFC_Attribute
 	{
 		public static string? PEOPLE {get; set;}
@@ -2814,7 +2814,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCThermalLoadTypeEnum: IFC_Attribute
 	{
 		public static string? SENSIBLE {get; set;}
@@ -2824,7 +2824,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTimeSeriesDataTypeEnum: IFC_Attribute
 	{
 		public static string? CONTINUOUS {get; set;}
@@ -2837,7 +2837,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTimeSeriesScheduleTypeEnum: IFC_Attribute
 	{
 		public static string? ANNUAL {get; set;}
@@ -2849,7 +2849,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTransformerTypeEnum: IFC_Attribute
 	{
 		public static string? CURRENT {get; set;}
@@ -2860,7 +2860,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTransitionCode: IFC_Attribute
 	{
 		public static string? DISCONTINUOUS {get; set;}
@@ -2870,7 +2870,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTransportElementTypeEnum: IFC_Attribute
 	{
 		public static string? ELEVATOR {get; set;}
@@ -2881,7 +2881,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTrimmingPreference: IFC_Attribute
 	{
 		public static string? CARTESIAN {get; set;}
@@ -2890,7 +2890,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTubeBundleTypeEnum: IFC_Attribute
 	{
 		public static string? FINNED {get; set;}
@@ -2899,7 +2899,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCUnitEnum: IFC_Attribute
 	{
 		public static string? ABSORBEDDOSEUNIT {get; set;}
@@ -2935,7 +2935,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCUnitaryEquipmentTypeEnum: IFC_Attribute
 	{
 		public static string? AIRHANDLER {get; set;}
@@ -2947,7 +2947,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCValveTypeEnum: IFC_Attribute
 	{
 		public static string? AIRRELEASE {get; set;}
@@ -2976,7 +2976,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVibrationIsolatorTypeEnum: IFC_Attribute
 	{
 		public static string? COMPRESSION {get; set;}
@@ -2986,7 +2986,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWallTypeEnum: IFC_Attribute
 	{
 		public static string? STANDARD {get; set;}
@@ -2999,7 +2999,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWasteTerminalTypeEnum: IFC_Attribute
 	{
 		public static string? FLOORTRAP {get; set;}
@@ -3014,7 +3014,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWindowPanelOperationEnum: IFC_Attribute
 	{
 		public static string? SIDEHUNGRIGHTHAND {get; set;}
@@ -3034,7 +3034,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWindowPanelPositionEnum: IFC_Attribute
 	{
 		public static string? LEFT {get; set;}
@@ -3046,7 +3046,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWindowStyleConstructionEnum: IFC_Attribute
 	{
 		public static string? ALUMINIUM {get; set;}
@@ -3060,7 +3060,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWindowStyleOperationEnum: IFC_Attribute
 	{
 		public static string? SINGLE_PANEL {get; set;}
@@ -3077,7 +3077,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWorkControlTypeEnum: IFC_Attribute
 	{
 		public static string? ACTUAL {get; set;}
@@ -3088,7 +3088,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCActionRequestTypeEnum: IFC_Attribute
 	{
 		public static string? EMAIL {get; set;}
@@ -3101,7 +3101,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAudioVisualApplianceTypeEnum: IFC_Attribute
 	{
 		public static string? AMPLIFIER {get; set;}
@@ -3120,7 +3120,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBSplineSurfaceForm: IFC_Attribute
 	{
 		public static string? PLANE_SURF {get; set;}
@@ -3137,7 +3137,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuildingElementPartTypeEnum: IFC_Attribute
 	{
 		public static string? INSULATION {get; set;}
@@ -3147,7 +3147,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuildingSystemTypeEnum: IFC_Attribute
 	{
 		public static string? FENESTRATION {get; set;}
@@ -3161,7 +3161,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBurnerTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -3169,7 +3169,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCableFittingTypeEnum: IFC_Attribute
 	{
 		public static string? CONNECTOR {get; set;}
@@ -3182,7 +3182,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCChimneyTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -3190,7 +3190,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCommunicationsApplianceTypeEnum: IFC_Attribute
 	{
 		public static string? ANTENNA {get; set;}
@@ -3210,7 +3210,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCComplexPropertyTemplateTypeEnum: IFC_Attribute
 	{
 		public static string? P_COMPLEX {get; set;}
@@ -3218,7 +3218,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstructionEquipmentResourceTypeEnum: IFC_Attribute
 	{
 		public static string? DEMOLISHING {get; set;}
@@ -3234,7 +3234,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstructionMaterialResourceTypeEnum: IFC_Attribute
 	{
 		public static string? AGGREGATES {get; set;}
@@ -3251,7 +3251,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstructionProductResourceTypeEnum: IFC_Attribute
 	{
 		public static string? ASSEMBLY {get; set;}
@@ -3261,7 +3261,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCostItemTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -3269,7 +3269,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCrewResourceTypeEnum: IFC_Attribute
 	{
 		public static string? OFFICE {get; set;}
@@ -3279,7 +3279,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveInterpolationEnum: IFC_Attribute
 	{
 		public static string? LINEAR {get; set;}
@@ -3289,7 +3289,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDiscreteAccessoryTypeEnum: IFC_Attribute
 	{
 		public static string? ANCHORPLATE {get; set;}
@@ -3300,7 +3300,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionPortTypeEnum: IFC_Attribute
 	{
 		public static string? CABLE {get; set;}
@@ -3312,7 +3312,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionSystemEnum: IFC_Attribute
 	{
 		public static string? AIRCONDITIONING {get; set;}
@@ -3362,7 +3362,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoorTypeEnum: IFC_Attribute
 	{
 		public static string? DOOR {get; set;}
@@ -3373,7 +3373,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoorTypeOperationEnum: IFC_Attribute
 	{
 		public static string? SINGLE_SWING_LEFT {get; set;}
@@ -3399,7 +3399,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricDistributionBoardTypeEnum: IFC_Attribute
 	{
 		public static string? CONSUMERUNIT {get; set;}
@@ -3411,7 +3411,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEngineTypeEnum: IFC_Attribute
 	{
 		public static string? EXTERNALCOMBUSTION {get; set;}
@@ -3421,7 +3421,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEventTriggerTypeEnum: IFC_Attribute
 	{
 		public static string? EVENTRULE {get; set;}
@@ -3433,7 +3433,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEventTypeEnum: IFC_Attribute
 	{
 		public static string? STARTEVENT {get; set;}
@@ -3444,7 +3444,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExternalSpatialElementTypeEnum: IFC_Attribute
 	{
 		public static string? EXTERNAL {get; set;}
@@ -3456,7 +3456,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFastenerTypeEnum: IFC_Attribute
 	{
 		public static string? GLUE {get; set;}
@@ -3467,7 +3467,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFurnitureTypeEnum: IFC_Attribute
 	{
 		public static string? CHAIR {get; set;}
@@ -3482,7 +3482,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeographicElementTypeEnum: IFC_Attribute
 	{
 		public static string? TERRAIN {get; set;}
@@ -3491,7 +3491,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGridTypeEnum: IFC_Attribute
 	{
 		public static string? RECTANGULAR {get; set;}
@@ -3503,7 +3503,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCInterceptorTypeEnum: IFC_Attribute
 	{
 		public static string? CYCLONIC {get; set;}
@@ -3515,7 +3515,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCKnotType: IFC_Attribute
 	{
 		public static string? UNIFORM_KNOTS {get; set;}
@@ -3525,7 +3525,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLaborResourceTypeEnum: IFC_Attribute
 	{
 		public static string? ADMINISTRATION {get; set;}
@@ -3552,7 +3552,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMechanicalFastenerTypeEnum: IFC_Attribute
 	{
 		public static string? ANCHORBOLT {get; set;}
@@ -3570,7 +3570,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMedicalDeviceTypeEnum: IFC_Attribute
 	{
 		public static string? AIRSTATION {get; set;}
@@ -3583,7 +3583,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOpeningElementTypeEnum: IFC_Attribute
 	{
 		public static string? OPENING {get; set;}
@@ -3593,7 +3593,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPerformanceHistoryTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -3601,7 +3601,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPermitTypeEnum: IFC_Attribute
 	{
 		public static string? ACCESS {get; set;}
@@ -3612,7 +3612,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPreferredSurfaceCurveRepresentation: IFC_Attribute
 	{
 		public static string? CURVE3D {get; set;}
@@ -3621,7 +3621,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProjectionElementTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -3629,7 +3629,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertySetTemplateTypeEnum: IFC_Attribute
 	{
 		public static string? PSET_TYPEDRIVENONLY {get; set;}
@@ -3643,7 +3643,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProtectiveDeviceTrippingUnitTypeEnum: IFC_Attribute
 	{
 		public static string? ELECTRONIC {get; set;}
@@ -3655,7 +3655,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRecurrenceTypeEnum: IFC_Attribute
 	{
 		public static string? DAILY {get; set;}
@@ -3669,7 +3669,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcingBarTypeEnum: IFC_Attribute
 	{
 		public static string? ANCHORING {get; set;}
@@ -3685,7 +3685,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcingMeshTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -3693,7 +3693,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCShadingDeviceTypeEnum: IFC_Attribute
 	{
 		public static string? JALOUSIE {get; set;}
@@ -3704,7 +3704,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSimplePropertyTemplateTypeEnum: IFC_Attribute
 	{
 		public static string? P_SINGLEVALUE {get; set;}
@@ -3722,7 +3722,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSolarDeviceTypeEnum: IFC_Attribute
 	{
 		public static string? SOLARCOLLECTOR {get; set;}
@@ -3732,7 +3732,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpatialZoneTypeEnum: IFC_Attribute
 	{
 		public static string? CONSTRUCTION {get; set;}
@@ -3748,7 +3748,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralCurveActivityTypeEnum: IFC_Attribute
 	{
 		public static string? CONST {get; set;}
@@ -3763,7 +3763,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralCurveMemberTypeEnum: IFC_Attribute
 	{
 		public static string? RIGID_JOINED_MEMBER {get; set;}
@@ -3776,7 +3776,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralSurfaceActivityTypeEnum: IFC_Attribute
 	{
 		public static string? CONST {get; set;}
@@ -3788,7 +3788,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralSurfaceMemberTypeEnum: IFC_Attribute
 	{
 		public static string? BENDING_ELEMENT {get; set;}
@@ -3799,7 +3799,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSubContractResourceTypeEnum: IFC_Attribute
 	{
 		public static string? PURCHASE {get; set;}
@@ -3809,7 +3809,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceFeatureTypeEnum: IFC_Attribute
 	{
 		public static string? MARK {get; set;}
@@ -3820,7 +3820,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSystemFurnitureElementTypeEnum: IFC_Attribute
 	{
 		public static string? PANEL {get; set;}
@@ -3830,7 +3830,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTaskDurationEnum: IFC_Attribute
 	{
 		public static string? ELAPSEDTIME {get; set;}
@@ -3839,7 +3839,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTaskTypeEnum: IFC_Attribute
 	{
 		public static string? ATTENDANCE {get; set;}
@@ -3859,7 +3859,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTendonAnchorTypeEnum: IFC_Attribute
 	{
 		public static string? COUPLER {get; set;}
@@ -3870,7 +3870,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCUnitaryControlElementTypeEnum: IFC_Attribute
 	{
 		public static string? ALARMPANEL {get; set;}
@@ -3886,7 +3886,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVoidingFeatureTypeEnum: IFC_Attribute
 	{
 		public static string? CUTOUT {get; set;}
@@ -3900,7 +3900,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWindowTypeEnum: IFC_Attribute
 	{
 		public static string? WINDOW {get; set;}
@@ -3911,7 +3911,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWindowTypePartitioningEnum: IFC_Attribute
 	{
 		public static string? SINGLE_PANEL {get; set;}
@@ -3928,7 +3928,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWorkCalendarTypeEnum: IFC_Attribute
 	{
 		public static string? FIRSTSHIFT {get; set;}
@@ -3939,7 +3939,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWorkPlanTypeEnum: IFC_Attribute
 	{
 		public static string? ACTUAL {get; set;}
@@ -3950,7 +3950,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWorkScheduleTypeEnum: IFC_Attribute
 	{
 		public static string? ACTUAL {get; set;}
@@ -3961,7 +3961,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -3969,7 +3969,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReferentTypeEnum: IFC_Attribute
 	{
 		public static string? KILOPOINT {get; set;}
@@ -3980,7 +3980,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTransitionCurveType: IFC_Attribute
 	{
 		public static string? BIQUADRATICPARABOLA {get; set;}
@@ -3992,7 +3992,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBearingTypeDisplacementEnum: IFC_Attribute
 	{
 		public static string? FIXED_MOVEMENT {get; set;}
@@ -4003,7 +4003,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBearingTypeEnum: IFC_Attribute
 	{
 		public static string? CYLINDRICAL {get; set;}
@@ -4019,7 +4019,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBridgePartTypeEnum: IFC_Attribute
 	{
 		public static string? ABUTMENT {get; set;}
@@ -4037,7 +4037,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBridgeTypeEnum: IFC_Attribute
 	{
 		public static string? ARCHED {get; set;}
@@ -4053,7 +4053,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCaissonFoundationTypeEnum: IFC_Attribute
 	{
 		public static string? WELL {get; set;}
@@ -4063,7 +4063,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTendonConduitTypeEnum: IFC_Attribute
 	{
 		public static string? DUCT {get; set;}
@@ -4076,7 +4076,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVibrationDamperTypeEnum: IFC_Attribute
 	{
 		public static string? BENDING_YIELD {get; set;}
@@ -4090,7 +4090,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentCantSegmentTypeEnum: IFC_Attribute
 	{
 		public static string? BLOSSCURVE {get; set;}
@@ -4103,7 +4103,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentHorizontalSegmentTypeEnum: IFC_Attribute
 	{
 		public static string? BLOSSCURVE {get; set;}
@@ -4118,7 +4118,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentVerticalSegmentTypeEnum: IFC_Attribute
 	{
 		public static string? CIRCULARARC {get; set;}
@@ -4128,7 +4128,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAnnotationTypeEnum: IFC_Attribute
 	{
 		public static string? CONTOURLINE {get; set;}
@@ -4145,7 +4145,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuiltSystemTypeEnum: IFC_Attribute
 	{
 		public static string? EROSIONPREVENTION {get; set;}
@@ -4166,7 +4166,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConveyorSegmentTypeEnum: IFC_Attribute
 	{
 		public static string? BELTCONVEYOR {get; set;}
@@ -4178,7 +4178,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCourseTypeEnum: IFC_Attribute
 	{
 		public static string? ARMOUR {get; set;}
@@ -4192,7 +4192,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionBoardTypeEnum: IFC_Attribute
 	{
 		public static string? CONSUMERUNIT {get; set;}
@@ -4206,7 +4206,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEarthworksCutTypeEnum: IFC_Attribute
 	{
 		public static string? BASE_EXCAVATION {get; set;}
@@ -4223,7 +4223,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEarthworksFillTypeEnum: IFC_Attribute
 	{
 		public static string? BACKFILL {get; set;}
@@ -4238,7 +4238,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricFlowTreatmentDeviceTypeEnum: IFC_Attribute
 	{
 		public static string? ELECTRONICFILTER {get; set;}
@@ -4247,7 +4247,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFacilityPartCommonTypeEnum: IFC_Attribute
 	{
 		public static string? ABOVEGROUND {get; set;}
@@ -4263,7 +4263,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFacilityUsageEnum: IFC_Attribute
 	{
 		public static string? LATERAL {get; set;}
@@ -4275,7 +4275,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeotechnicalStratumTypeEnum: IFC_Attribute
 	{
 		public static string? SOLID {get; set;}
@@ -4286,7 +4286,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCImpactProtectionDeviceTypeEnum: IFC_Attribute
 	{
 		public static string? BUMPER {get; set;}
@@ -4298,7 +4298,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCKerbTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -4306,7 +4306,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLiquidTerminalTypeEnum: IFC_Attribute
 	{
 		public static string? HOSEREEL {get; set;}
@@ -4316,7 +4316,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMarineFacilityTypeEnum: IFC_Attribute
 	{
 		public static string? BARRIERBEACH {get; set;}
@@ -4343,7 +4343,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMarinePartTypeEnum: IFC_Attribute
 	{
 		public static string? ABOVEWATERLINE {get; set;}
@@ -4375,7 +4375,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMobileTelecommunicationsApplianceTypeEnum: IFC_Attribute
 	{
 		public static string? ACCESSPOINT {get; set;}
@@ -4396,7 +4396,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMooringDeviceTypeEnum: IFC_Attribute
 	{
 		public static string? BOLLARD {get; set;}
@@ -4409,7 +4409,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCNavigationElementTypeEnum: IFC_Attribute
 	{
 		public static string? BEACON {get; set;}
@@ -4419,7 +4419,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPavementTypeEnum: IFC_Attribute
 	{
 		public static string? FLEXIBLE {get; set;}
@@ -4429,7 +4429,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRailTypeEnum: IFC_Attribute
 	{
 		public static string? BLADE {get; set;}
@@ -4443,7 +4443,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRailwayPartTypeEnum: IFC_Attribute
 	{
 		public static string? ABOVETRACK {get; set;}
@@ -4460,7 +4460,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRailwayTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -4468,7 +4468,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcedSoilTypeEnum: IFC_Attribute
 	{
 		public static string? DYNAMICALLYCOMPACTED {get; set;}
@@ -4482,7 +4482,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRoadPartTypeEnum: IFC_Attribute
 	{
 		public static string? BICYCLECROSSING {get; set;}
@@ -4514,7 +4514,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRoadTypeEnum: IFC_Attribute
 	{
 		public static string? USERDEFINED {get; set;}
@@ -4522,7 +4522,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSignTypeEnum: IFC_Attribute
 	{
 		public static string? MARKER {get; set;}
@@ -4533,7 +4533,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSignalTypeEnum: IFC_Attribute
 	{
 		public static string? AUDIO {get; set;}
@@ -4544,7 +4544,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTrackElementTypeEnum: IFC_Attribute
 	{
 		public static string? BLOCKINGDEVICE {get; set;}
@@ -4560,7 +4560,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVehicleTypeEnum: IFC_Attribute
 	{
 		public static string? CARGO {get; set;}
@@ -4575,7 +4575,7 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVirtualElementTypeEnum: IFC_Attribute
 	{
 		public static string? BOUNDARY {get; set;}
@@ -4586,18 +4586,18 @@ namespace IFC.Global
 		public string Value {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCActorSelect: IFC_Attribute
 	{
 		public IFC_Attributes<IFCActorRole>? _Roles {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAppliedValueSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAxis2Placement: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -4606,89 +4606,89 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDirection>? _P {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBooleanOperand: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCharacterStyleSelect: IFC_Attribute
 	{
 		public IFCColour? _Colour {get; set;}
 		public IFCColour? _BackgroundColour {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCClassificationNotationSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCColour: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCColourOrFactor: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConditionCriterionSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCsgSelect: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveFontOrScaledCurveFontSelect: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveOrEdgeCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveStyleFontSelect: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDateTimeSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDefinedSymbolSelect: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDerivedMeasureValue: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDocumentSelect: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDraughtingCalloutElement: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -4698,7 +4698,7 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFillAreaStyleTileShapeSelect: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -4706,99 +4706,99 @@ namespace IFC.Global
 		public IFCAnnotationSymbolOccurrence? _Symbol {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFillStyleSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeometricSetSelect: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCHatchLineDistanceSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLayeredItem: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLibrarySelect: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightDistributionDataSourceSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMeasureValue: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMetricValueSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCObjectReferenceSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOrientationSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPointOrVertexPoint: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPresentationStyleSelect: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCShell: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCFace>? _CfsFaces {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSimpleValue: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSizeSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpecularHighlightSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralActivityAssignmentSelect: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -4813,62 +4813,62 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToProduct>? _ReferencedBy {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceOrFaceSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceStyleElementSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSymbolStyleSelect: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextFontSelect: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextStyleSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTrimmingSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCUnit: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCValue: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVectorOrDirection: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBendingParameterSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCClassificationReferenceSelect: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -4876,7 +4876,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCClassificationReference>? _HasReferences {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCClassificationSelect: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -4884,13 +4884,13 @@ namespace IFC.Global
 		public IFC_Attributes<IFCClassificationReference>? _HasReferences {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCoordinateReferenceSystemSelect: IFC_Attribute
 	{
 		public IFC_Attributes<IFCCoordinateOperation>? _HasCoordinateOperation {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveOnSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -4898,7 +4898,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDefinitionSelect: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -4909,27 +4909,27 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssociates>? _HasAssociations {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGridPlacementDirectionSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCModulusOfRotationalSubgradeReactionSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCModulusOfSubgradeReactionSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCModulusOfTranslationalSubgradeReactionSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProcessSelect: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -4948,13 +4948,13 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToProcess>? _OperatesOn {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProductRepresentationSelect: IFC_Attribute
 	{
 		public IFC_Attributes<IFCShapeAspect>? _HasShapeAspects {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProductSelect: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -4971,17 +4971,17 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToProduct>? _ReferencedBy {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertySetDefinitionSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCResourceObjectSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCResourceSelect: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5002,24 +5002,24 @@ namespace IFC.Global
 		public IFCPhysicalQuantity? _BaseQuantity {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRotationalStiffnessSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSegmentIndexSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSolidOrShell: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpaceBoundarySelect: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5048,32 +5048,32 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelSpaceBoundary>? _BoundedBy {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStyleAssignmentSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTimeOrRatioSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTranslationalStiffnessSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWarpingStiffnessSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveMeasureSelect: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCInterferenceSelect: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5101,7 +5101,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelInterferesElements>? _InterferesElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpatialReferenceSelect: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5123,7 +5123,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelReferencedInSpatialStructure>? _ReferencedInStructures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFC2DCompositeCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -5135,7 +5135,7 @@ namespace IFC.Global
 		public LOGICAL? _ClosedCurve {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCActionRequest: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5148,7 +5148,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToControl>? _Controls {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCActor: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5162,7 +5162,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToActor>? _IsActingUpon {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCActorRole: IFC_Attribute
 	{
 		public IFCRoleEnum? _Role {get; set;}
@@ -5170,7 +5170,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCActuatorType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5186,7 +5186,7 @@ namespace IFC.Global
 		public IFCActuatorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAddress: IFC_Attribute
 	{
 		public IFCAddressTypeEnum? _Purpose {get; set;}
@@ -5196,7 +5196,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCOrganization>? _OfOrganization {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAirTerminalBoxType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5212,7 +5212,7 @@ namespace IFC.Global
 		public IFCAirTerminalBoxTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAirTerminalType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5228,7 +5228,7 @@ namespace IFC.Global
 		public IFCAirTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAirToAirHeatRecoveryType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5244,7 +5244,7 @@ namespace IFC.Global
 		public IFCAirToAirHeatRecoveryTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlarmType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5260,7 +5260,7 @@ namespace IFC.Global
 		public IFCAlarmTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAngularDimension: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -5270,7 +5270,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDraughtingCalloutRelationship>? _IsRelatedToCallout {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAnnotation: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5286,7 +5286,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAnnotationCurveOccurrence: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -5296,7 +5296,7 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAnnotationFillArea: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5304,7 +5304,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCCurve>? _InnerBoundaries {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAnnotationFillAreaOccurrence: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -5316,7 +5316,7 @@ namespace IFC.Global
 		public IFCGlobalOrLocalEnum? _GlobalOrLocal {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAnnotationOccurrence: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -5326,7 +5326,7 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAnnotationSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -5335,7 +5335,7 @@ namespace IFC.Global
 		public IFCTextureCoordinate? _TextureCoordinates {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAnnotationSurfaceOccurrence: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -5345,7 +5345,7 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAnnotationSymbolOccurrence: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -5355,7 +5355,7 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAnnotationTextOccurrence: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -5365,7 +5365,7 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCApplication: IFC_Attribute
 	{
 		public IFCOrganization? _ApplicationDeveloper {get; set;}
@@ -5374,7 +5374,7 @@ namespace IFC.Global
 		public IFCIdentifier? _ApplicationIdentifier {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAppliedValue: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -5383,7 +5383,7 @@ namespace IFC.Global
 		public IFCMeasureWithUnit? _UnitBasis {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAppliedValueRelationship: IFC_Attribute
 	{
 		public IFCAppliedValue? _ComponentOfTotal {get; set;}
@@ -5393,7 +5393,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCApproval: IFC_Attribute
 	{
 		public IFCText? _Description {get; set;}
@@ -5403,7 +5403,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCApprovalRelationship>? _Relates {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCApprovalActorRelationship: IFC_Attribute
 	{
 		public IFCActorSelect? _Actor {get; set;}
@@ -5411,14 +5411,14 @@ namespace IFC.Global
 		public IFCActorRole? _Role {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCApprovalPropertyRelationship: IFC_Attribute
 	{
 		public IFC_Attributes<IFCProperty>? _ApprovedProperties {get; set;}
 		public IFCApproval? _Approval {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCApprovalRelationship: IFC_Attribute
 	{
 		public IFCApproval? _RelatingApproval {get; set;}
@@ -5426,7 +5426,7 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCArbitraryClosedProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -5434,7 +5434,7 @@ namespace IFC.Global
 		public IFCCurve? _OuterCurve {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCArbitraryOpenProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -5442,7 +5442,7 @@ namespace IFC.Global
 		public IFCBoundedCurve? _Curve {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCArbitraryProfileDefWithVoids: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -5451,7 +5451,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCCurve>? _InnerCurves {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAsset: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5470,7 +5470,7 @@ namespace IFC.Global
 		public IFCCostValue? _DepreciatedValue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAsymmetricIShapeProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -5482,7 +5482,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _TopFlangeThickness {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAxis1Placement: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5491,7 +5491,7 @@ namespace IFC.Global
 		public IFCDirection? _Z {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAxis2Placement2D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5500,7 +5500,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDirection>? _P {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAxis2Placement3D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5510,7 +5510,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDirection>? _P {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBSplineCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5520,7 +5520,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCCartesianPoint>? _ControlPoints {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBeam: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5546,7 +5546,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBeamType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5562,7 +5562,7 @@ namespace IFC.Global
 		public IFCBeamTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBezierCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -5577,14 +5577,14 @@ namespace IFC.Global
 		public INTEGER? _UpperIndexOnControlPoints {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBlobTexture: IFC_Attribute
 	{
 		public IFCCartesianTransformationOperator2D? _TextureTransform {get; set;}
 		public IFCIdentifier? _RasterFormat {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBlock: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5595,7 +5595,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _ZLength {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoilerType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5611,7 +5611,7 @@ namespace IFC.Global
 		public IFCBoilerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBooleanClippingResult: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5621,7 +5621,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBooleanResult: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5631,50 +5631,50 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoundaryCondition: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoundaryEdgeCondition: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoundaryFaceCondition: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoundaryNodeCondition: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoundaryNodeConditionWarping: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoundedCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoundedSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoundingBox: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5685,7 +5685,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoxedHalfSpace: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5694,7 +5694,7 @@ namespace IFC.Global
 		public IFCBoundingBox? _Enclosure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuilding: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5717,7 +5717,7 @@ namespace IFC.Global
 		public IFCPostalAddress? _BuildingAddress {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuildingElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5743,7 +5743,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuildingElementComponent: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5774,7 +5774,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuildingElementPart: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5800,7 +5800,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuildingElementProxy: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5826,7 +5826,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuildingElementProxyType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5842,7 +5842,7 @@ namespace IFC.Global
 		public IFCBuildingElementProxyTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuildingElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5857,7 +5857,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuildingStorey: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5878,7 +5878,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _Elevation {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCShapeProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -5890,7 +5890,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Girth {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCableCarrierFittingType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5906,7 +5906,7 @@ namespace IFC.Global
 		public IFCCableCarrierFittingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCableCarrierSegmentType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5922,7 +5922,7 @@ namespace IFC.Global
 		public IFCCableCarrierSegmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCableSegmentType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -5938,7 +5938,7 @@ namespace IFC.Global
 		public IFCCableSegmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCalendarDate: IFC_Attribute
 	{
 		public IFCDayInMonthNumber? _DayComponent {get; set;}
@@ -5946,7 +5946,7 @@ namespace IFC.Global
 		public IFCYearNumber? _YearComponent {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCartesianPoint: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5954,7 +5954,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCartesianTransformationOperator: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5964,7 +5964,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCartesianTransformationOperator2D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5975,7 +5975,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDirection>? _U {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCartesianTransformationOperator2DnonUniform: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5986,7 +5986,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDirection>? _U {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCartesianTransformationOperator3D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5998,7 +5998,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDirection>? _U {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCartesianTransformationOperator3DnonUniform: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -6010,7 +6010,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDirection>? _U {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCenterLineProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -6019,7 +6019,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Thickness {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCChamferEdgeFeature: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6054,7 +6054,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Height {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCChillerType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6070,7 +6070,7 @@ namespace IFC.Global
 		public IFCChillerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCircle: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -6079,7 +6079,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Radius {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCircleHollowProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -6089,7 +6089,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _WallThickness {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCircleProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -6098,7 +6098,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Radius {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCClassification: IFC_Attribute
 	{
 		public IFCLabel? _Source {get; set;}
@@ -6106,7 +6106,7 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCClassificationItem: IFC_Attribute
 	{
 		public IFCClassificationNotationFacet? _Notation {get; set;}
@@ -6116,39 +6116,39 @@ namespace IFC.Global
 		public IFC_Attributes<IFCClassificationItemRelationship>? _IsClassifyingItemIn {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCClassificationItemRelationship: IFC_Attribute
 	{
 		public IFCClassificationItem? _RelatingItem {get; set;}
 		public IFC_Attributes<IFCClassificationItem>? _RelatedItems {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCClassificationNotation: IFC_Attribute
 	{
 		public IFC_Attributes<IFCClassificationNotationFacet>? _NotationFacets {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCClassificationNotationFacet: IFC_Attribute
 	{
 		public IFCLabel? _NotationValue {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCClassificationReference: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCClosedShell: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCFace>? _CfsFaces {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCoilType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6164,7 +6164,7 @@ namespace IFC.Global
 		public IFCCoilTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCColourRgb: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -6173,13 +6173,13 @@ namespace IFC.Global
 		public IFCNormalisedRatioMeasure? _Blue {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCColourSpecification: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCColumn: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6205,7 +6205,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCColumnType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6221,7 +6221,7 @@ namespace IFC.Global
 		public IFCColumnTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCComplexProperty: IFC_Attribute
 	{
 		public IFCIdentifier? _Name {get; set;}
@@ -6232,14 +6232,14 @@ namespace IFC.Global
 		public IFC_Attributes<IFCProperty>? _HasProperties {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCompositeCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCompositeCurveSegment: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -6249,7 +6249,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCCompositeCurve>? _UsingCurves {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCompositeProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -6258,7 +6258,7 @@ namespace IFC.Global
 		public IFCLabel? _Label {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCompressorType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6274,7 +6274,7 @@ namespace IFC.Global
 		public IFCCompressorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCondenserType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6290,7 +6290,7 @@ namespace IFC.Global
 		public IFCCondenserTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCondition: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6306,7 +6306,7 @@ namespace IFC.Global
 		public IFCRelAssignsToGroup? _IsGroupedBy {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConditionCriterion: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6324,7 +6324,7 @@ namespace IFC.Global
 		public IFCDateTimeSelect? _CriterionDateTime {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConic: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -6332,26 +6332,26 @@ namespace IFC.Global
 		public IFCAxis2Placement? _Position {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConnectedFaceSet: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCFace>? _CfsFaces {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConnectionCurveGeometry: IFC_Attribute
 	{
 		public IFCCurveOrEdgeCurve? _CurveOnRelatingElement {get; set;}
 		public IFCCurveOrEdgeCurve? _CurveOnRelatedElement {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConnectionGeometry: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConnectionPointEccentricity: IFC_Attribute
 	{
 		public IFCPointOrVertexPoint? _PointOnRelatingElement {get; set;}
@@ -6361,14 +6361,14 @@ namespace IFC.Global
 		public IFCLengthMeasure? _EccentricityInZ {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConnectionPointGeometry: IFC_Attribute
 	{
 		public IFCPointOrVertexPoint? _PointOnRelatingElement {get; set;}
 		public IFCPointOrVertexPoint? _PointOnRelatedElement {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConnectionPortGeometry: IFC_Attribute
 	{
 		public IFCAxis2Placement? _LocationAtRelatingElement {get; set;}
@@ -6376,14 +6376,14 @@ namespace IFC.Global
 		public IFCProfileDef? _ProfileOfPort {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConnectionSurfaceGeometry: IFC_Attribute
 	{
 		public IFCSurfaceOrFaceSurface? _SurfaceOnRelatingElement {get; set;}
 		public IFCSurfaceOrFaceSurface? _SurfaceOnRelatedElement {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstraint: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -6394,7 +6394,7 @@ namespace IFC.Global
 		public IFCLabel? _UserDefinedGrade {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstraintAggregationRelationship: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -6404,14 +6404,14 @@ namespace IFC.Global
 		public IFCLogicalOperatorEnum? _LogicalAggregator {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstraintClassificationRelationship: IFC_Attribute
 	{
 		public IFCConstraint? _ClassifiedConstraint {get; set;}
 		public IFC_Attributes<IFCClassificationNotationSelect>? _RelatedClassifications {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstraintRelationship: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -6420,7 +6420,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCConstraint>? _RelatedConstraints {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstructionEquipmentResource: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6433,7 +6433,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToResource>? _ResourceOf {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstructionMaterialResource: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6446,7 +6446,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToResource>? _ResourceOf {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstructionProductResource: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6459,7 +6459,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToResource>? _ResourceOf {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstructionResource: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6472,7 +6472,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToResource>? _ResourceOf {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCContextDependentUnit: IFC_Attribute
 	{
 		public IFCDimensionalExponents? _Dimensions {get; set;}
@@ -6480,7 +6480,7 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCControl: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6493,7 +6493,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToControl>? _Controls {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCControllerType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6509,7 +6509,7 @@ namespace IFC.Global
 		public IFCControllerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConversionBasedUnit: IFC_Attribute
 	{
 		public IFCDimensionalExponents? _Dimensions {get; set;}
@@ -6518,7 +6518,7 @@ namespace IFC.Global
 		public IFCMeasureWithUnit? _ConversionFactor {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCooledBeamType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6534,7 +6534,7 @@ namespace IFC.Global
 		public IFCCooledBeamTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCoolingTowerType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6550,7 +6550,7 @@ namespace IFC.Global
 		public IFCCoolingTowerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCoordinatedUniversalTimeOffset: IFC_Attribute
 	{
 		public IFCHourInDay? _HourOffset {get; set;}
@@ -6558,7 +6558,7 @@ namespace IFC.Global
 		public IFCAheadOrBehind? _Sense {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCostItem: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6571,7 +6571,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToControl>? _Controls {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCostSchedule: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6586,7 +6586,7 @@ namespace IFC.Global
 		public IFCCostScheduleTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCostValue: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -6595,7 +6595,7 @@ namespace IFC.Global
 		public IFCMeasureWithUnit? _UnitBasis {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCovering: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6623,7 +6623,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelCoversSpaces>? _CoversSpaces {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCoveringType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6639,7 +6639,7 @@ namespace IFC.Global
 		public IFCCoveringTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCraneRailAShapeProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -6659,7 +6659,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _CentreOfGravityInY {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCraneRailFShapeProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -6676,7 +6676,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _CentreOfGravityInY {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCrewResource: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6689,7 +6689,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToResource>? _ResourceOf {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCsgPrimitive3D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -6697,7 +6697,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCsgSolid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -6705,7 +6705,7 @@ namespace IFC.Global
 		public IFCCsgSelect? _TreeRootExpression {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurrencyRelationship: IFC_Attribute
 	{
 		public IFCMonetaryUnit? _RelatingMonetaryUnit {get; set;}
@@ -6714,7 +6714,7 @@ namespace IFC.Global
 		public IFCLibraryInformation? _RateSource {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurtainWall: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6740,7 +6740,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurtainWallType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6756,14 +6756,14 @@ namespace IFC.Global
 		public IFCCurtainWallTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveBoundedPlane: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -6773,7 +6773,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveStyle: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -6782,28 +6782,28 @@ namespace IFC.Global
 		public IFCColour? _CurveColour {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveStyleFont: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFC_Attributes<IFCCurveStyleFontPattern>? _PatternList {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveStyleFontAndScaling: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCPositiveRatioMeasure? _CurveFontScaling {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveStyleFontPattern: IFC_Attribute
 	{
 		public IFCLengthMeasure? _VisibleSegmentLength {get; set;}
 		public IFCPositiveLengthMeasure? _InvisibleSegmentLength {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDamperType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6819,14 +6819,14 @@ namespace IFC.Global
 		public IFCDamperTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDateAndTime: IFC_Attribute
 	{
 		public IFCCalendarDate? _DateComponent {get; set;}
 		public IFCLocalTime? _TimeComponent {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDefinedSymbol: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -6835,7 +6835,7 @@ namespace IFC.Global
 		public IFCCartesianTransformationOperator2D? _Target {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDerivedProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -6845,7 +6845,7 @@ namespace IFC.Global
 		public IFCLabel? _Label {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDerivedUnit: IFC_Attribute
 	{
 		public IFC_Attributes<IFCDerivedUnitElement>? _Elements {get; set;}
@@ -6854,14 +6854,14 @@ namespace IFC.Global
 		public IFCDimensionalExponents? _Dimensions {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDerivedUnitElement: IFC_Attribute
 	{
 		public IFCNamedUnit? _Unit {get; set;}
 		public INTEGER? _Exponent {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDiameterDimension: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -6871,7 +6871,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDraughtingCalloutRelationship>? _IsRelatedToCallout {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDimensionCalloutRelationship: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -6880,7 +6880,7 @@ namespace IFC.Global
 		public IFCDraughtingCallout? _RelatedDraughtingCallout {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDimensionCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -6891,7 +6891,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCTerminatorSymbol>? _AnnotatedBySymbols {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDimensionCurveDirectedCallout: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -6901,7 +6901,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDraughtingCalloutRelationship>? _IsRelatedToCallout {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDimensionCurveTerminator: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -6913,7 +6913,7 @@ namespace IFC.Global
 		public IFCDimensionExtentUsage? _Role {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDimensionPair: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -6922,7 +6922,7 @@ namespace IFC.Global
 		public IFCDraughtingCallout? _RelatedDraughtingCallout {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDimensionalExponents: IFC_Attribute
 	{
 		public INTEGER? _LengthExponent {get; set;}
@@ -6934,14 +6934,14 @@ namespace IFC.Global
 		public INTEGER? _LuminousIntensityExponent {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDirection: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDiscreteAccessory: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6967,7 +6967,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDiscreteAccessoryType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -6982,7 +6982,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionChamberElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7010,7 +7010,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFlowControlElements>? _HasControlElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionChamberElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7026,7 +7026,7 @@ namespace IFC.Global
 		public IFCDistributionChamberElementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionControlElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7054,7 +7054,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFlowControlElements>? _AssignedToFlowElement {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionControlElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7069,7 +7069,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7096,7 +7096,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7111,7 +7111,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionFlowElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7139,7 +7139,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFlowControlElements>? _HasControlElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionFlowElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7154,7 +7154,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionPort: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7172,7 +7172,7 @@ namespace IFC.Global
 		public IFCFlowDirectionEnum? _FlowDirection {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDocumentElectronicFormat: IFC_Attribute
 	{
 		public IFCLabel? _FileExtension {get; set;}
@@ -7180,7 +7180,7 @@ namespace IFC.Global
 		public IFCLabel? _MimeSubtype {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDocumentInformation: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -7197,7 +7197,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDocumentInformationRelationship>? _IsPointer {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDocumentInformationRelationship: IFC_Attribute
 	{
 		public IFCDocumentInformation? _RelatingDocument {get; set;}
@@ -7205,13 +7205,13 @@ namespace IFC.Global
 		public IFCLabel? _RelationshipType {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDocumentReference: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoor: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7239,7 +7239,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _OverallWidth {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoorLiningProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7258,7 +7258,7 @@ namespace IFC.Global
 		public IFCShapeAspect? _ShapeAspectStyle {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoorPanelProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7274,7 +7274,7 @@ namespace IFC.Global
 		public IFCShapeAspect? _ShapeAspectStyle {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoorStyle: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7290,7 +7290,7 @@ namespace IFC.Global
 		public IFCDoorStyleConstructionEnum? _ConstructionType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDraughtingCallout: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -7300,7 +7300,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDraughtingCalloutRelationship>? _IsRelatedToCallout {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDraughtingCalloutRelationship: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -7309,25 +7309,25 @@ namespace IFC.Global
 		public IFCDraughtingCallout? _RelatedDraughtingCallout {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDraughtingPreDefinedColour: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDraughtingPreDefinedCurveFont: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDraughtingPreDefinedTextFont: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDuctFittingType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7343,7 +7343,7 @@ namespace IFC.Global
 		public IFCDuctFittingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDuctSegmentType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7359,7 +7359,7 @@ namespace IFC.Global
 		public IFCDuctSegmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDuctSilencerType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7375,7 +7375,7 @@ namespace IFC.Global
 		public IFCDuctSilencerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEdge: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -7383,7 +7383,7 @@ namespace IFC.Global
 		public IFCVertex? _EdgeEnd {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEdgeCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -7392,7 +7392,7 @@ namespace IFC.Global
 		public IFCCurve? _EdgeGeometry {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEdgeFeature: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7425,14 +7425,14 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _FeatureLength {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEdgeLoop: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCOrientedEdge>? _EdgeList {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricApplianceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7448,7 +7448,7 @@ namespace IFC.Global
 		public IFCElectricApplianceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricDistributionPoint: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7482,7 +7482,7 @@ namespace IFC.Global
 		public IFCLabel? _UserDefinedFunction {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricFlowStorageDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7498,7 +7498,7 @@ namespace IFC.Global
 		public IFCElectricFlowStorageDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricGeneratorType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7514,7 +7514,7 @@ namespace IFC.Global
 		public IFCElectricGeneratorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricHeaterType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7534,7 +7534,7 @@ namespace IFC.Global
 		public IFCElectricHeaterTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricMotorType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7550,7 +7550,7 @@ namespace IFC.Global
 		public IFCElectricMotorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricTimeControlType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7566,7 +7566,7 @@ namespace IFC.Global
 		public IFCElectricTimeControlTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricalBaseProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7588,7 +7588,7 @@ namespace IFC.Global
 		public INTEGER? _InputPhase {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricalCircuit: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7605,7 +7605,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelServicesBuildings>? _ServicesBuildings {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricalElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7636,7 +7636,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7662,7 +7662,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElementAssembly: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7690,7 +7690,7 @@ namespace IFC.Global
 		public IFCElementAssemblyTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElementComponent: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7716,7 +7716,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElementComponentType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7731,7 +7731,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElementQuantity: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7744,7 +7744,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCPhysicalQuantity>? _Quantities {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7759,7 +7759,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElementarySurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -7767,7 +7767,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEllipse: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -7777,7 +7777,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _SemiAxis2 {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEllipseProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -7787,7 +7787,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _SemiAxis2 {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEnergyConversionDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7815,7 +7815,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFlowControlElements>? _HasControlElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEnergyConversionDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7830,7 +7830,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEnergyProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7844,7 +7844,7 @@ namespace IFC.Global
 		public IFCLabel? _UserDefinedEnergySequence {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEnvironmentalImpactValue: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -7861,7 +7861,7 @@ namespace IFC.Global
 		public IFCLabel? _UserDefinedCategory {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEquipmentElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7892,7 +7892,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEquipmentStandard: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7908,7 +7908,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToControl>? _Controls {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEvaporativeCoolerType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7924,7 +7924,7 @@ namespace IFC.Global
 		public IFCEvaporativeCoolerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEvaporatorType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -7940,7 +7940,7 @@ namespace IFC.Global
 		public IFCEvaporatorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExtendedMaterialProperties: IFC_Attribute
 	{
 		public IFCMaterial? _Material {get; set;}
@@ -7949,25 +7949,25 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExternalReference: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExternallyDefinedHatchStyle: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExternallyDefinedSurfaceStyle: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExternallyDefinedSymbol: IFC_Attribute
 	{
 		public IFCLabel? _Location {get; set;}
@@ -7975,13 +7975,13 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExternallyDefinedTextFont: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExtrudedAreaSolid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -7992,14 +7992,14 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Depth {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFace: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCFaceBound>? _Bounds {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFaceBasedSurfaceModel: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -8007,21 +8007,21 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFaceBound: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCLoop? _Bound {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFaceOuterBound: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCLoop? _Bound {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFaceSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -8029,7 +8029,7 @@ namespace IFC.Global
 		public IFCSurface? _FaceSurface {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFacetedBrep: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -8037,7 +8037,7 @@ namespace IFC.Global
 		public IFCClosedShell? _Outer {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFacetedBrepWithVoids: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -8046,7 +8046,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCClosedShell>? _Voids {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFailureConnectionCondition: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -8058,7 +8058,7 @@ namespace IFC.Global
 		public IFCForceMeasure? _CompressionFailureZ {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFanType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8074,7 +8074,7 @@ namespace IFC.Global
 		public IFCFanTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFastener: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8100,7 +8100,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFastenerType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8115,7 +8115,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFeatureElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8141,7 +8141,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFeatureElementAddition: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8168,7 +8168,7 @@ namespace IFC.Global
 		public IFCRelProjectsElement? _ProjectsElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFeatureElementSubtraction: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8195,14 +8195,14 @@ namespace IFC.Global
 		public IFCRelVoidsElement? _VoidsElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFillAreaStyle: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFC_Attributes<IFCFillStyleSelect>? _FillStyles {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFillAreaStyleHatching: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -8213,7 +8213,7 @@ namespace IFC.Global
 		public IFCPlaneAngleMeasure? _HatchLineAngle {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFillAreaStyleTileSymbolWithStyle: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -8221,14 +8221,14 @@ namespace IFC.Global
 		public IFCAnnotationSymbolOccurrence? _Symbol {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFillAreaStyleTiles: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCPositiveRatioMeasure? _TilingScale {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFilterType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8244,7 +8244,7 @@ namespace IFC.Global
 		public IFCFilterTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFireSuppressionTerminalType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8260,7 +8260,7 @@ namespace IFC.Global
 		public IFCFireSuppressionTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowController: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8288,7 +8288,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFlowControlElements>? _HasControlElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowControllerType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8303,7 +8303,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowFitting: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8331,7 +8331,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFlowControlElements>? _HasControlElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowFittingType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8346,7 +8346,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowInstrumentType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8362,7 +8362,7 @@ namespace IFC.Global
 		public IFCFlowInstrumentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowMeterType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8378,7 +8378,7 @@ namespace IFC.Global
 		public IFCFlowMeterTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowMovingDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8406,7 +8406,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFlowControlElements>? _HasControlElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowMovingDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8421,7 +8421,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowSegment: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8449,7 +8449,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFlowControlElements>? _HasControlElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowSegmentType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8464,7 +8464,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowStorageDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8492,7 +8492,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFlowControlElements>? _HasControlElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowStorageDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8507,7 +8507,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowTerminal: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8535,7 +8535,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFlowControlElements>? _HasControlElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowTerminalType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8550,7 +8550,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowTreatmentDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8578,7 +8578,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFlowControlElements>? _HasControlElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowTreatmentDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8593,7 +8593,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFluidFlowProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8620,7 +8620,7 @@ namespace IFC.Global
 		public IFCPressureMeasure? _PressureSingleValue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFooting: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8647,7 +8647,7 @@ namespace IFC.Global
 		public IFCFootingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFuelProperties: IFC_Attribute
 	{
 		public IFCMaterial? _Material {get; set;}
@@ -8657,7 +8657,7 @@ namespace IFC.Global
 		public IFCHeatingValueMeasure? _HigherHeatingValue {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFurnishingElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8683,7 +8683,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFurnishingElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8698,7 +8698,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFurnitureStandard: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8714,7 +8714,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToControl>? _Controls {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFurnitureType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8730,7 +8730,7 @@ namespace IFC.Global
 		public IFCAssemblyPlaceEnum? _AssemblyPlace {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGasTerminalType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8750,7 +8750,7 @@ namespace IFC.Global
 		public IFCGasTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeneralMaterialProperties: IFC_Attribute
 	{
 		public IFCMaterial? _Material {get; set;}
@@ -8759,7 +8759,7 @@ namespace IFC.Global
 		public IFCMassDensityMeasure? _MassDensity {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeneralProfileProperties: IFC_Attribute
 	{
 		public IFCLabel? _ProfileName {get; set;}
@@ -8771,7 +8771,7 @@ namespace IFC.Global
 		public IFCAreaMeasure? _CrossSectionArea {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeometricCurveSet: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -8779,7 +8779,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeometricRepresentationContext: IFC_Attribute
 	{
 		public IFCLabel? _ContextIdentifier {get; set;}
@@ -8791,13 +8791,13 @@ namespace IFC.Global
 		public IFC_Attributes<IFCGeometricRepresentationSubContext>? _HasSubContexts {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeometricRepresentationItem: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeometricRepresentationSubContext: IFC_Attribute
 	{
 		public IFCLabel? _ContextIdentifier {get; set;}
@@ -8813,7 +8813,7 @@ namespace IFC.Global
 		public IFCLabel? _UserDefinedTargetView {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeometricSet: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -8821,7 +8821,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGrid: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8840,7 +8840,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGridAxis: IFC_Attribute
 	{
 		public IFCLabel? _AxisTag {get; set;}
@@ -8852,14 +8852,14 @@ namespace IFC.Global
 		public IFC_Attributes<IFCVirtualGridIntersection>? _HasIntersections {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGridPlacement: IFC_Attribute
 	{
 		public IFC_Attributes<IFCProduct>? _PlacesObject {get; }
 		public IFCVirtualGridIntersection? _PlacementLocation {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGroup: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8871,7 +8871,7 @@ namespace IFC.Global
 		public IFCLabel? _ObjectType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCHalfSpaceSolid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -8879,7 +8879,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCHeatExchangerType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8895,7 +8895,7 @@ namespace IFC.Global
 		public IFCHeatExchangerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCHumidifierType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8911,7 +8911,7 @@ namespace IFC.Global
 		public IFCHumidifierTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCHygroscopicMaterialProperties: IFC_Attribute
 	{
 		public IFCMaterial? _Material {get; set;}
@@ -8922,7 +8922,7 @@ namespace IFC.Global
 		public IFCMoistureDiffusivityMeasure? _MoistureDiffusivity {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIShapeProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -8934,13 +8934,13 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _FlangeThickness {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCImageTexture: IFC_Attribute
 	{
 		public IFCCartesianTransformationOperator2D? _TextureTransform {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCInventory: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8956,7 +8956,7 @@ namespace IFC.Global
 		public IFCCostValue? _OriginalValue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIrregularTimeSeries: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -8968,13 +8968,13 @@ namespace IFC.Global
 		public IFC_Attributes<IFCIrregularTimeSeriesValue>? _Values {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIrregularTimeSeriesValue: IFC_Attribute
 	{
 		public IFC_Attributes<IFCValue>? _ListValues {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCJunctionBoxType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -8990,7 +8990,7 @@ namespace IFC.Global
 		public IFCJunctionBoxTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLShapeProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -9002,7 +9002,7 @@ namespace IFC.Global
 		public IFCPlaneAngleMeasure? _LegSlope {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLaborResource: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9015,7 +9015,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToResource>? _ResourceOf {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLampType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9031,20 +9031,20 @@ namespace IFC.Global
 		public IFCLampTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLibraryInformation: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCLabel? _Version {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLibraryReference: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightDistributionData: IFC_Attribute
 	{
 		public IFCPlaneAngleMeasure? _MainPlaneAngle {get; set;}
@@ -9052,7 +9052,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCLuminousIntensityDistributionMeasure>? _LuminousIntensity {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightFixtureType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9068,14 +9068,14 @@ namespace IFC.Global
 		public IFCLightFixtureTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightIntensityDistribution: IFC_Attribute
 	{
 		public IFCLightDistributionCurveEnum? _LightDistributionCurve {get; set;}
 		public IFC_Attributes<IFCLightDistributionData>? _DistributionData {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightSource: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9085,7 +9085,7 @@ namespace IFC.Global
 		public IFCNormalisedRatioMeasure? _Intensity {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightSourceAmbient: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9095,7 +9095,7 @@ namespace IFC.Global
 		public IFCNormalisedRatioMeasure? _Intensity {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightSourceDirectional: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9106,7 +9106,7 @@ namespace IFC.Global
 		public IFCDirection? _Orientation {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightSourceGoniometric: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9122,7 +9122,7 @@ namespace IFC.Global
 		public IFCLightDistributionDataSourceSelect? _LightDistributionDataSource {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightSourcePositional: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9137,7 +9137,7 @@ namespace IFC.Global
 		public IFCReal? _QuadricAttenuation {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightSourceSpot: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9156,7 +9156,7 @@ namespace IFC.Global
 		public IFCPositivePlaneAngleMeasure? _BeamWidthAngle {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLine: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9165,7 +9165,7 @@ namespace IFC.Global
 		public IFCVector? _Dir {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLinearDimension: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -9175,7 +9175,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDraughtingCalloutRelationship>? _IsRelatedToCallout {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLocalPlacement: IFC_Attribute
 	{
 		public IFC_Attributes<IFCProduct>? _PlacesObject {get; }
@@ -9183,7 +9183,7 @@ namespace IFC.Global
 		public IFCAxis2Placement? _RelativePlacement {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLocalTime: IFC_Attribute
 	{
 		public IFCHourInDay? _HourComponent {get; set;}
@@ -9193,13 +9193,13 @@ namespace IFC.Global
 		public IFCDaylightSavingHour? _DaylightSavingOffset {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLoop: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCManifoldSolidBrep: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9207,7 +9207,7 @@ namespace IFC.Global
 		public IFCClosedShell? _Outer {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMappedItem: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9215,20 +9215,20 @@ namespace IFC.Global
 		public IFCCartesianTransformationOperator? _MappingTarget {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterial: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFC_Attributes<IFCMaterialDefinitionRepresentation>? _HasRepresentation {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialClassificationRelationship: IFC_Attribute
 	{
 		public IFCMaterial? _ClassifiedMaterial {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialDefinitionRepresentation: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -9237,7 +9237,7 @@ namespace IFC.Global
 		public IFCMaterial? _RepresentedMaterial {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialLayer: IFC_Attribute
 	{
 		public IFCMaterial? _Material {get; set;}
@@ -9245,7 +9245,7 @@ namespace IFC.Global
 		public IFCMaterialLayerSet? _ToMaterialLayerSet {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialLayerSet: IFC_Attribute
 	{
 		public IFC_Attributes<IFCMaterialLayer>? _MaterialLayers {get; set;}
@@ -9253,7 +9253,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _TotalThickness {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialLayerSetUsage: IFC_Attribute
 	{
 		public IFCMaterialLayerSet? _ForLayerSet {get; set;}
@@ -9262,25 +9262,25 @@ namespace IFC.Global
 		public IFCLengthMeasure? _OffsetFromReferenceLine {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialList: IFC_Attribute
 	{
 		public IFC_Attributes<IFCMaterial>? _Materials {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialProperties: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMeasureWithUnit: IFC_Attribute
 	{
 		public IFCValue? _ValueComponent {get; set;}
 		public IFCUnit? _UnitComponent {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMechanicalConcreteMaterialProperties: IFC_Attribute
 	{
 		public IFCMaterial? _Material {get; set;}
@@ -9297,7 +9297,7 @@ namespace IFC.Global
 		public IFCText? _WaterImpermeability {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMechanicalFastener: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9325,7 +9325,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _NominalLength {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMechanicalFastenerType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9340,7 +9340,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMechanicalMaterialProperties: IFC_Attribute
 	{
 		public IFCMaterial? _Material {get; set;}
@@ -9351,7 +9351,7 @@ namespace IFC.Global
 		public IFCThermalExpansionCoefficientMeasure? _ThermalExpansionCoefficient {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMechanicalSteelMaterialProperties: IFC_Attribute
 	{
 		public IFCMaterial? _Material {get; set;}
@@ -9369,7 +9369,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelaxation>? _Relaxations {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMember: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9395,7 +9395,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMemberType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9411,7 +9411,7 @@ namespace IFC.Global
 		public IFCMemberTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMetric: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -9425,12 +9425,12 @@ namespace IFC.Global
 		public IFCMetricValueSelect? _DataValue {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMonetaryUnit: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMotorConnectionType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9446,7 +9446,7 @@ namespace IFC.Global
 		public IFCMotorConnectionTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMove: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9472,14 +9472,14 @@ namespace IFC.Global
 		public IFC_Attributes<IFCText>? _PunchList {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCNamedUnit: IFC_Attribute
 	{
 		public IFCDimensionalExponents? _Dimensions {get; set;}
 		public IFCUnitEnum? _UnitType {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCObject: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9491,7 +9491,7 @@ namespace IFC.Global
 		public IFCLabel? _ObjectType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCObjectDefinition: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9502,13 +9502,13 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssociates>? _HasAssociations {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCObjectPlacement: IFC_Attribute
 	{
 		public IFC_Attributes<IFCProduct>? _PlacesObject {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCObjective: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -9521,7 +9521,7 @@ namespace IFC.Global
 		public IFCLabel? _UserDefinedQualifier {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOccupant: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9536,7 +9536,7 @@ namespace IFC.Global
 		public IFCOccupantTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOffsetCurve2D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9545,7 +9545,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _Distance {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOffsetCurve3D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9555,7 +9555,7 @@ namespace IFC.Global
 		public IFCDirection? _RefDirection {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOneDirectionRepeatFactor: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -9563,14 +9563,14 @@ namespace IFC.Global
 		public IFCVector? _RepeatFactor {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOpenShell: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCFace>? _CfsFaces {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOpeningElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9598,7 +9598,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFillsElement>? _HasFillings {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOpticalMaterialProperties: IFC_Attribute
 	{
 		public IFCMaterial? _Material {get; set;}
@@ -9613,7 +9613,7 @@ namespace IFC.Global
 		public IFCPositiveRatioMeasure? _SolarReflectanceBack {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOrderAction: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9637,7 +9637,7 @@ namespace IFC.Global
 		public IFCIdentifier? _ActionID {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOrganization: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -9649,7 +9649,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCPersonAndOrganization>? _Engages {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOrganizationRelationship: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -9658,7 +9658,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCOrganization>? _RelatedOrganizations {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOrientedEdge: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9667,7 +9667,7 @@ namespace IFC.Global
 		public IFCEdge? _EdgeElement {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOutletType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9683,7 +9683,7 @@ namespace IFC.Global
 		public IFCOutletTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOwnerHistory: IFC_Attribute
 	{
 		public IFCPersonAndOrganization? _OwningUser {get; set;}
@@ -9696,7 +9696,7 @@ namespace IFC.Global
 		public IFCTimeStamp? _CreationDate {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCParameterizedProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -9704,14 +9704,14 @@ namespace IFC.Global
 		public IFCAxis2Placement2D? _Position {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPath: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCOrientedEdge>? _EdgeList {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPerformanceHistory: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9725,7 +9725,7 @@ namespace IFC.Global
 		public IFCLabel? _LifeCyclePhase {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPermeableCoveringProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9741,7 +9741,7 @@ namespace IFC.Global
 		public IFCShapeAspect? _ShapeAspectStyle {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPermit: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9754,7 +9754,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToControl>? _Controls {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPerson: IFC_Attribute
 	{
 		public IFCLabel? _FamilyName {get; set;}
@@ -9767,7 +9767,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCPersonAndOrganization>? _EngagedIn {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPersonAndOrganization: IFC_Attribute
 	{
 		public IFCPerson? _ThePerson {get; set;}
@@ -9775,7 +9775,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCActorRole>? _Roles {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPhysicalComplexQuantity: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -9787,7 +9787,7 @@ namespace IFC.Global
 		public IFCLabel? _Usage {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPhysicalQuantity: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -9795,7 +9795,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCPhysicalComplexQuantity>? _PartOfComplex {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPhysicalSimpleQuantity: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -9804,7 +9804,7 @@ namespace IFC.Global
 		public IFCNamedUnit? _Unit {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPile: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9832,7 +9832,7 @@ namespace IFC.Global
 		public IFCPileConstructionEnum? _ConstructionType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPipeFittingType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9848,7 +9848,7 @@ namespace IFC.Global
 		public IFCPipeFittingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPipeSegmentType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9864,7 +9864,7 @@ namespace IFC.Global
 		public IFCPipeSegmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPixelTexture: IFC_Attribute
 	{
 		public IFCCartesianTransformationOperator2D? _TextureTransform {get; set;}
@@ -9873,14 +9873,14 @@ namespace IFC.Global
 		public IFCInteger? _ColourComponents {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPlacement: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPlanarBox: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9889,7 +9889,7 @@ namespace IFC.Global
 		public IFCAxis2Placement? _Placement {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPlanarExtent: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9897,7 +9897,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _SizeInY {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPlane: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9905,7 +9905,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPlate: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9931,7 +9931,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPlateType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -9947,13 +9947,13 @@ namespace IFC.Global
 		public IFCPlateTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPoint: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPointOnCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9962,7 +9962,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPointOnSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9972,14 +9972,14 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPolyLoop: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCCartesianPoint>? _Polygon {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPolygonalBoundedHalfSpace: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9989,7 +9989,7 @@ namespace IFC.Global
 		public IFCBoundedCurve? _PolygonalBoundary {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPolyline: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9997,7 +9997,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCCartesianPoint>? _Points {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPort: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10014,7 +10014,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelConnectsPorts>? _ConnectedTo {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPostalAddress: IFC_Attribute
 	{
 		public IFCAddressTypeEnum? _Purpose {get; set;}
@@ -10031,55 +10031,55 @@ namespace IFC.Global
 		public IFCLabel? _Country {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPreDefinedColour: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPreDefinedCurveFont: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPreDefinedDimensionSymbol: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPreDefinedItem: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPreDefinedPointMarkerSymbol: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPreDefinedSymbol: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPreDefinedTerminatorSymbol: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPreDefinedTextFont: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPresentationLayerAssignment: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -10088,7 +10088,7 @@ namespace IFC.Global
 		public IFCIdentifier? _Identifier {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPresentationLayerWithStyle: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -10097,19 +10097,19 @@ namespace IFC.Global
 		public IFCIdentifier? _Identifier {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPresentationStyle: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPresentationStyleAssignment: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationStyleSelect>? _Styles {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProcedure: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10124,7 +10124,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelSequence>? _IsPredecessorTo {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProcess: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10139,7 +10139,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelSequence>? _IsPredecessorTo {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProduct: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10154,7 +10154,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToProduct>? _ReferencedBy {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProductDefinitionShape: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -10164,7 +10164,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCShapeAspect>? _HasShapeAspects {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProductRepresentation: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -10172,7 +10172,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRepresentation>? _Representations {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProductsOfCombustionProperties: IFC_Attribute
 	{
 		public IFCMaterial? _Material {get; set;}
@@ -10182,20 +10182,20 @@ namespace IFC.Global
 		public IFCPositiveRatioMeasure? _CO2Content {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProfileProperties: IFC_Attribute
 	{
 		public IFCProfileDef? _ProfileDefinition {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProject: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10211,7 +10211,7 @@ namespace IFC.Global
 		public IFCUnitAssignment? _UnitsInContext {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProjectOrder: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10226,7 +10226,7 @@ namespace IFC.Global
 		public IFCLabel? _Status {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProjectOrderRecord: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10244,7 +10244,7 @@ namespace IFC.Global
 		public IFCProjectOrderRecordTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProjectionCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -10254,7 +10254,7 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProjectionElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10281,7 +10281,7 @@ namespace IFC.Global
 		public IFCRelProjectsElement? _ProjectsElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProperty: IFC_Attribute
 	{
 		public IFCIdentifier? _Name {get; set;}
@@ -10290,7 +10290,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCComplexProperty>? _PartOfComplex {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertyBoundedValue: IFC_Attribute
 	{
 		public IFCIdentifier? _Name {get; set;}
@@ -10302,7 +10302,7 @@ namespace IFC.Global
 		public IFCUnit? _Unit {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertyConstraintRelationship: IFC_Attribute
 	{
 		public IFCConstraint? _RelatingConstraint {get; set;}
@@ -10311,7 +10311,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertyDefinition: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10321,7 +10321,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssociates>? _HasAssociations {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertyDependencyRelationship: IFC_Attribute
 	{
 		public IFCProperty? _DependingProperty {get; set;}
@@ -10331,7 +10331,7 @@ namespace IFC.Global
 		public IFCText? _Expression {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertyEnumeratedValue: IFC_Attribute
 	{
 		public IFCIdentifier? _Name {get; set;}
@@ -10342,7 +10342,7 @@ namespace IFC.Global
 		public IFCPropertyEnumeration? _EnumerationReference {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertyEnumeration: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -10350,7 +10350,7 @@ namespace IFC.Global
 		public IFCUnit? _Unit {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertyListValue: IFC_Attribute
 	{
 		public IFCIdentifier? _Name {get; set;}
@@ -10361,7 +10361,7 @@ namespace IFC.Global
 		public IFCUnit? _Unit {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertyReferenceValue: IFC_Attribute
 	{
 		public IFCIdentifier? _Name {get; set;}
@@ -10371,7 +10371,7 @@ namespace IFC.Global
 		public IFCObjectReferenceSelect? _PropertyReference {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertySet: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10383,7 +10383,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCProperty>? _HasProperties {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertySetDefinition: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10394,7 +10394,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCTypeObject>? _DefinesType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertySingleValue: IFC_Attribute
 	{
 		public IFCIdentifier? _Name {get; set;}
@@ -10405,7 +10405,7 @@ namespace IFC.Global
 		public IFCUnit? _Unit {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertyTableValue: IFC_Attribute
 	{
 		public IFCIdentifier? _Name {get; set;}
@@ -10419,7 +10419,7 @@ namespace IFC.Global
 		public IFCUnit? _DefinedUnit {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProtectiveDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10435,7 +10435,7 @@ namespace IFC.Global
 		public IFCProtectiveDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProxy: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10452,7 +10452,7 @@ namespace IFC.Global
 		public IFCLabel? _Tag {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPumpType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10468,7 +10468,7 @@ namespace IFC.Global
 		public IFCPumpTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCQuantityArea: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -10478,7 +10478,7 @@ namespace IFC.Global
 		public IFCAreaMeasure? _AreaValue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCQuantityCount: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -10488,7 +10488,7 @@ namespace IFC.Global
 		public IFCCountMeasure? _CountValue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCQuantityLength: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -10498,7 +10498,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _LengthValue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCQuantityTime: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -10508,7 +10508,7 @@ namespace IFC.Global
 		public IFCTimeMeasure? _TimeValue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCQuantityVolume: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -10518,7 +10518,7 @@ namespace IFC.Global
 		public IFCVolumeMeasure? _VolumeValue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCQuantityWeight: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -10528,7 +10528,7 @@ namespace IFC.Global
 		public IFCMassMeasure? _WeightValue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRadiusDimension: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -10538,7 +10538,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDraughtingCalloutRelationship>? _IsRelatedToCallout {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRailing: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10565,7 +10565,7 @@ namespace IFC.Global
 		public IFCRailingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRailingType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10581,7 +10581,7 @@ namespace IFC.Global
 		public IFCRailingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRamp: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10607,7 +10607,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRampFlight: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10633,7 +10633,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRampFlightType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10649,7 +10649,7 @@ namespace IFC.Global
 		public IFCRampFlightTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRationalBezierCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -10666,7 +10666,7 @@ namespace IFC.Global
 		public IFC_Attributes<REAL>? _Weights {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRectangleHollowProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -10677,7 +10677,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _WallThickness {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRectangleProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -10687,7 +10687,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _YDim {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRectangularPyramid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -10698,7 +10698,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Height {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRectangularTrimmedSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -10710,7 +10710,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReferencesValueDocument: IFC_Attribute
 	{
 		public IFCDocumentSelect? _ReferencedDocument {get; set;}
@@ -10719,7 +10719,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRegularTimeSeries: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -10732,7 +10732,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCTimeSeriesValue>? _Values {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcementBarProperties: IFC_Attribute
 	{
 		public IFCAreaMeasure? _TotalCrossSectionArea {get; set;}
@@ -10743,7 +10743,7 @@ namespace IFC.Global
 		public IFCCountMeasure? _BarCount {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcementDefinitionProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10756,7 +10756,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCSectionReinforcementProperties>? _ReinforcementSectionDefinitions {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcingBar: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10787,7 +10787,7 @@ namespace IFC.Global
 		public IFCReinforcingBarSurfaceEnum? _BarSurface {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcingElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10814,7 +10814,7 @@ namespace IFC.Global
 		public IFCLabel? _SteelGrade {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcingMesh: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10849,7 +10849,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _TransverseBarSpacing {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAggregates: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10860,7 +10860,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCObjectDefinition>? _RelatedObjects {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssigns: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10870,7 +10870,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCObjectDefinition>? _RelatedObjects {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssignsTasks: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10883,7 +10883,7 @@ namespace IFC.Global
 		public IFCScheduleTimeControl? _TimeForTask {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssignsToActor: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10895,7 +10895,7 @@ namespace IFC.Global
 		public IFCActorRole? _ActingRole {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssignsToControl: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10906,7 +10906,7 @@ namespace IFC.Global
 		public IFCControl? _RelatingControl {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssignsToGroup: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10917,7 +10917,7 @@ namespace IFC.Global
 		public IFCGroup? _RelatingGroup {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssignsToProcess: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10928,7 +10928,7 @@ namespace IFC.Global
 		public IFCMeasureWithUnit? _QuantityInProcess {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssignsToProduct: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10938,7 +10938,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCObjectDefinition>? _RelatedObjects {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssignsToProjectOrder: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10950,7 +10950,7 @@ namespace IFC.Global
 		public IFCControl? _RelatingControl {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssignsToResource: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10960,7 +10960,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCObjectDefinition>? _RelatedObjects {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssociates: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10969,7 +10969,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssociatesAppliedValue: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10980,7 +10980,7 @@ namespace IFC.Global
 		public IFCAppliedValue? _RelatingAppliedValue {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssociatesApproval: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10990,7 +10990,7 @@ namespace IFC.Global
 		public IFCApproval? _RelatingApproval {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssociatesClassification: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -10999,7 +10999,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssociatesConstraint: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11010,7 +11010,7 @@ namespace IFC.Global
 		public IFCConstraint? _RelatingConstraint {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssociatesDocument: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11020,7 +11020,7 @@ namespace IFC.Global
 		public IFCDocumentSelect? _RelatingDocument {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssociatesLibrary: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11030,7 +11030,7 @@ namespace IFC.Global
 		public IFCLibrarySelect? _RelatingLibrary {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssociatesMaterial: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11040,7 +11040,7 @@ namespace IFC.Global
 		public IFCMaterialSelect? _RelatingMaterial {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssociatesProfileProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11053,7 +11053,7 @@ namespace IFC.Global
 		public IFCOrientationSelect? _ProfileOrientation {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelConnects: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11062,7 +11062,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelConnectsElements: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11074,7 +11074,7 @@ namespace IFC.Global
 		public IFCElement? _RelatedElement {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelConnectsPathElements: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11088,7 +11088,7 @@ namespace IFC.Global
 		public IFCConnectionTypeEnum? _RelatingConnectionType {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelConnectsPortToElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11098,7 +11098,7 @@ namespace IFC.Global
 		public IFCPort? _RelatingPort {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelConnectsPorts: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11110,7 +11110,7 @@ namespace IFC.Global
 		public IFCElement? _RealizingElement {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelConnectsStructuralActivity: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11121,7 +11121,7 @@ namespace IFC.Global
 		public IFCStructuralActivity? _RelatedStructuralActivity {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelConnectsStructuralElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11132,7 +11132,7 @@ namespace IFC.Global
 		public IFCStructuralMember? _RelatedStructuralMember {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelConnectsStructuralMember: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11147,7 +11147,7 @@ namespace IFC.Global
 		public IFCAxis2Placement3D? _ConditionCoordinateSystem {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelConnectsWithEccentricity: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11163,7 +11163,7 @@ namespace IFC.Global
 		public IFCConnectionGeometry? _ConnectionConstraint {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelConnectsWithRealizingElements: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11177,7 +11177,7 @@ namespace IFC.Global
 		public IFCLabel? _ConnectionType {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelContainedInSpatialStructure: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11187,7 +11187,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCProduct>? _RelatedElements {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelCoversBldgElements: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11198,7 +11198,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCCovering>? _RelatedCoverings {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelCoversSpaces: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11208,7 +11208,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCCovering>? _RelatedCoverings {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelDecomposes: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11217,7 +11217,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelDefines: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11226,7 +11226,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelDefinesByProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11235,7 +11235,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelDefinesByType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11246,7 +11246,7 @@ namespace IFC.Global
 		public IFCTypeObject? _RelatingType {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelFillsElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11257,7 +11257,7 @@ namespace IFC.Global
 		public IFCElement? _RelatedBuildingElement {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelFlowControlElements: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11268,7 +11268,7 @@ namespace IFC.Global
 		public IFCDistributionFlowElement? _RelatingFlowElement {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelInteractionRequirements: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11282,7 +11282,7 @@ namespace IFC.Global
 		public IFCSpaceProgram? _RelatingSpaceProgram {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelNests: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11292,7 +11292,7 @@ namespace IFC.Global
 		public IFCObjectDefinition? _RelatingObject {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelOccupiesSpaces: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11305,7 +11305,7 @@ namespace IFC.Global
 		public IFCActorRole? _ActingRole {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelOverridesProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11317,7 +11317,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCProperty>? _OverridingProperties {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelProjectsElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11328,7 +11328,7 @@ namespace IFC.Global
 		public IFCFeatureElementAddition? _RelatedFeatureElement {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelReferencedInSpatialStructure: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11337,7 +11337,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelSchedulesCostItems: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11349,7 +11349,7 @@ namespace IFC.Global
 		public IFCControl? _RelatingControl {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelSequence: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11361,7 +11361,7 @@ namespace IFC.Global
 		public IFCSequenceEnum? _SequenceType {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelServicesBuildings: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11371,7 +11371,7 @@ namespace IFC.Global
 		public IFCSystem? _RelatingSystem {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelSpaceBoundary: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11384,7 +11384,7 @@ namespace IFC.Global
 		public IFCInternalOrExternalEnum? _InternalOrExternalBoundary {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelVoidsElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11395,7 +11395,7 @@ namespace IFC.Global
 		public IFCFeatureElementSubtraction? _RelatedOpeningElement {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelationship: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11404,14 +11404,14 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelaxation: IFC_Attribute
 	{
 		public IFCNormalisedRatioMeasure? _RelaxationValue {get; set;}
 		public IFCNormalisedRatioMeasure? _InitialStress {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRepresentation: IFC_Attribute
 	{
 		public IFCRepresentationContext? _ContextOfItems {get; set;}
@@ -11423,7 +11423,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCProductRepresentation>? _OfProductRepresentation {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRepresentationContext: IFC_Attribute
 	{
 		public IFCLabel? _ContextIdentifier {get; set;}
@@ -11431,13 +11431,13 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRepresentation>? _RepresentationsInContext {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRepresentationItem: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRepresentationMap: IFC_Attribute
 	{
 		public IFCAxis2Placement? _MappingOrigin {get; set;}
@@ -11445,7 +11445,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCMappedItem>? _MapUsage {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCResource: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11458,7 +11458,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToResource>? _ResourceOf {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRevolvedAreaSolid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -11470,7 +11470,7 @@ namespace IFC.Global
 		public IFCLine? _AxisLine {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRibPlateProfileProperties: IFC_Attribute
 	{
 		public IFCLabel? _ProfileName {get; set;}
@@ -11482,7 +11482,7 @@ namespace IFC.Global
 		public IFCRibPlateDirectionEnum? _Direction {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRightCircularCone: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -11492,7 +11492,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _BottomRadius {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRightCircularCylinder: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -11502,7 +11502,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Radius {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRoof: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11528,7 +11528,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRoot: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11537,7 +11537,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRoundedEdgeFeature: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11571,7 +11571,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Radius {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRoundedRectangleProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -11582,7 +11582,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _RoundingRadius {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSIUnit: IFC_Attribute
 	{
 		public IFCDimensionalExponents? _Dimensions {get; set;}
@@ -11591,7 +11591,7 @@ namespace IFC.Global
 		public IFCSIUnitName? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSanitaryTerminalType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11607,7 +11607,7 @@ namespace IFC.Global
 		public IFCSanitaryTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCScheduleTimeControl: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11642,7 +11642,7 @@ namespace IFC.Global
 		public IFCRelAssignsTasks? _ScheduleTimeControlAssigned {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSectionProperties: IFC_Attribute
 	{
 		public IFCSectionTypeEnum? _SectionType {get; set;}
@@ -11650,7 +11650,7 @@ namespace IFC.Global
 		public IFCProfileDef? _EndProfile {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSectionReinforcementProperties: IFC_Attribute
 	{
 		public IFCLengthMeasure? _LongitudinalStartPosition {get; set;}
@@ -11661,7 +11661,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCReinforcementBarProperties>? _CrossSectionReinforcementDefinitions {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSectionedSpine: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -11671,7 +11671,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSensorType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11687,7 +11687,7 @@ namespace IFC.Global
 		public IFCSensorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCServiceLife: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11705,7 +11705,7 @@ namespace IFC.Global
 		public IFCTimeMeasure? _ServiceLifeDuration {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCServiceLifeFactor: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11721,7 +11721,7 @@ namespace IFC.Global
 		public IFCMeasureValue? _LowerValue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCShapeAspect: IFC_Attribute
 	{
 		public IFC_Attributes<IFCShapeModel>? _ShapeRepresentations {get; set;}
@@ -11729,7 +11729,7 @@ namespace IFC.Global
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCShapeModel: IFC_Attribute
 	{
 		public IFCRepresentationContext? _ContextOfItems {get; set;}
@@ -11742,7 +11742,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCShapeAspect>? _OfShapeAspect {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCShapeRepresentation: IFC_Attribute
 	{
 		public IFCRepresentationContext? _ContextOfItems {get; set;}
@@ -11755,7 +11755,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCShapeAspect>? _OfShapeAspect {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCShellBasedSurfaceModel: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -11763,7 +11763,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSimpleProperty: IFC_Attribute
 	{
 		public IFCIdentifier? _Name {get; set;}
@@ -11772,7 +11772,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCComplexProperty>? _PartOfComplex {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSite: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11797,7 +11797,7 @@ namespace IFC.Global
 		public IFCPostalAddress? _SiteAddress {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSlab: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11824,7 +11824,7 @@ namespace IFC.Global
 		public IFCSlabTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSlabType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11840,7 +11840,7 @@ namespace IFC.Global
 		public IFCSlabTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSlippageConnectionCondition: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -11849,14 +11849,14 @@ namespace IFC.Global
 		public IFCLengthMeasure? _SlippageZ {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSolidModel: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSoundProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11871,7 +11871,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCSoundValue>? _SoundValues {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSoundValue: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11886,7 +11886,7 @@ namespace IFC.Global
 		public IFCDerivedMeasureValue? _SoundLevelSingleValue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpace: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11909,7 +11909,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelSpaceBoundary>? _BoundedBy {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpaceHeaterType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11925,7 +11925,7 @@ namespace IFC.Global
 		public IFCSpaceHeaterTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpaceProgram: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11948,7 +11948,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelInteractionRequirements>? _HasInteractionReqsTo {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpaceThermalLoadProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11970,7 +11970,7 @@ namespace IFC.Global
 		public IFCThermalLoadTypeEnum? _ThermalLoadType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpaceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -11986,7 +11986,7 @@ namespace IFC.Global
 		public IFCSpaceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpatialStructureElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12006,7 +12006,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainsElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpatialStructureElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12021,7 +12021,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSphere: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -12030,7 +12030,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Radius {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStackTerminalType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12046,7 +12046,7 @@ namespace IFC.Global
 		public IFCStackTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStair: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12072,7 +12072,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStairFlight: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12100,7 +12100,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _TreadLength {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStairFlightType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12116,7 +12116,7 @@ namespace IFC.Global
 		public IFCStairFlightTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralAction: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12133,7 +12133,7 @@ namespace IFC.Global
 		public IFCGlobalOrLocalEnum? _GlobalOrLocal {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralActivity: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12150,7 +12150,7 @@ namespace IFC.Global
 		public IFCGlobalOrLocalEnum? _GlobalOrLocal {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralAnalysisModel: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12167,7 +12167,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCStructuralResultGroup>? _HasResults {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralConnection: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12185,13 +12185,13 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelConnectsStructuralMember>? _ConnectsStructuralMembers {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralConnectionCondition: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralCurveConnection: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12209,7 +12209,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelConnectsStructuralMember>? _ConnectsStructuralMembers {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralCurveMember: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12226,7 +12226,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelConnectsStructuralMember>? _ConnectedBy {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralCurveMemberVarying: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12243,7 +12243,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelConnectsStructuralMember>? _ConnectedBy {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralItem: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12259,7 +12259,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelConnectsStructuralActivity>? _AssignedStructuralActivity {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLinearAction: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12277,7 +12277,7 @@ namespace IFC.Global
 		public IFCProjectedOrTrueLengthEnum? _ProjectedOrTrue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLinearActionVarying: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12304,13 +12304,13 @@ namespace IFC.Global
 		public IFC_Attributes<IFCStructuralLoad>? _VaryingAppliedLoads {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoad: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoadGroup: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12329,7 +12329,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCStructuralAnalysisModel>? _LoadGroupFor {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoadLinearForce: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -12341,7 +12341,7 @@ namespace IFC.Global
 		public IFCLinearMomentMeasure? _LinearMomentZ {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoadPlanarForce: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -12350,7 +12350,7 @@ namespace IFC.Global
 		public IFCPlanarForceMeasure? _PlanarForceZ {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoadSingleDisplacement: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -12362,7 +12362,7 @@ namespace IFC.Global
 		public IFCPlaneAngleMeasure? _RotationalDisplacementRZ {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoadSingleDisplacementDistortion: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -12375,7 +12375,7 @@ namespace IFC.Global
 		public IFCCurvatureMeasure? _Distortion {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoadSingleForce: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -12387,7 +12387,7 @@ namespace IFC.Global
 		public IFCTorqueMeasure? _MomentZ {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoadSingleForceWarping: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -12400,19 +12400,19 @@ namespace IFC.Global
 		public IFCWarpingMomentMeasure? _WarpingMoment {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoadStatic: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoadTemperature: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralMember: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12429,7 +12429,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelConnectsStructuralMember>? _ConnectedBy {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralPlanarAction: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12447,7 +12447,7 @@ namespace IFC.Global
 		public IFCProjectedOrTrueLengthEnum? _ProjectedOrTrue {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralPlanarActionVarying: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12474,7 +12474,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCStructuralLoad>? _VaryingAppliedLoads {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralPointAction: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12491,7 +12491,7 @@ namespace IFC.Global
 		public IFCGlobalOrLocalEnum? _GlobalOrLocal {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralPointConnection: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12509,7 +12509,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelConnectsStructuralMember>? _ConnectsStructuralMembers {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralPointReaction: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12526,7 +12526,7 @@ namespace IFC.Global
 		public IFCGlobalOrLocalEnum? _GlobalOrLocal {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralProfileProperties: IFC_Attribute
 	{
 		public IFCLabel? _ProfileName {get; set;}
@@ -12554,7 +12554,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _CentreOfGravityInY {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralReaction: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12571,7 +12571,7 @@ namespace IFC.Global
 		public IFCGlobalOrLocalEnum? _GlobalOrLocal {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralResultGroup: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12586,7 +12586,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCStructuralAnalysisModel>? _ResultGroupFor {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralSteelProfileProperties: IFC_Attribute
 	{
 		public IFCLabel? _ProfileName {get; set;}
@@ -12618,7 +12618,7 @@ namespace IFC.Global
 		public IFCPositiveRatioMeasure? _PlasticShapeFactorZ {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralSurfaceConnection: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12636,7 +12636,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelConnectsStructuralMember>? _ConnectsStructuralMembers {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralSurfaceMember: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12654,7 +12654,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Thickness {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralSurfaceMemberVarying: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12672,7 +12672,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Thickness {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuredDimensionCallout: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -12682,7 +12682,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDraughtingCalloutRelationship>? _IsRelatedToCallout {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStyleModel: IFC_Attribute
 	{
 		public IFCRepresentationContext? _ContextOfItems {get; set;}
@@ -12694,7 +12694,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCProductRepresentation>? _OfProductRepresentation {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStyledItem: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -12702,7 +12702,7 @@ namespace IFC.Global
 		public IFCLabel? _Name {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStyledRepresentation: IFC_Attribute
 	{
 		public IFCRepresentationContext? _ContextOfItems {get; set;}
@@ -12714,7 +12714,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCProductRepresentation>? _OfProductRepresentation {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSubContractResource: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12727,7 +12727,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToResource>? _ResourceOf {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSubedge: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -12736,13 +12736,13 @@ namespace IFC.Global
 		public IFCEdge? _ParentEdge {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceCurveSweptAreaSolid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -12753,7 +12753,7 @@ namespace IFC.Global
 		public IFCSurface? _ReferenceSurface {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceOfLinearExtrusion: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -12765,7 +12765,7 @@ namespace IFC.Global
 		public IFCVector? _ExtrusionAxis {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceOfRevolution: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -12776,7 +12776,7 @@ namespace IFC.Global
 		public IFCLine? _AxisLine {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceStyle: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -12784,7 +12784,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCSurfaceStyleElementSelect>? _Styles {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceStyleLighting: IFC_Attribute
 	{
 		public IFCColourRgb? _DiffuseTransmissionColour {get; set;}
@@ -12793,14 +12793,14 @@ namespace IFC.Global
 		public IFCColourRgb? _ReflectanceColour {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceStyleRefraction: IFC_Attribute
 	{
 		public IFCReal? _RefractionIndex {get; set;}
 		public IFCReal? _DispersionFactor {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceStyleRendering: IFC_Attribute
 	{
 		public IFCColourRgb? _SurfaceColour {get; set;}
@@ -12814,25 +12814,25 @@ namespace IFC.Global
 		public IFCReflectanceMethodEnum? _ReflectanceMethod {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceStyleShading: IFC_Attribute
 	{
 		public IFCColourRgb? _SurfaceColour {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceStyleWithTextures: IFC_Attribute
 	{
 		public IFC_Attributes<IFCSurfaceTexture>? _Textures {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceTexture: IFC_Attribute
 	{
 		public IFCCartesianTransformationOperator2D? _TextureTransform {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSweptAreaSolid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -12841,7 +12841,7 @@ namespace IFC.Global
 		public IFCAxis2Placement3D? _Position {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSweptDiskSolid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -12853,7 +12853,7 @@ namespace IFC.Global
 		public IFCParameterValue? _EndParam {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSweptSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -12862,7 +12862,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSwitchingDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12878,14 +12878,14 @@ namespace IFC.Global
 		public IFCSwitchingDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSymbolStyle: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCSymbolStyleSelect? _StyleOfSymbol {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSystem: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12898,7 +12898,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelServicesBuildings>? _ServicesBuildings {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSystemFurnitureElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12913,7 +12913,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTShapeProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -12927,19 +12927,19 @@ namespace IFC.Global
 		public IFCPlaneAngleMeasure? _FlangeSlope {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTable: IFC_Attribute
 	{
 		public IFC_Attributes<IFCTableRow>? _Rows {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTableRow: IFC_Attribute
 	{
 		public IFC_Attributes<IFCValue>? _RowCells {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTankType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12955,7 +12955,7 @@ namespace IFC.Global
 		public IFCTankTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTask: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -12972,7 +12972,7 @@ namespace IFC.Global
 		public IFCLabel? _WorkMethod {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTelecomAddress: IFC_Attribute
 	{
 		public IFCAddressTypeEnum? _Purpose {get; set;}
@@ -12986,7 +12986,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCLabel>? _ElectronicMailAddresses {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTendon: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13021,7 +13021,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _MinCurvatureRadius {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTendonAnchor: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13048,7 +13048,7 @@ namespace IFC.Global
 		public IFCLabel? _SteelGrade {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTerminatorSymbol: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -13059,7 +13059,7 @@ namespace IFC.Global
 		public IFCAnnotationCurveOccurrence? _AnnotatedCurve {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextLiteral: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -13068,7 +13068,7 @@ namespace IFC.Global
 		public IFCTextPath? _Path {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextLiteralWithExtent: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -13079,14 +13079,14 @@ namespace IFC.Global
 		public IFCBoxAlignment? _BoxAlignment {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextStyle: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCTextFontSelect? _TextFontStyle {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextStyleFontModel: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -13097,14 +13097,14 @@ namespace IFC.Global
 		public IFCSizeSelect? _FontSize {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextStyleForDefinedFont: IFC_Attribute
 	{
 		public IFCColour? _Colour {get; set;}
 		public IFCColour? _BackgroundColour {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextStyleTextModel: IFC_Attribute
 	{
 		public IFCSizeSelect? _TextIndent {get; set;}
@@ -13116,7 +13116,7 @@ namespace IFC.Global
 		public IFCSizeSelect? _LineHeight {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextStyleWithBoxCharacteristics: IFC_Attribute
 	{
 		public IFCPositiveLengthMeasure? _BoxHeight {get; set;}
@@ -13126,29 +13126,29 @@ namespace IFC.Global
 		public IFCSizeSelect? _CharacterSpacing {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextureCoordinate: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextureCoordinateGenerator: IFC_Attribute
 	{
 		public IFCLabel? _Mode {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextureMap: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextureVertex: IFC_Attribute
 	{
 		public IFC_Attributes<IFCParameterValue>? _Coordinates {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCThermalMaterialProperties: IFC_Attribute
 	{
 		public IFCMaterial? _Material {get; set;}
@@ -13158,7 +13158,7 @@ namespace IFC.Global
 		public IFCThermalConductivityMeasure? _ThermalConductivity {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTimeSeries: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -13169,14 +13169,14 @@ namespace IFC.Global
 		public IFCUnit? _Unit {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTimeSeriesReferenceRelationship: IFC_Attribute
 	{
 		public IFCTimeSeries? _ReferencedTimeSeries {get; set;}
 		public IFC_Attributes<IFCDocumentSelect>? _TimeSeriesReferences {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTimeSeriesSchedule: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13195,19 +13195,19 @@ namespace IFC.Global
 		public IFCTimeSeries? _TimeSeries {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTimeSeriesValue: IFC_Attribute
 	{
 		public IFC_Attributes<IFCValue>? _ListValues {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTopologicalRepresentationItem: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTopologyRepresentation: IFC_Attribute
 	{
 		public IFCRepresentationContext? _ContextOfItems {get; set;}
@@ -13220,7 +13220,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCShapeAspect>? _OfShapeAspect {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTransformerType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13236,7 +13236,7 @@ namespace IFC.Global
 		public IFCTransformerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTransportElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13262,7 +13262,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTransportElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13278,7 +13278,7 @@ namespace IFC.Global
 		public IFCTransportElementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTrapeziumProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -13290,7 +13290,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _TopXOffset {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTrimmedCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -13301,7 +13301,7 @@ namespace IFC.Global
 		public IFCTrimmingPreference? _MasterRepresentation {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTubeBundleType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13317,7 +13317,7 @@ namespace IFC.Global
 		public IFCTubeBundleTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTwoDirectionRepeatFactor: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
@@ -13326,7 +13326,7 @@ namespace IFC.Global
 		public IFCVector? _SecondRepeatFactor {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTypeObject: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13338,7 +13338,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCPropertySetDefinition>? _HasPropertySets {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTypeProduct: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13352,7 +13352,7 @@ namespace IFC.Global
 		public IFCLabel? _Tag {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCUShapeProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -13365,13 +13365,13 @@ namespace IFC.Global
 		public IFCPlaneAngleMeasure? _FlangeSlope {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCUnitAssignment: IFC_Attribute
 	{
 		public IFC_Attributes<IFCUnit>? _Units {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCUnitaryEquipmentType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13387,7 +13387,7 @@ namespace IFC.Global
 		public IFCUnitaryEquipmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCValveType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13403,7 +13403,7 @@ namespace IFC.Global
 		public IFCValveTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVector: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -13412,34 +13412,34 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVertex: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVertexBasedTextureMap: IFC_Attribute
 	{
 		public IFC_Attributes<IFCTextureVertex>? _TextureVertices {get; set;}
 		public IFC_Attributes<IFCCartesianPoint>? _TexturePoints {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVertexLoop: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCVertex? _LoopVertex {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVertexPoint: IFC_Attribute
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCPoint? _VertexGeometry {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVibrationIsolatorType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13455,7 +13455,7 @@ namespace IFC.Global
 		public IFCVibrationIsolatorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVirtualElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13481,14 +13481,14 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVirtualGridIntersection: IFC_Attribute
 	{
 		public IFC_Attributes<IFCGridAxis>? _IntersectingAxes {get; set;}
 		public IFC_Attributes<IFCLengthMeasure>? _OffsetDistances {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWall: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13514,7 +13514,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWallStandardCase: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13540,7 +13540,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWallType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13556,7 +13556,7 @@ namespace IFC.Global
 		public IFCWallTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWasteTerminalType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13572,7 +13572,7 @@ namespace IFC.Global
 		public IFCWasteTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWaterProperties: IFC_Attribute
 	{
 		public IFCMaterial? _Material {get; set;}
@@ -13585,7 +13585,7 @@ namespace IFC.Global
 		public IFCNormalisedRatioMeasure? _DissolvedSolidsContent {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWindow: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13613,7 +13613,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _OverallWidth {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWindowLiningProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13630,7 +13630,7 @@ namespace IFC.Global
 		public IFCShapeAspect? _ShapeAspectStyle {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWindowPanelProperties: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13646,7 +13646,7 @@ namespace IFC.Global
 		public IFCShapeAspect? _ShapeAspectStyle {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWindowStyle: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13662,7 +13662,7 @@ namespace IFC.Global
 		public IFCWindowStyleOperationEnum? _OperationType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWorkControl: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13677,7 +13677,7 @@ namespace IFC.Global
 		public IFCLabel? _Purpose {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWorkPlan: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13692,7 +13692,7 @@ namespace IFC.Global
 		public IFCLabel? _Purpose {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWorkSchedule: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13707,7 +13707,7 @@ namespace IFC.Global
 		public IFCLabel? _Purpose {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCZShapeProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -13719,7 +13719,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _FlangeThickness {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCZone: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13731,7 +13731,7 @@ namespace IFC.Global
 		public IFCLabel? _ObjectType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCActuator: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13771,7 +13771,7 @@ namespace IFC.Global
 		public IFCActuatorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAdvancedBrep: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -13780,7 +13780,7 @@ namespace IFC.Global
 		public IFCClosedShell? _Outer {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAdvancedBrepWithVoids: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -13790,7 +13790,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCClosedShell>? _Voids {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAdvancedFace: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -13801,7 +13801,7 @@ namespace IFC.Global
 		public IFCBoolean? _SameSense {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAirTerminal: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13841,7 +13841,7 @@ namespace IFC.Global
 		public IFCAirTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAirTerminalBox: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13881,7 +13881,7 @@ namespace IFC.Global
 		public IFCAirTerminalBoxTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAirToAirHeatRecovery: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13921,7 +13921,7 @@ namespace IFC.Global
 		public IFCAirToAirHeatRecoveryTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlarm: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -13961,7 +13961,7 @@ namespace IFC.Global
 		public IFCAlarmTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAudioVisualAppliance: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14001,7 +14001,7 @@ namespace IFC.Global
 		public IFCAudioVisualApplianceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAudioVisualApplianceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14025,7 +14025,7 @@ namespace IFC.Global
 		public IFCAudioVisualApplianceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBSplineCurveWithKnots: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -14044,7 +14044,7 @@ namespace IFC.Global
 		public IFCInteger? _UpperIndexOnKnots {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBSplineSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -14062,7 +14062,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFC_Attributes<IFCCartesianPoint>>? _ControlPoints {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBSplineSurfaceWithKnots: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -14087,7 +14087,7 @@ namespace IFC.Global
 		public IFCInteger? _KnotUUpper {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBeamStandardCase: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14125,7 +14125,7 @@ namespace IFC.Global
 		public IFCBeamTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoiler: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14165,7 +14165,7 @@ namespace IFC.Global
 		public IFCBoilerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBoundaryCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -14177,7 +14177,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCSurface>? _BasisSurface {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuildingElementPartType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14201,7 +14201,7 @@ namespace IFC.Global
 		public IFCBuildingElementPartTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuildingSystem: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14226,7 +14226,7 @@ namespace IFC.Global
 		public IFCLabel? _LongName {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBurner: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14266,7 +14266,7 @@ namespace IFC.Global
 		public IFCBurnerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBurnerType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14290,7 +14290,7 @@ namespace IFC.Global
 		public IFCBurnerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCableCarrierFitting: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14330,7 +14330,7 @@ namespace IFC.Global
 		public IFCCableCarrierFittingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCableCarrierSegment: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14370,7 +14370,7 @@ namespace IFC.Global
 		public IFCCableCarrierSegmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCableFitting: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14410,7 +14410,7 @@ namespace IFC.Global
 		public IFCCableFittingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCableFittingType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14434,7 +14434,7 @@ namespace IFC.Global
 		public IFCCableFittingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCableSegment: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14474,7 +14474,7 @@ namespace IFC.Global
 		public IFCCableSegmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCartesianPointList: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -14482,7 +14482,7 @@ namespace IFC.Global
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCartesianPointList2D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -14491,7 +14491,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFC_Attributes<IFCLengthMeasure>>? _CoordList {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCartesianPointList3D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -14500,7 +14500,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFC_Attributes<IFCLengthMeasure>>? _CoordList {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCChiller: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14540,7 +14540,7 @@ namespace IFC.Global
 		public IFCChillerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCChimney: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14578,7 +14578,7 @@ namespace IFC.Global
 		public IFCChimneyTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCChimneyType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14602,7 +14602,7 @@ namespace IFC.Global
 		public IFCChimneyTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCivilElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14639,7 +14639,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelCoversBldgElements>? _HasCoverings {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCivilElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14662,7 +14662,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCoil: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14702,13 +14702,13 @@ namespace IFC.Global
 		public IFCCoilTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCColourRgbList: IFC_Attribute
 	{
 		public IFC_Attributes<IFC_Attributes<IFCNormalisedRatioMeasure>>? _ColourList {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCColumnStandardCase: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14746,7 +14746,7 @@ namespace IFC.Global
 		public IFCColumnTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCommunicationsAppliance: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14786,7 +14786,7 @@ namespace IFC.Global
 		public IFCCommunicationsApplianceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCommunicationsApplianceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14810,7 +14810,7 @@ namespace IFC.Global
 		public IFCCommunicationsApplianceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCComplexPropertyTemplate: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14826,7 +14826,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCPropertyTemplate>? _HasPropertyTemplates {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCompositeCurveOnSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -14838,7 +14838,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCSurface>? _BasisSurface {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCompressor: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14878,7 +14878,7 @@ namespace IFC.Global
 		public IFCCompressorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCondenser: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14918,14 +14918,14 @@ namespace IFC.Global
 		public IFCCondenserTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConnectionVolumeGeometry: IFC_Attribute
 	{
 		public IFCSolidOrShell? _VolumeOnRelatingElement {get; set;}
 		public IFCSolidOrShell? _VolumeOnRelatedElement {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstructionEquipmentResourceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14951,7 +14951,7 @@ namespace IFC.Global
 		public IFCConstructionEquipmentResourceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstructionMaterialResourceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -14977,7 +14977,7 @@ namespace IFC.Global
 		public IFCConstructionMaterialResourceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstructionProductResourceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15003,7 +15003,7 @@ namespace IFC.Global
 		public IFCConstructionProductResourceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConstructionResourceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15028,7 +15028,7 @@ namespace IFC.Global
 		public IFCPhysicalQuantity? _BaseQuantity {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCContext: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15051,7 +15051,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelDeclares>? _Declares {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCController: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15091,7 +15091,7 @@ namespace IFC.Global
 		public IFCControllerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConversionBasedUnitWithOffset: IFC_Attribute
 	{
 		public IFCDimensionalExponents? _Dimensions {get; set;}
@@ -15102,7 +15102,7 @@ namespace IFC.Global
 		public IFCReal? _ConversionOffset {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCooledBeam: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15142,7 +15142,7 @@ namespace IFC.Global
 		public IFCCooledBeamTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCoolingTower: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15182,14 +15182,14 @@ namespace IFC.Global
 		public IFCCoolingTowerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCoordinateOperation: IFC_Attribute
 	{
 		public IFCCoordinateReferenceSystemSelect? _SourceCRS {get; set;}
 		public IFCCoordinateReferenceSystem? _TargetCRS {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCoordinateReferenceSystem: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -15198,7 +15198,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCCoordinateOperation>? _HasCoordinateOperation {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCrewResourceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15224,7 +15224,7 @@ namespace IFC.Global
 		public IFCCrewResourceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveBoundedSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -15235,7 +15235,7 @@ namespace IFC.Global
 		public IFCBoolean? _ImplicitOuter {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCylindricalSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -15245,7 +15245,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Radius {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDamper: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15285,7 +15285,7 @@ namespace IFC.Global
 		public IFCDamperTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionCircuit: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15310,7 +15310,7 @@ namespace IFC.Global
 		public IFCDistributionSystemEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionSystem: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15335,7 +15335,7 @@ namespace IFC.Global
 		public IFCDistributionSystemEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoorStandardCase: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15377,7 +15377,7 @@ namespace IFC.Global
 		public IFCLabel? _UserDefinedOperationType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDoorType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15404,7 +15404,7 @@ namespace IFC.Global
 		public IFCLabel? _UserDefinedOperationType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDuctFitting: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15444,7 +15444,7 @@ namespace IFC.Global
 		public IFCDuctFittingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDuctSegment: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15484,7 +15484,7 @@ namespace IFC.Global
 		public IFCDuctSegmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDuctSilencer: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15524,7 +15524,7 @@ namespace IFC.Global
 		public IFCDuctSilencerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricAppliance: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15564,7 +15564,7 @@ namespace IFC.Global
 		public IFCElectricApplianceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricDistributionBoard: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15604,7 +15604,7 @@ namespace IFC.Global
 		public IFCElectricDistributionBoardTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricDistributionBoardType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15628,7 +15628,7 @@ namespace IFC.Global
 		public IFCElectricDistributionBoardTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricFlowStorageDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15668,7 +15668,7 @@ namespace IFC.Global
 		public IFCElectricFlowStorageDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricGenerator: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15708,7 +15708,7 @@ namespace IFC.Global
 		public IFCElectricGeneratorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricMotor: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15748,7 +15748,7 @@ namespace IFC.Global
 		public IFCElectricMotorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricTimeControl: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15788,7 +15788,7 @@ namespace IFC.Global
 		public IFCElectricTimeControlTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElementAssemblyType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15812,7 +15812,7 @@ namespace IFC.Global
 		public IFCElementAssemblyTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEngine: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15852,7 +15852,7 @@ namespace IFC.Global
 		public IFCEngineTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEngineType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15876,7 +15876,7 @@ namespace IFC.Global
 		public IFCEngineTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEvaporativeCooler: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15916,7 +15916,7 @@ namespace IFC.Global
 		public IFCEvaporativeCoolerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEvaporator: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15956,7 +15956,7 @@ namespace IFC.Global
 		public IFCEvaporatorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEvent: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -15986,7 +15986,7 @@ namespace IFC.Global
 		public IFCEventTime? _EventOccurenceTime {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEventTime: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -15998,7 +15998,7 @@ namespace IFC.Global
 		public IFCDateTime? _ScheduleDate {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEventType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16024,7 +16024,7 @@ namespace IFC.Global
 		public IFCLabel? _UserDefinedEventTriggerType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExtendedProperties: IFC_Attribute
 	{
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
@@ -16033,12 +16033,12 @@ namespace IFC.Global
 		public IFC_Attributes<IFCProperty>? _Properties {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExternalInformation: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExternalReferenceRelationship: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -16047,7 +16047,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCResourceObjectSelect>? _RelatedResourceObjects {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExternalSpatialElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16077,7 +16077,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelSpaceBoundary>? _BoundedBy {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExternalSpatialStructureElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16105,7 +16105,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelReferencedInSpatialStructure>? _ReferencesElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCExtrudedAreaSolidTapered: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -16118,7 +16118,7 @@ namespace IFC.Global
 		public IFCProfileDef? _EndSweptArea {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFan: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16158,7 +16158,7 @@ namespace IFC.Global
 		public IFCFanTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFilter: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16198,7 +16198,7 @@ namespace IFC.Global
 		public IFCFilterTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFireSuppressionTerminal: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16238,7 +16238,7 @@ namespace IFC.Global
 		public IFCFireSuppressionTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFixedReferenceSweptAreaSolid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -16250,7 +16250,7 @@ namespace IFC.Global
 		public IFCDirection? _FixedReference {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowInstrument: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16290,7 +16290,7 @@ namespace IFC.Global
 		public IFCFlowInstrumentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFlowMeter: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16330,7 +16330,7 @@ namespace IFC.Global
 		public IFCFlowMeterTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFootingType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16354,7 +16354,7 @@ namespace IFC.Global
 		public IFCFootingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFurniture: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16392,7 +16392,7 @@ namespace IFC.Global
 		public IFCFurnitureTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeographicElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16430,7 +16430,7 @@ namespace IFC.Global
 		public IFCGeographicElementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeographicElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16454,7 +16454,7 @@ namespace IFC.Global
 		public IFCGeographicElementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCHeatExchanger: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16494,7 +16494,7 @@ namespace IFC.Global
 		public IFCHeatExchangerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCHumidifier: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16534,7 +16534,7 @@ namespace IFC.Global
 		public IFCHumidifierTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIndexedColourMap: IFC_Attribute
 	{
 		public IFCTessellatedFaceSet? _MappedTo {get; set;}
@@ -16543,7 +16543,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCPositiveInteger>? _ColourIndex {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIndexedPolyCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -16554,7 +16554,7 @@ namespace IFC.Global
 		public IFCBoolean? _SelfIntersect {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIndexedPolygonalFace: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -16563,7 +16563,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCPolygonalFaceSet>? _ToFaceSet {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIndexedPolygonalFaceWithVoids: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -16573,7 +16573,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFC_Attributes<IFCPositiveInteger>>? _InnerCoordIndices {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIndexedTextureMap: IFC_Attribute
 	{
 		public IFC_Attributes<IFCSurfaceTexture>? _Maps {get; set;}
@@ -16581,7 +16581,7 @@ namespace IFC.Global
 		public IFCTextureVertexList? _TexCoords {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIndexedTriangleTextureMap: IFC_Attribute
 	{
 		public IFC_Attributes<IFCSurfaceTexture>? _Maps {get; set;}
@@ -16590,7 +16590,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFC_Attributes<IFCPositiveInteger>>? _TexCoordIndex {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCInterceptor: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16630,7 +16630,7 @@ namespace IFC.Global
 		public IFCInterceptorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCInterceptorType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16654,7 +16654,7 @@ namespace IFC.Global
 		public IFCInterceptorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIntersectionCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -16666,7 +16666,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCSurface>? _BasisSurface {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCJunctionBox: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16706,7 +16706,7 @@ namespace IFC.Global
 		public IFCJunctionBoxTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLaborResourceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16732,7 +16732,7 @@ namespace IFC.Global
 		public IFCLaborResourceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLagTime: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -16742,7 +16742,7 @@ namespace IFC.Global
 		public IFCTaskDurationEnum? _DurationType {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLamp: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16782,7 +16782,7 @@ namespace IFC.Global
 		public IFCLampTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLightFixture: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -16822,7 +16822,7 @@ namespace IFC.Global
 		public IFCLightFixtureTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMapConversion: IFC_Attribute
 	{
 		public IFCCoordinateReferenceSystemSelect? _SourceCRS {get; set;}
@@ -16835,7 +16835,7 @@ namespace IFC.Global
 		public IFCReal? _Scale {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialConstituent: IFC_Attribute
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
@@ -16849,7 +16849,7 @@ namespace IFC.Global
 		public IFCMaterialConstituentSet? _ToMaterialConstituentSet {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialConstituentSet: IFC_Attribute
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
@@ -16860,7 +16860,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCMaterialConstituent>? _MaterialConstituents {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialDefinition: IFC_Attribute
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
@@ -16868,7 +16868,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCMaterialProperties>? _HasProperties {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialLayerWithOffsets: IFC_Attribute
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
@@ -16886,7 +16886,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCLengthMeasure>? _OffsetValues {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialProfile: IFC_Attribute
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
@@ -16901,7 +16901,7 @@ namespace IFC.Global
 		public IFCMaterialProfileSet? _ToMaterialProfileSet {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialProfileSet: IFC_Attribute
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
@@ -16913,7 +16913,7 @@ namespace IFC.Global
 		public IFCCompositeProfileDef? _CompositeProfile {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialProfileSetUsage: IFC_Attribute
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
@@ -16922,7 +16922,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _ReferenceExtent {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialProfileSetUsageTapering: IFC_Attribute
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
@@ -16933,7 +16933,7 @@ namespace IFC.Global
 		public IFCCardinalPointReference? _CardinalEndPoint {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialProfileWithOffsets: IFC_Attribute
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
@@ -16949,7 +16949,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCLengthMeasure>? _OffsetValues {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialRelationship: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -16958,13 +16958,13 @@ namespace IFC.Global
 		public IFC_Attributes<IFCMaterial>? _RelatedMaterials {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMaterialUsageDefinition: IFC_Attribute
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMedicalDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17004,7 +17004,7 @@ namespace IFC.Global
 		public IFCMedicalDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMedicalDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17028,7 +17028,7 @@ namespace IFC.Global
 		public IFCMedicalDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMemberStandardCase: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17066,7 +17066,7 @@ namespace IFC.Global
 		public IFCMemberTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMirroredProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -17078,7 +17078,7 @@ namespace IFC.Global
 		public IFCLabel? _Label {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMotorConnection: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17118,7 +17118,7 @@ namespace IFC.Global
 		public IFCMotorConnectionTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOpeningStandardCase: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17158,7 +17158,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelFillsElement>? _HasFillings {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOuterBoundaryCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -17170,7 +17170,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCSurface>? _BasisSurface {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOutlet: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17210,7 +17210,7 @@ namespace IFC.Global
 		public IFCOutletTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPcurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -17220,7 +17220,7 @@ namespace IFC.Global
 		public IFCCurve? _ReferenceCurve {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPileType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17244,7 +17244,7 @@ namespace IFC.Global
 		public IFCPileTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPipeFitting: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17284,7 +17284,7 @@ namespace IFC.Global
 		public IFCPipeFittingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPipeSegment: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17324,7 +17324,7 @@ namespace IFC.Global
 		public IFCPipeSegmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPlateStandardCase: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17362,7 +17362,7 @@ namespace IFC.Global
 		public IFCPlateTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPolygonalFaceSet: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -17376,13 +17376,13 @@ namespace IFC.Global
 		public IFC_Attributes<IFCPositiveInteger>? _PnIndex {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPreDefinedProperties: IFC_Attribute
 	{
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPreDefinedPropertySet: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17396,12 +17396,12 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelDefinesByProperties>? _DefinesOccurrence {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPresentationItem: IFC_Attribute
 	{
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProcedureType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17425,7 +17425,7 @@ namespace IFC.Global
 		public IFCProcedureTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProjectLibrary: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17448,7 +17448,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelDeclares>? _Declares {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProjectedCRS: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -17461,13 +17461,13 @@ namespace IFC.Global
 		public IFCNamedUnit? _MapUnit {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertyAbstraction: IFC_Attribute
 	{
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertySetTemplate: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17482,7 +17482,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelDefinesByTemplate>? _Defines {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertyTemplate: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17495,7 +17495,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCPropertySetTemplate>? _PartOfPsetTemplate {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPropertyTemplateDefinition: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17506,7 +17506,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssociates>? _HasAssociations {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProtectiveDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17546,7 +17546,7 @@ namespace IFC.Global
 		public IFCProtectiveDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProtectiveDeviceTrippingUnit: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17586,7 +17586,7 @@ namespace IFC.Global
 		public IFCProtectiveDeviceTrippingUnitTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCProtectiveDeviceTrippingUnitType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17610,7 +17610,7 @@ namespace IFC.Global
 		public IFCProtectiveDeviceTrippingUnitTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPump: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17650,7 +17650,7 @@ namespace IFC.Global
 		public IFCPumpTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCQuantitySet: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17664,7 +17664,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelDefinesByProperties>? _DefinesOccurrence {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRampType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17688,7 +17688,7 @@ namespace IFC.Global
 		public IFCRampTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRationalBSplineCurveWithKnots: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -17709,7 +17709,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCReal>? _Weights {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRationalBSplineSurfaceWithKnots: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -17736,7 +17736,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFC_Attributes<IFCReal>>? _Weights {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRecurrencePattern: IFC_Attribute
 	{
 		public IFCRecurrenceTypeEnum? _RecurrenceType {get; set;}
@@ -17749,7 +17749,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCTimePeriod>? _TimePeriods {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReference: IFC_Attribute
 	{
 		public IFCIdentifier? _TypeIdentifier {get; set;}
@@ -17759,7 +17759,7 @@ namespace IFC.Global
 		public IFCReference? _InnerReference {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcingBarType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17789,7 +17789,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCBendingParameterSelect>? _BendingParameters {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcingElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17812,7 +17812,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcingMeshType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17846,7 +17846,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCBendingParameterSelect>? _BendingParameters {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssignsToGroupByFactor: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17858,7 +17858,7 @@ namespace IFC.Global
 		public IFCRatioMeasure? _Factor {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelDeclares: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17869,7 +17869,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCDefinitionSelect>? _RelatedDefinitions {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelDefinesByObject: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17880,7 +17880,7 @@ namespace IFC.Global
 		public IFCObject? _RelatingObject {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelDefinesByTemplate: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17891,7 +17891,7 @@ namespace IFC.Global
 		public IFCPropertySetTemplate? _RelatingTemplate {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelInterferesElements: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17902,7 +17902,7 @@ namespace IFC.Global
 		public IFCIdentifier? _InterferenceType {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelSpaceBoundary1stLevel: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17918,7 +17918,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelSpaceBoundary1stLevel>? _InnerBoundaries {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelSpaceBoundary2ndLevel: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -17936,7 +17936,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelSpaceBoundary2ndLevel>? _Corresponds {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReparametrisedCompositeCurveSegment: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -17949,7 +17949,7 @@ namespace IFC.Global
 		public IFCParameterValue? _ParamLength {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCResourceApprovalRelationship: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -17958,7 +17958,7 @@ namespace IFC.Global
 		public IFCApproval? _RelatingApproval {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCResourceConstraintRelationship: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -17967,14 +17967,14 @@ namespace IFC.Global
 		public IFC_Attributes<IFCResourceObjectSelect>? _RelatedResourceObjects {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCResourceLevelRelationship: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCResourceTime: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -17997,7 +17997,7 @@ namespace IFC.Global
 		public IFCPositiveRatioMeasure? _Completion {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRevolvedAreaSolidTapered: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -18011,7 +18011,7 @@ namespace IFC.Global
 		public IFCProfileDef? _EndSweptArea {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRoofType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18035,7 +18035,7 @@ namespace IFC.Global
 		public IFCRoofTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSanitaryTerminal: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18075,7 +18075,7 @@ namespace IFC.Global
 		public IFCSanitaryTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSchedulingTime: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -18083,7 +18083,7 @@ namespace IFC.Global
 		public IFCLabel? _UserDefinedDataOrigin {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSeamCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -18095,7 +18095,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCSurface>? _BasisSurface {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSensor: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18135,7 +18135,7 @@ namespace IFC.Global
 		public IFCSensorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCShadingDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18173,7 +18173,7 @@ namespace IFC.Global
 		public IFCShadingDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCShadingDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18197,7 +18197,7 @@ namespace IFC.Global
 		public IFCShadingDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSimplePropertyTemplate: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18218,7 +18218,7 @@ namespace IFC.Global
 		public IFCStateEnum? _AccessState {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSlabElementedCase: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18256,7 +18256,7 @@ namespace IFC.Global
 		public IFCSlabTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSlabStandardCase: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18294,7 +18294,7 @@ namespace IFC.Global
 		public IFCSlabTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSolarDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18334,7 +18334,7 @@ namespace IFC.Global
 		public IFCSolarDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSolarDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18358,7 +18358,7 @@ namespace IFC.Global
 		public IFCSolarDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpaceHeater: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18398,7 +18398,7 @@ namespace IFC.Global
 		public IFCSpaceHeaterTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpatialElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18426,7 +18426,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelReferencedInSpatialStructure>? _ReferencesElements {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpatialElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18449,7 +18449,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpatialZone: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18478,7 +18478,7 @@ namespace IFC.Global
 		public IFCSpatialZoneTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpatialZoneType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18503,7 +18503,7 @@ namespace IFC.Global
 		public IFCLabel? _LongName {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSphericalSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -18513,7 +18513,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _Radius {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStackTerminal: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18553,7 +18553,7 @@ namespace IFC.Global
 		public IFCStackTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStairType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18577,7 +18577,7 @@ namespace IFC.Global
 		public IFCStairTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralCurveAction: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18607,7 +18607,7 @@ namespace IFC.Global
 		public IFCStructuralCurveActivityTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralCurveReaction: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18635,7 +18635,7 @@ namespace IFC.Global
 		public IFCStructuralCurveActivityTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoadCase: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18665,7 +18665,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRatioMeasure>? _SelfWeightCoefficients {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoadConfiguration: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -18673,13 +18673,13 @@ namespace IFC.Global
 		public IFC_Attributes<IFC_Attributes<IFCLengthMeasure>>? _Locations {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralLoadOrResult: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralSurfaceAction: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18709,7 +18709,7 @@ namespace IFC.Global
 		public IFCStructuralSurfaceActivityTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCStructuralSurfaceReaction: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18737,7 +18737,7 @@ namespace IFC.Global
 		public IFCStructuralSurfaceActivityTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSubContractResourceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18763,7 +18763,7 @@ namespace IFC.Global
 		public IFCSubContractResourceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -18775,7 +18775,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCSurface>? _BasisSurface {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceFeature: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18813,7 +18813,7 @@ namespace IFC.Global
 		public IFCSurfaceFeatureTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSurfaceReinforcementArea: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -18822,7 +18822,7 @@ namespace IFC.Global
 		public IFCRatioMeasure? _ShearReinforcement {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSweptDiskSolidPolygonal: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -18835,7 +18835,7 @@ namespace IFC.Global
 		public IFCParameterValue? _EndParam {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSwitchingDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18875,7 +18875,7 @@ namespace IFC.Global
 		public IFCSwitchingDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSystemFurnitureElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18913,7 +18913,7 @@ namespace IFC.Global
 		public IFCSystemFurnitureElementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTableColumn: IFC_Attribute
 	{
 		public IFCIdentifier? _Identifier {get; set;}
@@ -18923,7 +18923,7 @@ namespace IFC.Global
 		public IFCReference? _ReferencePath {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTank: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -18963,7 +18963,7 @@ namespace IFC.Global
 		public IFCTankTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTaskTime: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -18988,7 +18988,7 @@ namespace IFC.Global
 		public IFCPositiveRatioMeasure? _Completion {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTaskTimeRecurring: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -19014,7 +19014,7 @@ namespace IFC.Global
 		public IFCRecurrencePattern? _Recurrence {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTaskType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19039,7 +19039,7 @@ namespace IFC.Global
 		public IFCLabel? _WorkMethod {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTendonAnchorType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19063,7 +19063,7 @@ namespace IFC.Global
 		public IFCTendonAnchorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTendonType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19090,7 +19090,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _SheathDiameter {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTessellatedFaceSet: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19101,27 +19101,27 @@ namespace IFC.Global
 		public IFC_Attributes<IFCIndexedTextureMap>? _HasTextures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTessellatedItem: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextureVertexList: IFC_Attribute
 	{
 		public IFC_Attributes<IFC_Attributes<IFCParameterValue>>? _TexCoordsList {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTimePeriod: IFC_Attribute
 	{
 		public IFCTime? _StartTime {get; set;}
 		public IFCTime? _EndTime {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCToroidalSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19132,7 +19132,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _MinorRadius {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTransformer: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19172,7 +19172,7 @@ namespace IFC.Global
 		public IFCTransformerTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTriangulatedFaceSet: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19188,7 +19188,7 @@ namespace IFC.Global
 		public IFCInteger? _NumberOfTriangles {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTubeBundle: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19228,7 +19228,7 @@ namespace IFC.Global
 		public IFCTubeBundleTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTypeProcess: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19251,7 +19251,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToProcess>? _OperatesOn {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTypeResource: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19274,7 +19274,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAssignsToResource>? _ResourceOf {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCUnitaryControlElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19314,7 +19314,7 @@ namespace IFC.Global
 		public IFCUnitaryControlElementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCUnitaryControlElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19338,7 +19338,7 @@ namespace IFC.Global
 		public IFCUnitaryControlElementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCUnitaryEquipment: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19378,7 +19378,7 @@ namespace IFC.Global
 		public IFCUnitaryEquipmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCValve: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19418,7 +19418,7 @@ namespace IFC.Global
 		public IFCValveTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVibrationIsolator: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19456,7 +19456,7 @@ namespace IFC.Global
 		public IFCVibrationIsolatorTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVoidingFeature: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19495,7 +19495,7 @@ namespace IFC.Global
 		public IFCVoidingFeatureTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWallElementedCase: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19533,7 +19533,7 @@ namespace IFC.Global
 		public IFCWallTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWasteTerminal: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19573,7 +19573,7 @@ namespace IFC.Global
 		public IFCWasteTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWindowStandardCase: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19615,7 +19615,7 @@ namespace IFC.Global
 		public IFCLabel? _UserDefinedPartitioningType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWindowType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19642,7 +19642,7 @@ namespace IFC.Global
 		public IFCLabel? _UserDefinedPartitioningType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWorkCalendar: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19668,7 +19668,7 @@ namespace IFC.Global
 		public IFCWorkCalendarTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWorkTime: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -19677,7 +19677,7 @@ namespace IFC.Global
 		public IFCRecurrencePattern? _RecurrencePattern {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignment: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19703,7 +19703,7 @@ namespace IFC.Global
 		public IFCAlignmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignment2DHorizontal: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19713,7 +19713,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCAlignmentCurve>? _ToAlignmentCurve {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignment2DHorizontalSegment: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19725,7 +19725,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCAlignment2DHorizontal>? _ToHorizontal {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignment2DSegment: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19735,7 +19735,7 @@ namespace IFC.Global
 		public IFCLabel? _EndTag {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignment2DVerSegCircularArc: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19752,7 +19752,7 @@ namespace IFC.Global
 		public IFCBoolean? _IsConvex {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignment2DVerSegLine: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19767,7 +19767,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCAlignment2DVertical>? _ToVertical {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignment2DVerSegParabolicArc: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19784,7 +19784,7 @@ namespace IFC.Global
 		public IFCBoolean? _IsConvex {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignment2DVertical: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19793,7 +19793,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCAlignmentCurve>? _ToAlignmentCurve {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignment2DVerticalSegment: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19808,7 +19808,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCAlignment2DVertical>? _ToVertical {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19819,7 +19819,7 @@ namespace IFC.Global
 		public IFCLabel? _Tag {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCircularArcSegment2D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19832,7 +19832,7 @@ namespace IFC.Global
 		public IFCBoolean? _IsCCW {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveSegment2D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19843,7 +19843,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _SegmentLength {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistanceExpression: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19855,7 +19855,7 @@ namespace IFC.Global
 		public IFCBoolean? _AlongHorizontal {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLineSegment2D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19866,14 +19866,14 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _SegmentLength {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLinearPlacement: IFC_Attribute
 	{
 		public IFC_Attributes<IFCProduct>? _PlacesObject {get; }
 		public IFCAxis2Placement3D? _CartesianPosition {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLinearPositioningElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19898,7 +19898,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOffsetCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19907,7 +19907,7 @@ namespace IFC.Global
 		public IFCCurve? _BasisCurve {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOffsetCurveByDistances: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19917,7 +19917,7 @@ namespace IFC.Global
 		public IFCLabel? _Tag {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOrientationExpression: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19926,7 +19926,7 @@ namespace IFC.Global
 		public IFCDirection? _VerticalAxisDirection {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPositioningElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19951,7 +19951,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelContainedInSpatialStructure>? _ContainedInStructure {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReferent: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -19977,7 +19977,7 @@ namespace IFC.Global
 		public IFCReferentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSectionedSolid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19987,7 +19987,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCProfileDef>? _CrossSections {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSectionedSolidHorizontal: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -19997,7 +19997,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCProfileDef>? _CrossSections {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTransitionCurveSegment2D: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -20013,7 +20013,7 @@ namespace IFC.Global
 		public IFCTransitionCurveType? _TransitionCurveType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTriangulatedIrregularNetwork: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -20030,7 +20030,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCInteger>? _Flags {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBearing: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20069,7 +20069,7 @@ namespace IFC.Global
 		public IFCBearingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBearingType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20093,7 +20093,7 @@ namespace IFC.Global
 		public IFCBearingTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBridge: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20124,7 +20124,7 @@ namespace IFC.Global
 		public IFCBridgeTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBridgePart: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20155,7 +20155,7 @@ namespace IFC.Global
 		public IFCBridgePartTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCaissonFoundation: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20194,7 +20194,7 @@ namespace IFC.Global
 		public IFCCaissonFoundationTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCaissonFoundationType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20218,7 +20218,7 @@ namespace IFC.Global
 		public IFCCaissonFoundationTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDeepFoundation: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20256,7 +20256,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelCoversBldgElements>? _HasCoverings {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDeepFoundationType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20279,7 +20279,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFacility: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20309,7 +20309,7 @@ namespace IFC.Global
 		public IFCElementCompositionEnum? _CompositionType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFacilityPart: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20339,7 +20339,7 @@ namespace IFC.Global
 		public IFCElementCompositionEnum? _CompositionType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelPositions: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20350,7 +20350,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCProduct>? _RelatedProducts {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTendonConduit: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20390,7 +20390,7 @@ namespace IFC.Global
 		public IFCTendonConduitTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTendonConduitType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20414,7 +20414,7 @@ namespace IFC.Global
 		public IFCTendonConduitTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVibrationDamper: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20453,7 +20453,7 @@ namespace IFC.Global
 		public IFCVibrationDamperTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVibrationDamperType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20477,7 +20477,7 @@ namespace IFC.Global
 		public IFCVibrationDamperTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentCant: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20504,7 +20504,7 @@ namespace IFC.Global
 		public IFCPositiveLengthMeasure? _RailHeadDistance {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentCantSegment: IFC_Attribute
 	{
 		public IFCLabel? _StartTag {get; set;}
@@ -20518,7 +20518,7 @@ namespace IFC.Global
 		public IFCAlignmentCantSegmentTypeEnum? _PredefinedType {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentHorizontal: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20544,7 +20544,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelReferencedInSpatialStructure>? _ReferencedInStructures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentHorizontalSegment: IFC_Attribute
 	{
 		public IFCLabel? _StartTag {get; set;}
@@ -20558,14 +20558,14 @@ namespace IFC.Global
 		public IFCAlignmentHorizontalSegmentTypeEnum? _PredefinedType {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentParameterSegment: IFC_Attribute
 	{
 		public IFCLabel? _StartTag {get; set;}
 		public IFCLabel? _EndTag {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentSegment: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20592,7 +20592,7 @@ namespace IFC.Global
 		public IFCAlignmentParameterSegment? _DesignParameters {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentVertical: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20618,7 +20618,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelReferencedInSpatialStructure>? _ReferencedInStructures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAlignmentVerticalSegment: IFC_Attribute
 	{
 		public IFCLabel? _StartTag {get; set;}
@@ -20632,7 +20632,7 @@ namespace IFC.Global
 		public IFCAlignmentVerticalSegmentTypeEnum? _PredefinedType {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCAxis2PlacementLinear: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -20643,7 +20643,7 @@ namespace IFC.Global
 		public IFCDirection? _RefDirection {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBorehole: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20682,7 +20682,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAdheresToElement>? _HasSurfaceFeatures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuiltElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20721,7 +20721,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAdheresToElement>? _HasSurfaceFeatures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuiltElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20744,7 +20744,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCBuiltSystem: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20771,7 +20771,7 @@ namespace IFC.Global
 		public IFCLabel? _LongName {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCClothoid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -20781,7 +20781,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _ClothoidConstant {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConveyorSegment: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20823,7 +20823,7 @@ namespace IFC.Global
 		public IFCConveyorSegmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCConveyorSegmentType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20847,7 +20847,7 @@ namespace IFC.Global
 		public IFCConveyorSegmentTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCosineSpiral: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -20858,7 +20858,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _ConstantTerm {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCourse: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20898,7 +20898,7 @@ namespace IFC.Global
 		public IFCCourseTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCourseType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -20922,7 +20922,7 @@ namespace IFC.Global
 		public IFCCourseTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCCurveSegment: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -20936,7 +20936,7 @@ namespace IFC.Global
 		public IFCCurve? _ParentCurve {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDirectrixCurveSweptAreaSolid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -20949,7 +20949,7 @@ namespace IFC.Global
 		public IFCCurveMeasureSelect? _EndParam {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDirectrixDerivedReferenceSweptAreaSolid: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -20963,7 +20963,7 @@ namespace IFC.Global
 		public IFCDirection? _FixedReference {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionBoard: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21005,7 +21005,7 @@ namespace IFC.Global
 		public IFCDistributionBoardTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCDistributionBoardType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21029,7 +21029,7 @@ namespace IFC.Global
 		public IFCDistributionBoardTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEarthworksCut: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21070,7 +21070,7 @@ namespace IFC.Global
 		public IFCEarthworksCutTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEarthworksElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21109,7 +21109,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAdheresToElement>? _HasSurfaceFeatures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCEarthworksFill: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21149,7 +21149,7 @@ namespace IFC.Global
 		public IFCEarthworksFillTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricFlowTreatmentDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21191,7 +21191,7 @@ namespace IFC.Global
 		public IFCElectricFlowTreatmentDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCElectricFlowTreatmentDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21215,7 +21215,7 @@ namespace IFC.Global
 		public IFCElectricFlowTreatmentDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCFacilityPartCommon: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21250,7 +21250,7 @@ namespace IFC.Global
 		public IFCFacilityPartCommonTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeographicCRS: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -21263,7 +21263,7 @@ namespace IFC.Global
 		public IFCNamedUnit? _HeightUnit {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeomodel: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21302,7 +21302,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAdheresToElement>? _HasSurfaceFeatures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeoslice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21341,7 +21341,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAdheresToElement>? _HasSurfaceFeatures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeotechnicalAssembly: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21380,7 +21380,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAdheresToElement>? _HasSurfaceFeatures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeotechnicalElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21419,7 +21419,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAdheresToElement>? _HasSurfaceFeatures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGeotechnicalStratum: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21459,7 +21459,7 @@ namespace IFC.Global
 		public IFCGeotechnicalStratumTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCGradientCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -21473,7 +21473,7 @@ namespace IFC.Global
 		public IFCPlacement? _EndPoint {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCImpactProtectionDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21513,7 +21513,7 @@ namespace IFC.Global
 		public IFCImpactProtectionDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCImpactProtectionDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21537,7 +21537,7 @@ namespace IFC.Global
 		public IFCImpactProtectionDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCIndexedPolygonalTextureMap: IFC_Attribute
 	{
 		public IFC_Attributes<IFCSurfaceTexture>? _Maps {get; set;}
@@ -21546,7 +21546,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCTextureCoordinateIndices>? _TexCoordIndices {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCKerb: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21586,7 +21586,7 @@ namespace IFC.Global
 		public IFCKerbTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCKerbType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21610,7 +21610,7 @@ namespace IFC.Global
 		public IFCKerbTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLinearElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21636,7 +21636,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelReferencedInSpatialStructure>? _ReferencedInStructures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLiquidTerminal: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21678,7 +21678,7 @@ namespace IFC.Global
 		public IFCLiquidTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCLiquidTerminalType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21702,7 +21702,7 @@ namespace IFC.Global
 		public IFCLiquidTerminalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMapConversionScaled: IFC_Attribute
 	{
 		public IFCCoordinateReferenceSystemSelect? _SourceCRS {get; set;}
@@ -21718,7 +21718,7 @@ namespace IFC.Global
 		public IFCReal? _FactorZ {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMarineFacility: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21752,7 +21752,7 @@ namespace IFC.Global
 		public IFCMarineFacilityTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMarinePart: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21787,7 +21787,7 @@ namespace IFC.Global
 		public IFCMarinePartTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMobileTelecommunicationsAppliance: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21829,7 +21829,7 @@ namespace IFC.Global
 		public IFCMobileTelecommunicationsApplianceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMobileTelecommunicationsApplianceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21853,7 +21853,7 @@ namespace IFC.Global
 		public IFCMobileTelecommunicationsApplianceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMooringDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21893,7 +21893,7 @@ namespace IFC.Global
 		public IFCMooringDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCMooringDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21917,7 +21917,7 @@ namespace IFC.Global
 		public IFCMooringDeviceTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCNavigationElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21957,7 +21957,7 @@ namespace IFC.Global
 		public IFCNavigationElementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCNavigationElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -21981,7 +21981,7 @@ namespace IFC.Global
 		public IFCNavigationElementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCOpenCrossProfileDef: IFC_Attribute
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
@@ -21995,7 +21995,7 @@ namespace IFC.Global
 		public IFCCartesianPoint? _OffsetPoint {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPavement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22035,7 +22035,7 @@ namespace IFC.Global
 		public IFCPavementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPavementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22059,7 +22059,7 @@ namespace IFC.Global
 		public IFCPavementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPointByDistanceExpression: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -22072,7 +22072,7 @@ namespace IFC.Global
 		public IFCCurve? _BasisCurve {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCPolynomialCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -22084,7 +22084,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCReal>? _CoefficientsZ {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCQuantityNumber: IFC_Attribute
 	{
 		public IFCLabel? _Name {get; set;}
@@ -22096,7 +22096,7 @@ namespace IFC.Global
 		public IFCLabel? _Formula {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRail: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22136,7 +22136,7 @@ namespace IFC.Global
 		public IFCRailTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRailType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22160,7 +22160,7 @@ namespace IFC.Global
 		public IFCRailTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRailway: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22194,7 +22194,7 @@ namespace IFC.Global
 		public IFCRailwayTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRailwayPart: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22229,7 +22229,7 @@ namespace IFC.Global
 		public IFCRailwayPartTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCReinforcedSoil: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22269,7 +22269,7 @@ namespace IFC.Global
 		public IFCReinforcedSoilTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAdheresToElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22280,7 +22280,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCSurfaceFeature>? _RelatedSurfaceFeatures {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRelAssociatesProfileDef: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22291,7 +22291,7 @@ namespace IFC.Global
 		public IFCProfileDef? _RelatingProfileDef {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRigidOperation: IFC_Attribute
 	{
 		public IFCCoordinateReferenceSystemSelect? _SourceCRS {get; set;}
@@ -22301,7 +22301,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _Height {get; set;}
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRoad: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22335,7 +22335,7 @@ namespace IFC.Global
 		public IFCRoadTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCRoadPart: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22370,7 +22370,7 @@ namespace IFC.Global
 		public IFCRoadPartTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSecondOrderPolynomialSpiral: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -22382,7 +22382,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _ConstantTerm {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSectionedSurface: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -22393,7 +22393,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCProfileDef>? _CrossSections {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSegment: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -22403,7 +22403,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCCompositeCurve>? _UsingCurves {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSegmentedReferenceCurve: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -22417,7 +22417,7 @@ namespace IFC.Global
 		public IFCPlacement? _EndPoint {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSeventhOrderPolynomialSpiral: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -22434,7 +22434,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _ConstantTerm {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSign: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22474,7 +22474,7 @@ namespace IFC.Global
 		public IFCSignTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSignType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22498,7 +22498,7 @@ namespace IFC.Global
 		public IFCSignTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSignal: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22540,7 +22540,7 @@ namespace IFC.Global
 		public IFCSignalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSignalType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22564,7 +22564,7 @@ namespace IFC.Global
 		public IFCSignalTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSineSpiral: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -22576,7 +22576,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _ConstantTerm {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCSpiral: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -22585,7 +22585,7 @@ namespace IFC.Global
 		public IFCAxis2Placement? _Position {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextureCoordinateIndices: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPositiveInteger>? _TexCoordIndex {get; set;}
@@ -22593,7 +22593,7 @@ namespace IFC.Global
 		public IFCIndexedPolygonalTextureMap? _ToTexMap {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTextureCoordinateIndicesWithVoids: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPositiveInteger>? _TexCoordIndex {get; set;}
@@ -22602,7 +22602,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFC_Attributes<IFCPositiveInteger>>? _InnerTexCoordIndices {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCThirdOrderPolynomialSpiral: IFC_Attribute
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
@@ -22615,7 +22615,7 @@ namespace IFC.Global
 		public IFCLengthMeasure? _ConstantTerm {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTrackElement: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22655,7 +22655,7 @@ namespace IFC.Global
 		public IFCTrackElementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTrackElementType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22679,7 +22679,7 @@ namespace IFC.Global
 		public IFCTrackElementTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTransportationDevice: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22718,7 +22718,7 @@ namespace IFC.Global
 		public IFC_Attributes<IFCRelAdheresToElement>? _HasSurfaceFeatures {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCTransportationDeviceType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22741,7 +22741,7 @@ namespace IFC.Global
 		public IFCLabel? _ElementType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVehicle: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22781,7 +22781,7 @@ namespace IFC.Global
 		public IFCVehicleTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCVehicleType: IFC_Attribute
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
@@ -22805,7 +22805,7 @@ namespace IFC.Global
 		public IFCVehicleTypeEnum? _PredefinedType {get; }
 	}
 	/// <summary>
-	/// <summary>
+	/// </summary>
 	public interface IFCWellKnownText: IFC_Attribute
 	{
 		public IFCWellKnownTextLiteral? _WellKnownText {get; set;}

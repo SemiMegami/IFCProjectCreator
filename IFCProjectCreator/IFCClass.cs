@@ -19,6 +19,7 @@ namespace IFCProjectCreator
         public List<string> SubClassesNames;
         public List<string> InterfaceNames;
         public List<string> EXPLines;
+        public List<string> RawEXPLines;
         public List<IFCSelectType> ParentSelects;
         public List<IFCClass> SubClasses;
         public List<IFCSelectAttribute> AdditionalSelectAttibutes;
@@ -35,6 +36,7 @@ namespace IFCProjectCreator
             SubClassesNames = new List<string>();
             InterfaceNames = new List<string>();
             EXPLines = new List<string>();
+            RawEXPLines = new List<string>();
             ParentSelects = new List<IFCSelectType>();
             SubClasses = new List<IFCClass>();
             AdditionalSelectAttibutes = new List<IFCSelectAttribute>();
@@ -157,6 +159,8 @@ namespace IFCProjectCreator
             }
             EXPLines.Clear();
             EXPLines.Add(header);
+            RawEXPLines.Clear();
+            RawEXPLines.Add(header);
             string? line = "";
             while (line != null && !line.Contains(endText))
             {
@@ -165,7 +169,9 @@ namespace IFCProjectCreator
                     line = reader != null ? reader.ReadLine() : "";
                     if (line != null)
                     {
+                        RawEXPLines.Add(line);
                         line = line.Trim();
+
                         EXPLines.Add(line);
                     }
                 }
@@ -190,20 +196,17 @@ namespace IFCProjectCreator
             List<string> summary = new List<string>();
             string s = "\t/// ";
             summary.Add(s + "<summary>");
-            //if(EXPLines.Count > 0)
-            //{
-            //    summary.Add(s + EXPLines[0]);
-            //}
-            int n = EXPLines.Count;
-            //for (int i = 0; i < n; i++)
-            //{
-            //    summary.Add(s + "<para>" + EXPLines[i] + "</para>");
-            //}
-            for (int i = 0; i < n; i++)
+            if (EXPLines.Count > 0)
             {
-                summary.Add(s + EXPLines[i] );
+                summary.Add(s + RawEXPLines[0]);
             }
-            summary.Add(s + "<summary>");
+            int n = RawEXPLines.Count;
+            for (int i = 1; i < n; i++)
+            {
+                summary.Add(s + "<para>" + RawEXPLines[i] + "</para>");
+            }
+            
+            summary.Add(s + "</summary>");
             return summary;
         }
 
