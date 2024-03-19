@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Data;
+using System.Runtime.InteropServices;
 
 namespace IFCProjectCreator
 {
@@ -42,7 +43,7 @@ namespace IFCProjectCreator
 
             foreach(var line in EXPLines)
             {
-                if (line.Contains("RETURN(?)"))
+                if (line.Contains("RETURN(?)") || line.Contains("RETURN (?)") || line.Contains(":= ?;"))
                 {
                     IsNullAble = true;
                 }
@@ -139,7 +140,7 @@ namespace IFCProjectCreator
                     input.IsOptional = false;
                     foreach (var line in EXPLines)
                     {
-                        if (line.Contains("EXISTS(" + names[i].Trim() + ")"))
+                        if (line.Contains("EXISTS(" + names[i].Trim() + ")") || line.Contains("EXISTS (" + names[i].Trim() + ")") || line.Contains("NVL(IfcNormalise(" + names[i].Trim() + ")"))
                         {
                           
                             input.IsOptional = true;
@@ -308,39 +309,63 @@ namespace IFCProjectCreator
                     texts[i] = "\t" + texts[i];
                 }
 
-               
-                if (canWrite)
+                string functionKey = "//MANUAL_FUNCTION : " + VersionName.ToUpper() + "." + Name.ToUpper();
+                if (DataSet != null && DataSet.ManualItems.TryGetValue(functionKey, out List<string>? content))
                 {
                     texts.AddRange(new List<string>()
                     {
                         header,
                         "\t\t{",
-                        "\t\t\t//MANUAL_FUNCTION : " + VersionName.ToUpper() + "." + Name.ToUpper(),
-                        "",
-                        "\t\t\t" + outputType + " result = new " + returnOutput + "();",
-                        "\t\t\treturn result;",
-                        "",
-                        "\t\t\t//END_MANUAL",
-                        "\t\t}"
+                        "\t\t\t" + functionKey,
                     });
-                    return texts;
-                }
-                else if (outputType == "T")
-                {
+                    if(content != null)
+                    {
+                        foreach (var c in content)
+                        {
+                            texts.Add(c);
+                        }
+                    }
                     texts.AddRange(new List<string>()
                     {
-                        header,
-                        "\t\t{",
-                        "\t\t\t//MANUAL_FUNCTION : " + VersionName.ToUpper() + "." + Name.ToUpper(),
-                        "",
-                        outputType == "T"?"\t\t\treturn default(T);": "\t\t\treturn null;",
-                        "",
                         "\t\t\t//END_MANUAL",
                         "\t\t}"
                     });
                     return texts;
                 }
-               
+                else
+                {
+                    if (canWrite)
+                    {
+                        texts.AddRange(new List<string>()
+                        {
+                            header,
+                            "\t\t{",
+                            "\t\t\t" + functionKey,
+                            "",
+                            "\t\t\t" + outputType + " result = new " + returnOutput + "();",
+                            "\t\t\treturn result;",
+                            "",
+                            "\t\t\t//END_MANUAL",
+                            "\t\t}"
+                        });
+                        return texts;
+                    }
+                    else if (outputType == "T")
+                    {
+                        texts.AddRange(new List<string>()
+                        {
+                            header,
+                            "\t\t{",
+                            "\t\t\t" + functionKey,
+                            "",
+                            outputType == "T"?"\t\t\treturn default(T);": "\t\t\treturn null;",
+                            "",
+                            "\t\t\t//END_MANUAL",
+                            "\t\t}"
+                        });
+                        return texts;
+                    }
+                }
             }
             return new List<string>();
         }

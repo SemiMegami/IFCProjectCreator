@@ -252,7 +252,8 @@ namespace IFCProjectCreator
                         }
                         IFCDerivedAttribute IFCAttribute = new IFCDerivedAttribute() { Entity = this };
                         string[] strings = line.Split(" := ");
-                        if(strings.Length > 1)
+                        IFCAttribute.Dataset = DataSet;
+                        if (strings.Length > 1)
                         {
                             IFCAttribute.DeriveText = line.Split(" := ")[1];
                         }

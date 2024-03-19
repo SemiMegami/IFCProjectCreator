@@ -172,7 +172,10 @@ namespace IFCProjectCreator
                                 {
                                   
                                     line = reader.ReadLine() ?? "";
-                                    contains.Add(line);
+                                    if (!line.Contains("//END_MANUAL"))
+                                    {
+                                        contains.Add(line);
+                                    } 
                                 }
                                 ManualItems.Add(key, contains);
                             }

@@ -17,6 +17,7 @@ namespace IFCProjectCreator
 
         public bool isReadOnly { get; set; }
         public bool isOverride { get; set; }
+        public IFCDataSet? Dataset { get; set; }
 
         public bool includedInGlobal { get; set; }
 
