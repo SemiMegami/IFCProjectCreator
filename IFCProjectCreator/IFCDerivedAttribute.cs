@@ -10,7 +10,7 @@ namespace IFCProjectCreator
     {
         public string DeriveText { get; set; }
         public IFCEntity? Entity { get; set; }
-
+        public IFCDataSet? Dataset { get; set; }
         public bool includeSet { get; set; }
 
         public IFCDerivedAttribute() : base()
@@ -22,10 +22,26 @@ namespace IFCProjectCreator
 
         public override List<string> GetCSharpText()
         {
-            if(Entity != null)
+            if (Entity != null)
             {
+
+                var getValue = "//MANUAL_GET_DERIVED : " + Entity.VersionName.ToUpper() + "." + Entity.Name.ToUpper() + "." + Name.ToUpper();
+                var setVelue = "//MANUAL_SET_DERIVED : " + Entity.VersionName.ToUpper() + "." + Entity.Name.ToUpper() + "." + Name.ToUpper();
+
+
+                List<string> result = new List<string>()
+                {
+                    "\t\tpublic " + (isOverride? "override ": "virtual ") + GetCSharpTypeText() + "? " + Name,
+                        "\t\t{",
+                        "\t\t\tget",
+                        "\t\t\t{",
+                        "\t\t\t\t//MANUAL_GET_DERIVED : " + Entity.VersionName.ToUpper() + "." + Entity.Name.ToUpper() + "." + Name.ToUpper(),
+                };
+                //if(Dataset)
+
                 if (!includeSet)
                 {
+
                     return new List<string>
                     {
                         "\t\tpublic " + (isOverride? "override ": "virtual ") + GetCSharpTypeText() + "? " + Name,

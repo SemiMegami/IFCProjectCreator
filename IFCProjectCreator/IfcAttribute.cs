@@ -19,6 +19,7 @@ namespace IFCProjectCreator
         public bool isOverride { get; set; }
 
         public bool includedInGlobal { get; set; }
+
         public IFCAttribute()
         {
             Name = "";
@@ -29,6 +30,7 @@ namespace IFCProjectCreator
             AttributeType = IFCAttributeType.NONE;
             isOverride = false;
             includedInGlobal = false;
+
         }
         /// <summary>
         /// for compare attribute
@@ -122,12 +124,12 @@ namespace IFCProjectCreator
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\tIFC_Attributes<"+typeName + ">? Items = new IFC_Attributes<"+typeName +">();",
+                        "\t\t\t\t\tIFC_Attributes<"+typeName + ">? _Items_ = new IFC_Attributes<"+typeName +">();",
                         "\t\t\t\t\tforeach (" + TypeName + " item in " + Name +")",
                         "\t\t\t\t\t{",
-                        "\t\t\t\t\t\tItems.Add(item);",
+                        "\t\t\t\t\t\t_Items_.Add(item);",
                         "\t\t\t\t\t}",
-                        "\t\t\t\t\treturn Items;",
+                        "\t\t\t\t\treturn _Items_;",
                         "\t\t\t\t}",
                         "\t\t\t\treturn null;",
                         "\t\t\t}",
@@ -145,12 +147,12 @@ namespace IFCProjectCreator
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\tIFC_Attributes<"+typeName + ">? Items = new IFC_Attributes<"+typeName +">();",
+                        "\t\t\t\t\tIFC_Attributes<"+typeName + ">? _Items_ = new IFC_Attributes<"+typeName +">();",
                         "\t\t\t\t\tforeach (" + TypeName + " item in " + Name +")",
                         "\t\t\t\t\t{",
-                        "\t\t\t\t\t\tItems.Add(item);",
+                        "\t\t\t\t\t\t_Items_.Add(item);",
                         "\t\t\t\t\t}",
-                        "\t\t\t\t\treturn Items;",
+                        "\t\t\t\t\treturn _Items_;",
                         "\t\t\t\t}",
                         "\t\t\t\treturn null;",
                         "\t\t\t}",
@@ -189,7 +191,7 @@ namespace IFCProjectCreator
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\tIFC_Attributes<IFC_Attributes<"+typeName + ">>? Items = new IFC_Attributes<IFC_Attributes<"+typeName +">>();",
+                        "\t\t\t\t\tIFC_Attributes<IFC_Attributes<"+typeName + ">>? _Items_ = new IFC_Attributes<IFC_Attributes<"+typeName +">>();",
                         "\t\t\t\t\tforeach (IFC_Attributes<" + TypeName + "> item1s in " + Name +")",
                         "\t\t\t\t\t{",
                         "\t\t\t\t\t\tIFC_Attributes<"+typeName + ">? resultItems = new IFC_Attributes<"+typeName +">();",
@@ -197,9 +199,9 @@ namespace IFCProjectCreator
                         "\t\t\t\t\t\t{",
                         "\t\t\t\t\t\t\tresultItems.Add(item);",
                         "\t\t\t\t\t\t}",
-                        "\t\t\t\t\t\tItems.Add(resultItems);",
+                        "\t\t\t\t\t\t_Items_.Add(resultItems);",
                         "\t\t\t\t\t}",
-                        "\t\t\t\t\treturn Items;",
+                        "\t\t\t\t\treturn _Items_;",
                         "\t\t\t\t}",
                         "\t\t\t\treturn null;",
                         "\t\t\t}",
@@ -217,7 +219,7 @@ namespace IFCProjectCreator
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\tIFC_Attributes<IFC_Attributes<"+typeName + ">>? Items = new IFC_Attributes<IFC_Attributes<"+typeName +">>();",
+                        "\t\t\t\t\tIFC_Attributes<IFC_Attributes<"+typeName + ">>? _Items_ = new IFC_Attributes<IFC_Attributes<"+typeName +">>();",
                         "\t\t\t\t\tforeach (IFC_Attributes<" + TypeName + "> item1s in " + Name +")",
                         "\t\t\t\t\t{",
                         "\t\t\t\t\t\tIFC_Attributes<"+typeName + ">? resultItems = new IFC_Attributes<"+typeName +">();",
@@ -225,9 +227,9 @@ namespace IFCProjectCreator
                         "\t\t\t\t\t\t{",
                         "\t\t\t\t\t\t\tresultItems.Add(item);",
                         "\t\t\t\t\t\t}",
-                        "\t\t\t\t\t\tItems.Add(resultItems);",
+                        "\t\t\t\t\t\t_Items_.Add(resultItems);",
                         "\t\t\t\t\t}",
-                        "\t\t\t\t\treturn Items;",
+                        "\t\t\t\t\treturn _Items_;",
                         "\t\t\t\t}",
                         "\t\t\t\treturn null;",
                         "\t\t\t}",
@@ -244,15 +246,15 @@ namespace IFCProjectCreator
                         "\t\t\t\t\t{",
                         "\t\t\t\t\t\tif(vals != null)",
                         "\t\t\t\t\t\t{",
-                        "\t\t\t\t\t\t\tIFC_Attributes<" + TypeName + "> Items = new IFC_Attributes<" + TypeName + ">();",
+                        "\t\t\t\t\t\t\tIFC_Attributes<" + TypeName + "> _Items_ = new IFC_Attributes<" + TypeName + ">();",
                         "\t\t\t\t\t\t\tforeach(var val in vals)",
                         "\t\t\t\t\t\t\t{",
                         "\t\t\t\t\t\t\t\tif(val is " + TypeName + " v)",
                         "\t\t\t\t\t\t\t\t{",
-                        "\t\t\t\t\t\t\t\t\tItems.Add(v);",
+                        "\t\t\t\t\t\t\t\t\t_Items_.Add(v);",
                         "\t\t\t\t\t\t\t\t}",
                         "\t\t\t\t\t\t\t}",
-                        "\t\t\t\t\t\t\t" + Name + ".Add(Items);",
+                        "\t\t\t\t\t\t\t" + Name + ".Add(_Items_);",
                         "\t\t\t\t\t\t}",
                         "\t\t\t\t\t}",
                         "\t\t\t\t}",

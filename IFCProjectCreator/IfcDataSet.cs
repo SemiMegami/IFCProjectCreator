@@ -49,6 +49,7 @@ namespace IFCProjectCreator
         public List<IFCFunction> Functions { get; private set; }
         public List<string> Versions { get; private set; }
 
+        public Dictionary<string, List<string>> ManualItems ;
         public List<IFCSelectType> GlobalSelectTypes { get; private set; }
         /// <summary>
         /// Constructor
@@ -63,6 +64,7 @@ namespace IFCProjectCreator
             Functions = new List<IFCFunction>();
             Versions = new List<string> ();
             GlobalSelectTypes = new List<IFCSelectType> ();
+            ManualItems = new Dictionary<string, List<string>>();
             NamespaceName = "";
         }
 
@@ -150,10 +152,41 @@ namespace IFCProjectCreator
             }
         }
 
-        /// <summary>
-        /// Link parents
-        /// </summary>
-        private void SetParent()
+        public void ReadManualItem(string path)
+        {
+            if (File.Exists(path))
+            {
+                using (StreamReader reader = new StreamReader(path))
+                {
+                    if (reader != null)
+                    {
+                        string line;
+                        while (!reader.EndOfStream)
+                        {
+                            line = reader.ReadLine() ?? "";
+                            if (line.Contains("//MANUAL_"))
+                            {
+                                var key = line.Trim();
+                                List<string> contains = new List<string>();
+                                while (!line.Contains("//END_MANUAL"))
+                                {
+                                  
+                                    line = reader.ReadLine() ?? "";
+                                    contains.Add(line);
+                                }
+                                ManualItems.Add(key, contains);
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+
+            /// <summary>
+            /// Link parents
+            /// </summary>
+            private void SetParent()
         {
             List<IFCClass> Items = GetItems();
 
@@ -535,6 +568,7 @@ namespace IFCProjectCreator
 
                     else if (typeItems[0] is IFCEntity entity)
                     {
+                        globalSelectType.IsEntity = true;
                         List<IFCEntity> entities = new List<IFCEntity>();
                         bool found = false;
                         bool isReadOnly = false;

@@ -5124,7 +5124,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFC2DCompositeCurve: IFC_Attribute
+	public interface IFC2DCompositeCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5136,7 +5136,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCActionRequest: IFC_Attribute
+	public interface IFCActionRequest: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5149,7 +5149,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCActor: IFC_Attribute
+	public interface IFCActor: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5163,7 +5163,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCActorRole: IFC_Attribute
+	public interface IFCActorRole: IFC_Entity
 	{
 		public IFCRoleEnum? _Role {get; set;}
 		public IFCLabel? _UserDefinedRole {get; set;}
@@ -5171,7 +5171,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCActuatorType: IFC_Attribute
+	public interface IFCActuatorType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5187,7 +5187,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAddress: IFC_Attribute
+	public interface IFCAddress: IFC_Entity
 	{
 		public IFCAddressTypeEnum? _Purpose {get; set;}
 		public IFCText? _Description {get; set;}
@@ -5197,7 +5197,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAirTerminalBoxType: IFC_Attribute
+	public interface IFCAirTerminalBoxType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5213,7 +5213,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAirTerminalType: IFC_Attribute
+	public interface IFCAirTerminalType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5229,7 +5229,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAirToAirHeatRecoveryType: IFC_Attribute
+	public interface IFCAirToAirHeatRecoveryType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5245,7 +5245,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlarmType: IFC_Attribute
+	public interface IFCAlarmType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5261,7 +5261,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAngularDimension: IFC_Attribute
+	public interface IFCAngularDimension: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5271,7 +5271,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAnnotation: IFC_Attribute
+	public interface IFCAnnotation: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5287,7 +5287,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAnnotationCurveOccurrence: IFC_Attribute
+	public interface IFCAnnotationCurveOccurrence: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5297,7 +5297,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAnnotationFillArea: IFC_Attribute
+	public interface IFCAnnotationFillArea: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCCurve? _OuterBoundary {get; }
@@ -5305,7 +5305,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAnnotationFillAreaOccurrence: IFC_Attribute
+	public interface IFCAnnotationFillAreaOccurrence: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5317,7 +5317,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAnnotationOccurrence: IFC_Attribute
+	public interface IFCAnnotationOccurrence: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5327,7 +5327,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAnnotationSurface: IFC_Attribute
+	public interface IFCAnnotationSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5336,7 +5336,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAnnotationSurfaceOccurrence: IFC_Attribute
+	public interface IFCAnnotationSurfaceOccurrence: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5346,7 +5346,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAnnotationSymbolOccurrence: IFC_Attribute
+	public interface IFCAnnotationSymbolOccurrence: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5356,7 +5356,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAnnotationTextOccurrence: IFC_Attribute
+	public interface IFCAnnotationTextOccurrence: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5366,7 +5366,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCApplication: IFC_Attribute
+	public interface IFCApplication: IFC_Entity
 	{
 		public IFCOrganization? _ApplicationDeveloper {get; set;}
 		public IFCLabel? _Version {get; set;}
@@ -5375,7 +5375,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAppliedValue: IFC_Attribute
+	public interface IFCAppliedValue: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -5384,7 +5384,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAppliedValueRelationship: IFC_Attribute
+	public interface IFCAppliedValueRelationship: IFC_Entity
 	{
 		public IFCAppliedValue? _ComponentOfTotal {get; set;}
 		public IFC_Attributes<IFCAppliedValue>? _Components {get; set;}
@@ -5394,7 +5394,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCApproval: IFC_Attribute
+	public interface IFCApproval: IFC_Entity
 	{
 		public IFCText? _Description {get; set;}
 		public IFCLabel? _Name {get; set;}
@@ -5404,7 +5404,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCApprovalActorRelationship: IFC_Attribute
+	public interface IFCApprovalActorRelationship: IFC_Entity
 	{
 		public IFCActorSelect? _Actor {get; set;}
 		public IFCApproval? _Approval {get; set;}
@@ -5412,14 +5412,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCApprovalPropertyRelationship: IFC_Attribute
+	public interface IFCApprovalPropertyRelationship: IFC_Entity
 	{
 		public IFC_Attributes<IFCProperty>? _ApprovedProperties {get; set;}
 		public IFCApproval? _Approval {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCApprovalRelationship: IFC_Attribute
+	public interface IFCApprovalRelationship: IFC_Entity
 	{
 		public IFCApproval? _RelatingApproval {get; set;}
 		public IFCText? _Description {get; set;}
@@ -5427,7 +5427,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCArbitraryClosedProfileDef: IFC_Attribute
+	public interface IFCArbitraryClosedProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -5435,7 +5435,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCArbitraryOpenProfileDef: IFC_Attribute
+	public interface IFCArbitraryOpenProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -5443,7 +5443,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCArbitraryProfileDefWithVoids: IFC_Attribute
+	public interface IFCArbitraryProfileDefWithVoids: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -5452,7 +5452,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAsset: IFC_Attribute
+	public interface IFCAsset: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5471,7 +5471,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAsymmetricIShapeProfileDef: IFC_Attribute
+	public interface IFCAsymmetricIShapeProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -5483,7 +5483,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAxis1Placement: IFC_Attribute
+	public interface IFCAxis1Placement: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -5492,7 +5492,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAxis2Placement2D: IFC_Attribute
+	public interface IFCAxis2Placement2D: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -5501,7 +5501,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAxis2Placement3D: IFC_Attribute
+	public interface IFCAxis2Placement3D: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -5511,7 +5511,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBSplineCurve: IFC_Attribute
+	public interface IFCBSplineCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -5521,7 +5521,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBeam: IFC_Attribute
+	public interface IFCBeam: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5547,7 +5547,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBeamType: IFC_Attribute
+	public interface IFCBeamType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5563,7 +5563,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBezierCurve: IFC_Attribute
+	public interface IFCBezierCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -5578,14 +5578,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBlobTexture: IFC_Attribute
+	public interface IFCBlobTexture: IFC_Entity
 	{
 		public IFCCartesianTransformationOperator2D? _TextureTransform {get; set;}
 		public IFCIdentifier? _RasterFormat {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBlock: IFC_Attribute
+	public interface IFCBlock: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCAxis2Placement3D? _Position {get; }
@@ -5596,7 +5596,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBoilerType: IFC_Attribute
+	public interface IFCBoilerType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5612,7 +5612,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBooleanClippingResult: IFC_Attribute
+	public interface IFCBooleanClippingResult: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCBooleanOperator? _Operator {get; }
@@ -5622,7 +5622,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBooleanResult: IFC_Attribute
+	public interface IFCBooleanResult: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCBooleanOperator? _Operator {get; }
@@ -5632,50 +5632,50 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBoundaryCondition: IFC_Attribute
+	public interface IFCBoundaryCondition: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBoundaryEdgeCondition: IFC_Attribute
+	public interface IFCBoundaryEdgeCondition: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBoundaryFaceCondition: IFC_Attribute
+	public interface IFCBoundaryFaceCondition: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBoundaryNodeCondition: IFC_Attribute
+	public interface IFCBoundaryNodeCondition: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBoundaryNodeConditionWarping: IFC_Attribute
+	public interface IFCBoundaryNodeConditionWarping: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBoundedCurve: IFC_Attribute
+	public interface IFCBoundedCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBoundedSurface: IFC_Attribute
+	public interface IFCBoundedSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBoundingBox: IFC_Attribute
+	public interface IFCBoundingBox: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCCartesianPoint? _Corner {get; }
@@ -5686,7 +5686,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBoxedHalfSpace: IFC_Attribute
+	public interface IFCBoxedHalfSpace: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCSurface? _BaseSurface {get; }
@@ -5695,7 +5695,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuilding: IFC_Attribute
+	public interface IFCBuilding: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5718,7 +5718,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuildingElement: IFC_Attribute
+	public interface IFCBuildingElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5744,7 +5744,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuildingElementComponent: IFC_Attribute
+	public interface IFCBuildingElementComponent: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5775,7 +5775,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuildingElementPart: IFC_Attribute
+	public interface IFCBuildingElementPart: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5801,7 +5801,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuildingElementProxy: IFC_Attribute
+	public interface IFCBuildingElementProxy: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5827,7 +5827,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuildingElementProxyType: IFC_Attribute
+	public interface IFCBuildingElementProxyType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5843,7 +5843,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuildingElementType: IFC_Attribute
+	public interface IFCBuildingElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5858,7 +5858,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuildingStorey: IFC_Attribute
+	public interface IFCBuildingStorey: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5879,7 +5879,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCShapeProfileDef: IFC_Attribute
+	public interface IFCCShapeProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -5891,7 +5891,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCableCarrierFittingType: IFC_Attribute
+	public interface IFCCableCarrierFittingType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5907,7 +5907,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCableCarrierSegmentType: IFC_Attribute
+	public interface IFCCableCarrierSegmentType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5923,7 +5923,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCableSegmentType: IFC_Attribute
+	public interface IFCCableSegmentType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -5939,7 +5939,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCalendarDate: IFC_Attribute
+	public interface IFCCalendarDate: IFC_Entity
 	{
 		public IFCDayInMonthNumber? _DayComponent {get; set;}
 		public IFCMonthInYearNumber? _MonthComponent {get; set;}
@@ -5947,7 +5947,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCartesianPoint: IFC_Attribute
+	public interface IFCCartesianPoint: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCLengthMeasure>? _Coordinates {get; }
@@ -5955,7 +5955,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCartesianTransformationOperator: IFC_Attribute
+	public interface IFCCartesianTransformationOperator: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDirection? _Axis1 {get; }
@@ -5965,18 +5965,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCartesianTransformationOperator2D: IFC_Attribute
-	{
-		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
-		public IFCDirection? _Axis1 {get; }
-		public IFCDirection? _Axis2 {get; }
-		public IFCCartesianPoint? _LocalOrigin {get; }
-		public IFCDimensionCount? _Dim {get; }
-		public IFC_Attributes<IFCDirection>? _U {get; }
-	}
-	/// <summary>
-	/// </summary>
-	public interface IFCCartesianTransformationOperator2DnonUniform: IFC_Attribute
+	public interface IFCCartesianTransformationOperator2D: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDirection? _Axis1 {get; }
@@ -5987,7 +5976,18 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCartesianTransformationOperator3D: IFC_Attribute
+	public interface IFCCartesianTransformationOperator2DnonUniform: IFC_Entity
+	{
+		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
+		public IFCDirection? _Axis1 {get; }
+		public IFCDirection? _Axis2 {get; }
+		public IFCCartesianPoint? _LocalOrigin {get; }
+		public IFCDimensionCount? _Dim {get; }
+		public IFC_Attributes<IFCDirection>? _U {get; }
+	}
+	/// <summary>
+	/// </summary>
+	public interface IFCCartesianTransformationOperator3D: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDirection? _Axis1 {get; }
@@ -5999,7 +5999,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCartesianTransformationOperator3DnonUniform: IFC_Attribute
+	public interface IFCCartesianTransformationOperator3DnonUniform: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDirection? _Axis1 {get; }
@@ -6011,7 +6011,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCenterLineProfileDef: IFC_Attribute
+	public interface IFCCenterLineProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -6020,7 +6020,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCChamferEdgeFeature: IFC_Attribute
+	public interface IFCChamferEdgeFeature: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6055,7 +6055,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCChillerType: IFC_Attribute
+	public interface IFCChillerType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6071,7 +6071,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCircle: IFC_Attribute
+	public interface IFCCircle: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -6080,7 +6080,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCircleHollowProfileDef: IFC_Attribute
+	public interface IFCCircleHollowProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -6090,7 +6090,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCircleProfileDef: IFC_Attribute
+	public interface IFCCircleProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -6099,7 +6099,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCClassification: IFC_Attribute
+	public interface IFCClassification: IFC_Entity
 	{
 		public IFCLabel? _Source {get; set;}
 		public IFCLabel? _Edition {get; set;}
@@ -6107,7 +6107,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCClassificationItem: IFC_Attribute
+	public interface IFCClassificationItem: IFC_Entity
 	{
 		public IFCClassificationNotationFacet? _Notation {get; set;}
 		public IFCClassification? _ItemOf {get; set;}
@@ -6117,39 +6117,39 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCClassificationItemRelationship: IFC_Attribute
+	public interface IFCClassificationItemRelationship: IFC_Entity
 	{
 		public IFCClassificationItem? _RelatingItem {get; set;}
 		public IFC_Attributes<IFCClassificationItem>? _RelatedItems {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCClassificationNotation: IFC_Attribute
+	public interface IFCClassificationNotation: IFC_Entity
 	{
 		public IFC_Attributes<IFCClassificationNotationFacet>? _NotationFacets {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCClassificationNotationFacet: IFC_Attribute
+	public interface IFCClassificationNotationFacet: IFC_Entity
 	{
 		public IFCLabel? _NotationValue {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCClassificationReference: IFC_Attribute
+	public interface IFCClassificationReference: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCClosedShell: IFC_Attribute
+	public interface IFCClosedShell: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCFace>? _CfsFaces {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCoilType: IFC_Attribute
+	public interface IFCCoilType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6165,7 +6165,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCColourRgb: IFC_Attribute
+	public interface IFCColourRgb: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCNormalisedRatioMeasure? _Red {get; set;}
@@ -6174,13 +6174,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCColourSpecification: IFC_Attribute
+	public interface IFCColourSpecification: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCColumn: IFC_Attribute
+	public interface IFCColumn: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6206,7 +6206,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCColumnType: IFC_Attribute
+	public interface IFCColumnType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6222,7 +6222,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCComplexProperty: IFC_Attribute
+	public interface IFCComplexProperty: IFC_Entity
 	{
 		public IFCIdentifier? _Name {get; set;}
 		public IFC_Attributes<IFCPropertyDependencyRelationship>? _PropertyForDependance {get; }
@@ -6233,14 +6233,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCompositeCurve: IFC_Attribute
+	public interface IFCCompositeCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCompositeCurveSegment: IFC_Attribute
+	public interface IFCCompositeCurveSegment: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCTransitionCode? _Transition {get; }
@@ -6250,7 +6250,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCompositeProfileDef: IFC_Attribute
+	public interface IFCCompositeProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -6259,7 +6259,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCompressorType: IFC_Attribute
+	public interface IFCCompressorType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6275,7 +6275,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCondenserType: IFC_Attribute
+	public interface IFCCondenserType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6291,7 +6291,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCondition: IFC_Attribute
+	public interface IFCCondition: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6307,7 +6307,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConditionCriterion: IFC_Attribute
+	public interface IFCConditionCriterion: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6325,7 +6325,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConic: IFC_Attribute
+	public interface IFCConic: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -6333,26 +6333,26 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConnectedFaceSet: IFC_Attribute
+	public interface IFCConnectedFaceSet: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCFace>? _CfsFaces {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConnectionCurveGeometry: IFC_Attribute
+	public interface IFCConnectionCurveGeometry: IFC_Entity
 	{
 		public IFCCurveOrEdgeCurve? _CurveOnRelatingElement {get; set;}
 		public IFCCurveOrEdgeCurve? _CurveOnRelatedElement {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConnectionGeometry: IFC_Attribute
+	public interface IFCConnectionGeometry: IFC_Entity
 	{
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConnectionPointEccentricity: IFC_Attribute
+	public interface IFCConnectionPointEccentricity: IFC_Entity
 	{
 		public IFCPointOrVertexPoint? _PointOnRelatingElement {get; set;}
 		public IFCPointOrVertexPoint? _PointOnRelatedElement {get; set;}
@@ -6362,14 +6362,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConnectionPointGeometry: IFC_Attribute
+	public interface IFCConnectionPointGeometry: IFC_Entity
 	{
 		public IFCPointOrVertexPoint? _PointOnRelatingElement {get; set;}
 		public IFCPointOrVertexPoint? _PointOnRelatedElement {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConnectionPortGeometry: IFC_Attribute
+	public interface IFCConnectionPortGeometry: IFC_Entity
 	{
 		public IFCAxis2Placement? _LocationAtRelatingElement {get; set;}
 		public IFCAxis2Placement? _LocationAtRelatedElement {get; set;}
@@ -6377,14 +6377,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConnectionSurfaceGeometry: IFC_Attribute
+	public interface IFCConnectionSurfaceGeometry: IFC_Entity
 	{
 		public IFCSurfaceOrFaceSurface? _SurfaceOnRelatingElement {get; set;}
 		public IFCSurfaceOrFaceSurface? _SurfaceOnRelatedElement {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConstraint: IFC_Attribute
+	public interface IFCConstraint: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -6395,7 +6395,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConstraintAggregationRelationship: IFC_Attribute
+	public interface IFCConstraintAggregationRelationship: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -6405,14 +6405,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConstraintClassificationRelationship: IFC_Attribute
+	public interface IFCConstraintClassificationRelationship: IFC_Entity
 	{
 		public IFCConstraint? _ClassifiedConstraint {get; set;}
 		public IFC_Attributes<IFCClassificationNotationSelect>? _RelatedClassifications {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConstraintRelationship: IFC_Attribute
+	public interface IFCConstraintRelationship: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -6421,7 +6421,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConstructionEquipmentResource: IFC_Attribute
+	public interface IFCConstructionEquipmentResource: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6434,7 +6434,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConstructionMaterialResource: IFC_Attribute
+	public interface IFCConstructionMaterialResource: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6447,7 +6447,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConstructionProductResource: IFC_Attribute
+	public interface IFCConstructionProductResource: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6460,7 +6460,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConstructionResource: IFC_Attribute
+	public interface IFCConstructionResource: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6473,7 +6473,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCContextDependentUnit: IFC_Attribute
+	public interface IFCContextDependentUnit: IFC_Entity
 	{
 		public IFCDimensionalExponents? _Dimensions {get; set;}
 		public IFCUnitEnum? _UnitType {get; set;}
@@ -6481,7 +6481,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCControl: IFC_Attribute
+	public interface IFCControl: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6494,7 +6494,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCControllerType: IFC_Attribute
+	public interface IFCControllerType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6510,7 +6510,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConversionBasedUnit: IFC_Attribute
+	public interface IFCConversionBasedUnit: IFC_Entity
 	{
 		public IFCDimensionalExponents? _Dimensions {get; set;}
 		public IFCUnitEnum? _UnitType {get; set;}
@@ -6519,7 +6519,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCooledBeamType: IFC_Attribute
+	public interface IFCCooledBeamType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6535,7 +6535,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCoolingTowerType: IFC_Attribute
+	public interface IFCCoolingTowerType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6551,7 +6551,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCoordinatedUniversalTimeOffset: IFC_Attribute
+	public interface IFCCoordinatedUniversalTimeOffset: IFC_Entity
 	{
 		public IFCHourInDay? _HourOffset {get; set;}
 		public IFCMinuteInHour? _MinuteOffset {get; set;}
@@ -6559,7 +6559,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCostItem: IFC_Attribute
+	public interface IFCCostItem: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6572,7 +6572,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCostSchedule: IFC_Attribute
+	public interface IFCCostSchedule: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6587,7 +6587,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCostValue: IFC_Attribute
+	public interface IFCCostValue: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -6596,7 +6596,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCovering: IFC_Attribute
+	public interface IFCCovering: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6624,7 +6624,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCoveringType: IFC_Attribute
+	public interface IFCCoveringType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6640,7 +6640,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCraneRailAShapeProfileDef: IFC_Attribute
+	public interface IFCCraneRailAShapeProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -6660,7 +6660,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCraneRailFShapeProfileDef: IFC_Attribute
+	public interface IFCCraneRailFShapeProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -6677,7 +6677,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCrewResource: IFC_Attribute
+	public interface IFCCrewResource: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6690,7 +6690,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCsgPrimitive3D: IFC_Attribute
+	public interface IFCCsgPrimitive3D: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCAxis2Placement3D? _Position {get; }
@@ -6698,7 +6698,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCsgSolid: IFC_Attribute
+	public interface IFCCsgSolid: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -6706,7 +6706,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCurrencyRelationship: IFC_Attribute
+	public interface IFCCurrencyRelationship: IFC_Entity
 	{
 		public IFCMonetaryUnit? _RelatingMonetaryUnit {get; set;}
 		public IFCMonetaryUnit? _RelatedMonetaryUnit {get; set;}
@@ -6715,7 +6715,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCurtainWall: IFC_Attribute
+	public interface IFCCurtainWall: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6741,7 +6741,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCurtainWallType: IFC_Attribute
+	public interface IFCCurtainWallType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6757,14 +6757,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCurve: IFC_Attribute
+	public interface IFCCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCurveBoundedPlane: IFC_Attribute
+	public interface IFCCurveBoundedPlane: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCPlane? _BasisSurface {get; }
@@ -6774,7 +6774,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCurveStyle: IFC_Attribute
+	public interface IFCCurveStyle: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCCurveFontOrScaledCurveFontSelect? _CurveFont {get; set;}
@@ -6783,28 +6783,28 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCurveStyleFont: IFC_Attribute
+	public interface IFCCurveStyleFont: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFC_Attributes<IFCCurveStyleFontPattern>? _PatternList {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCurveStyleFontAndScaling: IFC_Attribute
+	public interface IFCCurveStyleFontAndScaling: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCPositiveRatioMeasure? _CurveFontScaling {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCurveStyleFontPattern: IFC_Attribute
+	public interface IFCCurveStyleFontPattern: IFC_Entity
 	{
 		public IFCLengthMeasure? _VisibleSegmentLength {get; set;}
 		public IFCPositiveLengthMeasure? _InvisibleSegmentLength {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDamperType: IFC_Attribute
+	public interface IFCDamperType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6820,14 +6820,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDateAndTime: IFC_Attribute
+	public interface IFCDateAndTime: IFC_Entity
 	{
 		public IFCCalendarDate? _DateComponent {get; set;}
 		public IFCLocalTime? _TimeComponent {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDefinedSymbol: IFC_Attribute
+	public interface IFCDefinedSymbol: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -6836,7 +6836,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDerivedProfileDef: IFC_Attribute
+	public interface IFCDerivedProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -6846,7 +6846,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDerivedUnit: IFC_Attribute
+	public interface IFCDerivedUnit: IFC_Entity
 	{
 		public IFC_Attributes<IFCDerivedUnitElement>? _Elements {get; set;}
 		public IFCDerivedUnitEnum? _UnitType {get; set;}
@@ -6855,14 +6855,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDerivedUnitElement: IFC_Attribute
+	public interface IFCDerivedUnitElement: IFC_Entity
 	{
 		public IFCNamedUnit? _Unit {get; set;}
 		public INTEGER? _Exponent {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDiameterDimension: IFC_Attribute
+	public interface IFCDiameterDimension: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -6872,7 +6872,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDimensionCalloutRelationship: IFC_Attribute
+	public interface IFCDimensionCalloutRelationship: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -6881,7 +6881,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDimensionCurve: IFC_Attribute
+	public interface IFCDimensionCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -6892,7 +6892,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDimensionCurveDirectedCallout: IFC_Attribute
+	public interface IFCDimensionCurveDirectedCallout: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -6902,7 +6902,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDimensionCurveTerminator: IFC_Attribute
+	public interface IFCDimensionCurveTerminator: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -6914,7 +6914,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDimensionPair: IFC_Attribute
+	public interface IFCDimensionPair: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -6923,7 +6923,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDimensionalExponents: IFC_Attribute
+	public interface IFCDimensionalExponents: IFC_Entity
 	{
 		public INTEGER? _LengthExponent {get; set;}
 		public INTEGER? _MassExponent {get; set;}
@@ -6935,14 +6935,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDirection: IFC_Attribute
+	public interface IFCDirection: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDiscreteAccessory: IFC_Attribute
+	public interface IFCDiscreteAccessory: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6968,7 +6968,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDiscreteAccessoryType: IFC_Attribute
+	public interface IFCDiscreteAccessoryType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -6983,7 +6983,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionChamberElement: IFC_Attribute
+	public interface IFCDistributionChamberElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7011,7 +7011,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionChamberElementType: IFC_Attribute
+	public interface IFCDistributionChamberElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7027,7 +7027,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionControlElement: IFC_Attribute
+	public interface IFCDistributionControlElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7055,7 +7055,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionControlElementType: IFC_Attribute
+	public interface IFCDistributionControlElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7070,7 +7070,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionElement: IFC_Attribute
+	public interface IFCDistributionElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7097,7 +7097,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionElementType: IFC_Attribute
+	public interface IFCDistributionElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7112,7 +7112,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionFlowElement: IFC_Attribute
+	public interface IFCDistributionFlowElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7140,7 +7140,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionFlowElementType: IFC_Attribute
+	public interface IFCDistributionFlowElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7155,7 +7155,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionPort: IFC_Attribute
+	public interface IFCDistributionPort: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7173,7 +7173,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDocumentElectronicFormat: IFC_Attribute
+	public interface IFCDocumentElectronicFormat: IFC_Entity
 	{
 		public IFCLabel? _FileExtension {get; set;}
 		public IFCLabel? _MimeContentType {get; set;}
@@ -7181,7 +7181,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDocumentInformation: IFC_Attribute
+	public interface IFCDocumentInformation: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -7198,7 +7198,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDocumentInformationRelationship: IFC_Attribute
+	public interface IFCDocumentInformationRelationship: IFC_Entity
 	{
 		public IFCDocumentInformation? _RelatingDocument {get; set;}
 		public IFC_Attributes<IFCDocumentInformation>? _RelatedDocuments {get; set;}
@@ -7206,13 +7206,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDocumentReference: IFC_Attribute
+	public interface IFCDocumentReference: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDoor: IFC_Attribute
+	public interface IFCDoor: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7240,7 +7240,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDoorLiningProperties: IFC_Attribute
+	public interface IFCDoorLiningProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7259,7 +7259,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDoorPanelProperties: IFC_Attribute
+	public interface IFCDoorPanelProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7275,7 +7275,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDoorStyle: IFC_Attribute
+	public interface IFCDoorStyle: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7291,7 +7291,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDraughtingCallout: IFC_Attribute
+	public interface IFCDraughtingCallout: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -7301,7 +7301,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDraughtingCalloutRelationship: IFC_Attribute
+	public interface IFCDraughtingCalloutRelationship: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -7310,25 +7310,25 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDraughtingPreDefinedColour: IFC_Attribute
+	public interface IFCDraughtingPreDefinedColour: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDraughtingPreDefinedCurveFont: IFC_Attribute
+	public interface IFCDraughtingPreDefinedCurveFont: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDraughtingPreDefinedTextFont: IFC_Attribute
+	public interface IFCDraughtingPreDefinedTextFont: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDuctFittingType: IFC_Attribute
+	public interface IFCDuctFittingType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7344,7 +7344,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDuctSegmentType: IFC_Attribute
+	public interface IFCDuctSegmentType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7360,7 +7360,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDuctSilencerType: IFC_Attribute
+	public interface IFCDuctSilencerType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7376,7 +7376,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEdge: IFC_Attribute
+	public interface IFCEdge: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCVertex? _EdgeStart {get; }
@@ -7384,7 +7384,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEdgeCurve: IFC_Attribute
+	public interface IFCEdgeCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCVertex? _EdgeStart {get; }
@@ -7393,7 +7393,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEdgeFeature: IFC_Attribute
+	public interface IFCEdgeFeature: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7426,14 +7426,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEdgeLoop: IFC_Attribute
+	public interface IFCEdgeLoop: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCOrientedEdge>? _EdgeList {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricApplianceType: IFC_Attribute
+	public interface IFCElectricApplianceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7449,7 +7449,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricDistributionPoint: IFC_Attribute
+	public interface IFCElectricDistributionPoint: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7483,7 +7483,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricFlowStorageDeviceType: IFC_Attribute
+	public interface IFCElectricFlowStorageDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7499,7 +7499,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricGeneratorType: IFC_Attribute
+	public interface IFCElectricGeneratorType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7515,7 +7515,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricHeaterType: IFC_Attribute
+	public interface IFCElectricHeaterType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7535,7 +7535,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricMotorType: IFC_Attribute
+	public interface IFCElectricMotorType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7551,7 +7551,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricTimeControlType: IFC_Attribute
+	public interface IFCElectricTimeControlType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7567,7 +7567,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricalBaseProperties: IFC_Attribute
+	public interface IFCElectricalBaseProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7589,7 +7589,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricalCircuit: IFC_Attribute
+	public interface IFCElectricalCircuit: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7606,7 +7606,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricalElement: IFC_Attribute
+	public interface IFCElectricalElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7637,7 +7637,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElement: IFC_Attribute
+	public interface IFCElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7663,7 +7663,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElementAssembly: IFC_Attribute
+	public interface IFCElementAssembly: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7691,7 +7691,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElementComponent: IFC_Attribute
+	public interface IFCElementComponent: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7717,7 +7717,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElementComponentType: IFC_Attribute
+	public interface IFCElementComponentType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7732,7 +7732,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElementQuantity: IFC_Attribute
+	public interface IFCElementQuantity: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7745,7 +7745,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElementType: IFC_Attribute
+	public interface IFCElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7760,7 +7760,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElementarySurface: IFC_Attribute
+	public interface IFCElementarySurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCAxis2Placement3D? _Position {get; }
@@ -7768,7 +7768,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEllipse: IFC_Attribute
+	public interface IFCEllipse: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -7778,7 +7778,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEllipseProfileDef: IFC_Attribute
+	public interface IFCEllipseProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -7788,7 +7788,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEnergyConversionDevice: IFC_Attribute
+	public interface IFCEnergyConversionDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7816,7 +7816,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEnergyConversionDeviceType: IFC_Attribute
+	public interface IFCEnergyConversionDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7831,7 +7831,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEnergyProperties: IFC_Attribute
+	public interface IFCEnergyProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7845,7 +7845,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEnvironmentalImpactValue: IFC_Attribute
+	public interface IFCEnvironmentalImpactValue: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -7862,7 +7862,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEquipmentElement: IFC_Attribute
+	public interface IFCEquipmentElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7893,7 +7893,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEquipmentStandard: IFC_Attribute
+	public interface IFCEquipmentStandard: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7909,7 +7909,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEvaporativeCoolerType: IFC_Attribute
+	public interface IFCEvaporativeCoolerType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7925,7 +7925,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEvaporatorType: IFC_Attribute
+	public interface IFCEvaporatorType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -7941,7 +7941,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExtendedMaterialProperties: IFC_Attribute
+	public interface IFCExtendedMaterialProperties: IFC_Entity
 	{
 		public IFCMaterial? _Material {get; set;}
 		public IFC_Attributes<IFCProperty>? _ExtendedProperties {get; set;}
@@ -7950,25 +7950,25 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExternalReference: IFC_Attribute
+	public interface IFCExternalReference: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExternallyDefinedHatchStyle: IFC_Attribute
+	public interface IFCExternallyDefinedHatchStyle: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExternallyDefinedSurfaceStyle: IFC_Attribute
+	public interface IFCExternallyDefinedSurfaceStyle: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExternallyDefinedSymbol: IFC_Attribute
+	public interface IFCExternallyDefinedSymbol: IFC_Entity
 	{
 		public IFCLabel? _Location {get; set;}
 		public IFCIdentifier? _ItemReference {get; set;}
@@ -7976,13 +7976,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExternallyDefinedTextFont: IFC_Attribute
+	public interface IFCExternallyDefinedTextFont: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExtrudedAreaSolid: IFC_Attribute
+	public interface IFCExtrudedAreaSolid: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -7993,14 +7993,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFace: IFC_Attribute
+	public interface IFCFace: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCFaceBound>? _Bounds {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFaceBasedSurfaceModel: IFC_Attribute
+	public interface IFCFaceBasedSurfaceModel: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCConnectedFaceSet>? _FbsmFaces {get; }
@@ -8008,21 +8008,21 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFaceBound: IFC_Attribute
+	public interface IFCFaceBound: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCLoop? _Bound {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFaceOuterBound: IFC_Attribute
+	public interface IFCFaceOuterBound: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCLoop? _Bound {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFaceSurface: IFC_Attribute
+	public interface IFCFaceSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCFaceBound>? _Bounds {get; }
@@ -8030,7 +8030,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFacetedBrep: IFC_Attribute
+	public interface IFCFacetedBrep: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -8038,7 +8038,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFacetedBrepWithVoids: IFC_Attribute
+	public interface IFCFacetedBrepWithVoids: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -8047,7 +8047,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFailureConnectionCondition: IFC_Attribute
+	public interface IFCFailureConnectionCondition: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCForceMeasure? _TensionFailureX {get; set;}
@@ -8059,7 +8059,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFanType: IFC_Attribute
+	public interface IFCFanType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8075,7 +8075,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFastener: IFC_Attribute
+	public interface IFCFastener: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8101,7 +8101,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFastenerType: IFC_Attribute
+	public interface IFCFastenerType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8116,7 +8116,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFeatureElement: IFC_Attribute
+	public interface IFCFeatureElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8142,7 +8142,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFeatureElementAddition: IFC_Attribute
+	public interface IFCFeatureElementAddition: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8169,7 +8169,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFeatureElementSubtraction: IFC_Attribute
+	public interface IFCFeatureElementSubtraction: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8196,14 +8196,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFillAreaStyle: IFC_Attribute
+	public interface IFCFillAreaStyle: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFC_Attributes<IFCFillStyleSelect>? _FillStyles {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFillAreaStyleHatching: IFC_Attribute
+	public interface IFCFillAreaStyleHatching: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCCurveStyle? _HatchLineAppearance {get; }
@@ -8214,7 +8214,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFillAreaStyleTileSymbolWithStyle: IFC_Attribute
+	public interface IFCFillAreaStyleTileSymbolWithStyle: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -8222,14 +8222,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFillAreaStyleTiles: IFC_Attribute
+	public interface IFCFillAreaStyleTiles: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCPositiveRatioMeasure? _TilingScale {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFilterType: IFC_Attribute
+	public interface IFCFilterType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8245,7 +8245,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFireSuppressionTerminalType: IFC_Attribute
+	public interface IFCFireSuppressionTerminalType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8261,7 +8261,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowController: IFC_Attribute
+	public interface IFCFlowController: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8289,7 +8289,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowControllerType: IFC_Attribute
+	public interface IFCFlowControllerType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8304,7 +8304,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowFitting: IFC_Attribute
+	public interface IFCFlowFitting: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8332,7 +8332,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowFittingType: IFC_Attribute
+	public interface IFCFlowFittingType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8347,7 +8347,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowInstrumentType: IFC_Attribute
+	public interface IFCFlowInstrumentType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8363,7 +8363,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowMeterType: IFC_Attribute
+	public interface IFCFlowMeterType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8379,7 +8379,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowMovingDevice: IFC_Attribute
+	public interface IFCFlowMovingDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8407,7 +8407,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowMovingDeviceType: IFC_Attribute
+	public interface IFCFlowMovingDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8422,7 +8422,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowSegment: IFC_Attribute
+	public interface IFCFlowSegment: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8450,7 +8450,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowSegmentType: IFC_Attribute
+	public interface IFCFlowSegmentType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8465,7 +8465,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowStorageDevice: IFC_Attribute
+	public interface IFCFlowStorageDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8493,7 +8493,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowStorageDeviceType: IFC_Attribute
+	public interface IFCFlowStorageDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8508,7 +8508,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowTerminal: IFC_Attribute
+	public interface IFCFlowTerminal: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8536,7 +8536,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowTerminalType: IFC_Attribute
+	public interface IFCFlowTerminalType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8551,7 +8551,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowTreatmentDevice: IFC_Attribute
+	public interface IFCFlowTreatmentDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8579,7 +8579,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowTreatmentDeviceType: IFC_Attribute
+	public interface IFCFlowTreatmentDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8594,7 +8594,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFluidFlowProperties: IFC_Attribute
+	public interface IFCFluidFlowProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8621,7 +8621,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFooting: IFC_Attribute
+	public interface IFCFooting: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8648,7 +8648,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFuelProperties: IFC_Attribute
+	public interface IFCFuelProperties: IFC_Entity
 	{
 		public IFCMaterial? _Material {get; set;}
 		public IFCThermodynamicTemperatureMeasure? _CombustionTemperature {get; set;}
@@ -8658,7 +8658,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFurnishingElement: IFC_Attribute
+	public interface IFCFurnishingElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8684,7 +8684,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFurnishingElementType: IFC_Attribute
+	public interface IFCFurnishingElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8699,7 +8699,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFurnitureStandard: IFC_Attribute
+	public interface IFCFurnitureStandard: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8715,7 +8715,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFurnitureType: IFC_Attribute
+	public interface IFCFurnitureType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8731,7 +8731,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGasTerminalType: IFC_Attribute
+	public interface IFCGasTerminalType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8751,7 +8751,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeneralMaterialProperties: IFC_Attribute
+	public interface IFCGeneralMaterialProperties: IFC_Entity
 	{
 		public IFCMaterial? _Material {get; set;}
 		public IFCMolecularWeightMeasure? _MolecularWeight {get; set;}
@@ -8760,7 +8760,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeneralProfileProperties: IFC_Attribute
+	public interface IFCGeneralProfileProperties: IFC_Entity
 	{
 		public IFCLabel? _ProfileName {get; set;}
 		public IFCProfileDef? _ProfileDefinition {get; set;}
@@ -8772,7 +8772,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeometricCurveSet: IFC_Attribute
+	public interface IFCGeometricCurveSet: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCGeometricSetSelect>? _Elements {get; }
@@ -8780,7 +8780,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeometricRepresentationContext: IFC_Attribute
+	public interface IFCGeometricRepresentationContext: IFC_Entity
 	{
 		public IFCLabel? _ContextIdentifier {get; set;}
 		public IFCLabel? _ContextType {get; set;}
@@ -8792,13 +8792,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeometricRepresentationItem: IFC_Attribute
+	public interface IFCGeometricRepresentationItem: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeometricRepresentationSubContext: IFC_Attribute
+	public interface IFCGeometricRepresentationSubContext: IFC_Entity
 	{
 		public IFCLabel? _ContextIdentifier {get; set;}
 		public IFCLabel? _ContextType {get; set;}
@@ -8814,7 +8814,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeometricSet: IFC_Attribute
+	public interface IFCGeometricSet: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCGeometricSetSelect>? _Elements {get; }
@@ -8822,7 +8822,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGrid: IFC_Attribute
+	public interface IFCGrid: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8841,7 +8841,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGridAxis: IFC_Attribute
+	public interface IFCGridAxis: IFC_Entity
 	{
 		public IFCLabel? _AxisTag {get; set;}
 		public IFCCurve? _AxisCurve {get; set;}
@@ -8853,14 +8853,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGridPlacement: IFC_Attribute
+	public interface IFCGridPlacement: IFC_Entity
 	{
 		public IFC_Attributes<IFCProduct>? _PlacesObject {get; }
 		public IFCVirtualGridIntersection? _PlacementLocation {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGroup: IFC_Attribute
+	public interface IFCGroup: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8872,7 +8872,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCHalfSpaceSolid: IFC_Attribute
+	public interface IFCHalfSpaceSolid: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCSurface? _BaseSurface {get; }
@@ -8880,7 +8880,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCHeatExchangerType: IFC_Attribute
+	public interface IFCHeatExchangerType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8896,7 +8896,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCHumidifierType: IFC_Attribute
+	public interface IFCHumidifierType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8912,7 +8912,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCHygroscopicMaterialProperties: IFC_Attribute
+	public interface IFCHygroscopicMaterialProperties: IFC_Entity
 	{
 		public IFCMaterial? _Material {get; set;}
 		public IFCPositiveRatioMeasure? _UpperVaporResistanceFactor {get; set;}
@@ -8923,7 +8923,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCIShapeProfileDef: IFC_Attribute
+	public interface IFCIShapeProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -8935,13 +8935,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCImageTexture: IFC_Attribute
+	public interface IFCImageTexture: IFC_Entity
 	{
 		public IFCCartesianTransformationOperator2D? _TextureTransform {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCInventory: IFC_Attribute
+	public interface IFCInventory: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8957,7 +8957,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCIrregularTimeSeries: IFC_Attribute
+	public interface IFCIrregularTimeSeries: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -8969,13 +8969,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCIrregularTimeSeriesValue: IFC_Attribute
+	public interface IFCIrregularTimeSeriesValue: IFC_Entity
 	{
 		public IFC_Attributes<IFCValue>? _ListValues {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCJunctionBoxType: IFC_Attribute
+	public interface IFCJunctionBoxType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -8991,7 +8991,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLShapeProfileDef: IFC_Attribute
+	public interface IFCLShapeProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -9003,7 +9003,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLaborResource: IFC_Attribute
+	public interface IFCLaborResource: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9016,7 +9016,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLampType: IFC_Attribute
+	public interface IFCLampType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9032,20 +9032,20 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLibraryInformation: IFC_Attribute
+	public interface IFCLibraryInformation: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCLabel? _Version {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLibraryReference: IFC_Attribute
+	public interface IFCLibraryReference: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLightDistributionData: IFC_Attribute
+	public interface IFCLightDistributionData: IFC_Entity
 	{
 		public IFCPlaneAngleMeasure? _MainPlaneAngle {get; set;}
 		public IFC_Attributes<IFCPlaneAngleMeasure>? _SecondaryPlaneAngle {get; set;}
@@ -9053,7 +9053,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLightFixtureType: IFC_Attribute
+	public interface IFCLightFixtureType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9069,14 +9069,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLightIntensityDistribution: IFC_Attribute
+	public interface IFCLightIntensityDistribution: IFC_Entity
 	{
 		public IFCLightDistributionCurveEnum? _LightDistributionCurve {get; set;}
 		public IFC_Attributes<IFCLightDistributionData>? _DistributionData {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLightSource: IFC_Attribute
+	public interface IFCLightSource: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCLabel? _Name {get; }
@@ -9086,7 +9086,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLightSourceAmbient: IFC_Attribute
+	public interface IFCLightSourceAmbient: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCLabel? _Name {get; }
@@ -9096,7 +9096,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLightSourceDirectional: IFC_Attribute
+	public interface IFCLightSourceDirectional: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCLabel? _Name {get; }
@@ -9107,7 +9107,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLightSourceGoniometric: IFC_Attribute
+	public interface IFCLightSourceGoniometric: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCLabel? _Name {get; }
@@ -9123,7 +9123,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLightSourcePositional: IFC_Attribute
+	public interface IFCLightSourcePositional: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCLabel? _Name {get; }
@@ -9138,7 +9138,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLightSourceSpot: IFC_Attribute
+	public interface IFCLightSourceSpot: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCLabel? _Name {get; }
@@ -9157,7 +9157,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLine: IFC_Attribute
+	public interface IFCLine: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -9166,7 +9166,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLinearDimension: IFC_Attribute
+	public interface IFCLinearDimension: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9176,7 +9176,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLocalPlacement: IFC_Attribute
+	public interface IFCLocalPlacement: IFC_Entity
 	{
 		public IFC_Attributes<IFCProduct>? _PlacesObject {get; }
 		public IFCObjectPlacement? _PlacementRelTo {get; }
@@ -9184,7 +9184,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLocalTime: IFC_Attribute
+	public interface IFCLocalTime: IFC_Entity
 	{
 		public IFCHourInDay? _HourComponent {get; set;}
 		public IFCMinuteInHour? _MinuteComponent {get; set;}
@@ -9194,13 +9194,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLoop: IFC_Attribute
+	public interface IFCLoop: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCManifoldSolidBrep: IFC_Attribute
+	public interface IFCManifoldSolidBrep: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -9208,7 +9208,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMappedItem: IFC_Attribute
+	public interface IFCMappedItem: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCRepresentationMap? _MappingSource {get; }
@@ -9216,20 +9216,20 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterial: IFC_Attribute
+	public interface IFCMaterial: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFC_Attributes<IFCMaterialDefinitionRepresentation>? _HasRepresentation {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialClassificationRelationship: IFC_Attribute
+	public interface IFCMaterialClassificationRelationship: IFC_Entity
 	{
 		public IFCMaterial? _ClassifiedMaterial {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialDefinitionRepresentation: IFC_Attribute
+	public interface IFCMaterialDefinitionRepresentation: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -9238,7 +9238,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialLayer: IFC_Attribute
+	public interface IFCMaterialLayer: IFC_Entity
 	{
 		public IFCMaterial? _Material {get; set;}
 		public IFCLogical? _IsVentilated {get; set;}
@@ -9246,7 +9246,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialLayerSet: IFC_Attribute
+	public interface IFCMaterialLayerSet: IFC_Entity
 	{
 		public IFC_Attributes<IFCMaterialLayer>? _MaterialLayers {get; set;}
 		public IFCLabel? _LayerSetName {get; set;}
@@ -9254,7 +9254,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialLayerSetUsage: IFC_Attribute
+	public interface IFCMaterialLayerSetUsage: IFC_Entity
 	{
 		public IFCMaterialLayerSet? _ForLayerSet {get; set;}
 		public IFCLayerSetDirectionEnum? _LayerSetDirection {get; set;}
@@ -9263,25 +9263,25 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialList: IFC_Attribute
+	public interface IFCMaterialList: IFC_Entity
 	{
 		public IFC_Attributes<IFCMaterial>? _Materials {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialProperties: IFC_Attribute
+	public interface IFCMaterialProperties: IFC_Entity
 	{
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMeasureWithUnit: IFC_Attribute
+	public interface IFCMeasureWithUnit: IFC_Entity
 	{
 		public IFCValue? _ValueComponent {get; set;}
 		public IFCUnit? _UnitComponent {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMechanicalConcreteMaterialProperties: IFC_Attribute
+	public interface IFCMechanicalConcreteMaterialProperties: IFC_Entity
 	{
 		public IFCMaterial? _Material {get; set;}
 		public IFCDynamicViscosityMeasure? _DynamicViscosity {get; set;}
@@ -9298,7 +9298,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMechanicalFastener: IFC_Attribute
+	public interface IFCMechanicalFastener: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9326,7 +9326,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMechanicalFastenerType: IFC_Attribute
+	public interface IFCMechanicalFastenerType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9341,7 +9341,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMechanicalMaterialProperties: IFC_Attribute
+	public interface IFCMechanicalMaterialProperties: IFC_Entity
 	{
 		public IFCMaterial? _Material {get; set;}
 		public IFCDynamicViscosityMeasure? _DynamicViscosity {get; set;}
@@ -9352,7 +9352,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMechanicalSteelMaterialProperties: IFC_Attribute
+	public interface IFCMechanicalSteelMaterialProperties: IFC_Entity
 	{
 		public IFCMaterial? _Material {get; set;}
 		public IFCDynamicViscosityMeasure? _DynamicViscosity {get; set;}
@@ -9370,7 +9370,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMember: IFC_Attribute
+	public interface IFCMember: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9396,7 +9396,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMemberType: IFC_Attribute
+	public interface IFCMemberType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9412,7 +9412,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMetric: IFC_Attribute
+	public interface IFCMetric: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -9426,12 +9426,12 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMonetaryUnit: IFC_Attribute
+	public interface IFCMonetaryUnit: IFC_Entity
 	{
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMotorConnectionType: IFC_Attribute
+	public interface IFCMotorConnectionType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9447,7 +9447,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMove: IFC_Attribute
+	public interface IFCMove: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9473,14 +9473,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCNamedUnit: IFC_Attribute
+	public interface IFCNamedUnit: IFC_Entity
 	{
 		public IFCDimensionalExponents? _Dimensions {get; set;}
 		public IFCUnitEnum? _UnitType {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCObject: IFC_Attribute
+	public interface IFCObject: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9492,7 +9492,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCObjectDefinition: IFC_Attribute
+	public interface IFCObjectDefinition: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9503,13 +9503,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCObjectPlacement: IFC_Attribute
+	public interface IFCObjectPlacement: IFC_Entity
 	{
 		public IFC_Attributes<IFCProduct>? _PlacesObject {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCObjective: IFC_Attribute
+	public interface IFCObjective: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -9522,7 +9522,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOccupant: IFC_Attribute
+	public interface IFCOccupant: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9537,7 +9537,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOffsetCurve2D: IFC_Attribute
+	public interface IFCOffsetCurve2D: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -9546,7 +9546,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOffsetCurve3D: IFC_Attribute
+	public interface IFCOffsetCurve3D: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -9556,7 +9556,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOneDirectionRepeatFactor: IFC_Attribute
+	public interface IFCOneDirectionRepeatFactor: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -9564,14 +9564,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOpenShell: IFC_Attribute
+	public interface IFCOpenShell: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCFace>? _CfsFaces {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOpeningElement: IFC_Attribute
+	public interface IFCOpeningElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9599,7 +9599,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOpticalMaterialProperties: IFC_Attribute
+	public interface IFCOpticalMaterialProperties: IFC_Entity
 	{
 		public IFCMaterial? _Material {get; set;}
 		public IFCPositiveRatioMeasure? _VisibleTransmittance {get; set;}
@@ -9614,7 +9614,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOrderAction: IFC_Attribute
+	public interface IFCOrderAction: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9638,7 +9638,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOrganization: IFC_Attribute
+	public interface IFCOrganization: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -9650,7 +9650,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOrganizationRelationship: IFC_Attribute
+	public interface IFCOrganizationRelationship: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -9659,7 +9659,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOrientedEdge: IFC_Attribute
+	public interface IFCOrientedEdge: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCVertex? _EdgeStart {get; }
@@ -9668,7 +9668,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOutletType: IFC_Attribute
+	public interface IFCOutletType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9684,7 +9684,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOwnerHistory: IFC_Attribute
+	public interface IFCOwnerHistory: IFC_Entity
 	{
 		public IFCPersonAndOrganization? _OwningUser {get; set;}
 		public IFCApplication? _OwningApplication {get; set;}
@@ -9697,7 +9697,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCParameterizedProfileDef: IFC_Attribute
+	public interface IFCParameterizedProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -9705,14 +9705,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPath: IFC_Attribute
+	public interface IFCPath: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCOrientedEdge>? _EdgeList {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPerformanceHistory: IFC_Attribute
+	public interface IFCPerformanceHistory: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9726,7 +9726,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPermeableCoveringProperties: IFC_Attribute
+	public interface IFCPermeableCoveringProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9742,7 +9742,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPermit: IFC_Attribute
+	public interface IFCPermit: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9755,7 +9755,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPerson: IFC_Attribute
+	public interface IFCPerson: IFC_Entity
 	{
 		public IFCLabel? _FamilyName {get; set;}
 		public IFCLabel? _GivenName {get; set;}
@@ -9768,7 +9768,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPersonAndOrganization: IFC_Attribute
+	public interface IFCPersonAndOrganization: IFC_Entity
 	{
 		public IFCPerson? _ThePerson {get; set;}
 		public IFCOrganization? _TheOrganization {get; set;}
@@ -9776,7 +9776,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPhysicalComplexQuantity: IFC_Attribute
+	public interface IFCPhysicalComplexQuantity: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -9788,7 +9788,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPhysicalQuantity: IFC_Attribute
+	public interface IFCPhysicalQuantity: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -9796,7 +9796,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPhysicalSimpleQuantity: IFC_Attribute
+	public interface IFCPhysicalSimpleQuantity: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -9805,7 +9805,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPile: IFC_Attribute
+	public interface IFCPile: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9833,7 +9833,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPipeFittingType: IFC_Attribute
+	public interface IFCPipeFittingType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9849,7 +9849,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPipeSegmentType: IFC_Attribute
+	public interface IFCPipeSegmentType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9865,7 +9865,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPixelTexture: IFC_Attribute
+	public interface IFCPixelTexture: IFC_Entity
 	{
 		public IFCCartesianTransformationOperator2D? _TextureTransform {get; set;}
 		public IFCInteger? _Width {get; set;}
@@ -9874,14 +9874,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPlacement: IFC_Attribute
+	public interface IFCPlacement: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPlanarBox: IFC_Attribute
+	public interface IFCPlanarBox: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCLengthMeasure? _SizeInX {get; }
@@ -9890,7 +9890,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPlanarExtent: IFC_Attribute
+	public interface IFCPlanarExtent: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCLengthMeasure? _SizeInX {get; }
@@ -9898,7 +9898,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPlane: IFC_Attribute
+	public interface IFCPlane: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCAxis2Placement3D? _Position {get; }
@@ -9906,7 +9906,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPlate: IFC_Attribute
+	public interface IFCPlate: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9932,7 +9932,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPlateType: IFC_Attribute
+	public interface IFCPlateType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -9948,13 +9948,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPoint: IFC_Attribute
+	public interface IFCPoint: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPointOnCurve: IFC_Attribute
+	public interface IFCPointOnCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCCurve? _BasisCurve {get; }
@@ -9963,7 +9963,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPointOnSurface: IFC_Attribute
+	public interface IFCPointOnSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCSurface? _BasisSurface {get; }
@@ -9973,14 +9973,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPolyLoop: IFC_Attribute
+	public interface IFCPolyLoop: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCCartesianPoint>? _Polygon {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPolygonalBoundedHalfSpace: IFC_Attribute
+	public interface IFCPolygonalBoundedHalfSpace: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCSurface? _BaseSurface {get; }
@@ -9990,7 +9990,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPolyline: IFC_Attribute
+	public interface IFCPolyline: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -9998,7 +9998,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPort: IFC_Attribute
+	public interface IFCPort: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10015,7 +10015,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPostalAddress: IFC_Attribute
+	public interface IFCPostalAddress: IFC_Entity
 	{
 		public IFCAddressTypeEnum? _Purpose {get; set;}
 		public IFCText? _Description {get; set;}
@@ -10032,64 +10032,55 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPreDefinedColour: IFC_Attribute
+	public interface IFCPreDefinedColour: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPreDefinedCurveFont: IFC_Attribute
+	public interface IFCPreDefinedCurveFont: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPreDefinedDimensionSymbol: IFC_Attribute
+	public interface IFCPreDefinedDimensionSymbol: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPreDefinedItem: IFC_Attribute
+	public interface IFCPreDefinedItem: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPreDefinedPointMarkerSymbol: IFC_Attribute
+	public interface IFCPreDefinedPointMarkerSymbol: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPreDefinedSymbol: IFC_Attribute
+	public interface IFCPreDefinedSymbol: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPreDefinedTerminatorSymbol: IFC_Attribute
+	public interface IFCPreDefinedTerminatorSymbol: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPreDefinedTextFont: IFC_Attribute
+	public interface IFCPreDefinedTextFont: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPresentationLayerAssignment: IFC_Attribute
-	{
-		public IFCLabel? _Name {get; set;}
-		public IFCText? _Description {get; set;}
-		public IFC_Attributes<IFCLayeredItem>? _AssignedItems {get; set;}
-		public IFCIdentifier? _Identifier {get; set;}
-	}
-	/// <summary>
-	/// </summary>
-	public interface IFCPresentationLayerWithStyle: IFC_Attribute
+	public interface IFCPresentationLayerAssignment: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -10098,19 +10089,28 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPresentationStyle: IFC_Attribute
+	public interface IFCPresentationLayerWithStyle: IFC_Entity
+	{
+		public IFCLabel? _Name {get; set;}
+		public IFCText? _Description {get; set;}
+		public IFC_Attributes<IFCLayeredItem>? _AssignedItems {get; set;}
+		public IFCIdentifier? _Identifier {get; set;}
+	}
+	/// <summary>
+	/// </summary>
+	public interface IFCPresentationStyle: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPresentationStyleAssignment: IFC_Attribute
+	public interface IFCPresentationStyleAssignment: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationStyleSelect>? _Styles {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProcedure: IFC_Attribute
+	public interface IFCProcedure: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10125,7 +10125,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProcess: IFC_Attribute
+	public interface IFCProcess: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10140,7 +10140,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProduct: IFC_Attribute
+	public interface IFCProduct: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10155,7 +10155,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProductDefinitionShape: IFC_Attribute
+	public interface IFCProductDefinitionShape: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -10165,7 +10165,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProductRepresentation: IFC_Attribute
+	public interface IFCProductRepresentation: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -10173,7 +10173,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProductsOfCombustionProperties: IFC_Attribute
+	public interface IFCProductsOfCombustionProperties: IFC_Entity
 	{
 		public IFCMaterial? _Material {get; set;}
 		public IFCSpecificHeatCapacityMeasure? _SpecificHeatCapacity {get; set;}
@@ -10183,20 +10183,20 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProfileDef: IFC_Attribute
+	public interface IFCProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProfileProperties: IFC_Attribute
+	public interface IFCProfileProperties: IFC_Entity
 	{
 		public IFCProfileDef? _ProfileDefinition {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProject: IFC_Attribute
+	public interface IFCProject: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10212,7 +10212,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProjectOrder: IFC_Attribute
+	public interface IFCProjectOrder: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10227,7 +10227,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProjectOrderRecord: IFC_Attribute
+	public interface IFCProjectOrderRecord: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10245,7 +10245,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProjectionCurve: IFC_Attribute
+	public interface IFCProjectionCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -10255,7 +10255,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProjectionElement: IFC_Attribute
+	public interface IFCProjectionElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10282,7 +10282,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProperty: IFC_Attribute
+	public interface IFCProperty: IFC_Entity
 	{
 		public IFCIdentifier? _Name {get; set;}
 		public IFC_Attributes<IFCPropertyDependencyRelationship>? _PropertyForDependance {get; }
@@ -10291,7 +10291,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertyBoundedValue: IFC_Attribute
+	public interface IFCPropertyBoundedValue: IFC_Entity
 	{
 		public IFCIdentifier? _Name {get; set;}
 		public IFC_Attributes<IFCPropertyDependencyRelationship>? _PropertyForDependance {get; }
@@ -10303,7 +10303,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertyConstraintRelationship: IFC_Attribute
+	public interface IFCPropertyConstraintRelationship: IFC_Entity
 	{
 		public IFCConstraint? _RelatingConstraint {get; set;}
 		public IFC_Attributes<IFCProperty>? _RelatedProperties {get; set;}
@@ -10312,7 +10312,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertyDefinition: IFC_Attribute
+	public interface IFCPropertyDefinition: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10322,7 +10322,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertyDependencyRelationship: IFC_Attribute
+	public interface IFCPropertyDependencyRelationship: IFC_Entity
 	{
 		public IFCProperty? _DependingProperty {get; set;}
 		public IFCProperty? _DependantProperty {get; set;}
@@ -10332,7 +10332,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertyEnumeratedValue: IFC_Attribute
+	public interface IFCPropertyEnumeratedValue: IFC_Entity
 	{
 		public IFCIdentifier? _Name {get; set;}
 		public IFC_Attributes<IFCPropertyDependencyRelationship>? _PropertyForDependance {get; }
@@ -10343,7 +10343,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertyEnumeration: IFC_Attribute
+	public interface IFCPropertyEnumeration: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFC_Attributes<IFCValue>? _EnumerationValues {get; set;}
@@ -10351,7 +10351,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertyListValue: IFC_Attribute
+	public interface IFCPropertyListValue: IFC_Entity
 	{
 		public IFCIdentifier? _Name {get; set;}
 		public IFC_Attributes<IFCPropertyDependencyRelationship>? _PropertyForDependance {get; }
@@ -10362,7 +10362,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertyReferenceValue: IFC_Attribute
+	public interface IFCPropertyReferenceValue: IFC_Entity
 	{
 		public IFCIdentifier? _Name {get; set;}
 		public IFC_Attributes<IFCPropertyDependencyRelationship>? _PropertyForDependance {get; }
@@ -10372,7 +10372,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertySet: IFC_Attribute
+	public interface IFCPropertySet: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10384,7 +10384,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertySetDefinition: IFC_Attribute
+	public interface IFCPropertySetDefinition: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10395,7 +10395,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertySingleValue: IFC_Attribute
+	public interface IFCPropertySingleValue: IFC_Entity
 	{
 		public IFCIdentifier? _Name {get; set;}
 		public IFC_Attributes<IFCPropertyDependencyRelationship>? _PropertyForDependance {get; }
@@ -10406,7 +10406,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertyTableValue: IFC_Attribute
+	public interface IFCPropertyTableValue: IFC_Entity
 	{
 		public IFCIdentifier? _Name {get; set;}
 		public IFC_Attributes<IFCPropertyDependencyRelationship>? _PropertyForDependance {get; }
@@ -10420,7 +10420,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProtectiveDeviceType: IFC_Attribute
+	public interface IFCProtectiveDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10436,7 +10436,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProxy: IFC_Attribute
+	public interface IFCProxy: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10453,7 +10453,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPumpType: IFC_Attribute
+	public interface IFCPumpType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10469,7 +10469,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCQuantityArea: IFC_Attribute
+	public interface IFCQuantityArea: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -10479,7 +10479,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCQuantityCount: IFC_Attribute
+	public interface IFCQuantityCount: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -10489,7 +10489,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCQuantityLength: IFC_Attribute
+	public interface IFCQuantityLength: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -10499,7 +10499,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCQuantityTime: IFC_Attribute
+	public interface IFCQuantityTime: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -10509,7 +10509,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCQuantityVolume: IFC_Attribute
+	public interface IFCQuantityVolume: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -10519,7 +10519,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCQuantityWeight: IFC_Attribute
+	public interface IFCQuantityWeight: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -10529,7 +10529,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRadiusDimension: IFC_Attribute
+	public interface IFCRadiusDimension: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -10539,7 +10539,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRailing: IFC_Attribute
+	public interface IFCRailing: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10566,7 +10566,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRailingType: IFC_Attribute
+	public interface IFCRailingType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10582,7 +10582,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRamp: IFC_Attribute
+	public interface IFCRamp: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10608,7 +10608,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRampFlight: IFC_Attribute
+	public interface IFCRampFlight: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10634,7 +10634,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRampFlightType: IFC_Attribute
+	public interface IFCRampFlightType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10650,7 +10650,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRationalBezierCurve: IFC_Attribute
+	public interface IFCRationalBezierCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -10667,7 +10667,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRectangleHollowProfileDef: IFC_Attribute
+	public interface IFCRectangleHollowProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -10678,7 +10678,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRectangleProfileDef: IFC_Attribute
+	public interface IFCRectangleProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -10688,7 +10688,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRectangularPyramid: IFC_Attribute
+	public interface IFCRectangularPyramid: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCAxis2Placement3D? _Position {get; }
@@ -10699,7 +10699,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRectangularTrimmedSurface: IFC_Attribute
+	public interface IFCRectangularTrimmedSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCSurface? _BasisSurface {get; }
@@ -10711,7 +10711,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReferencesValueDocument: IFC_Attribute
+	public interface IFCReferencesValueDocument: IFC_Entity
 	{
 		public IFCDocumentSelect? _ReferencedDocument {get; set;}
 		public IFC_Attributes<IFCAppliedValue>? _ReferencingValues {get; set;}
@@ -10720,7 +10720,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRegularTimeSeries: IFC_Attribute
+	public interface IFCRegularTimeSeries: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -10733,7 +10733,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReinforcementBarProperties: IFC_Attribute
+	public interface IFCReinforcementBarProperties: IFC_Entity
 	{
 		public IFCAreaMeasure? _TotalCrossSectionArea {get; set;}
 		public IFCLabel? _SteelGrade {get; set;}
@@ -10744,7 +10744,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReinforcementDefinitionProperties: IFC_Attribute
+	public interface IFCReinforcementDefinitionProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10757,7 +10757,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReinforcingBar: IFC_Attribute
+	public interface IFCReinforcingBar: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10788,7 +10788,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReinforcingElement: IFC_Attribute
+	public interface IFCReinforcingElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10815,7 +10815,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReinforcingMesh: IFC_Attribute
+	public interface IFCReinforcingMesh: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10850,7 +10850,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAggregates: IFC_Attribute
+	public interface IFCRelAggregates: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10861,7 +10861,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssigns: IFC_Attribute
+	public interface IFCRelAssigns: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10871,7 +10871,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssignsTasks: IFC_Attribute
+	public interface IFCRelAssignsTasks: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10884,7 +10884,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssignsToActor: IFC_Attribute
+	public interface IFCRelAssignsToActor: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10896,7 +10896,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssignsToControl: IFC_Attribute
+	public interface IFCRelAssignsToControl: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10907,7 +10907,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssignsToGroup: IFC_Attribute
+	public interface IFCRelAssignsToGroup: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10918,7 +10918,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssignsToProcess: IFC_Attribute
+	public interface IFCRelAssignsToProcess: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10929,7 +10929,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssignsToProduct: IFC_Attribute
+	public interface IFCRelAssignsToProduct: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10939,7 +10939,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssignsToProjectOrder: IFC_Attribute
+	public interface IFCRelAssignsToProjectOrder: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10951,7 +10951,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssignsToResource: IFC_Attribute
+	public interface IFCRelAssignsToResource: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10961,7 +10961,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssociates: IFC_Attribute
+	public interface IFCRelAssociates: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10970,7 +10970,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssociatesAppliedValue: IFC_Attribute
+	public interface IFCRelAssociatesAppliedValue: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10981,7 +10981,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssociatesApproval: IFC_Attribute
+	public interface IFCRelAssociatesApproval: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -10991,7 +10991,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssociatesClassification: IFC_Attribute
+	public interface IFCRelAssociatesClassification: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11000,7 +11000,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssociatesConstraint: IFC_Attribute
+	public interface IFCRelAssociatesConstraint: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11011,7 +11011,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssociatesDocument: IFC_Attribute
+	public interface IFCRelAssociatesDocument: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11021,7 +11021,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssociatesLibrary: IFC_Attribute
+	public interface IFCRelAssociatesLibrary: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11031,7 +11031,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssociatesMaterial: IFC_Attribute
+	public interface IFCRelAssociatesMaterial: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11041,7 +11041,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssociatesProfileProperties: IFC_Attribute
+	public interface IFCRelAssociatesProfileProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11054,7 +11054,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelConnects: IFC_Attribute
+	public interface IFCRelConnects: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11063,7 +11063,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelConnectsElements: IFC_Attribute
+	public interface IFCRelConnectsElements: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11075,7 +11075,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelConnectsPathElements: IFC_Attribute
+	public interface IFCRelConnectsPathElements: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11089,7 +11089,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelConnectsPortToElement: IFC_Attribute
+	public interface IFCRelConnectsPortToElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11099,7 +11099,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelConnectsPorts: IFC_Attribute
+	public interface IFCRelConnectsPorts: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11111,7 +11111,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelConnectsStructuralActivity: IFC_Attribute
+	public interface IFCRelConnectsStructuralActivity: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11122,7 +11122,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelConnectsStructuralElement: IFC_Attribute
+	public interface IFCRelConnectsStructuralElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11133,7 +11133,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelConnectsStructuralMember: IFC_Attribute
+	public interface IFCRelConnectsStructuralMember: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11148,7 +11148,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelConnectsWithEccentricity: IFC_Attribute
+	public interface IFCRelConnectsWithEccentricity: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11164,7 +11164,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelConnectsWithRealizingElements: IFC_Attribute
+	public interface IFCRelConnectsWithRealizingElements: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11178,7 +11178,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelContainedInSpatialStructure: IFC_Attribute
+	public interface IFCRelContainedInSpatialStructure: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11188,7 +11188,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelCoversBldgElements: IFC_Attribute
+	public interface IFCRelCoversBldgElements: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11199,7 +11199,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelCoversSpaces: IFC_Attribute
+	public interface IFCRelCoversSpaces: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11209,7 +11209,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelDecomposes: IFC_Attribute
+	public interface IFCRelDecomposes: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11218,7 +11218,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelDefines: IFC_Attribute
+	public interface IFCRelDefines: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11227,7 +11227,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelDefinesByProperties: IFC_Attribute
+	public interface IFCRelDefinesByProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11236,7 +11236,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelDefinesByType: IFC_Attribute
+	public interface IFCRelDefinesByType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11247,7 +11247,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelFillsElement: IFC_Attribute
+	public interface IFCRelFillsElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11258,7 +11258,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelFlowControlElements: IFC_Attribute
+	public interface IFCRelFlowControlElements: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11269,7 +11269,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelInteractionRequirements: IFC_Attribute
+	public interface IFCRelInteractionRequirements: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11283,7 +11283,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelNests: IFC_Attribute
+	public interface IFCRelNests: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11293,7 +11293,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelOccupiesSpaces: IFC_Attribute
+	public interface IFCRelOccupiesSpaces: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11306,7 +11306,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelOverridesProperties: IFC_Attribute
+	public interface IFCRelOverridesProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11318,7 +11318,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelProjectsElement: IFC_Attribute
+	public interface IFCRelProjectsElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11329,7 +11329,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelReferencedInSpatialStructure: IFC_Attribute
+	public interface IFCRelReferencedInSpatialStructure: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11338,7 +11338,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelSchedulesCostItems: IFC_Attribute
+	public interface IFCRelSchedulesCostItems: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11350,7 +11350,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelSequence: IFC_Attribute
+	public interface IFCRelSequence: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11362,7 +11362,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelServicesBuildings: IFC_Attribute
+	public interface IFCRelServicesBuildings: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11372,7 +11372,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelSpaceBoundary: IFC_Attribute
+	public interface IFCRelSpaceBoundary: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11385,7 +11385,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelVoidsElement: IFC_Attribute
+	public interface IFCRelVoidsElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11396,7 +11396,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelationship: IFC_Attribute
+	public interface IFCRelationship: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11405,14 +11405,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelaxation: IFC_Attribute
+	public interface IFCRelaxation: IFC_Entity
 	{
 		public IFCNormalisedRatioMeasure? _RelaxationValue {get; set;}
 		public IFCNormalisedRatioMeasure? _InitialStress {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRepresentation: IFC_Attribute
+	public interface IFCRepresentation: IFC_Entity
 	{
 		public IFCRepresentationContext? _ContextOfItems {get; set;}
 		public IFCLabel? _RepresentationIdentifier {get; set;}
@@ -11424,7 +11424,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRepresentationContext: IFC_Attribute
+	public interface IFCRepresentationContext: IFC_Entity
 	{
 		public IFCLabel? _ContextIdentifier {get; set;}
 		public IFCLabel? _ContextType {get; set;}
@@ -11432,13 +11432,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRepresentationItem: IFC_Attribute
+	public interface IFCRepresentationItem: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRepresentationMap: IFC_Attribute
+	public interface IFCRepresentationMap: IFC_Entity
 	{
 		public IFCAxis2Placement? _MappingOrigin {get; set;}
 		public IFCRepresentation? _MappedRepresentation {get; set;}
@@ -11446,7 +11446,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCResource: IFC_Attribute
+	public interface IFCResource: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11459,7 +11459,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRevolvedAreaSolid: IFC_Attribute
+	public interface IFCRevolvedAreaSolid: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -11471,7 +11471,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRibPlateProfileProperties: IFC_Attribute
+	public interface IFCRibPlateProfileProperties: IFC_Entity
 	{
 		public IFCLabel? _ProfileName {get; set;}
 		public IFCProfileDef? _ProfileDefinition {get; set;}
@@ -11483,7 +11483,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRightCircularCone: IFC_Attribute
+	public interface IFCRightCircularCone: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCAxis2Placement3D? _Position {get; }
@@ -11493,7 +11493,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRightCircularCylinder: IFC_Attribute
+	public interface IFCRightCircularCylinder: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCAxis2Placement3D? _Position {get; }
@@ -11503,7 +11503,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRoof: IFC_Attribute
+	public interface IFCRoof: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11529,7 +11529,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRoot: IFC_Attribute
+	public interface IFCRoot: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11538,7 +11538,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRoundedEdgeFeature: IFC_Attribute
+	public interface IFCRoundedEdgeFeature: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11572,7 +11572,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRoundedRectangleProfileDef: IFC_Attribute
+	public interface IFCRoundedRectangleProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -11583,7 +11583,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSIUnit: IFC_Attribute
+	public interface IFCSIUnit: IFC_Entity
 	{
 		public IFCDimensionalExponents? _Dimensions {get; set;}
 		public IFCUnitEnum? _UnitType {get; set;}
@@ -11592,7 +11592,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSanitaryTerminalType: IFC_Attribute
+	public interface IFCSanitaryTerminalType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11608,7 +11608,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCScheduleTimeControl: IFC_Attribute
+	public interface IFCScheduleTimeControl: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11643,7 +11643,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSectionProperties: IFC_Attribute
+	public interface IFCSectionProperties: IFC_Entity
 	{
 		public IFCSectionTypeEnum? _SectionType {get; set;}
 		public IFCProfileDef? _StartProfile {get; set;}
@@ -11651,7 +11651,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSectionReinforcementProperties: IFC_Attribute
+	public interface IFCSectionReinforcementProperties: IFC_Entity
 	{
 		public IFCLengthMeasure? _LongitudinalStartPosition {get; set;}
 		public IFCLengthMeasure? _LongitudinalEndPosition {get; set;}
@@ -11662,7 +11662,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSectionedSpine: IFC_Attribute
+	public interface IFCSectionedSpine: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCCompositeCurve? _SpineCurve {get; }
@@ -11672,7 +11672,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSensorType: IFC_Attribute
+	public interface IFCSensorType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11688,7 +11688,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCServiceLife: IFC_Attribute
+	public interface IFCServiceLife: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11706,7 +11706,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCServiceLifeFactor: IFC_Attribute
+	public interface IFCServiceLifeFactor: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11722,7 +11722,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCShapeAspect: IFC_Attribute
+	public interface IFCShapeAspect: IFC_Entity
 	{
 		public IFC_Attributes<IFCShapeModel>? _ShapeRepresentations {get; set;}
 		public IFCLabel? _Name {get; set;}
@@ -11730,7 +11730,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCShapeModel: IFC_Attribute
+	public interface IFCShapeModel: IFC_Entity
 	{
 		public IFCRepresentationContext? _ContextOfItems {get; set;}
 		public IFCLabel? _RepresentationIdentifier {get; set;}
@@ -11743,7 +11743,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCShapeRepresentation: IFC_Attribute
+	public interface IFCShapeRepresentation: IFC_Entity
 	{
 		public IFCRepresentationContext? _ContextOfItems {get; set;}
 		public IFCLabel? _RepresentationIdentifier {get; set;}
@@ -11756,7 +11756,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCShellBasedSurfaceModel: IFC_Attribute
+	public interface IFCShellBasedSurfaceModel: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFC_Attributes<IFCShell>? _SbsmBoundary {get; }
@@ -11764,7 +11764,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSimpleProperty: IFC_Attribute
+	public interface IFCSimpleProperty: IFC_Entity
 	{
 		public IFCIdentifier? _Name {get; set;}
 		public IFC_Attributes<IFCPropertyDependencyRelationship>? _PropertyForDependance {get; }
@@ -11773,7 +11773,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSite: IFC_Attribute
+	public interface IFCSite: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11798,7 +11798,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSlab: IFC_Attribute
+	public interface IFCSlab: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11825,7 +11825,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSlabType: IFC_Attribute
+	public interface IFCSlabType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11841,7 +11841,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSlippageConnectionCondition: IFC_Attribute
+	public interface IFCSlippageConnectionCondition: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCLengthMeasure? _SlippageX {get; set;}
@@ -11850,14 +11850,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSolidModel: IFC_Attribute
+	public interface IFCSolidModel: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSoundProperties: IFC_Attribute
+	public interface IFCSoundProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11872,7 +11872,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSoundValue: IFC_Attribute
+	public interface IFCSoundValue: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11887,7 +11887,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpace: IFC_Attribute
+	public interface IFCSpace: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11910,7 +11910,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpaceHeaterType: IFC_Attribute
+	public interface IFCSpaceHeaterType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11926,7 +11926,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpaceProgram: IFC_Attribute
+	public interface IFCSpaceProgram: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11949,7 +11949,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpaceThermalLoadProperties: IFC_Attribute
+	public interface IFCSpaceThermalLoadProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11971,7 +11971,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpaceType: IFC_Attribute
+	public interface IFCSpaceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -11987,7 +11987,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpatialStructureElement: IFC_Attribute
+	public interface IFCSpatialStructureElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12007,7 +12007,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpatialStructureElementType: IFC_Attribute
+	public interface IFCSpatialStructureElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12022,7 +12022,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSphere: IFC_Attribute
+	public interface IFCSphere: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCAxis2Placement3D? _Position {get; }
@@ -12031,7 +12031,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStackTerminalType: IFC_Attribute
+	public interface IFCStackTerminalType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12047,7 +12047,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStair: IFC_Attribute
+	public interface IFCStair: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12073,7 +12073,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStairFlight: IFC_Attribute
+	public interface IFCStairFlight: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12101,7 +12101,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStairFlightType: IFC_Attribute
+	public interface IFCStairFlightType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12117,7 +12117,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralAction: IFC_Attribute
+	public interface IFCStructuralAction: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12134,7 +12134,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralActivity: IFC_Attribute
+	public interface IFCStructuralActivity: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12151,7 +12151,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralAnalysisModel: IFC_Attribute
+	public interface IFCStructuralAnalysisModel: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12168,7 +12168,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralConnection: IFC_Attribute
+	public interface IFCStructuralConnection: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12186,13 +12186,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralConnectionCondition: IFC_Attribute
+	public interface IFCStructuralConnectionCondition: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralCurveConnection: IFC_Attribute
+	public interface IFCStructuralCurveConnection: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12210,7 +12210,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralCurveMember: IFC_Attribute
+	public interface IFCStructuralCurveMember: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12227,7 +12227,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralCurveMemberVarying: IFC_Attribute
+	public interface IFCStructuralCurveMemberVarying: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12244,7 +12244,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralItem: IFC_Attribute
+	public interface IFCStructuralItem: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12260,7 +12260,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLinearAction: IFC_Attribute
+	public interface IFCStructuralLinearAction: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12278,7 +12278,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLinearActionVarying: IFC_Attribute
+	public interface IFCStructuralLinearActionVarying: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12305,13 +12305,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoad: IFC_Attribute
+	public interface IFCStructuralLoad: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoadGroup: IFC_Attribute
+	public interface IFCStructuralLoadGroup: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12330,7 +12330,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoadLinearForce: IFC_Attribute
+	public interface IFCStructuralLoadLinearForce: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCLinearForceMeasure? _LinearForceX {get; set;}
@@ -12342,7 +12342,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoadPlanarForce: IFC_Attribute
+	public interface IFCStructuralLoadPlanarForce: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCPlanarForceMeasure? _PlanarForceX {get; set;}
@@ -12351,7 +12351,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoadSingleDisplacement: IFC_Attribute
+	public interface IFCStructuralLoadSingleDisplacement: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCLengthMeasure? _DisplacementX {get; set;}
@@ -12363,7 +12363,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoadSingleDisplacementDistortion: IFC_Attribute
+	public interface IFCStructuralLoadSingleDisplacementDistortion: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCLengthMeasure? _DisplacementX {get; set;}
@@ -12376,7 +12376,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoadSingleForce: IFC_Attribute
+	public interface IFCStructuralLoadSingleForce: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCForceMeasure? _ForceX {get; set;}
@@ -12388,7 +12388,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoadSingleForceWarping: IFC_Attribute
+	public interface IFCStructuralLoadSingleForceWarping: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCForceMeasure? _ForceX {get; set;}
@@ -12401,19 +12401,19 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoadStatic: IFC_Attribute
+	public interface IFCStructuralLoadStatic: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoadTemperature: IFC_Attribute
+	public interface IFCStructuralLoadTemperature: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralMember: IFC_Attribute
+	public interface IFCStructuralMember: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12430,7 +12430,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralPlanarAction: IFC_Attribute
+	public interface IFCStructuralPlanarAction: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12448,7 +12448,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralPlanarActionVarying: IFC_Attribute
+	public interface IFCStructuralPlanarActionVarying: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12475,7 +12475,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralPointAction: IFC_Attribute
+	public interface IFCStructuralPointAction: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12492,7 +12492,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralPointConnection: IFC_Attribute
+	public interface IFCStructuralPointConnection: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12510,7 +12510,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralPointReaction: IFC_Attribute
+	public interface IFCStructuralPointReaction: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12527,7 +12527,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralProfileProperties: IFC_Attribute
+	public interface IFCStructuralProfileProperties: IFC_Entity
 	{
 		public IFCLabel? _ProfileName {get; set;}
 		public IFCProfileDef? _ProfileDefinition {get; set;}
@@ -12555,7 +12555,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralReaction: IFC_Attribute
+	public interface IFCStructuralReaction: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12572,7 +12572,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralResultGroup: IFC_Attribute
+	public interface IFCStructuralResultGroup: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12587,7 +12587,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralSteelProfileProperties: IFC_Attribute
+	public interface IFCStructuralSteelProfileProperties: IFC_Entity
 	{
 		public IFCLabel? _ProfileName {get; set;}
 		public IFCProfileDef? _ProfileDefinition {get; set;}
@@ -12619,7 +12619,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralSurfaceConnection: IFC_Attribute
+	public interface IFCStructuralSurfaceConnection: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12637,7 +12637,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralSurfaceMember: IFC_Attribute
+	public interface IFCStructuralSurfaceMember: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12655,7 +12655,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralSurfaceMemberVarying: IFC_Attribute
+	public interface IFCStructuralSurfaceMemberVarying: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12673,7 +12673,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuredDimensionCallout: IFC_Attribute
+	public interface IFCStructuredDimensionCallout: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -12683,7 +12683,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStyleModel: IFC_Attribute
+	public interface IFCStyleModel: IFC_Entity
 	{
 		public IFCRepresentationContext? _ContextOfItems {get; set;}
 		public IFCLabel? _RepresentationIdentifier {get; set;}
@@ -12695,7 +12695,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStyledItem: IFC_Attribute
+	public interface IFCStyledItem: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCRepresentationItem? _Item {get; }
@@ -12703,7 +12703,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStyledRepresentation: IFC_Attribute
+	public interface IFCStyledRepresentation: IFC_Entity
 	{
 		public IFCRepresentationContext? _ContextOfItems {get; set;}
 		public IFCLabel? _RepresentationIdentifier {get; set;}
@@ -12715,7 +12715,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSubContractResource: IFC_Attribute
+	public interface IFCSubContractResource: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12728,7 +12728,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSubedge: IFC_Attribute
+	public interface IFCSubedge: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCVertex? _EdgeStart {get; }
@@ -12737,13 +12737,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurface: IFC_Attribute
+	public interface IFCSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceCurveSweptAreaSolid: IFC_Attribute
+	public interface IFCSurfaceCurveSweptAreaSolid: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -12754,7 +12754,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceOfLinearExtrusion: IFC_Attribute
+	public interface IFCSurfaceOfLinearExtrusion: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCProfileDef? _SweptCurve {get; }
@@ -12766,7 +12766,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceOfRevolution: IFC_Attribute
+	public interface IFCSurfaceOfRevolution: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCProfileDef? _SweptCurve {get; }
@@ -12777,7 +12777,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceStyle: IFC_Attribute
+	public interface IFCSurfaceStyle: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCSurfaceSide? _Side {get; set;}
@@ -12785,7 +12785,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceStyleLighting: IFC_Attribute
+	public interface IFCSurfaceStyleLighting: IFC_Entity
 	{
 		public IFCColourRgb? _DiffuseTransmissionColour {get; set;}
 		public IFCColourRgb? _DiffuseReflectionColour {get; set;}
@@ -12794,14 +12794,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceStyleRefraction: IFC_Attribute
+	public interface IFCSurfaceStyleRefraction: IFC_Entity
 	{
 		public IFCReal? _RefractionIndex {get; set;}
 		public IFCReal? _DispersionFactor {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceStyleRendering: IFC_Attribute
+	public interface IFCSurfaceStyleRendering: IFC_Entity
 	{
 		public IFCColourRgb? _SurfaceColour {get; set;}
 		public IFCNormalisedRatioMeasure? _Transparency {get; set;}
@@ -12815,25 +12815,25 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceStyleShading: IFC_Attribute
+	public interface IFCSurfaceStyleShading: IFC_Entity
 	{
 		public IFCColourRgb? _SurfaceColour {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceStyleWithTextures: IFC_Attribute
+	public interface IFCSurfaceStyleWithTextures: IFC_Entity
 	{
 		public IFC_Attributes<IFCSurfaceTexture>? _Textures {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceTexture: IFC_Attribute
+	public interface IFCSurfaceTexture: IFC_Entity
 	{
 		public IFCCartesianTransformationOperator2D? _TextureTransform {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSweptAreaSolid: IFC_Attribute
+	public interface IFCSweptAreaSolid: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -12842,7 +12842,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSweptDiskSolid: IFC_Attribute
+	public interface IFCSweptDiskSolid: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -12854,7 +12854,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSweptSurface: IFC_Attribute
+	public interface IFCSweptSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCProfileDef? _SweptCurve {get; }
@@ -12863,7 +12863,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSwitchingDeviceType: IFC_Attribute
+	public interface IFCSwitchingDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12879,14 +12879,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSymbolStyle: IFC_Attribute
+	public interface IFCSymbolStyle: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCSymbolStyleSelect? _StyleOfSymbol {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSystem: IFC_Attribute
+	public interface IFCSystem: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12899,7 +12899,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSystemFurnitureElementType: IFC_Attribute
+	public interface IFCSystemFurnitureElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12914,7 +12914,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTShapeProfileDef: IFC_Attribute
+	public interface IFCTShapeProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -12928,19 +12928,19 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTable: IFC_Attribute
+	public interface IFCTable: IFC_Entity
 	{
 		public IFC_Attributes<IFCTableRow>? _Rows {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTableRow: IFC_Attribute
+	public interface IFCTableRow: IFC_Entity
 	{
 		public IFC_Attributes<IFCValue>? _RowCells {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTankType: IFC_Attribute
+	public interface IFCTankType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12956,7 +12956,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTask: IFC_Attribute
+	public interface IFCTask: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -12973,7 +12973,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTelecomAddress: IFC_Attribute
+	public interface IFCTelecomAddress: IFC_Entity
 	{
 		public IFCAddressTypeEnum? _Purpose {get; set;}
 		public IFCText? _Description {get; set;}
@@ -12987,7 +12987,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTendon: IFC_Attribute
+	public interface IFCTendon: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13022,7 +13022,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTendonAnchor: IFC_Attribute
+	public interface IFCTendonAnchor: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13049,7 +13049,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTerminatorSymbol: IFC_Attribute
+	public interface IFCTerminatorSymbol: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -13060,7 +13060,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextLiteral: IFC_Attribute
+	public interface IFCTextLiteral: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCPresentableText? _Literal {get; }
@@ -13069,7 +13069,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextLiteralWithExtent: IFC_Attribute
+	public interface IFCTextLiteralWithExtent: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCPresentableText? _Literal {get; }
@@ -13080,14 +13080,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextStyle: IFC_Attribute
+	public interface IFCTextStyle: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCTextFontSelect? _TextFontStyle {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextStyleFontModel: IFC_Attribute
+	public interface IFCTextStyleFontModel: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFC_Attributes<IFCTextFontName>? _FontFamily {get; set;}
@@ -13098,14 +13098,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextStyleForDefinedFont: IFC_Attribute
+	public interface IFCTextStyleForDefinedFont: IFC_Entity
 	{
 		public IFCColour? _Colour {get; set;}
 		public IFCColour? _BackgroundColour {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextStyleTextModel: IFC_Attribute
+	public interface IFCTextStyleTextModel: IFC_Entity
 	{
 		public IFCSizeSelect? _TextIndent {get; set;}
 		public IFCTextAlignment? _TextAlign {get; set;}
@@ -13117,7 +13117,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextStyleWithBoxCharacteristics: IFC_Attribute
+	public interface IFCTextStyleWithBoxCharacteristics: IFC_Entity
 	{
 		public IFCPositiveLengthMeasure? _BoxHeight {get; set;}
 		public IFCPositiveLengthMeasure? _BoxWidth {get; set;}
@@ -13127,29 +13127,29 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextureCoordinate: IFC_Attribute
+	public interface IFCTextureCoordinate: IFC_Entity
 	{
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextureCoordinateGenerator: IFC_Attribute
+	public interface IFCTextureCoordinateGenerator: IFC_Entity
 	{
 		public IFCLabel? _Mode {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextureMap: IFC_Attribute
+	public interface IFCTextureMap: IFC_Entity
 	{
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextureVertex: IFC_Attribute
+	public interface IFCTextureVertex: IFC_Entity
 	{
 		public IFC_Attributes<IFCParameterValue>? _Coordinates {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCThermalMaterialProperties: IFC_Attribute
+	public interface IFCThermalMaterialProperties: IFC_Entity
 	{
 		public IFCMaterial? _Material {get; set;}
 		public IFCSpecificHeatCapacityMeasure? _SpecificHeatCapacity {get; set;}
@@ -13159,7 +13159,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTimeSeries: IFC_Attribute
+	public interface IFCTimeSeries: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -13170,14 +13170,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTimeSeriesReferenceRelationship: IFC_Attribute
+	public interface IFCTimeSeriesReferenceRelationship: IFC_Entity
 	{
 		public IFCTimeSeries? _ReferencedTimeSeries {get; set;}
 		public IFC_Attributes<IFCDocumentSelect>? _TimeSeriesReferences {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTimeSeriesSchedule: IFC_Attribute
+	public interface IFCTimeSeriesSchedule: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13196,19 +13196,19 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTimeSeriesValue: IFC_Attribute
+	public interface IFCTimeSeriesValue: IFC_Entity
 	{
 		public IFC_Attributes<IFCValue>? _ListValues {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTopologicalRepresentationItem: IFC_Attribute
+	public interface IFCTopologicalRepresentationItem: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTopologyRepresentation: IFC_Attribute
+	public interface IFCTopologyRepresentation: IFC_Entity
 	{
 		public IFCRepresentationContext? _ContextOfItems {get; set;}
 		public IFCLabel? _RepresentationIdentifier {get; set;}
@@ -13221,7 +13221,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTransformerType: IFC_Attribute
+	public interface IFCTransformerType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13237,7 +13237,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTransportElement: IFC_Attribute
+	public interface IFCTransportElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13263,7 +13263,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTransportElementType: IFC_Attribute
+	public interface IFCTransportElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13279,7 +13279,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTrapeziumProfileDef: IFC_Attribute
+	public interface IFCTrapeziumProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -13291,7 +13291,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTrimmedCurve: IFC_Attribute
+	public interface IFCTrimmedCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDimensionCount? _Dim {get; }
@@ -13302,7 +13302,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTubeBundleType: IFC_Attribute
+	public interface IFCTubeBundleType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13318,7 +13318,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTwoDirectionRepeatFactor: IFC_Attribute
+	public interface IFCTwoDirectionRepeatFactor: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignments {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -13327,7 +13327,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTypeObject: IFC_Attribute
+	public interface IFCTypeObject: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13339,7 +13339,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTypeProduct: IFC_Attribute
+	public interface IFCTypeProduct: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13353,7 +13353,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCUShapeProfileDef: IFC_Attribute
+	public interface IFCUShapeProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -13366,13 +13366,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCUnitAssignment: IFC_Attribute
+	public interface IFCUnitAssignment: IFC_Entity
 	{
 		public IFC_Attributes<IFCUnit>? _Units {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCUnitaryEquipmentType: IFC_Attribute
+	public interface IFCUnitaryEquipmentType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13388,7 +13388,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCValveType: IFC_Attribute
+	public interface IFCValveType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13404,7 +13404,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVector: IFC_Attribute
+	public interface IFCVector: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCDirection? _Orientation {get; }
@@ -13413,34 +13413,34 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVertex: IFC_Attribute
+	public interface IFCVertex: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVertexBasedTextureMap: IFC_Attribute
+	public interface IFCVertexBasedTextureMap: IFC_Entity
 	{
 		public IFC_Attributes<IFCTextureVertex>? _TextureVertices {get; set;}
 		public IFC_Attributes<IFCCartesianPoint>? _TexturePoints {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVertexLoop: IFC_Attribute
+	public interface IFCVertexLoop: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCVertex? _LoopVertex {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVertexPoint: IFC_Attribute
+	public interface IFCVertexPoint: IFC_Entity
 	{
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 		public IFCPoint? _VertexGeometry {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVibrationIsolatorType: IFC_Attribute
+	public interface IFCVibrationIsolatorType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13456,7 +13456,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVirtualElement: IFC_Attribute
+	public interface IFCVirtualElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13482,14 +13482,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVirtualGridIntersection: IFC_Attribute
+	public interface IFCVirtualGridIntersection: IFC_Entity
 	{
 		public IFC_Attributes<IFCGridAxis>? _IntersectingAxes {get; set;}
 		public IFC_Attributes<IFCLengthMeasure>? _OffsetDistances {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWall: IFC_Attribute
+	public interface IFCWall: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13515,7 +13515,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWallStandardCase: IFC_Attribute
+	public interface IFCWallStandardCase: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13541,7 +13541,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWallType: IFC_Attribute
+	public interface IFCWallType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13557,7 +13557,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWasteTerminalType: IFC_Attribute
+	public interface IFCWasteTerminalType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13573,7 +13573,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWaterProperties: IFC_Attribute
+	public interface IFCWaterProperties: IFC_Entity
 	{
 		public IFCMaterial? _Material {get; set;}
 		public BOOLEAN? _IsPotable {get; set;}
@@ -13586,7 +13586,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWindow: IFC_Attribute
+	public interface IFCWindow: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13614,7 +13614,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWindowLiningProperties: IFC_Attribute
+	public interface IFCWindowLiningProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13631,7 +13631,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWindowPanelProperties: IFC_Attribute
+	public interface IFCWindowPanelProperties: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13647,7 +13647,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWindowStyle: IFC_Attribute
+	public interface IFCWindowStyle: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13663,7 +13663,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWorkControl: IFC_Attribute
+	public interface IFCWorkControl: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13678,7 +13678,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWorkPlan: IFC_Attribute
+	public interface IFCWorkPlan: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13693,7 +13693,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWorkSchedule: IFC_Attribute
+	public interface IFCWorkSchedule: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13708,7 +13708,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCZShapeProfileDef: IFC_Attribute
+	public interface IFCZShapeProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -13720,7 +13720,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCZone: IFC_Attribute
+	public interface IFCZone: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13732,7 +13732,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCActuator: IFC_Attribute
+	public interface IFCActuator: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13772,7 +13772,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAdvancedBrep: IFC_Attribute
+	public interface IFCAdvancedBrep: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -13781,7 +13781,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAdvancedBrepWithVoids: IFC_Attribute
+	public interface IFCAdvancedBrepWithVoids: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -13791,7 +13791,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAdvancedFace: IFC_Attribute
+	public interface IFCAdvancedFace: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -13802,7 +13802,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAirTerminal: IFC_Attribute
+	public interface IFCAirTerminal: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13842,7 +13842,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAirTerminalBox: IFC_Attribute
+	public interface IFCAirTerminalBox: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13882,7 +13882,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAirToAirHeatRecovery: IFC_Attribute
+	public interface IFCAirToAirHeatRecovery: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13922,7 +13922,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlarm: IFC_Attribute
+	public interface IFCAlarm: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -13962,7 +13962,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAudioVisualAppliance: IFC_Attribute
+	public interface IFCAudioVisualAppliance: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14002,7 +14002,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAudioVisualApplianceType: IFC_Attribute
+	public interface IFCAudioVisualApplianceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14026,7 +14026,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBSplineCurveWithKnots: IFC_Attribute
+	public interface IFCBSplineCurveWithKnots: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -14045,7 +14045,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBSplineSurface: IFC_Attribute
+	public interface IFCBSplineSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -14063,7 +14063,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBSplineSurfaceWithKnots: IFC_Attribute
+	public interface IFCBSplineSurfaceWithKnots: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -14088,7 +14088,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBeamStandardCase: IFC_Attribute
+	public interface IFCBeamStandardCase: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14126,7 +14126,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBoiler: IFC_Attribute
+	public interface IFCBoiler: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14166,7 +14166,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBoundaryCurve: IFC_Attribute
+	public interface IFCBoundaryCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -14178,7 +14178,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuildingElementPartType: IFC_Attribute
+	public interface IFCBuildingElementPartType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14202,7 +14202,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuildingSystem: IFC_Attribute
+	public interface IFCBuildingSystem: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14227,7 +14227,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBurner: IFC_Attribute
+	public interface IFCBurner: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14267,7 +14267,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBurnerType: IFC_Attribute
+	public interface IFCBurnerType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14291,7 +14291,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCableCarrierFitting: IFC_Attribute
+	public interface IFCCableCarrierFitting: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14331,7 +14331,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCableCarrierSegment: IFC_Attribute
+	public interface IFCCableCarrierSegment: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14371,7 +14371,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCableFitting: IFC_Attribute
+	public interface IFCCableFitting: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14411,7 +14411,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCableFittingType: IFC_Attribute
+	public interface IFCCableFittingType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14435,7 +14435,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCableSegment: IFC_Attribute
+	public interface IFCCableSegment: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14475,7 +14475,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCartesianPointList: IFC_Attribute
+	public interface IFCCartesianPointList: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -14483,16 +14483,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCartesianPointList2D: IFC_Attribute
-	{
-		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
-		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
-		public IFCDimensionCount? _Dim {get; }
-		public IFC_Attributes<IFC_Attributes<IFCLengthMeasure>>? _CoordList {get; }
-	}
-	/// <summary>
-	/// </summary>
-	public interface IFCCartesianPointList3D: IFC_Attribute
+	public interface IFCCartesianPointList2D: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -14501,7 +14492,16 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCChiller: IFC_Attribute
+	public interface IFCCartesianPointList3D: IFC_Entity
+	{
+		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
+		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
+		public IFCDimensionCount? _Dim {get; }
+		public IFC_Attributes<IFC_Attributes<IFCLengthMeasure>>? _CoordList {get; }
+	}
+	/// <summary>
+	/// </summary>
+	public interface IFCChiller: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14541,7 +14541,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCChimney: IFC_Attribute
+	public interface IFCChimney: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14579,7 +14579,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCChimneyType: IFC_Attribute
+	public interface IFCChimneyType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14603,7 +14603,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCivilElement: IFC_Attribute
+	public interface IFCCivilElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14640,7 +14640,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCivilElementType: IFC_Attribute
+	public interface IFCCivilElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14663,7 +14663,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCoil: IFC_Attribute
+	public interface IFCCoil: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14703,13 +14703,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCColourRgbList: IFC_Attribute
+	public interface IFCColourRgbList: IFC_Entity
 	{
 		public IFC_Attributes<IFC_Attributes<IFCNormalisedRatioMeasure>>? _ColourList {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCColumnStandardCase: IFC_Attribute
+	public interface IFCColumnStandardCase: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14747,7 +14747,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCommunicationsAppliance: IFC_Attribute
+	public interface IFCCommunicationsAppliance: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14787,7 +14787,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCommunicationsApplianceType: IFC_Attribute
+	public interface IFCCommunicationsApplianceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14811,7 +14811,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCComplexPropertyTemplate: IFC_Attribute
+	public interface IFCComplexPropertyTemplate: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14827,7 +14827,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCompositeCurveOnSurface: IFC_Attribute
+	public interface IFCCompositeCurveOnSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -14839,7 +14839,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCompressor: IFC_Attribute
+	public interface IFCCompressor: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14879,7 +14879,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCondenser: IFC_Attribute
+	public interface IFCCondenser: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14919,14 +14919,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConnectionVolumeGeometry: IFC_Attribute
+	public interface IFCConnectionVolumeGeometry: IFC_Entity
 	{
 		public IFCSolidOrShell? _VolumeOnRelatingElement {get; set;}
 		public IFCSolidOrShell? _VolumeOnRelatedElement {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConstructionEquipmentResourceType: IFC_Attribute
+	public interface IFCConstructionEquipmentResourceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14952,7 +14952,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConstructionMaterialResourceType: IFC_Attribute
+	public interface IFCConstructionMaterialResourceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -14978,7 +14978,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConstructionProductResourceType: IFC_Attribute
+	public interface IFCConstructionProductResourceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15004,7 +15004,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConstructionResourceType: IFC_Attribute
+	public interface IFCConstructionResourceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15029,7 +15029,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCContext: IFC_Attribute
+	public interface IFCContext: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15052,7 +15052,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCController: IFC_Attribute
+	public interface IFCController: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15092,7 +15092,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConversionBasedUnitWithOffset: IFC_Attribute
+	public interface IFCConversionBasedUnitWithOffset: IFC_Entity
 	{
 		public IFCDimensionalExponents? _Dimensions {get; set;}
 		public IFCUnitEnum? _UnitType {get; set;}
@@ -15103,7 +15103,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCooledBeam: IFC_Attribute
+	public interface IFCCooledBeam: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15143,7 +15143,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCoolingTower: IFC_Attribute
+	public interface IFCCoolingTower: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15183,14 +15183,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCoordinateOperation: IFC_Attribute
+	public interface IFCCoordinateOperation: IFC_Entity
 	{
 		public IFCCoordinateReferenceSystemSelect? _SourceCRS {get; set;}
 		public IFCCoordinateReferenceSystem? _TargetCRS {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCoordinateReferenceSystem: IFC_Attribute
+	public interface IFCCoordinateReferenceSystem: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -15199,7 +15199,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCrewResourceType: IFC_Attribute
+	public interface IFCCrewResourceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15225,7 +15225,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCurveBoundedSurface: IFC_Attribute
+	public interface IFCCurveBoundedSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -15236,7 +15236,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCylindricalSurface: IFC_Attribute
+	public interface IFCCylindricalSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -15246,7 +15246,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDamper: IFC_Attribute
+	public interface IFCDamper: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15286,7 +15286,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionCircuit: IFC_Attribute
+	public interface IFCDistributionCircuit: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15311,7 +15311,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionSystem: IFC_Attribute
+	public interface IFCDistributionSystem: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15336,7 +15336,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDoorStandardCase: IFC_Attribute
+	public interface IFCDoorStandardCase: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15378,7 +15378,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDoorType: IFC_Attribute
+	public interface IFCDoorType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15405,7 +15405,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDuctFitting: IFC_Attribute
+	public interface IFCDuctFitting: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15445,7 +15445,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDuctSegment: IFC_Attribute
+	public interface IFCDuctSegment: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15485,7 +15485,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDuctSilencer: IFC_Attribute
+	public interface IFCDuctSilencer: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15525,7 +15525,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricAppliance: IFC_Attribute
+	public interface IFCElectricAppliance: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15565,7 +15565,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricDistributionBoard: IFC_Attribute
+	public interface IFCElectricDistributionBoard: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15605,7 +15605,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricDistributionBoardType: IFC_Attribute
+	public interface IFCElectricDistributionBoardType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15629,7 +15629,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricFlowStorageDevice: IFC_Attribute
+	public interface IFCElectricFlowStorageDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15669,7 +15669,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricGenerator: IFC_Attribute
+	public interface IFCElectricGenerator: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15709,7 +15709,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricMotor: IFC_Attribute
+	public interface IFCElectricMotor: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15749,7 +15749,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricTimeControl: IFC_Attribute
+	public interface IFCElectricTimeControl: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15789,7 +15789,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElementAssemblyType: IFC_Attribute
+	public interface IFCElementAssemblyType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15813,7 +15813,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEngine: IFC_Attribute
+	public interface IFCEngine: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15853,7 +15853,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEngineType: IFC_Attribute
+	public interface IFCEngineType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15877,7 +15877,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEvaporativeCooler: IFC_Attribute
+	public interface IFCEvaporativeCooler: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15917,7 +15917,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEvaporator: IFC_Attribute
+	public interface IFCEvaporator: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15957,7 +15957,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEvent: IFC_Attribute
+	public interface IFCEvent: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -15987,7 +15987,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEventTime: IFC_Attribute
+	public interface IFCEventTime: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCDataOriginEnum? _DataOrigin {get; set;}
@@ -15999,7 +15999,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEventType: IFC_Attribute
+	public interface IFCEventType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16025,7 +16025,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExtendedProperties: IFC_Attribute
+	public interface IFCExtendedProperties: IFC_Entity
 	{
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
 		public IFCIdentifier? _Name {get; }
@@ -16034,12 +16034,12 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExternalInformation: IFC_Attribute
+	public interface IFCExternalInformation: IFC_Entity
 	{
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExternalReferenceRelationship: IFC_Attribute
+	public interface IFCExternalReferenceRelationship: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -16048,7 +16048,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExternalSpatialElement: IFC_Attribute
+	public interface IFCExternalSpatialElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16078,7 +16078,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExternalSpatialStructureElement: IFC_Attribute
+	public interface IFCExternalSpatialStructureElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16106,7 +16106,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCExtrudedAreaSolidTapered: IFC_Attribute
+	public interface IFCExtrudedAreaSolidTapered: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -16119,7 +16119,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFan: IFC_Attribute
+	public interface IFCFan: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16159,7 +16159,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFilter: IFC_Attribute
+	public interface IFCFilter: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16199,7 +16199,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFireSuppressionTerminal: IFC_Attribute
+	public interface IFCFireSuppressionTerminal: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16239,7 +16239,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFixedReferenceSweptAreaSolid: IFC_Attribute
+	public interface IFCFixedReferenceSweptAreaSolid: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -16251,7 +16251,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowInstrument: IFC_Attribute
+	public interface IFCFlowInstrument: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16291,7 +16291,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFlowMeter: IFC_Attribute
+	public interface IFCFlowMeter: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16331,7 +16331,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFootingType: IFC_Attribute
+	public interface IFCFootingType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16355,7 +16355,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFurniture: IFC_Attribute
+	public interface IFCFurniture: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16393,7 +16393,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeographicElement: IFC_Attribute
+	public interface IFCGeographicElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16431,7 +16431,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeographicElementType: IFC_Attribute
+	public interface IFCGeographicElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16455,7 +16455,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCHeatExchanger: IFC_Attribute
+	public interface IFCHeatExchanger: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16495,7 +16495,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCHumidifier: IFC_Attribute
+	public interface IFCHumidifier: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16535,7 +16535,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCIndexedColourMap: IFC_Attribute
+	public interface IFCIndexedColourMap: IFC_Entity
 	{
 		public IFCTessellatedFaceSet? _MappedTo {get; set;}
 		public IFCNormalisedRatioMeasure? _Opacity {get; set;}
@@ -16544,7 +16544,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCIndexedPolyCurve: IFC_Attribute
+	public interface IFCIndexedPolyCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -16555,7 +16555,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCIndexedPolygonalFace: IFC_Attribute
+	public interface IFCIndexedPolygonalFace: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -16564,7 +16564,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCIndexedPolygonalFaceWithVoids: IFC_Attribute
+	public interface IFCIndexedPolygonalFaceWithVoids: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -16574,7 +16574,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCIndexedTextureMap: IFC_Attribute
+	public interface IFCIndexedTextureMap: IFC_Entity
 	{
 		public IFC_Attributes<IFCSurfaceTexture>? _Maps {get; set;}
 		public IFCTessellatedFaceSet? _MappedTo {get; set;}
@@ -16582,7 +16582,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCIndexedTriangleTextureMap: IFC_Attribute
+	public interface IFCIndexedTriangleTextureMap: IFC_Entity
 	{
 		public IFC_Attributes<IFCSurfaceTexture>? _Maps {get; set;}
 		public IFCTessellatedFaceSet? _MappedTo {get; set;}
@@ -16591,7 +16591,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCInterceptor: IFC_Attribute
+	public interface IFCInterceptor: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16631,7 +16631,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCInterceptorType: IFC_Attribute
+	public interface IFCInterceptorType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16655,7 +16655,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCIntersectionCurve: IFC_Attribute
+	public interface IFCIntersectionCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -16667,7 +16667,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCJunctionBox: IFC_Attribute
+	public interface IFCJunctionBox: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16707,7 +16707,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLaborResourceType: IFC_Attribute
+	public interface IFCLaborResourceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16733,7 +16733,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLagTime: IFC_Attribute
+	public interface IFCLagTime: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCDataOriginEnum? _DataOrigin {get; set;}
@@ -16743,7 +16743,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLamp: IFC_Attribute
+	public interface IFCLamp: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16783,7 +16783,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLightFixture: IFC_Attribute
+	public interface IFCLightFixture: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -16823,7 +16823,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMapConversion: IFC_Attribute
+	public interface IFCMapConversion: IFC_Entity
 	{
 		public IFCCoordinateReferenceSystemSelect? _SourceCRS {get; set;}
 		public IFCCoordinateReferenceSystem? _TargetCRS {get; set;}
@@ -16836,7 +16836,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialConstituent: IFC_Attribute
+	public interface IFCMaterialConstituent: IFC_Entity
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
@@ -16850,7 +16850,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialConstituentSet: IFC_Attribute
+	public interface IFCMaterialConstituentSet: IFC_Entity
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
@@ -16861,7 +16861,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialDefinition: IFC_Attribute
+	public interface IFCMaterialDefinition: IFC_Entity
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
@@ -16869,7 +16869,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialLayerWithOffsets: IFC_Attribute
+	public interface IFCMaterialLayerWithOffsets: IFC_Entity
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
@@ -16887,7 +16887,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialProfile: IFC_Attribute
+	public interface IFCMaterialProfile: IFC_Entity
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
@@ -16902,7 +16902,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialProfileSet: IFC_Attribute
+	public interface IFCMaterialProfileSet: IFC_Entity
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
@@ -16914,7 +16914,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialProfileSetUsage: IFC_Attribute
+	public interface IFCMaterialProfileSetUsage: IFC_Entity
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
 		public IFCMaterialProfileSet? _ForProfileSet {get; }
@@ -16923,7 +16923,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialProfileSetUsageTapering: IFC_Attribute
+	public interface IFCMaterialProfileSetUsageTapering: IFC_Entity
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
 		public IFCMaterialProfileSet? _ForProfileSet {get; }
@@ -16934,7 +16934,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialProfileWithOffsets: IFC_Attribute
+	public interface IFCMaterialProfileWithOffsets: IFC_Entity
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
@@ -16950,7 +16950,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialRelationship: IFC_Attribute
+	public interface IFCMaterialRelationship: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -16959,13 +16959,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMaterialUsageDefinition: IFC_Attribute
+	public interface IFCMaterialUsageDefinition: IFC_Entity
 	{
 		public IFC_Attributes<IFCRelAssociatesMaterial>? _AssociatedTo {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMedicalDevice: IFC_Attribute
+	public interface IFCMedicalDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17005,7 +17005,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMedicalDeviceType: IFC_Attribute
+	public interface IFCMedicalDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17029,7 +17029,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMemberStandardCase: IFC_Attribute
+	public interface IFCMemberStandardCase: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17067,7 +17067,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMirroredProfileDef: IFC_Attribute
+	public interface IFCMirroredProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -17079,7 +17079,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMotorConnection: IFC_Attribute
+	public interface IFCMotorConnection: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17119,7 +17119,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOpeningStandardCase: IFC_Attribute
+	public interface IFCOpeningStandardCase: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17159,7 +17159,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOuterBoundaryCurve: IFC_Attribute
+	public interface IFCOuterBoundaryCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -17171,7 +17171,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOutlet: IFC_Attribute
+	public interface IFCOutlet: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17211,7 +17211,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPcurve: IFC_Attribute
+	public interface IFCPcurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -17221,7 +17221,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPileType: IFC_Attribute
+	public interface IFCPileType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17245,7 +17245,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPipeFitting: IFC_Attribute
+	public interface IFCPipeFitting: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17285,7 +17285,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPipeSegment: IFC_Attribute
+	public interface IFCPipeSegment: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17325,7 +17325,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPlateStandardCase: IFC_Attribute
+	public interface IFCPlateStandardCase: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17363,7 +17363,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPolygonalFaceSet: IFC_Attribute
+	public interface IFCPolygonalFaceSet: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -17377,13 +17377,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPreDefinedProperties: IFC_Attribute
+	public interface IFCPreDefinedProperties: IFC_Entity
 	{
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPreDefinedPropertySet: IFC_Attribute
+	public interface IFCPreDefinedPropertySet: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17397,12 +17397,12 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPresentationItem: IFC_Attribute
+	public interface IFCPresentationItem: IFC_Entity
 	{
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProcedureType: IFC_Attribute
+	public interface IFCProcedureType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17426,7 +17426,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProjectLibrary: IFC_Attribute
+	public interface IFCProjectLibrary: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17449,7 +17449,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProjectedCRS: IFC_Attribute
+	public interface IFCProjectedCRS: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -17462,13 +17462,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertyAbstraction: IFC_Attribute
+	public interface IFCPropertyAbstraction: IFC_Entity
 	{
 		public IFC_Attributes<IFCExternalReferenceRelationship>? _HasExternalReferences {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertySetTemplate: IFC_Attribute
+	public interface IFCPropertySetTemplate: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17483,7 +17483,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertyTemplate: IFC_Attribute
+	public interface IFCPropertyTemplate: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17496,7 +17496,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPropertyTemplateDefinition: IFC_Attribute
+	public interface IFCPropertyTemplateDefinition: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17507,7 +17507,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProtectiveDevice: IFC_Attribute
+	public interface IFCProtectiveDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17547,7 +17547,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProtectiveDeviceTrippingUnit: IFC_Attribute
+	public interface IFCProtectiveDeviceTrippingUnit: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17587,7 +17587,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCProtectiveDeviceTrippingUnitType: IFC_Attribute
+	public interface IFCProtectiveDeviceTrippingUnitType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17611,7 +17611,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPump: IFC_Attribute
+	public interface IFCPump: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17651,7 +17651,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCQuantitySet: IFC_Attribute
+	public interface IFCQuantitySet: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17665,7 +17665,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRampType: IFC_Attribute
+	public interface IFCRampType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17689,7 +17689,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRationalBSplineCurveWithKnots: IFC_Attribute
+	public interface IFCRationalBSplineCurveWithKnots: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -17710,7 +17710,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRationalBSplineSurfaceWithKnots: IFC_Attribute
+	public interface IFCRationalBSplineSurfaceWithKnots: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -17737,7 +17737,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRecurrencePattern: IFC_Attribute
+	public interface IFCRecurrencePattern: IFC_Entity
 	{
 		public IFCRecurrenceTypeEnum? _RecurrenceType {get; set;}
 		public IFC_Attributes<IFCDayInMonthNumber>? _DayComponent {get; set;}
@@ -17750,7 +17750,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReference: IFC_Attribute
+	public interface IFCReference: IFC_Entity
 	{
 		public IFCIdentifier? _TypeIdentifier {get; set;}
 		public IFCIdentifier? _AttributeIdentifier {get; set;}
@@ -17760,7 +17760,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReinforcingBarType: IFC_Attribute
+	public interface IFCReinforcingBarType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17790,7 +17790,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReinforcingElementType: IFC_Attribute
+	public interface IFCReinforcingElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17813,7 +17813,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReinforcingMeshType: IFC_Attribute
+	public interface IFCReinforcingMeshType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17847,7 +17847,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssignsToGroupByFactor: IFC_Attribute
+	public interface IFCRelAssignsToGroupByFactor: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17859,7 +17859,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelDeclares: IFC_Attribute
+	public interface IFCRelDeclares: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17870,7 +17870,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelDefinesByObject: IFC_Attribute
+	public interface IFCRelDefinesByObject: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17881,7 +17881,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelDefinesByTemplate: IFC_Attribute
+	public interface IFCRelDefinesByTemplate: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17892,7 +17892,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelInterferesElements: IFC_Attribute
+	public interface IFCRelInterferesElements: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17903,7 +17903,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelSpaceBoundary1stLevel: IFC_Attribute
+	public interface IFCRelSpaceBoundary1stLevel: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17919,7 +17919,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelSpaceBoundary2ndLevel: IFC_Attribute
+	public interface IFCRelSpaceBoundary2ndLevel: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -17937,7 +17937,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReparametrisedCompositeCurveSegment: IFC_Attribute
+	public interface IFCReparametrisedCompositeCurveSegment: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -17950,7 +17950,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCResourceApprovalRelationship: IFC_Attribute
+	public interface IFCResourceApprovalRelationship: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -17959,7 +17959,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCResourceConstraintRelationship: IFC_Attribute
+	public interface IFCResourceConstraintRelationship: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -17968,14 +17968,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCResourceLevelRelationship: IFC_Attribute
+	public interface IFCResourceLevelRelationship: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCResourceTime: IFC_Attribute
+	public interface IFCResourceTime: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCDataOriginEnum? _DataOrigin {get; set;}
@@ -17998,7 +17998,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRevolvedAreaSolidTapered: IFC_Attribute
+	public interface IFCRevolvedAreaSolidTapered: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -18012,7 +18012,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRoofType: IFC_Attribute
+	public interface IFCRoofType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18036,7 +18036,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSanitaryTerminal: IFC_Attribute
+	public interface IFCSanitaryTerminal: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18076,7 +18076,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSchedulingTime: IFC_Attribute
+	public interface IFCSchedulingTime: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCDataOriginEnum? _DataOrigin {get; set;}
@@ -18084,7 +18084,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSeamCurve: IFC_Attribute
+	public interface IFCSeamCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -18096,7 +18096,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSensor: IFC_Attribute
+	public interface IFCSensor: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18136,7 +18136,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCShadingDevice: IFC_Attribute
+	public interface IFCShadingDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18174,7 +18174,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCShadingDeviceType: IFC_Attribute
+	public interface IFCShadingDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18198,7 +18198,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSimplePropertyTemplate: IFC_Attribute
+	public interface IFCSimplePropertyTemplate: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18219,7 +18219,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSlabElementedCase: IFC_Attribute
+	public interface IFCSlabElementedCase: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18257,7 +18257,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSlabStandardCase: IFC_Attribute
+	public interface IFCSlabStandardCase: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18295,7 +18295,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSolarDevice: IFC_Attribute
+	public interface IFCSolarDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18335,7 +18335,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSolarDeviceType: IFC_Attribute
+	public interface IFCSolarDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18359,7 +18359,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpaceHeater: IFC_Attribute
+	public interface IFCSpaceHeater: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18399,7 +18399,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpatialElement: IFC_Attribute
+	public interface IFCSpatialElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18427,7 +18427,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpatialElementType: IFC_Attribute
+	public interface IFCSpatialElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18450,7 +18450,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpatialZone: IFC_Attribute
+	public interface IFCSpatialZone: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18479,7 +18479,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpatialZoneType: IFC_Attribute
+	public interface IFCSpatialZoneType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18504,7 +18504,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSphericalSurface: IFC_Attribute
+	public interface IFCSphericalSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -18514,7 +18514,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStackTerminal: IFC_Attribute
+	public interface IFCStackTerminal: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18554,7 +18554,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStairType: IFC_Attribute
+	public interface IFCStairType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18578,7 +18578,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralCurveAction: IFC_Attribute
+	public interface IFCStructuralCurveAction: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18608,7 +18608,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralCurveReaction: IFC_Attribute
+	public interface IFCStructuralCurveReaction: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18636,7 +18636,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoadCase: IFC_Attribute
+	public interface IFCStructuralLoadCase: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18666,7 +18666,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoadConfiguration: IFC_Attribute
+	public interface IFCStructuralLoadConfiguration: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFC_Attributes<IFCStructuralLoadOrResult>? _Values {get; set;}
@@ -18674,13 +18674,13 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralLoadOrResult: IFC_Attribute
+	public interface IFCStructuralLoadOrResult: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralSurfaceAction: IFC_Attribute
+	public interface IFCStructuralSurfaceAction: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18710,7 +18710,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCStructuralSurfaceReaction: IFC_Attribute
+	public interface IFCStructuralSurfaceReaction: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18738,7 +18738,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSubContractResourceType: IFC_Attribute
+	public interface IFCSubContractResourceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18764,7 +18764,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceCurve: IFC_Attribute
+	public interface IFCSurfaceCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -18776,7 +18776,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceFeature: IFC_Attribute
+	public interface IFCSurfaceFeature: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18814,7 +18814,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSurfaceReinforcementArea: IFC_Attribute
+	public interface IFCSurfaceReinforcementArea: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFC_Attributes<IFCLengthMeasure>? _SurfaceReinforcement1 {get; set;}
@@ -18823,7 +18823,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSweptDiskSolidPolygonal: IFC_Attribute
+	public interface IFCSweptDiskSolidPolygonal: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -18836,7 +18836,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSwitchingDevice: IFC_Attribute
+	public interface IFCSwitchingDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18876,7 +18876,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSystemFurnitureElement: IFC_Attribute
+	public interface IFCSystemFurnitureElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18914,7 +18914,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTableColumn: IFC_Attribute
+	public interface IFCTableColumn: IFC_Entity
 	{
 		public IFCIdentifier? _Identifier {get; set;}
 		public IFCLabel? _Name {get; set;}
@@ -18924,7 +18924,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTank: IFC_Attribute
+	public interface IFCTank: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -18964,7 +18964,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTaskTime: IFC_Attribute
+	public interface IFCTaskTime: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCDataOriginEnum? _DataOrigin {get; set;}
@@ -18989,7 +18989,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTaskTimeRecurring: IFC_Attribute
+	public interface IFCTaskTimeRecurring: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCDataOriginEnum? _DataOrigin {get; set;}
@@ -19015,7 +19015,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTaskType: IFC_Attribute
+	public interface IFCTaskType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19040,7 +19040,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTendonAnchorType: IFC_Attribute
+	public interface IFCTendonAnchorType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19064,7 +19064,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTendonType: IFC_Attribute
+	public interface IFCTendonType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19091,7 +19091,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTessellatedFaceSet: IFC_Attribute
+	public interface IFCTessellatedFaceSet: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19102,27 +19102,27 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTessellatedItem: IFC_Attribute
+	public interface IFCTessellatedItem: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextureVertexList: IFC_Attribute
+	public interface IFCTextureVertexList: IFC_Entity
 	{
 		public IFC_Attributes<IFC_Attributes<IFCParameterValue>>? _TexCoordsList {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTimePeriod: IFC_Attribute
+	public interface IFCTimePeriod: IFC_Entity
 	{
 		public IFCTime? _StartTime {get; set;}
 		public IFCTime? _EndTime {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCToroidalSurface: IFC_Attribute
+	public interface IFCToroidalSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19133,7 +19133,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTransformer: IFC_Attribute
+	public interface IFCTransformer: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19173,7 +19173,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTriangulatedFaceSet: IFC_Attribute
+	public interface IFCTriangulatedFaceSet: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19189,7 +19189,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTubeBundle: IFC_Attribute
+	public interface IFCTubeBundle: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19229,7 +19229,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTypeProcess: IFC_Attribute
+	public interface IFCTypeProcess: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19252,7 +19252,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTypeResource: IFC_Attribute
+	public interface IFCTypeResource: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19275,7 +19275,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCUnitaryControlElement: IFC_Attribute
+	public interface IFCUnitaryControlElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19315,7 +19315,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCUnitaryControlElementType: IFC_Attribute
+	public interface IFCUnitaryControlElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19339,7 +19339,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCUnitaryEquipment: IFC_Attribute
+	public interface IFCUnitaryEquipment: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19379,7 +19379,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCValve: IFC_Attribute
+	public interface IFCValve: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19419,7 +19419,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVibrationIsolator: IFC_Attribute
+	public interface IFCVibrationIsolator: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19457,7 +19457,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVoidingFeature: IFC_Attribute
+	public interface IFCVoidingFeature: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19496,7 +19496,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWallElementedCase: IFC_Attribute
+	public interface IFCWallElementedCase: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19534,7 +19534,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWasteTerminal: IFC_Attribute
+	public interface IFCWasteTerminal: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19574,7 +19574,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWindowStandardCase: IFC_Attribute
+	public interface IFCWindowStandardCase: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19616,7 +19616,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWindowType: IFC_Attribute
+	public interface IFCWindowType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19643,7 +19643,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWorkCalendar: IFC_Attribute
+	public interface IFCWorkCalendar: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19669,7 +19669,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWorkTime: IFC_Attribute
+	public interface IFCWorkTime: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCDataOriginEnum? _DataOrigin {get; set;}
@@ -19678,7 +19678,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignment: IFC_Attribute
+	public interface IFCAlignment: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19704,7 +19704,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignment2DHorizontal: IFC_Attribute
+	public interface IFCAlignment2DHorizontal: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19714,7 +19714,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignment2DHorizontalSegment: IFC_Attribute
+	public interface IFCAlignment2DHorizontalSegment: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19726,7 +19726,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignment2DSegment: IFC_Attribute
+	public interface IFCAlignment2DSegment: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19736,7 +19736,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignment2DVerSegCircularArc: IFC_Attribute
+	public interface IFCAlignment2DVerSegCircularArc: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19753,7 +19753,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignment2DVerSegLine: IFC_Attribute
+	public interface IFCAlignment2DVerSegLine: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19768,7 +19768,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignment2DVerSegParabolicArc: IFC_Attribute
+	public interface IFCAlignment2DVerSegParabolicArc: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19785,7 +19785,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignment2DVertical: IFC_Attribute
+	public interface IFCAlignment2DVertical: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19794,7 +19794,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignment2DVerticalSegment: IFC_Attribute
+	public interface IFCAlignment2DVerticalSegment: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19809,7 +19809,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignmentCurve: IFC_Attribute
+	public interface IFCAlignmentCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19820,7 +19820,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCircularArcSegment2D: IFC_Attribute
+	public interface IFCCircularArcSegment2D: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19833,7 +19833,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCurveSegment2D: IFC_Attribute
+	public interface IFCCurveSegment2D: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19844,7 +19844,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistanceExpression: IFC_Attribute
+	public interface IFCDistanceExpression: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19856,7 +19856,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLineSegment2D: IFC_Attribute
+	public interface IFCLineSegment2D: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19867,14 +19867,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLinearPlacement: IFC_Attribute
+	public interface IFCLinearPlacement: IFC_Entity
 	{
 		public IFC_Attributes<IFCProduct>? _PlacesObject {get; }
 		public IFCAxis2Placement3D? _CartesianPosition {get; }
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLinearPositioningElement: IFC_Attribute
+	public interface IFCLinearPositioningElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19899,7 +19899,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOffsetCurve: IFC_Attribute
+	public interface IFCOffsetCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19908,7 +19908,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOffsetCurveByDistances: IFC_Attribute
+	public interface IFCOffsetCurveByDistances: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19918,7 +19918,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOrientationExpression: IFC_Attribute
+	public interface IFCOrientationExpression: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19927,7 +19927,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPositioningElement: IFC_Attribute
+	public interface IFCPositioningElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19952,7 +19952,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReferent: IFC_Attribute
+	public interface IFCReferent: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -19978,7 +19978,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSectionedSolid: IFC_Attribute
+	public interface IFCSectionedSolid: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19988,7 +19988,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSectionedSolidHorizontal: IFC_Attribute
+	public interface IFCSectionedSolidHorizontal: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -19998,7 +19998,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTransitionCurveSegment2D: IFC_Attribute
+	public interface IFCTransitionCurveSegment2D: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -20014,7 +20014,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTriangulatedIrregularNetwork: IFC_Attribute
+	public interface IFCTriangulatedIrregularNetwork: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -20031,7 +20031,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBearing: IFC_Attribute
+	public interface IFCBearing: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20070,7 +20070,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBearingType: IFC_Attribute
+	public interface IFCBearingType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20094,7 +20094,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBridge: IFC_Attribute
+	public interface IFCBridge: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20125,7 +20125,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBridgePart: IFC_Attribute
+	public interface IFCBridgePart: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20156,7 +20156,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCaissonFoundation: IFC_Attribute
+	public interface IFCCaissonFoundation: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20195,7 +20195,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCaissonFoundationType: IFC_Attribute
+	public interface IFCCaissonFoundationType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20219,7 +20219,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDeepFoundation: IFC_Attribute
+	public interface IFCDeepFoundation: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20257,7 +20257,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDeepFoundationType: IFC_Attribute
+	public interface IFCDeepFoundationType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20280,7 +20280,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFacility: IFC_Attribute
+	public interface IFCFacility: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20310,7 +20310,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFacilityPart: IFC_Attribute
+	public interface IFCFacilityPart: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20340,7 +20340,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelPositions: IFC_Attribute
+	public interface IFCRelPositions: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20351,7 +20351,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTendonConduit: IFC_Attribute
+	public interface IFCTendonConduit: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20391,7 +20391,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTendonConduitType: IFC_Attribute
+	public interface IFCTendonConduitType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20415,7 +20415,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVibrationDamper: IFC_Attribute
+	public interface IFCVibrationDamper: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20454,7 +20454,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVibrationDamperType: IFC_Attribute
+	public interface IFCVibrationDamperType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20478,7 +20478,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignmentCant: IFC_Attribute
+	public interface IFCAlignmentCant: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20505,7 +20505,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignmentCantSegment: IFC_Attribute
+	public interface IFCAlignmentCantSegment: IFC_Entity
 	{
 		public IFCLabel? _StartTag {get; set;}
 		public IFCLabel? _EndTag {get; set;}
@@ -20519,7 +20519,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignmentHorizontal: IFC_Attribute
+	public interface IFCAlignmentHorizontal: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20545,7 +20545,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignmentHorizontalSegment: IFC_Attribute
+	public interface IFCAlignmentHorizontalSegment: IFC_Entity
 	{
 		public IFCLabel? _StartTag {get; set;}
 		public IFCLabel? _EndTag {get; set;}
@@ -20559,14 +20559,14 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignmentParameterSegment: IFC_Attribute
+	public interface IFCAlignmentParameterSegment: IFC_Entity
 	{
 		public IFCLabel? _StartTag {get; set;}
 		public IFCLabel? _EndTag {get; set;}
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignmentSegment: IFC_Attribute
+	public interface IFCAlignmentSegment: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20593,7 +20593,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignmentVertical: IFC_Attribute
+	public interface IFCAlignmentVertical: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20619,7 +20619,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAlignmentVerticalSegment: IFC_Attribute
+	public interface IFCAlignmentVerticalSegment: IFC_Entity
 	{
 		public IFCLabel? _StartTag {get; set;}
 		public IFCLabel? _EndTag {get; set;}
@@ -20633,7 +20633,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCAxis2PlacementLinear: IFC_Attribute
+	public interface IFCAxis2PlacementLinear: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -20644,7 +20644,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBorehole: IFC_Attribute
+	public interface IFCBorehole: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20683,7 +20683,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuiltElement: IFC_Attribute
+	public interface IFCBuiltElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20722,7 +20722,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuiltElementType: IFC_Attribute
+	public interface IFCBuiltElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20745,7 +20745,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCBuiltSystem: IFC_Attribute
+	public interface IFCBuiltSystem: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20772,7 +20772,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCClothoid: IFC_Attribute
+	public interface IFCClothoid: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -20782,7 +20782,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConveyorSegment: IFC_Attribute
+	public interface IFCConveyorSegment: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20824,7 +20824,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCConveyorSegmentType: IFC_Attribute
+	public interface IFCConveyorSegmentType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20848,7 +20848,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCosineSpiral: IFC_Attribute
+	public interface IFCCosineSpiral: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -20859,7 +20859,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCourse: IFC_Attribute
+	public interface IFCCourse: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20899,7 +20899,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCourseType: IFC_Attribute
+	public interface IFCCourseType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -20923,7 +20923,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCCurveSegment: IFC_Attribute
+	public interface IFCCurveSegment: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -20937,7 +20937,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDirectrixCurveSweptAreaSolid: IFC_Attribute
+	public interface IFCDirectrixCurveSweptAreaSolid: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -20950,7 +20950,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDirectrixDerivedReferenceSweptAreaSolid: IFC_Attribute
+	public interface IFCDirectrixDerivedReferenceSweptAreaSolid: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -20964,7 +20964,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionBoard: IFC_Attribute
+	public interface IFCDistributionBoard: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21006,7 +21006,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCDistributionBoardType: IFC_Attribute
+	public interface IFCDistributionBoardType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21030,7 +21030,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEarthworksCut: IFC_Attribute
+	public interface IFCEarthworksCut: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21071,7 +21071,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEarthworksElement: IFC_Attribute
+	public interface IFCEarthworksElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21110,7 +21110,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCEarthworksFill: IFC_Attribute
+	public interface IFCEarthworksFill: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21150,7 +21150,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricFlowTreatmentDevice: IFC_Attribute
+	public interface IFCElectricFlowTreatmentDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21192,7 +21192,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCElectricFlowTreatmentDeviceType: IFC_Attribute
+	public interface IFCElectricFlowTreatmentDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21216,7 +21216,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCFacilityPartCommon: IFC_Attribute
+	public interface IFCFacilityPartCommon: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21251,7 +21251,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeographicCRS: IFC_Attribute
+	public interface IFCGeographicCRS: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -21264,7 +21264,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeomodel: IFC_Attribute
+	public interface IFCGeomodel: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21303,7 +21303,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeoslice: IFC_Attribute
+	public interface IFCGeoslice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21342,7 +21342,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeotechnicalAssembly: IFC_Attribute
+	public interface IFCGeotechnicalAssembly: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21381,7 +21381,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeotechnicalElement: IFC_Attribute
+	public interface IFCGeotechnicalElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21420,7 +21420,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGeotechnicalStratum: IFC_Attribute
+	public interface IFCGeotechnicalStratum: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21460,7 +21460,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCGradientCurve: IFC_Attribute
+	public interface IFCGradientCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -21474,7 +21474,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCImpactProtectionDevice: IFC_Attribute
+	public interface IFCImpactProtectionDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21514,7 +21514,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCImpactProtectionDeviceType: IFC_Attribute
+	public interface IFCImpactProtectionDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21538,7 +21538,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCIndexedPolygonalTextureMap: IFC_Attribute
+	public interface IFCIndexedPolygonalTextureMap: IFC_Entity
 	{
 		public IFC_Attributes<IFCSurfaceTexture>? _Maps {get; set;}
 		public IFCTessellatedFaceSet? _MappedTo {get; set;}
@@ -21547,7 +21547,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCKerb: IFC_Attribute
+	public interface IFCKerb: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21587,7 +21587,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCKerbType: IFC_Attribute
+	public interface IFCKerbType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21611,7 +21611,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLinearElement: IFC_Attribute
+	public interface IFCLinearElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21637,7 +21637,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLiquidTerminal: IFC_Attribute
+	public interface IFCLiquidTerminal: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21679,7 +21679,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCLiquidTerminalType: IFC_Attribute
+	public interface IFCLiquidTerminalType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21703,7 +21703,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMapConversionScaled: IFC_Attribute
+	public interface IFCMapConversionScaled: IFC_Entity
 	{
 		public IFCCoordinateReferenceSystemSelect? _SourceCRS {get; set;}
 		public IFCCoordinateReferenceSystem? _TargetCRS {get; set;}
@@ -21719,7 +21719,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMarineFacility: IFC_Attribute
+	public interface IFCMarineFacility: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21753,7 +21753,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMarinePart: IFC_Attribute
+	public interface IFCMarinePart: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21788,7 +21788,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMobileTelecommunicationsAppliance: IFC_Attribute
+	public interface IFCMobileTelecommunicationsAppliance: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21830,7 +21830,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMobileTelecommunicationsApplianceType: IFC_Attribute
+	public interface IFCMobileTelecommunicationsApplianceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21854,7 +21854,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMooringDevice: IFC_Attribute
+	public interface IFCMooringDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21894,7 +21894,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCMooringDeviceType: IFC_Attribute
+	public interface IFCMooringDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21918,7 +21918,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCNavigationElement: IFC_Attribute
+	public interface IFCNavigationElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21958,7 +21958,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCNavigationElementType: IFC_Attribute
+	public interface IFCNavigationElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -21982,7 +21982,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCOpenCrossProfileDef: IFC_Attribute
+	public interface IFCOpenCrossProfileDef: IFC_Entity
 	{
 		public IFCProfileTypeEnum? _ProfileType {get; set;}
 		public IFCLabel? _ProfileName {get; set;}
@@ -21996,7 +21996,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPavement: IFC_Attribute
+	public interface IFCPavement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22036,7 +22036,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPavementType: IFC_Attribute
+	public interface IFCPavementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22060,7 +22060,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPointByDistanceExpression: IFC_Attribute
+	public interface IFCPointByDistanceExpression: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -22073,7 +22073,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCPolynomialCurve: IFC_Attribute
+	public interface IFCPolynomialCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -22085,7 +22085,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCQuantityNumber: IFC_Attribute
+	public interface IFCQuantityNumber: IFC_Entity
 	{
 		public IFCLabel? _Name {get; set;}
 		public IFCText? _Description {get; set;}
@@ -22097,7 +22097,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRail: IFC_Attribute
+	public interface IFCRail: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22137,7 +22137,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRailType: IFC_Attribute
+	public interface IFCRailType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22161,7 +22161,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRailway: IFC_Attribute
+	public interface IFCRailway: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22195,7 +22195,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRailwayPart: IFC_Attribute
+	public interface IFCRailwayPart: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22230,7 +22230,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCReinforcedSoil: IFC_Attribute
+	public interface IFCReinforcedSoil: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22270,7 +22270,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAdheresToElement: IFC_Attribute
+	public interface IFCRelAdheresToElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22281,7 +22281,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRelAssociatesProfileDef: IFC_Attribute
+	public interface IFCRelAssociatesProfileDef: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22292,7 +22292,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRigidOperation: IFC_Attribute
+	public interface IFCRigidOperation: IFC_Entity
 	{
 		public IFCCoordinateReferenceSystemSelect? _SourceCRS {get; set;}
 		public IFCCoordinateReferenceSystem? _TargetCRS {get; set;}
@@ -22302,7 +22302,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRoad: IFC_Attribute
+	public interface IFCRoad: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22336,7 +22336,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCRoadPart: IFC_Attribute
+	public interface IFCRoadPart: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22371,7 +22371,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSecondOrderPolynomialSpiral: IFC_Attribute
+	public interface IFCSecondOrderPolynomialSpiral: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -22383,7 +22383,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSectionedSurface: IFC_Attribute
+	public interface IFCSectionedSurface: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -22394,7 +22394,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSegment: IFC_Attribute
+	public interface IFCSegment: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -22404,7 +22404,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSegmentedReferenceCurve: IFC_Attribute
+	public interface IFCSegmentedReferenceCurve: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -22418,7 +22418,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSeventhOrderPolynomialSpiral: IFC_Attribute
+	public interface IFCSeventhOrderPolynomialSpiral: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -22435,7 +22435,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSign: IFC_Attribute
+	public interface IFCSign: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22475,7 +22475,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSignType: IFC_Attribute
+	public interface IFCSignType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22499,7 +22499,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSignal: IFC_Attribute
+	public interface IFCSignal: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22541,7 +22541,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSignalType: IFC_Attribute
+	public interface IFCSignalType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22565,7 +22565,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSineSpiral: IFC_Attribute
+	public interface IFCSineSpiral: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -22577,7 +22577,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCSpiral: IFC_Attribute
+	public interface IFCSpiral: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -22586,7 +22586,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextureCoordinateIndices: IFC_Attribute
+	public interface IFCTextureCoordinateIndices: IFC_Entity
 	{
 		public IFC_Attributes<IFCPositiveInteger>? _TexCoordIndex {get; set;}
 		public IFCIndexedPolygonalFace? _TexCoordsOf {get; set;}
@@ -22594,7 +22594,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTextureCoordinateIndicesWithVoids: IFC_Attribute
+	public interface IFCTextureCoordinateIndicesWithVoids: IFC_Entity
 	{
 		public IFC_Attributes<IFCPositiveInteger>? _TexCoordIndex {get; set;}
 		public IFCIndexedPolygonalFace? _TexCoordsOf {get; set;}
@@ -22603,7 +22603,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCThirdOrderPolynomialSpiral: IFC_Attribute
+	public interface IFCThirdOrderPolynomialSpiral: IFC_Entity
 	{
 		public IFC_Attributes<IFCPresentationLayerAssignment>? _LayerAssignment {get; }
 		public IFC_Attributes<IFCStyledItem>? _StyledByItem {get; }
@@ -22616,7 +22616,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTrackElement: IFC_Attribute
+	public interface IFCTrackElement: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22656,7 +22656,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTrackElementType: IFC_Attribute
+	public interface IFCTrackElementType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22680,7 +22680,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTransportationDevice: IFC_Attribute
+	public interface IFCTransportationDevice: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22719,7 +22719,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCTransportationDeviceType: IFC_Attribute
+	public interface IFCTransportationDeviceType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22742,7 +22742,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVehicle: IFC_Attribute
+	public interface IFCVehicle: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22782,7 +22782,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCVehicleType: IFC_Attribute
+	public interface IFCVehicleType: IFC_Entity
 	{
 		public IFCGloballyUniqueId? _GlobalId {get; set;}
 		public IFCOwnerHistory? _OwnerHistory {get; set;}
@@ -22806,7 +22806,7 @@ namespace IFC.Global
 	}
 	/// <summary>
 	/// </summary>
-	public interface IFCWellKnownText: IFC_Attribute
+	public interface IFCWellKnownText: IFC_Entity
 	{
 		public IFCWellKnownTextLiteral? _WellKnownText {get; set;}
 		public IFCCoordinateReferenceSystem? _CoordinateReferenceSystem {get; set;}

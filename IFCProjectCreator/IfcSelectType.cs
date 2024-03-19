@@ -12,11 +12,14 @@ namespace IFCProjectCreator
 
         public bool IsGlobal;
 
+        public bool IsEntity;
+
         public IFCSelectType(IFCDataSet dataSet, string version) : base(dataSet, version)
         {
             SelectAttributes = new List<IFCSelectAttribute>();
             IsGlobal = false;
             ClassType = IFCAttributeType.SELECT;
+            IsEntity = false;
         }
         public override void ReadEXP(StreamReader reader, string header)
         {
@@ -108,7 +111,16 @@ namespace IFCProjectCreator
             }
             else
             {
-                return ": IFC_Attribute";
+                if(IsEntity)
+                {
+                    return ": IFC_Entity";
+
+                }
+                else
+                {
+                    return ": IFC_Attribute";
+
+                }
             }
         }
 
