@@ -21,17 +21,18 @@ namespace IFCProjectCreator
         {
             List<string> texts = new List<string>();
           
+            var listName = GetListName();
             if(RelatedAttribute != null)
             {
                 if (ListType == IFCListType.LIST)
                 {
                     if (RelatedAttribute.ListType == IFCListType.LIST)
                     {
-                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return new IFC_Attributes<" + TypeName + ">(Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this)).ToList());}}");
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return new " + listName + "<" + TypeName + ">(Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + ".Contains(this)).ToList());}}");
                     }
                     else if (RelatedAttribute.ListType == IFCListType.SINGLE)
                     {
-                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return new IFC_Attributes<" + TypeName + ">(Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this).ToList());}}");
+                        texts.Add("\t\tpublic " + GetCSharpTypeText() + "? " + Name + " {get{return new " + listName + "<" + TypeName + ">(Model?.GetItems<" + TypeName + ">().Where(x => x." + RelatedAttributeName + " != null && x." + RelatedAttributeName + " == this).ToList());}}");
                     }
                     else
                     {

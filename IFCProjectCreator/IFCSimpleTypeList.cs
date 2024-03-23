@@ -18,7 +18,7 @@ namespace IFCProjectCreator
             string cSharpText = GetCSharpType();
             List<string> texts = GetCSharpSummaryTexts();
 
-            string header = "\tpublic class " + Name + " : IFC_Attributes<" + ParentName + ">" + ", ";
+            string header = "\tpublic class " + Name + " : IFC_LIST<" + ParentName + ">" + ", ";
 
             foreach (var inf in InterfaceNames)
             {

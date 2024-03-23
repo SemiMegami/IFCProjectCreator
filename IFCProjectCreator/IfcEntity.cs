@@ -575,7 +575,9 @@ namespace IFCProjectCreator
                 }
                 else if (attribute.ListType == IFCListType.LIST)
                 {
-                    texts.Add("\t\t\t\t\t" + attribute.Name + " = new IFC_Attributes<" + attribute.TypeName + ">();");
+                    var listName = attribute.GetListName();
+
+                    texts.Add("\t\t\t\t\t" + attribute.Name + " = new " + listName + "<" + attribute.TypeName + ">();");
                     texts.Add("\t\t\t\t\tList<string>? attributeTexts = SplitList(" + attText + ");");
                     texts.Add("\t\t\t\t\tif(attributeTexts != null)");
                     texts.Add("\t\t\t\t\t{");
@@ -587,13 +589,14 @@ namespace IFCProjectCreator
                 }
                 else
                 {
-                    texts.Add("\t\t\t\t\t" + attribute.Name + " = new IFC_Attributes<IFC_Attributes<" + attribute.TypeName + ">>();");
+                    var listName = attribute.GetListName();
+                    texts.Add("\t\t\t\t\t" + attribute.Name + " = new " + listName + "<" + listName + "<" + attribute.TypeName + ">>();");
                     texts.Add("\t\t\t\t\tList<string>? attributeListTexts = SplitList(" + attText + ");");
                     texts.Add("\t\t\t\t\tif(attributeListTexts != null)");
                     texts.Add("\t\t\t\t\t{");
                     texts.Add("\t\t\t\t\t\tforeach (string attributeListText in attributeListTexts)");
                     texts.Add("\t\t\t\t\t\t{");
-                    texts.Add("\t\t\t\t\t\t\tvar " + attribute.Name + "List = new IFC_Attributes<" + attribute.TypeName + ">();");
+                    texts.Add("\t\t\t\t\t\t\tvar " + attribute.Name + "List = new " + listName + "<" + attribute.TypeName + ">();");
                     texts.Add("\t\t\t\t\t\t\tList<string>? attributeTexts = SplitList(attributeListText);");
                     texts.Add("\t\t\t\t\t\t\tif(attributeTexts != null)");
                     texts.Add("\t\t\t\t\t\t\t{");
@@ -889,10 +892,10 @@ namespace IFCProjectCreator
                     break;
                 case IFCAttributeType.SIMPLELIST:
                     texts.Add(tap + name + " = new " + typeName + "();");
-                    texts.Add(tap + "List<string>? " + typeName + "s = SplitList(" + attText + ");");
-                    texts.Add(tap + "if(" + typeName + "s != null)");
+                    texts.Add(tap + "List<string>? " + typeName + " = SplitList(" + attText + ");");
+                    texts.Add(tap + "if(" + typeName + " != null)");
                     texts.Add(tap + "{");
-                    texts.Add(tap + "\tforeach(string " + typeName + "Item in " + typeName + "s)");
+                    texts.Add(tap + "\tforeach(string " + typeName + "Item in " + typeName + ")");
                     texts.Add(tap + "\t{");
                     var listItem = basicListDatas.FirstOrDefault(x => x.Name == typeName);
                     if(listItem != null)

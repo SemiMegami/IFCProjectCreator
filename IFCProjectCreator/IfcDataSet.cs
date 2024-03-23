@@ -2102,6 +2102,34 @@ namespace IFC
                 writer.WriteLine("\t}");
                 writer.WriteLine("}");
             }
+
+            List<string> types = new List<string>()
+            {
+                "IFC_ARRAY",
+                "IFC_BAG",
+                "IFC_LIST",
+                "IFC_SET"
+            };
+            foreach (string type in types)
+            {
+                using (StreamWriter writer = new StreamWriter(folderDir + type + ".cs"))
+                {
+                    writer.WriteLine("using System;");
+                    writer.WriteLine("using System.Collections.Generic;");
+                    writer.WriteLine("using System.Linq;");
+                    writer.WriteLine("using System.Text;");
+                    writer.WriteLine("using System.Threading.Tasks;");
+                    writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                    writer.WriteLine("namespace " + nameSpaceName);
+                    writer.WriteLine("{");
+                    writer.WriteLine("\tpublic class " + type + "<T> : IFC_Attributes<T>, IFC_Attribute where T: IFC_Attribute ");
+                    writer.WriteLine("\t{");
+                    writer.WriteLine("\t\tpublic " + type + "() : base() { }");
+                    writer.WriteLine("\t\tpublic " + type + "(List<T>? value) : base(value) { }");
+                    writer.WriteLine("\t}");
+                    writer.WriteLine("}");
+                }
+            }
         }
         /// <summary>
         /// Add implicit text

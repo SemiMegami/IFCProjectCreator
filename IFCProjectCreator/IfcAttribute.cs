@@ -67,7 +67,7 @@ namespace IFCProjectCreator
             string global = dataSet.globalName;
             string typeName = TypeName;
             string overideText = isOverride ? "override " : "virtual ";
-
+            string listName = GetListName();
             if (!dataSet.CSharpBasicDataTypes.ContainsKey(TypeName))
             {
                 typeName = global + "." + TypeName;
@@ -125,7 +125,7 @@ namespace IFCProjectCreator
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\tIFC_Attributes<"+typeName + ">? _Items_ = new IFC_Attributes<"+typeName +">();",
+                        "\t\t\t\t\t" + listName + "<"+typeName + ">? _Items_ = new " + listName  +"<"+typeName +">();",
                         "\t\t\t\t\tforeach (" + TypeName + " item in " + Name +")",
                         "\t\t\t\t\t{",
                         "\t\t\t\t\t\t_Items_.Add(item);",
@@ -148,7 +148,7 @@ namespace IFCProjectCreator
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\tIFC_Attributes<"+typeName + ">? _Items_ = new IFC_Attributes<"+typeName +">();",
+                        "\t\t\t\t\t" + listName + "<"+typeName + ">? _Items_ = new " + listName+ "<"+typeName +">();",
                         "\t\t\t\t\tforeach (" + TypeName + " item in " + Name +")",
                         "\t\t\t\t\t{",
                         "\t\t\t\t\t\t_Items_.Add(item);",
@@ -165,7 +165,7 @@ namespace IFCProjectCreator
                         "\t\t\t\t}",
                         "\t\t\t\telse",
                         "\t\t\t\t{",
-                        "\t\t\t\t\t" + Name + " = new IFC_Attributes<" + TypeName + ">();",
+                        "\t\t\t\t\t" + Name + " = new " + listName+ "<" + TypeName + ">();",
                         "\t\t\t\t\tforeach(var val in value)",
                         "\t\t\t\t\t{",
                         "\t\t\t\t\t\tif(val is " + TypeName + " v)",
@@ -192,10 +192,10 @@ namespace IFCProjectCreator
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\tIFC_Attributes<IFC_Attributes<"+typeName + ">>? _Items_ = new IFC_Attributes<IFC_Attributes<"+typeName +">>();",
-                        "\t\t\t\t\tforeach (IFC_Attributes<" + TypeName + "> item1s in " + Name +")",
+                        "\t\t\t\t\t" + listName + "<" + listName+ "<"+typeName + ">>? _Items_ = new " + listName+ "<" + listName+ "<"+typeName +">>();",
+                        "\t\t\t\t\tforeach (" + listName+ "<" + TypeName + "> item1s in " + Name +")",
                         "\t\t\t\t\t{",
-                        "\t\t\t\t\t\tIFC_Attributes<"+typeName + ">? resultItems = new IFC_Attributes<"+typeName +">();",
+                        "\t\t\t\t\t\t" + listName+ "<"+typeName + ">? resultItems = new " + listName+ "<"+typeName +">();",
                         "\t\t\t\t\t\tforeach (" + TypeName + " item in item1s)",
                         "\t\t\t\t\t\t{",
                         "\t\t\t\t\t\t\tresultItems.Add(item);",
@@ -220,10 +220,10 @@ namespace IFCProjectCreator
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\tIFC_Attributes<IFC_Attributes<"+typeName + ">>? _Items_ = new IFC_Attributes<IFC_Attributes<"+typeName +">>();",
-                        "\t\t\t\t\tforeach (IFC_Attributes<" + TypeName + "> item1s in " + Name +")",
+                        "\t\t\t\t\t" + listName + "<" + listName + "<"+typeName + ">>? _Items_ = new " + listName + "<" + listName + "<"+typeName +">>();",
+                        "\t\t\t\t\tforeach (" + listName + "<" + TypeName + "> item1s in " + Name +")",
                         "\t\t\t\t\t{",
-                        "\t\t\t\t\t\tIFC_Attributes<"+typeName + ">? resultItems = new IFC_Attributes<"+typeName +">();",
+                        "\t\t\t\t\t\t" + listName + "<"+typeName + ">? resultItems = new " + listName + "<"+typeName +">();",
                         "\t\t\t\t\t\tforeach (" + TypeName + " item in item1s)",
                         "\t\t\t\t\t\t{",
                         "\t\t\t\t\t\t\tresultItems.Add(item);",
@@ -242,12 +242,12 @@ namespace IFCProjectCreator
                         "\t\t\t\t}",
                         "\t\t\t\telse",
                         "\t\t\t\t{",
-                        "\t\t\t\t\t" + Name + " = new IFC_Attributes<IFC_Attributes<" + TypeName + ">>();",
+                        "\t\t\t\t\t" + Name + " = new " + listName + "<" + listName + "<" + TypeName + ">>();",
                         "\t\t\t\t\tforeach(var vals in value)",
                         "\t\t\t\t\t{",
                         "\t\t\t\t\t\tif(vals != null)",
                         "\t\t\t\t\t\t{",
-                        "\t\t\t\t\t\t\tIFC_Attributes<" + TypeName + "> _Items_ = new IFC_Attributes<" + TypeName + ">();",
+                        "\t\t\t\t\t\t\t" + listName + "<" + TypeName + "> _Items_ = new " + listName + "<" + TypeName + ">();",
                         "\t\t\t\t\t\t\tforeach(var val in vals)",
                         "\t\t\t\t\t\t\t{",
                         "\t\t\t\t\t\t\t\tif(val is " + TypeName + " v)",
@@ -270,14 +270,15 @@ namespace IFCProjectCreator
 
         public virtual string GetCSharpTypeText()
         {
+            string listName = GetListName();
             switch (ListType)
             {
                 case IFCListType.SINGLE:
                     return TypeName;
                 case IFCListType.LIST:
-                    return "IFC_Attributes<" + TypeName + ">";
+                    return listName + "<" + TypeName + ">";
                 case IFCListType.LISTLIST:
-                    return "IFC_Attributes<IFC_Attributes<" + TypeName + ">>";
+                    return listName + "<" + listName + "<" + TypeName + ">>"; ;
             }
             return TypeName;
         }
@@ -290,18 +291,26 @@ namespace IFCProjectCreator
             }
 
             string typeName = interfaceName + "." + TypeName;
+            string listName = GetListName();
             switch (ListType)
             {
                 case IFCListType.SINGLE:
                     return typeName;
                 case IFCListType.LIST:
-                    return "IFC_Attributes<" + typeName + ">";
+                    return listName + "<" + typeName + ">";
                 case IFCListType.LISTLIST:
-                    return "IFC_Attributes<IFC_Attributes<" + typeName + ">>";
+                    return listName + "<" + listName + "<" + typeName + ">>";
             }
             return TypeName;
         }
+        public string GetListName()
+        {
+            return "IFC_" + Aggregation.ToString();
+            return "IFC_" + Aggregation.ToString();
+        }
     }
+
+    
 
     public enum IFCListType
     {
