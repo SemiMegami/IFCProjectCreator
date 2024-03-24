@@ -134,6 +134,7 @@ namespace IFCProjectCreator
                 {
                     IFCParameterAttribute input = new IFCParameterAttribute();
                     input.Name = names[i].Replace(" ", "");
+                    input.Dataset = DataSet;
                     input.TypeName = typeName;
                     input.ListType = listType;
                     input.Aggregation = aggregation;
@@ -156,6 +157,7 @@ namespace IFCProjectCreator
         private void SetOutput(string outputText)
         {
             Output = new IFCParameterAttribute();
+            Output.Dataset = DataSet;
             Output.Name = "Output";
             string[] outputWordArrs = outputText.Split(" ");
             List<string> outputWords = new List<string>();
@@ -301,7 +303,7 @@ namespace IFCProjectCreator
                 header += ")";
                 if (isGeneric)
                 {
-                    header += " where T: IFC_Attribute";
+                    header += " where T: IFC_BASE";
                 }
                 List<string> texts = GetCSharpSummaryTexts();
                 for (int i = 0; i < texts.Count; i++)
@@ -322,7 +324,7 @@ namespace IFCProjectCreator
                     {
                         foreach (var c in content)
                         {
-                            texts.Add(c.Replace("IFC_Attributes","IFC_" + Output.Aggregation.ToString()));
+                            texts.Add(c.Replace("IFC_BASES","IFC_" + Output.Aggregation.ToString()));
                         }
                     }
                     texts.AddRange(new List<string>()

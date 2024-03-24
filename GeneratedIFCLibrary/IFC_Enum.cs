@@ -3,7 +3,7 @@ using System.Collections.Generic;
 #pragma warning disable VSSpell001 // Spell Check
 namespace IFC
 {
-	public abstract class IFC_Enum : IFC_Attribute
+	public abstract class IFC_ENUM : IFC_BASE
 	{
 
         public string Value { get; set; } = "";

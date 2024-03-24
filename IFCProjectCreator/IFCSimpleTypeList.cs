@@ -18,7 +18,13 @@ namespace IFCProjectCreator
             string cSharpText = GetCSharpType();
             List<string> texts = GetCSharpSummaryTexts();
 
-            string header = "\tpublic class " + Name + " : IFC_LIST<" + ParentName + ">" + ", ";
+            string parentName = ParentName;
+            if (DataSet.CSharpBasicDataTypes.ContainsKey(ParentName))
+            {
+                parentName = "IFC_" + ParentName;
+            }
+
+            string header = "\tpublic class " + Name + " : IFC_LIST<" + parentName + ">" + ", ";
 
             foreach (var inf in InterfaceNames)
             {
@@ -63,7 +69,7 @@ namespace IFCProjectCreator
                 texts.Add("\t\t\t{");
 
 
-                if (selects.FirstOrDefault(e => e.Name == ParentName) != null)
+                if (selects.FirstOrDefault(e => e.Name == parentName) != null)
                 {
                     texts.Add("\t\t\t\ttext += this[i].GetIFCText(true) + (i < (n - 1) ? \",\": \")\");");
                 }

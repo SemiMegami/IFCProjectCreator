@@ -262,7 +262,14 @@ namespace IFCProjectCreator
         {
             if (ParentName.Length > 0)
             {
-                return " : " + ParentName;
+                if (DataSet.CSharpBasicDataDefaultValue.ContainsKey(ParentName))
+                {
+                    return " : IFC_" + ParentName;
+                }
+                else{
+                    return " : " + ParentName;
+                }
+               
             }
             else
             {

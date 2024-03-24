@@ -113,12 +113,12 @@ namespace IFCProjectCreator
             {
                 if(IsEntity)
                 {
-                    return ": IFC_Entity";
+                    return ": IFC_I_ENTITY";
 
                 }
                 else
                 {
-                    return ": IFC_Attribute";
+                    return ": IFC_BASE";
 
                 }
             }

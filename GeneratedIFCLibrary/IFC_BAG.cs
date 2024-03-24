@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 #pragma warning disable VSSpell001 // Spell Check
 namespace IFC
 {
-	public class IFC_BAG<T> : IFC_Attributes<T>, IFC_Attribute where T: IFC_Attribute 
+	public class IFC_BAG<T> : IFC_BASES<T>, IFC_BASE where T: IFC_BASE 
 	{
 		public IFC_BAG() : base() { }
 		public IFC_BAG(List<T>? value) : base(value) { }

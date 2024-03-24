@@ -8,7 +8,7 @@ using System.Reflection;
 #pragma warning disable VSSpell001 // Spell Check
 namespace IFC
 {
-	public class IFC_Test
+	public class IFC_TEST
 	{
 		public void TestLoad()
 		{

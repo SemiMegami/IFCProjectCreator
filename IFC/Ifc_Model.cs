@@ -14,7 +14,7 @@ namespace IFC
         /// <summary>
         /// Version of this model
         /// </summary>
-        protected IFC_Version Version;
+        protected IFC_VERSION Version;
 
         /// <summary>
         /// IFC Items
@@ -33,7 +33,7 @@ namespace IFC
         /// </summary>
         public IFC_MODEL()
 		{
-			this.Version = IFC_Version.UNDEFINED;
+			this.Version = IFC_VERSION.UNDEFINED;
             Items = new Dictionary<string, IFC_I_ENTITY>();
             Logs = new List<IFC_LOG>();
         }
@@ -46,11 +46,11 @@ namespace IFC
             switch (version.ToUpper())
             {
 
-				case "IFC2X3": this.Version = IFC_Version.IFC2x3; break;
-				case "IFC4": this.Version = IFC_Version.IFC4; break;
-				case "IFC4X1": this.Version = IFC_Version.IFC4x1; break;
-				case "IFC4X2": this.Version = IFC_Version.IFC4x2; break;
-				case "IFC4X3": this.Version = IFC_Version.IFC4x3; break;
+				case "IFC2X3": this.Version = IFC_VERSION.IFC2x3; break;
+				case "IFC4": this.Version = IFC_VERSION.IFC4; break;
+				case "IFC4X1": this.Version = IFC_VERSION.IFC4x1; break;
+				case "IFC4X2": this.Version = IFC_VERSION.IFC4x2; break;
+				case "IFC4X3": this.Version = IFC_VERSION.IFC4x3; break;
 
             }
         }
@@ -271,27 +271,27 @@ namespace IFC
 
 									if (text.Contains("'IFC2X3'"))
 									{
-										Version = IFC_Version.IFC2x3;
+										Version = IFC_VERSION.IFC2x3;
 										break;
 									}
 									if (text.Contains("'IFC4'"))
 									{
-										Version = IFC_Version.IFC4;
+										Version = IFC_VERSION.IFC4;
 										break;
 									}
 									if (text.Contains("'IFC4X1'"))
 									{
-										Version = IFC_Version.IFC4x1;
+										Version = IFC_VERSION.IFC4x1;
 										break;
 									}
 									if (text.Contains("'IFC4X2'"))
 									{
-										Version = IFC_Version.IFC4x2;
+										Version = IFC_VERSION.IFC4x2;
 										break;
 									}
 									if (text.Contains("'IFC4X3'"))
 									{
-										Version = IFC_Version.IFC4x3;
+										Version = IFC_VERSION.IFC4x3;
 										break;
 									}
 
@@ -366,7 +366,7 @@ namespace IFC
 			}
 			switch (Version)
 			{
-				case IFC_Version.IFC2x3:
+				case IFC_VERSION.IFC2x3:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return new IFC.IFC2x3.IFCAbsorbedDoseMeasure();
@@ -1208,7 +1208,7 @@ namespace IFC
 						case "IFCZONE" : return new IFC.IFC2x3.IFCZone();
 					}
 				break;
-				case IFC_Version.IFC4:
+				case IFC_VERSION.IFC4:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return new IFC.IFC4.IFCAbsorbedDoseMeasure();
@@ -2203,7 +2203,7 @@ namespace IFC
 						case "IFCZONE" : return new IFC.IFC4.IFCZone();
 					}
 				break;
-				case IFC_Version.IFC4x1:
+				case IFC_VERSION.IFC4x1:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return new IFC.IFC4x1.IFCAbsorbedDoseMeasure();
@@ -3219,7 +3219,7 @@ namespace IFC
 						case "IFCZONE" : return new IFC.IFC4x1.IFCZone();
 					}
 				break;
-				case IFC_Version.IFC4x2:
+				case IFC_VERSION.IFC4x2:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return new IFC.IFC4x2.IFCAbsorbedDoseMeasure();
@@ -4258,7 +4258,7 @@ namespace IFC
 						case "IFCZONE" : return new IFC.IFC4x2.IFCZone();
 					}
 				break;
-				case IFC_Version.IFC4x3:
+				case IFC_VERSION.IFC4x3:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return new IFC.IFC4x3.IFCAbsorbedDoseMeasure();
@@ -5393,35 +5393,35 @@ namespace IFC
 			}
 			switch (Version)
 			{
-				case IFC_Version.IFC2x3:
+				case IFC_VERSION.IFC2x3:
 					switch (className)
 					{
 						case "IFCBOOLEAN" : return (IFC.IFC2x3.IFCBoolean) value;
 						case "IFCLOGICAL" : return (IFC.IFC2x3.IFCLogical) value;
 					}
 				break;
-				case IFC_Version.IFC4:
+				case IFC_VERSION.IFC4:
 					switch (className)
 					{
 						case "IFCBOOLEAN" : return (IFC.IFC4.IFCBoolean) value;
 						case "IFCLOGICAL" : return (IFC.IFC4.IFCLogical) value;
 					}
 				break;
-				case IFC_Version.IFC4x1:
+				case IFC_VERSION.IFC4x1:
 					switch (className)
 					{
 						case "IFCBOOLEAN" : return (IFC.IFC4x1.IFCBoolean) value;
 						case "IFCLOGICAL" : return (IFC.IFC4x1.IFCLogical) value;
 					}
 				break;
-				case IFC_Version.IFC4x2:
+				case IFC_VERSION.IFC4x2:
 					switch (className)
 					{
 						case "IFCBOOLEAN" : return (IFC.IFC4x2.IFCBoolean) value;
 						case "IFCLOGICAL" : return (IFC.IFC4x2.IFCLogical) value;
 					}
 				break;
-				case IFC_Version.IFC4x3:
+				case IFC_VERSION.IFC4x3:
 					switch (className)
 					{
 						case "IFCBOOLEAN" : return (IFC.IFC4x3.IFCBoolean) value;
@@ -5440,7 +5440,7 @@ namespace IFC
 			}
 			switch (Version)
 			{
-				case IFC_Version.IFC2x3:
+				case IFC_VERSION.IFC2x3:
 					switch (className)
 					{
 						case "IFCBOXALIGNMENT" : return (IFC.IFC2x3.IFCBoxAlignment) value;
@@ -5459,7 +5459,7 @@ namespace IFC
 						case "IFCTEXTTRANSFORMATION" : return (IFC.IFC2x3.IFCTextTransformation) value;
 					}
 				break;
-				case IFC_Version.IFC4:
+				case IFC_VERSION.IFC4:
 					switch (className)
 					{
 						case "IFCBOXALIGNMENT" : return (IFC.IFC4.IFCBoxAlignment) value;
@@ -5484,7 +5484,7 @@ namespace IFC
 						case "IFCURIREFERENCE" : return (IFC.IFC4.IFCURIReference) value;
 					}
 				break;
-				case IFC_Version.IFC4x1:
+				case IFC_VERSION.IFC4x1:
 					switch (className)
 					{
 						case "IFCBOXALIGNMENT" : return (IFC.IFC4x1.IFCBoxAlignment) value;
@@ -5509,7 +5509,7 @@ namespace IFC
 						case "IFCURIREFERENCE" : return (IFC.IFC4x1.IFCURIReference) value;
 					}
 				break;
-				case IFC_Version.IFC4x2:
+				case IFC_VERSION.IFC4x2:
 					switch (className)
 					{
 						case "IFCBOXALIGNMENT" : return (IFC.IFC4x2.IFCBoxAlignment) value;
@@ -5534,7 +5534,7 @@ namespace IFC
 						case "IFCURIREFERENCE" : return (IFC.IFC4x2.IFCURIReference) value;
 					}
 				break;
-				case IFC_Version.IFC4x3:
+				case IFC_VERSION.IFC4x3:
 					switch (className)
 					{
 						case "IFCBOXALIGNMENT" : return (IFC.IFC4x3.IFCBoxAlignment) value;
@@ -5572,7 +5572,7 @@ namespace IFC
 			}
 			switch (Version)
 			{
-				case IFC_Version.IFC2x3:
+				case IFC_VERSION.IFC2x3:
 					switch (className)
 					{
 						case "IFCDAYINMONTHNUMBER" : return (IFC.IFC2x3.IFCDayInMonthNumber) value;
@@ -5587,7 +5587,7 @@ namespace IFC
 						case "IFCYEARNUMBER" : return (IFC.IFC2x3.IFCYearNumber) value;
 					}
 				break;
-				case IFC_Version.IFC4:
+				case IFC_VERSION.IFC4:
 					switch (className)
 					{
 						case "IFCBINARY" : return (IFC.IFC4.IFCBinary) value;
@@ -5602,7 +5602,7 @@ namespace IFC
 						case "IFCTIMESTAMP" : return (IFC.IFC4.IFCTimeStamp) value;
 					}
 				break;
-				case IFC_Version.IFC4x1:
+				case IFC_VERSION.IFC4x1:
 					switch (className)
 					{
 						case "IFCBINARY" : return (IFC.IFC4x1.IFCBinary) value;
@@ -5617,7 +5617,7 @@ namespace IFC
 						case "IFCTIMESTAMP" : return (IFC.IFC4x1.IFCTimeStamp) value;
 					}
 				break;
-				case IFC_Version.IFC4x2:
+				case IFC_VERSION.IFC4x2:
 					switch (className)
 					{
 						case "IFCBINARY" : return (IFC.IFC4x2.IFCBinary) value;
@@ -5632,7 +5632,7 @@ namespace IFC
 						case "IFCTIMESTAMP" : return (IFC.IFC4x2.IFCTimeStamp) value;
 					}
 				break;
-				case IFC_Version.IFC4x3:
+				case IFC_VERSION.IFC4x3:
 					switch (className)
 					{
 						case "IFCBINARY" : return (IFC.IFC4x3.IFCBinary) value;
@@ -5660,7 +5660,7 @@ namespace IFC
 			}
 			switch (Version)
 			{
-				case IFC_Version.IFC2x3:
+				case IFC_VERSION.IFC2x3:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return (IFC.IFC2x3.IFCAbsorbedDoseMeasure) value;
@@ -5754,7 +5754,7 @@ namespace IFC
 						case "IFCWARPINGMOMENTMEASURE" : return (IFC.IFC2x3.IFCWarpingMomentMeasure) value;
 					}
 				break;
-				case IFC_Version.IFC4:
+				case IFC_VERSION.IFC4:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return (IFC.IFC4.IFCAbsorbedDoseMeasure) value;
@@ -5852,7 +5852,7 @@ namespace IFC
 						case "IFCWARPINGMOMENTMEASURE" : return (IFC.IFC4.IFCWarpingMomentMeasure) value;
 					}
 				break;
-				case IFC_Version.IFC4x1:
+				case IFC_VERSION.IFC4x1:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return (IFC.IFC4x1.IFCAbsorbedDoseMeasure) value;
@@ -5950,7 +5950,7 @@ namespace IFC
 						case "IFCWARPINGMOMENTMEASURE" : return (IFC.IFC4x1.IFCWarpingMomentMeasure) value;
 					}
 				break;
-				case IFC_Version.IFC4x2:
+				case IFC_VERSION.IFC4x2:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return (IFC.IFC4x2.IFCAbsorbedDoseMeasure) value;
@@ -6048,7 +6048,7 @@ namespace IFC
 						case "IFCWARPINGMOMENTMEASURE" : return (IFC.IFC4x2.IFCWarpingMomentMeasure) value;
 					}
 				break;
-				case IFC_Version.IFC4x3:
+				case IFC_VERSION.IFC4x3:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return (IFC.IFC4x3.IFCAbsorbedDoseMeasure) value;
@@ -6152,7 +6152,7 @@ namespace IFC
 		{
 			switch (Version)
 			{
-				case IFC_Version.IFC2x3:
+				case IFC_VERSION.IFC2x3:
 					switch (className)
 					{
 						case "IFCACTIONSOURCETYPEENUM" : return (IFC.IFC2x3.IFCActionSourceTypeEnum) value;
@@ -6321,7 +6321,7 @@ namespace IFC
 						case "IFCWORKCONTROLTYPEENUM" : return (IFC.IFC2x3.IFCWorkControlTypeEnum) value;
 					}
 				break;
-				case IFC_Version.IFC4:
+				case IFC_VERSION.IFC4:
 					switch (className)
 					{
 						case "IFCACTIONREQUESTTYPEENUM" : return (IFC.IFC4.IFCActionRequestTypeEnum) value;
@@ -6533,7 +6533,7 @@ namespace IFC
 						case "IFCWORKSCHEDULETYPEENUM" : return (IFC.IFC4.IFCWorkScheduleTypeEnum) value;
 					}
 				break;
-				case IFC_Version.IFC4x1:
+				case IFC_VERSION.IFC4x1:
 					switch (className)
 					{
 						case "IFCACTIONREQUESTTYPEENUM" : return (IFC.IFC4x1.IFCActionRequestTypeEnum) value;
@@ -6748,7 +6748,7 @@ namespace IFC
 						case "IFCWORKSCHEDULETYPEENUM" : return (IFC.IFC4x1.IFCWorkScheduleTypeEnum) value;
 					}
 				break;
-				case IFC_Version.IFC4x2:
+				case IFC_VERSION.IFC4x2:
 					switch (className)
 					{
 						case "IFCACTIONREQUESTTYPEENUM" : return (IFC.IFC4x2.IFCActionRequestTypeEnum) value;
@@ -6970,7 +6970,7 @@ namespace IFC
 						case "IFCWORKSCHEDULETYPEENUM" : return (IFC.IFC4x2.IFCWorkScheduleTypeEnum) value;
 					}
 				break;
-				case IFC_Version.IFC4x3:
+				case IFC_VERSION.IFC4x3:
 					switch (className)
 					{
 						case "IFCACTIONREQUESTTYPEENUM" : return (IFC.IFC4x3.IFCActionRequestTypeEnum) value;
@@ -7232,7 +7232,7 @@ namespace IFC
 			}
 			switch (Version)
 			{
-				case IFC_Version.IFC2x3:
+				case IFC_VERSION.IFC2x3:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return (IFC.IFC2x3.IFCAbsorbedDoseMeasure) value;
@@ -7336,7 +7336,7 @@ namespace IFC
 						case "IFCYEARNUMBER" : return (IFC.IFC2x3.IFCYearNumber) Math.Round(value);
 					}
 				break;
-				case IFC_Version.IFC4:
+				case IFC_VERSION.IFC4:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return (IFC.IFC4.IFCAbsorbedDoseMeasure) value;
@@ -7444,7 +7444,7 @@ namespace IFC
 						case "IFCWARPINGMOMENTMEASURE" : return (IFC.IFC4.IFCWarpingMomentMeasure) value;
 					}
 				break;
-				case IFC_Version.IFC4x1:
+				case IFC_VERSION.IFC4x1:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return (IFC.IFC4x1.IFCAbsorbedDoseMeasure) value;
@@ -7552,7 +7552,7 @@ namespace IFC
 						case "IFCWARPINGMOMENTMEASURE" : return (IFC.IFC4x1.IFCWarpingMomentMeasure) value;
 					}
 				break;
-				case IFC_Version.IFC4x2:
+				case IFC_VERSION.IFC4x2:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return (IFC.IFC4x2.IFCAbsorbedDoseMeasure) value;
@@ -7660,7 +7660,7 @@ namespace IFC
 						case "IFCWARPINGMOMENTMEASURE" : return (IFC.IFC4x2.IFCWarpingMomentMeasure) value;
 					}
 				break;
-				case IFC_Version.IFC4x3:
+				case IFC_VERSION.IFC4x3:
 					switch (className)
 					{
 						case "IFCABSORBEDDOSEMEASURE" : return (IFC.IFC4x3.IFCAbsorbedDoseMeasure) value;
@@ -7772,7 +7772,7 @@ namespace IFC
 			return null;
 		}
 	}
-	public enum IFC_Version
+	public enum IFC_VERSION
 	{
 		IFC2x3,
 		IFC4,

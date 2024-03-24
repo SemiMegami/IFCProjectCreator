@@ -65,13 +65,21 @@ namespace IFCProjectCreator
         public virtual List<string> GetCSharpGlobalText(IFCDataSet dataSet)
         {
             string global = dataSet.globalName;
+            string globalTypeName = TypeName;
             string typeName = TypeName;
             string overideText = isOverride ? "override " : "virtual ";
             string listName = GetListName();
             if (!dataSet.CSharpBasicDataTypes.ContainsKey(TypeName))
             {
-                typeName = global + "." + TypeName;
+                globalTypeName = global + "." + TypeName;
             }
+            else
+            {
+                typeName = "IFC_" + typeName;
+                globalTypeName = "IFC_" + globalTypeName;
+            }
+
+
 
             if (ListType == IFCListType.SINGLE)
             {
@@ -100,7 +108,7 @@ namespace IFCProjectCreator
                         "\t\t\t}",
                         "\t\t\tset",
                         "\t\t\t{",
-                        "\t\t\t\tif(value is " + TypeName + " val)",
+                        "\t\t\t\tif(value is " + typeName + " val)",
                         "\t\t\t\t{",
                         "\t\t\t\t\t" + Name + " = val;",
                         "\t\t\t\t}",
@@ -125,8 +133,8 @@ namespace IFCProjectCreator
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\t" + listName + "<"+typeName + ">? _Items_ = new " + listName  +"<"+typeName +">();",
-                        "\t\t\t\t\tforeach (" + TypeName + " item in " + Name +")",
+                        "\t\t\t\t\t" + listName + "<"+globalTypeName + ">? _Items_ = new " + listName  +"<"+globalTypeName +">();",
+                        "\t\t\t\t\tforeach (" + typeName + " item in " + Name +")",
                         "\t\t\t\t\t{",
                         "\t\t\t\t\t\t_Items_.Add(item);",
                         "\t\t\t\t\t}",
@@ -148,8 +156,8 @@ namespace IFCProjectCreator
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\t" + listName + "<"+typeName + ">? _Items_ = new " + listName+ "<"+typeName +">();",
-                        "\t\t\t\t\tforeach (" + TypeName + " item in " + Name +")",
+                        "\t\t\t\t\t" + listName + "<"+globalTypeName + ">? _Items_ = new " + listName+ "<"+globalTypeName +">();",
+                        "\t\t\t\t\tforeach (" + typeName + " item in " + Name +")",
                         "\t\t\t\t\t{",
                         "\t\t\t\t\t\t_Items_.Add(item);",
                         "\t\t\t\t\t}",
@@ -165,10 +173,10 @@ namespace IFCProjectCreator
                         "\t\t\t\t}",
                         "\t\t\t\telse",
                         "\t\t\t\t{",
-                        "\t\t\t\t\t" + Name + " = new " + listName+ "<" + TypeName + ">();",
+                        "\t\t\t\t\t" + Name + " = new " + listName+ "<" + typeName + ">();",
                         "\t\t\t\t\tforeach(var val in value)",
                         "\t\t\t\t\t{",
-                        "\t\t\t\t\t\tif(val is " + TypeName + " v)",
+                        "\t\t\t\t\t\tif(val is " + typeName + " v)",
                         "\t\t\t\t\t\t{",
                         "\t\t\t\t\t\t\t" + Name + ".Add(v);",
                         "\t\t\t\t\t\t}",
@@ -192,11 +200,11 @@ namespace IFCProjectCreator
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\t" + listName + "<" + listName+ "<"+typeName + ">>? _Items_ = new " + listName+ "<" + listName+ "<"+typeName +">>();",
-                        "\t\t\t\t\tforeach (" + listName+ "<" + TypeName + "> item1s in " + Name +")",
+                        "\t\t\t\t\t" + listName + "<" + listName+ "<"+globalTypeName + ">>? _Items_ = new " + listName+ "<" + listName+ "<"+globalTypeName +">>();",
+                        "\t\t\t\t\tforeach (" + listName+ "<" + typeName + "> item1s in " + Name +")",
                         "\t\t\t\t\t{",
-                        "\t\t\t\t\t\t" + listName+ "<"+typeName + ">? resultItems = new " + listName+ "<"+typeName +">();",
-                        "\t\t\t\t\t\tforeach (" + TypeName + " item in item1s)",
+                        "\t\t\t\t\t\t" + listName+ "<"+globalTypeName + ">? resultItems = new " + listName+ "<"+globalTypeName +">();",
+                        "\t\t\t\t\t\tforeach (" + typeName + " item in item1s)",
                         "\t\t\t\t\t\t{",
                         "\t\t\t\t\t\t\tresultItems.Add(item);",
                         "\t\t\t\t\t\t}",
@@ -220,11 +228,11 @@ namespace IFCProjectCreator
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\t" + listName + "<" + listName + "<"+typeName + ">>? _Items_ = new " + listName + "<" + listName + "<"+typeName +">>();",
-                        "\t\t\t\t\tforeach (" + listName + "<" + TypeName + "> item1s in " + Name +")",
+                        "\t\t\t\t\t" + listName + "<" + listName + "<"+globalTypeName + ">>? _Items_ = new " + listName + "<" + listName + "<"+globalTypeName +">>();",
+                        "\t\t\t\t\tforeach (" + listName + "<" + typeName + "> item1s in " + Name +")",
                         "\t\t\t\t\t{",
-                        "\t\t\t\t\t\t" + listName + "<"+typeName + ">? resultItems = new " + listName + "<"+typeName +">();",
-                        "\t\t\t\t\t\tforeach (" + TypeName + " item in item1s)",
+                        "\t\t\t\t\t\t" + listName + "<"+globalTypeName + ">? resultItems = new " + listName + "<"+globalTypeName +">();",
+                        "\t\t\t\t\t\tforeach (" + typeName + " item in item1s)",
                         "\t\t\t\t\t\t{",
                         "\t\t\t\t\t\t\tresultItems.Add(item);",
                         "\t\t\t\t\t\t}",
@@ -242,15 +250,15 @@ namespace IFCProjectCreator
                         "\t\t\t\t}",
                         "\t\t\t\telse",
                         "\t\t\t\t{",
-                        "\t\t\t\t\t" + Name + " = new " + listName + "<" + listName + "<" + TypeName + ">>();",
+                        "\t\t\t\t\t" + Name + " = new " + listName + "<" + listName + "<" + typeName + ">>();",
                         "\t\t\t\t\tforeach(var vals in value)",
                         "\t\t\t\t\t{",
                         "\t\t\t\t\t\tif(vals != null)",
                         "\t\t\t\t\t\t{",
-                        "\t\t\t\t\t\t\t" + listName + "<" + TypeName + "> _Items_ = new " + listName + "<" + TypeName + ">();",
+                        "\t\t\t\t\t\t\t" + listName + "<" + typeName + "> _Items_ = new " + listName + "<" + typeName + ">();",
                         "\t\t\t\t\t\t\tforeach(var val in vals)",
                         "\t\t\t\t\t\t\t{",
-                        "\t\t\t\t\t\t\t\tif(val is " + TypeName + " v)",
+                        "\t\t\t\t\t\t\t\tif(val is " + typeName + " v)",
                         "\t\t\t\t\t\t\t\t{",
                         "\t\t\t\t\t\t\t\t\t_Items_.Add(v);",
                         "\t\t\t\t\t\t\t\t}",
@@ -271,14 +279,19 @@ namespace IFCProjectCreator
         public virtual string GetCSharpTypeText()
         {
             string listName = GetListName();
+            string typeName = TypeName;
+            if(Dataset != null && Dataset.CSharpBasicDataTypes.ContainsKey(typeName))
+            {
+                typeName = "IFC_" + typeName;
+            }
             switch (ListType)
             {
                 case IFCListType.SINGLE:
-                    return TypeName;
+                    return typeName;
                 case IFCListType.LIST:
-                    return listName + "<" + TypeName + ">";
+                    return listName + "<" + typeName + ">";
                 case IFCListType.LISTLIST:
-                    return listName + "<" + listName + "<" + TypeName + ">>"; ;
+                    return listName + "<" + listName + "<" + typeName + ">>"; ;
             }
             return TypeName;
         }

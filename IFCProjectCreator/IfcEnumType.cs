@@ -56,7 +56,7 @@
 
         protected override string GetCSharpParentText()
         {
-            return " : IFC_Enum" ;
+            return " : IFC_ENUM" ;
         }
     }
 }

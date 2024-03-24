@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 #pragma warning disable VSSpell001 // Spell Check
 namespace IFC
 {
-    public class IFC_Log
+    public class IFC_LOG
     {
-        IFC_LogType LogType;
-        public IFC_Entity? Source;
+        IFC_LOGTYPE LogType;
+        public IFC_I_ENTITY? Source;
         public string Information;
 
-        public IFC_Log(IFC_LogType logType, IFC_Entity source, string Information) 
+        public IFC_LOG(IFC_LOGTYPE logType, IFC_I_ENTITY source, string Information) 
         { 
             this.LogType = logType;
             this.Source = source;
             this.Information = Information;
         }
-        public IFC_Log(IFC_LogType logType, string Information)
+        public IFC_LOG(IFC_LOGTYPE logType, string Information)
         {
             this.LogType = logType;
             this.Information = Information;
@@ -37,7 +37,7 @@ namespace IFC
         }
     }
 
-    public enum IFC_LogType
+    public enum IFC_LOGTYPE
     {
         ERROR,
         WARNING, 

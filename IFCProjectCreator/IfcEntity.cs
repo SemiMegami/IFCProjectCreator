@@ -236,6 +236,7 @@ namespace IFCProjectCreator
                     if (listType == "")
                     {
                         IFCParameterAttribute IFCAttribute = new IFCParameterAttribute();
+                        IFCAttribute.Dataset = DataSet;
                         IFCAttribute.IsOptional = line.Contains("OPTIONAL");
                         SetlistType(IFCAttribute, line, nW);
                         ParameterClassAttributes.Add(IFCAttribute);
@@ -275,6 +276,7 @@ namespace IFCProjectCreator
                             }
                         }
                         IFCInverseAttribute IFCAttribute = new IFCInverseAttribute();
+                        IFCAttribute.Dataset = DataSet;
                         SetlistType(IFCAttribute, line, splitIndex);
                         IFCAttribute.RelatedAttributeName = words[nW - 1].Replace(";", "");
                         InverseClassAttributes.Add(IFCAttribute);
@@ -282,6 +284,7 @@ namespace IFCProjectCreator
                     else if(listType == "WHERE")
                     {
                         IFCWhereAttribute IFCAttribute = new IFCWhereAttribute();
+                        IFCAttribute.Dataset = DataSet;
                         IFCAttribute.Name = "WR_" + words[0].Replace(" ", "");
                         IFCAttribute.Entity = this;
                         WhereClassAttributes.Add(IFCAttribute);
@@ -466,9 +469,9 @@ namespace IFCProjectCreator
             }
             
             // get parameter function
-            texts.Add("\t\tpublic override Dictionary<string, IFC_Attribute?> GetDirectAttributes()");
+            texts.Add("\t\tpublic override Dictionary<string, IFC_BASE?> GetDirectAttributes()");
             texts.Add("\t\t{");
-            texts.Add("\t\t\treturn new Dictionary<string, IFC_Attribute?>()");
+            texts.Add("\t\t\treturn new Dictionary<string, IFC_BASE?>()");
             texts.Add("\t\t\t{");
 
            
@@ -480,9 +483,9 @@ namespace IFCProjectCreator
             texts.Add("\t\t}");
 
             // get parameter function
-            texts.Add("\t\tpublic override Dictionary<string, IFC_Attribute?> GetDerivedAttributes()");
+            texts.Add("\t\tpublic override Dictionary<string, IFC_BASE?> GetDerivedAttributes()");
             texts.Add("\t\t{");
-            texts.Add("\t\t\treturn new Dictionary<string, IFC_Attribute?>()");
+            texts.Add("\t\t\treturn new Dictionary<string, IFC_BASE?>()");
             texts.Add("\t\t\t{");
             var derivedAttributes = DerivedAttributes;
             for (int i = 0; i < derivedAttributes.Count; i++)
@@ -493,9 +496,9 @@ namespace IFCProjectCreator
             texts.Add("\t\t}");
 
             // get parameter function
-            texts.Add("\t\tpublic override Dictionary<string, IFC_Attribute?> GetInverseAttributes()");
+            texts.Add("\t\tpublic override Dictionary<string, IFC_BASE?> GetInverseAttributes()");
             texts.Add("\t\t{");
-            texts.Add("\t\t\treturn new Dictionary<string, IFC_Attribute?>()");
+            texts.Add("\t\t\treturn new Dictionary<string, IFC_BASE?>()");
             texts.Add("\t\t\t{");
             var inverseAttributes = InverseAttributes;
             for (int i = 0; i < inverseAttributes.Count; i++)
@@ -528,7 +531,7 @@ namespace IFCProjectCreator
             texts.Add("\t\t\t{");
             texts.Add("\t\t\t\tif(AttributeTexts.Count != " + directAttributes.Count + ")");
             texts.Add("\t\t\t\t{");
-            texts.Add("\t\t\t\t\tModel.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Invalid number of attributes. '" + Name + "' requires " + directAttributes.Count + " attributes (Not \" + AttributeTexts.Count + \").\"));");
+            texts.Add("\t\t\t\t\tModel.Logs.Add(new IFC_LOG(IFC_LOGTYPE.ERROR, this, \"Invalid number of attributes. '" + Name + "' requires " + directAttributes.Count + " attributes (Not \" + AttributeTexts.Count + \").\"));");
             texts.Add("\t\t\t\t\treturn;");
             texts.Add("\t\t\t\t}");
             for (int i = 0; i < directAttributes.Count; i++)
@@ -548,7 +551,7 @@ namespace IFCProjectCreator
                 if (!attribute.IsOptional)
                 {
                     texts.Add("\t\t\t\t{");
-                    texts.Add("\t\t\t\t\tModel.Logs.Add(new IFC_Log(IFC_LogType.WARNING, this, \"'" + attribute.Name + "' is not optional in '" + Name + "'.\"));");
+                    texts.Add("\t\t\t\t\tModel.Logs.Add(new IFC_LOG(IFC_LOGTYPE.WARNING, this, \"'" + attribute.Name + "' is not optional in '" + Name + "'.\"));");
                 }
                 texts.Add("\t\t\t\t\t" + attribute.Name + " = null;");
                 if (!attribute.IsOptional)
@@ -569,6 +572,13 @@ namespace IFCProjectCreator
                 {
                     basicType = attribute.TypeName;
                 }
+
+                string attTypeName = attribute.TypeName;
+                if (DataSet.CSharpBasicDataTypes.ContainsKey(attTypeName))
+                {
+                    attTypeName = "IFC_" + attTypeName;
+                }
+
                 if (attribute.ListType == IFCListType.SINGLE)
                 {                
                     AddCsharpImportTextsForSingleValue(texts, attText, "\t\t\t\t\t", attribute.Name, attribute.Name, attribute.TypeName, attribute.ListType, attribute.AttributeType, basicType);
@@ -577,7 +587,9 @@ namespace IFCProjectCreator
                 {
                     var listName = attribute.GetListName();
 
-                    texts.Add("\t\t\t\t\t" + attribute.Name + " = new " + listName + "<" + attribute.TypeName + ">();");
+                   
+
+                    texts.Add("\t\t\t\t\t" + attribute.Name + " = new " + listName + "<" + attTypeName + ">();");
                     texts.Add("\t\t\t\t\tList<string>? attributeTexts = SplitList(" + attText + ");");
                     texts.Add("\t\t\t\t\tif(attributeTexts != null)");
                     texts.Add("\t\t\t\t\t{");
@@ -590,13 +602,13 @@ namespace IFCProjectCreator
                 else
                 {
                     var listName = attribute.GetListName();
-                    texts.Add("\t\t\t\t\t" + attribute.Name + " = new " + listName + "<" + listName + "<" + attribute.TypeName + ">>();");
+                    texts.Add("\t\t\t\t\t" + attribute.Name + " = new " + listName + "<" + listName + "<" + attTypeName + ">>();");
                     texts.Add("\t\t\t\t\tList<string>? attributeListTexts = SplitList(" + attText + ");");
                     texts.Add("\t\t\t\t\tif(attributeListTexts != null)");
                     texts.Add("\t\t\t\t\t{");
                     texts.Add("\t\t\t\t\t\tforeach (string attributeListText in attributeListTexts)");
                     texts.Add("\t\t\t\t\t\t{");
-                    texts.Add("\t\t\t\t\t\t\tvar " + attribute.Name + "List = new " + listName + "<" + attribute.TypeName + ">();");
+                    texts.Add("\t\t\t\t\t\t\tvar " + attribute.Name + "List = new " + listName + "<" + attTypeName + ">();");
                     texts.Add("\t\t\t\t\t\t\tList<string>? attributeTexts = SplitList(attributeListText);");
                     texts.Add("\t\t\t\t\t\t\tif(attributeTexts != null)");
                     texts.Add("\t\t\t\t\t\t\t{");
@@ -704,7 +716,7 @@ namespace IFCProjectCreator
             switch (attributeType)
             {
                 case IFCAttributeType.ENTITY:
-                    texts.Add(tap + "if(Model.Items.TryGetValue(" + attText + ",out IFC_Entity? value))");
+                    texts.Add(tap + "if(Model.Items.TryGetValue(" + attText + ",out IFC_I_ENTITY? value))");
                     texts.Add(tap + "{");
                     texts.Add(tap + "\tif(value is " + typeName + " item)");
                     switch (listType)
@@ -717,12 +729,12 @@ namespace IFCProjectCreator
                             break;
                     }
                     texts.Add(tap + "\telse");
-                    texts.Add(tap + "\t\tModel.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + value.GetType().Name + \"' as '" + typeName + "' to '" + trueName + "'.\"));");
+                    texts.Add(tap + "\t\tModel.Logs.Add(new IFC_LOG(IFC_LOGTYPE.ERROR, this, \"Cannot assign '\" + value.GetType().Name + \"' as '" + typeName + "' to '" + trueName + "'.\"));");
                     texts.Add(tap + "}");
                     if (!suppressError)
                     {
                         texts.Add(tap + "else");
-                        texts.Add(tap + "\tModel.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"'\" + " + attText + " + \"' not found.\"));");
+                        texts.Add(tap + "\tModel.Logs.Add(new IFC_LOG(IFC_LOGTYPE.ERROR, this, \"'\" + " + attText + " + \"' not found.\"));");
                     }
                    
                     break;
@@ -741,7 +753,7 @@ namespace IFCProjectCreator
                             }
                         }
                     }
-                    texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\")); break;");
+                    texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_LOG(IFC_LOGTYPE.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\")); break;");
 
                     texts.Add(tap + "}");
 
@@ -804,7 +816,7 @@ namespace IFCProjectCreator
                                     texts.Add(tap1 + "\tbreak;");
                                 } 
                             }
-                            texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\")); break; // Invalid Select");
+                            texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_LOG(IFC_LOGTYPE.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\")); break; // Invalid Select");
                          
 
                             texts.Add(tap1 + "}");
@@ -840,7 +852,7 @@ namespace IFCProjectCreator
                         }
                         
                         texts.Add(tap + "}");
-                        texts.Add(tap + "else Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\"));");
+                        texts.Add(tap + "else Model.Logs.Add(new IFC_LOG(IFC_LOGTYPE.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\"));");
                     }
                     else if (dataType == "int" || dataType == "double" || dataType == "float")
                     {
@@ -854,7 +866,7 @@ namespace IFCProjectCreator
                                 texts.Add(tap + name + ".Add(_" + name + ");");
                                 break;
                         }
-                        texts.Add(tap + "else Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\"));");
+                        texts.Add(tap + "else Model.Logs.Add(new IFC_LOG(IFC_LOGTYPE.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\"));");
                     }
                     else if (dataType == "bool")
                     {
@@ -869,7 +881,7 @@ namespace IFCProjectCreator
                                 {
                                     texts.Add(tap + "\tcase  \".U.\": " + name + " = false; " + name + ".Unknown = true; break;");
                                 }
-                                texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\")); break;");
+                                texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_LOG(IFC_LOGTYPE.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\")); break;");
                                 texts.Add(tap + "}");
                                 break;
                             case IFCListType.LIST:
@@ -882,7 +894,7 @@ namespace IFCProjectCreator
                                 {
                                     texts.Add(tap + "\tcase  \".U.\": value = false; value.Unknown = true; break;");
                                 }
-                                texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_Log(IFC_LogType.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\")); break;");
+                                texts.Add(tap + "\tdefault : Model.Logs.Add(new IFC_LOG(IFC_LOGTYPE.ERROR, this, \"Cannot assign '\" + " + attText + " + \"' as '" + typeName + "' to '" + trueName + "'.\")); break;");
 
                                 texts.Add(tap + "\t" + name + ".Add(value);");
                                 texts.Add(tap + "}");
