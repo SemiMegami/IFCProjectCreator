@@ -322,7 +322,7 @@ namespace IFCProjectCreator
                     {
                         foreach (var c in content)
                         {
-                            texts.Add(c);
+                            texts.Add(c.Replace("IFC_Attributes","IFC_" + Output.Aggregation.ToString()));
                         }
                     }
                     texts.AddRange(new List<string>()
@@ -330,6 +330,7 @@ namespace IFCProjectCreator
                         "\t\t\t//END_MANUAL",
                         "\t\t}"
                     });
+                    
                     return texts;
                 }
                 else

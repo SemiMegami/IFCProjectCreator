@@ -306,7 +306,6 @@ namespace IFCProjectCreator
         public string GetListName()
         {
             return "IFC_" + Aggregation.ToString();
-            return "IFC_" + Aggregation.ToString();
         }
     }
 
