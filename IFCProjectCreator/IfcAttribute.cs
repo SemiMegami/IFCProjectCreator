@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
+
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +19,7 @@ namespace IFCProjectCreator
         public bool isOverride { get; set; }
         public IFCDataSet? Dataset { get; set; }
 
-        public bool includedInGlobal { get; set; }
+        public bool includedInGLOBAL { get; set; }
 
         public IFCAttribute()
         {
@@ -30,7 +30,7 @@ namespace IFCProjectCreator
             Aggregation = IFCAggregation.NONE;
             AttributeType = IFCAttributeType.NONE;
             isOverride = false;
-            includedInGlobal = false;
+            includedInGLOBAL = false;
 
         }
         /// <summary>
@@ -62,21 +62,21 @@ namespace IFCProjectCreator
         }
 
         public abstract List<string> GetCSharpText();
-        public virtual List<string> GetCSharpGlobalText(IFCDataSet dataSet)
+        public virtual List<string> GetCSharpGLOBALText(IFCDataSet dataSet)
         {
-            string global = dataSet.globalName;
-            string globalTypeName = TypeName;
+            string GLOBAL = dataSet.GLOBALName;
+            string GLOBALTypeName = TypeName;
             string typeName = TypeName;
             string overideText = isOverride ? "override " : "virtual ";
             string listName = GetListName();
             if (!dataSet.CSharpBasicDataTypes.ContainsKey(TypeName))
             {
-                globalTypeName = global + "." + TypeName;
+                GLOBALTypeName = GLOBAL + "." + TypeName;
             }
             else
             {
                 typeName = "IFC_" + typeName;
-                globalTypeName = "IFC_" + globalTypeName;
+                GLOBALTypeName = "IFC_" + GLOBALTypeName;
             }
 
 
@@ -87,7 +87,7 @@ namespace IFCProjectCreator
                 {
                     return new List<string>
                     {
-                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,GLOBAL) + "?" + " _" + Name,
                         "\t\t{",
                         "\t\t\tget",
                         "\t\t\t{",
@@ -100,7 +100,7 @@ namespace IFCProjectCreator
                 {
                     return new List<string>
                     {
-                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,GLOBAL) + "?" + " _" + Name,
                         "\t\t{",
                         "\t\t\tget",
                         "\t\t\t{",
@@ -127,13 +127,13 @@ namespace IFCProjectCreator
                 {
                     List<string> texts = new List<string>()
                     {
-                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,GLOBAL) + "?" + " _" + Name,
                         "\t\t{",
                         "\t\t\tget",
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\t" + listName + "<"+globalTypeName + ">? _Items_ = new " + listName  +"<"+globalTypeName +">();",
+                        "\t\t\t\t\t" + listName + "<"+GLOBALTypeName + ">? _Items_ = new " + listName  +"<"+GLOBALTypeName +">();",
                         "\t\t\t\t\tforeach (" + typeName + " item in " + Name +")",
                         "\t\t\t\t\t{",
                         "\t\t\t\t\t\t_Items_.Add(item);",
@@ -150,13 +150,13 @@ namespace IFCProjectCreator
                 {
                     List<string> texts = new List<string>()
                     {
-                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,GLOBAL) + "?" + " _" + Name,
                         "\t\t{",
                         "\t\t\tget",
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\t" + listName + "<"+globalTypeName + ">? _Items_ = new " + listName+ "<"+globalTypeName +">();",
+                        "\t\t\t\t\t" + listName + "<"+GLOBALTypeName + ">? _Items_ = new " + listName+ "<"+GLOBALTypeName +">();",
                         "\t\t\t\t\tforeach (" + typeName + " item in " + Name +")",
                         "\t\t\t\t\t{",
                         "\t\t\t\t\t\t_Items_.Add(item);",
@@ -194,16 +194,16 @@ namespace IFCProjectCreator
                 {
                     List<string> texts = new List<string>()
                     {
-                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,GLOBAL) + "?" + " _" + Name,
                         "\t\t{",
                         "\t\t\tget",
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\t" + listName + "<" + listName+ "<"+globalTypeName + ">>? _Items_ = new " + listName+ "<" + listName+ "<"+globalTypeName +">>();",
+                        "\t\t\t\t\t" + listName + "<" + listName+ "<"+GLOBALTypeName + ">>? _Items_ = new " + listName+ "<" + listName+ "<"+GLOBALTypeName +">>();",
                         "\t\t\t\t\tforeach (" + listName+ "<" + typeName + "> item1s in " + Name +")",
                         "\t\t\t\t\t{",
-                        "\t\t\t\t\t\t" + listName+ "<"+globalTypeName + ">? resultItems = new " + listName+ "<"+globalTypeName +">();",
+                        "\t\t\t\t\t\t" + listName+ "<"+GLOBALTypeName + ">? resultItems = new " + listName+ "<"+GLOBALTypeName +">();",
                         "\t\t\t\t\t\tforeach (" + typeName + " item in item1s)",
                         "\t\t\t\t\t\t{",
                         "\t\t\t\t\t\t\tresultItems.Add(item);",
@@ -222,16 +222,16 @@ namespace IFCProjectCreator
                 {
                     List<string> texts = new List<string>()
                     {
-                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,global) + "?" + " _" + Name,
+                        "\t\tpublic " + overideText + GetCSharpTypeText(dataSet,GLOBAL) + "?" + " _" + Name,
                         "\t\t{",
                         "\t\t\tget",
                         "\t\t\t{",
                         "\t\t\t\tif(" + Name + " != null)",
                         "\t\t\t\t{",
-                        "\t\t\t\t\t" + listName + "<" + listName + "<"+globalTypeName + ">>? _Items_ = new " + listName + "<" + listName + "<"+globalTypeName +">>();",
+                        "\t\t\t\t\t" + listName + "<" + listName + "<"+GLOBALTypeName + ">>? _Items_ = new " + listName + "<" + listName + "<"+GLOBALTypeName +">>();",
                         "\t\t\t\t\tforeach (" + listName + "<" + typeName + "> item1s in " + Name +")",
                         "\t\t\t\t\t{",
-                        "\t\t\t\t\t\t" + listName + "<"+globalTypeName + ">? resultItems = new " + listName + "<"+globalTypeName +">();",
+                        "\t\t\t\t\t\t" + listName + "<"+GLOBALTypeName + ">? resultItems = new " + listName + "<"+GLOBALTypeName +">();",
                         "\t\t\t\t\t\tforeach (" + typeName + " item in item1s)",
                         "\t\t\t\t\t\t{",
                         "\t\t\t\t\t\t\tresultItems.Add(item);",

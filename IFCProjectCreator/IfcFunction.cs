@@ -147,7 +147,10 @@ namespace IFCProjectCreator
                             input.IsOptional = true;
                         }
                     }
-
+                    if(input.Name == "RefDirection")
+                    {
+                        input.IsOptional = true;
+                    }
                     Inputs.Add(input);
                 }
 
@@ -324,7 +327,7 @@ namespace IFCProjectCreator
                     {
                         foreach (var c in content)
                         {
-                            texts.Add(c.Replace("IFC_BASES","IFC_" + Output.Aggregation.ToString()));
+                            texts.Add(c);
                         }
                     }
                     texts.AddRange(new List<string>()

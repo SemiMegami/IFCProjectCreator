@@ -10,14 +10,14 @@ namespace IFCProjectCreator
     {
         public List<IFCSelectAttribute> SelectAttributes;
 
-        public bool IsGlobal;
+        public bool IsGLOBAL;
 
         public bool IsEntity;
 
         public IFCSelectType(IFCDataSet dataSet, string version) : base(dataSet, version)
         {
             SelectAttributes = new List<IFCSelectAttribute>();
-            IsGlobal = false;
+            IsGLOBAL = false;
             ClassType = IFCAttributeType.SELECT;
             IsEntity = false;
         }
@@ -75,15 +75,15 @@ namespace IFCProjectCreator
                     texts.AddRange(attribute.GetCSharpText());
                 }
             }
-            if(!IsGlobal)
+            if(!IsGLOBAL)
             {
                 foreach (IFCAttribute attribute in SelectAttributes)
                 {
-                    if(!attribute.includedInGlobal)
+                    if(!attribute.includedInGLOBAL)
                     {
                         if (parents.FirstOrDefault(p => p.SelectAttributes.FirstOrDefault(e => e.Name == attribute.Name) != null) == null)
                         {
-                            texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
+                            texts.AddRange(attribute.GetCSharpGLOBALText(DataSet));
                         }
                     }
                 }

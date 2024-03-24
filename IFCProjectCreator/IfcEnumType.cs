@@ -48,7 +48,7 @@
 
             foreach (var attribute in AdditionalSelectAttibutes)
             {
-                texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
+                texts.AddRange(attribute.GetCSharpGLOBALText(DataSet));
             }
             texts.Add("\t}");
             return texts;

@@ -679,25 +679,25 @@ namespace IFCProjectCreator
             texts.Add("\t\t}");
 
 
-            // Global
+            // GLOBAL
             foreach (var attribute in ParameterClassAttributes)
             {
                 if (parents.FirstOrDefault(p => p.AdditionalSelectAttibutes.FirstOrDefault(e => e.Name == attribute.Name) != null) == null)
                 {
-                    texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
+                    texts.AddRange(attribute.GetCSharpGLOBALText(DataSet));
                 }
             }
             foreach (var attribute in DeriveClassAttributes)
             {
-                texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
+                texts.AddRange(attribute.GetCSharpGLOBALText(DataSet));
             }
             foreach (var attribute in AdditionalSelectAttibutes)
             {
-                texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
+                texts.AddRange(attribute.GetCSharpGLOBALText(DataSet));
             }
             foreach (var attribute in InverseClassAttributes)
             {
-                texts.AddRange(attribute.GetCSharpGlobalText(DataSet));
+                texts.AddRange(attribute.GetCSharpGLOBALText(DataSet));
             }
 
             texts.Add("\t}");

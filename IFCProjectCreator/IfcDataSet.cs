@@ -17,7 +17,7 @@ namespace IFCProjectCreator
 {
     public class IFCDataSet
     {
-        public readonly string globalName = "Global";
+        public readonly string GLOBALName = "GLOBAL";
         public readonly string IFCName = "IFC";
 
         public readonly Dictionary<string, string> CSharpBasicDataTypes = new Dictionary<string, string>()
@@ -50,7 +50,7 @@ namespace IFCProjectCreator
         public List<string> Versions { get; private set; }
 
         public Dictionary<string, List<string>> ManualItems ;
-        public List<IFCSelectType> GlobalSelectTypes { get; private set; }
+        public List<IFCSelectType> GLOBALSelectTypes { get; private set; }
         /// <summary>
         /// Constructor
         /// </summary>
@@ -63,7 +63,7 @@ namespace IFCProjectCreator
             Entities = new List<IFCEntity>();
             Functions = new List<IFCFunction>();
             Versions = new List<string> ();
-            GlobalSelectTypes = new List<IFCSelectType> ();
+            GLOBALSelectTypes = new List<IFCSelectType> ();
             ManualItems = new Dictionary<string, List<string>>();
             NamespaceName = "";
         }
@@ -416,31 +416,31 @@ namespace IFCProjectCreator
             }
         }
 
-        public void SetGlobal()
+        public void SetGLOBAL()
         {
-            Dictionary<string, IFCSelectType> globalTypes = new Dictionary<string, IFCSelectType> ();
+            Dictionary<string, IFCSelectType> GLOBALTypes = new Dictionary<string, IFCSelectType> ();
             List<IFCClass> Items = GetItems();
 
             foreach (var item in Items)
             {
-                if (!globalTypes.ContainsKey(item.Name))
+                if (!GLOBALTypes.ContainsKey(item.Name))
                 {
-                    IFCSelectType newType = new IFCSelectType(this, globalName) 
+                    IFCSelectType newType = new IFCSelectType(this, GLOBALName) 
                     { 
                         Name = item.Name,
-                        IsGlobal = true,
+                        IsGLOBAL = true,
                     };
-                    globalTypes.Add(item.Name, newType);
+                    GLOBALTypes.Add(item.Name, newType);
                 }
-                IFCSelectType global = globalTypes[item.Name];
+                IFCSelectType GLOBAL = GLOBALTypes[item.Name];
 
 
             }
-            GlobalSelectTypes = globalTypes.Values.ToList();
+            GLOBALSelectTypes = GLOBALTypes.Values.ToList();
 
-            foreach (var globalSelectType in GlobalSelectTypes)
+            foreach (var GLOBALSelectType in GLOBALSelectTypes)
             {
-                List < IFCClass > typeItems = Items.Where(e => e.Name == globalSelectType.Name).ToList();
+                List < IFCClass > typeItems = Items.Where(e => e.Name == GLOBALSelectType.Name).ToList();
                 if (typeItems.Count > 0)
                 {
                     if (typeItems[0] is IFCSimpleTypeList basicTypeList)
@@ -448,7 +448,7 @@ namespace IFCProjectCreator
                         string cSharpType = basicTypeList.GetCSharpType();
                         if (cSharpType.Length > 0)
                         {
-                            globalSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = "Value", TypeName = basicTypeList.GetCSharpType() });
+                            GLOBALSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = "Value", TypeName = basicTypeList.GetCSharpType() });
                         }
                     }
 
@@ -472,7 +472,7 @@ namespace IFCProjectCreator
                         }
                         if (!found)
                         {
-                            globalSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = "Value", TypeName = cSharpType });
+                            GLOBALSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = "Value", TypeName = cSharpType });
                         }
                     }
 
@@ -506,11 +506,11 @@ namespace IFCProjectCreator
                                 }
                                 if (canAdd)
                                 {
-                                    globalSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = enumValue, TypeName = "static string" });
+                                    GLOBALSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = enumValue, TypeName = "static string" });
                                 }
                             }
 
-                            globalSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = "Value", TypeName = "string" });
+                            GLOBALSelectType.SelectAttributes.Add(new IFCSelectAttribute() { Name = "Value", TypeName = "string" });
                         }
                     }
                     else if (typeItems[0] is IFCSelectType selectType)
@@ -549,14 +549,14 @@ namespace IFCProjectCreator
                                         var compareItem = item.AllSelectAttributes.FirstOrDefault(e => e.isSameAttribute(attribute));
                                         if (compareItem != null)
                                         {
-                                            compareItem.includedInGlobal = true;
+                                            compareItem.includedInGLOBAL = true;
                                             if (compareItem.isReadOnly)
                                             {
                                                 isReadOnly = true;
                                             }
                                         }
                                     }
-                                    globalSelectType.SelectAttributes.Add(new IFCSelectAttribute()
+                                    GLOBALSelectType.SelectAttributes.Add(new IFCSelectAttribute()
                                     {
                                         Name = "_" + attribute.Name,
                                         TypeName = attribute.TypeName,
@@ -572,7 +572,7 @@ namespace IFCProjectCreator
 
                     else if (typeItems[0] is IFCEntity entity)
                     {
-                        globalSelectType.IsEntity = true;
+                        GLOBALSelectType.IsEntity = true;
                         List<IFCEntity> entities = new List<IFCEntity>();
                         bool found = false;
                         bool isReadOnly = false;
@@ -607,14 +607,14 @@ namespace IFCProjectCreator
                                         var compareItem = item.AllAttributes.FirstOrDefault(e => e.isSameAttribute(attribute));
                                         if (compareItem != null)
                                         {
-                                            compareItem.includedInGlobal = true;
+                                            compareItem.includedInGLOBAL = true;
                                             if (compareItem.isReadOnly)
                                             {
                                                 isReadOnly = true;
                                             }
                                         }
                                     }
-                                    globalSelectType.SelectAttributes.Add(new IFCSelectAttribute()
+                                    GLOBALSelectType.SelectAttributes.Add(new IFCSelectAttribute()
                                     {
                                         Name = "_" + attribute.Name,
                                         TypeName = attribute.TypeName,
@@ -749,10 +749,10 @@ namespace IFCProjectCreator
         /// <returns></returns>
         public List<IFCClass> GetItems(string version) { 
 
-            if(version == globalName)
+            if(version == GLOBALName)
             {
                 List<IFCClass> classes = new List<IFCClass>();
-                foreach (var g in GlobalSelectTypes)
+                foreach (var g in GLOBALSelectTypes)
                 {
                     classes.Add(g);
                 }
@@ -784,7 +784,7 @@ namespace IFCProjectCreator
             {
                 WriteCSharp(folderDir, nameSpaceName, version);
             }
-            WriteCSharp(folderDir, nameSpaceName, globalName);
+            WriteCSharp(folderDir, nameSpaceName, GLOBALName);
             WriteCSharpLog(folderDir, nameSpaceName);
             WriteCSharpTest(folderDir, nameSpaceName);
         }
@@ -795,7 +795,7 @@ namespace IFCProjectCreator
         /// <param name="folderDir"></param>
         public void WriteCSharp(string folderDir, string nameSpaceName, string version)
         {
-            using (StreamWriter writer = new StreamWriter(folderDir + (version == globalName?"IFC_":"") + version + ".cs"))
+            using (StreamWriter writer = new StreamWriter(folderDir + (version == GLOBALName?"IFC_":"") + version + ".cs"))
             {
                 var Items = GetItems(version);
                 writer.WriteLine("using System;");
@@ -849,7 +849,7 @@ namespace IFCProjectCreator
                 }
                 writer.WriteLine("\t#endregion");
 
-                if(version!= globalName)
+                if(version!= GLOBALName)
                 {
                     writer.WriteLine("");
                     writer.WriteLine("\t#region ---- BASE ENTITY ----");
@@ -1303,14 +1303,18 @@ namespace IFCProjectCreator
         {
             using (StreamWriter writer = new StreamWriter(folderDir + "IFC_LOG.cs"))
             {
+
+                writer.WriteLine("using System;");
+                writer.WriteLine("using System.Collections.Generic;");
+                writer.WriteLine("using System.Linq;");
+                writer.WriteLine("using System.Text;");
+                writer.WriteLine("using System.Threading.Tasks;");
+                writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("namespace " + nameSpaceName);
+
+
                 string contain = 
-@"          using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-#pragma warning disable VSSpell001 // Spell Check
-namespace IFC
+@"          
 {
     public class IFC_LOG
     {
@@ -1580,21 +1584,24 @@ namespace IFC
 
         private void WriteCSharpBasicType(string folderDir, string nameSpaceName)
         {
-            using (StreamWriter writer = new StreamWriter(folderDir + "IFC_SimpleData.cs"))
+            foreach (var data in CSharpBasicDataTypes)
             {
-                writer.WriteLine("using System;");
-                writer.WriteLine("using System.Collections.Generic;");
-                writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
-                writer.WriteLine("namespace " + nameSpaceName);
-                writer.WriteLine("{");
-                foreach (var data in CSharpBasicDataTypes)
+                string name = data.Key;
+                using (StreamWriter writer = new StreamWriter(folderDir + "IFC_" + name + ".cs"))
                 {
-                    string name =  data.Key;
+                   
+                    writer.WriteLine("using System;");
+                    writer.WriteLine("using System.Collections.Generic;");
+                    writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                    writer.WriteLine("namespace " + nameSpaceName);
+                    writer.WriteLine("{");
+
+                  
                     string cSharpText = data.Value;
                     writer.WriteLine("\tpublic class IFC_" + name + ": IFC_BASE");
                     writer.WriteLine("\t{");
 
-                    if(name == "LOGICAL")
+                    if (name == "LOGICAL")
                     {
                         writer.WriteLine("\t\tpublic bool Unknown {get; set;}");
                         writer.WriteLine("\t\tpublic " + cSharpText + " Value {get; set;}");
@@ -1607,9 +1614,9 @@ namespace IFC
                         writer.WriteLine("\t\tpublic IFC_" + name + " () {Value = " + CSharpBasicDataDefaultValue[name] + ";}");
                         writer.WriteLine("\t\tpublic IFC_" + name + " (" + cSharpText + " value) {Value = value;}");
                     }
-      
+
                     List<string> ImplicitTexts = GetImplicitText("IFC_" + name, cSharpText);
-                    foreach(string ImplicitText in ImplicitTexts) { writer.WriteLine(ImplicitText); }
+                    foreach (string ImplicitText in ImplicitTexts) { writer.WriteLine(ImplicitText); }
 
                     writer.WriteLine("\t\tpublic string GetIFCText(bool includeClassName)");
                     writer.WriteLine("\t\t{");
@@ -1692,12 +1699,10 @@ namespace IFC
                     }
 
                     writer.WriteLine("\t\t}");
-
-                    
-
                     writer.WriteLine("\t}");
+                    writer.WriteLine("}");
                 }
-                writer.WriteLine("}");
+              
             }
         }
 

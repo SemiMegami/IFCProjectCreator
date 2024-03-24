@@ -30,7 +30,7 @@ namespace IFCProjectCreator
             {
                 header += inf + ", ";
             }
-            header += DataSet.globalName + "." + Name;
+            header += DataSet.GLOBALName + "." + Name;
             texts.Add(header);
             texts.Add("\t{");
             var selects = DataSet.SelectTypes.Where(e => e.VersionName == VersionName).ToList();

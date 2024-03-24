@@ -230,15 +230,15 @@ namespace IFCProjectCreator
                     text += ", " + InterfaceNames[i];
                 }
             }
-            if (VersionName != DataSet.globalName)
+            if (VersionName != DataSet.GLOBALName)
             {
                 if (text.Contains(":"))
                 {
-                    text += ", " + DataSet.globalName + "." + Name;
+                    text += ", " + DataSet.GLOBALName + "." + Name;
                 }
                 else 
                 {
-                    text += ": " + DataSet.globalName + "." + Name;
+                    text += ": " + DataSet.GLOBALName + "." + Name;
                 }
               
             }
