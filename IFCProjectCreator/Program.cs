@@ -24,7 +24,7 @@ namespace IFCProjectCreator
             dataSet.ReadManualItem(manualDir + "IFC4X2.cs");
             dataSet.ReadManualItem(manualDir + "IFC4X3.cs");
             dataSet.SetGLOBAL();
-            dataSet.WriteCSharp(resultDir, "CSiBKK.IFC");
+            dataSet.WriteCSharp(resultDir, "IFC");
          
 
         }

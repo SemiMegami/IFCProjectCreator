@@ -801,6 +801,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("#nullable enable");
                 writer.WriteLine("namespace " + nameSpaceName + "." + version);
                 writer.WriteLine("{");
 
@@ -884,6 +885,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("using System.IO;");
                 writer.WriteLine("using System.Reflection;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("#nullable enable");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
                 writer.WriteLine("\tpublic class IFC_MODEL");
@@ -1310,6 +1312,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("using System.Text;");
                 writer.WriteLine("using System.Threading.Tasks;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("#nullable enable");
                 writer.WriteLine("namespace " + nameSpaceName);
 
 
@@ -1366,6 +1369,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("#nullable enable");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
                 writer.WriteLine("\tpublic interface IFC_BASE");
@@ -1388,6 +1392,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("#nullable enable");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
                 writer.WriteLine("\tpublic abstract class IFC_ENTITY : IFC_I_ENTITY, IFC_BASE");
@@ -1526,6 +1531,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("#nullable enable");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
                 writer.WriteLine("\tpublic interface IFC_I_ENTITY : IFC_BASE");
@@ -1556,6 +1562,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("using System;");
                 writer.WriteLine("using System.Collections.Generic;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("#nullable enable");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
                 writer.WriteLine("\tpublic abstract class IFC_ENUM : IFC_BASE");
@@ -1593,6 +1600,7 @@ namespace IFCProjectCreator
                     writer.WriteLine("using System;");
                     writer.WriteLine("using System.Collections.Generic;");
                     writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                    writer.WriteLine("#nullable enable");
                     writer.WriteLine("namespace " + nameSpaceName);
                     writer.WriteLine("{");
 
@@ -1716,6 +1724,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("using System.Text;");
                 writer.WriteLine("using System.Threading.Tasks;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("#nullable enable");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
                 writer.WriteLine("\tpublic class IFC_BASES<T> : List<T>, IFC_BASE where T: IFC_BASE ");
@@ -1776,6 +1785,7 @@ namespace IFCProjectCreator
                     writer.WriteLine("using System.Text;");
                     writer.WriteLine("using System.Threading.Tasks;");
                     writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                    writer.WriteLine("#nullable enable");
                     writer.WriteLine("namespace " + nameSpaceName);
                     writer.WriteLine("{");
                     writer.WriteLine("\tpublic class " + type + "<T> : IFC_BASES<T>, IFC_BASE where T: IFC_BASE ");
@@ -1817,6 +1827,7 @@ namespace IFCProjectCreator
                 writer.WriteLine("using System.IO;");
                 writer.WriteLine("using System.Reflection;");
                 writer.WriteLine("#pragma warning disable VSSpell001 // Spell Check");
+                writer.WriteLine("#nullable enable");
                 writer.WriteLine("namespace " + nameSpaceName);
                 writer.WriteLine("{");
                 writer.WriteLine("\tpublic class IFC_TEST");

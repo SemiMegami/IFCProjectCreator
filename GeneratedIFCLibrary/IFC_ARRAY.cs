@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 #pragma warning disable VSSpell001 // Spell Check
-namespace CSiBKK.IFC
+#nullable enable
+namespace IFC
 {
 	public class IFC_ARRAY<T> : IFC_BASES<T>, IFC_BASE where T: IFC_BASE 
 	{

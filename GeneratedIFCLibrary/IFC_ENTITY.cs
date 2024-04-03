@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 #pragma warning disable VSSpell001 // Spell Check
-namespace CSiBKK.IFC
+#nullable enable
+namespace IFC
 {
 	public abstract class IFC_ENTITY : IFC_I_ENTITY, IFC_BASE
 	{
