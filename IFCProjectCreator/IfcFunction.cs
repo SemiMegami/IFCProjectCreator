@@ -73,7 +73,18 @@ namespace IFCProjectCreator
             string[] words = inputText.Split(":");
             string[] names = words[0].Split(",");
 
-            string typeText = inputText.Substring(inputText.IndexOf(":") + 1);
+            // string typeText = inputText.Substring(inputText.IndexOf(":") + 1);
+            string typeText = "";
+
+            for (int i = 1; i < words.Length; i++)
+            {
+                typeText += words[i].Trim();
+                if (i < words.Length - 1)
+                {
+                    typeText += ":";
+                }
+            }
+
             string[] wordArr = typeText.Split(" ");
             List<string> typeWords = new List<string>();
             for(int i = 0;i < wordArr.Length;i++)
@@ -84,14 +95,18 @@ namespace IFCProjectCreator
                 }
             }
 
-            string typeName = typeText.Contains("GENERIC") ? "GENERIC" : typeWords[typeWords.Count - 1];
+            string typeName = typeText.ToUpper().Contains("GENERIC") ? "GENERIC" : typeWords[typeWords.Count - 1];
             typeName = typeName.Replace("Ifc", "IFC");
+            if (typeName.Contains(":"))
+            {
+                int a = inputText.IndexOf(":");
+            }
             IFCAggregation aggregation = IFCAggregation.NONE;
             IFCListType listType = IFCListType.SINGLE;
             int ofCount = 0;
             for (int i = 0; i < typeWords.Count; i++)
             {
-                if (typeWords[i] == "OF")
+                if (typeWords[i].ToUpper() == "OF")
                 {
                     ofCount++;
                 }
@@ -147,9 +162,13 @@ namespace IFCProjectCreator
                             input.IsOptional = true;
                         }
                     }
-                    if(input.Name == "RefDirection")
+                    if(input.Name == "RefDirection" || input.Name == "Epsilon")
                     {
                         input.IsOptional = true;
+                    }
+                    if(input.Name == "UnitElements")
+                    {
+
                     }
                     Inputs.Add(input);
                 }
