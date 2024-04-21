@@ -1,0 +1,2146 @@
+	Mesh GetIFCGeometricRepresentationItemMesh(IFCGeometricRepresentationItem item, GraphicOption graphicOption)
+	{
+		switch (item.GetType().Name.ToUpper())
+		{
+			case "IFC2DCOMPOSITECURVE" :  return GetIFC2DCompositeCurveMesh((IFC2DCompositeCurve) item, graphicOption);
+			case "IFCADVANCEDBREP" :  return GetIFCAdvancedBrepMesh((IFCAdvancedBrep) item, graphicOption);
+			case "IFCADVANCEDBREPWITHVOIDS" :  return GetIFCAdvancedBrepWithVoidsMesh((IFCAdvancedBrepWithVoids) item, graphicOption);
+			case "IFCALIGNMENT2DHORIZONTAL" :  return GetIFCAlignment2DHorizontalMesh((IFCAlignment2DHorizontal) item, graphicOption);
+			case "IFCALIGNMENT2DHORIZONTALSEGMENT" :  return GetIFCAlignment2DHorizontalSegmentMesh((IFCAlignment2DHorizontalSegment) item, graphicOption);
+			case "IFCALIGNMENT2DVERSEGCIRCULARARC" :  return GetIFCAlignment2DVerSegCircularArcMesh((IFCAlignment2DVerSegCircularArc) item, graphicOption);
+			case "IFCALIGNMENT2DVERSEGLINE" :  return GetIFCAlignment2DVerSegLineMesh((IFCAlignment2DVerSegLine) item, graphicOption);
+			case "IFCALIGNMENT2DVERSEGPARABOLICARC" :  return GetIFCAlignment2DVerSegParabolicArcMesh((IFCAlignment2DVerSegParabolicArc) item, graphicOption);
+			case "IFCALIGNMENT2DVERTICAL" :  return GetIFCAlignment2DVerticalMesh((IFCAlignment2DVertical) item, graphicOption);
+			case "IFCALIGNMENTCURVE" :  return GetIFCAlignmentCurveMesh((IFCAlignmentCurve) item, graphicOption);
+			case "IFCANGULARDIMENSION" :  return GetIFCAngularDimensionMesh((IFCAngularDimension) item, graphicOption);
+			case "IFCANNOTATIONFILLAREA" :  return GetIFCAnnotationFillAreaMesh((IFCAnnotationFillArea) item, graphicOption);
+			case "IFCANNOTATIONSURFACE" :  return GetIFCAnnotationSurfaceMesh((IFCAnnotationSurface) item, graphicOption);
+			case "IFCAXIS1PLACEMENT" :  return GetIFCAxis1PlacementMesh((IFCAxis1Placement) item, graphicOption);
+			case "IFCAXIS2PLACEMENT2D" :  return GetIFCAxis2Placement2DMesh((IFCAxis2Placement2D) item, graphicOption);
+			case "IFCAXIS2PLACEMENT3D" :  return GetIFCAxis2Placement3DMesh((IFCAxis2Placement3D) item, graphicOption);
+			case "IFCAXIS2PLACEMENTLINEAR" :  return GetIFCAxis2PlacementLinearMesh((IFCAxis2PlacementLinear) item, graphicOption);
+			case "IFCBEZIERCURVE" :  return GetIFCBezierCurveMesh((IFCBezierCurve) item, graphicOption);
+			case "IFCBLOCK" :  return GetIFCBlockMesh((IFCBlock) item, graphicOption);
+			case "IFCBOOLEANCLIPPINGRESULT" :  return GetIFCBooleanClippingResultMesh((IFCBooleanClippingResult) item, graphicOption);
+			case "IFCBOOLEANRESULT" :  return GetIFCBooleanResultMesh((IFCBooleanResult) item, graphicOption);
+			case "IFCBOUNDARYCURVE" :  return GetIFCBoundaryCurveMesh((IFCBoundaryCurve) item, graphicOption);
+			case "IFCBOUNDEDSURFACE" :  return GetIFCBoundedSurfaceMesh((IFCBoundedSurface) item, graphicOption);
+			case "IFCBOUNDINGBOX" :  return GetIFCBoundingBoxMesh((IFCBoundingBox) item, graphicOption);
+			case "IFCBOXEDHALFSPACE" :  return GetIFCBoxedHalfSpaceMesh((IFCBoxedHalfSpace) item, graphicOption);
+			case "IFCBSPLINECURVEWITHKNOTS" :  return GetIFCBSplineCurveWithKnotsMesh((IFCBSplineCurveWithKnots) item, graphicOption);
+			case "IFCBSPLINESURFACEWITHKNOTS" :  return GetIFCBSplineSurfaceWithKnotsMesh((IFCBSplineSurfaceWithKnots) item, graphicOption);
+			case "IFCCARTESIANPOINT" :  return GetIFCCartesianPointMesh((IFCCartesianPoint) item, graphicOption);
+			case "IFCCARTESIANPOINTLIST2D" :  return GetIFCCartesianPointList2DMesh((IFCCartesianPointList2D) item, graphicOption);
+			case "IFCCARTESIANPOINTLIST3D" :  return GetIFCCartesianPointList3DMesh((IFCCartesianPointList3D) item, graphicOption);
+			case "IFCCARTESIANTRANSFORMATIONOPERATOR2D" :  return GetIFCCartesianTransformationOperator2DMesh((IFCCartesianTransformationOperator2D) item, graphicOption);
+			case "IFCCARTESIANTRANSFORMATIONOPERATOR2DNONUNIFORM" :  return GetIFCCartesianTransformationOperator2DnonUniformMesh((IFCCartesianTransformationOperator2DnonUniform) item, graphicOption);
+			case "IFCCARTESIANTRANSFORMATIONOPERATOR3D" :  return GetIFCCartesianTransformationOperator3DMesh((IFCCartesianTransformationOperator3D) item, graphicOption);
+			case "IFCCARTESIANTRANSFORMATIONOPERATOR3DNONUNIFORM" :  return GetIFCCartesianTransformationOperator3DnonUniformMesh((IFCCartesianTransformationOperator3DnonUniform) item, graphicOption);
+			case "IFCCIRCLE" :  return GetIFCCircleMesh((IFCCircle) item, graphicOption);
+			case "IFCCIRCULARARCSEGMENT2D" :  return GetIFCCircularArcSegment2DMesh((IFCCircularArcSegment2D) item, graphicOption);
+			case "IFCCLOTHOID" :  return GetIFCClothoidMesh((IFCClothoid) item, graphicOption);
+			case "IFCCOMPOSITECURVE" :  return GetIFCCompositeCurveMesh((IFCCompositeCurve) item, graphicOption);
+			case "IFCCOMPOSITECURVEONSURFACE" :  return GetIFCCompositeCurveOnSurfaceMesh((IFCCompositeCurveOnSurface) item, graphicOption);
+			case "IFCCOMPOSITECURVESEGMENT" :  return GetIFCCompositeCurveSegmentMesh((IFCCompositeCurveSegment) item, graphicOption);
+			case "IFCCOSINESPIRAL" :  return GetIFCCosineSpiralMesh((IFCCosineSpiral) item, graphicOption);
+			case "IFCCSGSOLID" :  return GetIFCCsgSolidMesh((IFCCsgSolid) item, graphicOption);
+			case "IFCCURVEBOUNDEDPLANE" :  return GetIFCCurveBoundedPlaneMesh((IFCCurveBoundedPlane) item, graphicOption);
+			case "IFCCURVEBOUNDEDSURFACE" :  return GetIFCCurveBoundedSurfaceMesh((IFCCurveBoundedSurface) item, graphicOption);
+			case "IFCCURVESEGMENT" :  return GetIFCCurveSegmentMesh((IFCCurveSegment) item, graphicOption);
+			case "IFCCYLINDRICALSURFACE" :  return GetIFCCylindricalSurfaceMesh((IFCCylindricalSurface) item, graphicOption);
+			case "IFCDEFINEDSYMBOL" :  return GetIFCDefinedSymbolMesh((IFCDefinedSymbol) item, graphicOption);
+			case "IFCDIAMETERDIMENSION" :  return GetIFCDiameterDimensionMesh((IFCDiameterDimension) item, graphicOption);
+			case "IFCDIMENSIONCURVEDIRECTEDCALLOUT" :  return GetIFCDimensionCurveDirectedCalloutMesh((IFCDimensionCurveDirectedCallout) item, graphicOption);
+			case "IFCDIRECTION" :  return GetIFCDirectionMesh((IFCDirection) item, graphicOption);
+			case "IFCDIRECTRIXDERIVEDREFERENCESWEPTAREASOLID" :  return GetIFCDirectrixDerivedReferenceSweptAreaSolidMesh((IFCDirectrixDerivedReferenceSweptAreaSolid) item, graphicOption);
+			case "IFCDISTANCEEXPRESSION" :  return GetIFCDistanceExpressionMesh((IFCDistanceExpression) item, graphicOption);
+			case "IFCDRAUGHTINGCALLOUT" :  return GetIFCDraughtingCalloutMesh((IFCDraughtingCallout) item, graphicOption);
+			case "IFCELLIPSE" :  return GetIFCEllipseMesh((IFCEllipse) item, graphicOption);
+			case "IFCEXTRUDEDAREASOLID" :  return GetIFCExtrudedAreaSolidMesh((IFCExtrudedAreaSolid) item, graphicOption);
+			case "IFCEXTRUDEDAREASOLIDTAPERED" :  return GetIFCExtrudedAreaSolidTaperedMesh((IFCExtrudedAreaSolidTapered) item, graphicOption);
+			case "IFCFACEBASEDSURFACEMODEL" :  return GetIFCFaceBasedSurfaceModelMesh((IFCFaceBasedSurfaceModel) item, graphicOption);
+			case "IFCFACETEDBREP" :  return GetIFCFacetedBrepMesh((IFCFacetedBrep) item, graphicOption);
+			case "IFCFACETEDBREPWITHVOIDS" :  return GetIFCFacetedBrepWithVoidsMesh((IFCFacetedBrepWithVoids) item, graphicOption);
+			case "IFCFILLAREASTYLEHATCHING" :  return GetIFCFillAreaStyleHatchingMesh((IFCFillAreaStyleHatching) item, graphicOption);
+			case "IFCFILLAREASTYLETILES" :  return GetIFCFillAreaStyleTilesMesh((IFCFillAreaStyleTiles) item, graphicOption);
+			case "IFCFILLAREASTYLETILESYMBOLWITHSTYLE" :  return GetIFCFillAreaStyleTileSymbolWithStyleMesh((IFCFillAreaStyleTileSymbolWithStyle) item, graphicOption);
+			case "IFCFIXEDREFERENCESWEPTAREASOLID" :  return GetIFCFixedReferenceSweptAreaSolidMesh((IFCFixedReferenceSweptAreaSolid) item, graphicOption);
+			case "IFCGEOMETRICCURVESET" :  return GetIFCGeometricCurveSetMesh((IFCGeometricCurveSet) item, graphicOption);
+			case "IFCGEOMETRICSET" :  return GetIFCGeometricSetMesh((IFCGeometricSet) item, graphicOption);
+			case "IFCGRADIENTCURVE" :  return GetIFCGradientCurveMesh((IFCGradientCurve) item, graphicOption);
+			case "IFCHALFSPACESOLID" :  return GetIFCHalfSpaceSolidMesh((IFCHalfSpaceSolid) item, graphicOption);
+			case "IFCINDEXEDPOLYCURVE" :  return GetIFCIndexedPolyCurveMesh((IFCIndexedPolyCurve) item, graphicOption);
+			case "IFCINDEXEDPOLYGONALFACE" :  return GetIFCIndexedPolygonalFaceMesh((IFCIndexedPolygonalFace) item, graphicOption);
+			case "IFCINDEXEDPOLYGONALFACEWITHVOIDS" :  return GetIFCIndexedPolygonalFaceWithVoidsMesh((IFCIndexedPolygonalFaceWithVoids) item, graphicOption);
+			case "IFCINTERSECTIONCURVE" :  return GetIFCIntersectionCurveMesh((IFCIntersectionCurve) item, graphicOption);
+			case "IFCLIGHTSOURCEAMBIENT" :  return GetIFCLightSourceAmbientMesh((IFCLightSourceAmbient) item, graphicOption);
+			case "IFCLIGHTSOURCEDIRECTIONAL" :  return GetIFCLightSourceDirectionalMesh((IFCLightSourceDirectional) item, graphicOption);
+			case "IFCLIGHTSOURCEGONIOMETRIC" :  return GetIFCLightSourceGoniometricMesh((IFCLightSourceGoniometric) item, graphicOption);
+			case "IFCLIGHTSOURCEPOSITIONAL" :  return GetIFCLightSourcePositionalMesh((IFCLightSourcePositional) item, graphicOption);
+			case "IFCLIGHTSOURCESPOT" :  return GetIFCLightSourceSpotMesh((IFCLightSourceSpot) item, graphicOption);
+			case "IFCLINE" :  return GetIFCLineMesh((IFCLine) item, graphicOption);
+			case "IFCLINEARDIMENSION" :  return GetIFCLinearDimensionMesh((IFCLinearDimension) item, graphicOption);
+			case "IFCLINESEGMENT2D" :  return GetIFCLineSegment2DMesh((IFCLineSegment2D) item, graphicOption);
+			case "IFCOFFSETCURVE2D" :  return GetIFCOffsetCurve2DMesh((IFCOffsetCurve2D) item, graphicOption);
+			case "IFCOFFSETCURVE3D" :  return GetIFCOffsetCurve3DMesh((IFCOffsetCurve3D) item, graphicOption);
+			case "IFCOFFSETCURVEBYDISTANCES" :  return GetIFCOffsetCurveByDistancesMesh((IFCOffsetCurveByDistances) item, graphicOption);
+			case "IFCONEDIRECTIONREPEATFACTOR" :  return GetIFCOneDirectionRepeatFactorMesh((IFCOneDirectionRepeatFactor) item, graphicOption);
+			case "IFCORIENTATIONEXPRESSION" :  return GetIFCOrientationExpressionMesh((IFCOrientationExpression) item, graphicOption);
+			case "IFCOUTERBOUNDARYCURVE" :  return GetIFCOuterBoundaryCurveMesh((IFCOuterBoundaryCurve) item, graphicOption);
+			case "IFCPCURVE" :  return GetIFCPcurveMesh((IFCPcurve) item, graphicOption);
+			case "IFCPLANARBOX" :  return GetIFCPlanarBoxMesh((IFCPlanarBox) item, graphicOption);
+			case "IFCPLANAREXTENT" :  return GetIFCPlanarExtentMesh((IFCPlanarExtent) item, graphicOption);
+			case "IFCPLANE" :  return GetIFCPlaneMesh((IFCPlane) item, graphicOption);
+			case "IFCPOINTBYDISTANCEEXPRESSION" :  return GetIFCPointByDistanceExpressionMesh((IFCPointByDistanceExpression) item, graphicOption);
+			case "IFCPOINTONCURVE" :  return GetIFCPointOnCurveMesh((IFCPointOnCurve) item, graphicOption);
+			case "IFCPOINTONSURFACE" :  return GetIFCPointOnSurfaceMesh((IFCPointOnSurface) item, graphicOption);
+			case "IFCPOLYGONALBOUNDEDHALFSPACE" :  return GetIFCPolygonalBoundedHalfSpaceMesh((IFCPolygonalBoundedHalfSpace) item, graphicOption);
+			case "IFCPOLYGONALFACESET" :  return GetIFCPolygonalFaceSetMesh((IFCPolygonalFaceSet) item, graphicOption);
+			case "IFCPOLYLINE" :  return GetIFCPolylineMesh((IFCPolyline) item, graphicOption);
+			case "IFCPOLYNOMIALCURVE" :  return GetIFCPolynomialCurveMesh((IFCPolynomialCurve) item, graphicOption);
+			case "IFCRADIUSDIMENSION" :  return GetIFCRadiusDimensionMesh((IFCRadiusDimension) item, graphicOption);
+			case "IFCRATIONALBEZIERCURVE" :  return GetIFCRationalBezierCurveMesh((IFCRationalBezierCurve) item, graphicOption);
+			case "IFCRATIONALBSPLINECURVEWITHKNOTS" :  return GetIFCRationalBSplineCurveWithKnotsMesh((IFCRationalBSplineCurveWithKnots) item, graphicOption);
+			case "IFCRATIONALBSPLINESURFACEWITHKNOTS" :  return GetIFCRationalBSplineSurfaceWithKnotsMesh((IFCRationalBSplineSurfaceWithKnots) item, graphicOption);
+			case "IFCRECTANGULARPYRAMID" :  return GetIFCRectangularPyramidMesh((IFCRectangularPyramid) item, graphicOption);
+			case "IFCRECTANGULARTRIMMEDSURFACE" :  return GetIFCRectangularTrimmedSurfaceMesh((IFCRectangularTrimmedSurface) item, graphicOption);
+			case "IFCREPARAMETRISEDCOMPOSITECURVESEGMENT" :  return GetIFCReparametrisedCompositeCurveSegmentMesh((IFCReparametrisedCompositeCurveSegment) item, graphicOption);
+			case "IFCREVOLVEDAREASOLID" :  return GetIFCRevolvedAreaSolidMesh((IFCRevolvedAreaSolid) item, graphicOption);
+			case "IFCREVOLVEDAREASOLIDTAPERED" :  return GetIFCRevolvedAreaSolidTaperedMesh((IFCRevolvedAreaSolidTapered) item, graphicOption);
+			case "IFCRIGHTCIRCULARCONE" :  return GetIFCRightCircularConeMesh((IFCRightCircularCone) item, graphicOption);
+			case "IFCRIGHTCIRCULARCYLINDER" :  return GetIFCRightCircularCylinderMesh((IFCRightCircularCylinder) item, graphicOption);
+			case "IFCSEAMCURVE" :  return GetIFCSeamCurveMesh((IFCSeamCurve) item, graphicOption);
+			case "IFCSECONDORDERPOLYNOMIALSPIRAL" :  return GetIFCSecondOrderPolynomialSpiralMesh((IFCSecondOrderPolynomialSpiral) item, graphicOption);
+			case "IFCSECTIONEDSOLIDHORIZONTAL" :  return GetIFCSectionedSolidHorizontalMesh((IFCSectionedSolidHorizontal) item, graphicOption);
+			case "IFCSECTIONEDSPINE" :  return GetIFCSectionedSpineMesh((IFCSectionedSpine) item, graphicOption);
+			case "IFCSECTIONEDSURFACE" :  return GetIFCSectionedSurfaceMesh((IFCSectionedSurface) item, graphicOption);
+			case "IFCSEGMENTEDREFERENCECURVE" :  return GetIFCSegmentedReferenceCurveMesh((IFCSegmentedReferenceCurve) item, graphicOption);
+			case "IFCSEVENTHORDERPOLYNOMIALSPIRAL" :  return GetIFCSeventhOrderPolynomialSpiralMesh((IFCSeventhOrderPolynomialSpiral) item, graphicOption);
+			case "IFCSHELLBASEDSURFACEMODEL" :  return GetIFCShellBasedSurfaceModelMesh((IFCShellBasedSurfaceModel) item, graphicOption);
+			case "IFCSINESPIRAL" :  return GetIFCSineSpiralMesh((IFCSineSpiral) item, graphicOption);
+			case "IFCSPHERE" :  return GetIFCSphereMesh((IFCSphere) item, graphicOption);
+			case "IFCSPHERICALSURFACE" :  return GetIFCSphericalSurfaceMesh((IFCSphericalSurface) item, graphicOption);
+			case "IFCSTRUCTUREDDIMENSIONCALLOUT" :  return GetIFCStructuredDimensionCalloutMesh((IFCStructuredDimensionCallout) item, graphicOption);
+			case "IFCSURFACECURVE" :  return GetIFCSurfaceCurveMesh((IFCSurfaceCurve) item, graphicOption);
+			case "IFCSURFACECURVESWEPTAREASOLID" :  return GetIFCSurfaceCurveSweptAreaSolidMesh((IFCSurfaceCurveSweptAreaSolid) item, graphicOption);
+			case "IFCSURFACEOFLINEAREXTRUSION" :  return GetIFCSurfaceOfLinearExtrusionMesh((IFCSurfaceOfLinearExtrusion) item, graphicOption);
+			case "IFCSURFACEOFREVOLUTION" :  return GetIFCSurfaceOfRevolutionMesh((IFCSurfaceOfRevolution) item, graphicOption);
+			case "IFCSWEPTDISKSOLID" :  return GetIFCSweptDiskSolidMesh((IFCSweptDiskSolid) item, graphicOption);
+			case "IFCSWEPTDISKSOLIDPOLYGONAL" :  return GetIFCSweptDiskSolidPolygonalMesh((IFCSweptDiskSolidPolygonal) item, graphicOption);
+			case "IFCTEXTLITERAL" :  return GetIFCTextLiteralMesh((IFCTextLiteral) item, graphicOption);
+			case "IFCTEXTLITERALWITHEXTENT" :  return GetIFCTextLiteralWithExtentMesh((IFCTextLiteralWithExtent) item, graphicOption);
+			case "IFCTHIRDORDERPOLYNOMIALSPIRAL" :  return GetIFCThirdOrderPolynomialSpiralMesh((IFCThirdOrderPolynomialSpiral) item, graphicOption);
+			case "IFCTOROIDALSURFACE" :  return GetIFCToroidalSurfaceMesh((IFCToroidalSurface) item, graphicOption);
+			case "IFCTRANSITIONCURVESEGMENT2D" :  return GetIFCTransitionCurveSegment2DMesh((IFCTransitionCurveSegment2D) item, graphicOption);
+			case "IFCTRIANGULATEDFACESET" :  return GetIFCTriangulatedFaceSetMesh((IFCTriangulatedFaceSet) item, graphicOption);
+			case "IFCTRIANGULATEDIRREGULARNETWORK" :  return GetIFCTriangulatedIrregularNetworkMesh((IFCTriangulatedIrregularNetwork) item, graphicOption);
+			case "IFCTRIMMEDCURVE" :  return GetIFCTrimmedCurveMesh((IFCTrimmedCurve) item, graphicOption);
+			case "IFCTWODIRECTIONREPEATFACTOR" :  return GetIFCTwoDirectionRepeatFactorMesh((IFCTwoDirectionRepeatFactor) item, graphicOption);
+			case "IFCVECTOR" :  return GetIFCVectorMesh((IFCVector) item, graphicOption);
+		}
+		return new Mesh();
+	}
+	Mesh GetIFC2DCompositeCurveMesh(IFC2DCompositeCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFC2DCompositeCurve IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAdvancedBrepMesh(IFCAdvancedBrep item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCAdvancedBrep IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCAdvancedBrep IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAdvancedBrep IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCAdvancedBrep IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAdvancedBrepWithVoidsMesh(IFCAdvancedBrepWithVoids item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCAdvancedBrepWithVoids IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCAdvancedBrepWithVoids IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAdvancedBrepWithVoids IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCAdvancedBrepWithVoids IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAlignment2DHorizontalMesh(IFCAlignment2DHorizontal item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCAlignment2DHorizontal IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAlignment2DHorizontal IFC4X2Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAlignment2DHorizontalSegmentMesh(IFCAlignment2DHorizontalSegment item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCAlignment2DHorizontalSegment IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAlignment2DHorizontalSegment IFC4X2Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAlignment2DVerSegCircularArcMesh(IFCAlignment2DVerSegCircularArc item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCAlignment2DVerSegCircularArc IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAlignment2DVerSegCircularArc IFC4X2Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAlignment2DVerSegLineMesh(IFCAlignment2DVerSegLine item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCAlignment2DVerSegLine IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAlignment2DVerSegLine IFC4X2Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAlignment2DVerSegParabolicArcMesh(IFCAlignment2DVerSegParabolicArc item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCAlignment2DVerSegParabolicArc IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAlignment2DVerSegParabolicArc IFC4X2Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAlignment2DVerticalMesh(IFCAlignment2DVertical item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCAlignment2DVertical IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAlignment2DVertical IFC4X2Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAlignmentCurveMesh(IFCAlignmentCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCAlignmentCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAlignmentCurve IFC4X2Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAngularDimensionMesh(IFCAngularDimension item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCAngularDimension IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAnnotationFillAreaMesh(IFCAnnotationFillArea item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCAnnotationFillArea IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCAnnotationFillArea IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCAnnotationFillArea IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAnnotationFillArea IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCAnnotationFillArea IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAnnotationSurfaceMesh(IFCAnnotationSurface item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCAnnotationSurface IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAxis1PlacementMesh(IFCAxis1Placement item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCAxis1Placement IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCAxis1Placement IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCAxis1Placement IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAxis1Placement IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCAxis1Placement IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAxis2Placement2DMesh(IFCAxis2Placement2D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCAxis2Placement2D IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCAxis2Placement2D IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCAxis2Placement2D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAxis2Placement2D IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCAxis2Placement2D IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAxis2Placement3DMesh(IFCAxis2Placement3D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCAxis2Placement3D IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCAxis2Placement3D IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCAxis2Placement3D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAxis2Placement3D IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCAxis2Placement3D IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCAxis2PlacementLinearMesh(IFCAxis2PlacementLinear item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCAxis2PlacementLinear IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCBezierCurveMesh(IFCBezierCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCBezierCurve IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCBlockMesh(IFCBlock item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCBlock IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCBlock IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCBlock IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCBlock IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCBlock IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCBooleanClippingResultMesh(IFCBooleanClippingResult item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCBooleanClippingResult IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCBooleanClippingResult IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCBooleanClippingResult IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCBooleanClippingResult IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCBooleanClippingResult IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCBooleanResultMesh(IFCBooleanResult item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCBooleanResult IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCBooleanResult IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCBooleanResult IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCBooleanResult IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCBooleanResult IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCBoundaryCurveMesh(IFCBoundaryCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCBoundaryCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCBoundaryCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCBoundaryCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCBoundaryCurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCBoundedSurfaceMesh(IFCBoundedSurface item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCBoundedSurface IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCBoundedSurface IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCBoundedSurface IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCBoundedSurface IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCBoundedSurface IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCBoundingBoxMesh(IFCBoundingBox item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCBoundingBox IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCBoundingBox IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCBoundingBox IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCBoundingBox IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCBoundingBox IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCBoxedHalfSpaceMesh(IFCBoxedHalfSpace item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCBoxedHalfSpace IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCBoxedHalfSpace IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCBoxedHalfSpace IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCBoxedHalfSpace IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCBoxedHalfSpace IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCBSplineCurveWithKnotsMesh(IFCBSplineCurveWithKnots item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCBSplineCurveWithKnots IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCBSplineCurveWithKnots IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCBSplineCurveWithKnots IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCBSplineCurveWithKnots IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCBSplineSurfaceWithKnotsMesh(IFCBSplineSurfaceWithKnots item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCBSplineSurfaceWithKnots IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCBSplineSurfaceWithKnots IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCBSplineSurfaceWithKnots IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCBSplineSurfaceWithKnots IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCartesianPointMesh(IFCCartesianPoint item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCartesianPoint IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCartesianPoint IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCartesianPoint IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCartesianPoint IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCartesianPoint IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCartesianPointList2DMesh(IFCCartesianPointList2D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCCartesianPointList2D IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCartesianPointList2D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCartesianPointList2D IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCartesianPointList2D IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCartesianPointList3DMesh(IFCCartesianPointList3D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCCartesianPointList3D IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCartesianPointList3D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCartesianPointList3D IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCartesianPointList3D IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCartesianTransformationOperator2DMesh(IFCCartesianTransformationOperator2D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCartesianTransformationOperator2D IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCartesianTransformationOperator2D IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCartesianTransformationOperator2D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCartesianTransformationOperator2D IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCartesianTransformationOperator2D IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCartesianTransformationOperator2DnonUniformMesh(IFCCartesianTransformationOperator2DnonUniform item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCartesianTransformationOperator2DnonUniform IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCartesianTransformationOperator2DnonUniform IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCartesianTransformationOperator2DnonUniform IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCartesianTransformationOperator2DnonUniform IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCartesianTransformationOperator2DnonUniform IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCartesianTransformationOperator3DMesh(IFCCartesianTransformationOperator3D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCartesianTransformationOperator3D IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCartesianTransformationOperator3D IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCartesianTransformationOperator3D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCartesianTransformationOperator3D IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCartesianTransformationOperator3D IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCartesianTransformationOperator3DnonUniformMesh(IFCCartesianTransformationOperator3DnonUniform item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCartesianTransformationOperator3DnonUniform IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCartesianTransformationOperator3DnonUniform IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCartesianTransformationOperator3DnonUniform IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCartesianTransformationOperator3DnonUniform IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCartesianTransformationOperator3DnonUniform IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCircleMesh(IFCCircle item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCircle IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCircle IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCircle IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCircle IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCircle IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCircularArcSegment2DMesh(IFCCircularArcSegment2D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCCircularArcSegment2D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCircularArcSegment2D IFC4X2Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCClothoidMesh(IFCClothoid item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCClothoid IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCompositeCurveMesh(IFCCompositeCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCompositeCurve IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCompositeCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCompositeCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCompositeCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCompositeCurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCompositeCurveOnSurfaceMesh(IFCCompositeCurveOnSurface item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCCompositeCurveOnSurface IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCompositeCurveOnSurface IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCompositeCurveOnSurface IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCompositeCurveOnSurface IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCompositeCurveSegmentMesh(IFCCompositeCurveSegment item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCompositeCurveSegment IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCompositeCurveSegment IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCompositeCurveSegment IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCompositeCurveSegment IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCompositeCurveSegment IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCosineSpiralMesh(IFCCosineSpiral item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCCosineSpiral IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCsgSolidMesh(IFCCsgSolid item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCsgSolid IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCsgSolid IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCsgSolid IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCsgSolid IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCsgSolid IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCurveBoundedPlaneMesh(IFCCurveBoundedPlane item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCurveBoundedPlane IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCurveBoundedPlane IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCurveBoundedPlane IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCurveBoundedPlane IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCurveBoundedPlane IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCurveBoundedSurfaceMesh(IFCCurveBoundedSurface item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCCurveBoundedSurface IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCurveBoundedSurface IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCurveBoundedSurface IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCurveBoundedSurface IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCurveSegmentMesh(IFCCurveSegment item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCCurveSegment IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCCylindricalSurfaceMesh(IFCCylindricalSurface item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCCylindricalSurface IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCylindricalSurface IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCylindricalSurface IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCylindricalSurface IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCDefinedSymbolMesh(IFCDefinedSymbol item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCDefinedSymbol IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCDiameterDimensionMesh(IFCDiameterDimension item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCDiameterDimension IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCDimensionCurveDirectedCalloutMesh(IFCDimensionCurveDirectedCallout item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCDimensionCurveDirectedCallout IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCDirectionMesh(IFCDirection item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCDirection IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCDirection IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCDirection IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCDirection IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCDirection IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCDirectrixDerivedReferenceSweptAreaSolidMesh(IFCDirectrixDerivedReferenceSweptAreaSolid item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCDirectrixDerivedReferenceSweptAreaSolid IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCDistanceExpressionMesh(IFCDistanceExpression item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCDistanceExpression IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCDistanceExpression IFC4X2Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCDraughtingCalloutMesh(IFCDraughtingCallout item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCDraughtingCallout IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCEllipseMesh(IFCEllipse item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCEllipse IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCEllipse IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCEllipse IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCEllipse IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCEllipse IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCExtrudedAreaSolidMesh(IFCExtrudedAreaSolid item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCExtrudedAreaSolid IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCExtrudedAreaSolid IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCExtrudedAreaSolid IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCExtrudedAreaSolid IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCExtrudedAreaSolid IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCExtrudedAreaSolidTaperedMesh(IFCExtrudedAreaSolidTapered item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCExtrudedAreaSolidTapered IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCExtrudedAreaSolidTapered IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCExtrudedAreaSolidTapered IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCExtrudedAreaSolidTapered IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCFaceBasedSurfaceModelMesh(IFCFaceBasedSurfaceModel item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCFaceBasedSurfaceModel IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCFaceBasedSurfaceModel IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCFaceBasedSurfaceModel IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCFaceBasedSurfaceModel IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCFaceBasedSurfaceModel IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCFacetedBrepMesh(IFCFacetedBrep item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCFacetedBrep IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCFacetedBrep IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCFacetedBrep IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCFacetedBrep IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCFacetedBrep IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCFacetedBrepWithVoidsMesh(IFCFacetedBrepWithVoids item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCFacetedBrepWithVoids IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCFacetedBrepWithVoids IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCFacetedBrepWithVoids IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCFacetedBrepWithVoids IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCFacetedBrepWithVoids IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCFillAreaStyleHatchingMesh(IFCFillAreaStyleHatching item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCFillAreaStyleHatching IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCFillAreaStyleHatching IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCFillAreaStyleHatching IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCFillAreaStyleHatching IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCFillAreaStyleHatching IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCFillAreaStyleTilesMesh(IFCFillAreaStyleTiles item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCFillAreaStyleTiles IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCFillAreaStyleTiles IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCFillAreaStyleTiles IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCFillAreaStyleTiles IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCFillAreaStyleTiles IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCFillAreaStyleTileSymbolWithStyleMesh(IFCFillAreaStyleTileSymbolWithStyle item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCFillAreaStyleTileSymbolWithStyle IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCFixedReferenceSweptAreaSolidMesh(IFCFixedReferenceSweptAreaSolid item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCFixedReferenceSweptAreaSolid IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCFixedReferenceSweptAreaSolid IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCFixedReferenceSweptAreaSolid IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCFixedReferenceSweptAreaSolid IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCGeometricCurveSetMesh(IFCGeometricCurveSet item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCGeometricCurveSet IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCGeometricCurveSet IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCGeometricCurveSet IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCGeometricCurveSet IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCGeometricCurveSet IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCGeometricSetMesh(IFCGeometricSet item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCGeometricSet IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCGeometricSet IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCGeometricSet IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCGeometricSet IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCGeometricSet IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCGradientCurveMesh(IFCGradientCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCGradientCurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCHalfSpaceSolidMesh(IFCHalfSpaceSolid item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCHalfSpaceSolid IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCHalfSpaceSolid IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCHalfSpaceSolid IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCHalfSpaceSolid IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCHalfSpaceSolid IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCIndexedPolyCurveMesh(IFCIndexedPolyCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCIndexedPolyCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCIndexedPolyCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCIndexedPolyCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCIndexedPolyCurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCIndexedPolygonalFaceMesh(IFCIndexedPolygonalFace item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCIndexedPolygonalFace IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCIndexedPolygonalFace IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCIndexedPolygonalFace IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCIndexedPolygonalFace IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCIndexedPolygonalFaceWithVoidsMesh(IFCIndexedPolygonalFaceWithVoids item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCIndexedPolygonalFaceWithVoids IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCIndexedPolygonalFaceWithVoids IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCIndexedPolygonalFaceWithVoids IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCIndexedPolygonalFaceWithVoids IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCIntersectionCurveMesh(IFCIntersectionCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCIntersectionCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCIntersectionCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCIntersectionCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCIntersectionCurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCLightSourceAmbientMesh(IFCLightSourceAmbient item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCLightSourceAmbient IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCLightSourceAmbient IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCLightSourceAmbient IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCLightSourceAmbient IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCLightSourceAmbient IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCLightSourceDirectionalMesh(IFCLightSourceDirectional item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCLightSourceDirectional IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCLightSourceDirectional IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCLightSourceDirectional IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCLightSourceDirectional IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCLightSourceDirectional IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCLightSourceGoniometricMesh(IFCLightSourceGoniometric item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCLightSourceGoniometric IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCLightSourceGoniometric IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCLightSourceGoniometric IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCLightSourceGoniometric IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCLightSourceGoniometric IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCLightSourcePositionalMesh(IFCLightSourcePositional item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCLightSourcePositional IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCLightSourcePositional IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCLightSourcePositional IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCLightSourcePositional IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCLightSourcePositional IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCLightSourceSpotMesh(IFCLightSourceSpot item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCLightSourceSpot IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCLightSourceSpot IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCLightSourceSpot IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCLightSourceSpot IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCLightSourceSpot IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCLineMesh(IFCLine item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCLine IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCLine IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCLine IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCLine IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCLine IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCLinearDimensionMesh(IFCLinearDimension item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCLinearDimension IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCLineSegment2DMesh(IFCLineSegment2D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCLineSegment2D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCLineSegment2D IFC4X2Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCOffsetCurve2DMesh(IFCOffsetCurve2D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCOffsetCurve2D IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCOffsetCurve2D IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCOffsetCurve2D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCOffsetCurve2D IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCOffsetCurve2D IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCOffsetCurve3DMesh(IFCOffsetCurve3D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCOffsetCurve3D IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCOffsetCurve3D IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCOffsetCurve3D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCOffsetCurve3D IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCOffsetCurve3D IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCOffsetCurveByDistancesMesh(IFCOffsetCurveByDistances item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCOffsetCurveByDistances IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCOffsetCurveByDistances IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCOffsetCurveByDistances IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCOneDirectionRepeatFactorMesh(IFCOneDirectionRepeatFactor item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCOneDirectionRepeatFactor IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCOrientationExpressionMesh(IFCOrientationExpression item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCOrientationExpression IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCOrientationExpression IFC4X2Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCOuterBoundaryCurveMesh(IFCOuterBoundaryCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCOuterBoundaryCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCOuterBoundaryCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCOuterBoundaryCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCOuterBoundaryCurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCPcurveMesh(IFCPcurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCPcurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCPcurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCPcurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCPcurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCPlanarBoxMesh(IFCPlanarBox item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCPlanarBox IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCPlanarBox IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCPlanarBox IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCPlanarBox IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCPlanarBox IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCPlanarExtentMesh(IFCPlanarExtent item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCPlanarExtent IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCPlanarExtent IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCPlanarExtent IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCPlanarExtent IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCPlanarExtent IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCPlaneMesh(IFCPlane item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCPlane IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCPlane IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCPlane IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCPlane IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCPlane IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCPointByDistanceExpressionMesh(IFCPointByDistanceExpression item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCPointByDistanceExpression IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCPointOnCurveMesh(IFCPointOnCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCPointOnCurve IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCPointOnCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCPointOnCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCPointOnCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCPointOnCurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCPointOnSurfaceMesh(IFCPointOnSurface item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCPointOnSurface IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCPointOnSurface IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCPointOnSurface IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCPointOnSurface IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCPointOnSurface IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCPolygonalBoundedHalfSpaceMesh(IFCPolygonalBoundedHalfSpace item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCPolygonalBoundedHalfSpace IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCPolygonalBoundedHalfSpace IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCPolygonalBoundedHalfSpace IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCPolygonalBoundedHalfSpace IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCPolygonalBoundedHalfSpace IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCPolygonalFaceSetMesh(IFCPolygonalFaceSet item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCPolygonalFaceSet IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCPolygonalFaceSet IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCPolygonalFaceSet IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCPolygonalFaceSet IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCPolylineMesh(IFCPolyline item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCPolyline IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCPolyline IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCPolyline IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCPolyline IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCPolyline IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCPolynomialCurveMesh(IFCPolynomialCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCPolynomialCurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCRadiusDimensionMesh(IFCRadiusDimension item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCRadiusDimension IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCRationalBezierCurveMesh(IFCRationalBezierCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCRationalBezierCurve IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCRationalBSplineCurveWithKnotsMesh(IFCRationalBSplineCurveWithKnots item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCRationalBSplineCurveWithKnots IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCRationalBSplineCurveWithKnots IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCRationalBSplineCurveWithKnots IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCRationalBSplineCurveWithKnots IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCRationalBSplineSurfaceWithKnotsMesh(IFCRationalBSplineSurfaceWithKnots item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCRationalBSplineSurfaceWithKnots IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCRationalBSplineSurfaceWithKnots IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCRationalBSplineSurfaceWithKnots IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCRationalBSplineSurfaceWithKnots IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCRectangularPyramidMesh(IFCRectangularPyramid item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCRectangularPyramid IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCRectangularPyramid IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCRectangularPyramid IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCRectangularPyramid IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCRectangularPyramid IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCRectangularTrimmedSurfaceMesh(IFCRectangularTrimmedSurface item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCRectangularTrimmedSurface IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCRectangularTrimmedSurface IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCRectangularTrimmedSurface IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCRectangularTrimmedSurface IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCRectangularTrimmedSurface IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCReparametrisedCompositeCurveSegmentMesh(IFCReparametrisedCompositeCurveSegment item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCReparametrisedCompositeCurveSegment IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCReparametrisedCompositeCurveSegment IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCReparametrisedCompositeCurveSegment IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCReparametrisedCompositeCurveSegment IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCRevolvedAreaSolidMesh(IFCRevolvedAreaSolid item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCRevolvedAreaSolid IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCRevolvedAreaSolid IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCRevolvedAreaSolid IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCRevolvedAreaSolid IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCRevolvedAreaSolid IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCRevolvedAreaSolidTaperedMesh(IFCRevolvedAreaSolidTapered item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCRevolvedAreaSolidTapered IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCRevolvedAreaSolidTapered IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCRevolvedAreaSolidTapered IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCRevolvedAreaSolidTapered IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCRightCircularConeMesh(IFCRightCircularCone item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCRightCircularCone IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCRightCircularCone IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCRightCircularCone IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCRightCircularCone IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCRightCircularCone IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCRightCircularCylinderMesh(IFCRightCircularCylinder item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCRightCircularCylinder IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCRightCircularCylinder IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCRightCircularCylinder IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCRightCircularCylinder IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCRightCircularCylinder IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSeamCurveMesh(IFCSeamCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCSeamCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCSeamCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSeamCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSeamCurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSecondOrderPolynomialSpiralMesh(IFCSecondOrderPolynomialSpiral item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCSecondOrderPolynomialSpiral IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSectionedSolidHorizontalMesh(IFCSectionedSolidHorizontal item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCSectionedSolidHorizontal IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSectionedSolidHorizontal IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSectionedSolidHorizontal IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSectionedSpineMesh(IFCSectionedSpine item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCSectionedSpine IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCSectionedSpine IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCSectionedSpine IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSectionedSpine IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSectionedSpine IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSectionedSurfaceMesh(IFCSectionedSurface item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCSectionedSurface IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSegmentedReferenceCurveMesh(IFCSegmentedReferenceCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCSegmentedReferenceCurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSeventhOrderPolynomialSpiralMesh(IFCSeventhOrderPolynomialSpiral item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCSeventhOrderPolynomialSpiral IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCShellBasedSurfaceModelMesh(IFCShellBasedSurfaceModel item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCShellBasedSurfaceModel IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCShellBasedSurfaceModel IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCShellBasedSurfaceModel IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCShellBasedSurfaceModel IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCShellBasedSurfaceModel IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSineSpiralMesh(IFCSineSpiral item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCSineSpiral IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSphereMesh(IFCSphere item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCSphere IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCSphere IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCSphere IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSphere IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSphere IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSphericalSurfaceMesh(IFCSphericalSurface item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCSphericalSurface IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCSphericalSurface IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSphericalSurface IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSphericalSurface IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCStructuredDimensionCalloutMesh(IFCStructuredDimensionCallout item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCStructuredDimensionCallout IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSurfaceCurveMesh(IFCSurfaceCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCSurfaceCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCSurfaceCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSurfaceCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSurfaceCurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSurfaceCurveSweptAreaSolidMesh(IFCSurfaceCurveSweptAreaSolid item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCSurfaceCurveSweptAreaSolid IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCSurfaceCurveSweptAreaSolid IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCSurfaceCurveSweptAreaSolid IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSurfaceCurveSweptAreaSolid IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSurfaceCurveSweptAreaSolid IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSurfaceOfLinearExtrusionMesh(IFCSurfaceOfLinearExtrusion item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCSurfaceOfLinearExtrusion IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCSurfaceOfLinearExtrusion IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCSurfaceOfLinearExtrusion IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSurfaceOfLinearExtrusion IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSurfaceOfLinearExtrusion IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSurfaceOfRevolutionMesh(IFCSurfaceOfRevolution item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCSurfaceOfRevolution IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCSurfaceOfRevolution IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCSurfaceOfRevolution IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSurfaceOfRevolution IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSurfaceOfRevolution IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSweptDiskSolidMesh(IFCSweptDiskSolid item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCSweptDiskSolid IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCSweptDiskSolid IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCSweptDiskSolid IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSweptDiskSolid IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSweptDiskSolid IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCSweptDiskSolidPolygonalMesh(IFCSweptDiskSolidPolygonal item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCSweptDiskSolidPolygonal IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCSweptDiskSolidPolygonal IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSweptDiskSolidPolygonal IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSweptDiskSolidPolygonal IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCTextLiteralMesh(IFCTextLiteral item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCTextLiteral IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCTextLiteral IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCTextLiteral IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCTextLiteral IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCTextLiteral IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCTextLiteralWithExtentMesh(IFCTextLiteralWithExtent item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCTextLiteralWithExtent IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCTextLiteralWithExtent IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCTextLiteralWithExtent IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCTextLiteralWithExtent IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCTextLiteralWithExtent IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCThirdOrderPolynomialSpiralMesh(IFCThirdOrderPolynomialSpiral item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCThirdOrderPolynomialSpiral IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCToroidalSurfaceMesh(IFCToroidalSurface item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCToroidalSurface IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCToroidalSurface IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCToroidalSurface IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCToroidalSurface IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCTransitionCurveSegment2DMesh(IFCTransitionCurveSegment2D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCTransitionCurveSegment2D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCTransitionCurveSegment2D IFC4X2Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCTriangulatedFaceSetMesh(IFCTriangulatedFaceSet item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCTriangulatedFaceSet IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCTriangulatedFaceSet IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCTriangulatedFaceSet IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCTriangulatedFaceSet IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCTriangulatedIrregularNetworkMesh(IFCTriangulatedIrregularNetwork item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCTriangulatedIrregularNetwork IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCTriangulatedIrregularNetwork IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCTriangulatedIrregularNetwork IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCTrimmedCurveMesh(IFCTrimmedCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCTrimmedCurve IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCTrimmedCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCTrimmedCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCTrimmedCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCTrimmedCurve IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCTwoDirectionRepeatFactorMesh(IFCTwoDirectionRepeatFactor item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCTwoDirectionRepeatFactor IFC2X3Item)
+		{
+		}
+		return new Mesh();
+	}
+	Mesh GetIFCVectorMesh(IFCVector item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCVector IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCVector IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCVector IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCVector IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCVector IFC4X3Item)
+		{
+		}
+		return new Mesh();
+	}

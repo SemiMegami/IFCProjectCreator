@@ -111,10 +111,24 @@ namespace IFCProjectCreator
                 List<IFCClass> results = new List<IFCClass>();
                 foreach (var subclass in subclasses)
                 {
-                    if (!results.Contains(subclass))
+                    if (subclass is IFCEntity subEntity)
                     {
-                        results.Add(subclass);
+                        if (!subEntity.IsAbstract)
+                        {
+                            if (!results.Contains(subclass))
+                            {
+                                results.Add(subclass);
+                            }
+                        }
                     }
+                    else
+                    {
+                        if (!results.Contains(subclass))
+                        {
+                            results.Add(subclass);
+                        }
+                    }
+                       
                 }
 
               

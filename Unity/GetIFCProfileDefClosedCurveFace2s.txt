@@ -1,0 +1,448 @@
+	List<ClosedCurveFace2> GetIFCProfileDefClosedCurveFace2s(IFCProfileDef item, GraphicOption graphicOption)
+	{
+		switch (item.GetType().Name.ToUpper())
+		{
+			case "IFCARBITRARYCLOSEDPROFILEDEF" :  return GetIFCArbitraryClosedProfileDefClosedCurveFace2s((IFCArbitraryClosedProfileDef) item, graphicOption);
+			case "IFCARBITRARYOPENPROFILEDEF" :  return GetIFCArbitraryOpenProfileDefClosedCurveFace2s((IFCArbitraryOpenProfileDef) item, graphicOption);
+			case "IFCARBITRARYPROFILEDEFWITHVOIDS" :  return GetIFCArbitraryProfileDefWithVoidsClosedCurveFace2s((IFCArbitraryProfileDefWithVoids) item, graphicOption);
+			case "IFCASYMMETRICISHAPEPROFILEDEF" :  return GetIFCAsymmetricIShapeProfileDefClosedCurveFace2s((IFCAsymmetricIShapeProfileDef) item, graphicOption);
+			case "IFCCENTERLINEPROFILEDEF" :  return GetIFCCenterLineProfileDefClosedCurveFace2s((IFCCenterLineProfileDef) item, graphicOption);
+			case "IFCCIRCLEHOLLOWPROFILEDEF" :  return GetIFCCircleHollowProfileDefClosedCurveFace2s((IFCCircleHollowProfileDef) item, graphicOption);
+			case "IFCCIRCLEPROFILEDEF" :  return GetIFCCircleProfileDefClosedCurveFace2s((IFCCircleProfileDef) item, graphicOption);
+			case "IFCCOMPOSITEPROFILEDEF" :  return GetIFCCompositeProfileDefClosedCurveFace2s((IFCCompositeProfileDef) item, graphicOption);
+			case "IFCCRANERAILASHAPEPROFILEDEF" :  return GetIFCCraneRailAShapeProfileDefClosedCurveFace2s((IFCCraneRailAShapeProfileDef) item, graphicOption);
+			case "IFCCRANERAILFSHAPEPROFILEDEF" :  return GetIFCCraneRailFShapeProfileDefClosedCurveFace2s((IFCCraneRailFShapeProfileDef) item, graphicOption);
+			case "IFCCSHAPEPROFILEDEF" :  return GetIFCCShapeProfileDefClosedCurveFace2s((IFCCShapeProfileDef) item, graphicOption);
+			case "IFCDERIVEDPROFILEDEF" :  return GetIFCDerivedProfileDefClosedCurveFace2s((IFCDerivedProfileDef) item, graphicOption);
+			case "IFCELLIPSEPROFILEDEF" :  return GetIFCEllipseProfileDefClosedCurveFace2s((IFCEllipseProfileDef) item, graphicOption);
+			case "IFCISHAPEPROFILEDEF" :  return GetIFCIShapeProfileDefClosedCurveFace2s((IFCIShapeProfileDef) item, graphicOption);
+			case "IFCLSHAPEPROFILEDEF" :  return GetIFCLShapeProfileDefClosedCurveFace2s((IFCLShapeProfileDef) item, graphicOption);
+			case "IFCMIRROREDPROFILEDEF" :  return GetIFCMirroredProfileDefClosedCurveFace2s((IFCMirroredProfileDef) item, graphicOption);
+			case "IFCOPENCROSSPROFILEDEF" :  return GetIFCOpenCrossProfileDefClosedCurveFace2s((IFCOpenCrossProfileDef) item, graphicOption);
+			case "IFCRECTANGLEHOLLOWPROFILEDEF" :  return GetIFCRectangleHollowProfileDefClosedCurveFace2s((IFCRectangleHollowProfileDef) item, graphicOption);
+			case "IFCRECTANGLEPROFILEDEF" :  return GetIFCRectangleProfileDefClosedCurveFace2s((IFCRectangleProfileDef) item, graphicOption);
+			case "IFCROUNDEDRECTANGLEPROFILEDEF" :  return GetIFCRoundedRectangleProfileDefClosedCurveFace2s((IFCRoundedRectangleProfileDef) item, graphicOption);
+			case "IFCTRAPEZIUMPROFILEDEF" :  return GetIFCTrapeziumProfileDefClosedCurveFace2s((IFCTrapeziumProfileDef) item, graphicOption);
+			case "IFCTSHAPEPROFILEDEF" :  return GetIFCTShapeProfileDefClosedCurveFace2s((IFCTShapeProfileDef) item, graphicOption);
+			case "IFCUSHAPEPROFILEDEF" :  return GetIFCUShapeProfileDefClosedCurveFace2s((IFCUShapeProfileDef) item, graphicOption);
+			case "IFCZSHAPEPROFILEDEF" :  return GetIFCZShapeProfileDefClosedCurveFace2s((IFCZShapeProfileDef) item, graphicOption);
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCArbitraryClosedProfileDefClosedCurveFace2s(IFCArbitraryClosedProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCArbitraryClosedProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCArbitraryClosedProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCArbitraryClosedProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCArbitraryClosedProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCArbitraryClosedProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCArbitraryOpenProfileDefClosedCurveFace2s(IFCArbitraryOpenProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCArbitraryOpenProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCArbitraryOpenProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCArbitraryOpenProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCArbitraryOpenProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCArbitraryOpenProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCArbitraryProfileDefWithVoidsClosedCurveFace2s(IFCArbitraryProfileDefWithVoids item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCArbitraryProfileDefWithVoids IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCArbitraryProfileDefWithVoids IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCArbitraryProfileDefWithVoids IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCArbitraryProfileDefWithVoids IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCArbitraryProfileDefWithVoids IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCAsymmetricIShapeProfileDefClosedCurveFace2s(IFCAsymmetricIShapeProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCAsymmetricIShapeProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCAsymmetricIShapeProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCAsymmetricIShapeProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAsymmetricIShapeProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCAsymmetricIShapeProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCCenterLineProfileDefClosedCurveFace2s(IFCCenterLineProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCenterLineProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCenterLineProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCenterLineProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCenterLineProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCenterLineProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCCircleHollowProfileDefClosedCurveFace2s(IFCCircleHollowProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCircleHollowProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCircleHollowProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCircleHollowProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCircleHollowProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCircleHollowProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCCircleProfileDefClosedCurveFace2s(IFCCircleProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCircleProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCircleProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCircleProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCircleProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCircleProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCCompositeProfileDefClosedCurveFace2s(IFCCompositeProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCompositeProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCompositeProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCompositeProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCompositeProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCompositeProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCCraneRailAShapeProfileDefClosedCurveFace2s(IFCCraneRailAShapeProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCraneRailAShapeProfileDef IFC2X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCCraneRailFShapeProfileDefClosedCurveFace2s(IFCCraneRailFShapeProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCraneRailFShapeProfileDef IFC2X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCCShapeProfileDefClosedCurveFace2s(IFCCShapeProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCShapeProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCShapeProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCShapeProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCShapeProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCShapeProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCDerivedProfileDefClosedCurveFace2s(IFCDerivedProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCDerivedProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCDerivedProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCDerivedProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCDerivedProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCDerivedProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCEllipseProfileDefClosedCurveFace2s(IFCEllipseProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCEllipseProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCEllipseProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCEllipseProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCEllipseProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCEllipseProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCIShapeProfileDefClosedCurveFace2s(IFCIShapeProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCIShapeProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCIShapeProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCIShapeProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCIShapeProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCIShapeProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCLShapeProfileDefClosedCurveFace2s(IFCLShapeProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCLShapeProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCLShapeProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCLShapeProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCLShapeProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCLShapeProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCMirroredProfileDefClosedCurveFace2s(IFCMirroredProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCMirroredProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCMirroredProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCMirroredProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCMirroredProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCOpenCrossProfileDefClosedCurveFace2s(IFCOpenCrossProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCOpenCrossProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCRectangleHollowProfileDefClosedCurveFace2s(IFCRectangleHollowProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCRectangleHollowProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCRectangleHollowProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCRectangleHollowProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCRectangleHollowProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCRectangleHollowProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCRectangleProfileDefClosedCurveFace2s(IFCRectangleProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCRectangleProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCRectangleProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCRectangleProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCRectangleProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCRectangleProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCRoundedRectangleProfileDefClosedCurveFace2s(IFCRoundedRectangleProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCRoundedRectangleProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCRoundedRectangleProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCRoundedRectangleProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCRoundedRectangleProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCRoundedRectangleProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCTrapeziumProfileDefClosedCurveFace2s(IFCTrapeziumProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCTrapeziumProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCTrapeziumProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCTrapeziumProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCTrapeziumProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCTrapeziumProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCTShapeProfileDefClosedCurveFace2s(IFCTShapeProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCTShapeProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCTShapeProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCTShapeProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCTShapeProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCTShapeProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCUShapeProfileDefClosedCurveFace2s(IFCUShapeProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCUShapeProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCUShapeProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCUShapeProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCUShapeProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCUShapeProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}
+	List<ClosedCurveFace2> GetIFCZShapeProfileDefClosedCurveFace2s(IFCZShapeProfileDef item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCZShapeProfileDef IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCZShapeProfileDef IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCZShapeProfileDef IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCZShapeProfileDef IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCZShapeProfileDef IFC4X3Item)
+		{
+		}
+		return new List<ClosedCurveFace2>();
+	}

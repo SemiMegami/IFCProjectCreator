@@ -765,6 +765,41 @@ namespace IFCProjectCreator
             
         }
 
+
+        public List<string> GetNonAbstractSubClass(string className)
+        {
+            List<string> names = new List<string>();
+            var selectTypes = SelectTypes.Where(x => x.Name == className);
+            foreach (var item in selectTypes)
+            {
+                var subclasses = item.AllNonAbstractSubclasses;
+                foreach (var subclass in subclasses)
+                {
+                    if (!names.Contains(subclass.Name))
+                    {
+                        names.Add(subclass.Name);
+                    }
+                }
+            }
+
+            var entities = Entities.Where(x => x.Name == className);
+            foreach (var item in entities)
+            {
+                var subclasses = item.AllNonAbstractSubclasses;
+                foreach (var subclass in subclasses)
+                {
+                    if (!names.Contains(subclass.Name))
+                    {
+                        names.Add(subclass.Name);
+                    }
+                }
+            }
+            names.Sort();
+            return names;
+        }
+
+        #region Write CSharp
+
         /// <summary>
         /// Write C# classes file in specificed folder
         /// </summary>
@@ -1852,5 +1887,136 @@ namespace IFCProjectCreator
                 writer.WriteLine("}");
             }
         }
+
+        #endregion
+        #region Unity
+        public void WriteUnityGetIFCGeometricRepresentationItemMesh(string folderDir, string nameSpaceName)
+        {
+            var classes = GetNonAbstractSubClass("IFCGeometricRepresentationItem");
+            using (StreamWriter writer = new StreamWriter(folderDir + "GetIFCGeometricRepresentationItemMesh.txt"))
+            {
+
+                writer.WriteLine("\tMesh GetIFCGeometricRepresentationItemMesh(IFCGeometricRepresentationItem item, GraphicOption graphicOption)");
+                writer.WriteLine("\t{");
+                writer.WriteLine("\t\tswitch (item.GetType().Name.ToUpper())");
+                writer.WriteLine("\t\t{");
+                foreach (var entity in classes)
+                {
+                    writer.WriteLine("\t\t\tcase \"" + entity.ToUpper() + "\" : " + " return Get" + entity + "Mesh((" + entity + ") item, graphicOption);");
+                }
+                writer.WriteLine("\t\t}");
+                writer.WriteLine("\t\treturn new Mesh();");
+                writer.WriteLine("\t}");
+
+                foreach (var entity in classes)
+                {
+                    writer.WriteLine("\tMesh Get" + entity + "Mesh("+ entity + " item, GraphicOption graphicOption)");
+                    writer.WriteLine("\t{");
+
+                    foreach (var v in Versions)
+                    {
+                        var versionClass = Entities.FirstOrDefault(e => e.Name == entity && e.VersionName == v);
+                        
+                        if(versionClass != null)
+                        {
+                            writer.WriteLine("\t\tif (item is " + nameSpaceName + "." + v + "." + entity + " " + v + "Item)");
+                            writer.WriteLine("\t\t{");
+                            writer.WriteLine("\t\t}");
+                        }
+                    }
+
+                    writer.WriteLine("\t\treturn new Mesh();");
+                    writer.WriteLine("\t}");
+                }
+
+            }
+        }
+
+        public void WriteUnityGetIFCProfileDefClosedCurveFace2s(string folderDir, string nameSpaceName)
+        {
+            var classes = GetNonAbstractSubClass("IFCProfileDef");
+            using (StreamWriter writer = new StreamWriter(folderDir + "GetIFCProfileDefClosedCurveFace2s.txt"))
+            {
+
+                writer.WriteLine("\tList<ClosedCurveFace2> GetIFCProfileDefClosedCurveFace2s(IFCProfileDef item, GraphicOption graphicOption)");
+                writer.WriteLine("\t{");
+                writer.WriteLine("\t\tswitch (item.GetType().Name.ToUpper())");
+                writer.WriteLine("\t\t{");
+                foreach (var entity in classes)
+                {
+                    writer.WriteLine("\t\t\tcase \"" + entity.ToUpper() + "\" : " + " return Get" + entity + "ClosedCurveFace2s((" + entity + ") item, graphicOption);");
+                }
+                writer.WriteLine("\t\t}");
+                writer.WriteLine("\t\treturn new List<ClosedCurveFace2>();");
+                writer.WriteLine("\t}");
+
+                foreach (var entity in classes)
+                {
+                    writer.WriteLine("\tList<ClosedCurveFace2> Get" + entity + "ClosedCurveFace2s(" + entity + " item, GraphicOption graphicOption)");
+                    writer.WriteLine("\t{");
+
+                    foreach (var v in Versions)
+                    {
+                        var versionClass = Entities.FirstOrDefault(e => e.Name == entity && e.VersionName == v);
+
+                        if (versionClass != null)
+                        {
+                            writer.WriteLine("\t\tif (item is " + nameSpaceName + "." + v + "." + entity + " " + v + "Item)");
+                            writer.WriteLine("\t\t{");
+                            writer.WriteLine("\t\t}");
+                        }
+                    }
+
+                    writer.WriteLine("\t\treturn new List<ClosedCurveFace2>();");
+                    writer.WriteLine("\t}");
+                }
+
+            }
+        }
+
+        public void WriteUnityGetIFCCurveCurve2(string folderDir, string nameSpaceName)
+        {
+            var classes = GetNonAbstractSubClass("IFCCurve");
+            using (StreamWriter writer = new StreamWriter(folderDir + "GetIFCCurveCurve2.txt"))
+            {
+
+                writer.WriteLine("\tCurve2 GetIFCCurveCurve2(IFCCurve item, GraphicOption graphicOption)");
+                writer.WriteLine("\t{");
+                writer.WriteLine("\t\tswitch (item.GetType().Name.ToUpper())");
+                writer.WriteLine("\t\t{");
+                foreach (var entity in classes)
+                {
+                    writer.WriteLine("\t\t\tcase \"" + entity.ToUpper() + "\" : " + " return Get" + entity + "Curve2((" + entity + ") item, graphicOption);");
+                }
+                writer.WriteLine("\t\t}");
+                writer.WriteLine("\t\treturn new ClosedPointCurve2();");
+                writer.WriteLine("\t}");
+
+                foreach (var entity in classes)
+                {
+                    writer.WriteLine("\tCurve2 Get" + entity + "Curve2(" + entity + " item, GraphicOption graphicOption)");
+                    writer.WriteLine("\t{");
+
+                    foreach (var v in Versions)
+                    {
+                        var versionClass = Entities.FirstOrDefault(e => e.Name == entity && e.VersionName == v);
+
+                        if (versionClass != null && !versionClass.IsAbstract)
+                        {
+                            writer.WriteLine("\t\tif (item is " + nameSpaceName + "." + v + "." + entity + " " + v + "Item)");
+                            writer.WriteLine("\t\t{");
+                            writer.WriteLine("\t\t}");
+                        }
+                    }
+
+                    writer.WriteLine("\t\treturn new ClosedPointCurve2();");
+                    writer.WriteLine("\t}");
+                }
+
+            }
+        }
+        #endregion
+
+
     }
 }

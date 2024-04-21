@@ -1,0 +1,491 @@
+	Curve2 GetIFCCurveCurve2(IFCCurve item, GraphicOption graphicOption)
+	{
+		switch (item.GetType().Name.ToUpper())
+		{
+			case "IFC2DCOMPOSITECURVE" :  return GetIFC2DCompositeCurveCurve2((IFC2DCompositeCurve) item, graphicOption);
+			case "IFCALIGNMENTCURVE" :  return GetIFCAlignmentCurveCurve2((IFCAlignmentCurve) item, graphicOption);
+			case "IFCBEZIERCURVE" :  return GetIFCBezierCurveCurve2((IFCBezierCurve) item, graphicOption);
+			case "IFCBOUNDARYCURVE" :  return GetIFCBoundaryCurveCurve2((IFCBoundaryCurve) item, graphicOption);
+			case "IFCBSPLINECURVEWITHKNOTS" :  return GetIFCBSplineCurveWithKnotsCurve2((IFCBSplineCurveWithKnots) item, graphicOption);
+			case "IFCCIRCLE" :  return GetIFCCircleCurve2((IFCCircle) item, graphicOption);
+			case "IFCCIRCULARARCSEGMENT2D" :  return GetIFCCircularArcSegment2DCurve2((IFCCircularArcSegment2D) item, graphicOption);
+			case "IFCCLOTHOID" :  return GetIFCClothoidCurve2((IFCClothoid) item, graphicOption);
+			case "IFCCOMPOSITECURVE" :  return GetIFCCompositeCurveCurve2((IFCCompositeCurve) item, graphicOption);
+			case "IFCCOMPOSITECURVEONSURFACE" :  return GetIFCCompositeCurveOnSurfaceCurve2((IFCCompositeCurveOnSurface) item, graphicOption);
+			case "IFCCOSINESPIRAL" :  return GetIFCCosineSpiralCurve2((IFCCosineSpiral) item, graphicOption);
+			case "IFCELLIPSE" :  return GetIFCEllipseCurve2((IFCEllipse) item, graphicOption);
+			case "IFCGRADIENTCURVE" :  return GetIFCGradientCurveCurve2((IFCGradientCurve) item, graphicOption);
+			case "IFCINDEXEDPOLYCURVE" :  return GetIFCIndexedPolyCurveCurve2((IFCIndexedPolyCurve) item, graphicOption);
+			case "IFCINTERSECTIONCURVE" :  return GetIFCIntersectionCurveCurve2((IFCIntersectionCurve) item, graphicOption);
+			case "IFCLINE" :  return GetIFCLineCurve2((IFCLine) item, graphicOption);
+			case "IFCLINESEGMENT2D" :  return GetIFCLineSegment2DCurve2((IFCLineSegment2D) item, graphicOption);
+			case "IFCOFFSETCURVE2D" :  return GetIFCOffsetCurve2DCurve2((IFCOffsetCurve2D) item, graphicOption);
+			case "IFCOFFSETCURVE3D" :  return GetIFCOffsetCurve3DCurve2((IFCOffsetCurve3D) item, graphicOption);
+			case "IFCOFFSETCURVEBYDISTANCES" :  return GetIFCOffsetCurveByDistancesCurve2((IFCOffsetCurveByDistances) item, graphicOption);
+			case "IFCOUTERBOUNDARYCURVE" :  return GetIFCOuterBoundaryCurveCurve2((IFCOuterBoundaryCurve) item, graphicOption);
+			case "IFCPCURVE" :  return GetIFCPcurveCurve2((IFCPcurve) item, graphicOption);
+			case "IFCPOLYLINE" :  return GetIFCPolylineCurve2((IFCPolyline) item, graphicOption);
+			case "IFCPOLYNOMIALCURVE" :  return GetIFCPolynomialCurveCurve2((IFCPolynomialCurve) item, graphicOption);
+			case "IFCRATIONALBEZIERCURVE" :  return GetIFCRationalBezierCurveCurve2((IFCRationalBezierCurve) item, graphicOption);
+			case "IFCRATIONALBSPLINECURVEWITHKNOTS" :  return GetIFCRationalBSplineCurveWithKnotsCurve2((IFCRationalBSplineCurveWithKnots) item, graphicOption);
+			case "IFCSEAMCURVE" :  return GetIFCSeamCurveCurve2((IFCSeamCurve) item, graphicOption);
+			case "IFCSECONDORDERPOLYNOMIALSPIRAL" :  return GetIFCSecondOrderPolynomialSpiralCurve2((IFCSecondOrderPolynomialSpiral) item, graphicOption);
+			case "IFCSEGMENTEDREFERENCECURVE" :  return GetIFCSegmentedReferenceCurveCurve2((IFCSegmentedReferenceCurve) item, graphicOption);
+			case "IFCSEVENTHORDERPOLYNOMIALSPIRAL" :  return GetIFCSeventhOrderPolynomialSpiralCurve2((IFCSeventhOrderPolynomialSpiral) item, graphicOption);
+			case "IFCSINESPIRAL" :  return GetIFCSineSpiralCurve2((IFCSineSpiral) item, graphicOption);
+			case "IFCSURFACECURVE" :  return GetIFCSurfaceCurveCurve2((IFCSurfaceCurve) item, graphicOption);
+			case "IFCTHIRDORDERPOLYNOMIALSPIRAL" :  return GetIFCThirdOrderPolynomialSpiralCurve2((IFCThirdOrderPolynomialSpiral) item, graphicOption);
+			case "IFCTRANSITIONCURVESEGMENT2D" :  return GetIFCTransitionCurveSegment2DCurve2((IFCTransitionCurveSegment2D) item, graphicOption);
+			case "IFCTRIMMEDCURVE" :  return GetIFCTrimmedCurveCurve2((IFCTrimmedCurve) item, graphicOption);
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFC2DCompositeCurveCurve2(IFC2DCompositeCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFC2DCompositeCurve IFC2X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCAlignmentCurveCurve2(IFCAlignmentCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCAlignmentCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCAlignmentCurve IFC4X2Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCBezierCurveCurve2(IFCBezierCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCBezierCurve IFC2X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCBoundaryCurveCurve2(IFCBoundaryCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCBoundaryCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCBoundaryCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCBoundaryCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCBoundaryCurve IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCBSplineCurveWithKnotsCurve2(IFCBSplineCurveWithKnots item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCBSplineCurveWithKnots IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCBSplineCurveWithKnots IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCBSplineCurveWithKnots IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCBSplineCurveWithKnots IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCCircleCurve2(IFCCircle item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCircle IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCircle IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCircle IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCircle IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCircle IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCCircularArcSegment2DCurve2(IFCCircularArcSegment2D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCCircularArcSegment2D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCircularArcSegment2D IFC4X2Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCClothoidCurve2(IFCClothoid item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCClothoid IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCCompositeCurveCurve2(IFCCompositeCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCCompositeCurve IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCCompositeCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCompositeCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCompositeCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCompositeCurve IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCCompositeCurveOnSurfaceCurve2(IFCCompositeCurveOnSurface item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCCompositeCurveOnSurface IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCCompositeCurveOnSurface IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCCompositeCurveOnSurface IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCCompositeCurveOnSurface IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCCosineSpiralCurve2(IFCCosineSpiral item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCCosineSpiral IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCEllipseCurve2(IFCEllipse item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCEllipse IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCEllipse IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCEllipse IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCEllipse IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCEllipse IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCGradientCurveCurve2(IFCGradientCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCGradientCurve IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCIndexedPolyCurveCurve2(IFCIndexedPolyCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCIndexedPolyCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCIndexedPolyCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCIndexedPolyCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCIndexedPolyCurve IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCIntersectionCurveCurve2(IFCIntersectionCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCIntersectionCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCIntersectionCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCIntersectionCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCIntersectionCurve IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCLineCurve2(IFCLine item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCLine IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCLine IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCLine IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCLine IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCLine IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCLineSegment2DCurve2(IFCLineSegment2D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCLineSegment2D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCLineSegment2D IFC4X2Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCOffsetCurve2DCurve2(IFCOffsetCurve2D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCOffsetCurve2D IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCOffsetCurve2D IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCOffsetCurve2D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCOffsetCurve2D IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCOffsetCurve2D IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCOffsetCurve3DCurve2(IFCOffsetCurve3D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCOffsetCurve3D IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCOffsetCurve3D IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCOffsetCurve3D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCOffsetCurve3D IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCOffsetCurve3D IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCOffsetCurveByDistancesCurve2(IFCOffsetCurveByDistances item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCOffsetCurveByDistances IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCOffsetCurveByDistances IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCOffsetCurveByDistances IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCOuterBoundaryCurveCurve2(IFCOuterBoundaryCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCOuterBoundaryCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCOuterBoundaryCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCOuterBoundaryCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCOuterBoundaryCurve IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCPcurveCurve2(IFCPcurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCPcurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCPcurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCPcurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCPcurve IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCPolylineCurve2(IFCPolyline item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCPolyline IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCPolyline IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCPolyline IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCPolyline IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCPolyline IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCPolynomialCurveCurve2(IFCPolynomialCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCPolynomialCurve IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCRationalBezierCurveCurve2(IFCRationalBezierCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCRationalBezierCurve IFC2X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCRationalBSplineCurveWithKnotsCurve2(IFCRationalBSplineCurveWithKnots item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCRationalBSplineCurveWithKnots IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCRationalBSplineCurveWithKnots IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCRationalBSplineCurveWithKnots IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCRationalBSplineCurveWithKnots IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCSeamCurveCurve2(IFCSeamCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCSeamCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCSeamCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSeamCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSeamCurve IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCSecondOrderPolynomialSpiralCurve2(IFCSecondOrderPolynomialSpiral item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCSecondOrderPolynomialSpiral IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCSegmentedReferenceCurveCurve2(IFCSegmentedReferenceCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCSegmentedReferenceCurve IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCSeventhOrderPolynomialSpiralCurve2(IFCSeventhOrderPolynomialSpiral item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCSeventhOrderPolynomialSpiral IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCSineSpiralCurve2(IFCSineSpiral item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCSineSpiral IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCSurfaceCurveCurve2(IFCSurfaceCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4.IFCSurfaceCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCSurfaceCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCSurfaceCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCSurfaceCurve IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCThirdOrderPolynomialSpiralCurve2(IFCThirdOrderPolynomialSpiral item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X3.IFCThirdOrderPolynomialSpiral IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCTransitionCurveSegment2DCurve2(IFCTransitionCurveSegment2D item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC4X1.IFCTransitionCurveSegment2D IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCTransitionCurveSegment2D IFC4X2Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}
+	Curve2 GetIFCTrimmedCurveCurve2(IFCTrimmedCurve item, GraphicOption graphicOption)
+	{
+		if (item is IFC.IFC2X3.IFCTrimmedCurve IFC2X3Item)
+		{
+		}
+		if (item is IFC.IFC4.IFCTrimmedCurve IFC4Item)
+		{
+		}
+		if (item is IFC.IFC4X1.IFCTrimmedCurve IFC4X1Item)
+		{
+		}
+		if (item is IFC.IFC4X2.IFCTrimmedCurve IFC4X2Item)
+		{
+		}
+		if (item is IFC.IFC4X3.IFCTrimmedCurve IFC4X3Item)
+		{
+		}
+		return new ClosedPointCurve2();
+	}

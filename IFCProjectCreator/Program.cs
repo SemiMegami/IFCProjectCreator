@@ -9,6 +9,7 @@ namespace IFCProjectCreator
     {
         static void Main(string[] args)
         {
+            string namespaceName = "IFC";
             string resourceDir = "../../../../Resources/";
             string resultDir = "../../../../GeneratedIFCLibrary/";
             string manualDir = "../../../../IFC/";
@@ -24,9 +25,11 @@ namespace IFCProjectCreator
             dataSet.ReadManualItem(manualDir + "IFC4X2.cs");
             dataSet.ReadManualItem(manualDir + "IFC4X3.cs");
             dataSet.SetGLOBAL();
-            dataSet.WriteCSharp(resultDir, "IFC");
-         
-
+            dataSet.WriteCSharp(resultDir, namespaceName);
+            string unityDir = "../../../../Unity/";
+            dataSet.WriteUnityGetIFCGeometricRepresentationItemMesh(unityDir, namespaceName);
+            dataSet.WriteUnityGetIFCProfileDefClosedCurveFace2s(unityDir, namespaceName);
+            dataSet.WriteUnityGetIFCCurveCurve2(unityDir, namespaceName);
         }
     }
 }
